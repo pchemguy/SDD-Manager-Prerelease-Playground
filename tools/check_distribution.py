@@ -80,7 +80,7 @@ def verify_archive(archive: Path) -> int:
             assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
             count += 1
         assert bad.read_bytes() == b'valid prefix\n\xff'
-        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt']]:
+        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt']]:
             result = invoke(['-m', 'textstats', *args])
             assert result.returncode == 2 and result.stdout == '', result
             assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result

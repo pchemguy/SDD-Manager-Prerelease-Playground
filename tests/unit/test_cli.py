@@ -64,7 +64,7 @@ class CliTests(unittest.TestCase):
                 self.assertNotIn('Traceback', err.getvalue())
 
     def test_usage_validates_before_acquisition(self):
-        for args in [[], ['missing', 'extra'], ['--unknown', 'missing']]:
+        for args in [[], ['missing', 'extra'], ['--unknown', 'missing'], ['--keep', 'missing']]:
             with self.subTest(args=args):
                 out, err = io.StringIO(), io.StringIO()
                 with patch('textstats.cli.count_file') as counter:

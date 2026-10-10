@@ -22,7 +22,7 @@ def main(argv: list[str] | None = None) -> int:
     literal '-' remains a named filename. Expected file/decode failures are
     translated without a traceback; the public file API retains its exceptions.
     """
-    parser = argparse.ArgumentParser(prog='python -m textstats', description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
+    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
     parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')
     try:

@@ -71,7 +71,9 @@ class ModuleCliTests(unittest.TestCase):
             self.assertEqual(bad.read_bytes(), b'valid prefix\n\xff')
 
     def test_unknown_option_is_usage_even_with_missing_input(self):
-        result = self.invoke('--unknown', 'nonexistent.txt')
-        self.assertEqual((result.returncode, result.stdout), (2, ''))
-        self.assertIn('usage:', result.stderr)
-        self.assertNotIn('Traceback', result.stderr)
+        for option in ['--unknown', '--keep']:
+            with self.subTest(option=option):
+                result = self.invoke(option, 'nonexistent.txt')
+                self.assertEqual((result.returncode, result.stdout), (2, ''))
+                self.assertIn('usage:', result.stderr)
+                self.assertNotIn('Traceback', result.stderr)
