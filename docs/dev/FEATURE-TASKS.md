@@ -27,7 +27,7 @@ Preparation stops before execution. A later separately authorized handoff must s
             Depends on: T-018 and T-019.
             Evidence: code review and actual focused/full relevant tests, actual nonzero discovery counts, all F matrices, complete-decode/BOM/huge-endpoint regression evidence, repairs for every blocker and 2.4 human demonstration evidence. Report findings/TODO dispositions and limits; tests alone cannot complete this review.
             Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md`.
-    - [ ] Milestone 2.5 — Range documentation and distribution
+    - [x] Milestone 2.5 — Range documentation and distribution
         - [x] T-021 — Complete public and runnable named-file range documentation
             Outcome: accurate full range grammar/semantics/errors/composition/delivery boundary, with public API explicitly whole-input and stdin acquisition still deferred.
             Scope: `README.md`, `docs/public-api.md`, relevant core/I/O/CLI module/function docstrings and truthful owned root `AGENTS.md` navigation; preserve manual instructions and protected resources.
@@ -38,7 +38,7 @@ Preparation stops before execution. A later separately authorized handoff must s
             Scope: `tools/check_distribution.py`, cooperating `tools/package_source.py` allowlist only if needed, `tests/integration/test_distribution.py` and distribution usage documentation.
             Depends on: T-021.
             Evidence: rebuild/extract source, isolate subprocess cwd/import environment and verify imported package belongs to extraction. Invoke its actual `python -m textstats` entry for F-004 success anchors, option/BOM/JSON composition, huge decimal/leading-zero endpoints, invalid/missing/repeated ranges and bad bytes after END; statuses/stdout/stderr retain contracts. Confirm archive docs and unchanged API, named-file/no-range/JSON/usage/error regressions and no coordinator resources/secrets. Use the selected supported Python executable with bytecode disabled in all child processes. Run independently nonempty unit/integration suites and extraction checks; archive listing/import alone is insufficient.
-        - [ ] T-023 — Review, test and report milestone 2.5
+        - [x] T-023 — Review, test and report milestone 2.5
             Scope: complete delivered range documentation, help/usability, isolated distribution and retained product behavior.
             Depends on: T-021 and T-022.
             Evidence: code review plus actual docs examples, nonempty discovery and extraction provenance/real module checks, all relevant regressions and repairs for every blocker. Record usability demonstration, actual evidence/limits and TODO dispositions before milestone closure.
@@ -151,3 +151,33 @@ Result/current evidence/initial task checkbox close in one commit; milestone 2.5
 and feature parent remain unchecked. Immediately publish/read back, then close/read
 back unique issue #23 before dependent T-023. No stdin/final Phase 2 execution,
 whole-phase closure, default integration or release is claimed.
+
+## T-023 completion evidence
+
+Dedicated coherent milestone 2.5 review of published T-022 source
+`f2dc46627c04b92e4d2990843927e52be63f2660` is recorded in
+[2.5 report](features/002_e7cae5b-named-file-ranges/phases/2/2.5.md).
+Read five package modules, builder/checker, distribution and real range module
+tests, README/public API together and separately from check execution. No blocker
+or repair; TODO None. Fresh all runnable guide fences completed in a temporary
+current development-checkout copy: 31 unit/28 integration full runner and independent
+discoveries, both OK/status 0, no skips/warnings; 315 actual isolated extracted
+module cases plus silent unchanged API/signature probe, package build and Bash
+extraction outputs, all named-file/BOM/JSON/range/invalid/decode examples. Fresh
+root ZIP exactly eleven approved members with each source/doc byte matching
+current published product. Selected links/whitespace pass. Runtime Python 3.12.14;
+other versions/platforms, stdin acquisition and release remain unverified/outside.
+
+Concrete report decision `ee49eb727938ab671daf6f9944c9cf4c086373f0` accepts blob
+`fc89a37645234a4f5079919ad7692e71f5d87f6f`. Report presentation-time pending
+acceptance is historical; this current owning evidence records accepted conclusion.
+The command log has 32 command records and one completion marker (33 lines); an
+intermediate tool's label saying 33 commands was corrected before presentation.
+Original ambiguous log/process-inspection error and T-022 RED/GREEN provenance
+remain retained, without claiming an unseen acceptance or concealed repair.
+T-021/T-022 exact refs/issues #22/#23 were published/closed/read back before review.
+T-023 result/report/evidence/initial checkbox and eligible feature milestone 2.5
+parent close together; immediately publish/read back then close/read back issue
+#24 and validate every associated completed issue before native milestone #8
+closure. Feature 2.6/parent remain unchecked until T-024, while main Phase 2 and
+stdin/final T-013–T-017 stay pending.
