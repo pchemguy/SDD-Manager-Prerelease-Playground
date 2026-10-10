@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case_id": "A-024",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Correctly classify the selected sanitized access failure, preserve pending work and scope, and keep Git/API recovery distinct; no sensitive export or arbitrary credential replacement."
+  ],
+  "variant_agent_checks": {
+    "denial": [
+      "Actual consumer-visible controlled denial; bounded stop/recovery context, no claim of live provider denial."
+    ],
+    "rate-limit": [
+      "Actual consumer-visible controlled 429/retry metadata; bounded retry/backoff, no token replacement for rate limit."
+    ],
+    "unavailable-access": [
+      "Actual consumer-visible controlled unavailable access; retain exact pending operation and resume through the same restored selected facility in a fresh context."
+    ],
+    "native-recovery": [
+      "Optional actual credential/session failure and protected native handoff/reuse with independently verified eligibility, fresh native recovery and same destination. Missing supported facility is optional Not run/non-blocking; wrapper restoration is not native recovery."
+    ]
+  }
+}

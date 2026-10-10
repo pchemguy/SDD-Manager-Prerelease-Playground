@@ -1,0 +1,11 @@
+{
+  "original_plugin_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "package_byte_policy": "Every shipped file equals the immutable source tree; distinct playground commit supplies test-provider source identity",
+  "test_release_tag": "v0.15.0",
+  "policy": {
+    "publish": true,
+    "prerelease": true,
+    "make_latest": false
+  },
+  "scope": "Disposable playground fixture only; no source-repository tag/release"
+}

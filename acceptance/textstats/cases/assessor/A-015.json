@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "case_id": "A-015",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Before interruption actual task checks and checklist completion are observed, with staged owned bytes but no task commit.",
+    "Fresh continuation identifies same completed pending work, preserves task/test identity, avoids reimplementation, scopes commit/check evidence and publishes before any next task."
+  ]
+}

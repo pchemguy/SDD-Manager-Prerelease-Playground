@@ -1,0 +1,1157 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "A-001",
+      "title": "Prepare TextStats",
+      "order": 1,
+      "phase": "P1",
+      "dependencies": [],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-001.md",
+      "assessor_contract": "cases/assessor/A-001.json",
+      "assessor_guide": "cases/assessor/A-001.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": null,
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-002",
+      "title": "Select work only",
+      "order": 2,
+      "phase": "P1",
+      "dependencies": [
+        "A-001"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-002.md",
+      "assessor_contract": "cases/assessor/A-002.json",
+      "assessor_guide": "cases/assessor/A-002.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-001",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-003",
+      "title": "Maintain GitHub tracking",
+      "order": 3,
+      "phase": "P1",
+      "dependencies": [
+        "A-001"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-003.md",
+      "assessor_contract": "cases/assessor/A-003.json",
+      "assessor_guide": "cases/assessor/A-003.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Eligible first-phase hierarchy and hosted access; future phases remain planned locally only."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-001",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-004",
+      "title": "First task",
+      "order": 4,
+      "phase": "P2",
+      "dependencies": [
+        "A-003"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-004.md",
+      "assessor_contract": "cases/assessor/A-004.json",
+      "assessor_guide": "cases/assessor/A-004.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-003",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-005",
+      "title": "Milestone 1.1",
+      "order": 5,
+      "phase": "P2",
+      "dependencies": [
+        "A-004"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-005.md",
+      "assessor_contract": "cases/assessor/A-005.json",
+      "assessor_guide": "cases/assessor/A-005.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Milestone 1.1 explicit review task/report and actual hosted issue/milestone readback."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-004",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-006",
+      "title": "Complete phase 1",
+      "order": 6,
+      "phase": "P2",
+      "dependencies": [
+        "A-005"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-006.md",
+      "assessor_contract": "cases/assessor/A-006.json",
+      "assessor_guide": "cases/assessor/A-006.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Delivery milestone closure and final single-task phase review milestone from actual accepted hierarchy."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-005",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-007",
+      "title": "JSON increment",
+      "order": 7,
+      "phase": "P3",
+      "dependencies": [
+        "A-006"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-007.md",
+      "assessor_contract": "cases/assessor/A-007.json",
+      "assessor_guide": "cases/assessor/A-007.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Verified published phase 1 and authorized phase 2 activation."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-006",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-008",
+      "title": "Prepare ranges",
+      "order": 8,
+      "phase": "P3",
+      "dependencies": [
+        "A-007"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-008.md",
+      "assessor_contract": "cases/assessor/A-008.json",
+      "assessor_guide": "cases/assessor/A-008.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-007",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "focused_probe": "dependency-inflation",
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-009",
+      "title": "Selected specification incorporation",
+      "order": 9,
+      "phase": "P3",
+      "dependencies": [
+        "A-008"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-009.md",
+      "assessor_contract": "cases/assessor/A-009.json",
+      "assessor_guide": "cases/assessor/A-009.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-008",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-010",
+      "title": "Deliver ranges",
+      "order": 10,
+      "phase": "P3",
+      "dependencies": [
+        "A-009"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-010.md",
+      "assessor_contract": "cases/assessor/A-010.json",
+      "assessor_guide": "cases/assessor/A-010.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-009",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-011",
+      "title": "Assess JSON removal",
+      "order": 11,
+      "phase": "P3",
+      "dependencies": [
+        "A-010"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-011.md",
+      "assessor_contract": "cases/assessor/A-011.json",
+      "assessor_guide": "cases/assessor/A-011.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-010",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-012",
+      "title": "Remove JSON",
+      "order": 12,
+      "phase": "P3",
+      "dependencies": [
+        "A-011"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-012.md",
+      "assessor_contract": "cases/assessor/A-012.json",
+      "assessor_guide": "cases/assessor/A-012.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-011",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "focused_probe": "retired-task-selection",
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-013",
+      "title": "Resume phase 2",
+      "order": 13,
+      "phase": "P3",
+      "dependencies": [
+        "A-012"
+      ],
+      "mode": "product",
+      "consumer_input": "cases/consumer/A-013.md",
+      "assessor_contract": "cases/assessor/A-013.json",
+      "assessor_guide": "cases/assessor/A-013.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-012",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "focused_probe": "retired-task-selection",
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-014",
+      "title": "Cross-phase range",
+      "order": 14,
+      "phase": "P4",
+      "dependencies": [
+        "A-001",
+        "A-004"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-014.md",
+      "assessor_contract": "cases/assessor/A-014.json",
+      "assessor_guide": "cases/assessor/A-014.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Cross-phase variant starts after actual out-of-range prerequisites are independently complete/published and allows phase publication; refusal variant separately uses prepared state."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-004",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "input_bindings": {
+        "range_start": "current.range_start",
+        "range_end": "current.range_end"
+      },
+      "variants": [
+        {
+          "id": "cross-phase",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        },
+        {
+          "id": "prerequisite-refusal",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ],
+      "variant_predecessors": {
+        "prerequisite-refusal": "A-001"
+      }
+    },
+    {
+      "id": "A-015",
+      "title": "Continue current task",
+      "order": 15,
+      "phase": "P4",
+      "dependencies": [
+        "A-003"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-015.md",
+      "assessor_contract": "cases/assessor/A-015.json",
+      "assessor_guide": "cases/assessor/A-015.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-003",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "staged-work",
+        "observe": "Actual required checks/checklist update observed; owned index entries staged; HEAD is still pre-task-commit.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-016",
+      "title": "Continue authorized range",
+      "order": 16,
+      "phase": "P4",
+      "dependencies": [
+        "A-003"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-016.md",
+      "assessor_contract": "cases/assessor/A-016.json",
+      "assessor_guide": "cases/assessor/A-016.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-003",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "unpublished-commit",
+        "observe": "Consumer task commit exists and tree is clean; exact remote readback does not contain it.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-017",
+      "title": "Complete current task",
+      "order": 17,
+      "phase": "P4",
+      "dependencies": [
+        "A-005"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-017.md",
+      "assessor_contract": "cases/assessor/A-017.json",
+      "assessor_guide": "cases/assessor/A-017.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Actual usable counting implementation, independently passing literal baseline, disclosed isolated valid-contract regression and consumer-visible failing required check; a passing injected test is not a trigger."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-005",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "failed-required-check",
+        "observe": "Consumer-visible required acceptance command exits nonzero after actual in-scope implementation work.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "failed-check",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-018",
+      "title": "Publish and continue",
+      "order": 18,
+      "phase": "P4",
+      "dependencies": [
+        "A-005"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-018.md",
+      "assessor_contract": "cases/assessor/A-018.json",
+      "assessor_guide": "cases/assessor/A-018.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-005",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "rejected-push",
+        "observe": "Actual consumer publication attempt receives controlled rejection for retained commit/merge.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-019",
+      "title": "Integrate current work",
+      "order": 19,
+      "phase": "P4",
+      "dependencies": [
+        "A-006"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-019.md",
+      "assessor_contract": "cases/assessor/A-019.json",
+      "assessor_guide": "cases/assessor/A-019.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Actual complete reviewed phase retained as incoming parent of assessed A006 merge; isolate pre-integration target/incoming parents and verify all exits before trial divergence."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-006",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch",
+            "merge_parents"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "conflict-and-prospective-failure",
+        "observe": "Observe actual MERGE_HEAD/nonzero index stages before suspension; a later fresh continuation also observes failing required prospective check before completion.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "integration-recovery",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-020",
+      "title": "Scoped task completion",
+      "order": 20,
+      "phase": "P4",
+      "dependencies": [
+        "A-003"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-020.md",
+      "assessor_contract": "cases/assessor/A-020.json",
+      "assessor_guide": "cases/assessor/A-020.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-003",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-021",
+      "title": "Selected task incorporation",
+      "order": 21,
+      "phase": "P4",
+      "dependencies": [
+        "A-008"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-021.md",
+      "assessor_contract": "cases/assessor/A-021.json",
+      "assessor_guide": "cases/assessor/A-021.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-008",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "dirty-transfer",
+        "observe": "Observe first actual selected document/list edit or source move with another selected transfer/link still pending.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "partial-transfer",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-022",
+      "title": "Acceptance change",
+      "order": 22,
+      "phase": "P4",
+      "dependencies": [
+        "A-010"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-022.md",
+      "assessor_contract": "cases/assessor/A-022.json",
+      "assessor_guide": "cases/assessor/A-022.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-010",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "input_bindings": {
+        "acceptance_change": "current.acceptance_change"
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-023",
+      "title": "Maintained hosted completion",
+      "order": 23,
+      "phase": "P4",
+      "dependencies": [
+        "A-003"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-023.md",
+      "assessor_contract": "cases/assessor/A-023.json",
+      "assessor_guide": "cases/assessor/A-023.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects.",
+        "Required core: authorized disposable controlled effect ledger and exact readback; optional live-response-loss additionally needs isolated provider identity and safe post-send suppression."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-003",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "uncertain-hosted-effect",
+        "observe": "Observe consumer-selected controlled fixture write with unavailable/lost response; only optional live-response-loss requires actual hosted write/closure and provider readback. Retain exact selected operation identity.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "controlled-reconciliation",
+          "requirement": "required",
+          "evidence_class": "controlled",
+          "facilities": []
+        },
+        {
+          "id": "live-response-loss",
+          "requirement": "optional",
+          "evidence_class": "live-provider",
+          "facilities": [
+            "isolated_hosted_identity",
+            "post_write_response_suppression"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-024",
+      "title": "Tracking access",
+      "order": 24,
+      "phase": "P4",
+      "dependencies": [
+        "A-003"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-024.md",
+      "assessor_contract": "cases/assessor/A-024.json",
+      "assessor_guide": "cases/assessor/A-024.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-003",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "interruption_trigger": {
+        "protocol": "access-classification",
+        "observe": "Each actual operation separately encounters injected denial, rate-limit or unavailable protected session.",
+        "continuation_input": "cases/consumer/continuation.md",
+        "fresh_context": true,
+        "guide": "cases/assessor/INTERRUPTIONS.md"
+      },
+      "variants": [
+        {
+          "id": "denial",
+          "requirement": "required",
+          "evidence_class": "controlled",
+          "facilities": []
+        },
+        {
+          "id": "rate-limit",
+          "requirement": "required",
+          "evidence_class": "controlled",
+          "facilities": []
+        },
+        {
+          "id": "unavailable-access",
+          "requirement": "required",
+          "evidence_class": "controlled",
+          "facilities": []
+        },
+        {
+          "id": "native-recovery",
+          "requirement": "optional",
+          "evidence_class": "native",
+          "facilities": [
+            "protected_handoff",
+            "recoverable_native_credentials",
+            "fresh_context"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A-025",
+      "title": "Credential handling",
+      "order": 25,
+      "phase": "P4",
+      "dependencies": [
+        "A-001"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-025.md",
+      "assessor_contract": "cases/assessor/A-025.json",
+      "assessor_guide": "cases/assessor/A-025.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-001",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-026",
+      "title": "Verification only",
+      "order": 26,
+      "phase": "P4",
+      "dependencies": [
+        "A-005"
+      ],
+      "mode": "isolated-trial",
+      "consumer_input": "cases/consumer/A-026.md",
+      "assessor_contract": "cases/assessor/A-026.json",
+      "assessor_guide": "cases/assessor/A-026.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": "A-005",
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "input_bindings": {
+        "verification_commands": "current.verification_commands"
+      },
+      "variants": [
+        {
+          "id": "empty-selection",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        },
+        {
+          "id": "failing-baseline",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        },
+        {
+          "id": "preservation",
+          "requirement": "required",
+          "evidence_class": "consumer",
+          "facilities": []
+        }
+      ]
+    },
+    {
+      "id": "A-027",
+      "title": "Product status",
+      "order": 27,
+      "phase": "P5",
+      "dependencies": [
+        "A-001",
+        "A-002",
+        "A-003",
+        "A-004",
+        "A-005",
+        "A-006",
+        "A-007",
+        "A-008",
+        "A-009",
+        "A-010",
+        "A-011",
+        "A-012",
+        "A-013",
+        "A-014",
+        "A-015",
+        "A-016",
+        "A-017",
+        "A-018",
+        "A-019",
+        "A-020",
+        "A-021",
+        "A-022",
+        "A-023",
+        "A-024",
+        "A-025",
+        "A-026"
+      ],
+      "mode": "independent-assessment",
+      "consumer_input": "cases/consumer/A-027.md",
+      "assessor_contract": "cases/assessor/A-027.json",
+      "assessor_guide": "cases/assessor/A-027.md",
+      "prerequisites": [
+        "Dedicated repository, pinned source and independently observed runtime facilities.",
+        "Assessed/published predecessor checkpoint; isolated trials fork its actual retained objects."
+      ],
+      "checkpoint_bindings": {
+        "start": {
+          "from_case": null,
+          "checkpoint_fields": [
+            "product_commit",
+            "product_branch",
+            "integration_commit",
+            "integration_branch"
+          ]
+        },
+        "identities": "Resolve task IDs, owner paths, feature/revision branch and hosted IDs from actual sanitized current-state observations; do not substitute historical values."
+      },
+      "variants": [
+        {
+          "id": "core",
+          "requirement": "required",
+          "evidence_class": "inspection",
+          "facilities": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "case_id": "A-019",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    },
+    {
+      "id": "merge-parents",
+      "kind": "git",
+      "field": "parents",
+      "expected_ref": "checkpoint_refs.merge_parents"
+    }
+  ],
+  "required_agent_checks": [
+    "Actual unmerged index/parents and prospective failure remain uncommitted/unpublished.",
+    "Fresh continuation retains edits/merge identity, scopes resolution, reruns failed required check and creates/publishes verified two-parent integration; no clean restart."
+  ]
+}
