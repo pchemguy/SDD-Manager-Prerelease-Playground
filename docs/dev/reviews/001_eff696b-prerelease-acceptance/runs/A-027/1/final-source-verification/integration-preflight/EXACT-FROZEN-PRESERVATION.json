@@ -1,0 +1,27 @@
+{
+  "baseline": "b246f8f92f35a8d2077bce467102f63270d64f2b",
+  "observed_head": "fb2a06bb3f3ed5beeba03c045019d6c1f461de09",
+  "discovered_campaign_paths": [
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity",
+    "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order",
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract"
+  ],
+  "tracked_objects": 16,
+  "exact_path_mode_object_delta_empty": true,
+  "closed_contents_read": false,
+  "initial_probe_gap": "Earlier command4 guessed two nonexistent campaign directories; its empty selected delta did not certify all closed campaigns. Original narrow probe retained. This actual discovered four-directory object comparison supersedes that claim.",
+  "object_inventory_sha256": "9d2be4bee60b18017494b329eaf574276d7c8a667a6c6534e0db976b73211942",
+  "argv": [
+    "git",
+    "diff",
+    "--raw",
+    "b246f8f92f35a8d2077bce467102f63270d64f2b",
+    "fb2a06bb3f3ed5beeba03c045019d6c1f461de09",
+    "--",
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity",
+    "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order",
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract"
+  ]
+}

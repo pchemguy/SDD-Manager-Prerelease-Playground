@@ -1,0 +1,62 @@
+{
+  "EXACT-FROZEN-PRESERVATION.json": {
+    "sha256": "a7f3c45212b57bfb0a5c890a84ad38070831836420b052b5afc0387a6a998c3e",
+    "bytes": 1245
+  },
+  "command-0-stderr.bin": {
+    "sha256": "5c13497cf87c17247ae75f35bc5d5c7178a439fd39e6e0bac392768049fbaf4e",
+    "bytes": 91
+  },
+  "command-0-stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-1-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-1-stdout.bin": {
+    "sha256": "0a0e498d143242b89f2c4d10159dd7e35436f9288ef5ed0238a9b4a4c0dadd42",
+    "bytes": 41
+  },
+  "command-2-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-2-stdout.bin": {
+    "sha256": "e129eb6e76dce4061ec307711b94b9348ab963cca321e7753a5268a59da2b549",
+    "bytes": 41
+  },
+  "command-3-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-3-stdout.bin": {
+    "sha256": "56324659d457d5b568e8d77c2d82588fac8a875af3ebd9b99584c167611199ae",
+    "bytes": 2665
+  },
+  "command-4-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-4-stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "commands.json": {
+    "sha256": "20eaf7cd8b8119578fc462e448f835e9f4af2a49ce647b96b5c5477b50400eb3",
+    "bytes": 2985
+  },
+  "exact-frozen-diff-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "exact-frozen-diff-stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "exact-frozen-objects.bin": {
+    "sha256": "9d2be4bee60b18017494b329eaf574276d7c8a667a6c6534e0db976b73211942",
+    "bytes": 1991
+  }
+}
