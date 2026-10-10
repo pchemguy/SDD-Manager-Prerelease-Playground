@@ -6,15 +6,7 @@
   "attempt": 1,
   "role": "consumer",
   "last_completed_action": "A-001 assessment published and independently retained prerequisite confirmed",
-  "pending_operation": {
-    "kind": "api",
-    "status": "in_progress",
-    "description": "Repaired complete-release rerun dispatched after clean first-create proof",
-    "identity": {
-      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
-      "operation_id": "037-cp014-repaired-complete-rerun-001"
-    }
-  },
+  "pending_operation": null,
   "next_action": "Fresh consumer performs A-002 selection-only request",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
@@ -48,6 +40,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CONSUMER-FINAL-OBSERVATIONS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/BINDINGS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/HANDOFF.md",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/START.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/repaired-complete-rerun/RESULT.json"
   ]
 }
