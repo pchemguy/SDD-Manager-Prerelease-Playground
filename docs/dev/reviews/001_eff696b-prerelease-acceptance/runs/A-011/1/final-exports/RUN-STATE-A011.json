@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P3",
+  "attempt": 1,
+  "pending_operation": null,
+  "checkpoint_refs": {
+    "product_branch": "phase/2-json-and-stdin",
+    "product_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "integration_branch": "main",
+    "integration_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "case_id": "A-011",
+  "role": "consumer",
+  "last_completed_action": "Read-only A-011 assessment pending final seal",
+  "next_action": "Stop after assessment; preserve paused Phase 2",
+  "evidence_paths": []
+}

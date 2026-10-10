@@ -1,0 +1,268 @@
+[
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AGENTS.md",
+    "reported_sha256": "ffaeb37b8b2f403844b4db50951176bfb2e9d3b3ea809554073af3119d287fe1",
+    "actual_sha256": "ffaeb37b8b2f403844b4db50951176bfb2e9d3b3ea809554073af3119d287fe1",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/SDD-MANAGER.md",
+    "reported_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AI_DISCLOSURE.md",
+    "reported_sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "actual_sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/README.md",
+    "reported_sha256": "2e5bc84b6bdd7f9e984924e0847776f976069701741428819ffebcee625244f3",
+    "actual_sha256": "2e5bc84b6bdd7f9e984924e0847776f976069701741428819ffebcee625244f3",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/public-api.md",
+    "reported_sha256": "0906a4966e3bb3a3a80b613210f68ea681c0f0fb9317a2ecc252472d90fa00c8",
+    "actual_sha256": "0906a4966e3bb3a3a80b613210f68ea681c0f0fb9317a2ecc252472d90fa00c8",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PROJECT.md",
+    "reported_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "actual_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/ARCHITECTURE.md",
+    "reported_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "actual_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/DECOMPOSITION.md",
+    "reported_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "actual_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/SPEC.md",
+    "reported_sha256": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+    "actual_sha256": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PLAN.md",
+    "reported_sha256": "e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199",
+    "actual_sha256": "e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/layout.md",
+    "reported_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "actual_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/TASKS.md",
+    "reported_sha256": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+    "actual_sha256": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/SPEC-REVIEW-REPORT.md",
+    "reported_sha256": "66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372",
+    "actual_sha256": "66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372",
+    "equal": true,
+    "scope": "partial gate read initially; full captured readback"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PLAN-REVIEW-REPORT.md",
+    "reported_sha256": "1e4b8505f11c76f366fc56c04a7af612667ca365f88f5c71e4dc0a04b794f267",
+    "actual_sha256": "1e4b8505f11c76f366fc56c04a7af612667ca365f88f5c71e4dc0a04b794f267",
+    "equal": true,
+    "scope": "partial gate read initially; full captured readback"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/TASKS-REVIEW-REPORT.md",
+    "reported_sha256": "ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f",
+    "actual_sha256": "ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f",
+    "equal": true,
+    "scope": "partial gate read initially; full captured readback"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/cli.py",
+    "reported_sha256": "157fb57e45d3c1c6490adf063221a3b4ffa827f411a6ea7055fdaf8b8630bcef",
+    "actual_sha256": "157fb57e45d3c1c6490adf063221a3b4ffa827f411a6ea7055fdaf8b8630bcef",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/core.py",
+    "reported_sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+    "actual_sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/io.py",
+    "reported_sha256": "9b428eebeba81169ca54e53b1449430f4e247b0285d54c50735a3da3864764f0",
+    "actual_sha256": "9b428eebeba81169ca54e53b1449430f4e247b0285d54c50735a3da3864764f0",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__init__.py",
+    "reported_sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+    "actual_sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__main__.py",
+    "reported_sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590",
+    "actual_sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tests/unit/test_cli.py",
+    "reported_sha256": "6ae12b7fe9ad2513479fa9f6b1815e292f8c7310f20d9f73ed410a00f8a2b1ba",
+    "actual_sha256": "6ae12b7fe9ad2513479fa9f6b1815e292f8c7310f20d9f73ed410a00f8a2b1ba",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tests/integration/test_cli.py",
+    "reported_sha256": "1c46d26bcfa0f11879c1182684022f84b36ccf0eae0ce364f9acb87bf6d28920",
+    "actual_sha256": "1c46d26bcfa0f11879c1182684022f84b36ccf0eae0ce364f9acb87bf6d28920",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tests/integration/test_distribution.py",
+    "reported_sha256": "b9385a4195ec9bff898bf2d91cd8891387b6333d0f6163c995db69c36d40f59c",
+    "actual_sha256": "b9385a4195ec9bff898bf2d91cd8891387b6333d0f6163c995db69c36d40f59c",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tools/check_distribution.py",
+    "reported_sha256": "bf75ab9be6440da96af6c17308a4c671acc64c9e94713f4e623dcb27bfa21767",
+    "actual_sha256": "bf75ab9be6440da96af6c17308a4c671acc64c9e94713f4e623dcb27bfa21767",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tools/package_source.py",
+    "reported_sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+    "actual_sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/PLUGIN-SOURCE.json",
+    "reported_sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "actual_sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/AGENTS.md",
+    "reported_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/README.md",
+    "reported_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "actual_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/plugin.json",
+    "reported_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "actual_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+    "reported_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "actual_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md",
+    "reported_sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+    "actual_sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+    "reported_sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+    "actual_sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+    "reported_sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "actual_sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+    "reported_sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "actual_sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-steer/SKILL.md",
+    "reported_sha256": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+    "actual_sha256": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md",
+    "reported_sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+    "actual_sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+    "reported_sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "actual_sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "equal": true,
+    "scope": "full"
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a011-consumer-input.md",
+    "reported_sha256": "82d7b1b73a66257c723246dc5e00c6e61f49eeaa3c94797f4eae5eb557fca283",
+    "actual_sha256": "82d7b1b73a66257c723246dc5e00c6e61f49eeaa3c94797f4eae5eb557fca283",
+    "equal": true,
+    "scope": "full"
+  }
+]

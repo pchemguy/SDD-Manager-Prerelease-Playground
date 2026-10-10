@@ -1,0 +1,21 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "unchanged-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Assessment describes retained contracts and impacts, using actual amended candidate scope.",
+    "No revision branch, governing/source/test edits or resumed task execution. Compare complete before/after state."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}
