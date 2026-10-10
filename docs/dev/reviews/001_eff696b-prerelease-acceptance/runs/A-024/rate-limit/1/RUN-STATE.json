@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-024",
+  "attempt": 1,
+  "role": "consumer",
+  "last_completed_action": "Controlled variant setup published next; separate fresh consumer not yet dispatched",
+  "pending_operation": null,
+  "next_action": "Observe consumer-selected fault, preserve trigger, restore only facility and dispatch separate fresh continuation",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a024-rate-limit",
+    "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
+    "integration_branch": "main",
+    "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/tracking_facility.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONTROL.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/SETUP.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/PUBLIC-INTERFACE.md"
+  ],
+  "variant": "rate-limit"
+}
