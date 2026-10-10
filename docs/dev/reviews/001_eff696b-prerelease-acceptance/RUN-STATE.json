@@ -6,16 +6,8 @@
   "attempt": 1,
   "role": "coordinator",
   "last_completed_action": "Coordinator assessed and accepted exact layout and combined PLAN QC",
-  "pending_operation": {
-    "kind": "api",
-    "status": "in_progress",
-    "description": "Partial upload effect/recovery verified; body-conflict and unexpected owned-sentinel asset trials dispatched",
-    "identity": {
-      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
-      "operation_id": "037-cp014-final-negative-trials"
-    }
-  },
-  "next_action": "Consumer prepares TASKS and owner QC; assess final publisher negatives",
+  "pending_operation": null,
+  "next_action": "Assess concrete TASKS/QC; source CP-014 checkpoint then publisher fresh-create repair and trial",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "b3ba0338d71c167aaec8ca85317d09002557ea2d",
@@ -40,6 +32,8 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/DECOMPOSITION-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/SPEC-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/PLAN-DECISION.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/LAYOUT-DECISION.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/LAYOUT-DECISION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/body-conflict/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/foreign-asset/RESULT.json"
   ]
 }

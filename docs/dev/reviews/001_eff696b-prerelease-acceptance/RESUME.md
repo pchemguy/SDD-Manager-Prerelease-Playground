@@ -47,3 +47,7 @@ Attempt 2 run `38046245961` reached the controlled post-acknowledgement stop: dr
 ## Delegated layout assessment
 
 Coordinator accepted concrete layout/combined QC at `b3ba0338`, with exact blobs and substantive basis in LAYOUT-DECISION.json. Consumer may derive TASKS and owner QC; implementation and hosting remain held for actual prerequisites.
+
+## Final CP-014 negative assessment
+
+Body-conflict run `38046659644` rejects different curated fields; inventory-conflict run `38046666461` rejects the preserved coordinator-owned sentinel. Existing body and package asset IDs/bytes metadata remain unchanged; sentinel `627726873` remains. Both expected refusals pass. First-create failures remain retained and source publisher repair/fresh-first-run proof is pending. Incidental validation bytecode committed at `0e5c6d9` was removed at `8d4da19`; protected pinned harness content is restored, history preserved.

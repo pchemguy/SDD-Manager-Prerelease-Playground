@@ -1,0 +1,40 @@
+{
+  "run_id": 38046666461,
+  "publisher_job_id": 114197617246,
+  "run_conclusion": "failure",
+  "assessment": "Passed expected rejection with preserved owned state",
+  "error": "ValueError: Duplicate or foreign release assets",
+  "release_id": 408880857,
+  "draft": false,
+  "prerelease": true,
+  "body": "## Controlled live-provider trial\n\nIsolated metadata fixture for post-upload stop and read-before-retry.\n",
+  "assets_after": [
+    {
+      "id": 627726873,
+      "name": "foreign-owned-fixture.txt",
+      "size": 86,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:56:39Z",
+      "updated_at": "2026-10-10T10:56:39Z"
+    },
+    {
+      "id": 627714735,
+      "name": "sdd-manager.zip",
+      "size": 317921,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:50:03Z",
+      "updated_at": "2026-10-10T10:50:03Z"
+    },
+    {
+      "id": 627720214,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:53:04Z",
+      "updated_at": "2026-10-10T10:53:04Z"
+    }
+  ],
+  "latest_id": null,
+  "evidence_class": "actual GitHub workflow plus authenticated release readback; preservation sentinel is coordinator-owned and foreign only to publisher inventory",
+  "observed_at": "2026-10-10T11:06:55.700165+00:00"
+}
