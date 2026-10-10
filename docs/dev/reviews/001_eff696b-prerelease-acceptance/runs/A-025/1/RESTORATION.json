@@ -1,0 +1,16 @@
+{
+  "actor": "coordinator",
+  "observed_at": "2026-10-10T11:40:37.736392+00:00",
+  "prerequisite_published_assessment_commit": "c112551b041a171f1469596df1c529579caaafd1",
+  "actions": [
+    "Restored only coordinator-owned .gitignore injection to exact HEAD original",
+    "Removed only synthetic gh.tkn staged entry and local synthetic file"
+  ],
+  "status_before": "M  .gitignore\nA  gh.tkn\nA  unrelated-fixture.txt\n",
+  "status_after": "A  unrelated-fixture.txt\n",
+  "head": "1e3305c8659045945244c06861079fef879ca3c3",
+  "unrelated_index_entry_unchanged": true,
+  "unrelated_file_hash_unchanged": true,
+  "original_gitignore_hash_restored": true,
+  "product_commit_or_push": false
+}
