@@ -193,3 +193,10 @@ Automatic review rejected proposed external trialbranch creation because destina
 Actual T001 checks, initialcheckbox and10 owned staged files retained with HEAD/localdestination unchanged88a. Nativeprecommithold prevented closingcommit; consumer acknowledgedstop and sealedwithoutretry. Independent8 unit/2 integration tests Passed; actual HOLD/currentindex/workfiles match. Exactindex, stage0 blobs, patches, pendingworkfiles and verified baseline-retainingbundle exported for recovery.
 
 First assessor export screening rejected NUL commandprovenance held onlyin ephemeral memory; originalrecordbytes/hash unavailable, candidly retained asgap. Fresh independent commandcaptures and exactbinaryexports remain distinct. Coordinator pendingoperation schema values corrected without productstatechange. Publishtriggerexports before boundedcontrolrestore/freshcontinuation; aggregategrade pending.
+
+
+## A016/A018 local publication facilities prepared
+
+Actual pristine preparation88a for T001 and reviewed countingmilestone7d for T005 retained in separate isolated clones and localbare destinations. Complete baselinebundles/indexes/workfiles/provenance/hashes exported; native same-tip hooks pass withoutmarkers. A016 externalprepush can hold actual changed publication afterrealcommit; A018 bareupdate can reject actual changedpublication. No consumer task/trigger supplied or observed. GitHuborigins read-only after priorremote-branch approval rejection; final completeobjects/recoveryevidence will publish to authorized evidencebranch.
+
+A018 original failed scopeassessment and corrected R008 applicability/reassessment retained separately. Initial renderer lacked newerpositivephase tipobject; corrected binding to actual already-published retainedA026trial7d; originaldraft/retry retained. Publishsetupbeforefreshordinaryworkers. PositiveA008 cursor untouched; no additionalgradeclaimed.

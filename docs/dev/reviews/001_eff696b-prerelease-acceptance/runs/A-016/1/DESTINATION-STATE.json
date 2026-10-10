@@ -1,0 +1,13 @@
+{
+  "destination": "/workspace/scratch/46b31bb4dff6/037-a016-remote.git",
+  "local_config": [
+    "core.repositoryformatversion=0",
+    "core.filemode=true",
+    "core.bare=true"
+  ],
+  "refs": [
+    "88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/heads/trial/037-a016-unpublished"
+  ],
+  "selected_ref": "refs/heads/trial/037-a016-unpublished",
+  "selected_tip": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+}

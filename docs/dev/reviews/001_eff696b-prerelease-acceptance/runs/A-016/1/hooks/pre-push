@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+export PYTHONDONTWRITEBYTECODE=1
+exec python -B /workspace/scratch/46b31bb4dff6/037-a016-setup/capture_gate.py --pre-push "$@"

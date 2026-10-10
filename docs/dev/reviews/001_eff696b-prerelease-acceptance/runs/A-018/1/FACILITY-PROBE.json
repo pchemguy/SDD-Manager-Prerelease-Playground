@@ -1,0 +1,23 @@
+{
+  "probe_class": "fixture plumbing only",
+  "trigger_observed": false,
+  "same_exact_tip_selected": false,
+  "changed_selected_tip_selected": true,
+  "wrong_destination_selected": false,
+  "marker_written": false,
+  "native_hook_syntax_status": 0,
+  "a018_update_selection_not_executed": true,
+  "native_same_tip_noop_hook": {
+    "command": [
+      "/workspace/scratch/46b31bb4dff6/037-a018-setup/hooks/update",
+      "refs/heads/trial/037-a018-rejected",
+      "7d003c1cf31c994340d8644e95990ef2253754ed",
+      "7d003c1cf31c994340d8644e95990ef2253754ed"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "marker_absent": true
+  }
+}

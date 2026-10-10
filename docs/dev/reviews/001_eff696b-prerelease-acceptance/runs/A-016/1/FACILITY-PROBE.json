@@ -1,0 +1,22 @@
+{
+  "probe_class": "fixture plumbing only",
+  "trigger_observed": false,
+  "same_exact_tip_selected": false,
+  "changed_selected_tip_selected": true,
+  "wrong_destination_selected": false,
+  "marker_written": false,
+  "native_hook_syntax_status": 0,
+  "a018_update_selection_not_executed": false,
+  "native_same_tip_noop_hook": {
+    "command": [
+      "/workspace/scratch/46b31bb4dff6/037-a016-setup/hooks/pre-push",
+      "trial-delivery",
+      "/workspace/scratch/46b31bb4dff6/037-a016-remote.git"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a016-unpublished",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "marker_absent": true
+  }
+}

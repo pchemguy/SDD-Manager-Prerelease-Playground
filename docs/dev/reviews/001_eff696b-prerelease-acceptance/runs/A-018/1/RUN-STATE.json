@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-018",
+  "attempt": 1,
+  "role": "consumer",
+  "last_completed_action": "Actual pristine prerequisite and localbare delivery baseline observed; externalnativehook same-tip plumbing Passed, no consumer trigger yet",
+  "pending_operation": null,
+  "next_action": "Publishsetup then freshordinaryselectedtask consumer; independentlyobserveactualpublicationhold/rejection",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a018-rejected",
+    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "trial-delivery"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/A005-CORRECTED-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/A005-ORIGINAL-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ARTIFACT-MANIFEST.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/BASELINE.bundle",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/BINDINGS-DRAFT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/CONTROL.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/DESTINATION-STATE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/FACILITY-PROBE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/INITIAL-INDEX.bin",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/INITIAL-TRACKED.tar",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ORDINARY-HANDOFF-DRAFT.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/SETUP-NOTES.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/SETUP-PROVENANCE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/capture_gate.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/hooks/update",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/prepare_publication_facilities.py"
+  ]
+}
