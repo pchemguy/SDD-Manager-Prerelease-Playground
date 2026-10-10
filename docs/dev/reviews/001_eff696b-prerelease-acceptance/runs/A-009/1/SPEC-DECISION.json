@@ -1,0 +1,15 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "scope": "Selected main SPEC and adjacent current conformance QC; navigation only outside these owners",
+  "commit": "d9a27477042f4d1e25850673079f2f768171724e",
+  "artifact_blobs": {
+    "docs/dev/SPEC.md": "6c2be8ab711b93cecbf7b083d5d7d6d357eb5215",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "42fd72c96bc7e86c1cf02afb814e11dcb4fbe2cd",
+    "AGENTS.md": "b276b3a374741cbae0e1a1720cfd114baeef4f19",
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "375b0608517f953a043962509539c4e695673911"
+  },
+  "review": "Concrete complete changed SPEC/QC inspected. Named-file grammar, uncapped endpoints, full decode, once-normalized BOM selection, ASCII delimiters, JSON/text equivalence and isolated extracted-entry obligations agree with accepted FEATURE-SPEC. R-001 through R-013/API remain bounded; staged stdin is not pulled forward. Current SPEC hash/QC Revision 3 agree. Active FEATURE sources and unchecked T-018 through T-024 remain; main PLAN/TASKS/report reassessment is reported outside selected scope. No implementation, archive, closure or integration accepted.",
+  "publication_verified": true,
+  "time": "2026-10-10T15:17:23.699252+00:00"
+}
