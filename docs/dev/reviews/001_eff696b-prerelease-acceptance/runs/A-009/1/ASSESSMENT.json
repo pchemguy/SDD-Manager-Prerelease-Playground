@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "case_id": "A-009",
+  "variant": "core",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "independent_assessor": "/root/a009_spec_assessor",
+  "assessed_at": "2026-10-10T15:20:42.109436+00:00",
+  "checkpoint_refs": {
+    "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "product_commit": "d9a27477042f4d1e25850673079f2f768171724e",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "paused_phase_branch": "phase/2-json-and-stdin",
+    "paused_phase_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925"
+  },
+  "original_attempt": {
+    "selected_incorporation": "Passed on original sealed document bytes; no semantic correction requested.",
+    "publication": "Initial HTTPS push unavailable; retained exact commit; transient credential-cache recovery failed; bounded protected askpass recovery published same commit. Original failures retained."
+  },
+  "assistance": "Normal delegated concrete document acceptance after seal; consumer recovered publication within authorized existing destination. No selected-contract coaching or product repair reported.",
+  "criteria": {
+    "selected_scope": "Passed: only main SPEC, its adjacent QC, AGENTS navigation and active-package README changed. 178 other tracked paths byte-identical to actual predecessor, including PLAN/TASKS/reports, all six active feature roots/QC, code/tests/tools and foreign resources.",
+    "spec_conformance": "Passed: stable R001\u2013013/F001\u2013004; accepted named-file delta activated with both spellings, ASCII positive ordered unlimited endpoints, usage-before-acquisition, complete strict decode, once-only BOM/shared logical lines/counting, exact text/integer JSON, API unchanged, named-file docs/nonempty suites/extracted-module obligations. Entire accepted success/invalid matrix retained. Stdin acquisition stays its own milestone. No new unsupported feature invented. Existing accepted design supplies selection seam.",
+    "current_qc": "Passed: SPEC QC Revision3 appends substantive full main SPEC/design review; historical initial/Revision1/Revision2 and resolved SPEC-QC001 preserved. Current SPEC and all four governing hashes independently match committed objects. Scoped technical Ready distinct from delegated acceptance/dependent readiness. Main PLAN/TASKS affected coverage/reports invalidated by explicit outside-impact prose without edits or whole-project Ready claim.",
+    "ownership_retention_archive": "Passed: FEATURE-TASKS singly owns unchecked T018\u2013024; canonical tasks unchanged. Feature sources/reports, implementation review IDs/report links retained. No transfer, archive or source move; active work and unselected links make archive ineligible. Historical deferred-range-feature anchor retained and all37 changed-document local links/anchors valid.",
+    "boundary": "Passed: one owned commit on active preparation branch, single actual predecessor parent, exact live publication and clean index/worktree. Main and pausedPhase2 exact unchanged; no implementation, product checks, task completion, implementation report, Git merge, phase closure or release.",
+    "hosted": "Passed: independently compared coordinator GET-only safe current readback with original independent A008 evidence; all18 issues,6milestones,13labels and foreigncomment6097383663 exact equal, including bodies via hashes and foreign issue1/issue2 label/material. Current state only; no proof of absence of temporary unseen effects."
+  },
+  "concrete_acceptance": {
+    "decision_commit": "19b24aae16c305b6ab430c6f414a9d8f81866a65",
+    "scope": "Root notification reports exact selected SPEC/QC delegated acceptance after original consumer seal. Original pending-acceptance seal preserved. No new product annotation required by this independent assessment."
+  },
+  "source_provenance": {
+    "pinned_commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "unchanged_resource_files": 134,
+    "activation": "Consumer structured record reports productAGENTS first then pinned local manager/owners; no prohibited material read reported. Original native tool transcript unavailable; immutable pin independently verified."
+  },
+  "interventions_and_errors": [
+    {
+      "operation": "initial immediate push",
+      "observed": "fatal: could not read Username for https://github.com: No such device or address",
+      "result": "retained commit; remote remained baseline; no further project work"
+    },
+    {
+      "operation": "transient credential-cache recovery",
+      "observed": "unable to connect to cache daemon: Operation not permitted; then missing username",
+      "result": "no remote mutation; switched to supported protected askpass process channel within same authorized destination"
+    },
+    {
+      "operation": "bounded askpass recovery",
+      "observed": "push exited 0; exact ref readback equals owned commit",
+      "result": "publication resolved; credential material never copied/persisted/exposed"
+    },
+    {
+      "attempt": 1,
+      "result": "AssertionError on T018 ownership regex requiring column-zero checklist; product uses required nested hierarchy indentation. No evidence file written by failed inline checker. Tool call and traceback retained in assessor runtime."
+    },
+    {
+      "attempt": 2,
+      "correction": "Accept structural leading whitespace; same literal unique checklist/unchanged object assertions.",
+      "result": "Passed"
+    }
+  ],
+  "coverage_limits": [
+    "Separate fresh consumer and assessor prompt contexts share broad filesystem; strict filesystem isolation not certified.",
+    "Consumer observation is a structured summary, not full native command transcript; independent committed objects/ref/hash checks establish final behavior, not every historical command ordering.",
+    "Safe hosted readback executed by coordinator observer; assessor independently compared exact supplied metadata with original independent A008 evidence and did not access credentials.",
+    "Runtime implementation/distribution acceptance and installed-client discovery/routing not in selected scope. Focused negative QC variants not run here.",
+    "Product seal inspection read-only, no product/provider mutation, credential access or broad filesystem isolation claim."
+  ],
+  "findings": [],
+  "proposal": "No confirmed SDD Manager defect established by selected incorporation; no test-derived change proposed for this case.",
+  "evidence": {
+    "git_checks": "037-a009-independent-git-checks.json",
+    "git_checks_sha256": "3480bb78e6afb297202f1ed26677f4722cfc78dda9fb02802c4d5b0585c8f3cf",
+    "consumer_original": "037-a009-consumer-observations.json",
+    "consumer_original_sha256": "c4baed6b637b56e7ef04d20be935872adc9406568cec01ab657370732b712611",
+    "hosted_original": "037-a009-hosted-readback.json",
+    "hosted_original_sha256": "eff108c6086ed8f979d1efa76447ec4dd0dc0e02554bbf36aa41668d68f54d71",
+    "hosted_baseline": "037-a008-independent-check-evidence.json",
+    "hosted_baseline_sha256": "b2f82704c8fb6b8b07c9f13395a04bf558bd828038d3b8452ba90c8efc71c41a",
+    "hosted_exact_comparison": {
+      "issues": true,
+      "milestones": true,
+      "labels": true,
+      "foreign_comment": true
+    }
+  }
+}

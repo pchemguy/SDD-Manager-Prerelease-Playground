@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "actor": "coordinator read-only provider observer",
+  "observed_at": "2026-10-10T15:18:29.846430+00:00",
+  "provider_operations": [
+    {
+      "method": "GET",
+      "path": "/issues?state=all&per_page=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/milestones?state=all&per_page=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/labels?per_page=100",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/issues/2/comments?per_page=100",
+      "status": 200
+    }
+  ],
+  "issues": [
+    {
+      "number": 18,
+      "id": 5791788182,
+      "title": "[T-017] Review, test and report phase 2 and final delivery",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-10-10T13:46:18Z",
+      "closed_at": null,
+      "body_sha256": "52edf6b5855a1957f36fa1555211bfe657688fdcdb4c211ac199a6ca61943587",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 6
+    },
+    {
+      "number": 17,
+      "id": 5791787598,
+      "title": "[T-016] Review, test and report milestone 2.2",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-10-10T13:46:13Z",
+      "closed_at": null,
+      "body_sha256": "42226bd414149202a420400245b6a1bd87097997eb4d914b7769a260cde493c3",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 5
+    },
+    {
+      "number": 16,
+      "id": 5791786938,
+      "title": "[T-015] Complete final documentation and source-package exits",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-10-10T13:46:08Z",
+      "closed_at": null,
+      "body_sha256": "0de859ee393c13219aa4f014f941fcdbbe385ba77f7f91c2123340714a7427d6",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 5
+    },
+    {
+      "number": 15,
+      "id": 5791786390,
+      "title": "[T-014] Integrate stdin across text and JSON CLI",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-10-10T13:46:03Z",
+      "closed_at": null,
+      "body_sha256": "d8d1deeb871b9803bcbb4cdbc759bcccc3a9e243df412829959889fd6ccb85ef",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 5
+    },
+    {
+      "number": 14,
+      "id": 5791785817,
+      "title": "[T-013] Add borrowed binary stdin acquisition",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-10-10T13:45:59Z",
+      "closed_at": null,
+      "body_sha256": "d8b2862a580ae238a7fe80f1642a18432b452ed1ab32a30e92c876d7383252b5",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 5
+    },
+    {
+      "number": 13,
+      "id": 5791785181,
+      "title": "[T-012] Review, test and report milestone 2.1",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T13:45:54Z",
+      "closed_at": "2026-10-10T13:55:24Z",
+      "body_sha256": "442042e55af9ac12d2b5cea772b63cb8d5df2678d793224452398e02ee9d4720",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 4
+    },
+    {
+      "number": 12,
+      "id": 5791784605,
+      "title": "[T-011] Verify JSON from extracted source",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T13:45:49Z",
+      "closed_at": "2026-10-10T13:52:14Z",
+      "body_sha256": "66ed1a39a861aa0431bdb12cc333a43a07e5c25818d1b53430cb7af2f729fefd",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 4
+    },
+    {
+      "number": 11,
+      "id": 5791784064,
+      "title": "[T-010] Add JSON CLI output with retained text behavior",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T13:45:45Z",
+      "closed_at": "2026-10-10T13:51:10Z",
+      "body_sha256": "cf8527342cccc3106365f094376882bee21a6a6b9c74ca83295658215b6fc861",
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "milestone": 4
+    },
+    {
+      "number": 10,
+      "id": 5790855234,
+      "title": "[T-009] Review, test and report phase 1",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:59Z",
+      "closed_at": "2026-10-10T13:30:29Z",
+      "body_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 3
+    },
+    {
+      "number": 9,
+      "id": 5790854318,
+      "title": "[T-008] Review, test and report milestone 1.2",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:50Z",
+      "closed_at": "2026-10-10T13:27:37Z",
+      "body_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 2
+    },
+    {
+      "number": 8,
+      "id": 5790853387,
+      "title": "[T-007] Build and verify isolated source distribution",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:41Z",
+      "closed_at": "2026-10-10T13:25:15Z",
+      "body_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 2
+    },
+    {
+      "number": 7,
+      "id": 5790852415,
+      "title": "[T-006] Document public API and runnable named-file usage",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:31Z",
+      "closed_at": "2026-10-10T13:21:58Z",
+      "body_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 2
+    },
+    {
+      "number": 6,
+      "id": 5790851199,
+      "title": "[T-005] Complete named-file CLI failure and usage handling",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:20Z",
+      "closed_at": "2026-10-10T13:19:32Z",
+      "body_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 2
+    },
+    {
+      "number": 5,
+      "id": 5790850206,
+      "title": "[T-004] Review, test and report milestone 1.1",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:11Z",
+      "closed_at": "2026-10-10T13:03:04Z",
+      "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 1
+    },
+    {
+      "number": 4,
+      "id": 5790849215,
+      "title": "[T-003] Integrate named-file CLI and nonempty product checks",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:36:02Z",
+      "closed_at": "2026-10-10T13:00:26Z",
+      "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 1
+    },
+    {
+      "number": 3,
+      "id": 5790848274,
+      "title": "[T-002] Implement strict file acquisition and complete public API",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:35:53Z",
+      "closed_at": "2026-10-10T12:56:55Z",
+      "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0",
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 1
+    },
+    {
+      "number": 2,
+      "id": 5790847351,
+      "title": "[T-001] Implement immutable statistics and whole-text counting",
+      "state": "closed",
+      "state_reason": "completed",
+      "created_at": "2026-10-10T11:35:45Z",
+      "closed_at": "2026-10-10T12:40:07Z",
+      "body_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652",
+      "labels": [
+        "campaign-037-preserve",
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "milestone": 1
+    },
+    {
+      "number": 1,
+      "id": 5790780797,
+      "title": "Campaign 037 unrelated preservation fixture",
+      "state": "open",
+      "state_reason": null,
+      "created_at": "2026-10-10T11:25:54Z",
+      "closed_at": null,
+      "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce",
+      "labels": [
+        "campaign-037-preserve"
+      ],
+      "milestone": null
+    }
+  ],
+  "milestones": [
+    {
+      "number": 1,
+      "id": 18467474,
+      "title": "sdd-1.1-Named-file-counting",
+      "state": "closed",
+      "created_at": "2026-10-10T11:33:56Z",
+      "closed_at": "2026-10-10T13:04:00Z",
+      "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+    },
+    {
+      "number": 2,
+      "id": 18467475,
+      "title": "sdd-1.2-Failure-handling-and-distribution",
+      "state": "closed",
+      "created_at": "2026-10-10T11:34:04Z",
+      "closed_at": "2026-10-10T13:27:54Z",
+      "description_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be"
+    },
+    {
+      "number": 3,
+      "id": 18467477,
+      "title": "sdd-1.3-Phase-1-review",
+      "state": "closed",
+      "created_at": "2026-10-10T11:34:13Z",
+      "closed_at": "2026-10-10T13:30:42Z",
+      "description_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263"
+    },
+    {
+      "number": 4,
+      "id": 18469337,
+      "title": "sdd-2.1-JSON-output",
+      "state": "closed",
+      "created_at": "2026-10-10T13:45:29Z",
+      "closed_at": "2026-10-10T13:55:41Z",
+      "description_sha256": "b22c295e25349a4ead9cdd15151f00891fc7a3dc33b1f1b1503f3ace75073617"
+    },
+    {
+      "number": 5,
+      "id": 18469338,
+      "title": "sdd-2.2-UTF-8-stdin-and-final-delivery",
+      "state": "open",
+      "created_at": "2026-10-10T13:45:33Z",
+      "closed_at": null,
+      "description_sha256": "3280da843fc4d476975ced4d9b62ad7642ee90541c8d2ef2e879f42528571c12"
+    },
+    {
+      "number": 6,
+      "id": 18469339,
+      "title": "sdd-2.3-Phase-2-and-final-review",
+      "state": "open",
+      "created_at": "2026-10-10T13:45:40Z",
+      "closed_at": null,
+      "description_sha256": "4107d67fc9e7b76f82ac74932f277f18eee3642950ba6d6cda6a21de6be7ec1f"
+    }
+  ],
+  "labels": [
+    {
+      "name": "accessibility",
+      "color": "f143ab",
+      "description": "Barrier affecting people with disabilities"
+    },
+    {
+      "name": "bug",
+      "color": "d73a4a",
+      "description": "Something isn't working"
+    },
+    {
+      "name": "campaign-037-preserve",
+      "color": "5319e7",
+      "description": "Coordinator-owned unrelated preservation fixture"
+    },
+    {
+      "name": "documentation",
+      "color": "0075ca",
+      "description": "Improvements or additions to documentation"
+    },
+    {
+      "name": "duplicate",
+      "color": "cfd3d7",
+      "description": "This issue or pull request already exists"
+    },
+    {
+      "name": "enhancement",
+      "color": "a2eeef",
+      "description": "New feature or request"
+    },
+    {
+      "name": "good first issue",
+      "color": "7057ff",
+      "description": "Good for newcomers"
+    },
+    {
+      "name": "help wanted",
+      "color": "008672",
+      "description": "Extra attention is needed"
+    },
+    {
+      "name": "invalid",
+      "color": "e4e669",
+      "description": "This doesn't seem right"
+    },
+    {
+      "name": "question",
+      "color": "d876e3",
+      "description": "Further information is requested"
+    },
+    {
+      "name": "sdd-phase-1-Named-file-utility",
+      "color": "1d76db",
+      "description": "Phase 1 named-file API/CLI, errors, documentation and source distribution."
+    },
+    {
+      "name": "sdd-phase-2-JSON-and-stdin",
+      "color": "5319e7",
+      "description": "Phase 2: JSON output and UTF-8 stdin increments"
+    },
+    {
+      "name": "wontfix",
+      "color": "ffffff",
+      "description": "This will not be worked on"
+    }
+  ],
+  "foreign_comment": [
+    {
+      "id": 6097383663,
+      "body_sha256": "f7b64d43b11867705802a3c512b2c640d9946655ea7aa1aabe9b297da5e28945"
+    }
+  ],
+  "equal_A008": {
+    "issues": true,
+    "milestones": true,
+    "labels": true,
+    "foreign_comment": true
+  }
+}

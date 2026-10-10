@@ -173,3 +173,10 @@ Original attempt remains Not triggered after concrete review found argparse opti
 After actual native destination rejection, fresh continuation read the retained destination state and published the same T-005 commit 7aa3375 exactly once, with exact readback before further work. Independent assessment confirms unchanged commit/parent/index/tracked bytes and modes, no reimplementation, duplicate completion or T-006 advance. Complete verified Git objects and recovery seals are exported; original deterministic checks Passed separately with explicit local-delivery configuration. Original Not triggered attempt and corrected review/RED/GREEN/rejection remain distinct.
 
 Controlled local recovery and recorded assistance are explicit; no live GitHub trial delivery, native process termination, broad filesystem isolation or complete historical native transcript claim. Required original-pin accounting is 19 Passed, 2 Failed and 11 unresolved; corrected A004/A005 rechecks remain separate. A009 independent assessment is pending. Full readiness remains Open.
+
+
+## A009 selected main SPEC incorporation independently Passed
+
+Exact published d9a2747 changes only main SPEC, adjacent current QC and two navigation files. Independent assessment confirms accepted range contracts/current governing hashes, preserved R/API/stdin boundaries and active FEATURE-TASKS ownership, 178 unchanged tracked paths, unchanged main/paused-phase refs, valid links and exact hosted baseline. No implementation, archive, closure or integration occurred. Main PLAN/TASKS/report reassessment impacts are explicitly reported outside the selected scope. Concrete acceptance decision 19b24aa applies to exact artifacts.
+
+Original authentication failures and successful same-commit recovery, assessor regex failure/correction and structured-transcript/shared-filesystem limits remain recorded. Three original deterministic checks Passed separately. Required original-pin totals are 20 Passed, 2 Failed and 10 unresolved; corrected A004/A005 rechecks remain separate. A010 range delivery is next eligible after this assessment publication. Full readiness remains Open.

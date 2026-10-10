@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "case_id": "A-009",
+  "safe_artifacts": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a009-independent-assessment.json",
+      "basename": "037-a009-independent-assessment.json",
+      "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829",
+      "bytes": 7270
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a009-independent-git-checks.json",
+      "basename": "037-a009-independent-git-checks.json",
+      "sha256": "3480bb78e6afb297202f1ed26677f4722cfc78dda9fb02802c4d5b0585c8f3cf",
+      "bytes": 73017
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a009-consumer-observations.json",
+      "basename": "037-a009-consumer-observations.json",
+      "sha256": "c4baed6b637b56e7ef04d20be935872adc9406568cec01ab657370732b712611",
+      "bytes": 6079
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a009-hosted-readback.json",
+      "basename": "037-a009-hosted-readback.json",
+      "sha256": "eff108c6086ed8f979d1efa76447ec4dd0dc0e02554bbf36aa41668d68f54d71",
+      "bytes": 12364
+    }
+  ],
+  "excluded": "Credential material, secret paths and raw protected provider bodies not retained. Input/handoff ownership remains coordinator."
+}
