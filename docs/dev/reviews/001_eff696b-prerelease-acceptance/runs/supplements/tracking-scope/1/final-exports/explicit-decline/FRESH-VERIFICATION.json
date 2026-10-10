@@ -1,0 +1,42 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/unit",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_mixed_terminators_and_final_segments (tests.unit.test_core.CountingTests.test_mixed_terminators_and_final_segments) ... ok\ntest_normalization_removes_one_bom_only (tests.unit.test_core.CountingTests.test_normalization_removes_one_bom_only) ... ok\ntest_spec_whole_input_matrix (tests.unit.test_core.CountingTests.test_spec_whole_input_matrix) ... ok\ntest_unicode_whitespace_does_not_broaden_line_terminators (tests.unit.test_core.CountingTests.test_unicode_whitespace_does_not_broaden_line_terminators) ... ok\ntest_unicode_words_and_whitespace_runs (tests.unit.test_core.CountingTests.test_unicode_words_and_whitespace_runs) ... ok\ntest_fields_cannot_be_changed_or_deleted (tests.unit.test_core.TextStatsTests.test_fields_cannot_be_changed_or_deleted) ... ok\ntest_negative_count_in_either_field (tests.unit.test_core.TextStatsTests.test_negative_count_in_either_field) ... ok\ntest_noninteger_count_in_either_field (tests.unit.test_core.TextStatsTests.test_noninteger_count_in_either_field) ... ok\ntest_value_equality_and_integer_fields (tests.unit.test_core.TextStatsTests.test_value_equality_and_integer_fields) ... ok\ntest_zero_and_large_counts (tests.unit.test_core.TextStatsTests.test_zero_and_large_counts) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_public_bom_and_empty_results (tests.integration.test_api.PublicTextApiTests.test_public_bom_and_empty_results) ... ok\ntest_public_calls_are_silent_and_preserve_input (tests.integration.test_api.PublicTextApiTests.test_public_calls_are_silent_and_preserve_input) ... ok\ntest_public_exports_match_the_core (tests.integration.test_api.PublicTextApiTests.test_public_exports_match_the_core) ... ok\ntest_signature_is_whole_text_with_keyword_only_policy (tests.integration.test_api.PublicTextApiTests.test_signature_is_whole_text_with_keyword_only_policy) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+    }
+  ],
+  "independent_public_probe_cases": 3110,
+  "probe": "exhaustive strings length0..4 over a,space,CR,LF,BOM,U+2028; both policies; regex terminator oracle, signature, constructor invalids and silence",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pass": true
+}
