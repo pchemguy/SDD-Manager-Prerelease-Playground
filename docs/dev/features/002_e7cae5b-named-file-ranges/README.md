@@ -8,6 +8,12 @@ Active source: [FEATURE-SPEC](../../FEATURE-SPEC.md) and [SPEC QC](../../FEATURE
 
 ## Accepted preparation and handoff
 
-SPEC, PLAN and TASKS technical QC and concrete delegated acceptance cover the exact states above. Root TASKS and governing main documents retain their existing scope; no feature source is incorporated or archived. All seven new task checkboxes are unchecked. The preparation branch is published; it remains unmerged and no implementation branch exists. Source/runtime tests and hosted feature projection were not executed during preparation. Maintained tracking is confirmed but future added-work projection is pending and required before task execution.
+SPEC, PLAN and TASKS technical QC and concrete delegated acceptance cover the exact states above. Root TASKS and governing main documents retain their existing scope; FEATURE sources remain active and no source is archived; selected main SPEC incorporation is recorded below. All seven new task checkboxes are unchecked. The preparation branch is published; it remains unmerged and no implementation branch exists. Source/runtime tests and hosted feature projection were not executed during preparation. Maintained tracking is confirmed but future added-work projection is pending and required before task execution.
 
 Stop here before implementation. A later instruction must establish the default accepted-preparation merge/publication, compatible completed JSON baseline on the feature branch, exact paused-phase target and verified eligible hosted associations. Future feature-extent completion cannot close main stdin/final obligations or authorize a release. See accepted FEATURE-PLAN and FEATURE-TASKS for the governing gates.
+
+## Selected main SPEC incorporation
+
+The selected request incorporates accepted named-file F-001–F-004 into [main SPEC](../../SPEC.md) only, with [adjacent SPEC QC Revision 3](../../SPEC-REVIEW-REPORT.md#revision-3). Concrete delegated assessment of this changed SPEC/QC checkpoint is pending. This document incorporation neither delivers ranges nor integrates the preparation branch.
+
+FEATURE-SPEC/PLAN/TASKS and their QC remain active; T-018–T-024 remain unchecked with unchanged executable ownership. Main PLAN/TASKS, their reports and pending stdin/composition/docs/distribution/final obligations require authorized affected reassessment before dependent use. No source is archived, no task is transferred and no hosted object changes. Stop after selected incorporation/publication, before implementation or integration.

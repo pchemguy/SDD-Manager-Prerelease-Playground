@@ -2,11 +2,11 @@
 
 ## Current gate
 
-State: **Ready** for SPEC/design conformance. The coordinator accepted the published SPEC/report checkpoint; the acceptance-only annotation has equivalent reviewed semantic content, and PLAN strategy is eligible. No unresolved confirmed technical finding remains. No implementation or product test result is claimed.
+State: **Ready** for the selected complete SPEC/design conformance assessment, including named-file F-001–F-004. Concrete delegated acceptance of this incorporated checkpoint is pending; dependent use is held. No implementation or product test result is claimed.
 
-Reviewed scope: [SPEC](SPEC.md), requirements R-001 through R-013 and deferred F-001 through F-004; no children. Exact current reviewed SHA-256: `5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a`. Governing document SHA-256 identities are PROJECT `cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d`, ARCHITECTURE `51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302` and DECOMPOSITION `30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee`.
+Reviewed scope: [SPEC](SPEC.md), R-001 through R-013 and named-file F-001 through F-004; no children. Exact reviewed SHA-256: `356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a`. Governing SHA-256 identities: PROJECT `cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d`; ARCHITECTURE `51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302`; DECOMPOSITION `30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee`; FEATURE-SPEC `6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7`. Accepted FEATURE-SPEC/QC checkpoint is `b0f93cf170addc80a92541acc4151058e57b6e64`, accepted by delegated decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Existing package navigation records accepted governing inputs and the later accepted feature PLAN/TASKS; those sources stay active.
 
-The governing semantic content has scoped coordinator acceptance at PROJECT commit `b7b017cf7480bded8ad7f7de4a4eed690083b39c` / blob `861ab8534bf96f22c8293922e34dbc292073bc1c`, ARCHITECTURE commit `334a4dd3f257ffefeb18ab88dfedc425b44838fc` / blob `1e46cf6139b9998f902b16300afed0f63b53e257`, and DECOMPOSITION commit `566a1af2ddd44d79a898c2e67607360395044ba6` / blob `0afa55c7082455d7e102f9c3d056d474e686da57`. Subsequent edits to these roots record those scoped decisions only; inspection found no changed product/design obligation. Current hashes identify the exact governing state used here.
+Earlier SPEC acceptance applies to its exact historical state, not this incorporated state. Main PLAN/TASKS and their reports are outside the selected edit scope: affected range coverage and completion/dependency assumptions require authorized reassessment before dependent use. No whole-project preparation readiness is claimed.
 
 ## Initial review
 
@@ -36,3 +36,25 @@ Document links and heading spacing were checked across changed preparation docum
 ## Revision 2
 
 After actual coordinator acceptance of SPEC/report commit `bf3eb5e9a8d30a9e8a457f7708afa3b400100417` (SPEC blob `86cfd0c0cc6241bad1329a4873dbbc7517cc1160`, report blob `6b7b1637fc0095387b2c32846725f64c4cc2e715`; decision `37115e0`), sdd-specify appended its exact scoped decision to SPEC's review boundary. The current SPEC SHA-256 is `5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a`. The actual diff changes only acceptance evidence, not requirements R-001 through R-013/F-001 through F-004, examples, interfaces or delivery obligations. Governing hashes remain unchanged. Owner recheck retains equivalent full conformance evidence and resolved SPEC-QC-001; Ready remains current. PLAN strategy may proceed; layout and TASKS remain separate review gates.
+
+## Revision 3
+
+On 2026-10-10, sdd-integrate-feature incorporated the accepted named-file FEATURE-SPEC delta into the complete main SPEC and applied sdd-specify conformance criteria. F-001–F-004 retain stable identities and directly describe supported behavior rather than a deferred proposal. R-001–R-013 retain whole-input public signatures/exports, strict UTF-8, shared counts/BOM policy, output/status/ownership and staged stdin obligations. The obsolete scope claim that no implementation exists was replaced with intended-behavior ownership. The retained explicit `deferred-range-feature` anchor preserves active inbound FEATURE-SPEC navigation without revising its accepted bytes.
+
+Reviewed SPEC SHA-256: `356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a`. Governing states are the current-gate identities above; the selected source remains unchanged from its accepted checkpoint.
+
+| Current coverage | Conformance and objective acceptance |
+| --- | --- |
+| R-001–R-006 / C-001–C-006 | Immutable values, unchanged silent whole-input APIs, newline/word/BOM semantics, complete strict decode, file resource ownership and unchanged inputs remain consistent with accepted design. |
+| R-007–R-010 / C-005–C-009 | Parsing precedes acquisition; exact text and integer-only JSON output and errors remain; `--`, option placement, dash filenames and separate stdin milestone are explicit. |
+| F-001 / C-007 | Both range spellings, ASCII positivity/order, duplicate rejection and unbounded endpoints retain validation-before-acquisition; no-range invocation remains whole-input. |
+| F-002 / C-002–C-005/C-010 | Complete decode precedes once-only normalization, shared logical-line selection and normalized counting; terminators, EOF subsets, Unicode content and exposed BOMs are preserved. |
+| F-003/F-004 and R-011–R-013 | Named-file text/JSON/help/docs and extraction obligations are explicit. Full accepted success/invalid matrices, >4,300-digit endpoints, leading zeros, every flag order and controlled-acquisition/real-module evidence are preserved. |
+
+No unresolved SPEC/design finding remains; original SPEC-QC-001 remains resolved. Main design already supplies the C-010 seam, so this change requires no structural decision or design overlay. No child split is needed. Selected local links/anchors, heading/list separation, requirement identity uniqueness, diff whitespace and allowed-path preservation were checked; source packages and task owners retain their bytes and ownership. These are document checks only, with no code/runtime/extraction test or hosted projection claimed.
+
+### Impacts outside selected scope
+
+Main PLAN still treats ranges as a later separate feature, and canonical TASKS retains original R acceptance with no transferred feature entries. Their SPEC-governed coverage, pending stdin range composition, documentation/distribution/final exits and any affected completed acceptance require authorized owner reassessment; their prior Ready reports do not establish conformance to this incorporated state. Completed Phase 1 baseline evidence/checkboxes remain historical and unchanged; expanded intended acceptance is not proof of regression or completion. A future review must identify any actual changed checked claim before sdd-implement corrects status.
+
+Active FEATURE-SPEC/PLAN/TASKS and adjacent QC remain available for continuation; T-018–T-024 retain one executable owner and unchecked status. Their exact accepted delta evidence remains useful, while main-dependent readiness and future incorporation/archive assumptions need scoped recheck. No source is archive-eligible because task work and other owner incorporation are still pending. Public README/API guide, product tests and extracted distribution need range delivery updates in their owning tasks; they are unchanged here. Maintained tracking stays enabled, but no issue/milestone projection, reopening, closure, task transfer, implementation or merge is performed. The default preparation merge/publication, compatible published JSON baseline, exact paused-phase target and added-work projection remain later execution prerequisites.
