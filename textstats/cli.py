@@ -46,9 +46,9 @@ def main(argv: list[str] | None = None) -> int:
     Range validation precedes acquisition; complete strict decode precedes
     once-only BOM normalization, preserved selection and normalized counting.
     The public API remains whole-input. Help never acquires input.
-    Before stdin delivery a
-    literal '-' remains a named filename. Expected file/decode failures are
-    translated without a traceback; the public file API retains its exceptions.
+    Before stdin delivery a literal '-' remains a named filename. Expected
+    file/decode failures are translated without a traceback; the public file
+    API retains its exceptions.
     """
     parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')

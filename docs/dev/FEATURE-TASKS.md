@@ -28,7 +28,7 @@ Preparation stops before execution. A later separately authorized handoff must s
             Evidence: code review and actual focused/full relevant tests, actual nonzero discovery counts, all F matrices, complete-decode/BOM/huge-endpoint regression evidence, repairs for every blocker and 2.4 human demonstration evidence. Report findings/TODO dispositions and limits; tests alone cannot complete this review.
             Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md`.
     - [ ] Milestone 2.5 — Range documentation and distribution
-        - [ ] T-021 — Complete public and runnable named-file range documentation
+        - [x] T-021 — Complete public and runnable named-file range documentation
             Outcome: accurate full range grammar/semantics/errors/composition/delivery boundary, with public API explicitly whole-input and stdin acquisition still deferred.
             Scope: `README.md`, `docs/public-api.md`, relevant core/I/O/CLI module/function docstrings and truthful owned root `AGENTS.md` navigation; preserve manual instructions and protected resources.
             Depends on: T-020 and reviewed/closed milestone 2.4.
@@ -81,3 +81,36 @@ README setup/help plus both minimal range examples executed in temporary named-f
 Dedicated coherent milestone 2.4 implementation code review is recorded in [2.4 report](features/002_e7cae5b-named-file-ranges/phases/2/2.4.md), source `46e1455a5aca1f86d385a6bed649c4331c5f7296`. Parser/acquisition/normalized pipeline/API/output/error/tests/minimal docs were read separately from check execution; no blocker or repair found, TODO None. Fresh `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` passed 31 unit/26 integration tests on Python 3.12.14, no skips/warnings; ten real named-file text/JSON demonstrations passed exact counts/status/streams and unchanged bytes. Retained 99 extracted whole-input/text/JSON cases are explicitly not range extraction acceptance. Full range matrices and current relevant regressions satisfy 2.4; detailed docs/distribution and feature-extent review remain T-021–T-024, stdin/final main work pending.
 
 Concrete delegated report acceptance `beac0a623d27056d6deb9854674a9307dba3f89d` covers report blob `0597bdf91ce96c0ad0623be1e0696814abdc00c7`. Prior report presentation's pending-review sentence is historical; this current owning evidence records the actual accepted conclusion. T-018/T-019 commits were each published/read back, issues #19/#20 closed/completed with evidence before T-020. Unique T-020 issue #21/native milestone #7. Exactly T-020 report/result/current evidence/initial checkbox and eligible feature milestone 2.4 parent close together; immediately push/read back before issue closure and full associated-issue validation/milestone #7 closure. Whole feature and main Phase 2 remain unchecked.
+
+## T-021 completion evidence
+
+Completed full runnable/public named-file range grammar, option composition,
+CRLF/CR/LF/blank/EOF semantics, once-only whole-input BOM policy, preserved interior
+BOM, complete strict decoding including bytes after END, invocation-before-access
+errors and unchanged public API signatures/exports/exceptions/silence/handle
+ownership. Future stdin acquisition remains explicitly deferred with source-independent
+normalized selection. Reviewed core/I/O consequential docstrings as already accurate;
+CLI docstring cleanup changes no executable AST. Root AGENTS retains manual policy
+and now describes actual published preparation/JSON/milestone 2.4 checkpoints.
+
+All README/public-guide runnable fences executed in temporary development checkout
+copy with bytecode-disabled children. Exact range counts/status/streams, both BOM
+policies, text/JSON, blank/mixed/EOF/interior-BOM and invalid/decode examples passed;
+API assertions, independent discoveries, packaging/checker and extracted commands
+also passed. Fresh complete captured `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py`
+passed 31 unit/26 integration tests on Python 3.12.14, no skips/warnings, retaining
+99 whole-input extracted cases. Selected local links and whitespace pass. Earlier
+redirected runner reported exit 0 but its incomplete log is retained as ambiguous,
+not completion proof; an incidental `ps` diagnostic exited 1 with `fatal library
+error, lookup self`, without product changes. The fresh complete capture resolves
+verification uncertainty. No fabricated RED for this documentation-only task.
+
+Concrete delegated decision `ff5c536e1f76cd79bbc4bb155a35963498953240` accepts README
+`f358db5de7854cd8bfcc95048c9360c7da4f684b`, public guide
+`0c165b39da9ef9f0f853ce7fd975c84c2de77609`, AGENTS
+`9d2e63b058f189910194c5968f52269c1abe5465` and CLI documentation
+`dc65bdca67c75f8b4a4a6501b01cf80c38f89d88` at published T-020 baseline.
+Task result/current evidence/initial checkbox close together; milestone 2.5 and
+feature parent remain unchecked. Publish/read back then close/read back unique
+issue #22 before dependent T-022. Range extraction, later dedicated reviews,
+feature conclusion/integration and pending main stdin/final remain separate gates.
