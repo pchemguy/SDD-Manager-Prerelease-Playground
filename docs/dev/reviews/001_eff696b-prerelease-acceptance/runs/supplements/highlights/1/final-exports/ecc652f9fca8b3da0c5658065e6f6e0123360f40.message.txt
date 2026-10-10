@@ -1,0 +1,2 @@
+Merge continuation references with a combined safety explanation (caller fixture)
+

@@ -1,0 +1,23 @@
+commit ecc652f9fca8b3da0c5658065e6f6e0123360f40
+Merge: f25d556 75702ad
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:48 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:48 2026 -0400
+
+    Merge continuation references with a combined safety explanation (caller fixture)
+
+ CONTINUATION-REFERENCE.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --cc CONTINUATION-REFERENCE.md
+index 5e451c9,d6197f3..bbf1956
+--- a/CONTINUATION-REFERENCE.md
++++ b/CONTINUATION-REFERENCE.md
+@@@ -2,4 -2,4 +2,4 @@@
+  
+  Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.
+  
+- Exclude foreign staged changes from task delivery while preserving their intent.
+ -Preserve valid history while reconciling a pending publication.
+++Preserve valid history while reconciling a pending publication, and exclude foreign staged changes from task delivery while preserving their intent.

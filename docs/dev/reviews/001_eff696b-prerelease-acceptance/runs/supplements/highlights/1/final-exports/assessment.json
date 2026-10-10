@@ -1,0 +1,103 @@
+{
+  "case_id": "CP021-supplemental-release-highlights",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "completed_seal": "Parent independently confirmed consumer agent final answer before after-snapshot; consumer observations sealed true.",
+  "assessment_scope": "Fresh ordinary-input LOCAL semantic highlights continuation and separate existing owned CP014 repaired test-release body consumption/cleanup.",
+  "checkpoint_refs": {
+    "baseline": "5e4d990e55817220661028f5e7ec643707bddd5a",
+    "starting_watermark": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+    "product_commit": "ecc652f9fca8b3da0c5658065e6f6e0123360f40",
+    "merge_parents": [
+      "f25d556eca14710e4596dcda0c7971479c399be1",
+      "75702ad1bca1a5f982811c221fbdec5b55b39cc5"
+    ],
+    "published_source": "170adcdb861df9ea6328b4986fa3a1abf9e2de54",
+    "existing_release_id": 408893787
+  },
+  "semantic_judgment": {
+    "latest_cumulative_summary": "Actual ea5fe47 message was read before direct gaps; retained original eight-check review/zero repairs and new V001/V002 illustrations distinguished. Earlier ced merge body not replayed by consumer.",
+    "nested_enclosing_dedup": "Enclosing 5e6f93c and nested/reopened ea5 are associated with the same documentation outcome; final body adds amendment delta to preserved prior sentence without second child/enclosing bullet.",
+    "preparation_vs_implementation": "Final body calls work review records, worked examples and documentation examples; explicitly preserves unchanged package runtime/no new automation and compatibility limits. Independent package-path net diff empty.",
+    "direct_gap": "Current continuation reference and direct dbd identity included: checkpoint/ref reconciliation, retain unverified result rather than replay.",
+    "revert": "Full proposal/revert messages and empty proposal+revert net diff observed. Final notes contain no benchmark claim.",
+    "resolution": "Empty merge body triggered actual combined diff/current net source review; both preserve-valid-history and foreign-staged-intent consequences appear once in final body. Native conflict provenance belongs to caller setup; consumer assesses resolved committed result.",
+    "reader_meaning": "The combined bullet communicates the newly added examples and continuation consequences while retaining prior editorial wording. It avoids invented runtime delivery, parent completion, fresh tests or live client acceptance. One bullet is an existing editorial cut, not a grading quota.",
+    "complete_pending_inventory": true,
+    "pending_identity_count": 9,
+    "baseline_range_identity_count": 11,
+    "watermark_advanced_only_after_gap_collection": true,
+    "preserved_first_sentence": true,
+    "preserved_install_compatibility_and_cut_bytes": true
+  },
+  "published_consumption_judgment": {
+    "separate_existing_owned_release": true,
+    "equal_watermark_noop_before_cleanup": "Actual pending range empty; initial bytes/body used directly, no regeneration or restored discarded bullets.",
+    "baseline_preserved": "v0.15.0 peels to fb7324d; pending cp014-repair tag excludes itself and peels to 170adcdb.",
+    "body_only_actual_match": true,
+    "body_sha256": "5abb87b0d74e040839cbe4dd2196a2d5126cbec205a8c976782868cc02e20d3c",
+    "owned_cleanup_only": "Published draft absent after exact supplied authenticated body/source/tag comparison; semantic preparation draft retained; ignore rules preserved.",
+    "provider_identity": "Supplied fresh authenticated GET releases/408893787, HTTP 200, published prerelease. No new assessor or consumer provider operation."
+  },
+  "preservation": {
+    "semantic": {
+      "changed_files_from_assessor_before": [
+        ".release-highlights.md"
+      ],
+      "changed_files_from_setup_start": [
+        ".release-highlights.md"
+      ],
+      "HEAD_equal_before": true,
+      "index_equal_before": true,
+      "refs_equal_before": true,
+      "status_equal_before": true,
+      "index_equal_setup": true,
+      "refs_equal_setup": true,
+      "status_equal_setup": true
+    },
+    "published": {
+      "changed_files_from_assessor_before": [
+        ".release-highlights.md"
+      ],
+      "changed_files_from_setup_start": [],
+      "HEAD_equal_before": true,
+      "index_equal_before": true,
+      "refs_equal_before": true,
+      "status_equal_before": true,
+      "index_equal_setup": true,
+      "refs_equal_setup": true,
+      "status_equal_setup": true
+    }
+  },
+  "first_attempt_and_channels": {
+    "first_nonzero": "Expected untracked ownership probe git ls-files --error-unmatch returned 1; actual raw error retained. No product failure hidden.",
+    "truncation": "Two broad instruction reads truncated; required governing references reread in focused calls. Inventory and selected integration/gap outputs untruncated.",
+    "channel_limits": "Early exec_command output is combined; later subprocess Git stdout/stderr separate. No manufactured split.",
+    "provider_operations": [],
+    "support_tests": []
+  },
+  "qualification": [
+    "Consumer observation editorial.combined_outcome_reason uses 'existing human choice'. Evidence establishes caller-fixture wording/cut only, not actual human authorship; assessment makes no human-authorship assertion.",
+    "Fresh consumer received ordinary input but all agents share filesystem and broad tool access. Isolation is not certified beyond observed command history; LOCAL/batch limits retained.",
+    "Reused existing CP014 test publication is not a new curated semantic-notes publication or parent037 completion. No combined publication claim.",
+    "Before captures cover all non-Git checkout files plus exact index/ref/status/HEAD. No broader unobserved Git metadata preservation claim.",
+    "Frozen038\u2013041 checked only hashes/object reachability, no closed-campaign prose consumed by consumer."
+  ],
+  "evidence": [
+    "actual-inventory.json",
+    "consumer-observations.json",
+    "consumer-commandchannels.json",
+    "independent-gap-verification-commands.json",
+    "published-consumption-verification.json",
+    "semantic-draft-initial.md",
+    "semantic-draft-final.md",
+    "published-draft-initial.md",
+    "current-published-readback.json",
+    "current-published-body.md",
+    "assessor-before.json",
+    "assessor-after.json",
+    "preservation-checks.json",
+    "frozen-038-041.json"
+  ],
+  "publication_safety": "Original exact files retained locally; parent must pin public derivatives through clean_bytes and JSON parsing/no_secret before evidence publication. This assessment is not a clean_bytes certification."
+}

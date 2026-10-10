@@ -1,0 +1,21 @@
+commit f25d556eca14710e4596dcda0c7971479c399be1
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:47 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:47 2026 -0400
+
+    Clarify foreign staged intent in continuation reference (caller fixture)
+---
+ CONTINUATION-REFERENCE.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/CONTINUATION-REFERENCE.md b/CONTINUATION-REFERENCE.md
+index f0fa761..5e451c9 100644
+--- a/CONTINUATION-REFERENCE.md
++++ b/CONTINUATION-REFERENCE.md
+@@ -1,3 +1,5 @@
+ # Continuation reference
+ 
+ Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.
++
++Exclude foreign staged changes from task delivery while preserving their intent.

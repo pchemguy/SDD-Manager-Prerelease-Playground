@@ -1,0 +1,18 @@
+{
+  "START.json": {
+    "sha256": "4eadb6d96420521cb76b9064497b6342ede3c37efd551feaf80bcf6ca8c65a7a",
+    "bytes": 40113
+  },
+  "bindings.json": {
+    "sha256": "0728a3d9869af2ae7372d11eac509b38f2f4d43ead9684cdd4a22531f8826db5",
+    "bytes": 3078
+  },
+  "commands.json": {
+    "sha256": "892fe1445a9bfc0b001a64b1f701533e142cef5f78102d72797722a17a952a4f",
+    "bytes": 30156
+  },
+  "ordinary-input.md": {
+    "sha256": "b9b37f2e63e2bb4d29f4c8eacb4e0f6449e63f858259cf91d8f91b0d85ed0443",
+    "bytes": 1939
+  }
+}

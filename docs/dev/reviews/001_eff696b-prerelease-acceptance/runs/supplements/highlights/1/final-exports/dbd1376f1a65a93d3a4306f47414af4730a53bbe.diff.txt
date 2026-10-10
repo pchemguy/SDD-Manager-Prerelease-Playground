@@ -1,0 +1,20 @@
+commit dbd1376f1a65a93d3a4306f47414af4730a53bbe
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:47 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:47 2026 -0400
+
+    Add a concise continuation reference (caller fixture)
+---
+ CONTINUATION-REFERENCE.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/CONTINUATION-REFERENCE.md b/CONTINUATION-REFERENCE.md
+new file mode 100644
+index 0000000..f0fa761
+--- /dev/null
++++ b/CONTINUATION-REFERENCE.md
+@@ -0,0 +1,3 @@
++# Continuation reference
++
++Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.

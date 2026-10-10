@@ -1,0 +1,15 @@
+{
+  "assessor_identity": "/root/sup_highlights_assessor",
+  "consumer_identity": "/root/sup_highlights_consumer",
+  "setup_publication": "pub0649767c9d1aa66610cbce685f22d8c2ded79d2c",
+  "ordinary_input_sha256": "5ee2ed5d8eefe21a89ebb2929a859114165d24ea7c6eea69ac4d314a3a126008",
+  "actual_setup_paths": [
+    "/workspace/scratch/46b31bb4dff6/037-sup-highlights-setup",
+    "/workspace/scratch/46b31bb4dff6/037-sup-highlights-published-setup"
+  ],
+  "seal": "Parent confirmed completed final answer before assessor after snapshot.",
+  "fixture_scope": "Caller-generated LOCAL documentation fixture enclosing genuine previously assessed nested/reopened042 objects; no actual production campaign completion or human authorship attribution.",
+  "published_scope": "Fresh authenticated supplied readback of reused existing CP014 test release only; source170 tagcp014-repair exact body comparison.",
+  "mutations_by_assessor": "Only external observation artifact writes; no product/source/index/ref/provider write, commit or support test.",
+  "originals_and_derivatives": "Exact original bytes are retained here; public clean_bytes pinning/JSON parsing/no_secret delegated to parent evidence publisher; no publication safety claim until that actual check."
+}

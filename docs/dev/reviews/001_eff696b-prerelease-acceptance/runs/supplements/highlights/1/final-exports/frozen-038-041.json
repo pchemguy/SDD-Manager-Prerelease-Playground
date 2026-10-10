@@ -1,0 +1,100 @@
+{
+  "paths": {
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVISION-REPORT.md": {
+      "sha256": "b3cb9fc50888160e40b8a87588570a5e1b255bb0f9e9175d3d736530d741d3ec",
+      "bytes": 13083,
+      "mode": 420
+    },
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVIEW-REPORT.md": {
+      "sha256": "beb2c5dde136858c7816e801d23071fa8154317eb687e4e384cfc5df470ae2e4",
+      "bytes": 10739,
+      "mode": 420
+    },
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVISION-PLAN.md": {
+      "sha256": "a004f5a6f2497589401078343895de57b5e62dfebda05e63845ea30b5a10681f",
+      "bytes": 13760,
+      "mode": 420
+    },
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVISION-REPORT.md": {
+      "sha256": "d1fd64dc87840c7c25f66e7e86528a0507dc1401bf8aa9f2d5afdf2d2d82b723",
+      "bytes": 7155,
+      "mode": 420
+    },
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVIEW-REPORT.md": {
+      "sha256": "43e427ab80ec0466311f86ef04eaaeab7d11d4a1ccf50f6af7d161879a8097fb",
+      "bytes": 5756,
+      "mode": 420
+    },
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVISION-PLAN.md": {
+      "sha256": "104854608a92a8cb3b6954284f3d3c5a28426448e713264cec62b3bcba9a2fd8",
+      "bytes": 6715,
+      "mode": 420
+    },
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/README.md": {
+      "sha256": "6bf9fbdf3f289274e038c3a3c6fb72b37893a565012b46d36e54e89472d66aed",
+      "bytes": 6484,
+      "mode": 420
+    },
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVISION-REPORT.md": {
+      "sha256": "f180e400e076e7dbb87033629032bad8456b9a7593aa2a9b1770916e00a1e6fb",
+      "bytes": 4745,
+      "mode": 420
+    },
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVIEW-REPORT.md": {
+      "sha256": "a968396c9734e5699d00cf83f65b9571b004172525fd12ab0d95d34702dad559",
+      "bytes": 15587,
+      "mode": 420
+    },
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVISION-PLAN.md": {
+      "sha256": "f62054bded81d508ee72bf6ad131fb120cd108dc6f28c50ce983281801425fe4",
+      "bytes": 5589,
+      "mode": 420
+    },
+    "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order/REVISION-REPORT.md": {
+      "sha256": "5d13cfb83a3ca77a62affa8080914cf7ee56bb9a1590be5629efbe31cf53cde5",
+      "bytes": 6116,
+      "mode": 420
+    },
+    "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order/REVISION-PLAN.md": {
+      "sha256": "53b897f772f9cee818b8dadaaf768420055d7316208803f70bc17c24d84ef01d",
+      "bytes": 5268,
+      "mode": 420
+    },
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/evidence/check_merge_highlights.py": {
+      "sha256": "75a0a4ff3303ccaa1d9602a575e88ea687087b5aa1a185a82bb574f5fe7fe46b",
+      "bytes": 9188,
+      "mode": 420
+    },
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/source-application-assessment.md": {
+      "sha256": "4ff2da5c26808e234b4f352f0160dab658a2c8d36df14bf3c32f59e599e59023",
+      "bytes": 4056,
+      "mode": 420
+    },
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/source-checks.json": {
+      "sha256": "71be32806266b82caf2a3d6ab7fd2595f6484ec0c22ac6bcbb7128f6e3c26ba1",
+      "bytes": 697,
+      "mode": 420
+    },
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/support-tests.txt": {
+      "sha256": "48890d26f04105c8b3c99473ad456b5fc67effe2be7a1de592ba8a17a7749c33",
+      "bytes": 18153,
+      "mode": 420
+    }
+  },
+  "all_path_hash_mode_bytes_unchanged": true,
+  "retained_reachable_campaign_commit_objects": [
+    {
+      "oid": "b246f8f92f35a8d2077bce467102f63270d64f2b",
+      "type": "commit",
+      "raw_bytes_sha256": "d6ad75f004a2fdda46918e55a0d9bc5ac2b3a43be94960fa428a6973d0f615ba",
+      "object_content_hash_matches_oid": true
+    },
+    {
+      "oid": "ca99ca1750a1521c0045a220edaa2017fdab235f",
+      "type": "commit",
+      "raw_bytes_sha256": "df2ba42a7b8204822576061983695d4a19dd0f87573aaeddb651184ec29f1480",
+      "object_content_hash_matches_oid": true
+    }
+  ],
+  "limit": "No closed record prose consumed for this check. Object content verified after seal; before preservation bounded by exact unchanged HEAD/ref reachability and before file hashes, not unobserved Git metadata."
+}

@@ -1,0 +1,30 @@
+{
+  "semantic": {
+    "changed_files_from_assessor_before": [
+      ".release-highlights.md"
+    ],
+    "changed_files_from_setup_start": [
+      ".release-highlights.md"
+    ],
+    "HEAD_equal_before": true,
+    "index_equal_before": true,
+    "refs_equal_before": true,
+    "status_equal_before": true,
+    "index_equal_setup": true,
+    "refs_equal_setup": true,
+    "status_equal_setup": true
+  },
+  "published": {
+    "changed_files_from_assessor_before": [
+      ".release-highlights.md"
+    ],
+    "changed_files_from_setup_start": [],
+    "HEAD_equal_before": true,
+    "index_equal_before": true,
+    "refs_equal_before": true,
+    "status_equal_before": true,
+    "index_equal_setup": true,
+    "refs_equal_setup": true,
+    "status_equal_setup": true
+  }
+}
