@@ -1,0 +1,128 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "test_repository": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Explicit dedicated repository URL or unambiguous existing checkout with authorized remote. Never a credential-bearing URL."
+    },
+    "local_checkout": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional verified existing checkout for test_repository."
+    },
+    "plugin_revision": {
+      "type": "string",
+      "minLength": 1,
+      "default": "HEAD",
+      "description": "Resolve committed source HEAD at run start or explicitly supplied revision to full SHA."
+    },
+    "source_mode": {
+      "type": "string",
+      "enum": [
+        "committed",
+        "dirty"
+      ],
+      "default": "committed",
+      "description": "Dirty requires explicit authorization and hashed package snapshot/diff; never claim ordinary HEAD testing."
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "phases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "P0",
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "cases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^A-0(0[1-9]|1[0-9]|2[0-7])$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [],
+      "default": {},
+      "description": "Absent/empty selections mean full; nonempty phases and cases intersect. Missing prerequisite work is not authorized implicitly."
+    },
+    "stop_after": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "P0",
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5"
+          ]
+        },
+        {
+          "type": "string",
+          "pattern": "^A-0(0[1-9]|1[0-9]|2[0-7])$"
+        }
+      ],
+      "default": null
+    },
+    "profile": {
+      "type": "string",
+      "enum": [
+        "full-github",
+        "local-only",
+        "installed-client"
+      ],
+      "default": "full-github"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$",
+      "description": "Existing campaign identity for an explicitly requested continuation; fresh identity otherwise allocated after discovery."
+    },
+    "variants": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^A-0(0[1-9]|1[0-9]|2[0-7])$"
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "uniqueItems": true
+      },
+      "description": "Explicit case-to-variant selection; optional variants require selection. Must agree with phase/case scope and current catalog. Omitted selects required core only."
+    }
+  },
+  "required": [
+    "schema_version",
+    "test_repository"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sdd-manager.invalid/acceptance/textstats/inputs.schema.json",
+  "title": "TextStats non-secret run inputs, version 1",
+  "description": "Coordinator configuration only. Tokens, credential paths and credential handoff are not fields. Missing/blank repository must yield the documented missing-input action before writes."
+}

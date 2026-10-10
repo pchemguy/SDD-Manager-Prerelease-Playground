@@ -1,0 +1,34 @@
+test_broken_public_export_fails_despite_correct_private_core (tests.test_contract_probe.ContractProbe.test_broken_public_export_fails_despite_correct_private_core) ... FAIL
+test_public_package_only_implementation_passes (tests.test_contract_probe.ContractProbe.test_public_package_only_implementation_passes) ... FAIL
+test_unavailable_import_is_not_contract_failure (tests.test_contract_probe.ContractProbe.test_unavailable_import_is_not_contract_failure) ... ok
+test_valid_baseline_then_actual_assertion_failure (tests.test_contract_probe.ContractProbe.test_valid_baseline_then_actual_assertion_failure) ... ok
+test_wrong_identity_and_repeat_injection_rejected (tests.test_contract_probe.ContractProbe.test_wrong_identity_and_repeat_injection_rejected) ... ok
+
+======================================================================
+FAIL: test_broken_public_export_fails_despite_correct_private_core (tests.test_contract_probe.ContractProbe.test_broken_public_export_fails_despite_correct_private_core)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_contract_probe.py", line 36, in test_broken_public_export_fails_despite_correct_private_core
+    self.assertEqual(result['status'],'Failed');self.assertEqual(result['tests'],2)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Passed' != 'Failed'
+- Passed
++ Failed
+
+
+======================================================================
+FAIL: test_public_package_only_implementation_passes (tests.test_contract_probe.ContractProbe.test_public_package_only_implementation_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_contract_probe.py", line 28, in test_public_package_only_implementation_passes
+    self.assertEqual(result['status'],'Passed');self.assertEqual(result['tests'],2)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Unavailable' != 'Passed'
+- Unavailable
++ Passed
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.137s
+
+FAILED (failures=2)

@@ -1,0 +1,560 @@
+{
+  "schema_version": 1,
+  "evidence_commit": "eb95a6cc769ddf077b645179d8c1c04989a489da",
+  "records": [
+    {
+      "path": "runs/A-001/1/ASSESSMENT.json",
+      "sha256": "cd8d3c0420bb7db1231db7243eb9db004197fc203d973f12acf11c422d3c4c28",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-001/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "4e4a191c4cf78771758c604b96a073f5a26e98ac4957d4c3b4e27254d9ec6423",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-002/1/ASSESSMENT.json",
+      "sha256": "03ba7a3fdcff866eaa6c1fec595aae03cbe66b79cc34132c3e332ef638a154c3",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-002/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "3498d06f2f59a72d558737d50514803a6d255e67a2086af694662107db915fdc",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-003/1/ASSESSMENT-REVISION-1.json",
+      "sha256": "813a05f07339da9e387a38b3b52a631de878c4d09964a96755213886ac51b7ec",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-003/1/ASSESSMENT.json",
+      "sha256": "7c3cdbd03ae32d31796492220766cf317e31ef44d8d02024e954a826995598d9",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-003/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "c1cc77a813d8135f35ee8af302fdcef8a98564148a6dda2a0e00dc6f100ffc78",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-003/2/ASSESSMENT.json",
+      "sha256": "9a52bdfd4c2829d8850d85da1b218adcbf1d87be1b93bc2550a488de42d83082",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-003/2/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "c1cc77a813d8135f35ee8af302fdcef8a98564148a6dda2a0e00dc6f100ffc78",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/ASSESSMENT.json",
+      "sha256": "14c5cb717fdd0e2e3960d363cd681bc681793ba730d11df790214348812bb982",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "14c5cb717fdd0e2e3960d363cd681bc681793ba730d11df790214348812bb982",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/independent-assessment/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "8182c5236e588774280eb54d3fe8cfa2c6cf4a6cca4c5f58e58f5fe1440b9c0a",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/rechecks/1/ASSESSMENT.json",
+      "sha256": "d6db3b0c96d9231104215d0baeffc01c8e0085e1a89c5ec6c0c51611b605d188",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/rechecks/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "ebc905961d3caf980700de9aaa8cbb69db8eb2e7bb58b2fe0d4dd90556f3cef3",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/rechecks/2/ASSESSMENT.json",
+      "sha256": "1a15ec5886520dec956b03ff9245d9f6bdb58be16af3c1036f30e497b58a3dee",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-004/1/rechecks/2/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "ebc905961d3caf980700de9aaa8cbb69db8eb2e7bb58b2fe0d4dd90556f3cef3",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/independent-assessment/ASSESSMENT-FINAL.json",
+      "sha256": "c5ceb302ae7d8a3042c211407874c66688d806198c9d3d1c316c1bc2d9487a87",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "485a616d1017bcd05082d8d8d1d5e6e3e9fc0aa3c50982d384ff972cd99ef5f1",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/independent-assessment/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "0aa1ac5b798258da37ae6085d946a69d7c8bb0102055e8d2c125773f172400d2",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/rechecks/1/ASSESSMENT.json",
+      "sha256": "c07da6aff6c185a9eae75b34d8ba838f4d35f6394260f12f3671f91431337739",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/rechecks/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "be02449fc9ae3ba7317f422955d513ffe37c83a1a6eb2a6f92b1c0c66bc6e36c",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/rechecks/1/INDEPENDENT-VALID-ASSESSMENT.json",
+      "sha256": "be02449fc9ae3ba7317f422955d513ffe37c83a1a6eb2a6f92b1c0c66bc6e36c",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/rechecks/1/INDEPENDENT-WRONG-COUNT-ASSESSMENT.json",
+      "sha256": "0aa1ac5b798258da37ae6085d946a69d7c8bb0102055e8d2c125773f172400d2",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-005/1/rechecks/1/INDEPENDENT-WRONG-USAGE-ASSESSMENT.json",
+      "sha256": "0aa1ac5b798258da37ae6085d946a69d7c8bb0102055e8d2c125773f172400d2",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-006/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "4d1a2ebd607aa551f05ba126ac6aa5b76806e71707b8cacdc7b4b3c9e804dbb4",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-006/1/independent-assessment/PARTIAL-DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "8ddf0fe83db9457cda73baf011af90f2f2aa2ea4035e3b7aae27791432f5cb6a",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-006/2/independent-assessment/ASSESSMENT.json",
+      "sha256": "21e4ff31d12e2d305bf5c26648749a10aa713fa89b2574a31a2809153c10ec7b",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-006/2/independent-assessment/ORIGINAL-FULL-DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "e434ee85473d0fe29ff62b963334a25bcb8bd4e8f1492ab74d525a07099c6aac",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-006/2/independent-assessment/VARIANT-FULL-DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "8bbe9e0201e8a4b8df916ff68b5e4f58b6e3795c6fcedbf216f1f41c31d4d158",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-007/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "ad7234d5329b51eb6c06e0599364df05716a63ceef1f9fe554f76bac31510e24",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-008/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "8036c23dc2ba47f20e8fc5f518acad9319a06a78c9b714d1cbe0114b58c1e837",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-009/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "db63e1a06be5527d2897a0f47bb4829f29a3700bd7acffc251d38404d15ce27e",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "29eaf5add7158a6dad6cf61ef2ced08baf726e5e44734772d31695e387182c80",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/T022-PUBLICATION-REASSESSMENT.json",
+      "sha256": "66d7f765c9078493a89570aa524c0d2ed34dcba28cb9924f2605169b5e93aaf2",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+      "sha256": "ad96553fb447511d58a8d17c5ee188d9887682d5efae8dbd6c14c1529307523a",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/continuation/independent-assessment/checks-attempt2/DISTRIBUTION-CONTRACT-ASSESSMENT.json",
+      "sha256": "b85d4ca7b5b082764c9f2d3e67a6faec8ac3982d2867d28c8efc15fd5cbfbe1e",
+      "status": "Passed",
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/independent-assessment/ASSESSMENT.json",
+      "sha256": "09f044b39c6743d00c0c7188c175978ec1b758a59e642e851cbe898919e0e2af",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/independent-assessment/DETERMINISTIC-ORIGINAL-REASSESSMENT.json",
+      "sha256": "6539eca0c00c39ebaf5755ac3fb8cb3ad5a3cdc577038a538443a7431b86b0b2",
+      "status": "Checks failed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/independent-assessment/DETERMINISTIC-REASSESSMENT-COMMAND.json",
+      "sha256": "34611d59ba0c65172751b3ba2a6af22324b7e71794100869c1433f098b7c1564",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-010/2/independent-assessment/SUSPENSION-ASSESSMENT.json",
+      "sha256": "09f044b39c6743d00c0c7188c175978ec1b758a59e642e851cbe898919e0e2af",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "4323551e2840b8add675c0f76b391b4720789925b3628ef7bbc7788bf9aebcaa",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-012/1/IMPLEMENTATION-PUBLICATION-REASSESSMENT.json",
+      "sha256": "2f8c29a652411234a0965aaf94b1de22a53796e47f9142730603b75710bcd0a4",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-012/1/PREPARATION-PUBLICATION-REASSESSMENT.json",
+      "sha256": "b15c68e9c1a4db4398485d39b90dea402a4d8acd815d2ec513c4cf88667d0ede",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-012/1/ROOT-ISSUE13-REASSESSMENT-RESULT.json",
+      "sha256": "057590e9ba98e8b4f82cec394504358db6644596cc238c985cda09ee53b65bfc",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "06b0a229c76110ef760047bab8f9e7be90b643ef23fb1f805b827e6d693ed6cc",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-013/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "03f84679751e135276fa8b16e974a6250b7ab29f2e3c3e2629ca3c7b289f5700",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-014/1/ASSESSMENT.json",
+      "sha256": "3f4dd6a4396342baafd149f6a2c7799f1fd50a0ce13cc7791a0678cdde377483",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-014/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "32df320d7a8df1b8dfc58d0e14117051baa7461ab676510c04e4ca4178fb0889",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-015/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "af00acddcbb8c2daa86395db6bd8126087b3f087d7c8e2c8e53ac78ff651d9ba",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-015/2/independent-assessment/ASSESSMENT.json",
+      "sha256": "a58e5251eaae79a2ca8afaeff40a11f3b2a77703e5805f859bf634076f2df1eb",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-015/2/independent-assessment/AUDITABLE-LOCAL-URL-ASSESSMENT.json",
+      "sha256": "26367526b9d8de40c8eeb34a49582e7deb2a34f5438ae1febf66eff214e6f96c",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-015/2/independent-assessment/LOCAL-URL-DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "14748229313ebe96d3cae06c2d0281ea67ee3b68996847eee87e5169d29e5536",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
+      "sha256": "334a4629b56e7bc32995cc4c1d3d8c5755d7f97b8c72dd3cbc8468036d03022d",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-016/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "6ea3b925084f09e10d89ff681a8f0189f07cbbd9b3f74972a74a76afcb9de47e",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-017/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "2da0834f75ac11bbe7dbc2164e79d7fedf94d1352aeb2660665cecc2c1286eee",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-017/1/independent-assessment/FINAL-ASSESSMENT.json",
+      "sha256": "3de0958d69c4212b71fd5fef446e709e470b20a2babaff182ee6caacff3f574d",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-017/1/independent-assessment/TRIGGER-ASSESSMENT.json",
+      "sha256": "f2b0865240afc4cf142db91876be80ed0b4c0c8dd114f084b616239f4da62c61",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-018/1/independent-assessment/ASSESSMENT-INITIAL-REPORT-CORRECTED.json",
+      "sha256": "f8afdb483f799ef5d18a35657fa4e118ecefbf9d447e179609c5ff5de44c665b",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-018/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "2ac5057f0b43710a185bc4acb3eceaf2b230fce568839272019241a02034c5cf",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-018/1/independent-assessment/ORIGINAL-ATTEMPT-ASSESSMENT.json",
+      "sha256": "849ae8a59b35de3e06386944191de621cbb6fafe6d527852ebaa518dedb09852",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-018/1/rejected-attempt-assessment/ORIGINAL-ATTEMPT-ASSESSMENT.json",
+      "sha256": "849ae8a59b35de3e06386944191de621cbb6fafe6d527852ebaa518dedb09852",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-019/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+      "sha256": "3ec39341f5b45719e78aa83f821af51f11efd1edb08b07bd494fd4a969f78e21",
+      "status": "Blocked",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-020/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "969369c3f1e859444ddc43a06520d7b06d358373e90f6d5d2bc7be58e7ff5498",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-020/1/independent-assessment/PRIOR-ASSESSMENT.json",
+      "sha256": "061323d0610d6b7e1a4c2eadbc72a86606c818ba59f9a0ef8ba1d79def0697d4",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-021/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "570bce650268f332ffc4eb74d237e0d07e4e9f614c4e0c10efb865505c44ce5e",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "cff0c41d58e0e53a49276cc3875b0a416afb09d6821da488bd0a700b591ea102",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-022/1/independent-assessment/LOCAL-URL-DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "2958d721e89dc43569b47ffcf0b8b5ad146c02bb55fa24c5749414aec4e985d6",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-023/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+      "sha256": "ba50a9c3cb1228a2bfdab7a02b2389fbf990537b9a738e4cb030a1d458d34cbb",
+      "status": "Blocked",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/1/independent-assessment/DENIAL-CONTINUATION-ASSESSMENT.json",
+      "sha256": "8a37708f41b53c00da81d354b376a0622fba81361ee44ffc9a10a7d0463dc0a5",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/1/independent-assessment/DENIAL-ORIGINAL-ASSESSMENT.json",
+      "sha256": "16149f5dadd8f3732a9527f31f6b0c5b1bdd0eeb7116653890fe17af4def401f",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/2/independent-assessment/RATE-LIMIT-CONTINUATION-ASSESSMENT.json",
+      "sha256": "74918479c814a4761f1e272c730b878ba4f9b4d0cab8404d3a6d8999be4194f0",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/2/independent-assessment/RATE-LIMIT-ORIGINAL-ASSESSMENT.json",
+      "sha256": "1f552dfbb4389a84a509b5f1938bcc05752dd3142c3a99bc70b1990a0988b320",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/3/independent-assessment/ASSESSMENT.json",
+      "sha256": "0056946000678f3e3042b44089b2edbb6198859152e5c068683338d2de35baa7",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/3/independent-assessment/SESSION-CONTINUATION-ASSESSMENT.json",
+      "sha256": "10d09f3506986e2845ac5c85ce6752469c6adcb11b68c07b8f477fd6ba72866c",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-024/3/independent-assessment/SESSION-ORIGINAL-ASSESSMENT.json",
+      "sha256": "e6be715130312068f659f90c1f8b0d709e5fcbb4b6f8bb2fc687965b01e9bc14",
+      "status": null,
+      "agent_behavior_assessed": null,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-025/1/ASSESSMENT.json",
+      "sha256": "ee9becd086dc458a010b1d7f54e24912f10c685cfde0c1e294a2d110b0ae9966",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-025/1/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "42ccd5eb1a00894792a8ec506fb40e2881744bc8ee85f664055a59a0eb2f5ead",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-026/1/independent-assessment/ASSESSMENT.json",
+      "sha256": "bbfbbff28f05132338e1ffc29cfae4a1c306b76719fba4256d949bd28f85faf2",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "published_bytes_equal": true
+    },
+    {
+      "path": "runs/A-026/1/independent-assessment/DETERMINISTIC-ASSESSMENT.json",
+      "sha256": "320716613e81ea2707847194d4fca1275c4694407bfcb9bcc31a68208aea30be",
+      "status": "Checks passed",
+      "agent_behavior_assessed": false,
+      "published_bytes_equal": true
+    }
+  ],
+  "qualification": "Inventory retains original, corrected, partial, deterministic and continuation artifacts separately; status is literal recorded metadata, not an inferred independent case grade."
+}

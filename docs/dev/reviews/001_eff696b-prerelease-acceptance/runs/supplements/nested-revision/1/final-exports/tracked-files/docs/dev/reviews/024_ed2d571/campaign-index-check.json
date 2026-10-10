@@ -1,0 +1,32 @@
+{
+  "table_structure": "Single contiguous GFM header/separator and 24 campaign rows",
+  "sequence": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "all_table_links_exist": true,
+  "rendering": "Table source grammar checked; no browser/rendered preview claim.",
+  "initial_recheck": "New 024 row was initially separated by a blank; validator caught this before commit; corrected and rechecked."
+}

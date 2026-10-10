@@ -1,0 +1,9 @@
+{
+  "local_markdown_targets": 120,
+  "missing": [],
+  "package_files": 97,
+  "plugin_unchanged": true,
+  "init_files": [
+    "acceptance/textstats/tests/__init__.py"
+  ]
+}

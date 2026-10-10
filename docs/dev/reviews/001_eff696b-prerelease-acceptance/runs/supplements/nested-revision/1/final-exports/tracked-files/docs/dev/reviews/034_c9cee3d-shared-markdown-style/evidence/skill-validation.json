@@ -1,0 +1,135 @@
+[
+  {
+    "skill": "sdd-conventions",
+    "strictStandaloneExit": 0,
+    "messages": [],
+    "interpretation": "Standalone structural pass"
+  },
+  {
+    "skill": "sdd-design",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "ERROR: skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-docs",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-docs/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-forge",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/coordination.md#coordinate-execution"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-implement",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-integrate-feature",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-integrate-feature/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-manage",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/review-campaigns.md#closed-campaign-records",
+      "ERROR: skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-forge/references/github.md",
+      "ERROR: skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-forge/references/release-highlights.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-orient",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/review-campaigns.md#closed-campaign-records",
+      "ERROR: skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/agent-orientation.md",
+      "ERROR: skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-plan",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "ERROR: skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-report",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-report/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-specify",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "ERROR: skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-steer",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-steer/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-tasks",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md",
+      "ERROR: skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "ERROR: skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-tdd",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-tdd/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  },
+  {
+    "skill": "sdd-verify",
+    "strictStandaloneExit": 1,
+    "messages": [
+      "ERROR: skills/sdd-verify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md"
+    ],
+    "interpretation": "Bundled sibling references exceed isolated skill root; package-aware path validation used separately."
+  }
+]

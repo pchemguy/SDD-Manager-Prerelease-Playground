@@ -1,0 +1,102 @@
+{
+  "manifest_version": "0.14.3",
+  "referenced_resources": [
+    "./skills/",
+    "./assets/icon.svg",
+    "./assets/icon.svg",
+    "./assets/logo.png",
+    "./assets/logo.png"
+  ],
+  "missing_resources": [],
+  "installed_entry_comparison": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "source_sha256": "eeb08ba49f7c8d58c0af38057411475a89a6d4a1536b850230a716232b7083df",
+      "installed_sha256": "a134a1b3bcbed08a6fa8cc799eaecdb49d6fbd2ccb0e87f848d15ba5d88eb914"
+    },
+    {
+      "path": "skills/sdd-tdd/SKILL.md",
+      "source_sha256": "adc0c2c0f7bc3cc7612dfc781ee8681289b1542aae8eba0bb6d99361a3a903ed",
+      "installed_sha256": "ee6359e70008747c3acb9edd6cf0d6f78e825ab006d36ff20fe2f0ac8febd76e"
+    },
+    {
+      "path": "skills/sdd-integrate-feature/SKILL.md",
+      "source_sha256": "62bbe9725faada9934eea8ce29a6ab0bc40462747a1e49243c2d48331ca05bc9",
+      "installed_sha256": "e94565d732d9c71bd151582282be4f680d21d2796b4e7555186b7038ad634355"
+    },
+    {
+      "path": "skills/sdd-specify/SKILL.md",
+      "source_sha256": "99c86e62b478ec96be6b987ec548360c928dff19e6df8afab018a9b4b05d7875",
+      "installed_sha256": "a41f78b0ecd04a8bf44fb60b4648ec98846d9780e5b6f81291495752b44fbd8f"
+    },
+    {
+      "path": "skills/sdd-tasks/SKILL.md",
+      "source_sha256": "092bb519d88a2ae88d9e692e3478ebe685e43b075bf5f90b971d7e1e2ea29608",
+      "installed_sha256": "d56d267eb3c526c97fcb2214ca0030591b0ddfb957015ff92b0489be6d2b6117"
+    },
+    {
+      "path": "skills/sdd-report/SKILL.md",
+      "source_sha256": "cf4f931c5743e0b1a9bd1af2867c6da1968d0a0dc948ac3c19becdf945cfb2c7",
+      "installed_sha256": "6efa78ba23bbaff7d7f4d56b138b0d7762733e45172f776c110b49355d092075"
+    },
+    {
+      "path": "skills/sdd-steer/SKILL.md",
+      "source_sha256": "a92d33b109898c5c3916b68008fd9d3ad4129c54b151c4368b8a724a9f855e54",
+      "installed_sha256": "6165cd666aebad6734d59ba3fa750ac658d64cb04bd94a7f8e011d708bdf14ed"
+    },
+    {
+      "path": "skills/sdd-orient/SKILL.md",
+      "source_sha256": "596acb0486004228a868f07add0c21801c874b0be3973d0633767fb8b4517c99",
+      "installed_sha256": "2784826eb7077fb0b2c2c1c97a9c91c6501ba6ccce238d60b8a6a150ca86596f"
+    },
+    {
+      "path": "skills/sdd-manage/SKILL.md",
+      "source_sha256": "81f888b2048f71ca97ee366975b04f920524d9236220038c883194e57b8c9dc0",
+      "installed_sha256": "242e42ab13ec21eb219ac601026a89da01f012f12689b9385fda869108f535f4"
+    },
+    {
+      "path": "skills/sdd-implement/SKILL.md",
+      "source_sha256": "fafbe1e4f5bd9497739b99256edf8b476c9614414e829250249438c8cea93afb",
+      "installed_sha256": "cdc9c1ae4575fdaf26f5f8be88822f33add59bebc08ad70c3730b85f4892d797"
+    },
+    {
+      "path": "skills/sdd-design/SKILL.md",
+      "source_sha256": "bacf686f53b4f2e1a759624ddd70ae34cd6b55ed51c3dd5e1a6624eb0ea028aa",
+      "installed_sha256": "35f0ee75d79bc3779441eafe73cd6056f5a0c61b78ab1c83c5580ad6567c7dcb"
+    },
+    {
+      "path": "skills/sdd-verify/SKILL.md",
+      "source_sha256": "fe02f63973521e86fa68a5fd775d01ab41fe7a797d26d8ae59dfa05bb25152ac",
+      "installed_sha256": "84940391f49d47e7ec4bdba7d656b2e202a2521b7cb1c3ed7d4af7da2f778e47"
+    },
+    {
+      "path": "skills/sdd-plan/SKILL.md",
+      "source_sha256": "ee8066ec67d1eedd965a2d656758291fa24c30450b1c45317110995491b886fc",
+      "installed_sha256": "fcfe83efe28d52f0b4955ea5672050b382e3784c88a4be5173cdc9276e70ccd2"
+    },
+    {
+      "path": "skills/sdd-conventions/SKILL.md",
+      "source_sha256": "9db395393d7d086e449d46647aa9f6bdb6f6bb8c9eea1915ce1f22e5c3266c49",
+      "installed_sha256": "5510900ca9e251566eba782f465548d74c5eca88892215b94da6a9a3b42783d9"
+    },
+    {
+      "path": "skills/sdd-docs/SKILL.md",
+      "source_sha256": "561a9f9935357e3cb82e3110868571632f3b3a01ad4ddebc654232086d33f659",
+      "installed_sha256": "28cd7129a89c2c72f7750b4e731ab862b946cc6ae7da6db65a1874c8c180aeb5"
+    },
+    {
+      "path": "skills/sdd-forge/SKILL.md",
+      "source_sha256": "21cba41d7d64fc54206dc981fab665b16b7b868e4fe1c75769048a59b294b9b4",
+      "installed_sha256": "c7935ddc36c71071ddd316f7bcab8ed9d6571b3a0513813b72dae597679ccc10"
+    }
+  ],
+  "client_rendering": "not executed",
+  "template_link_note": "campaign-artifacts.md REVIEW-REPORT.md occurs in a generated-document template, not a shipped relative resource",
+  "installed_normalized_entry_differences": [],
+  "installed_manifest_semantic_difference": {
+    "interface.shortDescription": {
+      "source": "Spec-driven development",
+      "installed": "Specification-led development"
+    }
+  }
+}

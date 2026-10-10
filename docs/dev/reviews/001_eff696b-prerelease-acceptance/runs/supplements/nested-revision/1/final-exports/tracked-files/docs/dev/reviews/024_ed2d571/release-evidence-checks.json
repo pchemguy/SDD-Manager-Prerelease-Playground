@@ -1,0 +1,101 @@
+{
+  "source": "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+  "historical_import_hashes": [
+    {
+      "path": "DIAGNOSTIC-REPORT.md",
+      "expected": "389a4538dc8b224569e974d48841a899462f2347a8f738ff23a86f553221cd6e",
+      "actual": "389a4538dc8b224569e974d48841a899462f2347a8f738ff23a86f553221cd6e",
+      "matches": true
+    },
+    {
+      "path": "PROPOSED-AMENDMENTS.md",
+      "expected": "2eb0b75f99a1c3a0dd59eedfd691c729b94d775b7eab904ceb2ef3a54f4f8d10",
+      "actual": "2eb0b75f99a1c3a0dd59eedfd691c729b94d775b7eab904ceb2ef3a54f4f8d10",
+      "matches": true
+    },
+    {
+      "path": "AUTHORIZATION-AMENDMENT-SUPPLEMENT.md",
+      "expected": "57ffc97383ae6dc9a02200b7e7d411032d4307d8ab4c816af430d3fd2a723c05",
+      "actual": "57ffc97383ae6dc9a02200b7e7d411032d4307d8ab4c816af430d3fd2a723c05",
+      "matches": true
+    },
+    {
+      "path": "runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md",
+      "expected": "19133696794bf26d89528fe41a5485a6dbe0f160d98a8ed572567d316fdd66d9",
+      "actual": "19133696794bf26d89528fe41a5485a6dbe0f160d98a8ed572567d316fdd66d9",
+      "matches": true
+    },
+    {
+      "path": "runs/A-027/1/independent-assessment/RETAINED-ATTEMPT-ASSESSMENTS.json",
+      "expected": "4048f110f3c3fc0937245f17aace382d89470c78e5c4882f29a84c91e127a84b",
+      "actual": "4048f110f3c3fc0937245f17aace382d89470c78e5c4882f29a84c91e127a84b",
+      "matches": true
+    },
+    {
+      "path": "runs/A-027/1/independent-assessment/RECONCILIATION.json",
+      "expected": "6a7afd010a440b3f7a9c9eadf55b67cf2db1fd594e8a3951dc19c5749be520f9",
+      "actual": "6a7afd010a440b3f7a9c9eadf55b67cf2db1fd594e8a3951dc19c5749be520f9",
+      "matches": true
+    },
+    {
+      "path": "FINAL-PUBLICATION.json",
+      "expected": "9709c2f16b47b78628d009ff3dfe2e4f9367bbe1ba943ffa0389a2cee2f65624",
+      "actual": "9709c2f16b47b78628d009ff3dfe2e4f9367bbe1ba943ffa0389a2cee2f65624",
+      "matches": true
+    },
+    {
+      "path": "STOP-CHECKPOINT.json",
+      "expected": "64bdecc41f5b2f48d136cee361ec5c668ec0a95076b144579417ab1dad301edf",
+      "actual": "64bdecc41f5b2f48d136cee361ec5c668ec0a95076b144579417ab1dad301edf",
+      "matches": true
+    },
+    {
+      "path": "FINAL-EVIDENCE-INTEGRATION.json",
+      "expected": "79280ec4bcf43ca344f50adfb37f3c2cab156b9275072f02e21e0d8920a02762",
+      "actual": "79280ec4bcf43ca344f50adfb37f3c2cab156b9275072f02e21e0d8920a02762",
+      "matches": true
+    }
+  ],
+  "historical_imports_match": true,
+  "campaign_index_ids": [
+    "001_49143fa",
+    "002_81011e7",
+    "003_39374c8",
+    "004_af715bb",
+    "005_79fab0e",
+    "006_0393fee",
+    "007_df531c2",
+    "008_98a5562",
+    "009_384beef",
+    "010_3f56922",
+    "011_a3b2ad9",
+    "012_21cba43",
+    "013_86ce4eb",
+    "014_f7c4de6",
+    "015_5ef0e32",
+    "016_4d51bb4",
+    "017_54d55ed",
+    "018_0ea2adf",
+    "019_609d084",
+    "021_85f2857",
+    "022_4d24148",
+    "023_642e93d"
+  ],
+  "campaign020_missing": true,
+  "mermaid_block_count": 4,
+  "mermaid_directions": [
+    "flowchart TB",
+    "flowchart TB",
+    "flowchart TB",
+    "flowchart TB"
+  ],
+  "mermaid_validation": "Source syntax/flow inspection only; no Mermaid renderer execution claimed.",
+  "package_fingerprint_matches_campaign023": true,
+  "limits": [
+    "No fresh live agent acceptance",
+    "No installed-client activation",
+    "No Python3.11 execution",
+    "No live/native complex recovery",
+    "No shell authorization setting behavior verification"
+  ]
+}

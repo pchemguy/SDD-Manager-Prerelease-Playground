@@ -1,0 +1,35 @@
+{
+  "source_commit": "e33949aded51c55013d2de6318e0564127a13d3d",
+  "version": "0.14.7",
+  "package_files": 116,
+  "manifest_copies_equal": true,
+  "package_fingerprint": "9415dc5e374ac5eacb79acc662ab43beb72efe7a5ecd239107912924820d6c82",
+  "notice_links": [
+    {
+      "owner": "README.md",
+      "target": "SDD-MANAGER.md",
+      "included": true
+    },
+    {
+      "owner": "README.md",
+      "target": "AI_DISCLOSURE.md",
+      "included": true
+    },
+    {
+      "owner": "SDD-MANAGER.md",
+      "target": "AI_DISCLOSURE.md",
+      "included": true
+    },
+    {
+      "owner": "AI_DISCLOSURE.md",
+      "target": "AI_DISCLOSURE.md",
+      "included": true
+    }
+  ],
+  "assets_available": true,
+  "assessor_and_dev_material_excluded": true,
+  "all_presentation_paths_resolve": true,
+  "svg_xml_parse": "Passed",
+  "skills_and_assets_unchanged": true,
+  "evidence_class": "Actual committed package/local source checks; no live test"
+}

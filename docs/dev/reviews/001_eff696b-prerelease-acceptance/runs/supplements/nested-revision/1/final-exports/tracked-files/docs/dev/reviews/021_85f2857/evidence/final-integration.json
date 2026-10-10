@@ -1,0 +1,42 @@
+{
+  "campaign": "021_85f2857",
+  "completed_actions": [
+    "V-001",
+    "V-002",
+    "V-003",
+    "V-004",
+    "V-005",
+    "V-006",
+    "V-007",
+    "V-008",
+    "V-009",
+    "V-010",
+    "V-011",
+    "V-012",
+    "V-013",
+    "V-014"
+  ],
+  "version": "0.14.5",
+  "reviewed_source": "2729c67662749dd8de10313d334e12432718c4d7",
+  "revision_tip": "0cc0d14c190fc5676d57caa89a4ceee74d87a63a",
+  "integration_commit": "aa1a014973c06f3e408d20fc74a9f56b127c6e5c",
+  "parents": [
+    "85f2857b9e4a8cb6dcd1b4b9e2a5d2f5d7b2a14b",
+    "0cc0d14c190fc5676d57caa89a4ceee74d87a63a"
+  ],
+  "remote": "https://github.com/pchemguy/Skill-SDD-Manager.git",
+  "target_ref": "refs/heads/feature/architecture-revision",
+  "observed_target_tip": "aa1a014973c06f3e408d20fc74a9f56b127c6e5c",
+  "observed_revision_tip": "0cc0d14c190fc5676d57caa89a4ceee74d87a63a",
+  "observed_at": "2026-10-06T11:38:29.367625+00:00",
+  "normal_push_exit_code": 0,
+  "merged_support_tests": 106,
+  "catalog_validation": "Passed",
+  "independent_review": "No remaining Important/Critical blocker",
+  "source_and_harness_hashes_verified": 241,
+  "imported_evidence_hashes_unchanged": 9,
+  "revision_branch_retained": true,
+  "unrelated_untracked_work_preserved": true,
+  "live_follow_up": "Not run; separately scoped and pinned campaign required",
+  "installed_deployment": "Not performed"
+}

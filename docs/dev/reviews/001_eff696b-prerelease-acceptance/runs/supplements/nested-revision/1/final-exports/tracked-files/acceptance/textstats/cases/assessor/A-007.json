@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "case_id": "A-007",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    },
+    {
+      "id": "product-baseline",
+      "kind": "literal",
+      "key": "baseline",
+      "expected": [
+        {
+          "name": "named",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=3 words=3\n"
+        },
+        {
+          "name": "empty",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=0 words=0\n"
+        },
+        {
+          "name": "keep-bom",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=1\n"
+        },
+        {
+          "name": "dash-filename",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=2\n"
+        },
+        {
+          "name": "missing",
+          "returncode": 1,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true,
+          "source_identified": true
+        },
+        {
+          "name": "decode",
+          "returncode": 1,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true,
+          "source_identified": true
+        },
+        {
+          "name": "usage-missing",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        },
+        {
+          "name": "usage-extra",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        },
+        {
+          "name": "usage-unknown",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "id": "product-json",
+      "kind": "literal",
+      "key": "json",
+      "expected": [
+        {
+          "name": "json",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "json": {
+            "lines": 2,
+            "words": 3
+          },
+          "single_object_newline": true
+        },
+        {
+          "name": "default",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=2 words=3\n"
+        },
+        {
+          "name": "json-bom",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "json": {
+            "lines": 1,
+            "words": 1
+          },
+          "single_object_newline": true
+        }
+      ]
+    }
+  ],
+  "required_agent_checks": [
+    "Phase 2 begins at published phase 1 integration; JSON and default text behavior pass independent captures.",
+    "Integration remains at phase 1; stdin work has not been implemented.",
+    "Phase 2 activation creates/readbacks only its own label, milestones and all issues after phase 1 completion/publication and before phase 2 first-task execution."
+  ]
+}

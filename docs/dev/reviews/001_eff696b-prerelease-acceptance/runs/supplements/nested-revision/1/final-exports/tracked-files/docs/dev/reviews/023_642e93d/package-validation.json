@@ -1,0 +1,14 @@
+{
+  "kind": "actual dirty package snapshot and structural checks, not installed-client acceptance",
+  "package_version": "0.14.6",
+  "identical_manifest_copies": true,
+  "readme_and_license_in_snapshot": true,
+  "root_svg_rename_byte_identical": true,
+  "png_license_and_skills_unchanged": true,
+  "presentation_paths_resolve": true,
+  "catalog_validation_cases": 27,
+  "support_tests": 107,
+  "result": "Passed",
+  "dirty_package_files": 114,
+  "fingerprint": "60840f4b62aa5566d1d25fe11f6e035ac9fd20c2e4a368ecf5868a024be459d1"
+}

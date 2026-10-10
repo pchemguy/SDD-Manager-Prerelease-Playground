@@ -1,0 +1,14 @@
+{
+  "target": "feature/architecture-revision",
+  "target_parent": "3f56922a936c8fe039f906ed27566b5662b5440c",
+  "revision_parent": "1a5d8eab3ff2d49c2b6f28d672c77e199a956a4a",
+  "conflicts": false,
+  "checks": {
+    "support_tests": "67 passed",
+    "catalog": "27 cases validated; not live acceptance",
+    "source_snapshot": "all source hashes match verified revision",
+    "frontmatter_links": "valid",
+    "unmerged_entries": "none"
+  },
+  "live_acceptance": "pending dedicated test repository"
+}

@@ -1,0 +1,10 @@
+test_broken_public_export_fails_despite_correct_private_core (tests.test_contract_probe.ContractProbe.test_broken_public_export_fails_despite_correct_private_core) ... ok
+test_public_package_only_implementation_passes (tests.test_contract_probe.ContractProbe.test_public_package_only_implementation_passes) ... ok
+test_unavailable_import_is_not_contract_failure (tests.test_contract_probe.ContractProbe.test_unavailable_import_is_not_contract_failure) ... ok
+test_valid_baseline_then_actual_assertion_failure (tests.test_contract_probe.ContractProbe.test_valid_baseline_then_actual_assertion_failure) ... ok
+test_wrong_identity_and_repeat_injection_rejected (tests.test_contract_probe.ContractProbe.test_wrong_identity_and_repeat_injection_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.725s
+
+OK

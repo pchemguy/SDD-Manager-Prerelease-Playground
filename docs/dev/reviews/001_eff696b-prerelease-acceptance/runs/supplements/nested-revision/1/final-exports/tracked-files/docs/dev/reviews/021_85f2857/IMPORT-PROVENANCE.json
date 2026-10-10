@@ -1,0 +1,84 @@
+{
+  "campaign": "021_85f2857",
+  "starting_baseline": "85f2857b9e4a8cb6dcd1b4b9e2a5d2f5d7b2a14b",
+  "tested_plugin_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "tested_source_version": "0.14.3",
+  "owning_source_version": "0.14.4",
+  "test_repository": "https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004",
+  "source_commit": "2d18ec0c74fa4dfec62a28ab9c0c1701134817b1",
+  "source_merge_parents": [
+    "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+    "c380436e0f8337d2faf3f299d24dc0b95f621acf"
+  ],
+  "coverage": {
+    "Passed": 20,
+    "Blocked": 7
+  },
+  "imported_at": "2026-10-06T11:04:17.495343+00:00",
+  "files": [
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/DIAGNOSTIC-REPORT.md",
+      "destination_path": "DIAGNOSTIC-REPORT.md",
+      "source_sha256": "389a4538dc8b224569e974d48841a899462f2347a8f738ff23a86f553221cd6e",
+      "imported_sha256": "389a4538dc8b224569e974d48841a899462f2347a8f738ff23a86f553221cd6e",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/PROPOSED-AMENDMENTS.md",
+      "destination_path": "PROPOSED-AMENDMENTS.md",
+      "source_sha256": "579cf5394f04c5214b77a5fb295e0a35fcd98e5e16dae9049e786bc739bdf75c",
+      "imported_sha256": "2eb0b75f99a1c3a0dd59eedfd691c729b94d775b7eab904ceb2ef3a54f4f8d10",
+      "changes": "Reader links relocated to owning-source README or immutable test-repo evidence"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/AUTHORIZATION-AMENDMENT-SUPPLEMENT.md",
+      "destination_path": "AUTHORIZATION-AMENDMENT-SUPPLEMENT.md",
+      "source_sha256": "57ffc97383ae6dc9a02200b7e7d411032d4307d8ab4c816af430d3fd2a723c05",
+      "imported_sha256": "57ffc97383ae6dc9a02200b7e7d411032d4307d8ab4c816af430d3fd2a723c05",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md",
+      "destination_path": "runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md",
+      "source_sha256": "19133696794bf26d89528fe41a5485a6dbe0f160d98a8ed572567d316fdd66d9",
+      "imported_sha256": "19133696794bf26d89528fe41a5485a6dbe0f160d98a8ed572567d316fdd66d9",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/runs/A-027/1/independent-assessment/RETAINED-ATTEMPT-ASSESSMENTS.json",
+      "destination_path": "runs/A-027/1/independent-assessment/RETAINED-ATTEMPT-ASSESSMENTS.json",
+      "source_sha256": "4048f110f3c3fc0937245f17aace382d89470c78e5c4882f29a84c91e127a84b",
+      "imported_sha256": "4048f110f3c3fc0937245f17aace382d89470c78e5c4882f29a84c91e127a84b",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/runs/A-027/1/independent-assessment/RECONCILIATION.json",
+      "destination_path": "runs/A-027/1/independent-assessment/RECONCILIATION.json",
+      "source_sha256": "6a7afd010a440b3f7a9c9eadf55b67cf2db1fd594e8a3951dc19c5749be520f9",
+      "imported_sha256": "6a7afd010a440b3f7a9c9eadf55b67cf2db1fd594e8a3951dc19c5749be520f9",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/FINAL-PUBLICATION.json",
+      "destination_path": "FINAL-PUBLICATION.json",
+      "source_sha256": "9709c2f16b47b78628d009ff3dfe2e4f9367bbe1ba943ffa0389a2cee2f65624",
+      "imported_sha256": "9709c2f16b47b78628d009ff3dfe2e4f9367bbe1ba943ffa0389a2cee2f65624",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/STOP-CHECKPOINT.json",
+      "destination_path": "STOP-CHECKPOINT.json",
+      "source_sha256": "64bdecc41f5b2f48d136cee361ec5c668ec0a95076b144579417ab1dad301edf",
+      "imported_sha256": "64bdecc41f5b2f48d136cee361ec5c668ec0a95076b144579417ab1dad301edf",
+      "changes": "Byte-identical"
+    },
+    {
+      "source_path": "docs/dev/reviews/001_8e2d3a5/FINAL-EVIDENCE-INTEGRATION.json",
+      "destination_path": "FINAL-EVIDENCE-INTEGRATION.json",
+      "source_sha256": "79280ec4bcf43ca344f50adfb37f3c2cab156b9275072f02e21e0d8920a02762",
+      "imported_sha256": "79280ec4bcf43ca344f50adfb37f3c2cab156b9275072f02e21e0d8920a02762",
+      "changes": "Byte-identical"
+    }
+  ],
+  "limits": "Historical independent assessments and STOP records retain original meanings. Import/link relocation is not a new review grade, source repair or rerun."
+}

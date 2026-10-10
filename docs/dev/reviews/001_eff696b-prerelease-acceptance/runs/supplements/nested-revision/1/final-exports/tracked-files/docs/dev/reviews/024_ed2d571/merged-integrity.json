@@ -1,0 +1,11 @@
+{
+  "merge_parent_tips": [
+    "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+    "85a2d3f39728af2445f37de831fc6f3ce526a092"
+  ],
+  "conflicts": false,
+  "merged_focus_tests": 34,
+  "source_tree_equals_verified_working_tip": true,
+  "live_test": false,
+  "target": "feature/architecture-revision"
+}

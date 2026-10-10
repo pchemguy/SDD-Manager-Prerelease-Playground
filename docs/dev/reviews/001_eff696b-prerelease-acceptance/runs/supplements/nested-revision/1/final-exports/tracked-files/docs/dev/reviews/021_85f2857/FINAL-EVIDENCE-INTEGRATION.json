@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-06T11:02:52.722122+00:00",
+  "authorization": "User explicitly requested merge branch into main, then import report/amendments and draft revision plan",
+  "source_commit": "c380436e0f8337d2faf3f299d24dc0b95f621acf",
+  "target_before": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+  "target_branch": "main",
+  "merge_kind": "explicit two-parent merge",
+  "prospective_changes": "1436 paths, all within existing campaign evidence; no product file changes",
+  "checks": {
+    "unit_tests": 25,
+    "integration_tests": 18,
+    "all_passed": true,
+    "independent_assessment_payloads_sha256_match": 7,
+    "preserved_sample_unchanged": true,
+    "unmerged_entries": 0
+  },
+  "publication": "Execution publishes containing merge and verifies exact remote; receipt is imported into new owning-source review campaign",
+  "historical_assessments": "Unchanged 20 Passed / seven Blocked; older STOP records describe their original checkpoints"
+}

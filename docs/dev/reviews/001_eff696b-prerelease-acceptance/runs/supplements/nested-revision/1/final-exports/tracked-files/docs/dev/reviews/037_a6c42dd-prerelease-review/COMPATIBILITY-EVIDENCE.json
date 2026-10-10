@@ -1,0 +1,12 @@
+{
+  "checked_source": "c23dd7a5b9163452ee7473ee14a26758ecf039a9",
+  "historical_render_source": "629d4cb7d6494fd49b9ac3c83a578ce4a9997409",
+  "readme_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+  "readme_assets_manifests_skills_equal": true,
+  "historical_render_provenance": "diagram-evidence/render.json",
+  "all_four_persisted_image_hashes_exact": true,
+  "new_render_executed": false,
+  "strict_check_evidence": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/tree/ef3a458f6754f7c3f127c72b7620979c01d2ed63/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/strict-package/1",
+  "strict_result": "39 errors retained and classified; no migration or portability pass",
+  "facilities": "Installed native discovery, native termination/response suppression/protected-session recovery, local Python3.11 and Windows remain unestablished. Publisher CI3.11 is separate from product consumer coverage."
+}

@@ -1,0 +1,225 @@
+{
+  "o1-minimal-adoption": [
+    {
+      "source": "AGENTS.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "tests/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tests/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    }
+  ],
+  "o5-interrupted-resume": [
+    {
+      "source": "AGENTS.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "tests/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tests/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    }
+  ],
+  "o4-owner-transfer": [
+    {
+      "source": "AGENTS.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "tests/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/TASKS.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/features/counter-formatting/FEATURE-TASKS.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/TASKS.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "tests/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/counter-formatting/README.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/features/counter-formatting/README.md",
+      "target": "FEATURE-TASKS.md",
+      "exists": true
+    },
+    {
+      "source": "docs/dev/features/counter-formatting/README.md",
+      "target": "../../TASKS.md",
+      "exists": true
+    }
+  ],
+  "o2-manual-maintenance": [
+    {
+      "source": "AGENTS.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "checks/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/FEATURE-TASKS.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "src/main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "checks/test_main.py",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "AI_DISCLOSURE.md",
+      "exists": true
+    }
+  ]
+}

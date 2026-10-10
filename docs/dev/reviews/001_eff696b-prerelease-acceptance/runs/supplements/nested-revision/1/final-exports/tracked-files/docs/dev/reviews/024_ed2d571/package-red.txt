@@ -1,0 +1,15 @@
+test_committed_and_dirty_readme_and_license_are_packaged (tests.test_package_docs.PackageDocumentation.test_committed_and_dirty_readme_and_license_are_packaged) ... ok
+test_notice_navigation_is_retained_in_committed_and_dirty_snapshots (tests.test_package_docs.PackageDocumentation.test_notice_navigation_is_retained_in_committed_and_dirty_snapshots) ... FAIL
+
+======================================================================
+FAIL: test_notice_navigation_is_retained_in_committed_and_dirty_snapshots (tests.test_package_docs.PackageDocumentation.test_notice_navigation_is_retained_in_committed_and_dirty_snapshots)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_package_docs.py", line 30, in test_notice_navigation_is_retained_in_committed_and_dirty_snapshots
+    self.assertIn(str(PurePosixPath(owner).parent/target),files)
+AssertionError: 'SDD-MANAGER.md' not found in {'README.md': b'Development uses [SDD Manager](SDD-MANAGER.md). See [disclosure](AI_DISCLOSURE.md).\n', 'plugin.json': b'{"name":"fixture"}\n'}
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.421s
+
+FAILED (failures=1)

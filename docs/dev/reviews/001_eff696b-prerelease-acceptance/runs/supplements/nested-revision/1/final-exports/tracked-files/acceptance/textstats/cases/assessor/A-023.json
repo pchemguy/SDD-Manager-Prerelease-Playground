@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Exact observed identity, retained valid work and readback before any uncertain-effect retry; no duplicate effect. Evidence class is explicit."
+  ],
+  "variant_agent_checks": {
+    "controlled-reconciliation": [
+      "Independently observe fixture send-then-lost-response, applied effect readback and pre-send unapplied effect. Fresh consumer chooses bounded reconciliation; fixture responses are not GitHub acceptance."
+    ],
+    "live-response-loss": [
+      "Optional real provider task/backlog, eligible-phase projection and milestone closure trials in legitimate isolated namespace; suppress response after actual send and inspect exact live objects before replay. Missing facilities are optional Not run."
+    ]
+  }
+}
