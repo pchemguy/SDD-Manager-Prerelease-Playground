@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "A-018",
+  "decision": "Accepted",
+  "authority": "Delegated concrete artifact review",
+  "observed_at": "2026-10-10T15:02:26.943867+00:00",
+  "scope": "CorrectedT005 only; no casegrade/T006/integration acceptance",
+  "reviewed_sha256": {
+    "textstats/cli.py": "14b644a650bb38eeaec8a95b9df2a525bd7956f69f0544d3a8e18aa553257d8d",
+    "tests/unit/test_cli.py": "45d75eee0821fe3b0715c06a55000da6113c1857cc15f2fbecfed06dc160dc10",
+    "tests/integration/test_cli.py": "f8b5628b475b7f07c1ec5eb4ed903b45846e1646f2a02b86aa68196af1cca670",
+    "tests/integration/test_api.py": "e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6",
+    "docs/dev/TASKS.md": "1fc199dd940a3854e531517d2399f572310cd45239d3060391bb3b965fb497cb"
+  },
+  "assessment": "Root inspected exactallow_abbrevFalse parserpolicy, unitpre-acquisitionprefix matrix andactualvalid/missing-fileCLI regressionassertions, narrowexpectederror translation/streams/status/lifetime/API/-B scope, and retainedTASKS oldfinding/RED/GREEN. Undocumentedprefixacceptance blocker repaired by concrete scopedwork with observedRED2/32 andfocusedGREEN2/full25unit14integration; originalfirstreviewfailure/Nottriggered attempt retained.",
+  "next_authorized_action": "InitialT005checkbox/result/closingcommit followedimmediate localtrial-deliverypublication; stopactualrejection/hold no retry/bypass/forcepush/newtask",
+  "limits": [
+    "Actualrejectiontrigger and independentaggregategrade pending",
+    "Taskresultstring may append thisacceptance/initialcheckbox; suppliedhashsnapshot captures preclosingreview state"
+  ]
+}
