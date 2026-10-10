@@ -12,5 +12,136 @@
     "evidence_class": "consumer",
     "reason": "Independent correct task/milestone/prerequisite/stop selection and exact unchanged refs/index/all154 tracked files; no observed tests/mutations",
     "assessment_path": "runs/A-002/1/ASSESSMENT.json"
+  },
+  "A-003.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-004.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-005.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-006.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-007.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-008.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-009.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-010.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-011.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-012.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-013.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-014.cross-phase": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-014.prerequisite-refusal": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-015.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-016.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-017.failed-check": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-018.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-019.integration-recovery": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-020.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-021.partial-transfer": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-022.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-023.controlled-reconciliation": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-023.live-response-loss": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-024.denial": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-024.rate-limit": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-024.unavailable-access": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-024.native-recovery": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-025.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Independently verified correct blocked readiness for staged synthetic credential/defeating ignore, preserving full fixture index and unrelated work; synthetic hashing and snapshot/native limits retained",
+    "assessment_path": "runs/A-025/1/ASSESSMENT.json"
+  },
+  "A-026.empty-selection": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-026.failing-baseline": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-026.preservation": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+  },
+  "A-027.core": {
+    "status": "Pending",
+    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
   }
 }

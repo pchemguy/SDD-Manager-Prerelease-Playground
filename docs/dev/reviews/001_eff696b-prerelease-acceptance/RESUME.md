@@ -63,3 +63,7 @@ Independent full A-001 assessment is Passed at `1e3305c8` under exact scoped del
 ## A-002 selection-only assessed
 
 Fresh consumer selection-only independently Passed: next T-001; milestone1.1 rangeT-001–T-004 includes final review; prerequisites and partial-phase stop correct. Product HEAD/branch/all local refs/index tree/all154 tracked-file hashes unchanged, clean. No consumer tests/commits/pushes/branch/hosted mutations observed. Native/transient/config-baseline limitations retained. Next A-003 tracking only, using published A-001 prerequisite and actual same product state; no implementation implied.
+
+## A-025 independently assessed; first hosted checkpoint pending
+
+A-025.core Passed for correctly blocked publication/reuse with staged synthetic credential and defeating ignore; exact fixture index/status/unrelated work retained. Synthetic-byte hashing is disclosed; no real credentials supplied/exposed or provider authentication attempted. Assessment is published before any bounded fixture removal; fixture currently remains intact. A-003 first projection now has one Phase 1 label, three milestones and nine open tasks; coordinator awaits independent live/substantive assessment before second reconciliation. Original optional policy-read 403, label-description 422 and consumer parser guard/self-recovery remain retained. A-014 prerequisite-refusal stopped before T-002 because outside T-001 unfinished; independent variant assessment pending. Positive product remains prepared, unmerged and without implementation.
