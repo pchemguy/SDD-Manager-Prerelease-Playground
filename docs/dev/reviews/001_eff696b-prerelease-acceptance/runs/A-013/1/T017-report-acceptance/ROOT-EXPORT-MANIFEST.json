@@ -1,0 +1,66 @@
+{
+  "CANDIDATE.json": {
+    "sha256": "5f39858ec5190a9e211c4ac4e771bf543da8c6041d00e73de10a55d9ab390c96",
+    "bytes": 1809
+  },
+  "DECISION.json": {
+    "sha256": "840feff1febd0e47479778bcab47e8043fc3835043a538038eb6bcf6ffdd01f9",
+    "bytes": 1434
+  },
+  "independent/ASSESSMENT.json": {
+    "sha256": "cc3292054935bf1ff8224876386f61bf981892e22b76afc505a0689b2ecf983e",
+    "bytes": 4261
+  },
+  "independent/FILES.json": {
+    "sha256": "6199af05db43bdc2fe829d307ebf0cc3ccc10079b608c5710c61e3b12d4ad18f",
+    "bytes": 36204
+  },
+  "independent/candidate.tar": {
+    "sha256": "f6b94892903ab53dd81b4267cae6512087969d49ea8fe50f81644f848b71cb0d",
+    "bytes": 1402880
+  },
+  "independent/invariants-and-TODO-provenance.json": {
+    "sha256": "b0a76fdc71e13e8163345069eacbf65e567dc69d9ca776ea55d4ec83f8fa7ee8",
+    "bytes": 11585
+  },
+  "independent/reached-T015/archive-provenance.json": {
+    "sha256": "a4bdd07d3fe8dd98ffc53b973b27f50be5639ceb0b5d7db68cf1cda1946158f7",
+    "bytes": 2103
+  },
+  "independent/reached-T015/docs-assessment.json": {
+    "sha256": "b34be9fc3f7ae0c5f48974dad95c0d552efded6cfa9feb3363cf95696ac9e476",
+    "bytes": 1971
+  },
+  "independent/reached-T015/docs-commands.json": {
+    "sha256": "31975b5044b5ec12f79ca79bea9d5b2fd9ca62a36bb5a3d3a7088bf7db24bb54",
+    "bytes": 35878
+  },
+  "independent/reached-T015/runtime/literal-evidence.json": {
+    "sha256": "3aa4e7fb97afcb2c4ba671ef80eed8baa340298e1e7febc541c1d68512744b5c",
+    "bytes": 11774
+  },
+  "independent/reached-T016/lifecycle-provider-observations.json": {
+    "sha256": "1b7a34de4c58bbb638b2bf1c2be6369f1f25fdc88df8af31a48112843c0f1b67",
+    "bytes": 80018
+  },
+  "product/AGENTS.md": {
+    "sha256": "37fb35f329f1bcd51c95f293f9d3668a8d55866dad224cc5c05c543c3e12719f",
+    "bytes": 13016
+  },
+  "product/docs/dev/TASKS-REVIEW-REPORT.md": {
+    "sha256": "c794461b50f111677b25eb1c292d4a6734fa46a230c2f7790975fcf57dd58ecd",
+    "bytes": 25324
+  },
+  "product/docs/dev/TASKS.md": {
+    "sha256": "c0f9718171d069e34de57b24c94a0d2daa7f001ceb8b2552fab5fa4566191616",
+    "bytes": 80648
+  },
+  "product/docs/dev/reports/IMPLEMENTATION-REPORT.md": {
+    "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+    "bytes": 10235
+  },
+  "product/docs/dev/reports/phases/2/PHASE-REPORT.md": {
+    "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+    "bytes": 10224
+  }
+}
