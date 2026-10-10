@@ -1,0 +1,21 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "task_id": "T-019",
+  "baseline": "3bcd141b24bf0f655fa8c2f777c7c9eb0a24ba93",
+  "pending_artifact_blobs": {
+    "textstats/cli.py": "82ec263cc37cead7d44fe3d19e9342524d419c8b",
+    "textstats/io.py": "c1494da9eef51eb13bc2695fc31f2d1fdf1aeeb3",
+    "tests/unit/test_cli.py": "7f91229f8b14fa6d6d27d2be087c65b5430720e9",
+    "tests/integration/test_cli.py": "5e7796e52cc43bc23b0b71b2edc168605ef3faa6",
+    "README.md": "bf343df0aef0c4b5586c256d6adf1d044f9aba91",
+    "docs/public-api.md": "f76d19ef7faa80d65570c8116a15c0d83fc28c2e"
+  },
+  "review": "Concrete six-file source/test/doc diff inspected. Strict ASCII positive ordered decimal parsing bypasses string-int digit guard without cap; repeated spellings rejected before acquisition, abbreviation disabled. Complete private binary read/strict decode closes owned handle before once-only BOM normalization and preserved logical selection/counting. No-range public API path/signatures/exceptions retained. Real text/JSON/BOM/option/spelling/file-placement/huge/leading-zero/blank/EOF/Unicode/dash matrices have fixed expected values, file immutability and status assertions; controlled acquisition verifies no-read invalid usage, lifetime and decode/read failures including bad bytes after END. Minimal runnable docs/help state named-file delivery and deferred stdin accurately. Actual RED5/55 failures before production, focusedGREEN9 and full31unit26integration reported with logs, no-range extraction99 retained. Full range distribution/docs and milestone/feature review remain later tasks; no unseen downstream acceptance.",
+  "check_logs": [
+    "037-a010-T019-red.log",
+    "037-a010-T019-green.log",
+    "037-a010-T019-full.log",
+    "037-a010-T019-examples.log"
+  ]
+}
