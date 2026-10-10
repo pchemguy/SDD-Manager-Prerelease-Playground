@@ -1,10 +1,11 @@
-"""Named-file CLI parsing and exact text presentation.
+"""Named-file CLI parsing and text or JSON presentation.
 
 Expected acquisition/decode failures produce an identifying stderr diagnostic
 and status 1; invocation errors produce status 2 before acquisition.
 """
 
 import argparse
+import json
 import sys
 from .io import count_file
 
@@ -24,6 +25,7 @@ def main(argv: list[str] | None = None) -> int:
     """
     parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
+    parser.add_argument('--json', action='store_true', help='emit integer lines and words as one JSON object')
     parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')
     try:
         args = parser.parse_args(argv)
@@ -34,5 +36,8 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, UnicodeDecodeError) as failure:
         print(f"textstats: {args.input!r}: {failure}", file=sys.stderr)
         return 1
-    print(f'lines={stats.lines} words={stats.words}')
+    if args.json:
+        print(json.dumps({'lines': stats.lines, 'words': stats.words}))
+    else:
+        print(f'lines={stats.lines} words={stats.words}')
     return 0

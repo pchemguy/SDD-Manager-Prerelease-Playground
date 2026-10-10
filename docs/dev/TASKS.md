@@ -63,22 +63,22 @@ The user requested preparation through TASKS and stop before implementation. The
 ## Phase 2 — JSON and stdin
 
 - [ ] Phase 2 — JSON and stdin
-    - [ ] Milestone 2.1 — JSON output
-        - [ ] T-010 — Add JSON CLI output with retained text behavior
+    - [x] Milestone 2.1 — JSON output
+        - [x] T-010 — Add JSON CLI output with retained text behavior
             Outcome: R-009 named-file JSON with only integer lines/words, one object plus newline and unchanged default text/errors.
             Scope: `textstats/cli.py`, unit rendering/parser checks, `tests/integration/test_cli.py`, delivered-option help, README and API/module CLI documentation.
             Depends on: T-009, completed phase 1 integration/publication and verified authorized phase 2 activation.
             Evidence: parse subprocess JSON and assert exact keys/integer types/count equality for semantic/BOM examples and option composition; assert text default remains exact and errors retain empty stdout/status/diagnostics. Run nonempty suites and documented JSON examples. Stdin and range remain deferred.
-        - [ ] T-011 — Verify JSON from extracted source
+        - [x] T-011 — Verify JSON from extracted source
             Outcome: extend R-013 distribution acceptance to the delivered alternate format and retained named-file behavior.
             Scope: `tools/check_distribution.py`, `tests/integration/test_distribution.py` and extracted-source JSON instructions in README.
             Depends on: T-010.
             Evidence: rebuild/extract allowlisted source and invoke extracted module for JSON/BOM plus text/error regressions; verify isolated import location, object keys/types/count equality and exact process statuses/streams. Run nonempty product suites and documented archive examples. This delivery check extends portability evidence, not a duplicated code-review/report task.
-        - [ ] T-012 — Review, test and report milestone 2.1
+        - [x] T-012 — Review, test and report milestone 2.1
             Scope: JSON integration and all affected named-file/text/error/docs/distribution contracts.
             Depends on: T-010 and T-011.
             Evidence: code review plus JSON/composition/default/failure and extracted-source checks, blocker repairs, actual counts and demonstration feedback; publish report with TODO dispositions.
-            Report: `docs/dev/reports/phases/2/2.1.md`.
+            Report: [milestone 2.1 review](reports/phases/2/2.1.md).
     - [ ] Milestone 2.2 — UTF-8 stdin and final delivery
         - [ ] T-013 — Add borrowed binary stdin acquisition
             Outcome: R-010 internal byte reader reaching EOF, strict locale-independent UTF-8 and retained stream ownership; no new public API export.
@@ -188,3 +188,21 @@ Performed coherent milestone code review of the package/acquisition/API/CLI, tes
 After T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` was published/read back, issue #9 closed/completed and native milestone #2 closed/read back with all four associated issues closed, both delivery milestone gates were satisfied. Performed a separate coherent cross-milestone implementation code review and all Phase 1 exits, recorded in [phase report](reports/phases/1/PHASE-REPORT.md). M1.2-001 remains resolved and TODO is None; no additional production repair was required. T-009 uniquely maps to issue #10, milestone #3.
 
 Fresh product runner passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. Fresh extraction checker verified exact isolated import and 36 real module cases. Every current README/public-guide runnable fence, including separate extracted example, passed; documented discovery counts are nonzero, outputs are exact and user-guide links resolve. Complete branch-scope inspection retains coordinator resources/pinned package/publisher fixture unchanged. Bounded T-001–T-008 actual parent-diff audit confirms per-task result/evidence/initial checkbox composition and leading single owning IDs. T-009 report/evidence/initial task checkbox and eligible phase/review-milestone parent status close together, followed by verified publication and hosted issue/review-milestone closure. Then integrate the complete phase via explicit two-parent merge, verify merged state and publish/read back main; integration evidence belongs in that actual merge summary. Stop before Phase 2; all T-010–T-017 remain unchecked/unprojected. Broader runtime/platform matrix and release remain outside scope.
+
+## T-010 completion evidence
+
+Selected T-010 through T-012 for the authorized JSON increment; stop before stdin and leave Phase 2 incomplete/unmerged. Created `phase/2-json-and-stdin` from published main `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`; exact remote main readback matched and no outstanding commit existed. The automatic host review rejected a redundant startup main push before execution; remote equality resolved the no-outstanding-commit prerequisite without replaying that rejected operation. Accepted preparation remains contained; governing document hashes match current Ready reviews and TASKS changes since acceptance preserve task scope/dependencies/hierarchy. Before task edits/tests, provider readback verified predecessor issues #2–#10 and milestones #1–#3 closed, Phase 2 label `sdd-phase-2-JSON-and-stdin`, milestones #4–#6 and all T-010–T-017 issues #11–#18 with exact task markers and correct associations. T-010 uniquely maps to issue #11/milestone #4. No unrelated hosted material was changed.
+
+Delivered `--json` as one newline-terminated object with only integer lines/words; retain exact default text, acquisition-before-output, statuses/errors, BOM composition and named dash filenames. Updated help, CLI docs, README and current orientation. Four focused JSON tests first ran against unchanged production: 34 behavioral failures because argparse rejected the new option, no import/setup failure. After implementation, the same four tests passed. `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` passed 25 unit and 20 integration tests with no skips/warnings on Python 3.12.14; existing extraction checks still exercise 36 text/error cases. Temporary real named-file documented invocations produced exact default `lines=3 words=5\n`, equivalent JSON (3, 5), and retained BOM JSON (1, 1), all status 0/empty stderr. JSON subprocess matrix covers empty/mixed terminators/Unicode separators/repeated/interior BOM, both policies/option orders, API/text equality, strict decode/missing/usage regressions and byte preservation. Extraction JSON extension belongs to T-011; stdin/ranges remain deferred. Result/tests/docs/evidence and initial T-010 checkbox close together; publish/read back before issue closure or further task work.
+
+## T-011 completion evidence
+
+T-010 `b292b58429553d18f32c37dd6374a3e5fc7e12fa` was pushed and exact phase-branch remote tip read back before T-011 edits/tests. T-011 uniquely maps to issue #12/native milestone #4. Extended extracted-source checker to JSON for every semantic/BOM sample in both option orders, exact object fields/integer types/counts/newline, dash filename, retained text, decode/missing/usage failures and delivered help. Import location remains verified inside extraction, inherited import paths removed and user site disabled; archive allowlist is unchanged.
+
+Test first: `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.integration.test_distribution.DistributionTests.test_checker_rejects_json_wrong_types_while_text_still_works -v` failed as intended because the original checker accepted an extracted CLI with string JSON values while all 36 text cases passed. After checker extension the same test passed, proving sensitivity without damaging product source. Fresh `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` passed 25 unit and 21 integration tests, no skips/warnings. `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_distribution.py` passed 99 actual extracted module cases on Python 3.12.14, with independently verified extraction import. Documented isolated named-file text and JSON example was executed in a temporary extraction and produced counts (3, 5), status 0/empty stderr. README distribution instructions and maintained orientation reflect these measured counts. Broader runtime/platform coverage remains unverified; no stdin implementation or release. Result/tests/docs/current evidence and initial T-011 checkbox close together; publish and read back before issue closure/review task.
+
+## T-012 completion evidence
+
+T-010 `b292b58429553d18f32c37dd6374a3e5fc7e12fa` and T-011 `c4a16e76813ca336681dbe9b71f1c979cbc767fa` were each published with exact remote readback and their issues #11/#12 closed/completed before review checks. Performed separate coherent JSON/named-file/API/resource/error/docs/distribution code review; the exact reviewed source, conclusions, checks, demonstration and limitations are in [milestone 2.1 report](reports/phases/2/2.1.md). No blocker or repair was found; TODO is None. T-012 uniquely maps to issue #13/native milestone #4.
+
+All eight runnable README/public-guide fences passed in a temporary copy of the identified checkout, including fresh nonempty runner (25 unit/21 integration), both independent discovery suites, builder/checker (99 actual extracted module cases), API assertions and the documented Bash text/JSON extraction. Python 3.12.14, no skips/warnings, inherited bytecode suppression. Full selected-delta and per-task parent-diff inspection confirms owned scope and separate initial closures; pinned/coordinator/publisher resources unchanged. Review report/current evidence/initial T-012 checkbox and eligible milestone 2.1 parent close together. Publish/read back, close/read back issue #13, then validate all milestone-associated issues and close/read back #4. Stop before T-013: Phase 2 and milestones 2.2/2.3 remain incomplete/unmerged; no release.

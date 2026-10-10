@@ -19,6 +19,21 @@ APPROVED = {'README.md', 'docs/public-api.md', 'AI_DISCLOSURE.md', 'SDD-MANAGER.
 
 
 class DistributionTests(unittest.TestCase):
+    def test_checker_rejects_json_wrong_types_while_text_still_works(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive = build_archive(ROOT, Path(directory) / 'source.zip')
+            faulty = Path(directory) / 'faulty-json.zip'
+            with zipfile.ZipFile(archive) as source, zipfile.ZipFile(faulty, 'w') as target:
+                for name in source.namelist():
+                    data = source.read(name)
+                    if name == 'textstats-source/textstats/cli.py':
+                        original = b"{'lines': stats.lines, 'words': stats.words}"
+                        self.assertIn(original, data)
+                        data = data.replace(original, b"{'lines': str(stats.lines), 'words': str(stats.words)}")
+                    target.writestr(name, data)
+            with self.assertRaises((AssertionError, RuntimeError)):
+                verify_archive(faulty)
+
     def test_archive_exact_allowlist_excludes_unrelated_material(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / 'source'

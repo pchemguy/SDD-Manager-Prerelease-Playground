@@ -2,6 +2,7 @@
 
 import contextlib
 import io
+import json
 import shutil
 import subprocess
 import sys
@@ -15,6 +16,36 @@ from textstats.cli import main
 
 
 class CliTests(unittest.TestCase):
+    def test_json_renders_integer_fields_and_composes_with_bom(self):
+        for args in [['--json', 'named'], ['named', '--json'],
+                     ['--keep-bom', '--json', 'named'], ['--json', 'named', '--keep-bom']]:
+            with self.subTest(args=args):
+                out, err = io.StringIO(), io.StringIO()
+                with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
+                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main(args)
+                self.assertEqual((status, err.getvalue()), (0, ''))
+                self.assertTrue(out.getvalue().endswith('\n'))
+                self.assertEqual(out.getvalue().count('\n'), 1)
+                payload = json.loads(out.getvalue())
+                self.assertEqual(payload, {'lines': 3, 'words': 4})
+                self.assertTrue(all(type(value) is int for value in payload.values()))
+                counter.assert_called_once_with('named', strip_bom='--keep-bom' not in args)
+
+    def test_json_failure_and_invalid_usage_emit_no_result(self):
+        out, err = io.StringIO(), io.StringIO()
+        with patch('textstats.cli.count_file', side_effect=OSError('read failed')):
+            with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                self.assertEqual(main(['--json', 'named']), 1)
+        self.assertEqual(out.getvalue(), '')
+        self.assertIn('named', err.getvalue())
+        self.assertIn('read failed', err.getvalue())
+        for args in [['--json'], ['--json', 'one', 'two'], ['--j', 'named']]:
+            with patch('textstats.cli.count_file') as counter:
+                with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                    self.assertEqual(main(args), 2)
+            counter.assert_not_called()
+
     def test_success_renders_completed_counts(self):
         out, err = io.StringIO(), io.StringIO()
         with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
