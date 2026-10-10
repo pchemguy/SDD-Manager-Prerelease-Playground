@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "show-ref",
+    "--verify",
+    "refs/heads/phase/2-json-and-stdin"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_status": 0,
+  "stdout": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff refs/heads/phase/2-json-and-stdin\n",
+  "stderr": ""
+}

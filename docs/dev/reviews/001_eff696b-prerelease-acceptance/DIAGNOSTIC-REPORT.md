@@ -1,3 +1,13 @@
+# Current reached prerelease assessment — publication blocked
+
+All27 cases/32 required variants have reached dispositions: original27 Passed/2 Failed/3 Blocked; separately corrected recheck lens29 Passed/3 Blocked. The original A004/A005 harness failures remain retained. A013 is independently Blocked at default publication, A014 at rejected new live trial refs, and A027 full reporting/integration workflow at the unpublished product-main prerequisite. Scoped final report reconciliation is undergoing independent review. Both optional variants are Not run;14 named supplements remain outside required totals.
+
+T013–T017 and their reports are published at phase `c05b65958e2a386cf2ae8782dca3e749ed9b60ff`. Accepted local merge `549a25f4f1bc7702afa0b729fc0894918ec9d16d` remains unpublished after two automatic review rejections before Git execution; live main is `fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. No transport/actor workaround or default retry follows. [Final A013 independent assessment](runs/A-013/1/ASSESSMENT.json) and [ordinary final reached report](runs/A-027/1/CONSUMER-FINAL-REPORT.md) retain exact observations, first attempts, fresh versus reused checks and limitations.
+
+Required readiness remains false. Source-only publisher and harness repairs are separately verified; no confirmed consumer instruction defect is inferred from approval barriers. Current133 shipped bytes match immutable `ea515f5`; strict-format, installed-client, platform/runtime, shared-filesystem, lost original channels and historical A014 JSON-format limits remain explicit. No production release or final default integration is claimed.
+
+## Historical observations
+
 # Pinned prerelease acceptance — in progress
 
 1. Demonstrated behavior: full A-001 preparation independently Passed at accepted/published design-docs checkpoint `1e3305c8`: complete governing documents, exact current QC, 17 unchecked task owners, scoped delegated decisions and no premature implementation or hosted objects. Immutable package and 37 claimed loaded-source hashes verified. Explicit pinned-source loading ran; automatic installed discovery is unverified. Actual publisher first failure, assisted recovery, repeated reconciliation, controlled acknowledged-upload recovery, same-tag serialization and source/body/inventory safe refusals are retained. Separately repaired publisher tooling passes a clean first live creation in Python 3.11 CI; downloaded archive/checksum and all133 member bytes match.

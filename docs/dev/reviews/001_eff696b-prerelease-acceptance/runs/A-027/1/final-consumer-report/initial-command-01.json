@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "git",
+    "branch",
+    "--show-current"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_code": 0,
+  "stdout": "phase/2-json-and-stdin\n",
+  "stderr": ""
+}

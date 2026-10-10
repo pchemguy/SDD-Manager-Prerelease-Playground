@@ -1,0 +1,219 @@
+{
+  "kind": "A-013 BLOCKED publication checkpoint",
+  "sealed": 1791661620.3287442,
+  "requested_completed_phase_publication_reached": false,
+  "workflow_blocked": true,
+  "local_accepted_merge": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+  "ordered_parents": [
+    "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+  ],
+  "tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "clean": true,
+  "remote_refs": {
+    "refs/heads/main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "refs/heads/phase/2-json-and-stdin": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+  },
+  "working_phase_published": true,
+  "main_merge_published": false,
+  "retry_policy": "No further retry or substitute; explicit platform-recognized user request required",
+  "integration_acceptance_reported_by_coordinator": "b187f05e3c78cffcde61a7ce52a97a7197bffdaa",
+  "narrowed_recovery_assessment_reported_by_coordinator": "29e9ff2525d1796ce6befac85f459ccd18299456",
+  "rejections": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-main-push-rejection.json",
+      "sha256": "fdc397f4fdc27a8fdb0fe80dbe968a373f46e423ce903fe5536dced2be602696",
+      "bytes": 1337
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-main-push-narrowed-rejection.json",
+      "sha256": "13bee1bed5a89976b9d2374409cb221bc1800b51ce7e86c954e5836fd8fb5888",
+      "bytes": 1156
+    }
+  ],
+  "push_effect": "Both attempts rejected before Git launch; no command process streams/status or provider write exist",
+  "verified_exits": {
+    "runtime": "3.12.14",
+    "unit": 37,
+    "integration": 34,
+    "real_module_cases": 478,
+    "docs_fences": 12,
+    "merged_python_children_all_explicit_B_env": 1628,
+    "TODO": "None",
+    "broader_runtimes_platforms": "unverified"
+  },
+  "accepted_candidate_checks": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-integration-candidate.json",
+    "sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+    "bytes": 3858
+  },
+  "archive": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/dist/textstats-source.zip",
+    "sha256": "d3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed",
+    "bytes": 17539
+  },
+  "merge_message": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-phase2-merge.txt",
+    "sha256": "eb51fa5b0e635b530fe212cc2adfcc2029adb6fe2db10244a973ad3d367e1157",
+    "bytes": 4975
+  },
+  "report_artifacts": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/reports/phases/2/2.2.md",
+      "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+      "bytes": 11107
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+      "bytes": 10224
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+      "bytes": 10235
+    }
+  ],
+  "native_closure_chronology": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-013",
+        "14",
+        "5",
+        "2d96774221165ac04096c8d57ddcefe85b2305e0",
+        "Three original RED failures retained; 15 focused tests and full 34 unit/28 integration tests passed on Python 3.12.14, no skips/warnings. Borrowed EOF/strict decode/ownership and named-file API regressions verified."
+      ],
+      "status": 0,
+      "completed": 1791657477.9344738
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-014",
+        "15",
+        "5",
+        "dbf50d7b6d83c7ddf53f287d82b199db3e83fd89",
+        "Binary stdin/text/range/BOM/locale/ownership/failure/dash-file contracts verified. Focused RED 42 failures retained then GREEN eight tests; full 37 unit/33 integration passed, expanded invalid acquisition matrix three tests passed and six README examples verified on Python 3.12.14."
+      ],
+      "status": 0,
+      "completed": 1791657783.3909516
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-015",
+        "16",
+        "5",
+        "ca24007134141265a1937c77e2fda504bb0d6129",
+        "37 unit/34 integration tests; 478 isolated module cases; all 12 README/API fences; exact eleven-file archive and 2776 corrected child flags verified."
+      ],
+      "status": 0,
+      "completed": 1791658957.164978
+    },
+    {
+      "argv": [
+        "cat",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-api.py",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py"
+      ],
+      "status": 0,
+      "completed": 1791659159.587666
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-016",
+        "17",
+        "5",
+        "b49a26b36d68dc9bab8cf83633f5b7a2aae81eea",
+        "Accepted milestone report decision9338f067a575511b6d818a6898a458957f4670a8; separate implementation review, twelve fresh tests, unchanged full37/34, 478 extraction cases and twelve fences; TODO None."
+      ],
+      "status": 0,
+      "completed": 1791659429.861184
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-milestone.py",
+        "5"
+      ],
+      "status": 0,
+      "completed": 1791659462.8683395
+    },
+    {
+      "argv": [
+        "cat",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-milestone.py",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py"
+      ],
+      "status": 0,
+      "completed": 1791660189.6106114
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-017",
+        "18",
+        "6",
+        "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+        "Final separate code review/report pair accepted at791d494; 37 unit/34 integration tests, 478 real extracted module cases and all12 README/API fences passed on Python3.12.14. TODO None; historical failures and runtime limits retained."
+      ],
+      "status": 0,
+      "completed": 1791660658.2629642
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-milestone.py",
+        "6"
+      ],
+      "status": 0,
+      "completed": 1791660682.4530742
+    }
+  ],
+  "late_foreign_guard": {
+    "passed": true,
+    "scope": "Pre-T017 closure/integration through BLOCKED publication checkpoint only; no original-startup inference and no post-main-publication claim",
+    "semantic_hashes": [
+      "9e3b1705f4d724265fa7ce343649210f7e4099c65784a7520a36db1b8b21b06a",
+      "0f4589089fb5e0b7d2a4aa8370b6de1963bd380b8be41df31b00fbacdbfa4e87",
+      "30f96a4213998ff21ff9c0f6353b89f9233167c59de4ef3af8d180c1efc4e78c",
+      "5daebc97ffc44bd7d4f292d241b8f6a6a6ea7f8854f0a3ae24a17dc3ec2f8bac"
+    ]
+  },
+  "original_observations": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-observations.json",
+    "sha256": "528a19e045f34d281087ac3243536308d05e79eaf313a77eb087352b6c9d9c96",
+    "bytes": 10181699
+  },
+  "immutable_children": {
+    "directory": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-command-records",
+    "count": 7537,
+    "aggregate_sha256": "fa64c8601d96df5184e9dfd94e38940bfa79401c0cff1edf1913cbf6327e410b",
+    "aggregation": "sorted filename UTF-8 + NUL + exact file SHA256 raw digest"
+  },
+  "surviving_race_checkpoint": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-observations-surviving-race-checkpoint.json",
+    "sha256": "62e350d78841ebccc8152c62ea19d10548ec43c37039e969ec636b4ff6282c07",
+    "bytes": 4053370
+  },
+  "limitations": [
+    "Missing overwritten first channels and original transient truncated bytes are not reconstructed",
+    "Earlier explicit argv gaps and fixture-cleanup discrepancy remain; fresh corrected checks alone establish acceptance",
+    "No universal original raw-channel/startup-manual preservation claim; independently retained coordinator proof and late own guard are distinct"
+  ],
+  "final_command_record": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal-command.json"
+}

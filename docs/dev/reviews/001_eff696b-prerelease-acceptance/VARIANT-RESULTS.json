@@ -231,10 +231,10 @@
     "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json"
   },
   "A-027.core": {
-    "status": "Pending",
+    "status": "Blocked",
     "agent_behavior_assessed": false,
     "evidence_class": "inspection",
-    "reason": "Reporting disposition only; not a successful product prerequisite",
+    "reason": "Reached reporting is available for independent review; full workflow/evidence-main publication blocked by unpublished accepted product-main integration.",
     "assessment_path": ""
   }
 }

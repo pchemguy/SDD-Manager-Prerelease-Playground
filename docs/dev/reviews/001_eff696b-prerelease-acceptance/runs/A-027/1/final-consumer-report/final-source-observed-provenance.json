@@ -1,0 +1,41 @@
+{
+  "captured_utc": "2026-10-10T19:05:43.850436+00:00",
+  "operation": "Read actual root-run results, not independent test execution",
+  "sources": [
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/publisher/command.json",
+      "snapshot": "final-source-publisher-command.json",
+      "sha256": "05e1bcfdff64e6af009630ee5788411a671631a1bbec4832bc51e9dbcc5f5b7f"
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/publisher/stdout.bin",
+      "snapshot": "final-source-publisher-stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/publisher/stderr.bin",
+      "snapshot": "final-source-publisher-stderr.bin",
+      "sha256": "677c4481ddd3525b63c9a11ca6b12d3817bf23ae2cdf586c120cd274a22d710b"
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/publisher/ROOT-EXPORT-MANIFEST.json",
+      "snapshot": "final-source-publisher-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "bd4fd94b5e0fe49df81e1bedd02c3579b9fd22f98c04bd976a76981c6b5cefa7"
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/package/SOURCE-ARCHIVE.json",
+      "snapshot": "final-source-package-SOURCE-ARCHIVE.json",
+      "sha256": "c119d41c34a3a1de82b419ce853f61b513a86d65575126d16857d2d960c04993"
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/package/sdd-manager.zip.sha256",
+      "snapshot": "final-source-package-sdd-manager.zip.sha256",
+      "sha256": "7be1feb3278e39d760c772c5cc25a4d51510c1617d0ed67f0385e8133679b940"
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-source-verification/package/ROOT-EXPORT-MANIFEST.json",
+      "snapshot": "final-source-package-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "65aede5bc08d1ab8bb2357294a879d5c30ee67987ed05c33a862c14f446fda49"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "git",
+    "branch",
+    "--show-current"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_status": 0,
+  "stdout": "main\n",
+  "stderr": ""
+}

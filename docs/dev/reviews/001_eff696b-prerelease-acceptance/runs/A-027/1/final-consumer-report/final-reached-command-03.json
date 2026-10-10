@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "git",
+    "show",
+    "-s",
+    "--format=%H%n%T%n%P",
+    "HEAD"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_status": 0,
+  "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\n190b6865846d66933bcdcd112e1fcfa7ca2f04ef\nfbe8bedf4c6cba1ab29d53d2da05e614603d76d1 c05b65958e2a386cf2ae8782dca3e749ed9b60ff\n",
+  "stderr": ""
+}

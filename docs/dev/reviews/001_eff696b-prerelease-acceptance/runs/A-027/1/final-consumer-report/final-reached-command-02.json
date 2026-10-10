@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "git",
+    "rev-parse",
+    "HEAD"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_status": 0,
+  "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\n",
+  "stderr": ""
+}
