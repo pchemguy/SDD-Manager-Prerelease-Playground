@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "case_id": "A-006",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    },
+    {
+      "id": "merge-parents",
+      "kind": "git",
+      "field": "parents",
+      "expected_ref": "checkpoint_refs.merge_parents"
+    },
+    {
+      "id": "product-api",
+      "kind": "literal",
+      "key": "api",
+      "expected": {
+        "returncode": 0,
+        "stdout_rows": [
+          {
+            "name": "empty",
+            "result": [
+              0,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "plain",
+            "result": [
+              1,
+              2
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "trailing",
+            "result": [
+              1,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "blank",
+            "result": [
+              1,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "mixed",
+            "result": [
+              3,
+              3
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "double-lf",
+            "result": [
+              2,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "whitespace",
+            "result": [
+              1,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "unicode-separator",
+            "result": [
+              1,
+              2
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "bom-only",
+            "result": [
+              0,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "keep-bom",
+            "result": [
+              1,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "double-bom",
+            "result": [
+              1,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "interior",
+            "result": [
+              2,
+              3
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "file",
+            "result": [
+              2,
+              2
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "file-invalid",
+            "result": null,
+            "stdout": "",
+            "stderr": "",
+            "exception": "UnicodeDecodeError"
+          },
+          {
+            "name": "file-missing",
+            "result": null,
+            "stdout": "",
+            "stderr": "",
+            "exception": "OSError"
+          }
+        ],
+        "stderr": "",
+        "immutable": true
+      }
+    },
+    {
+      "id": "product-baseline",
+      "kind": "literal",
+      "key": "baseline",
+      "expected": [
+        {
+          "name": "named",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=3 words=3\n"
+        },
+        {
+          "name": "empty",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=0 words=0\n"
+        },
+        {
+          "name": "keep-bom",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=1\n"
+        },
+        {
+          "name": "dash-filename",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=2\n"
+        },
+        {
+          "name": "missing",
+          "returncode": 1,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true,
+          "source_identified": true
+        },
+        {
+          "name": "decode",
+          "returncode": 1,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true,
+          "source_identified": true
+        },
+        {
+          "name": "usage-missing",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        },
+        {
+          "name": "usage-extra",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        },
+        {
+          "name": "usage-unknown",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        }
+      ]
+    },
+    {
+      "id": "product-distribution",
+      "kind": "literal",
+      "key": "distribution",
+      "expected": [
+        {
+          "name": "extracted-entry",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=2\n"
+        }
+      ]
+    }
+  ],
+  "required_agent_checks": [
+    "All phase exits including failures/docs/README/extracted-source module invocation pass at actual working and prospective merged states.",
+    "Parent completion is justified by all child exits. Explicit two-parent merge reaches integration and remote containment; no phase 2 task execution.",
+    "All delivery milestones close before the dedicated phase review task runs. Its committed/pushed docs/dev/reports/phases/<actual-phase-id>/PHASE-REPORT.md records phase code review, checks, repairs, exits and TODO provenance; its issue closes before the final review milestone.",
+    "Phase 2 hosted objects remain absent until phase 1 integration/publication and an authorized phase 2 activation. Uncertain milestone closure blocks advancement until readback."
+  ]
+}

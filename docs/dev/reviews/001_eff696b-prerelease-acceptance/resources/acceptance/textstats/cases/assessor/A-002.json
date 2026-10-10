@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "A-002",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "unchanged-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Returned task/milestone identities and prerequisites agree with actual owners and readiness.",
+    "Selection performs no source/task edits, tests, pushes or branch creation; compare before/after refs, index, files and command log."
+  ]
+}

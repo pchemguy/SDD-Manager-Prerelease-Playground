@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "case_id": "A-005",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    },
+    {
+      "id": "product-api",
+      "kind": "literal",
+      "key": "api",
+      "expected": {
+        "returncode": 0,
+        "stdout_rows": [
+          {
+            "name": "empty",
+            "result": [
+              0,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "plain",
+            "result": [
+              1,
+              2
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "trailing",
+            "result": [
+              1,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "blank",
+            "result": [
+              1,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "mixed",
+            "result": [
+              3,
+              3
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "double-lf",
+            "result": [
+              2,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "whitespace",
+            "result": [
+              1,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "unicode-separator",
+            "result": [
+              1,
+              2
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "bom-only",
+            "result": [
+              0,
+              0
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "keep-bom",
+            "result": [
+              1,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "double-bom",
+            "result": [
+              1,
+              1
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "interior",
+            "result": [
+              2,
+              3
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "file",
+            "result": [
+              2,
+              2
+            ],
+            "stdout": "",
+            "stderr": "",
+            "exception": null
+          },
+          {
+            "name": "file-invalid",
+            "result": null,
+            "stdout": "",
+            "stderr": "",
+            "exception": "UnicodeDecodeError"
+          },
+          {
+            "name": "file-missing",
+            "result": null,
+            "stdout": "",
+            "stderr": "",
+            "exception": "OSError"
+          }
+        ],
+        "stderr": "",
+        "immutable": true
+      }
+    },
+    {
+      "id": "product-baseline",
+      "kind": "literal",
+      "key": "baseline",
+      "expected": [
+        {
+          "name": "named",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=3 words=3\n"
+        },
+        {
+          "name": "empty",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=0 words=0\n"
+        },
+        {
+          "name": "keep-bom",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=1\n"
+        },
+        {
+          "name": "dash-filename",
+          "returncode": 0,
+          "stderr": "",
+          "unchanged": true,
+          "stdout": "lines=1 words=2\n"
+        },
+        {
+          "name": "missing",
+          "returncode": 1,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true,
+          "source_identified": true
+        },
+        {
+          "name": "decode",
+          "returncode": 1,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true,
+          "source_identified": true
+        },
+        {
+          "name": "usage-missing",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        },
+        {
+          "name": "usage-extra",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        },
+        {
+          "name": "usage-unknown",
+          "returncode": 2,
+          "stdout": "",
+          "stderr_nonempty": true,
+          "no_traceback": true,
+          "unchanged": true
+        }
+      ]
+    }
+  ],
+  "required_agent_checks": [
+    "Usable named-file API/CLI passes independent literal capture; every task has durable check/commit/push evidence.",
+    "Phase branch remains paused; integration unchanged; no premature phase completion.",
+    "Milestone 1.1 code review, focused checks and blocker repairs finish in its explicit last review task; its report is committed/pushed at docs/dev/reports/phases/<actual-phase-id>/<actual-milestone-id>.md.",
+    "Delivery and review task issues close with commit/check evidence before milestone closure; provider readback confirms milestone closed while the incomplete phase remains paused. Bugs, critical issues or required contract/check failures block closure."
+  ]
+}

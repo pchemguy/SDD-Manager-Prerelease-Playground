@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "suites": {
+    "api": [
+      {
+        "name": "empty",
+        "operation": "text",
+        "text": "",
+        "strip_bom": true
+      },
+      {
+        "name": "plain",
+        "operation": "text",
+        "text": "alpha beta",
+        "strip_bom": true
+      },
+      {
+        "name": "trailing",
+        "operation": "text",
+        "text": "alpha\n",
+        "strip_bom": true
+      },
+      {
+        "name": "blank",
+        "operation": "text",
+        "text": "\n",
+        "strip_bom": true
+      },
+      {
+        "name": "mixed",
+        "operation": "text",
+        "text": "alpha\r\nbeta\rgamma\n",
+        "strip_bom": true
+      },
+      {
+        "name": "double-lf",
+        "operation": "text",
+        "text": "alpha\n\n",
+        "strip_bom": true
+      },
+      {
+        "name": "whitespace",
+        "operation": "text",
+        "text": " \t",
+        "strip_bom": true
+      },
+      {
+        "name": "unicode-separator",
+        "operation": "text",
+        "text": "alpha\u2028beta",
+        "strip_bom": true
+      },
+      {
+        "name": "bom-only",
+        "operation": "text",
+        "text": "\ufeff",
+        "strip_bom": true
+      },
+      {
+        "name": "keep-bom",
+        "operation": "text",
+        "text": "\ufeff",
+        "strip_bom": false
+      },
+      {
+        "name": "double-bom",
+        "operation": "text",
+        "text": "\ufeff\ufeff",
+        "strip_bom": true
+      },
+      {
+        "name": "interior",
+        "operation": "text",
+        "text": "a\n\ufeff b",
+        "strip_bom": true
+      },
+      {
+        "name": "file",
+        "operation": "file",
+        "hex": "616c7068610d0a626574610a",
+        "strip_bom": true
+      },
+      {
+        "name": "file-invalid",
+        "operation": "file",
+        "hex": "61ff",
+        "strip_bom": true
+      },
+      {
+        "name": "file-missing",
+        "operation": "missing",
+        "hex": null,
+        "strip_bom": true
+      }
+    ],
+    "baseline": [
+      {
+        "name": "named",
+        "hex": "616c7068610d0a626574610d67616d6d610a",
+        "args": [
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "empty",
+        "hex": "",
+        "args": [
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "keep-bom",
+        "hex": "efbbbf",
+        "args": [
+          "--keep-bom",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "dash-filename",
+        "hex": "616c7068612062657461",
+        "args": [
+          "--",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "missing",
+        "hex": "616c706861",
+        "args": [
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": true
+      },
+      {
+        "name": "decode",
+        "hex": "61ff",
+        "args": [
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": true
+      },
+      {
+        "name": "usage-missing",
+        "hex": "616c706861",
+        "args": [],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": false
+      },
+      {
+        "name": "usage-extra",
+        "hex": "616c706861",
+        "args": [
+          "{input}",
+          "extra"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": false
+      },
+      {
+        "name": "usage-unknown",
+        "hex": "616c706861",
+        "args": [
+          "--unknown",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": false
+      }
+    ],
+    "json": [
+      {
+        "name": "json",
+        "hex": "616c70686120626574610a6c617374",
+        "args": [
+          "--json",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": true,
+        "error": false
+      },
+      {
+        "name": "default",
+        "hex": "616c70686120626574610a6c617374",
+        "args": [
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "json-bom",
+        "hex": "efbbbf",
+        "args": [
+          "--keep-bom",
+          "--json",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": true,
+        "error": false
+      }
+    ],
+    "ranges": [
+      {
+        "name": "two-last",
+        "hex": "616c70686120626574610a626574610a6c6173742074776f",
+        "args": [
+          "--lines",
+          "2:3",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "one",
+        "hex": "616c70686120626574610a626574610a6c6173742074776f",
+        "args": [
+          "--lines",
+          "1:1",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "partial-eof",
+        "hex": "616c70686120626574610a626574610a6c6173742074776f",
+        "args": [
+          "--lines",
+          "2:99",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "past-eof",
+        "hex": "616c70686120626574610a626574610a6c6173742074776f",
+        "args": [
+          "--lines",
+          "4:99",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "empty",
+        "hex": "",
+        "args": [
+          "--lines",
+          "1:3",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "trailing-blank",
+        "hex": "610a0a",
+        "args": [
+          "--lines",
+          "2:9",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "mixed",
+        "hex": "610d0a6220630d640a",
+        "args": [
+          "--lines",
+          "2:3",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "unicode",
+        "hex": "61e280a8620a63",
+        "args": [
+          "--lines",
+          "1:1",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "bom",
+        "hex": "efbbbf",
+        "args": [
+          "--lines",
+          "1:1",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "keep-bom",
+        "hex": "efbbbf",
+        "args": [
+          "--lines",
+          "1:1",
+          "--keep-bom",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "exposed-interior",
+        "hex": "610aefbbbf2062",
+        "args": [
+          "--lines",
+          "2:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "double-bom",
+        "hex": "efbbbfefbbbf",
+        "args": [
+          "--lines",
+          "1:1",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "decimal-zeroes",
+        "hex": "610a6220630a64",
+        "args": [
+          "--lines",
+          "01:02",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "bom-after",
+        "hex": "efbbbf20610a62",
+        "args": [
+          "--lines",
+          "2:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "invalid-0",
+        "hex": "616c706861",
+        "args": [
+          "--lines=+1:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-1",
+        "hex": "616c706861",
+        "args": [
+          "--lines=-1:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-2",
+        "hex": "616c706861",
+        "args": [
+          "--lines= 1:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-3",
+        "hex": "616c706861",
+        "args": [
+          "--lines=1:2 ",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-4",
+        "hex": "616c706861",
+        "args": [
+          "--lines=\u0661:\u0662",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-5",
+        "hex": "616c706861",
+        "args": [
+          "--lines=:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-6",
+        "hex": "616c706861",
+        "args": [
+          "--lines=1:",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-7",
+        "hex": "616c706861",
+        "args": [
+          "--lines=0:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-8",
+        "hex": "616c706861",
+        "args": [
+          "--lines=2:1",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "invalid-9",
+        "hex": "616c706861",
+        "args": [
+          "--lines=1:2:3",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "range-missing",
+        "hex": "616c706861",
+        "args": [
+          "--lines"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": false
+      },
+      {
+        "name": "range-repeat",
+        "hex": "616c706861",
+        "args": [
+          "--lines",
+          "1:2",
+          "--lines",
+          "2:3",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": false
+      },
+      {
+        "name": "decode-after-end",
+        "hex": "610aff",
+        "args": [
+          "--lines",
+          "1:1",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": true
+      },
+      {
+        "name": "equals",
+        "hex": "610a622063",
+        "args": [
+          "--lines=2:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      }
+    ],
+    "removal": [
+      {
+        "name": "removed-json",
+        "hex": "616c706861",
+        "args": [
+          "--json",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": true,
+        "missing": true,
+        "source_identification": false
+      },
+      {
+        "name": "literal-json-filename",
+        "hex": "616c7068612062657461",
+        "args": [
+          "--",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "retained-range",
+        "hex": "610a622063",
+        "args": [
+          "--lines",
+          "2:2",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      }
+    ],
+    "stdin": [
+      {
+        "name": "stdin",
+        "hex": "616c70686120626574610a6c617374",
+        "args": [
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "stdin-empty",
+        "hex": "",
+        "args": [
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "stdin-bom",
+        "hex": "efbbbf",
+        "args": [
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "stdin-keep-bom",
+        "hex": "efbbbf",
+        "args": [
+          "--keep-bom",
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "stdin-mixed-range",
+        "hex": "610d0a6220630d640a",
+        "args": [
+          "--lines",
+          "2:3",
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "stdin-interior",
+        "hex": "610aefbbbf2062",
+        "args": [
+          "--lines",
+          "2:2",
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": false
+      },
+      {
+        "name": "stdin-decode",
+        "hex": "61ff",
+        "args": [
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": true
+      },
+      {
+        "name": "stdin-decode-after-end",
+        "hex": "610aff",
+        "args": [
+          "--lines",
+          "1:1",
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": true
+      },
+      {
+        "name": "stdin-json-removed",
+        "hex": "616c706861",
+        "args": [
+          "--json",
+          "-"
+        ],
+        "stdin": true,
+        "json": false,
+        "error": true,
+        "missing": false,
+        "source_identification": false
+      }
+    ],
+    "distribution": [
+      {
+        "name": "extracted-entry",
+        "hex": "616c70686120626574610a",
+        "args": [
+          "{input}"
+        ],
+        "stdin": false,
+        "json": false,
+        "error": false
+      }
+    ],
+    "ranges-json": [
+      {
+        "name": "json-range",
+        "hex": "616c70686120626574610a626574610a6c6173742074776f",
+        "args": [
+          "--json",
+          "--lines",
+          "2:3",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": true,
+        "error": false
+      },
+      {
+        "name": "range-json-order",
+        "hex": "610a622063",
+        "args": [
+          "--lines=2:2",
+          "--json",
+          "{input}"
+        ],
+        "stdin": false,
+        "json": true,
+        "error": false
+      }
+    ]
+  }
+}

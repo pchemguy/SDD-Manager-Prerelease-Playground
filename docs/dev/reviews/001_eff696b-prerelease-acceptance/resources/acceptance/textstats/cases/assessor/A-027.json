@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "checks": [
+    {
+      "id": "retained-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Independent reconciliation covers all 27 IDs/attempts and preserves first results, interventions and assisted outcomes.",
+    "Evidence reconciles commands, commits/parents/remote refs/hosted identities and source hashes. Fixture actions and consumer decisions distinguished; blocked cases/client/isolation gaps remain explicit.",
+    "Four-answer report states findings/confidence/actions/bounded proposals or explicit no-confirmed-defect conclusion, unresolved effects and verified stopping/next-action checkpoint.",
+    "Assess required report placement, code review versus testing, closure ordering and TODO aggregation separately; unavailable provider readback/live interruption control is Blocked or Not run, never covered by support-test success.",
+    "Required and optional variant totals, evidence classes and unavailable-facility reasons are separately reconciled; historical grades are not retroactively split.",
+    "Final report and linked proposals are published, then evidence-only two-parent integration preserves product/source/assessment bytes and main publication is verified; explicit stopping limits and retained pending integration are accurately reported."
+  ]
+}
