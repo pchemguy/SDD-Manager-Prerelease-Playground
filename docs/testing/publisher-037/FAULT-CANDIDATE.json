@@ -1,0 +1,7 @@
+{
+  "base_package_candidate": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "version": "0.15.0-cp014",
+  "tag": "v0.15.0-cp014",
+  "delta": "Both synchronized manifests only; isolated fixture metadata differs from pinned real plugin",
+  "purpose": "Controlled actual provider partial draft/upload recovery; not consumer source pin"
+}
