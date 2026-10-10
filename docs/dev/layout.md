@@ -71,4 +71,4 @@ Python 3.12.14 is available in the current preparation environment; delivery sup
 
 The adjacent [PLAN review report](PLAN-REVIEW-REPORT.md) covers combined strategy/placement readiness. Ownership maps every current component and required test/document/distribution boundary without cycles or ambiguous source allocation. Source-independent range/stdin design remains intact. No unresolved placement choice blocks later task derivation.
 
-This exact layout proposal is pending delegated coordinator assessment; recommend acceptance, then TASKS authoring with owner QC. Neither proposed paths nor technical readiness claim implementation or acceptance of unseen tasks.
+The coordinator accepted this layout and combined PLAN QC at commit `b3ba0338d71c167aaec8ca85317d09002557ea2d`, layout blob `4039da9d2e0422ad3b53fc82f18b63612e75ccac` and report blob `b59fa054824a3a8768e59c2dc15f90c7b9b7d330`, under delegated test-artifact review authority; published decision evidence is `0e5c6d9`. Full assessment found no material placement issue. This scoped decision enables TASKS/owner QC, without authorizing implementation or preaccepting unseen tasks.
