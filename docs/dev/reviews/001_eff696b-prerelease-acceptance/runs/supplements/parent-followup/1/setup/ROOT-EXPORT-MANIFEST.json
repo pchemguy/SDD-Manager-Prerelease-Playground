@@ -1,0 +1,26 @@
+{
+  "CALLER-AUTHOR.py": {
+    "sha256": "ab0694690ab0c98761d68ba75ed6bab847c794638683fc6bc664b13bed11e5c7",
+    "bytes": 4900
+  },
+  "CALLER-COMMANDS.json": {
+    "sha256": "201b80b3832b774b7d41781dc8b2b6b9f243ab6417712805d6a2575c193f6bb6",
+    "bytes": 20613
+  },
+  "START.json": {
+    "sha256": "f7080f68cff54820df06ddafa6932beb7cc1f923afafd38055a986cff5822e56",
+    "bytes": 36907
+  },
+  "index.bin": {
+    "sha256": "ec816758952e468ea2afd7126851826b3ffb037fccfb32d2d75307f6290fa6bc",
+    "bytes": 24768
+  },
+  "ordinary-input.md": {
+    "sha256": "8b2a445213493489309c4bbcc1ea4adf969771eeca84ce7b0a268df9589f16f9",
+    "bytes": 1024
+  },
+  "original-TASKS.bin": {
+    "sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "bytes": 37339
+  }
+}
