@@ -5,13 +5,13 @@
   "case_id": "A-019",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "Actual consumer interruption independently verified and complete pending state exported",
+  "last_completed_action": "Second actual prospective failure independently verified after retained conflict resolution",
   "pending_operation": {
     "kind": "merge",
     "status": "interrupted",
-    "description": "Actual unresolved README conflict; target3eb/MERGE_HEADincomingbbd"
+    "description": "Resolved retained merge failed two required public-contract assertions; no repair/commit/push"
   },
-  "next_action": "Publish exact trigger exports before fresh continuation",
+  "next_action": "Publish second trigger before third fresh scoped repair continuation",
   "checkpoint_refs": {
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "product_branch": "a019/target",

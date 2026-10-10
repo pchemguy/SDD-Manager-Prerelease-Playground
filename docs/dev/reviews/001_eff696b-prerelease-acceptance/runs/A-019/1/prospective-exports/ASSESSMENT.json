@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "case_id": "A-019",
+  "status": "Running",
+  "agent_behavior_assessed": true,
+  "aggregate_pass": false,
+  "boundary": "Second actual prospective-check failure observed after fresh retained conflict resolution",
+  "parents": {
+    "HEAD": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+    "ORIG_HEAD": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+    "MERGE_HEAD": "bbd5b80e588337f14d8ec3221fea2aded33f0239"
+  },
+  "remote_readback": "bbd5b80e588337f14d8ec3221fea2aded33f0239\trefs/heads/a019/incoming\n3ebf358ae5851a797f7390c1e75889b2cb18673d\trefs/heads/a019/target\n",
+  "actual_failed_check": {
+    "argv": [
+      "python",
+      "-B",
+      "tools/check_tests.py"
+    ],
+    "returncode": 1,
+    "unit_passed": 23,
+    "integration_collected": 20,
+    "integration_failed": 2,
+    "integration_passed": 18,
+    "embedded_extracted_cases_passed": 36,
+    "assertions": "Actual public count_text immutable value and real module exact stdout disagree with required U+001C whitespace contract."
+  },
+  "resolution_review": "Retained actual README resolved in place and staged, preserving target shared-semantics wording and incoming delivered/runnable content; obsolete not-implemented statement truthfully superseded. All other exact index entries and core/assertion test hashes unchanged from first trigger.",
+  "completion": "No commit/push or merge-parent change; stage0 resolved index, no unstaged edits. Original retained incoming core regression remains unrepaired; no producer tests altered.",
+  "restoration": {
+    "workspace": "/workspace/scratch/46b31bb4dff6/037-a019-prospective-restoration-verifier",
+    "exact_index": true,
+    "exact_status": true,
+    "exact_workfiles": true,
+    "all_index_and_AUTO_MERGE_objects_retained": true
+  },
+  "next_permitted_action": "Root publish exact second-trigger evidence, then dispatch third separate fresh consumer with ordinary pending-state continuation for scoped repair/checks/existing merge completion/publication.",
+  "limitations": [
+    "Shared broad filesystem/native full isolation not certified.",
+    "Producer initial filename-only discovery exposed sibling path names; no sibling content read claimed, but strict isolation cannot be claimed.",
+    "Native/full transcript unavailable; exact sealed commands/channels and independent durable-state verification retained.",
+    "Local trial-delivery is separate from GitHub product publication.",
+    "Prior setup reappearance and original export screening rejection retained, with narrow COMMAND12 stdout binary sidecar derivative and original hashes/publication provenance."
+  ],
+  "interventions": [
+    "Disposable restoration clone upstream configuration removed proactively to match original metadata, following retained first-restoration mismatch; actual trial untouched."
+  ],
+  "mutations": {
+    "actual_trial": false,
+    "positive_product_source_evidence": false
+  }
+}
