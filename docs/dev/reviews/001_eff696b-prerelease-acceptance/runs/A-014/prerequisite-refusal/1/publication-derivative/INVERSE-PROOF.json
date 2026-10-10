@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "original_sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+  "derivative_path": "ASSESSMENT-PUBLICATION-DERIVATIVE.json",
+  "replacement_byte_offset": 21977,
+  "replacement_byte_length": 1105,
+  "ordered_original_json_value_chunks": [
+    {
+      "path": "independent-raw-git-observations-006-stdout-json-lexeme-part-01.bin",
+      "sha256": "ce8c90e6e0543839100c09c58402f62574d27527fcc2815c4f1fab94495c89ef",
+      "byte_length": 5409,
+      "generic_json_parse": "Not JSON: lexical fragment"
+    },
+    {
+      "path": "independent-raw-git-observations-006-stdout-json-lexeme-part-02.bin",
+      "sha256": "10dde2324ca2d28844050a7b2e1f45cad36d8faad96ad7bac5be031b9578d4b6",
+      "byte_length": 5409,
+      "generic_json_parse": "Not JSON: lexical fragment"
+    }
+  ],
+  "original_json_value_sha256": "ea962a2681b05093cb6377416d83e11b3ac8b10f83aa901a5f39aec1e0f987f7",
+  "raw_value_sidecar": "independent-raw-git-observations-006-stdout.bin",
+  "restoration": "Concatenate ordered exact lexical chunks, then replace replacement_byte_length bytes at replacement_byte_offset in derivative with concatenated bytes; decoded lexical JSON string UTF-8 bytes equal raw sidecar",
+  "restored_sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+  "restored_bytes_equal_original": true,
+  "parsed_other_fields_unchanged": true
+}

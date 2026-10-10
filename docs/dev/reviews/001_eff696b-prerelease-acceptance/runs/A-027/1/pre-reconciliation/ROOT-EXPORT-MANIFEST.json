@@ -1,0 +1,26 @@
+{
+  "037-a027-current-case-variant-register.json": {
+    "sha256": "ee89926cfaecac99f9f96065cbbb8707e6b293473adda4105f6b05ee09df61bf",
+    "bytes": 298823
+  },
+  "037-a027-independent-pre-reconciliation.json": {
+    "sha256": "aafc3cacf7a6af71506d51f593f31b03595c844bc2d9a7722fe17954d8b2bcf7",
+    "bytes": 298725
+  },
+  "ROOT-FIRST-EXPORT-FAILURE.json": {
+    "sha256": "1760f010e33f87f9525e62cb27d52eda8160745b1a4b9da087d8a2cf72b5fed3",
+    "bytes": 555
+  },
+  "VARIANT-RESULTS.original-pre-reconciliation.json": {
+    "sha256": "7604b3dac1697f533388a0546283d54b0f3a1831c95fbdb3385a61aa688a0170",
+    "bytes": 5956
+  },
+  "first-attempt/037-a027-current-case-variant-register.json": {
+    "sha256": "6bacd449a8011cf7ded0cf22ae543d64fe82dbfc4fec1aa352e3e486d06bb558",
+    "bytes": 297668
+  },
+  "first-attempt/037-a027-independent-pre-reconciliation.json": {
+    "sha256": "50537f9ec7b88d4b9cbe8b3df66cc7bc08ae44760048056c4ffb1911cbce16b0",
+    "bytes": 297570
+  }
+}

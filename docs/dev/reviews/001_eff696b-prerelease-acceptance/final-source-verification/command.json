@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "acceptance/textstats/tests",
+    "-t",
+    "acceptance/textstats",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/SDD-Manager",
+  "started_utc": "2026-10-10T18:28:12.034421+00:00",
+  "completed_utc": "2026-10-10T18:28:38.653575+00:00",
+  "returncode": 0,
+  "source_commit": "083c50ee12874484e2ce25620601dbce5c2d1af4",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "51ec02612e6dc146631d41b9adbafd875fa175309f3a3f546d14ae83720e707f",
+  "scope": "Actual Python3.12.14 support suite at current source; does not certify installedclients, Windows or blocked live facilities."
+}

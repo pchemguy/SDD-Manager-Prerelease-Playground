@@ -1,0 +1,38 @@
+{
+  "ASSESSMENT-PUBLICATION-DERIVATIVE.json": {
+    "sha256": "0bf0c47e716bcc236b4cba1bf1bf9e2966abcabbf2dade6d84ecdc161cc31e3a",
+    "bytes": 59127
+  },
+  "INVERSE-PROOF.json": {
+    "sha256": "2f1370ecece930efdcbbc439c66ab3cb0fca0ccf207337c281e9603232bb8e4a",
+    "bytes": 1401
+  },
+  "ORIGINAL-MANIFEST.json": {
+    "sha256": "2909f823428e2d09c810ac7d27856b1c520da55f0c05073643d04fd85b5bdda6",
+    "bytes": 913
+  },
+  "PROVENANCE.json": {
+    "sha256": "def9ae95e1c2c30088f60bb29f3dc7a97babe707c0304c63eece4d468581a0be",
+    "bytes": 2067
+  },
+  "PUBLIC-MANIFEST.json": {
+    "sha256": "683134616522e597bde153c5811e3ad1043bf4c56cbe493e9998c0972aa872f2",
+    "bytes": 2352
+  },
+  "REJECTED-FIRST-DERIVATIVE-MANIFEST.json": {
+    "sha256": "92b0b9f63a0d6b88a6357fc1dcfe09d9657cec80e9e74b791a021245ee36a2c9",
+    "bytes": 1896
+  },
+  "independent-raw-git-observations-006-stdout-json-lexeme-part-01.bin": {
+    "sha256": "ce8c90e6e0543839100c09c58402f62574d27527fcc2815c4f1fab94495c89ef",
+    "bytes": 5409
+  },
+  "independent-raw-git-observations-006-stdout-json-lexeme-part-02.bin": {
+    "sha256": "10dde2324ca2d28844050a7b2e1f45cad36d8faad96ad7bac5be031b9578d4b6",
+    "bytes": 5409
+  },
+  "independent-raw-git-observations-006-stdout.bin": {
+    "sha256": "69d4f21cacb29710e668c9048fc8623fe53f3444173c262f49bd6c08b7544476",
+    "bytes": 10046
+  }
+}
