@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P1",
+  "case_id": "A-001",
+  "attempt": 1,
+  "role": "coordinator",
+  "last_completed_action": "CP-013 provider recovery and complete rerun verified; consumer PROJECT checkpoint published",
+  "pending_operation": "Human PROJECT review pending; initial checkpoint independently assessed",
+  "next_action": "Obtain actual human decision on PROJECT b7b017c; architecture held",
+  "checkpoint_refs": {
+    "product_branch": "design-docs/main",
+    "product_commit": "b7b017cf7480bded8ad7f7de4a4eed690083b39c",
+    "integration_branch": "main",
+    "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/positive-first/RECOVERED-OBSERVATION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/readback-diagnostic/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/recovery-rerun/DISPATCH.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/recovery-rerun/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/complete-rerun/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CHECKPOINT-ASSESSMENT.json"
+  ]
+}

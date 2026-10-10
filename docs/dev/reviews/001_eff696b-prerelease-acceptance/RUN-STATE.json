@@ -6,7 +6,16 @@
   "attempt": 1,
   "role": "coordinator",
   "last_completed_action": "CP-013 provider recovery and complete rerun verified; consumer PROJECT checkpoint published",
-  "pending_operation": "Human PROJECT review pending; initial checkpoint independently assessed",
+  "pending_operation": {
+    "kind": "checkpoint",
+    "status": "blocked",
+    "description": "Actual human acceptance of published PROJECT is pending; architecture is held",
+    "identity": {
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+      "branch": "design-docs/main",
+      "commit": "b7b017cf7480bded8ad7f7de4a4eed690083b39c"
+    }
+  },
   "next_action": "Obtain actual human decision on PROJECT b7b017c; architecture held",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
