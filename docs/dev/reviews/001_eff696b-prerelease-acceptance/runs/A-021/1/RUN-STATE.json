@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-021",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent prepared-feature setup verified; consumer selects operations before mutation",
+  "pending_operation": null,
+  "next_action": "Publish setup/handoff then fresh consumer selects separable owner operations",
+  "checkpoint_refs": {
+    "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "product_commit": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "trial-delivery"
+  },
+  "evidence_paths": []
+}

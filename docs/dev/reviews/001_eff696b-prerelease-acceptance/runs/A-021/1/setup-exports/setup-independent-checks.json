@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "clean": true,
+    "head_exact": true,
+    "main_exact": true,
+    "paused_exact": true,
+    "main_branch_not_active": true,
+    "T-018_single_feature_unchecked": true,
+    "T-019_single_feature_unchecked": true,
+    "T-020_single_feature_unchecked": true,
+    "T-021_single_feature_unchecked": true,
+    "T-022_single_feature_unchecked": true,
+    "T-023_single_feature_unchecked": true,
+    "T-024_single_feature_unchecked": true,
+    "docs/dev/SPEC.md_exact_predecessor": true,
+    "docs/dev/SPEC-REVIEW-REPORT.md_exact_predecessor": true,
+    "docs/dev/FEATURE-SPEC.md_exact_predecessor": true,
+    "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md_exact_predecessor": true,
+    "docs/dev/PLAN.md_exact_predecessor": true,
+    "docs/dev/PLAN-REVIEW-REPORT.md_exact_predecessor": true,
+    "docs/dev/FEATURE-PLAN.md_exact_predecessor": true,
+    "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md_exact_predecessor": true,
+    "docs/dev/TASKS.md_exact_predecessor": true,
+    "docs/dev/TASKS-REVIEW-REPORT.md_exact_predecessor": true,
+    "docs/dev/FEATURE-TASKS.md_exact_predecessor": true,
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md_exact_predecessor": true,
+    "assessment_exact_published_object": true,
+    "trial_remote_feature_exact": true
+  },
+  "status": "Setup facts passed; operation eligibility awaiting consumer selection",
+  "predecessor_published_evidence_commit": "0611f1b60d761bdf8a2d674309e05f6f4273ed9f",
+  "live_evidence_publication": "Coordinator must independently observe current remote containment before dispatch"
+}
