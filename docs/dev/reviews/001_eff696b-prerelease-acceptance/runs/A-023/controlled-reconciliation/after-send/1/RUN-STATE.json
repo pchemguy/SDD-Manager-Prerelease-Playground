@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-023",
+  "attempt": 1,
+  "role": "consumer",
+  "last_completed_action": "Controlled applied-response-loss setup prepared from actual assessed published T001; consumer not yet dispatched",
+  "pending_operation": null,
+  "next_action": "Publish setup then fresh selected backlog consumer; preserve genuine uncertain trigger",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a023-after-send",
+    "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/tracking_facility.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/CONTROL.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/SETUP.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/PUBLIC-INTERFACE.md"
+  ],
+  "variant": "controlled-reconciliation"
+}
