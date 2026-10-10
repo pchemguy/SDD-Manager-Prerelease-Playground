@@ -1,0 +1,143 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/00-stdout.bin",
+      "stderr_sidecar": "publication-audit/00-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/setup/MANIFEST.json"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/01-stdout.bin",
+      "stderr_sidecar": "publication-audit/01-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/setup/CALLER-AUTHOR.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/02-stdout.bin",
+      "stderr_sidecar": "publication-audit/02-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/setup/index.bin"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/03-stdout.bin",
+      "stderr_sidecar": "publication-audit/03-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/setup/ordinary-input.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/04-stdout.bin",
+      "stderr_sidecar": "publication-audit/04-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/setup/START.json"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/05-stdout.bin",
+      "stderr_sidecar": "publication-audit/05-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/setup/CALLER-COMMANDS.json"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/06-stdout.bin",
+      "stderr_sidecar": "publication-audit/06-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162:docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/core.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/07-stdout.bin",
+      "stderr_sidecar": "publication-audit/07-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-split-boundary",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/08-stdout.bin",
+      "stderr_sidecar": "publication-audit/08-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show-ref"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-split-boundary",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/09-stdout.bin",
+      "stderr_sidecar": "publication-audit/09-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "-z"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-split-boundary",
+      "exit": 0,
+      "stdout_sidecar": "publication-audit/10-stdout.bin",
+      "stderr_sidecar": "publication-audit/10-stderr.bin"
+    }
+  ],
+  "setup_published_object": "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162",
+  "setup_bytes_exact_object_match": true,
+  "pinned_core_exact_published_object_match": true,
+  "final_product_preservation_rechecked": true,
+  "provider_calls": false,
+  "live_publication_limit": "Publication parent-reported; exact retained setup commit contents independently checked locally. LOCAL delivery readback independently observed."
+}

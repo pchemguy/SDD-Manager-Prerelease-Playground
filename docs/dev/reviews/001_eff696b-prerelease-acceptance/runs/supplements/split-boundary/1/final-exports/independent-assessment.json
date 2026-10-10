@@ -1,0 +1,62 @@
+{
+  "case_id": "SUP-SPLIT-BOUNDARY",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "product_history_contract": "Failed",
+  "consumer_required_behavior": "Detect published split result/status and block affected advancement/integration pending scoped manager recovery or explicit exception.",
+  "actual_checkpoint_refs": {
+    "base": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+    "first": "b2f68c7f7e5ec882e46a7b9b2f1a695db2078c16",
+    "HEAD": "cdd50b67045f2811a529d3df5e66c91a23947650",
+    "actual_source": "7cf8d5e287c317ee7cdc458eff466550d2a3114c"
+  },
+  "first_result_paths": [
+    "AGENTS.md",
+    "README.md",
+    "tests/integration/test_api.py",
+    "tests/unit/test_io.py",
+    "textstats/__init__.py",
+    "textstats/io.py"
+  ],
+  "closing_paths": [
+    "docs/dev/TASKS.md"
+  ],
+  "closing_owner": "docs/dev/TASKS.md T-002 initial unchecked-to-checked transition",
+  "publication": {
+    "kind": "LOCAL bare",
+    "ref": "refs/heads/trial/split-boundary",
+    "readback": "cdd50b67045f2811a529d3df5e66c91a23947650",
+    "setup_evidence_commit": "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162"
+  },
+  "findings": [
+    "Actual first commit delivers six result/test/documentation paths while T-002 remains unchecked.",
+    "Actual second commit changes only TASKS, initially checks executable T-002 and adds current evidence; result remains in prior commit.",
+    "No explicit partial checkpoint authorization exists; no parent-only exception applies to this initial executable checkbox.",
+    "Conforming owning-ID subjects and immediate LOCAL publication do not repair closing composition.",
+    "TASKS inherited assertion that all result/evidence/initial completion close atomically contradicts observed history. Original evidence and gaps retained unchanged.",
+    "Both caller-generated commits reconstruct the complete genuine accepted T-002 source tree; genuine source 7cf remains preserved and is not regraded or replayed.",
+    "Read-only consumer correctly reports split closure and manager block without reset/rebase/force-push/replay or retrospective relabeling."
+  ],
+  "preservation": {
+    "HEAD": true,
+    "refs": true,
+    "raw_status": true,
+    "index_bytes": true,
+    "tracked_file_bytes_and_modes": true
+  },
+  "original_consumer_gaps": [
+    "Shared filesystem exposure is uncertified.",
+    "Initial request read and file discovery used exec_command combined output; separate streams were not retained for those two preliminary calls. Discovery probed a nonexistent resource path outside checkout, and returned exit 2; no contents read there.",
+    "Initial git status lacked GIT_OPTIONAL_LOCKS=0; optional index metadata refresh cannot be excluded because no prior index-byte seal was supplied. All subsequent Git inspection suppressed optional locks.",
+    "Historical acceptance decisions and original test stdout/stderr were not independently accessed or rerun; reported as retained evidence only.",
+    "No tests, product edits, commits, pushes, provider calls, branch changes, history rewrites, task selection or coordinator/assessor/source/other-trial content reads performed. Remote configuration exposed an origin path, but no contents there were accessed.",
+    "Outer exec_command captures harness output through a combined tool channel; entries record full actual child subprocess stdout, stderr and numeric status separately. Preliminary calls and log-display-only harnesses are exceptions disclosed above."
+  ],
+  "limits": [
+    "Synthetic caller-authored LOCAL split reconstruction; not original implementation or authorized partial checkpoint.",
+    "Shared filesystem exposure prevents isolation certification.",
+    "No product tests or API execution performed; retained verification statements are historical and not independently rerun.",
+    "No live hosted/provider behavior established.",
+    "Supplemental evidence outside original 32-case matrix; original failures and gaps remain."
+  ]
+}

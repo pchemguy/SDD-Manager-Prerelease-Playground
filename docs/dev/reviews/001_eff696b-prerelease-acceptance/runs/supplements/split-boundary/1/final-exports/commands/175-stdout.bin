@@ -1,0 +1,15 @@
+commit b2f68c7f7e5ec882e46a7b9b2f1a695db2078c16
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 13:58:06 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 13:58:06 2026 -0400
+
+    [T-002] Deliver named-file API result before task status (caller fixture)
+
+ AGENTS.md                     | 27 ++++++++------
+ README.md                     |  2 +-
+ tests/integration/test_api.py | 67 ++++++++++++++++++++++++++++++++---
+ tests/unit/test_io.py         | 82 +++++++++++++++++++++++++++++++++++++++++++
+ textstats/__init__.py         |  5 +--
+ textstats/io.py               | 34 ++++++++++++++++++
+ 6 files changed, 199 insertions(+), 18 deletions(-)

@@ -1,0 +1,26 @@
+{
+  "CALLER-AUTHOR.py": {
+    "sha256": "f6fa8a69ca0c65545aa531b2aba211813b820dbd3014441ba41f49603333ae50",
+    "bytes": 4127
+  },
+  "CALLER-COMMANDS.json": {
+    "sha256": "e08f80c5e2220e89e938f854aa66eedac014a8eba8d65c8989c49ffdd077d98c",
+    "bytes": 19602
+  },
+  "LOCAL-PRE-RECEIVE.bin": {
+    "sha256": "62f0dc7b826b0a66a6637df9d953ee96b41b7f92e4fd56549df863cc68577b7f",
+    "bytes": 131
+  },
+  "START.json": {
+    "sha256": "c9167c5eecc2cd365c0feb8c98483e2dedac0cfff6d38e404d320cc372bffbe7",
+    "bytes": 37279
+  },
+  "index.bin": {
+    "sha256": "c47da830d6de3e8ef1a76e0592eb4f51bf964b3562d76b513f418ed9c1fbc318",
+    "bytes": 25551
+  },
+  "ordinary-input.md": {
+    "sha256": "8cb245ba7ee28190fd45526c54dd89678247efc69505d76671c0c065177bbd75",
+    "bytes": 1150
+  }
+}

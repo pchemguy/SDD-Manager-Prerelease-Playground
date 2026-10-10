@@ -1,0 +1,6 @@
+tree 4bc0f02fb8a749adb5fa6aa77ff67ed2199bc05a
+parent b2f68c7f7e5ec882e46a7b9b2f1a695db2078c16
+author Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655086 -0400
+committer Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655086 -0400
+
+[T-002] Mark initial task completion separately (caller fixture)

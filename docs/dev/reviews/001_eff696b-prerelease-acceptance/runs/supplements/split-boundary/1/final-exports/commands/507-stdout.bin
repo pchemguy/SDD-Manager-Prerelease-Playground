@@ -1,0 +1,20 @@
+commit 7cf8d5e287c317ee7cdc458eff466550d2a3114c
+Author:     Codex <codex@openai.com>
+AuthorDate: Sat Oct 10 13:51:11 2026 -0400
+Commit:     Codex <codex@openai.com>
+CommitDate: Sat Oct 10 13:51:11 2026 -0400
+
+    [T-002] Implement strict named-file acquisition and complete public API
+    
+    Read complete binary files with strict UTF-8, preserve input bytes/newlines, close owned handles on all paths and propagate original acquisition/decode exceptions. Export the complete silent whole-input API and include tests, accurate documentation, verification/accepted-artifact evidence and initial owning completion in this atomic checkpoint.
+    
+    Verification: Python 3.12.14; 15 unit and 7 integration tests passed without skips. Behavioral scaffold RED: 14 unit and 55 integration failures. Delegated exact-artifact acceptance published as c8edcc3094cc819386f093a52e62ae70669720f8. Hosted tracking declined; local trial-delivery publication only. Foreign staged/unstaged facade comments and untracked note excluded. Stop at this task; no parent closure or phase integration.
+
+ AGENTS.md                     | 27 ++++++++------
+ README.md                     |  2 +-
+ docs/dev/TASKS.md             |  4 ++-
+ tests/integration/test_api.py | 67 ++++++++++++++++++++++++++++++++---
+ tests/unit/test_io.py         | 82 +++++++++++++++++++++++++++++++++++++++++++
+ textstats/__init__.py         |  5 +--
+ textstats/io.py               | 34 ++++++++++++++++++
+ 7 files changed, 202 insertions(+), 19 deletions(-)

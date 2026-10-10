@@ -1,0 +1,6 @@
+tree 5d0bbcc2d1bfcc671a91e06813c94b1ab7682b58
+parent e2056325d8d28098520c51cf79a66f2b0bdc20d4
+author Codex <codex@openai.com> 1791655102 -0400
+committer Codex <codex@openai.com> 1791655102 -0400
+
+Prepare published split-boundary refusal fixture from accepted result (037 CP020)

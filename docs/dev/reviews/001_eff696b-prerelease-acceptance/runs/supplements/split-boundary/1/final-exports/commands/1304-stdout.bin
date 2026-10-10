@@ -1,0 +1,6 @@
+AGENTS.md
+README.md
+tests/integration/test_api.py
+tests/unit/test_io.py
+textstats/__init__.py
+textstats/io.py

@@ -1,0 +1,828 @@
+{
+  "HEAD": "cdd50b67045f2811a529d3df5e66c91a23947650",
+  "base": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+  "first": "b2f68c7f7e5ec882e46a7b9b2f1a695db2078c16",
+  "actual_source": "7cf8d5e287c317ee7cdc458eff466550d2a3114c",
+  "product_root": "/workspace/scratch/46b31bb4dff6/037-sup-split-boundary",
+  "files": {
+    ".github/RELEASE-HANDOFF.md": {
+      "sha256": "384d7ef09f2477a3741cdf083c5d2fb454171ab1d9af7865896a0bdd6aaab498",
+      "bytes": 3437,
+      "mode": 420
+    },
+    ".github/scripts/release.py": {
+      "sha256": "46f8cedbc1b92157076b56f4ae7032ddda28bcd4f98b04097d03a98ca01ccb13",
+      "bytes": 16388,
+      "mode": 420
+    },
+    ".github/tests/test_release.py": {
+      "sha256": "d01a7a91d2965bf49087bd8fe1f5b18032a72a272ae23b8db547b48ef1bf4def",
+      "bytes": 12800,
+      "mode": 420
+    },
+    ".github/workflows/release.yml": {
+      "sha256": "64b52d5613b5b680af06d8c4527f2b2e38c5334e7e45b36acdf1745de52dfa3c",
+      "bytes": 3098,
+      "mode": 420
+    },
+    ".gitignore": {
+      "sha256": "fd9346d807a52c6afa6ef01f5d6cab16210e0b6cbf7503dd386883687954da06",
+      "bytes": 2285,
+      "mode": 420
+    },
+    "AGENTS.md": {
+      "sha256": "71f242a794d13685e649c43dc097757c884caea02918689e4ffb34af7944195a",
+      "bytes": 4523,
+      "mode": 420
+    },
+    "AI_DISCLOSURE.md": {
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "bytes": 1192,
+      "mode": 420
+    },
+    "README.md": {
+      "sha256": "3f9c58bebb5f42bbda130a609e40e1730a7602abec24b7d050b3f6b4aa7f924c",
+      "bytes": 652,
+      "mode": 420
+    },
+    "SDD-MANAGER.md": {
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "bytes": 683,
+      "mode": 420
+    },
+    "docs/dev/ARCHITECTURE.md": {
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "bytes": 6953,
+      "mode": 420
+    },
+    "docs/dev/DECOMPOSITION.md": {
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "bytes": 8596,
+      "mode": 420
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+      "bytes": 10951,
+      "mode": 420
+    },
+    "docs/dev/PLAN.md": {
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "bytes": 13093,
+      "mode": 420
+    },
+    "docs/dev/PROJECT.md": {
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "bytes": 5884,
+      "mode": 420
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+      "bytes": 5956,
+      "mode": 420
+    },
+    "docs/dev/SPEC.md": {
+      "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+      "bytes": 13290,
+      "mode": 420
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+      "bytes": 8999,
+      "mode": 420
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "9555ebc5c3662ac9e7f94487541e3380d73c16de369d32f260845fbed0e37801",
+      "bytes": 21937,
+      "mode": 420
+    },
+    "docs/dev/layout.md": {
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "bytes": 9273,
+      "mode": 420
+    },
+    "docs/testing/publisher-037/SETUP.json": {
+      "sha256": "46201f3043609562f8723a6e239cbe2ecd2406829356832c9144a3bb4af77a00",
+      "bytes": 736,
+      "mode": 420
+    },
+    "tests/__init__.py": {
+      "sha256": "da396867adca527281deace66714e038ea23bd385b06909f1377b97cf3d6c31d",
+      "bytes": 31,
+      "mode": 420
+    },
+    "tests/integration/__init__.py": {
+      "sha256": "6d74eb5943bc4a44d8e67cf5ad5a899df9bc968c1d63a908dc66d865c188b3e8",
+      "bytes": 36,
+      "mode": 420
+    },
+    "tests/integration/test_api.py": {
+      "sha256": "88e3d1c8116186dfb0ff62cc7f07e90fdf5317488cafd2c4a8511a8663c7b758",
+      "bytes": 5914,
+      "mode": 420
+    },
+    "tests/unit/__init__.py": {
+      "sha256": "ea6c99993ab03319eca2ffec0589c5c33e66750df6539d3abaccd62d02f0279d",
+      "bytes": 28,
+      "mode": 420
+    },
+    "tests/unit/test_core.py": {
+      "sha256": "c8f295001f94b7d830baa227ac18d5f7a64a62858979c57e9c6ad84977c9dd7b",
+      "bytes": 4210,
+      "mode": 420
+    },
+    "tests/unit/test_io.py": {
+      "sha256": "9fcd41872e38a2c4b8d436f00775728cf67a296301124720625daa7650ed7add",
+      "bytes": 4060,
+      "mode": 420
+    },
+    "textstats-run-resources/PLUGIN-SOURCE.json": {
+      "sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+      "bytes": 23639,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/.codex-plugin/plugin.json": {
+      "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+      "bytes": 1880,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/AGENTS.md": {
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "bytes": 4610,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/AI_DISCLOSURE.md": {
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "bytes": 1192,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/Greenfield Project Prompt Template.md": {
+      "sha256": "852c666018f223c49cc4732af5f1a1bf8db38061114721b9dc738ec702ec9617",
+      "bytes": 1599,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/LICENSE": {
+      "sha256": "230ef093b2d68d0f37130d47064b1aff673c41830a15513801e0cc089e742ed2",
+      "bytes": 1065,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/README.md": {
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+      "bytes": 40495,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/SDD-MANAGER.md": {
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "bytes": 683,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/assets/AI_DISCLOSURE.md": {
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "bytes": 1192,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/assets/SDD-MANAGER.md": {
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "bytes": 683,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/assets/icon.png": {
+      "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+      "bytes": 14257,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/assets/icon.svg": {
+      "sha256": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+      "bytes": 581,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/assets/logo.png": {
+      "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+      "bytes": 14257,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/assets/logo.svg": {
+      "sha256": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+      "bytes": 581,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/plugin.json": {
+      "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+      "bytes": 1880,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md": {
+      "sha256": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3",
+      "bytes": 3230,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml": {
+      "sha256": "3afb66258ca9ee5f7e35b0986ac130e34a4a73c4d5c41b1c7de94e19133e4cea",
+      "bytes": 505,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg": {
+      "sha256": "5702cda32d79bc28857dedfe0f9811d382d8b2e4c46d1ac571d8114aabd279a4",
+      "bytes": 570,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md": {
+      "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+      "bytes": 8846,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md": {
+      "sha256": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448",
+      "bytes": 1597,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": {
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+      "bytes": 14298,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md": {
+      "sha256": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324",
+      "bytes": 2971,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": {
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "bytes": 4823,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md": {
+      "sha256": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283",
+      "bytes": 2201,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md": {
+      "sha256": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+      "bytes": 8233,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md": {
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+      "bytes": 4120,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md": {
+      "sha256": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+      "bytes": 8163,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/SKILL.md": {
+      "sha256": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774",
+      "bytes": 5255,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml": {
+      "sha256": "102d11e8960f1f7af69bfcbacbe71defad289b9c368d11a610fb6b19e61dd3b6",
+      "bytes": 412,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/assets/icon.svg": {
+      "sha256": "98c55eb98b3e3702037698739b96fb550da2223bf733fb576650d0a4c5504864",
+      "bytes": 562,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/references/architecture.md": {
+      "sha256": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b",
+      "bytes": 3789,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md": {
+      "sha256": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+      "bytes": 3720,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-design/references/exploration.md": {
+      "sha256": "52a98f770a5e4745847dee060466231c8bc971d5c79c7f7dd4d745a6e675187a",
+      "bytes": 2997,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/SKILL.md": {
+      "sha256": "ef125969d670b75c0760ad8a7751c41ca8940ebc05a8a3a517658c6405929a7b",
+      "bytes": 3608,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml": {
+      "sha256": "9715602c3bdcd14d41e6e99e24edb32389499e0ec96b0aad5cdf4b30b187de15",
+      "bytes": 471,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg": {
+      "sha256": "69e272ee97e9957387f8ca8b51bec3d3d176c33e6bf6b20d2bff5b3536f507e2",
+      "bytes": 587,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md": {
+      "sha256": "40c179cf40c73ad36d76f722950eeaf33ab1c37993edd370f6fa16305d2a5465",
+      "bytes": 2857,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md": {
+      "sha256": "61bda144ac45af632307b12bb3cf9652727b83c3b3ffc57558188d0d2a6837b1",
+      "bytes": 2719,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md": {
+      "sha256": "b2ced68b8f869efc47206261795e225b42455b513c7a2be4f091cd891c3ef951",
+      "bytes": 3329,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md": {
+      "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+      "bytes": 6230,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml": {
+      "sha256": "65a79f791a2285753a0e6ca9eb83e203b181c0277ada5706add85f4c86c18783",
+      "bytes": 508,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg": {
+      "sha256": "ca997d09da83d706126f43dc2ace19c00ee9036ae67dcce225e688a09d398d33",
+      "bytes": 579,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md": {
+      "sha256": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+      "bytes": 4746,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md": {
+      "sha256": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+      "bytes": 3722,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-packaging.md": {
+      "sha256": "bf2a71e63b75b117853097199120d628d67d2c419962aa441978c124e4c780ed",
+      "bytes": 5843,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md": {
+      "sha256": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29",
+      "bytes": 6201,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-release-workflows.md": {
+      "sha256": "2c90b8d5d00b217a809bad6a54661f0ab698b8ae1550af47ce86547f02e25d46",
+      "bytes": 7995,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-releases.md": {
+      "sha256": "317892eaecb199b87a8b17ee0a0f45a722c3849bdcf88e11301f91b9c8df96d6",
+      "bytes": 9028,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github.md": {
+      "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+      "bytes": 11244,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-forge/references/release-highlights.md": {
+      "sha256": "4e4ebeaed8757d36ab9c7c98d759e724d30571f3d7aff48d783b1de60e236984",
+      "bytes": 19622,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md": {
+      "sha256": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+      "bytes": 7860,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml": {
+      "sha256": "438f0f659f42428e943046f75e10eb5b21384802baf3ce8eb010b9598d00cb7b",
+      "bytes": 620,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg": {
+      "sha256": "4fd314a8f182561a13fbf6fe062e4aee5fd0e0330dccd9943ec14aa5dab34c48",
+      "bytes": 588,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/browser-capabilities.md": {
+      "sha256": "fd64b9332dac9d5a89249968996bdcfdcd3e1211f06220af8247cd7a25309642",
+      "bytes": 2594,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md": {
+      "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+      "bytes": 16082,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/environment-recovery.md": {
+      "sha256": "0254c7e5dc5477a012d6eca8c049d222f42c712b5ef1f03abc8b4270f34f9523",
+      "bytes": 2247,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md": {
+      "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+      "bytes": 3619,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md": {
+      "sha256": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+      "bytes": 10259,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md": {
+      "sha256": "1979b2bbd64bd4b5370f607c1646b7a7fbb05f63cccd44dc907f98ce50831dfe",
+      "bytes": 3337,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md": {
+      "sha256": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+      "bytes": 3894,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml": {
+      "sha256": "48018ed1de138598f6be61e916b701638234e2d0e570ed42d39760e0f4de8392",
+      "bytes": 459,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg": {
+      "sha256": "9b68ea07e6b5916efa646ad8f639cb1872523bb40630043a317cc862440dc006",
+      "bytes": 591,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md": {
+      "sha256": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+      "bytes": 14410,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": {
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "bytes": 10142,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml": {
+      "sha256": "c3d318cf2a1074db8bc3c956109b12b1a3399c3835eded7bbac57f9ee7f5a778",
+      "bytes": 524,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg": {
+      "sha256": "d263da0cf62afe30dec52294f51c33a0d522b25c44049224a2274037e8ace44d",
+      "bytes": 590,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md": {
+      "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+      "bytes": 4057,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": {
+      "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+      "bytes": 12794,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md": {
+      "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+      "bytes": 10928,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md": {
+      "sha256": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21",
+      "bytes": 5877,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": {
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "bytes": 6404,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/examples.md": {
+      "sha256": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+      "bytes": 19957,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": {
+      "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+      "bytes": 10690,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": {
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "bytes": 6069,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": {
+      "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+      "bytes": 4216,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/prerelease-review.md": {
+      "sha256": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+      "bytes": 9774,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md": {
+      "sha256": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+      "bytes": 8700,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md": {
+      "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+      "bytes": 10475,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/revision-modes.md": {
+      "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+      "bytes": 10160,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md": {
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+      "bytes": 4640,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md": {
+      "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+      "bytes": 18358,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": {
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "bytes": 4869,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml": {
+      "sha256": "36dbb7990b7f504c1fa4b614651ad26431ab6af5a623be8250b780ce156667c9",
+      "bytes": 491,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg": {
+      "sha256": "ef235e59b6a56e0d21629b3b6c1b2ca9cc97cd678d02bcb31b0e2f7bc11bf1f2",
+      "bytes": 571,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": {
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "bytes": 10400,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md": {
+      "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+      "bytes": 5229,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml": {
+      "sha256": "8672b642e8c5ae2114cd839af1152435c7da485b4a25c3dd62d15c78d124ac98",
+      "bytes": 371,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg": {
+      "sha256": "44568c513e736771f4dde159c1903c6da19a774474ce65aeb8992dd694706659",
+      "bytes": 590,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md": {
+      "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+      "bytes": 6939,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md": {
+      "sha256": "e6abc9b84068ff8def13af02360020bdd80dc4c431667cf416aa4a9953bbfc41",
+      "bytes": 3711,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-plan/references/review.md": {
+      "sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+      "bytes": 4434,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/SKILL.md": {
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "bytes": 3910,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml": {
+      "sha256": "bfe1a84a61bf154a5cb846d41b10d73e88a596044d21e6d1f151d1dc78ae221c",
+      "bytes": 454,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/assets/icon.svg": {
+      "sha256": "aca30e96cbe5d44d759da47cc1db33c87dce1d04bf77142feac8475eecbab074",
+      "bytes": 580,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md": {
+      "sha256": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+      "bytes": 12587,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md": {
+      "sha256": "7cc7d31e5926fab5c4778b385f282d8f536713536c1038cc63409a1734da886b",
+      "bytes": 4573,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md": {
+      "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "bytes": 6388,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md": {
+      "sha256": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7",
+      "bytes": 4724,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md": {
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+      "bytes": 13178,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-report/references/releases.md": {
+      "sha256": "da89ce5c4fe7b8c6a4c1549900629cf6b3c29bcdd60f1585e32e18db3a885a86",
+      "bytes": 5111,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md": {
+      "sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+      "bytes": 4530,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml": {
+      "sha256": "c61e7eb38f097029d947314b441959b17aae2303440a52022cd386d78171e6b5",
+      "bytes": 387,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg": {
+      "sha256": "ebeaf7c64a2fb958088765c46c48e8269625f03ddccefec9dc7b76ff7379f2ad",
+      "bytes": 591,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md": {
+      "sha256": "74ad9a214189fa094c48acfd6c1daacb4eef43fe64ea18946ff5e6628a3be94c",
+      "bytes": 2220,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/references/review.md": {
+      "sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+      "bytes": 3962,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md": {
+      "sha256": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+      "bytes": 4546,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/SKILL.md": {
+      "sha256": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+      "bytes": 4952,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml": {
+      "sha256": "421038f108a077de64e16c95011ed4f6bff87d47e16c53894bbcc0dc581cc4ae",
+      "bytes": 592,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg": {
+      "sha256": "b9d353ce223194b53f52a4853ed1cc9468718ed0ee57074b5988a309f54d14d1",
+      "bytes": 551,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md": {
+      "sha256": "c185174fd72625f51a151bb6085140e9599f848e26f461d1131c87f2865d0cac",
+      "bytes": 3900,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md": {
+      "sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+      "bytes": 3139,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md": {
+      "sha256": "833b62f3807e8eb425f0fe2ad9ef4418cabbb77ae0f2ee7371435793de17398d",
+      "bytes": 7111,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md": {
+      "sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+      "bytes": 5035,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml": {
+      "sha256": "60b43614f445a40f3d52d21869962189bdfe0252461317a6712a55d176797aa2",
+      "bytes": 338,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg": {
+      "sha256": "dad3203c0386ce1a697600ae82fc1e03f530111626192018df24dd7c5ac69eb0",
+      "bytes": 599,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md": {
+      "sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+      "bytes": 3731,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md": {
+      "sha256": "32be8fbaa5e67e807d7c7f7be964c56ab7f65bd6398784606090fcdd9e40a912",
+      "bytes": 2291,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md": {
+      "sha256": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7",
+      "bytes": 7133,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/LICENSE": {
+      "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "bytes": 1070,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md": {
+      "sha256": "49efacb9ed6ae3b59069e986672dc5350cc0b147c3ad960b3ffc04f105c54cda",
+      "bytes": 3588,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml": {
+      "sha256": "f0049fe541cbffe331d4ccb9e903ed49bb96f1011cefecd1ced49fbd1bd19da4",
+      "bytes": 480,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg": {
+      "sha256": "37e86ed29c77f13846f9c315627c5e139d1348d7eed26eef2ff94354c334239f",
+      "bytes": 574,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md": {
+      "sha256": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+      "bytes": 3693,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md": {
+      "sha256": "fd834570d97f993fe270627fcedc308f0a97642ff000b8970a0b1c1bf33cab5f",
+      "bytes": 2602,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md": {
+      "sha256": "668d85251c25027ac1494c9bb89367fa3c1885c23424e3987d02f7fd0b02ca33",
+      "bytes": 1278,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md": {
+      "sha256": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+      "bytes": 4076,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/SKILL.md": {
+      "sha256": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+      "bytes": 4789,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml": {
+      "sha256": "3176532ba151974e4f6186c589a9e8ba59247367629ace97788cf70e1bdfe40a",
+      "bytes": 544,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg": {
+      "sha256": "60c4fbc478c5c5569c7db40ee7d2b90c061fb8e0b7a2274ec8757cbcadc6c837",
+      "bytes": 563,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md": {
+      "sha256": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+      "bytes": 2497,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md": {
+      "sha256": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+      "bytes": 4516,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md": {
+      "sha256": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+      "bytes": 4774,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md": {
+      "sha256": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6",
+      "bytes": 2625,
+      "mode": 420
+    },
+    "textstats-run-resources/plugin/skills/sdd-verify/references/release-checks.md": {
+      "sha256": "7c38ee14568eccccc724df033b647506a574fb34a8e3e398020bd1e543d89240",
+      "bytes": 5263,
+      "mode": 420
+    },
+    "textstats/__init__.py": {
+      "sha256": "2bdb93afdb29c89df336c28dc32ada4e6e201fddf72fb22cb63ca421ba4754dd",
+      "bytes": 203,
+      "mode": 420
+    },
+    "textstats/core.py": {
+      "sha256": "b2b2b43f5331407e27e40361cd9a7c8ff5388371fefa8457e0e1a5c72ceaef06",
+      "bytes": 3138,
+      "mode": 420
+    },
+    "textstats/io.py": {
+      "sha256": "59ae92fc9f4c9f30249e3c2bdaf0b593f881a1443534b2bfd92fc7d934de5352",
+      "bytes": 1388,
+      "mode": 420
+    }
+  },
+  "index_sha256": "04e21e2d725990866965064861a2bd8e4322e3418595eddf8acc1503dba904e7",
+  "refs_base64": "N2NmOGQ1ZTI4N2MzMTdlZTdjZGM0NThlZmY0NjY1NTBkMmEzMTE0YyByZWZzL2hlYWRzL3BoYXNlLzEtbmFtZWQtZmlsZS11dGlsaXR5CmNkZDUwYjY3MDQ1ZjI4MTFhNTI5ZDNkZjVlNjZjOTFhMjM5NDc2NTAgcmVmcy9oZWFkcy90cmlhbC9zcGxpdC1ib3VuZGFyeQo3Y2Y4ZDVlMjg3YzMxN2VlN2NkYzQ1OGVmZjQ2NjU1MGQyYTMxMTRjIHJlZnMvcmVtb3Rlcy9vcmlnaW4vSEVBRAo3Y2Y4ZDVlMjg3YzMxN2VlN2NkYzQ1OGVmZjQ2NjU1MGQyYTMxMTRjIHJlZnMvcmVtb3Rlcy9vcmlnaW4vcGhhc2UvMS1uYW1lZC1maWxlLXV0aWxpdHkKY2RkNTBiNjcwNDVmMjgxMWE1MjlkM2RmNWU2NmM5MWEyMzk0NzY1MCByZWZzL3JlbW90ZXMvdHJpYWwtZGVsaXZlcnkvdHJpYWwvc3BsaXQtYm91bmRhcnkK",
+  "status_base64": "",
+  "scope": "Caller reconstructs deliberately split history from genuine accepted T002 bytes, LOCAL fixture only; not actual consumer completion or authorized partial checkpoint."
+}
