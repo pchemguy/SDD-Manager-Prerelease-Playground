@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "Caller-owned empty unrelated intervening merge LOCAL fixture, no completed consumer work",
+  "files": {
+    "CONSUMER-INPUT.md": {
+      "sha256": "ea9aa06016af58b32ec5c443fced86c953b6606f75dca6b8a1c6ef62e849b73a",
+      "bytes": 1563
+    },
+    "SETUP-COMMANDS-BASE64.json": {
+      "sha256": "4308a39308fdb59eeb9f3257c16d2a80342224d67c204155c732e69abaade1ab",
+      "bytes": 132184
+    },
+    "START.json": {
+      "sha256": "be7c879d559bcca22dae39be94feb540f4b379bd419d1df9592cc850dcd2bb91",
+      "bytes": 166925
+    }
+  }
+}
