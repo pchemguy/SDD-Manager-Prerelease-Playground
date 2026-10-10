@@ -1,0 +1,35 @@
+{
+  "actor": "Root coordinator checking existing session authorization and materially narrowing the proposed action",
+  "decision": "One guarded exact-SHA-only non-force publication attempt within existing accepted campaign scope; automatic review remains independent",
+  "session_authority": "Human accepted all-target25checkpoint campaign and instructed execution in dedicated prerelease playground; continued push-all instructions reaffirm publication. Existing established test-main completion is required by selected A013 under that accepted workflow.",
+  "authority_records": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/SDD-Manager/docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-PLAN.md",
+      "sha256": "0282df30219d91182b45385add6d33c0b7a6865c8c2ff636736e154a564d209b",
+      "relevant_sections": "Authority/state; selected A007-A013 CP017 real product/evidence publication; CP023 established test evidence integration lifecycle"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/SDD-Manager/docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md",
+      "sha256": "6e51b98ba0a76c1753de05ea628755ca2e9326eed1a808ed7779b939c7fa7663",
+      "relevant_sections": "Authority and state records accepted detailed plan followed by human Execute"
+    }
+  ],
+  "delegated_case_input_sha256": "b9b37f2e63e2bb4d29f4c8eacb4e0f6449e63f858259cf91d8f91b0d85ed0443",
+  "accepted_actual_integration_gate": "b187f05e3c78cffcde61a7ce52a97a7197bffdaa",
+  "proposed_exact_argv": [
+    "git",
+    "push",
+    "origin",
+    "549a25f4f1bc7702afa0b729fc0894918ec9d16d:refs/heads/main"
+  ],
+  "required_preflight": [
+    "Verify origin repository is pchemguy/SDD-Manager-Prerelease-Playground using existing origin",
+    "Fresh remote main equals fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 and phase equals c05b65958e2a386cf2ae8782dca3e749ed9b60ff; abort on mismatch",
+    "Exact local HEAD549a, ordered parents[fbe,c05], tree190 and clean worktree; targetfbe is ancestor549a; no delta from accepted publishedphase",
+    "Only explicit pinned549a:refs/heads/main; no force, otherref, newbranch, credential/client/transport changes; obey normal backend protections"
+  ],
+  "risk_reduction": "Pins the exact reviewed commit and sole established test destination instead of mutable branch shorthand. Non-force fast-forward retains all main history and reviewed product bytes. The workflow is manual-dispatch only; push does not dispatch a release or production deployment.",
+  "review_rejection_retained": true,
+  "root_helper_failure_retained": "First inline proof-builder SyntaxError occurred before execution; subsequent empty export and stage rejected nonexistent path. No files or commit written by that failed attempt.",
+  "stop_rule": "If the guarded action is still rejected, do not retry or substitute a route. Preserve local merge and remote state; report exact blocked action for explicit user approval. No future publication claimed."
+}
