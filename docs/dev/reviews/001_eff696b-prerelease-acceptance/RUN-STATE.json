@@ -5,12 +5,12 @@
   "case_id": "A-001",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Coordinator assessed and accepted exact layout and combined PLAN QC",
+  "last_completed_action": "Coordinator assessed and accepted exact TASKS/QC",
   "pending_operation": null,
-  "next_action": "Assess concrete TASKS/QC; source CP-014 checkpoint then publisher fresh-create repair and trial",
+  "next_action": "Seal scoped preparation acceptance and independently assess full A-001; fresh publisher first-run proof",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
-    "product_commit": "b3ba0338d71c167aaec8ca85317d09002557ea2d",
+    "product_commit": "1510709f6e10d82d1b525b8c7cb221c5e1c5e20f",
     "integration_branch": "main",
     "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
@@ -34,6 +34,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/PLAN-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/LAYOUT-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/body-conflict/RESULT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/foreign-asset/RESULT.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/foreign-asset/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/TASKS-DECISION.json"
   ]
 }

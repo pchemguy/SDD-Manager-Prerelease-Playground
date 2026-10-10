@@ -51,3 +51,7 @@ Coordinator accepted concrete layout/combined QC at `b3ba0338`, with exact blobs
 ## Final CP-014 negative assessment
 
 Body-conflict run `38046659644` rejects different curated fields; inventory-conflict run `38046666461` rejects the preserved coordinator-owned sentinel. Existing body and package asset IDs/bytes metadata remain unchanged; sentinel `627726873` remains. Both expected refusals pass. First-create failures remain retained and source publisher repair/fresh-first-run proof is pending. Incidental validation bytecode committed at `0e5c6d9` was removed at `8d4da19`; protected pinned harness content is restored, history preserved.
+
+## Delegated TASKS assessment
+
+Coordinator accepted concrete TASKS/QC `1510709f` with exact identities/basis retained. Preparation acceptance seal and independent full A-001 assessment remain; do not start implementation/hosting/integration until their scoped prerequisite. Stale PLAN layout-pending navigation can be corrected as acceptance-only bookkeeping.
