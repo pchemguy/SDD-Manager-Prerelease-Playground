@@ -1,0 +1,8 @@
+tree 13a0b20e52d88317b444a6640a9b52babf41cf5c
+parent 809f045e3cd32445e7dca29d0174ea25aa5da7ea
+author Codex <codex@openai.com> 1791638486 -0400
+committer Codex <codex@openai.com> 1791638486 -0400
+
+[T-006] Document public API and runnable named-file usage
+
+Execute every user-guide code fence and all documented checks:23 unit and14 integration tests pass. Preserve delivered scope and planned distribution boundary. Fixes pchemguy/SDD-Manager-Prerelease-Playground#7

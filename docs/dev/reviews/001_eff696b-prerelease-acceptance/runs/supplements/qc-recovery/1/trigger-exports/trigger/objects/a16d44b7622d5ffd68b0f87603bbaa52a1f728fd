@@ -1,0 +1,6 @@
+tree 3b57e0a359305ba1b8653be172103c94d072e6ff
+parent 8036adbd71ffc1f04b98e689cc131781bc20cd1f
+author Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655336 -0400
+committer Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655336 -0400
+
+Record unaccepted TASKS strategy proposal for scoped QC recovery (caller fixture)

@@ -1,0 +1,10 @@
+tree b186526f04138fb829de548de37485decfccac21
+parent eff696b38f0b8a94bd6f91ca1c64d54fd714df46
+author Codex <codex@openai.com> 1791628332 -0400
+committer Codex <codex@openai.com> 1791628332 -0400
+
+Prepare TextStats project brief for human review
+
+Capture required API/counting semantics, two-phase delivery and the separately requested range constraint. Add pinned SDD bootstrap assets and current product navigation. Architecture remains held for acceptance of PROJECT.
+
+Verify owned Markdown links and heading spacing, staged ownership and byte-identical bootstrap copies. Preserve two trailing-space lines in the packaged disclosure as required by byte-copy policy. No production implementation or product tests exist yet.

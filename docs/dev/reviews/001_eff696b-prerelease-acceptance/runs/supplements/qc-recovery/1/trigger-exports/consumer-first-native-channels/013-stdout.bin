@@ -1,0 +1,18 @@
+# SDD Manager usage
+
+This repository uses [SDD Manager](https://github.com/pchemguy/SDD-Manager), a plugin for specification-driven development, to assist its development workflow: project exploration and design, specifications, plans, task lists, implementation, verification, and reporting. Actual use is bounded by the accepted project scope and recorded development evidence; this notice does not claim that every workflow stage has been executed.
+
+See [AI_DISCLOSURE.md](AI_DISCLOSURE.md) for the AI-assisted development disclosure. The project maintainer remains responsible for the published work. Use of SDD Manager does not imply endorsement or certification by its author.
+# AI-Assisted Development Disclosure
+
+This project has been developed with extensive assistance from generative AI, primarily OpenAI ChatGPT. AI assistance was used throughout both code and documentation development, including project exploration, design discussion, specification development, implementation, test generation, technical review, and prose drafting and revision.
+
+The project has been developed under human direction, and responsibility for the published code, documentation, design decisions, and any remaining errors rests with the project maintainer. Users should review and validate the implementation for their own requirements, particularly before relying on it in production or other correctness-sensitive applications.
+
+## README.md Warning Template
+
+> [!IMPORTANT]
+> 
+> **AI-Assisted Development Disclosure**
+> 
+> This project has been developed with extensive generative-AI assistance. Assistance covered project exploration, design discussion, specification development, implementation, testing, technical review, and documentation. See [AI_DISCLOSURE.md](AI_DISCLOSURE.md) for further details. Responsibility for the published software remains with the maintainer.

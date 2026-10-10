@@ -1,0 +1,41 @@
+tree 7c0427cc881eb209b4f6647fe291329aedae02cf
+parent 88a5c4b4424f4bba76940e40b1d6523b1f6fe191
+parent 5b17e4650c64c7c735991931b591bdabb8069215
+author Codex <codex@openai.com> 1791639117 -0400
+committer Codex <codex@openai.com> 1791639117 -0400
+
+Merge complete Phase 1 TextStats named-file utility into main
+
+Objective: Deliver a useful documented UTF-8 named-file counter and silent
+whole-input API with robust failures and verifiable source distribution.
+
+Review: Independent milestone 1.1/1.2 and cross-milestone Phase 1 code reviews
+covered pure semantics, acquisition/lifetime, API/CLI/error integration,
+nonempty product checks, user documentation and extracted-source delivery.
+Resolved M1.2-001 (argparse accepted an unsupported option abbreviation) with
+observed RED and retained subprocess/extraction regression. TODO: None.
+
+Delivered: T-001 through T-009, immutable validated TextStats, count_text and
+count_file; CRLF/CR/LF and Unicode word counting; once-only BOM policy;
+strict UTF-8 owned-file acquisition; exact module text output/help/dash-file
+handling; clean status1 input/decode and status2 invocation failures before
+acquisition; public API/module guide and runnable README; eleven-file source
+allowlist and isolated extraction checker. Phase 2 JSON/stdin and deferred
+ranges remain pending. No final-project completion or release is claimed.
+
+Verification: Merged-state Python3.12.14 checks passed23 unit and18 integration
+tests,36 real extracted module cases with exact import provenance, statuses,
+streams and unchanged inputs. Every runnable README/public-guide fence passed,
+including independent extracted sample (lines=3 words=5); scoped Markdown/local
+links and staged whitespace passed. Nine actual task closing parent diffs
+passed single-task result/evidence/initial-checkbox audit. Merge had no conflicts
+and tree exactly equals the verified phase tip; coordinator/pinned plugin and
+publisher fixture paths unchanged. Coverage excludes the broader runtime/platform
+matrix, external notice-link availability and installed packaging.
+
+Integration: Phase1; phase/1-named-file-utility -> main. Original phase branch-off
+and target parent88a5c4b4424f4bba76940e40b1d6523b1f6fe191; pinned working parent
+5b17e4650c64c7c735991931b591bdabb8069215. All managed task issues2-10 are
+closed/completed with task evidence; native milestones1-3 closed/read back.
+Explicit two-parent --no-ff merge; target publication/readback follows this
+commit. Retain phase branch and stop before Phase2 activation/work or release.

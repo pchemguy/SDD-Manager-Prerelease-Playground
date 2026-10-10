@@ -1,0 +1,6 @@
+tree 6bb9ae493a2530ec4aaefc31c82f2ecaa202e0d0
+parent c2dbdeb9f988d1ec66c4674bf11482429fea60df
+author Codex <codex@openai.com> 1791626584 -0700
+committer Codex <codex@openai.com> 1791626584 -0700
+
+Pin immutable package for TextStats consumers (037 CP-012)
