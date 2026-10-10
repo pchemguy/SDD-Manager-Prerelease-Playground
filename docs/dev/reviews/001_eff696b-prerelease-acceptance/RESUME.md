@@ -146,3 +146,10 @@ A024denial andunavailableaccess independentlyPassed afteractual originalfaults a
 ## A024 controlled variants independently completed
 
 Denial/unavailableaccess independentlyPassed; rate-limit assistedPassed after originalincidentalrgno-match Nottriggered, explicitordinarystopboundaryclarification, actual429/retry_after1 and separatefreshrecovery. Alloriginalseals/interventions preserved, samecontrolleddestination1ledgerobject readbackexact,154trackedbytes/index/refs/status unchanged. Nativeprotected-sessionrecovery remains unestablished and optionalNotrun; this is controlledclassification/recovery only. Original-pin requiredtotals12Passed/2Failed/18unresolved; correctedA004/A005 separatelypinnedreassessments attributed. A007fullindependentgradepending; positivecursor unchanged.
+
+
+## A-023 reconciliation sealed; A-020 dispatched
+
+Fresh final same-identity read observed the exact previously applied T001 completion without replay. Independent pre-send continuation verified READ200 null, one WRITE201, then exact READ200; no product/index/ref changes. Aggregate independent grade pending. Exact original seals and actual chronology are retained. Controlled fixture evidence only; optional native/live facilities remain unestablished.
+
+A-020 fresh consumer is dispatched against accepted preparation88a5c4b on its published isolated trial branch. Foreign staged content, distinct unstaged content and untracked sentinel are explicitly outside task ownership. A separate assessor owns the exact index/blob/commit-diff preservation grade. Positive cursor remains A-007 pending independent assessment.

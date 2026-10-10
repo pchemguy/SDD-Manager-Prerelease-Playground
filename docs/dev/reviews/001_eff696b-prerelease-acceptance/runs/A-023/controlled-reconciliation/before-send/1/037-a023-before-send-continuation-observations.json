@@ -1,0 +1,578 @@
+{
+  "schema_version": 1,
+  "scope": "Only pending retained T-001 controlled completion campaign037_t001_completion.",
+  "commands": [
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/README.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/SKILL.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md /workspace/scratch/46b31bb4dff6/037-a023-before-send-facility/PUBLIC-INTERFACE.md /workspace/scratch/46b31bb4dff6/037-a023-before-send-completion-payload.json",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "63dc8b",
+      "wall_time_seconds": 0.12891344,
+      "exit_code": 0,
+      "original_token_count": 24489,
+      "output": "Warning: truncated output (original token count: 24489)\nTotal output lines: 671\n\n# SDD Manager\n\n**Develop from explicit requirements, implement in bounded steps, and keep the human in control.**\n\nSDD Manager is a learning-by-doing experiment in specification-driven development with coding agents, packaged as an Agent Plugin for Git repositories. Practical project runs inform its refinement; source and local checks establish only their recorded coverage, and installed-client or live acceptance is reported separately. It takes a project from exploration and design through specifications, plans, executable task lists, implementation, and verification. It also supports feature changes, interruption recovery, and focused amendments at implementation checkpoints.\n\nStart with **sdd-manage**, the central coordinator. It routes your request to the relevant skills, reuses established project decisions, and stops at the boundary you specify.\n\nFormal revisions support [nested revision campaigns and reopened campaign amendments](skills/sdd-manage/references/revision-modes.md). Nested revisions suspend an active campaign and default to its branch as source/return target; eligible human-authorized amendments reuse the last closed revision\u2019s identity. Both verify/publish integration and return the worktree to the interrupted branch without automatically resuming its work.\n\nDevelopment uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).\n\n## Getting started\n\nFor a new project, copy the [Greenfield Project Prompt Template](<Greenfield Project Prompt Template.md>) and replace its project, repository and token placeholders. SDD Manager supplies the startup procedures and workflow checkpoints.\n\nLoad the package using your agent client's supported plugin mechanism. The package uses root `plugin.json` for discovery and presentation, with an identical `.codex-plugin/plugin.json` retained temporarily for legacy ChatGPT/Codex discovery, 15 skills under `skills/` and bundled icons under `assets/`. Manifest paths resolve from the repository/package root. The workflows require an agent with access to project files and the tools needed for the requested work.\n\n- **Project changes:** Use an existing, eligible Git worktree with applicable project instructions. Repository initialization is outside the plugin's scope.\n- **First SDD commit:** Ensure a concise root `AGENTS.md` provides current purpose, canonical owners, validated commands and instruction navigation; preserve existing human instructions. Include root `AI_DISCLOSURE.md` and `SDD-MANAGER.md` from the bundled assets, with discoverable README links. Preserve and reconcile existing disclosures. See [repository bootstrap](skills/sdd-manage/references/repository-bootstrap.md) for ownership, explicit scope limits and resumable adoption.\n- **Commits and pushes:** Establish the branch and remote destination. Implementation pushes outstanding commits before starting further task work, then commits and pushes each completed task before advancing.\n- **Checks:** Use the project's declared test, build, and documentation tools.\n- **Authentication:** Attempt pushes with the current shell session. On an access/credential failure, sdd-manage reuses a suitable ignored repository token or requests and saves one beside the root .gitignore before recovering the client session. `*.tkn` files remain untracked.\n- **Hosting:** GitHub access is needed only for remote operations. The conventional fine-grained token selects solely the target repository with read/write for Commit statuses, Contents, Issues, Pull requests, and Workflows; Metadata read access is automatic. Add Actions access when required for workflow dispatch or private run inspection. Git and API clients authenticate separately. Local development does not require a hosting token.\n\nGive the coordinator a concrete objective and stopping point. For example:\n\n```text\nUse sdd-manage to inspect this repository and prepare the development\nspecification, plan, layout, and task list for a line-based archive reader.\nUse the attached brief as input. Stop before implementation.\n```\n\nOnce the task list is ready:\n\n```text\nUse sdd-manage to implement milestone 1.1 from TASKS.md.\nVerify, commit, and push each completed task on its phase branch.\nIf the phase remains incomplete, pause without merging into main.\nIntegrate only a complete verified phase, then stop at my requested boundary.\n```\n\nUse the milestone and task ID",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "c4eb72",
+      "wall_time_seconds": 3.7296e-05,
+      "exit_code": 0,
+      "original_token_count": 1218,
+      "output": "---\nname: sdd-orient\ndescription: Use when locating and inspecting a software project's repository before SDD work, checking Git worktree and interrupted-task state, discovering governing instructions and development documents, or handing a scoped project orientation to an orchestrating agent. Read-only; report whether a proposed mutation has the required Git and authority baseline.\n---\n\n# Orient in a project\n\nFor Markdown output or document work within this skill's scope, apply the shared [Markdown style](../sdd-conventions/references/markdown-style.md): blank lines after headings and around top-level lists and code blocks, plus four-space structural indentation, including nested lists, with exactly one space after each list marker. This applies to direct calls as well as coordinated work; it does not expand editing or review authority.\n\nEstablish a factual, scoped starting point before another SDD skill changes repository files. This skill is a shared, **read-only** capability. It neither authorizes a mutation nor decides which later workflow to run. Read [inspection and handoff](references/inspection-and-handoff.md) for the evidence checks and report contract.\n\n1. Establish the user's intended project path and proposed scope, if supplied. Distinguish the project root from its enclosing Git root; do not assume the current directory is the project.\n2. Read root/applicable nested AGENTS.md; assess concise orientation, command/link currency and execution-owner discoverability under **sdd-manage**'s [agent orientation](../sdd-manage/references/agent-orientation.md). Report missing/stale guidance without creating or editing it. Inspect root `SDD-MANAGER.md`, `AI_DISCLOSURE.md` and README links as adoption/disclosure evidence and report missing or conflicting records in the handoff; do not create them during orientation. Identify applicable repository instructions, including root and path-scoped `AGENTS.md`, referenced policies, and project-designated sources. Inspect `docs/dev/PROJECT.md` for the project brief; if it contains operating instructions, preserve their applicability and report their scope and any conflict.\n3. Inspect Git, current branch or detached/unborn state, HEAD, worktree status, and changes affecting the intended paths. Suppress optional Git writes with command-scoped `git --no-optional-locks` or an equivalent scoped `GIT_OPTIONAL_LOCKS=0`. Git commands must not change the index, branch, working tree, or configuration.\n4. Inspect adjacent SPEC/PLAN/TASKS (and selected feature) review reports, finding/gate state and reviewed/governing identities; report absent or apparently stale readiness without performing QC or writing reports. Discover present development documents and their focused children, the active feature or change context, relevant code and tests, and declared project commands. When a task list exists, identify the last committed task and compare it with the owning checklist, pending changes, and existing verification evidence. Distinguish completed work awaiting commit from incomplete work; pass the identified state to **sdd-implement** for continuation.\n5. Produce the scoped orientation report. Separate observed facts from inferences and unknowns, identify concrete blockers, and state whether the Git prerequisite for a contemplated mutation is met. Re-orient when the project path, target scope, HEAD, instructions, or material worktree state changes.\n\nUse current governing documents and the active campaign for routine orientation. Do not load prior campaign documents unless the current task specifically needs their historical context; then read only the relevant records/sections. Identity/path discovery does not require reading historical contents. Apply the [closed-record boundary](../sdd-conventions/references/review-campaigns.md#closed-campaign-records).\n\nIf the target is outside a usable Git worktree, mark **repository mutation blocked**. Do not initialize Git, create files, clean worktrees, restore files, run tests with side effects, commit, or invoke a mutating workflow. A conversational or read-only inspection may continue.\n\nFor a subagent, the orchestrator supplies the applicable path scope, instructions, relevant document authorities, Git baseline, known dirty paths, and prohibited mutations. A subagent can inspect additional evidence within its scope; the orchestrator rechecks the overall state before coordinating any mutation or commit.\n\nFor main/feature preparation, observe actua",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "c75608",
+      "wall_time_seconds": 2.8994e-05,
+      "exit_code": 0,
+      "original_token_count": 2600,
+      "output": "# Inspection and handoff\n\nUse this reference for read-only orientation. Collect enough evidence for the contemplated action; do not dump an entire monorepo into context.\n\n## Project and authority\n\n- Resolve the user-supplied path or current directory to a project root. In a monorepo, distinguish the governed subproject from the containing repository. When candidates are genuinely ambiguous, report them instead of choosing one silently.\n- Read applicable root and more deeply scoped `AGENTS.md` files for anticipated paths. Follow their relevant references and project-designated instruction sources, including policies outside the project root when they apply.\n- Identify contradictory or unreadable instructions and the exact affected action. Record rules for language, build, test, documentation, generated files, source ownership, and commit practices when relevant.\n- Inspect `docs/dev/PROJECT.md` as the project brief. Determine the role of its actual contents. If it contains operating instructions, report them as applicable instructions and identify their scope and any conflict; document revision is a separate workflow.\n\n## Git evidence\n\nUse Git's inspection commands with optional writes suppressed. Plain `git status` can refresh index metadata even when file contents are unchanged. Apply `git --no-optional-locks` to each inspection command, or scope `GIT_OPTIONAL_LOCKS=0` to the inspection process; do not change repository or global configuration. For example, from the candidate project path:\n\n```text\ngit --no-optional-locks rev-parse --is-inside-work-tree\ngit --no-optional-locks rev-parse --show-toplevel\ngit --no-optional-locks symbolic-ref --quiet --short HEAD\ngit --no-optional-locks rev-parse --verify HEAD\ngit --no-optional-locks status --porcelain=v1 --untracked-files=all\n```\n\nDistinguish a Git worktree from a bare repository, a Git directory outside the target project, or a path with no Git. Record branch or detached state; record an unborn HEAD explicitly. Note staged, unstaged, untracked, deleted, renamed, conflicted, and submodule changes where present. Scope status to the project and anticipated target paths without concealing relevant parent-level or shared files.\n\nDo not assume dirty paths belong to the current task or the agent. Do not interpret clean status alone as proof that the intended work is finished or that documents agree. For the Git prerequisite to be met, the project must be inside a usable worktree; a missing HEAD, conflict, or ambiguous ownership is an additional blocker for ordinary mutation until a later workflow defines how to handle it.\n\nFor branch workflows, identify the working and target branches, starting checkpoint, remote destinations, branch occupancy in worktrees, and existing task/change evidence of the authorized boundary. Report in-progress merges, already merged commits awaiting publication, and unresolved target identity. Inspect Git ancestry and parent commits when relevant with optional writes suppressed; do not fetch, switch branches, create worktrees, or infer a target from a branch name alone.\n\n## Project evidence\n\nLook for present roots and referenced children; absence is a finding, not automatically a defect:\n\n```text\ndocs/dev/PROJECT.md\ndocs/dev/ARCHITECTURE.md   docs/dev/architecture/\ndocs/dev/DECOMPOSITION.md  docs/dev/decomposition/\ndocs/dev/SPEC.md           docs/dev/spec/\ndocs/dev/PLAN.md           docs/dev/plan/\ndocs/dev/TASKS.md          docs/dev/tasks/\ndocs/dev/layout.md         docs/dev/layout/\ndocs/dev/FEATURE_ARCHITECTURE.md\ndocs/dev/FEATURE_DECOMPOSITION.md\ndocs/dev/FEATURE-SPEC.md  docs/dev/FEATURE-PLAN.md\ndocs/dev/FEATURE-TASKS.md\ndocs/dev/verification-map.json\n```\n\nInspect the active reviews/features package navigation for branch identity and source disposition. Discover other campaign identities and paths without loading their contents. Archived feature documents and historical task snapshots are not active FEATURE-TASKS; discover current ownership from main TASKS and explicitly active root sources. Read prior records only to answer a specific current historical question, using the smallest relevant scope; do not check their continued validity or links. Observe partially moved paths/links in the active workflow as unfinished incorporation, without repairing them. Inspect its report prefix and relevant Git/publication facts. Distinguish unfinished review, committed report awaiting push, closed milestone awaiting local parent persistence, and completed pha",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/SKILL.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "3b3355",
+      "wall_time_seconds": 2.5529e-05,
+      "exit_code": 0,
+      "original_token_count": 1558,
+      "output": "---\nname: sdd-forge\ndescription: Use when projecting software-development phases, milestones, and tasks to a hosted repository; creating or reconciling GitHub labels, milestones, and task issues; finding an issue for a task ID; or closing verified task issues and milestones, reopening invalidated milestones, or recovering interrupted hosted transitions. Also use for provider-independent Git release highlights and incremental release-note drafts, GitHub release package assessment, release workflow preparation or dispatch, release creation and interrupted release recovery. GitHub is the available backend. Ordinary local Git and SDD work does not require hosting access.\n---\n\n# Git release preparation and hosted operations\n\nFor Markdown output or document work within this skill's scope, apply the shared [Markdown style](../sdd-conventions/references/markdown-style.md): blank lines after headings and around top-level lists and code blocks, plus four-space structural indentation, including nested lists, with exactly one space after each list marker. This applies to direct calls as well as coordinated work; it does not expand editing or review authority.\n\n## Shared protocol\n\n- **Scope:** Run only for a requested hosted operation or release/package preparation, including local Git release highlights. Route shared highlights before provider selection; identify the provider before loading a hosted backend; report ambiguous remotes or unsupported providers without guessing. Local preparation/inspection and workflows without selected tracking need no hosted activation; requested/confirmed tracking retains the manager's phase execution gates.\n- **Hierarchy:** For task tracking, use the **sdd-conventions** task hierarchy to read phase, milestone, and task IDs and names from TASKS or the active FEATURE-TASKS and preserve their parentage in the host projection. The selected backend defines its concrete objects.\n- **Coordination:** Before a local draft edit or hosted mutation, **sdd-manage** coordinates the user's request and a current **sdd-orient** handoff establishing the eligible Git worktree and governing instructions. Read-only inspection needs no Git mutation gate.\n- **Credentials:** Use the available authenticated client or a suitable supplied token. **sdd-manage** discovers, accepts, and persists tokens under **sdd-conventions**' **Hosting tokens** rules and recovers the affected client's authentication when needed. A direct caller may supply a token to **sdd-forge**. Consume it through a protected mechanism without ordinary handoff/output exposure; Git shell authentication does not prove API-client access. The selected backend defines provider-specific checks and permission requirements.\n- **Access failure:** For a backend access-related 403, request a suitable token from **sdd-manage** and return the endpoint, required access, and any provider-indicated non-credential cause without exposing the credential. The coordinator checks credential suitability and identifies any policy or other restriction requiring a different remedy; escalation does not require substituting a token when the existing credential is suitable. For direct use without **sdd-manage**, ask the user. Recheck access before retrying; a replacement token does not establish permission by itself.\n- **Operational failure:** Let the selected backend distinguish access failures, rate limits, service/transport outages, invalid requests, and uncertain writes. Preserve successful independent results and return pending/unknown effects with bounded retry or deferred-reconciliation context; do not route every 403 to credential replacement.\n- **Handoff:** Return the repository, requested operation, changed objects, checks, access failures and remaining differences. Tracking returns task/issue associations; release work returns package/source/tag, workflow/run, release/assets/URLs and actual latest state. Local file preparation returns changed files to sdd-manage for Git persistence. Hosted state does not itself establish task completion or downloaded-byte verification.\n\nDo not create commits, push branches, or create or merge pull requests here.\n\nAdd a backend only when it supports a concrete hosted operation with its own repository resolution, authentication, object mapping, and reconciliation rules. Give it a focused reference and explicit trigger; do not advertise a provider before its workflow is defined.\n\n## Shared release preparation\n\nFor requested release creatio",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "e14e5e",
+      "wall_time_seconds": 2.0981e-05,
+      "exit_code": 0,
+      "original_token_count": 1187,
+      "output": "# Task issue references and lifecycle\n\nApply the [backend object lifecycle](../../sdd-conventions/references/backend-object-lifecycle.md); issue completion requires the task result/status commit to be pushed with verified remote containment before closure. Milestone closure is a separate subsequent operation.\n\n## Resolve for implementation\n\nGiven a stable task ID, resolve the intended GitHub repository and find the uniquely matching issue using the exact task prefix and `sdd-forge:task-id` marker. Check both open and closed issues and exclude pull requests. Return the repository, task ID, issue number, URL, and state to the invoking workflow. Do not rely on a remembered number, title substring alone, phase label, or milestone association alone. For several tasks, return each mapping independently; stop the affected operation on missing, duplicate, or conflicting matches.\n\nThe implementation workflow owns the Git commit. Pass resolved issue references and verified completion status to its commit composer (or **sdd-report** when available), which determines the message format. A commit may reference more than one issue when its verified change genuinely contributes to each. A reference does not itself establish completion. GitHub may close an issue referenced by a closing keyword when the commit reaches the default branch; reconcile verified task closure under the procedure below without waiting for that event.\n\n## Close or reopen\n\nWhen the project has opted into GitHub task-issue tracking, reconcile issue state after each task completion: close its issue once the task has been fully implemented, its required evidence verified, and its durable commit and completion state in the owning TASKS or FEATURE-TASKS reconciled. The initial request to publish and maintain hosted task issues authorizes this continuing reconciliation; a one-time inspection does not. Check the corresponding task ID, repository, issue association, and issue state immediately before the change. Add a concise evidence comment or report link with task ID, commit SHA, and verification facts if that information is not already available on the issue; use a completed closure reason where supported. If the issue is already closed with matching evidence, do not duplicate comments or state changes. Do not close for a checkbox alone, a partial commit, or a milestone-level promise. If GitHub is unavailable, retain the verified local task state and report hosted reconciliation as pending. Apply the GitHub operational-failure protocol to uncertain closure/comment writes: inspect actual state, reason, and existing evidence before replaying; an unreadable outcome remains unknown.\n\nIf later steering invalidates completion, do not silently flip hosted state. Reassess TASKS, any active FEATURE-TASKS, and evidence, then reopen the unique issue if the user has requested hosted reconciliation, stating the new outstanding work and preserving its history. An issue closed on an unmerged working branch represents verified task work there; report its branch and commit explicitly. Default Git integration happens at the completed workflow boundary and is reported separately with its target and merge commit. Do not reopen a verified task merely because target publication is pending. PR creation and merge are separate operations outside this backend's present scope.\n\nNo local issue-map file is needed initially. The project-wide stable task ID from the owning list, exact GitHub marker, scoped repository identity, and handoff provide bidirectional lookup. Introduce a checked-in mapping only for a demonstrated offline or cross-host requirement, with ownership and conflict reconciliation specified first; otherwise it would become a second mutable record of GitHub state.\n\n## Retired task disposition\n\nAn explicitly accepted scope amendment may retire an unfinished managed task. Resolve its stable ID from the amendment and retained owning-list/Git history; verify its exact issue marker and preserve history. Under authorized hosted reconciliation, record the accepted retirement/commit and close an open retired issue with reason `not_planned`, not `completed`; read back state/reason. A removed checkbox alone does not authorize closure. Already completed historical work remains historical completion unless current acceptance is explicitly invalidated. Unknown retirement writes require the same readback-before-replay protocol.\n\nUse GitHub's [issue update documentation](https://docs.github.c",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "92887d",
+      "wall_time_seconds": 3.4042e-05,
+      "exit_code": 0,
+      "original_token_count": 1160,
+      "output": "# Select optional hosted tracking\n\nAt workflow entry, preparation handoff and phase activation, establish the actual human tracking decision for the repository and scope. Tracking is optional to select; once requested or confirmed, its activation and lifecycle requirements are prerequisites for dependent execution. Git publication authority and authenticated access are separate from the choice to activate issue/label/milestone tracking.\n\n| Observed decision / access context | Coordinator action and state |\n| --- | --- |\n| User explicitly requests enabling and maintaining phase labels, milestones and task issues | Treat the request as confirmation for the named repository and scope; do not ask again. Carry **requested/confirmed; projection pending** until the eligible phase objects and associations are verified. Load [phase activation](phase-activation.md) before implementation handoff. |\n| User supplies a GitHub token for this repository workflow; no tracking decision exists | Recommend **enable** by default. Ask for confirmation of the concrete managed scope before any hosted projection. State **recommended enabled; confirmation pending**. |\n| Confirmation already covers this repository/scope | Carry it forward without another question. Establish eligible phase identity and observed projection separately, then route missing projection/reconciliation to sdd-forge. No objects yet does not mean no tracking request. |\n| Explicit decline covers this scope | Respect it, retain **declined**, and continue local/Git work without repeated offers. A later supplied token alone does not erase the decline. |\n| No supplied token and no choice | Offer supported tracking when relevant. Use existing authenticated access for confirmed operations; do not probe for credentials or invent consent to make the offer. |\n| Confirmation pending | Preserve **pending**, not declined or active. Preparation and independent authorized local work can continue; ask before an affected activation decision. Do not silently choose local-only execution at a phase gate requiring that choice. |\n\nThe confirmation proposal identifies the established repository, eligible phase label, every milestone/task issue and their associations, and verification-based closure/reopening within the selected lifecycle. Use known accepted hierarchy counts when available; do not invent them before planning. A supplied token alone neither creates objects nor authorizes a new destination. An explicit request to create and maintain these objects is itself confirmation; do not ask the same question again.\n\nRecord the actual user decision and its source, repository/scope, eligible phase, and observed projection/associations in existing project/handoff evidence. Distinguish requested/confirmed tracking from pending, verified or unknown projection; authenticated access and object existence establish neither the decision nor execution readiness. An agent-authored PLAN statement that tracking is inactive describes performed state, not proof of a user decline. Do not create another state registry.\n\n## Late confirmation\n\nWhen confirmed after local execution begins, discover existing eligible-phase objects and reconcile missing identities/associations idempotently. Attach retained commit/check evidence and close only verified tasks/milestones; leave incomplete work open. Do not repeat product tasks, create future-phase objects or rewrite historical reports to imply earlier projection. Apply phase activation, document readiness and backend lifecycle rules to the actual continuation state.\n\n## Recover an omitted requested gate\n\nAn initial explicit tracking request discovered after untracked execution is not late user confirmation. Retain the actual request, missed boundary and performed state separately; do not ask the human to enable tracking again or rewrite evidence to imply earlier compliance.\n\nPreserve pending files/index, task identities and verified results. Publish already verified retained commits first. Before further affected implementation edits/tests or phase advancement, route discovery/reconciliation of the existing eligible phase and required predecessor lifecycle through sdd-forge and [phase activation](phase-activation.md). Reuse matched objects, read uncertain effects before retry, attach retained commit/check evidence and close only verified work. Missing or unknown required projection/closure remains a blocker. Do not replay product tasks, reset work, bulk-project futur",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "b12cd4",
+      "wall_time_seconds": 3.6546e-05,
+      "exit_code": 0,
+      "original_token_count": 2212,
+      "output": "# Backend object lifecycle and review boundaries\n\nApply these shared invariants to PLAN/TASKS generation, bounded implementation, hosted reconciliation and interruption recovery. Local governing documents and verified Git/check evidence are authoritative; backend objects are projections. Hosting is optional to select; requested/confirmed tracking must satisfy its activation and lifecycle gates before dependent execution. sdd-manage coordinates transitions; sdd-implement executes tasks and persists results; sdd-forge owns provider writes.\n\n## Phase activation\n\nKeep the complete intended hierarchy in local PLAN/TASKS. Create a phase's label, all its milestones and all its task issues only after its predecessor is complete and before its first task executes. First-phase activation has no predecessor. Completion includes the predecessor's reviews, required reports, all milestone closures when tracking is active, local exits and required target integration/publication. Starting the next phase also requires authorization within the selected range.\n\nPreparation does not activate a phase. Projection reads the complete hierarchy to resolve identity/dependencies but writes only the eligible phase. Added work in an already active phase is projected before execution. Future-phase work remains unprojected, including feature deltas. When tracking is requested or confirmed for the scope, incomplete or unverified phase projection blocks affected task implementation edits/tests unless the human explicitly authorizes local-only continuation. Preserve existing future-phase objects as historical/pre-existing state; report them rather than deleting them to enforce timing retrospectively.\n\n## Explicit review units\n\nEach phase has one or more delivery milestones followed by a dedicated phase review milestone containing exactly one phase code review/testing/report task. Each delivery milestone ends with its own milestone code review/testing/report task, including the last delivery milestone. The final phase review milestone has no additional milestone review task.\n\nPLAN owns these milestones and exits; sdd-tasks derives executable review tasks with stable IDs, prerequisites, scope and evidence. Review tasks count toward selected next-N ranges. The phase review depends on all **delivery** milestones being complete/closed, not its own still-open milestone. Accepted existing hierarchies require a scoped amendment; never insert or renumber tasks implicitly during execution.\n\n## Completion ordering\n\n1. Verify task acceptance, tests and documentation; reconcile its owning checklist/evidence; commit result and status together, push and verify containment. Then close its task issue with evidence when tracking is active. A task issue records work on its working branch; target integration is separate.\n2. Execute a delivery milestone's final review task after preceding delivery tasks complete. Review the whole capability and relevant dependencies, test applicable exits/regressions, fix blockers and commit/push its report. Close this review task's issue like any other task.\n3. Close/read back the delivery milestone only after every constituent issue, including the review issue, is closed and its review/report/exit evidence is established. Unexpected open or foreign issues and ambiguous ownership block closure; never close foreign issues to clear the gate.\n4. After all delivery milestones close, execute the phase review task: review cross-milestone interactions, phase exits and remaining findings, run required checks, repair blockers, commit/push the phase report and close its issue. Then close/read back the final review milestone.\n5. Reconcile local parent claims, verify the full phase and perform required explicit integration, merged-state verification and publication before activating an authorized next phase. A partial range pushes and pauses without inventing additional review work beyond its selected tasks.\n\nLocal-only execution applies the same review/report/exit gates without hosted closure. If an enabled backend cannot complete closure, keep local verified results and report hosted reconciliation pending; dependent phase review/advancement remains blocked. Independent tasks in an already verified activated phase may continue within scope only when their own required projection and dependencies are satisfied. Initial/added-work projection and dependent review/closure/next-phase gates are not waived by an outage. A phase label has no close state ",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/references/github.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/docs/dev/PROJECT.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/SDD-MANAGER.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/AI_DISCLOSURE.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/README.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "2df1fa",
+      "wall_time_seconds": 2.5088e-05,
+      "exit_code": 0,
+      "original_token_count": 4913,
+      "output": "# GitHub backend\n\n## Operations and sources\n\nLoad only the additional reference needed for the request:\n\n| Request | Load |\n| --- | --- |\n| Assess a ZIP or develop release package contents/names interactively | [package preparation](github-packaging.md) |\n| Prepare, extend or dispatch/monitor a release workflow | [release workflows](github-release-workflows.md) |\n| Create/finish a release, upload assets or recover/read back publication | [release lifecycle](github-releases.md) |\n| Create or reconcile phase labels, GitHub milestones, or task issues | [TASKS projection](github-projection.md) |\n| Close/reopen a milestone, assess milestone closure backlog or confirm hosted phase gates | [milestone lifecycle](github-milestone-lifecycle.md) |\n| Resolve task IDs to issue numbers for a commit or handoff, check issue status, or close verified issues | [issue lifecycle](github-issue-lifecycle.md) |\n\nFor task tracking, `docs/dev/TASKS.md` supplies complete-project task IDs and progress; an active `docs/dev/FEATURE-TASKS.md` supplies its feature's scoped IDs and progress until reconciliation. Task IDs remain unique across both lists. PLAN or active FEATURE-PLAN supplies phase and milestone outcomes and exit conditions. SPEC and applicable design or feature documents supply requirements when a task brief needs them. GitHub is a projection, not the authority for task scope or verified completion. Resolve a task in its owning list; a feature task later incorporated into TASKS retains its original issue. Use **sdd-report** to compose issue drafts if available; if unavailable, use the baseline format in the projection reference. Neither dependency is required for a read-only lookup.\n\nPackage and release operations use their accepted source/build/release inputs; they do not require TASKS or tracking activation. Repository file edits are coordinated through sdd-manage and normal Git persistence; provider release/dispatch writes remain backend-owned.\n\n## Repository and access\n\nDetermine the intended GitHub repository from the invoking workflow's explicit target or its relevant remote. Normalize SSH and HTTPS remotes to the same `owner/repo` identity. If multiple plausible GitHub repositories exist, require an explicit selection before writing. Do not use a different fork or upstream merely because a token can access it.\n\nUse the token, whether it originated with **sdd-manage** or was provided directly to **sdd-forge**, or use an approved authenticated GitHub client. Apply **sdd-conventions**' **Hosting tokens** rules: the ignored, untracked `gh.tkn` beside the repository root `.gitignore` is the permitted local credential file. Keep the token out of all other project files, plugin settings, command arguments, URLs, logs, issue bodies, and reports. Do not assume that a credential usable for `git push` is available to the API client. Check access for the requested endpoint and repository; do not substitute another identity silently. Use the conventional permission profile below when requesting or assessing the repository token. GitHub's current endpoint documentation determines actual endpoint access; token permissions do not authorize unrequested operations.\n\n### Conventional fine-grained token\n\nRequest a fine-grained personal access token with **Only select repositories** enabled solely for the target repository and this repository-permission profile:\n\n| Permission | Access |\n| --- | --- |\n| Commit statuses | Read and write |\n| Contents | Read and write |\n| Issues | Read and write |\n| Pull requests | Read and write |\n| Workflows | Read and write |\n| Metadata | Read, added automatically |\n\nThis is the SDD token convention, not a claim that every endpoint requires the full profile. Workflows write supports authorized workflow-file modification together with the relevant Contents access. The profile does not add PR operations, protected-branch bypass or automatic workflow dispatch, or override account/repository policy. Verify the relevant endpoint and any indicated approval restriction using GitHub's [token management](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) and [fine-grained permissions](https://docs.github.com/en/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens) documentation.\n\nFor HTTPS Git authentication, sdd-manage restores a supported shell credential facility from the local token. For this backend's API operations, use the c",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "python -B - <<'PY'\nimport subprocess,json,pathlib,hashlib,os\nroot=pathlib.Path('/workspace/scratch/46b31bb4dff6/037-a023-before-send')\ncommands=[['rev-parse','--show-toplevel'],['symbolic-ref','--short','HEAD'],['rev-parse','HEAD'],['status','--porcelain=v1','--untracked-files=all'],['show-ref'],['show','--format=fuller','--stat','HEAD'],['diff','HEAD^','HEAD','--','docs/dev/TASKS.md'],['ls-files','-s']]\nresults=[]\nfor args in commands:\n p=subprocess.run(['git','--no-optional-locks']+args,cwd=root,text=True,capture_output=True)\n results.append({'argv':['git','--no-optional-locks']+args,'cwd':str(root),'status':p.returncode,'stdout':p.stdout,'stderr':p.stderr})\np=subprocess.run(['git','--no-optional-locks','rev-parse','--git-path','index'],cwd=root,text=True,capture_output=True)\nidx=root/p.stdout.strip()\ntracked=subprocess.run(['git','--no-optional-locks','ls-files','-z'],cwd=root,capture_output=True)\nfiles={}\nfor name in tracked.stdout.decode().split('\\0'):\n if not name or name.endswith('.tkn'): continue\n f=root/name\n if f.is_file(): files[name]=hashlib.sha256(f.read_bytes()).hexdigest()\ndata={'commands':results,'index_path':str(idx),'index_sha256':hashlib.sha256(idx.read_bytes()).hexdigest(),'tracked_file_hashes':files}\nprint(json.dumps(data))\nprint('TASKS CONTENT')\nprint((root/'docs/dev/TASKS.md').read_text())\nPY",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "0fc373",
+      "wall_time_seconds": 0.092634549,
+      "exit_code": 0,
+      "original_token_count": 17786,
+      "output": "Warning: truncated output (original token count: 17786)\nTotal output lines: 133\n\n{\"commands\": [{\"argv\": [\"git\", \"--no-optional-locks\", \"rev-parse\", \"--show-toplevel\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"symbolic-ref\", \"--short\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"trial/037-a023-before-send\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"rev-parse\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"status\", \"--porcelain=v1\", \"--untracked-files=all\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"show-ref\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-after-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\\ne63b8946bbb99347b0f73f070f9c728945ee5925 refs/remotes/origin/phase/2-json-and-stdin\\n671fe8ba668ff99aba6de378294938eff10d4415 refs/remotes/origin/revision/001_eff696b-prerelease-acceptance\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-after-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"show\", \"--format=fuller\", \"--stat\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"commit 9dc8075dd1b96d3a2744717a9d6d98a3024acbec\\nAuthor:     Codex <codex@openai.com>\\nAuthorDate: Sat Oct 10 08:39:06 2026 -0400\\nCommit:     Codex <codex@openai.com>\\nCommitDate: Sat Oct 10 08:39:06 2026 -0400\\n\\n    [T-001] Implement immutable statistics and whole-text counting\\n    \\n    Deliver validated immutable TextStats, preserved CRLF/CR/LF traversal, once-only BOM normalization and the silent count_text facade. Include nonempty product suites, source documentation, current orientation, scoped cache ignores and initial T-001 completion with evidence in TASKS.\\n    \\n    Verification: Behavioral RED observed after resolving missing-package collection; 10 unit and 5 integration tests then passed on Python 3.12.14. Internal segment/BOM seams, docstrings, document links and single-task staged composition checked. File acquisition, CLI and distribution remain later tasks.\\n    \\n    Refs pchemguy/SDD-Manager-Prerelease-Playground#2\\n\\n .gitignore                    |  4 ++\\n AGENTS.md                     |  6 +--\\n README.md                     |  2 +-\\n docs/dev/TASKS.md             | 16 +++++++-\\n tests/__init__.py             |  1 +\\n tests/integration/__init__.py |  1 +\\n tests/integration/test_api.py | 59 +++++++++++++++++++++++++++\\n tests/unit/__init__.py        |  1 +\\n tests/unit/test_core.py       | 93 +++++++++++++++++++++++++++++++++++++++++++\\n textstats/__init__.py         |  5 +++\\n textstats/core.py             | 84 ++++++++++++++++++++++++++++++++++++++\\n 11 files changed, 267 insertions(+), 5 deletions(-)\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"diff\", \"HEAD^\", \"HEAD\", \"--\", \"docs/dev/TASKS.md\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\\nindex 839c4ff..8b45e76 100644\\n--- a/docs/dev/TASKS.md\\n+++ b/docs/dev/TASKS.md\\n@@ -12,7 +12,7 @@ The user requested preparation through TASKS and stop before implementation. The\\n \\n - [ ] Phase 1 \\u2014 Named-file utility\\n     - [ ] Milestone 1.1 \\u2014 Named-file counting\\n-        - [ ] T-001 \\u2014 Implement immutable statistics and whole-text counting\\n+        - [x] T-001 \\u2014 Implement immutable statistics and whole-text counting\\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict in",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "python -B - <<'PY'\nimport subprocess,json,pathlib,hashlib\nroot=pathlib.Path('/workspace/scratch/46b31bb4dff6/037-a023-before-send')\nresults=[]\nfor args in [['rev-parse','--show-toplevel'],['symbolic-ref','--short','HEAD'],['rev-parse','HEAD'],['status','--porcelain=v1','--untracked-files=all'],['show-ref'],['show','--format=fuller','--stat','HEAD'],['diff','HEAD^','HEAD','--','docs/dev/TASKS.md']]:\n p=subprocess.run(['git','--no-optional-locks']+args,cwd=root,text=True,capture_output=True)\n results.append({'argv':['git','--no-optional-locks']+args,'cwd':str(root),'status':p.returncode,'stdout':p.stdout,'stderr':p.stderr})\np=subprocess.run(['git','--no-optional-locks','rev-parse','--git-path','index'],cwd=root,text=True,capture_output=True)\nidx=root/p.stdout.strip()\ntracked=subprocess.run(['git','--no-optional-locks','ls-files','-z'],cwd=root,capture_output=True)\nfiles={}\nfor name in tracked.stdout.decode().split('\\0'):\n if not name or name.endswith('.tkn'): continue\n f=root/name\n if f.is_file(): files[name]=hashlib.sha256(f.read_bytes()).hexdigest()\nentries=subprocess.run(['git','--no-optional-locks','ls-files','-s'],cwd=root,capture_output=True)\nprint(json.dumps({'commands':results,'index_path':str(idx),'index_sha256':hashlib.sha256(idx.read_bytes()).hexdigest(),'tracked_product_sha256':hashlib.sha256(json.dumps(files,sort_keys=True).encode()).hexdigest(),'tracked_files':len(files),'index_entries_sha256':hashlib.sha256(entries.stdout).hexdigest()}))\nPY",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "861acd",
+      "wall_time_seconds": 0.004909722,
+      "exit_code": 0,
+      "original_token_count": 2483,
+      "output": "{\"commands\": [{\"argv\": [\"git\", \"--no-optional-locks\", \"rev-parse\", \"--show-toplevel\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"symbolic-ref\", \"--short\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"trial/037-a023-before-send\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"rev-parse\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"status\", \"--porcelain=v1\", \"--untracked-files=all\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"show-ref\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-after-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\\ne63b8946bbb99347b0f73f070f9c728945ee5925 refs/remotes/origin/phase/2-json-and-stdin\\n671fe8ba668ff99aba6de378294938eff10d4415 refs/remotes/origin/revision/001_eff696b-prerelease-acceptance\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-after-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"show\", \"--format=fuller\", \"--stat\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"commit 9dc8075dd1b96d3a2744717a9d6d98a3024acbec\\nAuthor:     Codex <codex@openai.com>\\nAuthorDate: Sat Oct 10 08:39:06 2026 -0400\\nCommit:     Codex <codex@openai.com>\\nCommitDate: Sat Oct 10 08:39:06 2026 -0400\\n\\n    [T-001] Implement immutable statistics and whole-text counting\\n    \\n    Deliver validated immutable TextStats, preserved CRLF/CR/LF traversal, once-only BOM normalization and the silent count_text facade. Include nonempty product suites, source documentation, current orientation, scoped cache ignores and initial T-001 completion with evidence in TASKS.\\n    \\n    Verification: Behavioral RED observed after resolving missing-package collection; 10 unit and 5 integration tests then passed on Python 3.12.14. Internal segment/BOM seams, docstrings, document links and single-task staged composition checked. File acquisition, CLI and distribution remain later tasks.\\n    \\n    Refs pchemguy/SDD-Manager-Prerelease-Playground#2\\n\\n .gitignore                    |  4 ++\\n AGENTS.md                     |  6 +--\\n README.md                     |  2 +-\\n docs/dev/TASKS.md             | 16 +++++++-\\n tests/__init__.py             |  1 +\\n tests/integration/__init__.py |  1 +\\n tests/integration/test_api.py | 59 +++++++++++++++++++++++++++\\n tests/unit/__init__.py        |  1 +\\n tests/unit/test_core.py       | 93 +++++++++++++++++++++++++++++++++++++++++++\\n textstats/__init__.py         |  5 +++\\n textstats/core.py             | 84 ++++++++++++++++++++++++++++++++++++++\\n 11 files changed, 267 insertions(+), 5 deletions(-)\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"diff\", \"HEAD^\", \"HEAD\", \"--\", \"docs/dev/TASKS.md\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\\nindex 839c4ff..8b45e76 100644\\n--- a/docs/dev/TASKS.md\\n+++ b/docs/dev/TASKS.md\\n@@ -12,7 +12,7 @@ The user requested preparation through TASKS and stop before implementation. The\\n \\n - [ ] Phase 1 \\u2014 Named-file utility\\n     - [ ] Milestone 1.1 \\u2014 Named-file counting\\n-        - [ ] T-001 \\u2014 Implement immutable statistics and whole-text counting\\n+        - [x] T-001 \\u2014 Implement immutable statistics and whole-text counting\\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-on",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    },
+    {
+      "cmd": "python -B tracking_facility.py --action read --identity campaign037_t001_completion",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-facility",
+      "chunk_id": "dfe002",
+      "wall_time_seconds": 2.1863e-05,
+      "exit_code": 0,
+      "original_token_count": 48,
+      "output": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Observed\", \"http_status\": 200, \"object\": null}\n",
+      "channel": "commentary",
+      "output_truncated_in_record": false
+    },
+    {
+      "cmd": "python -B tracking_facility.py --action write --identity campaign037_t001_completion --payload /workspace/scratch/46b31bb4dff6/037-a023-before-send-completion-payload.json",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-facility",
+      "chunk_id": "f5064c",
+      "wall_time_seconds": 2.2364e-05,
+      "exit_code": 0,
+      "original_token_count": 334,
+      "output": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Applied\", \"http_status\": 201, \"object\": {\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"task_id\": \"T-001\", \"repository\": \"pchemguy/SDD-Manager-Prerelease-Playground\", \"product_checkout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"branch\": \"trial/037-a023-before-send\", \"commit\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\", \"state\": \"completed\", \"reason\": \"completed\", \"evidence\": {\"owning_list\": \"docs/dev/TASKS.md\", \"completion_evidence\": \"docs/dev/TASKS.md#t-001-completion-evidence\", \"commit_subject\": \"[T-001] Implement immutable statistics and whole-text counting\", \"retained_tests\": {\"runtime\": \"Python 3.12.14\", \"unit_passed\": 10, \"integration_passed\": 5}, \"published\": \"Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed\", \"composition\": \"Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit\"}, \"issue_association\": {\"issue\": 2, \"milestone\": 1, \"phase\": 1}, \"parents_complete\": false, \"remaining_tasks_complete\": false, \"limits\": \"Controlled facility only; no live GitHub changes; no task repetition or phase integration.\"}}\n",
+      "channel": "commentary",
+      "output_truncated_in_record": false
+    },
+    {
+      "cmd": "python -B tracking_facility.py --action read --identity campaign037_t001_completion",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-facility",
+      "chunk_id": "ac3ed8",
+      "wall_time_seconds": 3.2429e-05,
+      "exit_code": 0,
+      "original_token_count": 334,
+      "output": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Observed\", \"http_status\": 200, \"object\": {\"branch\": \"trial/037-a023-before-send\", \"commit\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\", \"evidence\": {\"commit_subject\": \"[T-001] Implement immutable statistics and whole-text counting\", \"completion_evidence\": \"docs/dev/TASKS.md#t-001-completion-evidence\", \"composition\": \"Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit\", \"owning_list\": \"docs/dev/TASKS.md\", \"published\": \"Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed\", \"retained_tests\": {\"integration_passed\": 5, \"runtime\": \"Python 3.12.14\", \"unit_passed\": 10}}, \"identity\": \"campaign037_t001_completion\", \"issue_association\": {\"issue\": 2, \"milestone\": 1, \"phase\": 1}, \"limits\": \"Controlled facility only; no live GitHub changes; no task repetition or phase integration.\", \"parents_complete\": false, \"product_checkout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"reason\": \"completed\", \"remaining_tasks_complete\": false, \"repository\": \"pchemguy/SDD-Manager-Prerelease-Playground\", \"schema_version\": 1, \"state\": \"completed\", \"task_id\": \"T-001\"}}\n",
+      "channel": "commentary",
+      "output_truncated_in_record": false
+    },
+    {
+      "cmd": "python -B - <<'PY'\nimport subprocess,json,pathlib,hashlib\nroot=pathlib.Path('/workspace/scratch/46b31bb4dff6/037-a023-before-send')\nresults=[]\nfor args in [['rev-parse','--show-toplevel'],['symbolic-ref','--short','HEAD'],['rev-parse','HEAD'],['status','--porcelain=v1','--untracked-files=all'],['show-ref'],['show','--format=fuller','--stat','HEAD'],['diff','HEAD^','HEAD','--','docs/dev/TASKS.md']]:\n p=subprocess.run(['git','--no-optional-locks']+args,cwd=root,text=True,capture_output=True)\n results.append({'argv':['git','--no-optional-locks']+args,'cwd':str(root),'status':p.returncode,'stdout':p.stdout,'stderr':p.stderr})\np=subprocess.run(['git','--no-optional-locks','rev-parse','--git-path','index'],cwd=root,text=True,capture_output=True)\nidx=root/p.stdout.strip()\ntracked=subprocess.run(['git','--no-optional-locks','ls-files','-z'],cwd=root,capture_output=True)\nfiles={}\nfor name in tracked.stdout.decode().split('\\0'):\n if not name or name.endswith('.tkn'): continue\n f=root/name\n if f.is_file(): files[name]=hashlib.sha256(f.read_bytes()).hexdigest()\nentries=subprocess.run(['git','--no-optional-locks','ls-files','-s'],cwd=root,capture_output=True)\nprint(json.dumps({'commands':results,'index_path':str(idx),'index_sha256':hashlib.sha256(idx.read_bytes()).hexdigest(),'tracked_product_sha256':hashlib.sha256(json.dumps(files,sort_keys=True).encode()).hexdigest(),'tracked_files':len(files),'index_entries_sha256':hashlib.sha256(entries.stdout).hexdigest()}))\nPY",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "d685a5",
+      "wall_time_seconds": 2.4126e-05,
+      "exit_code": 0,
+      "original_token_count": 2483,
+      "output": "{\"commands\": [{\"argv\": [\"git\", \"--no-optional-locks\", \"rev-parse\", \"--show-toplevel\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"symbolic-ref\", \"--short\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"trial/037-a023-before-send\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"rev-parse\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"status\", \"--porcelain=v1\", \"--untracked-files=all\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"show-ref\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-after-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\\ne63b8946bbb99347b0f73f070f9c728945ee5925 refs/remotes/origin/phase/2-json-and-stdin\\n671fe8ba668ff99aba6de378294938eff10d4415 refs/remotes/origin/revision/001_eff696b-prerelease-acceptance\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-after-send\\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"show\", \"--format=fuller\", \"--stat\", \"HEAD\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"commit 9dc8075dd1b96d3a2744717a9d6d98a3024acbec\\nAuthor:     Codex <codex@openai.com>\\nAuthorDate: Sat Oct 10 08:39:06 2026 -0400\\nCommit:     Codex <codex@openai.com>\\nCommitDate: Sat Oct 10 08:39:06 2026 -0400\\n\\n    [T-001] Implement immutable statistics and whole-text counting\\n    \\n    Deliver validated immutable TextStats, preserved CRLF/CR/LF traversal, once-only BOM normalization and the silent count_text facade. Include nonempty product suites, source documentation, current orientation, scoped cache ignores and initial T-001 completion with evidence in TASKS.\\n    \\n    Verification: Behavioral RED observed after resolving missing-package collection; 10 unit and 5 integration tests then passed on Python 3.12.14. Internal segment/BOM seams, docstrings, document links and single-task staged composition checked. File acquisition, CLI and distribution remain later tasks.\\n    \\n    Refs pchemguy/SDD-Manager-Prerelease-Playground#2\\n\\n .gitignore                    |  4 ++\\n AGENTS.md                     |  6 +--\\n README.md                     |  2 +-\\n docs/dev/TASKS.md             | 16 +++++++-\\n tests/__init__.py             |  1 +\\n tests/integration/__init__.py |  1 +\\n tests/integration/test_api.py | 59 +++++++++++++++++++++++++++\\n tests/unit/__init__.py        |  1 +\\n tests/unit/test_core.py       | 93 +++++++++++++++++++++++++++++++++++++++++++\\n textstats/__init__.py         |  5 +++\\n textstats/core.py             | 84 ++++++++++++++++++++++++++++++++++++++\\n 11 files changed, 267 insertions(+), 5 deletions(-)\\n\", \"stderr\": \"\"}, {\"argv\": [\"git\", \"--no-optional-locks\", \"diff\", \"HEAD^\", \"HEAD\", \"--\", \"docs/dev/TASKS.md\"], \"cwd\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"status\": 0, \"stdout\": \"diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\\nindex 839c4ff..8b45e76 100644\\n--- a/docs/dev/TASKS.md\\n+++ b/docs/dev/TASKS.md\\n@@ -12,7 +12,7 @@ The user requested preparation through TASKS and stop before implementation. The\\n \\n - [ ] Phase 1 \\u2014 Named-file utility\\n     - [ ] Milestone 1.1 \\u2014 Named-file counting\\n-        - [ ] T-001 \\u2014 Implement immutable statistics and whole-text counting\\n+        - [x] T-001 \\u2014 Implement immutable statistics and whole-text counting\\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-on",
+      "channel": "commentary",
+      "output_truncated_in_record": true
+    }
+  ],
+  "initial_commands": [
+    {
+      "cmd": "cat /workspace/scratch/46b31bb4dff6/037-a023-before-send-continuation-input.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "status": 0
+    },
+    {
+      "cmd": "pwd; rg --files -g AGENTS.md -g SKILL.md /workspace/scratch/46b31bb4dff6/037-a023-before-send | head -60; cat /workspace/scratch/46b31bb4dff6/037-a023-before-send-consumer-observations.json",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "status": 0,
+      "output": "Truncated tool output; exact available in transcript."
+    },
+    {
+      "cmd": "python -B - <<'PY'\nimport json\np='/workspace/scratch/46b31bb4dff6/037-a023-before-send-consumer-observations.json'\nd=json.load(open(p))\nprint('prior loaded paths:')\nfor x in d['loaded_paths']: print(x['path'])\nprint('prior top-level keys:',list(d))\nPY\ncat /workspace/scratch/46b31bb4dff6/037-a023-before-send/AGENTS.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/AGENTS.md /workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "status": 0
+    }
+  ],
+  "baseline": {
+    "commands": [
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "rev-parse",
+          "--show-toplevel"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "/workspace/scratch/46b31bb4dff6/037-a023-before-send\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "symbolic-ref",
+          "--short",
+          "HEAD"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "trial/037-a023-before-send\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=all"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "show-ref"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-after-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\ne63b8946bbb99347b0f73f070f9c728945ee5925 refs/remotes/origin/phase/2-json-and-stdin\n671fe8ba668ff99aba6de378294938eff10d4415 refs/remotes/origin/revision/001_eff696b-prerelease-acceptance\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-after-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "show",
+          "--format=fuller",
+          "--stat",
+          "HEAD"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "commit 9dc8075dd1b96d3a2744717a9d6d98a3024acbec\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 08:39:06 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 08:39:06 2026 -0400\n\n    [T-001] Implement immutable statistics and whole-text counting\n    \n    Deliver validated immutable TextStats, preserved CRLF/CR/LF traversal, once-only BOM normalization and the silent count_text facade. Include nonempty product suites, source documentation, current orientation, scoped cache ignores and initial T-001 completion with evidence in TASKS.\n    \n    Verification: Behavioral RED observed after resolving missing-package collection; 10 unit and 5 integration tests then passed on Python 3.12.14. Internal segment/BOM seams, docstrings, document links and single-task staged composition checked. File acquisition, CLI and distribution remain later tasks.\n    \n    Refs pchemguy/SDD-Manager-Prerelease-Playground#2\n\n .gitignore                    |  4 ++\n AGENTS.md                     |  6 +--\n README.md                     |  2 +-\n docs/dev/TASKS.md             | 16 +++++++-\n tests/__init__.py             |  1 +\n tests/integration/__init__.py |  1 +\n tests/integration/test_api.py | 59 +++++++++++++++++++++++++++\n tests/unit/__init__.py        |  1 +\n tests/unit/test_core.py       | 93 +++++++++++++++++++++++++++++++++++++++++++\n textstats/__init__.py         |  5 +++\n textstats/core.py             | 84 ++++++++++++++++++++++++++++++++++++++\n 11 files changed, 267 insertions(+), 5 deletions(-)\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "diff",
+          "HEAD^",
+          "HEAD",
+          "--",
+          "docs/dev/TASKS.md"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 839c4ff..8b45e76 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -12,7 +12,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n - [ ] Phase 1 \u2014 Named-file utility\n     - [ ] Milestone 1.1 \u2014 Named-file counting\n-        - [ ] T-001 \u2014 Implement immutable statistics and whole-text counting\n+        - [x] T-001 \u2014 Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.\n             Depends on: none within the list; execution prerequisites above apply.\n@@ -114,3 +114,17 @@ Every review task requires both code review and actual testing; tests alone cann\n During future execution, the initial owning checkbox and one task's result/evidence close together in exactly one task commit whose subject starts with exactly one `[T-NNN]` marker. Push and verify every workflow-owned commit before advancing; then reconcile its issue. Complete/review each delivery milestone before its hosted closure; complete all delivery milestones before the dedicated phase review. Exactly one task owns each initial closure. Parent completion is evidence-backed; no task is marked complete by this preparation.\n \n Hosted tracking reads this complete hierarchy but projects only the eligible phase after actual task-list acceptance and implementation prerequisites. Every eligible task includes its phase label and parent milestone association. Required unknown/incomplete projection blocks execution, while later phases and the range feature stay unprojected. The final task-list checkpoint remains the current stopping boundary before any implementation or hosted projection.\n+\n+## T-001 completion evidence\n+\n+The current request supersedes the historical preparation-only stopping statements for exactly the first executable Phase 1 task. Selected T-001 in milestone 1.1, with no task dependency. Accepted preparation tip `1e3305c8659045945244c06861079fef879ca3c3` was explicitly merged into actual default `main`, parent `eff696b38f0b8a94bd6f91ca1c64d54fd714df46`, as `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`; merged document hashes, local links, heading spacing and document-only scope were verified and that exact remote tip read back before creating `phase/1-named-file-utility` from it. The accepted disclosure's two pre-existing whitespace warnings were preserved.\n+\n+Maintained Phase 1 tracking is confirmed by the current request. Before task edits/tests, provider readback verified `sdd-phase-1-Named-file-utility`, native milestones 1\u20133 (1.1, 1.2, 1.3), and unique marked T-001 through T-009 issues 2\u201310 with their phase label and correct milestone association. T-001 uniquely maps to `pchemguy/SDD-Manager-Prerelease-Playground#2`, milestone 1. Existing unrelated labels, issue text/comments and milestone content are preserved; later phases remain unprojected.\n+\n+Delivered immutable, equal-by-value integer/nonnegative statistics excluding bool, shared CRLF/CR/LF segment traversal preserving terminators, exactly-once whole-input BOM normalization, normalized counting using Unicode `str.split`, and the silent direct text facade. Internal traversal/counting allow later selection without renormalizing interior BOMs. Module/class/function docstrings describe the delivered contracts. File exports, acquisition, CLI, tools and public API guide are not delivered by this task. Narrow product cache ignores preserve existing rules.\n+\n+On Python 3.12.14 from the repository root, tests were written first. The initial unit discovery failed to import the absent package and is classified as setup failure, not behavioral RED. Minimal unimplemented declarations then enabled actual RED: unit discovery collected 10 tests and failed with 21 validation/equality/immutability failures and 43 missing-counting errors; integration discovery collected 5 tests and failed with two missing-counting errors. No test-first exception is claimed.\n+\n+After implementing the contracts, `python -m unittest discover -s tests/unit -t . -v` passed all 10 tests and `python -m unittest discover -s tests/integration -t . -v` passed all 5 tests, without skips or warnings. Evidence covers every whole-input SPEC matrix row under both policies; Unicode separators/whitespace and non-ASCII words; mixed/consecutive/final terminators; repeated/interior BOMs; equality, invalid fields and assignment/deletion immutability; direct exports/signatures, keyword-only policy, repeated-call independence and import/call silence. Verification also inspects source/document contracts and preserved internal segment seams. Coverage is T-001 on this runtime, not full Python-version, file/API, CLI or distribution acceptance. The future check tools are absent because their owning tasks are unselected.\n+\n+Exactly T-001's result, tests, documentation, current evidence and initial checkbox close together in its task commit. Publication and issue closure are subsequent observed operations reported in the workflow handoff. All parents and T-002 through T-017 remain unchecked. Stop after the verified push and hosted reconciliation of T-001; do not integrate the incomplete phase or start another task.\n",
+        "stderr": ""
+      }
+    ],
+    "index_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/.git/index",
+    "index_sha256": "25f94981ed3fb027223c1af222971c8b00983eb9e1e77500f0d9ce5d3e59084f",
+    "tracked_product_sha256": "12633d69ff95cda1b55d46f2979c9f974c2a10af4f1c05a81582f19e3a5667e3",
+    "tracked_files": 161,
+    "index_entries_sha256": "1d84e52788076b2812b5b1a5b20283b00a79b85bfe3baf99c32705fc4d12f133"
+  },
+  "post": {
+    "commands": [
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "rev-parse",
+          "--show-toplevel"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "/workspace/scratch/46b31bb4dff6/037-a023-before-send\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "symbolic-ref",
+          "--short",
+          "HEAD"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "trial/037-a023-before-send\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "rev-parse",
+          "HEAD"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "status",
+          "--porcelain=v1",
+          "--untracked-files=all"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "show-ref"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-after-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\ne63b8946bbb99347b0f73f070f9c728945ee5925 refs/remotes/origin/phase/2-json-and-stdin\n671fe8ba668ff99aba6de378294938eff10d4415 refs/remotes/origin/revision/001_eff696b-prerelease-acceptance\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-after-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "show",
+          "--format=fuller",
+          "--stat",
+          "HEAD"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "commit 9dc8075dd1b96d3a2744717a9d6d98a3024acbec\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 08:39:06 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 08:39:06 2026 -0400\n\n    [T-001] Implement immutable statistics and whole-text counting\n    \n    Deliver validated immutable TextStats, preserved CRLF/CR/LF traversal, once-only BOM normalization and the silent count_text facade. Include nonempty product suites, source documentation, current orientation, scoped cache ignores and initial T-001 completion with evidence in TASKS.\n    \n    Verification: Behavioral RED observed after resolving missing-package collection; 10 unit and 5 integration tests then passed on Python 3.12.14. Internal segment/BOM seams, docstrings, document links and single-task staged composition checked. File acquisition, CLI and distribution remain later tasks.\n    \n    Refs pchemguy/SDD-Manager-Prerelease-Playground#2\n\n .gitignore                    |  4 ++\n AGENTS.md                     |  6 +--\n README.md                     |  2 +-\n docs/dev/TASKS.md             | 16 +++++++-\n tests/__init__.py             |  1 +\n tests/integration/__init__.py |  1 +\n tests/integration/test_api.py | 59 +++++++++++++++++++++++++++\n tests/unit/__init__.py        |  1 +\n tests/unit/test_core.py       | 93 +++++++++++++++++++++++++++++++++++++++++++\n textstats/__init__.py         |  5 +++\n textstats/core.py             | 84 ++++++++++++++++++++++++++++++++++++++\n 11 files changed, 267 insertions(+), 5 deletions(-)\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "git",
+          "--no-optional-locks",
+          "diff",
+          "HEAD^",
+          "HEAD",
+          "--",
+          "docs/dev/TASKS.md"
+        ],
+        "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+        "status": 0,
+        "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 839c4ff..8b45e76 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -12,7 +12,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n - [ ] Phase 1 \u2014 Named-file utility\n     - [ ] Milestone 1.1 \u2014 Named-file counting\n-        - [ ] T-001 \u2014 Implement immutable statistics and whole-text counting\n+        - [x] T-001 \u2014 Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.\n             Depends on: none within the list; execution prerequisites above apply.\n@@ -114,3 +114,17 @@ Every review task requires both code review and actual testing; tests alone cann\n During future execution, the initial owning checkbox and one task's result/evidence close together in exactly one task commit whose subject starts with exactly one `[T-NNN]` marker. Push and verify every workflow-owned commit before advancing; then reconcile its issue. Complete/review each delivery milestone before its hosted closure; complete all delivery milestones before the dedicated phase review. Exactly one task owns each initial closure. Parent completion is evidence-backed; no task is marked complete by this preparation.\n \n Hosted tracking reads this complete hierarchy but projects only the eligible phase after actual task-list acceptance and implementation prerequisites. Every eligible task includes its phase label and parent milestone association. Required unknown/incomplete projection blocks execution, while later phases and the range feature stay unprojected. The final task-list checkpoint remains the current stopping boundary before any implementation or hosted projection.\n+\n+## T-001 completion evidence\n+\n+The current request supersedes the historical preparation-only stopping statements for exactly the first executable Phase 1 task. Selected T-001 in milestone 1.1, with no task dependency. Accepted preparation tip `1e3305c8659045945244c06861079fef879ca3c3` was explicitly merged into actual default `main`, parent `eff696b38f0b8a94bd6f91ca1c64d54fd714df46`, as `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`; merged document hashes, local links, heading spacing and document-only scope were verified and that exact remote tip read back before creating `phase/1-named-file-utility` from it. The accepted disclosure's two pre-existing whitespace warnings were preserved.\n+\n+Maintained Phase 1 tracking is confirmed by the current request. Before task edits/tests, provider readback verified `sdd-phase-1-Named-file-utility`, native milestones 1\u20133 (1.1, 1.2, 1.3), and unique marked T-001 through T-009 issues 2\u201310 with their phase label and correct milestone association. T-001 uniquely maps to `pchemguy/SDD-Manager-Prerelease-Playground#2`, milestone 1. Existing unrelated labels, issue text/comments and milestone content are preserved; later phases remain unprojected.\n+\n+Delivered immutable, equal-by-value integer/nonnegative statistics excluding bool, shared CRLF/CR/LF segment traversal preserving terminators, exactly-once whole-input BOM normalization, normalized counting using Unicode `str.split`, and the silent direct text facade. Internal traversal/counting allow later selection without renormalizing interior BOMs. Module/class/function docstrings describe the delivered contracts. File exports, acquisition, CLI, tools and public API guide are not delivered by this task. Narrow product cache ignores preserve existing rules.\n+\n+On Python 3.12.14 from the repository root, tests were written first. The initial unit discovery failed to import the absent package and is classified as setup failure, not behavioral RED. Minimal unimplemented declarations then enabled actual RED: unit discovery collected 10 tests and failed with 21 validation/equality/immutability failures and 43 missing-counting errors; integration discovery collected 5 tests and failed with two missing-counting errors. No test-first exception is claimed.\n+\n+After implementing the contracts, `python -m unittest discover -s tests/unit -t . -v` passed all 10 tests and `python -m unittest discover -s tests/integration -t . -v` passed all 5 tests, without skips or warnings. Evidence covers every whole-input SPEC matrix row under both policies; Unicode separators/whitespace and non-ASCII words; mixed/consecutive/final terminators; repeated/interior BOMs; equality, invalid fields and assignment/deletion immutability; direct exports/signatures, keyword-only policy, repeated-call independence and import/call silence. Verification also inspects source/document contracts and preserved internal segment seams. Coverage is T-001 on this runtime, not full Python-version, file/API, CLI or distribution acceptance. The future check tools are absent because their owning tasks are unselected.\n+\n+Exactly T-001's result, tests, documentation, current evidence and initial checkbox close together in its task commit. Publication and issue closure are subsequent observed operations reported in the workflow handoff. All parents and T-002 through T-017 remain unchecked. Stop after the verified push and hosted reconciliation of T-001; do not integrate the incomplete phase or start another task.\n",
+        "stderr": ""
+      }
+    ],
+    "index_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/.git/index",
+    "index_sha256": "25f94981ed3fb027223c1af222971c8b00983eb9e1e77500f0d9ce5d3e59084f",
+    "tracked_product_sha256": "12633d69ff95cda1b55d46f2979c9f974c2a10af4f1c05a81582f19e3a5667e3",
+    "tracked_files": 161,
+    "index_entries_sha256": "1d84e52788076b2812b5b1a5b20283b00a79b85bfe3baf99c32705fc4d12f133"
+  },
+  "selected_operation": {
+    "chunk_id": "f5064c",
+    "wall_time_seconds": 2.2364e-05,
+    "exit_code": 0,
+    "original_token_count": 334,
+    "output": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Applied\", \"http_status\": 201, \"object\": {\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"task_id\": \"T-001\", \"repository\": \"pchemguy/SDD-Manager-Prerelease-Playground\", \"product_checkout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"branch\": \"trial/037-a023-before-send\", \"commit\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\", \"state\": \"completed\", \"reason\": \"completed\", \"evidence\": {\"owning_list\": \"docs/dev/TASKS.md\", \"completion_evidence\": \"docs/dev/TASKS.md#t-001-completion-evidence\", \"commit_subject\": \"[T-001] Implement immutable statistics and whole-text counting\", \"retained_tests\": {\"runtime\": \"Python 3.12.14\", \"unit_passed\": 10, \"integration_passed\": 5}, \"published\": \"Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed\", \"composition\": \"Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit\"}, \"issue_association\": {\"issue\": 2, \"milestone\": 1, \"phase\": 1}, \"parents_complete\": false, \"remaining_tasks_complete\": false, \"limits\": \"Controlled facility only; no live GitHub changes; no task repetition or phase integration.\"}}\n"
+  },
+  "before_read": {
+    "chunk_id": "dfe002",
+    "wall_time_seconds": 2.1863e-05,
+    "exit_code": 0,
+    "original_token_count": 48,
+    "output": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Observed\", \"http_status\": 200, \"object\": null}\n"
+  },
+  "readback": {
+    "chunk_id": "ac3ed8",
+    "wall_time_seconds": 3.2429e-05,
+    "exit_code": 0,
+    "original_token_count": 334,
+    "output": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Observed\", \"http_status\": 200, \"object\": {\"branch\": \"trial/037-a023-before-send\", \"commit\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\", \"evidence\": {\"commit_subject\": \"[T-001] Implement immutable statistics and whole-text counting\", \"completion_evidence\": \"docs/dev/TASKS.md#t-001-completion-evidence\", \"composition\": \"Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit\", \"owning_list\": \"docs/dev/TASKS.md\", \"published\": \"Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed\", \"retained_tests\": {\"integration_passed\": 5, \"runtime\": \"Python 3.12.14\", \"unit_passed\": 10}}, \"identity\": \"campaign037_t001_completion\", \"issue_association\": {\"issue\": 2, \"milestone\": 1, \"phase\": 1}, \"limits\": \"Controlled facility only; no live GitHub changes; no task repetition or phase integration.\", \"parents_complete\": false, \"product_checkout\": \"/workspace/scratch/46b31bb4dff6/037-a023-before-send\", \"reason\": \"completed\", \"remaining_tasks_complete\": false, \"repository\": \"pchemguy/SDD-Manager-Prerelease-Playground\", \"schema_version\": 1, \"state\": \"completed\", \"task_id\": \"T-001\"}}\n"
+  },
+  "destination": {
+    "facility": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-facility",
+    "identity": "campaign037_t001_completion",
+    "task_id": "T-001",
+    "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+    "branch": "trial/037-a023-before-send",
+    "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+    "issue": 2,
+    "milestone": 1,
+    "phase": 1
+  },
+  "pending_effect": "none for selected controlled completion summary; exact readback matches",
+  "first_failures": [
+    {
+      "stage": "prior ordinary consumer selected write",
+      "status": 2,
+      "cause": "Unavailable/nullHTTP; recorded prior observations; no retry until this separately authorized continuation"
+    },
+    {
+      "stage": "first read-only baseline output parse",
+      "cause": "SyntaxError Unexpected token W because tool output truncated; shell exit 0",
+      "intervention": "Repeated read-only checks with compact aggregate hash"
+    },
+    {
+      "stage": "first seal tool request",
+      "cause": "Argument list too long os error7; process not created and no seal/file write occurred",
+      "intervention": "Trimmed copied command outputs in evidence record; full available tool outputs remain in transcript"
+    }
+  ],
+  "decisions": [
+    "Apply pinned sdd-manage/sdd-orient/sdd-forge and owners.",
+    "Preserve retained verified T-001; no product/test/Git/task replay.",
+    "Read exact identity first; reliable 200/null permits one exact retained payload write.",
+    "Write Applied/201; then read Observed/200 same identity and object.",
+    "Stop after selected completion; no parent/later task work."
+  ],
+  "interventions": [
+    "Facility restored by authorized handoff; no adapter or CONTROL.json edits by consumer.",
+    "Read-only snapshot output reduced following truncation.",
+    "Seal payload reduced following exec process-size rejection."
+  ],
+  "limits": [
+    "Controlled fixture only; no live GitHub/provider/network/credential operations.",
+    "Shared filesystem isolation uncertified.",
+    "Actual show-ref has no local main although handoff asserts one; origin/main retained at accepted88a5c4b. No unauthorized repair.",
+    "No new test execution; retained test evidence from owning list/task commit.",
+    "Command output copies may be truncated in this record; tool transcript contains all returned outputs. First attempted seal request never started shell.",
+    "No coordinator/catalog/assessor/other worker/control inputs consulted."
+  ],
+  "preservation": {
+    "index": true,
+    "tracked_product": true,
+    "refs": true,
+    "clean": true
+  },
+  "remaining_work": "Phase1 and T-002 through T-017 incomplete; no further authorized effects.",
+  "channels": [
+    "commentary for tools and progress; final to parent after seal"
+  ],
+  "stopped_seal": true,
+  "no_further_operations_or_writes_after_seal": true,
+  "loaded_paths": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/AGENTS.md",
+      "bytes": 3294,
+      "sha256": "3418ae7a19d0cd68f3964cafb358dd8abeca608140d2ac6a621676b8f2df65be"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/AGENTS.md",
+      "bytes": 4610,
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "bytes": 10142,
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/README.md",
+      "bytes": 40495,
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "bytes": 4869,
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "bytes": 10400,
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/SKILL.md",
+      "bytes": 6230,
+      "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md",
+      "bytes": 4746,
+      "sha256": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md",
+      "bytes": 4640,
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "bytes": 8846,
+      "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md",
+      "bytes": 16082,
+      "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/textstats-run-resources/plugin/skills/sdd-forge/references/github.md",
+      "bytes": 11244,
+      "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/docs/dev/TASKS.md",
+      "bytes": 20994,
+      "sha256": "a8785a59aedef5f3fa2a8fbf0eec69bca69dd574f49919ee21a4f3db9cfb91d9"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/docs/dev/PROJECT.md",
+      "bytes": 5884,
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/SDD-MANAGER.md",
+      "bytes": 683,
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/AI_DISCLOSURE.md",
+      "bytes": 1192,
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send/README.md",
+      "bytes": 646,
+      "sha256": "8c3d57c5e1d22755d0b4ea240bdf6240fbec15948ee5b6f9e9cb03bade6bcf08"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-continuation-input.md",
+      "bytes": 1523,
+      "sha256": "4d57391e98cdc2accbbf2280bcdcf2856da85991424e94d93bf601699da37d3e"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-consumer-observations.json",
+      "bytes": 276041,
+      "sha256": "f8e2696445e1aa4b820ea531260e8aff5691c7beee5e41947f333d777633dd61"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-completion-payload.json",
+      "bytes": 1248,
+      "sha256": "0ae0e61aead0dd25675e0bbb940e7cf6045345a0b9335bbc852fceca5b14dcc8"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-facility/PUBLIC-INTERFACE.md",
+      "bytes": 398,
+      "sha256": "405251eb7dffe75a1e8c7d1c13d6c95c6aabbc9b485eb1fa0a8d0790f387e740"
+    }
+  ],
+  "readback_matches_exact_payload": true,
+  "seal_operation": {
+    "argv": [
+      "python",
+      "-B",
+      "-"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6",
+    "status": 0,
+    "stdout": "SEALED\n",
+    "stderr": "",
+    "effect": "only selected observations file; last filesystem action"
+  }
+}
