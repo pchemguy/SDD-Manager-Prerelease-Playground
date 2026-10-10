@@ -5,9 +5,13 @@
   "case_id": "A-021",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "Independent prepared-feature setup verified; consumer selects operations before mutation",
-  "pending_operation": null,
-  "next_action": "Publish setup/handoff then fresh consumer selects separable owner operations",
+  "last_completed_action": "Actual consumer partial selected task transfer independently verified and reconstructable exports retained",
+  "pending_operation": {
+    "kind": "checkpoint",
+    "status": "interrupted",
+    "description": "Real canonical entries added while feature source retirement/QC/navigation pending; no closure"
+  },
+  "next_action": "Publish exact trigger then dispatch separate fresh selected incorporation continuation",
   "checkpoint_refs": {
     "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
     "product_commit": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",

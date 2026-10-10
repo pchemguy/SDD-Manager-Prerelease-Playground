@@ -1,0 +1,7 @@
+{
+  "failure": "AssertionError refs_unchanged False",
+  "effect": "Exports already retained; no product mutation. First script did not persist its in-memory command log before assertion. All command outputs separately retained as raw artifacts; this precise log gap retained.",
+  "observed_added_ref": "refs/remotes/origin/revision/001_eff696b-prerelease-acceptance 8e51a8c2e379d349e7babdfcbbd8d13d6704fe2d",
+  "checks": "Other28 first-run checks true",
+  "actor_reason": "Awaiting root identification"
+}

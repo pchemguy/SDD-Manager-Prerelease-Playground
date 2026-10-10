@@ -1,0 +1,267 @@
+diff --git a/docs/dev/PLAN.md b/docs/dev/PLAN.md
+index 2489ae6..e2e5a0d 100644
+--- a/docs/dev/PLAN.md
++++ b/docs/dev/PLAN.md
+@@ -4,7 +4,7 @@
+ 
+ Deliver the accepted [SPEC](SPEC.md) through an early useful named-file API/CLI and then two bounded JSON/stdin increments. The [architecture](ARCHITECTURE.md), [decomposition](DECOMPOSITION.md) and current [SPEC QC](SPEC-REVIEW-REPORT.md) establish the structural and behavioral baseline. This document is strategy only: no implementation, executable task list or physical layout is supplied here.
+ 
+-Preserve the user's phase and milestone identities: phase 1 delivery milestones 1.1 and 1.2; phase 2 delivery milestones 2.1 and 2.2. Each phase also has a final dedicated review milestone. The separately requested range feature stays outside these phases and their initial executable hierarchy; its design seams and deferred SPEC contracts remain intact.
++Preserve the user's phase and milestone identities: phase 1 delivery milestones 1.1 and 1.2; phase 2 delivery milestones 2.1 and 2.2. Each phase also has a final dedicated review milestone. Accepted named-file ranges extend Phase 2 with milestones 2.4/2.5 and extent review 2.6. Existing 2.1/2.2/2.3 identities remain; whole Phase 2 requires both main and feature exits.
+ 
+ ## Phase 1: Named-file utility
+ 
+@@ -48,11 +48,11 @@ Demonstrate switching a real named-file invocation between text and JSON. Use th
+ 
+ ### Milestone 2.2: UTF-8 stdin and final delivery
+ 
+-Depends on completed/reviewed 2.1. Scope: R-010 stdin bytes to EOF, strict locale-independent UTF-8, retained stdin ownership, empty input and identifying read/decode failures. Compose with text/JSON/BOM policies while preserving named-file/API behavior. Complete R-011/R-012/R-013 final documentation, regression and extracted-source exits for the delivered phase. No range option or public API extension is included.
++Depends on completed/reviewed 2.1. Scope: R-010 stdin bytes to EOF, strict locale-independent UTF-8, retained stdin ownership, empty input and identifying read/decode failures. Compose with text/JSON/BOM policies while preserving named-file/API behavior. Complete R-011/R-012/R-013 final documentation, regression and extracted-source exits for the delivered phase. Public API stays whole-input. Retain source-independent range composition when delivering stdin; acquisition remains main-owned.
+ 
+ Exit evidence: subprocess byte-fed stdin in text/JSON modes with Unicode, mixed terminators, both BOM policies and empty input; invalid bytes/read errors, no partial output and no traceback; controlled borrowed-stream ownership/locale independence checks; named-file/API retained behavior. Run updated README examples, nonzero unit/integration suites and extracted-source named-file plus stdin/text/JSON module-entry checks. Its final milestone review performs whole-capability code review, tests, blocker repair and publishes a report.
+ 
+-Demonstrate a UTF-8 byte stream under a differing process locale and its documented output/failure behavior. This supplies final usability and portability evidence for a human accept/amend/stop decision without authorizing the deferred range feature.
++Demonstrate a UTF-8 byte stream under a differing process locale and its documented output/failure behavior. This supplies final usability and portability evidence for a human accept/amend/stop decision within the separately authorized execution scope.
+ 
+ ### Milestone 2.3: Phase 2 and final review
+ 
+@@ -60,7 +60,42 @@ This dedicated review milestone contains exactly one phase code review/testing/r
+ 
+ Every milestone/phase report includes a TODO section (`None` when empty). Only noncritical code issues consistent with SPEC/PLAN can be deferred, with stable identity, location/evidence, impact, rationale, options/tradeoffs and owner/scope. Phase reports carry unresolved milestone findings; the final report aggregates all unresolved/deferred findings with provenance and resolution references. Contract violations and missing required evidence remain blockers.
+ 
+-Once full exits/reports and applicable hosted closure are verified, explicitly integrate, verify and publish the complete phase to the main target. Partial execution cannot claim project completion. The final review does not execute separately requested future features or publish a product release.
++Once full exits/reports and applicable hosted closure are verified, explicitly integrate, verify and publish the complete phase to the main target. Partial execution cannot claim project completion. Full final review includes incorporated range exits and feature report provenance after 2.4/2.5/2.6, while retaining pending stdin obligations. No release is authorized.
++
++## Named-file range delivery extent
++
++| Parent / new milestone | Useful outcome, prerequisites and objective exits |
++| --- | --- |
++| Phase 2 / 2.4 — Named-file ranges | Earliest usable changed path: both range spellings, ASCII/unbounded validation before access, pure selection, complete file decoding, once-only BOM, default text and JSON. Prerequisite: completed published JSON milestone 2.1 and compatible execution baseline. Keep internal normalization/selection/counting independently checkable while integrating promptly with real named-file CLI. Exit: complete F-001–F-004 core/CLI matrices, controlled acquisition and real module checks, nonempty suites, runnable minimal help/usage and retained API/whole-input/JSON regressions; dedicated milestone code review/testing/report. |
++| Phase 2 / 2.5 — Range documentation and distribution | Complete public/module and runnable README explanation plus isolated extracted-source text/JSON range exits. Prerequisite: reviewed/closed feature milestone 2.4. Exit: accurate named-file/deferred-stdin docs, executed documented examples, real extracted module with provenance isolation across valid/invalid/huge/BOM/decode cases, nonempty regressions and dedicated milestone code review/testing/report. |
++| Phase 2 / 2.6 — Range feature review | Dedicated final single-task review of this feature extent after 2.4 and 2.5 complete/close. Review cross-milestone interactions, all F contracts and affected R contracts; run full relevant product/docs/distribution checks, repair blockers and aggregate TODOs in feature reports. This closes the feature's extent only; main 2.2/2.3 and T-013–T-017 remain pending. |
++
++There are two delivery milestones plus one excluded feature-extent review milestone. A larger phase split would pad this narrow capability or force unrelated stdin. Milestone 2.4's semantic parser/selection/acquisition integration is one user-visible outcome; 2.5 independently proves usable source-package delivery. Each delivery milestone includes its own final review outcome. No mock-only infrastructure milestone delays useful behavior.
++
++At 2.4 demonstrate selecting middle/beyond-EOF/blank/mixed-terminator lines and exposed BOMs in real text/JSON invocations. The evidence informs a human continue/amend/simplify/stop decision about semantics and CLI usability. At 2.5 demonstrate documented usage from the extracted package and compare API compatibility. These are consequential feedback checkpoints for a later authorized implementation, without automatically authorizing steering or extra tasks.
++
++## Baseline and integration dependencies
++
++Preparation starts at default `main` `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a` on the package's design-docs branch. Observed separately published JSON milestone 2.1 is `e63b8946bbb99347b0f73f070f9c728945ee5925` on paused `phase/2-json-and-stdin`; its T-010–T-012 are complete while T-013–T-017 remain pending. Main currently lacks JSON. No feature task may execute against the text-only default baseline while claiming text/JSON completion.
++
++For a later separately authorized implementation, first merge/verify/publish accepted preparation into the actual refreshed default branch; only then create the feature implementation branch from that baseline. Establish `phase/2-json-and-stdin` as the intended implementation integration target and incorporate its verified published completed JSON checkpoint into the feature branch through an explicit verified/published compatible merge before feature execution. Preserve pending stdin/final work and original completed evidence. If histories, ownership or JSON state changed, the coordinator resolves that compatibility before execution; never reset/replay completed work or merge the incomplete phase into default by implication.
++
++After authorized feature implementation, incorporate only the accepted feature targets needed for coherence through sdd-integrate-feature, including explicit task ownership/reconciliation scope. Preserve main pending obligations while updating their affected range composition/documentation dependencies. Archive only eligible incorporated feature sources; feature reports remain under the package prefix. Final explicit verified/published feature merge targets the paused phase, not default as a false complete Phase 2. Those are later execution/integration obligations, not actions in this preparation.
++
++## Coverage and verification strategy
++
++| Contract group | Delivery route and required evidence |
++| --- | --- |
++| F-001 | 2.4 parser validation and acquisition-order checks: signs/whitespace/Unicode/zero/reversal/open/extra-colon/missing/repeated, both spellings, huge ASCII decimals and leading zeros. No arbitrary conversion limit. |
++| F-002 | 2.4 pure/shared logical-line traversal and once-only normalization; complete strict decode before selection including bytes after END, EOF subsets, blank/mixed/final lines and exposed interior BOM. |
++| F-003 | 2.4 real text/JSON named-file composition and unchanged silent whole-input public API, output/error categories, dash paths and help; 2.5 user documentation and extraction. |
++| F-004 and R-011–R-013 | All stated semantic examples and invalid matrix in 2.4; complete docs, nonempty independent product discovery and isolated extracted module exits in 2.5; cross-boundary feature review in 2.6. |
++| Retained R-001–R-009 | Regressions at every delivery/review boundary for immutable results, exports/signatures, whole-input/BOM/newlines/Unicode, file ownership/input preservation, text/JSON and failures. R-010 remains deferred acquisition, with source-independent selection checked structurally. |
++
++Detailed tests and concrete edit scopes belong to canonical TASKS after selected transfer and existing layout. Reuse core for pure selection beside shared traversal, I/O for complete strict acquisition, CLI for validation/control/rendering, existing unit/integration suites and distribution tools. Main layout expressly allows pure selection in core for a separately accepted feature; no new source owner, directory or layout proposal is needed. PLAN QC includes this reuse assessment.
++
++Main risks are integer conversion guards, duplicate argparse options silently overriding, normalized counting accidentally re-stripping an exposed BOM, early decode termination, changing API exports and extraction importing the checkout. Objective exits directly cover each. Complete in-memory decoding remains the accepted tradeoff; no performance target or release is introduced.
++
+ 
+ ## Coverage, dependencies and verification strategy
+ 
+@@ -73,7 +108,7 @@ Once full exits/reports and applicable hosted closure are verified, explicitly i
+ | R-011 | 1.2 complete public docs/README, then 2.1 relevant update and 2.2 final exits. |
+ | R-012 | Nonempty unit/integration suites established in 1.1, grown with each delivery capability and regressions at every review. Workflow fixtures stay separate. |
+ | R-013 | 1.2 first complete extracted-source exit, repeated/extended for 2.1 JSON and 2.2 final stdin behavior. |
+-| F-001 through F-004 | Deferred separate feature; preserve shared terminators, once-only normalization, normalized counting and source-independent acquisition seam during every design/code review. No initial task or hosted projection for this feature. |
++| F-001 through F-004 | 2.4 named-file text/JSON selection and validation; 2.5 documented extracted delivery; 2.6 feature-extent review. Main stdin/final work remains pending. |
+ 
+ The pure core precedes its consumers within a bounded milestone; acquisition preserves raw terminators and complete strict decoding; controllers publish completed results. Check failures at component seams where portable subprocess reproduction is unreliable, but retain real module-entry integration for observable process contracts. No platform permission trick alone establishes unreadability coverage. Source extraction checks must isolate imports from the checkout and installed copies.
+ 
+diff --git a/docs/dev/SPEC.md b/docs/dev/SPEC.md
+index 6e40690..87cfbd0 100644
+--- a/docs/dev/SPEC.md
++++ b/docs/dev/SPEC.md
+@@ -2,9 +2,9 @@
+ 
+ ## Scope and authority
+ 
+-TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. No implementation exists.
++TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. Phase 1 is delivered; ranges and stdin delivery remain incomplete.
+ 
+-R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 retain the later separately requested range feature's contract as a deferred compatibility constraint. That feature is outside the initial executable hierarchy. No focused specification children are needed.
++R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 govern accepted named-file ranges in Phase 2 milestones 2.4–2.6. Incorporation specifies intended behavior without asserting delivery. No focused specification children are needed.
+ 
+ ## Public API and values
+ 
+@@ -66,34 +66,62 @@ Use unittest with discoverable, nonempty product suites under `tests/unit/` and
+ 
+ Provide a source distribution containing the importable package, module entry and required user/API documentation. Verify its extracted contents by invoking `python -m textstats` in the extracted source context, without relying on imports from the original checkout or an unrelated installed package. Named-file success and failure and the delivered phase's JSON/stdin behavior must retain their specified contracts in that context. Packaging uses the standard library; no extra runtime dependency is required. Physical archive layout and check commands belong in planning/layout.
+ 
+-## Deferred range feature
++## Named-file range contracts
+ 
+-### F-001 Range grammar and validation
++### F-001 Invocation and validation
+ 
+-A separately requested feature adds exactly one `--lines START:END` or `--lines=START:END`. START and END consist solely of ASCII decimal digits and represent positive inclusive one-based endpoints with START <= END. Leading zeros are decimal. No arbitrary endpoint or digit-count limit is permitted. Reject signs, surrounding or interior whitespace, Unicode digits, zero, reversal, open endpoints, extra colons, missing values and repeated range options. Repetition across the two spelling forms is also invalid. Reject with usage status 2, useful stderr, empty stdout and no traceback before acquiring input. Valid very large decimal endpoints must remain valid despite any interpreter conversion safeguard.
++Add one optional `--lines START:END` or `--lines=START:END` to exactly one named-file input. Each endpoint contains only ASCII decimal digits and represents a positive, inclusive, one-based endpoint; START <= END. Leading zeros are decimal. Endpoints and digit counts have no arbitrary limit, including interpreter decimal conversion safeguards. Both spelling forms are equivalent.
+ 
+-### F-002 Selection semantics and decode ordering
++Reject signs, any whitespace, Unicode digits, zero, reversed endpoints, open endpoints, extra colons, missing values and repetition (including mixed spelling forms). All invalid invocations return 2, useful nonempty stderr, empty stdout and no traceback before input acquisition. Existing missing/extra input, unknown-option and help behavior remains R-007/R-008. `--` ends option parsing; a dash-prefixed file is addressed after it. With no range option, retain whole-input behavior.
+ 
+-Decode the complete input before selecting lines; invalid bytes after END still fail under R-008. Apply R-005 exactly once to complete decoded input before numbering. Select inclusive one-based logical lines under R-003, preserving each selected segment's contents and terminators. If END exceeds EOF, select the available subset; if START exceeds EOF, select empty content. Count the selected content under R-003/R-004 without further BOM stripping. An interior BOM exposed at the beginning of selected text must remain ordinary non-whitespace.
++Range, JSON and BOM flags compose in either order and may precede or follow INPUT before `--`. This feature leaves literal `-` as a named file until the separately delivered stdin milestone; `./-` remains a named-file path. It adds no stdin acquisition or public API parameter/export.
+ 
+-### F-003 Composition and delivery boundary
++### F-002 Pipeline and result semantics
+ 
+-Range selection composes with `--keep-bom` and `--json` in either option order, using either accepted range spelling. Preserve default text output and R-008 error categories. Named-file text/JSON range behavior is the feature's delivery boundary. The public API remains whole-input with no range parameter or new export. Source-independent selection must be compatible with future stdin, but this feature does not implement or pull forward stdin acquisition/delivery.
++Read and strictly decode the complete file before selection. Invalid UTF-8 after END still returns 1 with an identifying diagnostic, empty stdout and no traceback. Existing input/read/decode errors, handle closure and input preservation remain R-006/R-008.
+ 
+-### F-004 Objective range acceptance
++Apply BOM policy exactly once to the complete decoded string before numbering. Use CRLF as one terminator and lone CR/LF as terminators; preserve every selected segment's characters and terminator. A nonempty final unterminated segment is a line; empty input and a trailing terminator create no phantom segment. Other Unicode separators are content. Select START through END inclusively, intersected with available lines; START beyond EOF selects empty content.
+ 
+-| Complete input (escaped) | Range | Expected (lines, words) |
++Count selected content using R-003/R-004 without normalizing it again. An interior BOM exposed by selection remains ordinary non-whitespace. `--keep-bom` retains every BOM before numbering and selection. Pure selection depends on normalized text and validated endpoints, allowing a future stdin source without source-specific selection rules.
++
++### F-003 Compatibility and delivery exits
++
++For success return 0 and empty stderr. Default stdout is exactly `lines=<N> words=<N>\n`; with `--json`, emit one object plus newline containing only integer `lines` and `words`, equal to text counts. Preserve R-008 failure categories under every flag combination. Public `TextStats`, `count_text` and `count_file` stay immutable/silent/whole-input with unchanged signatures and exports.
++
++Named-file text/JSON range behavior, help and runnable documentation, nonempty unit/integration verification and isolated extracted-source module-entry verification are delivery obligations. Preserve all existing whole-input file/API/CLI behavior and JSON. Stdin delivery, new exports, source streaming, benchmark targets, third-party dependencies and release publication are outside this feature.
++
++### F-004 Objective acceptance
++
++Escapes below denote actual characters. Run every success example in text and JSON, with equal counts, status 0 and empty stderr.
++
++| Complete input | Range / policy | Expected (lines, words) |
+ | --- | --- | --- |
+-| `alpha beta\nbeta\nlast two` | 2:3 | (2, 3) |
+-| `alpha beta\nbeta\nlast two` | 2:99 | (2, 3) |
+-| `alpha beta\nbeta\nlast two` | 1:1 | (1, 2) |
++| `alpha beta\nbeta\nlast two` | 2:3 and 2:99 | (2, 3) |
++| `alpha beta\nbeta\nlast two` | 1:1 and 0001:0001 | (1, 2) |
+ | `alpha beta\nbeta\nlast two` | 4:99 | (0, 0) |
+ | `a\n\n` | 2:9 | (1, 0) |
+ | `a\r\nb c\rd\n` | 2:3 | (2, 3) |
+-| `a\n\ufeff` | 2:2, default BOM policy | (1, 1) |
+-| Empty input | 1:99 | (0, 0) |
++| `a\n\ufeff` | 2:2, both BOM policies | (1, 1) |
++| Empty | 1:99 | (0, 0) |
++| `\ufeff` | 1:1, default / keep | (0, 0) / (1, 1) |
++| `\ufeff\ufeff` | 1:1, both policies | (1, 1) |
++| `alpha\u2028beta` | 1:1 | (1, 2) |
++| `\n` | 1:1 | (1, 0) |
++
++Use valid endpoints with more than 4,300 digits as both END (available subset) and START (empty), as well as many leading zeros that represent small valid endpoints. Never overflow, truncate or impose a cap. Cover every permutation of range/BOM/JSON flags, both range spellings, options before/after INPUT, and dash-prefixed files after `--`.
++
++| Invalid class | Representative values / invocations |
++| --- | --- |
++| Zero or reversed | `0:1`, `1:0`, `3:2` |
++| Signs | `-1:2`, `+1:2`, `1:-2`, `1:+2` |
++| Whitespace | ` 1:2`, `1:2 `, `1 :2`, `1:\t2` |
++| Non-ASCII digits | `١:٢`, `１:２` |
++| Open or extra separators | `:2`, `1:`, `:`, `1:2:3`, `1` |
++| Missing | `--lines`, `--lines=`, `--lines --json INPUT` |
++| Repeated | two spaced, two equals, or mixed forms, including identical valid values |
++
++Verify each rejection before acquisition using a controlled acquisition seam and a missing named file. Include bad bytes strictly after the selected END to prove full decode; controlled read failures and handle cleanup remain testable at the acquisition seam. Recheck whole-input acceptance from main SPEC, silent unchanged API, file byte preservation, text/JSON equivalence and failure stdout. Distribution checks must run the extracted package's real module entry with isolated imports and cover range successes, invalid ranges, BOM exposure and bad bytes after END. Documentation must describe named-file range delivery accurately and retain deferred stdin status.
+ 
+-Acceptance also covers zero/reversed/negative/signed/Unicode-digit/whitespace/open/extra-colon/missing/repeated ranges, invalid UTF-8 after END, decimal leading zeros, endpoints far beyond EOF and all option-order combinations. Validate rejection before named-file access, including when the selected filename is missing. Very large endpoints select the available subset or empty content without overflow, truncation or an arbitrary cap.
+ 
+ ## Whole-input acceptance matrix
+ 
+@@ -127,6 +155,6 @@ Named-file and text API results agree for these inputs. CLI text and JSON agree
+ | R-006/R-010 | C-005 acquisition, C-006 API and C-008 CLI |
+ | R-007/R-008/R-009 | C-007 parser, C-008 controller and C-009 rendering |
+ | R-011/R-012/R-013 | Public boundaries C-001 through C-009, supported by documentation and product/distribution verification |
+-| F-001 through F-004 | C-007/C-008 and deferred C-010 over C-002/C-003/C-004; no additional API export |
++| F-001 through F-004 | C-007/C-008 and C-010 over C-002/C-003/C-004; no additional API export |
+ 
+ The adjacent [SPEC review report](SPEC-REVIEW-REPORT.md) owns the technical conformance assessment. The coordinator accepted SPEC and SPEC-REVIEW-REPORT at commit `bf3eb5e9a8d30a9e8a457f7708afa3b400100417`, SPEC blob `86cfd0c0cc6241bad1329a4873dbbc7517cc1160` and report blob `6b7b1637fc0095387b2c32846725f64c4cc2e715`, under delegated test-artifact review authority; published decision evidence is `37115e0`. Full-content assessment found no material issue and accepted the explicit constructor domain and staged dash-input settlements. This scope authorizes PLAN strategy, without accepting unseen layout/TASKS or implementation.
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 11f45a4..3588d4e 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -2,9 +2,9 @@
+ 
+ ## Governing inputs and execution boundary
+ 
+-This complete initial two-phase hierarchy derives from accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md), [DECOMPOSITION](DECOMPOSITION.md), [SPEC](SPEC.md), [PLAN](PLAN.md) and [layout](layout.md), with current [SPEC QC](SPEC-REVIEW-REPORT.md) and [combined PLAN QC](PLAN-REVIEW-REPORT.md). There is no pre-existing product task list or verified implementation; all checkboxes are unchecked. Monotonic project-wide IDs T-001 through T-017 are allocated here once and have exactly one executable owner.
++This complete two-phase hierarchy including accepted ranges derives from accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md), [DECOMPOSITION](DECOMPOSITION.md), [SPEC](SPEC.md), [PLAN](PLAN.md) and [layout](layout.md), with current [SPEC QC](SPEC-REVIEW-REPORT.md) and [combined PLAN QC](PLAN-REVIEW-REPORT.md). Phase 1 completion and evidence are retained. Main Phase 2 stays pending; separate JSON checkpoint evidence remains on the paused branch. IDs T-001–T-024 are stable. T-018–T-024 are pending; paired source retirement is required before unique ownership is established.
+ 
+-Task details identify outcomes, likely edit scopes, prerequisite IDs and objective evidence. Each task includes its own relevant tests/docstrings/docs rather than separate padding work. The phase/milestone names match PLAN. Deferred SPEC F-001 through F-004/C-010 have no implementation task or hosted issue in this hierarchy; preserve their design seams while implementing accepted whole-input capabilities.
++Task details identify outcomes, likely edit scopes, prerequisite IDs and objective evidence. Each task includes its own relevant tests/docstrings/docs rather than separate padding work. The phase/milestone names match PLAN. SPEC F-001–F-004/C-010 are covered by T-018–T-024 in milestones 2.4/2.5/2.6; main stdin/final work remains pending.
+ 
+ The user requested preparation through TASKS and stop before implementation. The coordinator accepted this concrete list and [owner QC](TASKS-REVIEW-REPORT.md) at commit `1510709f6e10d82d1b525b8c7cb221c5e1c5e20f`, TASKS blob `a4a5a4c645fd87c6d00cc057b662b1234b4adc26` and report blob `d6e9306e34157632bcf4cdea638427770edb4ad9`, under delegated test-artifact review authority; published decision evidence is `df4dfd5`. The full substantive assessment accepted this exact hierarchy/report without authorizing implementation or hosted projection. Execution selection/completion belongs to sdd-implement, not document authoring. A future implementation instruction must select its bounded range and satisfy accepted-preparation integration/publication plus eligible-phase verified tracking prerequisites. No production code or hosted projection occurs in this preparation checkpoint.
+ 
+@@ -88,13 +88,13 @@ The user requested preparation through TASKS and stop before implementation. The
+         - [ ] T-014 — Integrate stdin across text and JSON CLI
+             Outcome: R-010 input `-` through R-007/R-009 policies with R-008 error categories and unchanged named-file/public API behavior.
+             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py`, help/README stdin usage and error documentation.
+-            Depends on: T-013.
++            Depends on: T-013 and T-020 for retained range composition.
+             Evidence: real byte-fed subprocess stdin in text/JSON modes with both BOM policies, Unicode/mixed terminators/empty data; invalid bytes and controlled read errors identify stdin, return 1, leave stdout empty and avoid traceback. Check under differing locale, preserved borrowed-stream ownership at controlled seams, named-file `./-`, option/usage regressions and no input mutation. Run nonempty suites and newly runnable stdin examples.
+         - [ ] T-015 — Complete final documentation and source-package exits
+             Outcome: final R-011/R-012/R-013 usability/portability acceptance across delivered API/named-file/JSON/stdin behavior.
+             Scope: public API/module reference, README final instructions, `tools/check_distribution.py`, `tests/integration/test_distribution.py` and truthful root navigation.
+-            Depends on: T-014.
+-            Evidence: complete docs for final stdin ownership/strict decode/status/composition; execute all final documented examples. Rebuild/extract and actually invoke module entry for named-file and byte-fed stdin in text/JSON/BOM/empty/bad-byte/usage cases, maintaining import isolation. Run complete nonzero unit/integration suites and retain whole-input API/signatures. Range remains documented as future scope only, without runnable delivery claims.
++            Depends on: T-014 and T-023 for range documentation/distribution provenance.
++            Evidence: complete docs for final stdin ownership/strict decode/status/composition; execute all final documented examples. Rebuild/extract and actually invoke module entry for named-file and byte-fed stdin in text/JSON/BOM/empty/bad-byte/usage cases, maintaining import isolation. Run complete nonzero unit/integration suites and retain whole-input API/signatures. Include delivered named-file range behavior and source-independent stdin composition; claim runnable capability only after actual delivery.
+         - [ ] T-016 — Review, test and report milestone 2.2
+             Scope: complete stdin/input-source composition, documentation/distribution and prior delivered regressions.
+             Depends on: T-013, T-014 and T-015.
+@@ -103,10 +103,49 @@ The user requested preparation through TASKS and stop before implementation. The
+     - [ ] Milestone 2.3 — Phase 2 and final review
+         - [ ] T-017 — Review, test and report phase 2 and final delivery
+             Scope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.
+-            Depends on: T-012 and T-016, and completed/closed delivery milestones 2.1 and 2.2; excludes its own still-open review milestone.
+-            Evidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Do not execute range feature or publish a release.
++            Depends on: T-012, T-016 and T-024, and completed/closed delivery milestones 2.1, 2.2, 2.4 and 2.5; excludes its own still-open review milestone 2.3.
++            Evidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain feature-report provenance without claiming whole-phase completion from feature extent. No release is authorized.
+             Reports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.
+ 
++    - [ ] Milestone 2.4 — Named-file ranges
++        - [ ] T-018 — Implement pure normalized logical-line selection
++            Outcome: internal C-010 selection using existing C-003 traversal; preserve selected contents/terminators, inclusive endpoints and available subsets without any BOM normalization or source dependency.
++            Scope: `textstats/core.py`, `tests/unit/test_core.py` and internal selection/counting docstrings; public exports/signatures unchanged.
++            Depends on: T-012's verified published milestone 2.1 completion/closure and the PLAN compatible baseline/projection prerequisites; existing pure core from T-001.
++            Evidence: F-002/F-004 empty/final/blank/mixed CRLF/CR/LF, Unicode separators, EOF subset/empty, huge endpoints and exposed interior BOM. Verify normalized counting consumes selected content without a second normalization, plus whole-input core/API regression checks. This pure prerequisite leads directly to the real CLI path in T-019 within the same milestone.
++        - [ ] T-019 — Integrate range validation and named-file text or JSON CLI
++            Outcome: complete F-001/F-002/F-003 named-file path, both range spellings, all option orders and existing output/error/API behavior; minimal runnable range help/README demonstration.
++            Scope: `textstats/cli.py`, cooperating `textstats/io.py` acquisition seam if needed, `tests/unit/test_cli.py`, `tests/unit/test_io.py`, `tests/integration/test_cli.py`, `tests/integration/test_api.py` and focused README/module documentation.
++            Depends on: T-018 and retained completed JSON T-010–T-012 checkpoint; no stdin implementation dependency.
++            Evidence: full invalid-range matrix including missing/repeated/mixed forms, ASCII positivity/order, >4,300-digit valid endpoints and many leading zeros without interpreter guard failure. Controlled seam and missing-file subprocess show usage rejection before acquisition. Decode complete bytes before selection, failing bad bytes after END; preserve owned-handle cleanup and unchanged file bytes. Run real text/JSON examples for every F-004 anchor, all range/BOM/JSON permutations, both spellings, INPUT placement and `--` dash-file support. Verify no-range API/CLI/JSON/signature/export/silence/error regressions; literal `-` remains a file. Run nonempty suites and execute the minimal README examples.
++        - [ ] T-020 — Review, test and report milestone 2.4
++            Scope: integrated parser, complete acquisition, normalized shared selection/counting and named-file text/JSON path; retained core/API/CLI failures and resource ownership.
++            Depends on: T-018 and T-019.
++            Evidence: code review and actual focused/full relevant tests, actual nonzero discovery counts, all F matrices, complete-decode/BOM/huge-endpoint regression evidence, repairs for every blocker and 2.4 human demonstration evidence. Report findings/TODO dispositions and limits; tests alone cannot complete this review.
++            Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md`.
++    - [ ] Milestone 2.5 — Range documentation and distribution
++        - [ ] T-021 — Complete public and runnable named-file range documentation
++            Outcome: accurate full range grammar/semantics/errors/composition/delivery boundary, with public API explicitly whole-input and stdin acquisition still deferred.
++            Scope: `README.md`, `docs/public-api.md`, relevant core/I/O/CLI module/function docstrings and truthful owned root `AGENTS.md` navigation; preserve manual instructions and protected resources.
++            Depends on: T-020 and reviewed/closed milestone 2.4.
++            Evidence: execute documented named-file text/JSON examples in both BOM policies, selected blank/mixed/EOF/interior-BOM and invalid/decode cases; compare docs/help to delivered F contracts and retained public signatures/exports/exception/handle/status contracts. Review future stdin wording for source independence without asserting delivered acquisition. Run relevant nonempty product regressions.
++        - [ ] T-022 — Verify range behavior from isolated extracted source
++            Outcome: R-013 feature exits execute the real extracted module for named-file text/JSON range behavior and failures with truthful import provenance.
++            Scope: `tools/check_distribution.py`, cooperating `tools/package_source.py` allowlist only if needed, `tests/integration/test_distribution.py` and distribution usage documentation.
++            Depends on: T-021.
++            Evidence: rebuild/extract source, isolate subprocess cwd/import environment and verify imported package belongs to extraction. Invoke its actual `python -m textstats` entry for F-004 success anchors, option/BOM/JSON composition, huge decimal/leading-zero endpoints, invalid/missing/repeated ranges and bad bytes after END; statuses/stdout/stderr retain contracts. Confirm archive docs and unchanged API, named-file/no-range/JSON/usage/error regressions and no coordinator resources/secrets. Use the selected supported Python executable with bytecode disabled in all child processes. Run independently nonempty unit/integration suites and extraction checks; archive listing/import alone is insufficient.
++        - [ ] T-023 — Review, test and report milestone 2.5
++            Scope: complete delivered range documentation, help/usability, isolated distribution and retained product behavior.
++            Depends on: T-021 and T-022.
++            Evidence: code review plus actual docs examples, nonempty discovery and extraction provenance/real module checks, all relevant regressions and repairs for every blocker. Record usability demonstration, actual evidence/limits and TODO dispositions before milestone closure.
++            Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md`.
++    - [ ] Milestone 2.6 — Range feature review
++        - [ ] T-024 — Review, test and report the Phase 2 range feature extent
++            Scope: cross-milestone range feature and affected main contracts, source-independent normalized pipeline, unchanged public API, complete docs/extraction and retained named-file text/JSON. This is feature-extent review, not main Phase 2 or project completion.
++            Depends on: T-020 and T-023; feature delivery milestones 2.4 and 2.5 completed/closed, excluding its own still-open 2.6.
++            Evidence: code review and actual complete relevant product/docs/distribution exits, nonzero counts, final blocker repairs, feature usefulness/risk evidence, findings and TODO aggregation with provenance/options/owners/resolutions from both feature milestones. Reconcile feature parent claims only; do not complete main 2.2/2.3 or T-013–T-017. Reports must state pending stdin/final work and later incorporation/integration prerequisites.
++            Reports: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md` and `docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md`.
++
+ ## Completion and persistence rules
+ 
+ Every review task requires both code review and actual testing; tests alone cannot close it. Reports record actual scope/checks/counts/evidence limits, blockers and a TODO section (`None` when empty). Fix bugs, critical code issues and SPEC/PLAN violations before review closure. Only eligible noncritical issues consistent with contracts/exits can be deferred, with stable ID, located evidence, impact, rationale, options/tradeoffs and follow-up owner/scope. Required or uncertain repairs stay in Findings/Blockers.
