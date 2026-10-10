@@ -1,0 +1,19 @@
+{
+  "actor": "coordinator",
+  "reason": "Actualunknownread preserved withoutreplay; independentexacteffect proofpublished55573dc beforeboundednormalrestoration",
+  "evidence_class": "controlled",
+  "changed_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility/CONTROL.json",
+  "before": {
+    "read": "unavailable-access",
+    "write": "after-send-loss"
+  },
+  "after": {
+    "read": "normal",
+    "write": "normal"
+  },
+  "before_sha256": "298df2ee7c7d379c348e8bf30d34c72dde2ec7dbb713bf69a4a3527dbcb70361",
+  "after_sha256": "173089f5d1e8283daefd41d569662c88b9e310b6912764896ba86b5d67e04cb7",
+  "ledger_sha256_unchanged": "1b6de6fc6077ea09e19e99c0215a47759a05f3e5bf384389bfac589b04a7ec52",
+  "observed_at": "2026-10-10T14:14:23.600974+00:00",
+  "no_product_git_credential_provider_effect": true
+}
