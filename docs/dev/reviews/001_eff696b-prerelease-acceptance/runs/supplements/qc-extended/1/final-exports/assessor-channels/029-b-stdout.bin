@@ -1,0 +1,41 @@
+diff --git a/docs/dev/FEATURE-TASKS.md b/docs/dev/FEATURE-TASKS.md
+index 95d3143..60972ab 100644
+--- a/docs/dev/FEATURE-TASKS.md
++++ b/docs/dev/FEATURE-TASKS.md
+@@ -22,6 +22,36 @@ Preparation stops before execution. A later separately authorized handoff must s
+             Scope: `textstats/cli.py`, cooperating `textstats/io.py` acquisition seam if needed, `tests/unit/test_cli.py`, `tests/unit/test_io.py`, `tests/integration/test_cli.py`, `tests/integration/test_api.py` and focused README/module documentation.
+             Depends on: T-018 and retained completed JSON T-010–T-012 checkpoint; no stdin implementation dependency.
+             Evidence: full invalid-range matrix including missing/repeated/mixed forms, ASCII positivity/order, >4,300-digit valid endpoints and many leading zeros without interpreter guard failure. Controlled seam and missing-file subprocess show usage rejection before acquisition. Decode complete bytes before selection, failing bad bytes after END; preserve owned-handle cleanup and unchanged file bytes. Run real text/JSON examples for every F-004 anchor, all range/BOM/JSON permutations, both spellings, INPUT placement and `--` dash-file support. Verify no-range API/CLI/JSON/signature/export/silence/error regressions; literal `-` remains a file. Run nonempty suites and execute the minimal README examples.
++        - [ ] T-025 — Register spaced range parser
++            Outcome: this narrow edit within the existing T-019 integrated range path.
++            Scope: `textstats/cli.py` and its existing tests.
++            Depends on: T-018; T-019 retains its current complete integrated acceptance scope.
++            Evidence: check this isolated edit; publish separately before proceeding.
++        - [ ] T-026 — Register equals range parser
++            Outcome: this narrow edit within the existing T-019 integrated range path.
++            Scope: `textstats/cli.py` and its existing tests.
++            Depends on: T-018; T-019 retains its current complete integrated acceptance scope.
++            Evidence: check this isolated edit; publish separately before proceeding.
++        - [ ] T-027 — Check ASCII endpoint characters
++            Outcome: this narrow edit within the existing T-019 integrated range path.
++            Scope: `textstats/cli.py` and its existing tests.
++            Depends on: T-018; T-019 retains its current complete integrated acceptance scope.
++            Evidence: check this isolated edit; publish separately before proceeding.
++        - [ ] T-028 — Reject repeated range options
++            Outcome: this narrow edit within the existing T-019 integrated range path.
++            Scope: `textstats/cli.py` and its existing tests.
++            Depends on: T-018; T-019 retains its current complete integrated acceptance scope.
++            Evidence: check this isolated edit; publish separately before proceeding.
++        - [ ] T-029 — Wire range BOM flag
++            Outcome: this narrow edit within the existing T-019 integrated range path.
++            Scope: `textstats/cli.py` and its existing tests.
++            Depends on: T-018; T-019 retains its current complete integrated acceptance scope.
++            Evidence: check this isolated edit; publish separately before proceeding.
++        - [ ] T-030 — Edit one range help sentence
++            Outcome: this narrow edit within the existing T-019 integrated range path.
++            Scope: `textstats/cli.py` and its existing tests.
++            Depends on: T-018; T-019 retains its current complete integrated acceptance scope.
++            Evidence: check this isolated edit; publish separately before proceeding.
+         - [ ] T-020 — Review, test and report milestone 2.4
+             Scope: integrated parser, complete acquisition, normalized shared selection/counting and named-file text/JSON path; retained core/API/CLI failures and resource ownership.
+             Depends on: T-018 and T-019.

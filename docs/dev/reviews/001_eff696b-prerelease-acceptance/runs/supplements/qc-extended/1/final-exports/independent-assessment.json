@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "case_id": "supplement-qc-extended",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "scope": "Four local synthetic caller-proposal sensitivity forks outside required32; first sealed ordinary batched consumer, no assisted retry of semantic findings",
+  "consumer_sha256": "a707c1fc6c1682a3f08e381a9bdecce0b583dd43b7d8bad4cdeecb21f1c368a6",
+  "consumer_sealed_at": "2026-10-10T17:56:44.272965+00:00",
+  "fork_origin": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+  "setup_evidence_publication_commit": "a9bf69706b619d89dce69c00c80e329b9a614bd4",
+  "preservation_check_file": "independent-checks.json",
+  "cases": {
+    "a": {
+      "status": "Passed",
+      "proposal_gate": "Blocked",
+      "owner_routing": "sdd-plan then affected sdd-tasks, coordinated by sdd-manage",
+      "independent_semantic_basis": "Seven serial seam milestones offer no runnable changed range capability before 2.4; redundant per-seam review overhead lacks independent risk/handoff purpose. Existing extraction route remains 2.5 while proposed 2.14 owns extraction. TASKS lacks added milestone routes and current PLAN QC names older two-milestone bytes. Consumer identified all consequences without rejecting ten solely by count.",
+      "counts": {
+        "feature_delivery_milestones": 10,
+        "excluded_final_feature_review": "2.6",
+        "main_plus_feature_Phase2_delivery_milestones": 12
+      },
+      "consumer_findings": [
+        "A-001",
+        "A-002"
+      ]
+    },
+    "b": {
+      "status": "Passed",
+      "proposal_gate": "Blocked",
+      "owner_routing": "sdd-tasks; strategy change, if chosen, returns to sdd-plan",
+      "independent_semantic_basis": "Six tiny additions repeat T-019 parser/repetition/BOM/help obligations while T-019 remains complete owner. Added tasks depend only T-018; T-020 lacks dependencies on additions. Consumer correctly evaluated eight at 2.4 as 6\u20139 departure/cohesion, not a 10+ milestone.",
+      "counts": {
+        "delivery_tasks_by_milestone": {
+          "2.4": 8,
+          "2.5": 2
+        },
+        "feature_delivery_tasks_total": 10,
+        "excluded_reviews": [
+          "T-020",
+          "T-023",
+          "T-024"
+        ]
+      },
+      "consumer_findings": [
+        "B-001",
+        "B-002"
+      ]
+    },
+    "c": {
+      "status": "Passed",
+      "proposal_gate": "Blocked",
+      "owner_routing": "sdd-specify; governing behavior/design decision to sdd-manage/human/sdd-design before affected sdd-plan and sdd-tasks",
+      "independent_semantic_basis": "F-005 required positional start/end and selected-default API contradict R-002 fixed keyword-only BOM signatures, F-003 whole-input/no-range API, C-006 adapters and feature own unchanged API constraints. Consumer blocks upstream contract conflict and affected dependency chain, without letting downstream owners legitimize it.",
+      "counts": {
+        "delivery_tasks_by_milestone": {
+          "2.4": 2,
+          "2.5": 2
+        },
+        "excluded_reviews": [
+          "T-020",
+          "T-023",
+          "T-024"
+        ]
+      },
+      "consumer_findings": [
+        "C-001",
+        "C-002"
+      ]
+    },
+    "d": {
+      "status": "Passed",
+      "proposal_gate": "Blocked",
+      "owner_routing": "sdd-tasks; changed behavior/dependencies and delivery decisions to governing sdd-specify/sdd-design/sdd-plan through sdd-manage",
+      "independent_semantic_basis": "T-025 requires unsupported external runtime benchmark package and throughput acceptance before T-019 contrary to standard-library design/SPEC and no-performance-target FEATURE-PLAN. Three tasks at 2.4 do not clear scope drift. Canonical dependency wording/review identities also disagree. Consumer preserves owner boundaries and blocks progression.",
+      "counts": {
+        "delivery_tasks_by_milestone": {
+          "2.4": 3,
+          "2.5": 2
+        },
+        "excluded_reviews": [
+          "T-020",
+          "T-023",
+          "T-024"
+        ]
+      },
+      "consumer_findings": [
+        "D-001",
+        "D-002"
+      ]
+    }
+  },
+  "lifecycle_assessment": "Read-only ordinary review preserved every product file/mode/hash, raw index, status, diff, refs and HEAD. Consumer retained historical QC, stated affected current evidence invalidation, requested owner-scoped corrections with appended Revision N and actual acceptance; did not write product reports, run tests, mutate providers or imply technical Ready. Corrections/rechecks themselves were not exercised.",
+  "first_attempt": "Semantic assessment passed on first sealed response; an initial read transport failure and empty nested-instruction rg results are preserved separately. Original root setup lookup failures remain tool-only raw-channel retention gaps.",
+  "limits": [
+    "Shared filesystem exposes assessor assets; consumer instruction/path records do not certify enforced isolation.",
+    "One consumer context reviewed all four checkouts serially; no clean-context independent replication of consumer behavior.",
+    "Fixtures are local caller-authored proposals forked from real accepted checkpoint; this assesses document-QC sensitivity, not live workflow readiness.",
+    "No provider operation, remote containment readback, implementation, tests, correction persistence or readiness certification performed.",
+    "Required32 grades and dedicated live/client readiness TODOs remain unchanged."
+  ]
+}

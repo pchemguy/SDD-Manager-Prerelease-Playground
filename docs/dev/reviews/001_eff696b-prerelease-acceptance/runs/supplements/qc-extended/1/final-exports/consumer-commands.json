@@ -1,0 +1,2496 @@
+[
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "rg",
+      "--files",
+      "--hidden",
+      "-g",
+      "!\\.git",
+      "-g",
+      "AGENTS.md",
+      "-g",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/000-stdout.bin",
+    "stdout_sha256": "09e2ee9193f992ebd73a5f16c1bf38c6b2bb27b51d213ed0a600b87d7e4c9ebd",
+    "stderr_path": "consumer-channels/000-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "rg",
+      "--files",
+      "--hidden",
+      "-g",
+      "!\\.git",
+      "-g",
+      "AGENTS.md",
+      "-g",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/001-stdout.bin",
+    "stdout_sha256": "08b309b3aa879609844e0e5243db74d04ae5e1338659cecad59a799a3bea2dcd",
+    "stderr_path": "consumer-channels/001-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "rg",
+      "--files",
+      "--hidden",
+      "-g",
+      "!\\.git",
+      "-g",
+      "AGENTS.md",
+      "-g",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/002-stdout.bin",
+    "stdout_sha256": "98faff79061df19da5218fddc656b5d96527a0d7e165c199f69c0d9ea8c02fe7",
+    "stderr_path": "consumer-channels/002-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "rg",
+      "--files",
+      "--hidden",
+      "-g",
+      "!\\.git",
+      "-g",
+      "AGENTS.md",
+      "-g",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/003-stdout.bin",
+    "stdout_sha256": "98faff79061df19da5218fddc656b5d96527a0d7e165c199f69c0d9ea8c02fe7",
+    "stderr_path": "consumer-channels/003-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/004-stdout.bin",
+    "stdout_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "stderr_path": "consumer-channels/004-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/005-stdout.bin",
+    "stdout_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "stderr_path": "consumer-channels/005-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/006-stdout.bin",
+    "stdout_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "stderr_path": "consumer-channels/006-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/007-stdout.bin",
+    "stdout_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "stderr_path": "consumer-channels/007-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/008-stdout.bin",
+    "stdout_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "stderr_path": "consumer-channels/008-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/009-stdout.bin",
+    "stdout_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "stderr_path": "consumer-channels/009-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/010-stdout.bin",
+    "stdout_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "stderr_path": "consumer-channels/010-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/011-stdout.bin",
+    "stdout_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "stderr_path": "consumer-channels/011-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/012-stdout.bin",
+    "stdout_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "stderr_path": "consumer-channels/012-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/013-stdout.bin",
+    "stdout_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "stderr_path": "consumer-channels/013-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/014-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "consumer-channels/014-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/015-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "consumer-channels/015-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/016-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "consumer-channels/016-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/017-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "consumer-channels/017-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/018-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "consumer-channels/018-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/019-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "consumer-channels/019-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/020-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "consumer-channels/020-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/021-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "consumer-channels/021-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/022-stdout.bin",
+    "stdout_sha256": "87b945c8c1ff1094a01792bf91a7b98dd220dc57731f20c38f4ae2da5faa2573",
+    "stderr_path": "consumer-channels/022-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/023-stdout.bin",
+    "stdout_sha256": "42484f85bd8bc5e3e2c6021f54adb4718e2a1a492c7eb3d5db474241e1495db6",
+    "stderr_path": "consumer-channels/023-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/024-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "consumer-channels/024-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "diff",
+      "--",
+      "docs/dev"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/025-stdout.bin",
+    "stdout_sha256": "1a00f8af873d3ca9681d24fa34e45d0b376c845585025267adebfcfcf68a0e0b",
+    "stderr_path": "consumer-channels/025-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "rg",
+      "--files",
+      "docs/dev",
+      "-g",
+      "AGENTS.md"
+    ],
+    "exit_code": 1,
+    "stdout_path": "consumer-channels/026-stdout.bin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_path": "consumer-channels/026-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/027-stdout.bin",
+    "stdout_sha256": "4719c605e013e2ad8bb852c8a0916ae8d2f522a6f8f5b2c3ca3d1439ec3bd1ea",
+    "stderr_path": "consumer-channels/027-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/028-stdout.bin",
+    "stdout_sha256": "71a7530f6606c6aa9af665cdfdc1a214edd5b6fb3fb816068052a1ec7b0d2475",
+    "stderr_path": "consumer-channels/028-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/029-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "consumer-channels/029-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "diff",
+      "--",
+      "docs/dev"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/030-stdout.bin",
+    "stdout_sha256": "815cab88f7167076d945e9c870020090a869f74821f9d4bb4ff631b496b86f5e",
+    "stderr_path": "consumer-channels/030-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "rg",
+      "--files",
+      "docs/dev",
+      "-g",
+      "AGENTS.md"
+    ],
+    "exit_code": 1,
+    "stdout_path": "consumer-channels/031-stdout.bin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_path": "consumer-channels/031-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/032-stdout.bin",
+    "stdout_sha256": "c18ca38a6db35df5bd6a31c7a958c4cabb182f5c6b208066b18ce29141bf55cd",
+    "stderr_path": "consumer-channels/032-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/033-stdout.bin",
+    "stdout_sha256": "de59de6873851f0f49fc421248be750b05b50daf93cd177857ef575f41ba93bb",
+    "stderr_path": "consumer-channels/033-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/034-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "consumer-channels/034-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "diff",
+      "--",
+      "docs/dev"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/035-stdout.bin",
+    "stdout_sha256": "7652be0dff833d382d04fd8d43112082994aa95a41255897873b76ceb890f86b",
+    "stderr_path": "consumer-channels/035-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "rg",
+      "--files",
+      "docs/dev",
+      "-g",
+      "AGENTS.md"
+    ],
+    "exit_code": 1,
+    "stdout_path": "consumer-channels/036-stdout.bin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_path": "consumer-channels/036-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/037-stdout.bin",
+    "stdout_sha256": "4719c605e013e2ad8bb852c8a0916ae8d2f522a6f8f5b2c3ca3d1439ec3bd1ea",
+    "stderr_path": "consumer-channels/037-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/038-stdout.bin",
+    "stdout_sha256": "9fbc85a68498277e682bce10c6de0277b5ec646d1a8bfe2ae07befadd6fc9d6d",
+    "stderr_path": "consumer-channels/038-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/039-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "consumer-channels/039-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "diff",
+      "--",
+      "docs/dev"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/040-stdout.bin",
+    "stdout_sha256": "a0fd14beb709d710321216cd9c88fe5e84c21dfea3f633352c4ecceba71e3ba8",
+    "stderr_path": "consumer-channels/040-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "rg",
+      "--files",
+      "docs/dev",
+      "-g",
+      "AGENTS.md"
+    ],
+    "exit_code": 1,
+    "stdout_path": "consumer-channels/041-stdout.bin",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_path": "consumer-channels/041-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/042-stdout.bin",
+    "stdout_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "stderr_path": "consumer-channels/042-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/043-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "consumer-channels/043-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/044-stdout.bin",
+    "stdout_sha256": "9166d1c03d08b956ceb545632639533da0175b32042875ae46fa0cebf6bdf2cd",
+    "stderr_path": "consumer-channels/044-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/045-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "consumer-channels/045-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/046-stdout.bin",
+    "stdout_sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "stderr_path": "consumer-channels/046-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/047-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "consumer-channels/047-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/048-stdout.bin",
+    "stdout_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "stderr_path": "consumer-channels/048-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/049-stdout.bin",
+    "stdout_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "stderr_path": "consumer-channels/049-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/050-stdout.bin",
+    "stdout_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "stderr_path": "consumer-channels/050-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/051-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "consumer-channels/051-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/052-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "consumer-channels/052-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/053-stdout.bin",
+    "stdout_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "stderr_path": "consumer-channels/053-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/054-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "consumer-channels/054-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/055-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "consumer-channels/055-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/056-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/056-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/057-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/057-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/058-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "consumer-channels/058-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/059-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "consumer-channels/059-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/060-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "consumer-channels/060-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/061-stdout.bin",
+    "stdout_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "stderr_path": "consumer-channels/061-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/062-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "consumer-channels/062-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/063-stdout.bin",
+    "stdout_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "stderr_path": "consumer-channels/063-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/064-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "consumer-channels/064-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/065-stdout.bin",
+    "stdout_sha256": "6e750a0eb154ed0ffa0ef54ad209f981b0757939425c3981dc2a8696fb336855",
+    "stderr_path": "consumer-channels/065-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/066-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "consumer-channels/066-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/067-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "consumer-channels/067-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/068-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "consumer-channels/068-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/069-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "consumer-channels/069-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/070-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "consumer-channels/070-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/071-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "consumer-channels/071-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/072-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "consumer-channels/072-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/073-stdout.bin",
+    "stdout_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "stderr_path": "consumer-channels/073-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/074-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "consumer-channels/074-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/075-stdout.bin",
+    "stdout_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "stderr_path": "consumer-channels/075-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/076-stdout.bin",
+    "stdout_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "stderr_path": "consumer-channels/076-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/077-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/077-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/078-stdout.bin",
+    "stdout_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "stderr_path": "consumer-channels/078-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/079-stdout.bin",
+    "stdout_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "stderr_path": "consumer-channels/079-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/080-stdout.bin",
+    "stdout_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "stderr_path": "consumer-channels/080-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/081-stdout.bin",
+    "stdout_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "stderr_path": "consumer-channels/081-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/082-stdout.bin",
+    "stdout_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "stderr_path": "consumer-channels/082-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/083-stdout.bin",
+    "stdout_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "stderr_path": "consumer-channels/083-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/084-stdout.bin",
+    "stdout_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "stderr_path": "consumer-channels/084-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/085-stdout.bin",
+    "stdout_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "stderr_path": "consumer-channels/085-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/086-stdout.bin",
+    "stdout_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "stderr_path": "consumer-channels/086-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/087-stdout.bin",
+    "stdout_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "stderr_path": "consumer-channels/087-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/088-stdout.bin",
+    "stdout_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "stderr_path": "consumer-channels/088-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/089-stdout.bin",
+    "stdout_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "stderr_path": "consumer-channels/089-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/090-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/090-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/091-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/091-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/092-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "consumer-channels/092-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/093-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "consumer-channels/093-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/094-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "consumer-channels/094-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/095-stdout.bin",
+    "stdout_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "stderr_path": "consumer-channels/095-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/096-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "consumer-channels/096-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/097-stdout.bin",
+    "stdout_sha256": "bd2b3784a542ec1c734da648b1f946a5f494db0f950f1a24d4e19ee438e4bf83",
+    "stderr_path": "consumer-channels/097-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/098-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "consumer-channels/098-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/099-stdout.bin",
+    "stdout_sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "stderr_path": "consumer-channels/099-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/100-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "consumer-channels/100-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/101-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "consumer-channels/101-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/102-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "consumer-channels/102-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/103-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "consumer-channels/103-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/104-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "consumer-channels/104-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/105-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "consumer-channels/105-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/106-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "consumer-channels/106-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/107-stdout.bin",
+    "stdout_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "stderr_path": "consumer-channels/107-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/108-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "consumer-channels/108-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/109-stdout.bin",
+    "stdout_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "stderr_path": "consumer-channels/109-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/110-stdout.bin",
+    "stdout_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "stderr_path": "consumer-channels/110-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/111-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/111-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/112-stdout.bin",
+    "stdout_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "stderr_path": "consumer-channels/112-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/113-stdout.bin",
+    "stdout_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "stderr_path": "consumer-channels/113-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/114-stdout.bin",
+    "stdout_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "stderr_path": "consumer-channels/114-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/115-stdout.bin",
+    "stdout_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "stderr_path": "consumer-channels/115-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/116-stdout.bin",
+    "stdout_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "stderr_path": "consumer-channels/116-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/117-stdout.bin",
+    "stdout_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "stderr_path": "consumer-channels/117-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/118-stdout.bin",
+    "stdout_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "stderr_path": "consumer-channels/118-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/119-stdout.bin",
+    "stdout_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "stderr_path": "consumer-channels/119-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/120-stdout.bin",
+    "stdout_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "stderr_path": "consumer-channels/120-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/121-stdout.bin",
+    "stdout_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "stderr_path": "consumer-channels/121-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/122-stdout.bin",
+    "stdout_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "stderr_path": "consumer-channels/122-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/123-stdout.bin",
+    "stdout_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "stderr_path": "consumer-channels/123-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/124-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/124-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/125-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/125-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/126-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "consumer-channels/126-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/127-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "consumer-channels/127-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/128-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "consumer-channels/128-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/129-stdout.bin",
+    "stdout_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "stderr_path": "consumer-channels/129-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/130-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "consumer-channels/130-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/131-stdout.bin",
+    "stdout_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "stderr_path": "consumer-channels/131-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/132-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "consumer-channels/132-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/133-stdout.bin",
+    "stdout_sha256": "8389ee3769685d0a8328f8a5091b248b8ac063828b323d54b798550acd17204d",
+    "stderr_path": "consumer-channels/133-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/134-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "consumer-channels/134-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/135-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "consumer-channels/135-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/136-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "consumer-channels/136-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/137-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "consumer-channels/137-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/138-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "consumer-channels/138-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/139-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "consumer-channels/139-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/140-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "consumer-channels/140-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/141-stdout.bin",
+    "stdout_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "stderr_path": "consumer-channels/141-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/142-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "consumer-channels/142-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/143-stdout.bin",
+    "stdout_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "stderr_path": "consumer-channels/143-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/README.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/144-stdout.bin",
+    "stdout_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "stderr_path": "consumer-channels/144-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/145-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/145-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/146-stdout.bin",
+    "stdout_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "stderr_path": "consumer-channels/146-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/147-stdout.bin",
+    "stdout_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "stderr_path": "consumer-channels/147-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/148-stdout.bin",
+    "stdout_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "stderr_path": "consumer-channels/148-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/149-stdout.bin",
+    "stdout_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "stderr_path": "consumer-channels/149-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/150-stdout.bin",
+    "stdout_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "stderr_path": "consumer-channels/150-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/151-stdout.bin",
+    "stdout_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "stderr_path": "consumer-channels/151-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/152-stdout.bin",
+    "stdout_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "stderr_path": "consumer-channels/152-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-plan/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/153-stdout.bin",
+    "stdout_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "stderr_path": "consumer-channels/153-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/154-stdout.bin",
+    "stdout_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "stderr_path": "consumer-channels/154-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-specify/references/review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/155-stdout.bin",
+    "stdout_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "stderr_path": "consumer-channels/155-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/156-stdout.bin",
+    "stdout_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "stderr_path": "consumer-channels/156-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/157-stdout.bin",
+    "stdout_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "stderr_path": "consumer-channels/157-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/plugin.json"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/158-stdout.bin",
+    "stdout_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "stderr_path": "consumer-channels/158-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/159-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/159-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/160-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/160-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/161-stdout.bin",
+    "stdout_sha256": "e4e6e3240c9f40f1bbeeaa933110287e8623698896cfc952f03b21114af0528d",
+    "stderr_path": "consumer-channels/161-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/162-stdout.bin",
+    "stdout_sha256": "a06a78ce2ee008b9c44d335c1101d27a2dc9a6ce29cac5c4820eb5d49439c5c4",
+    "stderr_path": "consumer-channels/162-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/163-stdout.bin",
+    "stdout_sha256": "e18ef56ab073bdaf0532a4624289e1e9c20f7c0cd8117aa4b31ad4f1c2f3f267",
+    "stderr_path": "consumer-channels/163-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/plugin.json"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/164-stdout.bin",
+    "stdout_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "stderr_path": "consumer-channels/164-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/165-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/165-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/166-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/166-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/167-stdout.bin",
+    "stdout_sha256": "e4e6e3240c9f40f1bbeeaa933110287e8623698896cfc952f03b21114af0528d",
+    "stderr_path": "consumer-channels/167-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/168-stdout.bin",
+    "stdout_sha256": "dcae1f69f14d7067e30cb5500fe4ba9441b4dfb0b4e6dd431133cfcebfb91cee",
+    "stderr_path": "consumer-channels/168-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/169-stdout.bin",
+    "stdout_sha256": "c99551f4c5a000a34b0ccfcce5f4290a25f9f85a96fbd81b7df045f3ceceb684",
+    "stderr_path": "consumer-channels/169-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/plugin.json"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/170-stdout.bin",
+    "stdout_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "stderr_path": "consumer-channels/170-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/171-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/171-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/172-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/172-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/173-stdout.bin",
+    "stdout_sha256": "190fbb615103ff71dd29fca13ddefe78cb399b12d07de0bf8fc56357b3312f38",
+    "stderr_path": "consumer-channels/173-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/174-stdout.bin",
+    "stdout_sha256": "dcae1f69f14d7067e30cb5500fe4ba9441b4dfb0b4e6dd431133cfcebfb91cee",
+    "stderr_path": "consumer-channels/174-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/175-stdout.bin",
+    "stdout_sha256": "e18ef56ab073bdaf0532a4624289e1e9c20f7c0cd8117aa4b31ad4f1c2f3f267",
+    "stderr_path": "consumer-channels/175-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "textstats-run-resources/plugin/plugin.json"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/176-stdout.bin",
+    "stdout_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "stderr_path": "consumer-channels/176-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/177-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "consumer-channels/177-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/178-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "consumer-channels/178-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/179-stdout.bin",
+    "stdout_sha256": "e4e6e3240c9f40f1bbeeaa933110287e8623698896cfc952f03b21114af0528d",
+    "stderr_path": "consumer-channels/179-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/180-stdout.bin",
+    "stdout_sha256": "dcae1f69f14d7067e30cb5500fe4ba9441b4dfb0b4e6dd431133cfcebfb91cee",
+    "stderr_path": "consumer-channels/180-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "hash-object",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/181-stdout.bin",
+    "stdout_sha256": "22908f944f80e588e0a240617a096bb583f843fe42c173d06eefe9da01b5d7e4",
+    "stderr_path": "consumer-channels/181-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/182-stdout.bin",
+    "stdout_sha256": "87b945c8c1ff1094a01792bf91a7b98dd220dc57731f20c38f4ae2da5faa2573",
+    "stderr_path": "consumer-channels/182-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/183-stdout.bin",
+    "stdout_sha256": "4719c605e013e2ad8bb852c8a0916ae8d2f522a6f8f5b2c3ca3d1439ec3bd1ea",
+    "stderr_path": "consumer-channels/183-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/184-stdout.bin",
+    "stdout_sha256": "c18ca38a6db35df5bd6a31c7a958c4cabb182f5c6b208066b18ce29141bf55cd",
+    "stderr_path": "consumer-channels/184-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "checkout": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "argv": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "stdout_path": "consumer-channels/185-stdout.bin",
+    "stdout_sha256": "4719c605e013e2ad8bb852c8a0916ae8d2f522a6f8f5b2c3ca3d1439ec3bd1ea",
+    "stderr_path": "consumer-channels/185-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,1230 @@
+[
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/000-a-stdout.bin",
+    "stdout_sha256": "72372c1b88a3f7fe019d9e36a79365f2cefc7fc6fb4c8045ca953d2caa66c77a",
+    "stderr_path": "assessor-channels/000-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/001-a-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "assessor-channels/001-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/002-a-stdout.bin",
+    "stdout_sha256": "0a63f222d4d9b1264f45d92d7ae98e453260d319225fe7b6f13e5f78e6149f25",
+    "stderr_path": "assessor-channels/002-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/003-a-stdout.bin",
+    "stdout_sha256": "3b96256d9ae331be2ea6618cf0a8c56e2bc050a3ea80bfead3b2252cc498e67e",
+    "stderr_path": "assessor-channels/003-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/004-a-stdout.bin",
+    "stdout_sha256": "1a00f8af873d3ca9681d24fa34e45d0b376c845585025267adebfcfcf68a0e0b",
+    "stderr_path": "assessor-channels/004-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "--git-path",
+      "index"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/005-a-stdout.bin",
+    "stdout_sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+    "stderr_path": "assessor-channels/005-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/006-a-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "assessor-channels/006-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/007-a-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "assessor-channels/007-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/008-a-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "assessor-channels/008-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/009-a-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "assessor-channels/009-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/010-a-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "assessor-channels/010-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/011-a-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "assessor-channels/011-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/012-a-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "assessor-channels/012-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/013-a-stdout.bin",
+    "stdout_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "stderr_path": "assessor-channels/013-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/014-a-stdout.bin",
+    "stdout_sha256": "9166d1c03d08b956ceb545632639533da0175b32042875ae46fa0cebf6bdf2cd",
+    "stderr_path": "assessor-channels/014-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/015-a-stdout.bin",
+    "stdout_sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "stderr_path": "assessor-channels/015-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/016-a-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "assessor-channels/016-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/017-a-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "assessor-channels/017-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/018-a-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "assessor-channels/018-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/019-a-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "assessor-channels/019-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/020-a-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "assessor-channels/020-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/021-a-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "assessor-channels/021-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/022-a-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "assessor-channels/022-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/023-a-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "assessor-channels/023-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "textstats-run-resources/PLUGIN-SOURCE.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/024-a-stdout.bin",
+    "stdout_sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "stderr_path": "assessor-channels/024-a-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/025-b-stdout.bin",
+    "stdout_sha256": "72372c1b88a3f7fe019d9e36a79365f2cefc7fc6fb4c8045ca953d2caa66c77a",
+    "stderr_path": "assessor-channels/025-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/026-b-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "assessor-channels/026-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/027-b-stdout.bin",
+    "stdout_sha256": "933349be42e222b402a110337de279ddbe31f83aab37206d052d0eac99e80f98",
+    "stderr_path": "assessor-channels/027-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/028-b-stdout.bin",
+    "stdout_sha256": "0fecd03e6c48f0bb400e428c394fcd84adfc69c9d2d288ee2da24e0860a0fdb4",
+    "stderr_path": "assessor-channels/028-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/029-b-stdout.bin",
+    "stdout_sha256": "815cab88f7167076d945e9c870020090a869f74821f9d4bb4ff631b496b86f5e",
+    "stderr_path": "assessor-channels/029-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "--git-path",
+      "index"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/030-b-stdout.bin",
+    "stdout_sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+    "stderr_path": "assessor-channels/030-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/031-b-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "assessor-channels/031-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/032-b-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "assessor-channels/032-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/033-b-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "assessor-channels/033-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/034-b-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "assessor-channels/034-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/035-b-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "assessor-channels/035-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/036-b-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "assessor-channels/036-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/037-b-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "assessor-channels/037-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/038-b-stdout.bin",
+    "stdout_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "stderr_path": "assessor-channels/038-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/039-b-stdout.bin",
+    "stdout_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "stderr_path": "assessor-channels/039-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/040-b-stdout.bin",
+    "stdout_sha256": "6e750a0eb154ed0ffa0ef54ad209f981b0757939425c3981dc2a8696fb336855",
+    "stderr_path": "assessor-channels/040-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/041-b-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "assessor-channels/041-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/042-b-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "assessor-channels/042-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/043-b-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "assessor-channels/043-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/044-b-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "assessor-channels/044-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/045-b-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "assessor-channels/045-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/046-b-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "assessor-channels/046-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/047-b-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "assessor-channels/047-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/048-b-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "assessor-channels/048-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "textstats-run-resources/PLUGIN-SOURCE.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/049-b-stdout.bin",
+    "stdout_sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "stderr_path": "assessor-channels/049-b-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/050-c-stdout.bin",
+    "stdout_sha256": "72372c1b88a3f7fe019d9e36a79365f2cefc7fc6fb4c8045ca953d2caa66c77a",
+    "stderr_path": "assessor-channels/050-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/051-c-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "assessor-channels/051-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/052-c-stdout.bin",
+    "stdout_sha256": "1c6140b5dc58ed7b2ab7e288ad84e53f03ab68ec78d7a39491b63a5f7d75524e",
+    "stderr_path": "assessor-channels/052-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/053-c-stdout.bin",
+    "stdout_sha256": "727b1c85e0addb3a4cce2c81cecc5aef81c192fbafe4c559f50f69630ee13c68",
+    "stderr_path": "assessor-channels/053-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/054-c-stdout.bin",
+    "stdout_sha256": "7652be0dff833d382d04fd8d43112082994aa95a41255897873b76ceb890f86b",
+    "stderr_path": "assessor-channels/054-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "--git-path",
+      "index"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/055-c-stdout.bin",
+    "stdout_sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+    "stderr_path": "assessor-channels/055-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/056-c-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "assessor-channels/056-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/057-c-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "assessor-channels/057-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/058-c-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "assessor-channels/058-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/059-c-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "assessor-channels/059-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/060-c-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "assessor-channels/060-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/061-c-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "assessor-channels/061-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/062-c-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "assessor-channels/062-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/063-c-stdout.bin",
+    "stdout_sha256": "bd2b3784a542ec1c734da648b1f946a5f494db0f950f1a24d4e19ee438e4bf83",
+    "stderr_path": "assessor-channels/063-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/064-c-stdout.bin",
+    "stdout_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "stderr_path": "assessor-channels/064-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/065-c-stdout.bin",
+    "stdout_sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "stderr_path": "assessor-channels/065-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/066-c-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "assessor-channels/066-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/067-c-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "assessor-channels/067-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/068-c-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "assessor-channels/068-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/069-c-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "assessor-channels/069-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/070-c-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "assessor-channels/070-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/071-c-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "assessor-channels/071-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/072-c-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "assessor-channels/072-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/073-c-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "assessor-channels/073-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "textstats-run-resources/PLUGIN-SOURCE.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/074-c-stdout.bin",
+    "stdout_sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "stderr_path": "assessor-channels/074-c-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/075-d-stdout.bin",
+    "stdout_sha256": "72372c1b88a3f7fe019d9e36a79365f2cefc7fc6fb4c8045ca953d2caa66c77a",
+    "stderr_path": "assessor-channels/075-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/076-d-stdout.bin",
+    "stdout_sha256": "d744bad01c398e267e5c1e564c5e55a58f3d37d31f83254f234376c5dbcd23cc",
+    "stderr_path": "assessor-channels/076-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/077-d-stdout.bin",
+    "stdout_sha256": "aa3a45e70ed95bc23501b1e486f7b6eaef2f8c807b33ba7e5a22364dcb7e5240",
+    "stderr_path": "assessor-channels/077-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/078-d-stdout.bin",
+    "stdout_sha256": "0fecd03e6c48f0bb400e428c394fcd84adfc69c9d2d288ee2da24e0860a0fdb4",
+    "stderr_path": "assessor-channels/078-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/079-d-stdout.bin",
+    "stdout_sha256": "a0fd14beb709d710321216cd9c88fe5e84c21dfea3f633352c4ecceba71e3ba8",
+    "stderr_path": "assessor-channels/079-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "--git-path",
+      "index"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/080-d-stdout.bin",
+    "stdout_sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+    "stderr_path": "assessor-channels/080-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PROJECT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/081-d-stdout.bin",
+    "stdout_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "stderr_path": "assessor-channels/081-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/ARCHITECTURE.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/082-d-stdout.bin",
+    "stdout_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "stderr_path": "assessor-channels/082-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/DECOMPOSITION.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/083-d-stdout.bin",
+    "stdout_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "stderr_path": "assessor-channels/083-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/084-d-stdout.bin",
+    "stdout_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "stderr_path": "assessor-channels/084-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/085-d-stdout.bin",
+    "stdout_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "stderr_path": "assessor-channels/085-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/086-d-stdout.bin",
+    "stdout_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "stderr_path": "assessor-channels/086-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/layout.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/087-d-stdout.bin",
+    "stdout_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "stderr_path": "assessor-channels/087-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/088-d-stdout.bin",
+    "stdout_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "stderr_path": "assessor-channels/088-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/089-d-stdout.bin",
+    "stdout_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "stderr_path": "assessor-channels/089-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/090-d-stdout.bin",
+    "stdout_sha256": "8389ee3769685d0a8328f8a5091b248b8ac063828b323d54b798550acd17204d",
+    "stderr_path": "assessor-channels/090-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/091-d-stdout.bin",
+    "stdout_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "stderr_path": "assessor-channels/091-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/092-d-stdout.bin",
+    "stdout_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "stderr_path": "assessor-channels/092-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/093-d-stdout.bin",
+    "stdout_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "stderr_path": "assessor-channels/093-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/094-d-stdout.bin",
+    "stdout_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "stderr_path": "assessor-channels/094-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/095-d-stdout.bin",
+    "stdout_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "stderr_path": "assessor-channels/095-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/096-d-stdout.bin",
+    "stdout_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "stderr_path": "assessor-channels/096-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "AGENTS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/097-d-stdout.bin",
+    "stdout_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "stderr_path": "assessor-channels/097-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "SDD-MANAGER.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/098-d-stdout.bin",
+    "stdout_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "stderr_path": "assessor-channels/098-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "cat",
+      "textstats-run-resources/PLUGIN-SOURCE.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d",
+    "exit_code": 0,
+    "stdout_path": "assessor-channels/099-d-stdout.bin",
+    "stdout_sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "stderr_path": "assessor-channels/099-d-stderr.bin",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

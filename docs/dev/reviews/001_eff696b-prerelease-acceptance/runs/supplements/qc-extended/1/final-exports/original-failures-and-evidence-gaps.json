@@ -1,0 +1,82 @@
+{
+  "setup_first_attempt_failures": {
+    "evidence_kind": "Parent tool-transcript-only statement, not independent raw-channel evidence",
+    "operations": "git show HEAD:docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-{PLAN,TASKS,SPEC}.md used absent archived paths; a prior cat used absent consumerCOMMON path",
+    "observed_disposition": "Read-only lookup failures; corrected active docs/dev FEATURE paths and actual assessor source guide paths",
+    "raw_channels_retained": false,
+    "gap": "Exact original failed subprocess stdout/stderr were never exported independently; not reconstructed.",
+    "parent_reported_combined_tool_exit_code": 128
+  },
+  "consumer_first_attempt_failures": [
+    {
+      "operation": "exec_command",
+      "command": "python /tmp/sup-review-read.py a docs/dev/PLAN.md",
+      "result": "CreateProcess rejected: Failed to create unified exec process: exec-server transport disconnected",
+      "exit_code": null,
+      "stdout": null,
+      "stderr": null,
+      "resolution": "Same read retried successfully; no product action occurred."
+    },
+    {
+      "operation": "rg nested instructions",
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "",
+      "meaning": "No docs/dev/AGENTS.md matched in any checkout; absence is not product failure."
+    }
+  ],
+  "consumer_captured_nonzero_commands": [
+    {
+      "ordinal": 26,
+      "argv": [
+        "rg",
+        "--files",
+        "docs/dev",
+        "-g",
+        "AGENTS.md"
+      ],
+      "exit_code": 1,
+      "stdout_path": "consumer-channels/026-stdout.bin",
+      "stderr_path": "consumer-channels/026-stderr.bin"
+    },
+    {
+      "ordinal": 31,
+      "argv": [
+        "rg",
+        "--files",
+        "docs/dev",
+        "-g",
+        "AGENTS.md"
+      ],
+      "exit_code": 1,
+      "stdout_path": "consumer-channels/031-stdout.bin",
+      "stderr_path": "consumer-channels/031-stderr.bin"
+    },
+    {
+      "ordinal": 36,
+      "argv": [
+        "rg",
+        "--files",
+        "docs/dev",
+        "-g",
+        "AGENTS.md"
+      ],
+      "exit_code": 1,
+      "stdout_path": "consumer-channels/036-stdout.bin",
+      "stderr_path": "consumer-channels/036-stderr.bin"
+    },
+    {
+      "ordinal": 41,
+      "argv": [
+        "rg",
+        "--files",
+        "docs/dev",
+        "-g",
+        "AGENTS.md"
+      ],
+      "exit_code": 1,
+      "stdout_path": "consumer-channels/041-stdout.bin",
+      "stderr_path": "consumer-channels/041-stderr.bin"
+    }
+  ]
+}

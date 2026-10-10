@@ -1,0 +1,46 @@
+{
+  "a": {
+    "HEAD": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "head_preserved": true,
+    "tracked_files_preserved": true,
+    "refs_preserved": true,
+    "status_preserved": true,
+    "diff_preserved": true,
+    "raw_index_preserved": true,
+    "index_sha256": "9d0db3e63f498033ff466179c38bad609b639f63442fd00008dbb1c59c18491a",
+    "semantic_index_preserved": true
+  },
+  "b": {
+    "HEAD": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "head_preserved": true,
+    "tracked_files_preserved": true,
+    "refs_preserved": true,
+    "status_preserved": true,
+    "diff_preserved": true,
+    "raw_index_preserved": true,
+    "index_sha256": "2ff6ff77241a6051752a5f9eb36bd722e8b092a78e443c4505f55c67e6ee0883",
+    "semantic_index_preserved": true
+  },
+  "c": {
+    "HEAD": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "head_preserved": true,
+    "tracked_files_preserved": true,
+    "refs_preserved": true,
+    "status_preserved": true,
+    "diff_preserved": true,
+    "raw_index_preserved": true,
+    "index_sha256": "9e9e9baf3e02c25fcabcf75b8d154170e9ebdb6d77c66dae41ab3de6e80aa274",
+    "semantic_index_preserved": true
+  },
+  "d": {
+    "HEAD": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "head_preserved": true,
+    "tracked_files_preserved": true,
+    "refs_preserved": true,
+    "status_preserved": true,
+    "diff_preserved": true,
+    "raw_index_preserved": true,
+    "index_sha256": "9c19028a156f73d95eef0e79441374f1a219b7bf548d26ed6e57651066cb18c9",
+    "semantic_index_preserved": true
+  }
+}
