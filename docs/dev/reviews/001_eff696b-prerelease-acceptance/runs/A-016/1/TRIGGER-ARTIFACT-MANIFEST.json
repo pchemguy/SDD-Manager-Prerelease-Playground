@@ -1,0 +1,70 @@
+{
+  "artifacts": [
+    {
+      "path": "037-a016-consumer-input.md",
+      "sha256": "0e4edad62d1984bafc540490309dd027b42aceafc1ad87919d4f9ade29163a98",
+      "bytes": 2117,
+      "mode": "0o644"
+    },
+    {
+      "path": "037-a016-consumer-observations.json",
+      "sha256": "02d7bbba41844c6c8ac33442d35625e9c7de2e42a2c37e867d54874f09863f05",
+      "bytes": 334097,
+      "mode": "0o644"
+    },
+    {
+      "path": "COMMIT-DELTA.patch",
+      "sha256": "abcee5993eeba15431cb70e495aa6a984d72476cbdcab5ee0919cac9625f0c60",
+      "bytes": 19540,
+      "mode": "0o644"
+    },
+    {
+      "path": "HEAD-COMMIT.txt",
+      "sha256": "2ac4a1098339d97d7ba3e9f4d022de1ceccb0d6a83c1ee572fd5647ecf544356",
+      "bytes": 691,
+      "mode": "0o644"
+    },
+    {
+      "path": "HOLD.json",
+      "sha256": "673b1952ed20bae3752041ac3ad6d0f4f2fca550a5d7f02968d0cf51ec445c59",
+      "bytes": 65978,
+      "mode": "0o644"
+    },
+    {
+      "path": "INDEX.bin",
+      "sha256": "d93a6906aaa06e1db2de5fba689ecf7818333a374c7532012b1d06fa0242ed47",
+      "bytes": 23369,
+      "mode": "0o644"
+    },
+    {
+      "path": "OBJECTS.bundle",
+      "sha256": "fb365d62f0e9fafe0255b716362a6ce4b35de143346afafd8a62365a52483f52",
+      "bytes": 529744,
+      "mode": "0o644"
+    },
+    {
+      "path": "SNAPSHOT.json",
+      "sha256": "a6b28686be36e49ca720b354f184e1179ee28930965ef838cd15135538f35875",
+      "bytes": 70202,
+      "mode": "0o644"
+    },
+    {
+      "path": "STAGED.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    {
+      "path": "TRACKED-WORKFILES.tar",
+      "sha256": "cc1816193ae59759adbc9c0f26828e5e6dfa0e132610b8de9773a5a0c74ebb9e",
+      "bytes": 1136640,
+      "mode": "0o644"
+    },
+    {
+      "path": "UNSTAGED.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    }
+  ]
+}
