@@ -2,12 +2,12 @@
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
   "phase": "P2",
-  "case_id": "A-005",
+  "case_id": "A-006",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Original A-005 Failed retained; separate assessor-pin355e3d3 reassessment Passed with unchanged plugin/current product/provider identities",
+  "role": "consumer",
+  "last_completed_action": "Corrected assessor-pin A-005 Passed published/readback atfa73830; product checkpoint unchanged; fresh phase1 completion input rendered",
   "pending_operation": null,
-  "next_action": "Publish reassessment, verify/fetch, then render fresh A-006 complete phase1 request from corrected Passed checkpoint",
+  "next_action": "Fresh Phase1 completion/integration consumer, then independent full-phase assessment before A-007",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
     "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
@@ -106,6 +106,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-baseline-literals.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-independent-assessment.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/A-005.md",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/HANDOFF.md"
   ]
 }
