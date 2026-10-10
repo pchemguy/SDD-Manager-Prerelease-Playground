@@ -2,12 +2,12 @@
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
   "phase": "P1",
-  "case_id": "A-002",
+  "case_id": "A-003",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "A-002 selection-only independently Passed, product refs/index/files unchanged",
+  "role": "consumer",
+  "last_completed_action": "A-002 independently assessed/published; A-003 ordinary request bound to published A-001",
   "pending_operation": null,
-  "next_action": "Bind and dispatch A-003 tracking to accepted preparation, preserving pre-existing hosted material",
+  "next_action": "Fresh A-003 consumer creates first eligible-phase projection then presents concrete checkpoint before second reconciliation",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -43,6 +43,10 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/repaired-complete-rerun/RESULT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/CONSUMER-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/PRESERVATION-FIXTURE.json"
   ]
 }
