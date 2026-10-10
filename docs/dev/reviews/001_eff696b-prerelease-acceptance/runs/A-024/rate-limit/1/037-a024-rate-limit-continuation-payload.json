@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "identity": "campaign037_phase1_tracking",
+  "evidence_class": "controlled",
+  "project": "TextStats",
+  "source_head": "1e3305c8659045945244c06861079fef879ca3c3",
+  "source_documents": {
+    "docs/dev/TASKS.md": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+  },
+  "phase": {
+    "id": "1",
+    "name": "Named-file utility",
+    "completed": false,
+    "outcome": "Useful documented named-file utility with complete expected failure behavior and verified source distribution",
+    "milestones": [
+      {
+        "id": "1.1",
+        "name": "Named-file counting",
+        "completed": false,
+        "tasks": [
+          {
+            "id": "T-001",
+            "name": "Implement immutable statistics and whole-text counting",
+            "completed": false
+          },
+          {
+            "id": "T-002",
+            "name": "Implement strict file acquisition and complete public API",
+            "completed": false
+          },
+          {
+            "id": "T-003",
+            "name": "Integrate named-file CLI and nonempty product checks",
+            "completed": false
+          },
+          {
+            "id": "T-004",
+            "name": "Review, test and report milestone 1.1",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "id": "1.2",
+        "name": "Failure handling and distribution",
+        "completed": false,
+        "tasks": [
+          {
+            "id": "T-005",
+            "name": "Complete named-file CLI failure and usage handling",
+            "completed": false
+          },
+          {
+            "id": "T-006",
+            "name": "Document public API and runnable named-file usage",
+            "completed": false
+          },
+          {
+            "id": "T-007",
+            "name": "Build and verify isolated source distribution",
+            "completed": false
+          },
+          {
+            "id": "T-008",
+            "name": "Review, test and report milestone 1.2",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "id": "1.3",
+        "name": "Phase 1 review",
+        "completed": false,
+        "tasks": [
+          {
+            "id": "T-009",
+            "name": "Review, test and report phase 1",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  "implementation_started": false,
+  "scope": "Controlled maintained tracking summary only; no live hosted projection or task/parent closure"
+}

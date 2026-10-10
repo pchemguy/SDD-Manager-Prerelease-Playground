@@ -4,14 +4,10 @@
   "phase": "P4",
   "case_id": "A-024",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Exact clarified429trigger publishede0e22be; onlyfacilityCONTROL restored to normal",
-  "pending_operation": {
-    "kind": "api",
-    "status": "interrupted",
-    "description": "Controlled summary publication to campaign037_phase1_tracking remains pending"
-  },
-  "next_action": "Separate fresh continuation on same operation/destination; independent assisted final assessment",
+  "role": "coordinator",
+  "last_completed_action": "Independent assistedPass: originalNottriggered discovery stop/clarification and actual429/freshsameidentity recovery retained",
+  "pending_operation": null,
+  "next_action": "Publish independent grade; preserve fixture/refs",
   "checkpoint_refs": {
     "product_branch": "trial/037-a024-rate-limit",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -21,16 +17,28 @@
     "remote": "origin"
   },
   "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/RUN-STATE.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/HANDOFF.md",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/tracking_facility.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/037-a024-rate-limit-assessment-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/037-a024-rate-limit-trigger-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/037-a024-rate-limit-reached-snapshot.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONTROL.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONTINUATION-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONTINUATION-HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CLARIFICATION.md",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/SETUP.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONSUMER-CLARIFIED-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/037-a024-rate-limit-trigger-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/037-a024-rate-limit-continuation-payload.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/RESTORATION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/BINDINGS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/PUBLIC-INTERFACE.md",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/RESTORATION.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONTINUATION-HANDOFF.md"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/CONSUMER-FIRST-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/037-a024-rate-limit-deterministic-checks.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/PUBLIC-INTERFACE.md"
   ],
   "variant": "rate-limit"
 }
