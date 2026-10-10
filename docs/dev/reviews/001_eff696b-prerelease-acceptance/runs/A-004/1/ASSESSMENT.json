@@ -5,7 +5,7 @@
   "consumer_workflow_outcome": "Passed",
   "agent_behavior_assessed": true,
   "literal_contract_conflict": true,
-  "coordinator_disposition_required": false,
+  "coordinator_disposition_required": true,
   "assessment_scope": "Selected first task, fresh sealed consumer state; no product, Git or hosted mutations by assessor",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
@@ -44,7 +44,7 @@
   ],
   "evidence": {
     "consumer_observations_sha256": "13b5bd5f8c5c3ba58f2b018a97e1b25677f43b2ada7466fd277b749befbcc2a1",
-    "independent_check_evidence": "INDEPENDENT-CHECK-EVIDENCE.json",
+    "independent_check_evidence": "037-a004-independent-check-evidence.json",
     "independent_check_evidence_sha256": "4195d8f3e4e4a0cdf4dc873d9aa3cb4d2f06737a306bcec7608d5e0d6ca1d114",
     "governing_qc_hashes": {
       "docs/dev/PROJECT.md": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
