@@ -226,3 +226,8 @@ Actual A008independent Passed published0611f1b and sourceprogress eb10d24 verifi
 Fresh continuation published retained T-001 commit 0d14a332 to the disposable local destination before tests, edits, selection or another commit. Independent assessment confirms exact commit, index and tracked workfiles survived the interruption; all three original deterministic checks Passed. Complete verified Git objects and exact recovery artifacts are exported in runs/A-016/1/final-exports.
 
 The controlled hold, bounded release and coordinator manifest correction remain recorded separately. This proves controlled local recovery; it does not claim live GitHub task-branch delivery, native process termination or strict filesystem isolation. Original-pin required totals are 18 Passed, 2 Failed and 12 unresolved; corrected A004/A005 reassessments remain separate. Full readiness remains Open.
+
+
+## A018 corrected actual publication rejection independently observed
+
+Original attempt remains Not triggered after concrete review found argparse option abbreviation violated unknown-option rejection. A fresh corrected attempt disabled abbreviation after actual RED, passed 25 unit and 14 integration tests, and completed T-005 in 7aa3375. Native local destination hook actually rejected publication; independent checks confirm retained clean commit/index/workfiles and remote noncontainment. Complete trigger objects and exact hook/producer/command records are retained. Publish these before bounded release and fresh publication continuation; aggregate assessment is pending.

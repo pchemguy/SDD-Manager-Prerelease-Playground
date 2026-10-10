@@ -1,0 +1,245 @@
+commit 7aa3375da978e31f3a7d5ba015adc9cb68df7a12
+Author:     Codex <codex@openai.com>
+AuthorDate: Sat Oct 10 11:02:34 2026 -0400
+Commit:     Codex <codex@openai.com>
+CommitDate: Sat Oct 10 11:02:34 2026 -0400
+
+    [T-005] Complete named-file failure and strict usage handling
+    
+    Translate expected file/read/decode errors to status 1 while preserving silent API exceptions. Reject undocumented long-option abbreviations before acquisition. Retain original rejection and test evidence, actual repair RED/GREEN, 25 unit and 14 integration passing checks, concrete delegated acceptance, and initial T-005 completion in this single closing result. Stop before later tasks and integration; publish only to local trial-delivery.
+
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 4727e95..95eb4b7 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -33,7 +33,7 @@ The user requested preparation through TASKS and stop before implementation. The
+             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.
+             Report: [milestone 1.1 review](reports/phases/1/1.1.md).
+     - [ ] Milestone 1.2 — Failure handling and distribution
+-        - [ ] T-005 — Complete named-file CLI failure and usage handling
++        - [x] T-005 — Complete named-file CLI failure and usage handling
+             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.
+             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.
+             Depends on: T-004 and milestone 1.1 completion/closure.
+@@ -152,3 +152,23 @@ Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty inpu
+ Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.
+ 
+ T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.
++
++## T-005 completion evidence
++
++Selected T-005 only on isolated `trial/037-a018-rejected`, starting from clean milestone 1.1 completion `7d003c1cf31c994340d8644e95990ef2253754ed`. Startup `git push trial-delivery HEAD:refs/heads/trial/037-a018-rejected` returned Everything up-to-date; `git ls-remote trial-delivery refs/heads/trial/037-a018-rejected` read back that exact tip before task work. The current bounded input supersedes historical stops/branch naming for this trial, declines hosted tracking and excludes GitHub writes, credentials, default-branch integration and later tasks. Latest task closing diff has the single T-004 subject, substantive report/evidence and initial owning checkbox together. Current governing SPEC/PLAN/layout/design hashes match accepted QC; completion annotations do not change contracts.
++
++Delivered CLI-only translation of expected OSError and UnicodeDecodeError into status 1 with identifying input/cause stderr, empty stdout and no traceback. Acquisition/counting finishes before success output. Argparse retains useful status 2 usage diagnostics and validates before acquisition; help/success/BOM/options/dash filenames retain prior behavior. The file API keeps silent exceptions and owned-handle cleanup; updated CLI source documentation states the boundary.
++
++Tests preceded implementation. `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests -v` collected seven tests and returned 1 with four expected behavioral errors: missing, unreadable, controlled read and strict decode exceptions escaped instead of returning 1. Existing success/help/usage tests passed. After the narrow handler change, `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` returned 0 with 24 unit and 13 integration tests, no skips/warnings. Inspection found the inherited API import-smoke child lacked explicit -B (the no-bytecode environment was inherited); its invocation was corrected, and the same full runner again returned 0 with 24/13 tests. These are distinct observed runs, with the second covering explicit -B on every test child; no persistence or failed-check retry occurred.
++
++Coverage includes controlled missing/unreadable/read/decode CLI errors with input/cause/status/streams and owned-stream closure; validation before any acquisition for missing/extra input and unknown options; real module subprocess missing/bad-byte inputs with both BOM policies, no traceback/partial stdout and byte preservation; retained complete API/core/named-file/BOM/help/dash behavior; independent nonempty discovery and runner failure propagation. Runtime is Python 3.12.14. `git diff --check` passed. Source/docstring/scope inspection found no T-005 contract blocker. Other runtimes/platform permission behavior, public guide/distribution, JSON/stdin/range and milestone/phase review remain outside this task. Concrete artifact acceptance is delegated to the coordinator for the exact presented content. T-005 status remains pending that assessment and closing persistence; all later tasks and milestone 1.2/phase remain incomplete.
++
++### Retained rejection and scoped repair
++
++The preceding readiness assessment was rejected by actual coordinator artifact review: argparse accepted undocumented `--keep` as `--keep-bom`, violating R-008's unknown-option status 2 before acquisition. The independent original probe returned status 0 with counts. That finding and the original 24/13 passing-suite evidence remain historical; neither established complete unknown-option handling. The prior worker retained five unstaged T-005 files, left the task unchecked and created no closing commit. Continuation reused HEAD `7d003c1cf31c994340d8644e95990ef2253754ed`; exact `trial-delivery` branch readback matched, with no outstanding commit or new startup push needed. Accepted governing hashes remain unchanged; only completion evidence/status is maintained.
++
++New regression tests preceded this repair. `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests.test_long_option_abbreviations_are_rejected_before_acquisition tests.integration.test_cli.ModuleCliTests.test_long_option_abbreviations_have_usage_status -v` returned 1: two tests, 32 expected behavioral subtest failures. Keep-BOM prefixes triggered acquisition and help prefixes returned 0; real valid/missing-file subprocesses returned 0/1 rather than 2. Collection and runtime succeeded. Setting argparse `allow_abbrev=False` repairs the parser policy without changing accepted option spellings. The identical focused command then returned 0, two tests passed. `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` returned 0 with 25 unit and 14 integration tests, no skips/warnings. All Python children use explicit `-B` and inherit the no-bytecode environment.
++
++Regression coverage rejects every strict long-option prefix of `--keep-bom` and `--help` before and after input with status 2, useful stderr, empty stdout and no acquisition; real subprocess coverage includes valid and nonexistent inputs with byte preservation. Existing exact help/BOM spelling, dash termination, expected errors, API silence and lifetime regressions pass. Scoped source/docstring and final diff review finds the original parser finding repaired; no governing-document amendment or later task is needed. `git diff --check` passes. The corrected concrete artifact remains pending delegated coordinator review before the initial checkbox and closing commit. No persistence attempt, publication retry, control/configuration change, live API operation or integration occurred during repair.
++
++The delegated coordinator inspected the corrected concrete source/tests and retained repair evidence and accepted this T-005 artifact before its initial checkbox/closing commit. Reviewed SHA-256 identities: `textstats/cli.py` `14b644a650bb38eeaec8a95b9df2a525bd7956f69f0544d3a8e18aa553257d8d`; `tests/unit/test_cli.py` `45d75eee0821fe3b0715c06a55000da6113c1857cc15f2fbecfed06dc160dc10`; `tests/integration/test_cli.py` `f8b5628b475b7f07c1ec5eb4ed903b45846e1646f2a02b86aa68196af1cca670`; retained `tests/integration/test_api.py` `e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6`; pre-completion TASKS `1fc199dd940a3854e531517d2399f572310cd45239d3060391bb3b965fb497cb`. The concrete decision finds `allow_abbrev=False`, pre-acquisition and real valid/missing-file prefix checks repair R-008, with expected-error translation/status/lifetime/input preservation coherent. This acceptance annotation and T-005's initial checkbox accompany its remaining result in one closing commit. Publication is a separate observed boundary; stop on its first held/failed operation, without retry or bypass. T-006, milestone 1.2, Phase 1 and integration remain outside the selected completed task.
+diff --git a/tests/integration/test_api.py b/tests/integration/test_api.py
+index a801dbb..4db902d 100644
+--- a/tests/integration/test_api.py
++++ b/tests/integration/test_api.py
+@@ -51,7 +51,7 @@ class TextApiTests(unittest.TestCase):
+         self.assertEqual(stderr.getvalue(), "")
+ 
+     def test_initial_import_is_silent_in_fresh_process(self):
+-        result = subprocess.run([sys.executable, "-c", "import textstats"], capture_output=True, text=True)
++        result = subprocess.run([sys.executable, "-B", "-c", "import textstats"], capture_output=True, text=True)
+         self.assertEqual(result.returncode, 0, result.stderr)
+         self.assertEqual(result.stdout, "")
+         self.assertEqual(result.stderr, "")
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+index 663662c..be5cffb 100644
+--- a/tests/integration/test_cli.py
++++ b/tests/integration/test_cli.py
+@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
+ 
+ class ModuleCliTests(unittest.TestCase):
+     def invoke(self, *args, cwd=ROOT):
+-        return subprocess.run([sys.executable, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
++        return subprocess.run([sys.executable, '-B', '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+ 
+     def test_named_file_matrix_and_bom_option_order(self):
+         cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)), ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
+@@ -49,8 +49,45 @@ class ModuleCliTests(unittest.TestCase):
+                 self.assertEqual(path.read_bytes(), b'alpha beta\n')
+ 
+     def test_exactly_one_input_is_required(self):
+-        for args in [[], ['one', 'two']]:
++        for args in [[], ['one', 'two'], ['--unknown', 'missing']]:
+             result = self.invoke(*args)
+             self.assertEqual(result.returncode, 2)
+             self.assertEqual(result.stdout, '')
+             self.assertIn('usage:', result.stderr)
++
++    def test_long_option_abbreviations_have_usage_status(self):
++        with tempfile.TemporaryDirectory() as directory:
++            valid = Path(directory) / 'valid.txt'
++            missing = Path(directory) / 'missing.txt'
++            raw = b'alpha beta\n'
++            valid.write_bytes(raw)
++            for option in ['--keep', '--keep-bo', '--hel']:
++                for path in [valid, missing]:
++                    for args in [[option, str(path)], [str(path), option]]:
++                        with self.subTest(args=args):
++                            result = self.invoke(*args)
++                            self.assertEqual(result.returncode, 2)
++                            self.assertEqual(result.stdout, '')
++                            self.assertIn('usage:', result.stderr)
++                            self.assertIn(option, result.stderr)
++                            self.assertNotIn('Traceback', result.stderr)
++            self.assertEqual(valid.read_bytes(), raw)
++            self.assertFalse(missing.exists())
++
++    def test_missing_and_invalid_utf8_files_have_input_failure_status(self):
++        with tempfile.TemporaryDirectory() as directory:
++            missing = Path(directory) / 'missing.txt'
++            invalid = Path(directory) / 'invalid.txt'
++            raw = b'valid\n\xff'
++            invalid.write_bytes(raw)
++            for path, cause in [(missing, 'No such file'), (invalid, 'utf-8')]:
++                for args in [[str(path)], ['--keep-bom', str(path)]]:
++                    with self.subTest(args=args):
++                        result = self.invoke(*args)
++                        self.assertEqual(result.returncode, 1)
++                        self.assertEqual(result.stdout, '')
++                        self.assertIn(str(path), result.stderr)
++                        self.assertIn(cause, result.stderr)
++                        self.assertNotIn('Traceback', result.stderr)
++            self.assertEqual(invalid.read_bytes(), raw)
++            self.assertFalse(missing.exists())
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+index 2a5787a..d4c0ea5 100644
+--- a/tests/unit/test_cli.py
++++ b/tests/unit/test_cli.py
+@@ -48,6 +48,63 @@ class CliTests(unittest.TestCase):
+             self.assertIn('--keep-bom', out.getvalue())
+             self.assertEqual(err.getvalue(), '')
+ 
++    def test_usage_is_validated_before_acquisition(self):
++        for args in [[], ['one', 'two'], ['--unknown', 'named']]:
++            with self.subTest(args=args):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.cli.count_file') as counter:
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        self.assertEqual(main(args), 2)
++                counter.assert_not_called()
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('usage:', err.getvalue())
++                self.assertIn('error:', err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++    def test_long_option_abbreviations_are_rejected_before_acquisition(self):
++        for option in ['--k', '--ke', '--kee', '--keep', '--keep-', '--keep-b', '--keep-bo', '--h', '--he', '--hel']:
++            for args in [[option, 'named'], ['named', option]]:
++                with self.subTest(args=args):
++                    out, err = io.StringIO(), io.StringIO()
++                    with patch('textstats.cli.count_file', return_value=TextStats(1, 1)) as counter:
++                        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                            status = main(args)
++                    counter.assert_not_called()
++                    self.assertEqual(status, 2)
++                    self.assertEqual(out.getvalue(), '')
++                    self.assertIn('usage:', err.getvalue())
++                    self.assertIn(option, err.getvalue())
++                    self.assertNotIn('Traceback', err.getvalue())
++
++    def test_open_failures_identify_input_and_cause(self):
++        for failure in [FileNotFoundError('missing cause'), PermissionError('unreadable cause')]:
++            with self.subTest(failure=type(failure)):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.io.open', side_effect=failure, create=True):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        self.assertEqual(main(['named']), 1)
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('named', err.getvalue())
++                self.assertIn(str(failure), err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++    def test_read_and_decode_failures_close_handles_without_partial_output(self):
++        class BrokenReader(io.BytesIO):
++            def read(self, *args):
++                raise OSError('controlled read cause')
++        for stream, cause in [(BrokenReader(b'valid'), 'controlled read cause'),
++                              (io.BytesIO(b'valid\n\xff'), 'utf-8')]:
++            with self.subTest(cause=cause):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.io.open', return_value=stream, create=True):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        self.assertEqual(main(['named']), 1)
++                self.assertTrue(stream.closed)
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('named', err.getvalue())
++                self.assertIn(cause, err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
+ 
+ class CheckRunnerTests(unittest.TestCase):
+     def invoke_fixture(self, unit_source, integration_source):
+@@ -68,7 +125,7 @@ class CheckRunnerTests(unittest.TestCase):
+             fixture.mkdir()
+             (fixture / '__init__.py').touch()
+             (fixture / 'test_foreign.py').write_text('raise RuntimeError("workflow fixture collected")\n')
+-            return subprocess.run([sys.executable, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
++            return subprocess.run([sys.executable, '-B', str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+ 
+     GOOD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(2 + 2, 4)\n'
+     BAD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.fail("controlled product failure")\n'
+diff --git a/textstats/cli.py b/textstats/cli.py
+index 1f99a69..98f2378 100644
+--- a/textstats/cli.py
++++ b/textstats/cli.py
+@@ -1,10 +1,12 @@
+ """Named-file CLI parsing and exact text presentation.
+ 
+-Milestone 1.1 delivers success, BOM policy, option termination and help.
+-Complete input-failure diagnostics belong to the following milestone.
++Invocation validation rejects abbreviated options before acquisition. Expected
++file/read/decode failures produce identifying stderr and status 1 without partial
++stdout or traceback.
+ """
+ 
+ import argparse
++import sys
+ from .io import count_file
+ 
+ 
+@@ -15,19 +17,23 @@ def main(argv: list[str] | None = None) -> int:
+         argv: Invocation arguments excluding the executable; None uses sys.argv.
+ 
+     Returns:
+-        Zero on success/help or argparse's usage status on invalid invocation.
++        Zero on success/help, one on file/read/decode failure, or two for usage.
+ 
+     Help and usage validate without acquiring input. Before stdin delivery a
+-    literal '-' remains a named filename. Expected file/decode exceptions still
+-    propagate here until the failure-handling task is delivered.
++    literal '-' remains a named filename. Expected OSError and UnicodeDecodeError
++    are translated only here; the silent file API retains its exceptions.
+     """
+-    parser = argparse.ArgumentParser(prog='python -m textstats', description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
++    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
+     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
+     parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')
+     try:
+         args = parser.parse_args(argv)
+     except SystemExit as exit_request:
+         return int(exit_request.code)
+-    stats = count_file(args.input, strip_bom=not args.keep_bom)
++    try:
++        stats = count_file(args.input, strip_bom=not args.keep_bom)
++    except (OSError, UnicodeDecodeError) as failure:
++        print(f'{parser.prog}: {args.input!r}: {failure}', file=sys.stderr)
++        return 1
+     print(f'lines={stats.lines} words={stats.words}')
+     return 0

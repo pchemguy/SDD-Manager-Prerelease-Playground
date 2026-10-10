@@ -4,17 +4,17 @@
   "phase": "P4",
   "case_id": "A-018",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Originalattempt independentlyNottriggered; actualargparseabbreviation contractfinding/partialworkexported",
+  "role": "assessor",
+  "last_completed_action": "Corrected fresh T-005 commit actually rejected by native destination hook; independently verified clean retained work and remote noncontainment",
   "pending_operation": {
-    "kind": "task",
+    "kind": "push",
     "status": "interrupted",
-    "description": "T005partialwork retainedunchecked; scopedunknownoption regressionrepair pending beforepublication"
+    "description": "Retained T-005 commit 7aa3375 rejected; local destination remains 7d003c1"
   },
-  "next_action": "Publishoriginalattemptexports then separatefreshscopedrepair worker throughactualpersistence/publicationboundary",
+  "next_action": "Publish exact trigger exports before bounded external facility release and fresh continuation",
   "checkpoint_refs": {
     "product_branch": "trial/037-a018-rejected",
-    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "product_commit": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12",
     "integration_branch": "main",
     "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
