@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
-  "phase": "P2",
-  "case_id": "A-006",
+  "phase": "P3",
+  "case_id": "A-007",
   "attempt": 1,
-  "role": "assessor",
-  "last_completed_action": "A-006 independently Passed: actual full Phase1 integrated, checked and published",
+  "role": "consumer",
+  "last_completed_action": "A-006 independent Passed published at39f4c3c; source CP-016 published10019e3; exact current-state JSON handoff rendered",
   "pending_operation": null,
-  "next_action": "Publish full A-006 assessment and source CP-016; then fresh A-007 JSON milestone consumer",
+  "next_action": "Fresh ordinary JSON milestone consumer; then independent assessment before A-008",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
@@ -165,6 +165,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-independent-check-evidence.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-distribution-literals.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-distribution-provenance.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-baseline-literals.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-baseline-literals.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/BINDINGS.json"
   ]
 }
