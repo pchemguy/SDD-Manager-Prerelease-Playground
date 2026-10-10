@@ -1,6 +1,6 @@
 # TextStats
 
-Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and exact text output. Named-file line ranges are delivered; stdin remains planned.
+Count logical lines and Unicode whitespace words in complete text, a named UTF-8 file or binary stdin. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and command support BOM policy, clean errors and exact text output. Named-file and stdin line ranges are delivered.
 
 ## Quick start
 
@@ -22,7 +22,7 @@ python -c "from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\n'
 python -m textstats -- -sample
 ```
 
-BOM-only input produces `lines=0 words=0` by default and `lines=1 words=1` with `--keep-bom`. The dash-prefixed file produces `lines=1 words=2`. Options can appear before or after INPUT; `--` ends option parsing. At this phase a literal `-` is a filename. Exactly one file is required.
+BOM-only input produces `lines=0 words=0` by default and `lines=1 words=1` with `--keep-bom`. The dash-prefixed file produces `lines=1 words=2`. Options can appear before or after INPUT; `--` ends option parsing. A literal `-` reads stdin; `./-` addresses a file named `-`. Exactly one input is required.
 
 Missing, unreadable, read-failing or invalid UTF-8 input returns status 1 with identifying input/cause stderr, no traceback and empty stdout. Missing/extra inputs or unknown options return status 2 with useful usage/error stderr and empty stdout. Invocation validation precedes file access. No partial statistics are emitted.
 
@@ -81,10 +81,37 @@ python -m textstats --lines 1:1 bad-range.txt
 
 The first four commands return 2; the last returns 1 for strict decoding, empty
 stdout and identifying stderr without a traceback. `--` still permits
-range-selected dash-prefixed files, and literal `-` is still a named file.
+range-selected dash-prefixed files; use `./-` for a named file called `-`.
 Omitting `--lines` retains whole-input behavior. Public API functions remain
-whole-input with unchanged signatures. Future stdin acquisition is deferred;
-the normalized selection semantics do not depend on how complete text is acquired.
+whole-input with unchanged signatures. The same normalized selection semantics
+apply to stdin after complete strict decode.
+
+## Binary UTF-8 stdin
+
+Use `-` to read stdin bytes through EOF, independently of the text locale.
+The utility never closes this borrowed stream. Whole-input and range counting
+use the same BOM policy and exact text output as named files:
+
+```bash
+printf 'alpha beta\r\nbeta\rlast two\n' | python -B -m textstats -
+printf '\357\273\277' | python -B -m textstats --keep-bom -
+printf 'alpha beta\nbeta\nlast two' | python -B -m textstats - --lines=2:99
+printf 'a\n\357\273\277' | python -B -m textstats --lines 2:2 -
+printf '' | python -B -m textstats -
+```
+
+The outputs have counts 3/5, 1/1, 2/3, 1/1 and 0/0, respectively, with status 0
+and empty stderr. An exposed interior BOM remains a word. Decode the complete
+input before selection: bad bytes after END still return status 1 identifying
+stdin and cause, with empty stdout and no traceback. Read failures do the same.
+Parsing/validation and help precede input acquisition. A `-` token after `--`
+also means stdin; use `./-` for the actual named file.
+
+```bash
+printf 'ok\n\377' | python -B -m textstats --lines 1:1 -
+```
+
+This returns status 1, empty stdout and a strict UTF-8 diagnostic for stdin.
 
 ## Python API
 

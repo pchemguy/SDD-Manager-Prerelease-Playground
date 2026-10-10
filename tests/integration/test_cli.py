@@ -12,6 +12,83 @@ from textstats import TextStats, count_file
 ROOT = Path(__file__).resolve().parents[2]
 
 
+class StdinModuleTests(unittest.TestCase):
+    def invoke(self, args, raw, *, locale='C', cwd=ROOT):
+        return subprocess.run([sys.executable, '-B', '-m', 'textstats', *args], input=raw,
+                              cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT),
+                              'PYTHONDONTWRITEBYTECODE': '1', 'LC_ALL': locale,
+                              'PYTHONUTF8': '0', 'PYTHONCOERCECLOCALE': '0'}, capture_output=True)
+
+    def assert_counts(self, args, raw, expected, **kwargs):
+        result = self.invoke(args, raw, **kwargs)
+        self.assertEqual((result.returncode, result.stdout, result.stderr),
+                         (0, f'lines={expected[0]} words={expected[1]}\n'.encode(), b''))
+
+    def test_binary_stdin_matrix_is_independent_of_text_locale(self):
+        cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)),
+                 ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)),
+                 ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
+        for locale in ['C', 'C.UTF-8']:
+            for text, default, retained in cases:
+                for args, expected in [(['-'], default), (['--keep-bom', '-'], retained),
+                                       (['-', '--keep-bom'], retained)]:
+                    with self.subTest(locale=locale, text=text, args=args):
+                        self.assert_counts(args, text.encode(), expected, locale=locale)
+
+    def test_stdin_range_anchors_and_both_spellings(self):
+        anchors = [('alpha beta\nbeta\nlast two', '2:3', (2, 3), (2, 3)),
+                   ('alpha beta\nbeta\nlast two', '2:99', (2, 3), (2, 3)),
+                   ('alpha beta\nbeta\nlast two', '4:99', (0, 0), (0, 0)),
+                   ('a\n\n', '2:9', (1, 0), (1, 0)),
+                   ('a\r\nb c\rd\n', '2:3', (2, 3), (2, 3)),
+                   ('a\n\ufeff', '2:2', (1, 1), (1, 1)), ('', '1:99', (0, 0), (0, 0)),
+                   ('\ufeff', '1:1', (0, 0), (1, 1)), ('\ufeff\ufeff', '1:1', (1, 1), (1, 1)),
+                   ('alpha\u2028beta', '1:1', (1, 2), (1, 2)), ('\n', '1:1', (1, 0), (1, 0))]
+        for text, endpoint, default, retained in anchors:
+            for keep, expected in [(False, default), (True, retained)]:
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    self.assert_counts([*flags, '-', *spelling], text.encode(), expected)
+
+    def test_stdin_option_permutations_and_unbounded_endpoints(self):
+        import itertools
+        raw = b'alpha beta\nbeta\nlast two'
+        for spelling in [('--lines', '2:3'), ('--lines=2:3',)]:
+            for groups in itertools.permutations([spelling, ('--keep-bom',)]):
+                for position in range(3):
+                    ordered = list(groups)
+                    ordered.insert(position, ('-',))
+                    self.assert_counts([a for group in ordered for a in group], raw, (2, 3))
+        huge = '9' * 5001
+        for endpoint, expected in [('2:' + huge, (2, 3)), (huge + ':' + huge, (0, 0)),
+                                   ('0' * 5000 + '2:' + '0' * 5000 + '3', (2, 3))]:
+            for keep in [False, True]:
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    self.assert_counts([*(['--keep-bom'] if keep else []), *spelling, '-'], raw, expected)
+
+    def test_stdin_complete_decode_and_usage_failures(self):
+        for args in [['-'], ['--keep-bom', '-'], ['--lines=1:1', '-']]:
+            result = self.invoke(args, b'valid\n\xff')
+            self.assertEqual((result.returncode, result.stdout), (1, b''))
+            self.assertIn(b'stdin', result.stderr)
+            self.assertIn(b'utf-8', result.stderr)
+            self.assertNotIn(b'Traceback', result.stderr)
+        for args in [['--json', '-'], ['--lines=0:1', '-'], ['-', 'extra'], ['--unknown', '-']]:
+            result = self.invoke(args, b'\xff')
+            self.assertEqual((result.returncode, result.stdout), (2, b''))
+            self.assertIn(b'usage:', result.stderr)
+            self.assertNotIn(b'Traceback', result.stderr)
+
+    def test_explicit_dash_file_is_distinct_from_stdin(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / '-'
+            path.write_bytes(b'alpha beta\n')
+            self.assert_counts(['./-'], b'', (1, 2), cwd=directory)
+            self.assert_counts(['--lines=1:1', '--', './-'], b'other', (1, 2), cwd=directory)
+            self.assert_counts(['--', '-'], b'other', (1, 1), cwd=directory)
+            self.assertEqual(path.read_bytes(), b'alpha beta\n')
+
+
 class ModuleCliTests(unittest.TestCase):
     def test_removed_json_usage_even_on_missing_or_undecodable_file(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -77,7 +154,7 @@ class ModuleCliTests(unittest.TestCase):
             for name in ['-sample', '--keep-bom', '-']:
                 path = Path(directory) / name
                 path.write_bytes(b'alpha beta\n')
-                result = self.invoke('--', name, cwd=directory)
+                result = self.invoke('--', './-' if name == '-' else name, cwd=directory)
                 self.assertEqual((result.returncode, result.stdout, result.stderr), (0, 'lines=1 words=2\n', ''))
                 self.assertEqual(path.read_bytes(), b'alpha beta\n')
 
@@ -187,6 +264,6 @@ class RangeModuleTests(unittest.TestCase):
             for name in ['-sample', '--lines', '--json', '-']:
                 path = Path(directory) / name
                 path.write_bytes(b'a\nb c')
-                args = ['--lines', '2:2'] + ['--', name]
+                args = ['--lines', '2:2'] + ['--', './-' if name == '-' else name]
                 self.assert_counts(self.invoke(*args, cwd=directory), (1, 2))
                 self.assertEqual(path.read_bytes(), b'a\nb c')

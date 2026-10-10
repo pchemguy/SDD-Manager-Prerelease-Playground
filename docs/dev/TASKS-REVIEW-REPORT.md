@@ -16,9 +16,9 @@ R-001–R-008/R-010–R-013 and F-001–F-004 are unchanged; JSON delivery ident
 | `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
 | `PLAN-REVIEW-REPORT.md` | `f3d5717d63571597a2da28cb2ddf720c8ab0b684684404cc0a5e3ce74c02612a` |
 | `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
-| `TASKS.md` | `f97209188f0adbc95f0ca4001e0634b78f6c7800b169cbb9839d1af3cb885261` |
+| `TASKS.md` | `ee2cf50049760f27783952ebabf45bd0a0256dd39f5c6582216847f0a090e1ca` |
 
-TASKS remains sole owner: 24 stable identities, 21 active/17 checked/four pending T-014–T-017 in this T-013 candidate; three retired historical identities have no executable checkbox. Counts reflect completion status only.
+TASKS remains sole owner: 24 stable identities, 21 active/18 checked/three pending T-015–T-017 in this T-014 candidate; three retired historical identities have no executable checkbox. Counts reflect completion status only.
 
 No unresolved preparation finding. Governing source hashes above identify the exact current equivalent state; task results/tests and runtime acceptance remain in owning TASKS evidence.
 

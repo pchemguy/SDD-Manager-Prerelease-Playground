@@ -170,8 +170,8 @@ def verify_archive(archive: Path) -> int:
         for name in ['-sample', '-', '--json']:
             path = root / name
             path.write_bytes(b'alpha beta\nbeta')
-            for arguments, expected in [(['--', name], (2, 3)),
-                                        (['--lines=2:2', '--', name], (1, 1))]:
+            for arguments, expected in [(['--', './-' if name == '-' else name], (2, 3)),
+                                        (['--lines=2:2', '--', './-' if name == '-' else name], (1, 1))]:
                 check_range(arguments, expected)
                 assert path.read_bytes() == b'alpha beta\nbeta'
         for option in ['--json', '--json=true', '--j']:

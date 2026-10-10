@@ -1,4 +1,4 @@
-"""Named-file range parsing and exact text presentation.
+"""Named-file/stdin range parsing and exact text presentation.
 
 Expected acquisition/decode failures produce an identifying stderr diagnostic
 and status 1; invocation errors produce status 2 before acquisition.
@@ -6,7 +6,7 @@ and status 1; invocation errors produce status 2 before acquisition.
 
 import argparse
 import sys
-from .io import count_file, _read_file_text
+from .io import count_file, _read_file_text, _read_stream_text
 from .core import _normalize_text, _select_lines, _count_normalized
 
 
@@ -34,7 +34,7 @@ class _RangeAction(argparse.Action):
 
 
 def main(argv: list[str] | None = None) -> int:
-    """Parse one named file and emit its completed counts.
+    """Parse one named file or borrowed binary stdin and emit completed counts.
 
     Args:
         argv: Invocation arguments excluding the executable; None uses sys.argv.
@@ -45,27 +45,35 @@ def main(argv: list[str] | None = None) -> int:
     Range validation precedes acquisition; complete strict decode precedes
     once-only BOM normalization, preserved selection and normalized counting.
     The public API remains whole-input. Help never acquires input.
-    Before stdin delivery a literal '-' remains a named filename. Expected
-    file/decode failures are translated without a traceback; the public file
+    A literal '-' reads sys.stdin.buffer through EOF without closing it;
+    './-' addresses a named file. Expected input/decode failures are translated
+    without a traceback; the public file
     API retains its exceptions.
     """
-    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
+    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in UTF-8 input.')
     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
     parser.add_argument('--lines', action=_RangeAction, metavar='START:END', help='select inclusive positive ASCII decimal logical lines (one range only)')
-    parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')
+    parser.add_argument('input', metavar='INPUT', help='named UTF-8 file or - for binary stdin (use ./- for a file named -; -- before dash-prefixed names)')
     try:
         args = parser.parse_args(argv)
     except SystemExit as exit_request:
         return int(exit_request.code)
     try:
-        if args.lines is None:
+        if args.input == '-':
+            text = _read_stream_text(sys.stdin.buffer)
+            normalized = _normalize_text(text, not args.keep_bom)
+            if args.lines is not None:
+                normalized = _select_lines(normalized, *args.lines)
+            stats = _count_normalized(normalized)
+        elif args.lines is None:
             stats = count_file(args.input, strip_bom=not args.keep_bom)
         else:
             text = _read_file_text(args.input)
             normalized = _normalize_text(text, not args.keep_bom)
             stats = _count_normalized(_select_lines(normalized, *args.lines))
     except (OSError, UnicodeDecodeError) as failure:
-        print(f"textstats: {args.input!r}: {failure}", file=sys.stderr)
+        source = 'stdin' if args.input == '-' else repr(args.input)
+        print(f"textstats: {source}: {failure}", file=sys.stderr)
         return 1
     print(f'lines={stats.lines} words={stats.words}')
     return 0

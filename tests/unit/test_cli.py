@@ -9,9 +9,59 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from types import SimpleNamespace
 
 from textstats import TextStats
 from textstats.cli import main
+
+
+class StdinCliTests(unittest.TestCase):
+    def invoke(self, args, stream):
+        out, err = io.StringIO(), io.StringIO()
+        with patch('textstats.cli.sys.stdin', SimpleNamespace(buffer=stream)), contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+            status = main(args)
+        return status, out.getvalue(), err.getvalue()
+
+    def test_stdin_is_binary_and_borrowed_for_whole_input_and_ranges(self):
+        for args, raw, expected in [(['-'], b'', 'lines=0 words=0\n'),
+                                    (['-', '--keep-bom'], b'\xef\xbb\xbf', 'lines=1 words=1\n'),
+                                    (['--lines=2:2', '-'], b'\xef\xbb\xbfa\n\xef\xbb\xbf', 'lines=1 words=1\n')]:
+            stream = io.BytesIO(raw)
+            self.assertEqual(self.invoke(args, stream), (0, expected, ''))
+            self.assertFalse(stream.closed)
+            self.assertEqual(stream.read(), b'')
+
+    def test_stdin_failures_identify_source_and_keep_stream_open(self):
+        class BrokenReader(io.BytesIO):
+            def read(self, *args):
+                raise OSError('controlled stdin read failure')
+        for stream, cause in [(io.BytesIO(b'ok\n\xff'), 'utf-8'), (BrokenReader(), 'controlled stdin read failure')]:
+            for options in [[], ['--lines=1:1']]:
+                stream.seek(0)
+                status, out, err = self.invoke([*options, '-'], stream)
+                self.assertEqual((status, out), (1, ''))
+                self.assertIn('stdin', err)
+                self.assertIn(cause, err)
+                self.assertNotIn('Traceback', err)
+                self.assertFalse(stream.closed)
+
+    def test_usage_and_help_precede_borrowed_acquisition(self):
+        invalid = [[*group, '-'] for value in RangeCliTests.INVALID
+                   for group in [['--lines', value], ['--lines=' + value]]]
+        invalid += [['--json', '-'], ['--j', '-'], ['--json=value', '-'],
+                     ['--lines=0:1', '-'], ['--lines=1:2', '--lines', '1:2', '-'],
+                     ['--lines=1:2', '--lines=1:2', '-'],
+                     ['--lines', '1:2', '--lines', '1:2', '-'],
+                     ['-', 'extra'], ['--lines', '-'], ['--help']]
+        for args in invalid:
+            stream = io.BytesIO(b'input must remain unread')
+            status, out, err = self.invoke(args, stream)
+            self.assertEqual(status, 0 if args == ['--help'] else 2)
+            self.assertEqual(stream.tell(), 0)
+            self.assertFalse(stream.closed)
+            if status == 2:
+                self.assertEqual(out, '')
+                self.assertIn('usage:', err)
 
 
 class CliTests(unittest.TestCase):

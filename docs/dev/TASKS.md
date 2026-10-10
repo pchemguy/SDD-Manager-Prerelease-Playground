@@ -96,7 +96,7 @@ version bump or release is authorized.
             Scope: `textstats/io.py`, `tests/unit/test_io.py` and input ownership/decode docstrings.
             Depends on: T-009 and the verified text-only/range amendment checkpoint.
             Evidence: borrowed byte-stream empty/Unicode/mixed-terminator/BOM inputs, EOF, invalid bytes and controlled read errors; never close borrowed stream on success/failure; no partial decoded result. Verify named-file acquisition/API regressions. CLI consumer follows in T-014 within the same milestone.
-        - [ ] T-014 — Integrate stdin across text CLI
+        - [x] T-014 — Integrate stdin across text CLI
             Outcome: R-010 input `-` through R-007 policy with R-008 error categories and unchanged named-file/public API behavior.
             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py`, help/README stdin usage and error documentation.
             Depends on: T-013 and reviewed range feature T-024.
@@ -464,3 +464,42 @@ boundary; requirements, strategy, hierarchy and dependencies are unchanged.
 This task result/tests/current evidence and initial checkbox form one closing
 commit, followed immediately by push/exact readback before subsequent owned work.
 Issue #14 closure remains a separately observed hosted operation.
+
+## T-014 completion evidence
+
+Based on published T-013 `2d96774221165ac04096c8d57ddcefe85b2305e0` and
+verified closed/completed issue #14, the CLI now selects borrowed binary stdin
+for input token `-`, including after `--`; an actual dash file uses `./-`.
+Complete strict UTF-8 decode precedes once-only BOM policy, optional shared line
+selection and normalized counting. Failure diagnostics identify stdin/cause,
+return 1 and emit no counts or traceback. Help/usage/range/removed-option
+validation precedes either source acquisition; public whole-input API is unchanged.
+
+The trace harness initially lacked cwd on sys.path for module execution:
+two collection errors were a setup failure, not RED. After that helper-only
+repair, the traced focused eight tests had 42 genuine failures because stdin
+was treated as a named file. GREEN passed all eight tests after CLI integration.
+The full traced `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` workflow
+passed 37 unit and 33 integration tests, status 0/no skips/warnings, including
+241 extracted named-file regressions. The subsequently expanded full invalid
+range/duplicate stdin-before-acquisition matrix passed all three focused stdin
+unit tests; runtime code remained unchanged, so prior integration evidence applies.
+
+Real byte-fed subprocesses verify empty/Unicode/mixed terminators/BOM inputs,
+both policies/spellings, option permutations/input positions, EOF subsets,
+exposed BOMs, unbounded/leading-zero endpoints, bad bytes after END, C and
+C.UTF-8 locales with Python UTF-8 mode/coercion disabled, and `./-` file bytes.
+Controlled read failures and successful/error/usage/help paths retain borrowed
+ownership. Six README stdin shell commands produced exact success counts
+3/5, 1/1, 2/3, 1/1 and 0/0, plus expected status-1 strict decoding stderr.
+A quoting failure while preparing README caused no mutation; original raw
+error and corrected applied edit are retained externally.
+
+The coordinator separately accepted minimal cooperating extraction maintenance:
+exactly two existing named dash-file fixture argv expressions now use `./-`;
+fixture bytes/assertions are unchanged, with no new stdin extraction acceptance
+before T-015. Current root evidence/QC completion hashes retain contract/strategy/
+dependency equivalence. This task's result/tests/docs/evidence/initial checkbox
+close together; immediate push/exact readback precedes further owned work.
+Issue #15 closure is separately observed. Final public-reference and expanded
+extracted-stdin exits remain T-015; milestone and phase parents stay pending.
