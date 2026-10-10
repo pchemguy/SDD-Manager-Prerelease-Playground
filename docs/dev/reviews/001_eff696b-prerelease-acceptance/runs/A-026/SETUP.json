@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case_id": "A-026",
+  "predecessor": "Actual independently reassessed milestone1.1 at7d003c1; evidencefa73830; original failed criteria result remains exact",
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "variants": {
+    "preservation": {
+      "checkout": "/workspace/scratch/46b31bb4dff6/037-a026-preservation",
+      "head": "7d003c1cf31c994340d8644e95990ef2253754ed",
+      "branch": "trial/037-a026-preservation",
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "consumer_dispatched": false
+    },
+    "empty-selection": {
+      "checkout": "/workspace/scratch/46b31bb4dff6/037-a026-empty-selection",
+      "head": "7d003c1cf31c994340d8644e95990ef2253754ed",
+      "branch": "trial/037-a026-empty-selection",
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/unit -p 'test_missing_037_*.py'",
+      "consumer_dispatched": false
+    },
+    "failing-baseline": {
+      "checkout": "/workspace/scratch/46b31bb4dff6/037-a026-failing-baseline",
+      "head": "86046022c97564a753b0f62a86e0bacaecf650b4",
+      "branch": "trial/037-a026-failing-baseline",
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B /workspace/scratch/46b31bb4dff6/037-a026-probe/contract_probe.py --root /workspace/scratch/46b31bb4dff6/037-a026-failing-baseline",
+      "consumer_dispatched": false
+    }
+  },
+  "positive_product_unchanged_by_setup": true,
+  "unmodified_probe": "Independent2 tests0failures0errors before injection",
+  "fixture_probe": "Independent separate archived fixture workspace:2tests2assertionfailures0errors before consumer dispatch",
+  "fixture_attribution": "Only disclosed coordinator regression fixture, never unmodified plugin/product defect"
+}
