@@ -4,14 +4,14 @@
   "phase": "P4",
   "case_id": "A-023",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Applied-response-loss triggerpublished5ace043; boundedreadunavailablecontrol set with exactledgerhash preserved",
+  "role": "coordinator",
+  "last_completed_action": "FreshsameidentityreadUnavailableexit2; no replay; independentexactledgerhash/product/index/refs preserved",
   "pending_operation": {
     "kind": "api",
     "status": "uncertain",
     "description": "Completion summary campaign037_t001_completion application unverified byconsumer afterlostresponse"
   },
-  "next_action": "Separatefreshconsumer encounters unreadableeffect; retainuncertainty beforeboundedreadrestore",
+  "next_action": "Publishunknownreadproof; restoreonlycontrolsnormal then separatefreshfinalsameidentityreconciliation",
   "checkpoint_refs": {
     "product_branch": "trial/037-a023-after-send",
     "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
@@ -25,17 +25,20 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/037-a023-after-send-trigger-checks.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/HANDOFF.md",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/tracking_facility.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/UNKNOWN-READ-HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/UNKNOWN-READ-CONTROL.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/CONTROL.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/037-a023-after-send-completion-payload.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/INPUTS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/CONSUMER-OBSERVATIONS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/037-a023-after-send-trigger-snapshot.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/SETUP.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/037-a023-unknown-read-consumer-observations.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/BINDINGS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/PUBLIC-INTERFACE.md",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/UNKNOWN-READ-CONTROL.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/UNKNOWN-READ-HANDOFF.md"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/037-a023-unknown-read-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/037-a023-unknown-read-checks.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/after-send/1/PUBLIC-INTERFACE.md"
   ],
   "variant": "controlled-reconciliation"
 }
