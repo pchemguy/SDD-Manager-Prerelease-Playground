@@ -4,10 +4,10 @@
   "phase": "P2",
   "case_id": "A-004",
   "attempt": 1,
-  "role": "assessor",
-  "last_completed_action": "T-001 closing commit 9dc8075 published/read back; issue #2 closed with preserved fixture; independent assessment in progress",
+  "role": "coordinator",
+  "last_completed_action": "A-004 independently assessed: consumer workflow Passed; literal case Failed because preparation integration contract conflicts with pinned startup",
   "pending_operation": null,
-  "next_action": "Finish independent A-004 assessment and publish before A-005",
+  "next_action": "Publish assessed A-004 and source finding; retain dependent blocked dispositions, select eligible independent cases only",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
     "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
@@ -69,6 +69,11 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/START-before-handoff-fetch.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/HANDOFF-RETRY.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/CONSUMER-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/INDEPENDENT-CHECK-EVIDENCE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/assessor_checks.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/COORDINATOR-DISPOSITION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/DETERMINISTIC-ASSESSMENT.json"
   ]
 }

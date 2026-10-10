@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "status": "Failed",
+  "classification": "assessor-contract defect",
+  "consumer_workflow_outcome": "Passed",
+  "decision": "Retain literal A-004 failure. Do not rewrite immutable package/contract, mark the catalog variant Passed, or consume a Failed predecessor as successful. Dependent A-005 and its downstream cases are Blocked pending a separately repaired and newly pinned acceptance run. Independent cases with other actual Passed predecessors remain eligible.",
+  "observed_integration": "Document-only accepted preparation integration 88a5c4b required by pinned startup; incomplete task phase remains unmerged.",
+  "authority": "Existing user delegation to coordinator for test-artifact disposition; broad authorization to push every campaign commit.",
+  "repair_owner": "Source acceptance/textstats/cases/assessor/A-004.md and A-004.json; separate repair and recheck, never edit immutable vendored harness mid-run."
+}
