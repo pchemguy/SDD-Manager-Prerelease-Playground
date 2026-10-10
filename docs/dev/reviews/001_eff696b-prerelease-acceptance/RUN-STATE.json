@@ -5,7 +5,7 @@
   "case_id": "A-001",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "SPEC accepted; partial recovery and serialization observed",
+  "last_completed_action": "Coordinator substantively assessed PLAN/strategy QC and accepted exact state",
   "pending_operation": {
     "kind": "api",
     "status": "in_progress",
@@ -15,10 +15,10 @@
       "operation_id": "037-cp014-final-negative-trials"
     }
   },
-  "next_action": "Consumer prepares PLAN strategy/QC checkpoint; assess parallel publisher partial recovery",
+  "next_action": "Consumer prepares layout and combined PLAN QC; read final parallel publisher negatives",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
-    "product_commit": "bf3eb5e9a8d30a9e8a457f7708afa3b400100417",
+    "product_commit": "928c319ed84a919c6424adfa4522918e054a1d43",
     "integration_branch": "main",
     "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
@@ -38,6 +38,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/PROJECT-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ARCHITECTURE-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/DECOMPOSITION-DECISION.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/SPEC-DECISION.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/SPEC-DECISION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/PLAN-DECISION.json"
   ]
 }
