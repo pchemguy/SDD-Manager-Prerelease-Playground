@@ -62,8 +62,11 @@
     "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
   },
   "A-014.prerequisite-refusal": {
-    "status": "Pending",
-    "reason": "Authorized case awaits actual prerequisites/execution and independent assessment"
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Independent refusal of dependent T002\u2013T003 with unfinished out-of-range T001; full refs/index/all154 hashes unchanged; cross-phase/full case remain ungraded",
+    "assessment_path": "runs/A-014/prerequisite-refusal/1/ASSESSMENT.json"
   },
   "A-015.core": {
     "status": "Pending",

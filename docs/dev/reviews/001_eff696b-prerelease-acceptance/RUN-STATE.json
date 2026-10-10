@@ -5,9 +5,9 @@
   "case_id": "A-003",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "A-025 independently Passed; A-003 first projection presented and awaiting independent review; A-014 prerequisite-refusal consumer stopped before dependent effects",
+  "last_completed_action": "A-014 prerequisite-refusal independently Passed; A-025 Passed published and bounded injection detached; A-003 first projection awaiting independent review",
   "pending_operation": null,
-  "next_action": "Assess/publish A-003 first projection before second reconciliation; independently assess/publish A-014 prerequisite-refusal. A-025 synthetic injection detached after published assessment; unrelated staging retained.",
+  "next_action": "Assess/publish A-003 first projection before requested second reconciliation, then full A-003 assessment before A-004",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -50,6 +50,8 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/PRESERVATION-FIXTURE.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/CONSUMER-OBSERVATIONS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/RESTORATION.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/RESTORATION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/CONSUMER-OBSERVATIONS.json"
   ]
 }
