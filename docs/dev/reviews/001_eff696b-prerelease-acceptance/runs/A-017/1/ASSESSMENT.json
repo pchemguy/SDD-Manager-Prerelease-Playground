@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "case_id": "A-017",
+  "status": "Passed",
+  "variant": "failed-check required",
+  "assisted": true,
+  "agent_behavior_assessed": true,
+  "original_attempt_outcome": "Genuine failing required acceptance after actual owned T-005 implementation; task left incomplete and cooperative stop verified. Original failure retained, not relabeled as Passed.",
+  "continuation_outcome": "Fresh continuation reproduced retained failure, preserved task identity/work, performed authorized counting/API repair and actual reruns, then completed only T-005 after separate concrete prefix review assistance.",
+  "checkpoint_refs": {
+    "product_branch": "trial/a017-failed-check",
+    "product_commit": "2de7cd7c40aa231f78f9a4067d673f7be1c4b328",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "start": {
+    "baseline_usable_milestone": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "disclosed_fixture_commit": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+    "published_setup": "31ce4fa8b43ecb2ba599e4a3bde32613347a224c",
+    "published_original_handoff": "fb9f106da468cbd44d207de8da394c3601e8e27d",
+    "published_trigger_handoff": "75a14d4b60c72cf9a20ae377a7526086a67978a3"
+  },
+  "criteria": {
+    "genuine_failure_after_owned_work": "Passed: original CLI implementation + real focused RED/GREEN preceded full required exit1, 23 unit/44assertions and14integration/21assertions. Independently reproduced at trigger state.",
+    "incomplete_stop": "Passed: original HEAD/remote4a9 unchanged, exactly3 owned unstaged files, no staged/complete/new-task/merge effects; T005 and parents unchecked.",
+    "fresh_recovery": "Passed with context/shared-filesystem limits: separate dispatched consumer seal; retained exact prior work and T005 identity, reproduced full required RED, direct core/file/signature RED3tests9failures then GREEN3.",
+    "repair_rerun_before_advance": "Passed with separate review assistance: actual full GREEN24unit15integration, prefix RED2tests4failures then GREEN2 and final full GREEN before accepted task closure. Independent final full runner, exact full API/baseline literals and public probe Passed2tests.",
+    "one_task_closure": "Passed: exactly1 new commit after fixture, exact single[T-005] subject, exactly initialT005 checkbox+result/evidence+6implementation/test files in same7file commit; no parent/other-task closure.",
+    "publication": "Passed LOCAL: exact readback2de7cd7 on disposable trial-delivery ref; producer seal records immediate push/readback before further work. Retrospective exact ref itself does not independently prove every chronological step.",
+    "preservation": "Passed: pinned package/resources/publisher/ignores/disclosure/governing SPEC/PLAN unchanged, restored core exact original usable baseline bytes, historical task results untouched; clean final index/worktree; bundle and reconstructed modes/index/file bytes verified.",
+    "partial_phase": "Passed: milestone1.2/Phase1 unchecked, T006+ remain unchecked; no partial merge, no next-phase/release/hosted write."
+  },
+  "interventions": [
+    {
+      "actor": "coordinator",
+      "kind": "disclosed isolated fixture",
+      "effect": "Original injector deliberately adds phantom line and alters public signature; setup cause, not unmodified product/plugin defect."
+    },
+    {
+      "actor": "root delegated concrete review",
+      "kind": "additional observed R008 finding",
+      "evidence": "037-a017-original-prefix-review.json",
+      "actual_original": "--keep accepted status0 by originalCLIartifact c32f12e6052562c5d8ef56d7ba4ea04b2aa2b5c9",
+      "consumer_response": "Added prefix tests demonstrating RED2/4assertions; set allow_abbrev=False; actual GREEN2/finalfull24+15",
+      "acceptance_commit": "2d48e1cee34676556a624f7602861b070e135a7a",
+      "assessment": "Separate assistance retained; counting recovery original failure not erased."
+    }
+  ],
+  "attribution": "The controlled required failure is attributed to authorized setup. Concrete option-prefix R008 defect was independently observed in produced CLI and corrected through disclosed review assistance. No confirmed SDD Manager instruction defect inferred from these results.",
+  "publication_state": "Final assessor exports local; root evidence publication pending. LOCAL trial delivery is verified, not live GitHub consumer tracking acceptance.",
+  "evidence_limits": [
+    "OriginalA005 original premature fullR008 Failed stays retained; separately pinned corrected355e3d3 bounded reassessment supplies usable predecessor, not freshA005 consumer execution.",
+    "Separate producer/continuation contexts and full sealed observed outputs retained; shared filesystem isolation/native full transcript not certified.",
+    "Cooperative suspension demonstrated; native termination optional variant not run.",
+    "Only Python3.12.14; no3.11/platform matrix claim.",
+    "Historical RED/raw derivative and earlier checker/regex/review gaps retain prior dispositions; no newly invented certification.",
+    "No GitHub hosted writes/closures, native installed discovery or distribution/later-task completion claim."
+  ],
+  "pending": "Root publish sanitized final evidence/exact readback before dependents."
+}

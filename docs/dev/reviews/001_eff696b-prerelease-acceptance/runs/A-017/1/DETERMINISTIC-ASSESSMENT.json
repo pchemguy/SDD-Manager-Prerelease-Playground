@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Genuine failing required acceptance is observed during selected task work; failure retained and task/parent remain incomplete.",
+    "Consumer routes scoped repair, performs actual rerun and advances only after required success; no default partial merge."
+  ]
+}

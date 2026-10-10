@@ -1,0 +1,7 @@
+{
+  "git_objects": "Verified bundle; fresh clone and exact final checkout",
+  "index_modes_stages_objects": "Exact entry equality",
+  "all_seven_owned_final_files": "Exact bytes/modes equality",
+  "pending_state": "Clean; no staged or unstaged changes",
+  "restore_workspace": "/workspace/scratch/46b31bb4dff6/037-a017-final-restore-cm19_gpc/product"
+}

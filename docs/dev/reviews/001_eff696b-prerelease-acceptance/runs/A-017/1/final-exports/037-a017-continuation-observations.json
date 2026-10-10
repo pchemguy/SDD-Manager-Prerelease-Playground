@@ -1,0 +1,150 @@
+{
+  "task": "T-005",
+  "branch": "trial/a017-failed-check",
+  "starting_head": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+  "head": "2de7cd7c40aa231f78f9a4067d673f7be1c4b328",
+  "destination": "/workspace/scratch/46b31bb4dff6/037-a017-remote.git",
+  "ref": "refs/heads/trial/a017-failed-check",
+  "startup_exact_remote": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+  "index_initial": "empty",
+  "index_current": "",
+  "retention": {
+    "retained_unstaged_paths": [
+      "textstats/cli.py",
+      "tests/unit/test_cli.py",
+      "tests/integration/test_cli.py"
+    ],
+    "original_task_identity": "T-005 unchanged",
+    "historical_completion_evidence": "unchanged",
+    "no_reset_or_reimplementation": true,
+    "origin_read_only": true,
+    "origin_main": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "origin_main_final": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "protected_paths_unchanged": true
+  },
+  "required_order": [
+    "Product AGENTS and pinned sdd-manage/orient/implement instructions",
+    "startup exact trial-delivery readback before tests/edits",
+    "bounded persistence audit of T-004 and pending T-005",
+    "current governing SPEC/PLAN/layout and adjacent QC readiness; explicit local trial scope overrides hosted writes",
+    "retained required check RED",
+    "direct core/file RED then authorized repair/GREEN",
+    "delegated review finding prefix RED then repair/GREEN",
+    "final required suites",
+    "delegated artifact acceptance before closing commit",
+    "one T-005 result/evidence/initial checkbox commit",
+    "immediate local push/exact readback",
+    "stop before T-006/parents/integration"
+  ],
+  "checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "log": "037-a017-continuation-red.log",
+      "outcome": "23 unit tests, 44 failures; 14 integration tests, 21 failures",
+      "exit": 1,
+      "phase": "retained required-check reproduction"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_core.CountingTests.test_empty_and_terminated_input_have_no_phantom_line tests.integration.test_api.FileApiTests.test_file_counts_match_literal_boundary_expectations tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy -v",
+      "red_log": "037-a017-repair-red.log",
+      "red_exit": 1,
+      "red_tests": 3,
+      "red_failures": 9,
+      "green_log": "037-a017-repair-green.log",
+      "green_exit": 0,
+      "green_tests": 3
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "log": "037-a017-continuation-green.log",
+      "exit": 0,
+      "unit": 24,
+      "integration": 15
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests.test_usage_failures_validate_before_acquisition tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_failure -v",
+      "red_log": "037-a017-prefix-red.log",
+      "red_exit": 1,
+      "red_tests": 2,
+      "red_failures": 4,
+      "green_log": "037-a017-prefix-green.log",
+      "green_exit": 0,
+      "green_tests": 2
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "log": "037-a017-continuation-final-green.log",
+      "exit": 0,
+      "unit": 24,
+      "integration": 15,
+      "skips": 0,
+      "warnings": 0
+    },
+    {
+      "command": "git --no-optional-locks diff --check",
+      "exit": 0
+    }
+  ],
+  "failures": [
+    {
+      "cause": "core.count_text adds one phantom line and replaces explicit annotated public signature with variadic wrapper",
+      "scope": "explicitly authorized relevant counting/API regression repair",
+      "disposition": "restored accepted semantics/signature, direct literal core/file regression tests GREEN"
+    },
+    {
+      "cause": "argparse default option abbreviation accepts unknown --keep/--keep-b prefixes",
+      "source": "delegated concrete artifact review",
+      "disposition": "allow_abbrev=False; focused RED/GREEN plus no-acquisition coverage"
+    }
+  ],
+  "clarifications": [],
+  "runtime": "Python 3.12.14",
+  "python_bytecode": "-B and PYTHONDONTWRITEBYTECODE=1 for executing checks and child environment",
+  "review": {
+    "status": "accepted before task closure",
+    "decision": "2d48e1cee34676556a624f7602861b070e135a7a",
+    "source": "root delegated coordinator exact six-file substantive acceptance",
+    "prefix_original_probe": "coordinator retained original option-prefix status 0 finding; separate repair RED/GREEN preserved"
+  },
+  "status": "T-005 completed, committed, locally pushed and exact verified; stopped",
+  "stop": "T-005 before T-006, parent closure or integration",
+  "worktree_status": "",
+  "sealed": true,
+  "commit": {
+    "sha": "2de7cd7c40aa231f78f9a4067d673f7be1c4b328",
+    "subject": "[T-005] Complete CLI failure handling and restore counting contracts",
+    "paths": [
+      "docs/dev/TASKS.md",
+      "tests/integration/test_api.py",
+      "tests/integration/test_cli.py",
+      "tests/unit/test_cli.py",
+      "tests/unit/test_core.py",
+      "textstats/cli.py",
+      "textstats/core.py"
+    ],
+    "single_task_initial_checkbox": "T-005 only",
+    "result_evidence_status_together": true,
+    "staged_and_actual_diff_inspected": true,
+    "parents_and_other_tasks_unchanged": true
+  },
+  "publication": {
+    "command": "git push trial-delivery HEAD:refs/heads/trial/a017-failed-check",
+    "exit": 0,
+    "readback_command": "git ls-remote trial-delivery refs/heads/trial/a017-failed-check",
+    "exact_remote": "2de7cd7c40aa231f78f9a4067d673f7be1c4b328",
+    "immediate_before_further_work": true,
+    "origin_write": false
+  },
+  "commands_persistence": [
+    "git add textstats/cli.py textstats/core.py tests/unit/test_cli.py tests/unit/test_core.py tests/integration/test_cli.py tests/integration/test_api.py docs/dev/TASKS.md",
+    "git --no-optional-locks diff --cached --stat",
+    "git --no-optional-locks diff --cached -- docs/dev/TASKS.md",
+    "git --no-optional-locks diff --cached -- textstats/cli.py textstats/core.py tests/unit/test_cli.py tests/unit/test_core.py tests/integration/test_cli.py tests/integration/test_api.py",
+    "git commit -m \"[T-005] Complete CLI failure handling and restore counting contracts\"",
+    "git --no-optional-locks show --format=fuller --stat HEAD",
+    "git --no-optional-locks diff HEAD^ HEAD -- docs/dev/TASKS.md",
+    "git --no-optional-locks status --porcelain=v1",
+    "git push trial-delivery HEAD:refs/heads/trial/a017-failed-check",
+    "git ls-remote trial-delivery refs/heads/trial/a017-failed-check"
+  ]
+}

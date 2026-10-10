@@ -5,17 +5,13 @@
   "case_id": "A-017",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "Actual consumer interruption independently verified and complete pending state exported",
-  "pending_operation": {
-    "kind": "task",
-    "status": "interrupted",
-    "description": "Required full acceptance failed after owned implementation; T005 incomplete"
-  },
-  "next_action": "Publish exact trigger exports before fresh continuation",
+  "last_completed_action": "Independent failed-check recovery Passed with disclosed prefix review assistance; final exact local delivery verified",
+  "pending_operation": null,
+  "next_action": "Continue separately eligible cases; A-017 sealed",
   "checkpoint_refs": {
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "product_branch": "trial/a017-failed-check",
-    "product_commit": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+    "product_commit": "2de7cd7c40aa231f78f9a4067d673f7be1c4b328",
     "remote": "trial-delivery"
   },
   "evidence_paths": [

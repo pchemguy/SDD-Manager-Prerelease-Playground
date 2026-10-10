@@ -1,0 +1,30 @@
+[
+  {
+    "argv": [
+      "python",
+      "-B",
+      "-m",
+      "textstats",
+      "--keep",
+      "missing-prefix-fixture.txt"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] INPUT\npython -m textstats: error: unrecognized arguments: --keep\n"
+  },
+  {
+    "argv": [
+      "python",
+      "-B",
+      "-m",
+      "textstats",
+      "--keep-b",
+      "missing-prefix-fixture.txt"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+    "returncode": 2,
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] INPUT\npython -m textstats: error: unrecognized arguments: --keep-b\n"
+  }
+]

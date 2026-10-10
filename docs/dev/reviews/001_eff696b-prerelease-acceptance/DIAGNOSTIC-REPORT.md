@@ -188,3 +188,9 @@ A017 retains actual counting baseline and two-test public valid-contract regress
 
 
 A014 live prerequisite ref creation was rejected by automatic approval review for named trial/037-a014-cross-phase and trial/037-a014-cross-main on the authorized playground repository. Reason and exact refs/commits retained; no execution or bypass. Local complete setup remains preserved, required cross-phase certification Blocked pending specific destination authorization. Unaffected authorized cases continue.
+
+## A017 failed-check recovery independently Passed with assistance
+
+Fresh continuation retained T-005 work and identity, reproduced the genuine required failure, repaired the disclosed counting/API regression and reran acceptance. A separate concrete review found option-prefix acceptance, followed by actual RED/GREEN correction before closure. Final independent checks passed 24 unit and 15 integration tests, full API and baseline literals, two public probes and both prefix rejection probes. Only T-005 closed in 2de7cd7; exact disposable local publication and reconstructable complete Git objects/index/workfiles are verified. Original failure and review assistance remain distinct.
+
+Final exports are in runs/A-017/1/final-exports. Original deterministic checks Passed separately with explicit local-delivery inputs. This proves controlled recovery, with Python 3.12/shared-filesystem/structured-transcript limits; no live GitHub trial closure or native termination claim. Required original-pin totals are 21 Passed, 2 Failed and 9 unresolved; corrected A004/A005 rechecks remain separate. Full readiness remains Open.
