@@ -4,10 +4,14 @@
   "phase": "P4",
   "case_id": "A-024",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Controlled variant setup published next; separate fresh consumer not yet dispatched",
-  "pending_operation": null,
-  "next_action": "Observe consumer-selected fault, preserve trigger, restore only facility and dispatch separate fresh continuation",
+  "role": "assessor",
+  "last_completed_action": "Actual selected read Unavailable exit2; consumer stopped and sealed",
+  "pending_operation": {
+    "kind": "api",
+    "status": "interrupted",
+    "description": "Controlled summary publication to campaign037_phase1_tracking remains pending"
+  },
+  "next_action": "Independent trigger snapshot; publish before bounded facility restoration/fresh continuation",
   "checkpoint_refs": {
     "product_branch": "trial/037-a024-unavailable-access",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
