@@ -1,0 +1,207 @@
+{
+  "checkpoint_refs": {
+    "product_branch": "a019/target",
+    "product_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "integration_branch": "a019/target",
+    "integration_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "merge_parents": [
+      "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+      "bbd5b80e588337f14d8ec3221fea2aded33f0239"
+    ],
+    "incoming_branch": "a019/incoming",
+    "incoming_commit": "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+    "tree": "b57a3f4c8e1b90dc19e96546fb1f5317c6760ba2"
+  },
+  "local_remote_readback": "bbd5b80e588337f14d8ec3221fea2aded33f0239\trefs/heads/a019/incoming\n2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749\trefs/heads/a019/target\n",
+  "changed_against_incoming": [
+    "AGENTS.md",
+    "README.md",
+    "docs/dev/reports/phases/1/PHASE-REPORT.md",
+    "docs/public-api.md",
+    "tests/integration/test_prospective_contract.py",
+    "tests/unit/test_core.py",
+    "textstats/core.py",
+    "tools/check_distribution.py"
+  ],
+  "preservation": "Original prospective tests byte-identical; core restored exactly to original complete phase; task owners and protected resources unchanged from incoming.",
+  "task_boundary": "T001-009 closed; T010-017 pending, no Phase2/final/release work.",
+  "accepted_review": {
+    "commit": "88fd0eacd1edfea261eabad89b8a41c4a2a61823",
+    "tree": "b57a3f4c8e1b90dc19e96546fb1f5317c6760ba2",
+    "seven_artifact_blobs_exact": true,
+    "raw_review_log_hashes_exact": true
+  },
+  "historical_publications": [
+    {
+      "commit": "31ce4fa8b43ecb2ba599e4a3bde32613347a224c",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/setup-exports",
+      "original_manifest_matches": true,
+      "verified_published_files": [
+        "A006-published-assessment.json",
+        "EXPORT-VERIFICATION.json",
+        "ORDINARY-HANDOFF-DRAFT.md",
+        "READINESS.md",
+        "UNTRACKED-INTERVENTION.json",
+        "incoming-workfiles.tar",
+        "index-stages.txt",
+        "index.raw",
+        "prospective-regression.patch",
+        "prospective-test.py",
+        "provenance.json",
+        "setup-commands.jsonl",
+        "setup-objects.bundle",
+        "target-workfiles.tar",
+        "unexpected-untracked-workfiles.tar"
+      ]
+    },
+    {
+      "commit": "75a14d4b60c72cf9a20ae377a7526086a67978a3",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/conflict-exports",
+      "original_manifest_matches": true,
+      "verified_published_files": [
+        "ASSESSMENT.json",
+        "CONSUMER-OBSERVATIONS.json",
+        "HANDOFF.md",
+        "index-stages.txt",
+        "index.raw",
+        "merge-metadata/AUTO_MERGE",
+        "merge-metadata/HEAD",
+        "merge-metadata/MERGE_HEAD",
+        "merge-metadata/MERGE_MODE",
+        "merge-metadata/MERGE_MSG",
+        "merge-metadata/ORIG_HEAD",
+        "objects.bundle",
+        "pending-objects.pack",
+        "restore-first-status.txt",
+        "staged.patch",
+        "status.txt",
+        "unmerged-index.txt",
+        "unstaged.patch",
+        "workfile-manifest.json",
+        "workfiles.tar"
+      ]
+    },
+    {
+      "commit": "8e51a8c2e379d349e7babdfcbbd8d13d6704fe2d",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/prospective-exports",
+      "original_manifest_matches": true,
+      "verified_published_files": [
+        "ACTUAL-FAILED-CHECK.json",
+        "ASSESSMENT.json",
+        "COMMAND09-STDOUT.bin",
+        "COMMAND13-STDOUT.bin",
+        "COMMANDS.json",
+        "CONSUMER-OBSERVATIONS.json",
+        "HANDOFF.md",
+        "actual-check-source.zip",
+        "index-stages.txt",
+        "index.raw",
+        "merge-metadata/AUTO_MERGE",
+        "merge-metadata/HEAD",
+        "merge-metadata/MERGE_HEAD",
+        "merge-metadata/MERGE_MODE",
+        "merge-metadata/MERGE_MSG",
+        "merge-metadata/ORIG_HEAD",
+        "objects.bundle",
+        "pending-objects.pack",
+        "staged.patch",
+        "status.txt",
+        "unstaged.patch",
+        "workfile-manifest.json",
+        "workfiles.tar"
+      ]
+    }
+  ],
+  "screening_derivative_exact": "Original locally exact; only command12 stdout scalar converted to published exact binary sidecar. Initial NUL JSON screening rejection retained.",
+  "restoration": {
+    "exact_final_head": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "exact_stages": true,
+    "workfile_count": 176,
+    "bundle_complete": true,
+    "snapshot": "/workspace/scratch/46b31bb4dff6/037-a019-final-assessor-snapshot"
+  },
+  "product_checks": {
+    "unit": 23,
+    "integration": 20,
+    "prospective_public_tests": 2,
+    "extracted_module_cases": 38,
+    "all_returncode": 0
+  },
+  "literal_suites": {
+    "api": "All actual observed literals exactly match immutable assessor expected values.",
+    "baseline": "All actual observed literals exactly match immutable assessor expected values.",
+    "distribution": "Actual extracted origin and all observed literals exactly match immutable expected values."
+  },
+  "archive": {
+    "sha256": "7c8c65a2fb920afc8d328b036277d8b2543d12bd094c9184193a4ab805087e95",
+    "members": [
+      "textstats-source/README.md",
+      "textstats-source/docs/public-api.md",
+      "textstats-source/AI_DISCLOSURE.md",
+      "textstats-source/SDD-MANAGER.md",
+      "textstats-source/textstats/__init__.py",
+      "textstats-source/textstats/__main__.py",
+      "textstats-source/textstats/core.py",
+      "textstats-source/textstats/io.py",
+      "textstats-source/textstats/cli.py",
+      "textstats-source/tools/package_source.py",
+      "textstats-source/tools/check_distribution.py"
+    ],
+    "all_source_bytes_match": true
+  },
+  "docs_fences": [
+    {
+      "document": "README.md",
+      "fence": 1,
+      "language": "bash",
+      "returncode": 0,
+      "code_sha256": "63aac188fae5b607a4d7765834eabb0c34e468d2e4e46fba1a58a95cfaf53e6a"
+    },
+    {
+      "document": "README.md",
+      "fence": 2,
+      "language": "bash",
+      "returncode": 0,
+      "code_sha256": "9ea0750ac8b8f3fe1f3f40017d39d3a08449e44bbe22305e66367805e4cb96f5"
+    },
+    {
+      "document": "README.md",
+      "fence": 3,
+      "language": "python",
+      "returncode": 0,
+      "code_sha256": "efa91a770ca75f39fda7fbdc432d4b8651bc8c574a9035b10d4318f55f2b8342"
+    },
+    {
+      "document": "README.md",
+      "fence": 4,
+      "language": "bash",
+      "returncode": 0,
+      "code_sha256": "5bbb7cc79a9c1c82b6c4544c359580dd50731890671c3fd026bfa79f0f3007f6"
+    },
+    {
+      "document": "README.md",
+      "fence": 5,
+      "language": "bash",
+      "returncode": 0,
+      "code_sha256": "3c9021d5895e560216ac6baa689ab058f5eeac9812bf7a3edeb080a759e714d5"
+    },
+    {
+      "document": "README.md",
+      "fence": 6,
+      "language": "bash",
+      "returncode": 0,
+      "code_sha256": "cce0dae85aa9fca73604b3a1a83678576b480dd83f78cc38fbce3f40299650db"
+    },
+    {
+      "document": "docs/public-api.md",
+      "fence": 1,
+      "language": "python",
+      "returncode": 0,
+      "code_sha256": "0a5fade0ca2658466490ec690afa10732abcad97563da7bad47d79cbe10de757"
+    }
+  ],
+  "original_trial_unchanged_by_assessment": true,
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "result": "Passed",
+  "failures": []
+}

@@ -198,3 +198,9 @@ Final exports are in runs/A-017/1/final-exports. Original deterministic checks P
 ## A019 second genuine integration interruption
 
 Fresh resolution retained the actual two-parent merge and resolved README. Its first full required check failed two public U+001C contract assertions while 23 unit, 18 other integration tests and 36 extracted cases passed. No repair/commit/push followed. Independently reconstructed resolved index, workfiles, merge metadata and complete objects are in runs/A-019/1/prospective-exports. Publish this actual state and ordinary recovery handoff before third fresh scoped repair. Prior conflict/setup/screening/facility limits remain retained; aggregate assessment remains pending.
+
+## A019 controlled integration recovery independently Passed
+
+Actual conflict and subsequent resolved-merge failure remain separately retained. Three fresh consumers preserved actual parents/work, resolved competing README edits, observed two genuine public contract failures, scoped repair and completed only the verified two-parent integration2bcbf7d. Exact LOCAL trial target/incoming readback and accepted tree verified; independent23unit/20integration/2prospective/38extracted/all7runnable docs and literal API/baseline/extracted captures Passed. Complete objects/index/workfiles/modes and original outputs/provenance are in runs/A-019/1/final-exports; original deterministic checks Passed with explicit local inputs.
+
+Controlled injection, original failures, setup file reappearance, verifier adjustment, narrow NUL sidecar transform, shared-filesystem/native-transcript/runtime/local-only limits and earlier live-branch rejection remain distinct. No confirmed plugin defect inferred. Required original-pin totals22 Passed/2 Failed/8 unresolved; corrected A004/A005 rechecks remain separate. Full readiness Open.

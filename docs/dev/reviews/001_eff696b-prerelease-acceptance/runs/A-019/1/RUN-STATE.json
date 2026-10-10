@@ -5,18 +5,20 @@
   "case_id": "A-019",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "Second actual prospective failure independently verified after retained conflict resolution",
-  "pending_operation": {
-    "kind": "merge",
-    "status": "interrupted",
-    "description": "Resolved retained merge failed two required public-contract assertions; no repair/commit/push"
-  },
-  "next_action": "Publish second trigger before third fresh scoped repair continuation",
+  "last_completed_action": "Independent controlled local conflict and failed-prospective recovery Passed; actual two-parent integration locally published",
+  "pending_operation": null,
+  "next_action": "Continue separately eligible cases; A-019 sealed",
   "checkpoint_refs": {
-    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "product_branch": "a019/target",
-    "product_commit": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
-    "remote": "trial-delivery"
+    "product_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "integration_branch": "a019/target",
+    "integration_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "merge_parents": [
+      "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+      "bbd5b80e588337f14d8ec3221fea2aded33f0239"
+    ],
+    "remote": "trial-delivery",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance"
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",

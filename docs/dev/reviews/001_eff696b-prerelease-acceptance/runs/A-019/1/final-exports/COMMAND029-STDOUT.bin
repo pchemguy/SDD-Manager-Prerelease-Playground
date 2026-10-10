@@ -1,0 +1,157 @@
+{
+  "actor": "A019 setup assessor",
+  "failures": [
+    "Clean-state assertion failed due untracked source files.",
+    "Initial exact-incoming check failed for core.py; wider actual baseline/incoming check establishes core equals original completed phase, not injected regression."
+  ],
+  "observation": "Untracked source files reappeared after switch; mechanism unknown.",
+  "action": "Binary-safe export followed by removal only of own observed bytes matching actual baseline/incoming; no consumer exists.",
+  "files": {
+    "docs/dev/reports/phases/1/1.1.md": {
+      "sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "docs/dev/reports/phases/1/1.2.md": {
+      "sha256": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "docs/dev/reports/phases/1/PHASE-REPORT.md": {
+      "sha256": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "docs/public-api.md": {
+      "sha256": "6ad1a66c58e285ac085d2f6c8dac7f1c804294352a873e2b24e80f89241d2944",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/__init__.py": {
+      "sha256": "986bc8697e637d909ca4bc3d2a3f97a027161b4f4ced0f57c77ae4152e62fbbe",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/integration/__init__.py": {
+      "sha256": "6d74eb5943bc4a44d8e67cf5ad5a899df9bc968c1d63a908dc66d865c188b3e8",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/integration/test_api.py": {
+      "sha256": "ab84ec7182fa969c74107a8aee48921f450a362054a73b3cd187a4948add9749",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/integration/test_cli.py": {
+      "sha256": "0b292e6a338c7d4e157672ace2bf581ea24bf4011ad5df5ad315512d41c95cb8",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/integration/test_distribution.py": {
+      "sha256": "d26caa9a84c1d0506b2b2de3c6716a22b527d5fd92b46d33a07e3c918bd93f72",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/unit/__init__.py": {
+      "sha256": "9c7fd62fe7e489b7c5124c32df27746ef9419531e46f4263ea89f21f8a497978",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/unit/test_cli.py": {
+      "sha256": "b44f184bf0fa12310e337658e043fd3ddeb2e420995522988d5c34afc7535a76",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/unit/test_core.py": {
+      "sha256": "7750eddb9d64e3a7af2eb61652b2602f4d8ec5d5fb40a6282ce965665f348423",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tests/unit/test_io.py": {
+      "sha256": "22c6ec352b6757f7a5d4876972f22974774b3ec20c7bd4ca985bfb7169f46921",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "textstats/__init__.py": {
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "textstats/__main__.py": {
+      "sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "textstats/cli.py": {
+      "sha256": "43e7e042edb7693ea2ba828726b691e2372feecb7954d7d05734c82a7b6319c1",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "textstats/core.py": {
+      "sha256": "98b3374375eb7e6d4a301cabff99eb5e09ccccecbd9a808954e9c5cae084609f",
+      "matching_objects": [
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "textstats/io.py": {
+      "sha256": "a45b0a1f320109f43d92e1b01507c2c2da941af51af09ede378724038db32b9f",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tools/check_distribution.py": {
+      "sha256": "f72ffb2b8ba40f84ddfd2bd257dfa601b86ed3d8c67dbadf011b897dafec8607",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tools/check_tests.py": {
+      "sha256": "1c0bc3d2c5ef400806aa9de66ec4af40c632acf206d90105c6f8559b2413b619",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    },
+    "tools/package_source.py": {
+      "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+      "matching_objects": [
+        "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ]
+    }
+  }
+}
