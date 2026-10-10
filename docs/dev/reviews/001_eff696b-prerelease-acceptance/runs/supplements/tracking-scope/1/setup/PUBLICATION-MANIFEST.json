@@ -1,0 +1,65 @@
+{
+  "files": {
+    "ASSESSOR-PROTOCOL.md": {
+      "sha256": "01de069bf463dea980213e7bc12726c4030e04cde265439551c3b041515482e5",
+      "bytes": 2789
+    },
+    "BASELINE-VERIFICATION.json": {
+      "sha256": "f68f4d794edfbad13fe5ae659cf879953c834c93289b8b988101d4ff9390144e",
+      "bytes": 490
+    },
+    "GUIDE-PROVENANCE.json": {
+      "sha256": "049cbe5437ac61345fb4f137ea9abf5b6dd7e4f9573148f517b9ee5428d6f473",
+      "bytes": 274
+    },
+    "COMMAND-11-STDOUT.bin": {
+      "sha256": "69d4f21cacb29710e668c9048fc8623fe53f3444173c262f49bd6c08b7544476",
+      "bytes": 10046
+    },
+    "COMMAND-30-STDOUT.bin": {
+      "sha256": "69d4f21cacb29710e668c9048fc8623fe53f3444173c262f49bd6c08b7544476",
+      "bytes": 10046
+    },
+    "SETUP-COMMANDS-SCREENED.json": {
+      "sha256": "cb5c5bd98915a7c99ef277095c252d068bcf64eca05efcdea30d77ef8c5975ad",
+      "bytes": 48607
+    },
+    "explicit-decline/CONSUMER-INPUT.md": {
+      "sha256": "2824575a3725bc5df327ede3399054eb8625e05279575a1057bbad18d34bc4cb",
+      "bytes": 2168
+    },
+    "explicit-decline/SETUP.json": {
+      "sha256": "bd240f3199dd3fac9fc4b9931579c2c62f17b999e9fe8a5e61712987a83de53f",
+      "bytes": 2733
+    },
+    "explicit-decline/START.json": {
+      "sha256": "666dbae8d06f8bd955b50a1ebecdc61976546649861ebcf8f0f71acba2b90bff",
+      "bytes": 47070
+    },
+    "token-only/CONSUMER-INPUT.md": {
+      "sha256": "dc0e13095d8b161fca6950ddb8e9f2fcddf9ce67e06072f8a0bef1343dff7c4c",
+      "bytes": 2145
+    },
+    "token-only/SETUP.json": {
+      "sha256": "55330ff2bdbc6c28a927bc638e1a261c0eea7f6122fe723d6c854db1a77fd354",
+      "bytes": 2576
+    },
+    "token-only/START.json": {
+      "sha256": "c39d1c71b6f33de8165a45fcbf2d4f4e9c0e6ac393e739d7f0c164d30707f1db",
+      "bytes": 47052
+    },
+    "MANIFEST.json": {
+      "sha256": "8a5bab1609220acc74679177a2cc5fa15eaff50838f142d63dd945b7e81a5788",
+      "bytes": 7219
+    },
+    "ROOT-SCOPE-AND-ACCESS.json": {
+      "sha256": "51b42b7f63a71e799f6cbd3829675b2cc32837d1a300dd78dd13032385811e73",
+      "bytes": 846
+    },
+    "PUBLICATION-PROVENANCE.json": {
+      "sha256": "c5651f5650603650442a1a949820b69705670c93229d21d5020e2c08bc65c809",
+      "bytes": 877
+    }
+  },
+  "self_excluded": true
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "trial": "token-only",
+      "all_154tracked_bytes_equal_actual_accepted_object": true,
+      "mismatches": [],
+      "origin_push_disabled_destination": true,
+      "no_task_consumer_execution": true
+    },
+    {
+      "trial": "explicit-decline",
+      "all_154tracked_bytes_equal_actual_accepted_object": true,
+      "mismatches": [],
+      "origin_push_disabled_destination": true,
+      "no_task_consumer_execution": true
+    }
+  ]
+}

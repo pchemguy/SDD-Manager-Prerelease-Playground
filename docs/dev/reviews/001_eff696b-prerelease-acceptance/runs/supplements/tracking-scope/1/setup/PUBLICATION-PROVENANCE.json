@@ -1,0 +1,20 @@
+{
+  "original_command_sha256": "877fb30e54f388a8c24d02f7b835b784bde4956b57d10a5a988c89c9d4046d3c",
+  "original_manifest_scope": "MANIFEST.json describes exact original local artifacts, not screened public replacements",
+  "first_publication_attempt": "No files copied/staged/committed: no_secret rejected original NULs",
+  "transform": "Only two stdout scalar values become exact binary sidecar references; original local command JSON immutable",
+  "changes": [
+    {
+      "json_pointer": "/commands/11/stdout",
+      "sidecar": "COMMAND-11-STDOUT.bin",
+      "sha256": "69d4f21cacb29710e668c9048fc8623fe53f3444173c262f49bd6c08b7544476",
+      "bytes": 10046
+    },
+    {
+      "json_pointer": "/commands/30/stdout",
+      "sidecar": "COMMAND-30-STDOUT.bin",
+      "sha256": "69d4f21cacb29710e668c9048fc8623fe53f3444173c262f49bd6c08b7544476",
+      "bytes": 10046
+    }
+  ]
+}
