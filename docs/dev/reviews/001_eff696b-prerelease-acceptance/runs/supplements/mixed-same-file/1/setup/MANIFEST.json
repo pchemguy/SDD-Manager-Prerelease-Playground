@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "scope": "Foreign same-file staged/unstaged caller comments and untracked note over actual independently Passed T001; no T002 completed fixture",
+  "files": {
+    "CONSUMER-INPUT.md": {
+      "sha256": "96bfece8d9efcc889ea8e8aa85bb1bd496342dd8d66e8c8cf92b24f004f7ebeb",
+      "bytes": 1847
+    },
+    "SETUP-COMMANDS-BASE64.json": {
+      "sha256": "21aa498079393069e6d6f7a93d58fef720ab3d00f4d1c229beb14b73ca30c0de",
+      "bytes": 43575
+    },
+    "foreign-note.bin": {
+      "sha256": "abda2a6abaeff121086148ef3c59940cc3e218bd79c6059e484b650de14cea69",
+      "bytes": 54
+    },
+    "shared-path-original.bin": {
+      "sha256": "74513d04e3b4b46d2d887abd19425a6f554cb875228f98ef8e26da85e73867a1",
+      "bytes": 150
+    },
+    "START.json": {
+      "sha256": "b633ca2b9f04c3377494842118ed0337da5e131ab2af09996d3ca918aa114ba0",
+      "bytes": 49802
+    },
+    "shared-path-worktree.bin": {
+      "sha256": "d85fb4c9158ec850a73be546a239cc5aca68c7039f80a12ed3b6aa7421abe7cb",
+      "bytes": 292
+    },
+    "shared-path-staged.bin": {
+      "sha256": "eda541c799b38cb615163d00ad53da6fa4aba2c36346e6bf0feff9f14f8be639",
+      "bytes": 226
+    }
+  }
+}
