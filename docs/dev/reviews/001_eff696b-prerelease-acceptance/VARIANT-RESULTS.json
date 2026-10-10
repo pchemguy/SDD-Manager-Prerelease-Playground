@@ -5,5 +5,12 @@
     "evidence_class": "consumer",
     "reason": "Independent full assessment of concrete accepted/published preparation and lifecycle, with source-loading/shared filesystem/native transcript limits disclosed",
     "assessment_path": "runs/A-001/1/ASSESSMENT.json"
+  },
+  "A-002.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Independent correct task/milestone/prerequisite/stop selection and exact unchanged refs/index/all154 tracked files; no observed tests/mutations",
+    "assessment_path": "runs/A-002/1/ASSESSMENT.json"
   }
 }

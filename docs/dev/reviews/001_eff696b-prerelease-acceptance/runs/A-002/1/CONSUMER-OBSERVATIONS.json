@@ -1,0 +1,505 @@
+{
+  "request": "Select work only: next executable task and bounded milestone 1.1",
+  "input_path": "/workspace/scratch/46b31bb4dff6/037-consumer-a002-input.md",
+  "input_sha256": "9890ef5cf93c37cdea15ea9ac62e5f675ce580596dbcce4a6c48e6a2ab329c6b",
+  "product": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "pinned_plugin_source_requested": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "explicit_pinned_source_loading": true,
+  "filesystem_isolation": "shared; uncertified",
+  "loaded_file_sha256": {
+    "AGENTS.md": "d905c30b1bfc4ade497fa8bb2d850c71e0fae0db8a491a7651e53540678c067c",
+    "textstats-run-resources/plugin/AGENTS.md": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+    "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+    "docs/dev/TASKS.md": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "docs/dev/PROJECT.md": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "SDD-MANAGER.md": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "README.md": "af9961caa90a943d12b5c995893a8214628b0006049aebe0d38421bbf28bf373",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "textstats-run-resources/plugin/skills/sdd-report/SKILL.md": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd"
+  },
+  "additional_identity_only_sha256": {
+    "docs/dev/PROJECT.md": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "docs/dev/ARCHITECTURE.md": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "docs/dev/DECOMPOSITION.md": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "docs/dev/SPEC.md": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "docs/dev/layout.md": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "docs/dev/TASKS.md": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e"
+  },
+  "qc_report_hash_matches": {
+    "docs/dev/PROJECT.md": true,
+    "docs/dev/ARCHITECTURE.md": true,
+    "docs/dev/DECOMPOSITION.md": true,
+    "docs/dev/SPEC.md": true,
+    "docs/dev/PLAN.md": true,
+    "docs/dev/layout.md": true,
+    "docs/dev/TASKS.md": true,
+    "docs/dev/SPEC-REVIEW-REPORT.md": true,
+    "docs/dev/PLAN-REVIEW-REPORT.md": true
+  },
+  "sanitized_actual_command_result_sequence": [
+    {
+      "command": "cat /workspace/scratch/46b31bb4dff6/037-consumer-a002-input.md",
+      "exit_code": 0,
+      "result": "Read selection-only request, actual stated baseline and authorization."
+    },
+    {
+      "command": "rg --files -g AGENTS.md -g SKILL.md /workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "result": "Discovered only product root and pinned plugin instructions; 15 pinned skills."
+    },
+    {
+      "command": "cat AGENTS.md textstats-run-resources/plugin/AGENTS.md textstats-run-resources/plugin/skills/sdd-implement/SKILL.md",
+      "exit_code": 0,
+      "result": "Loaded product scope, package orientation, selection owner and read-only exception."
+    },
+    {
+      "command": "git status --short --branch && git rev-parse HEAD && git branch -avv && git remote -v && rg --files docs textstats-run-resources/plugin/skills/sdd-implement",
+      "exit_code": 0,
+      "result": "Clean design-docs/main at stated HEAD; main/origin main at stated checkpoint. Remote URL contained no credential. No hosted API inspection. Initial status preceded loading no-optional-locks guidance; subsequent inspection suppressed optional locks."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-manage/SKILL.md textstats-run-resources/plugin/skills/sdd-orient/SKILL.md textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md",
+      "exit_code": 0,
+      "result": "Loaded coordinator, read-only orientation and precise selection/stopping procedure."
+    },
+    {
+      "command": "cat docs/dev/TASKS.md docs/dev/TASKS-REVIEW-REPORT.md",
+      "exit_code": 0,
+      "result": "Observed full 17-task hierarchy, all unchecked, accepted adjacent QC. Output preview truncated; milestone 1.1 reread separately."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md",
+      "exit_code": 0,
+      "result": "Read startup and routing, tracking and activation. Combined preview truncated; tracking/activation reread separately."
+    },
+    {
+      "command": "sed -n '1,78p' docs/dev/TASKS.md && cat docs/dev/PLAN.md docs/dev/PROJECT.md SDD-MANAGER.md AI_DISCLOSURE.md README.md",
+      "exit_code": 0,
+      "result": "Read scoped task definitions, phase/milestone exits, accepted brief and notices. Combined preview truncated; focused TASKS read follows."
+    },
+    {
+      "command": "sed -n '1,56p' docs/dev/TASKS.md",
+      "exit_code": 0,
+      "result": "Full selected T-001/T-002/T-003/T-004 scope, dependencies, evidence and report path."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md",
+      "exit_code": 0,
+      "result": "Confirmed requested tracking remains projection pending; selection is read-only and first phase has no predecessor."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md",
+      "exit_code": 0,
+      "result": "Read currency and preparation integration gate; partial milestone stops on phase branch without main integration."
+    },
+    {
+      "command": "cat docs/dev/SPEC-REVIEW-REPORT.md docs/dev/PLAN-REVIEW-REPORT.md",
+      "exit_code": 0,
+      "result": "Current Ready gates and exact upstream identities; equivalent acceptance-only rechecks retained."
+    },
+    {
+      "command": "git --no-optional-locks rev-parse --show-toplevel && git --no-optional-locks status --porcelain=v1 --untracked-files=all && git --no-optional-locks log --format='%h %s' --all --grep='^\\[T-' && git --no-optional-locks merge-base --is-ancestor HEAD main; git --no-optional-locks rev-parse origin/HEAD origin/design-docs/main main && git --no-optional-locks ls-tree -d HEAD textstats tests tools && python --version",
+      "exit_code": 0,
+      "result": "Expected repository root, clean status, no task commits/product source trees; preparation missing from main; refs match request; Python 3.12.14. Ancestry command exit measured independently below."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+      "exit_code": 0,
+      "result": "Loaded bundled QC dependency, existing accepted input reuse, root orientation/read-only limits."
+    },
+    {
+      "command": "git --no-optional-locks merge-base --is-ancestor HEAD main",
+      "exit_code": 1,
+      "result": "Preparation tip not contained in main."
+    },
+    {
+      "command": "git --no-optional-locks merge-base --is-ancestor HEAD origin/design-docs/main",
+      "exit_code": 0,
+      "result": "Local remote-tracking preparation ref contains tip; no live fetch/push performed."
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "symbolic-ref",
+        "--short",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "design-docs/main\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "1e3305c8659045945244c06861079fef879ca3c3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "exit_code": 0,
+      "stdout": "c7485008fb4688a558099d21a9492b4342fd535d\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "symbolic-ref",
+        "refs/remotes/origin/HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "refs/remotes/origin/main\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "origin/design-docs/main"
+      ],
+      "exit_code": 0,
+      "stdout": "1e3305c8659045945244c06861079fef879ca3c3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "origin/main"
+      ],
+      "exit_code": 0,
+      "stdout": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "merge-base",
+        "--is-ancestor",
+        "1e3305c8659045945244c06861079fef879ca3c3",
+        "main"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "merge-base",
+        "--is-ancestor",
+        "1e3305c8659045945244c06861079fef879ca3c3",
+        "origin/design-docs/main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "ls-tree",
+        "-d",
+        "HEAD",
+        "textstats",
+        "tests",
+        "tools"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "log",
+        "--format=%h %s",
+        "--all",
+        "--grep=^\\[T-"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "python heredoc: identity and no-optional-locks read-only state collection, then write named scratch observation JSON",
+      "exit_code": 0,
+      "result": "Created requested observation outside product; all nine governing QC hashes matched current TASKS report; 17 unchecked tasks; no product content mutation."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-report/SKILL.md textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "exit_code": 0,
+      "result": "Loaded reporting and formatting contract."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md",
+      "exit_code": 0,
+      "result": "Loaded status-report contract without claiming implementation completion."
+    },
+    {
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all (from observation finalization heredoc)",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "python heredoc: add reporting-source hashes and final clean-state readback to named scratch observation",
+      "exit_code": 0,
+      "result": "Observation finalized; product remains clean at original HEAD."
+    }
+  ],
+  "before_product_state": {
+    "branch": "design-docs/main",
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "status": "clean",
+    "completed_tasks": [],
+    "tree": "c7485008fb4688a558099d21a9492b4342fd535d",
+    "tree_evidence": "unchanged HEAD object and initial/final clean worktree"
+  },
+  "after_product_state": {
+    "branch": "design-docs/main",
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "tree": "c7485008fb4688a558099d21a9492b4342fd535d",
+    "status": "",
+    "default_ref": "refs/remotes/origin/main",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "origin_preparation": "1e3305c8659045945244c06861079fef879ca3c3",
+    "origin_main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+  },
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Implement immutable statistics and whole-text counting",
+      "checked": false
+    },
+    {
+      "id": "T-002",
+      "title": "Implement strict file acquisition and complete public API",
+      "checked": false
+    },
+    {
+      "id": "T-003",
+      "title": "Integrate named-file CLI and nonempty product checks",
+      "checked": false
+    },
+    {
+      "id": "T-004",
+      "title": "Review, test and report milestone 1.1",
+      "checked": false
+    },
+    {
+      "id": "T-005",
+      "title": "Complete named-file CLI failure and usage handling",
+      "checked": false
+    },
+    {
+      "id": "T-006",
+      "title": "Document public API and runnable named-file usage",
+      "checked": false
+    },
+    {
+      "id": "T-007",
+      "title": "Build and verify isolated source distribution",
+      "checked": false
+    },
+    {
+      "id": "T-008",
+      "title": "Review, test and report milestone 1.2",
+      "checked": false
+    },
+    {
+      "id": "T-009",
+      "title": "Review, test and report phase 1",
+      "checked": false
+    },
+    {
+      "id": "T-010",
+      "title": "Add JSON CLI output with retained text behavior",
+      "checked": false
+    },
+    {
+      "id": "T-011",
+      "title": "Verify JSON from extracted source",
+      "checked": false
+    },
+    {
+      "id": "T-012",
+      "title": "Review, test and report milestone 2.1",
+      "checked": false
+    },
+    {
+      "id": "T-013",
+      "title": "Add borrowed binary stdin acquisition",
+      "checked": false
+    },
+    {
+      "id": "T-014",
+      "title": "Integrate stdin across text and JSON CLI",
+      "checked": false
+    },
+    {
+      "id": "T-015",
+      "title": "Complete final documentation and source-package exits",
+      "checked": false
+    },
+    {
+      "id": "T-016",
+      "title": "Review, test and report milestone 2.2",
+      "checked": false
+    },
+    {
+      "id": "T-017",
+      "title": "Review, test and report phase 2 and final delivery",
+      "checked": false
+    }
+  ],
+  "selection": {
+    "owning_list": "docs/dev/TASKS.md",
+    "active_feature_list": "none discovered",
+    "next_task": "T-001",
+    "next_task_title": "Implement immutable statistics and whole-text counting",
+    "milestone": "1.1 Named-file counting",
+    "phase": "1 Named-file utility",
+    "range": [
+      "T-001",
+      "T-002",
+      "T-003",
+      "T-004"
+    ],
+    "dependencies": {
+      "T-001": [],
+      "T-002": [
+        "T-001"
+      ],
+      "T-003": [
+        "T-002"
+      ],
+      "T-004": [
+        "T-001",
+        "T-002",
+        "T-003"
+      ]
+    },
+    "milestone_report": "docs/dev/reports/phases/1/1.1.md",
+    "execution_eligibility": "candidate identified; execution not authorized and activation prerequisites unmet",
+    "completion_reassessment_pending": "none in owning TASKS"
+  },
+  "prerequisites": {
+    "preparation_acceptance": "established delegated acceptance through TASKS and adjacent QC",
+    "qc_currency": "all TASKS report governing hashes match actual files; no conformance/QC performed or report altered",
+    "preparation_integration": "missing: design-docs/main tip not contained in actual default main",
+    "preparation_publication": "local origin/design-docs/main matches; live remote not queried under read-only selection",
+    "phase_1_predecessor": "none",
+    "tracking": "confirmed by accepted PLAN; projection pending, no hosted objects created per supplied actual state; no API probe",
+    "phase_1_projection_required_before_execution": {
+      "label": "phase 1 identity to be verified by backend",
+      "milestones": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "issues": [
+        "T-001",
+        "T-002",
+        "T-003",
+        "T-004",
+        "T-005",
+        "T-006",
+        "T-007",
+        "T-008",
+        "T-009"
+      ],
+      "initial_associations": "required for every task including reviews"
+    },
+    "future_phase_2_projection": "not eligible; not requested"
+  },
+  "stopping_boundary": {
+    "actual": "report selection only; no product mutations, checks, branch changes, commits, pushes, hosted projection or implementation",
+    "hypothetical_authorized_milestone_execution": "stop after T-004 code review/test evidence, blocker repairs, committed/pushed milestone report and task completion, and verified eligible hosted closure; pause on owning phase branch before T-005",
+    "phase_exit_not_selected": [
+      "T-005",
+      "T-006",
+      "T-007",
+      "T-008",
+      "T-009"
+    ],
+    "integration": "no milestone-only merge; full verified phase 1 exits through T-009 required"
+  },
+  "preservation": {
+    "product_content_changes": false,
+    "workflow_owned_commits": [],
+    "pushes": [],
+    "product_tests_run": false,
+    "implementation_present": false,
+    "last_task_commit": null,
+    "pyenv_touched": false,
+    "outside_product_reads": "named input only; no other checkout, catalog, assessor or prior answer read"
+  },
+  "limits": [
+    "No live remote/hosted readiness readback under selection-only scope.",
+    "Initial plain git status may refresh index metadata; no content/branch/config mutation was made.",
+    "Some combined read previews were truncated; selected task and tracking/activation material were reread in full."
+  ]
+}
