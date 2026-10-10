@@ -1,0 +1,41 @@
+{
+  "assessment": "Passed clean first attempt after separate publisher repair",
+  "run_id": 38047635040,
+  "publisher_job_id": 114200356160,
+  "build_job_id": 114200282483,
+  "tooling_source": "4a56c7d3560297edcbc0934dcf99526841e1dab0",
+  "source": "170adcdb861df9ea6328b4986fa3a1abf9e2de54",
+  "consumer_plugin_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "release_id": 408893787,
+  "tag": "v0.15.0-cp014-repair",
+  "body": "## Campaign 037 fresh-create repair proof\n\nTest-only isolated metadata fixture with acknowledged-ID publisher readback.\n\n## Preserved literal section\n\n`$(touch SHOULD_NOT_EXIST)` remains literal.\n",
+  "draft": false,
+  "prerelease": true,
+  "latest_id": null,
+  "archive_sha256": "3cf208d423726531e308bdbf004866f4516fcd03d9db014d4d01d0c55b5196e3",
+  "verified_git_file_count": 133,
+  "assets": [
+    {
+      "id": 627764794,
+      "name": "sdd-manager.zip",
+      "size": 317929,
+      "state": "uploaded",
+      "created_at": "2026-10-10T11:13:55Z",
+      "updated_at": "2026-10-10T11:13:55Z"
+    },
+    {
+      "id": 627764858,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82,
+      "state": "uploaded",
+      "created_at": "2026-10-10T11:13:56Z",
+      "updated_at": "2026-10-10T11:13:56Z"
+    }
+  ],
+  "prior_failures_retained": [
+    38043868742,
+    38046045373
+  ],
+  "evidence_class": "actual GitHub workflow and independent authenticated provider/downloaded-byte verification",
+  "observed_at": "2026-10-10T11:16:00.399737+00:00"
+}
