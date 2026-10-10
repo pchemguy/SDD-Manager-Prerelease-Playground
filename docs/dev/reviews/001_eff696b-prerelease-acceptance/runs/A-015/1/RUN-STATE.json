@@ -4,10 +4,14 @@
   "phase": "P4",
   "case_id": "A-015",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Real accepted preparation and localbare trial delivery observed; callercontrolprobe only, no task/trigger yet",
-  "pending_operation": null,
-  "next_action": "Fresh ordinary scopedtask consumer; actual cooperative hold boundary must be independently observed",
+  "role": "assessor",
+  "last_completed_action": "ConsumeractualT001work/checklist/stage sealed afterheldcommitexit1; no new productcommit",
+  "pending_operation": {
+    "kind": "git",
+    "status": "local-only",
+    "description": "Owned completed T001 work/checklist staged; closingcommitheld; exactHEAD remains88a"
+  },
+  "next_action": "Independent actual staged-work trigger inspection and exact recoveryexports; publish beforeboundedrestore",
   "checkpoint_refs": {
     "product_branch": "trial/037-a015-staged",
     "product_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
@@ -32,6 +36,8 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/SETUP-NOTES.md",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/INITIAL-TRACKED.tar",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/FACILITY-PROBE.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/hooks/pre-commit"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/hooks/pre-commit",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/HOLD.json"
   ]
 }
