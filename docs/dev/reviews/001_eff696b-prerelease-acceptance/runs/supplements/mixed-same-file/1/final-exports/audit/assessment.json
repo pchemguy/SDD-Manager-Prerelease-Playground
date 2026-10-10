@@ -1,0 +1,6270 @@
+{
+  "head": "7cf8d5e287c317ee7cdc458eff466550d2a3114c",
+  "base": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+  "subject": "[T-002] Implement strict named-file acquisition and complete public API",
+  "commits": [
+    "7cf8d5e287c317ee7cdc458eff466550d2a3114c"
+  ],
+  "changed_paths": [
+    "AGENTS.md",
+    "README.md",
+    "docs/dev/TASKS.md",
+    "tests/integration/test_api.py",
+    "tests/unit/test_io.py",
+    "textstats/__init__.py",
+    "textstats/io.py"
+  ],
+  "checkbox_transitions": [
+    {
+      "before": [
+        " ",
+        "T-002 \u2014 Implement strict file acquisition and complete public API"
+      ],
+      "after": [
+        "x",
+        "T-002 \u2014 Implement strict file acquisition and complete public API"
+      ]
+    }
+  ],
+  "foreign": {
+    "staged_intent_exact": true,
+    "unstaged_intent_exact": true,
+    "comments_absent_from_commit": true,
+    "note_exact": true,
+    "note_untracked": true,
+    "note_absent_from_commit": true,
+    "raw_index_equality_not_required": true
+  },
+  "checks": {
+    "one_owned_commit": true,
+    "baseline_parent": true,
+    "single_T002_subject": true,
+    "only_T002_initial_checkbox": true,
+    "scope_owned": true,
+    "local_exact_readback": true,
+    "complete_remote_objects_identical": true,
+    "all_independent_tests_pass": true,
+    "semantic_foreign_preserved": true,
+    "remaining_only_foreign": true
+  },
+  "status": "MM textstats/__init__.py\n?? FOREIGN-MIXED-NOTE.txt\n",
+  "tests": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/unit",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "exit": 0,
+      "count": 15,
+      "success": true
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "exit": 0,
+      "count": 7,
+      "success": true
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "independent_api_probe.py"
+      ],
+      "exit": 0,
+      "count": 4,
+      "success": true
+    }
+  ],
+  "remote_object_verification": [
+    {
+      "oid": "7cf8d5e287c317ee7cdc458eff466550d2a3114c",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "1e3305c8659045945244c06861079fef879ca3c3",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "1510709f6e10d82d1b525b8c7cb221c5e1c5e20f",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "b3ba0338d71c167aaec8ca85317d09002557ea2d",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "928c319ed84a919c6424adfa4522918e054a1d43",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "bf3eb5e9a8d30a9e8a457f7708afa3b400100417",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "566a1af2ddd44d79a898c2e67607360395044ba6",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "334a4dd3f257ffefeb18ab88dfedc425b44838fc",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "b7b017cf7480bded8ad7f7de4a4eed690083b39c",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "c2dbdeb9f988d1ec66c4674bf11482429fea60df",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "e2e4750ad3be531e53b189ac8519b5376db0ee9e",
+      "type": "commit",
+      "equal": true
+    },
+    {
+      "oid": "4bc0f02fb8a749adb5fa6aa77ff67ed2199bc05a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "9be2a9eb61a0dce48cd9072f45595999af22b877",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "346a8885a6cfe74e3227f235ef500c97f15bc776",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "25642e80ca3a23d0a8001e37bec5c038901c404d",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "46544a4584913d554656b90c8cc0faef89ee5398",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "04dbd377fbb69b6559c34f972eeea99ba6e83579",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "fe8ae55254bd6a1577de7c1b1053a3c615edb8a8",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "64fef9ce9b4e794c35c6bab2e49aded8941b2c08",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "a6b08178ea630825c330b1c9cbcd388e89f799e6",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e1dacbfe06bc78ab8ade882d41f08ed24a19afbc",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "cfdec4bf0d2abb66b6dddd77345c63e8e3c3cf32",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "7bb22d266be8343e620d007d703facc143173db6",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a58403c4a8b149234517183a1c87b4469f82eae1",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "16784c2ed875d97d9b9853db7356a7bf4b5afc0d",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1a44d018cafbbc699a0633a0596a7c9c2d41a233",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "7787992d419a44870722f4c3c6c677ef6b04a0e3",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4a559eed6e875435537a0d7befea7dc4c67430f2",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "1c2fe42dba149449987db10c0a0346878221f839",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "2489ae62baa0159775f721355808fb56af8697cf",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "396d252178e097bde725121d1b89abc6e78d629f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "8a40dabb3537e953f517d4e6f76be58cc55f01fc",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "6e406906e53b643695e2c455151e46a0dafd743c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "44c062eeae26ac155121940968910394e0554a4b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a9ced249707d4893bb9fa5979076d37b94eae519",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "32d3194ce111a0feac516e7628bb0fe5ce78a314",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bb785a6fb53e0e87b5ba90a98d207eac3d9eaa24",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "fe68a730be2fd32f0b906e2e54473ca2730c33d8",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "3519f31852dc72eb8fd61eb849518846e581171a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4a022dc79c1e1707fd4f306a2af6b3fe8c1a7f17",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b5da099e8826319217b20cb86e46e2fb70a202fe",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a1f0f5e7aea6321e135493fc34a441d014339e31",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1133ee21f6b69b73f4cd2fe75c90401351db1b82",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bc0ea8544cde55c20e89294116787d40fdb81e7f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "f0400b9e4af391b0802aa6bca6b08f61e86ce030",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "007301d0e6315649ce6e6412d28071626f6a9311",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d5d02c2e5da2987e81720740caa777eafc35175c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a744727afbf062bce5527106bc1b00c8b72c2397",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "14a641256762f580c784db2b751dbbd4e6a073b2",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "bd367d487f47b71776ad74ce3ec17dc22458619b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "7925fbdb555bc0ec248a321f11b1cfda6ea38be7",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "c6dbe30ffe016437fa174400de3414191bc127ae",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "36df609fc180fb64b1fb8b34e09c72381ec3a988",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b21cca2057f34a94b2e30c7820b927cb6ee32c00",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4816775d4196094f9a3fb2a636b2b59aa67d4b92",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a0740f769398d0870cfba32ef7e707c4c4c2f57b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4cbc8ca08d6d5e3f018301355f1ee2e47e9ac114",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a7098772fdda6a06fe7d995894aff4873d76beb2",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "61f676b6266e5920b48c64667528c287a97e195e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "15e980d6ebf4774f9951d19c42df2ccff8955a3e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "65948e58e9c5a0182a1e86c13a4f4708f7ca0939",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "599d236f6b45b2d6db9c90f85d49cc121479fc64",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "82248c3a5ebb5424df805f8719c099007e165bca",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "fddfbc90fbaaa9efa8b3ed398f11b5bda01ffd71",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "3dab3d4e4dec031943d046ed7a549437b25436f0",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "74c94d8b88fed9c2ac5c6640205467cffc9c7d14",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b20df81eb3b391b2e33d2fd8c4e20369b23f7e58",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d3ed9d5cfcb449a26d95508e19115d19ef5504ed",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "cb36d54a708c6085fc36b5fef1fbff268646ffe5",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bd08ea06432f318cedf17cc3108a58af8f15ea96",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "1141d97a90d45b7ad0b86f575d03228976a3609e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d9153f92334f277209f1fd5396d3d7904dc03212",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9ef3cf68aa0447f2e214a6766d4846eede81ee3b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a2c4d3aa3fa75b612dceb5dc5302d8e6b9dde527",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "82d9503c93ac424ffb7ef2a82125d94fda885493",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "72bd0a4cca48de252d99a5e8a03039ba2c5a196f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bd0e99d3c1ff4f3410ae898d20881fb961e6474d",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e997d5362edf8c04950ae95fde12727ee36bfbf0",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "e61c4852491a41d26e3e5cf4ef6d86dae22554d1",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "646858aa53fc1a4ccf4f88d5985f3aa309a31db9",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d12f28e77909eec0b3e092597f9dcf7db49b5f08",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "672bc5230d197d55142a777f0224b241bf16e24e",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "c6ba99d4568e4f7d75ffbfa0701ad42013bc0547",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ef4cf234f75eec6557637226e3849380d558ac03",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b42c762672d3737fdfe6f8a333519c87e29cc7ac",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9022f08d8b7ebffdb5044c42d189fa0c92c4cec2",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4f091c3c9ce409ce7c468d13bf0e69cd2740b419",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "7084b0fa3c180798a7f9381ffce03b4fb9e7c37b",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "6c6e2ebd872a9352d17f9e1451089c49680f12b4",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "64af4d06fa45bb461f2df7864bcc22f008f95718",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "23cbd5cdf2cf538927601a230c18638bb4f53e34",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "60bb9848d5f395d107adbf6443b3f8b7c6f2976f",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "abcfcf450057db9ddd954ff1ec2b4e629ba0f4c0",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d66c9f2dcd9b9e8b5a5f8b6ceb38dd82a1ba77b4",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "31c3aa7b2818b0d8b14c266b90a83ac4d4a9fb5a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "342b4afe4e3596b9b1a22d5c7469437a90f5f525",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9f51adef2d5935b6a423005725a4681d1d1c877a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4682067e143bfe5157b58fe116f57c2d591a2330",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "aa1c1e657037e97e9c1f770f8b2ac0efcf71e409",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "8391b295dca084dbcc1227d27437d28110622671",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d63cd5e6c4030779f767937aa95e04d773d89c68",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "6f874ed7072f72ded46103f9467aadd5ca0ba1a3",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "fd3590b54b4be1fe8e79e8ab0c8d36250c51ca4e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a1851143d0d6e08630ac3964fbfe96006e11b3fe",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "5b629ebb94a6bab80d89ceabc3672a55c4676e9c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "36ee6189110d2319b46b8be35524285275982822",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "5fbc1bd5cad73b39e7ab5e70f92e59d74af8d0a4",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "8d9f95d25c0b2efa43eaf2cd06d5b069db31d9a1",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "8b611adc9b3c9898de665b9e8f426bdb652cace7",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "dbb6cddb18fc5711891241e1f4493088dba775e2",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a21bb5ec4de7291082266b69e0518e03fdfc4614",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e9165abd49085f09d0cf74b08b73c26582c65f2a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "5ced609bf2e6145e1e10d94b4673de86f75d7339",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d3825b2c598e6573409fe1aaacb762aafee68fc8",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ceaea6441c1782fabc90a96982d11392e0669b6a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "f50ba4ba0abbb5e08a0c451ab1705a4802dbe2ec",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "eb1fc602b67df16fefd3b6b7431565e396e1dfe7",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "8a2f97389aa0d69489783422c2e55eb302251d17",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b3742fbb00bc6bef4151ffe70f4e16460edbf25d",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "5167a3ba9a97de0d43bb87f31973a1901d1365de",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e5df84707816e0541560717fb3d66ba3dff89d44",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a3607d913dee65e478fc23390f92e06d41fc6ec5",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "81402919f16d38b021bed35d47ccfd570018d154",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e89feee044835f89bc217211308aa992d8d8732f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "78b3755d2d5119d6c0ed2c2f16ceb6fbb5643a06",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b612b4bfe11ee16e85c289ea3b31d85e57e8c5f0",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "71e4599ede6df67d287b36a27f65d17c066068be",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bcc98188ba2ff31a42fdf4af4f214fb528b06cdc",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "7d00c608c710962ad7c6737b325cd98875dd22f4",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bbfb2d2ec4f2db8c00580d83de0f2fb274792300",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "46ba7ac9d910129ee3a41a1a85a5bd3f15b86444",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "78e1d9e6e88fbaa09deaa915c5a53aea3e16655e",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "cebf9416c8683352b6fd066bc9c92a0204cb1f48",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "734693a799713536be35973ebec539be6307106c",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "c25203f73bef5da236dc72f672610002249f981f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "09b932c261d77e96b7fbdd47f648a5ec60958be5",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1f2b46444ad69cbfdf7aac5829245bc2a2615291",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a51d845dee42adc2ab435f15ce80d3891de6bb4e",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "830c3ac25b2b88cf62b89ac70179ce41498192e7",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "f8bceaaf551d3f1809cdcac237859c4f49299494",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "5d14404048625eda4260dc02c8b1dac031220661",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a71817e9ff75d734b647b1b5b237f47414b4f5f9",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "963ca67e70f7f65a7ddf37700eacdf2faa7e9639",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "96e1bee22414550d30556e09f6f736b02968eeeb",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "28ea16cde6d0335b55af964348182feb2d865f7e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ac2a66694acf0c7435ed7d6469e54c6dac2cb408",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "15fb0fe786a0d3f56a37ca7b79ad6a0d8901a04b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "5a1b29497f561fa08f3e4a07aecd28ec5c079d09",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b83ee8bb17ed09c77df5a1156176a0dd81147501",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9d40275f249ddf8db6993a903f20ce52fae4e0c9",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "0cec00be146b05788032cdc17984113123f14a45",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "7abf28f242cc9b84ee16e19519a7f1f6fd0f1782",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "2c3c1a6c7e3f7f95812d72d40fdf0646b9513868",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "1ad8c47d82ef183d458331272f8a9a4361516367",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "7e4f466303d94a7e2d253595db7421e35ed038bc",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "30cee846374d6aee9ee42aba1b718a731e140054",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "7e7d4c11900a109c8e45b540780e05b228ae644b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "bac2b690d79ad66927969662c2ab7ee81cd09ac9",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "ed158258a6b466566be64ddfe4a28e177185cf37",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ed659bddc0a4b3dcb5726ceeee58feef358eb078",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "60d6d107bf8e1ee9650ecb11b7dc174465a3919f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "051b88005f9ce7faf28957f1ca02fbed7e9f1d63",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1e664a82486e4fafb13fe998d3c29588710acf5a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d6601aab79f7487724d1180d8ace759095dd4660",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "45d4036b4696fca363509ef63c34ab9bb6e54ddd",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "36c8b66b38ace131f3faa921b6b61930f8d0e4a8",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "68ea6836b1b490fe9a997dcc7a8cb3fc75af8668",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "1c80d1dea79b4f3c37b28c5ab3c77490a087d9ec",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "92a571408af0b8c438081e783280bac1278b4773",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "3beccc33a355297e4ca4b0120ac4f2d447a16244",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "98c0ebe4010999635b7254c4505e916c2a19f2d1",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "cac865f26af0cf08abac926db0d4402a98109e0e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "0ebf37b133032547c9dcf024cdbfa0de0a18916f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a885460d80abb534ab64bc9e7facb05ce236c88a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b3f821e619d78fb2bde6c2c13c29feddbf01bd51",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "43eee249a7c580f52d9480d1064908dd447c18e6",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "37c258a151f148267b16005872902f5c1042550d",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b4217b5c03b62d979e683047aae6a96f5445a3cf",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "f2a15209df0860b1e5cd7e5bb40c44bc78890c9a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "5069f2139e7dd96d504abd6ec16d1ba2520e5235",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d697641616c8c69327af01fad98238879544cfce",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "0dcbbca446683b5466f076f73af8bb34d6d93819",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a554e01782a0dd049d20033fdb54a33a14647773",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "5c68aaa854ef6d7159141682ba14695f3507c5d7",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "54f094710bc3a1617c8031c959b362c5837aaeaa",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a069cfd1840c12f3307a6b99e70e89ebc5a7a133",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "79426b2b408ac3752eca100f6df22cd1c9e006ce",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "75a25e252162eb9d10f767638519b5f5629da651",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d48b7295f1ec10f341564b73e96b82a9ae5f1625",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d1cc2a459af4ea4493e3662fc15b8db377f2ad95",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a11b0a59dfc0da107067efa72f383571c6ff5986",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "c9cff07dd41a60d33692bb536d18aa6980a4149a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4f1faeef75c57dff1bca928da937892f240448c2",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "64239362c0273e70b058af5ef8f6e4d8a795959e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4acdee0c44c9d2a49261e25aadc1445c085e833d",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "0ff7852868752f668d1a963fe5809c85000ea0f8",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "da76b5345cf0ea716e42c5bb67e68ca573f6008c",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "47c40c9015f19c5a120d03e6d38c4c7628b5adfa",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9e98333d23602ee8895b37e6a7ca9bcfd25ac4b7",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b53d7801ae392cdb6c1e64deb220f4f61e828099",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b1c4cde94c0c7814360f5827c1f1239fcaac2244",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d577273d6ba5619d1374fcae56bdb8dcd29d7b6b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "c0e0ceb6fb615c2295b5bdee76259a52a1ad02db",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1377a56a0a21580f686e2962604d553850d8c211",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "424bed26bfe8a228eea5cac8028e77d9c2ee2e63",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "69d13c6cc10337f93360460236e1eaed0345a103",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "8f81cb00e90555d014c3e8828f6cc7dc3f3eeb0a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "115dcfad8735c0aa6ad03048faaddb66852416c7",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b3821a05834b72ba558b914245119aa6d399e42c",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "e90fa5ecd4bbce3e7799b0d933367ea0144f2dcf",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9bff0e3dde54517d39c70bb67a0ace932ff00dd9",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "8fe415c8e30e2bf394aea248036c9ec766e1bcb6",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "3c64918c04b8a96930ea1f0643d632b8df86bf15",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "a9fc420f41b01d4e101b30bcbd632ece624a4c8f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "cea681b5930de76765d8ea32b05bb6d036cdbf9e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "88dca872a9143345196473d0916445ed85707c56",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "2c6574405439efb4345ea83f724bff4c8a12ffe2",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "abf0390320aa14406af7a520b9b0739fdda9bf08",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9760bd4e1cedb5ab7acf05c38149364654089e4d",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "39fabab88555d09f3f7e12e44ec0d4e6a33cfdd5",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "eb937f2c8becb535ca4c455bbbcb93bf4b317aef",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "f02587c397f13b549455308a882084ea0cc92bde",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "99a80528d2c95c83e41598b14f19c5ace9b83e3a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "3b50d1eed11a57302c09b495e5fcd4691102586c",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "92ce970bebdc920135a1bbe713f35d6a313d9c19",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "deec846b8ba67f476de885e759bba15a9a9b10ab",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "20772b47c30d2a804401b4f97bb3db9a949da8bf",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e9f9afb71e88da8e2a810c2646e346ab5dc34ab2",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "5a13c2c0d8f1a1dc820616c6311dbb5c0926125f",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "3bb8edf6277c99fb60f0698bbc72a88c98af33b2",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "78cf6246bc553364c4e1a5662220213b8be3c0da",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "af341267164ded2e20f01c137c1d23aac0e66e5e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "480256f29dcd08a366990a836fc6c6df07e9bbea",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b1f8167826407e756ba11cd9f5870b8d494101fa",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "c769a4c37776671fe014b10fef994de452ef038e",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1101e288fdfd3f37e3083e49a5a3546424984b40",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "0aafefecaf6bf4b8bf8ec0c5ec7b6c5d0f06aa32",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "fec7587f01a2c680810ade03b291e8fa80ee4e42",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e40ddb56009ca0c26090d3384197eefb4b86b589",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "124c1d32cfe467f2fadb101b9cbb65540f399c1c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "63e4c04637abedae74fdbe96aef40da90edad4ca",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "8549078b0832f9661db47cdd5d6386db1624550f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ecc898a4146de6586216782ef574d31437a23b56",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "f35e3d8d85e3ef3ac20119aec7d58784aa440c2f",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "351a24f5fb72a6cd9f62f8314c8df5b56867ab3a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d4d8e689441d96b391403482d587d06afd956740",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d245e31611f7e34ade93dd1f42eeccc2428d2a91",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "80ed4d215e1f0302403447af9e6439a3a0278328",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "8f82efb54ffc0882578df60226e241b37a2ce6bf",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "95116c9393253c2102474ceb5c981fc0e100c989",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "60f23d31ff6a610f992670cd0587d375400cb055",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "72f0e45ab0f91e5d4d3d7537b3c597ed11bd3eec",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "ca07141b5d2d0ee56cae5bf27819d077ccc3ac7c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "496054720fb69fc09ca7088f207956bd09d88bd0",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b0dc40813dc28e55fb39b255e428cb27e25453f3",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "69a4a69f6ea5efb05b6f720a2308ab6730aed0c2",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "c7485008fb4688a558099d21a9492b4342fd535d",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "ac47830387394cf003278bad8af8f1ae89138e8e",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "01b2d1633d313d18d307382e311f2e7f730ee13c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "addcee7be89693b12a511f942f7cc8b9d12a19f8",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "585f25b88af259e591a3e9df9b65c39b99675d0d",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "839c4ffbed873ace1f4b66b808285bba4657f66a",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "786946032c0c7e9ef91b19b7ae70354724f6109a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "195454c70183d7bdb058673defd07886809dd484",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d144caeff084ecfad73e7e766bf6057f8bc29a29",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "fc49f2dcc89cb660c4a9033d12f03001aa1be707",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "72d1071e43e4d2eab9dfe2e324d9392b34571f20",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ab2d790ec1207a9c5e24cd95211cdc20c24399a9",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d6e9306e34157632bcf4cdea638427770edb4ad9",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "a4a5a4c645fd87c6d00cc057b662b1234b4adc26",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b1c277a449ac1a22ee59ea2bc8b80629a858591e",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "ea3658310ef41e36d597d43c224b70f668c5898b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "9fd3af60fb3b48a839c1b298aeeb72db81bf25d4",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "c5b7c9158f9ab9b3ef363f7c993a408cfddeadaf",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b59fa054824a3a8768e59c2dc15f90c7b9b7d330",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "4039da9d2e0422ad3b53fc82f18b63612e75ccac",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "6668048c068a7314a08dddab1709b7437271d1c3",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "18f677741bcf5c356dbac011db0837ce30da7380",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "88fbe599f2449ab0abb7fc701bef01c9a0911454",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "5625205295a7990703a649d07ceba2e3d582bbb5",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "70408868785610c4521266b839777a96db734126",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "8fe5bccad16fcfda6bf554f1b82dc324a4c8f048",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "ab974dc7f98999de21c55c36ac3208e774a89ffd",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "0a7df18960f6cac06fde14784800e8fc13f20a9c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "acda7eed5259128d29fb6bc72f3dc7793956fb91",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "d960ea653e7c5b22818bb7b48ee17d3d6cd11d24",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "6b7b1637fc0095387b2c32846725f64c4cc2e715",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "86cfd0c0cc6241bad1329a4873dbbc7517cc1160",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b630658e0a0a03f33144b89b856937e8827752c4",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "6530bee1ef60be9bd584db101c84257df4b69d87",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "c6425380b124a6ec3b71edef0894691853fc1ebd",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "aa06e4d157593fff92dbdd9683687649e8b95f1e",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "0afa55c7082455d7e102f9c3d056d474e686da57",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "d2ef66b9d82c2a04a27874c372a9384607f5de5a",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "e728035e8846ab6edefd37e8b875de395a32475b",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "01029417180a1c147fa16ad54623cab2e31fa137",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "2dfac86d60bf0459ffccee9f3b48c98d8e9f6473",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1e46cf6139b9998f902b16300afed0f63b53e257",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "b186526f04138fb829de548de37485decfccac21",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "95dea6c6421f57e1945112fc0dc5d815f788d437",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "e4fde1d540bc220673153c7a72e27469d4952179",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "4bda240ed32cf4c1568278ec47875052e41b307c",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "861ab8534bf96f22c8293922e34dbc292073bc1c",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "6bb9ae493a2530ec4aaefc31c82f2ecaa202e0d0",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "b4e62b50c4f13bff47d27418d875666e19b3941d",
+      "type": "blob",
+      "equal": true
+    },
+    {
+      "oid": "fab468fd62a486f253a70ddc770233e3973704e6",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "eae5849708c07a7b9e6dbaa6126ac738a7a708cf",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "bae671f02683f19079f9e41b4ff979b1f480b074",
+      "type": "tree",
+      "equal": true
+    },
+    {
+      "oid": "1301e01e5873a3fe085e2d5756824ee9d9171133",
+      "type": "blob",
+      "equal": true
+    }
+  ],
+  "workflow_command_sequence": [
+    {
+      "i": 39,
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 57,
+      "argv": [
+        "git",
+        "update-index",
+        "--cacheinfo",
+        "100644",
+        "8549078b0832f9661db47cdd5d6386db1624550f",
+        "textstats/__init__.py"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 90,
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "[T-002] Implement strict named-file acquisition and complete public API\n\nRead complete binary files with strict UTF-8, preserve input bytes/newlines, close owned handles on all paths and propagate original acquisition/decode exceptions. Export the complete silent whole-input API and include tests, accurate documentation, verification/accepted-artifact evidence and initial owning completion in this atomic checkpoint.\n\nVerification: Python 3.12.14; 15 unit and 7 integration tests passed without skips. Behavioral scaffold RED: 14 unit and 55 integration failures. Delegated exact-artifact acceptance published as c8edcc3094cc819386f093a52e62ae70669720f8. Hosted tracking declined; local trial-delivery publication only. Foreign staged/unstaged facade comments and untracked note excluded. Stop at this task; no parent closure or phase integration.\n"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 91,
+      "argv": [
+        "git",
+        "push",
+        "trial-delivery",
+        "HEAD:refs/heads/phase/1-named-file-utility"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 92,
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 97,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "cfdec4bf0d2abb66b6dddd77345c63e8e3c3cf32",
+        "AGENTS.md"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 99,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "a58403c4a8b149234517183a1c87b4469f82eae1",
+        "README.md"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 101,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "a9ced249707d4893bb9fa5979076d37b94eae519",
+        "docs/dev/TASKS.md"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 102,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "e5b4119e47e6d40495dfbb82b24b91571d59ae2a",
+        "textstats/__init__.py"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 104,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "f35e3d8d85e3ef3ac20119aec7d58784aa440c2f",
+        "textstats/io.py"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 106,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "a744727afbf062bce5527106bc1b00c8b72c2397",
+        "tests/unit/test_io.py"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 108,
+      "argv": [
+        "git",
+        "update-index",
+        "--add",
+        "--cacheinfo",
+        "100644",
+        "bc0ea8544cde55c20e89294116787d40fdb81e7f",
+        "tests/integration/test_api.py"
+      ],
+      "exit": 0
+    },
+    {
+      "i": 113,
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "HEAD"
+      ],
+      "exit": 0
+    }
+  ],
+  "logging_limitation": "Parallel GREEN checks both passed, but shared JSON runner lacked locking; unit GREEN entry was lost by concurrent writer. Raw outputs were also returned by tool. Final verification repeated sequentially to retain both exact outputs.",
+  "command_log": [
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "000-stdout.bin",
+      "stderr": "000-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-list",
+        "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932..HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "001-stdout.bin",
+      "stderr": "001-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--name-only",
+        "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+        "7cf8d5e287c317ee7cdc458eff466550d2a3114c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "002-stdout.bin",
+      "stderr": "002-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show-ref"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "003-stdout.bin",
+      "stderr": "003-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD^"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "004-stdout.bin",
+      "stderr": "004-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "log",
+        "-1",
+        "--format=%s"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "005-stdout.bin",
+      "stderr": "005-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "7cf8d5e287c317ee7cdc458eff466550d2a3114c:textstats/__init__.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "006-stdout.bin",
+      "stderr": "006-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        ":textstats/__init__.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "007-stdout.bin",
+      "stderr": "007-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "008-stdout.bin",
+      "stderr": "008-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "-e",
+        "7cf8d5e287c317ee7cdc458eff466550d2a3114c:FOREIGN-MIXED-NOTE.txt"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 128,
+      "stdout": "009-stdout.bin",
+      "stderr": "009-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "refs/heads/phase/1-named-file-utility"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "010-stdout.bin",
+      "stderr": "010-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "7cf8d5e287c317ee7cdc458eff466550d2a3114c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "011-stdout.bin",
+      "stderr": "011-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "012-stdout.bin",
+      "stderr": "012-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "1e3305c8659045945244c06861079fef879ca3c3"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "013-stdout.bin",
+      "stderr": "013-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "1510709f6e10d82d1b525b8c7cb221c5e1c5e20f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "014-stdout.bin",
+      "stderr": "014-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "b3ba0338d71c167aaec8ca85317d09002557ea2d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "015-stdout.bin",
+      "stderr": "015-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "928c319ed84a919c6424adfa4522918e054a1d43"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "016-stdout.bin",
+      "stderr": "016-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "bf3eb5e9a8d30a9e8a457f7708afa3b400100417"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "017-stdout.bin",
+      "stderr": "017-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "566a1af2ddd44d79a898c2e67607360395044ba6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "018-stdout.bin",
+      "stderr": "018-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "334a4dd3f257ffefeb18ab88dfedc425b44838fc"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "019-stdout.bin",
+      "stderr": "019-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "b7b017cf7480bded8ad7f7de4a4eed690083b39c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "020-stdout.bin",
+      "stderr": "020-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "021-stdout.bin",
+      "stderr": "021-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "c2dbdeb9f988d1ec66c4674bf11482429fea60df"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "022-stdout.bin",
+      "stderr": "022-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "commit",
+        "e2e4750ad3be531e53b189ac8519b5376db0ee9e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "023-stdout.bin",
+      "stderr": "023-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "4bc0f02fb8a749adb5fa6aa77ff67ed2199bc05a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "024-stdout.bin",
+      "stderr": "024-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "9be2a9eb61a0dce48cd9072f45595999af22b877"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "025-stdout.bin",
+      "stderr": "025-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "346a8885a6cfe74e3227f235ef500c97f15bc776"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "026-stdout.bin",
+      "stderr": "026-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "25642e80ca3a23d0a8001e37bec5c038901c404d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "027-stdout.bin",
+      "stderr": "027-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "46544a4584913d554656b90c8cc0faef89ee5398"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "028-stdout.bin",
+      "stderr": "028-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "04dbd377fbb69b6559c34f972eeea99ba6e83579"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "029-stdout.bin",
+      "stderr": "029-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "fe8ae55254bd6a1577de7c1b1053a3c615edb8a8"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "030-stdout.bin",
+      "stderr": "030-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "64fef9ce9b4e794c35c6bab2e49aded8941b2c08"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "031-stdout.bin",
+      "stderr": "031-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a6b08178ea630825c330b1c9cbcd388e89f799e6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "032-stdout.bin",
+      "stderr": "032-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e1dacbfe06bc78ab8ade882d41f08ed24a19afbc"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "033-stdout.bin",
+      "stderr": "033-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "cfdec4bf0d2abb66b6dddd77345c63e8e3c3cf32"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "034-stdout.bin",
+      "stderr": "034-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "7bb22d266be8343e620d007d703facc143173db6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "035-stdout.bin",
+      "stderr": "035-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a58403c4a8b149234517183a1c87b4469f82eae1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "036-stdout.bin",
+      "stderr": "036-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "037-stdout.bin",
+      "stderr": "037-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "16784c2ed875d97d9b9853db7356a7bf4b5afc0d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "038-stdout.bin",
+      "stderr": "038-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "1a44d018cafbbc699a0633a0596a7c9c2d41a233"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "039-stdout.bin",
+      "stderr": "039-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "7787992d419a44870722f4c3c6c677ef6b04a0e3"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "040-stdout.bin",
+      "stderr": "040-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "4a559eed6e875435537a0d7befea7dc4c67430f2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "041-stdout.bin",
+      "stderr": "041-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1c2fe42dba149449987db10c0a0346878221f839"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "042-stdout.bin",
+      "stderr": "042-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "2489ae62baa0159775f721355808fb56af8697cf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "043-stdout.bin",
+      "stderr": "043-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "396d252178e097bde725121d1b89abc6e78d629f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "044-stdout.bin",
+      "stderr": "044-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8a40dabb3537e953f517d4e6f76be58cc55f01fc"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "045-stdout.bin",
+      "stderr": "045-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "6e406906e53b643695e2c455151e46a0dafd743c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "046-stdout.bin",
+      "stderr": "046-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "44c062eeae26ac155121940968910394e0554a4b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "047-stdout.bin",
+      "stderr": "047-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a9ced249707d4893bb9fa5979076d37b94eae519"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "048-stdout.bin",
+      "stderr": "048-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "32d3194ce111a0feac516e7628bb0fe5ce78a314"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "049-stdout.bin",
+      "stderr": "049-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "bb785a6fb53e0e87b5ba90a98d207eac3d9eaa24"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "050-stdout.bin",
+      "stderr": "050-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "fe68a730be2fd32f0b906e2e54473ca2730c33d8"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "051-stdout.bin",
+      "stderr": "051-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "3519f31852dc72eb8fd61eb849518846e581171a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "052-stdout.bin",
+      "stderr": "052-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "4a022dc79c1e1707fd4f306a2af6b3fe8c1a7f17"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "053-stdout.bin",
+      "stderr": "053-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b5da099e8826319217b20cb86e46e2fb70a202fe"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "054-stdout.bin",
+      "stderr": "054-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "a1f0f5e7aea6321e135493fc34a441d014339e31"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "055-stdout.bin",
+      "stderr": "055-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1133ee21f6b69b73f4cd2fe75c90401351db1b82"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "056-stdout.bin",
+      "stderr": "056-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "bc0ea8544cde55c20e89294116787d40fdb81e7f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "057-stdout.bin",
+      "stderr": "057-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "f0400b9e4af391b0802aa6bca6b08f61e86ce030"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "058-stdout.bin",
+      "stderr": "058-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "007301d0e6315649ce6e6412d28071626f6a9311"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "059-stdout.bin",
+      "stderr": "059-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d5d02c2e5da2987e81720740caa777eafc35175c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "060-stdout.bin",
+      "stderr": "060-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a744727afbf062bce5527106bc1b00c8b72c2397"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "061-stdout.bin",
+      "stderr": "061-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "14a641256762f580c784db2b751dbbd4e6a073b2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "062-stdout.bin",
+      "stderr": "062-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "bd367d487f47b71776ad74ce3ec17dc22458619b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "063-stdout.bin",
+      "stderr": "063-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "7925fbdb555bc0ec248a321f11b1cfda6ea38be7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "064-stdout.bin",
+      "stderr": "064-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "c6dbe30ffe016437fa174400de3414191bc127ae"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "065-stdout.bin",
+      "stderr": "065-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "36df609fc180fb64b1fb8b34e09c72381ec3a988"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "066-stdout.bin",
+      "stderr": "066-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b21cca2057f34a94b2e30c7820b927cb6ee32c00"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "067-stdout.bin",
+      "stderr": "067-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "4816775d4196094f9a3fb2a636b2b59aa67d4b92"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "068-stdout.bin",
+      "stderr": "068-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a0740f769398d0870cfba32ef7e707c4c4c2f57b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "069-stdout.bin",
+      "stderr": "069-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "4cbc8ca08d6d5e3f018301355f1ee2e47e9ac114"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "070-stdout.bin",
+      "stderr": "070-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "a7098772fdda6a06fe7d995894aff4873d76beb2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "071-stdout.bin",
+      "stderr": "071-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "61f676b6266e5920b48c64667528c287a97e195e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "072-stdout.bin",
+      "stderr": "072-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "15e980d6ebf4774f9951d19c42df2ccff8955a3e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "073-stdout.bin",
+      "stderr": "073-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "65948e58e9c5a0182a1e86c13a4f4708f7ca0939"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "074-stdout.bin",
+      "stderr": "074-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "599d236f6b45b2d6db9c90f85d49cc121479fc64"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "075-stdout.bin",
+      "stderr": "075-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "82248c3a5ebb5424df805f8719c099007e165bca"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "076-stdout.bin",
+      "stderr": "076-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "fddfbc90fbaaa9efa8b3ed398f11b5bda01ffd71"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "077-stdout.bin",
+      "stderr": "077-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "3dab3d4e4dec031943d046ed7a549437b25436f0"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "078-stdout.bin",
+      "stderr": "078-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "74c94d8b88fed9c2ac5c6640205467cffc9c7d14"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "079-stdout.bin",
+      "stderr": "079-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b20df81eb3b391b2e33d2fd8c4e20369b23f7e58"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "080-stdout.bin",
+      "stderr": "080-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d3ed9d5cfcb449a26d95508e19115d19ef5504ed"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "081-stdout.bin",
+      "stderr": "081-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "cb36d54a708c6085fc36b5fef1fbff268646ffe5"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "082-stdout.bin",
+      "stderr": "082-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "bd08ea06432f318cedf17cc3108a58af8f15ea96"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "083-stdout.bin",
+      "stderr": "083-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1141d97a90d45b7ad0b86f575d03228976a3609e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "084-stdout.bin",
+      "stderr": "084-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d9153f92334f277209f1fd5396d3d7904dc03212"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "085-stdout.bin",
+      "stderr": "085-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "9ef3cf68aa0447f2e214a6766d4846eede81ee3b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "086-stdout.bin",
+      "stderr": "086-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a2c4d3aa3fa75b612dceb5dc5302d8e6b9dde527"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "087-stdout.bin",
+      "stderr": "087-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "82d9503c93ac424ffb7ef2a82125d94fda885493"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "088-stdout.bin",
+      "stderr": "088-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "72bd0a4cca48de252d99a5e8a03039ba2c5a196f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "089-stdout.bin",
+      "stderr": "089-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "bd0e99d3c1ff4f3410ae898d20881fb961e6474d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "090-stdout.bin",
+      "stderr": "090-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "e997d5362edf8c04950ae95fde12727ee36bfbf0"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "091-stdout.bin",
+      "stderr": "091-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e61c4852491a41d26e3e5cf4ef6d86dae22554d1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "092-stdout.bin",
+      "stderr": "092-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "646858aa53fc1a4ccf4f88d5985f3aa309a31db9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "093-stdout.bin",
+      "stderr": "093-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d12f28e77909eec0b3e092597f9dcf7db49b5f08"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "094-stdout.bin",
+      "stderr": "094-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "672bc5230d197d55142a777f0224b241bf16e24e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "095-stdout.bin",
+      "stderr": "095-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "c6ba99d4568e4f7d75ffbfa0701ad42013bc0547"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "096-stdout.bin",
+      "stderr": "096-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "ef4cf234f75eec6557637226e3849380d558ac03"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "097-stdout.bin",
+      "stderr": "097-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b42c762672d3737fdfe6f8a333519c87e29cc7ac"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "098-stdout.bin",
+      "stderr": "098-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "9022f08d8b7ebffdb5044c42d189fa0c92c4cec2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "099-stdout.bin",
+      "stderr": "099-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "4f091c3c9ce409ce7c468d13bf0e69cd2740b419"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "100-stdout.bin",
+      "stderr": "100-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "7084b0fa3c180798a7f9381ffce03b4fb9e7c37b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "101-stdout.bin",
+      "stderr": "101-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "6c6e2ebd872a9352d17f9e1451089c49680f12b4"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "102-stdout.bin",
+      "stderr": "102-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "64af4d06fa45bb461f2df7864bcc22f008f95718"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "103-stdout.bin",
+      "stderr": "103-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "23cbd5cdf2cf538927601a230c18638bb4f53e34"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "104-stdout.bin",
+      "stderr": "104-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "60bb9848d5f395d107adbf6443b3f8b7c6f2976f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "105-stdout.bin",
+      "stderr": "105-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "abcfcf450057db9ddd954ff1ec2b4e629ba0f4c0"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "106-stdout.bin",
+      "stderr": "106-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d66c9f2dcd9b9e8b5a5f8b6ceb38dd82a1ba77b4"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "107-stdout.bin",
+      "stderr": "107-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "31c3aa7b2818b0d8b14c266b90a83ac4d4a9fb5a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "108-stdout.bin",
+      "stderr": "108-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "342b4afe4e3596b9b1a22d5c7469437a90f5f525"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "109-stdout.bin",
+      "stderr": "109-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "9f51adef2d5935b6a423005725a4681d1d1c877a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "110-stdout.bin",
+      "stderr": "110-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "4682067e143bfe5157b58fe116f57c2d591a2330"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "111-stdout.bin",
+      "stderr": "111-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "aa1c1e657037e97e9c1f770f8b2ac0efcf71e409"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "112-stdout.bin",
+      "stderr": "112-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "8391b295dca084dbcc1227d27437d28110622671"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "113-stdout.bin",
+      "stderr": "113-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d63cd5e6c4030779f767937aa95e04d773d89c68"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "114-stdout.bin",
+      "stderr": "114-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "6f874ed7072f72ded46103f9467aadd5ca0ba1a3"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "115-stdout.bin",
+      "stderr": "115-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "fd3590b54b4be1fe8e79e8ab0c8d36250c51ca4e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "116-stdout.bin",
+      "stderr": "116-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "a1851143d0d6e08630ac3964fbfe96006e11b3fe"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "117-stdout.bin",
+      "stderr": "117-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "5b629ebb94a6bab80d89ceabc3672a55c4676e9c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "118-stdout.bin",
+      "stderr": "118-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "36ee6189110d2319b46b8be35524285275982822"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "119-stdout.bin",
+      "stderr": "119-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "5fbc1bd5cad73b39e7ab5e70f92e59d74af8d0a4"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "120-stdout.bin",
+      "stderr": "120-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8d9f95d25c0b2efa43eaf2cd06d5b069db31d9a1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "121-stdout.bin",
+      "stderr": "121-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8b611adc9b3c9898de665b9e8f426bdb652cace7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "122-stdout.bin",
+      "stderr": "122-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "dbb6cddb18fc5711891241e1f4493088dba775e2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "123-stdout.bin",
+      "stderr": "123-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a21bb5ec4de7291082266b69e0518e03fdfc4614"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "124-stdout.bin",
+      "stderr": "124-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e9165abd49085f09d0cf74b08b73c26582c65f2a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "125-stdout.bin",
+      "stderr": "125-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "5ced609bf2e6145e1e10d94b4673de86f75d7339"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "126-stdout.bin",
+      "stderr": "126-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d3825b2c598e6573409fe1aaacb762aafee68fc8"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "127-stdout.bin",
+      "stderr": "127-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "ceaea6441c1782fabc90a96982d11392e0669b6a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "128-stdout.bin",
+      "stderr": "128-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "f50ba4ba0abbb5e08a0c451ab1705a4802dbe2ec"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "129-stdout.bin",
+      "stderr": "129-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "eb1fc602b67df16fefd3b6b7431565e396e1dfe7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "130-stdout.bin",
+      "stderr": "130-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8a2f97389aa0d69489783422c2e55eb302251d17"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "131-stdout.bin",
+      "stderr": "131-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b3742fbb00bc6bef4151ffe70f4e16460edbf25d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "132-stdout.bin",
+      "stderr": "132-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "5167a3ba9a97de0d43bb87f31973a1901d1365de"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "133-stdout.bin",
+      "stderr": "133-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e5df84707816e0541560717fb3d66ba3dff89d44"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "134-stdout.bin",
+      "stderr": "134-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a3607d913dee65e478fc23390f92e06d41fc6ec5"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "135-stdout.bin",
+      "stderr": "135-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "81402919f16d38b021bed35d47ccfd570018d154"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "136-stdout.bin",
+      "stderr": "136-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e89feee044835f89bc217211308aa992d8d8732f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "137-stdout.bin",
+      "stderr": "137-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "78b3755d2d5119d6c0ed2c2f16ceb6fbb5643a06"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "138-stdout.bin",
+      "stderr": "138-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b612b4bfe11ee16e85c289ea3b31d85e57e8c5f0"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "139-stdout.bin",
+      "stderr": "139-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "71e4599ede6df67d287b36a27f65d17c066068be"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "140-stdout.bin",
+      "stderr": "140-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "bcc98188ba2ff31a42fdf4af4f214fb528b06cdc"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "141-stdout.bin",
+      "stderr": "141-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "7d00c608c710962ad7c6737b325cd98875dd22f4"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "142-stdout.bin",
+      "stderr": "142-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "bbfb2d2ec4f2db8c00580d83de0f2fb274792300"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "143-stdout.bin",
+      "stderr": "143-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "46ba7ac9d910129ee3a41a1a85a5bd3f15b86444"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "144-stdout.bin",
+      "stderr": "144-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "78e1d9e6e88fbaa09deaa915c5a53aea3e16655e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "145-stdout.bin",
+      "stderr": "145-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "cebf9416c8683352b6fd066bc9c92a0204cb1f48"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "146-stdout.bin",
+      "stderr": "146-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "734693a799713536be35973ebec539be6307106c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "147-stdout.bin",
+      "stderr": "147-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "c25203f73bef5da236dc72f672610002249f981f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "148-stdout.bin",
+      "stderr": "148-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "09b932c261d77e96b7fbdd47f648a5ec60958be5"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "149-stdout.bin",
+      "stderr": "149-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1f2b46444ad69cbfdf7aac5829245bc2a2615291"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "150-stdout.bin",
+      "stderr": "150-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "a51d845dee42adc2ab435f15ce80d3891de6bb4e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "151-stdout.bin",
+      "stderr": "151-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "830c3ac25b2b88cf62b89ac70179ce41498192e7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "152-stdout.bin",
+      "stderr": "152-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "f8bceaaf551d3f1809cdcac237859c4f49299494"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "153-stdout.bin",
+      "stderr": "153-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "5d14404048625eda4260dc02c8b1dac031220661"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "154-stdout.bin",
+      "stderr": "154-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a71817e9ff75d734b647b1b5b237f47414b4f5f9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "155-stdout.bin",
+      "stderr": "155-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "963ca67e70f7f65a7ddf37700eacdf2faa7e9639"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "156-stdout.bin",
+      "stderr": "156-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "96e1bee22414550d30556e09f6f736b02968eeeb"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "157-stdout.bin",
+      "stderr": "157-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "28ea16cde6d0335b55af964348182feb2d865f7e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "158-stdout.bin",
+      "stderr": "158-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ac2a66694acf0c7435ed7d6469e54c6dac2cb408"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "159-stdout.bin",
+      "stderr": "159-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "15fb0fe786a0d3f56a37ca7b79ad6a0d8901a04b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "160-stdout.bin",
+      "stderr": "160-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "5a1b29497f561fa08f3e4a07aecd28ec5c079d09"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "161-stdout.bin",
+      "stderr": "161-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b83ee8bb17ed09c77df5a1156176a0dd81147501"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "162-stdout.bin",
+      "stderr": "162-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "9d40275f249ddf8db6993a903f20ce52fae4e0c9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "163-stdout.bin",
+      "stderr": "163-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0cec00be146b05788032cdc17984113123f14a45"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "164-stdout.bin",
+      "stderr": "164-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "7abf28f242cc9b84ee16e19519a7f1f6fd0f1782"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "165-stdout.bin",
+      "stderr": "165-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "2c3c1a6c7e3f7f95812d72d40fdf0646b9513868"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "166-stdout.bin",
+      "stderr": "166-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1ad8c47d82ef183d458331272f8a9a4361516367"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "167-stdout.bin",
+      "stderr": "167-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "7e4f466303d94a7e2d253595db7421e35ed038bc"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "168-stdout.bin",
+      "stderr": "168-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "30cee846374d6aee9ee42aba1b718a731e140054"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "169-stdout.bin",
+      "stderr": "169-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "7e7d4c11900a109c8e45b540780e05b228ae644b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "170-stdout.bin",
+      "stderr": "170-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "bac2b690d79ad66927969662c2ab7ee81cd09ac9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "171-stdout.bin",
+      "stderr": "171-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ed158258a6b466566be64ddfe4a28e177185cf37"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "172-stdout.bin",
+      "stderr": "172-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "ed659bddc0a4b3dcb5726ceeee58feef358eb078"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "173-stdout.bin",
+      "stderr": "173-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "60d6d107bf8e1ee9650ecb11b7dc174465a3919f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "174-stdout.bin",
+      "stderr": "174-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "051b88005f9ce7faf28957f1ca02fbed7e9f1d63"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "175-stdout.bin",
+      "stderr": "175-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1e664a82486e4fafb13fe998d3c29588710acf5a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "176-stdout.bin",
+      "stderr": "176-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d6601aab79f7487724d1180d8ace759095dd4660"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "177-stdout.bin",
+      "stderr": "177-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "45d4036b4696fca363509ef63c34ab9bb6e54ddd"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "178-stdout.bin",
+      "stderr": "178-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "36c8b66b38ace131f3faa921b6b61930f8d0e4a8"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "179-stdout.bin",
+      "stderr": "179-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "68ea6836b1b490fe9a997dcc7a8cb3fc75af8668"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "180-stdout.bin",
+      "stderr": "180-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "1c80d1dea79b4f3c37b28c5ab3c77490a087d9ec"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "181-stdout.bin",
+      "stderr": "181-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "92a571408af0b8c438081e783280bac1278b4773"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "182-stdout.bin",
+      "stderr": "182-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "3beccc33a355297e4ca4b0120ac4f2d447a16244"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "183-stdout.bin",
+      "stderr": "183-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "98c0ebe4010999635b7254c4505e916c2a19f2d1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "184-stdout.bin",
+      "stderr": "184-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "cac865f26af0cf08abac926db0d4402a98109e0e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "185-stdout.bin",
+      "stderr": "185-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0ebf37b133032547c9dcf024cdbfa0de0a18916f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "186-stdout.bin",
+      "stderr": "186-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "a885460d80abb534ab64bc9e7facb05ce236c88a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "187-stdout.bin",
+      "stderr": "187-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b3f821e619d78fb2bde6c2c13c29feddbf01bd51"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "188-stdout.bin",
+      "stderr": "188-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "43eee249a7c580f52d9480d1064908dd447c18e6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "189-stdout.bin",
+      "stderr": "189-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "37c258a151f148267b16005872902f5c1042550d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "190-stdout.bin",
+      "stderr": "190-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b4217b5c03b62d979e683047aae6a96f5445a3cf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "191-stdout.bin",
+      "stderr": "191-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "f2a15209df0860b1e5cd7e5bb40c44bc78890c9a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "192-stdout.bin",
+      "stderr": "192-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "5069f2139e7dd96d504abd6ec16d1ba2520e5235"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "193-stdout.bin",
+      "stderr": "193-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d697641616c8c69327af01fad98238879544cfce"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "194-stdout.bin",
+      "stderr": "194-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0dcbbca446683b5466f076f73af8bb34d6d93819"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "195-stdout.bin",
+      "stderr": "195-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a554e01782a0dd049d20033fdb54a33a14647773"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "196-stdout.bin",
+      "stderr": "196-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "5c68aaa854ef6d7159141682ba14695f3507c5d7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "197-stdout.bin",
+      "stderr": "197-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "54f094710bc3a1617c8031c959b362c5837aaeaa"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "198-stdout.bin",
+      "stderr": "198-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a069cfd1840c12f3307a6b99e70e89ebc5a7a133"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "199-stdout.bin",
+      "stderr": "199-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "79426b2b408ac3752eca100f6df22cd1c9e006ce"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "200-stdout.bin",
+      "stderr": "200-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "75a25e252162eb9d10f767638519b5f5629da651"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "201-stdout.bin",
+      "stderr": "201-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d48b7295f1ec10f341564b73e96b82a9ae5f1625"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "202-stdout.bin",
+      "stderr": "202-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d1cc2a459af4ea4493e3662fc15b8db377f2ad95"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "203-stdout.bin",
+      "stderr": "203-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "a11b0a59dfc0da107067efa72f383571c6ff5986"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "204-stdout.bin",
+      "stderr": "204-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "c9cff07dd41a60d33692bb536d18aa6980a4149a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "205-stdout.bin",
+      "stderr": "205-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "4f1faeef75c57dff1bca928da937892f240448c2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "206-stdout.bin",
+      "stderr": "206-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "64239362c0273e70b058af5ef8f6e4d8a795959e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "207-stdout.bin",
+      "stderr": "207-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "4acdee0c44c9d2a49261e25aadc1445c085e833d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "208-stdout.bin",
+      "stderr": "208-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0ff7852868752f668d1a963fe5809c85000ea0f8"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "209-stdout.bin",
+      "stderr": "209-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "da76b5345cf0ea716e42c5bb67e68ca573f6008c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "210-stdout.bin",
+      "stderr": "210-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "47c40c9015f19c5a120d03e6d38c4c7628b5adfa"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "211-stdout.bin",
+      "stderr": "211-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "9e98333d23602ee8895b37e6a7ca9bcfd25ac4b7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "212-stdout.bin",
+      "stderr": "212-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b53d7801ae392cdb6c1e64deb220f4f61e828099"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "213-stdout.bin",
+      "stderr": "213-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b1c4cde94c0c7814360f5827c1f1239fcaac2244"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "214-stdout.bin",
+      "stderr": "214-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d577273d6ba5619d1374fcae56bdb8dcd29d7b6b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "215-stdout.bin",
+      "stderr": "215-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "c0e0ceb6fb615c2295b5bdee76259a52a1ad02db"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "216-stdout.bin",
+      "stderr": "216-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1377a56a0a21580f686e2962604d553850d8c211"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "217-stdout.bin",
+      "stderr": "217-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "424bed26bfe8a228eea5cac8028e77d9c2ee2e63"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "218-stdout.bin",
+      "stderr": "218-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "69d13c6cc10337f93360460236e1eaed0345a103"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "219-stdout.bin",
+      "stderr": "219-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "8f81cb00e90555d014c3e8828f6cc7dc3f3eeb0a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "220-stdout.bin",
+      "stderr": "220-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "115dcfad8735c0aa6ad03048faaddb66852416c7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "221-stdout.bin",
+      "stderr": "221-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b3821a05834b72ba558b914245119aa6d399e42c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "222-stdout.bin",
+      "stderr": "222-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e90fa5ecd4bbce3e7799b0d933367ea0144f2dcf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "223-stdout.bin",
+      "stderr": "223-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "9bff0e3dde54517d39c70bb67a0ace932ff00dd9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "224-stdout.bin",
+      "stderr": "224-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8fe415c8e30e2bf394aea248036c9ec766e1bcb6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "225-stdout.bin",
+      "stderr": "225-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "3c64918c04b8a96930ea1f0643d632b8df86bf15"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "226-stdout.bin",
+      "stderr": "226-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a9fc420f41b01d4e101b30bcbd632ece624a4c8f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "227-stdout.bin",
+      "stderr": "227-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "cea681b5930de76765d8ea32b05bb6d036cdbf9e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "228-stdout.bin",
+      "stderr": "228-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "88dca872a9143345196473d0916445ed85707c56"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "229-stdout.bin",
+      "stderr": "229-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "2c6574405439efb4345ea83f724bff4c8a12ffe2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "230-stdout.bin",
+      "stderr": "230-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "abf0390320aa14406af7a520b9b0739fdda9bf08"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "231-stdout.bin",
+      "stderr": "231-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "9760bd4e1cedb5ab7acf05c38149364654089e4d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "232-stdout.bin",
+      "stderr": "232-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "39fabab88555d09f3f7e12e44ec0d4e6a33cfdd5"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "233-stdout.bin",
+      "stderr": "233-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "eb937f2c8becb535ca4c455bbbcb93bf4b317aef"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "234-stdout.bin",
+      "stderr": "234-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "f02587c397f13b549455308a882084ea0cc92bde"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "235-stdout.bin",
+      "stderr": "235-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "99a80528d2c95c83e41598b14f19c5ace9b83e3a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "236-stdout.bin",
+      "stderr": "236-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "3b50d1eed11a57302c09b495e5fcd4691102586c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "237-stdout.bin",
+      "stderr": "237-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "92ce970bebdc920135a1bbe713f35d6a313d9c19"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "238-stdout.bin",
+      "stderr": "238-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "deec846b8ba67f476de885e759bba15a9a9b10ab"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "239-stdout.bin",
+      "stderr": "239-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "20772b47c30d2a804401b4f97bb3db9a949da8bf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "240-stdout.bin",
+      "stderr": "240-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e9f9afb71e88da8e2a810c2646e346ab5dc34ab2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "241-stdout.bin",
+      "stderr": "241-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "5a13c2c0d8f1a1dc820616c6311dbb5c0926125f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "242-stdout.bin",
+      "stderr": "242-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "3bb8edf6277c99fb60f0698bbc72a88c98af33b2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "243-stdout.bin",
+      "stderr": "243-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "78cf6246bc553364c4e1a5662220213b8be3c0da"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "244-stdout.bin",
+      "stderr": "244-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "af341267164ded2e20f01c137c1d23aac0e66e5e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "245-stdout.bin",
+      "stderr": "245-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "480256f29dcd08a366990a836fc6c6df07e9bbea"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "246-stdout.bin",
+      "stderr": "246-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b1f8167826407e756ba11cd9f5870b8d494101fa"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "247-stdout.bin",
+      "stderr": "247-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "c769a4c37776671fe014b10fef994de452ef038e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "248-stdout.bin",
+      "stderr": "248-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1101e288fdfd3f37e3083e49a5a3546424984b40"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "249-stdout.bin",
+      "stderr": "249-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0aafefecaf6bf4b8bf8ec0c5ec7b6c5d0f06aa32"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "250-stdout.bin",
+      "stderr": "250-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "fec7587f01a2c680810ade03b291e8fa80ee4e42"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "251-stdout.bin",
+      "stderr": "251-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e40ddb56009ca0c26090d3384197eefb4b86b589"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "252-stdout.bin",
+      "stderr": "252-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "124c1d32cfe467f2fadb101b9cbb65540f399c1c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "253-stdout.bin",
+      "stderr": "253-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "63e4c04637abedae74fdbe96aef40da90edad4ca"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "254-stdout.bin",
+      "stderr": "254-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8549078b0832f9661db47cdd5d6386db1624550f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "255-stdout.bin",
+      "stderr": "255-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ecc898a4146de6586216782ef574d31437a23b56"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "256-stdout.bin",
+      "stderr": "256-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "f35e3d8d85e3ef3ac20119aec7d58784aa440c2f"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "257-stdout.bin",
+      "stderr": "257-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "351a24f5fb72a6cd9f62f8314c8df5b56867ab3a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "258-stdout.bin",
+      "stderr": "258-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d4d8e689441d96b391403482d587d06afd956740"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "259-stdout.bin",
+      "stderr": "259-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d245e31611f7e34ade93dd1f42eeccc2428d2a91"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "260-stdout.bin",
+      "stderr": "260-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "80ed4d215e1f0302403447af9e6439a3a0278328"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "261-stdout.bin",
+      "stderr": "261-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "8f82efb54ffc0882578df60226e241b37a2ce6bf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "262-stdout.bin",
+      "stderr": "262-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "95116c9393253c2102474ceb5c981fc0e100c989"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "263-stdout.bin",
+      "stderr": "263-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "60f23d31ff6a610f992670cd0587d375400cb055"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "264-stdout.bin",
+      "stderr": "264-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "72f0e45ab0f91e5d4d3d7537b3c597ed11bd3eec"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "265-stdout.bin",
+      "stderr": "265-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ca07141b5d2d0ee56cae5bf27819d077ccc3ac7c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "266-stdout.bin",
+      "stderr": "266-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "496054720fb69fc09ca7088f207956bd09d88bd0"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "267-stdout.bin",
+      "stderr": "267-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b0dc40813dc28e55fb39b255e428cb27e25453f3"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "268-stdout.bin",
+      "stderr": "268-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "69a4a69f6ea5efb05b6f720a2308ab6730aed0c2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "269-stdout.bin",
+      "stderr": "269-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "c7485008fb4688a558099d21a9492b4342fd535d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "270-stdout.bin",
+      "stderr": "270-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ac47830387394cf003278bad8af8f1ae89138e8e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "271-stdout.bin",
+      "stderr": "271-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "01b2d1633d313d18d307382e311f2e7f730ee13c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "272-stdout.bin",
+      "stderr": "272-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "addcee7be89693b12a511f942f7cc8b9d12a19f8"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "273-stdout.bin",
+      "stderr": "273-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "585f25b88af259e591a3e9df9b65c39b99675d0d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "274-stdout.bin",
+      "stderr": "274-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "839c4ffbed873ace1f4b66b808285bba4657f66a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "275-stdout.bin",
+      "stderr": "275-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "786946032c0c7e9ef91b19b7ae70354724f6109a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "276-stdout.bin",
+      "stderr": "276-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "195454c70183d7bdb058673defd07886809dd484"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "277-stdout.bin",
+      "stderr": "277-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d144caeff084ecfad73e7e766bf6057f8bc29a29"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "278-stdout.bin",
+      "stderr": "278-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "fc49f2dcc89cb660c4a9033d12f03001aa1be707"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "279-stdout.bin",
+      "stderr": "279-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "72d1071e43e4d2eab9dfe2e324d9392b34571f20"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "280-stdout.bin",
+      "stderr": "280-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ab2d790ec1207a9c5e24cd95211cdc20c24399a9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "281-stdout.bin",
+      "stderr": "281-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "d6e9306e34157632bcf4cdea638427770edb4ad9"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "282-stdout.bin",
+      "stderr": "282-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "a4a5a4c645fd87c6d00cc057b662b1234b4adc26"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "283-stdout.bin",
+      "stderr": "283-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b1c277a449ac1a22ee59ea2bc8b80629a858591e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "284-stdout.bin",
+      "stderr": "284-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "ea3658310ef41e36d597d43c224b70f668c5898b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "285-stdout.bin",
+      "stderr": "285-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "9fd3af60fb3b48a839c1b298aeeb72db81bf25d4"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "286-stdout.bin",
+      "stderr": "286-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "c5b7c9158f9ab9b3ef363f7c993a408cfddeadaf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "287-stdout.bin",
+      "stderr": "287-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b59fa054824a3a8768e59c2dc15f90c7b9b7d330"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "288-stdout.bin",
+      "stderr": "288-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "4039da9d2e0422ad3b53fc82f18b63612e75ccac"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "289-stdout.bin",
+      "stderr": "289-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "6668048c068a7314a08dddab1709b7437271d1c3"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "290-stdout.bin",
+      "stderr": "290-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "18f677741bcf5c356dbac011db0837ce30da7380"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "291-stdout.bin",
+      "stderr": "291-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "88fbe599f2449ab0abb7fc701bef01c9a0911454"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "292-stdout.bin",
+      "stderr": "292-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "5625205295a7990703a649d07ceba2e3d582bbb5"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "293-stdout.bin",
+      "stderr": "293-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "70408868785610c4521266b839777a96db734126"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "294-stdout.bin",
+      "stderr": "294-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "8fe5bccad16fcfda6bf554f1b82dc324a4c8f048"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "295-stdout.bin",
+      "stderr": "295-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "ab974dc7f98999de21c55c36ac3208e774a89ffd"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "296-stdout.bin",
+      "stderr": "296-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0a7df18960f6cac06fde14784800e8fc13f20a9c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "297-stdout.bin",
+      "stderr": "297-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "acda7eed5259128d29fb6bc72f3dc7793956fb91"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "298-stdout.bin",
+      "stderr": "298-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d960ea653e7c5b22818bb7b48ee17d3d6cd11d24"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "299-stdout.bin",
+      "stderr": "299-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "6b7b1637fc0095387b2c32846725f64c4cc2e715"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "300-stdout.bin",
+      "stderr": "300-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "86cfd0c0cc6241bad1329a4873dbbc7517cc1160"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "301-stdout.bin",
+      "stderr": "301-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b630658e0a0a03f33144b89b856937e8827752c4"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "302-stdout.bin",
+      "stderr": "302-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "6530bee1ef60be9bd584db101c84257df4b69d87"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "303-stdout.bin",
+      "stderr": "303-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "c6425380b124a6ec3b71edef0894691853fc1ebd"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "304-stdout.bin",
+      "stderr": "304-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "aa06e4d157593fff92dbdd9683687649e8b95f1e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "305-stdout.bin",
+      "stderr": "305-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "0afa55c7082455d7e102f9c3d056d474e686da57"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "306-stdout.bin",
+      "stderr": "306-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "d2ef66b9d82c2a04a27874c372a9384607f5de5a"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "307-stdout.bin",
+      "stderr": "307-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "e728035e8846ab6edefd37e8b875de395a32475b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "308-stdout.bin",
+      "stderr": "308-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "01029417180a1c147fa16ad54623cab2e31fa137"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "309-stdout.bin",
+      "stderr": "309-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "2dfac86d60bf0459ffccee9f3b48c98d8e9f6473"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "310-stdout.bin",
+      "stderr": "310-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1e46cf6139b9998f902b16300afed0f63b53e257"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "311-stdout.bin",
+      "stderr": "311-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "b186526f04138fb829de548de37485decfccac21"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "312-stdout.bin",
+      "stderr": "312-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "95dea6c6421f57e1945112fc0dc5d815f788d437"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "313-stdout.bin",
+      "stderr": "313-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "e4fde1d540bc220673153c7a72e27469d4952179"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "314-stdout.bin",
+      "stderr": "314-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "4bda240ed32cf4c1568278ec47875052e41b307c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "315-stdout.bin",
+      "stderr": "315-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "861ab8534bf96f22c8293922e34dbc292073bc1c"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "316-stdout.bin",
+      "stderr": "316-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "6bb9ae493a2530ec4aaefc31c82f2ecaa202e0d0"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "317-stdout.bin",
+      "stderr": "317-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "b4e62b50c4f13bff47d27418d875666e19b3941d"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "318-stdout.bin",
+      "stderr": "318-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "fab468fd62a486f253a70ddc770233e3973704e6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "319-stdout.bin",
+      "stderr": "319-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "eae5849708c07a7b9e6dbaa6126ac738a7a708cf"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "320-stdout.bin",
+      "stderr": "320-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "tree",
+        "bae671f02683f19079f9e41b4ff979b1f480b074"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "321-stdout.bin",
+      "stderr": "321-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "cat-file",
+        "blob",
+        "1301e01e5873a3fe085e2d5756824ee9d9171133"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-delivery.git",
+      "exit": 0,
+      "stdout": "322-stdout.bin",
+      "stderr": "322-stderr.bin"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/unit",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-final-artifacts/test-export",
+      "exit": 0,
+      "stdout": "323-stdout.bin",
+      "stderr": "323-stderr.bin"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/integration",
+        "-t",
+        ".",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-final-artifacts/test-export",
+      "exit": 0,
+      "stdout": "324-stdout.bin",
+      "stderr": "324-stderr.bin"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "independent_api_probe.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file-final-artifacts/test-export",
+      "exit": 0,
+      "stdout": "325-stdout.bin",
+      "stderr": "325-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "326-stdout.bin",
+      "stderr": "326-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--cached",
+        "--binary"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "327-stdout.bin",
+      "stderr": "327-stderr.bin"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--binary"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-mixed-same-file",
+      "exit": 0,
+      "stdout": "328-stdout.bin",
+      "stderr": "328-stderr.bin"
+    }
+  ],
+  "workfile_modes": {
+    "README.md": "0o644",
+    "AGENTS.md": "0o644",
+    "FOREIGN-MIXED-NOTE.txt": "0o644",
+    "AI_DISCLOSURE.md": "0o644",
+    "SDD-MANAGER.md": "0o644",
+    ".gitignore": "0o644",
+    ".github/RELEASE-HANDOFF.md": "0o644",
+    "textstats/io.py": "0o644",
+    "textstats/__init__.py": "0o644",
+    "textstats/core.py": "0o644",
+    "textstats-run-resources/PLUGIN-SOURCE.json": "0o644",
+    "tests/__init__.py": "0o644",
+    ".github/workflows/release.yml": "0o644",
+    ".github/tests/test_release.py": "0o644",
+    ".github/scripts/release.py": "0o644",
+    "textstats-run-resources/plugin/README.md": "0o644",
+    "textstats-run-resources/plugin/AGENTS.md": "0o644",
+    "textstats-run-resources/plugin/plugin.json": "0o644",
+    "textstats-run-resources/plugin/AI_DISCLOSURE.md": "0o644",
+    "textstats-run-resources/plugin/LICENSE": "0o644",
+    "textstats-run-resources/plugin/Greenfield Project Prompt Template.md": "0o644",
+    "textstats-run-resources/plugin/SDD-MANAGER.md": "0o644",
+    "textstats-run-resources/plugin/assets/icon.png": "0o644",
+    "textstats-run-resources/plugin/assets/logo.png": "0o644",
+    "textstats-run-resources/plugin/assets/AI_DISCLOSURE.md": "0o644",
+    "textstats-run-resources/plugin/assets/SDD-MANAGER.md": "0o644",
+    "textstats-run-resources/plugin/assets/logo.svg": "0o644",
+    "textstats-run-resources/plugin/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/.codex-plugin/plugin.json": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-docs/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/LICENSE": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-steer/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-specify/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-design/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/SKILL.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-plan/references/review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-releases.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-release-workflows.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/release-highlights.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-packaging.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/browser-capabilities.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/environment-recovery.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/references/releases.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/examples.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/revision-modes.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/prerelease-review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-specify/references/review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-design/references/architecture.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-design/references/exploration.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-design/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/release-checks.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg": "0o644",
+    "textstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml": "0o644",
+    "tests/unit/__init__.py": "0o644",
+    "tests/unit/test_io.py": "0o644",
+    "tests/unit/test_core.py": "0o644",
+    "tests/integration/__init__.py": "0o644",
+    "tests/integration/test_api.py": "0o644",
+    "docs/dev/PLAN.md": "0o644",
+    "docs/dev/PROJECT.md": "0o644",
+    "docs/dev/TASKS.md": "0o644",
+    "docs/dev/layout.md": "0o644",
+    "docs/dev/DECOMPOSITION.md": "0o644",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "0o644",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "0o644",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "0o644",
+    "docs/dev/SPEC.md": "0o644",
+    "docs/dev/ARCHITECTURE.md": "0o644",
+    "docs/testing/publisher-037/SETUP.json": "0o644"
+  },
+  "limits": [
+    "Supplement outside original 32 cases.",
+    "LOCAL bare Git publication only; no actual hosted/provider state assessed.",
+    "Shared filesystem/runtime snapshots cannot certify sandbox isolation.",
+    "Consumer self-reported parallel logger race retained; independent sequential suite evidence is fresh."
+  ]
+}

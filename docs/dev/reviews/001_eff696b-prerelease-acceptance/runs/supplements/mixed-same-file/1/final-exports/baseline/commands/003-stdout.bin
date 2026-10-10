@@ -1,0 +1,9 @@
+diff --git a/textstats/__init__.py b/textstats/__init__.py
+index 0779160..66ad4e4 100644
+--- a/textstats/__init__.py
++++ b/textstats/__init__.py
+@@ -5,3 +5,4 @@ from .core import TextStats, count_text
+ __all__ = ['TextStats', 'count_text']
+ 
+ # Foreign staged comment: preserve this user change outside task delivery.
++# Foreign unstaged comment: preserve this additional user change.

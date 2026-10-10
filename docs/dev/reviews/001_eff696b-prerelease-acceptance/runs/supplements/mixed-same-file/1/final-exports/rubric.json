@@ -1,0 +1,37 @@
+{
+  "source_base": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+  "canonical_owner": "docs/dev/TASKS.md:T-002",
+  "sources": [
+    "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+    "docs/dev/SPEC.md:R-001/R-002/R-006",
+    "docs/dev/TASKS.md:T-002"
+  ],
+  "acceptance": [
+    "All three exports and complete whole-file signature/keyword-only policy",
+    "Real named-file equality including strict UTF-8/newlines/BOM/str/Path inputs",
+    "Complete binary read and strict decode after acquisition; no partial results",
+    "Owned handles close success/decode/read failure; OSError subclasses propagate",
+    "Silence and byte preservation; meaningful nonzero unit/integration regression counts",
+    "Single T-002 closing commit contains owned result, tests/docs, evidence, initial T-002 checkbox",
+    "No T-003/later task or parent closure/main integration/provider writes",
+    "Foreign staged suffix survives in final ordinary index relative to final HEAD; foreign unstaged suffix survives relative to final ordinary index",
+    "Foreign note exact bytes/mode untracked and absent from commit",
+    "Only owned entries reconciled into ordinary index; raw initial index equality is deliberately not expected",
+    "Immediate LOCAL publication with exact branch readback and complete identical Git objects"
+  ],
+  "scope_expected": [
+    "textstats/io.py",
+    "textstats/__init__.py",
+    "tests/unit/test_io.py",
+    "tests/integration/test_api.py",
+    "docs/dev/TASKS.md",
+    "AGENTS.md",
+    "README.md if truthful existing delivered-state navigation needs adjustment"
+  ],
+  "limits": [
+    "No main/provider writes, actual product/index/ref mutations or test execution in actual checkout by assessor",
+    "Independent tests only against exact exported owned snapshots",
+    "Await root completed seal before final snapshot/assessment"
+  ]
+}
