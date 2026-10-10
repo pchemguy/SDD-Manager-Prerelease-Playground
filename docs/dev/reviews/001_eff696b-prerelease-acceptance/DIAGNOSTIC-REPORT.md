@@ -10,3 +10,7 @@ Catalog scope is 27 cases, 32 required variants and two optional variants. A-001
 ## Recovered A-003 first checkpoint
 
 First projection independently Passed after coordinator-crash recovery; [first assessment](runs/A-003/1/FIRST-ASSESSMENT.json) and [original observations](runs/A-003/1/CONSUMER-FIRST-OBSERVATIONS.json) are retained. Three original stopped attempts remain separate. Nine eligible issues and three native milestones are live and correctly scoped; product stays prepared/unmerged at `1e3305c8`. Full case remains Pending until identity reuse and managed-object foreign-material preservation are independently observed in the second reconciliation.
+
+## A-003 second reconciliation — bounded outcome
+
+[Read-only consumer](runs/A-003/1/CONSUMER-SECOND-READONLY-OBSERVATIONS.json) and [independent assessment](runs/A-003/1/SECOND-READONLY-ASSESSMENT.json) establish identity reuse and unchanged eligible hierarchy; existing unrelated material is preserved. Full A-003 remains **Blocked**, separately from bounded Passed, until actual preservation-fixture execution is permitted and assessed. [Platform rejection](runs/A-003/1/PLATFORM-FIXTURE-REJECTION.json) is an environment/authorization barrier, not a plugin or consumer defect. No implementation began.

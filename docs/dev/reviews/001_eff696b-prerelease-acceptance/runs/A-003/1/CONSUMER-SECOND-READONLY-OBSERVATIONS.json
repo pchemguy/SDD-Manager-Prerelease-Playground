@@ -1,0 +1,1216 @@
+{
+  "request": "Reconcile same eligible first phase second time; preserve pre-existing user material; stop before implementation",
+  "read_only_bound": true,
+  "isolation": "shared filesystem isolation uncertified",
+  "native_transcript": "availability unknown",
+  "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+  "default_branch": "main",
+  "published_design_docs": "1e3305c8659045945244c06861079fef879ca3c3",
+  "expected_label": "sdd-phase-1-Named-file-utility",
+  "phase_labels": [
+    {
+      "id": 12625690902,
+      "name": "sdd-phase-1-Named-file-utility",
+      "description_sha256": "5c71f446784eef2fbc16bcbf8fdbc03a1b622649f4299cb62386ec81a3bca168"
+    }
+  ],
+  "milestones": [
+    {
+      "number": 1,
+      "id": 18467474,
+      "title": "sdd-1.1-Named-file-counting",
+      "state": "open",
+      "description_sha256": "e842130b8c096d0196cb563e08e22a657a410e681854158424eb8051c43b2d93",
+      "open_issues": 4,
+      "closed_issues": 0
+    },
+    {
+      "number": 2,
+      "id": 18467475,
+      "title": "sdd-1.2-Failure-handling-and-distribution",
+      "state": "open",
+      "description_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be",
+      "open_issues": 4,
+      "closed_issues": 0
+    },
+    {
+      "number": 3,
+      "id": 18467477,
+      "title": "sdd-1.3-Phase-1-review",
+      "state": "open",
+      "description_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263",
+      "open_issues": 1,
+      "closed_issues": 0
+    }
+  ],
+  "task_associations": [
+    {
+      "task_id": "T-001",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 2,
+          "id": 5790847351,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/2",
+          "title": "[T-001] Implement immutable statistics and whole-text counting",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 1,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "b45d8673b11fb671364578a335168bbf2944b7695750c6f25c0548b22ce79650",
+          "generated_region_present": true,
+          "generated_region_sha256": "b45d8673b11fb671364578a335168bbf2944b7695750c6f25c0548b22ce79650",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "3f2ac88bbf3b0b275e8349c15724ca29fec0c116ef6ecbdcb46e5a7fb46cb4f6",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-002",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 3,
+          "id": 5790848274,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/3",
+          "title": "[T-002] Implement strict file acquisition and complete public API",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 1,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0",
+          "generated_region_present": true,
+          "generated_region_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "eb09dff87f4029911b580e971de6698c6008f00a2161aefd38785fd36fad7f46",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-003",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 4,
+          "id": 5790849215,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/4",
+          "title": "[T-003] Integrate named-file CLI and nonempty product checks",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 1,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75",
+          "generated_region_present": true,
+          "generated_region_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "f43bc22929dd399a6b3216c3b0a9af1fe54f8f243e345104c4245dcd3c322408",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-004",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 5,
+          "id": 5790850206,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/5",
+          "title": "[T-004] Review, test and report milestone 1.1",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 1,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795",
+          "generated_region_present": true,
+          "generated_region_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Report",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "d959d34428a7085595c44bb134ffbd27f1ea7068b498845115600b145423c25d",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-005",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 6,
+          "id": 5790851199,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/6",
+          "title": "[T-005] Complete named-file CLI failure and usage handling",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 2,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba",
+          "generated_region_present": true,
+          "generated_region_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "5a863727a0cbc12860b5c716cdd0f4e4f4c03da7b85ce3dcdb2c99b99eaff208",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-006",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 7,
+          "id": 5790852415,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/7",
+          "title": "[T-006] Document public API and runnable named-file usage",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 2,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c",
+          "generated_region_present": true,
+          "generated_region_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "6878f3fb5287eedf1c2f3a35bf38a74c754f14d8107304c0820f490af6654def",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-007",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 8,
+          "id": 5790853387,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/8",
+          "title": "[T-007] Build and verify isolated source distribution",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 2,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6",
+          "generated_region_present": true,
+          "generated_region_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "b22d03bc0564c5b917672ec3fea21cb4f551a071954a7235eec5bfa5181055cd",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-008",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 9,
+          "id": 5790854318,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/9",
+          "title": "[T-008] Review, test and report milestone 1.2",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 2,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361",
+          "generated_region_present": true,
+          "generated_region_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Report",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "3755359037f32a154913ce54486aa5f759f099866b5d05774eb7517e0194bb85",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": "T-009",
+      "unique_match": true,
+      "matches": [
+        {
+          "number": 10,
+          "id": 5790855234,
+          "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/10",
+          "title": "[T-009] Review, test and report phase 1",
+          "title_matches": true,
+          "state": "open",
+          "milestone_number": 3,
+          "milestone_title_matches": true,
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "phase_label_present": true,
+          "body_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf",
+          "generated_region_present": true,
+          "generated_region_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf",
+          "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "outside_generated_nonempty": false,
+          "generated_field_names": [
+            "What",
+            "Why",
+            "Scope",
+            "Dependencies",
+            "Verification plan",
+            "Report",
+            "Result",
+            "Sources"
+          ],
+          "task_entry_sha256": "4932d71ef4b6d2a35a6f0a2b607dfa2d54dc8c663311806c30d8c949dda43d3c",
+          "generated_source_links": [
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/TASKS.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/PLAN.md",
+            "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/blob/1e3305c8659045945244c06861079fef879ca3c3/docs/dev/SPEC.md"
+          ]
+        }
+      ]
+    }
+  ],
+  "unrelated_issues": [
+    {
+      "number": 1,
+      "id": 5790780797,
+      "title_sha256": "4b2c7b82aa75e7cac9170cf1d09f4555aae1cd72be3fc9917c7b4b5370cb3351",
+      "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce",
+      "labels": [
+        "campaign-037-preserve"
+      ]
+    }
+  ],
+  "unrelated_labels": [
+    {
+      "id": 12624578628,
+      "name": "accessibility",
+      "description_sha256": "a0e29a556c55309dcf78098b04d2c5c8e6c082d4df0e108596880faec3273e4e"
+    },
+    {
+      "id": 12624578614,
+      "name": "bug",
+      "description_sha256": "ba26e412cc494b92f18f01c968c2b3241803b752eb09f1577844190076120a92"
+    },
+    {
+      "id": 12625616051,
+      "name": "campaign-037-preserve",
+      "description_sha256": "cf6fc320df3a5d3a51954bfd5f4cd9f440e2eca098c6f8471ea8f165b83d6f5c"
+    },
+    {
+      "id": 12624578638,
+      "name": "documentation",
+      "description_sha256": "d1aadc4e1b60c7b31dfbed5db1beb3a9f178166309def32db138e2e6546c2059"
+    },
+    {
+      "id": 12624578649,
+      "name": "duplicate",
+      "description_sha256": "092850c4484f11177dce84173d1a26030b145f573db994baa043648947130102"
+    },
+    {
+      "id": 12624578660,
+      "name": "enhancement",
+      "description_sha256": "528e05403b406e202bb0bd23d3917d0688aaa7bf834fac8273682631bb42bbca"
+    },
+    {
+      "id": 12624578682,
+      "name": "good first issue",
+      "description_sha256": "e7b33d49b02e3a67c41178ae81e03df423dd08d3cd6695030623de3910789d96"
+    },
+    {
+      "id": 12624578673,
+      "name": "help wanted",
+      "description_sha256": "2a68d328096f7ecf792863fc4701db1a85072417d4dac3d606847541e0423a65"
+    },
+    {
+      "id": 12624578690,
+      "name": "invalid",
+      "description_sha256": "b0b7cab1d96254957703fa96a85a0400491637e8c110b6e79dff077194dd7bed"
+    },
+    {
+      "id": 12624578698,
+      "name": "question",
+      "description_sha256": "c758420437639eac26ad21aad1ff43032947a061a29e688a7cc442d7d936d2b5"
+    },
+    {
+      "id": 12624578707,
+      "name": "wontfix",
+      "description_sha256": "7005a3da62f74e32c046e5df2439b2911db569848f9e40c38024b20617530777"
+    }
+  ],
+  "loaded_sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d905c30b1bfc4ade497fa8bb2d850c71e0fae0db8a491a7651e53540678c067c"
+    },
+    {
+      "path": "textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9"
+    },
+    {
+      "path": "SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    {
+      "path": "AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "README.md",
+      "sha256": "af9961caa90a943d12b5c995893a8214628b0006049aebe0d38421bbf28bf373"
+    },
+    {
+      "path": "docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d"
+    },
+    {
+      "path": "docs/dev/TASKS.md",
+      "sha256": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2"
+    },
+    {
+      "path": "docs/dev/PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+    },
+    {
+      "path": "docs/dev/SPEC-REVIEW-REPORT.md",
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899"
+    },
+    {
+      "path": "docs/dev/PLAN-REVIEW-REPORT.md",
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e"
+    },
+    {
+      "path": "docs/dev/TASKS-REVIEW-REPORT.md",
+      "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md",
+      "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md",
+      "sha256": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github.md",
+      "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md",
+      "sha256": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md",
+      "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md",
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md",
+      "sha256": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md",
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f"
+    }
+  ],
+  "chronology": [
+    {
+      "kind": "command",
+      "command": "protected credential exclusion check",
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "command",
+      "command": "protected credential exclusion check",
+      "status": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground",
+      "status": 200,
+      "utc": "2026-10-10T12:07:58.921543+00:00",
+      "response_sha256": "2277caa67281560b8a074e279623dfb939897f38dd391709bbf210cb8bcab27d",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/labels?per_page=100",
+      "status": 200,
+      "utc": "2026-10-10T12:08:03.194942+00:00",
+      "response_sha256": "434b5495633f227a15533da2c5faac7ac12890a3c2daf82de0a34e82fae13d57",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "status": 200,
+      "utc": "2026-10-10T12:08:08.071496+00:00",
+      "response_sha256": "bb034c1a06be4289c8353c7144b239c73c3ee014e1d3e7d58710960232e32e18",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "status": 200,
+      "utc": "2026-10-10T12:08:13.302262+00:00",
+      "response_sha256": "0c3d97e08fae86c81e7af4df1b5294722724c8ae457f31c60c98769ccd75910f",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/branches/design-docs%2Fmain",
+      "status": 200,
+      "utc": "2026-10-10T12:08:18.219215+00:00",
+      "response_sha256": "0acd13ed800785348c89634c6a24ecbe50212a17e4211dd6fe3c36478adf56ed",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "status": 200,
+      "utc": "2026-10-10T12:09:00.585855+00:00",
+      "response_sha256": "0c3d97e08fae86c81e7af4df1b5294722724c8ae457f31c60c98769ccd75910f",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/2/comments?per_page=100",
+      "status": 200,
+      "utc": "2026-10-10T12:09:03.774672+00:00",
+      "response_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "link_header": null
+    },
+    {
+      "kind": "GET",
+      "endpoint": "repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/1",
+      "status": 200,
+      "utc": "2026-10-10T12:09:07.287863+00:00",
+      "response_sha256": "60376f71b6a7c387d781c83433f29554bb9643e5eab9c6b885c3b49efa086a6c",
+      "link_header": null
+    },
+    {
+      "kind": "command",
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "clean": true
+    }
+  ],
+  "mutations": [],
+  "generated_region_checks": [
+    {
+      "task_id": "T-001",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "a52bf1b715b457cede3c2400d95efca544cacf2a0d46e41c851f4582daf0da09",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "399680c846095ec937120bfbeceea9f1711ace857b2e973d018a7ce3ac63442f",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "05fbe776f87715c6a79e926512ffc49e7dbe762bd531e8a6dd8bce4d04d7e118",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "54a448d2210da7b604fa3504d158bdef7c6088abaa626347b1fb45d397d1978d",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "4ca93bb5b532622b304579a15f74c5f95576db5a999fdb7c9392171123ec43a0",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-002",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "4fc0c26134d692124f2b6b129fb2caa314468d31c68e2b5d2227fd30af0ae4a5",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "399680c846095ec937120bfbeceea9f1711ace857b2e973d018a7ce3ac63442f",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "1cc85a4f76175df4a339654f47e576fd66d61f1def45d9e4ef188e4c5e2bcaa7",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "5ccf5c989a9234297b9e46110a7437b17641fa885a66f25400cf21b62c4158aa",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "29dc1446c55000a7769d7fb72ac46bacbc326959accc13a8e03aea70c78ed293",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-003",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "3839a5cd8ffc1863a9464d247cb8dbba0b297893419e5286a66ec6a1c7d202d9",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "399680c846095ec937120bfbeceea9f1711ace857b2e973d018a7ce3ac63442f",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "3f56fb8cdf5d789ef608ead7a0753270a8bdec9138adcbf8924c83cd01c79938",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "881e58de12c252517f91755d966905697ccbb456f763aea14c87115886aa3f03",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "a1ae8fdb8ba8246ad1cce014ccfe4c8b8dedcfa860111c0dd6f4dfa30a6ce412",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-004",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "133da221e862983a20c6cd355170a612449ba97e4f780c71bb6f511dfa591de5",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "399680c846095ec937120bfbeceea9f1711ace857b2e973d018a7ce3ac63442f",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "74ffddabe574544db159f8e1b40bcefcebe12f0465e9aa59ed9bd906decddee3",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "ad488120848f1abd95eb4d69ef43385e7d53f1bb06d04fdcaa3f1e9db9030f81",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "5cb80169d75c1dbb5cceb54c98c9d1b11b4c991e31cfebecd02e7b6dd88cb22d",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Report": {
+          "sha256": "051b3e21e8631b428714dddca2a890bbe0b00a1f213c843ea3a4bf9fd3d8889b",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-005",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "8571222f1a9fb5a55498390eef42c9f54e0b6334ea2efacce08f5461d1ac1b71",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "a22ace4ca366d3b4977be69344138604cb0670c112333a1e5097c4154789a017",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "8181a49d340f0c3774f6a1b4b373c4dff22a38b24af8c98d20c777ff230f5867",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "7e88b4180099220e14cb2896759ec6473f7a1160cc2eeee75a6210b607327988",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "7cd68f9991b6c4d1f3c196c1c586c3bd29dab883013f3ebd6282e5e505a33bf5",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-006",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "9325ca64ee9cf9c52f54ba6552fa991a3f0a18c6019410166d907b8794278813",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "a22ace4ca366d3b4977be69344138604cb0670c112333a1e5097c4154789a017",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "0cab85ca7ceacf78faf7cbd5469559b7812ba659cea08df529aff52b536d72f1",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "8a2dfc530358fb81b532b330f7b9ceb8aee9717524ac97f502d3bfc6b76fd6f3",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "40b1a2fcdfd5f5b5a6cfa6b5d390358b86137976d0a0584a1e4c0e20e0c16052",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-007",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "3e80d5a235c073e3b2dab0a3a170d16163195a1de3c92390fbefe9da28efb7c4",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "a22ace4ca366d3b4977be69344138604cb0670c112333a1e5097c4154789a017",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "f49564f34811e59c7565a6557d02e57af9bf0fcc3836445bd18ed0558ca5e884",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "833df1bfa82c04decbd4945be2ac0f70c0c645079c1dcc6e7d2b0e52bda3c10e",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "31f693655d6d93a382156b2f0d509587e46af091847074a3371d5b5593a548f7",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-008",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "4a31e4824c2e8dafa0e5c85b749bdd4432be692b65ecdb7c934659132676e3d9",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "a22ace4ca366d3b4977be69344138604cb0670c112333a1e5097c4154789a017",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "73f25fee226c8f3b928f6722199a663604485b5be92a6f7e28c5dfc4b6861d98",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "cfe0c331fe5efc296c421e3acad7358deded156ae798211bda6a36ba3fe66b7c",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "0b61053609e5a969698d854d8d468c6c4926fef3c0c2e34e422b92ac985dd4e6",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Report": {
+          "sha256": "dea452886c579a3a6203c1c463d7579aa277972cf58bec4292bfe5dfcfd53129",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    },
+    {
+      "task_id": "T-009",
+      "body_matches_initial_GET": true,
+      "fields": {
+        "What": {
+          "sha256": "55273684988fd7c81d5a4041dbbff5519b3e3e502a5ff71aea6819761e0d08eb",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": true
+        },
+        "Why": {
+          "sha256": "a6188065f4bc5dcb6875492783eba55cff21916edc95a5936e6f8c14133a64e8",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Scope": {
+          "sha256": "fa0001518c1616cbf92e88a304cf72c047b83e405149c47cef85700b469d815b",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Dependencies": {
+          "sha256": "3946395278ab1fe25636a92ddcee73a58b7c551f56983ad1a83832e294604e42",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Verification plan": {
+          "sha256": "bb99f0b1a67606fec65de0a30c251041765f75e4140a4a2b5b5291262bb0b4d0",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Report": {
+          "sha256": "23d565390b0827236ea490a7839997dd9d763ee1f983663741296a060493549a",
+          "exact_tasks_match": true,
+          "contained_in_tasks_entry": true
+        },
+        "Result": {
+          "sha256": "5535a925ff512481f4e6269bd80a2bb14a4068012bf0ff6116c9f3e7705e656b",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        },
+        "Sources": {
+          "sha256": "41c4018e7cd8a433813847f44896989bbbdc17e7be1c6d458628196c533d6f45",
+          "exact_tasks_match": false,
+          "contained_in_tasks_entry": false
+        }
+      },
+      "identity_open_count": 1,
+      "identity_close_count": 1,
+      "planned_result": true
+    }
+  ],
+  "preservation_readback": {
+    "issue2_outside_generated_nonempty": false,
+    "issue2_comment_count": 0,
+    "issue2_comments": [],
+    "milestone1_description_sha256": "e842130b8c096d0196cb563e08e22a657a410e681854158424eb8051c43b2d93",
+    "milestone1_description_matches_initial_GET": true,
+    "milestone1_description_heading_count": 0,
+    "milestone1_description_unmanaged_markers_present": false
+  },
+  "orientation": {
+    "branch": "design-docs/main",
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "initial_worktree_status": "clean",
+    "implementation_started": false,
+    "preparation_integrated": false,
+    "QC": "current owner reports assessed and hashes match their declared reviewed roots; full substantive assessment assigned coordinator",
+    "tracking_scope": "Requested same first-phase reconciliation; no implementation authorization",
+    "remaining_gate": "Accepted preparation remains unintegrated on default branch; do not implement"
+  },
+  "result": {
+    "matched_labels": 1,
+    "matched_milestones": 3,
+    "matched_task_issues": 9,
+    "created": 0,
+    "updated": 0,
+    "closed": 0,
+    "no_future_phase_objects": true,
+    "proposed_hosted_writes": [],
+    "stop": "before implementation",
+    "preservation_limit": "No writes were attempted; unchanged hashed issue1 and unrelated label were observed. Historic baseline comparison is coordinator-owned."
+  },
+  "source_identity_only": [
+    {
+      "path": "docs/dev/SPEC.md",
+      "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+      "purpose": "Confirm current report-declared source identity; full artifact assessment delegated coordinator"
+    },
+    {
+      "path": "docs/dev/ARCHITECTURE.md",
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "purpose": "Confirm current report-declared source identity; full artifact assessment delegated coordinator"
+    },
+    {
+      "path": "docs/dev/DECOMPOSITION.md",
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "purpose": "Confirm current report-declared source identity; full artifact assessment delegated coordinator"
+    },
+    {
+      "path": "docs/dev/layout.md",
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "purpose": "Confirm current report-declared source identity; full artifact assessment delegated coordinator"
+    }
+  ],
+  "chronology_prefix": [
+    {
+      "sequence": 1,
+      "action": "pwd and scoped rg file discovery",
+      "status": 0
+    },
+    {
+      "sequence": 2,
+      "action": "Read root/package AGENTS and pinned forge/orient skills",
+      "status": 0
+    },
+    {
+      "sequence": 3,
+      "action": "Read manage skill, GitHub backend, orientation inspection reference",
+      "status": 0
+    },
+    {
+      "sequence": 4,
+      "action": "Read projection, phase activation, tracking decision, conventions",
+      "status": 0
+    },
+    {
+      "sequence": 5,
+      "action": "Read hierarchy/lifecycle/token/QC/report/style references",
+      "status": 0
+    },
+    {
+      "sequence": 6,
+      "action": "Git clean status/branch/HEAD/remotes and scoped feature discovery",
+      "status": 1,
+      "limit": "rg yielded no feature/nested instructions match, preventing chained document read; documents read in following call"
+    },
+    {
+      "sequence": 7,
+      "action": "Read TASKS/PLAN/PROJECT, reviews and adoption/report/QC sources",
+      "status": 0,
+      "limit": "Combined display truncated; targeted current QC and object-draft views followed"
+    },
+    {
+      "sequence": 8,
+      "action": "Read complete current TASKS/PLAN/SPEC owner QC reports",
+      "status": 0
+    },
+    {
+      "sequence": 9,
+      "action": "Protected exclusion checks then five GET readbacks; observation artifact written",
+      "status": 0
+    },
+    {
+      "sequence": 10,
+      "action": "Targeted draft/adoption/PROJECT view and local branch refs",
+      "status": 0,
+      "limit": "Display truncated, not used for full substantive artifact assessment"
+    },
+    {
+      "sequence": 11,
+      "action": "Three GETs compare generated fields/read preservation plus final Git clean-status readback",
+      "status": 0
+    }
+  ],
+  "verification_limits": [
+    "Shared filesystem isolation uncertified.",
+    "Native transcript availability unknown; command chronology is this consumer record, not a native transcript.",
+    "No hosted mutation request was sent by this consumer.",
+    "Generated task What/Scope/Dependencies/Verification/Report text compared to TASKS; contextual Why/Result fields are not verbatim TASKS fields.",
+    "Historic preservation comparison and full artifact readiness assessment are coordinator-owned.",
+    "Milestone unmanaged-note detection uses current description metadata/marker observation, not a missing rejected-write receipt."
+  ],
+  "sealed_utc": "2026-10-10T12:09:40.993289+00:00",
+  "sealed": true
+}

@@ -1,0 +1,10 @@
+{
+  "actor": "platform automatic approval review",
+  "observed_at": "2026-10-10T12:08:36.048135+00:00",
+  "action": "A-003 second-projection preservation fixture: append unmanaged note and retain foreign label on issue2, create owned preservation comment, append unmanaged paragraph to milestone1",
+  "destination": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground",
+  "result": "Rejected; current hosted effect being independently read, no fixture receipt available",
+  "stated_reason": "No user-authored approval covers these specific hosted mutations; GitHub destination deemed unverified",
+  "authority_context": "User explicitly authorized pushing e7c2554 to the existing evidence branch and continuing; prior execute/playground/per-commit push/test-assessment instructions retained. No bypass performed.",
+  "next": "Read-only reconciliation/assessment; request authorization for these precise fixture writes and resulting evidence publication before required preservation exercise."
+}

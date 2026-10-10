@@ -5,9 +5,17 @@
   "case_id": "A-003",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Recovered A-003 first projection independently Passed; current Git/provider state rechecked after coordinator crash",
-  "pending_operation": null,
-  "next_action": "Publish recovered first checkpoint; add scoped preservation fixture, then fresh second reconciliation and full A-003 assessment before A-004",
+  "last_completed_action": "A-003 read-only second reconciliation independently Passed; all identities reused and state unchanged",
+  "pending_operation": {
+    "kind": "api",
+    "status": "blocked",
+    "description": "Automatic approval review rejected precise preservation fixture writes; permission pending for issue2 unmanaged text/label/comment and milestone1 unmanaged paragraph",
+    "identity": {
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+      "issue_number": 2
+    }
+  },
+  "next_action": "Obtain authorization for rejected preservation fixture writes and publish this checkpoint; complete preservation reconciliation and full A-003 assessment before A-004",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -55,6 +63,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/CONSUMER-OBSERVATIONS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/FIRST-ASSESSMENT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/CONSUMER-FIRST-OBSERVATIONS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/interventions/coordinator-crash-20261010/RECOVERY.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/interventions/coordinator-crash-20261010/RECOVERY.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/CONSUMER-SECOND-READONLY-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/SECOND-READONLY-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/PLATFORM-FIXTURE-REJECTION.json"
   ]
 }
