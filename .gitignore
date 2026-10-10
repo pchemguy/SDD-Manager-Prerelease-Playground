@@ -154,3 +154,6 @@ vite.config.ts.timestamp-*
 # Generated caches from the delivered product and its verification suites
 /textstats/**/__pycache__/
 /tests/**/__pycache__/
+
+# Generated cache for distribution/check tools
+/tools/**/__pycache__/
