@@ -4,10 +4,14 @@
   "phase": "P4",
   "case_id": "A-023",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Controlled pre-send-unavailable WRITE setup from actualcompletedT001; no consumerdispatched",
-  "pending_operation": null,
-  "next_action": "Publish setup then fresh selected completionbacklog consumer",
+  "role": "coordinator",
+  "last_completed_action": "Actualread200null thenselectedWRITEUnavailableexit2; independentledgerabsent and exact161tracked/index/refs/status preserved",
+  "pending_operation": {
+    "kind": "api",
+    "status": "interrupted",
+    "description": "Completion summary campaign037_t001_completion publication notverified; exact selected destination retained"
+  },
+  "next_action": "Publishtrigger; restoreonlywritefacility thenseparatefreshcontinuation",
   "checkpoint_refs": {
     "product_branch": "trial/037-a023-before-send",
     "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
@@ -17,10 +21,15 @@
     "remote": "origin"
   },
   "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/RUN-STATE.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/037-a023-before-send-trigger-checks.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/tracking_facility.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/037-a023-before-send-trigger-snapshot.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/CONTROL.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/037-a023-before-send-completion-payload.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/SETUP.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/before-send/1/BINDINGS.json",
