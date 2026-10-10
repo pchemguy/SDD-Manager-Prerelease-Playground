@@ -1,0 +1,19 @@
+{
+  "actor": "coordinator",
+  "reason": "Observe unknown/unreadable effect after genuine applied-response-loss trigger published5ace043",
+  "evidence_class": "controlled",
+  "changed_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility/CONTROL.json",
+  "before": {
+    "read": "normal",
+    "write": "after-send-loss"
+  },
+  "after": {
+    "read": "unavailable-access",
+    "write": "after-send-loss"
+  },
+  "before_sha256": "c32ecb7ec127097f94c32bff27dafb87bb9ecf3f8f1b85f7c83029355de3f9a4",
+  "after_sha256": "298df2ee7c7d379c348e8bf30d34c72dde2ec7dbb713bf69a4a3527dbcb70361",
+  "ledger_sha256_unchanged": "1b6de6fc6077ea09e19e99c0215a47759a05f3e5bf384389bfac589b04a7ec52",
+  "observed_at": "2026-10-10T14:10:01.251779+00:00",
+  "no_product_git_credential_provider_effect": true
+}
