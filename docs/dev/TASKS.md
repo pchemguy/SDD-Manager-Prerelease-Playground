@@ -11,7 +11,7 @@ The user requested preparation through TASKS and stop before implementation. The
 ## Phase 1 — Named-file utility
 
 - [ ] Phase 1 — Named-file utility
-    - [ ] Milestone 1.1 — Named-file counting
+    - [x] Milestone 1.1 — Named-file counting
         - [x] T-001 — Implement immutable statistics and whole-text counting
             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.
             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.
@@ -27,11 +27,11 @@ The user requested preparation through TASKS and stop before implementation. The
             Scope: `textstats/cli.py`, `textstats/__main__.py`, CLI docstrings, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and `tools/check_tests.py`.
             Depends on: T-002.
             Evidence: real subprocess named-file/BOM/mixed-terminator/empty/help/dash-filename invocations with prescribed status/stdout/stderr, API equivalence and unchanged input. The standard-library test runner discovers unit/integration independently, reports counts, rejects zero collection in either suite and propagates test failure; workflow fixtures are excluded. Demonstrate a real file through API and CLI for milestone feedback. Complete CLI failure diagnostics/status robustness follows in T-005; JSON/stdin/range remain deferred.
-        - [ ] T-004 — Review, test and report milestone 1.1
+        - [x] T-004 — Review, test and report milestone 1.1
             Scope: complete core/acquisition/public API/CLI capability and relevant dependencies; no extra feature delivery.
             Depends on: T-001, T-002 and T-003.
             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.
-            Report: `docs/dev/reports/phases/1/1.1.md`.
+            Report: [milestone 1.1 review](reports/phases/1/1.1.md).
     - [ ] Milestone 1.2 — Failure handling and distribution
         - [ ] T-005 — Complete named-file CLI failure and usage handling
             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.
@@ -146,3 +146,9 @@ Delivered module-entry CLI, exactly one named input, useful no-acquisition help,
 Tests preceded behavior. `python -m unittest tests.unit.test_cli -v` collected seven tests and failed with four assertions and five NotImplementedError errors against unimplemented CLI and a runner that incorrectly returned success without discovery. These are observed behavioral RED failures, including both empty-suite rejection and propagation of a product failure. `python tools/check_tests.py` subsequently passed 21 unit and 12 integration tests on Python 3.12.14, without skips/warnings. The runner reports independent counts, rejects zero in either suite, executes both real product suites and propagates failure. Its subprocess fixtures exercise empty unit, empty integration, failure propagation, successful independent counts and exclusion of deliberately failing workflow fixtures.
 
 Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty input, exact status/stdout/stderr, before/after BOM option order, help without input, required single input and actual dash-prefixed names after `--`, including a file named `--keep-bom` and literal `-`. API equality and unchanged bytes are checked. Controlled CLI seams assert default/retaining policy and help without acquisition. Source/docstring/staged-scope review found no current contract violation. Complete R-008 diagnostics/status robustness, standalone public docs/distribution, JSON/stdin/range and other runtimes remain outside this task. The named-file useful demonstration and coherent milestone review follow in T-004; milestone/phase remain unchecked here.
+
+## T-004 completion evidence
+
+Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.
+
+T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.
