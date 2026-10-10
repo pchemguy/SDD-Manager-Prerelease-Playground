@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "actor": "coordinator",
+  "reason": "Actual clarified429 trigger and independently preserved state publishede0e22be before boundedrestoration; originaldiscovery stop retained",
+  "evidence_class": "controlled",
+  "changed_path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit-facility/CONTROL.json",
+  "before_sha256": "40ac7af7b3d173084dd5bf312727a4089a4e5dd99e2eb47f13d171caa00091d2",
+  "after_sha256": "625836cd4bad68ca19674b1b263f0546c9e4afe95ac7f7c2c50fcb83853f0b51",
+  "before": {
+    "mode": "rate-limit"
+  },
+  "after": {
+    "mode": "normal"
+  },
+  "observed_at": "2026-10-10T13:54:42.709473+00:00",
+  "unchanged_destination": "campaign037_phase1_tracking",
+  "ledger_absent": true,
+  "no_product_git_credential_provider_change": true
+}
