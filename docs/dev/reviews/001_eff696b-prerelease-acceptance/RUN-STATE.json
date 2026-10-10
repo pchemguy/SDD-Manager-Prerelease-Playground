@@ -135,6 +135,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/INPUTS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/RUN-STATE.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/CONSUMER-OBSERVATIONS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/CONSUMER-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/CONSUMER-OBSERVATIONS.json"
   ]
 }

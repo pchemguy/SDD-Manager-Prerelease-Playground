@@ -5,10 +5,10 @@
   "case_id": "A-026",
   "variant": "failing-baseline",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Actual assessed milestone fork/fixture prepared, independently probed and published; ordinary handoff published before fresh consumer dispatch",
+  "role": "assessor",
+  "last_completed_action": "Fresh verificationonly consumer sealed actual assertion failures, no repair/statechanges; independent assessment pending",
   "pending_operation": null,
-  "next_action": "Verification-only consumer, independent separate variant assessment then publish",
+  "next_action": "Independent failingbaseline variant assessment, then publish",
   "checkpoint_refs": {
     "product_branch": "trial/037-a026-failing-baseline",
     "product_commit": "86046022c97564a753b0f62a86e0bacaecf650b4",
@@ -21,6 +21,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/INPUTS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/BINDINGS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/START.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/HANDOFF.md"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/CONSUMER-OBSERVATIONS.json"
   ]
 }

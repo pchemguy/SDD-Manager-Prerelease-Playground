@@ -5,10 +5,10 @@
   "case_id": "A-026",
   "variant": "empty-selection",
   "attempt": 1,
-  "role": "assessor",
-  "last_completed_action": "Fresh verification-only consumer sealed; independent variant assessment pending",
+  "role": "coordinator",
+  "last_completed_action": "Variant independently Passed; originalconsumer/provenance and exact preservation retained",
   "pending_operation": null,
-  "next_action": "Independently assess exact preservation/commands/scope, retain outcome and publish",
+  "next_action": "Publish independently assessed result; preserve trial refs/fixtures",
   "checkpoint_refs": {
     "product_branch": "trial/037-a026-empty-selection",
     "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
@@ -22,6 +22,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/BINDINGS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/HANDOFF.md",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/CONSUMER-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json"
   ]
 }
