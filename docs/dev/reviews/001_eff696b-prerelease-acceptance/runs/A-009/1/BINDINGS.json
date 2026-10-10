@@ -1,0 +1,30 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-008",
+      "status": "Passed",
+      "assessment_path": "../../A-008/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
+        "product_commit": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+        "integration_branch": "main",
+        "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+        "paused_phase_branch": "phase/2-json-and-stdin",
+        "paused_phase_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "remote": "origin",
+      "remote_ref": "refs/heads/design-docs/002_e7cae5b-named-file-ranges",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "0611f1b60d761bdf8a2d674309e05f6f4273ed9f",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Productcheckout /workspace/scratch/46b31bb4dff6/037-textstats-product is clean on published design-docs/002_e7cae5b-named-file-ranges at8036adbd71ffc1f04b98e689cc131781bc20cd1f after concretelyaccepted named-file range preparation. Main remains completedPhase1e7cae5b2216ff7dd311b6f7296d829d1927a6a8a; paused phase/2-json-and-stdin remains JSONmilestone tip e63b8946bbb99347b0f73f070f9c728945ee5925 incomplete/unmerged. FeatureSPEC/PLAN/TASKS andadjacentQC accepted; T018\u2013024 unchecked, stdin/mainfinalwork stillpending. Activefeaturepackage is docs/dev/features/002_e7cae5b-named-file-ranges/. This request authorizes selected mainSPEC incorporation only, its ordinary scopedQC/navigation/persistence and impact reporting, retaining remainingfeaturework for latercontinuation. Concrete changed-document acceptance is delegatedcoordinator; send exactcurrentartifact/QC for review before any dependent use. Stop after thisselectedincorporation before implementation or integration. Use productAGENTS and unchanged pinnedlocalskills textstats-run-resources/plugin/ ea515f5624c8a34cc4572731a2590223a5eb27f4. Preserve otherpackages/foreignmaterial and exactexistinghostedobjects; maintainedtracking staysenabled for eligiblework but no newimplementation request/phaseclosure/release. All scopedcommits/pushes authorized, push/exactverify everyownedcommit immediatelybefore furtherwork. ProtectedplaygroundAPIauth available at /workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground/gh.tkn only transientmemory afterignored/untrackedverification; nevercopy/expose credentialmaterial."
+  }
+}
