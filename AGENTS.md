@@ -15,3 +15,7 @@ Python 3.12.14 was verified for T-001. From the repository root, run `python -m 
 ## Phase 1 delivery checkpoint
 
 The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records completed named-file/API/error/documentation/distribution exits and the integration protocol. All nine Phase 1 task results are tracked in canonical TASKS; Phase 2 remains pending and outside the current request. Use the current Git/remote state for actual integration/publication identity rather than treating this navigation as a branch snapshot. The current verified product suites contain 23 unit and 18 integration tests; extracted distribution checks exercise 36 real module cases on Python 3.12.14. Broader runtime/platform coverage is unverified.
+
+## Phase 2 JSON increment
+
+The current JSON-increment request supersedes the historical Phase 1 stopping statements above: activate Phase 2 and execute only T-010 through T-012 in [TASKS](docs/dev/TASKS.md), then pause before stdin work with Phase 2 incomplete and unmerged. Phase 1 is integrated and published; maintained tracking covers the eligible Phase 2 objects. Named-file `--json` composes with BOM policy while text remains the default; stdin and ranges remain deferred. Product checks now collect 25 unit and 20 integration tests on Python 3.12.14. The extraction checker currently retains its 36 text/error cases; T-011 owns its JSON extension. Preserve earlier checkpoint records and use actual Git/remote state for publication identities.

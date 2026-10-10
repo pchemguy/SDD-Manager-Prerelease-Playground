@@ -43,16 +43,17 @@ With the default `strip_bom=True`, remove exactly one leading U+FEFF from the co
 
 ## Module command
 
-Use `python -m textstats [--keep-bom] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. In Phase 1, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
+Use `python -m textstats [--keep-bom] [--json] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. Until stdin delivery, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
 
 | Outcome | Status | stdout | stderr |
 | --- | --- | --- | --- |
 | Count success | 0 | Exactly `lines=<N> words=<N>` plus newline | Empty |
+| JSON count success (`--json`) | 0 | One object plus newline, only integer `lines` and `words` fields, same counts; key order/spacing unrestricted | Empty |
 | Help | 0 | Useful usage/options | Empty |
 | File open/read or strict decode failure | 1 | Empty | Identifies input and cause, no traceback |
 | Missing/extra input or unknown option | 2 | Empty | Useful usage/error, no traceback |
 
-The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. JSON, stdin and ranges are future work. Runnable examples and setup/check instructions are in the [README](../README.md).
+The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. JSON composes with `--keep-bom`; text remains the default. Stdin and ranges are future work. Runnable examples and setup/check instructions are in the [README](../README.md).
 
 ## Module responsibilities
 
@@ -61,7 +62,7 @@ The command validates invocation before opening input and prints counts only aft
 | `textstats.core` | Immutable statistics, once-only BOM normalization, shared CRLF/CR/LF traversal and whole-text counting. |
 | `textstats.io` | Strict named-file acquisition and owned-handle lifetime, then shared whole-text counting. |
 | `textstats` | Direct public exports; import has no input or process effects. |
-| `textstats.cli` | Invocation validation, BOM policy, expected failure translation and exact text rendering. |
+| `textstats.cli` | Invocation validation, BOM policy, expected failure translation and text/JSON rendering. |
 | `textstats.__main__` | Minimal module-entry adapter returning the CLI process status. |
 
 Internal helpers are not additional public exports. Future range selection can reuse preserved logical segments without renormalizing an exposed interior BOM.
