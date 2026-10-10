@@ -171,7 +171,7 @@ class CheckRunnerTests(unittest.TestCase):
             fixture.mkdir()
             (fixture / '__init__.py').touch()
             (fixture / 'test_foreign.py').write_text('raise RuntimeError("workflow fixture collected")\n')
-            return subprocess.run([sys.executable, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+            return subprocess.run([sys.executable, '-B', str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
 
     GOOD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(2 + 2, 4)\n'
     BAD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.fail("controlled product failure")\n'

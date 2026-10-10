@@ -19,6 +19,10 @@ APPROVED = {'README.md', 'docs/public-api.md', 'AI_DISCLOSURE.md', 'SDD-MANAGER.
 
 
 class DistributionTests(unittest.TestCase):
+    def test_checker_rejects_ignored_stdin_with_healthy_named_file_behavior(self):
+        self._assert_range_mutation_rejected(
+            b"if args.input == '-':", b'if False:')
+
     def test_checker_rejects_silently_accepted_removed_json_option(self):
         self._assert_range_mutation_rejected(
             b"    parser.add_argument('--keep-bom'",
@@ -34,7 +38,7 @@ class DistributionTests(unittest.TestCase):
             b'__import__("textstats").count_text(_select_lines(normalized, *args.lines))')
 
     def _assert_range_mutation_rejected(self, original, replacement):
-        """Alter only extracted range behavior; checkout and whole-input stay healthy."""
+        """Alter extracted CLI behavior while the original checkout stays healthy."""
         with tempfile.TemporaryDirectory() as directory:
             archive = build_archive(ROOT, Path(directory) / 'source.zip')
             faulty = Path(directory) / 'faulty-range.zip'

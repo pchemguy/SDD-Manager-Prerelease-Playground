@@ -87,3 +87,22 @@ and adjacent QC govern; archived sources and retired JSON identities stay histor
 Continue immediate per-commit push/exact readback and preserve protected resources.
 Use Python 3.12.14 with `PYTHONDONTWRITEBYTECODE=1 python -B`, including children.
 Stop after published complete Phase 2; no next phase, version bump or release.
+
+## Current stdin and final-delivery checkpoint
+
+T-013/T-014 deliver complete strict binary stdin through the shared once-only
+BOM/range/count pipeline, with borrowed ownership, usage-before-acquisition and
+unchanged whole-input API/named-file behavior. T-015 completes public instructions
+and real extracted-source stdin exits. Current verified Python 3.12.14 checks
+collect 37 unit/34 integration tests; isolated distribution executes 478 actual
+named-file/stdin module cases plus import/API probes. All twelve README/API fences
+passed, including extracted named-file and stdin-range demonstrations.
+The final corrected retries use PYTHONDONTWRITEBYTECODE=1 and explicit python -B
+in children; prior observation gaps/failures remain in owning TASKS evidence.
+Other runtime/platform coverage remains unverified.
+
+Canonical TASKS and adjacent current QC retain T-016/T-017 as pending review/report
+owners. Their concrete reports and prospective completed-phase integration require
+delegated acceptance before conclusion. Continue the explicit resume above,
+immediate per-commit push/exact readback and managed hosted closure gates.
+Stop after published completed Phase 2; no next phase, version change or release.

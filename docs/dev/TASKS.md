@@ -101,7 +101,7 @@ version bump or release is authorized.
             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py`, help/README stdin usage and error documentation.
             Depends on: T-013 and reviewed range feature T-024.
             Evidence: real byte-fed subprocess stdin in text modes with both BOM policies, Unicode/mixed terminators/empty data; invalid bytes and controlled read errors identify stdin, return 1, leave stdout empty and avoid traceback. Check under differing locale, preserved borrowed-stream ownership at controlled seams, named-file `./-`, option/usage regressions and no input mutation. Retain named-file range validation and compose the shared normalized selection/counting pipeline with stdin, including complete decode after END, exposed interior BOMs, EOF subsets, both spellings and both BOM policies. Run nonempty suites and newly runnable stdin examples.
-        - [ ] T-015 — Complete final documentation and source-package exits
+        - [x] T-015 — Complete final documentation and source-package exits
             Outcome: final R-011/R-012/R-013 usability/portability acceptance across delivered API/named-file/stdin behavior.
             Scope: public API/module reference, README final instructions, `tools/check_distribution.py`, `tests/integration/test_distribution.py` and truthful root navigation.
             Depends on: T-014.
@@ -503,3 +503,58 @@ dependency equivalence. This task's result/tests/docs/evidence/initial checkbox
 close together; immediate push/exact readback precedes further owned work.
 Issue #15 closure is separately observed. Final public-reference and expanded
 extracted-stdin exits remain T-015; milestone and phase parents stay pending.
+
+## T-015 completion evidence
+
+Published T-014 `dbf50d7b6d83c7ddf53f287d82b199db3e83fd89` and closed/completed
+issue #15 precede this task. The final public reference documents borrowed binary
+stdin, strict complete decoding, text/status/BOM/range composition and unchanged
+whole-input API. README explains actual byte-fed isolated extraction and includes
+a successful extracted stdin range example. Module-entry documentation and root
+navigation reflect delivery; no public export/signature or archive allowlist changed.
+
+A new sensitivity test first failed because the old checker accepted an extracted
+CLI with stdin deliberately disabled while named-file behavior remained healthy:
+one genuine failing test, status 1. After extending the checker, that test passed.
+The extracted checker now executes 478 real named-file/stdin module cases plus
+import provenance and silent API/signature probes. Byte-fed stdin covers empty,
+Unicode/mixed terminators, both BOM policies, C/C.UTF-8 locales with Python UTF-8
+mode/coercion disabled, every range anchor, spelling/order/input position, huge
+and leading-zero endpoints, usage-before-decode and invalid bytes after END.
+Existing named-file/removed-option/range regressions remain.
+
+The final serialized retry ran every one of twelve README/public-reference fences,
+including full runner, separate unit/integration discovery, rebuild/checker and
+actual isolated extraction examples. Each suite collected/passed 37 unit and
+34 integration tests without skips/warnings; standalone extraction passed 478
+cases. Exact documented counts, status-1/status-2 streams and silent API assertions
+passed. Extracted named-file/stdin examples produced 3/5 and 2/3. Local public-guide
+links resolve. Eleven archive members exactly match current approved source bytes;
+no tests/development/coordinator/credential material is included.
+
+Original facility failures remain external: concurrent old log writers raced,
+one captured checker aborted in logging, and lost first-channel entries cannot be
+reconstructed or counted. The surviving checkpoint is explicitly post-repair.
+A first lock repair had an indentation error before product execution. Lock plus
+atomic replacement repaired the shared logger; subsequent child tracing uses
+exclusive immutable records. These facility failures do not establish product
+failure or retroactive acceptance. The earlier fifteen child argv gaps retained
+inherited PYTHONDONTWRITEBYTECODE=1 but lacked explicit -B. Scoped maintenance
+adds only -B to the two old invocation fixtures without changing assertions.
+The final corrected retry records 2,776 actual Python children, all with -B and
+bytecode suppression; only this retry supports that explicit-flag claim.
+
+The first complete documentation campaign passed but its five owned example
+files were observed still present afterward; the next guarded retry stopped
+before product execution. Exact bytes/hashes and nonsymlink ownership were
+verified before explicit cleanup. The fresh successful retry's cleanup is
+independently confirmed: all five inputs absent. Actual commands, separate raw
+streams, statuses, fixture/input/source/archive hashes and child cwd/env are in
+external `037-a013-consumer-observations.json` and
+`037-a013-consumer-command-records/`; original observations remain unchanged.
+Python 3.12.14 is verified; other runtimes/platforms remain unverified.
+
+Result/tests/documentation/current evidence and initial T-015 checkbox close in
+one task commit, immediately followed by push/exact remote readback and separately
+observed issue #16 reconciliation. Milestone/phase reviews remain T-016/T-017;
+Phase 2, milestone parents and integration are not yet complete.

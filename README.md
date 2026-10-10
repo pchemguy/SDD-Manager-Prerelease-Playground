@@ -147,7 +147,7 @@ python tools/package_source.py
 python tools/check_distribution.py
 ```
 
-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and real whole-input/range text/BOM/error and removed-option module cases with inherited Python import paths removed, user-site packages disabled and child bytecode writes disabled. Range cases include every acceptance anchor, option permutations, huge/leading-zero endpoints, invalid/repeated options and bad bytes after END; silent whole-input API compatibility is checked in the extraction too.
+The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and real named-file and byte-fed stdin whole-input/range text/BOM/error and removed-option module cases with inherited Python import paths removed, user-site packages disabled and child bytecode writes disabled. Range cases include every acceptance anchor, option permutations, huge/leading-zero endpoints, invalid/repeated options and bad bytes after END; stdin is checked under C and UTF-8 locales too. Silent whole-input API compatibility is checked in the extraction.
 
 A runnable extraction example for a Bash shell on Unix:
 
@@ -158,11 +158,12 @@ python -m zipfile -e dist/textstats-source.zip "$example_dir"
     cd "$example_dir/textstats-source"
     python -c "from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')"
     env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt
+    printf 'alpha beta\nbeta\nlast two' | env -u PYTHONPATH -u PYTHONHOME python -B -s -m textstats --lines=2:99 -
 )
 rm -r "$example_dir"
 ```
 
-The extracted commands print `lines=3 words=5`, with a final newline and status 0. From an extracted root, the package builder/checker commands remain usable; the product-test commands above require a development checkout because test implementations and `tools/check_tests.py` are excluded. No installed console script or release publication is required.
+The extracted counting commands print `lines=3 words=5` and `lines=2 words=3`, each with a final newline and status 0. From an extracted root, the package builder/checker commands remain usable; the product-test commands above require a development checkout because test implementations and `tools/check_tests.py` are excluded. No installed console script or release publication is required.
 
 ## Development
 
