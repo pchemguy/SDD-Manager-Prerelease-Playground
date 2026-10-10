@@ -5,13 +5,9 @@
   "case_id": "A-018",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "Corrected fresh T-005 commit actually rejected by native destination hook; independently verified clean retained work and remote noncontainment",
-  "pending_operation": {
-    "kind": "push",
-    "status": "interrupted",
-    "description": "Retained T-005 commit 7aa3375 rejected; local destination remains 7d003c1"
-  },
-  "next_action": "Publish exact trigger exports before bounded external facility release and fresh continuation",
+  "last_completed_action": "Independently Passed retained completed T-005 publication after actual controlled hook rejection",
+  "pending_operation": null,
+  "next_action": "Continue separately eligible cases; A-018 sealed",
   "checkpoint_refs": {
     "product_branch": "trial/037-a018-rejected",
     "product_commit": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12",

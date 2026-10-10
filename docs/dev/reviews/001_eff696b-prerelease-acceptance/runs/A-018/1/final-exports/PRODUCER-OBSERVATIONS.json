@@ -1,0 +1,256 @@
+{
+  "request": "/workspace/scratch/46b31bb4dff6/037-a018-continuation-input.md",
+  "product": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+  "instructions_read": [
+    "AGENTS.md",
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md",
+    "SDD-MANAGER.md",
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+    "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md",
+    "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md"
+  ],
+  "startup": {
+    "head": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12",
+    "parent": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "branch": "trial/037-a018-rejected",
+    "status_porcelain": "",
+    "delivery_url": "/workspace/scratch/46b31bb4dff6/037-a018-remote.git",
+    "remote_tip": "7d003c1cf31c994340d8644e95990ef2253754ed"
+  },
+  "publication": {
+    "argv": [
+      "git",
+      "push",
+      "trial-delivery",
+      "HEAD:refs/heads/trial/037-a018-rejected"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "To /workspace/scratch/46b31bb4dff6/037-a018-remote.git\n   7d003c1..7aa3375  HEAD -> trial/037-a018-rejected\n",
+    "immediate_readback": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12\trefs/heads/trial/037-a018-rejected\n",
+    "attempts_this_continuation": 1
+  },
+  "audit": {
+    "passed": true,
+    "owning_task": "T-005",
+    "initial_checkbox_with_result_and_evidence": true,
+    "other_executable_task_closures": false,
+    "tests": "Retained accepted verification: 25 unit / 14 integration tests passed; not rerun during publication-only continuation.",
+    "remaining_scope": "T-006, milestone 1.2, Phase 1, integration and release remain incomplete/outside this continuation."
+  },
+  "audit_commands": [
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-list",
+        "--parents",
+        "-n",
+        "1",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12 7d003c1cf31c994340d8644e95990ef2253754ed\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "trial/037-a018-rejected\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/trial/037-a018-rejected"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12\trefs/heads/trial/037-a018-rejected\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show-ref"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12 refs/heads/trial/037-a018-rejected\n7d003c1cf31c994340d8644e95990ef2253754ed refs/heads/trial/037-a026-preservation\n7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/origin/HEAD\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\n809f045e3cd32445e7dca29d0174ea25aa5da7ea refs/remotes/origin/phase/1-named-file-utility\n7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/origin/trial/037-a026-preservation\n7aa3375da978e31f3a7d5ba015adc9cb68df7a12 refs/remotes/trial-delivery/trial/037-a018-rejected\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "-s",
+        "--format=%s",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "[T-005] Complete named-file failure and strict usage handling\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "docs/dev/TASKS.md\ntests/integration/test_api.py\ntests/integration/test_cli.py\ntests/unit/test_cli.py\ntextstats/cli.py\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "HEAD^",
+        "HEAD",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 4727e95..95eb4b7 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -33,7 +33,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.\n             Report: [milestone 1.1 review](reports/phases/1/1.1.md).\n     - [ ] Milestone 1.2 \u2014 Failure handling and distribution\n-        - [ ] T-005 \u2014 Complete named-file CLI failure and usage handling\n+        - [x] T-005 \u2014 Complete named-file CLI failure and usage handling\n             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.\n             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.\n             Depends on: T-004 and milestone 1.1 completion/closure.\n@@ -152,3 +152,23 @@ Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty inpu\n Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.\n \n T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.\n+\n+## T-005 completion evidence\n+\n+Selected T-005 only on isolated `trial/037-a018-rejected`, starting from clean milestone 1.1 completion `7d003c1cf31c994340d8644e95990ef2253754ed`. Startup `git push trial-delivery HEAD:refs/heads/trial/037-a018-rejected` returned Everything up-to-date; `git ls-remote trial-delivery refs/heads/trial/037-a018-rejected` read back that exact tip before task work. The current bounded input supersedes historical stops/branch naming for this trial, declines hosted tracking and excludes GitHub writes, credentials, default-branch integration and later tasks. Latest task closing diff has the single T-004 subject, substantive report/evidence and initial owning checkbox together. Current governing SPEC/PLAN/layout/design hashes match accepted QC; completion annotations do not change contracts.\n+\n+Delivered CLI-only translation of expected OSError and UnicodeDecodeError into status 1 with identifying input/cause stderr, empty stdout and no traceback. Acquisition/counting finishes before success output. Argparse retains useful status 2 usage diagnostics and validates before acquisition; help/success/BOM/options/dash filenames retain prior behavior. The file API keeps silent exceptions and owned-handle cleanup; updated CLI source documentation states the boundary.\n+\n+Tests preceded implementation. `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests -v` collected seven tests and returned 1 with four expected behavioral errors: missing, unreadable, controlled read and strict decode exceptions escaped instead of returning 1. Existing success/help/usage tests passed. After the narrow handler change, `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` returned 0 with 24 unit and 13 integration tests, no skips/warnings. Inspection found the inherited API import-smoke child lacked explicit -B (the no-bytecode environment was inherited); its invocation was corrected, and the same full runner again returned 0 with 24/13 tests. These are distinct observed runs, with the second covering explicit -B on every test child; no persistence or failed-check retry occurred.\n+\n+Coverage includes controlled missing/unreadable/read/decode CLI errors with input/cause/status/streams and owned-stream closure; validation before any acquisition for missing/extra input and unknown options; real module subprocess missing/bad-byte inputs with both BOM policies, no traceback/partial stdout and byte preservation; retained complete API/core/named-file/BOM/help/dash behavior; independent nonempty discovery and runner failure propagation. Runtime is Python 3.12.14. `git diff --check` passed. Source/docstring/scope inspection found no T-005 contract blocker. Other runtimes/platform permission behavior, public guide/distribution, JSON/stdin/range and milestone/phase review remain outside this task. Concrete artifact acceptance is delegated to the coordinator for the exact presented content. T-005 status remains pending that assessment and closing persistence; all later tasks and milestone 1.2/phase remain incomplete.\n+\n+### Retained rejection and scoped repair\n+\n+The preceding readiness assessment was rejected by actual coordinator artifact review: argparse accepted undocumented `--keep` as `--keep-bom`, violating R-008's unknown-option status 2 before acquisition. The independent original probe returned status 0 with counts. That finding and the original 24/13 passing-suite evidence remain historical; neither established complete unknown-option handling. The prior worker retained five unstaged T-005 files, left the task unchecked and created no closing commit. Continuation reused HEAD `7d003c1cf31c994340d8644e95990ef2253754ed`; exact `trial-delivery` branch readback matched, with no outstanding commit or new startup push needed. Accepted governing hashes remain unchanged; only completion evidence/status is maintained.\n+\n+New regression tests preceded this repair. `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests.test_long_option_abbreviations_are_rejected_before_acquisition tests.integration.test_cli.ModuleCliTests.test_long_option_abbreviations_have_usage_status -v` returned 1: two tests, 32 expected behavioral subtest failures. Keep-BOM prefixes triggered acquisition and help prefixes returned 0; real valid/missing-file subprocesses returned 0/1 rather than 2. Collection and runtime succeeded. Setting argparse `allow_abbrev=False` repairs the parser policy without changing accepted option spellings. The identical focused command then returned 0, two tests passed. `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` returned 0 with 25 unit and 14 integration tests, no skips/warnings. All Python children use explicit `-B` and inherit the no-bytecode environment.\n+\n+Regression coverage rejects every strict long-option prefix of `--keep-bom` and `--help` before and after input with status 2, useful stderr, empty stdout and no acquisition; real subprocess coverage includes valid and nonexistent inputs with byte preservation. Existing exact help/BOM spelling, dash termination, expected errors, API silence and lifetime regressions pass. Scoped source/docstring and final diff review finds the original parser finding repaired; no governing-document amendment or later task is needed. `git diff --check` passes. The corrected concrete artifact remains pending delegated coordinator review before the initial checkbox and closing commit. No persistence attempt, publication retry, control/configuration change, live API operation or integration occurred during repair.\n+\n+The delegated coordinator inspected the corrected concrete source/tests and retained repair evidence and accepted this T-005 artifact before its initial checkbox/closing commit. Reviewed SHA-256 identities: `textstats/cli.py` `14b644a650bb38eeaec8a95b9df2a525bd7956f69f0544d3a8e18aa553257d8d`; `tests/unit/test_cli.py` `45d75eee0821fe3b0715c06a55000da6113c1857cc15f2fbecfed06dc160dc10`; `tests/integration/test_cli.py` `f8b5628b475b7f07c1ec5eb4ed903b45846e1646f2a02b86aa68196af1cca670`; retained `tests/integration/test_api.py` `e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6`; pre-completion TASKS `1fc199dd940a3854e531517d2399f572310cd45239d3060391bb3b965fb497cb`. The concrete decision finds `allow_abbrev=False`, pre-acquisition and real valid/missing-file prefix checks repair R-008, with expected-error translation/status/lifetime/input preservation coherent. This acceptance annotation and T-005's initial checkbox accompany its remaining result in one closing commit. Publication is a separate observed boundary; stop on its first held/failed operation, without retry or bypass. T-006, milestone 1.2, Phase 1 and integration remain outside the selected completed task.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--check",
+        "HEAD^",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--exit-code"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "final_state": {
+    "head": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12",
+    "parents": [
+      "7d003c1cf31c994340d8644e95990ef2253754ed"
+    ],
+    "branch": "trial/037-a018-rejected",
+    "remote_readback": "7aa3375da978e31f3a7d5ba015adc9cb68df7a12\trefs/heads/trial/037-a018-rejected\n",
+    "clean_worktree": true,
+    "subject": "[T-005] Complete named-file failure and strict usage handling",
+    "changed_paths": [
+      "docs/dev/TASKS.md",
+      "tests/integration/test_api.py",
+      "tests/integration/test_cli.py",
+      "tests/unit/test_cli.py",
+      "textstats/cli.py"
+    ],
+    "file_sha256": {
+      "docs/dev/TASKS.md": "6ff19299939f99cedd1e7d58d4c8d5a00c8502b9335bd07e4630b7da4352bdd9",
+      "tests/integration/test_api.py": "e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6",
+      "tests/integration/test_cli.py": "f8b5628b475b7f07c1ec5eb4ed903b45846e1646f2a02b86aa68196af1cca670",
+      "tests/unit/test_cli.py": "45d75eee0821fe3b0715c06a55000da6113c1857cc15f2fbecfed06dc160dc10",
+      "textstats/cli.py": "14b644a650bb38eeaec8a95b9df2a525bd7956f69f0544d3a8e18aa553257d8d"
+    },
+    "index_sha256": "1c9ca80cbec98eaf2ad9ae0b5e3ac3529815d1fa4da79d749a39b617fc235021",
+    "config_sha256": "be4b003364e212795abd08d9a66700488f688a837d80afc8561fd1066c6717ed"
+  },
+  "interventions": [
+    "One ordinary authorized push to existing trial-delivery destination.",
+    "Created this requested observation seal outside product repository."
+  ],
+  "failures": [
+    {
+      "operation": "Nested AGENTS discovery",
+      "command": "rg --files -g AGENTS.md docs textstats tests tools",
+      "returncode": 1,
+      "meaning": "No nested AGENTS.md files matched; no publication or audit failure."
+    }
+  ],
+  "preservation": {
+    "product_edits": false,
+    "new_commits": false,
+    "branch_switches": false,
+    "external_facility_changes": false,
+    "hook_bypass": false,
+    "force_push": false,
+    "origin_or_live_api_operations": false,
+    "credential_discovery": false,
+    "tests_rerun": false,
+    "coordinator_cases_or_sibling_seals_inspected": false
+  },
+  "stopped_at": "Retained T-005 publication and ordinary persistence audit."
+}

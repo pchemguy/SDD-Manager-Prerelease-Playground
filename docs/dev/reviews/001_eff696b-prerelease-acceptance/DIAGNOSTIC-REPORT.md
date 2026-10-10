@@ -166,3 +166,10 @@ The controlled hold, bounded release and coordinator manifest correction remain 
 ## A018 corrected actual publication rejection independently observed
 
 Original attempt remains Not triggered after concrete review found argparse option abbreviation violated unknown-option rejection. A fresh corrected attempt disabled abbreviation after actual RED, passed 25 unit and 14 integration tests, and completed T-005 in 7aa3375. Native local destination hook actually rejected publication; independent checks confirm retained clean commit/index/workfiles and remote noncontainment. Complete trigger objects and exact hook/producer/command records are retained. Publish these before bounded release and fresh publication continuation; aggregate assessment is pending.
+
+
+## A018 rejected-push recovery independently Passed with assistance
+
+After actual native destination rejection, fresh continuation read the retained destination state and published the same T-005 commit 7aa3375 exactly once, with exact readback before further work. Independent assessment confirms unchanged commit/parent/index/tracked bytes and modes, no reimplementation, duplicate completion or T-006 advance. Complete verified Git objects and recovery seals are exported; original deterministic checks Passed separately with explicit local-delivery configuration. Original Not triggered attempt and corrected review/RED/GREEN/rejection remain distinct.
+
+Controlled local recovery and recorded assistance are explicit; no live GitHub trial delivery, native process termination, broad filesystem isolation or complete historical native transcript claim. Required original-pin accounting is 19 Passed, 2 Failed and 11 unresolved; corrected A004/A005 rechecks remain separate. A009 independent assessment is pending. Full readiness remains Open.
