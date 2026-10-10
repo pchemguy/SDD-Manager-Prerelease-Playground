@@ -1,4 +1,4 @@
-"""Run the named-file TextStats command via python -m textstats."""
+"""Run the named-file or binary-stdin TextStats command via python -m textstats."""
 
 from .cli import main
 

@@ -1,4 +1,4 @@
-"""Verify isolated source imports and real named-file module-entry contracts.
+"""Verify isolated source imports and real named-file/stdin module contracts.
 
 The checker builds/extracts the source ZIP, clears inherited Python import-path
 settings, disables user-site packages and uses the extraction as process cwd.
@@ -6,6 +6,7 @@ It never substitutes a checkout import for extracted module execution.
 """
 
 import os
+import itertools
 from pathlib import Path
 import subprocess
 import sys
@@ -36,10 +37,19 @@ def verify_archive(archive: Path) -> int:
         environment = {key: value for key, value in os.environ.items()
                        if key not in {'PYTHONPATH', 'PYTHONHOME', 'PYTHONSTARTUP'}}
         environment['PYTHONNOUSERSITE'] = '1'
+        environment['PYTHONDONTWRITEBYTECODE'] = '1'
 
-        def invoke(arguments):
-            return subprocess.run([sys.executable, '-s', *arguments], cwd=root,
-                                  env=environment, capture_output=True, text=True)
+        def invoke(arguments, raw=None, locale=None):
+            process_environment = dict(environment)
+            if locale is not None:
+                process_environment.update(LC_ALL=locale, PYTHONUTF8='0', PYTHONCOERCECLOCALE='0')
+            result = subprocess.run([sys.executable, '-B', '-s', *arguments], cwd=root,
+                                    env=process_environment, input=raw,
+                                    capture_output=True, text=raw is None)
+            if raw is not None:
+                result.stdout = result.stdout.decode('utf-8')
+                result.stderr = result.stderr.decode('utf-8')
+            return result
 
         imported = invoke(['-c', 'import textstats; print(textstats.__file__)'])
         assert imported.returncode == 0 and imported.stderr == '', imported
@@ -80,14 +90,173 @@ def verify_archive(archive: Path) -> int:
             assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
             count += 1
         assert bad.read_bytes() == b'valid prefix\n\xff'
-        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt']]:
+        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt'],
+                     ['--json'], ['--json', 'sample.txt', 'extra.txt'], ['--json', '--unknown', 'missing.txt'], ['--j', 'missing.txt']]:
             result = invoke(['-m', 'textstats', *args])
             assert result.returncode == 2 and result.stdout == '', result
             assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
             count += 1
         result = invoke(['-m', 'textstats', '--help'])
-        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout, result
+        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout and '--json' not in result.stdout and '--lines' in result.stdout, result
         count += 1
+        # Literal contract anchors are independent of checkout counting helpers.
+        anchors = [
+            ('alpha beta\nbeta\nlast two', '2:3', (2, 3), (2, 3)),
+            ('alpha beta\nbeta\nlast two', '2:99', (2, 3), (2, 3)),
+            ('alpha beta\nbeta\nlast two', '1:1', (1, 2), (1, 2)),
+            ('alpha beta\nbeta\nlast two', '0001:0001', (1, 2), (1, 2)),
+            ('alpha beta\nbeta\nlast two', '4:99', (0, 0), (0, 0)),
+            ('a\n\n', '2:9', (1, 0), (1, 0)),
+            ('a\r\nb c\rd\n', '2:3', (2, 3), (2, 3)),
+            ('a\n\ufeff', '2:2', (1, 1), (1, 1)),
+            ('', '1:99', (0, 0), (0, 0)),
+            ('\ufeff', '1:1', (0, 0), (1, 1)),
+            ('\ufeff\ufeff', '1:1', (1, 1), (1, 1)),
+            ('alpha\u2028beta', '1:1', (1, 2), (1, 2)),
+            ('\n', '1:1', (1, 0), (1, 0)),
+        ]
+
+        def check_range(arguments, expected):
+            nonlocal count
+            result = invoke(['-m', 'textstats', *arguments])
+            assert (result.returncode, result.stdout, result.stderr) == (
+                0, f'lines={expected[0]} words={expected[1]}\n', ''), result
+            count += 1
+
+        for text, endpoint, default, retained in anchors:
+            raw = text.encode('utf-8')
+            sample.write_bytes(raw)
+            for keep, expected in [(False, default), (True, retained)]:
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    check_range([*flags, *spelling, 'sample.txt'], expected)
+                    assert sample.read_bytes() == raw
+
+        sample.write_bytes(b'alpha beta\nbeta\nlast two')
+        for range_group in [('--lines', '2:3'), ('--lines=2:3',)]:
+            for keep in [False, True]:
+                option_groups = [range_group] + ([('--keep-bom',)] if keep else [])
+                for groups in itertools.permutations(option_groups):
+                    for position in range(len(groups) + 1):
+                        ordered = list(groups)
+                        ordered.insert(position, ('sample.txt',))
+                        check_range([arg for group in ordered for arg in group], (2, 3))
+                        assert sample.read_bytes() == b'alpha beta\nbeta\nlast two'
+        huge = '9' * 5001
+        for endpoint, expected in [('2:' + huge, (2, 3)), (huge + ':' + huge, (0, 0)),
+                                   ('0' * 5000 + '2:' + '0' * 5000 + '3', (2, 3))]:
+            for keep in [False, True]:
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    check_range([*flags, *spelling, 'sample.txt'], expected)
+                    assert sample.read_bytes() == b'alpha beta\nbeta\nlast two'
+
+        invalid = ['0:1', '1:0', '3:2', '-1:2', '+1:2', '1:-2', '1:+2',
+                   ' 1:2', '1:2 ', '1 :2', '1:\t2', '١:٢', '１:２',
+                   ':2', '1:', ':', '1:2:3', '1', '']
+        invalid_groups = [['--lines=' + value] for value in invalid] + [['--lines', value] for value in invalid] + [
+            ['--lines'], ['--lines', '--keep-bom'],
+            ['--lines', '1:2', '--lines', '1:2'],
+            ['--lines=1:2', '--lines=1:2'],
+            ['--lines=1:2', '--lines', '2:3'],
+        ]
+        for group in invalid_groups:
+            for keep in [False, True]:
+                flags = ['--keep-bom'] if keep else []
+                # Missing input distinguishes usage validation from acquisition.
+                result = invoke(['-m', 'textstats', *flags, 'missing.txt', *group])
+                assert result.returncode == 2 and result.stdout == '', result
+                assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
+                count += 1
+        for keep in [False, True]:
+            flags = ['--keep-bom'] if keep else []
+            result = invoke(['-m', 'textstats', *flags, '--lines', '1:1', 'bad.txt'])
+            assert result.returncode == 1 and result.stdout == '', result
+            assert 'bad.txt' in result.stderr and 'utf-8' in result.stderr and 'Traceback' not in result.stderr, result
+            assert bad.read_bytes() == b'valid prefix\n\xff'
+            count += 1
+        for name in ['-sample', '-', '--json']:
+            path = root / name
+            path.write_bytes(b'alpha beta\nbeta')
+            for arguments, expected in [(['--', './-' if name == '-' else name], (2, 3)),
+                                        (['--lines=2:2', '--', './-' if name == '-' else name], (1, 1))]:
+                check_range(arguments, expected)
+                assert path.read_bytes() == b'alpha beta\nbeta'
+        for option in ['--json', '--json=true', '--j']:
+            for name in ['sample.txt', 'missing.txt', 'bad.txt']:
+                for arguments in [[option, name], [name, option],
+                                  ['--keep-bom', '--lines=1:1', name, option]]:
+                    result = invoke(['-m', 'textstats', *arguments])
+                    assert (result.returncode, result.stdout) == (2, ''), result
+                    assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
+                    count += 1
+
+        # Byte-fed processes exercise the extracted package, never checkout helpers.
+        def check_stdin(arguments, raw, expected, locale=None):
+            nonlocal count
+            result = invoke(['-m', 'textstats', *arguments], raw, locale)
+            assert (result.returncode, result.stdout, result.stderr) == (
+                0, f'lines={expected[0]} words={expected[1]}\n', ''), result
+            count += 1
+
+        for text, default, retained in samples:
+            for keep, expected in [(False, default), (True, retained)]:
+                flags = ['--keep-bom'] if keep else []
+                for locale in ['C', 'C.UTF-8']:
+                    check_stdin([*flags, '-'], text.encode('utf-8'), expected, locale)
+        for text, endpoint, default, retained in anchors:
+            for keep, expected in [(False, default), (True, retained)]:
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    check_stdin([*flags, '-', *spelling], text.encode('utf-8'), expected)
+        raw = b'alpha beta\nbeta\nlast two'
+        for range_group in [('--lines', '2:3'), ('--lines=2:3',)]:
+            for keep in [False, True]:
+                option_groups = [range_group] + ([('--keep-bom',)] if keep else [])
+                for groups in itertools.permutations(option_groups):
+                    for position in range(len(groups) + 1):
+                        ordered = list(groups)
+                        ordered.insert(position, ('-',))
+                        check_stdin([a for group in ordered for a in group], raw, (2, 3))
+        for endpoint, expected in [('2:' + huge, (2, 3)), (huge + ':' + huge, (0, 0)),
+                                   ('0' * 5000 + '2:' + '0' * 5000 + '3', (2, 3))]:
+            for keep in [False, True]:
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    check_stdin([*flags, *spelling, '-'], raw, expected)
+        usage_groups = invalid_groups + [['--json'], ['--json=true'], ['--j'],
+                                         ['--unknown'], ['extra.txt']]
+        for group in usage_groups:
+            for keep in [False, True]:
+                flags = ['--keep-bom'] if keep else []
+                result = invoke(['-m', 'textstats', *flags, '-', *group], b'\xff')
+                assert result.returncode == 2 and result.stdout == '', result
+                assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
+                count += 1
+        for keep in [False, True]:
+            for selected in [False, True]:
+                flags = (['--keep-bom'] if keep else []) + (['--lines=1:1'] if selected else [])
+                result = invoke(['-m', 'textstats', *flags, '-'], b'valid\n\xff')
+                assert result.returncode == 1 and result.stdout == '', result
+                assert 'stdin' in result.stderr and 'utf-8' in result.stderr and 'Traceback' not in result.stderr, result
+                count += 1
+        help_result = invoke(['-m', 'textstats', '--help'], b'\xff')
+        assert help_result.returncode == 0 and help_result.stderr == '' and 'stdin' in help_result.stdout, help_result
+        count += 1
+
+        sample.write_bytes(b'a b\nc')
+        api = invoke(['-c', 'import inspect; import textstats; '
+                      'from textstats import TextStats, count_text, count_file; '
+                      'assert set(textstats.__all__) == {"TextStats", "count_text", "count_file"}; '
+                      'assert count_text("a b\\nc") == TextStats(2, 3); '
+                      'assert count_file("sample.txt") == TextStats(2, 3); '
+                      'assert count_text("\\ufeff", strip_bom=False) == TextStats(1, 1); '
+                      'assert list(inspect.signature(count_text).parameters) == ["text", "strip_bom"]; '
+                      'assert list(inspect.signature(count_file).parameters) == ["path", "strip_bom"]; '
+                      'assert all(inspect.signature(f).parameters["strip_bom"].kind == inspect.Parameter.KEYWORD_ONLY '
+                      'and inspect.signature(f).parameters["strip_bom"].default is True for f in (count_text, count_file))'])
+        assert (api.returncode, api.stdout, api.stderr) == (0, '', ''), api
+        assert sample.read_bytes() == b'a b\nc'
         print(f'{count} extracted module cases passed')
         return count
 

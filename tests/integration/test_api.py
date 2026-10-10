@@ -51,7 +51,7 @@ class TextApiTests(unittest.TestCase):
         self.assertEqual(stderr.getvalue(), "")
 
     def test_initial_import_is_silent_in_fresh_process(self):
-        result = subprocess.run([sys.executable, "-c", "import textstats"], capture_output=True, text=True)
+        result = subprocess.run([sys.executable, "-B", "-c", "import textstats"], capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(result.stdout, "")
         self.assertEqual(result.stderr, "")

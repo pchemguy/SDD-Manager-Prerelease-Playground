@@ -1,10 +1,58 @@
 # Named-file ranges feature package
 
+Status: completed accepted named-file feature; source/task/QC snapshots archived
+here after sole-main ownership/evidence reconciliation. Current [SPEC](../../SPEC.md),
+[PLAN](../../PLAN.md) and [TASKS](../../TASKS.md), with their adjacent current QC,
+own complete project requirements/strategy and all T-001–T-024 executable entries.
+Archived task checkboxes are historical and do not close whole main Phase 2.
+
+Campaign `002_e7cae5b`, baseline `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`;
+preparation `design-docs/002_e7cae5b-named-file-ranges`, implementation
+`feature/002_e7cae5b-named-file-ranges`, final target paused `phase/2-json-and-stdin`.
+Accepted preparation explicitly integrated/published to default at
+`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1` before feature creation; compatible
+JSON merge `806e989567aef425ddd933f33fbd8f9af5edae2a` retained published
+`e63b8946bbb99347b0f73f070f9c728945ee5925` and pending stdin/final work.
+
+## Current results, archive and integration gate
+
+T-018–T-024 are reviewed/published through `bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa`;
+unique issues #19–#25 are closed/completed and native #7/#8/#9 closed after full
+associated-issue validation and exact readbacks. Complete [implementation report](IMPLEMENTATION-REPORT.md),
+[2.4 review](phases/2/2.4.md), [2.5 review](phases/2/2.5.md) and
+[extent review](phases/2/PHASE-REPORT.md) retain actual separate source review,
+31 unit/28 integration tests, 315 actual isolated extracted cases/API probe,
+runnable demonstrations, genuine RED/GREEN, findings/limits and TODO None.
+T-024 report-pair concrete decision `44d271f41db658563585cc6a75aae17e81d71935`
+accepts the exact final reports; owning task evidence retains all earlier decisions.
+
+| Archived pair | Current authority / disposition |
+| --- | --- |
+| [FEATURE-SPEC](FEATURE-SPEC.md), [SPEC QC](FEATURE-SPEC-REVIEW-REPORT.md) | Full F contracts represented in main SPEC; source and original QC history preserved. |
+| [FEATURE-PLAN](FEATURE-PLAN.md), [PLAN QC](FEATURE-PLAN-REVIEW-REPORT.md) | Added 2.4–2.6 strategy represented in main PLAN; source and original QC history preserved. |
+| [FEATURE-TASKS](FEATURE-TASKS.md), [TASKS QC](FEATURE-TASKS-REVIEW-REPORT.md) | Historical completed feature list; all seven stable entries/status/evidence transferred once to main TASKS, sole executable owner. |
+
+Current main QC independently reassesses full roots/counts/dependencies/ownership
+and archive links. Concrete acceptance of this reconciliation checkpoint and
+immediate publication/readback remain pending before explicit paused-phase merge,
+merged-state verification and publication. Source archive is not Git integration.
+Preserve pending T-013–T-017, main 2.2/2.3 and whole Phase 2 unchecked. No incomplete
+phase merge into default, future stdin execution or release is authorized here.
+Preserve all foreign/coordinator material and retain feature/design/phase branches.
+
+## Historical preparation and continuation evidence
+
+The following record is historical: its stage-specific active/unimplemented/
+pending assertions describe the original exact checkpoints, not current ownership,
+capability or integration. Links point to preserved archive snapshots where moved.
+
+# Historical preparation record
+
 Campaign `002_e7cae5b`; full preparation baseline `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`, published default `main`. Preparation branch `design-docs/002_e7cae5b-named-file-ranges`; intended later implementation branch `feature/002_e7cae5b-named-file-ranges`. Preparation-only stops on design-docs without merge or implementation. Actual remote is `origin` at `pchemguy/SDD-Manager-Prerelease-Playground`.
 
 The separately paused `phase/2-json-and-stdin` at `e63b8946bbb99347b0f73f070f9c728945ee5925` supplies the completed JSON increment and remains incomplete/unmerged. A later execution handoff must establish a compatible published JSON baseline before executing text/JSON range work; do not absorb pending stdin work or claim Phase 2 complete.
 
-Active source: [FEATURE-SPEC](../../FEATURE-SPEC.md) and [SPEC QC](../../FEATURE-SPEC-REVIEW-REPORT.md). Existing accepted main architecture, decomposition and layout supply sufficient design. [FEATURE-PLAN](../../FEATURE-PLAN.md) and [PLAN QC](../../FEATURE-PLAN-REVIEW-REPORT.md) are active strategy sources; [FEATURE-TASKS](../../FEATURE-TASKS.md) and [TASKS QC](../../FEATURE-TASKS-REVIEW-REPORT.md) are active executable sources accepted at `493d5e2d2251922041c235b1c8377f3fdf827bce` (TASKS blob `95d31431ea3c751cbd769c5c7c2febf9f2d80b37`, QC blob `9233b996f602d4565f9cc2326910aa3b776de34a`) by delegated decision `fc26eb949892f196c5b81f84913a7121388b691b`. PLAN/QC were accepted at `91d8a5a124004a7ca5b9c5217f4d5d99d825aade` by delegated decision `515c3ea3464e4d67c359fa7bb949fe6945816f2b`. SPEC/QC were accepted at `b0f93cf170addc80a92541acc4151058e57b6e64` by delegated coordinator decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Maintained tracking remains enabled for eligible selected work; preparation itself does not project unaccepted tasks or activate an implementation phase. No release is requested. Preserve other packages and existing hosted foreign material.
+Active source: [FEATURE-SPEC](FEATURE-SPEC.md) and [SPEC QC](FEATURE-SPEC-REVIEW-REPORT.md). Existing accepted main architecture, decomposition and layout supply sufficient design. [FEATURE-PLAN](FEATURE-PLAN.md) and [PLAN QC](FEATURE-PLAN-REVIEW-REPORT.md) are active strategy sources; [FEATURE-TASKS](FEATURE-TASKS.md) and [TASKS QC](FEATURE-TASKS-REVIEW-REPORT.md) are active executable sources accepted at `493d5e2d2251922041c235b1c8377f3fdf827bce` (TASKS blob `95d31431ea3c751cbd769c5c7c2febf9f2d80b37`, QC blob `9233b996f602d4565f9cc2326910aa3b776de34a`) by delegated decision `fc26eb949892f196c5b81f84913a7121388b691b`. PLAN/QC were accepted at `91d8a5a124004a7ca5b9c5217f4d5d99d825aade` by delegated decision `515c3ea3464e4d67c359fa7bb949fe6945816f2b`. SPEC/QC were accepted at `b0f93cf170addc80a92541acc4151058e57b6e64` by delegated coordinator decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Maintained tracking remains enabled for eligible selected work; preparation itself does not project unaccepted tasks or activate an implementation phase. No release is requested. Preserve other packages and existing hosted foreign material.
 
 ## Accepted preparation and handoff
 

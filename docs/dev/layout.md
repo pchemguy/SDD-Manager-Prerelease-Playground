@@ -27,7 +27,7 @@ Co-locate the tightly related pure operations in core and the small parser/contr
 | `tests/unit/test_io.py` | Strict decode, file exception and owned-handle lifetime seams; later borrowed-stdin byte/read/ownership seams. |
 | `tests/unit/test_cli.py` | Parser/controller/rendering seams and controlled read failures without platform permission assumptions. |
 | `tests/integration/test_api.py` | Direct import/signature/silence and real text/file equivalence/input preservation across public adapters. |
-| `tests/integration/test_cli.py` | Real module subprocess input/output/status/help/usage, named-file/BOM and later JSON/stdin behavior. |
+| `tests/integration/test_cli.py` | Real module subprocess input/output/status/help/usage, named-file/BOM and later stdin behavior. |
 | `tests/integration/test_distribution.py` | Extracted-source archive and module-entry acceptance through the distribution checker. |
 | `tests/workflows/` | Separate workflow fixture checks if later authorized. They are excluded from product discovery and distribution. Existing coordinator fixtures stay in their protected locations. |
 | `tools/check_tests.py` | Standard-library unittest runner discovering unit and integration independently, reporting actual collection counts, rejecting either zero-count suite and returning nonzero on failure. |
@@ -61,7 +61,7 @@ Run commands from the product repository root after their owning delivery tasks 
 | `python -m unittest discover -s tests/unit -t . -v` | Focused unit suite; inspect reported count above zero. |
 | `python -m unittest discover -s tests/integration -t . -v` | Focused integration suite; inspect reported count above zero. |
 | `python tools/package_source.py` | Allowlisted source archive in ignored dist output. |
-| `python tools/check_distribution.py` | Extracted-source named-file/text/failure and delivered JSON/stdin module-entry acceptance. |
+| `python tools/check_distribution.py` | Extracted-source named-file/text/failure and delivered stdin module-entry acceptance. |
 
 Distribution checking uses a temporary extraction root as subprocess cwd, sanitizes checkout import paths such as PYTHONPATH and verifies the imported `textstats` location belongs to the extracted root. Its actual acceptance invocation is `python -m textstats` from that source root; an archive listing or import smoke alone cannot satisfy R-013. Test/check subprocesses use the same selected Python executable so installed-package assumptions cannot mask missing source files.
 

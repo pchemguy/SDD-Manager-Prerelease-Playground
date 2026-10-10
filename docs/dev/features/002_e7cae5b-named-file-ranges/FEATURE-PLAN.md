@@ -1,8 +1,15 @@
+> Historical archived source/QC snapshot for completed named-file range feature.
+> Current sole executable owner: [main TASKS](../../TASKS.md). Main [SPEC](../../SPEC.md)
+> and [PLAN](../../PLAN.md) with current adjacent QC own incorporated requirements/strategy.
+> Original review identities, findings and stage statements below are historical;
+> archival path/link/header changes do not redefine their reviewed blobs or acceptance.
+> Archived Ready/checks do not establish current main conformance or full Phase 2 completion.
+
 # Named-file ranges delivery plan
 
 ## Accepted inputs and bounded objective
 
-The [feature specification](FEATURE-SPEC.md) and [SPEC QC](FEATURE-SPEC-REVIEW-REPORT.md) at `b0f93cf170addc80a92541acc4151058e57b6e64` were accepted by delegated coordinator decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Reuse main [architecture](ARCHITECTURE.md), [decomposition](DECOMPOSITION.md), [PLAN](PLAN.md) and [layout](layout.md). This delta activates deferred F-001–F-004 with an early meaningful named-file range path, then complete documented/extracted-source exits. It does not change main stdin delivery or claim full Phase 2 completion.
+The [feature specification](FEATURE-SPEC.md) and [SPEC QC](FEATURE-SPEC-REVIEW-REPORT.md) at `b0f93cf170addc80a92541acc4151058e57b6e64` were accepted by delegated coordinator decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Reuse main [architecture](../../ARCHITECTURE.md), [decomposition](../../DECOMPOSITION.md), [PLAN](../../PLAN.md) and [layout](../../layout.md). This delta activates deferred F-001–F-004 with an early meaningful named-file range path, then complete documented/extracted-source exits. It does not change main stdin delivery or claim full Phase 2 completion.
 
 ## Phase and milestone strategy
 
