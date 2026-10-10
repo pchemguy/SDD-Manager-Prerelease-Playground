@@ -2,10 +2,10 @@
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
   "phase": "P1",
-  "case_id": "A-001",
+  "case_id": "A-002",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Full A-001 independently assessed Passed at accepted preparation seal",
+  "role": "consumer",
+  "last_completed_action": "A-001 assessment published and independently retained prerequisite confirmed",
   "pending_operation": {
     "kind": "api",
     "status": "in_progress",
@@ -15,7 +15,7 @@
       "operation_id": "037-cp014-repaired-complete-rerun-001"
     }
   },
-  "next_action": "Publish prerequisite assessment then dispatch selection-only A-002 and tracking A-003; assess repaired publisher rerun",
+  "next_action": "Fresh consumer performs A-002 selection-only request",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -45,6 +45,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/foreign-asset/RESULT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/TASKS-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CONSUMER-FINAL-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CONSUMER-FINAL-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/START.json"
   ]
 }
