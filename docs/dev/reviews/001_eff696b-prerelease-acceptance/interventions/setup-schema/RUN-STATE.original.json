@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P0",
+  "case_id": null,
+  "attempt": 1,
+  "role": "coordinator",
+  "last_completed_action": "Published source/package and separate playground setup; no consumer execution",
+  "pending_operation": null,
+  "next_action": "Complete source CP-012 publication, then run publisher trials before A-001",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "integration_branch": "main",
+    "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "evidence_paths": {
+    "inputs": "docs/dev/reviews/001_eff696b-prerelease-acceptance/INPUTS.json",
+    "diagnostic_report": "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md"
+  }
+}
