@@ -2,7 +2,22 @@
 
 ## Current gate
 
-State: **Ready for current complete SPEC/design conformance**, Revision 4.
+State: **Ready for scoped JSON-removal preparation conformance**, Revision 5; delegated candidate acceptance pending.
+
+R-001–R-008, R-011–R-013 and F-001–F-004 retain their complete text/count/BOM/range/error/resource/API/extraction obligations; R-009 is withdrawn and R-010 remains pending. No focused children.
+
+| Current reviewed/governing source | SHA-256 |
+| --- | --- |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+
+Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped preparation issue. The material JSON reduction invalidated older source identities; this gate and the latest revision apply to the corrected candidate. Ready does not conclude runtime verification, delegated acceptance, or full Phase 2 completion. Historical records and original findings below remain preserved.
+
+## Historical gate before JSON-removal correction
+
+State: **Ready for scoped JSON-removal preparation conformance**, Revision 5; delegated candidate acceptance pending.
 Reviewed main SPEC SHA-256 `a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980`; R-001–R-013 and F-001–F-004, no children.
 Governing PROJECT `cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d`, ARCHITECTURE `51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302` and
 DECOMPOSITION `30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee` are unchanged. Incorporated feature source/QC
@@ -94,3 +109,23 @@ checked. Original active source/QC reviewed identities/history retained in archi
 main readiness independently assessed. This is document QC, not an implementation,
 task completion, hosted mutation or integration claim. Current main PLAN/TASKS/QC
 are reconciled concurrently and require concrete whole-checkpoint assessment.
+
+## Revision 5
+
+The sdd-specify owner assessed the complete current SPEC and affected upstream inputs under the commanded JSON reduction. Finding SPEC-JSON-001: current JSON delivery/acceptance conflicted with the accepted removal. Steering corrected the affected clauses and rechecked retained contracts, stable IDs, dependencies, ownership and scoped count/conformance rules. Original findings/results remain preserved above.
+
+R-001–R-008 retained; R-009 withdrawn; R-010 pending; R-011–R-013 and F-001–F-004 retain text/count/BOM/range, lifetime and extraction matrices.
+
+| Current source | SHA-256 |
+| --- | --- |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+| `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
+| `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
+| `TASKS.md` | `f0d360d57741a19f0c183ed024d6e183c206850fa2d0332cc5b46c3ea2335fca` |
+
+No confirmed scoped preparation issue remains. Technical Ready applies to this amendment's inputs only; runtime completion and delegated review remain pending. Design/layout ownership and dependency directions suffice unchanged. Historical package/report contents are excluded from current validation.
+
+Delegated review found stale Current gate hashes and obsolete alternate-output/agreement wording in this first candidate. Finding SPEC-JSON-002: corrected the current gate to the actual reviewed source hashes and retirement counts; prior gate retained as historical above and exact first candidate preserved externally. Rechecked current source identities, dependencies, retained matrices, local links and pending task boundary. Resolved; no production consumption occurred before correction.

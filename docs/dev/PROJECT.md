@@ -18,7 +18,7 @@ By default, remove exactly one leading U+FEFF. Preserve interior BOMs and every 
 | --- | --- |
 | Phase 1, milestone 1.1 | Named-file counting through the public API and `python -m textstats [--keep-bom] INPUT`; exactly one input and `--` for dash-prefixed filenames. Success returns 0 with exactly `lines=<N> words=<N>\n` on stdout and empty stderr; help returns 0. |
 | Phase 1, milestone 1.2 | Failure handling, public API/module documentation, runnable README and distribution exits. Input/read/decode failures return 1; missing/extra inputs and unknown options return 2. Failures identify the problem on stderr with empty stdout and no traceback. |
-| Phase 2, milestone 2.1 | `--json` emits one object plus newline, with integer `lines` and `words` fields only and identical counts. Text remains the default; JSON key order and spacing are unrestricted. |
+| Phase 2, milestone 2.1 | Historical JSON increment withdrawn. Current output is exact text; `--json` is an unknown-option usage error before acquisition. A literal `--json` filename works after `--`. |
 | Phase 2, milestone 2.2 | `-` reads stdin bytes to EOF and decodes UTF-8 independently of locale without closing stdin. Empty stdin counts (0, 0); read/decode errors return 1 and identify stdin. Final exits cover documentation, distribution and retained behavior. |
 
 Product tests must be discoverable and nonempty under `tests/unit/` and `tests/integration/`. Workflow fixture checks belong separately under `tests/workflows/`. Distribution verification must invoke the extracted source package's module entry. Exact test commands and package layout will be established during planning, rather than claimed as runnable at this stage.
@@ -27,7 +27,7 @@ Product tests must be discoverable and nonempty under `tests/unit/` and `tests/i
 
 Retain this feature as a future design constraint and separate delivery boundary, outside the initial two-phase executable hierarchy. It will add exactly one `--lines START:END` or `--lines=START:END`, using positive ASCII decimal inclusive one-based endpoints with START <= END and decimal leading zeros. There is no arbitrary endpoint limit. Reject signs, whitespace, Unicode digits, zero, reversed endpoints, open endpoints, extra colons, missing values and repeated range options with usage status 2 before acquiring input.
 
-Complete input must decode before selection, including bytes after END. Apply BOM policy once before line numbering, preserve selected content and terminators, and select the available subset or zero beyond EOF. Exposing an interior BOM must not strip it. Options compose in either order. Public API signatures and exports stay whole-input. Named-file text/JSON range behavior is this feature's delivery boundary; source-independent compatibility with future stdin is required, while stdin acquisition and delivery remain their own later milestone.
+Complete input must decode before selection, including bytes after END. Apply BOM policy once before line numbering, preserve selected content and terminators, and select the available subset or zero beyond EOF. Exposing an interior BOM must not strip it. Options compose in either order. Public API signatures and exports stay whole-input. Named-file text range behavior is this feature's delivery boundary; source-independent compatibility with future stdin is required, while stdin acquisition and delivery remain their own later milestone.
 
 ## Acceptance anchors
 

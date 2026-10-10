@@ -11,8 +11,8 @@ This document describes the intended architecture for the capabilities and stage
 | Counting core | Own immutable statistics and text semantics: BOM normalization, CRLF/CR/LF logical-line handling and Unicode whitespace word counting. It depends on Python strings and immutable results, with no filesystem, CLI or process-stream dependency. |
 | Input acquisition | Own strict UTF-8 decoding and named-file handle lifetime. It supplies decoded text to the counting pipeline and propagates acquisition/decode errors. Future stdin acquisition uses bytes and retains external stream ownership. |
 | Public API facade | Directly expose the three requested public exports. `count_text` invokes the text pipeline; `count_file` acquires named-file text and invokes equivalent whole-input counting. Both return statistics silently, retaining API exceptions. |
-| CLI orchestration | Parse and validate the requested invocation before acquiring input, select BOM/output policies, invoke the counting pipeline and translate input failures into CLI diagnostics/status. It depends on acquisition and core contracts; neither depends on CLI. |
-| Presentation | Format a completed result as the required text output or the later JSON object. The CLI owns stdout/stderr effects and process status; presentation contains no input acquisition or counting rules. |
+| CLI orchestration | Parse and validate the requested invocation before acquiring input, select BOM policy, invoke the counting pipeline and translate input failures into CLI diagnostics/status. It depends on acquisition and core contracts; neither depends on CLI. |
+| Presentation | Format a completed result as the required text output. The CLI owns stdout/stderr effects and process status; presentation contains no input acquisition or counting rules. |
 
 These are logical responsibility blocks, not a requirement for separate files or classes. Detailed collaborating components belong in decomposition and physical allocation in layout. There is no dependency cycle or global mutable counting state. The API and CLI share counting and decoding semantics rather than maintaining independent algorithms.
 
@@ -30,13 +30,13 @@ Input acquisition owns handles it opens and closes them on success and failure. 
 
 API adapters allow the required filesystem and decode exception types to reach callers and produce no output. CLI orchestration distinguishes usage failures from input/read/decode failures and maps them to the prescribed statuses. Successful acquisition and counting must complete before stdout emission; diagnostics identify the affected input, and expected user failures do not expose a traceback. Presentation receives a complete immutable result, preventing partial count output during read/decode failure.
 
-The CLI selects text output by default; JSON is a later output policy over the same statistics. Byte acquisition for future stdin keeps strict UTF-8 decoding independent of locale. Option parsing is a CLI concern and does not alter public whole-input API signatures.
+The CLI emits only the exact text output. Removed JSON options fail during parsing before acquisition. Byte acquisition for future stdin keeps strict UTF-8 decoding independent of locale. Option parsing is a CLI concern and does not alter public whole-input API signatures.
 
 ## Consequential choices and verification seams
 
 Use plain functions and a small immutable result value. Separate pure text processing from I/O and process effects because they have different failure/lifetime rules and verification seams. A monolithic CLI would couple reusable API behavior to streams; a class hierarchy, plugin system or configurable decoding layer would introduce unsupported variation. The selected function pipeline provides the required extension seams with less state and indirection.
 
-Unit tests can exercise immutable results, BOM policy and logical-line/word semantics directly. Integration tests can exercise named-file acquisition, subprocess CLI output/status, later JSON/stdin behavior and extracted-source module execution. Product suites remain nonempty and discoverable under the requested unit/integration directories; coordinator workflow fixtures stay separately owned. API/module documentation and README usage will expose the same contracts used by these checks.
+Unit tests can exercise immutable results, BOM policy and logical-line/word semantics directly. Integration tests can exercise named-file acquisition, subprocess CLI output/status, later stdin behavior and extracted-source module execution. Product suites remain nonempty and discoverable under the requested unit/integration directories; coordinator workflow fixtures stay separately owned. API/module documentation and README usage will expose the same contracts used by these checks.
 
 The distribution boundary is a source package that remains importable and supports module execution after extraction. Package contents and the executable verification command are planning/layout decisions. No additional runtime dependency, installed console-script entry or network service is required.
 

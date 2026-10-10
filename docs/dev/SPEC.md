@@ -4,7 +4,7 @@
 
 TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. This document specifies intended behavior; delivered capability and verification evidence belong to the owning task and implementation records.
 
-R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 specify named-file range behavior, including text/JSON composition and its delivery acceptance. Range selection remains a separate feature extent outside the original two-phase executable hierarchy; stdin acquisition retains its own milestone. Delivery strategy and sole executable ownership belong to main PLAN/TASKS. Incorporated feature sources are retained as historical snapshots in the [named-file range package](features/002_e7cae5b-named-file-ranges/README.md). No focused specification children are needed.
+R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 specify named-file range behavior, including text composition and its delivery acceptance. Range selection remains a separate feature extent outside the original two-phase executable hierarchy; stdin acquisition retains its own milestone. Delivery strategy and sole executable ownership belong to main PLAN/TASKS. Incorporated feature sources are retained as historical snapshots in the [named-file range package](features/002_e7cae5b-named-file-ranges/README.md). No focused specification children are needed.
 
 ## Public API and values
 
@@ -44,9 +44,9 @@ Success returns status 0, stdout exactly `lines=<N> words=<N>\n` using nonnegati
 
 Phase 1 milestone 1.2 supplies complete failure handling. Missing/unreadable named files, input read failures and decode failures return status 1 with nonempty stderr identifying the input and cause, empty stdout and no traceback. Missing input, extra inputs and unknown options return status 2 with useful usage/error stderr, empty stdout and no traceback. Parse and validate invocation before acquiring input. Status categories are stable across the phase 2 options. No input is changed and no partial result appears on stdout.
 
-### R-009 JSON output
+### R-009 Withdrawn JSON output
 
-Phase 2 milestone 2.1 supplies `--json`, composing with `--keep-bom` and named-file input. Success returns 0 with one JSON object and a final newline, empty stderr, and exactly the keys `lines` and `words`, each containing an integer equal to the text-format count. No extra fields or JSON booleans are permitted. Key order and spacing are unrestricted. Without `--json`, preserve R-007 text output. Failures retain R-008, regardless of output selection.
+JSON output is withdrawn by the commanded checkpoint amendment; this stable ID is retained and never reused. `--json`, `--json=value` and abbreviated forms such as `--j` are unknown options: status 2, empty stdout, useful usage/error stderr and no traceback before input acquisition. After `--`, a literal `--json` filename remains valid for whole-input and range counting. R-007 exact text is the sole success format.
 
 ### R-010 Stdin input
 
@@ -56,7 +56,7 @@ Phase 2 milestone 2.2 supplies input token `-` as stdin. Read bytes until EOF an
 
 ### R-011 Public documentation and runnable README
 
-Phase 1 milestone 1.2 supplies public API/module documentation describing exports/signatures, counts, BOM policy, silent APIs, strict decoding, exceptions and handle ownership. The README supplies runnable named-file/module-entry examples, setup and test instructions, output/status/help behavior and distribution usage. Phase 2 final exits update documentation for JSON/stdin and retained behavior. Documentation must describe delivered capabilities accurately; the preparation README's present lack of runnable code is explicit until delivery.
+Phase 1 milestone 1.2 supplies public API/module documentation describing exports/signatures, counts, BOM policy, silent APIs, strict decoding, exceptions and handle ownership. The README supplies runnable named-file/module-entry examples, setup and test instructions, output/status/help behavior and distribution usage. Phase 2 final exits update documentation for stdin and retained behavior. Documentation must describe delivered capabilities accurately; the preparation README's present lack of runnable code is explicit until delivery.
 
 ### R-012 Product verification organization
 
@@ -64,7 +64,7 @@ Use unittest with discoverable, nonempty product suites under `tests/unit/` and 
 
 ### R-013 Extracted-source distribution
 
-Provide a source distribution containing the importable package, module entry and required user/API documentation. Verify its extracted contents by invoking `python -m textstats` in the extracted source context, without relying on imports from the original checkout or an unrelated installed package. Named-file success and failure and the delivered phase's JSON/stdin behavior must retain their specified contracts in that context. Packaging uses the standard library; no extra runtime dependency is required. Physical archive layout and check commands belong in planning/layout.
+Provide a source distribution containing the importable package, module entry and required user/API documentation. Verify its extracted contents by invoking `python -m textstats` in the extracted source context, without relying on imports from the original checkout or an unrelated installed package. Named-file success and failure and the delivered phase's stdin behavior must retain their specified contracts in that context. Packaging uses the standard library; no extra runtime dependency is required. Physical archive layout and check commands belong in planning/layout.
 
 <a id="deferred-range-feature"></a>
 
@@ -80,11 +80,11 @@ Decode the complete input before selecting lines; invalid bytes after END still 
 
 ### F-003 Composition and delivery boundary
 
-Range selection composes with `--keep-bom` and `--json` in either option order, using either accepted range spelling. Preserve default text output and R-008 error categories. Named-file text/JSON range behavior is the feature's delivery boundary. The public API remains whole-input with no range parameter or new export. Source-independent selection must be compatible with stdin under R-010; stdin acquisition/delivery remains its own milestone and is outside the named-file range feature extent. Literal `-` remains a named file until stdin delivery, and `./-` addresses a named file afterward. Success returns 0 and empty stderr; text/JSON counts are equal under R-007/R-009. Help and runnable named-file range documentation, nonempty unit/integration verification and isolated extracted-source module-entry verification are feature delivery obligations. No streaming, benchmark target, third-party dependency or release publication is required.
+Range selection composes with `--keep-bom` in either option order, using either accepted range spelling. Preserve default text output and R-008 error categories. Named-file text range behavior is the feature's delivery boundary. The public API remains whole-input with no range parameter or new export. Source-independent selection must be compatible with stdin under R-010; stdin acquisition/delivery remains its own milestone and is outside the named-file range feature extent. Literal `-` remains a named file until stdin delivery, and `./-` addresses a named file afterward. Success returns 0 and empty stderr; text counts follow R-007. Help and runnable named-file range documentation, nonempty unit/integration verification and isolated extracted-source module-entry verification are feature delivery obligations. No streaming, benchmark target, third-party dependency or release publication is required.
 
 ### F-004 Objective range acceptance
 
-Escapes below denote actual characters. Run every success example in text and JSON, with equal counts, status 0 and empty stderr.
+Escapes below denote actual characters. Run every success example in text, with status 0 and empty stderr.
 
 | Complete input | Range / policy | Expected (lines, words) |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Escapes below denote actual characters. Run every success example in text and JS
 | `alpha\u2028beta` | 1:1 | (1, 2) |
 | `\n` | 1:1 | (1, 0) |
 
-Use valid endpoints with more than 4,300 digits as both END (available subset) and START (empty), as well as many leading zeros that represent small valid endpoints. Never overflow, truncate or impose a cap. Cover every permutation of range/BOM/JSON flags, both range spellings, options before/after INPUT, and dash-prefixed files after `--`.
+Use valid endpoints with more than 4,300 digits as both END (available subset) and START (empty), as well as many leading zeros that represent small valid endpoints. Never overflow, truncate or impose a cap. Cover every permutation of range/BOM flags, both range spellings, options before/after INPUT, and dash-prefixed files after `--`.
 
 | Invalid class | Representative values / invocations |
 | --- | --- |
@@ -109,10 +109,10 @@ Use valid endpoints with more than 4,300 digits as both END (available subset) a
 | Whitespace | ` 1:2`, `1:2 `, `1 :2`, `1:\t2` |
 | Non-ASCII digits | `١:٢`, `１:２` |
 | Open or extra separators | `:2`, `1:`, `:`, `1:2:3`, `1` |
-| Missing | `--lines`, `--lines=`, `--lines --json INPUT` |
+| Missing | `--lines`, `--lines=`, `--lines --keep-bom INPUT` |
 | Repeated | two spaced, two equals, or mixed forms, including identical valid values |
 
-Verify each rejection before acquisition using a controlled acquisition seam and a missing named file. Include bad bytes strictly after the selected END to prove full decode; controlled read failures and handle cleanup remain testable at the acquisition seam. Recheck whole-input acceptance from the whole-input acceptance matrix below, silent unchanged API, file byte preservation, text/JSON equivalence and failure stdout. Distribution checks must run the extracted package's real module entry with isolated imports and cover range successes, invalid ranges, BOM exposure and bad bytes after END. Documentation must describe named-file range delivery accurately and retain deferred stdin status.
+Verify each rejection before acquisition using a controlled acquisition seam and a missing named file. Include bad bytes strictly after the selected END to prove full decode; controlled read failures and handle cleanup remain testable at the acquisition seam. Recheck whole-input acceptance from the whole-input acceptance matrix below, silent unchanged API, file byte preservation, text equivalence and failure stdout. Distribution checks must run the extracted package's real module entry with isolated imports and cover range successes, invalid ranges, BOM exposure and bad bytes after END. Documentation must describe named-file range delivery accurately and retain deferred stdin status.
 
 ## Whole-input acceptance matrix
 
@@ -135,7 +135,7 @@ Escaped sequences in this table denote actual input characters; U+2028 is a Unic
 | `\r\n` | (1, 0) | Same |
 | `\r` | (1, 0) | Same |
 
-Named-file and text API results agree for these inputs. CLI text and JSON agree where delivered. Verify non-ASCII UTF-8, CRLF boundaries, owned-handle closure after decode/read failures, immutable results and unchanged input bytes. CLI integration covers named-file paths (including dash-prefixed), help, missing/extra inputs, unknown options, missing/unreadable/read-failing files, bad bytes, empty stdout on failures and useful diagnostics. Phase 2 adds text/JSON stdin, empty stdin, invalid bytes/read errors, locale independence and retained stream ownership. Distribution acceptance repeats the appropriate delivered module-entry behaviors after extraction.
+Named-file and text API results agree for these inputs. CLI text agrees with the whole-input API for whole input. Verify non-ASCII UTF-8, CRLF boundaries, owned-handle closure after decode/read failures, immutable results and unchanged input bytes. CLI integration covers named-file paths (including dash-prefixed), help, missing/extra inputs, unknown options, missing/unreadable/read-failing files, bad bytes, empty stdout on failures and useful diagnostics. Phase 2 adds text stdin, empty stdin, invalid bytes/read errors, locale independence and retained stream ownership. Distribution acceptance repeats the appropriate delivered module-entry behaviors after extraction.
 
 ## Behavioral ownership and review boundary
 
@@ -144,7 +144,7 @@ Named-file and text API results agree for these inputs. CLI text and JSON agree 
 | R-001/R-002 | C-001 statistics and C-006 API adapters |
 | R-003/R-004/R-005 | C-002 normalization, C-003 logical lines and C-004 counting |
 | R-006/R-010 | C-005 acquisition, C-006 API and C-008 CLI |
-| R-007/R-008/R-009 | C-007 parser, C-008 controller and C-009 rendering |
+| R-007/R-008 | C-007 parser, C-008 controller and C-009 rendering |
 | R-011/R-012/R-013 | Public boundaries C-001 through C-009, supported by documentation and product/distribution verification |
 | F-001 through F-004 | C-007/C-008 and C-010 over C-002/C-003/C-004; no additional API export |
 
