@@ -39,4 +39,6 @@ For `alpha beta\nbeta\nlast two`, ranges 2:3 and 2:99 yield (2, 3), 1:1 yields (
 
 The authorized workflow prepares PROJECT, architecture, decomposition, specification, plan, layout and an executable task hierarchy, pausing for each necessary new document's human review. Stop before production implementation; phase 2 and the later feature are not being implemented by this request.
 
-This brief is pending human acceptance. The supplied product request establishes the requirements; this document organizes them and does not assert acceptance of unseen downstream documents. No consequential product decision is currently unresolved. The recommendation is to accept this brief and proceed to architecture, keeping acquisition, counting and presentation separable for the later stdin and range constraints. Architecture remains held until acceptance of the presented brief.
+The supplied product request establishes the requirements; this document organizes them and does not assert acceptance of unseen downstream documents. No consequential product decision is currently unresolved.
+
+The user explicitly delegated intermediate test-artifact assessment and acceptance to the coordinator for this test run. The coordinator accepted PROJECT at commit `b7b017cf7480bded8ad7f7de4a4eed690083b39c`, blob `861ab8534bf96f22c8293922e34dbc292073bc1c`, after substantive comparison and independent durable-state assessment. This is delegated coordinator acceptance of that exact brief, not direct human review or acceptance of later documents. The authorized next stage is architecture.

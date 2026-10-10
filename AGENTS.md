@@ -6,7 +6,7 @@ Preserve `textstats-run-resources/`, existing ignore rules and the separate publ
 
 ## Product orientation
 
-The [TextStats project brief](docs/dev/PROJECT.md) is the current product document and is pending human acceptance. Architecture, decomposition, SPEC, PLAN, layout and TASKS have not yet been prepared; there is no active implementation task owner. Source and product tests do not exist yet. Do not treat coordinator resources as product implementation.
+The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordinator acceptance for this test. The [architecture](docs/dev/ARCHITECTURE.md) is pending that assessment. Decomposition, SPEC, PLAN, layout and TASKS have not yet been prepared; there is no active implementation task owner. Source and product tests do not exist yet. Do not treat coordinator resources as product implementation.
 
 Preparation uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary, and stop before implementation under the current request. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Future task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).
 
