@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-026",
+  "variant": "empty-selection",
+  "attempt": 1,
+  "role": "consumer",
+  "last_completed_action": "Actual assessed milestone fork/fixture prepared, independently probed and published; ordinary handoff published before fresh consumer dispatch",
+  "pending_operation": null,
+  "next_action": "Verification-only consumer, independent separate variant assessment then publish",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a026-empty-selection",
+    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/HANDOFF.md"
+  ]
+}
