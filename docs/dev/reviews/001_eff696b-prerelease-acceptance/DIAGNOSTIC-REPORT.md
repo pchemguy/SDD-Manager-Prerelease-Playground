@@ -114,3 +114,10 @@ A007 exact independent assessment published5f16f79 and sourceprogress3b03357 ver
 Actual T001 commit bb1ee88 was immediately published and remotely verified. Independent parent-to-commit inspection excludes both foreign paths; exact stage0 staged blob, distinct unstaged bytes, untracked sentinel, file modes, unowned index entries and foreign refs remain. Actual8 unit/3 integration tests and11 independent literals Passed;2 deterministic checks Passed separately. No blanket staging/reset/stash observed.
 
 Original coordinator input inaccurately claimed a localmain ref existed. Actual START and final observations establish its absence; failed assertion/read-only discovery and correction retained, with no artificial ref creation. The accepted preparation object88a is the actual commitparent. Shared-filesystem isolation/native transcript/runtime/provider limitations remain explicit. Original-pin required totals15 Passed/2 Failed/15 unresolved; corrected A004/A005 rechecks separately attributed. Positive cursor remains A008 preparation; full readiness Open.
+
+
+## A-015 controlled staged-work facility ready
+
+Actual accepted preparation88a retained with all tasks unchecked; exact baseline bundle/index/workfiles and hashes exported. Isolated caller-owned native pre-commit hook can hold the actual consumer commit after its own work. Clean plumbing probe exit73 is setup only, not an observed acceptance trigger. Separate localbare trial-delivery contains exact baseline; no localmain ref claimed.
+
+Automatic review rejected proposed external trialbranch creation because destination/checkpoint authorization was not recognized. Rejected command/reason retained; no retry/bypass. Materially safer local disposable destination selected; complete objects/recovery exports will be published on authorized external evidence branch. Original setup/probe/control/hook and ordinary rendered request retained. Publish setup before fresh consumer. Native OS termination/full transcript facilities unestablished; positive A008 cursor untouched.

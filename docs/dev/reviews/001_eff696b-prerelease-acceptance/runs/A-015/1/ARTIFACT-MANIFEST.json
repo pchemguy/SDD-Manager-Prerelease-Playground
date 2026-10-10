@@ -1,0 +1,50 @@
+{
+  "ORDINARY-HANDOFF-DRAFT.md": {
+    "sha256": "3d172c3e19636741dac1e9b83a8b80a32e389a405666e55c1dafd5b787edbd1c",
+    "bytes": 2175
+  },
+  "INITIAL-INDEX.bin": {
+    "sha256": "9a9c490236cbccd30fd4c2cc467e94494e3ea2963b362a55864a64d9e0e63106",
+    "bytes": 22624
+  },
+  "capture_hold.py": {
+    "sha256": "4edae554940741b91b8a1757c747ef10c6a5e1d8bd0bc7e4cb2cf363d5a70713",
+    "bytes": 2487
+  },
+  "CONTROL.json": {
+    "sha256": "994a4b65929c8fb021f921c3c1b7b5ba2ce2fe2e221ccdbfb8eb5f601c7cbf2c",
+    "bytes": 125
+  },
+  "BASELINE.bundle": {
+    "sha256": "30a98d88c110b1ee6bd571f91540985566c0de1a8b428aa9328d3ba903f45d5b",
+    "bytes": 347041
+  },
+  "SETUP-PROVENANCE.json": {
+    "sha256": "7168e8dd40abe2c10ccb10e5c20b2a82e3129e926bdbc51441a18c46754edffb",
+    "bytes": 3661
+  },
+  "BINDINGS-DRAFT.json": {
+    "sha256": "c3dfe81fc96c6f5db64bcce848542c3731cef96b28323699801aeaa5179e7e44",
+    "bytes": 2884
+  },
+  "START.json": {
+    "sha256": "bc1b734c3dd6bd0289df70b9a610b7bae013cd8518b0596b0048f1ae266738c8",
+    "bytes": 62176
+  },
+  "A003-ASSESSMENT.json": {
+    "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+    "bytes": 65442
+  },
+  "SETUP-NOTES.md": {
+    "sha256": "5a1f95fd528347e231c2e9e05d25ce3ba1df0e1f1a49d1ce78a1d3c7e8cc4546",
+    "bytes": 2871
+  },
+  "INITIAL-TRACKED.tar": {
+    "sha256": "a86d514d277974f2d919ec641c70feb78087be291400fe34272a832187821f67",
+    "bytes": 1116160
+  },
+  "FACILITY-PROBE.json": {
+    "sha256": "d7ffe94f6b11ad5badb89336de6eca8115f67a5f5a46123e30e69bd8a47387c1",
+    "bytes": 62298
+  }
+}
