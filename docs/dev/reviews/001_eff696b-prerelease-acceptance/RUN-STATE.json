@@ -9,10 +9,10 @@
   "pending_operation": {
     "kind": "api",
     "status": "in_progress",
-    "description": "Controlled partial upload, overlapping publishers and invalid source trials running in parallel with consumer preparation",
+    "description": "First isolated trial failed at draft readback before upload injection. Existing exact empty draft reconciled; partial attempt 2 dispatched. Overlap/invalid-input results being read.",
     "identity": {
       "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
-      "operation_id": "037-cp014-four-dispatches"
+      "operation_id": "037-cp014-partial-002"
     }
   },
   "next_action": "Consumer prepares SPEC/QC checkpoint; coordinator reads actual parallel CP-014 effects before replay",

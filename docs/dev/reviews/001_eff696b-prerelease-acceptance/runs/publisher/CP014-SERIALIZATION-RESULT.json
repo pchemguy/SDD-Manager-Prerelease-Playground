@@ -1,0 +1,15 @@
+{
+  "original_release_id": 408861830,
+  "assets_unchanged_after_overlaps_and_invalid_input": true,
+  "latest": null,
+  "run1_all_jobs_end": "2026-10-10T10:46:47Z",
+  "run2_first_executed_job_start": "2026-10-10T10:46:50Z",
+  "serialization_job_windows_do_not_overlap": true,
+  "queued_second_observation": "CP014-DISPATCH-OBSERVATION.json records pending second while first in_progress",
+  "runs": [
+    38046050281,
+    38046055292
+  ],
+  "invalid_source_stopped_at_build": true,
+  "observed_at": "2026-10-10T10:50:22.624395+00:00"
+}
