@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "foreign_issue_1": true,
+    "foreign_issue_2": true,
+    "foreign_comments_exact": true,
+    "foreign_milestone_paragraph_body_exact": true,
+    "T018_T024_closed_completed": true,
+    "main_T013_T017_open": true,
+    "feature_native7_9_closed": true,
+    "main_native5_6_open": true
+  },
+  "snapshot_sha256": "845d1abb2d5e28e410c68a708579c9fa0303e768ce1ba0cde81e33a3068cf2cd",
+  "scope": "Actual fresh GET-only status/hash preservation; no complete historical chronology or invisible effects claim",
+  "operations": 12
+}

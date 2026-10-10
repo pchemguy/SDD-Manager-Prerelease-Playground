@@ -1,0 +1,166 @@
+{
+  "rows": [
+    {
+      "document": "README.md",
+      "fence": 1,
+      "command": [
+        "bash",
+        "-c",
+        "python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')\"\npython -m textstats sample.txt\npython -m textstats --help\n"
+      ],
+      "code_sha256": "63aac188fae5b607a4d7765834eabb0c34e468d2e4e46fba1a58a95cfaf53e6a",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "lines=3 words=5\nusage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\n\nCount CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 file (use -- before dash-prefixed names)\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading Unicode BOM as ordinary content\n  --json             emit integer lines and words as one JSON object\n  --lines START:END  select inclusive positive ASCII decimal logical lines\n                     (one range only)\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 2,
+      "command": [
+        "bash",
+        "-c",
+        "python -c \"from pathlib import Path; Path('bom.txt').write_bytes(b'\\xef\\xbb\\xbf')\"\npython -m textstats bom.txt\npython -m textstats --keep-bom bom.txt\npython -c \"from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\\n')\"\npython -m textstats -- -sample\n"
+      ],
+      "code_sha256": "9ea0750ac8b8f3fe1f3f40017d39d3a08449e44bbe22305e66367805e4cb96f5",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "lines=0 words=0\nlines=1 words=1\nlines=1 words=2\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 3,
+      "command": [
+        "bash",
+        "-c",
+        "python -m textstats --json sample.txt\npython -m textstats bom.txt --keep-bom --json\n"
+      ],
+      "code_sha256": "367cac592924e758a1fef2fb8c744d02a9519fc81f733f5de51d18954e9d6539",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "{\"lines\": 3, \"words\": 5}\n{\"lines\": 1, \"words\": 1}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 4,
+      "command": [
+        "bash",
+        "-c",
+        "python -m textstats --lines 2:3 sample.txt\npython -m textstats sample.txt --json --lines=0002:0099\n"
+      ],
+      "code_sha256": "9cdf6808e6b0d6fadcc6459114fbd8427224bd910a2289cb623b330a75032437",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "lines=2 words=3\n{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 5,
+      "command": [
+        "bash",
+        "-c",
+        "python -c \"from pathlib import Path; Path('range.txt').write_bytes(b'\\xef\\xbb\\xbfalpha beta\\r\\n\\r\\n\\xef\\xbb\\xbf\\nlast two')\"\npython -m textstats --lines 2:2 range.txt\npython -m textstats range.txt --json --keep-bom --lines=2:2\npython -m textstats --lines 2:99 range.txt\npython -m textstats --keep-bom --lines 3:3 range.txt\npython -m textstats range.txt --json --lines 99:100\n"
+      ],
+      "code_sha256": "e1f2a3e048030dc7ca3a7617d50319ad6aa12c3c8fefea0be3b0ccbe22f761bf",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "lines=1 words=0\n{\"lines\": 1, \"words\": 0}\nlines=3 words=3\nlines=1 words=1\n{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 6,
+      "command": [
+        "bash",
+        "-c",
+        "python -m textstats --lines 0:2 missing.txt\npython -m textstats --lines 3:2 missing.txt\npython -m textstats --lines=1:2 --lines 2:3 missing.txt\npython -m textstats --lines\npython -c \"from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\\n\\xff')\"\npython -m textstats --json --lines 1:1 bad-range.txt\n"
+      ],
+      "code_sha256": "eeb6d517f7845e454361ceb46b53318d1df7f627a199e0470da4b6096daf0123",
+      "returncode": 1,
+      "expected_final_status": 1,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\nusage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\nusage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\nusage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected one argument\ntextstats: 'bad-range.txt': 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte\n",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 7,
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\nbeta\\rlast two\\n\") == TextStats(3, 5)\nassert count_file(\"sample.txt\") == TextStats(3, 5)\nassert count_text(\"\\ufeff\") == TextStats(0, 0)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\n"
+      ],
+      "code_sha256": "178f7cd935bac307e6b2cf02db5279d1a78f945bd33c6e7e75b527c58aa11d1d",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 8,
+      "code": "python tools/check_tests.py\npython -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v\n",
+      "status": "Reused fresh same-byte copied-product test runner evidence; independent discovery in runner nonzero31/28; command text matches executed tools/check_tests.py",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 9,
+      "command": [
+        "bash",
+        "-c",
+        "python tools/package_source.py\npython tools/check_distribution.py\n"
+      ],
+      "code_sha256": "3c9021d5895e560216ac6baa689ab058f5eeac9812bf7a3edeb080a759e714d5",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/test-copy/dist/textstats-source.zip\nextracted import: /tmp/tmp3pzsy44u/textstats-source/textstats/__init__.py\n315 extracted module cases passed\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "README.md",
+      "fence": 10,
+      "command": [
+        "bash",
+        "-c",
+        "example_dir=$(mktemp -d)\npython -m zipfile -e dist/textstats-source.zip \"$example_dir\"\n(\n    cd \"$example_dir/textstats-source\"\n    python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\\\r\\\\nbeta\\\\rlast two\\\\n')\"\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats --json sample.txt\n)\nrm -r \"$example_dir\"\n"
+      ],
+      "code_sha256": "d2bb5da572ff1448fcd242ba6e8ea1817e612370b0e5e8e9defb486079bae6b3",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "lines=3 words=5\n{\"lines\": 3, \"words\": 5}\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "document": "docs/public-api.md",
+      "fence": 1,
+      "command": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nfrom textstats import TextStats, count_text, count_file\n\nassert TextStats(lines=2, words=3) == TextStats(2, 3)\nassert count_text(\"a b\\nc\") == TextStats(2, 3)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\nassert count_file(Path(\"sample.txt\"), strip_bom=True) == TextStats(3, 5)\n"
+      ],
+      "code_sha256": "0cf496f7fe3e6a620870f9cf63f622b0169a012b30fc73f37cd9ea80ddfabf0b",
+      "returncode": 0,
+      "expected_final_status": 0,
+      "stdout": "",
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "limit": "Full check fence matches independently executed fresh runner; extra direct-discovery commands not rerun a second time. Other runnable fences actually executed on exact exported source/docs."
+}

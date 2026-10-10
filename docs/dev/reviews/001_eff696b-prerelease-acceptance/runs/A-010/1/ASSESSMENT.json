@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "case_id": "A-010",
+  "variant": "core",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "independent_assessor": "/root/a010_range_assessor",
+  "assessed_at": "2026-10-10T17:08:55.473607+00:00",
+  "assisted": true,
+  "checkpoint_refs": {
+    "product_branch": "phase/2-json-and-stdin",
+    "product_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "integration_branch": "phase/2-json-and-stdin",
+    "integration_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "merge_parents": [
+      "e63b8946bbb99347b0f73f070f9c728945ee5925",
+      "6f1614480687f5978023df1122ec8b2567ff19d9"
+    ],
+    "feature_branch": "feature/002_e7cae5b-named-file-ranges",
+    "feature_commit": "6f1614480687f5978023df1122ec8b2567ff19d9",
+    "default_branch": "main",
+    "default_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1"
+  },
+  "original_attempt": {
+    "document_candidates": "Initial main PLAN current milestone-count navigation was stale; retained9e8afe0 and corrected aeef000 after delegated review. Reconciliation candidate incorrectly said six source/QC pairs; retained original then corrected to three pairs/six files before concrete acceptance.",
+    "runtime": "Expected test-first RED for T018/T019 and checker-sensitivity RED T022 retained; final runtime exits pass independently. Expected negative specimens are not completed-task failures.",
+    "workflow": "Completed range feature and integrated into actual paused Phase2; original AGENTS prerequisite-merge conflict resolved, genuine helper/runtime/evidence issues retained separately."
+  },
+  "criteria": {
+    "literal_behavior": "Passed: original strict A010 contract all9 checks from actual captures/provenance; independent107/107 chosen-literal CLI cases in frozen checkout and107/107 in real extracted archive, including all F004 anchors in text/JSON/BOM modes, flag permutations/order/file placement,4400-digit END/START/leading-zero values, invalid grammar on missing sources and full decode beyondEND. No product algorithm computes expected counts.",
+    "acquisition_API_resources": "Passed:31/31 independent extracted controlled seam/API/minus-file checks.25 invalid/usage variants call neither count_file nor _read_file_text; owned streams close on success/decode/read error; errors/no partial stdout/source identification retained. API exact exports/keyword-only default signatures/silence/immutability and whole-input behavior pass original capture; literal - and ./- remain named files.",
+    "nonempty_checks_distribution_docs": "Passed: exact49-file final Git export byte-identical to tracked product; fresh31 unit/28 integration suites pass on Python3.12.14, no empty collection. Product distribution checker on owned copy executes315 real isolated extracted-module cases; separate original distribution capture and independent107 cases run from assessor-built/extracted eleven-file archive.11 runnable documentation fences checked:10 actually executed; repeated full-check fence uses fresh same-byte runner evidence, direct-discovery command text inspected rather than redundantly rerun. Raw outputs retained.",
+    "task_ownership_transfer": "Passed:24 unique canonical TASKS entries,19 checked(T001\u2013012,T018\u2013024),five pending(T013\u2013017).Both lists participate in same accepted transfer/archive commit. All seven feature entries/status/outcome/scope/dependencies/evidence/report fields exact preserved; root active FEATURE sources absent and archived list explicitly retired from selection. Seven initial task-closing commits independently checked against actual parents:one owning-prefix/initial checkbox each plus same-commit result and evidence. Stable projected issues19\u201325 retain IDs/parents/comments/status.",
+    "current_QC_archive": "Passed: main SPEC/PLAN/TASKS QC latestRevisions4/6/3 match actual root/governing identities; substantive contract/strategy/count/task coverage and small-group review rationale retain pending stdin/final exits, mandatory excluded review units and original findings/correction history. Three eligible source/QC pairs archived adjacently under actual package; original bodies/history exactly retained except authorized hyperlink targets/header;124 selected local links/anchors valid. Archived Ready explicitly historical; current full main conformance independently reassessed and exact corrected13-artifact checkpoint concretely accepted before integration.",
+    "feature_review_reports": "Passed: committed2.4,2.5,extent PHASE-REPORT and final IMPLEMENTATION-REPORT remain under actual feature/phases/2 prefix. Source review and tests are separate, blockers absent, TODO None aggregated with provenance, runtime/isolation and pending whole-project work explicit. T020/T023/T024 dedicated review units retained.",
+    "Git_publication_target": "Passed: finalHEAD795f3a3 has exact ordered parents paused e63b894 plus accepted feature6f16144; final tree exactly accepted feature. Independent live ls-remote equals paused feature merge,retained feature tip and mainfbe8bed. Default main received only accepted preparation with parents e7cae5b/503dc51, no implementation/code/test/tool delta. Compatible JSON merge preserves fbe8bed/e63b894 parents. Clean tracked/index state and134 pinned resource files plus149 existing governing/source/foreign files unchanged. Pending incomplete Phase2 not merged to default; no release.",
+    "hosted": "Passed:76 independent safe metadata comparisons with original A009 and fresh paginated coordinator GET-only snapshot:25 issues,9milestones,13labels. Added range issues completed and7/8/9 milestones closed with no open associated issues; original pending milestones5/6 remain open. Existing IDs/titles/parent associations/states/reasons/labels preserved; existing bodies unchanged except authorized pending15/16/18 generated updates; managed ten source-link update final body/comment hashes exactly match fresh readback. Foreign issues/comments, label colors/descriptions, existing milestone descriptions/state preserved. Provider operation sequence and task commit/report evidence support closure ordering; full native historical command audit unavailable."
+  },
+  "interventions_and_errors": [
+    {
+      "event": "Initial PLAN strategy count stale",
+      "original_commit": "9e8afe0778d9a58f83af7d69ce78db4c2b3bc1b2",
+      "correction_commit": "aeef000c7782b33ddf61d0fe8817d1014e5dc1c8",
+      "resolution": "Current Phase 2 has four delivery milestones; historical checkpoints retained. Initial agent Revision3 label corrected to actual Revision4."
+    },
+    {
+      "event": "Mistaken removed SPEC anchor observation",
+      "resolution": "Root corrected observation; actual explicit deferred-range-feature HTML anchor preserved throughout."
+    },
+    {
+      "event": "Compatible JSON merge conflict",
+      "exit_code": 1,
+      "resolution": "Owned AGENTS navigation conflict resolved preserving historical JSON prerequisite and current controls; merge806e989 published."
+    },
+    {
+      "event": "Genuine test-first RED",
+      "tasks": [
+        "T-018",
+        "T-019",
+        "T-022"
+      ],
+      "resolution": "Retained original RED logs and exact minimal declaration/missing CLI/mutant rejection provenance; subsequent GREEN logs and accepted concrete diffs."
+    },
+    {
+      "event": "T021 first redirected full check incomplete log despite command exit0",
+      "resolution": "Treated as ambiguous, retained original log; fresh complete 31/26 capture proved success."
+    },
+    {
+      "event": "Incidental ps process lookup",
+      "exit_code": 1,
+      "message": "fatal library error, lookup self",
+      "resolution": "No product repair; independent complete test capture used."
+    },
+    {
+      "event": "T023 examples count label",
+      "resolution": "Corrected intermediate33 commands to32 runnable commands plus one marker line before presentation."
+    },
+    {
+      "event": "Native milestone8 closure helper overly strict literal TODO heading",
+      "exit_code": 1,
+      "resolution": "Failed before mutation; accepted report already TODO: None. Helper corrected to actual value, readback closure succeeded."
+    },
+    {
+      "event": "Two guessed local reference path lookups",
+      "exit_code": 2,
+      "resolution": "Used rg --files to locate actual milestone/reference and completion-and-checkpoints.md; no product mutation."
+    },
+    {
+      "event": "Reconciliation candidate incorrect six source/QC pairs count",
+      "original": {
+        "path": "/workspace/scratch/46b31bb4dff6/037-a010-reconciliation-TASKS-QC-before-count-correction.md",
+        "sha256": "58aa1b2479eb14b17c212d7583391ed4113e1a5efa4968cb1881dafc385c0161",
+        "bytes": 17129
+      },
+      "original_blob": "3c45a0a88862dc2bd65305e33e0739468e1729eb",
+      "resolution": "Corrected phrase to three source/QC pairs (six files); refreshed TASKS QC identity e540a24acaeefac901f3bdf04430dac156ad5831 / ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f before exact acceptance. Original candidate retained unchanged."
+    },
+    {
+      "event": "First merged reconciliation harness used paused HEAD as unrelated-product baseline",
+      "exit_code": 1,
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-merged-reconciliation.log",
+      "resolution": "Paused parent legitimately lacks range implementation; corrected harness comparison to exact accepted feature tip, retained original failure, all reconciliation checks then passed."
+    },
+    {
+      "actor": "independent assessor",
+      "attempt": 1,
+      "operation": "broader verifier invoked product check_tests directly",
+      "observed": "Assessor interrupted process with Ctrl-C; command exit130; no full result retained. Integration test invokes product distribution CLI, which can rebuild preexisting ignored dist ZIP.",
+      "correction": "Full checks and all later packaging/doc commands rerun in exact49-file committed source/docs/tests/tools export. Original successful assessor-output archive/captures retained.",
+      "product_scope": "Tracked files,index,refs and149 protected/foreign/source files verified unchanged against final seal/start as applicable. Ignored ZIP current hash retained, initial hash unavailable; regeneration by interrupted test cannot be ruled out. No broad no-write filesystem claim."
+    },
+    {
+      "actor": "independent assessor",
+      "attempt": 1,
+      "operation": "hosted comparison inline checker",
+      "observed": "TypeError: list indices must be integers or slices, not str; foreign_comment field is a list. No assessment output produced. Labels additionally require normalizing original description text to hash.",
+      "correction": "Retry accepts documented field shapes and compares literal descriptions by SHA256;76 checks passed. No expectation/product/provider alteration."
+    },
+    {
+      "actor": "independent assessor",
+      "attempt": 1,
+      "operation": "safe manifest creation",
+      "observed": "AttributeError: helper module has no attribute protected_path; actual exported function is protected. No manifest output created.",
+      "correction": "Use observed helper protected classifier, same screening/hash expectations. No product/provider change."
+    }
+  ],
+  "coverage_limits": [
+    "Separate consumer/assessor prompt contexts share broad filesystem; strict filesystem isolation not certified.",
+    "Consumer structured seal/provider metadata and committed objects are retained evidence, not a full native command transcript; per-commit immediate publication ordering partly relies on contemporaneous consumer structured evidence.",
+    "Safe hosted readback executed by coordinator with existing auth; assessor independently compared exact metadata without credential access or provider writes. Bodies withheld; outside-generated-section fidelity supported by recorded consumer hashes/readbacks; snapshot cannot prove absence of transient unseen effects.",
+    "Initial assessor broad runner may have regenerated preexisting ignored product dist ZIP before interruption; initial ignored ZIP hash unavailable. Final tracked/index/refs independently match seal; all subsequent builds/tests/docs use owned export.",
+    "Python3.12.14 actually exercised; Python3.11 and other runtimes/platforms not thereby certified. Installed-client routing/discovery and focused negative QC fixtures outside this case.",
+    "Repeated documentation full-check fence uses fresh identical-source runner evidence; extra direct-discovery docs commands were inspected rather than rerun solely to reproduce them."
+  ],
+  "findings": [],
+  "proposal": "No confirmed SDD Manager defect established by full range delivery; no test-derived plugin change proposed for this case. Retained consumer/coordinator/helper/assessor errors do not disappear with eventual pass.",
+  "evidence": {
+    "artifact_directory": "037-a010-independent-artifacts",
+    "original_deterministic": "037-a010-independent-artifacts/original-deterministic-assessment.json",
+    "consumer_seal_sha256": "f13187957ca9df407e4d1eec4e9d3cf419f3de403456adcbde4e35b9809ef138",
+    "final_hosted_sha256": "845d1abb2d5e28e410c68a708579c9fa0303e768ce1ba0cde81e33a3068cf2cd",
+    "pinned_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "pending_evidence_publication": "Assessor artifacts local; root must publish exact sealed assessment and manifest before dependent cases.",
+    "artifact_manifest": "037-a010-assessor-artifact-manifest.json",
+    "retained_safe_consumer_logs": 35
+  }
+}

@@ -1,0 +1,446 @@
+{
+  "metadata_checks": [
+    {
+      "name": "existing-issue-18",
+      "passed": true,
+      "detail": {
+        "body_preserved": false,
+        "body_update_authorized": true
+      }
+    },
+    {
+      "name": "existing-issue-17",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-16",
+      "passed": true,
+      "detail": {
+        "body_preserved": false,
+        "body_update_authorized": true
+      }
+    },
+    {
+      "name": "existing-issue-15",
+      "passed": true,
+      "detail": {
+        "body_preserved": false,
+        "body_update_authorized": true
+      }
+    },
+    {
+      "name": "existing-issue-14",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-13",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-12",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-11",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-10",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-9",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-8",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-7",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-6",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-5",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-4",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-3",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-2",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-issue-1",
+      "passed": true,
+      "detail": {
+        "body_preserved": true,
+        "body_update_authorized": false
+      }
+    },
+    {
+      "name": "existing-body-1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-milestone-1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-milestone-2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-milestone-3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-milestone-4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-milestone-5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-milestone-6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-accessibility",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-bug",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-campaign-037-preserve",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-documentation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-duplicate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-enhancement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-good first issue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-help wanted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-invalid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-question",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-sdd-phase-1-Named-file-utility",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-sdd-phase-2-JSON-and-stdin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "existing-label-wontfix",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-018",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-019",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-020",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-021",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-022",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-023",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-issue-T-024",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-milestone-7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-milestone-8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "range-milestone-9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending-milestone-5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pending-milestone-6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-24",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-link-update-25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "foreign-comment-6097383663",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "get-only-operations",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "failed": [],
+  "inventory": {
+    "issues": 25,
+    "milestones": 9,
+    "labels": 13
+  },
+  "source": "Fresh GET-only metadata from coordinator; independent literal metadata comparison, no credentials/provider writes.",
+  "limit": "Bodies withheld; generated-section/outside-section fidelity supported by consumer recorded hashes and exact readbacks, not independently reconstructed raw bodies. Final snapshot cannot prove absence of transient unseen effects."
+}

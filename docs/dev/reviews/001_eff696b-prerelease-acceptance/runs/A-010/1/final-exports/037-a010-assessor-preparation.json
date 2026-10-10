@@ -1,0 +1,53 @@
+{
+  "case_id": "A-010",
+  "assessor": "separate delegated context",
+  "start_head": "d9a27477042f4d1e25850673079f2f768171724e",
+  "paused_phase_start": "e63b8946bbb99347b0f73f070f9c728945ee5925",
+  "main_start": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+  "contracts": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/COMMON.md",
+      "sha256": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-010.md",
+      "sha256": "76d041de3d6b71a5b4c2cd707b1d0930497e844156b1a40e51accf65aedc2966"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-010.json",
+      "sha256": "4a1978af6507fc6952eaa69af9510f69e1ec01971000b06333a5598773f587f9"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/DOCUMENT-QC.md",
+      "sha256": "1f1b9fdbc8743b421572bb14c6188b79ae42cbecc6b95e55ae1ed0978f8647f9"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/catalog.json",
+      "sha256": "e33aa2cd484c7784c2f7594ab0e9a5e32fb37b1ce0f1be812d7b087b24701528"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "sha256": "bedfe314bd439a401f70155151aa520aa2fff01204e7491d1c17f1dbe2a95bdc"
+    }
+  ],
+  "planned_checks": [
+    "original literal suites api baseline json ranges ranges-json",
+    "distribution extracted actual archive",
+    "independent >4300 decimal digits endpoints",
+    "usage validation mocked acquisition and nonexistent source",
+    "full decode after END",
+    "two-parent integration into paused phase2",
+    "stable T018..24 single executable TASKS owner",
+    "current main QC and archived history adjacency links",
+    "issue identities and foreign metadata preserved"
+  ],
+  "custom_probe": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a010-custom-probe.py",
+    "sha256": "4c7240070ebaaeb523eda5dd69356924ec50bc27f168468d097c21eb4827545f"
+  },
+  "predecessor_assessment": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a009-independent-assessment.json",
+    "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829"
+  },
+  "state": "Prepared, waiting for consumer sealed completion before final moving-product observations"
+}

@@ -1,0 +1,13 @@
+{
+  "operation": "First broader runner after successful assessor build/extraction/capture/custom probes",
+  "status": "Interrupted by assessor with Ctrl-C",
+  "returncode": 130,
+  "reason": "CLI of product check_distribution writes ignored product dist ZIP; avoid potential product writes by copied-product execution instead. Product check_tests was active; no retained complete result. No product-distribution.json or product-test-discovery.json was written by interrupted runner.",
+  "retained_completed_artifacts": [
+    "distribution-build.json",
+    "distribution.json",
+    "distribution-commands.json",
+    "extracted-custom-literals.json"
+  ],
+  "limitation": "Ignored product ZIP preexisted; no initial hash collected. No broad unchanged-filesystem claim."
+}

@@ -1,0 +1,14 @@
+{
+  "literals": {
+    "distribution": [
+      {
+        "name": "extracted-entry",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      }
+    ]
+  },
+  "schema_version": 1
+}

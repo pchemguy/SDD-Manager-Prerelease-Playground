@@ -1,0 +1,889 @@
+{
+  "local_links": [
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/PROJECT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/layout.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/PLAN-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/TASKS-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "SDD-MANAGER.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/public-api.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "README.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/TASKS.md#t-001-completion-evidence",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/reports/phases/1/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "docs/dev/reports/phases/2/2.1.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "PROJECT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "features/002_e7cae5b-named-file-ranges/README.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/SPEC.md",
+      "target": "SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "PLAN-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/PLAN.md",
+      "target": "layout.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "PROJECT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "layout.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_e7cae5b-named-file-ranges/README.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/1.1.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/1.2.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/2/2.1.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/1.1.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "../public-api.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/1.2.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/1/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "reports/phases/2/2.1.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_e7cae5b-named-file-ranges/phases/2/2.4.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_e7cae5b-named-file-ranges/phases/2/2.5.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/TASKS.md",
+      "target": "features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "FEATURE-SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "../../layout.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+      "target": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../SPEC.md#deferred-range-feature",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../PROJECT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "../../DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "README.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+      "target": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "FEATURE-SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "FEATURE-PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../ARCHITECTURE.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../DECOMPOSITION.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../layout.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "phases/2/2.4.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "phases/2/2.5.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "phases/2/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+      "target": "IMPLEMENTATION-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/2.4.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/2.5.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "../../PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "../../TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "IMPLEMENTATION-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "phases/2/2.4.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "phases/2/2.5.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "phases/2/PHASE-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-PLAN.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-TASKS.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "../../SPEC.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "target": "../../SPEC-REVIEW-REPORT.md#revision-3",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md",
+      "target": "2.4.md",
+      "exists": true,
+      "anchor_valid": true
+    },
+    {
+      "source": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md",
+      "target": "2.5.md",
+      "exists": true,
+      "anchor_valid": true
+    }
+  ],
+  "bad_links": [],
+  "archive": [
+    {
+      "name": "FEATURE-SPEC.md",
+      "original_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+      "archived_sha256": "6f4c3c803d306e44438670cf607effc7fddd6878fe19bb354cd2b80d6cc14341",
+      "historical_header": true,
+      "original_body_retained_except_links": true,
+      "root_active_absent": true
+    },
+    {
+      "name": "FEATURE-PLAN.md",
+      "original_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+      "archived_sha256": "cbdd7319326f4a7505db74f90f4b9a129d8de71906f1fc812bcb4658bf8c93aa",
+      "historical_header": true,
+      "original_body_retained_except_links": true,
+      "root_active_absent": true
+    },
+    {
+      "name": "FEATURE-TASKS.md",
+      "original_sha256": "b26f32f460ede25bb6c19b920c8faa25d36afe2dff0e1d23d9cbc3ae2e75d511",
+      "archived_sha256": "5620df436d5057958c89546b60a1483110ccf8f6d0ce77fb105bfaa2839b5133",
+      "historical_header": true,
+      "original_body_retained_except_links": true,
+      "root_active_absent": true
+    },
+    {
+      "name": "FEATURE-SPEC-REVIEW-REPORT.md",
+      "original_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+      "archived_sha256": "4399e14de65ce907e53f7f3427e02349f597cea39493e8fd334b2bb84eccc592",
+      "historical_header": true,
+      "original_body_retained_except_links": true,
+      "root_active_absent": true
+    },
+    {
+      "name": "FEATURE-PLAN-REVIEW-REPORT.md",
+      "original_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+      "archived_sha256": "da8e3a456cb8348ad37722da0ea73029068928646f287ff06025403d6cfe94e8",
+      "historical_header": true,
+      "original_body_retained_except_links": true,
+      "root_active_absent": true
+    },
+    {
+      "name": "FEATURE-TASKS-REVIEW-REPORT.md",
+      "original_sha256": "bb09b2f105d0dea8fa93023e72429c57c2f587b33068ffdc4a6adb236280d7c5",
+      "archived_sha256": "477d59388a842ba10c1679cc211cb1c47abdd279a99f9a4ac59f31c0389a787e",
+      "historical_header": true,
+      "original_body_retained_except_links": true,
+      "root_active_absent": true
+    }
+  ],
+  "transferred_entries": [
+    {
+      "id": "T-018",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    },
+    {
+      "id": "T-019",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    },
+    {
+      "id": "T-020",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    },
+    {
+      "id": "T-021",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    },
+    {
+      "id": "T-022",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    },
+    {
+      "id": "T-023",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    },
+    {
+      "id": "T-024",
+      "same_entry_status_outcome_scope_dependencies_evidence_report": true
+    }
+  ],
+  "main_current_qc": [
+    {
+      "root": "SPEC",
+      "root_sha256": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+      "latest_revision": "4",
+      "current_root_hash_in_latest": true,
+      "preserves_initial_and_history": true,
+      "current_gate_ready": true
+    },
+    {
+      "root": "PLAN",
+      "root_sha256": "e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199",
+      "latest_revision": "6",
+      "current_root_hash_in_latest": true,
+      "preserves_initial_and_history": true,
+      "current_gate_ready": true
+    },
+    {
+      "root": "TASKS",
+      "root_sha256": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+      "latest_revision": "3",
+      "current_root_hash_in_latest": true,
+      "preserves_initial_and_history": true,
+      "current_gate_ready": true
+    }
+  ],
+  "reports": [
+    {
+      "path": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md",
+      "committed_blob": "0597bdf91ce96c0ad0623be1e0696814abdc00c7",
+      "contains_review": true,
+      "contains_tests": true,
+      "contains_todo": true,
+      "pending_main_scope_retained": true
+    },
+    {
+      "path": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md",
+      "committed_blob": "fc89a37645234a4f5079919ad7692e71f5d87f6f",
+      "contains_review": true,
+      "contains_tests": true,
+      "contains_todo": true,
+      "pending_main_scope_retained": true
+    },
+    {
+      "path": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md",
+      "committed_blob": "d76c1f39f55dc8ae81a67ddbb9ad4c5fe08f8ba4",
+      "contains_review": true,
+      "contains_tests": true,
+      "contains_todo": true,
+      "pending_main_scope_retained": true
+    },
+    {
+      "path": "docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+      "committed_blob": "e0019e493e01d81555908b30e4b2d5949831179a",
+      "contains_review": true,
+      "contains_tests": true,
+      "contains_todo": true,
+      "pending_main_scope_retained": true
+    }
+  ]
+}

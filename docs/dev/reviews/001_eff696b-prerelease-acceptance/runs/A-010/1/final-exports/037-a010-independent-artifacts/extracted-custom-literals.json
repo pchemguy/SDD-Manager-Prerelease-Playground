@@ -1,0 +1,2802 @@
+{
+  "case_id": "A-010",
+  "product_root": "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/extracted/textstats-source",
+  "rows": [
+    {
+      "name": "normal(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "normal(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "normal(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "normal(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "partial(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:99",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "partial(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:99",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "partial(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:99",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "partial(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:99",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "one(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "one(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "one(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "one(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "zeroes(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "0001:0001",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "zeroes(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "0001:0001",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "zeroes(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "0001:0001",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "zeroes(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "0001:0001",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "past(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "4:99",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=0 words=0\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "past(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "4:99",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": {
+          "lines": 0,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "past(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "4:99",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=0 words=0\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "past(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "4:99",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": {
+          "lines": 0,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+      "passed": true
+    },
+    {
+      "name": "blank(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:9",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=0\n",
+      "stderr": "",
+      "input_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "after_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "passed": true
+    },
+    {
+      "name": "blank(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:9",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": {
+          "lines": 1,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "after_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "passed": true
+    },
+    {
+      "name": "blank(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:9",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=0\n",
+      "stderr": "",
+      "input_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "after_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "passed": true
+    },
+    {
+      "name": "blank(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:9",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": {
+          "lines": 1,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "after_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+      "passed": true
+    },
+    {
+      "name": "mixed(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "after_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "passed": true
+    },
+    {
+      "name": "mixed(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "after_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "passed": true
+    },
+    {
+      "name": "mixed(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "after_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "passed": true
+    },
+    {
+      "name": "mixed(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "after_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+      "passed": true
+    },
+    {
+      "name": "interior(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "input_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "after_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "passed": true
+    },
+    {
+      "name": "interior(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": {
+          "lines": 1,
+          "words": 1
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 1}\n",
+      "stderr": "",
+      "input_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "after_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "passed": true
+    },
+    {
+      "name": "interior(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "input_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "after_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "passed": true
+    },
+    {
+      "name": "interior(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": {
+          "lines": 1,
+          "words": 1
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 1}\n",
+      "stderr": "",
+      "input_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "after_sha256": "969219b05705ac87daf16463ec1ee3122b3a08b33d1c145b04560c020790ce67",
+      "passed": true
+    },
+    {
+      "name": "empty(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:99",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=0 words=0\n",
+      "stderr": "",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "empty(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:99",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": {
+          "lines": 0,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "empty(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:99",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=0 words=0\n",
+      "stderr": "",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "empty(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:99",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": {
+          "lines": 0,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "doublebom(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "input_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "after_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "passed": true
+    },
+    {
+      "name": "doublebom(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": {
+          "lines": 1,
+          "words": 1
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 1}\n",
+      "stderr": "",
+      "input_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "after_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "passed": true
+    },
+    {
+      "name": "doublebom(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "input_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "after_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "passed": true
+    },
+    {
+      "name": "doublebom(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": {
+          "lines": 1,
+          "words": 1
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 1}\n",
+      "stderr": "",
+      "input_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "after_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+      "passed": true
+    },
+    {
+      "name": "separator(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "after_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "passed": true
+    },
+    {
+      "name": "separator(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "after_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "passed": true
+    },
+    {
+      "name": "separator(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "after_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "passed": true
+    },
+    {
+      "name": "separator(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "after_sha256": "2a3cbecbbc1fd52bbc55b909afb6cf3fab80ade69ce0d314498de263f6b875a1",
+      "passed": true
+    },
+    {
+      "name": "lf(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=0\n",
+      "stderr": "",
+      "input_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "after_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "passed": true
+    },
+    {
+      "name": "lf(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": {
+          "lines": 1,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "after_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "passed": true
+    },
+    {
+      "name": "lf(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=0\n",
+      "stderr": "",
+      "input_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "after_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "passed": true
+    },
+    {
+      "name": "lf(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=0\n",
+        "json": {
+          "lines": 1,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "after_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "passed": true
+    },
+    {
+      "name": "bom(False, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines=1:1"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=0 words=0\n",
+      "stderr": "",
+      "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "passed": true
+    },
+    {
+      "name": "bom(False, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines=1:1",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": {
+          "lines": 0,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "passed": true
+    },
+    {
+      "name": "bom(True, False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines=1:1",
+        "--keep-bom"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "passed": true
+    },
+    {
+      "name": "bom(True, True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines=1:1",
+        "--keep-bom",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=1\n",
+        "json": {
+          "lines": 1,
+          "words": 1
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 1}\n",
+      "stderr": "",
+      "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--lines', '1:1'], ['--keep-bom'], ['--json']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--lines', '1:1'], ['--keep-bom'], ['--json']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--lines', '1:1'], ['--json'], ['--keep-bom']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--json",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--lines', '1:1'], ['--json'], ['--keep-bom']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines",
+        "1:1",
+        "--json",
+        "--keep-bom"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--keep-bom'], ['--lines', '1:1'], ['--json']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--keep-bom",
+        "--lines",
+        "1:1",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--keep-bom'], ['--lines', '1:1'], ['--json']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--keep-bom",
+        "--lines",
+        "1:1",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--keep-bom'], ['--json'], ['--lines', '1:1']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--keep-bom",
+        "--json",
+        "--lines",
+        "1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--keep-bom'], ['--json'], ['--lines', '1:1']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--keep-bom",
+        "--json",
+        "--lines",
+        "1:1"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--json'], ['--lines', '1:1'], ['--keep-bom']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--json",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--json'], ['--lines', '1:1'], ['--keep-bom']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--json",
+        "--lines",
+        "1:1",
+        "--keep-bom"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--json'], ['--keep-bom'], ['--lines', '1:1']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--json",
+        "--keep-bom",
+        "--lines",
+        "1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines', '1:1'], (['--json'], ['--keep-bom'], ['--lines', '1:1']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--json",
+        "--keep-bom",
+        "--lines",
+        "1:1"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--lines=1:1'], ['--keep-bom'], ['--json']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:1",
+        "--keep-bom",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--lines=1:1'], ['--keep-bom'], ['--json']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines=1:1",
+        "--keep-bom",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--lines=1:1'], ['--json'], ['--keep-bom']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:1",
+        "--json",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--lines=1:1'], ['--json'], ['--keep-bom']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--lines=1:1",
+        "--json",
+        "--keep-bom"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--keep-bom'], ['--lines=1:1'], ['--json']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--keep-bom",
+        "--lines=1:1",
+        "--json",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--keep-bom'], ['--lines=1:1'], ['--json']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--keep-bom",
+        "--lines=1:1",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--keep-bom'], ['--json'], ['--lines=1:1']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--keep-bom",
+        "--json",
+        "--lines=1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--keep-bom'], ['--json'], ['--lines=1:1']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--keep-bom",
+        "--json",
+        "--lines=1:1"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--json'], ['--lines=1:1'], ['--keep-bom']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--json",
+        "--lines=1:1",
+        "--keep-bom",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--json'], ['--lines=1:1'], ['--keep-bom']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--json",
+        "--lines=1:1",
+        "--keep-bom"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--json'], ['--keep-bom'], ['--lines=1:1']), False)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--json",
+        "--keep-bom",
+        "--lines=1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "permutation(['--lines=1:1'], (['--json'], ['--keep-bom'], ['--lines=1:1']), True)",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "sample.txt",
+        "--json",
+        "--keep-bom",
+        "--lines=1:1"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": null,
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "after_sha256": "8de2ddc3d99b97917cce6fda8d6f0ee489841f50a3d4f60488db81cf965dbc15",
+      "passed": true
+    },
+    {
+      "name": "hugeENDFalse",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=2 words=3\n",
+      "stderr": "",
+      "input_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "after_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "passed": true
+    },
+    {
+      "name": "hugeENDTrue",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "sample.txt",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=2 words=3\n",
+        "json": {
+          "lines": 2,
+          "words": 3
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stderr": "",
+      "input_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "after_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "passed": true
+    },
+    {
+      "name": "hugeSTARTFalse",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999:99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=0 words=0\n",
+      "stderr": "",
+      "input_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "after_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "passed": true
+    },
+    {
+      "name": "hugeSTARTTrue",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999:99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "sample.txt",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=0 words=0\n",
+        "json": {
+          "lines": 0,
+          "words": 0
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 0, \"words\": 0}\n",
+      "stderr": "",
+      "input_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "after_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "passed": true
+    },
+    {
+      "name": "longzerosFalse",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001:000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": null
+      },
+      "returncode": 0,
+      "stdout": "lines=1 words=2\n",
+      "stderr": "",
+      "input_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "after_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "passed": true
+    },
+    {
+      "name": "longzerosTrue",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001:000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "sample.txt",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 0,
+        "stdout": "lines=1 words=2\n",
+        "json": {
+          "lines": 1,
+          "words": 2
+        }
+      },
+      "returncode": 0,
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stderr": "",
+      "input_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "after_sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+      "passed": true
+    },
+    {
+      "name": "invalid-'0:1'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=0:1",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:0'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:0",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'3:2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=3:2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'-1:2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=-1:2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'+1:2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=+1:2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:-2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:-2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:+2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:+2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-' 1:2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines= 1:2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:2 '",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:2 ",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1 :2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1 :2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:\\t2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:\t2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'١:٢'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=١:٢",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'１:２'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=１:２",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-':2'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=:2",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-':'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=:",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1:2:3'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:2:3",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-'1'",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "invalid-''",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "missingrepeat['--lines']",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected one argument\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "missingrepeat['--lines', '--json', 'missing.txt']",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "--json",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected one argument\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "missingrepeat['--lines=1:1', '--lines=1:1', 'missing.txt']",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:1",
+        "--lines=1:1",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "missingrepeat['--lines', '1:1', '--lines=1:1', 'missing.txt']",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--lines=1:1",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 2,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\n",
+      "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+      "passed": true
+    },
+    {
+      "name": "decode-afterENDFalse",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:1",
+        "sample.txt"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 1,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "textstats: 'sample.txt': 'utf-8' codec can't decode byte 0xff in position 6: invalid start byte\n",
+      "input_sha256": "aa3a22c9b0f293eed209c2f48010b0f8133736f42bba24a35ede72b5e0a315aa",
+      "after_sha256": "aa3a22c9b0f293eed209c2f48010b0f8133736f42bba24a35ede72b5e0a315aa",
+      "passed": true
+    },
+    {
+      "name": "decode-afterENDTrue",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=1:1",
+        "sample.txt",
+        "--json"
+      ],
+      "cwd": "/tmp/a010-independent-5bej07_a",
+      "expected": {
+        "returncode": 1,
+        "stdout": null,
+        "json": null
+      },
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "textstats: 'sample.txt': 'utf-8' codec can't decode byte 0xff in position 6: invalid start byte\n",
+      "input_sha256": "aa3a22c9b0f293eed209c2f48010b0f8133736f42bba24a35ede72b5e0a315aa",
+      "after_sha256": "aa3a22c9b0f293eed209c2f48010b0f8133736f42bba24a35ede72b5e0a315aa",
+      "passed": true
+    }
+  ],
+  "total": 107,
+  "passed": 107,
+  "kind": "independent literal command observations"
+}

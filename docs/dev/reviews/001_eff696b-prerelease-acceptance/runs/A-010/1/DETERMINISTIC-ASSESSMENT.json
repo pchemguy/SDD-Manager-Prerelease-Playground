@@ -1,0 +1,59 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "published",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "merge-parents",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-api",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-baseline",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-json",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-ranges",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-ranges-json",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Range literal behavior and baseline/JSON regressions pass, including decode-after-END and usage-before-read.",
+    "Transferred tasks retain runtime IDs/issues, have exactly one executable owner and both task lists participate. Eligible sources archive with valid links/history; needed sources preserved.",
+    "Two-parent feature integration targets paused phase 2, not integration branch.",
+    "Feature review tasks produce committed reports under docs/dev/features/<actual-feature-id>/, with required review/testing, blocker repairs and issue/milestone closure consistent with the actual whole-project owner scope.",
+    "Material main-document/task incorporation receives affected QC reassessment; eligible selected feature QC reports archive beside corresponding sources with repaired in-scope links and retained original review identity. Historical feature Ready is not current main-document readiness; unselected source/report pairs remain active when required."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}
