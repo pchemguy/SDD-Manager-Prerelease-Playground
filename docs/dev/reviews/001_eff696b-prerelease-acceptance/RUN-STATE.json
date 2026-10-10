@@ -5,18 +5,9 @@
   "case_id": "A-001",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "CP-013 provider recovery and complete rerun verified; consumer PROJECT checkpoint published",
-  "pending_operation": {
-    "kind": "checkpoint",
-    "status": "blocked",
-    "description": "Actual human acceptance of published PROJECT is pending; architecture is held",
-    "identity": {
-      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
-      "branch": "design-docs/main",
-      "commit": "b7b017cf7480bded8ad7f7de4a4eed690083b39c"
-    }
-  },
-  "next_action": "Obtain actual human decision on PROJECT b7b017c; architecture held",
+  "last_completed_action": "Coordinator accepted exact PROJECT under explicit user delegation",
+  "pending_operation": null,
+  "next_action": "Consumer records scoped PROJECT acceptance and prepares ARCHITECTURE for coordinator assessment",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "b7b017cf7480bded8ad7f7de4a4eed690083b39c",
@@ -35,6 +26,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CONSUMER-OBSERVATIONS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/complete-rerun/RESULT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CHECKPOINT-ASSESSMENT.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CHECKPOINT-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/PROJECT-DECISION.json"
   ]
 }
