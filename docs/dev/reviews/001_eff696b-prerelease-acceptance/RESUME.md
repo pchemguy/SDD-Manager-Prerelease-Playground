@@ -73,3 +73,7 @@ A-025 assessment publication `c112551b` was pushed and exact remote tip verified
 ## A-014 prerequisite-refusal independently Passed
 
 Selected T-002–T-003 correctly refused because unfinished T-001 is outside the authorized range; preparation integration also remains unauthorized in this isolated trial. Complete refs/index/all154 tracked hashes and exact remote trial/main tips independently unchanged. Variant only: cross-phase execution and full A-014 are not graded. Evidence retained without consumer/package edits or tests. A-003 first projection remains held for actual independent assessment before second reconciliation.
+
+## Coordinator crash recovery and first projection assessment
+
+All three owning origin branches fetched and matched local clean checkpoints. No product work or hosted replay was needed. Independent recovered first assessment Passed: nine Phase 1 issues, three milestones, one phase label; exact TASKS clauses and PLAN exits, current QC/source hashes and original preservation fixture verified by live GETs. First failed attempts remain retained. The unsanitized local old assessment was replaced for publication by a fresh metadata/hash-only assessment. Full A-003 stays pending second reconciliation; no implementation is authorized by this checkpoint.

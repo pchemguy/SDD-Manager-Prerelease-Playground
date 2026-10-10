@@ -6,3 +6,7 @@
 4. Proposed plugin changes: no confirmed consumer instruction defect yet; remaining consumer/supplemental cases are pending. Source-only publisher repair is executed/locally verified and clean-first-run proven; repaired complete live rerun Passed with unchanged release/asset identities and body.
 
 Catalog scope is 27 cases, 32 required variants and two optional variants. A-001.core, A-002.core, A-025.core and A-014.prerequisite-refusal Passed; remaining catalog variants Pending. Native/installed/platform facilities remain separately limited. Reconstructed original source ZIP container identity is unavailable; committed files and actual provider ZIPs are independently verified. No production source release/readiness is claimed.
+
+## Recovered A-003 first checkpoint
+
+First projection independently Passed after coordinator-crash recovery; [first assessment](runs/A-003/1/FIRST-ASSESSMENT.json) and [original observations](runs/A-003/1/CONSUMER-FIRST-OBSERVATIONS.json) are retained. Three original stopped attempts remain separate. Nine eligible issues and three native milestones are live and correctly scoped; product stays prepared/unmerged at `1e3305c8`. Full case remains Pending until identity reuse and managed-object foreign-material preservation are independently observed in the second reconciliation.
