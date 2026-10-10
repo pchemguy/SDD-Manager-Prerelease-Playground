@@ -1,0 +1,35 @@
+diff --git a/docs/dev/PLAN.md b/docs/dev/PLAN.md
+index 2489ae6..d4f62fb 100644
+--- a/docs/dev/PLAN.md
++++ b/docs/dev/PLAN.md
+@@ -1,6 +1,8 @@
+ # TextStats delivery plan
+ 
+-## Objective and governing inputs
++## Unaccepted caller fixture and retained governing inputs
++
++This modified main PLAN is an unaccepted caller review fixture from actual preparation `8036adbd71ffc1f04b98e689cc131781bc20cd1f`. Adjacent QC retains historical identities and has not been refreshed for changed bytes. Governing SPEC/design/TASKS and product contracts are unchanged; no human acceptance or implementation result is claimed.
+ 
+ Deliver the accepted [SPEC](SPEC.md) through an early useful named-file API/CLI and then two bounded JSON/stdin increments. The [architecture](ARCHITECTURE.md), [decomposition](DECOMPOSITION.md) and current [SPEC QC](SPEC-REVIEW-REPORT.md) establish the structural and behavioral baseline. This document is strategy only: no implementation, executable task list or physical layout is supplied here.
+ 
+@@ -24,7 +26,7 @@ Demonstrate a real UTF-8 file with mixed terminators and BOM policy through API
+ 
+ Depends on completed/reviewed 1.1. Scope: R-008 CLI input/read/decode status 1 and usage status 2, identifying useful stderr, empty failure stdout, no traceback and validation before acquisition; R-011 public API/module docs and runnable README; R-013 extracted-source distribution; complete phase 1 R-012 acceptance and regression coverage. Preserve the useful counting/API/CLI path and unchanged input bytes.
+ 
+-Exit evidence: named-file failure/usage subprocess matrix and controlled read/unreadability/resource seams, successful-path regressions, documentation examples executed against delivered code, nonzero unit/integration counts and extracted-source module-entry invocation independent of the original checkout. Include successful named-file output and expected input/decode failures in distribution evidence. Its final milestone review performs code review, required tests/checks, repairs every contract/exit blocker and publishes a milestone report.
++Exit evidence: named-file failure/usage subprocess matrix and controlled read/unreadability/resource seams, successful-path regressions, documentation examples executed against delivered code, nonzero unit/integration counts and source-package module-entry invocation. Include successful named-file output and expected input/decode failures in distribution evidence. Its final milestone review performs code review, required tests/checks, repairs every contract/exit blocker and publishes a milestone report.
+ 
+ Demonstrate useful error handling and the README's runnable invocation after extraction. This checkpoint informs confidence in usability/distribution and a human continue/amend/stop decision before phase 2, within the separately authorized execution scope.
+ 
+@@ -75,9 +77,9 @@ Once full exits/reports and applicable hosted closure are verified, explicitly i
+ | R-013 | 1.2 first complete extracted-source exit, repeated/extended for 2.1 JSON and 2.2 final stdin behavior. |
+ | F-001 through F-004 | Deferred separate feature; preserve shared terminators, once-only normalization, normalized counting and source-independent acquisition seam during every design/code review. No initial task or hosted projection for this feature. |
+ 
+-The pure core precedes its consumers within a bounded milestone; acquisition preserves raw terminators and complete strict decoding; controllers publish completed results. Check failures at component seams where portable subprocess reproduction is unreliable, but retain real module-entry integration for observable process contracts. No platform permission trick alone establishes unreadability coverage. Source extraction checks must isolate imports from the checkout and installed copies.
++The pure core precedes its consumers within a bounded milestone; acquisition preserves raw terminators and complete strict decoding; controllers publish completed results. Check failures at component seams where portable subprocess reproduction is unreliable, but retain real module-entry integration for observable process contracts. No platform permission trick alone establishes unreadability coverage. Source-package checks run delivered module examples.
+ 
+-There is no benchmark, bounded-memory target, third-party build requirement or release publication in scope. In-memory decode is the accepted design tradeoff. Main risks are mistaken Unicode line splitting, newline translation, repeated BOM removal, silently empty discovery, environment-dependent unreadability tests and accidentally importing the checkout during distribution verification; the exits above address each with objective evidence.
++There is no benchmark, bounded-memory target, third-party build requirement or release publication in scope. In-memory decode is the accepted design tradeoff. Main risks are mistaken Unicode line splitting, newline translation, repeated BOM removal, silently empty discovery, environment-dependent unreadability tests; the exits above address each with objective evidence.
+ 
+ ## Integration and review evidence
+ 

@@ -1,0 +1,28 @@
+{
+  "narrow-feature": {
+    "tracked_count": 182,
+    "matches_start": {
+      "head": true,
+      "status": true,
+      "refs": true,
+      "index_entries": true,
+      "index_sha256": true,
+      "tracked_files": true
+    },
+    "diff_matches_setup": true,
+    "untracked": []
+  },
+  "missing-plan-contract": {
+    "tracked_count": 182,
+    "matches_start": {
+      "head": true,
+      "status": true,
+      "refs": true,
+      "index_entries": true,
+      "index_sha256": true,
+      "tracked_files": true
+    },
+    "diff_matches_setup": true,
+    "untracked": []
+  }
+}
