@@ -19,3 +19,5 @@ The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records complete
 ## Phase 2 JSON increment
 
 The current JSON-increment request supersedes the historical Phase 1 stopping statements above: activate Phase 2 and execute only T-010 through T-012 in [TASKS](docs/dev/TASKS.md), then pause before stdin work with Phase 2 incomplete and unmerged. Phase 1 is integrated and published; maintained tracking covers the eligible Phase 2 objects. Named-file `--json` composes with BOM policy while text remains the default; stdin and ranges remain deferred. Product checks now collect 25 unit and 21 integration tests on Python 3.12.14. The extraction checker now exercises 99 real text/JSON/BOM/error module cases with isolated import provenance. Preserve earlier checkpoint records and use actual Git/remote state for publication identities.
+
+The [milestone 2.1 review](docs/dev/reports/phases/2/2.1.md) records the JSON increment's coherent code review, nonempty product checks, runnable examples and distribution exits. The selected JSON milestone is complete on its published phase branch; continue only after a new instruction authorizes stdin.
