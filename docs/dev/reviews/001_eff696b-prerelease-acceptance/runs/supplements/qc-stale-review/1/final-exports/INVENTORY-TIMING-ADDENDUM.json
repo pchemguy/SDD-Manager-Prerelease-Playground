@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-10T16:18:08.525548+00:00",
+  "original_outputs_preserved": true,
+  "original_inventory_evidence_head": "9a6839e03c9d32b4ae8856139357ab5e0e715080",
+  "original_inventory_publication_limit_literal": "Committed evidence HEAD equals locally retained remote-tracking evidence ref88fd0ea; source report records exact remote readbacks for cited checkpoints. This assessor did not perform new network readback. Active case progress can advance after this snapshot.",
+  "clarification": "Original inventory combined independently timed reads: initial observed HEAD/cached remote ref88fd0ea; later inventory generation dynamically captured newer HEAD9a6839e while publication-limit prose retained88fd0ea. The asserted equality of the generated HEAD and88fd0ea is incorrect. No assessor network readback occurred at either read. Root separately reports fresh exact remote verification9a6839e. Subsequent source/evidence progress does not retroactively change the original inventory snapshot.",
+  "current_local_observation": {
+    "evidence_head": "d2f8ebcf527b3e54a11566e4a1c6941b868b33da",
+    "cached_remote_tracking_ref": "d2f8ebcf527b3e54a11566e4a1c6941b868b33da",
+    "same": true
+  },
+  "fresh_network_verification_by_this_assessor": false,
+  "root_supplied_observation": {
+    "remote_verified": "9a6839e",
+    "source": "ebebd0c",
+    "origin": "root message; not independently network rechecked by this assessor"
+  }
+}

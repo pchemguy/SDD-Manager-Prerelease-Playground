@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "case_id": "SUP-QC-STALE-REVIEW",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "evidence_class": "supplemental controlled read-only actual-prerequisite consumer; outside 32required totals",
+  "source_plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "actual_product_checkpoint": "d9a27477042f4d1e25850673079f2f768171724e",
+  "setup_publication": "Root reports 2a9d8c0 published before fresh consumer dispatch; no new assessor network readback",
+  "checks": {
+    "head_preserved": true,
+    "refs_exact": true,
+    "index_entries_exact": true,
+    "index_bytes_exact": true,
+    "status_exact": true,
+    "all_tracked_files_modes_exact": true,
+    "tracked_files_count": 182,
+    "detached_head_preserved": true,
+    "all_reported_loaded_hashes_blobs_exact": true,
+    "material_stale_upstream_identity": true,
+    "main_plan_still_defers_feature": true,
+    "honest_main_plan_gate_refusal": true,
+    "readonly_consumer_record_no_impl_branch_provider": true,
+    "readonly_record_scope_limit": "Consumer retained structured command descriptions; no native complete transcript/continuous transient provider audit available. Exact durable refs/files/index checked independently; historical invisible remote operations cannot be proved absent from final local state alone."
+  },
+  "semantic_assessment": {
+    "primary_finding": "Confirmed: main PLAN QC retains Ready against older SPEC/SPEC-QC hashes after substantive named-file range incorporation. Consumer correctly refuses main dependent conformance use and identifies authorized owner/QC follow-up without repairing documents.",
+    "main_plan_coverage": "Confirmed for selected main PLAN: its F contracts remain deferred and final all-SPEC phase route is unreconciled against current range acceptance. Existing FEATURE-PLAN supplies a separate route; this finding does not invalidate actual accepted feature strategy, ongoing A010 bounded feature execution, unaffected completed tasks, or complete project history.",
+    "selected_scope": "Consumer confines output to requested external observations artifact; all 182tracked file bytes/modes, HEAD, refs, index entries and exact index bytes independently match START. No task/check implementation or branch/provider operation appears in its retained structured command list.",
+    "history_preservation": "PLAN/QC history and all governing artifacts unchanged; no authorized correction performed or preaccepted.",
+    "count_rationale": "Consumer correctly distinguishes two delivery milestones per original/feature extent from excluded review milestones. This does not cover unexecuted one-milestone/four-task/overload boundary supplements."
+  },
+  "acceptance_context_gap": {
+    "consumer_claim": "PLAN-ASSESS-003 says incorporated main SPEC concrete acceptance is pending, matching original product navigation at d9a2747.",
+    "root_supplied_external_fact": "Root reports exact d9a main SPEC accepted after original seal in 19b24aae before A009 publication fa7c6ad; external decision artifact omitted from read-only consumer handoff.",
+    "independent_disposition": "Context-limited unresolved navigation finding, not an actual new absence-of-acceptance defect. Consumer could inspect only retained product facts; do not mark third finding globally correct or falsely blame consumer for withheld later artifact. Primary stale technical QC/main PLAN coverage remains valid regardless of external acceptance. Actual dependent use must reconcile available authority/evidence rather than re-obtain already delegated acceptance.",
+    "assessor_network_or_external_decision_readback": false
+  },
+  "limitations": [
+    "Separate consumer/assessor contexts have unrestricted shared filesystem; native isolation and complete native transcript not certified.",
+    "No provider mutation audit or fresh remote readback by assessor; final local-state preservation and structured observed scope only.",
+    "Actual Python3.12.14/Linux; no installed/native/platform claim.",
+    "This case is review-only current actual upstream mismatch, not interrupted correction, material PLAN repair, archive, equivalence-checkbox positive control or complete QC supplemental readiness.",
+    "First consumer git status potentially refreshed index metadata; exact final index bytes match START, so no durable index alteration demonstrated."
+  ],
+  "publication_state": "Scratch-only export for root review/publication; no assessor repository edits."
+}

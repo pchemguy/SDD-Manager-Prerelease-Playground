@@ -208,3 +208,9 @@ Controlled injection, original failures, setup file reappearance, verifier adjus
 ## A021 actual partial task-owner transfer
 
 Consumer-selected operations1/2 incorporated governing extent and added actual seven pending canonical task entries while FEATURE-TASKS remained byte-exact and retirement pending. Wrapper Held is independently verified actual partial work, not final acceptance. Exact index/objects/refs/182file bytes+modes reconstructed with194checks; full trigger exports and fresh ordinary recovery handoff retained. Coordinator evidence metadatafetch before actualSTART and both assessor verification failures/corrections/lost in-memory capture limits remain recorded. No root-authored transfer, finalReady/commit/archive/task execution or grade inferred. Publish before fresh continuation.
+
+## CP020 supplemental stale governing review independently Passed
+
+Fresh read-only consumer on actual A009d9a identified stale main PLAN/QC upstream identities and missing range/composition coverage before dependent use. Independent exact182file bytes/modes, raw/semantic index, HEAD/allrefs preservation verified; no implementation/branch/provider effects claimed. Supplemental result/actualinput/seal/checks in runs/supplements/qc-stale-review/1/final-exports, outside32required accounting. Its extra pendingSPECacceptance finding is a limited navigation/context gap: later external19b24aae acceptance omitted from this snapshot handoff; no global missingacceptance defect or blame for withheld evidence inferred.
+
+CP019–022 coverage inventory names remaining executable supplements and unavailable native/live/session/Windows/installedfacilities. Original inventory stale88fd0ea equalityprose is explicitlywithdrawn in separateaddendum; original retained. No unperformed target Passed. Requiredtotalsremain22Passed/2Failed/8unresolved; fullreadinessOpen.

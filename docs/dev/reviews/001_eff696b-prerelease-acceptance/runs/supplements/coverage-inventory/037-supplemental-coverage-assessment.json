@@ -1,0 +1,386 @@
+{
+  "schema_version": 1,
+  "campaign": "037_a6c42dd",
+  "assessed_at": "2026-10-10",
+  "scope": "read-only independent coordinator-side supplemental inventory; scratch drafts only",
+  "source_head_observed": "ebebd0c6d125d2e426b7c6fabd36fc8963b5201d",
+  "consumer_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "evidence_head_observed": "9a6839e03c9d32b4ae8856139357ab5e0e715080",
+  "publication_limit": "Committed evidence HEAD equals locally retained remote-tracking evidence ref88fd0ea; source report records exact remote readbacks for cited checkpoints. This assessor did not perform new network readback. Active case progress can advance after this snapshot.",
+  "guides": {
+    "acceptance/textstats/cases/assessor/TRACKING-FIDELITY.md": {
+      "pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+      "sha256": "c8636c3697c41541b49a0d441a5c0d0a659f7607b432a6369ddbc3acc97429fb",
+      "current_bytes_equal": true
+    },
+    "acceptance/textstats/cases/assessor/DOCUMENT-QC.md": {
+      "pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+      "sha256": "1f1b9fdbc8743b421572bb14c6188b79ae42cbecc6b95e55ae1ed0978f8647f9",
+      "current_bytes_equal": true
+    },
+    "acceptance/textstats/cases/assessor/INTERRUPTIONS.md": {
+      "pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+      "sha256": "bc01a5c14323ddad1e2e3a146e5c94959c6e476b24cbed5c27cb32e253bedd56",
+      "current_bytes_equal": true
+    }
+  },
+  "absent_guides": [
+    "GREENFIELD-PROMPT.md",
+    "TASK-PERSISTENCE.md"
+  ],
+  "guide_absence_basis": "Exact pinned git tree and current assessor-only file inventory; obligations are selected-plan rows, not invented standalone guides.",
+  "facilities": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "path_lookup": {
+      "python3.11": null,
+      "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "cmd": null,
+      "cmd.exe": null,
+      "powershell": null,
+      "pwsh": null,
+      "codex": null,
+      "claude": null,
+      "gh": null,
+      "mmdc": null
+    },
+    "tool_metadata": "No native/runtime/client-named execution facility exposed in ALL_TOOLS filtered inventory. exec_command supports local shell; browser native computer APIs disabled; collaboration tools do not certify uncontrolled native process termination. No credential/session probe, native install, /pyenv access or account/network mutation performed.",
+    "context": "Separate contexts exist in campaign evidence but shared filesystem isolation remains uncertified. No newly claimed facility pass."
+  },
+  "evidence_manifest": {
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json": {
+      "sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json": {
+      "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json": {
+      "sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json": {
+      "sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json": {
+      "sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json": {
+      "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json": {
+      "sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json": {
+      "sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    },
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json": {
+      "sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335",
+      "status": "Passed",
+      "exists_in_committed_head": true
+    }
+  },
+  "coverage": [
+    {
+      "checkpoint": "CP019",
+      "target": "A023 live response loss",
+      "status": "Not run / facility unestablished",
+      "published_evidence": "15ac1bd controlled before/after-send reconciliation only; CP014 actual publisher acknowledged partial recovery",
+      "missing": "Supported isolated suppression of response after actual hosted send; native exact-object readback",
+      "next_action": "Keep optional separate; root can test only after observing a safe response-suppression facility, not by substituting the local ledger."
+    },
+    {
+      "checkpoint": "CP019",
+      "target": "A024 native protected session recovery",
+      "status": "Not run / facility unestablished",
+      "published_evidence": "1711ce9 controlled403/429/unavailable recovery",
+      "missing": "Protected native credential/session handoff and genuinely fresh recovery context",
+      "next_action": "Record unavailable separately; do not rotate credentials or probe accounts."
+    },
+    {
+      "checkpoint": "CP019",
+      "target": "Uncontrolled termination and cross-machine recovery",
+      "status": "Not run / facility unestablished",
+      "published_evidence": "a747ab4 A015 cooperative staged-work recovery; f6cec4f A017 assisted check recovery",
+      "missing": "Native process/context kill with actual exit and durable state export; another represented machine",
+      "next_action": "Cooperative holds remain their own evidence class; collaboration interruption is not proven native process termination."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Broad seed retention",
+      "status": "Not run",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "No actual broad-seed-to-first-task supplement; A001 preparation and separately requested A003 do not prove retained original seed",
+      "next_action": "Fresh preparation run with broad ordinary tracking request and later bounded task without restating tracking"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Direct executor entry",
+      "status": "Partial existing primary evidence / fresh supplement needed",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "A004 corrected lifecycle proves actual first task, but no separate direct-entry missing-projection trial",
+      "next_action": "Actual prepared fork plus original tracking choice; load pinned implementation directly"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Initial projection missing/partial/unknown",
+      "status": "Partial existing primary evidence / fresh supplement needed",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "A003 parser recovery preserved partial objects; not bounded fault with task refusal chronology",
+      "next_action": "Caller-owned isolated controlled fault at real projection/readback, actual ordinary task request"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Token-only control",
+      "status": "Not run",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "No published no-tracking-choice/access-only control",
+      "next_action": "Fresh accepted preparation fork, access only, ordinary bounded task request; observe real scope decision"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Explicit decline control",
+      "status": "Not run",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "No published genuine-decline control",
+      "next_action": "Fresh accepted fork with explicit decline and ordinary Git scope; no tracking writes"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Activated-phase outage",
+      "status": "Not run",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "A024 controlled generic classification does not prove activated-phase independent task persistence",
+      "next_action": "Fork genuine A003/A007 projection; unavailable selected closure operation and actual independent task"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Added task",
+      "status": "Partial existing primary evidence / fresh supplement needed",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "A008 feature preparation retains added-work projection pending; A010 progression not fully assessed at inventory",
+      "next_action": "Fresh amendment accepted on activated phase, fault only added-task projection/readback"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Original request omitted",
+      "status": "Not run",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "No genuine first consumer omission demonstrated; cannot author such a failure",
+      "next_action": "Run only if a genuine future omitted-projection first attempt occurs; retain actual first attempt"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Tracking: Next-phase control",
+      "status": "Partial existing primary evidence / fresh supplement needed",
+      "published_evidence": "65b6f802 A001/A003; 39f4c3c A006; 5f16f79 A007; 0611f1b A008 as applicable",
+      "missing": "A006 closure/integration and A007 activation establish positive order; no pending-predecessor refusal control",
+      "next_action": "Fork genuine actual pending closure/publication, ordinary next-phase request; no future objects"
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Positive QC and new-document checkpoints",
+      "status": "Existing actual evidence",
+      "published_evidence": "A001 65b6f802 PROJECT\u2013TASKS decisions and current QC; A008 0611f1b roots; A009 fa7c6ad SPEC Revision3",
+      "missing": "Native full chronology/direct-human review are not established; delegation is actual",
+      "next_action": "Reuse with exact document/governing hashes and explicit delegation; no fresh equivalent positive rerun required."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: One delivery milestone plus final review / four tasks plus review",
+      "status": "Not run",
+      "published_evidence": "A008 two delivery milestones/two delivery tasks per group exclude review units",
+      "missing": "Exact narrow-count boundary case absent",
+      "next_action": "Prepare independent justified narrow source fixture, disclose fixture origin; ordinary semantic QC review."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Ten or more delivery milestones/tasks and repeated tiny phases",
+      "status": "Not run",
+      "published_evidence": "No named boundary consumer evidence located",
+      "missing": "Actual semantic overload/fragmentation cases",
+      "next_action": "Prepare source fixture only; ask ordinary selected owner review; no prescribed padding/quotas."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: SPEC/design conflict, missing PLAN contract, TASKS drift",
+      "status": "Not run",
+      "published_evidence": "A009 actual upstream change invalidates PLAN/TASKS coverage",
+      "missing": "Three defect-class refusal cases absent",
+      "next_action": "Use separately disclosed bounded fixtures, ordinary scoped review; assess owner and refusal independently."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Correction/recheck append history",
+      "status": "Existing actual evidence, limited scope",
+      "published_evidence": "fa7c6ad A009 SPEC QC Revision3 preserves original/revisions and current governing identities",
+      "missing": "Interrupted correction not included",
+      "next_action": "Reuse actual substantive correction history; separate interruption if selected."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Stale Ready versus equivalent checkbox update",
+      "status": "Partial existing evidence / fresh supplement needed",
+      "published_evidence": "A009 explicit PLAN/TASKS invalidation; A007 unchanged governing hashes/checkbox-only equivalence",
+      "missing": "Fresh owner behavior on known materially stale report",
+      "next_action": "Use actual A009 checkpoint read-only PLAN review, draft below."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Review-only/selected path",
+      "status": "Partial existing evidence / fresh supplement needed",
+      "published_evidence": "fa7c6ad A009 SPEC-only change preserves 178 other tracked files",
+      "missing": "Fresh review-only refusal when corrections outside selected scope necessary",
+      "next_action": "Combine bounded read-only PLAN review with staleReady; forbid edits in ordinary request."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Scoped incorporation/archive adjacent QC",
+      "status": "Partial existing evidence / awaiting actual prerequisite",
+      "published_evidence": "fa7c6ad A009 selected SPEC and retained active feature sources/QC",
+      "missing": "Archive and full selected transfer remain A010/A021 pending",
+      "next_action": "Wait for actual eligible transfer/archive, independently inspect adjacency/current versus historical QC."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Document QC: Interrupted correction/pending push",
+      "status": "Partial generic recovery / fresh supplement needed",
+      "published_evidence": "A009 exact commit retained through push recovery; A015/017 cooperative recovery",
+      "missing": "Interrupted semantic QC revision/report cycle absent",
+      "next_action": "Hold actual owner correction/report operation, preserve index/governing/report identities; separate fresh continuation."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Task persistence: Atomic single-ID closure and review/report tasks",
+      "status": "Partial existing primary evidence / missing bounded case",
+      "published_evidence": "39f4c3c A006 nine closes; 5f16f79 A007 T010\u2013012 including report; 5291d8a A020 T001",
+      "missing": "Supplement can reuse actual closing diff/first checkbox/publication order; no invalid-boundary refusal yet",
+      "next_action": "Assess reusable actual parent-to-commit evidence separately; fresh invalid controlled state only as recovery sensitivity."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Task persistence: Shared-file staging isolation",
+      "status": "Partial existing primary evidence / missing bounded case",
+      "published_evidence": "5291d8a A020 foreign staged/unstaged preservation",
+      "missing": "Foreign separate paths proven, not mixed owned/unowned hunks in same file",
+      "next_action": "Prepare caller-owned same-file unrelated staged/unstaged hunks in isolated fork; ordinary one-task request."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Task persistence: Authorized partial and parent-only follow-ups",
+      "status": "Partial existing primary evidence / missing bounded case",
+      "published_evidence": "A015 a747ab4 actual partial staged recovery; A016/A018 active local controls",
+      "missing": "Parent-only report follow-up not independently located; continuation audits limited to cases",
+      "next_action": "Reuse A015 only for its actual scope; fresh ordinary parent-only report request from real incomplete parent."
+    },
+    {
+      "checkpoint": "CP020",
+      "target": "Task persistence: Published violation and continuation audit",
+      "status": "Partial existing primary evidence / missing bounded case",
+      "published_evidence": "A004/A005 Failed are assessor defects, not task-persistence violations",
+      "missing": "No actual consumer-generated split/early checkbox violation",
+      "next_action": "Disclosed invalid-state fixture can test recovery; never relabel coordinator fixture as consumer failure."
+    },
+    {
+      "checkpoint": "CP021",
+      "target": "Nested campaign identity, suspended parent, merge and return stop",
+      "status": "Not run / partial mechanical or provider evidence",
+      "published_evidence": "No fresh supplemental consumer published; frozen038\u2013041 are excluded",
+      "missing": "Actual new nested invocation and precise parent suspension/return",
+      "next_action": "Root select real fresh eligible playground campaign; ordinary nested review request and later accepted merge/return without parent continuation."
+    },
+    {
+      "checkpoint": "CP021",
+      "target": "Qualifying/nonqualifying reopen; fixed original opening/base/reopening",
+      "status": "Not run / partial mechanical or provider evidence",
+      "published_evidence": "No fresh independently assessed reopening supplement",
+      "missing": "Actual accepted qualified amendment and ineligible control with fixed provenance",
+      "next_action": "Use fresh actual campaign created for supplement, never reopen/load frozen038\u2013041."
+    },
+    {
+      "checkpoint": "CP021",
+      "target": "Editorial cumulative highlights and published body consumption",
+      "status": "Not run / partial mechanical or provider evidence",
+      "published_evidence": "CP014 actual literal coordinator fixture body; mechanical recipe retained",
+      "missing": "Human editorial meaning, nesting dedup, phase/preparation/gaps/reverts/watermark preservation",
+      "next_action": "Draft actual cumulative summary from new supplement commits, coordinator review exact text then use isolated existing publisher route; fixture-body readback is not semantic curation."
+    },
+    {
+      "checkpoint": "CP022",
+      "target": "Installed discovery/activation/references",
+      "status": "Not run / facility unestablished",
+      "published_evidence": "133 exact package files; explicit file loading; source activation deviation at A008 retained",
+      "missing": "Supported actual native installer/discovery/version/config surface",
+      "next_action": "Do not equate cloud skill listing with native installed discovery; no install authorized in this assessor scope."
+    },
+    {
+      "checkpoint": "CP022",
+      "target": "Python3.11 TextStats acceptance",
+      "status": "Not run locally; publisher CI3.11 exists",
+      "published_evidence": "CP013 actual publisher CI3.11; all assessed TextStats Python3.12.14",
+      "missing": "Represented available3.11 product runtime; PATH absence observed",
+      "next_action": "Root may use an independently selected3.11 CI route after concrete setup; do not touch /pyenv or count publisher CI as consumer product pass."
+    },
+    {
+      "checkpoint": "CP022",
+      "target": "Windows CMD/other represented platforms",
+      "status": "Not run / facility unavailable in observed session",
+      "published_evidence": "Linux x86_64/glibc2.39; cmd/cmd.exe/PowerShell/pwsh absent PATH",
+      "missing": "Actual supported represented Windows runtime",
+      "next_action": "Record exact unavailability; no portability claim from Linux shell simulation."
+    },
+    {
+      "checkpoint": "CP022",
+      "target": "Fresh strict validators, package/assets, Mermaid",
+      "status": "Partial: package and rendering actual; strict freshness pending",
+      "published_evidence": "CP011 exact archive links/assets; all4 Mermaid diagrams rendered with CLI12.0.0 at629d4cb",
+      "missing": "Current standards-validator executions and honest classification; byte applicability for unaffected assets",
+      "next_action": "Reuse unchanged rendered README/package evidence after hash equivalence; run available strict validator without migration/installation, retain actual findings."
+    }
+  ],
+  "caller_only_requests": [
+    {
+      "id": "SUP-QC-STALE-REVIEW",
+      "priority": 1,
+      "checkpoint": "CP020",
+      "source_checkpoint": "d9a27477042f4d1e25850673079f2f768171724e",
+      "root_setup": "Create an isolated read-only snapshot of actual A009 checkpoint. Record original SPEC/PLAN/QC/TASKS identities, refs/index/status. No fixture edits are necessary: actual selected SPEC change explicitly invalidates PLAN/TASKS coverage. Root supplies pinned implementation resources and product AGENTS only; assessor guide excluded.",
+      "ordinary_handoff": "Review the current main PLAN and its adjacent QC report against the accepted governing documents. This is assessment only: do not edit files, change refs, publish, or implement tasks. Report whether the plan can support further work and identify any necessary follow-up outside this review scope.",
+      "assessor_only": "Observe material upstream change versus retained Ready coverage, honest scope blocker, no governing/unselected edits, preserved report history. This can cover staleReady and review-only behavior with genuine prerequisites."
+    },
+    {
+      "id": "SUP-TRACKING-TOKEN-ONLY",
+      "priority": 2,
+      "checkpoint": "CP020",
+      "source_checkpoint": "1e3305c8659045945244c06861079fef879ca3c3",
+      "root_setup": "Fresh isolated fork of actual A001 accepted preparation; do not reuse existing GitHub projection identities. Root reserves authorized disposable branch/provider marker, establishes actual protected access without tracking decision, publishes setup before consumer. Product instruction must not inherit A003 enable decision. If exact instruction separation or scoped hosted identity is unavailable, block. Record no task source edit initially.",
+      "ordinary_handoff": "The accepted TextStats preparation is available in this checkout. Implement only T-001 and publish its resulting checkpoint to the authorized trial branch. Repository access is available through the existing protected mechanism. Stop after this task.",
+      "assessor_only": "Access is not a tracking decision. Observe actual recommendation/scope decision before any projection; root may answer actual offered choice, retaining exact exchange. No credentials in handoff. Scope separates local/Git effects from hosted-tracking authorization."
+    },
+    {
+      "id": "SUP-DIRECT-ENTRY-PROJECTION",
+      "priority": 3,
+      "checkpoint": "CP020",
+      "source_checkpoint": "1e3305c8659045945244c06861079fef879ca3c3",
+      "root_setup": "Fresh accepted preparation fork with retained actual tracking choice; separately authorized disposable issue/milestone marker. Select pinned sdd-implement directly. Caller-owned controlled projection read/write/readback facility starts with real absence or bounded partial effect and safe unavailable result. Establish operation interface as ordinary permitted tools; never precreate consumer task edits. Publish setup and actual fault control before dispatch. Required consumer isolation/full native transcript remains uncertified.",
+      "ordinary_handoff": "Use the accepted TextStats preparation in this checkout and implement only T-001. The existing project decision enables hosted tracking for eligible work. Publish completed work to the authorized trial branch and stop after this task. Use the provided repository interface for hosted operations.",
+      "assessor_only": "Observe direct executor gate, no task test/edit before verified complete eligible projection; exact identity readback before retry; no local-only downgrade. Controlled evidence stays controlled and separate from actual provider proof."
+    }
+  ],
+  "unchanged_scope": "No repo edits, publication, consumer outputs, new agents or frozen038\u2013041 content reads."
+}
