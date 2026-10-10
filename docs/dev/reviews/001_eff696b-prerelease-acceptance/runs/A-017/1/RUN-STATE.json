@@ -4,12 +4,15 @@
   "phase": "P4",
   "case_id": "A-017",
   "attempt": 1,
-  "role": "coordinator",
-  "last_completed_action": "Isolated real prerequisite/setup exports verified; consumer not dispatched",
+  "role": "consumer",
+  "last_completed_action": "Actual isolated setup exports published31ce4fa; metadata-only evidence fetch after setup",
   "pending_operation": null,
-  "next_action": "Render/publish actual ordinary handoff before fresh consumer",
+  "next_action": "Fresh ordinary consumer observes requested actual interruption boundary",
   "checkpoint_refs": {
-    "evidence_branch": "revision/001_eff696b-prerelease-acceptance"
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "product_branch": "trial/a017-failed-check",
+    "product_commit": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+    "remote": "trial-delivery"
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",
