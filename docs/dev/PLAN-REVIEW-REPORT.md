@@ -2,6 +2,24 @@
 
 ## Current gate
 
+State: **Ready for explicitly authorized Phase 2 resume**. Accepted text-only amendment is integrated and published at `77e7106e3134cc7053a2b1a045cf1a76cf0361ea`, with delegated publication acceptance `963d058`. Current preparation/hosted associations/bounded closure plan are accepted at coordinator `fb98e7b984134755845fc46390381d9933aa397e`. Earlier pending and stop statements below retain their exact historical scope.
+
+R-001–R-008/R-010–R-013 and F-001–F-004 are unchanged; JSON delivery identities remain retired. Explicit resume covers T-013–T-017 and final Phase 2 exits/integration, with no release/version bump/next phase. No contract, design, strategy, layout, hierarchy, task outcome or dependency is changed by status maintenance. Technical document readiness does not preaccept task implementation or final integration.
+
+| Current reviewed/governing source | SHA-256 |
+| --- | --- |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+| `SPEC-REVIEW-REPORT.md` | `f801d9247b0665035b89f13e2c40b3a3e352e38e516ed826547692a315fc7787` |
+| `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
+| `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
+
+No unresolved preparation finding. Governing source hashes above identify the exact current equivalent state; task results/tests and runtime acceptance remain in owning TASKS evidence.
+
+## Historical gate at accepted amendment publication
+
 State: **Verified scoped JSON-removal conformance**, Revision 7; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
 
 Phase 1 retains two cohesive delivery milestones; Phase 2 has three active delivery milestones 2.2/2.4/2.5. Historical 2.1 is retired, dedicated reviews 1.3/2.3/2.6 excluded. All retained contracts have routes; stdin/final work remains pending.
@@ -154,3 +172,7 @@ Phase 1: two delivery milestones (small cohesive useful path plus robustness/dis
 No confirmed scoped preparation issue remains. Technical Ready applies to this amendment's inputs only; runtime completion and delegated review remain pending. Design/layout ownership and dependency directions suffice unchanged. Historical package/report contents are excluded from current validation.
 
 Delegated review found stale Current gate hashes and obsolete alternate-output/agreement wording in this first candidate. Finding PLAN-JSON-002: corrected the current gate to the actual reviewed source hashes and retirement counts; prior gate retained as historical above and exact first candidate preserved externally. Rechecked current source identities, dependencies, retained matrices, local links and pending task boundary. Resolved; no production consumption occurred before correction.
+
+## Revision 8
+
+Resume status/navigation maintenance preserves every prior review section and finding. Reassessed exact source hashes, unchanged R/F contracts and design, delivery counts (Phase 1 two; Phase 2 three active delivery milestones, reviews excluded), all task outcomes/dependencies and sole canonical ownership. T-013 candidate completion changes only status/evidence; its task acceptance remains separately delegated. Historical review gates are preserved rather than overwritten. No unresolved document conformance finding; Ready for the authorized remaining work.

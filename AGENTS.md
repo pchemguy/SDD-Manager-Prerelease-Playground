@@ -72,3 +72,18 @@ text/count/BOM/range and isolated extracted-module checks, with bytecode disable
 in children. Stop after accepted, verified and published steering integration
 into paused `phase/2-json-and-stdin`; no stdin execution, full Phase 2 completion,
 default integration, version change or release follows.
+
+## Current Phase 2 resume
+
+The explicit current request resumes all remaining T-013–T-017 under amended
+text/count/BOM/range/stdin requirements and authorizes final reviews, managed
+hosted closures and completed-phase two-parent integration/publication into
+established `main`. The text-only amendment is accepted and published at
+`77e7106e3134cc7053a2b1a045cf1a76cf0361ea`, with delegated publication acceptance
+`963d058`; startup preparation and maintained closure-plan acceptance is
+`fb98e7b984134755845fc46390381d9933aa397e`. Earlier stop/status paragraphs describe
+their historical scopes and do not block this resume. Current canonical TASKS
+and adjacent QC govern; archived sources and retired JSON identities stay historical.
+Continue immediate per-commit push/exact readback and preserve protected resources.
+Use Python 3.12.14 with `PYTHONDONTWRITEBYTECODE=1 python -B`, including children.
+Stop after published complete Phase 2; no next phase, version bump or release.

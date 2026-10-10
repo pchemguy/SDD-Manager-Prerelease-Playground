@@ -8,21 +8,25 @@ This complete two-phase hierarchy derives from [PROJECT](PROJECT.md),
 TASKS is the sole executable owner of T-001–T-024. Phase 1 is complete on default;
 historical JSON evidence remains preserved, while its delivery scope is withdrawn.
 Named-file range T-018–T-024 and added milestones 2.4–2.6 are reviewed, published
-and hosted-closed. Retained range acceptance is text/count/BOM/ranges; affected retained completion claims are reassessed by current amendment verification; concrete conclusion acceptance remains pending. Historical results below are preserved unchanged.
+and hosted-closed. Retained range acceptance is text/count/BOM/ranges. The accepted
+text-only amendment is integrated and published at `77e7106e3134cc7053a2b1a045cf1a76cf0361ea`,
+with final delegated publication acceptance `963d058`. Historical results below remain unchanged.
 [Archived feature sources](features/002_e7cae5b-named-file-ranges/README.md) are
 historical snapshots, not additional executable owners.
 
 Task details identify bounded outcomes, scopes, prerequisites and objective
 checks. Each owns relevant tests/docs without padding; parent identities match
-PLAN. Preserve pending stdin/final T-013–T-017, milestones 2.2/2.3 and whole Phase
-2 unchecked. Their source-independent range composition/dependencies remain
+PLAN. Current task status below tracks authorized stdin/final T-013–T-017.
+Their source-independent range composition/dependencies remain
 required. A feature extent parent does not establish whole-project completion.
 
-Execution selection/completion belongs to sdd-implement. The authorized current
-boundary ends after concrete JSON-removal acceptance and verified/
-published explicit steering integration into paused `phase/2-json-and-stdin`.
-Later main stdin/final execution needs its own selected authorization. No full
-Phase 2 merge into default or release follows this amendment.
+Execution selection/completion belongs to sdd-implement. The explicit resume
+instruction authorizes T-013–T-017, all final Phase 2 exits, managed hosted closures
+and verified two-parent integration/publication into established `main`.
+Startup preparation/hosted-association and bounded closure-plan acceptance is
+`fb98e7b984134755845fc46390381d9933aa397e`. Historical amendment-only stops do not
+limit this resume. Stop after published Phase 2 integration; no next phase,
+version bump or release is authorized.
 
 ## Phase 1 — Named-file utility
 
@@ -87,7 +91,7 @@ Phase 2 merge into default or release follows this amendment.
         - T-012 — Historical milestone 2.1 review; retained, no current executable work.
             Original review/publication remains historical; current retained contracts are reassessed by the steering report.
     - [ ] Milestone 2.2 — UTF-8 stdin and final delivery
-        - [ ] T-013 — Add borrowed binary stdin acquisition
+        - [x] T-013 — Add borrowed binary stdin acquisition
             Outcome: R-010 internal byte reader reaching EOF, strict locale-independent UTF-8 and retained stream ownership; no new public API export.
             Scope: `textstats/io.py`, `tests/unit/test_io.py` and input ownership/decode docstrings.
             Depends on: T-009 and the verified text-only/range amendment checkpoint.
@@ -434,3 +438,29 @@ briefs and retirement metadata were reconciled after exact verified implementati
 publication, with nineteen accepted operations/readbacks; original historical
 completion reasons and five pending open tasks remain preserved. This is steering evidence,
 not a new task result or initial checkbox closure.
+
+## T-013 completion evidence
+
+At published startup `77e7106e3134cc7053a2b1a045cf1a76cf0361ea`, explicit resume
+authority and coordinator startup acceptance `fb98e7b984134755845fc46390381d9933aa397e`
+establish current amended requirements and verified hosted T-013 issue #14,
+phase label and milestone #5 associations. No retired JSON task is executed.
+
+The internal borrowed binary reader reads to EOF and strictly decodes complete
+UTF-8 without normalization, locale conversion or stream closure. Three new
+behavioral tests first failed because the reader was absent (three failures,
+status 1); after implementation, `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest
+tests.unit.test_io tests.integration.test_api -v` passed 15 tests, status 0.
+Empty/Unicode/mixed terminators/repeated and interior BOMs retain exact text;
+invalid bytes after a valid prefix and controlled OSError produce no partial
+text and never close the borrowed stream. Named-file owned-handle/API regressions
+pass and public exports/signatures are unchanged. CLI stdin remains T-014.
+
+The full product runner passed 34 unit and 28 integration tests on Python 3.12.14,
+with no skips or warnings. Raw command/child streams, statuses, inputs and fixture
+hashes are retained in external `037-a013-consumer-observations.json`. Source
+docstrings and current TASKS/AGENTS/QC navigation record the accepted resume
+boundary; requirements, strategy, hierarchy and dependencies are unchanged.
+This task result/tests/current evidence and initial checkbox form one closing
+commit, followed immediately by push/exact readback before subsequent owned work.
+Issue #14 closure remains a separately observed hosted operation.

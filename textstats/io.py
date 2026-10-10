@@ -1,10 +1,12 @@
-"""Complete strict UTF-8 named-file acquisition, preserving raw terminators.
+"""Complete strict UTF-8 byte acquisition, preserving raw terminators.
 
-This module owns only handles it opens. Acquisition and decoding finish before
+This module owns only handles it opens; supplied binary streams stay open.
+Acquisition and decoding finish before
 counting; filesystem and decode exceptions propagate without output or results.
 """
 
 from os import PathLike
+from typing import BinaryIO
 from .core import TextStats, count_text
 
 
@@ -36,3 +38,13 @@ def _read_file_text(path: str | PathLike[str]) -> str:
     """
     with open(path, "rb") as stream:
         return stream.read().decode("utf-8", errors="strict")
+
+
+def _read_stream_text(stream: BinaryIO) -> str:
+    """Read a borrowed binary stream through EOF and decode complete UTF-8.
+
+    No locale decoding, newline translation or BOM normalization occurs here.
+    Read/decode exceptions propagate; no partial text returns. The caller owns
+    the stream, which remains open on success and failure.
+    """
+    return stream.read().decode("utf-8", errors="strict")
