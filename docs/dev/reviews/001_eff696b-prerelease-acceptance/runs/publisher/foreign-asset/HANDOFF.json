@@ -1,0 +1,11 @@
+{
+  "source": "83fcaa47479857f69ade044d463c793460826a61",
+  "notes_source": "83fcaa47479857f69ade044d463c793460826a61",
+  "tag": "v0.15.0-cp014",
+  "notes": "## Controlled live-provider trial\n\nIsolated metadata fixture for post-upload stop and read-before-retry.\n",
+  "notes_sha256": "f1a81171ba63f22600a6feed7012b71139795b5c7499ab72ac3865e023bf8f52",
+  "publish": true,
+  "prerelease": true,
+  "make_latest": false,
+  "request_id": "037-cp014-foreign-asset-001"
+}

@@ -5,14 +5,14 @@
   "case_id": "A-001",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Coordinator substantively assessed SPEC/adjacent QC and accepted exact state",
+  "last_completed_action": "SPEC accepted; partial recovery and serialization observed",
   "pending_operation": {
     "kind": "api",
     "status": "in_progress",
-    "description": "First isolated trial failed at draft readback before upload injection. Existing exact empty draft reconciled; partial attempt 2 dispatched. Overlap/invalid-input results being read.",
+    "description": "Partial upload effect/recovery verified; body-conflict and unexpected owned-sentinel asset trials dispatched",
     "identity": {
       "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
-      "operation_id": "037-cp014-partial-002"
+      "operation_id": "037-cp014-final-negative-trials"
     }
   },
   "next_action": "Consumer prepares PLAN strategy/QC checkpoint; assess parallel publisher partial recovery",

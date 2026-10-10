@@ -1,0 +1,9 @@
+{
+  "kind": "Actual provider asset creation in isolated coordinator-owned fixture only",
+  "release_id": 408880857,
+  "asset_id": 627726873,
+  "name": "foreign-owned-fixture.txt",
+  "bytes_sha256": "6f20e7bce67c5aa0564392d1cfb45703144dc5dc945c519c1dcadaf4c29b741b",
+  "expected_policy": "Publisher must stop without deleting/clobbering unexpected asset",
+  "ownership": "Test coordinator owns sentinel; foreign only to selected publisher inventory"
+}

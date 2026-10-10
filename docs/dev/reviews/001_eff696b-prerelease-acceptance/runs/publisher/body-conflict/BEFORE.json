@@ -1,0 +1,22 @@
+{
+  "release_id": 408880857,
+  "body": "## Controlled live-provider trial\n\nIsolated metadata fixture for post-upload stop and read-before-retry.\n",
+  "assets": [
+    {
+      "id": 627714735,
+      "name": "sdd-manager.zip",
+      "size": 317921,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:50:03Z",
+      "updated_at": "2026-10-10T10:50:03Z"
+    },
+    {
+      "id": 627720214,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:53:04Z",
+      "updated_at": "2026-10-10T10:53:04Z"
+    }
+  ]
+}
