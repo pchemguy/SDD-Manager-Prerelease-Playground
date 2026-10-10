@@ -1,0 +1,8 @@
+tree 5255a305551a97af58461de3435f319811f35b1d
+parent 2d96774221165ac04096c8d57ddcefe85b2305e0
+author Codex <codex@openai.com> 1791657733 -0400
+committer Codex <codex@openai.com> 1791657733 -0400
+
+[T-014] Integrate binary stdin with text and range counting
+
+Select - as borrowed strict UTF-8 stdin; normalize once, optionally select preserved logical lines, emit completed exact text counts, and translate stdin read/decode failures. Real bytes/locale/EOF/BOM/options/huge/range/dash-file checks pass. Focused RED eight tests/42 failures precedes GREEN eight tests; full product runner 37 unit/33 integration passes, later expanded invalid acquisition matrix three tests passes, six README examples verified. Retain original helper/quoting failures. Minimal cooperating checker maintenance changes only two named-file dash argv to ./- under delegated scope. Result/tests/docs/evidence/initial checkbox atomic; exact20 QC hashes equivalent. Routine task closure authorized by coordinator; startup/hosted plan fb98e7b984134755845fc46390381d9933aa397e. Refs pchemguy/SDD-Manager-Prerelease-Playground#15.

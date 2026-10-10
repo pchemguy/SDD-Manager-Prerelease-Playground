@@ -1,0 +1,34 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "./-"
+    ],
+    "cwd": "/tmp/tmpp3ukd38w",
+    "stdout": "lines=1 words=2\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791660753.3818474,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "PYTHONUTF8": "0",
+      "PYTHONCOERCECLOCALE": "0"
+    },
+    "fixtures": {
+      "/tmp/tmpp3ukd38w/-": {
+        "sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "bytes": 11
+      }
+    },
+    "input_hex": "",
+    "input_text": null,
+    "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

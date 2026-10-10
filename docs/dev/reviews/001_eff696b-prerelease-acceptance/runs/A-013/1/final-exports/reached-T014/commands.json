@@ -1,0 +1,150 @@
+[
+  {
+    "command": [
+      "git",
+      "show",
+      "--format=fuller",
+      "--stat",
+      "dbf50d7b6d83c7ddf53f287d82b199db3e83fd89"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "commit dbf50d7b6d83c7ddf53f287d82b199db3e83fd89\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 14:42:13 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 14:42:13 2026 -0400\n\n    [T-014] Integrate binary stdin with text and range counting\n    \n    Select - as borrowed strict UTF-8 stdin; normalize once, optionally select preserved logical lines, emit completed exact text counts, and translate stdin read/decode failures. Real bytes/locale/EOF/BOM/options/huge/range/dash-file checks pass. Focused RED eight tests/42 failures precedes GREEN eight tests; full product runner 37 unit/33 integration passes, later expanded invalid acquisition matrix three tests passes, six README examples verified. Retain original helper/quoting failures. Minimal cooperating checker maintenance changes only two named-file dash argv to ./- under delegated scope. Result/tests/docs/evidence/initial checkbox atomic; exact20 QC hashes equivalent. Routine task closure authorized by coordinator; startup/hosted plan fb98e7b984134755845fc46390381d9933aa397e. Refs pchemguy/SDD-Manager-Prerelease-Playground#15.\n\n README.md                       | 37 ++++++++++++++++---\n docs/dev/TASKS-REVIEW-REPORT.md |  4 +-\n docs/dev/TASKS.md               | 41 ++++++++++++++++++++-\n tests/integration/test_cli.py   | 81 ++++++++++++++++++++++++++++++++++++++++-\n tests/unit/test_cli.py          | 50 +++++++++++++++++++++++++\n textstats/cli.py                | 26 ++++++++-----\n tools/check_distribution.py     |  4 +-\n 7 files changed, 222 insertions(+), 21 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "show",
+      "dbf50d7b6d83c7ddf53f287d82b199db3e83fd89",
+      "--",
+      "textstats/cli.py",
+      "tests/unit/test_cli.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "commit dbf50d7b6d83c7ddf53f287d82b199db3e83fd89\nAuthor: Codex <codex@openai.com>\nDate:   Sat Oct 10 14:42:13 2026 -0400\n\n    [T-014] Integrate binary stdin with text and range counting\n    \n    Select - as borrowed strict UTF-8 stdin; normalize once, optionally select preserved logical lines, emit completed exact text counts, and translate stdin read/decode failures. Real bytes/locale/EOF/BOM/options/huge/range/dash-file checks pass. Focused RED eight tests/42 failures precedes GREEN eight tests; full product runner 37 unit/33 integration passes, later expanded invalid acquisition matrix three tests passes, six README examples verified. Retain original helper/quoting failures. Minimal cooperating checker maintenance changes only two named-file dash argv to ./- under delegated scope. Result/tests/docs/evidence/initial checkbox atomic; exact20 QC hashes equivalent. Routine task closure authorized by coordinator; startup/hosted plan fb98e7b984134755845fc46390381d9933aa397e. Refs pchemguy/SDD-Manager-Prerelease-Playground#15.\n\ndiff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py\nindex 1a4df02..c305f73 100644\n--- a/tests/unit/test_cli.py\n+++ b/tests/unit/test_cli.py\n@@ -9,11 +9,61 @@ import tempfile\n import unittest\n from pathlib import Path\n from unittest.mock import patch\n+from types import SimpleNamespace\n \n from textstats import TextStats\n from textstats.cli import main\n \n \n+class StdinCliTests(unittest.TestCase):\n+    def invoke(self, args, stream):\n+        out, err = io.StringIO(), io.StringIO()\n+        with patch('textstats.cli.sys.stdin', SimpleNamespace(buffer=stream)), contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):\n+            status = main(args)\n+        return status, out.getvalue(), err.getvalue()\n+\n+    def test_stdin_is_binary_and_borrowed_for_whole_input_and_ranges(self):\n+        for args, raw, expected in [(['-'], b'', 'lines=0 words=0\\n'),\n+                                    (['-', '--keep-bom'], b'\\xef\\xbb\\xbf', 'lines=1 words=1\\n'),\n+                                    (['--lines=2:2', '-'], b'\\xef\\xbb\\xbfa\\n\\xef\\xbb\\xbf', 'lines=1 words=1\\n')]:\n+            stream = io.BytesIO(raw)\n+            self.assertEqual(self.invoke(args, stream), (0, expected, ''))\n+            self.assertFalse(stream.closed)\n+            self.assertEqual(stream.read(), b'')\n+\n+    def test_stdin_failures_identify_source_and_keep_stream_open(self):\n+        class BrokenReader(io.BytesIO):\n+            def read(self, *args):\n+                raise OSError('controlled stdin read failure')\n+        for stream, cause in [(io.BytesIO(b'ok\\n\\xff'), 'utf-8'), (BrokenReader(), 'controlled stdin read failure')]:\n+            for options in [[], ['--lines=1:1']]:\n+                stream.seek(0)\n+                status, out, err = self.invoke([*options, '-'], stream)\n+                self.assertEqual((status, out), (1, ''))\n+                self.assertIn('stdin', err)\n+                self.assertIn(cause, err)\n+                self.assertNotIn('Traceback', err)\n+                self.assertFalse(stream.closed)\n+\n+    def test_usage_and_help_precede_borrowed_acquisition(self):\n+        invalid = [[*group, '-'] for value in RangeCliTests.INVALID\n+                   for group in [['--lines', value], ['--lines=' + value]]]\n+        invalid += [['--json', '-'], ['--j', '-'], ['--json=value', '-'],\n+                     ['--lines=0:1', '-'], ['--lines=1:2', '--lines', '1:2', '-'],\n+                     ['--lines=1:2', '--lines=1:2', '-'],\n+                     ['--lines', '1:2', '--lines', '1:2', '-'],\n+                     ['-', 'extra'], ['--lines', '-'], ['--help']]\n+        for args in invalid:\n+            stream = io.BytesIO(b'input must remain unread')\n+            status, out, err = self.invoke(args, stream)\n+            self.assertEqual(status, 0 if args == ['--help'] else 2)\n+            self.assertEqual(stream.tell(), 0)\n+            self.assertFalse(stream.closed)\n+            if status == 2:\n+                self.assertEqual(out, '')\n+                self.assertIn('usage:', err)\n+\n+\n class CliTests(unittest.TestCase):\n     def test_removed_json_forms_reject_before_all_acquisition(self):\n         for option in ['--json', '--json=true', '--j']:\ndiff --git a/textstats/cli.py b/textstats/cli.py\nindex 8a308bc..09cb844 100644\n--- a/textstats/cli.py\n+++ b/textstats/cli.py\n@@ -1,4 +1,4 @@\n-\"\"\"Named-file range parsing and exact text presentation.\n+\"\"\"Named-file/stdin range parsing and exact text presentation.\n \n Expected acquisition/decode failures produce an identifying stderr diagnostic\n and status 1; invocation errors produce status 2 before acquisition.\n@@ -6,7 +6,7 @@ and status 1; invocation errors produce status 2 before acquisition.\n \n import argparse\n import sys\n-from .io import count_file, _read_file_text\n+from .io import count_file, _read_file_text, _read_stream_text\n from .core import _normalize_text, _select_lines, _count_normalized\n \n \n@@ -34,7 +34,7 @@ class _RangeAction(argparse.Action):\n \n \n def main(argv: list[str] | None = None) -> int:\n-    \"\"\"Parse one named file and emit its completed counts.\n+    \"\"\"Parse one named file or borrowed binary stdin and emit completed counts.\n \n     Args:\n         argv: Invocation arguments excluding the executable; None uses sys.argv.\n@@ -45,27 +45,35 @@ def main(argv: list[str] | None = None) -> int:\n     Range validation precedes acquisition; complete strict decode precedes\n     once-only BOM normalization, preserved selection and normalized counting.\n     The public API remains whole-input. Help never acquires input.\n-    Before stdin delivery a literal '-' remains a named filename. Expected\n-    file/decode failures are translated without a traceback; the public file\n+    A literal '-' reads sys.stdin.buffer through EOF without closing it;\n+    './-' addresses a named file. Expected input/decode failures are translated\n+    without a traceback; the public file\n     API retains its exceptions.\n     \"\"\"\n-    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')\n+    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in UTF-8 input.')\n     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')\n     parser.add_argument('--lines', action=_RangeAction, metavar='START:END', help='select inclusive positive ASCII decimal logical lines (one range only)')\n-    parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')\n+    parser.add_argument('input', metavar='INPUT', help='named UTF-8 file or - for binary stdin (use ./- for a file named -; -- before dash-prefixed names)')\n     try:\n         args = parser.parse_args(argv)\n     except SystemExit as exit_request:\n         return int(exit_request.code)\n     try:\n-        if args.lines is None:\n+        if args.input == '-':\n+            text = _read_stream_text(sys.stdin.buffer)\n+            normalized = _normalize_text(text, not args.keep_bom)\n+            if args.lines is not None:\n+                normalized = _select_lines(normalized, *args.lines)\n+            stats = _count_normalized(normalized)\n+        elif args.lines is None:\n             stats = count_file(args.input, strip_bom=not args.keep_bom)\n         else:\n             text = _read_file_text(args.input)\n             normalized = _normalize_text(text, not args.keep_bom)\n             stats = _count_normalized(_select_lines(normalized, *args.lines))\n     except (OSError, UnicodeDecodeError) as failure:\n-        print(f\"textstats: {args.input!r}: {failure}\", file=sys.stderr)\n+        source = 'stdin' if args.input == '-' else repr(args.input)\n+        print(f\"textstats: {source}: {failure}\", file=sys.stderr)\n         return 1\n     print(f'lines={stats.lines} words={stats.words}')\n     return 0\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/phase/2-json-and-stdin"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "dbf50d7b6d83c7ddf53f287d82b199db3e83fd89\trefs/heads/phase/2-json-and-stdin\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "archive",
+      "--format=tar",
+      "dbf50d7b6d83c7ddf53f287d82b199db3e83fd89",
+      "-o",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/product.tar"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/product-export",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/api.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/api-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/product-export",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/baseline.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/baseline-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/product-export",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/ranges.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/ranges-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/product-export",
+      "--suite",
+      "removal",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/removal.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/removal-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/product-export",
+      "--suite",
+      "stdin",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/stdin.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T014/runtime/stdin-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

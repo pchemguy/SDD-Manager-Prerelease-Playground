@@ -1,0 +1,256 @@
+[
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "-s",
+      "--format=%P",
+      "549a25f4f1bc7702afa0b729fc0894918ec9d16d"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 c05b65958e2a386cf2ae8782dca3e749ed9b60ff\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "549a25f4f1bc7702afa0b729fc0894918ec9d16d^{tree}"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "symbolic-ref",
+      "--short",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "main\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main",
+      "refs/heads/phase/2-json-and-stdin"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1\trefs/heads/main\nc05b65958e2a386cf2ae8782dca3e749ed9b60ff\trefs/heads/phase/2-json-and-stdin\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "archive",
+      "--format=tar",
+      "549a25f4f1bc7702afa0b729fc0894918ec9d16d"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "returncode": 0,
+    "stdout_binary": {
+      "sha256": "4058237573aaa25ba7c6c3ef2493b1d9ebb924233d418a860e126a17ac6fd19e",
+      "bytes": 1402880,
+      "artifact": "product.tar"
+    },
+    "stdout": null,
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/api.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/api-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/baseline.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/baseline-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/ranges.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/ranges-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+      "--suite",
+      "removal",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/removal.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/removal-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+      "--suite",
+      "stdin",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/stdin.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/stdin-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/distribution.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/distribution-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+    "returncode": 0,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/assess.py",
+      "--inputs",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/inputs.json",
+      "--run-state",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/run-state.json",
+      "--contract",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-013.json",
+      "--evidence",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/literal-evidence.json",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/original-DSL-assessment.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6",
+    "returncode": 1,
+    "stdout_binary": null,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/observe.py",
+      "--inputs",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/inputs.json",
+      "--run-state",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/run-state.json",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/recovery-observation.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6",
+    "returncode": 2,
+    "stdout_binary": null,
+    "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"sensitive_content_not_exportable\", \"next_action\": \"Retain protected content separately; do not publish it as test evidence.\"}\n",
+    "stderr": ""
+  }
+]

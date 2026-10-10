@@ -1,0 +1,8 @@
+tree 070a307d036152ee5875cb88353337c540f4b68f
+parent 77e7106e3134cc7053a2b1a045cf1a76cf0361ea
+author Codex <codex@openai.com> 1791657410 -0400
+committer Codex <codex@openai.com> 1791657410 -0400
+
+[T-013] Add borrowed binary UTF-8 acquisition
+
+Read complete borrowed binary streams with strict UTF-8 while preserving terminators/BOMs and caller ownership. Three meaningful RED failures precede GREEN 15 focused tests and 34-unit/28-integration full product checks on Python 3.12.14. Atomic result/tests/evidence/initial checkbox; equivalent resume navigation and QC hashes preserve prior review history. Exact staged tree 070a307d036152ee5875cb88353337c540f4b68f accepted at coordinator 0af8c4c9b9e8f3167e2fb5faef31e310b432186c. Refs pchemguy/SDD-Manager-Prerelease-Playground#14.

@@ -1,0 +1,38 @@
+{
+  "tree": "070a307d036152ee5875cb88353337c540f4b68f",
+  "checks": {
+    "SPEC historical body exact": true,
+    "SPEC H1 spacing": true,
+    "SPEC current PROJECT.md": true,
+    "SPEC current ARCHITECTURE.md": true,
+    "SPEC current DECOMPOSITION.md": true,
+    "SPEC current SPEC.md": true,
+    "PLAN historical body exact": true,
+    "PLAN H1 spacing": true,
+    "PLAN current PROJECT.md": true,
+    "PLAN current ARCHITECTURE.md": true,
+    "PLAN current DECOMPOSITION.md": true,
+    "PLAN current SPEC.md": true,
+    "PLAN current SPEC-REVIEW-REPORT.md": true,
+    "PLAN current PLAN.md": true,
+    "PLAN current layout.md": true,
+    "TASKS historical body exact": true,
+    "TASKS H1 spacing": true,
+    "TASKS current PROJECT.md": true,
+    "TASKS current ARCHITECTURE.md": true,
+    "TASKS current DECOMPOSITION.md": true,
+    "TASKS current SPEC.md": true,
+    "TASKS current SPEC-REVIEW-REPORT.md": true,
+    "TASKS current PLAN.md": true,
+    "TASKS current PLAN-REVIEW-REPORT.md": true,
+    "TASKS current layout.md": true,
+    "TASKS current TASKS.md": true,
+    "only initial T013 checkbox changed": true,
+    "historical TASKS evidence exact": true
+  },
+  "difference_from_first_candidate": [
+    "docs/dev/SPEC-REVIEW-REPORT.md",
+    "docs/dev/TASKS-REVIEW-REPORT.md",
+    "docs/dev/PLAN-REVIEW-REPORT.md"
+  ]
+}

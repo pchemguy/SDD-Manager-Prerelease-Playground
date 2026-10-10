@@ -1,0 +1,27 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "--help"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "stdout": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount CRLF/CR/LF lines and Unicode whitespace words in UTF-8 input.\n\npositional arguments:\n  INPUT              named UTF-8 file or - for binary stdin (use ./- for a\n                     file named -; -- before dash-prefixed names)\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading Unicode BOM as ordinary content\n  --lines START:END  select inclusive positive ASCII decimal logical lines\n                     (one range only)\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791660744.103563,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

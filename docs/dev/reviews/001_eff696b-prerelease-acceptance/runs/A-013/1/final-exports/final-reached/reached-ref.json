@@ -1,0 +1,9 @@
+{
+  "head": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+  "parents": [
+    "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+  ],
+  "tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "remote_stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1\trefs/heads/main\nc05b65958e2a386cf2ae8782dca3e749ed9b60ff\trefs/heads/phase/2-json-and-stdin\n"
+}

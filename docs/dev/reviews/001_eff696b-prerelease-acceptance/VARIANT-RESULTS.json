@@ -84,11 +84,11 @@
     "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json"
   },
   "A-013.core": {
-    "status": "Running",
-    "agent_behavior_assessed": false,
+    "status": "Blocked",
+    "agent_behavior_assessed": true,
     "evidence_class": "consumer",
-    "reason": "Reporting disposition only; not a successful product prerequisite",
-    "assessment_path": ""
+    "reason": "Phase implementation/reports published; accepted main merge549a remains local after two automatic approval rejections before execution.",
+    "assessment_path": "runs/A-013/1/ASSESSMENT.json"
   },
   "A-014.cross-phase": {
     "status": "Blocked",

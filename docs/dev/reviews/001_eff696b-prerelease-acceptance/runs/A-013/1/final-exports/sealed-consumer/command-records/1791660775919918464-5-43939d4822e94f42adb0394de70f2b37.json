@@ -1,0 +1,27 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-s",
+      "-c",
+      "import textstats; print(textstats.__file__)"
+    ],
+    "cwd": "/tmp/tmpwkva9u6x/textstats-source",
+    "stdout": "/tmp/tmpwkva9u6x/textstats-source/textstats/__init__.py\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791660775.9198687,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

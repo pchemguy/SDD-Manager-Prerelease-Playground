@@ -1,0 +1,24 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/tmp/tmp1o8_yn4s/tools/check_tests.py"
+    ],
+    "cwd": "/tmp/tmp1o8_yn4s",
+    "stdout": "unit: 1 tests\nintegration: 1 tests\n",
+    "stderr": "test_contract (tests.unit.test_contract.Contract.test_contract) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\ntest_contract (tests.integration.test_contract.Contract.test_contract) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+    "status": 0,
+    "time": 1791658645.9655304,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

@@ -5,26 +5,26 @@
   "case_id": "A-013",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Published T015ca24007 and exact four-file T016 report candidate independently assessed/accepted in9338f06",
+  "last_completed_action": "Completed and independently assessed T013\u2013T017; phase c05b659 published, local main merge549a assessed, publication blocked.",
   "pending_operation": {
     "kind": "task",
-    "status": "in_progress",
-    "description": "Accepted milestone review publication/closure then distinct final phase reports and prospective integration",
+    "status": "blocked",
+    "description": "Automatic review rejected default main publication twice before execution; no further retry without explicit recognized exact-main authorization.",
     "identity": {
-      "task_id": "T-016",
+      "task_id": "T-017",
       "branch": "phase/2-json-and-stdin",
       "repository": "pchemguy/SDD-Manager-Prerelease-Playground"
     }
   },
-  "next_action": "Complete immediately published T016/native closures; assess concrete T017 PHASE/IMPLEMENTATION report pair and completed-phase integration before final A013 grade",
+  "next_action": "Publish final independent assessment and reconcile reached reports; complete unaffected source review checkpoints, preserve blocked default-main boundary.",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
-    "product_commit": "ca24007134141265a1937c77e2fda504bb0d6129",
+    "product_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
     "integration_branch": "main",
     "integration_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "remote": "origin",
-    "evidence_commit": "9338f067a575511b6d818a6898a458957f4670a8"
+    "evidence_commit": "be27c345281f9d367c3327284b39c6a18eb14fd2"
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",

@@ -1,0 +1,29 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "--lines=1:1",
+      "/tmp/tmplxo1ndjw/bad",
+      "--keep-bom"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "stdout": "",
+    "stderr": "textstats: '/tmp/tmplxo1ndjw/bad': 'utf-8' codec can't decode byte 0xff in position 2: invalid start byte\n",
+    "status": 1,
+    "time": 1791660751.5797088,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctYTAxMy1maW5hbC1hcnRpZmFjdHMvcmVhY2hlZC1UMDE1L2FjdHVhbC1leHRyYWN0ZWQvdGV4dHN0YXRzLXNvdXJjZS90ZXh0c3RhdHMvX19pbml0X18ucHkK"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "two-last.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "before_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "name": "two-last.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=2 words=3\n",
+      "stdout_base64": "bGluZXM9MiB3b3Jkcz0zCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "one.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "before_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "name": "one.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:99",
+        "partial-eof.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "before_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "name": "partial-eof.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=2 words=3\n",
+      "stdout_base64": "bGluZXM9MiB3b3Jkcz0zCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "4:99",
+        "past-eof.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "before_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "name": "past-eof.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=0 words=0\n",
+      "stdout_base64": "bGluZXM9MCB3b3Jkcz0wCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:3",
+        "empty.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "name": "empty.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=0 words=0\n",
+      "stdout_base64": "bGluZXM9MCB3b3Jkcz0wCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:9",
+        "trailing-blank.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+        "before_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+        "input_sha256": "a7da489976d0047490617adb4f7a1f27f7af8b52a5176fd002ffe471863520ab",
+        "name": "trailing-blank.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=0\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0wCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:3",
+        "mixed.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+        "before_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+        "input_sha256": "beb74a29ba623daa03422c4f981494706cce9e0f32ddaf3b2fecb6b44f13c5d0",
+        "name": "mixed.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=2 words=3\n",
+      "stdout_base64": "bGluZXM9MiB3b3Jkcz0zCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "unicode.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "5ee53db3c285489840f587434383337e48da90addee41e0d214298893456a2c1",
+        "before_sha256": "5ee53db3c285489840f587434383337e48da90addee41e0d214298893456a2c1",
+        "input_sha256": "5ee53db3c285489840f587434383337e48da90addee41e0d214298893456a2c1",
+        "name": "unicode.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "bom.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "before_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "name": "bom.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=0 words=0\n",
+      "stdout_base64": "bGluZXM9MCB3b3Jkcz0wCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "--keep-bom",
+        "keep-bom.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "before_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "name": "keep-bom.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=1\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0xCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "exposed-interior.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8e7e019ad9ca126a0ae2a052de571af2c96e90ce5c865d1a3bb55b2a9b148638",
+        "before_sha256": "8e7e019ad9ca126a0ae2a052de571af2c96e90ce5c865d1a3bb55b2a9b148638",
+        "input_sha256": "8e7e019ad9ca126a0ae2a052de571af2c96e90ce5c865d1a3bb55b2a9b148638",
+        "name": "exposed-interior.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "double-bom.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+        "before_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+        "input_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9",
+        "name": "double-bom.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=1\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0xCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "01:02",
+        "decimal-zeroes.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "29fb0d2ed062fd6d42cfe3a2e892e9b8115c0730458935a3a6ade0a34ddb32b0",
+        "before_sha256": "29fb0d2ed062fd6d42cfe3a2e892e9b8115c0730458935a3a6ade0a34ddb32b0",
+        "input_sha256": "29fb0d2ed062fd6d42cfe3a2e892e9b8115c0730458935a3a6ade0a34ddb32b0",
+        "name": "decimal-zeroes.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=2 words=3\n",
+      "stdout_base64": "bGluZXM9MiB3b3Jkcz0zCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "bom-after.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "92bdf6f8ecf6c757b0cb0eda4f9208e77bb886a4f533e0fa1a2f5e874c02abee",
+        "before_sha256": "92bdf6f8ecf6c757b0cb0eda4f9208e77bb886a4f533e0fa1a2f5e874c02abee",
+        "input_sha256": "92bdf6f8ecf6c757b0cb0eda4f9208e77bb886a4f533e0fa1a2f5e874c02abee",
+        "name": "bom-after.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=1\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0xCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=+1:2",
+        "invalid-0.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-0.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=-1:2",
+        "invalid-1.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-1.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines= 1:2",
+        "invalid-2.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-2.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=1:2 ",
+        "invalid-3.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-3.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=\u0661:\u0662",
+        "invalid-4.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-4.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=:2",
+        "invalid-5.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-5.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=1:",
+        "invalid-6.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-6.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=0:2",
+        "invalid-7.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-7.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZW5kcG9pbnRzIG11c3QgYmUgcG9zaXRpdmUgd2l0aCBTVEFSVCA8PSBFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=2:1",
+        "invalid-8.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-8.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZW5kcG9pbnRzIG11c3QgYmUgcG9zaXRpdmUgd2l0aCBTVEFSVCA8PSBFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=1:2:3",
+        "invalid-9.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "invalid-9.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgcG9zaXRpdmUgQVNDSUkgZGVjaW1hbCBTVEFSVDpFTkQK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "before_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "range-missing.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected one argument\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogZXhwZWN0ZWQgb25lIGFyZ3VtZW50Cg==",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:2",
+        "--lines",
+        "2:3",
+        "range-repeat.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "before_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "range-repeat.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogYXJndW1lbnQgLS1saW5lczogLS1saW5lcyBtYXkgYmUgc3BlY2lmaWVkIG9ubHkgb25jZQo=",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "1:1",
+        "decode-after-end.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "c98c2c7946995fb84574ada12a4a0fdb42cc9c7445df3b8bb527da341c93b5fd",
+        "before_sha256": "c98c2c7946995fb84574ada12a4a0fdb42cc9c7445df3b8bb527da341c93b5fd",
+        "input_sha256": "c98c2c7946995fb84574ada12a4a0fdb42cc9c7445df3b8bb527da341c93b5fd",
+        "name": "decode-after-end.txt",
+        "stdin": false
+      },
+      "returncode": 1,
+      "status": "Completed",
+      "stderr": "textstats: 'decode-after-end.txt': 'utf-8' codec can't decode byte 0xff in position 2: invalid start byte\n",
+      "stderr_base64": "dGV4dHN0YXRzOiAnZGVjb2RlLWFmdGVyLWVuZC50eHQnOiAndXRmLTgnIGNvZGVjIGNhbid0IGRlY29kZSBieXRlIDB4ZmYgaW4gcG9zaXRpb24gMjogaW52YWxpZCBzdGFydCBieXRlCg==",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=2:2",
+        "equals.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-swbnlfnt",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "before_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "input_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "name": "equals.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "ranges"
+}

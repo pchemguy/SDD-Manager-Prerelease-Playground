@@ -1,0 +1,50 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "-"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "stdout": "lines=3 words=4\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791658654.4885552,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "PYTHONUTF8": "0",
+      "PYTHONCOERCECLOCALE": "0"
+    },
+    "fixtures": {
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product/sample.txt": {
+        "sha256": "c7f4c99277e25426e1feb4bee0b57b79da34978f57a66b9ddab5211972378eec",
+        "bytes": 26
+      },
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product/bad-range.txt": {
+        "sha256": "b08464e0f5de1395270f36afb42fc14b1f7d2384716cede322eeeb6c1e250319",
+        "bytes": 4
+      },
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product/bom.txt": {
+        "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "bytes": 3
+      },
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product/range.txt": {
+        "sha256": "b9aea9ac148918bdca4a76610cc41f8f6c765df5bdc20cc9fda1548c2a5689ea",
+        "bytes": 29
+      },
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product/-sample": {
+        "sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "bytes": 11
+      }
+    },
+    "input_hex": "ceb10d0ae78cab0dceb220ceb30a",
+    "input_text": null,
+    "input_sha256": "2d0ba3e4e5c24583ac92cdf5b8e165c7e1b45bc138b9db19fb3a4eb4bab2d9b6"
+  }
+}

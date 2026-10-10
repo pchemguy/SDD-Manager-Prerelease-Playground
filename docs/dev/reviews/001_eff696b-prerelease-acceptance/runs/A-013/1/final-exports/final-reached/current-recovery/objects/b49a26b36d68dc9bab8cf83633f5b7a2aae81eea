@@ -1,0 +1,12 @@
+tree c1a3d44edc98a3a11c2d491ba7da92ee32307253
+parent ca24007134141265a1937c77e2fda504bb0d6129
+author Codex <codex@openai.com> 1791659376 -0400
+committer Codex <codex@openai.com> 1791659376 -0400
+
+[T-016] Review and report UTF-8 stdin milestone exits
+
+Record separate coherent source review and twelve fresh stdin/sensitivity checks, with explicitly reused unchanged T-015 full 37 unit/34 integration, 478 isolated module and twelve-fence evidence. Resolved acceptance/flag findings and original facility limits remain visible; no remaining contract blocker and TODO None. Report/current evidence, initial T-016 checkbox and eligible milestone 2.2 parent are atomic.
+
+Exact four-file candidate tree c1a3d44edc98a3a11c2d491ba7da92ee32307253 accepted under delegated artifact-review authority. Decision and independent/root proofs published and exact remote verified at 9338f067a575511b6d818a6898a458957f4670a8, runs/A-013/1/T016-gate/. Existing native issue/milestone closure and guarded description-only phase-label maintenance follow this immediate publication/readback. T-017 final report pair and completed-phase integration remain separately gated.
+
+Closes #17

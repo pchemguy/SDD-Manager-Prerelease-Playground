@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "only_T015_initial_checkbox_changes": true,
+    "past_TASKS_completion_history_exact": true,
+    "current_TASKS_QC_hash_exact": true
+  },
+  "actual_checkbox_diff": [
+    [
+      [
+        "        ",
+        " ",
+        "T-015 \u2014 Complete final documentation and source-package exits"
+      ],
+      [
+        "        ",
+        "x",
+        "T-015 \u2014 Complete final documentation and source-package exits"
+      ]
+    ]
+  ],
+  "scope": "Actual reached T015 commit ca240071; prospective final review/integration not accepted"
+}

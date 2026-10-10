@@ -1,0 +1,48 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-s",
+      "-c",
+      "import inspect; import textstats; from textstats import TextStats, count_text, count_file; assert set(textstats.__all__) == {\"TextStats\", \"count_text\", \"count_file\"}; assert count_text(\"a b\\nc\") == TextStats(2, 3); assert count_file(\"sample.txt\") == TextStats(2, 3); assert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1); assert list(inspect.signature(count_text).parameters) == [\"text\", \"strip_bom\"]; assert list(inspect.signature(count_file).parameters) == [\"path\", \"strip_bom\"]; assert all(inspect.signature(f).parameters[\"strip_bom\"].kind == inspect.Parameter.KEYWORD_ONLY and inspect.signature(f).parameters[\"strip_bom\"].default is True for f in (count_text, count_file))"
+    ],
+    "cwd": "/tmp/tmp1u8n8at6/textstats-source",
+    "stdout": "",
+    "stderr": "",
+    "status": 0,
+    "time": 1791659618.1259348,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "fixtures": {
+      "/tmp/tmp1u8n8at6/textstats-source/sample.txt": {
+        "sha256": "24b366cf6891c1a7ba83804c7632b71c9d86cf530908a052bf08d0e128602da8",
+        "bytes": 5
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/--json": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/bad.txt": {
+        "sha256": "f3aed4332d915e609308980dc15bf0a502e131229bd899d5e8ee52bef8bd8703",
+        "bytes": 14
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/-": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/-sample": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      }
+    },
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

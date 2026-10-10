@@ -1,3 +1,7 @@
+## Current reached checkpoint — default publication blocked
+
+T013–T017 are completed and published at phase `c05b65958e2a386cf2ae8782dca3e749ed9b60ff`. Accepted local two-parent main merge `549a25f4f1bc7702afa0b729fc0894918ec9d16d` remains unpublished; remote main is `fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. Automatic approval review rejected both main-push requests before Git executed. A013 independent final disposition is **Blocked**, not a consumer instruction defect. No retry or transport/actor workaround is authorized by this state. Final assessed records are under `runs/A-013/1/final-exports`; prior chronology below remains historical. Reporting and source review preparation may continue.
+
 # Acceptance continuation
 
 ## Current reached continuation

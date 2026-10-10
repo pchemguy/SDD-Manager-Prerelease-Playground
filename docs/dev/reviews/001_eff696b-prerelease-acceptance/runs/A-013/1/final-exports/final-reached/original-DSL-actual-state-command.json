@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/inputs.json",
+    "--run-state",
+    "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/run-state-actual.json",
+    "--contract",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-013.json",
+    "--evidence",
+    "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/literal-evidence-corrected-envelope.json",
+    "--output",
+    "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/original-DSL-actual-state-assessment.json"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6",
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "",
+  "correction": "Bind remote_commit to actual fbe8 remote, retaining earlier desired-head binding. No check expected_ref uses remote_commit; actual deterministic result unaffected."
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "a013-independent-reached-final",
+  "phase": "P3",
+  "case_id": "A-013",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independently observed blocked-stop local merge and unchanged remote main; captured original suites on own exact export",
+  "pending_operation": null,
+  "next_action": "STOP blocked publication; platform-recognized explicit user authorization required before further push",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "integration_branch": "main",
+    "integration_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "merge_parents": [
+      "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+      "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+    ]
+  },
+  "evidence_paths": [
+    "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/runtime/literal-evidence.json"
+  ]
+}

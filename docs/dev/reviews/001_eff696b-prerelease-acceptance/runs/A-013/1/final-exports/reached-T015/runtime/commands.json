@@ -1,0 +1,110 @@
+[
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/api.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/api-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/baseline.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/baseline-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/ranges.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/ranges-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+      "--suite",
+      "removal",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/removal.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/removal-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+      "--suite",
+      "stdin",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/stdin.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/stdin-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/actual-extracted/textstats-source",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/distribution.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/runtime/distribution-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

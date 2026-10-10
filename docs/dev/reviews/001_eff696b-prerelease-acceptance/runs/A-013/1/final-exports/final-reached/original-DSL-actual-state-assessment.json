@@ -1,0 +1,64 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "published",
+      "reason": "Literal invariant differs.",
+      "status": "Failed"
+    },
+    {
+      "id": "merge-parents",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-api",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-baseline",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-ranges",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-removal",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-stdin",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-distribution",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Selection uses current amended requirements; retired JSON work is not selected/reintroduced. Inspect actual orientation decisions before implementation.",
+    "Stdin/range/BOM whole-input combinations, locale-independent bytes, errors/lifetime, named-file regressions and final docs/distribution pass.",
+    "All phase exits precede explicit two-parent phase integration/publication; no invented third phase.",
+    "Final phase review and its committed PHASE-REPORT.md are required even after delivery milestone reviews passed; final IMPLEMENTATION-REPORT.md aggregates admissible unresolved milestone/phase TODO findings with solution options and provenance. Review issue and milestone closure precede completed-phase integration.",
+    "Continuation checks current owning preparation evidence against material governing changes rather than trusting a Ready label; unchanged concerns can retain explained equivalent review evidence and phase completion still requires independent implementation exits."
+  ],
+  "schema_version": 1,
+  "status": "Checks failed"
+}

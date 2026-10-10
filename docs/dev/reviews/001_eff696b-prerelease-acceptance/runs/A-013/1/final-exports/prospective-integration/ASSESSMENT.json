@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "scope": "Independent prospective Phase2 integration gate only; actual merge commit/publication and final case seal remain pending",
+  "candidate_tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "ordered_parents": [
+    "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+  ],
+  "candidate_sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+  "merge_message_sha256": "eb51fa5b0e635b530fe212cc2adfcc2029adb6fe2db10244a973ad3d367e1157",
+  "findings": [],
+  "assessment": [
+    "Actual readonly pending main observations establish exact ordered HEAD/MERGE_HEAD, conflict-free index and exact published phase tree; protected/history deltas from resume baseline were independently empty.",
+    "Inspected actual raw merged runner and checker commands: both status0 with37unit/34integration and478extracted cases/API probes. Independently enumerated1628 immutable fresh child records; all explicit-B/env1. Exact actual ZIP SHA and all11 member bytes match current sources. Timestamp-only archive difference and prior12document-fence reuse are correctly labeled.",
+    "Concrete merge body records substantive cumulative named ranges/removal/stdin/API and distinct milestone/final implementation review gates, resolved findings/TODO provenance, original logging/argv/cleanup limits, actual own issue18/reviewmilestone6 closure before integration, bounded hosted preservation and immediate target-publication boundary.",
+    "Prior own original literal API/baseline/ranges/removal/stdin/distribution and12fences apply to unchanged committed product/docs bytes; no tests executed on positive checkout."
+  ],
+  "evidence": [
+    "before-commit-observations.json",
+    "independent-audit.json",
+    "candidate.json",
+    "merge-message.txt",
+    "actual-prospective-source.zip"
+  ],
+  "limits": [
+    "Consumer provider raw GET/PATCH records were inspected; independent provider GET is not claimed. Root additional four-resource late GET hash guard has its separate stated boundary.",
+    "No hard filesystem isolation exists. Shared filesystem access and first logger lost channels prevent universal complete read chronology or inaccessible-sibling certification.",
+    "This approves the concrete prospective integration only; completed actual merge/push/readback/seal and original DSL final reached-ref evaluation remain required."
+  ]
+}

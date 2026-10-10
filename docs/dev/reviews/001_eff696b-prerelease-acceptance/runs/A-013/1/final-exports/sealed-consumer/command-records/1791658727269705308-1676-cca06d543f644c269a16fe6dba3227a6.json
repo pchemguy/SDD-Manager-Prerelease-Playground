@@ -1,0 +1,24 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/tmp/tmpktaulldu/tools/check_tests.py"
+    ],
+    "cwd": "/tmp/tmpktaulldu",
+    "stdout": "unit: 1 tests\nintegration: 0 tests\n",
+    "stderr": "empty product suite: unit and integration must each collect tests\n",
+    "status": 1,
+    "time": 1791658727.2695997,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}
