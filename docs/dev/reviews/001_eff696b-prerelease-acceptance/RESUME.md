@@ -19,3 +19,11 @@ Rebuilt the source package from retained `ea515f5` with current Git 2.51.1; all 
 ## Verified recovery publication
 
 Recovery run `38045002859` Passed. Release `408861830` is published/prerelease, curated body exact, latest remains absent. Downloaded archive hash `08ae8da54f128179b03cfd71f647cddf35af71f07195b971845aa126158a0217` matches its checksum and the original CI build hash; all 133 shipped files match the committed playground source `fb7324d`. Assets `627669329`/`627669376` were observed uploaded. First failed attempt remains Failed; recovery is Passed with external restoration/diagnosis assistance. Complete-release rerun `037-complete-rerun-001` is dispatched; inspect result/identities before claiming idempotence. Fresh consumer A-001 is preparing product documents and must obtain real human review at required boundaries. Its starting/input evidence is retained.
+
+## CP-013 repeated trial and A-001 review boundary
+
+Complete rerun `38045221676` Passed with release/asset IDs, asset creation/update timestamps and exact body unchanged. Latest remains absent. This establishes successful complete reconciliation without duplicate or replaced assets; a native provider mutation audit log is unavailable. The original first trial remains Failed and the recovery assisted. Further fault/serialization targets remain pending CP-014.
+
+A-001 consumer published PROJECT/bootstrap at `b7b017cf7480bded8ad7f7de4a4eed690083b39c` on `design-docs/main`; main remains the setup pin. PROJECT blob `861ab8534bf96f22c8293922e34dbc292073bc1c` is pending real human review. Consumer holds ARCHITECTURE according to pinned human-document-review.md. Full A-001 is Running, not Passed; no production implementation or future hosted objects exist. Structured consumer chronology is retained; it is not a native transcript. Independent assessment follows.
+
+Independent assessor finds no material durable-state defect at the initial PROJECT checkpoint: all 133 vendored files match pinned manifest and source blobs; all 19 claimed loaded-source hashes match; both new root usage/disclosure files exactly match pinned asset bytes; remote refs and absence of premature implementation are verified. Full A-001 remains Running. Native transcript/presentation sequence and filesystem isolation cannot be certified.
