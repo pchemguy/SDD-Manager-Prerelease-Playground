@@ -1,0 +1,28 @@
+{
+  "run": {
+    "id": 38046245961,
+    "display_title": "Release 037-cp014-partial-002",
+    "head_sha": "fde1bf67ddcbccc0ff1e4a5ec41b3533bd076044",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-10T10:49:27Z",
+    "updated_at": "2026-10-10T10:50:06Z"
+  },
+  "jobs": [
+    {
+      "id": 114196268474,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 114196269237,
+      "name": "diagnose-draft-readback",
+      "conclusion": "skipped"
+    },
+    {
+      "id": 114196347332,
+      "name": "publish",
+      "conclusion": "failure"
+    }
+  ]
+}

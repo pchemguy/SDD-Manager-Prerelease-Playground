@@ -1,0 +1,48 @@
+{
+  "observed_at": "2026-10-10T10:51:30.061903+00:00",
+  "release": {
+    "id": 408880857,
+    "tag_name": "v0.15.0-cp014",
+    "draft": true,
+    "prerelease": true,
+    "body": "## Controlled live-provider trial\n\nIsolated metadata fixture for post-upload stop and read-before-retry.\n",
+    "assets": [
+      {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/releases/assets/627714735",
+        "id": 627714735,
+        "node_id": "RA_kwDOVDjAUc4laiqv",
+        "name": "sdd-manager.zip",
+        "label": "",
+        "uploader": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "node_id": "MDM6Qm90NDE4OTgyODI=",
+          "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+          "html_url": "https://github.com/apps/github-actions",
+          "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+          "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+          "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+          "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+          "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+          "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+          "type": "Bot",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "content_type": "application/octet-stream",
+        "state": "uploaded",
+        "size": 317921,
+        "digest": "sha256:1ebd303abe58c45451ae67bd34ea2ac47c838db48df9b9d715257a1a939ce248",
+        "download_count": 0,
+        "created_at": "2026-10-10T10:50:03Z",
+        "updated_at": "2026-10-10T10:50:03Z",
+        "browser_download_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/releases/download/untagged-643d4283afdc7ecfe426/sdd-manager.zip"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "decision": "Accepted",
+  "artifact": "docs/dev/SPEC.md and docs/dev/SPEC-REVIEW-REPORT.md",
+  "commit": "bf3eb5e9a8d30a9e8a457f7708afa3b400100417",
+  "spec_blob": "86cfd0c0cc6241bad1329a4873dbbc7517cc1160",
+  "review_blob": "6b7b1637fc0095387b2c32846725f64c4cc2e715",
+  "actor": "test coordinator under user delegation",
+  "basis": "Read complete SPEC and adjacent QC against request/design. R-001\u2013R-013 cover exact counting/BOM/UTF-8, silent whole-input API, status/output, JSON/stdin, nonempty test topology, resource lifetime, docs/extracted-source distribution. F-001\u2013F-004 preserve deferred range grammar, invalid precedence, full decode, existing subset/interior BOM and no arbitrary cap. All supplied examples preserved; staged stdin token semantics coherent. Constructor strict integer/bool exclusion and error categories are reasonable concrete settlements of required immutable nonnegative values. QC retains corrected ambiguous range composition with full recheck and exact current SPEC hash; no material issue found.",
+  "next_step": "Prepare PLAN strategy and adjacent owner QC; hold layout until its own assessment",
+  "evidence_class": "delegated coordinator acceptance, not direct-human artifact review",
+  "observed_at": "2026-10-10T10:53:31.196143+00:00"
+}
