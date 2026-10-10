@@ -1,0 +1,107 @@
+{
+  "status": "Passed with documented artifact-provenance limitation",
+  "bounded_atomic_parent_closure": "Passed",
+  "agent_behavior_assessed": true,
+  "default_catalog_grade": false,
+  "outside_default_32": true,
+  "checks": {
+    "retained_genuine_T009_ancestor": true,
+    "single_new_commit": true,
+    "exact_single_parent": true,
+    "single_T009_parent_subject": true,
+    "TASKS_only_committed": true,
+    "exact_reviewed_artifact": true,
+    "all_initial_task_checkboxes_preserved": true,
+    "all_nonTASKS_start_files_identical": true,
+    "LOCAL_remote_exact": true,
+    "index_no_staged_changes": true,
+    "only_trial_refs_advanced": true
+  },
+  "checkpoint_refs": {
+    "starting": "8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33",
+    "genuine_T009": "5b17e4650c64c7c735991931b591bdabb8069215",
+    "reached": "b65f47ec4ca15a77d2a42e051f935bfa7f55efc4",
+    "remote": "LOCAL trial-delivery",
+    "ref": "refs/heads/trial/parent-followup"
+  },
+  "first_attempt_failures": [],
+  "untracked_artifacts": [
+    {
+      "path": "-sample",
+      "bytes": 11,
+      "sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+      "mode": 33188,
+      "mtime_ns": 1791655345725579142,
+      "ctime_ns": 1791655359405595632
+    },
+    {
+      "path": "bom.txt",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+      "mode": 33188,
+      "mtime_ns": 1791655345620365983,
+      "ctime_ns": 1791655359405595632
+    },
+    {
+      "path": "sample.txt",
+      "bytes": 26,
+      "sha256": "c7f4c99277e25426e1feb4bee0b57b79da34978f57a66b9ddab5211972378eec",
+      "mode": 33188,
+      "mtime_ns": 1791655345504288071,
+      "ctime_ns": 1791655359405595632
+    }
+  ],
+  "limitations": [
+    "Three untracked example files appeared despite first post-check status claiming clean. Their names, bytes and mtimes match consumer original fence commands5/6. Consumer retracted unsupported foreign-creator characterization. Original cleanup loop/post-check clean status conflict with surviving files; survival or restoration chronology remains unresolved and no cause/other creator is attributed. They are preserved and never committed. Global filesystem-preservation certification is withheld.",
+    "LOCAL bare remote only, synthetic caller parent reassessment; no live hosted tracking/provider/target integration certification.",
+    "Shared filesystem broad access prevents isolation certification; no default case upgrade."
+  ],
+  "seal": {
+    "commit": "b65f47ec4ca15a77d2a42e051f935bfa7f55efc4",
+    "parent": "8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33",
+    "branch": "trial/parent-followup",
+    "TASKS_blob": "d98df037914f60969a319278e465e202ca725c9c",
+    "TASKS_sha256": "7088c0a254f225605b0373eaaf754c67281cba62c5c0652095be8f31796251a8",
+    "delivery_remote": "trial-delivery",
+    "delivery_ref": "refs/heads/trial/parent-followup",
+    "exact_remote_readback": "b65f47ec4ca15a77d2a42e051f935bfa7f55efc4\trefs/heads/trial/parent-followup",
+    "remaining_worktree": "?? -sample\n?? bom.txt\n?? sample.txt\n",
+    "origin": "read-only; not accessed",
+    "stopped": true
+  },
+  "postcompletion_evidence_clarification": {
+    "preserved_before_append": {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup-consumer-observations-first-completed-seal.json",
+      "sha256": "5a5c2216c891f607fe5207aaf66d43e3ad7a55bc382a070c5f81355b4e4da877"
+    },
+    "read_only_sample_stat": [
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup/sample.txt",
+        "mtime_utc": "2026-10-10T18:02:25.504288+00:00",
+        "ctime_utc": "2026-10-10T18:02:39.405596+00:00",
+        "sha256": "c7f4c99277e25426e1feb4bee0b57b79da34978f57a66b9ddab5211972378eec",
+        "size": 26
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup/bom.txt",
+        "mtime_utc": "2026-10-10T18:02:25.620366+00:00",
+        "ctime_utc": "2026-10-10T18:02:39.405596+00:00",
+        "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "size": 3
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup/-sample",
+        "mtime_utc": "2026-10-10T18:02:25.725579+00:00",
+        "ctime_utc": "2026-10-10T18:02:39.405596+00:00",
+        "sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "size": 11
+      }
+    ],
+    "correction": "Calling these examples unrelated or implying another creator was unsupported. Their contents and mtimes match examples created by my own README fence execution, before the closing commit. No independent evidence attributes their surviving presence to another actor.",
+    "original_runner_provenance": "The verification runner was an inline python heredoc invoked through functions.exec -> tools.exec_command, not a separately retained .py file. Its source in the tool-call transcript calls subprocess.run with cwd=root for fences, then loops sample.txt,bom.txt,-sample; for each existing Path(name) calls unlink(), followed by git diff --check and git status --porcelain=v1. Cleanup itself was not a separately logged command and had no per-file post-unlink stat/hash.",
+    "recorded_discrepancy": "Original observation command 13 records exit 0 and empty stdout/stderr from post-check git status. The tool return also reported the post-check worktree as empty. Persistence preflight and completion command 51 report all three example paths untracked. Current sample mtimes are about 18:02:25Z and shared ctimes are 18:02:39.405596Z, preceding commit 18:06:44Z. Original commands 0-35 have no timestamp field.",
+    "limits": "The recorded status/cleanup claim conflicts with surviving sample files. The available evidence does not establish why they survived or reappeared, and no independent process/filesystem transaction trace exists. A tool/runtime filesystem restoration or observation discrepancy is a hypothesis only, not an established cause. Do not infer another creator or successful lasting cleanup. Tracked worktree preservation and the exact TASKS-only commit remain established; overall worktree was not clean at completion.",
+    "actions": "No product writes/deletions/retests performed during clarification. Existing samples preserved. Earlier sealed observation fields and approved product TASKS bytes retained unchanged; this explanation is appended externally."
+  },
+  "assessor_product_writes": false
+}

@@ -1,0 +1,6 @@
+tree 4a41a983bcb117120aec0f4b0c751386129525ab
+parent c908c19a5828a32d46f97a269820445d9f41faf9
+author Codex <codex@openai.com> 1791655530 -0400
+committer Codex <codex@openai.com> 1791655530 -0400
+
+Accept exact justified parent-only follow-up before persistence (037 CP020)

@@ -1,0 +1,28 @@
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -10,7 +10,7 @@
+ 
+ ## Phase 1 — Named-file utility
+ 
+-- [ ] Phase 1 — Named-file utility
++- [x] Phase 1 — Named-file utility
+     - [x] Milestone 1.1 — Named-file counting
+         - [x] T-001 — Implement immutable statistics and whole-text counting
+             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.
+@@ -53,7 +53,7 @@
+             Depends on: T-005, T-006 and T-007.
+             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.
+             Report: [milestone 1.2 review](reports/phases/1/1.2.md).
+-    - [ ] Milestone 1.3 — Phase 1 review
++    - [x] Milestone 1.3 — Phase 1 review
+         - [x] T-009 — Review, test and report phase 1
+             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.
+             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.
+@@ -192,3 +192,7 @@
+ ## Current isolated parent follow-up
+ 
+ This caller-authored local trial retains genuine verified T-009 closing commit `5b17e4650c64c7c735991931b591bdabb8069215`, its initial task checkbox, complete result/review/evidence and every prior task. It reopens only the local phase1 and review-milestone1.3 parent acceptance gate for a fresh current-state verification and justified parent-only status follow-up. Historical parent closure remains recorded in original history. Current trial tracking is explicitly declined; no live issue/milestone state is inferred from inherited historical records. Only a later separately authorized parent-status follow-up may complete these two current gates; no task result or initial checkbox may be replayed.
++
++Current acceptance is verified for the separately authorized T-009 parent-only follow-up on `trial/parent-followup` at retained HEAD `8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33`. Inspected the genuine T-009 closing parent diff at `5b17e4650c64c7c735991931b591bdabb8069215`: its substantive phase report, current completion evidence and initial T-009 checkbox close together with a single owning ID. Bounded T-001 through T-009 closing-diff inspection confirms each task retains its own result/evidence and initial checkbox; the current trial differs from T-009 only in TASKS parent status/evidence. Delivery milestone reports and the phase report remain unchanged, M1.2-001 remains resolved and TODO is None. Current contracts, implementation and test coverage were inspected; no current Phase 1 acceptance blocker was found. This follow-up completes only local Phase 1 and review milestone 1.3 acceptance; executable tasks and historical reports are not replayed or rewritten.
++
++Fresh checks from the checkout root on Python 3.12.14: `python tools/check_tests.py` passed independently collected 23 unit and 18 integration tests without skips or warnings; `python tools/check_distribution.py` verified the exact isolated extracted import and 36 real module cases. Every current runnable Bash/Python fence in README and the public API guide was executed verbatim successfully, including explicit nonempty discoveries, API assertions, BOM/dash/help demonstrations, builder/checker and separate extracted sample (`lines=3 words=5`). Local user-guide links resolve and `git diff --check` passed; tracked worktree remained clean after owned example cleanup. These checks verify the current named-file/API/failure/resource/documentation/source-distribution exits. Tracking is declined for this isolated trial: LOCAL delivery only, origin read-only, with no provider readback or writes and no inferred current hosted closure. No target integration/publication, Phase 2, future range feature or release was performed or authorized. Broader runtime/platform coverage, external notice links and installed packaging remain unverified. Earlier task results, reports and publication/hosted evidence remain historical evidence rather than fresh observations.

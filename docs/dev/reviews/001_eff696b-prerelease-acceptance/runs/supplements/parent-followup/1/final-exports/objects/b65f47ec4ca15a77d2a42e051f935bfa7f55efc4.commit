@@ -1,0 +1,8 @@
+tree 3b83e13ae2fd2bd4bb63e2e1ffc275d9fa6c4647
+parent 8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33
+author Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655604 -0400
+committer Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655604 -0400
+
+[T-009] Reconcile verified local Phase 1 parent acceptance
+
+Complete only the reopened local Phase 1 and milestone 1.3 parent acceptance after current exits were verified and exact TASKS bytes received delegated approval. Retain the genuine T-009 initial closing result, checkbox, phase report and all historical task evidence. Current trial tracking is declined; local delivery only. Product suites passed 23 unit and 18 integration tests on Python 3.12.14; 36 isolated extracted module cases and all seven runnable user-guide fences passed. No task replay, provider operations, integration, Phase 2 or release.

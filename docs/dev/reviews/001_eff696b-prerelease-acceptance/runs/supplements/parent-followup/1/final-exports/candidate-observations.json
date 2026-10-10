@@ -1,0 +1,902 @@
+{
+  "request_path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup-setup/ordinary-input.md",
+  "repository": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+  "scope": "T-009 parent-only Phase 1 and milestone 1.3 proposal; LOCAL delivery, tracking declined, origin read-only",
+  "inspected_file_hashes": {
+    "AGENTS.md": {
+      "sha256": "35b5ac4e3bf7bcebfacb516b62e9ef6995475844edb01b1b4529a29cd6d9c2df",
+      "git_blob": "19009dc1fdddebad7ec9f2df748c3f8b142b53d9"
+    },
+    "docs/dev/PROJECT.md": {
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "git_blob": "396d252178e097bde725121d1b89abc6e78d629f"
+    },
+    "docs/dev/SPEC.md": {
+      "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+      "git_blob": "6e406906e53b643695e2c455151e46a0dafd743c"
+    },
+    "docs/dev/PLAN.md": {
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "git_blob": "2489ae62baa0159775f721355808fb56af8697cf"
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "26086104b60b0ffa7817fdebc5437b94922de76e651ddc127ea39e7888de82b8",
+      "git_blob": "5c3ce19eaaeaefa8d4ca326f5b91eb2e2231d9bb"
+    },
+    "docs/dev/ARCHITECTURE.md": {
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "git_blob": "7787992d419a44870722f4c3c6c677ef6b04a0e3"
+    },
+    "docs/dev/DECOMPOSITION.md": {
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "git_blob": "4a559eed6e875435537a0d7befea7dc4c67430f2"
+    },
+    "docs/dev/layout.md": {
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "git_blob": "32d3194ce111a0feac516e7628bb0fe5ce78a314"
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+      "git_blob": "8a40dabb3537e953f517d4e6f76be58cc55f01fc"
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+      "git_blob": "1c2fe42dba149449987db10c0a0346878221f839"
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+      "git_blob": "44c062eeae26ac155121940968910394e0554a4b"
+    },
+    "docs/dev/reports/phases/1/PHASE-REPORT.md": {
+      "sha256": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03",
+      "git_blob": "99097550d564dc2b35e9bead3421dc0446026c8f"
+    },
+    "docs/dev/reports/phases/1/1.1.md": {
+      "sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+      "git_blob": "d6707fbfbfd75914bc4b49adacb8e9dceba2fad2"
+    },
+    "docs/dev/reports/phases/1/1.2.md": {
+      "sha256": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53",
+      "git_blob": "cbc5b7950e86567fd7d81f0944a69491651c27c9"
+    },
+    "README.md": {
+      "sha256": "150967f90086ec52b90b9533026188cd2ef430e49c4f2a345eb21f807c303e5b",
+      "git_blob": "076b2a8592d567a167c3884959fc0383c931cedf"
+    },
+    "docs/public-api.md": {
+      "sha256": "6ad1a66c58e285ac085d2f6c8dac7f1c804294352a873e2b24e80f89241d2944",
+      "git_blob": "e6e685baad74dfba7615c72c9b646e2766bb87ad"
+    },
+    "textstats/io.py": {
+      "sha256": "a45b0a1f320109f43d92e1b01507c2c2da941af51af09ede378724038db32b9f",
+      "git_blob": "176d742290755832ab953bbec064468b2a211cdf"
+    },
+    "textstats/__init__.py": {
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+      "git_blob": "db3821caecba190e1283572a02f31ebbb411bc22"
+    },
+    "textstats/core.py": {
+      "sha256": "98b3374375eb7e6d4a301cabff99eb5e09ccccecbd9a808954e9c5cae084609f",
+      "git_blob": "5b17cfdcd3f4285ac3bf59e47365dfd818665c6d"
+    },
+    "textstats/cli.py": {
+      "sha256": "43e7e042edb7693ea2ba828726b691e2372feecb7954d7d05734c82a7b6319c1",
+      "git_blob": "19fe35e860f62d49aac11c8251ad3cae3072a14d"
+    },
+    "textstats/__main__.py": {
+      "sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590",
+      "git_blob": "a499e2f3c79dc8cdf0c12a8f31ed43988a1deda8"
+    },
+    "tools/package_source.py": {
+      "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+      "git_blob": "a4247542b7fb5b0ecc866bde2311b41d5294509b"
+    },
+    "tools/check_tests.py": {
+      "sha256": "1c0bc3d2c5ef400806aa9de66ec4af40c632acf206d90105c6f8559b2413b619",
+      "git_blob": "febb2fc852f5cae6537562d1b48d24bcebfa679e"
+    },
+    "tools/check_distribution.py": {
+      "sha256": "f72ffb2b8ba40f84ddfd2bd257dfa601b86ed3d8c67dbadf011b897dafec8607",
+      "git_blob": "693ff81401566258206bf0c2d8745b2d817fa318"
+    },
+    "tests/unit/test_cli.py": {
+      "sha256": "b44f184bf0fa12310e337658e043fd3ddeb2e420995522988d5c34afc7535a76",
+      "git_blob": "213d952b22ebf331d74367cb3ed655080f0870f6"
+    },
+    "tests/unit/__init__.py": {
+      "sha256": "9c7fd62fe7e489b7c5124c32df27746ef9419531e46f4263ea89f21f8a497978",
+      "git_blob": "3f6f2999a92e733edcc18bb803bc634d40dba54c"
+    },
+    "tests/unit/test_io.py": {
+      "sha256": "22c6ec352b6757f7a5d4876972f22974774b3ec20c7bd4ca985bfb7169f46921",
+      "git_blob": "b27a4934bb0a234d620c5d545964409079d9c434"
+    },
+    "tests/unit/test_core.py": {
+      "sha256": "7750eddb9d64e3a7af2eb61652b2602f4d8ec5d5fb40a6282ce965665f348423",
+      "git_blob": "82d8acd8714d5735b0f2d467dd41995e78c83459"
+    },
+    "tests/integration/test_distribution.py": {
+      "sha256": "d26caa9a84c1d0506b2b2de3c6716a22b527d5fd92b46d33a07e3c918bd93f72",
+      "git_blob": "f85b203a9ec1db8ee041aa2c2a8f61a76da63b95"
+    },
+    "tests/integration/test_cli.py": {
+      "sha256": "0b292e6a338c7d4e157672ace2bf581ea24bf4011ad5df5ad315512d41c95cb8",
+      "git_blob": "74d59ccba8b27867af58baa5ddfb2690a62c8ab6"
+    },
+    "tests/integration/__init__.py": {
+      "sha256": "6d74eb5943bc4a44d8e67cf5ad5a899df9bc968c1d63a908dc66d865c188b3e8",
+      "git_blob": "1133ee21f6b69b73f4cd2fe75c90401351db1b82"
+    },
+    "tests/integration/test_api.py": {
+      "sha256": "ab84ec7182fa969c74107a8aee48921f450a362054a73b3cd187a4948add9749",
+      "git_blob": "a801dbb032e6cd34bf23404b75dc6f8943f85ca9"
+    }
+  },
+  "commands": [
+    {
+      "label": "baseline worktree",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "baseline HEAD",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33\n",
+      "stderr": ""
+    },
+    {
+      "label": "runtime",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "python",
+        "--version"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "Python 3.12.14\n",
+      "stderr": ""
+    },
+    {
+      "label": "fresh independently nonempty product suites",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "python",
+        "tools/check_tests.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "unit: 23 tests\nintegration: 18 tests\nextracted import: /tmp/tmpsfamizsd/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp567bxizr/textstats-source/textstats/__init__.py\n36 extracted module cases passed\n",
+      "stderr": "test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.199s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 4.918s\n\nOK\n"
+    },
+    {
+      "label": "fresh isolated extracted distribution",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "python",
+        "tools/check_distribution.py"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "extracted import: /tmp/tmpuhwjov6x/textstats-source/textstats/__init__.py\n36 extracted module cases passed\n",
+      "stderr": ""
+    },
+    {
+      "label": "README.md runnable fence 1 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "bash",
+        "-c",
+        "python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')\"\npython -m textstats sample.txt\npython -m textstats --help\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "lines=3 words=5\nusage: python -m textstats [-h] [--keep-bom] INPUT\n\nCount CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.\n\npositional arguments:\n  INPUT       named UTF-8 file (use -- before dash-prefixed names)\n\noptions:\n  -h, --help  show this help message and exit\n  --keep-bom  retain a leading Unicode BOM as ordinary content\n",
+      "stderr": ""
+    },
+    {
+      "label": "README.md runnable fence 2 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "bash",
+        "-c",
+        "python -c \"from pathlib import Path; Path('bom.txt').write_bytes(b'\\xef\\xbb\\xbf')\"\npython -m textstats bom.txt\npython -m textstats --keep-bom bom.txt\npython -c \"from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\\n')\"\npython -m textstats -- -sample\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "lines=0 words=0\nlines=1 words=1\nlines=1 words=2\n",
+      "stderr": ""
+    },
+    {
+      "label": "README.md runnable fence 3 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "python",
+        "-c",
+        "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\nbeta\\rlast two\\n\") == TextStats(3, 5)\nassert count_file(\"sample.txt\") == TextStats(3, 5)\nassert count_text(\"\\ufeff\") == TextStats(0, 0)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "README.md runnable fence 4 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "bash",
+        "-c",
+        "python tools/check_tests.py\npython -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "unit: 23 tests\nintegration: 18 tests\nextracted import: /tmp/tmph4b8dy9d/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpnxvrkdbo/textstats-source/textstats/__init__.py\n36 extracted module cases passed\nextracted import: /tmp/tmpl0lu2425/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpdo79y5o1/textstats-source/textstats/__init__.py\n36 extracted module cases passed\n",
+      "stderr": "test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.211s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 4.903s\n\nOK\ntest_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.248s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 18 tests in 4.759s\n\nOK\n"
+    },
+    {
+      "label": "README.md runnable fence 5 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "bash",
+        "-c",
+        "python tools/package_source.py\npython tools/check_distribution.py\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup/dist/textstats-source.zip\nextracted import: /tmp/tmpg3qhpvo_/textstats-source/textstats/__init__.py\n36 extracted module cases passed\n",
+      "stderr": ""
+    },
+    {
+      "label": "README.md runnable fence 6 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "bash",
+        "-c",
+        "example_dir=$(mktemp -d)\npython -m zipfile -e dist/textstats-source.zip \"$example_dir\"\n(\n    cd \"$example_dir/textstats-source\"\n    python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\\\r\\\\nbeta\\\\rlast two\\\\n')\"\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n)\nrm -r \"$example_dir\"\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "lines=3 words=5\n",
+      "stderr": ""
+    },
+    {
+      "label": "docs/public-api.md runnable fence 1 verbatim",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "python",
+        "-c",
+        "from pathlib import Path\nfrom textstats import TextStats, count_text, count_file\n\nassert TextStats(lines=2, words=3) == TextStats(2, 3)\nassert count_text(\"a b\\nc\") == TextStats(2, 3)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\nassert count_file(Path(\"sample.txt\"), strip_bom=True) == TextStats(3, 5)\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "current diff whitespace",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--check"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "label": "post-check worktree",
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--name-status",
+        "5b17e4650c64c7c735991931b591bdabb8069215",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "M\tdocs/dev/TASKS.md\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "--format=fuller",
+        "5b17e4650c64c7c735991931b591bdabb8069215",
+        "--",
+        "docs/dev/TASKS.md",
+        "docs/dev/reports/phases/1/PHASE-REPORT.md",
+        "AGENTS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "commit 5b17e4650c64c7c735991931b591bdabb8069215\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 09:29:54 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 09:29:54 2026 -0400\n\n    [T-009] Review and complete Phase 1 named-file utility exits\n    \n    Perform independent cross-milestone code review;23 unit+18 integration tests and36 extracted module cases pass. All runnable user-guide fences pass; preserve resolved M1.2-001 and TODO:None. Close only phase-review task with eligible parents; integration remains subsequent. Fixes pchemguy/SDD-Manager-Prerelease-Playground#10\n\ndiff --git a/AGENTS.md b/AGENTS.md\nindex a28d052..19009dc 100644\n--- a/AGENTS.md\n+++ b/AGENTS.md\n@@ -11,3 +11,7 @@ The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordina\n Development uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary and the current request's selected task boundary. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).\n \n Python 3.12.14 was verified for T-001. From the repository root, run `python -m unittest discover -s tests/unit -t . -v` and `python -m unittest discover -s tests/integration -t . -v`; both now collect actual product tests. `textstats/core.py` owns pure semantics; `textstats/__init__.py` now exports `TextStats`, `count_text` and `count_file`. Strict file acquisition and the baseline named-file CLI are delivered. Run `python tools/check_tests.py` for independently discovered nonempty unit/integration suites. Complete CLI failure handling is delivered. See the [public API/module reference](docs/public-api.md) and runnable [README](README.md). Run `python tools/package_source.py` for the allowlisted source ZIP and `python tools/check_distribution.py` for isolated extracted-import and real module-entry checks. Product tests require a checkout; the archive includes only package/docs/notices and the builder/checker. See [T-001 evidence](docs/dev/TASKS.md#t-001-completion-evidence) for the published baseline and bounded checks.\n+\n+## Phase 1 delivery checkpoint\n+\n+The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records completed named-file/API/error/documentation/distribution exits and the integration protocol. All nine Phase 1 task results are tracked in canonical TASKS; Phase 2 remains pending and outside the current request. Use the current Git/remote state for actual integration/publication identity rather than treating this navigation as a branch snapshot. The current verified product suites contain 23 unit and 18 integration tests; extracted distribution checks exercise 36 real module cases on Python 3.12.14. Broader runtime/platform coverage is unverified.\ndiff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex c089e55..11f45a4 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -10,7 +10,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n ## Phase 1 — Named-file utility\n \n-- [ ] Phase 1 — Named-file utility\n+- [x] Phase 1 — Named-file utility\n     - [x] Milestone 1.1 — Named-file counting\n         - [x] T-001 — Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n@@ -53,12 +53,12 @@ The user requested preparation through TASKS and stop before implementation. The\n             Depends on: T-005, T-006 and T-007.\n             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.\n             Report: [milestone 1.2 review](reports/phases/1/1.2.md).\n-    - [ ] Milestone 1.3 — Phase 1 review\n-        - [ ] T-009 — Review, test and report phase 1\n+    - [x] Milestone 1.3 — Phase 1 review\n+        - [x] T-009 — Review, test and report phase 1\n             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.\n             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.\n             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.\n-            Report: `docs/dev/reports/phases/1/PHASE-REPORT.md`.\n+            Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).\n \n ## Phase 2 — JSON and stdin\n \n@@ -182,3 +182,9 @@ Every updated README/public-guide runnable fence, including builder/checker and\n Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.\n \n `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.\n+\n+## T-009 completion evidence\n+\n+After T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` was published/read back, issue #9 closed/completed and native milestone #2 closed/read back with all four associated issues closed, both delivery milestone gates were satisfied. Performed a separate coherent cross-milestone implementation code review and all Phase 1 exits, recorded in [phase report](reports/phases/1/PHASE-REPORT.md). M1.2-001 remains resolved and TODO is None; no additional production repair was required. T-009 uniquely maps to issue #10, milestone #3.\n+\n+Fresh product runner passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. Fresh extraction checker verified exact isolated import and 36 real module cases. Every current README/public-guide runnable fence, including separate extracted example, passed; documented discovery counts are nonzero, outputs are exact and user-guide links resolve. Complete branch-scope inspection retains coordinator resources/pinned package/publisher fixture unchanged. Bounded T-001–T-008 actual parent-diff audit confirms per-task result/evidence/initial checkbox composition and leading single owning IDs. T-009 report/evidence/initial task checkbox and eligible phase/review-milestone parent status close together, followed by verified publication and hosted issue/review-milestone closure. Then integrate the complete phase via explicit two-parent merge, verify merged state and publish/read back main; integration evidence belongs in that actual merge summary. Stop before Phase 2; all T-010–T-017 remain unchecked/unprojected. Broader runtime/platform matrix and release remain outside scope.\ndiff --git a/docs/dev/reports/phases/1/PHASE-REPORT.md b/docs/dev/reports/phases/1/PHASE-REPORT.md\nnew file mode 100644\nindex 0000000..9909755\n--- /dev/null\n+++ b/docs/dev/reports/phases/1/PHASE-REPORT.md\n@@ -0,0 +1,46 @@\n+# Phase 1 review — Named-file utility\n+\n+## Identity and outcome\n+\n+Owning task: T-009; Phase 1 milestone 1.3. Source reviewed on `phase/1-named-file-utility` at `7b9f570aa4452d2ca9d6105479640528cb113f0e`. Starting integration baseline is accepted-preparation main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`. The complete-phase request authorizes T-005 through T-009, full-phase integration/publication and then stopping before Phase 2. Maintained Phase 1 tracking is active. Native delivery milestones #1 (1.1) and #2 (1.2) and constituent issues #2–#9 were confirmed closed before this phase review. T-009 maps uniquely to #10, review milestone #3.\n+\n+Phase 1 delivers an immutable silent whole-text/named-file API and useful real module CLI, with strict UTF-8, shared logical-line/word/BOM semantics, input preservation, robust expected failures, public documentation and isolated extracted-source distribution. Milestone reports [1.1](1.1.md) and [1.2](1.2.md) establish their respective reviews/exits. M1.2-001 is resolved; neither milestone carries a deferred TODO.\n+\n+## Independent phase code review\n+\n+Reviewed complete core, acquisition, public facade, parser/controller/rendering/module entry, product-test runner, packaging/extraction tools, product suites and README/public guide. Compared their cross-component behavior against SPEC R-001 through R-008/R-011 through R-013 and PLAN Phase 1 exits, separately from check execution.\n+\n+| Interaction / exit | Code review conclusion and verification |\n+| --- | --- |\n+| Text/file/CLI equivalence | File and CLI reuse whole-text counting; binary strict decoding preserves terminators, one complete-input BOM is removed at the counting boundary. Semantic matrix/API/file and actual CLI checks establish equivalence without separate algorithms. |\n+| Value/API boundary | Three direct exports and keyword-only policy; immutable validated fields, equality and silent imports/calls covered. No stdin/range parameter or new public export. |\n+| Failure/resource boundary | Complete acquisition/decode precedes result/rendering. Owned context closes on all paths. APIs retain OSError subclasses/UnicodeDecodeError; CLI translates only those expected errors with identifying cause/input, empty failure stdout and no traceback. Usage validation precedes acquisition; unsupported abbreviations now rejected. |\n+| Usability and source distribution | User docs align with signatures/status/count/ownership contracts. Builder's literal allowlist supplies modules/docs/notices/tools and excludes credentials/caches/development/coordinator/tests. Checker validates extraction import provenance with sanitized environment and actually invokes module entry. Corrupted-extraction sensitivity prevents false success from the healthy checkout. |\n+| Test collection and retained delivery | Independently discovered nonempty unit/integration suites exercise observable contracts; workflow fixtures excluded. Count runner rejects either empty suite and propagates failures. Normal options/help/dash-file behavior retained across robustness/distribution delivery. |\n+| Extension seams and boundary | Normalized counting and preserved logical traversal remain internal collaborators. JSON, byte stdin and range remain unimplemented and unprojected; Phase 2 depends on separately authorized activation after this integration. |\n+\n+No new bug, critical issue, SPEC/PLAN violation or missing required phase evidence was identified. No additional production repair was needed for T-009.\n+\n+## Actual verification\n+\n+Fresh checks from repository root against the published T-008 state on Python 3.12.14:\n+\n+- `python tools/check_tests.py`: 23 unit and 18 integration tests passed, no skips/warnings, independently nonempty.\n+- `python tools/check_distribution.py`: exact extracted import confirmed; 36 real module cases passed with expected statuses/stdout/stderr and unchanged bytes. Fourteen semantic inputs under both BOM policies, dash-file, missing/bad-byte failure, four usage cases including unknown abbreviation, and help were exercised.\n+- Executed every runnable Bash/Python fence in README/public guide verbatim: setup/sample/API assertions/BOM/dash/help, runner and explicit unittest discover, source build/check and separate extracted sample. All commands succeeded, sample output was exact three lines/five words, BOM-only policies produced zero/zero versus one/one and dash-file one/two. Temporary inputs cleaned.\n+- Local user-guide links resolved and changed diff whitespace passed. Source-scope inspection confirms coordinator resources, pinned plugin, existing publisher fixture and unrelated material unchanged.\n+- Bounded task audit of each T-001 through T-008 parent diff confirmed exact single owning task subjects, task result/evidence and one initial executable checkbox together. T-004/T-008 close only their own review tasks with eligible parent status. T-009 receives the same composition before integration; no aggregate or split closing result is permitted.\n+\n+Prior behavioral RED evidence is preserved in TASKS: T-005 four errors/four failures from twelve focused tests; T-007 three errors/one failure from four tests against valid unimplemented declarations; T-008 two abbreviation regressions. Documentation/review-only scope does not fabricate additional RED history.\n+\n+## Findings, TODO and limits\n+\n+Resolved finding: M1.2-001, parser accepted unsupported `--keep`, repaired/tested in T-008 at `7b9f570aa4452d2ca9d6105479640528cb113f0e`, with original RED and current extracted regression. No deferred milestone finding or new phase finding remains.\n+\n+TODO: None.\n+\n+Evidence covers local Python 3.12.14 in this environment, not a full supported-version/platform matrix, unrestricted real permission failures beyond controlled seams, external notice-link availability, installed packaging, JSON/stdin/ranges or release publication. The source archive is generated/ignored; reproducible builder source is tracked. This phase result does not claim completion of the entire two-phase project; no final IMPLEMENTATION-REPORT is produced before the full task list completes.\n+\n+## Completion and integration boundary\n+\n+Full Phase 1 acceptance/exits are verified. Report, evidence, initial T-009 checkbox and eligible milestone 1.3/Phase 1 parent status close together; publish and read back before issue #10 closure and native review milestone #3 closure/readback. Then audit all nine closing commits, refresh actual main, inspect complete branch delta and explicitly merge the pinned phase tip with two parents. Verify merged-state product/distribution/docs checks and record the actual parent tips/outcomes in the integration commit body, then push main and confirm exact remote containment. This report precedes that integration; it does not claim a future push succeeded. Retain phase branch and stop before Phase 2 activation/work and any release.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "log",
+        "--format=%H %s",
+        "--reverse",
+        "88a5c4b4424f4bba76940e40b1d6523b1f6fe191..5b17e4650c64c7c735991931b591bdabb8069215"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec [T-001] Implement immutable statistics and whole-text counting\nf28f6e415b3e0c13353a61e82354c47b0d2cabb2 [T-002] Implement strict file acquisition and complete public API\n373203d6f41bee2229eed900b761de8669678e0b [T-003] Integrate named-file CLI and nonempty product checks\n7d003c1cf31c994340d8644e95990ef2253754ed [T-004] Review named-file counting and complete milestone 1.1\n809f045e3cd32445e7dca29d0174ea25aa5da7ea [T-005] Handle named-file input failures without tracebacks\nfde1537b5c4ba1bcef4f538dfb47276d564e4aaa [T-006] Document public API and runnable named-file usage\nf7e3309b672cb13b1d8158613e81d50e8d1ecc18 [T-007] Build and verify isolated TextStats source distribution\n7b9f570aa4452d2ca9d6105479640528cb113f0e [T-008] Review distribution milestone and reject option abbreviations\n5b17e4650c64c7c735991931b591bdabb8069215 [T-009] Review and complete Phase 1 named-file utility exits\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "9dc8075dd1b96d3a2744717a9d6d98a3024acbec^",
+        "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 839c4ff..8b45e76 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -12,7 +12,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n - [ ] Phase 1 — Named-file utility\n     - [ ] Milestone 1.1 — Named-file counting\n-        - [ ] T-001 — Implement immutable statistics and whole-text counting\n+        - [x] T-001 — Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.\n             Depends on: none within the list; execution prerequisites above apply.\n@@ -114,3 +114,17 @@ Every review task requires both code review and actual testing; tests alone cann\n During future execution, the initial owning checkbox and one task's result/evidence close together in exactly one task commit whose subject starts with exactly one `[T-NNN]` marker. Push and verify every workflow-owned commit before advancing; then reconcile its issue. Complete/review each delivery milestone before its hosted closure; complete all delivery milestones before the dedicated phase review. Exactly one task owns each initial closure. Parent completion is evidence-backed; no task is marked complete by this preparation.\n \n Hosted tracking reads this complete hierarchy but projects only the eligible phase after actual task-list acceptance and implementation prerequisites. Every eligible task includes its phase label and parent milestone association. Required unknown/incomplete projection blocks execution, while later phases and the range feature stay unprojected. The final task-list checkpoint remains the current stopping boundary before any implementation or hosted projection.\n+\n+## T-001 completion evidence\n+\n+The current request supersedes the historical preparation-only stopping statements for exactly the first executable Phase 1 task. Selected T-001 in milestone 1.1, with no task dependency. Accepted preparation tip `1e3305c8659045945244c06861079fef879ca3c3` was explicitly merged into actual default `main`, parent `eff696b38f0b8a94bd6f91ca1c64d54fd714df46`, as `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`; merged document hashes, local links, heading spacing and document-only scope were verified and that exact remote tip read back before creating `phase/1-named-file-utility` from it. The accepted disclosure's two pre-existing whitespace warnings were preserved.\n+\n+Maintained Phase 1 tracking is confirmed by the current request. Before task edits/tests, provider readback verified `sdd-phase-1-Named-file-utility`, native milestones 1–3 (1.1, 1.2, 1.3), and unique marked T-001 through T-009 issues 2–10 with their phase label and correct milestone association. T-001 uniquely maps to `pchemguy/SDD-Manager-Prerelease-Playground#2`, milestone 1. Existing unrelated labels, issue text/comments and milestone content are preserved; later phases remain unprojected.\n+\n+Delivered immutable, equal-by-value integer/nonnegative statistics excluding bool, shared CRLF/CR/LF segment traversal preserving terminators, exactly-once whole-input BOM normalization, normalized counting using Unicode `str.split`, and the silent direct text facade. Internal traversal/counting allow later selection without renormalizing interior BOMs. Module/class/function docstrings describe the delivered contracts. File exports, acquisition, CLI, tools and public API guide are not delivered by this task. Narrow product cache ignores preserve existing rules.\n+\n+On Python 3.12.14 from the repository root, tests were written first. The initial unit discovery failed to import the absent package and is classified as setup failure, not behavioral RED. Minimal unimplemented declarations then enabled actual RED: unit discovery collected 10 tests and failed with 21 validation/equality/immutability failures and 43 missing-counting errors; integration discovery collected 5 tests and failed with two missing-counting errors. No test-first exception is claimed.\n+\n+After implementing the contracts, `python -m unittest discover -s tests/unit -t . -v` passed all 10 tests and `python -m unittest discover -s tests/integration -t . -v` passed all 5 tests, without skips or warnings. Evidence covers every whole-input SPEC matrix row under both policies; Unicode separators/whitespace and non-ASCII words; mixed/consecutive/final terminators; repeated/interior BOMs; equality, invalid fields and assignment/deletion immutability; direct exports/signatures, keyword-only policy, repeated-call independence and import/call silence. Verification also inspects source/document contracts and preserved internal segment seams. Coverage is T-001 on this runtime, not full Python-version, file/API, CLI or distribution acceptance. The future check tools are absent because their owning tasks are unselected.\n+\n+Exactly T-001's result, tests, documentation, current evidence and initial checkbox close together in its task commit. Publication and issue closure are subsequent observed operations reported in the workflow handoff. All parents and T-002 through T-017 remain unchecked. Stop after the verified push and hosted reconciliation of T-001; do not integrate the incomplete phase or start another task.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "9dc8075dd1b96d3a2744717a9d6d98a3024acbec"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": ".gitignore\nAGENTS.md\nREADME.md\ndocs/dev/TASKS.md\ntests/__init__.py\ntests/integration/__init__.py\ntests/integration/test_api.py\ntests/unit/__init__.py\ntests/unit/test_core.py\ntextstats/__init__.py\ntextstats/core.py\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "f28f6e415b3e0c13353a61e82354c47b0d2cabb2^",
+        "f28f6e415b3e0c13353a61e82354c47b0d2cabb2",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 8b45e76..917d17d 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -17,7 +17,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.\n             Depends on: none within the list; execution prerequisites above apply.\n             Evidence: all whole-input SPEC examples, Unicode separators/whitespace, repeated/interior BOMs, both policies, immutable value/equality and invalid constructor cases; direct imports/signatures and captured API silence. Discover focused unit and integration suites and record nonzero counts. Public file counting/module CLI remain later tasks within this same useful milestone.\n-        - [ ] T-002 — Implement strict file acquisition and complete public API\n+        - [x] T-002 — Implement strict file acquisition and complete public API\n             Outcome: R-006 byte-preserving strict UTF-8 file input and R-002 whole-file API, with required exceptions and owned-handle cleanup.\n             Scope: `textstats/io.py`, complete exports in `textstats/__init__.py`, module/API docstrings, `tests/unit/test_io.py` and real-file public API cases in `tests/integration/test_api.py`.\n             Depends on: T-001.\n@@ -128,3 +128,11 @@ On Python 3.12.14 from the repository root, tests were written first. The initia\n After implementing the contracts, `python -m unittest discover -s tests/unit -t . -v` passed all 10 tests and `python -m unittest discover -s tests/integration -t . -v` passed all 5 tests, without skips or warnings. Evidence covers every whole-input SPEC matrix row under both policies; Unicode separators/whitespace and non-ASCII words; mixed/consecutive/final terminators; repeated/interior BOMs; equality, invalid fields and assignment/deletion immutability; direct exports/signatures, keyword-only policy, repeated-call independence and import/call silence. Verification also inspects source/document contracts and preserved internal segment seams. Coverage is T-001 on this runtime, not full Python-version, file/API, CLI or distribution acceptance. The future check tools are absent because their owning tasks are unselected.\n \n Exactly T-001's result, tests, documentation, current evidence and initial checkbox close together in its task commit. Publication and issue closure are subsequent observed operations reported in the workflow handoff. All parents and T-002 through T-017 remain unchecked. Stop after the verified push and hosted reconciliation of T-001; do not integrate the incomplete phase or start another task.\n+\n+## T-002 completion evidence\n+\n+The milestone 1.1 request selects T-002 through T-004 and supersedes historical first-task/preparation stops only within this boundary. Startup clean branch/remote tip was `9dc8075dd1b96d3a2744717a9d6d98a3024acbec`; its T-001 result/evidence/initial checkbox and single-ID subject were inspected and compliant. Accepted preparation remains published on main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`. Current SPEC/PLAN/layout and adjacent Ready owner reviews retain unchanged governing contracts; TASKS differs only in T-001 completion evidence/status, which does not invalidate hierarchy QC. Maintained phase tracking readback returned the phase label, milestones 1–3 and unique marked T-001–T-009 issues 2–10 with correct parent associations before task edits/tests. T-002 maps uniquely to issue #3, milestone #1; T-001 issue #2 is closed.\n+\n+Delivered complete binary read followed by strict UTF-8 decoding, silent count_file with the prescribed keyword-only BOM policy and all three direct exports. The owned context manager closes on successful read, decode failure and read failure; OSError subclasses propagate unchanged, and input bytes/terminators are preserved. Module and function documentation describe the actual API and lifetime boundary.\n+\n+Tests preceded production behavior. With an unimplemented count_file declaration (so import/collection was valid), `python -m unittest discover -s tests/unit -t . -v` collected 14 tests and failed with six behavioral NotImplementedError errors at the acquisition scenarios; the ten core tests stayed green. After production implementation, that command passed 14 tests and `python -m unittest discover -s tests/integration -t . -v` passed 8 tests on Python 3.12.14 without skips or warnings. Coverage includes controlled success/read/decode/open failures and closed handles, PermissionError/FileNotFoundError/IsADirectoryError propagation, real-file strict decode and missing path, all whole-input matrix rows under both policies using str and Path arguments, Unicode content, exact byte preservation, direct exports/signature and API silence. Source and docstring inspection confirms no CLI dependency or fallback decoding. No TDD exception; broader CLI/distribution and other runtimes remain unverified. Exactly this task's result/tests/documentation/evidence/initial checkbox close together before publication and issue reconciliation; remaining milestone tasks and all parents stay open.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "f28f6e415b3e0c13353a61e82354c47b0d2cabb2"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "docs/dev/TASKS.md\ntests/integration/test_api.py\ntests/unit/test_io.py\ntextstats/__init__.py\ntextstats/io.py\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "373203d6f41bee2229eed900b761de8669678e0b^",
+        "373203d6f41bee2229eed900b761de8669678e0b",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 917d17d..1ba0a93 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -22,7 +22,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Scope: `textstats/io.py`, complete exports in `textstats/__init__.py`, module/API docstrings, `tests/unit/test_io.py` and real-file public API cases in `tests/integration/test_api.py`.\n             Depends on: T-001.\n             Evidence: import all three required public names; string/file equality for the sample matrix using str and Path inputs; missing/unreadable/read-failure OSError subclasses, invalid-byte UnicodeDecodeError, no partial result, closure on every path, API silence and unchanged file bytes. Use controlled failure streams for portable cleanup/read/unreadability checks and real temporary files for decode/equivalence. Rerun core/API regressions.\n-        - [ ] T-003 — Integrate named-file CLI and nonempty product checks\n+        - [x] T-003 — Integrate named-file CLI and nonempty product checks\n             Outcome: R-007 real module entry, exactly one input, `--keep-bom`, `--` dash-filename handling, exact text success and help; first useful end-to-end slice with R-012 collection evidence.\n             Scope: `textstats/cli.py`, `textstats/__main__.py`, CLI docstrings, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and `tools/check_tests.py`.\n             Depends on: T-002.\n@@ -136,3 +136,13 @@ The milestone 1.1 request selects T-002 through T-004 and supersedes historical\n Delivered complete binary read followed by strict UTF-8 decoding, silent count_file with the prescribed keyword-only BOM policy and all three direct exports. The owned context manager closes on successful read, decode failure and read failure; OSError subclasses propagate unchanged, and input bytes/terminators are preserved. Module and function documentation describe the actual API and lifetime boundary.\n \n Tests preceded production behavior. With an unimplemented count_file declaration (so import/collection was valid), `python -m unittest discover -s tests/unit -t . -v` collected 14 tests and failed with six behavioral NotImplementedError errors at the acquisition scenarios; the ten core tests stayed green. After production implementation, that command passed 14 tests and `python -m unittest discover -s tests/integration -t . -v` passed 8 tests on Python 3.12.14 without skips or warnings. Coverage includes controlled success/read/decode/open failures and closed handles, PermissionError/FileNotFoundError/IsADirectoryError propagation, real-file strict decode and missing path, all whole-input matrix rows under both policies using str and Path arguments, Unicode content, exact byte preservation, direct exports/signature and API silence. Source and docstring inspection confirms no CLI dependency or fallback decoding. No TDD exception; broader CLI/distribution and other runtimes remain unverified. Exactly this task's result/tests/documentation/evidence/initial checkbox close together before publication and issue reconciliation; remaining milestone tasks and all parents stay open.\n+\n+## T-003 completion evidence\n+\n+T-002 was closed durably at `f28f6e415b3e0c13353a61e82354c47b0d2cabb2`, pushed and read back as exact remote phase tip before T-003 work. Provider readback confirms its issue #3 closed/completed with the evidence comment; recovery after an overbroad Link-header guard independently read actual closed state and the existing comment without duplicating writes. T-003 uniquely maps to maintained issue #4, milestone #1.\n+\n+Delivered module-entry CLI, exactly one named input, useful no-acquisition help, `--keep-bom` before/after the input, `--` option termination and exact completed text output. A literal `-` is still a named file. The CLI shares count_file; no independent semantics or new API exports. Source docstrings describe the current success/help and intentionally incomplete next-milestone input-failure diagnostics. README/orientation now identify delivered capabilities without advertising future docs/distribution.\n+\n+Tests preceded behavior. `python -m unittest tests.unit.test_cli -v` collected seven tests and failed with four assertions and five NotImplementedError errors against unimplemented CLI and a runner that incorrectly returned success without discovery. These are observed behavioral RED failures, including both empty-suite rejection and propagation of a product failure. `python tools/check_tests.py` subsequently passed 21 unit and 12 integration tests on Python 3.12.14, without skips/warnings. The runner reports independent counts, rejects zero in either suite, executes both real product suites and propagates failure. Its subprocess fixtures exercise empty unit, empty integration, failure propagation, successful independent counts and exclusion of deliberately failing workflow fixtures.\n+\n+Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty input, exact status/stdout/stderr, before/after BOM option order, help without input, required single input and actual dash-prefixed names after `--`, including a file named `--keep-bom` and literal `-`. API equality and unchanged bytes are checked. Controlled CLI seams assert default/retaining policy and help without acquisition. Source/docstring/staged-scope review found no current contract violation. Complete R-008 diagnostics/status robustness, standalone public docs/distribution, JSON/stdin/range and other runtimes remain outside this task. The named-file useful demonstration and coherent milestone review follow in T-004; milestone/phase remain unchecked here.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "373203d6f41bee2229eed900b761de8669678e0b"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "AGENTS.md\nREADME.md\ndocs/dev/TASKS.md\ntests/integration/test_cli.py\ntests/unit/test_cli.py\ntextstats/__main__.py\ntextstats/cli.py\ntools/check_tests.py\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "7d003c1cf31c994340d8644e95990ef2253754ed^",
+        "7d003c1cf31c994340d8644e95990ef2253754ed",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 1ba0a93..4727e95 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -11,7 +11,7 @@ The user requested preparation through TASKS and stop before implementation. The\n ## Phase 1 — Named-file utility\n \n - [ ] Phase 1 — Named-file utility\n-    - [ ] Milestone 1.1 — Named-file counting\n+    - [x] Milestone 1.1 — Named-file counting\n         - [x] T-001 — Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.\n@@ -27,11 +27,11 @@ The user requested preparation through TASKS and stop before implementation. The\n             Scope: `textstats/cli.py`, `textstats/__main__.py`, CLI docstrings, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and `tools/check_tests.py`.\n             Depends on: T-002.\n             Evidence: real subprocess named-file/BOM/mixed-terminator/empty/help/dash-filename invocations with prescribed status/stdout/stderr, API equivalence and unchanged input. The standard-library test runner discovers unit/integration independently, reports counts, rejects zero collection in either suite and propagates test failure; workflow fixtures are excluded. Demonstrate a real file through API and CLI for milestone feedback. Complete CLI failure diagnostics/status robustness follows in T-005; JSON/stdin/range remain deferred.\n-        - [ ] T-004 — Review, test and report milestone 1.1\n+        - [x] T-004 — Review, test and report milestone 1.1\n             Scope: complete core/acquisition/public API/CLI capability and relevant dependencies; no extra feature delivery.\n             Depends on: T-001, T-002 and T-003.\n             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.\n-            Report: `docs/dev/reports/phases/1/1.1.md`.\n+            Report: [milestone 1.1 review](reports/phases/1/1.1.md).\n     - [ ] Milestone 1.2 — Failure handling and distribution\n         - [ ] T-005 — Complete named-file CLI failure and usage handling\n             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.\n@@ -146,3 +146,9 @@ Delivered module-entry CLI, exactly one named input, useful no-acquisition help,\n Tests preceded behavior. `python -m unittest tests.unit.test_cli -v` collected seven tests and failed with four assertions and five NotImplementedError errors against unimplemented CLI and a runner that incorrectly returned success without discovery. These are observed behavioral RED failures, including both empty-suite rejection and propagation of a product failure. `python tools/check_tests.py` subsequently passed 21 unit and 12 integration tests on Python 3.12.14, without skips/warnings. The runner reports independent counts, rejects zero in either suite, executes both real product suites and propagates failure. Its subprocess fixtures exercise empty unit, empty integration, failure propagation, successful independent counts and exclusion of deliberately failing workflow fixtures.\n \n Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty input, exact status/stdout/stderr, before/after BOM option order, help without input, required single input and actual dash-prefixed names after `--`, including a file named `--keep-bom` and literal `-`. API equality and unchanged bytes are checked. Controlled CLI seams assert default/retaining policy and help without acquisition. Source/docstring/staged-scope review found no current contract violation. Complete R-008 diagnostics/status robustness, standalone public docs/distribution, JSON/stdin/range and other runtimes remain outside this task. The named-file useful demonstration and coherent milestone review follow in T-004; milestone/phase remain unchecked here.\n+\n+## T-004 completion evidence\n+\n+Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.\n+\n+T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "7d003c1cf31c994340d8644e95990ef2253754ed"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "docs/dev/TASKS.md\ndocs/dev/reports/phases/1/1.1.md\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "809f045e3cd32445e7dca29d0174ea25aa5da7ea^",
+        "809f045e3cd32445e7dca29d0174ea25aa5da7ea",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 4727e95..2d609dd 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -33,7 +33,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.\n             Report: [milestone 1.1 review](reports/phases/1/1.1.md).\n     - [ ] Milestone 1.2 — Failure handling and distribution\n-        - [ ] T-005 — Complete named-file CLI failure and usage handling\n+        - [x] T-005 — Complete named-file CLI failure and usage handling\n             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.\n             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.\n             Depends on: T-004 and milestone 1.1 completion/closure.\n@@ -152,3 +152,11 @@ Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty inpu\n Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.\n \n T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.\n+\n+## T-005 completion evidence\n+\n+The complete-phase request selects T-005 through T-009 and explicit full-phase integration, superseding the historical Phase 1 partial stops. Startup published phase tip `7d003c1cf31c994340d8644e95990ef2253754ed` and main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191` were read back exactly; latest T-004 closing result/report/evidence/initial checkbox composition is compliant. Current SPEC/PLAN/layout hashes match the accepted Ready owner reports, and TASKS changes only completion/evidence, preserving reviewed hierarchy/contracts. Provider readback verified all nine uniquely marked Phase 1 task issues #2–#10 with phase label and milestones #1–#3, and T-001–T-004 issues plus milestone #1 closed. T-005 uniquely maps to #6 in milestone #2; unrelated hosted material is retained.\n+\n+Tests preceded the production change. `python -m unittest tests.unit.test_cli.CliTests tests.integration.test_cli -v` ran 12 tests with four errors and four failures: expected controlled FileNotFoundError/PermissionError/read OSError/decode errors escaped, real module missing-file failures exposed tracebacks and bad-byte failures omitted the input identity. These are meaningful behavioral RED. Usage-before-acquisition cases already passed. The CLI now catches only expected OSError/UnicodeDecodeError, emits identifying input/cause stderr, returns 1 and leaves stdout empty. Parsing precedes acquisition and retains status 2, success/help/BOM/dash-file contracts and silent API exceptions.\n+\n+`python tools/check_tests.py` passed 23 unit and 14 integration tests on Python 3.12.14, no skips/warnings; `git diff --check` passed. Controlled open/read/decode/owned-handle checks and CLI failures, real subprocess missing/bad-byte inputs under both BOM policies, invocation errors before acquisition, exact success/help streams, API semantics and unchanged bytes are covered. Source/docstring inspection found no scoped contract blocker. Broader runtime/platform coverage, public guide and distribution remain later selected tasks; Phase 2 stays unselected. Result/tests/source documentation/current evidence and initial T-005 checkbox close together before publication and issue #6 reconciliation.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "809f045e3cd32445e7dca29d0174ea25aa5da7ea"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "docs/dev/TASKS.md\ntests/integration/test_cli.py\ntests/unit/test_cli.py\ntextstats/cli.py\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "fde1537b5c4ba1bcef4f538dfb47276d564e4aaa^",
+        "fde1537b5c4ba1bcef4f538dfb47276d564e4aaa",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex 2d609dd..f5da7c4 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -38,7 +38,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.\n             Depends on: T-004 and milestone 1.1 completion/closure.\n             Evidence: status 1 for missing/unreadable/read/decode failures with identifying cause/input stderr, empty stdout and no traceback; status 2 for missing/extra input/unknown options with useful stderr and empty stdout; validate invocation before acquisition. Exercise controlled read/unreadability seams and real subprocess missing/bad-byte inputs. Retain named-file/BOM/help/API behavior and byte preservation; run nonempty unit/integration suites.\n-        - [ ] T-006 — Document public API and runnable named-file usage\n+        - [x] T-006 — Document public API and runnable named-file usage\n             Outcome: R-011 public API/module reference and runnable README for delivered phase 1 behavior.\n             Scope: `docs/public-api.md`, `README.md`, public module/function docstrings and discoverability links in `AGENTS.md` as needed.\n             Depends on: T-005.\n@@ -160,3 +160,9 @@ The complete-phase request selects T-005 through T-009 and explicit full-phase i\n Tests preceded the production change. `python -m unittest tests.unit.test_cli.CliTests tests.integration.test_cli -v` ran 12 tests with four errors and four failures: expected controlled FileNotFoundError/PermissionError/read OSError/decode errors escaped, real module missing-file failures exposed tracebacks and bad-byte failures omitted the input identity. These are meaningful behavioral RED. Usage-before-acquisition cases already passed. The CLI now catches only expected OSError/UnicodeDecodeError, emits identifying input/cause stderr, returns 1 and leaves stdout empty. Parsing precedes acquisition and retains status 2, success/help/BOM/dash-file contracts and silent API exceptions.\n \n `python tools/check_tests.py` passed 23 unit and 14 integration tests on Python 3.12.14, no skips/warnings; `git diff --check` passed. Controlled open/read/decode/owned-handle checks and CLI failures, real subprocess missing/bad-byte inputs under both BOM policies, invocation errors before acquisition, exact success/help streams, API semantics and unchanged bytes are covered. Source/docstring inspection found no scoped contract blocker. Broader runtime/platform coverage, public guide and distribution remain later selected tasks; Phase 2 stays unselected. Result/tests/source documentation/current evidence and initial T-005 checkbox close together before publication and issue #6 reconciliation.\n+\n+## T-006 completion evidence\n+\n+T-005 closing commit `809f045e3cd32445e7dca29d0174ea25aa5da7ea` was pushed and exact remote containment verified before documentation work; provider issue #6 is closed/completed with evidence. T-006 maps uniquely to #7, milestone #2. Delivered [public API/module reference](../public-api.md), runnable README setup/named-file/API/BOM/help/check examples, precise constructor/signature/counting/decode/exception/ownership/silence contracts and module responsibility navigation. Source docstrings were inspected against the guide and already satisfy the delivered boundaries. Root AGENTS retains controlling instructions and now reflects the authorized complete-phase stop and real public guide. Distribution is explicitly planned pending T-007; JSON/stdin/ranges are not advertised as delivered.\n+\n+Every runnable bash/Python fence in README and the public guide was executed verbatim in repository context on Python 3.12.14. The sample produced exact `lines=3 words=5`, BOM default/retaining produced zero/zero and one/one, dash-file produced one/two, help succeeded, and silent API assertions passed. Runner and separate documented discover commands each passed 23 unit and 14 integration tests with no skips/warnings. Local user-guide links resolve; changed diff whitespace passed. Temporary example inputs were cleaned. This documentation-only task adds no behavioral code and requires no fabricated RED cycle; existing source coverage supports the inspected contracts. External notice links and other runtimes were not revalidated. Documentation/navigation/evidence/initial checkbox close together before publication and issue #7 reconciliation.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "fde1537b5c4ba1bcef4f538dfb47276d564e4aaa"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "AGENTS.md\nREADME.md\ndocs/dev/TASKS.md\ndocs/public-api.md\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "f7e3309b672cb13b1d8158613e81d50e8d1ecc18^",
+        "f7e3309b672cb13b1d8158613e81d50e8d1ecc18",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex f5da7c4..e7d0de7 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -43,7 +43,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Scope: `docs/public-api.md`, `README.md`, public module/function docstrings and discoverability links in `AGENTS.md` as needed.\n             Depends on: T-005.\n             Evidence: document all three exports/signatures, constructor invariants, count/BOM/strict UTF-8/exception/lifetime/silence contracts, setup/check commands, exact text/help/status usage and planned distribution boundary. Execute every runnable named-file/API/help example against delivered code and current suites; documentation advertises neither JSON/stdin nor range as delivered.\n-        - [ ] T-007 — Build and verify isolated source distribution\n+        - [x] T-007 — Build and verify isolated source distribution\n             Outcome: R-013 allowlisted source archive and extracted-source module-entry acceptance, completing phase 1 distribution exits.\n             Scope: `tools/package_source.py`, `tools/check_distribution.py`, `tests/integration/test_distribution.py`, distribution instructions in README and necessary generated-artifact ignore rules while preserving existing rules.\n             Depends on: T-005 and T-006.\n@@ -166,3 +166,13 @@ Tests preceded the production change. `python -m unittest tests.unit.test_cli.Cl\n T-005 closing commit `809f045e3cd32445e7dca29d0174ea25aa5da7ea` was pushed and exact remote containment verified before documentation work; provider issue #6 is closed/completed with evidence. T-006 maps uniquely to #7, milestone #2. Delivered [public API/module reference](../public-api.md), runnable README setup/named-file/API/BOM/help/check examples, precise constructor/signature/counting/decode/exception/ownership/silence contracts and module responsibility navigation. Source docstrings were inspected against the guide and already satisfy the delivered boundaries. Root AGENTS retains controlling instructions and now reflects the authorized complete-phase stop and real public guide. Distribution is explicitly planned pending T-007; JSON/stdin/ranges are not advertised as delivered.\n \n Every runnable bash/Python fence in README and the public guide was executed verbatim in repository context on Python 3.12.14. The sample produced exact `lines=3 words=5`, BOM default/retaining produced zero/zero and one/one, dash-file produced one/two, help succeeded, and silent API assertions passed. Runner and separate documented discover commands each passed 23 unit and 14 integration tests with no skips/warnings. Local user-guide links resolve; changed diff whitespace passed. Temporary example inputs were cleaned. This documentation-only task adds no behavioral code and requires no fabricated RED cycle; existing source coverage supports the inspected contracts. External notice links and other runtimes were not revalidated. Documentation/navigation/evidence/initial checkbox close together before publication and issue #7 reconciliation.\n+\n+## T-007 completion evidence\n+\n+T-006 `fde1537b5c4ba1bcef4f538dfb47276d564e4aaa` was published/read back exactly and issue #7 closed/completed before this task. T-007 uniquely maps to #8 in milestone #2. Added explicit eleven-file standard-library source builder at `tools/package_source.py`, extraction checker at `tools/check_distribution.py`, independent distribution integration checks, narrow tool-cache ignore and real distribution instructions/navigation. Existing ignore rules and coordinator resources remain intact. The ZIP has `textstats-source/` root and exactly five package modules, README, public API guide, two disclosure/usage notices and builder/checker. Credentials/caches/tests/development/coordinator/workflow material is excluded. Required missing/symlink source files fail, rather than silently producing an incomplete allowlist.\n+\n+Tests preceded production functionality. With valid importable NotImplementedError declarations, `python -m unittest tests.integration.test_distribution -v` ran four tests and failed with three errors and one assertion failure, demonstrating absent packaging and checker behavior. Source review corrected the controlled faulty-archive test's CLI path before implementation; no false sensitivity claim is made for that earlier fixture. After implementation, the same four tests passed, including exact content/byte allowlist under harmless unrelated-file pollution, checkout-PYTHONPATH pollution and rejection of a deliberately wrong extracted CLI while the checkout remains healthy. No copied real credential enters a fixture.\n+\n+`python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. `python tools/check_distribution.py` verified exact extracted import path and 35 actual `python -s -m textstats` invocations from temporary extracted cwd with inherited PYTHONPATH/PYTHONHOME removed and user-site packages disabled: fourteen semantic/Unicode/terminator/BOM cases under both policies, dash-file success, missing/decode failures, three usage errors and help. Exact success/status/streams, input identity/cause/no traceback and unchanged sample/bad/dash bytes were verified; temporary extractions clean up on failure too. The checker builds an ignored archive and imports no checkout product code for acceptance.\n+\n+Every updated README/public-guide runnable fence, including builder/checker and a separate Bash extraction/example, executed successfully. The extracted example returned exact three lines/five words; checkout-only test commands are explicitly distinguished from archive tools. Local user-guide links and diff whitespace passed. Other runtimes/platforms, locale-varied stdin, JSON/ranges, installed packaging and release publication remain unverified/outside Phase 1. Result/tests/docs/evidence/initial checkbox close together before publication and issue #8 reconciliation.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "f7e3309b672cb13b1d8158613e81d50e8d1ecc18"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": ".gitignore\nAGENTS.md\nREADME.md\ndocs/dev/TASKS.md\ntests/integration/test_distribution.py\ntools/check_distribution.py\ntools/package_source.py\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "7b9f570aa4452d2ca9d6105479640528cb113f0e^",
+        "7b9f570aa4452d2ca9d6105479640528cb113f0e",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex e7d0de7..c089e55 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -32,7 +32,7 @@ The user requested preparation through TASKS and stop before implementation. The\n             Depends on: T-001, T-002 and T-003.\n             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.\n             Report: [milestone 1.1 review](reports/phases/1/1.1.md).\n-    - [ ] Milestone 1.2 — Failure handling and distribution\n+    - [x] Milestone 1.2 — Failure handling and distribution\n         - [x] T-005 — Complete named-file CLI failure and usage handling\n             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.\n             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.\n@@ -48,11 +48,11 @@ The user requested preparation through TASKS and stop before implementation. The\n             Scope: `tools/package_source.py`, `tools/check_distribution.py`, `tests/integration/test_distribution.py`, distribution instructions in README and necessary generated-artifact ignore rules while preserving existing rules.\n             Depends on: T-005 and T-006.\n             Evidence: build `dist/textstats-source.zip` with approved top-level/package/docs/disclosure/tool contents; exclude credentials/caches/coordinator resources/workflow fixtures. Extract temporarily, sanitize checkout import paths, verify imported package belongs to extraction, and actually invoke its `python -m textstats` from extracted source cwd. Check text/BOM/named-file success and input/decode/usage failures, exact outputs/statuses and unchanged inputs. Run archive/check integration plus nonempty product suites and the documented extracted-source example. No third-party build dependency or release publication.\n-        - [ ] T-008 — Review, test and report milestone 1.2\n+        - [x] T-008 — Review, test and report milestone 1.2\n             Scope: complete named-file robustness, API/module docs, README and source distribution plus retained 1.1 behavior.\n             Depends on: T-005, T-006 and T-007.\n             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.\n-            Report: `docs/dev/reports/phases/1/1.2.md`.\n+            Report: [milestone 1.2 review](reports/phases/1/1.2.md).\n     - [ ] Milestone 1.3 — Phase 1 review\n         - [ ] T-009 — Review, test and report phase 1\n             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.\n@@ -176,3 +176,9 @@ Tests preceded production functionality. With valid importable NotImplementedErr\n `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. `python tools/check_distribution.py` verified exact extracted import path and 35 actual `python -s -m textstats` invocations from temporary extracted cwd with inherited PYTHONPATH/PYTHONHOME removed and user-site packages disabled: fourteen semantic/Unicode/terminator/BOM cases under both policies, dash-file success, missing/decode failures, three usage errors and help. Exact success/status/streams, input identity/cause/no traceback and unchanged sample/bad/dash bytes were verified; temporary extractions clean up on failure too. The checker builds an ignored archive and imports no checkout product code for acceptance.\n \n Every updated README/public-guide runnable fence, including builder/checker and a separate Bash extraction/example, executed successfully. The extracted example returned exact three lines/five words; checkout-only test commands are explicitly distinguished from archive tools. Local user-guide links and diff whitespace passed. Other runtimes/platforms, locale-varied stdin, JSON/ranges, installed packaging and release publication remain unverified/outside Phase 1. Result/tests/docs/evidence/initial checkbox close together before publication and issue #8 reconciliation.\n+\n+## T-008 completion evidence\n+\n+Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.\n+\n+`python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "7b9f570aa4452d2ca9d6105479640528cb113f0e"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "README.md\ndocs/dev/TASKS.md\ndocs/dev/reports/phases/1/1.2.md\ntests/integration/test_cli.py\ntests/unit/test_cli.py\ntextstats/cli.py\ntools/check_distribution.py\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "5b17e4650c64c7c735991931b591bdabb8069215^",
+        "5b17e4650c64c7c735991931b591bdabb8069215",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex c089e55..11f45a4 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -10,7 +10,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n ## Phase 1 — Named-file utility\n \n-- [ ] Phase 1 — Named-file utility\n+- [x] Phase 1 — Named-file utility\n     - [x] Milestone 1.1 — Named-file counting\n         - [x] T-001 — Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n@@ -53,12 +53,12 @@ The user requested preparation through TASKS and stop before implementation. The\n             Depends on: T-005, T-006 and T-007.\n             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.\n             Report: [milestone 1.2 review](reports/phases/1/1.2.md).\n-    - [ ] Milestone 1.3 — Phase 1 review\n-        - [ ] T-009 — Review, test and report phase 1\n+    - [x] Milestone 1.3 — Phase 1 review\n+        - [x] T-009 — Review, test and report phase 1\n             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.\n             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.\n             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.\n-            Report: `docs/dev/reports/phases/1/PHASE-REPORT.md`.\n+            Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).\n \n ## Phase 2 — JSON and stdin\n \n@@ -182,3 +182,9 @@ Every updated README/public-guide runnable fence, including builder/checker and\n Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.\n \n `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.\n+\n+## T-009 completion evidence\n+\n+After T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` was published/read back, issue #9 closed/completed and native milestone #2 closed/read back with all four associated issues closed, both delivery milestone gates were satisfied. Performed a separate coherent cross-milestone implementation code review and all Phase 1 exits, recorded in [phase report](reports/phases/1/PHASE-REPORT.md). M1.2-001 remains resolved and TODO is None; no additional production repair was required. T-009 uniquely maps to issue #10, milestone #3.\n+\n+Fresh product runner passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. Fresh extraction checker verified exact isolated import and 36 real module cases. Every current README/public-guide runnable fence, including separate extracted example, passed; documented discovery counts are nonzero, outputs are exact and user-guide links resolve. Complete branch-scope inspection retains coordinator resources/pinned package/publisher fixture unchanged. Bounded T-001–T-008 actual parent-diff audit confirms per-task result/evidence/initial checkbox composition and leading single owning IDs. T-009 report/evidence/initial task checkbox and eligible phase/review-milestone parent status close together, followed by verified publication and hosted issue/review-milestone closure. Then integrate the complete phase via explicit two-parent merge, verify merged state and publish/read back main; integration evidence belongs in that actual merge summary. Stop before Phase 2; all T-010–T-017 remain unchecked/unprojected. Broader runtime/platform matrix and release remain outside scope.\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "diff-tree",
+        "--no-commit-id",
+        "--name-only",
+        "-r",
+        "5b17e4650c64c7c735991931b591bdabb8069215"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "AGENTS.md\ndocs/dev/TASKS.md\ndocs/dev/reports/phases/1/PHASE-REPORT.md\n",
+      "stderr": ""
+    },
+    {
+      "channel": "functions.exec -> tools.exec_command -> Python subprocess",
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "hash-object",
+        "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup-proposed-TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup",
+      "exit_code": 0,
+      "stdout": "d98df037914f60969a319278e465e202ca725c9c\n",
+      "stderr": ""
+    }
+  ],
+  "original_failures": [],
+  "proposal": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup-proposed-TASKS.md",
+    "diff_path": "/workspace/scratch/46b31bb4dff6/037-sup-parent-followup-proposed-TASKS.diff",
+    "target": "docs/dev/TASKS.md",
+    "sha256": "7088c0a254f225605b0373eaaf754c67281cba62c5c0652095be8f31796251a8",
+    "git_blob": "d98df037914f60969a319278e465e202ca725c9c",
+    "bytes": 40325,
+    "diff": "--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -10,7 +10,7 @@\n \n ## Phase 1 — Named-file utility\n \n-- [ ] Phase 1 — Named-file utility\n+- [x] Phase 1 — Named-file utility\n     - [x] Milestone 1.1 — Named-file counting\n         - [x] T-001 — Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n@@ -53,7 +53,7 @@\n             Depends on: T-005, T-006 and T-007.\n             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.\n             Report: [milestone 1.2 review](reports/phases/1/1.2.md).\n-    - [ ] Milestone 1.3 — Phase 1 review\n+    - [x] Milestone 1.3 — Phase 1 review\n         - [x] T-009 — Review, test and report phase 1\n             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.\n             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.\n@@ -192,3 +192,7 @@\n ## Current isolated parent follow-up\n \n This caller-authored local trial retains genuine verified T-009 closing commit `5b17e4650c64c7c735991931b591bdabb8069215`, its initial task checkbox, complete result/review/evidence and every prior task. It reopens only the local phase1 and review-milestone1.3 parent acceptance gate for a fresh current-state verification and justified parent-only status follow-up. Historical parent closure remains recorded in original history. Current trial tracking is explicitly declined; no live issue/milestone state is inferred from inherited historical records. Only a later separately authorized parent-status follow-up may complete these two current gates; no task result or initial checkbox may be replayed.\n+\n+Current acceptance is verified for the separately authorized T-009 parent-only follow-up on `trial/parent-followup` at retained HEAD `8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33`. Inspected the genuine T-009 closing parent diff at `5b17e4650c64c7c735991931b591bdabb8069215`: its substantive phase report, current completion evidence and initial T-009 checkbox close together with a single owning ID. Bounded T-001 through T-009 closing-diff inspection confirms each task retains its own result/evidence and initial checkbox; the current trial differs from T-009 only in TASKS parent status/evidence. Delivery milestone reports and the phase report remain unchanged, M1.2-001 remains resolved and TODO is None. Current contracts, implementation and test coverage were inspected; no current Phase 1 acceptance blocker was found. This follow-up completes only local Phase 1 and review milestone 1.3 acceptance; executable tasks and historical reports are not replayed or rewritten.\n+\n+Fresh checks from the checkout root on Python 3.12.14: `python tools/check_tests.py` passed independently collected 23 unit and 18 integration tests without skips or warnings; `python tools/check_distribution.py` verified the exact isolated extracted import and 36 real module cases. Every current runnable Bash/Python fence in README and the public API guide was executed verbatim successfully, including explicit nonempty discoveries, API assertions, BOM/dash/help demonstrations, builder/checker and separate extracted sample (`lines=3 words=5`). Local user-guide links resolve and `git diff --check` passed; tracked worktree remained clean after owned example cleanup. These checks verify the current named-file/API/failure/resource/documentation/source-distribution exits. Tracking is declined for this isolated trial: LOCAL delivery only, origin read-only, with no provider readback or writes and no inferred current hosted closure. No target integration/publication, Phase 2, future range feature or release was performed or authorized. Broader runtime/platform coverage, external notice links and installed packaging remain unverified. Earlier task results, reports and publication/hosted evidence remain historical evidence rather than fresh observations.\n",
+    "proposed_subject": "[T-009] Reconcile verified local Phase 1 parent acceptance",
+    "persisted": false
+  },
+  "limits": [
+    "No persistence before delegated exact artifact review",
+    "No task replay, product/report/root instruction edits, provider writes, integration, Phase 2 or release",
+    "Historical reports retained; current evidence does not establish broader runtime/platform matrix"
+  ],
+  "retained_state_delta": "M\tdocs/dev/TASKS.md\n",
+  "retained_T009_diff": "commit 5b17e4650c64c7c735991931b591bdabb8069215\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 09:29:54 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 09:29:54 2026 -0400\n\n    [T-009] Review and complete Phase 1 named-file utility exits\n    \n    Perform independent cross-milestone code review;23 unit+18 integration tests and36 extracted module cases pass. All runnable user-guide fences pass; preserve resolved M1.2-001 and TODO:None. Close only phase-review task with eligible parents; integration remains subsequent. Fixes pchemguy/SDD-Manager-Prerelease-Playground#10\n\ndiff --git a/AGENTS.md b/AGENTS.md\nindex a28d052..19009dc 100644\n--- a/AGENTS.md\n+++ b/AGENTS.md\n@@ -11,3 +11,7 @@ The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordina\n Development uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary and the current request's selected task boundary. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).\n \n Python 3.12.14 was verified for T-001. From the repository root, run `python -m unittest discover -s tests/unit -t . -v` and `python -m unittest discover -s tests/integration -t . -v`; both now collect actual product tests. `textstats/core.py` owns pure semantics; `textstats/__init__.py` now exports `TextStats`, `count_text` and `count_file`. Strict file acquisition and the baseline named-file CLI are delivered. Run `python tools/check_tests.py` for independently discovered nonempty unit/integration suites. Complete CLI failure handling is delivered. See the [public API/module reference](docs/public-api.md) and runnable [README](README.md). Run `python tools/package_source.py` for the allowlisted source ZIP and `python tools/check_distribution.py` for isolated extracted-import and real module-entry checks. Product tests require a checkout; the archive includes only package/docs/notices and the builder/checker. See [T-001 evidence](docs/dev/TASKS.md#t-001-completion-evidence) for the published baseline and bounded checks.\n+\n+## Phase 1 delivery checkpoint\n+\n+The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records completed named-file/API/error/documentation/distribution exits and the integration protocol. All nine Phase 1 task results are tracked in canonical TASKS; Phase 2 remains pending and outside the current request. Use the current Git/remote state for actual integration/publication identity rather than treating this navigation as a branch snapshot. The current verified product suites contain 23 unit and 18 integration tests; extracted distribution checks exercise 36 real module cases on Python 3.12.14. Broader runtime/platform coverage is unverified.\ndiff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex c089e55..11f45a4 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -10,7 +10,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n ## Phase 1 — Named-file utility\n \n-- [ ] Phase 1 — Named-file utility\n+- [x] Phase 1 — Named-file utility\n     - [x] Milestone 1.1 — Named-file counting\n         - [x] T-001 — Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n@@ -53,12 +53,12 @@ The user requested preparation through TASKS and stop before implementation. The\n             Depends on: T-005, T-006 and T-007.\n             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.\n             Report: [milestone 1.2 review](reports/phases/1/1.2.md).\n-    - [ ] Milestone 1.3 — Phase 1 review\n-        - [ ] T-009 — Review, test and report phase 1\n+    - [x] Milestone 1.3 — Phase 1 review\n+        - [x] T-009 — Review, test and report phase 1\n             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.\n             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.\n             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.\n-            Report: `docs/dev/reports/phases/1/PHASE-REPORT.md`.\n+            Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).\n \n ## Phase 2 — JSON and stdin\n \n@@ -182,3 +182,9 @@ Every updated README/public-guide runnable fence, including builder/checker and\n Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.\n \n `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.\n+\n+## T-009 completion evidence\n+\n+After T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` was published/read back, issue #9 closed/completed and native milestone #2 closed/read back with all four associated issues closed, both delivery milestone gates were satisfied. Performed a separate coherent cross-milestone implementation code review and all Phase 1 exits, recorded in [phase report](reports/phases/1/PHASE-REPORT.md). M1.2-001 remains resolved and TODO is None; no additional production repair was required. T-009 uniquely maps to issue #10, milestone #3.\n+\n+Fresh product runner passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. Fresh extraction checker verified exact isolated import and 36 real module cases. Every current README/public-guide runnable fence, including separate extracted example, passed; documented discovery counts are nonzero, outputs are exact and user-guide links resolve. Complete branch-scope inspection retains coordinator resources/pinned package/publisher fixture unchanged. Bounded T-001–T-008 actual parent-diff audit confirms per-task result/evidence/initial checkbox composition and leading single owning IDs. T-009 report/evidence/initial task checkbox and eligible phase/review-milestone parent status close together, followed by verified publication and hosted issue/review-milestone closure. Then integrate the complete phase via explicit two-parent merge, verify merged state and publish/read back main; integration evidence belongs in that actual merge summary. Stop before Phase 2; all T-010–T-017 remain unchecked/unprojected. Broader runtime/platform matrix and release remain outside scope.\ndiff --git a/docs/dev/reports/phases/1/PHASE-REPORT.md b/docs/dev/reports/phases/1/PHASE-REPORT.md\nnew file mode 100644\nindex 0000000..9909755\n--- /dev/null\n+++ b/docs/dev/reports/phases/1/PHASE-REPORT.md\n@@ -0,0 +1,46 @@\n+# Phase 1 review — Named-file utility\n+\n+## Identity and outcome\n+\n+Owning task: T-009; Phase 1 milestone 1.3. Source reviewed on `phase/1-named-file-utility` at `7b9f570aa4452d2ca9d6105479640528cb113f0e`. Starting integration baseline is accepted-preparation main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`. The complete-phase request authorizes T-005 through T-009, full-phase integration/publication and then stopping before Phase 2. Maintained Phase 1 tracking is active. Native delivery milestones #1 (1.1) and #2 (1.2) and constituent issues #2–#9 were confirmed closed before this phase review. T-009 maps uniquely to #10, review milestone #3.\n+\n+Phase 1 delivers an immutable silent whole-text/named-file API and useful real module CLI, with strict UTF-8, shared logical-line/word/BOM semantics, input preservation, robust expected failures, public documentation and isolated extracted-source distribution. Milestone reports [1.1](1.1.md) and [1.2](1.2.md) establish their respective reviews/exits. M1.2-001 is resolved; neither milestone carries a deferred TODO.\n+\n+## Independent phase code review\n+\n+Reviewed complete core, acquisition, public facade, parser/controller/rendering/module entry, product-test runner, packaging/extraction tools, product suites and README/public guide. Compared their cross-component behavior against SPEC R-001 through R-008/R-011 through R-013 and PLAN Phase 1 exits, separately from check execution.\n+\n+| Interaction / exit | Code review conclusion and verification |\n+| --- | --- |\n+| Text/file/CLI equivalence | File and CLI reuse whole-text counting; binary strict decoding preserves terminators, one complete-input BOM is removed at the counting boundary. Semantic matrix/API/file and actual CLI checks establish equivalence without separate algorithms. |\n+| Value/API boundary | Three direct exports and keyword-only policy; immutable validated fields, equality and silent imports/calls covered. No stdin/range parameter or new public export. |\n+| Failure/resource boundary | Complete acquisition/decode precedes result/rendering. Owned context closes on all paths. APIs retain OSError subclasses/UnicodeDecodeError; CLI translates only those expected errors with identifying cause/input, empty failure stdout and no traceback. Usage validation precedes acquisition; unsupported abbreviations now rejected. |\n+| Usability and source distribution | User docs align with signatures/status/count/ownership contracts. Builder's literal allowlist supplies modules/docs/notices/tools and excludes credentials/caches/development/coordinator/tests. Checker validates extraction import provenance with sanitized environment and actually invokes module entry. Corrupted-extraction sensitivity prevents false success from the healthy checkout. |\n+| Test collection and retained delivery | Independently discovered nonempty unit/integration suites exercise observable contracts; workflow fixtures excluded. Count runner rejects either empty suite and propagates failures. Normal options/help/dash-file behavior retained across robustness/distribution delivery. |\n+| Extension seams and boundary | Normalized counting and preserved logical traversal remain internal collaborators. JSON, byte stdin and range remain unimplemented and unprojected; Phase 2 depends on separately authorized activation after this integration. |\n+\n+No new bug, critical issue, SPEC/PLAN violation or missing required phase evidence was identified. No additional production repair was needed for T-009.\n+\n+## Actual verification\n+\n+Fresh checks from repository root against the published T-008 state on Python 3.12.14:\n+\n+- `python tools/check_tests.py`: 23 unit and 18 integration tests passed, no skips/warnings, independently nonempty.\n+- `python tools/check_distribution.py`: exact extracted import confirmed; 36 real module cases passed with expected statuses/stdout/stderr and unchanged bytes. Fourteen semantic inputs under both BOM policies, dash-file, missing/bad-byte failure, four usage cases including unknown abbreviation, and help were exercised.\n+- Executed every runnable Bash/Python fence in README/public guide verbatim: setup/sample/API assertions/BOM/dash/help, runner and explicit unittest discover, source build/check and separate extracted sample. All commands succeeded, sample output was exact three lines/five words, BOM-only policies produced zero/zero versus one/one and dash-file one/two. Temporary inputs cleaned.\n+- Local user-guide links resolved and changed diff whitespace passed. Source-scope inspection confirms coordinator resources, pinned plugin, existing publisher fixture and unrelated material unchanged.\n+- Bounded task audit of each T-001 through T-008 parent diff confirmed exact single owning task subjects, task result/evidence and one initial executable checkbox together. T-004/T-008 close only their own review tasks with eligible parent status. T-009 receives the same composition before integration; no aggregate or split closing result is permitted.\n+\n+Prior behavioral RED evidence is preserved in TASKS: T-005 four errors/four failures from twelve focused tests; T-007 three errors/one failure from four tests against valid unimplemented declarations; T-008 two abbreviation regressions. Documentation/review-only scope does not fabricate additional RED history.\n+\n+## Findings, TODO and limits\n+\n+Resolved finding: M1.2-001, parser accepted unsupported `--keep`, repaired/tested in T-008 at `7b9f570aa4452d2ca9d6105479640528cb113f0e`, with original RED and current extracted regression. No deferred milestone finding or new phase finding remains.\n+\n+TODO: None.\n+\n+Evidence covers local Python 3.12.14 in this environment, not a full supported-version/platform matrix, unrestricted real permission failures beyond controlled seams, external notice-link availability, installed packaging, JSON/stdin/ranges or release publication. The source archive is generated/ignored; reproducible builder source is tracked. This phase result does not claim completion of the entire two-phase project; no final IMPLEMENTATION-REPORT is produced before the full task list completes.\n+\n+## Completion and integration boundary\n+\n+Full Phase 1 acceptance/exits are verified. Report, evidence, initial T-009 checkbox and eligible milestone 1.3/Phase 1 parent status close together; publish and read back before issue #10 closure and native review milestone #3 closure/readback. Then audit all nine closing commits, refresh actual main, inspect complete branch delta and explicitly merge the pinned phase tip with two parents. Verify merged-state product/distribution/docs checks and record the actual parent tips/outcomes in the integration commit body, then push main and confirm exact remote containment. This report precedes that integration; it does not claim a future push succeeded. Retain phase branch and stop before Phase 2 activation/work and any release.\n",
+  "parent_diff_audit": [
+    {
+      "task": "T-001",
+      "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+      "subject": "[T-001] Implement immutable statistics and whole-text counting",
+      "paths": [
+        ".gitignore",
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/TASKS.md",
+        "tests/__init__.py",
+        "tests/integration/__init__.py",
+        "tests/integration/test_api.py",
+        "tests/unit/__init__.py",
+        "tests/unit/test_core.py",
+        "textstats/__init__.py",
+        "textstats/core.py"
+      ],
+      "initial_checked_task": [
+        "T-001"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "57a05a2753896ed060e9a3b55dfc8a2ee9a9e806dfb8bbdd27a88fa0acefa017"
+    },
+    {
+      "task": "T-002",
+      "commit": "f28f6e415b3e0c13353a61e82354c47b0d2cabb2",
+      "subject": "[T-002] Implement strict file acquisition and complete public API",
+      "paths": [
+        "docs/dev/TASKS.md",
+        "tests/integration/test_api.py",
+        "tests/unit/test_io.py",
+        "textstats/__init__.py",
+        "textstats/io.py"
+      ],
+      "initial_checked_task": [
+        "T-002"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "3d4c5fad931d51af6912f09ac7c2d70867ddaaa1fd080aec43e638e0dea73ce9"
+    },
+    {
+      "task": "T-003",
+      "commit": "373203d6f41bee2229eed900b761de8669678e0b",
+      "subject": "[T-003] Integrate named-file CLI and nonempty product checks",
+      "paths": [
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/TASKS.md",
+        "tests/integration/test_cli.py",
+        "tests/unit/test_cli.py",
+        "textstats/__main__.py",
+        "textstats/cli.py",
+        "tools/check_tests.py"
+      ],
+      "initial_checked_task": [
+        "T-003"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "1287959b14aa4342f0aaf8fb3b45585d722df26fa5c4dff9d3dd26f0fb16ce3e"
+    },
+    {
+      "task": "T-004",
+      "commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+      "subject": "[T-004] Review named-file counting and complete milestone 1.1",
+      "paths": [
+        "docs/dev/TASKS.md",
+        "docs/dev/reports/phases/1/1.1.md"
+      ],
+      "initial_checked_task": [
+        "T-004"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "40e072bd1ad1d385581f5c1ef645a8ab8867b0c60c7376aec8cc023db404ce5c"
+    },
+    {
+      "task": "T-005",
+      "commit": "809f045e3cd32445e7dca29d0174ea25aa5da7ea",
+      "subject": "[T-005] Handle named-file input failures without tracebacks",
+      "paths": [
+        "docs/dev/TASKS.md",
+        "tests/integration/test_cli.py",
+        "tests/unit/test_cli.py",
+        "textstats/cli.py"
+      ],
+      "initial_checked_task": [
+        "T-005"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "62b245ed3fc527993109be7aaf18c6901aa112b343b0552a7881cc5396064a35"
+    },
+    {
+      "task": "T-006",
+      "commit": "fde1537b5c4ba1bcef4f538dfb47276d564e4aaa",
+      "subject": "[T-006] Document public API and runnable named-file usage",
+      "paths": [
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/TASKS.md",
+        "docs/public-api.md"
+      ],
+      "initial_checked_task": [
+        "T-006"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "661c9b04a5ea92448e1512160d169109f1b972bcedb8e6d6efd33e5a50ddeff5"
+    },
+    {
+      "task": "T-007",
+      "commit": "f7e3309b672cb13b1d8158613e81d50e8d1ecc18",
+      "subject": "[T-007] Build and verify isolated TextStats source distribution",
+      "paths": [
+        ".gitignore",
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/TASKS.md",
+        "tests/integration/test_distribution.py",
+        "tools/check_distribution.py",
+        "tools/package_source.py"
+      ],
+      "initial_checked_task": [
+        "T-007"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "7d2cbd8ba407b90b952eb6956708cf52f8d822d6788d94a753efd8bc615fde03"
+    },
+    {
+      "task": "T-008",
+      "commit": "7b9f570aa4452d2ca9d6105479640528cb113f0e",
+      "subject": "[T-008] Review distribution milestone and reject option abbreviations",
+      "paths": [
+        "README.md",
+        "docs/dev/TASKS.md",
+        "docs/dev/reports/phases/1/1.2.md",
+        "tests/integration/test_cli.py",
+        "tests/unit/test_cli.py",
+        "textstats/cli.py",
+        "tools/check_distribution.py"
+      ],
+      "initial_checked_task": [
+        "T-008"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "2a22bb2de31fc79efbd4d98697a606f5808ebff10ccf020588456b816689c052"
+    },
+    {
+      "task": "T-009",
+      "commit": "5b17e4650c64c7c735991931b591bdabb8069215",
+      "subject": "[T-009] Review and complete Phase 1 named-file utility exits",
+      "paths": [
+        "AGENTS.md",
+        "docs/dev/TASKS.md",
+        "docs/dev/reports/phases/1/PHASE-REPORT.md"
+      ],
+      "initial_checked_task": [
+        "T-009"
+      ],
+      "evidence_added": true,
+      "diff_sha256": "021048a097a8a11e0aad0a8482f0ffdba7729db3466671a15c040af1df8c40fe"
+    }
+  ],
+  "local_user_guide_links": [
+    {
+      "document": "README.md",
+      "destination": "docs/public-api.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/dev/PROJECT.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/dev/SPEC.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/dev/PLAN.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "destination": "docs/dev/TASKS.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "destination": "SDD-MANAGER.md",
+      "exists": true
+    },
+    {
+      "document": "README.md",
+      "destination": "AI_DISCLOSURE.md",
+      "exists": true
+    },
+    {
+      "document": "docs/public-api.md",
+      "destination": "../README.md",
+      "exists": true
+    }
+  ],
+  "fresh_check_summary": {
+    "runtime": "Python 3.12.14",
+    "unit": 23,
+    "integration": 18,
+    "extracted_module_cases": 36,
+    "runnable_fences": 7,
+    "failures": 0,
+    "skips": 0,
+    "warnings": 0
+  },
+  "review_gate": "Waiting for delegated exact artifact review; no repository edit, staging, commit or push"
+}

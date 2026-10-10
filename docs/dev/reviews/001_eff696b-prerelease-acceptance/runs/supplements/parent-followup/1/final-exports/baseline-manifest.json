@@ -1,0 +1,86 @@
+[
+  {
+    "path": "sources/COMMON.md",
+    "bytes": 8256,
+    "sha256": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "sources/completion-and-checkpoints.md",
+    "bytes": 16082,
+    "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "setup/START.json",
+    "bytes": 36907,
+    "sha256": "f7080f68cff54820df06ddafa6932beb7cc1f923afafd38055a986cff5822e56",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "setup/ordinary-input.md",
+    "bytes": 1024,
+    "sha256": "8b2a445213493489309c4bbcc1ea4adf969771eeca84ce7b0a268df9589f16f9",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "baseline/raw-commands.json",
+    "bytes": 31468,
+    "sha256": "8411363936bc8be41f4456e018bc3856590e0337bdebfdee97fb31d88c560a61",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "objects/5b17e4650c64c7c735991931b591bdabb8069215.commit",
+    "bytes": 585,
+    "sha256": "9d835c67aad64ebd0aee857be8fd7108d4931da309f2925de033c696a9c67a45",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "objects/8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33.commit",
+    "bytes": 351,
+    "sha256": "e5d68afae44a3ec14d65dd5ba5c82ac1e09e8fb63b6e68dd7a445171decca51d",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "baseline/workfiles/docs/dev/TASKS.md",
+    "bytes": 38082,
+    "sha256": "26086104b60b0ffa7817fdebc5437b94922de76e651ddc127ea39e7888de82b8",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "baseline/workfiles/docs/dev/PLAN.md",
+    "bytes": 13093,
+    "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "baseline/workfiles/docs/dev/reports/phases/1/PHASE-REPORT.md",
+    "bytes": 6875,
+    "sha256": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "baseline/workfiles/AGENTS.md",
+    "bytes": 4351,
+    "sha256": "35b5ac4e3bf7bcebfacb516b62e9ef6995475844edb01b1b4529a29cd6d9c2df",
+    "clean_bytes": true,
+    "no_secret": true
+  },
+  {
+    "path": "baseline/index.bin",
+    "bytes": 24768,
+    "sha256": "ec816758952e468ea2afd7126851826b3ffb037fccfb32d2d75307f6290fa6bc",
+    "clean_bytes": true,
+    "no_secret": true
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "status": "Provisional candidate acceptable; final lifecycle grade awaits publication/seal",
+  "checks": {
+    "exact_sha": true,
+    "only_two_parent_transitions": true,
+    "all_executable_checkboxes_preserved": true,
+    "observed_commands_passed": true,
+    "current_result_commands_present": true,
+    "exact_review_gate_wait": true
+  },
+  "assessment": "Exact candidate only reconciles eligible local Phase 1/milestone1.3 parents and adds current evidence; preserves initial executable checkboxes and historical reports. Actual separate channels show 23 unit/18 integration/36 extracted cases and successful seven runnable fences. No live-hosted or integration certification. Shared filesystem prevents isolation certification."
+}
