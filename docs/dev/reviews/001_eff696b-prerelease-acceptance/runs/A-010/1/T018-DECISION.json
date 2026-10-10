@@ -1,0 +1,16 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "task_id": "T-018",
+  "baseline": "806e989567aef425ddd933f33fbd8f9af5edae2a",
+  "pending_artifact_blobs": {
+    "textstats/core.py": "872175963ba892670eb4f142df431a7bf050d581",
+    "tests/unit/test_core.py": "c619bf38f359d9a5d037b2003be8e93561df5cb9"
+  },
+  "review": "Concrete source/test diff inspected: private selection consumes already normalized shared preserved logical segments with inclusive valid integer comparisons; huge endpoints are not loop bounds and exposed interior BOM is not stripped. Existing whole-input API/exports untouched. Tests cover empty/blank/mixed/final terminators, EOF subsets, Unicode separator, uncapped >4300-digit integer endpoints and normalized counting/BOM exposure. Actual focused RED2/14behavioral errors then GREEN12core and8API reported with exact logs. Bounded initial declaration used for RED retained in consumer provenance. No unseen CLI integration or downstream task accepted.",
+  "evidence_files": [
+    "037-a010-T018-red.log",
+    "037-a010-T018-green.log",
+    "037-a010-T018-api.log"
+  ]
+}
