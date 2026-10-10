@@ -185,3 +185,6 @@ Original authentication failures and successful same-commit recovery, assessor r
 ## Remaining recovery prerequisites exported
 
 A017 retains actual counting baseline and two-test public valid-contract regression with genuine assertion failure; no consumer task supplied. A019 retains complete phase/preintegration parents, independent complete exits and legitimate competing fixtures with genuine prospective-check sensitivity; no conflict or consumer repair supplied. Exact verified objects/index/workfiles and interventions are exported before fresh consumer dispatch. A014 cross-phase retains actual completed T008/unfinished T009 and main preparation baseline, passed full exits and exact local prerequisite publication, but certification remains Blocked because its guide excludes local-only publication. No case grade or positive campaign mutation is inferred from setup. Original required accounting remains20 Passed/2 Failed/10 unresolved.
+
+
+A014 live prerequisite ref creation was rejected by automatic approval review for named trial/037-a014-cross-phase and trial/037-a014-cross-main on the authorized playground repository. Reason and exact refs/commits retained; no execution or bypass. Local complete setup remains preserved, required cross-phase certification Blocked pending specific destination authorization. Unaffected authorized cases continue.
