@@ -1,0 +1,26 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "published",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Actual changed acceptance affects already checked runtime task; historical check evidence remains with durable pending-reassessment note.",
+    "Orientation/selection exposes reassessment; owner rechecks in scope before completion; parent status not inferred from feature subset."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-0.stdout",
+    "stderr_file": "baseline-command-0.stderr",
+    "stdout_sha256": "11d37cf4cef981c3360263c4af506c58a25ad1c110924a4a1f30ed039db3fee2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "-s",
+      "--format=%P",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-1.stdout",
+    "stderr_file": "baseline-command-1.stderr",
+    "stdout_sha256": "11dd73c6d040731aded968b879463c21fcd825db84cb194279b734ec470ca673",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "branch",
+      "--show-current"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-2.stdout",
+    "stderr_file": "baseline-command-2.stderr",
+    "stdout_sha256": "872742905d27555065d37a24dd4b1ba34fe5339a5cccf5add969f559f0edc9b2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "for-each-ref",
+      "--format=%(objectname) %(refname)"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-3.stdout",
+    "stderr_file": "baseline-command-3.stderr",
+    "stdout_sha256": "60cf5791d474a88cba1ac7265cd8c62773c70ec1951f3d10db9db721efe4006b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "status",
+      "--porcelain=v2"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-4.stdout",
+    "stderr_file": "baseline-command-4.stderr",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "--stage",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-5.stdout",
+    "stderr_file": "baseline-command-5.stderr",
+    "stdout_sha256": "bfaa486c30658b9b12ed6e5ce5e9507669cd0e2b72329597610ccbf856eb716d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-6.stdout",
+    "stderr_file": "baseline-command-6.stderr",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-7.stdout",
+    "stderr_file": "baseline-command-7.stderr",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-list",
+      "--objects",
+      "--all"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-8.stdout",
+    "stderr_file": "baseline-command-8.stderr",
+    "stdout_sha256": "08d4b38d3c27b581a2697d128ae7d0a9b4c7feb490da99bd1a24e18627699ff6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-remote",
+      "trial-delivery",
+      "refs/heads/phase/2-json-and-stdin"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-9.stdout",
+    "stderr_file": "baseline-command-9.stderr",
+    "stdout_sha256": "f634df719638e3346aba80ad00432bdbf3679a31a0a17d36f69868518b4fe282",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "baseline-command-10.stdout",
+    "stderr_file": "baseline-command-10.stderr",
+    "stdout_sha256": "1a11329e93a5b5f1dcb717894127bab438c6a63bcd2f490eab693563163b8e7b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

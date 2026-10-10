@@ -1,0 +1,162 @@
+[
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-0.stdout",
+    "stderr_file": "final-command-0.stderr",
+    "stdout_sha256": "742ddeb7f8f21258921af1c9d67a31bd65cdfc48094301e390769a5eedfaba87",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "-s",
+      "--format=%P",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-1.stdout",
+    "stderr_file": "final-command-1.stderr",
+    "stdout_sha256": "e1d0a28287e4935823a46311b5b93d95e45ca3a0593ac98919ea92d1836dd302",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "branch",
+      "--show-current"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-2.stdout",
+    "stderr_file": "final-command-2.stderr",
+    "stdout_sha256": "872742905d27555065d37a24dd4b1ba34fe5339a5cccf5add969f559f0edc9b2",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "for-each-ref",
+      "--format=%(objectname) %(refname)"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-3.stdout",
+    "stderr_file": "final-command-3.stderr",
+    "stdout_sha256": "9146a3a3d92369e5759a0ec6fecc1458ba06606e121b6d4b033c3fb9d79e9e4e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "status",
+      "--porcelain=v2"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-4.stdout",
+    "stderr_file": "final-command-4.stderr",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "--stage",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-5.stdout",
+    "stderr_file": "final-command-5.stderr",
+    "stdout_sha256": "046b1501d536bbac616f3c25446b53007ce1f858e92fec63c2aab04054055aec",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-6.stdout",
+    "stderr_file": "final-command-6.stderr",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-7.stdout",
+    "stderr_file": "final-command-7.stderr",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-list",
+      "--objects",
+      "--all"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-8.stdout",
+    "stderr_file": "final-command-8.stderr",
+    "stdout_sha256": "e9630e84e024641b7804deff11f22d8ee60aea72946d408b2b951993ad980c68",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-remote",
+      "trial-delivery",
+      "refs/heads/phase/2-json-and-stdin"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-9.stdout",
+    "stderr_file": "final-command-9.stderr",
+    "stdout_sha256": "ff35cc08cf23c1282e0d3a3d98e4bae25151ca89b0743b6c0115868434d65b35",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "exit_code": 0,
+    "stdout_file": "final-command-10.stdout",
+    "stderr_file": "final-command-10.stderr",
+    "stdout_sha256": "1a11329e93a5b5f1dcb717894127bab438c6a63bcd2f490eab693563163b8e7b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

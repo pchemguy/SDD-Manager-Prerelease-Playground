@@ -1,0 +1,28 @@
+[
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "f8c3a4f9de188a19a959ba6199685ac280c65b00:docs/dev/TASKS.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "status": 0,
+    "stdout_file": "trigger/docs/dev/TASKS.md",
+    "stdout_sha256": "e983281ea5090d5930aafe374c0b6b3de8cd4e5fd49fa968d605a997d449bb4a",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "f8c3a4f9de188a19a959ba6199685ac280c65b00:docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+    "status": 0,
+    "stdout_file": "trigger/docs/dev/TASKS-REVIEW-REPORT.md",
+    "stdout_sha256": "1b3e0fd77ed33a328c7e6d7c0a991d3108f7fdd51826654b3b9e52d73372afd9",
+    "stderr": ""
+  }
+]

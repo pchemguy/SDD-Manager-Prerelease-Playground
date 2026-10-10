@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "case_id": "A-022",
+  "baseline_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+  "changed_acceptance": "T-019 explicit superscript U+00B2:U+00B3 both --lines spellings x BOM policies x text/JSON, status2/empty stdout/useful stderr/no traceback/zero acquisition",
+  "criteria": [
+    "Retained actual checked T-019 baseline and historical evidence",
+    "Explicit acceptance amendment persists in sole canonical owner, derived from ASCII contract without changing grammar",
+    "Durable pending Completion reassessment note exists at trigger; history retained after resolution",
+    "Owner rechecks current explicit specimen in scope with authentic raw channels and zero acquisition, neither old checkbox nor assessor baseline check substitutes consumer recheck",
+    "TASKS/QC governing identities exact and substantive affected owner coverage/counts/dependency checks; append history, freeze unrelated records",
+    "Orientation exposes pending reassessment or then resolved finding before T-013 selection, truthful next work prerequisites and explicit stop",
+    "19 checked/five pending preserved; Phase2/2.2/2.3 remain unchecked; feature extent not parent completion",
+    "Immediate per-owned-commit LOCAL push/readback and retained exact objects, no live provider claims",
+    "Original pinned DSL run separately from lifecycle assessment; checks-pass not case-pass",
+    "Shared filesystem isolation and LOCAL/runtime/ready scope limits retained"
+  ]
+}

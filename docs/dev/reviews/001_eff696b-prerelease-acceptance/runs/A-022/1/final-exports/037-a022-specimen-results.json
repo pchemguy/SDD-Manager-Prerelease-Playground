@@ -1,0 +1,230 @@
+{
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "specimen": "U+00B2:U+00B3 (²:³)",
+  "rows": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "²:³",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines",
+          "²:³",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "²:³",
+        "--json",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines",
+          "²:³",
+          "--json",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "²:³",
+        "--keep-bom",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines",
+          "²:³",
+          "--keep-bom",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines",
+        "²:³",
+        "--keep-bom",
+        "--json",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines",
+          "²:³",
+          "--keep-bom",
+          "--json",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=²:³",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines=²:³",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=²:³",
+        "--json",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines=²:³",
+          "--json",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=²:³",
+        "--keep-bom",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines=²:³",
+          "--keep-bom",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=²:³",
+        "--keep-bom",
+        "--json",
+        "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+      ],
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "exit_code": 2,
+      "seam": {
+        "argv": [
+          "--lines=²:³",
+          "--keep-bom",
+          "--json",
+          "/workspace/scratch/46b31bb4dff6/037-a022-nonexistent-input.txt"
+        ],
+        "status": 2,
+        "stdout": "",
+        "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+        "read_file_calls": 0,
+        "count_file_calls": 0
+      },
+      "passed": true
+    }
+  ]
+}

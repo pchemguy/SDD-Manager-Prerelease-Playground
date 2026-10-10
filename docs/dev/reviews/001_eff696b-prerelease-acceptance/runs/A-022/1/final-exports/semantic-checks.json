@@ -1,0 +1,19 @@
+{
+  "changed_paths": [
+    "docs/dev/TASKS-REVIEW-REPORT.md",
+    "docs/dev/TASKS.md"
+  ],
+  "task_count": 24,
+  "checked": 19,
+  "pending": 5,
+  "all_status_parent_checkboxes_preserved": true,
+  "original_completion_history_bytes_preserved": true,
+  "durable_pending_trigger": "f8c3a4f9de188a19a959ba6199685ac280c65b00",
+  "current_task_qc_hash_exact": true,
+  "all_unchanged_governing_inputs_exact": true,
+  "all_other185tracked_paths_hash_and_mode_unchanged": true,
+  "gates_match_exact_artifact_hashes_and_blobs": true,
+  "final_clean": true,
+  "final_local_delivery_exact": true,
+  "baseline_and_final_independent_literal_probe_pass": true
+}
