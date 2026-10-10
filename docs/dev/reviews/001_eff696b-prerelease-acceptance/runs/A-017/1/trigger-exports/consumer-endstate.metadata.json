@@ -1,0 +1,7 @@
+{
+  "cmd": "git --no-optional-locks status --porcelain=v1 --untracked-files=all; git --no-optional-locks diff --stat; git --no-optional-locks diff --cached --stat; git --no-optional-locks rev-parse HEAD; git --no-optional-locks ls-remote trial-delivery refs/heads/trial/a017-failed-check; git --no-optional-locks diff -- textstats/cli.py tests/unit/test_cli.py tests/integration/test_cli.py; git --no-optional-locks ls-files --stage; rg -n '^        - \\[[ x]\\] T-00[456]|^    - \\[[ x]\\] Milestone 1.2' docs/dev/TASKS.md",
+  "chunk_id": "ef3851",
+  "wall_time_seconds": 2.8072e-05,
+  "exit_code": 0,
+  "original_token_count": 6629
+}

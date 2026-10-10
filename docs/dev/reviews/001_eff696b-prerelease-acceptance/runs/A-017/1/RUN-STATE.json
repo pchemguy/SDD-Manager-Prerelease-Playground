@@ -4,10 +4,14 @@
   "phase": "P4",
   "case_id": "A-017",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Actual isolated setup exports published31ce4fa; metadata-only evidence fetch after setup",
-  "pending_operation": null,
-  "next_action": "Fresh ordinary consumer observes requested actual interruption boundary",
+  "role": "assessor",
+  "last_completed_action": "Actual consumer interruption independently verified and complete pending state exported",
+  "pending_operation": {
+    "kind": "task",
+    "status": "interrupted",
+    "description": "Required full acceptance failed after owned implementation; T005 incomplete"
+  },
+  "next_action": "Publish exact trigger exports before fresh continuation",
   "checkpoint_refs": {
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "product_branch": "trial/a017-failed-check",

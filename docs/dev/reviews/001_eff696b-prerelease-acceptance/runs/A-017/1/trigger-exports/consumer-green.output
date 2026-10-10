@@ -1,0 +1,9 @@
+test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) ... ok
+test_usage_failures_validate_before_acquisition (tests.unit.test_cli.CliTests.test_usage_failures_validate_before_acquisition) ... ok
+test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) ... ok
+test_unknown_option_is_usage_failure (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.134s
+
+OK

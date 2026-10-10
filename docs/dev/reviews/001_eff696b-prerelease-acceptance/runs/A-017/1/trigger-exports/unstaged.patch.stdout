@@ -1,0 +1,126 @@
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+index 663662c..b42b6a2 100644
+--- a/tests/integration/test_cli.py
++++ b/tests/integration/test_cli.py
+@@ -14,7 +14,29 @@ ROOT = Path(__file__).resolve().parents[2]
+ 
+ class ModuleCliTests(unittest.TestCase):
+     def invoke(self, *args, cwd=ROOT):
+-        return subprocess.run([sys.executable, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
++        return subprocess.run([sys.executable, '-B', '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
++
++    def test_missing_and_invalid_utf8_inputs(self):
++        with tempfile.TemporaryDirectory() as directory:
++            missing = Path(directory) / 'missing.txt'
++            bad = Path(directory) / 'bad.txt'
++            raw = b'valid prefix\n\xff'
++            bad.write_bytes(raw)
++            for path, cause in [(missing, 'No such file'), (bad, 'utf-8')]:
++                with self.subTest(path=path):
++                    result = self.invoke(str(path))
++                    self.assertEqual((result.returncode, result.stdout), (1, ''))
++                    self.assertIn(str(path), result.stderr)
++                    self.assertIn(cause, result.stderr)
++                    self.assertNotIn('Traceback', result.stderr)
++            self.assertEqual(bad.read_bytes(), raw)
++
++    def test_unknown_option_is_usage_failure(self):
++        result = self.invoke('--unknown', 'missing.txt')
++        self.assertEqual((result.returncode, result.stdout), (2, ''))
++        self.assertIn('usage:', result.stderr)
++        self.assertIn('--unknown', result.stderr)
++        self.assertNotIn('Traceback', result.stderr)
+ 
+     def test_named_file_matrix_and_bom_option_order(self):
+         cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)), ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+index 2a5787a..4f0c8ef 100644
+--- a/tests/unit/test_cli.py
++++ b/tests/unit/test_cli.py
+@@ -15,6 +15,32 @@ from textstats.cli import main
+ 
+ 
+ class CliTests(unittest.TestCase):
++    def test_input_failures_identify_input_and_cause_without_output(self):
++        failures = [FileNotFoundError('missing file'), PermissionError('permission denied'), OSError('read failed'), UnicodeDecodeError('utf-8', b'\xff', 0, 1, 'invalid byte')]
++        for failure in failures:
++            with self.subTest(failure=failure):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.cli.count_file', side_effect=failure):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(['named'])
++                self.assertEqual((status, out.getvalue()), (1, ''))
++                self.assertIn('named', err.getvalue())
++                self.assertIn(str(failure), err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++    def test_usage_failures_validate_before_acquisition(self):
++        for args in [[], ['one', 'two'], ['--unknown', 'named']]:
++            with self.subTest(args=args):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.cli.count_file') as counter:
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(args)
++                self.assertEqual((status, out.getvalue()), (2, ''))
++                self.assertIn('usage:', err.getvalue())
++                self.assertIn('error:', err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++                counter.assert_not_called()
++
+     def test_success_renders_completed_counts(self):
+         out, err = io.StringIO(), io.StringIO()
+         with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
+@@ -68,7 +94,7 @@ class CheckRunnerTests(unittest.TestCase):
+             fixture.mkdir()
+             (fixture / '__init__.py').touch()
+             (fixture / 'test_foreign.py').write_text('raise RuntimeError("workflow fixture collected")\n')
+-            return subprocess.run([sys.executable, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
++            return subprocess.run([sys.executable, '-B', str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+ 
+     GOOD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(2 + 2, 4)\n'
+     BAD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.fail("controlled product failure")\n'
+diff --git a/textstats/cli.py b/textstats/cli.py
+index 1f99a69..c32f12e 100644
+--- a/textstats/cli.py
++++ b/textstats/cli.py
+@@ -1,10 +1,7 @@
+-"""Named-file CLI parsing and exact text presentation.
+-
+-Milestone 1.1 delivers success, BOM policy, option termination and help.
+-Complete input-failure diagnostics belong to the following milestone.
+-"""
++"""Named-file CLI validation, input-failure diagnostics and text presentation."""
+ 
+ import argparse
++import sys
+ from .io import count_file
+ 
+ 
+@@ -15,11 +12,12 @@ def main(argv: list[str] | None = None) -> int:
+         argv: Invocation arguments excluding the executable; None uses sys.argv.
+ 
+     Returns:
+-        Zero on success/help or argparse's usage status on invalid invocation.
++        Zero on success/help, one on input failure, or two on invalid usage.
+ 
+     Help and usage validate without acquiring input. Before stdin delivery a
+-    literal '-' remains a named filename. Expected file/decode exceptions still
+-    propagate here until the failure-handling task is delivered.
++    literal '-' remains a named filename. Expected file/decode failures identify
++    the input and cause on stderr without a traceback or partial stdout result.
++    Public API exception behavior remains unchanged.
+     """
+     parser = argparse.ArgumentParser(prog='python -m textstats', description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
+     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
+@@ -28,6 +26,10 @@ def main(argv: list[str] | None = None) -> int:
+         args = parser.parse_args(argv)
+     except SystemExit as exit_request:
+         return int(exit_request.code)
+-    stats = count_file(args.input, strip_bom=not args.keep_bom)
++    try:
++        stats = count_file(args.input, strip_bom=not args.keep_bom)
++    except (OSError, UnicodeDecodeError) as error:
++        print(f'{parser.prog}: {args.input}: {error}', file=sys.stderr)
++        return 1
+     print(f'lines={stats.lines} words={stats.words}')
+     return 0

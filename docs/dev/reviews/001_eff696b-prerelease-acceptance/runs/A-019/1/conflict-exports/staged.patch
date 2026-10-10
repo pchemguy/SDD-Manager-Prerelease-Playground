@@ -1,0 +1,1361 @@
+diff --git a/.gitignore b/.gitignore
+index e1dacbf..774c500 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -150,3 +150,10 @@ vite.config.ts.timestamp-*
+ 
+ # Protected repository credentials
+ *.tkn
++
++# Generated caches from the delivered product and its verification suites
++/textstats/**/__pycache__/
++/tests/**/__pycache__/
++
++# Generated cache for distribution/check tools
++/tools/**/__pycache__/
+diff --git a/AGENTS.md b/AGENTS.md
+index ac47830..19009dc 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -6,8 +6,12 @@ Preserve `textstats-run-resources/`, existing ignore rules and the separate publ
+ 
+ ## Product orientation
+ 
+-The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordinator acceptance for this test. The [architecture](docs/dev/ARCHITECTURE.md) has scoped delegated coordinator acceptance. The [decomposition](docs/dev/DECOMPOSITION.md) has scoped delegated coordinator acceptance. The [SPEC](docs/dev/SPEC.md) and [owner review](docs/dev/SPEC-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The [PLAN strategy](docs/dev/PLAN.md) has scoped delegated coordinator acceptance. The [layout](docs/dev/layout.md) and combined [PLAN review](docs/dev/PLAN-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The canonical [TASKS](docs/dev/TASKS.md) and [owner review](docs/dev/TASKS-REVIEW-REPORT.md) have scoped delegated coordinator acceptance; sdd-implement owns future range selection/execution and completion. Preparation is complete under the current request and stops before implementation, hosted projection and default-branch integration. No implementation task has started. Source and product tests do not exist yet. Do not treat coordinator resources as product implementation.
++The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordinator acceptance for this test. The [architecture](docs/dev/ARCHITECTURE.md) has scoped delegated coordinator acceptance. The [decomposition](docs/dev/DECOMPOSITION.md) has scoped delegated coordinator acceptance. The [SPEC](docs/dev/SPEC.md) and [owner review](docs/dev/SPEC-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The [PLAN strategy](docs/dev/PLAN.md) has scoped delegated coordinator acceptance. The [layout](docs/dev/layout.md) and combined [PLAN review](docs/dev/PLAN-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The canonical [TASKS](docs/dev/TASKS.md) and [owner review](docs/dev/TASKS-REVIEW-REPORT.md) have scoped delegated coordinator acceptance; sdd-implement owns range selection/execution and completion. The current complete-Phase-1 request supersedes historical preparation and milestone stops within Phase 1. Accepted preparation is integrated and published on `main`; T-001 supplies the pure core and text facade with nonempty unit/integration suites on `phase/1-named-file-utility`. The current request completes Phase 1 (T-005 through T-009), including reviews, hosted closures and full-phase integration/publication, then stops before Phase 2; retain the phase branch. Do not treat coordinator resources as product implementation.
+ 
+-Preparation uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary, and stop before implementation under the current request. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Future task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).
++Development uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary and the current request's selected task boundary. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).
+ 
+-Python 3.12.14 is available in the preparation environment. The layout proposes `textstats/`, unit/integration product tests, `docs/public-api.md` and standard-library test/package/distribution check tools. Its commands are planned and have not been validated because implementation files do not exist. After delivery, run `python tools/check_tests.py` and `python tools/check_distribution.py` from the repository root; the test runner must reject empty product suites.
++Python 3.12.14 was verified for T-001. From the repository root, run `python -m unittest discover -s tests/unit -t . -v` and `python -m unittest discover -s tests/integration -t . -v`; both now collect actual product tests. `textstats/core.py` owns pure semantics; `textstats/__init__.py` now exports `TextStats`, `count_text` and `count_file`. Strict file acquisition and the baseline named-file CLI are delivered. Run `python tools/check_tests.py` for independently discovered nonempty unit/integration suites. Complete CLI failure handling is delivered. See the [public API/module reference](docs/public-api.md) and runnable [README](README.md). Run `python tools/package_source.py` for the allowlisted source ZIP and `python tools/check_distribution.py` for isolated extracted-import and real module-entry checks. Product tests require a checkout; the archive includes only package/docs/notices and the builder/checker. See [T-001 evidence](docs/dev/TASKS.md#t-001-completion-evidence) for the published baseline and bounded checks.
++
++## Phase 1 delivery checkpoint
++
++The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records completed named-file/API/error/documentation/distribution exits and the integration protocol. All nine Phase 1 task results are tracked in canonical TASKS; Phase 2 remains pending and outside the current request. Use the current Git/remote state for actual integration/publication identity rather than treating this navigation as a branch snapshot. The current verified product suites contain 23 unit and 18 integration tests; extracted distribution checks exercise 36 real module cases on Python 3.12.14. Broader runtime/platform coverage is unverified.
+* Unmerged path README.md
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 839c4ff..11f45a4 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -10,55 +10,55 @@ The user requested preparation through TASKS and stop before implementation. The
+ 
+ ## Phase 1 — Named-file utility
+ 
+-- [ ] Phase 1 — Named-file utility
+-    - [ ] Milestone 1.1 — Named-file counting
+-        - [ ] T-001 — Implement immutable statistics and whole-text counting
++- [x] Phase 1 — Named-file utility
++    - [x] Milestone 1.1 — Named-file counting
++        - [x] T-001 — Implement immutable statistics and whole-text counting
+             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.
+             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.
+             Depends on: none within the list; execution prerequisites above apply.
+             Evidence: all whole-input SPEC examples, Unicode separators/whitespace, repeated/interior BOMs, both policies, immutable value/equality and invalid constructor cases; direct imports/signatures and captured API silence. Discover focused unit and integration suites and record nonzero counts. Public file counting/module CLI remain later tasks within this same useful milestone.
+-        - [ ] T-002 — Implement strict file acquisition and complete public API
++        - [x] T-002 — Implement strict file acquisition and complete public API
+             Outcome: R-006 byte-preserving strict UTF-8 file input and R-002 whole-file API, with required exceptions and owned-handle cleanup.
+             Scope: `textstats/io.py`, complete exports in `textstats/__init__.py`, module/API docstrings, `tests/unit/test_io.py` and real-file public API cases in `tests/integration/test_api.py`.
+             Depends on: T-001.
+             Evidence: import all three required public names; string/file equality for the sample matrix using str and Path inputs; missing/unreadable/read-failure OSError subclasses, invalid-byte UnicodeDecodeError, no partial result, closure on every path, API silence and unchanged file bytes. Use controlled failure streams for portable cleanup/read/unreadability checks and real temporary files for decode/equivalence. Rerun core/API regressions.
+-        - [ ] T-003 — Integrate named-file CLI and nonempty product checks
++        - [x] T-003 — Integrate named-file CLI and nonempty product checks
+             Outcome: R-007 real module entry, exactly one input, `--keep-bom`, `--` dash-filename handling, exact text success and help; first useful end-to-end slice with R-012 collection evidence.
+             Scope: `textstats/cli.py`, `textstats/__main__.py`, CLI docstrings, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and `tools/check_tests.py`.
+             Depends on: T-002.
+             Evidence: real subprocess named-file/BOM/mixed-terminator/empty/help/dash-filename invocations with prescribed status/stdout/stderr, API equivalence and unchanged input. The standard-library test runner discovers unit/integration independently, reports counts, rejects zero collection in either suite and propagates test failure; workflow fixtures are excluded. Demonstrate a real file through API and CLI for milestone feedback. Complete CLI failure diagnostics/status robustness follows in T-005; JSON/stdin/range remain deferred.
+-        - [ ] T-004 — Review, test and report milestone 1.1
++        - [x] T-004 — Review, test and report milestone 1.1
+             Scope: complete core/acquisition/public API/CLI capability and relevant dependencies; no extra feature delivery.
+             Depends on: T-001, T-002 and T-003.
+             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.
+-            Report: `docs/dev/reports/phases/1/1.1.md`.
+-    - [ ] Milestone 1.2 — Failure handling and distribution
+-        - [ ] T-005 — Complete named-file CLI failure and usage handling
++            Report: [milestone 1.1 review](reports/phases/1/1.1.md).
++    - [x] Milestone 1.2 — Failure handling and distribution
++        - [x] T-005 — Complete named-file CLI failure and usage handling
+             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.
+             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.
+             Depends on: T-004 and milestone 1.1 completion/closure.
+             Evidence: status 1 for missing/unreadable/read/decode failures with identifying cause/input stderr, empty stdout and no traceback; status 2 for missing/extra input/unknown options with useful stderr and empty stdout; validate invocation before acquisition. Exercise controlled read/unreadability seams and real subprocess missing/bad-byte inputs. Retain named-file/BOM/help/API behavior and byte preservation; run nonempty unit/integration suites.
+-        - [ ] T-006 — Document public API and runnable named-file usage
++        - [x] T-006 — Document public API and runnable named-file usage
+             Outcome: R-011 public API/module reference and runnable README for delivered phase 1 behavior.
+             Scope: `docs/public-api.md`, `README.md`, public module/function docstrings and discoverability links in `AGENTS.md` as needed.
+             Depends on: T-005.
+             Evidence: document all three exports/signatures, constructor invariants, count/BOM/strict UTF-8/exception/lifetime/silence contracts, setup/check commands, exact text/help/status usage and planned distribution boundary. Execute every runnable named-file/API/help example against delivered code and current suites; documentation advertises neither JSON/stdin nor range as delivered.
+-        - [ ] T-007 — Build and verify isolated source distribution
++        - [x] T-007 — Build and verify isolated source distribution
+             Outcome: R-013 allowlisted source archive and extracted-source module-entry acceptance, completing phase 1 distribution exits.
+             Scope: `tools/package_source.py`, `tools/check_distribution.py`, `tests/integration/test_distribution.py`, distribution instructions in README and necessary generated-artifact ignore rules while preserving existing rules.
+             Depends on: T-005 and T-006.
+             Evidence: build `dist/textstats-source.zip` with approved top-level/package/docs/disclosure/tool contents; exclude credentials/caches/coordinator resources/workflow fixtures. Extract temporarily, sanitize checkout import paths, verify imported package belongs to extraction, and actually invoke its `python -m textstats` from extracted source cwd. Check text/BOM/named-file success and input/decode/usage failures, exact outputs/statuses and unchanged inputs. Run archive/check integration plus nonempty product suites and the documented extracted-source example. No third-party build dependency or release publication.
+-        - [ ] T-008 — Review, test and report milestone 1.2
++        - [x] T-008 — Review, test and report milestone 1.2
+             Scope: complete named-file robustness, API/module docs, README and source distribution plus retained 1.1 behavior.
+             Depends on: T-005, T-006 and T-007.
+             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.
+-            Report: `docs/dev/reports/phases/1/1.2.md`.
+-    - [ ] Milestone 1.3 — Phase 1 review
+-        - [ ] T-009 — Review, test and report phase 1
++            Report: [milestone 1.2 review](reports/phases/1/1.2.md).
++    - [x] Milestone 1.3 — Phase 1 review
++        - [x] T-009 — Review, test and report phase 1
+             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.
+             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.
+             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.
+-            Report: `docs/dev/reports/phases/1/PHASE-REPORT.md`.
++            Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).
+ 
+ ## Phase 2 — JSON and stdin
+ 
+@@ -114,3 +114,77 @@ Every review task requires both code review and actual testing; tests alone cann
+ During future execution, the initial owning checkbox and one task's result/evidence close together in exactly one task commit whose subject starts with exactly one `[T-NNN]` marker. Push and verify every workflow-owned commit before advancing; then reconcile its issue. Complete/review each delivery milestone before its hosted closure; complete all delivery milestones before the dedicated phase review. Exactly one task owns each initial closure. Parent completion is evidence-backed; no task is marked complete by this preparation.
+ 
+ Hosted tracking reads this complete hierarchy but projects only the eligible phase after actual task-list acceptance and implementation prerequisites. Every eligible task includes its phase label and parent milestone association. Required unknown/incomplete projection blocks execution, while later phases and the range feature stay unprojected. The final task-list checkpoint remains the current stopping boundary before any implementation or hosted projection.
++
++## T-001 completion evidence
++
++The current request supersedes the historical preparation-only stopping statements for exactly the first executable Phase 1 task. Selected T-001 in milestone 1.1, with no task dependency. Accepted preparation tip `1e3305c8659045945244c06861079fef879ca3c3` was explicitly merged into actual default `main`, parent `eff696b38f0b8a94bd6f91ca1c64d54fd714df46`, as `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`; merged document hashes, local links, heading spacing and document-only scope were verified and that exact remote tip read back before creating `phase/1-named-file-utility` from it. The accepted disclosure's two pre-existing whitespace warnings were preserved.
++
++Maintained Phase 1 tracking is confirmed by the current request. Before task edits/tests, provider readback verified `sdd-phase-1-Named-file-utility`, native milestones 1–3 (1.1, 1.2, 1.3), and unique marked T-001 through T-009 issues 2–10 with their phase label and correct milestone association. T-001 uniquely maps to `pchemguy/SDD-Manager-Prerelease-Playground#2`, milestone 1. Existing unrelated labels, issue text/comments and milestone content are preserved; later phases remain unprojected.
++
++Delivered immutable, equal-by-value integer/nonnegative statistics excluding bool, shared CRLF/CR/LF segment traversal preserving terminators, exactly-once whole-input BOM normalization, normalized counting using Unicode `str.split`, and the silent direct text facade. Internal traversal/counting allow later selection without renormalizing interior BOMs. Module/class/function docstrings describe the delivered contracts. File exports, acquisition, CLI, tools and public API guide are not delivered by this task. Narrow product cache ignores preserve existing rules.
++
++On Python 3.12.14 from the repository root, tests were written first. The initial unit discovery failed to import the absent package and is classified as setup failure, not behavioral RED. Minimal unimplemented declarations then enabled actual RED: unit discovery collected 10 tests and failed with 21 validation/equality/immutability failures and 43 missing-counting errors; integration discovery collected 5 tests and failed with two missing-counting errors. No test-first exception is claimed.
++
++After implementing the contracts, `python -m unittest discover -s tests/unit -t . -v` passed all 10 tests and `python -m unittest discover -s tests/integration -t . -v` passed all 5 tests, without skips or warnings. Evidence covers every whole-input SPEC matrix row under both policies; Unicode separators/whitespace and non-ASCII words; mixed/consecutive/final terminators; repeated/interior BOMs; equality, invalid fields and assignment/deletion immutability; direct exports/signatures, keyword-only policy, repeated-call independence and import/call silence. Verification also inspects source/document contracts and preserved internal segment seams. Coverage is T-001 on this runtime, not full Python-version, file/API, CLI or distribution acceptance. The future check tools are absent because their owning tasks are unselected.
++
++Exactly T-001's result, tests, documentation, current evidence and initial checkbox close together in its task commit. Publication and issue closure are subsequent observed operations reported in the workflow handoff. All parents and T-002 through T-017 remain unchecked. Stop after the verified push and hosted reconciliation of T-001; do not integrate the incomplete phase or start another task.
++
++## T-002 completion evidence
++
++The milestone 1.1 request selects T-002 through T-004 and supersedes historical first-task/preparation stops only within this boundary. Startup clean branch/remote tip was `9dc8075dd1b96d3a2744717a9d6d98a3024acbec`; its T-001 result/evidence/initial checkbox and single-ID subject were inspected and compliant. Accepted preparation remains published on main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`. Current SPEC/PLAN/layout and adjacent Ready owner reviews retain unchanged governing contracts; TASKS differs only in T-001 completion evidence/status, which does not invalidate hierarchy QC. Maintained phase tracking readback returned the phase label, milestones 1–3 and unique marked T-001–T-009 issues 2–10 with correct parent associations before task edits/tests. T-002 maps uniquely to issue #3, milestone #1; T-001 issue #2 is closed.
++
++Delivered complete binary read followed by strict UTF-8 decoding, silent count_file with the prescribed keyword-only BOM policy and all three direct exports. The owned context manager closes on successful read, decode failure and read failure; OSError subclasses propagate unchanged, and input bytes/terminators are preserved. Module and function documentation describe the actual API and lifetime boundary.
++
++Tests preceded production behavior. With an unimplemented count_file declaration (so import/collection was valid), `python -m unittest discover -s tests/unit -t . -v` collected 14 tests and failed with six behavioral NotImplementedError errors at the acquisition scenarios; the ten core tests stayed green. After production implementation, that command passed 14 tests and `python -m unittest discover -s tests/integration -t . -v` passed 8 tests on Python 3.12.14 without skips or warnings. Coverage includes controlled success/read/decode/open failures and closed handles, PermissionError/FileNotFoundError/IsADirectoryError propagation, real-file strict decode and missing path, all whole-input matrix rows under both policies using str and Path arguments, Unicode content, exact byte preservation, direct exports/signature and API silence. Source and docstring inspection confirms no CLI dependency or fallback decoding. No TDD exception; broader CLI/distribution and other runtimes remain unverified. Exactly this task's result/tests/documentation/evidence/initial checkbox close together before publication and issue reconciliation; remaining milestone tasks and all parents stay open.
++
++## T-003 completion evidence
++
++T-002 was closed durably at `f28f6e415b3e0c13353a61e82354c47b0d2cabb2`, pushed and read back as exact remote phase tip before T-003 work. Provider readback confirms its issue #3 closed/completed with the evidence comment; recovery after an overbroad Link-header guard independently read actual closed state and the existing comment without duplicating writes. T-003 uniquely maps to maintained issue #4, milestone #1.
++
++Delivered module-entry CLI, exactly one named input, useful no-acquisition help, `--keep-bom` before/after the input, `--` option termination and exact completed text output. A literal `-` is still a named file. The CLI shares count_file; no independent semantics or new API exports. Source docstrings describe the current success/help and intentionally incomplete next-milestone input-failure diagnostics. README/orientation now identify delivered capabilities without advertising future docs/distribution.
++
++Tests preceded behavior. `python -m unittest tests.unit.test_cli -v` collected seven tests and failed with four assertions and five NotImplementedError errors against unimplemented CLI and a runner that incorrectly returned success without discovery. These are observed behavioral RED failures, including both empty-suite rejection and propagation of a product failure. `python tools/check_tests.py` subsequently passed 21 unit and 12 integration tests on Python 3.12.14, without skips/warnings. The runner reports independent counts, rejects zero in either suite, executes both real product suites and propagates failure. Its subprocess fixtures exercise empty unit, empty integration, failure propagation, successful independent counts and exclusion of deliberately failing workflow fixtures.
++
++Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty input, exact status/stdout/stderr, before/after BOM option order, help without input, required single input and actual dash-prefixed names after `--`, including a file named `--keep-bom` and literal `-`. API equality and unchanged bytes are checked. Controlled CLI seams assert default/retaining policy and help without acquisition. Source/docstring/staged-scope review found no current contract violation. Complete R-008 diagnostics/status robustness, standalone public docs/distribution, JSON/stdin/range and other runtimes remain outside this task. The named-file useful demonstration and coherent milestone review follow in T-004; milestone/phase remain unchecked here.
++
++## T-004 completion evidence
++
++Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.
++
++T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.
++
++## T-005 completion evidence
++
++The complete-phase request selects T-005 through T-009 and explicit full-phase integration, superseding the historical Phase 1 partial stops. Startup published phase tip `7d003c1cf31c994340d8644e95990ef2253754ed` and main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191` were read back exactly; latest T-004 closing result/report/evidence/initial checkbox composition is compliant. Current SPEC/PLAN/layout hashes match the accepted Ready owner reports, and TASKS changes only completion/evidence, preserving reviewed hierarchy/contracts. Provider readback verified all nine uniquely marked Phase 1 task issues #2–#10 with phase label and milestones #1–#3, and T-001–T-004 issues plus milestone #1 closed. T-005 uniquely maps to #6 in milestone #2; unrelated hosted material is retained.
++
++Tests preceded the production change. `python -m unittest tests.unit.test_cli.CliTests tests.integration.test_cli -v` ran 12 tests with four errors and four failures: expected controlled FileNotFoundError/PermissionError/read OSError/decode errors escaped, real module missing-file failures exposed tracebacks and bad-byte failures omitted the input identity. These are meaningful behavioral RED. Usage-before-acquisition cases already passed. The CLI now catches only expected OSError/UnicodeDecodeError, emits identifying input/cause stderr, returns 1 and leaves stdout empty. Parsing precedes acquisition and retains status 2, success/help/BOM/dash-file contracts and silent API exceptions.
++
++`python tools/check_tests.py` passed 23 unit and 14 integration tests on Python 3.12.14, no skips/warnings; `git diff --check` passed. Controlled open/read/decode/owned-handle checks and CLI failures, real subprocess missing/bad-byte inputs under both BOM policies, invocation errors before acquisition, exact success/help streams, API semantics and unchanged bytes are covered. Source/docstring inspection found no scoped contract blocker. Broader runtime/platform coverage, public guide and distribution remain later selected tasks; Phase 2 stays unselected. Result/tests/source documentation/current evidence and initial T-005 checkbox close together before publication and issue #6 reconciliation.
++
++## T-006 completion evidence
++
++T-005 closing commit `809f045e3cd32445e7dca29d0174ea25aa5da7ea` was pushed and exact remote containment verified before documentation work; provider issue #6 is closed/completed with evidence. T-006 maps uniquely to #7, milestone #2. Delivered [public API/module reference](../public-api.md), runnable README setup/named-file/API/BOM/help/check examples, precise constructor/signature/counting/decode/exception/ownership/silence contracts and module responsibility navigation. Source docstrings were inspected against the guide and already satisfy the delivered boundaries. Root AGENTS retains controlling instructions and now reflects the authorized complete-phase stop and real public guide. Distribution is explicitly planned pending T-007; JSON/stdin/ranges are not advertised as delivered.
++
++Every runnable bash/Python fence in README and the public guide was executed verbatim in repository context on Python 3.12.14. The sample produced exact `lines=3 words=5`, BOM default/retaining produced zero/zero and one/one, dash-file produced one/two, help succeeded, and silent API assertions passed. Runner and separate documented discover commands each passed 23 unit and 14 integration tests with no skips/warnings. Local user-guide links resolve; changed diff whitespace passed. Temporary example inputs were cleaned. This documentation-only task adds no behavioral code and requires no fabricated RED cycle; existing source coverage supports the inspected contracts. External notice links and other runtimes were not revalidated. Documentation/navigation/evidence/initial checkbox close together before publication and issue #7 reconciliation.
++
++## T-007 completion evidence
++
++T-006 `fde1537b5c4ba1bcef4f538dfb47276d564e4aaa` was published/read back exactly and issue #7 closed/completed before this task. T-007 uniquely maps to #8 in milestone #2. Added explicit eleven-file standard-library source builder at `tools/package_source.py`, extraction checker at `tools/check_distribution.py`, independent distribution integration checks, narrow tool-cache ignore and real distribution instructions/navigation. Existing ignore rules and coordinator resources remain intact. The ZIP has `textstats-source/` root and exactly five package modules, README, public API guide, two disclosure/usage notices and builder/checker. Credentials/caches/tests/development/coordinator/workflow material is excluded. Required missing/symlink source files fail, rather than silently producing an incomplete allowlist.
++
++Tests preceded production functionality. With valid importable NotImplementedError declarations, `python -m unittest tests.integration.test_distribution -v` ran four tests and failed with three errors and one assertion failure, demonstrating absent packaging and checker behavior. Source review corrected the controlled faulty-archive test's CLI path before implementation; no false sensitivity claim is made for that earlier fixture. After implementation, the same four tests passed, including exact content/byte allowlist under harmless unrelated-file pollution, checkout-PYTHONPATH pollution and rejection of a deliberately wrong extracted CLI while the checkout remains healthy. No copied real credential enters a fixture.
++
++`python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. `python tools/check_distribution.py` verified exact extracted import path and 35 actual `python -s -m textstats` invocations from temporary extracted cwd with inherited PYTHONPATH/PYTHONHOME removed and user-site packages disabled: fourteen semantic/Unicode/terminator/BOM cases under both policies, dash-file success, missing/decode failures, three usage errors and help. Exact success/status/streams, input identity/cause/no traceback and unchanged sample/bad/dash bytes were verified; temporary extractions clean up on failure too. The checker builds an ignored archive and imports no checkout product code for acceptance.
++
++Every updated README/public-guide runnable fence, including builder/checker and a separate Bash extraction/example, executed successfully. The extracted example returned exact three lines/five words; checkout-only test commands are explicitly distinguished from archive tools. Local user-guide links and diff whitespace passed. Other runtimes/platforms, locale-varied stdin, JSON/ranges, installed packaging and release publication remain unverified/outside Phase 1. Result/tests/docs/evidence/initial checkbox close together before publication and issue #8 reconciliation.
++
++## T-008 completion evidence
++
++Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.
++
++`python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.
++
++## T-009 completion evidence
++
++After T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` was published/read back, issue #9 closed/completed and native milestone #2 closed/read back with all four associated issues closed, both delivery milestone gates were satisfied. Performed a separate coherent cross-milestone implementation code review and all Phase 1 exits, recorded in [phase report](reports/phases/1/PHASE-REPORT.md). M1.2-001 remains resolved and TODO is None; no additional production repair was required. T-009 uniquely maps to issue #10, milestone #3.
++
++Fresh product runner passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. Fresh extraction checker verified exact isolated import and 36 real module cases. Every current README/public-guide runnable fence, including separate extracted example, passed; documented discovery counts are nonzero, outputs are exact and user-guide links resolve. Complete branch-scope inspection retains coordinator resources/pinned package/publisher fixture unchanged. Bounded T-001–T-008 actual parent-diff audit confirms per-task result/evidence/initial checkbox composition and leading single owning IDs. T-009 report/evidence/initial task checkbox and eligible phase/review-milestone parent status close together, followed by verified publication and hosted issue/review-milestone closure. Then integrate the complete phase via explicit two-parent merge, verify merged state and publish/read back main; integration evidence belongs in that actual merge summary. Stop before Phase 2; all T-010–T-017 remain unchecked/unprojected. Broader runtime/platform matrix and release remain outside scope.
+diff --git a/docs/dev/reports/phases/1/1.1.md b/docs/dev/reports/phases/1/1.1.md
+new file mode 100644
+index 0000000..d6707fb
+--- /dev/null
++++ b/docs/dev/reports/phases/1/1.1.md
+@@ -0,0 +1,49 @@
++# Milestone 1.1 — Named-file counting
++
++## Boundary and delivered result
++
++T-004 reviews the complete named-file counting capability under accepted SPEC R-001 through R-007 and milestone 1.1 PLAN exits, with relevant R-012 checks. Reviewed source is `373203d6f41bee2229eed900b761de8669678e0b` on `phase/1-named-file-utility`, containing T-001 `9dc8075dd1b96d3a2744717a9d6d98a3024acbec`, T-002 `f28f6e415b3e0c13353a61e82354c47b0d2cabb2` and T-003 `373203d6f41bee2229eed900b761de8669678e0b`. Each result/evidence/initial task checkbox is owned by its separate single-ID task commit. All three commits were published and read back before subsequent task work; their uniquely marked maintained issues #2, #3 and #4 are closed/completed. T-004 is uniquely associated with issue #5 and native milestone #1.
++
++Delivered immutable validated TextStats, silent whole-input text and named-file APIs, complete strict UTF-8 acquisition with owned-handle cleanup, exact named-file module output, BOM option, option termination and help. Unit/integration suites are independently discovered and required to be nonempty. The phase remains incomplete: no merge into main, release, next milestone or later phase is authorized by this milestone checkpoint.
++
++## Implementation code review
++
++Read-only review inspected all five product modules, the product runner, unit and integration tests, source docstrings and current README/orientation against accepted SPEC/PLAN/design/layout. Code review is distinct from the test runs below.
++
++| Concern | Inspection result |
++| --- | --- |
++| Value/API contract | Frozen slotted value validates nonnegative integers and excludes bool; fields have value equality. Direct exports/signatures and keyword-only whole-input policy are preserved; imports/calls have no output effects. |
++| Semantics/extension seams | Shared traversal counts only CRLF/CR/LF and preserves terminators. Once-only complete-input BOM normalization precedes normalized counting; Unicode word splitting is independent. Internal seams support future source-independent selection without adding range behavior. |
++| Acquisition/lifetime | Binary context-managed complete read avoids newline translation, strict UTF-8 decode occurs before counting, and owned handles close on read/decode/success paths. Applicable exceptions propagate without partial result or input writes. No fallback decoding or CLI dependency. |
++| CLI/data flow | Argparse validates one named input and handles help before acquisition. BOM policy and `--` termination flow into count_file; only a completed result is printed in exact format. Literal `-` remains a filename. Minimal module entry returns controller status. |
++| Collection and test quality | Independent explicit unit/integration roots exclude workflow fixtures. Actual counts are reported and either zero blocks success; test failure propagates. Real subprocess and temporary-file tests complement narrow portable failure streams; independent literal expected counts anchor core/CLI semantics. |
++| Documentation/scope | Module/function docs and root navigation accurately describe delivered success/API capabilities and planned failure/docs/distribution scope. No governing requirement was changed, no extra API/JSON/stdin/range was added. |
++
++Findings/Blockers: None for milestone 1.1. No production repair was needed during T-004. Complete R-008 CLI failure diagnostics remain a separately planned milestone 1.2 obligation; their absence is not deferred milestone 1.1 defect acceptance. Standalone API documentation, source distribution and later formats/input sources likewise retain their accepted future tasks.
++
++## Checks and actual outcomes
++
++On Python 3.12.14, commands ran from the product repository root at the reviewed source:
++
++| Check | Observed outcome and coverage |
++| --- | --- |
++| `python tools/check_tests.py` | Status 0; 21 unit and 12 integration tests passed, zero skips/warnings. Core whole-input matrix/BOM/Unicode/value invariants, real-file equivalence/preservation/API silence, strict exceptions/owned cleanup, CLI success/help/option order/dash names and runner collection/failure contracts. |
++| Real UTF-8 mixed-terminator demonstration | Temporary file contained leading BOM plus `α\r\n猫\rβ γ\n`. Both API and `python -m textstats INPUT` / `python -m textstats --keep-bom INPUT` returned three lines/four words; process status 0, stdout exactly `lines=3 words=4\n`, stderr empty, original bytes unchanged. |
++| BOM-only demonstration | Default module invocation emitted exactly `lines=0 words=0\n`; `--keep-bom` emitted `lines=1 words=1\n`; both status 0 with empty stderr. This makes the retaining policy visible. |
++| Source, task persistence and document inspection | Reviewed exact source and separate task closing diffs; all public/module docstrings reflect delivered contracts. Current local navigation and heading/list spacing were inspected; staged diff whitespace is checked before the report commit. Protected resources are outside the product delta. |
++
++Prior T-002/T-003 behavioral RED evidence and development GREEN checks are retained in TASKS. This review reused those contract cases and performed the actual complete runner and useful demonstration on the published integrated capability. No fabricated prior RED or test-first exception is claimed.
++
++## Exit assessment and limits
++
++All milestone 1.1 exits are verified: complete public whole-input API, sample matrix, immutability/silence, strict named-file decoding/cleanup/exceptions, real CLI named-file/BOM/help/dash-filename success, input preservation, meaningful nonempty suites and useful API/module demonstration. Verification establishes this runtime and phase-branch capability; it does not establish every supported Python version/platform, platform-specific permission enforcement, complete CLI failure robustness, public guide/source-distribution acceptance or full phase/project completion. Portable controlled PermissionError/read streams complement actual temporary-file decode/equivalence tests.
++
++The milestone report and initial T-004 checkbox close together in one task commit. Eligible milestone 1.1 parent completion accompanies this final task on verified local exits; hosted issue #5 and milestone #1 closure/readback follow its commit/push. Those subsequent states must be reported from actual provider observations, not assumed here. Phase 1 and all unselected tasks remain unchecked.
++
++## TODO
++
++None.
++
++## Stopping point
++
++Stop after publishing/readback of T-004 and its verified issue/milestone reconciliation. Retain `phase/1-named-file-utility`; do not merge the incomplete phase, start T-005, activate phase 2, implement range or publish a release.
+diff --git a/docs/dev/reports/phases/1/1.2.md b/docs/dev/reports/phases/1/1.2.md
+new file mode 100644
+index 0000000..cbc5b79
+--- /dev/null
++++ b/docs/dev/reports/phases/1/1.2.md
+@@ -0,0 +1,50 @@
++# Milestone 1.2 review — Failure handling and distribution
++
++## Identity and delivered result
++
++Owning task: T-008; Phase 1 milestone 1.2. Reviewed published delivery source `f7e3309b672cb13b1d8158613e81d50e8d1ecc18` on `phase/1-named-file-utility`, plus the scoped parser repair and its tests/checker documentation in this closing result. Accepted SPEC R-001 through R-008 and R-011 through R-013, PLAN milestone exits and layout govern the review. T-005 `809f045e3cd32445e7dca29d0174ea25aa5da7ea`, T-006 `fde1537b5c4ba1bcef4f538dfb47276d564e4aaa` and T-007 above are individually published task results; issues #6–#8 are closed/completed with evidence. T-008 maps uniquely to issue #9, milestone #2.
++
++Delivered robust named-file failures and usage, runnable public API/module documentation and an allowlisted source ZIP with actual isolated module-entry verification. Retained immutable/silent API, strict UTF-8 byte acquisition, once-only BOM policy, exact successful text output, help and dash-file behavior.
++
++## Implementation code review
++
++The review inspected the complete package, product runner, distribution builder/checker, CLI/API/acquisition tests and user guides, separately from running tests.
++
++| Reviewed boundary | Assessment |
++| --- | --- |
++| Core/facade | Immutable nonnegative integer/bool-excluding fields and direct three exports retained. CRLF/CR/LF traversal preserves segments, word whitespace is independent, exactly one complete-input leading BOM is removed. No I/O cycle or shared counting state. |
++| Acquisition/API | Binary complete read followed by strict decode; context-manager ownership closes on success/read/decode failure. Exceptions propagate silently without partial result or input mutation. |
++| Parser/controller/rendering | Parse precedes acquisition; exact text rendering follows completed result. Only expected OSError/UnicodeDecodeError translated to status 1 with input/cause. Usage status 2 and help status 0 retain prescribed streams. Abbreviation defect below repaired. |
++| Distribution | Eleven literal source paths exclude unmanaged material and credentials; required regular files validated before archive output. Exact archive membership checked before temporary extraction. Acceptance children use selected interpreter, extracted cwd, sanitized Python import environment and verified extracted `__init__.py`, then real module processes. Byte preservation and cleanup inspected. |
++| Verification sensitivity | Actual unit/integration discovery excludes workflow fixtures and rejects empty suites. Distribution tests compare independent allowlist/bytes, inject harmless unrelated files and inherited checkout path, and reject a deliberately wrong extracted CLI. Controlled acquisition failures test lifetime independently of host permissions. |
++| Documentation | Signatures, constructor invariants, semantics, encoding/lifetime/errors/silence and statuses agree with source. Setup and API/file/BOM/help/dash examples are runnable; archive contents and checkout-only test distinction are explicit. No JSON/stdin/range delivery claim. |
++
++## Findings and repairs
++
++| ID | Original evidence / impact | Repair and recheck | Disposition |
++| --- | --- | --- | --- |
++| M1.2-001 | `textstats/cli.py` used argparse's default long-option abbreviation. `--keep missing` acquired input and gave status 1 instead of rejecting an unknown option with status 2 before acquisition, violating R-008. | Added independent unit/subprocess subcases first: two tests failed (unexpected count_file call and status 1). Set `allow_abbrev=False`; expanded extracted usage acceptance. Complete checks below pass. | Resolved in T-008 closing result. No changed governing requirement. |
++
++No unresolved bug, critical issue, contract violation or required evidence gap remains for milestone 1.2 on the stated runtime.
++
++## Actual checks and usability evidence
++
++Repository-root Python 3.12.14:
++
++- `python -m unittest tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input -v`: meaningful RED, two tests/two failures before parser repair.
++- `python tools/check_tests.py`: GREEN, 23 unit and 18 integration tests, independently nonempty; no skips/warnings. Includes retained semantics/API silence/immutability, controlled read/open/decode/lifetime seams, real success/failure/usage/help/BOM/dash subprocesses and distribution sensitivity.
++- `python tools/check_distribution.py`: verified extracted import and 36 real module cases, with exact streams/statuses and unchanged input bytes. Covers fourteen semantic cases under both BOM policies, dash-file success, missing/decode failures, four usage cases including abbreviation and help.
++- T-006/T-007 documented fence executions remain applicable: sample `lines=3 words=5`, BOM-only zero/zero versus one/one, dash-file one/two, API assertions, help, runner/discovery and separate extracted README example all succeeded. The parser repair rejects an unsupported abbreviation and leaves these valid examples unchanged.
++- Changed diff whitespace passed. Local user-guide links resolved during documented execution; no external link refresh was claimed.
++
++The extracted README example demonstrates usable source delivery; clean missing-file/decode diagnostics demonstrate actionable failure behavior without tracebacks. Owned temporary README inputs were removed after matching exact consumer-created bytes and confirming no coordinator product mutation. Their unexpected reappearance after prior cleanup is retained in external observation evidence; no tracked source result changed.
++
++## Exit assessment and limits
++
++Milestone 1.2 exits are verified: complete R-008 categories/validation, R-011 truthful runnable docs, R-012 nonempty product checks and R-013 isolated source module execution, with retained 1.1 behavior and input preservation. This report/result/evidence and initial T-008 checkbox accompany the eligible milestone parent status in one task commit. Publication precedes issue #9 closure; native milestone #2 closes only after its four task issues, report and exits are verified. Phase review T-009 starts after that closure/readback.
++
++Coverage is local Python 3.12.14 on this environment. Full supported-runtime/platform matrix, permission behavior beyond controlled seams, external notice links, installed-package delivery, JSON/stdin/ranges and release publication are outside this assessment. Phase 1 is not yet integrated by this milestone result.
++
++## TODO
++
++None. M1.2-001 is resolved; no noncritical finding is deferred.
+diff --git a/docs/dev/reports/phases/1/PHASE-REPORT.md b/docs/dev/reports/phases/1/PHASE-REPORT.md
+new file mode 100644
+index 0000000..9909755
+--- /dev/null
++++ b/docs/dev/reports/phases/1/PHASE-REPORT.md
+@@ -0,0 +1,46 @@
++# Phase 1 review — Named-file utility
++
++## Identity and outcome
++
++Owning task: T-009; Phase 1 milestone 1.3. Source reviewed on `phase/1-named-file-utility` at `7b9f570aa4452d2ca9d6105479640528cb113f0e`. Starting integration baseline is accepted-preparation main `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`. The complete-phase request authorizes T-005 through T-009, full-phase integration/publication and then stopping before Phase 2. Maintained Phase 1 tracking is active. Native delivery milestones #1 (1.1) and #2 (1.2) and constituent issues #2–#9 were confirmed closed before this phase review. T-009 maps uniquely to #10, review milestone #3.
++
++Phase 1 delivers an immutable silent whole-text/named-file API and useful real module CLI, with strict UTF-8, shared logical-line/word/BOM semantics, input preservation, robust expected failures, public documentation and isolated extracted-source distribution. Milestone reports [1.1](1.1.md) and [1.2](1.2.md) establish their respective reviews/exits. M1.2-001 is resolved; neither milestone carries a deferred TODO.
++
++## Independent phase code review
++
++Reviewed complete core, acquisition, public facade, parser/controller/rendering/module entry, product-test runner, packaging/extraction tools, product suites and README/public guide. Compared their cross-component behavior against SPEC R-001 through R-008/R-011 through R-013 and PLAN Phase 1 exits, separately from check execution.
++
++| Interaction / exit | Code review conclusion and verification |
++| --- | --- |
++| Text/file/CLI equivalence | File and CLI reuse whole-text counting; binary strict decoding preserves terminators, one complete-input BOM is removed at the counting boundary. Semantic matrix/API/file and actual CLI checks establish equivalence without separate algorithms. |
++| Value/API boundary | Three direct exports and keyword-only policy; immutable validated fields, equality and silent imports/calls covered. No stdin/range parameter or new public export. |
++| Failure/resource boundary | Complete acquisition/decode precedes result/rendering. Owned context closes on all paths. APIs retain OSError subclasses/UnicodeDecodeError; CLI translates only those expected errors with identifying cause/input, empty failure stdout and no traceback. Usage validation precedes acquisition; unsupported abbreviations now rejected. |
++| Usability and source distribution | User docs align with signatures/status/count/ownership contracts. Builder's literal allowlist supplies modules/docs/notices/tools and excludes credentials/caches/development/coordinator/tests. Checker validates extraction import provenance with sanitized environment and actually invokes module entry. Corrupted-extraction sensitivity prevents false success from the healthy checkout. |
++| Test collection and retained delivery | Independently discovered nonempty unit/integration suites exercise observable contracts; workflow fixtures excluded. Count runner rejects either empty suite and propagates failures. Normal options/help/dash-file behavior retained across robustness/distribution delivery. |
++| Extension seams and boundary | Normalized counting and preserved logical traversal remain internal collaborators. JSON, byte stdin and range remain unimplemented and unprojected; Phase 2 depends on separately authorized activation after this integration. |
++
++No new bug, critical issue, SPEC/PLAN violation or missing required phase evidence was identified. No additional production repair was needed for T-009.
++
++## Actual verification
++
++Fresh checks from repository root against the published T-008 state on Python 3.12.14:
++
++- `python tools/check_tests.py`: 23 unit and 18 integration tests passed, no skips/warnings, independently nonempty.
++- `python tools/check_distribution.py`: exact extracted import confirmed; 36 real module cases passed with expected statuses/stdout/stderr and unchanged bytes. Fourteen semantic inputs under both BOM policies, dash-file, missing/bad-byte failure, four usage cases including unknown abbreviation, and help were exercised.
++- Executed every runnable Bash/Python fence in README/public guide verbatim: setup/sample/API assertions/BOM/dash/help, runner and explicit unittest discover, source build/check and separate extracted sample. All commands succeeded, sample output was exact three lines/five words, BOM-only policies produced zero/zero versus one/one and dash-file one/two. Temporary inputs cleaned.
++- Local user-guide links resolved and changed diff whitespace passed. Source-scope inspection confirms coordinator resources, pinned plugin, existing publisher fixture and unrelated material unchanged.
++- Bounded task audit of each T-001 through T-008 parent diff confirmed exact single owning task subjects, task result/evidence and one initial executable checkbox together. T-004/T-008 close only their own review tasks with eligible parent status. T-009 receives the same composition before integration; no aggregate or split closing result is permitted.
++
++Prior behavioral RED evidence is preserved in TASKS: T-005 four errors/four failures from twelve focused tests; T-007 three errors/one failure from four tests against valid unimplemented declarations; T-008 two abbreviation regressions. Documentation/review-only scope does not fabricate additional RED history.
++
++## Findings, TODO and limits
++
++Resolved finding: M1.2-001, parser accepted unsupported `--keep`, repaired/tested in T-008 at `7b9f570aa4452d2ca9d6105479640528cb113f0e`, with original RED and current extracted regression. No deferred milestone finding or new phase finding remains.
++
++TODO: None.
++
++Evidence covers local Python 3.12.14 in this environment, not a full supported-version/platform matrix, unrestricted real permission failures beyond controlled seams, external notice-link availability, installed packaging, JSON/stdin/ranges or release publication. The source archive is generated/ignored; reproducible builder source is tracked. This phase result does not claim completion of the entire two-phase project; no final IMPLEMENTATION-REPORT is produced before the full task list completes.
++
++## Completion and integration boundary
++
++Full Phase 1 acceptance/exits are verified. Report, evidence, initial T-009 checkbox and eligible milestone 1.3/Phase 1 parent status close together; publish and read back before issue #10 closure and native review milestone #3 closure/readback. Then audit all nine closing commits, refresh actual main, inspect complete branch delta and explicitly merge the pinned phase tip with two parents. Verify merged-state product/distribution/docs checks and record the actual parent tips/outcomes in the integration commit body, then push main and confirm exact remote containment. This report precedes that integration; it does not claim a future push succeeded. Retain phase branch and stop before Phase 2 activation/work and any release.
+diff --git a/docs/public-api.md b/docs/public-api.md
+new file mode 100644
+index 0000000..e6e685b
+--- /dev/null
++++ b/docs/public-api.md
+@@ -0,0 +1,67 @@
++# TextStats public API and module reference
++
++TextStats exposes exactly `TextStats`, `count_text` and `count_file` directly from the `textstats` package. It requires Python 3.11+ and only the standard library. Importing the package and calling either counting function are silent: no stdout or stderr. The API always counts complete input.
++
++## Signatures and immutable values
++
++```python
++from pathlib import Path
++from textstats import TextStats, count_text, count_file
++
++assert TextStats(lines=2, words=3) == TextStats(2, 3)
++assert count_text("a b\nc") == TextStats(2, 3)
++assert count_text("\ufeff", strip_bom=False) == TextStats(1, 1)
++assert count_file(Path("sample.txt"), strip_bom=True) == TextStats(3, 5)
++```
++
++| Export | Signature / domain | Result and failures |
++| --- | --- | --- |
++| `TextStats` | `TextStats(lines: int, words: int)` | Immutable, equal-by-value fields. Nonnegative integers only; bool/non-integers raise TypeError, negative integers raise ValueError. Fields cannot be assigned or deleted. |
++| `count_text` | `count_text(text: str, *, strip_bom: bool = True) -> TextStats` | Complete decoded string to immutable statistics, without I/O or shared mutable counting state. |
++| `count_file` | `count_file(path: str \| os.PathLike[str], *, strip_bom: bool = True) -> TextStats` | String or string-valued path-like named file to equivalent whole-text counts. OSError subclasses propagate for open/read failures; invalid bytes raise UnicodeDecodeError. |
++
++BOM policy is keyword-only. Behavior outside the stated argument domains is unspecified beyond the explicit statistics constructor validation.
++
++## Counting semantics
++
++Only CRLF, CR and LF terminate logical lines. CRLF is one terminator; each terminator contributes one line, and a final nonempty unterminated segment contributes one. Empty normalized input contributes zero; a trailing terminator creates no phantom line. U+0085, U+2028 and U+2029 remain line content. Word count is `len(text.split())`, using Python Unicode whitespace semantics independently of line terminators.
++
++With the default `strip_bom=True`, remove exactly one leading U+FEFF from the complete input before counting. Preserve a second leading BOM and all interior BOMs. With `False`, retain every BOM as ordinary non-whitespace content. No other normalization occurs.
++
++| Input (escaped) | Default lines / words | Retaining BOM |
++| --- | --- | --- |
++| Empty | 0 / 0 | 0 / 0 |
++| `alpha\n` | 1 / 1 | 1 / 1 |
++| `alpha\r\nbeta\rgamma\n` | 3 / 3 | 3 / 3 |
++| `alpha\u2028beta` | 1 / 2 | 1 / 2 |
++| `\ufeff` | 0 / 0 | 1 / 1 |
++| `\ufeff\ufeff` | 1 / 1 | 1 / 1 |
++
++## File acquisition and resource ownership
++
++`count_file` reads complete bytes and decodes strict UTF-8, preserving newline characters. No locale-dependent or fallback decoding and no replacement characters are used. Every file handle opened by the utility closes on success, read failure and decode failure. No partial result is returned after failure. Input bytes remain unchanged. The implementation holds complete decoded input in memory; it makes no bounded-memory promise.
++
++## Module command
++
++Use `python -m textstats [--keep-bom] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. In Phase 1, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
++
++| Outcome | Status | stdout | stderr |
++| --- | --- | --- | --- |
++| Count success | 0 | Exactly `lines=<N> words=<N>` plus newline | Empty |
++| Help | 0 | Useful usage/options | Empty |
++| File open/read or strict decode failure | 1 | Empty | Identifies input and cause, no traceback |
++| Missing/extra input or unknown option | 2 | Empty | Useful usage/error, no traceback |
++
++The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. JSON, stdin and ranges are future work. Runnable examples and setup/check instructions are in the [README](../README.md).
++
++## Module responsibilities
++
++| Module | Responsibility |
++| --- | --- |
++| `textstats.core` | Immutable statistics, once-only BOM normalization, shared CRLF/CR/LF traversal and whole-text counting. |
++| `textstats.io` | Strict named-file acquisition and owned-handle lifetime, then shared whole-text counting. |
++| `textstats` | Direct public exports; import has no input or process effects. |
++| `textstats.cli` | Invocation validation, BOM policy, expected failure translation and exact text rendering. |
++| `textstats.__main__` | Minimal module-entry adapter returning the CLI process status. |
++
++Internal helpers are not additional public exports. Future range selection can reuse preserved logical segments without renormalizing an exposed interior BOM.
+diff --git a/tests/__init__.py b/tests/__init__.py
+new file mode 100644
+index 0000000..50fa8a4
+--- /dev/null
++++ b/tests/__init__.py
+@@ -0,0 +1 @@
++"""Product verification suites; workflow fixtures are separate."""
+diff --git a/tests/integration/__init__.py b/tests/integration/__init__.py
+new file mode 100644
+index 0000000..1133ee2
+--- /dev/null
++++ b/tests/integration/__init__.py
+@@ -0,0 +1 @@
++"""Public API integration tests."""
+diff --git a/tests/integration/test_api.py b/tests/integration/test_api.py
+new file mode 100644
+index 0000000..a801dbb
+--- /dev/null
++++ b/tests/integration/test_api.py
+@@ -0,0 +1,101 @@
++"""Verify direct silent whole-input text and named-file adapters."""
++
++import contextlib
++import importlib
++import inspect
++import io
++import subprocess
++import sys
++import unittest
++import tempfile
++from pathlib import Path
++
++import textstats
++from textstats import TextStats, count_text, count_file
++
++
++class TextApiTests(unittest.TestCase):
++    def test_direct_imports_and_delivered_exports(self):
++        self.assertIs(textstats.TextStats, TextStats)
++        self.assertIs(textstats.count_text, count_text)
++        self.assertEqual(set(textstats.__all__), {"TextStats", "count_text", "count_file"})
++        self.assertIs(textstats.count_file, count_file)
++
++    def test_signatures_and_keyword_only_policy(self):
++        stats_parameters = inspect.signature(TextStats).parameters
++        self.assertEqual(list(stats_parameters), ["lines", "words"])
++        self.assertTrue(all(p.default is inspect.Parameter.empty for p in stats_parameters.values()))
++        signature = inspect.signature(count_text)
++        self.assertEqual(list(signature.parameters), ["text", "strip_bom"])
++        self.assertIs(signature.parameters["strip_bom"].kind, inspect.Parameter.KEYWORD_ONLY)
++        self.assertIs(signature.parameters["strip_bom"].default, True)
++        annotations = inspect.get_annotations(count_text, eval_str=True)
++        self.assertEqual(annotations, {"text": str, "strip_bom": bool, "return": TextStats})
++        with self.assertRaises(TypeError):
++            count_text("abc", False)
++
++    def test_public_default_and_retaining_policy(self):
++        self.assertEqual(count_text("\ufeff"), TextStats(0, 0))
++        self.assertEqual(count_text("\ufeff", strip_bom=False), TextStats(1, 1))
++        self.assertEqual(count_text("α\r\n猫\rβ γ\n"), TextStats(3, 4))
++
++    def test_calls_and_reload_are_silent(self):
++        stdout, stderr = io.StringIO(), io.StringIO()
++        with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++            importlib.reload(textstats)
++            for value in ["", "\ufeff", "a\r\nb", "a\u2029b"]:
++                count_text(value)
++                count_text(value, strip_bom=False)
++            TextStats(0, 0)
++        self.assertEqual(stdout.getvalue(), "")
++        self.assertEqual(stderr.getvalue(), "")
++
++    def test_initial_import_is_silent_in_fresh_process(self):
++        result = subprocess.run([sys.executable, "-c", "import textstats"], capture_output=True, text=True)
++        self.assertEqual(result.returncode, 0, result.stderr)
++        self.assertEqual(result.stdout, "")
++        self.assertEqual(result.stderr, "")
++
++
++class FileApiTests(unittest.TestCase):
++    def test_file_text_matrix_and_preservation(self):
++        cases = ["", "alpha beta", "alpha\n", "\n", "alpha\r\nbeta\rgamma\n", "alpha\n\n", " \t", "alpha\u2028beta", "\ufeff", "\ufeff\ufeff", "\ufeffalpha beta", "a\ufeffb", "\r\n", "\r", "α 猫\n"]
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "sample.txt"
++            for text in cases:
++                raw = text.encode("utf-8")
++                path.write_bytes(raw)
++                for argument in [path, str(path)]:
++                    for policy in [True, False]:
++                        with self.subTest(text=text, argument=type(argument), strip_bom=policy):
++                            out, err = io.StringIO(), io.StringIO()
++                            with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                                actual = count_file(argument, strip_bom=policy)
++                            self.assertEqual(actual, count_text(text, strip_bom=policy))
++                            self.assertEqual((out.getvalue(), err.getvalue()), ("", ""))
++                            self.assertEqual(path.read_bytes(), raw)
++
++    def test_decode_failure_and_missing_path_propagate_silently(self):
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "bad"
++            path.write_bytes(b"valid prefix\n\xff")
++            out, err = io.StringIO(), io.StringIO()
++            with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                with self.assertRaises(UnicodeDecodeError):
++                    count_file(path)
++                with self.assertRaises(FileNotFoundError):
++                    count_file(path.with_name("absent"))
++            self.assertEqual((out.getvalue(), err.getvalue()), ("", ""))
++            self.assertEqual(path.read_bytes(), b"valid prefix\n\xff")
++
++    def test_file_signature(self):
++        parameters = inspect.signature(count_file).parameters
++        self.assertEqual(list(parameters), ["path", "strip_bom"])
++        self.assertIs(parameters["strip_bom"].kind, inspect.Parameter.KEYWORD_ONLY)
++        self.assertIs(parameters["strip_bom"].default, True)
++        with self.assertRaises(TypeError):
++            count_file("unused", False)
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+new file mode 100644
+index 0000000..74d59cc
+--- /dev/null
++++ b/tests/integration/test_cli.py
+@@ -0,0 +1,79 @@
++"""Real module-entry named-file checks with exact process streams and bytes."""
++
++import os
++import subprocess
++import sys
++import tempfile
++import unittest
++from pathlib import Path
++
++from textstats import TextStats, count_file
++
++ROOT = Path(__file__).resolve().parents[2]
++
++
++class ModuleCliTests(unittest.TestCase):
++    def invoke(self, *args, cwd=ROOT):
++        return subprocess.run([sys.executable, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
++
++    def test_named_file_matrix_and_bom_option_order(self):
++        cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)), ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / 'sample.txt'
++            for text, default, retained in cases:
++                raw = text.encode('utf-8')
++                path.write_bytes(raw)
++                for args, policy, expected in [( [str(path)], True, default), (['--keep-bom', str(path)], False, retained), ([str(path), '--keep-bom'], False, retained)]:
++                    with self.subTest(text=text, args=args):
++                        result = self.invoke(*args)
++                        self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
++                        self.assertEqual(count_file(path, strip_bom=policy), TextStats(*expected))
++                        self.assertEqual(path.read_bytes(), raw)
++
++    def test_help_without_input(self):
++        for option in ['-h', '--help']:
++            result = self.invoke(option)
++            self.assertEqual(result.returncode, 0, result.stderr)
++            self.assertEqual(result.stderr, '')
++            self.assertIn('usage:', result.stdout)
++            self.assertIn('--keep-bom', result.stdout)
++            self.assertIn('INPUT', result.stdout)
++
++    def test_dash_filenames_and_double_dash_termination(self):
++        with tempfile.TemporaryDirectory() as directory:
++            for name in ['-sample', '--keep-bom', '-']:
++                path = Path(directory) / name
++                path.write_bytes(b'alpha beta\n')
++                result = self.invoke('--', name, cwd=directory)
++                self.assertEqual((result.returncode, result.stdout, result.stderr), (0, 'lines=1 words=2\n', ''))
++                self.assertEqual(path.read_bytes(), b'alpha beta\n')
++
++    def test_exactly_one_input_is_required(self):
++        for args in [[], ['one', 'two']]:
++            result = self.invoke(*args)
++            self.assertEqual(result.returncode, 2)
++            self.assertEqual(result.stdout, '')
++            self.assertIn('usage:', result.stderr)
++
++    def test_missing_and_invalid_utf8_are_clean_input_failures(self):
++        with tempfile.TemporaryDirectory() as directory:
++            missing = Path(directory) / 'absent.txt'
++            bad = Path(directory) / 'bad.txt'
++            bad.write_bytes(b'valid prefix\n\xff')
++            for path, cause in [(missing, 'No such file'), (bad, 'utf-8')]:
++                for options in [[], ['--keep-bom']]:
++                    with self.subTest(path=path, options=options):
++                        result = self.invoke(*options, str(path))
++                        self.assertEqual((result.returncode, result.stdout), (1, ''))
++                        self.assertIn(str(path), result.stderr)
++                        self.assertIn(cause, result.stderr)
++                        self.assertNotIn('Traceback', result.stderr)
++            self.assertEqual(bad.read_bytes(), b'valid prefix\n\xff')
++
++    def test_unknown_option_is_usage_even_with_missing_input(self):
++        for option in ['--unknown', '--keep']:
++            with self.subTest(option=option):
++                result = self.invoke(option, 'nonexistent.txt')
++                self.assertEqual((result.returncode, result.stdout), (2, ''))
++                self.assertIn('usage:', result.stderr)
++                self.assertNotIn('Traceback', result.stderr)
+diff --git a/tests/integration/test_distribution.py b/tests/integration/test_distribution.py
+new file mode 100644
+index 0000000..f85b203
+--- /dev/null
++++ b/tests/integration/test_distribution.py
+@@ -0,0 +1,66 @@
++"""Source allowlist and real isolated extracted-module acceptance contracts."""
++
++import os
++import subprocess
++import sys
++import tempfile
++import unittest
++import zipfile
++from pathlib import Path
++
++from tools.package_source import build_archive
++from tools.check_distribution import verify_archive
++
++ROOT = Path(__file__).resolve().parents[2]
++APPROVED = {'README.md', 'docs/public-api.md', 'AI_DISCLOSURE.md', 'SDD-MANAGER.md',
++            'textstats/__init__.py', 'textstats/__main__.py', 'textstats/core.py',
++            'textstats/io.py', 'textstats/cli.py', 'tools/package_source.py',
++            'tools/check_distribution.py'}
++
++
++class DistributionTests(unittest.TestCase):
++    def test_archive_exact_allowlist_excludes_unrelated_material(self):
++        with tempfile.TemporaryDirectory() as directory:
++            root = Path(directory) / 'source'
++            for name in APPROVED:
++                target = root / name
++                target.parent.mkdir(parents=True, exist_ok=True)
++                target.write_bytes((ROOT / name).read_bytes())
++            for name in ['gh.tkn', 'textstats/__pycache__/cache.pyc', 'textstats/extra.py',
++                         'textstats-run-resources/fake.txt', '.github/workflows/foreign.yml',
++                         'tests/workflows/fake.py', 'docs/dev/fake.md', 'dist/old.zip']:
++                path = root / name
++                path.parent.mkdir(parents=True, exist_ok=True)
++                path.write_text('unmanaged fixture, never a real credential')
++            archive = build_archive(root, Path(directory) / 'source.zip')
++            with zipfile.ZipFile(archive) as bundle:
++                self.assertEqual(set(bundle.namelist()), {'textstats-source/' + n for n in APPROVED})
++                for name in APPROVED:
++                    self.assertEqual(bundle.read('textstats-source/' + name), (ROOT / name).read_bytes())
++
++    def test_checker_verifies_real_extracted_module_with_polluted_import_environment(self):
++        with tempfile.TemporaryDirectory() as directory:
++            archive = build_archive(ROOT, Path(directory) / 'source.zip')
++            from unittest.mock import patch
++            with patch.dict(os.environ, {'PYTHONPATH': str(ROOT)}):
++                self.assertGreaterEqual(verify_archive(archive), 10)
++
++    def test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy(self):
++        with tempfile.TemporaryDirectory() as directory:
++            archive = build_archive(ROOT, Path(directory) / 'source.zip')
++            faulty = Path(directory) / 'faulty.zip'
++            with zipfile.ZipFile(archive) as source, zipfile.ZipFile(faulty, 'w') as target:
++                for name in source.namelist():
++                    data = source.read(name)
++                    if name == 'textstats-source/textstats/cli.py':
++                        data = b'"""Controlled faulty extraction."""\ndef main(argv=None):\n    print("lines=999 words=999")\n    return 0\n'
++                    target.writestr(name, data)
++            with self.assertRaises((AssertionError, RuntimeError)):
++                verify_archive(faulty)
++
++    def test_documented_checker_script_builds_and_runs(self):
++        result = subprocess.run([sys.executable, str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
++                                capture_output=True, text=True)
++        self.assertEqual(result.returncode, 0, result.stderr)
++        self.assertIn('extracted import:', result.stdout)
++        self.assertIn('module cases passed', result.stdout)
+diff --git a/tests/unit/__init__.py b/tests/unit/__init__.py
+new file mode 100644
+index 0000000..3f6f299
+--- /dev/null
++++ b/tests/unit/__init__.py
+@@ -0,0 +1 @@
++"""Unit tests for TextStats semantics."""
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+new file mode 100644
+index 0000000..213d952
+--- /dev/null
++++ b/tests/unit/test_cli.py
+@@ -0,0 +1,121 @@
++"""CLI success/parser policy and actual test-runner process contracts."""
++
++import contextlib
++import io
++import shutil
++import subprocess
++import sys
++import tempfile
++import unittest
++from pathlib import Path
++from unittest.mock import patch
++
++from textstats import TextStats
++from textstats.cli import main
++
++
++class CliTests(unittest.TestCase):
++    def test_success_renders_completed_counts(self):
++        out, err = io.StringIO(), io.StringIO()
++        with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
++            with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                status = main(['named'])
++        self.assertEqual((status, out.getvalue(), err.getvalue()), (0, 'lines=3 words=4\n', ''))
++        counter.assert_called_once_with('named', strip_bom=True)
++
++    def test_keep_bom_before_and_after_input(self):
++        for args in [['--keep-bom', 'named'], ['named', '--keep-bom']]:
++            with self.subTest(args=args):
++                with patch('textstats.cli.count_file', return_value=TextStats(1, 1)) as counter:
++                    with contextlib.redirect_stdout(io.StringIO()):
++                        self.assertEqual(main(args), 0)
++                counter.assert_called_once_with('named', strip_bom=False)
++
++    def test_double_dash_retains_option_like_filename(self):
++        with patch('textstats.cli.count_file', return_value=TextStats(1, 1)) as counter:
++            with contextlib.redirect_stdout(io.StringIO()):
++                self.assertEqual(main(['--', '--keep-bom']), 0)
++        counter.assert_called_once_with('--keep-bom', strip_bom=True)
++
++    def test_help_never_acquires_input(self):
++        for option in ['-h', '--help']:
++            out, err = io.StringIO(), io.StringIO()
++            with patch('textstats.cli.count_file') as counter:
++                with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                    self.assertEqual(main([option]), 0)
++            counter.assert_not_called()
++            self.assertIn('usage:', out.getvalue())
++            self.assertIn('--keep-bom', out.getvalue())
++            self.assertEqual(err.getvalue(), '')
++
++    def test_expected_input_failures_have_status_and_diagnostic(self):
++        failures = [FileNotFoundError('missing input'), PermissionError('access denied'),
++                    OSError('controlled read failure'), UnicodeDecodeError('utf-8', b'\xff', 0, 1, 'invalid start byte')]
++        for failure in failures:
++            with self.subTest(failure=type(failure).__name__):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.cli.count_file', side_effect=failure):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(['affected.txt'])
++                self.assertEqual(status, 1)
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('affected.txt', err.getvalue())
++                self.assertIn(str(failure), err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++    def test_usage_validates_before_acquisition(self):
++        for args in [[], ['missing', 'extra'], ['--unknown', 'missing'], ['--keep', 'missing']]:
++            with self.subTest(args=args):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.cli.count_file') as counter:
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(args)
++                counter.assert_not_called()
++                self.assertEqual((status, out.getvalue()), (2, ''))
++                self.assertIn('usage:', err.getvalue())
++                self.assertIn('error:', err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++
++class CheckRunnerTests(unittest.TestCase):
++    def invoke_fixture(self, unit_source, integration_source):
++        source = Path(__file__).resolve().parents[2] / 'tools' / 'check_tests.py'
++        with tempfile.TemporaryDirectory() as directory:
++            root = Path(directory)
++            (root / 'tools').mkdir()
++            shutil.copyfile(source, root / 'tools' / 'check_tests.py')
++            for suite, contents in [('unit', unit_source), ('integration', integration_source)]:
++                target = root / 'tests' / suite
++                target.mkdir(parents=True)
++                (root / 'tests' / '__init__.py').touch()
++                (target / '__init__.py').touch()
++                if contents is not None:
++                    (target / 'test_contract.py').write_text(contents)
++            # Deliberately failing workflow fixture must never be collected.
++            fixture = root / 'tests' / 'workflows'
++            fixture.mkdir()
++            (fixture / '__init__.py').touch()
++            (fixture / 'test_foreign.py').write_text('raise RuntimeError("workflow fixture collected")\n')
++            return subprocess.run([sys.executable, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
++
++    GOOD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(2 + 2, 4)\n'
++    BAD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.fail("controlled product failure")\n'
++
++    def test_nonempty_success_reports_independent_counts(self):
++        result = self.invoke_fixture(self.GOOD, self.GOOD)
++        self.assertEqual(result.returncode, 0, result.stderr)
++        self.assertIn('unit: 1 tests', result.stdout)
++        self.assertIn('integration: 1 tests', result.stdout)
++
++    def test_either_empty_suite_is_rejected(self):
++        for unit, integration, empty in [(None, self.GOOD, 'unit'), (self.GOOD, None, 'integration')]:
++            with self.subTest(empty=empty):
++                result = self.invoke_fixture(unit, integration)
++                self.assertNotEqual(result.returncode, 0)
++                self.assertIn(empty + ': 0 tests', result.stdout)
++                self.assertIn('empty product suite', result.stderr)
++
++    def test_product_failure_is_propagated(self):
++        result = self.invoke_fixture(self.BAD, self.GOOD)
++        self.assertNotEqual(result.returncode, 0)
++        self.assertIn('controlled product failure', result.stderr)
+diff --git a/tests/unit/test_core.py b/tests/unit/test_core.py
+new file mode 100644
+index 0000000..82d8acd
+--- /dev/null
++++ b/tests/unit/test_core.py
+@@ -0,0 +1,93 @@
++"""Independent examples for R-001 and R-003 through R-005."""
++
++from dataclasses import FrozenInstanceError
++import unittest
++
++from textstats import TextStats, count_text
++
++
++class StatisticsTests(unittest.TestCase):
++    def test_nonnegative_values_and_equality(self):
++        self.assertEqual(TextStats(0, 0), TextStats(0, 0))
++        self.assertEqual(TextStats(2, 3).lines, 2)
++        self.assertEqual(TextStats(2, 3).words, 3)
++        self.assertNotEqual(TextStats(2, 3), TextStats(3, 2))
++
++    def test_each_field_rejects_negative_counts(self):
++        for values in [(-1, 0), (0, -1), (-1, -1)]:
++            with self.subTest(values=values), self.assertRaises(ValueError):
++                TextStats(*values)
++
++    def test_each_field_rejects_nonintegers_including_booleans(self):
++        for value in [True, False, 1.0, "1", None, complex(1, 0)]:
++            for values in [(value, 0), (0, value)]:
++                with self.subTest(values=values), self.assertRaises(TypeError):
++                    TextStats(*values)
++
++    def test_fields_cannot_be_assigned_or_deleted(self):
++        stats = TextStats(2, 3)
++        for field in ["lines", "words"]:
++            with self.subTest(field=field), self.assertRaises((AttributeError, FrozenInstanceError)):
++                setattr(stats, field, 99)
++            with self.subTest(field=field), self.assertRaises((AttributeError, FrozenInstanceError)):
++                delattr(stats, field)
++        self.assertEqual(stats, TextStats(2, 3))
++
++
++class CountingTests(unittest.TestCase):
++    def test_whole_input_spec_matrix_under_both_policies(self):
++        cases = [
++            ("", (0, 0), (0, 0)),
++            ("alpha beta", (1, 2), (1, 2)),
++            ("alpha\n", (1, 1), (1, 1)),
++            ("\n", (1, 0), (1, 0)),
++            ("alpha\r\nbeta\rgamma\n", (3, 3), (3, 3)),
++            ("alpha\n\n", (2, 1), (2, 1)),
++            (" \t", (1, 0), (1, 0)),
++            ("alpha\u2028beta", (1, 2), (1, 2)),
++            ("\ufeff", (0, 0), (1, 1)),
++            ("\ufeff\ufeff", (1, 1), (1, 1)),
++            ("\ufeffalpha beta", (1, 2), (1, 2)),
++            ("a\ufeffb", (1, 1), (1, 1)),
++            ("\r\n", (1, 0), (1, 0)),
++            ("\r", (1, 0), (1, 0)),
++        ]
++        for text, stripped, retained in cases:
++            for policy, expected in [(True, stripped), (False, retained)]:
++                with self.subTest(text=text, strip_bom=policy):
++                    result = count_text(text, strip_bom=policy)
++                    self.assertEqual((result.lines, result.words), expected)
++
++    def test_only_crlf_cr_and_lf_terminate_lines(self):
++        cases = [("\r\n\r\n", (2, 0)), ("\n\r", (2, 0)),
++                 ("a\r\nb\rc\nd", (4, 4)), ("\r\nlast", (2, 1))]
++        for text, expected in cases:
++            with self.subTest(text=text):
++                result = count_text(text)
++                self.assertEqual((result.lines, result.words), expected)
++
++    def test_unicode_separators_are_whitespace_without_new_lines(self):
++        for separator in ["\u0085", "\u2028", "\u2029", "\v", "\f"]:
++            with self.subTest(separator=separator):
++                self.assertEqual(count_text("a" + separator + "b"), TextStats(1, 2))
++                self.assertEqual(count_text(separator), TextStats(1, 0))
++
++    def test_unicode_whitespace_and_non_ascii_words(self):
++        self.assertEqual(count_text("  café\u00a0猫\u2003κόσμος\t\n"), TextStats(1, 3))
++
++    def test_normalization_removes_exactly_one_leading_bom(self):
++        cases = [("\ufeff\ufeff\n", (1, 1)), ("\ufeff\n\ufeff", (2, 1)),
++                 (" \ufeff", (1, 1)), ("\ufeff\r\n", (1, 0))]
++        for text, expected in cases:
++            with self.subTest(text=text):
++                result = count_text(text)
++                self.assertEqual((result.lines, result.words), expected)
++
++    def test_repeated_calls_have_no_shared_state(self):
++        first = count_text("alpha beta\n")
++        self.assertEqual(count_text(""), TextStats(0, 0))
++        self.assertEqual(count_text("alpha beta\n"), first)
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/tests/unit/test_io.py b/tests/unit/test_io.py
+new file mode 100644
+index 0000000..b27a493
+--- /dev/null
++++ b/tests/unit/test_io.py
+@@ -0,0 +1,41 @@
++"""Owned byte acquisition failures and lifetime are portable controlled seams."""
++
++import io
++import unittest
++from unittest.mock import patch
++
++from textstats import TextStats, count_file
++
++
++class FileAcquisitionTests(unittest.TestCase):
++    def test_success_closes_owned_binary_handle_and_preserves_terminators(self):
++        stream = io.BytesIO(b"a\r\nb\rc\n")
++        with patch("textstats.io.open", return_value=stream, create=True) as opener:
++            self.assertEqual(count_file("named"), TextStats(3, 3))
++        opener.assert_called_once_with("named", "rb")
++        self.assertTrue(stream.closed)
++
++    def test_decode_failure_closes_and_returns_no_partial_count(self):
++        stream = io.BytesIO(b"valid\n\xff")
++        with patch("textstats.io.open", return_value=stream, create=True):
++            with self.assertRaises(UnicodeDecodeError):
++                count_file("named")
++        self.assertTrue(stream.closed)
++
++    def test_read_failure_preserves_exception_and_closes(self):
++        class BrokenReader(io.BytesIO):
++            def read(self, *args):
++                raise OSError("controlled read failure")
++        stream = BrokenReader()
++        with patch("textstats.io.open", return_value=stream, create=True):
++            with self.assertRaisesRegex(OSError, "controlled read failure"):
++                count_file("named")
++        self.assertTrue(stream.closed)
++
++    def test_open_failure_preserves_oserror_subclasses(self):
++        for failure in [PermissionError("unreadable"), FileNotFoundError("missing"), IsADirectoryError("directory")]:
++            with self.subTest(failure=type(failure)):
++                with patch("textstats.io.open", side_effect=failure, create=True):
++                    with self.assertRaises(type(failure)) as raised:
++                        count_file("named")
++                self.assertIs(raised.exception, failure)
+diff --git a/textstats/__init__.py b/textstats/__init__.py
+new file mode 100644
+index 0000000..db3821c
+--- /dev/null
++++ b/textstats/__init__.py
+@@ -0,0 +1,6 @@
++"""Silent whole-input statistics API: TextStats, count_text and count_file."""
++
++from .core import TextStats, count_text
++from .io import count_file
++
++__all__ = ["TextStats", "count_text", "count_file"]
+diff --git a/textstats/__main__.py b/textstats/__main__.py
+new file mode 100644
+index 0000000..a499e2f
+--- /dev/null
++++ b/textstats/__main__.py
+@@ -0,0 +1,6 @@
++"""Run the named-file TextStats command via python -m textstats."""
++
++from .cli import main
++
++if __name__ == '__main__':
++    raise SystemExit(main())
+diff --git a/textstats/cli.py b/textstats/cli.py
+new file mode 100644
+index 0000000..19fe35e
+--- /dev/null
++++ b/textstats/cli.py
+@@ -0,0 +1,38 @@
++"""Named-file CLI parsing and exact text presentation.
++
++Expected acquisition/decode failures produce an identifying stderr diagnostic
++and status 1; invocation errors produce status 2 before acquisition.
++"""
++
++import argparse
++import sys
++from .io import count_file
++
++
++def main(argv: list[str] | None = None) -> int:
++    """Parse one named file and emit its completed counts.
++
++    Args:
++        argv: Invocation arguments excluding the executable; None uses sys.argv.
++
++    Returns:
++        Zero on success/help, one for input failures, or two for invalid usage.
++
++    Help and usage validate without acquiring input. Before stdin delivery a
++    literal '-' remains a named filename. Expected file/decode failures are
++    translated without a traceback; the public file API retains its exceptions.
++    """
++    parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
++    parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
++    parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')
++    try:
++        args = parser.parse_args(argv)
++    except SystemExit as exit_request:
++        return int(exit_request.code)
++    try:
++        stats = count_file(args.input, strip_bom=not args.keep_bom)
++    except (OSError, UnicodeDecodeError) as failure:
++        print(f"textstats: {args.input!r}: {failure}", file=sys.stderr)
++        return 1
++    print(f'lines={stats.lines} words={stats.words}')
++    return 0
+diff --git a/textstats/core.py b/textstats/core.py
+new file mode 100644
+index 0000000..4492af7
+--- /dev/null
++++ b/textstats/core.py
+@@ -0,0 +1,84 @@
++"""Pure whole-text statistics with CRLF/CR/LF lines and Unicode words.
++
++Normalization belongs at the whole-input boundary. Counting normalized text
++and traversing preserved logical segments are separate internal operations so
++future selection can reuse them without removing an exposed interior BOM.
++"""
++
++from collections.abc import Iterator
++from dataclasses import dataclass
++
++
++@dataclass(frozen=True, slots=True)
++class TextStats:
++    """Immutable, equal-by-value line and word counts.
++
++    Attributes:
++        lines: Nonnegative integer line count; bool is excluded.
++        words: Nonnegative integer word count; bool is excluded.
++
++    Raises:
++        TypeError: Either count is not an integer or is a bool.
++        ValueError: Either integer count is negative.
++    """
++
++    lines: int
++    words: int
++
++    def __post_init__(self) -> None:
++        """Validate both fields before construction returns a value."""
++        for value in (self.lines, self.words):
++            if not isinstance(value, int) or isinstance(value, bool):
++                raise TypeError("Statistics counts must be integers, excluding bool")
++        if self.lines < 0 or self.words < 0:
++            raise ValueError("Statistics counts must be nonnegative")
++
++
++def _normalize_text(text: str, strip_bom: bool) -> str:
++    """Remove exactly one complete-input leading BOM when requested."""
++    if strip_bom and text.startswith("\ufeff"):
++        return text[1:]
++    return text
++
++
++def _logical_lines(text: str) -> Iterator[str]:
++    """Yield logical segments preserving only CRLF, CR and LF terminators.
++
++    Blank terminated segments count as lines; a trailing terminator adds no
++    empty segment. Other Unicode separators remain segment content.
++    """
++    start = 0
++    end = 0
++    while end < len(text):
++        character = text[end]
++        end += 1
++        if character == "\r":
++            if end < len(text) and text[end] == "\n":
++                end += 1
++        elif character != "\n":
++            continue
++        yield text[start:end]
++        start = end
++    if start < len(text):
++        yield text[start:]
++
++
++def _count_normalized(text: str) -> TextStats:
++    """Count preserved logical lines and str.split words without normalization."""
++    return TextStats(sum(1 for _ in _logical_lines(text)), len(text.replace("\x1c", "").split()))
++
++
++def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
++    """Return whole-input counts without writing to stdout or stderr.
++
++    Args:
++        text: Complete decoded input. CRLF, CR and LF terminate lines; words
++            use Python's Unicode whitespace str.split semantics.
++        strip_bom: Remove exactly one leading U+FEFF when true (the default).
++            A second leading BOM and every interior BOM remain unchanged.
++
++    Returns:
++        Immutable counts. Empty normalized text has zero lines and words;
++        a final nonempty unterminated segment contributes one line.
++    """
++    return _count_normalized(_normalize_text(text, strip_bom))
+diff --git a/textstats/io.py b/textstats/io.py
+new file mode 100644
+index 0000000..176d742
+--- /dev/null
++++ b/textstats/io.py
+@@ -0,0 +1,30 @@
++"""Complete strict UTF-8 named-file acquisition, preserving raw terminators.
++
++This module owns only handles it opens. Acquisition and decoding finish before
++counting; filesystem and decode exceptions propagate without output or results.
++"""
++
++from os import PathLike
++from .core import TextStats, count_text
++
++
++def count_file(path: str | PathLike[str], *, strip_bom: bool = True) -> TextStats:
++    """Return whole-file counts silently without changing input bytes.
++
++    Args:
++        path: Named file as a string or string-valued path-like object.
++        strip_bom: Remove exactly one leading U+FEFF when true (default).
++
++    Returns:
++        Immutable counts with the same semantics as count_text.
++
++    Raises:
++        OSError: Opening or reading the named file fails (subclasses retained).
++        UnicodeDecodeError: Complete bytes are not strict UTF-8.
++
++    Every opened handle closes on success or failure. Binary input prevents
++    newline translation; no partial count is returned after read/decode failure.
++    """
++    with open(path, "rb") as stream:
++        text = stream.read().decode("utf-8", errors="strict")
++    return count_text(text, strip_bom=strip_bom)
+diff --git a/tools/check_distribution.py b/tools/check_distribution.py
+new file mode 100644
+index 0000000..693ff81
+--- /dev/null
++++ b/tools/check_distribution.py
+@@ -0,0 +1,97 @@
++"""Verify isolated source imports and real named-file module-entry contracts.
++
++The checker builds/extracts the source ZIP, clears inherited Python import-path
++settings, disables user-site packages and uses the extraction as process cwd.
++It never substitutes a checkout import for extracted module execution.
++"""
++
++import os
++from pathlib import Path
++import subprocess
++import sys
++import tempfile
++import zipfile
++
++try:
++    from .package_source import build_archive, FILES
++except ImportError:  # Direct script execution puts tools/ on sys.path.
++    from package_source import build_archive, FILES
++
++
++def verify_archive(archive: Path) -> int:
++    """Check an approved ZIP in a temporary extraction; return CLI case count.
++
++    Raises AssertionError/RuntimeError on bad contents, import provenance or
++    process results. Every sample is checked for unchanged bytes. Temporary
++    source/input files are removed on success and failure.
++    """
++    with tempfile.TemporaryDirectory() as directory:
++        destination = Path(directory)
++        with zipfile.ZipFile(archive) as bundle:
++            expected = {'textstats-source/' + name for name in FILES}
++            if set(bundle.namelist()) != expected or len(bundle.namelist()) != len(expected):
++                raise RuntimeError('Archive does not match the approved source allowlist')
++            bundle.extractall(destination)
++        root = destination / 'textstats-source'
++        environment = {key: value for key, value in os.environ.items()
++                       if key not in {'PYTHONPATH', 'PYTHONHOME', 'PYTHONSTARTUP'}}
++        environment['PYTHONNOUSERSITE'] = '1'
++
++        def invoke(arguments):
++            return subprocess.run([sys.executable, '-s', *arguments], cwd=root,
++                                  env=environment, capture_output=True, text=True)
++
++        imported = invoke(['-c', 'import textstats; print(textstats.__file__)'])
++        assert imported.returncode == 0 and imported.stderr == '', imported
++        location = Path(imported.stdout.strip()).resolve()
++        assert location == (root / 'textstats' / '__init__.py').resolve(), location
++        print(f'extracted import: {location}')
++
++        count = 0
++        samples = [('', (0, 0), (0, 0)), ('alpha beta', (1, 2), (1, 2)),
++                   ('alpha\n', (1, 1), (1, 1)), ('\n', (1, 0), (1, 0)),
++                   ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('alpha\n\n', (2, 1), (2, 1)),
++                   (' \t', (1, 0), (1, 0)), ('alpha\u2028beta', (1, 2), (1, 2)),
++                   ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)),
++                   ('\ufeffalpha beta', (1, 2), (1, 2)), ('a\ufeffb', (1, 1), (1, 1)),
++                   ('\r\n', (1, 0), (1, 0)), ('\r', (1, 0), (1, 0))]
++        sample = root / 'sample.txt'
++        for text, default, retained in samples:
++            raw = text.encode('utf-8')
++            sample.write_bytes(raw)
++            for options, expected in [([], default), (['--keep-bom'], retained)]:
++                result = invoke(['-m', 'textstats', *options, 'sample.txt'])
++                assert (result.returncode, result.stdout, result.stderr) == (
++                    0, f'lines={expected[0]} words={expected[1]}\n', ''), result
++                assert sample.read_bytes() == raw
++                count += 1
++        dash = root / '-sample'
++        dash.write_bytes(b'alpha beta\n')
++        result = invoke(['-m', 'textstats', '--', '-sample'])
++        assert (result.returncode, result.stdout, result.stderr) == (0, 'lines=1 words=2\n', ''), result
++        assert dash.read_bytes() == b'alpha beta\n'
++        count += 1
++        bad = root / 'bad.txt'
++        bad.write_bytes(b'valid prefix\n\xff')
++        for args, input_name, cause in [(['missing.txt'], 'missing.txt', 'No such file'),
++                                        (['bad.txt'], 'bad.txt', 'utf-8')]:
++            result = invoke(['-m', 'textstats', *args])
++            assert result.returncode == 1 and result.stdout == '', result
++            assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
++            count += 1
++        assert bad.read_bytes() == b'valid prefix\n\xff'
++        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt']]:
++            result = invoke(['-m', 'textstats', *args])
++            assert result.returncode == 2 and result.stdout == '', result
++            assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
++            count += 1
++        result = invoke(['-m', 'textstats', '--help'])
++        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout, result
++        count += 1
++        print(f'{count} extracted module cases passed')
++        return count
++
++
++if __name__ == '__main__':
++    root = Path(__file__).resolve().parents[1]
++    verify_archive(build_archive(root, root / 'dist' / 'textstats-source.zip'))
+diff --git a/tools/check_tests.py b/tools/check_tests.py
+new file mode 100644
+index 0000000..febb2fc
+--- /dev/null
++++ b/tools/check_tests.py
+@@ -0,0 +1,33 @@
++"""Discover independent nonempty product suites and propagate test failures.
++
++Execute from any cwd with the selected Python runtime. Workflow fixtures are
++excluded: only tests/unit and tests/integration are product collection roots.
++"""
++
++import sys
++import unittest
++from pathlib import Path
++
++
++def main() -> int:
++    """Report actual collection counts, reject empty suites and run both suites."""
++    root = Path(__file__).resolve().parents[1]
++    sys.path.insert(0, str(root))
++    suites = []
++    for name in ('unit', 'integration'):
++        suite = unittest.TestLoader().discover(str(root / 'tests' / name), top_level_dir=str(root))
++        count = suite.countTestCases()
++        print(f'{name}: {count} tests', flush=True)
++        suites.append((name, count, suite))
++    if any(count == 0 for _, count, _ in suites):
++        print('empty product suite: unit and integration must each collect tests', file=sys.stderr)
++        return 1
++    success = True
++    for _, _, suite in suites:
++        result = unittest.TextTestRunner(verbosity=2).run(suite)
++        success = result.wasSuccessful() and success
++    return 0 if success else 1
++
++
++if __name__ == '__main__':
++    raise SystemExit(main())
+diff --git a/tools/package_source.py b/tools/package_source.py
+new file mode 100644
+index 0000000..a424754
+--- /dev/null
++++ b/tools/package_source.py
+@@ -0,0 +1,35 @@
++"""Build the explicit TextStats source allowlist without external dependencies."""
++
++from pathlib import Path
++import zipfile
++
++FILES = (
++    'README.md', 'docs/public-api.md', 'AI_DISCLOSURE.md', 'SDD-MANAGER.md',
++    'textstats/__init__.py', 'textstats/__main__.py', 'textstats/core.py',
++    'textstats/io.py', 'textstats/cli.py', 'tools/package_source.py',
++    'tools/check_distribution.py',
++)
++
++
++def build_archive(root: Path, output: Path) -> Path:
++    """Write approved files under textstats-source/ and return the ZIP path.
++
++    Explicit file names exclude caches, credentials, tests, development records
++    and coordinator resources. Missing files fail rather than silently producing
++    an incomplete package. Symlink inputs are rejected to retain source ownership.
++    """
++    root, output = Path(root), Path(output)
++    for name in FILES:
++        source = root / name
++        if not source.is_file() or source.is_symlink():
++            raise ValueError(f'Required regular source file missing: {name}')
++    output.parent.mkdir(parents=True, exist_ok=True)
++    with zipfile.ZipFile(output, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
++        for name in FILES:
++            archive.write(root / name, 'textstats-source/' + name)
++    return output
++
++
++if __name__ == '__main__':
++    root = Path(__file__).resolve().parents[1]
++    print(build_archive(root, root / 'dist' / 'textstats-source.zip'))

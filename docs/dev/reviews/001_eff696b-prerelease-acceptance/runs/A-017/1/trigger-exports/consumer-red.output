@@ -1,0 +1,111 @@
+test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) ... 
+  test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=FileNotFoundError('missing file')) ... ERROR
+  test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=PermissionError('permission denied')) ... ERROR
+  test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=OSError('read failed')) ... ERROR
+  test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=UnicodeDecodeError('utf-8', b'\xff', 0, 1, 'invalid byte')) ... ERROR
+test_usage_failures_validate_before_acquisition (tests.unit.test_cli.CliTests.test_usage_failures_validate_before_acquisition) ... ok
+test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) ... 
+  test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) (path=PosixPath('/tmp/tmpj2refkqh/missing.txt')) ... FAIL
+  test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) (path=PosixPath('/tmp/tmpj2refkqh/bad.txt')) ... FAIL
+test_unknown_option_is_usage_failure (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_failure) ... ok
+
+======================================================================
+ERROR: test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=FileNotFoundError('missing file'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_cli.py", line 25, in test_input_failures_identify_input_and_cause_without_output
+    status = main(['named'])
+             ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/cli.py", line 31, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+FileNotFoundError: missing file
+
+======================================================================
+ERROR: test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=PermissionError('permission denied'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_cli.py", line 25, in test_input_failures_identify_input_and_cause_without_output
+    status = main(['named'])
+             ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/cli.py", line 31, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+PermissionError: permission denied
+
+======================================================================
+ERROR: test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=OSError('read failed'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_cli.py", line 25, in test_input_failures_identify_input_and_cause_without_output
+    status = main(['named'])
+             ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/cli.py", line 31, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+OSError: read failed
+
+======================================================================
+ERROR: test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) (failure=UnicodeDecodeError('utf-8', b'\xff', 0, 1, 'invalid byte'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_cli.py", line 25, in test_input_failures_identify_input_and_cause_without_output
+    status = main(['named'])
+             ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/cli.py", line 31, in main
+    stats = count_file(args.input, strip_bom=not args.keep_bom)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/unittest/mock.py", line 1198, in _execute_mock_call
+    raise effect
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid byte
+
+======================================================================
+FAIL: test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) (path=PosixPath('/tmp/tmpj2refkqh/missing.txt'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 31, in test_missing_and_invalid_utf8_inputs
+    self.assertNotIn('Traceback', result.stderr)
+AssertionError: 'Traceback' unexpectedly found in 'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/__main__.py", line 6, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/cli.py", line 31, in main\n    stats = count_file(args.input, strip_bom=not args.keep_bom)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/io.py", line 28, in count_file\n    with open(path, "rb") as stream:\n         ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: \'/tmp/tmpj2refkqh/missing.txt\'\n'
+
+======================================================================
+FAIL: test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) (path=PosixPath('/tmp/tmpj2refkqh/bad.txt'))
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 29, in test_missing_and_invalid_utf8_inputs
+    self.assertIn(str(path), result.stderr)
+AssertionError: '/tmp/tmpj2refkqh/bad.txt' not found in 'Traceback (most recent call last):\n  File "<frozen runpy>", line 198, in _run_module_as_main\n  File "<frozen runpy>", line 88, in _run_code\n  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/__main__.py", line 6, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/cli.py", line 31, in main\n    stats = count_file(args.input, strip_bom=not args.keep_bom)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/io.py", line 29, in count_file\n    text = stream.read().decode("utf-8", errors="strict")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeDecodeError: \'utf-8\' codec can\'t decode byte 0xff in position 13: invalid start byte\n'
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.277s
+
+FAILED (failures=2, errors=4)
