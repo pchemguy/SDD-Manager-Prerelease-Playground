@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: **Ready for current full strategy/layout conformance**. Reviewed PLAN SHA-256 `7dfa9a4c2187fae851e4e2a8e49a2a4e607ba1d3f03f69dc1a8cc5ccf7e849c1`, unchanged layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f`, governing SPEC `356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a` and SPEC QC `20704429d0e0aa70904a59e8be9adc1ea7ca2fc68b9b09923aa8978fe3b9ef48`. Revision 4 supplies the current affected incorporation assessment. Concrete delegated acceptance of this changed checkpoint is pending before TASKS reconciliation/dependent use; technical Ready is not acceptance. No implementation checks are claimed.
+State: **Ready for current full strategy/layout conformance**. Reviewed PLAN SHA-256 `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199`, unchanged layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f`, governing SPEC `356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a` and SPEC QC `20704429d0e0aa70904a59e8be9adc1ea7ca2fc68b9b09923aa8978fe3b9ef48`. Revision 5 supplies the current affected incorporation assessment. Concrete delegated acceptance of this changed checkpoint is pending before TASKS reconciliation/dependent use; technical Ready is not acceptance. No implementation checks are claimed.
 
 ## Initial strategy review
 
@@ -71,3 +71,7 @@ Exact PLAN `7dfa9a4c2187fae851e4e2a8e49a2a4e607ba1d3f03f69dc1a8cc5ccf7e849c1`, l
 Full grouped coverage: R-001–R-007 in 1.1 retained thereafter; R-008 in 1.2; R-009 in 2.1; R-010 in pending 2.2; R-011–R-013 in 1.2 and all affected subsequent docs/tests/distribution exits; F-001–F-004 in 2.4/2.5 with 2.6 extent review and final stdin/phase regression. Shared C-002/C-003/C-004/C-010 pipeline, complete decode/lifetime, silent whole-input API and unchanged layout seams conform. Each delivery milestone retains a final dedicated code review/testing/report outcome; feature parent review cannot close whole Phase 2. No new capability, phase identity, source owner or release is introduced.
 
 Checks: complete owner conformance and dependency/count review; changed local link targets and Markdown/whitespace check performed before persistence. No product tests or hosted projection performed by this document checkpoint. TASKS/current QC must next reconcile affected T-014/T-015/T-017 and single feature ownership. No unresolved PLAN finding; delegated acceptance pending.
+
+## Revision 5
+
+Delegated coordinator review identified PLAN-RANGE-002 in the current Strategy checkpoint: it still claimed two delivery milestones per phase despite the incorporated four-milestone Phase 2 hierarchy. The integration owner corrected that current navigation claim to two Phase 1 and four Phase 2 delivery milestones, excluding dedicated phase/feature reviews; historical acceptance identities remain unchanged. Full revised PLAN SHA-256 `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199`. Rechecked current count claims against all 1.1–1.3 and 2.1–2.6 milestone definitions and retained Revision 4 contract/dependency/layout coverage. The finding is resolved; no strategy or behavioral change. Changed links and whitespace pass. Current technical gate Ready; concrete corrected checkpoint acceptance remains pending. No product tests or hosted changes.
