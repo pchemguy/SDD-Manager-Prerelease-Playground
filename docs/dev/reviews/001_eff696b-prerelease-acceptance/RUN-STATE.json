@@ -2,19 +2,29 @@
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
   "phase": "P3",
-  "case_id": "A-012",
+  "case_id": "A-013",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A012 independent Passed: actual JSON removal integrated and published77e7106",
-  "pending_operation": null,
-  "next_action": "Explicitly resume stdin and final Phase2 exits from published assessed77e7106",
+  "last_completed_action": "Published T015ca24007 and exact four-file T016 report candidate independently assessed/accepted in9338f06",
+  "pending_operation": {
+    "kind": "task",
+    "status": "in_progress",
+    "description": "Accepted milestone review publication/closure then distinct final phase reports and prospective integration",
+    "identity": {
+      "task_id": "T-016",
+      "branch": "phase/2-json-and-stdin",
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground"
+    }
+  },
+  "next_action": "Complete immediately published T016/native closures; assess concrete T017 PHASE/IMPLEMENTATION report pair and completed-phase integration before final A013 grade",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
-    "product_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+    "product_commit": "ca24007134141265a1937c77e2fda504bb0d6129",
     "integration_branch": "main",
     "integration_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
-    "remote": "origin"
+    "remote": "origin",
+    "evidence_commit": "9338f067a575511b6d818a6898a458957f4670a8"
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",
@@ -288,6 +298,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/readback-diagnostic/RESULT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/recovery-rerun/DISPATCH.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/recovery-rerun/RESULT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/repaired-complete-rerun/RESULT.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/repaired-complete-rerun/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-013/1/T016-gate/DECISION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-013/1/T016-gate/independent/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/consumer-setup/ordinary-input.md"
   ]
 }

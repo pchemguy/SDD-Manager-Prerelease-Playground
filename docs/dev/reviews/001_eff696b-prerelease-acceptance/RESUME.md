@@ -1,5 +1,13 @@
 # Acceptance continuation
 
+## Current reached continuation
+
+A013 is Running, from independently assessed/published JSON-removal77e. T013/T014/T015 are published, latest exact phase tip `ca24007134141265a1937c77e2fda504bb0d6129`; main remains `fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. Concrete T016 milestone report candidate tree `c1a3d44edc98a3a11c2d491ba7da92ee32307253` has root delegated and independent acceptance published/exactverified in `9338f067a575511b6d818a6898a458957f4670a8`. Finish its atomic closing publication/native associations and milestone closure, then separately assess T017 final PHASE/IMPLEMENTATION reports and prospective completed-phase integration. Do not reintroduce retired JSON tasks or infer full readiness. A027 fresh reporting consumer is read-only and will refresh actual final state; A014 new-live-destination rejection remains Blocked without retry. All completed owned commits are immediately pushed/read back.
+
+Original-pin required totals remain27 Passed/two original Failed/A013 Running/A014 cross-phase Blocked/A027 Pending. Corrected A004/A005 rechecks give29 Passed with the same three unresolved; optional two remain Not run and supplements stay outside32. The following entries are chronological history retained byte-for-byte.
+
+## Initial setup and historical continuation
+
 Fresh run, immutable plugin source `ea515f5624c8a34cc4572731a2590223a5eb27f4`. Product setup is published on main at `eff696b38f0b8a94bd6f91ca1c64d54fd714df46`; publisher candidate is independently published on `publisher/037-candidate` at `fb7324dfeb10f425938d12be9a5a60d5a28d39e3`. No product implementation or release has run. Continue only after this evidence and source CP-012 are published/read back.
 
 Separate fresh conversation contexts are available, but tools share an unrestricted filesystem. Consumer handoffs exclude assessor assets and historical answers; the consumer checkout contains only pinned plugin resources and product instructions. Filesystem isolation is **not certified** because other source/evidence workspaces remain reachable. Record this limit for affected independent assessments; do not certify isolation-dependent cases.
