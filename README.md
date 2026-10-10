@@ -1,5 +1,60 @@
 # TextStats
 
-TextStats currently supplies immutable `TextStats` values and silent whole-text counting through `count_text` on Python 3.11+. Named-file counting through `count_file` and the module-entry CLI now deliver milestone 1.1 success, BOM policy and help; complete CLI failure handling, public usage documentation and source distribution remain planned. The [project brief](docs/dev/PROJECT.md) captures the requested capabilities and delivery boundaries; complete runnable usage instructions will be added with the documentation milestone. Current task evidence and the paused Phase 1 boundary are recorded in [TASKS](docs/dev/TASKS.md#t-003-completion-evidence).
+Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. Phase 1 delivers the silent API, named-file module command, BOM policy and clean error handling. JSON, stdin and line ranges remain planned.
 
-Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
+## Quick start
+
+Run from the repository root:
+
+```bash
+python -c "from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\r\nbeta\rlast two\n')"
+python -m textstats sample.txt
+python -m textstats --help
+```
+
+The counting command prints `lines=3 words=5` followed by a newline, with status 0 and empty stderr. Help returns 0 and explains the input and options without opening a file. Inputs stay unchanged.
+
+```bash
+python -c "from pathlib import Path; Path('bom.txt').write_bytes(b'\xef\xbb\xbf')"
+python -m textstats bom.txt
+python -m textstats --keep-bom bom.txt
+python -c "from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\n')"
+python -m textstats -- -sample
+```
+
+BOM-only input produces `lines=0 words=0` by default and `lines=1 words=1` with `--keep-bom`. The dash-prefixed file produces `lines=1 words=2`. Options can appear before or after INPUT; `--` ends option parsing. At this phase a literal `-` is a filename. Exactly one file is required.
+
+Missing, unreadable, read-failing or invalid UTF-8 input returns status 1 with identifying input/cause stderr, no traceback and empty stdout. Missing/extra inputs or unknown options return status 2 with useful usage/error stderr and empty stdout. Invocation validation precedes file access. No partial statistics are emitted.
+
+## Python API
+
+```python
+from textstats import TextStats, count_text, count_file
+
+assert count_text("alpha beta\r\nbeta\rlast two\n") == TextStats(3, 5)
+assert count_file("sample.txt") == TextStats(3, 5)
+assert count_text("\ufeff") == TextStats(0, 0)
+assert count_text("\ufeff", strip_bom=False) == TextStats(1, 1)
+```
+
+All three exports are documented in the [public API and module reference](docs/public-api.md), including line/word semantics, constructor validation, strict decoding, exceptions and handle ownership. API calls write nothing to stdout or stderr.
+
+## Product checks
+
+Run from the repository root with the same Python executable:
+
+```bash
+python tools/check_tests.py
+python -m unittest discover -s tests/unit -t . -v
+python -m unittest discover -s tests/integration -t . -v
+```
+
+The runner independently reports unit and integration collection counts, rejects an empty suite and propagates test failures. Workflow fixtures do not count as product tests. Python 3.12.14 is the currently verified runtime; other supported versions have not been exercised here.
+
+## Distribution boundary
+
+Source packaging and isolated extracted-module checks are the next selected delivery task. No archive or distribution command is advertised as delivered until that task completes. No installed console script or release publication is required.
+
+## Development
+
+The accepted [project brief](docs/dev/PROJECT.md), [SPEC](docs/dev/SPEC.md), [PLAN](docs/dev/PLAN.md) and canonical [TASKS](docs/dev/TASKS.md) own scope and execution. Development uses [SDD Manager](SDD-MANAGER.md); see the [AI-assisted development disclosure](AI_DISCLOSURE.md).
