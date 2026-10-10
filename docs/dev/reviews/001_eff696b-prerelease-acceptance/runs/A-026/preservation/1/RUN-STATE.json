@@ -5,10 +5,10 @@
   "case_id": "A-026",
   "variant": "preservation",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Actual assessed milestone fork/fixture prepared, independently probed and published; ordinary handoff published before fresh consumer dispatch",
+  "role": "assessor",
+  "last_completed_action": "Fresh verification-only consumer sealed; independent variant assessment pending",
   "pending_operation": null,
-  "next_action": "Verification-only consumer, independent separate variant assessment then publish",
+  "next_action": "Independently assess exact preservation/commands/scope, retain outcome and publish",
   "checkpoint_refs": {
     "product_branch": "trial/037-a026-preservation",
     "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
@@ -21,6 +21,7 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/INPUTS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/BINDINGS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/START.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/HANDOFF.md"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/CONSUMER-OBSERVATIONS.json"
   ]
 }
