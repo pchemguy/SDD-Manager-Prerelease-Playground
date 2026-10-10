@@ -1,0 +1,9 @@
+{
+  "A-001.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Independent full assessment of concrete accepted/published preparation and lifecycle, with source-loading/shared filesystem/native transcript limits disclosed",
+    "assessment_path": "runs/A-001/1/ASSESSMENT.json"
+  }
+}

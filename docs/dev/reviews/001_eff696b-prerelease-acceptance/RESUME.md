@@ -55,3 +55,7 @@ Body-conflict run `38046659644` rejects different curated fields; inventory-conf
 ## Delegated TASKS assessment
 
 Coordinator accepted concrete TASKS/QC `1510709f` with exact identities/basis retained. Preparation acceptance seal and independent full A-001 assessment remain; do not start implementation/hosting/integration until their scoped prerequisite. Stale PLAN layout-pending navigation can be corrected as acceptance-only bookkeeping.
+
+## A-001 full assessment and clean publisher repair proof
+
+Independent full A-001 assessment is Passed at `1e3305c8` under exact scoped delegated decisions; all current QC identities, 17 unchecked tasks, all133 immutable package files, 37 loaded-source hashes, clean/published preparation and actual hosted absence are verified. Preparation intentionally stops unmerged before implementation. Consumers for A-002/A-003 must receive only ordinary requests and actual current state after this evidence is published. Fresh publisher run `38047635040` Passed cleanly under repaired tooling `4a56c7d`, isolated source `170adcd`; actual body/source/state/latest/archive/checksum/all133 member bytes independently verified. Repaired complete rerun is dispatched, not yet graded.

@@ -5,12 +5,20 @@
   "case_id": "A-001",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Coordinator assessed and accepted exact TASKS/QC",
-  "pending_operation": null,
-  "next_action": "Seal scoped preparation acceptance and independently assess full A-001; fresh publisher first-run proof",
+  "last_completed_action": "Full A-001 independently assessed Passed at accepted preparation seal",
+  "pending_operation": {
+    "kind": "api",
+    "status": "in_progress",
+    "description": "Repaired complete-release rerun dispatched after clean first-create proof",
+    "identity": {
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+      "operation_id": "037-cp014-repaired-complete-rerun-001"
+    }
+  },
+  "next_action": "Publish prerequisite assessment then dispatch selection-only A-002 and tracking A-003; assess repaired publisher rerun",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
-    "product_commit": "1510709f6e10d82d1b525b8c7cb221c5e1c5e20f",
+    "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
     "integration_branch": "main",
     "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
@@ -35,6 +43,8 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/LAYOUT-DECISION.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/body-conflict/RESULT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/foreign-asset/RESULT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/TASKS-DECISION.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/TASKS-DECISION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/CONSUMER-FINAL-OBSERVATIONS.json"
   ]
 }
