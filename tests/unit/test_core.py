@@ -89,5 +89,34 @@ class CountingTests(unittest.TestCase):
         self.assertEqual(count_text("alpha beta\n"), first)
 
 
+class SelectionTests(unittest.TestCase):
+    def test_preserved_normalized_logical_segments_and_eof(self):
+        from textstats.core import _select_lines
+        cases = [
+            ('', 1, 99, ''), ('alpha beta\nbeta\nlast two', 2, 3, 'beta\nlast two'),
+            ('alpha beta\nbeta\nlast two', 2, 99, 'beta\nlast two'),
+            ('alpha beta\nbeta\nlast two', 1, 1, 'alpha beta\n'),
+            ('alpha beta\nbeta\nlast two', 4, 99, ''),
+            ('a\n\n', 2, 9, '\n'), ('a\r\nb c\rd\n', 2, 3, 'b c\rd\n'),
+            ('a\n\ufeff', 2, 2, '\ufeff'), ('\n', 1, 1, '\n'),
+            ('alpha\u2028beta', 1, 1, 'alpha\u2028beta'),
+            ('\ufeff\ufeff', 1, 1, '\ufeff\ufeff'),
+        ]
+        huge = 10 ** 5000
+        cases += [('a\nb', 1, huge, 'a\nb'), ('a\nb', huge, huge, '')]
+        for text, start, end, expected in cases:
+            with self.subTest(text=text, endpoint_class='huge' if end>100 else 'small'):
+                self.assertEqual(_select_lines(text, start, end), expected)
+
+    def test_selection_and_normalized_counting_do_not_strip_exposed_bom(self):
+        from textstats.core import _select_lines, _count_normalized, _normalize_text
+        for policy in (True, False):
+            normalized = _normalize_text('\ufeffa\n\ufeff', policy)
+            selected = _select_lines(normalized, 2, 2)
+            self.assertEqual(selected, '\ufeff')
+            self.assertEqual(_count_normalized(selected), TextStats(1, 1))
+        self.assertEqual(_count_normalized(_select_lines('\ufeff', 1, 1)), TextStats(1, 1))
+
+
 if __name__ == "__main__":
     unittest.main()
