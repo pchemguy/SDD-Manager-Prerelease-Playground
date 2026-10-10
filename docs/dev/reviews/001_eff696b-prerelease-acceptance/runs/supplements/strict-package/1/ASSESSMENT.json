@@ -1,0 +1,859 @@
+{
+  "schema_version": 1,
+  "status": "Strict creator validation Failed; documented portability limits retained",
+  "plugin_validator_returncode": 1,
+  "reported_plugin_errors": 39,
+  "manifest_schema_errors": 4,
+  "shared_sibling_link_creator_errors": 35,
+  "plugin_contained_existing_local_links": 120,
+  "link_observations": [
+    {
+      "skill": "sdd-conventions",
+      "link": "references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/modularity.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/design-heuristics.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/task-hierarchy.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/backend-object-lifecycle.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/workflow-identity.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/development-document-qc.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/review-campaigns.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-conventions",
+      "link": "references/hosting-tokens.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-design",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-design",
+      "link": "../sdd-manage/references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-design",
+      "link": "../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-design",
+      "link": "references/exploration.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-design",
+      "link": "references/architecture.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-design",
+      "link": "references/decomposition.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-docs",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-docs",
+      "link": "references/in-code-documentation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-docs",
+      "link": "references/standalone-documentation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-docs",
+      "link": "references/review-and-findings.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-forge",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-forge",
+      "link": "../sdd-manage/references/prerelease-review.md#advisory-release-reminder",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-forge",
+      "link": "references/release-highlights.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-forge",
+      "link": "references/github.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-forge",
+      "link": "../sdd-manage/references/coordination.md#coordinate-execution",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "references/environment-recovery.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "references/startup-and-continuation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "references/range-selection.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "../sdd-manage/references/tracking-decision.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "../sdd-manage/references/phase-activation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "references/task-execution.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "references/completion-and-checkpoints.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "../sdd-manage/references/tracking-decision.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "../sdd-manage/references/phase-activation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "references/completion-and-checkpoints.md#task-commit-contract",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-implement",
+      "link": "../sdd-manage/references/git-workflows.md#publish-each-commit",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-integrate-feature",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-integrate-feature",
+      "link": "references/feature-incorporation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-integrate-feature",
+      "link": "references/feature-incorporation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/workflows.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/agent-orientation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/repository-bootstrap.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/document-qc-gates.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/coordination.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/branch-management.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/git-workflows.md#publish-each-commit",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/git-workflows.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/credentials.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/tracking-decision.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/phase-activation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/prerelease-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/revision-modes.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/review-and-revision.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/workflows.md#release-operations",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "../sdd-forge/references/release-highlights.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "../sdd-forge/references/github.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/examples.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/repository-bootstrap.md#greenfield-startup",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/tracking-decision.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/phase-activation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/tracking-decision.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "../sdd-implement/references/completion-and-checkpoints.md#task-commit-contract",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "../sdd-implement/references/completion-and-checkpoints.md#task-persistence-audit-and-recovery",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/git-workflows.md#publish-each-commit",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "references/revision-modes.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-manage",
+      "link": "../sdd-conventions/references/review-campaigns.md#closed-campaign-records",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-orient",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-orient",
+      "link": "references/inspection-and-handoff.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-orient",
+      "link": "../sdd-manage/references/agent-orientation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-orient",
+      "link": "../sdd-conventions/references/review-campaigns.md#closed-campaign-records",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-orient",
+      "link": "../sdd-manage/references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "../sdd-manage/references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "references/delivery-plan.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "references/physical-layout.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "references/delivery-plan.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "references/physical-layout.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-plan",
+      "link": "references/review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/object-drafts.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/completion-reports.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/releases.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/document-qc-reports.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/campaign-artifacts.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/change-kinds.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-report",
+      "link": "references/object-drafts.md#task-commit-subjects",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-specify",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-specify",
+      "link": "../sdd-manage/references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-specify",
+      "link": "../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-specify",
+      "link": "references/system-specification.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-specify",
+      "link": "references/change-specification.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-specify",
+      "link": "references/review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-steer",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-steer",
+      "link": "references/objective-and-impact.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-steer",
+      "link": "references/amendment-execution.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-steer",
+      "link": "references/verification-and-stop.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "../sdd-manage/references/human-document-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "../sdd-manage/references/branch-management.md#preparation-integration-gate",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "references/task-derivation.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "references/conformance-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "references/conformance-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tasks",
+      "link": "references/progress-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "references/testing-strategy.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "references/test-first-cycle.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "references/writing-good-tests.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "references/writing-good-tests.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "references/upstream-provenance.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-tdd",
+      "link": "LICENSE",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-verify",
+      "link": "../sdd-conventions/references/markdown-style.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": false
+    },
+    {
+      "skill": "sdd-verify",
+      "link": "references/boundary-review.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-verify",
+      "link": "references/check-selection.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-verify",
+      "link": "references/release-checks.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-verify",
+      "link": "references/execution-and-evidence.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    },
+    {
+      "skill": "sdd-verify",
+      "link": "references/failure-assessment.md",
+      "within_plugin": true,
+      "is_file": true,
+      "within_skill": true
+    }
+  ],
+  "classification": "Missing canonical portable $schema and unknown client fields hooks/interface/skills are genuine portable manifest differences. Creator standalone validators also reject sibling skill references; all observed links resolve within actual plugin root, with package-wide manual loading demonstrated separately. Do not turn strict failure into a portability/client discovery pass or impose unrequested manifest migration. No source edits performed.",
+  "authority": "Fresh primary published AgentPlugins1.0.0 specification sections4/5/7 and AgentSkills specification observed2026-10-10; offline creatorvalidator identities retained",
+  "evidence_limits": [
+    "Read-only structural checks do not prove installed client discovery/display",
+    "No standalone self-contained portability claim for shared sibling references",
+    "No MCP component present",
+    "Known format limits already documented in selected active campaign; no new automatic migration requirement"
+  ]
+}
