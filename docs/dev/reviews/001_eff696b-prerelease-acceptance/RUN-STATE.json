@@ -5,9 +5,9 @@
   "case_id": null,
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Recovered published setup and observed failed first publisher run plus existing empty draft",
-  "pending_operation": "Diagnose workflow-token draft readback before any publisher replay",
-  "next_action": "Publish recovery evidence, then probe read-only workflow draft visibility",
+  "last_completed_action": "GET-only workflow-token probe passed; matching existing draft verified before recovery dispatch",
+  "pending_operation": "Publisher recovery run 38045002859 in progress",
+  "next_action": "Read completed run and actual release/assets/latest before repeated trial",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
@@ -19,6 +19,8 @@
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/INPUTS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/positive-first/RECOVERED-OBSERVATION.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/positive-first/RECOVERED-OBSERVATION.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/readback-diagnostic/RESULT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/recovery-rerun/DISPATCH.json"
   ]
 }

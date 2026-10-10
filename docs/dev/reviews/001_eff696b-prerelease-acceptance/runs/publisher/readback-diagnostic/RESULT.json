@@ -1,0 +1,15 @@
+{
+  "run_id": 38044886069,
+  "tooling_commit": "be0f6d46b970b031aac4fc1fb9f935c748034ec3",
+  "diagnostic_job_id": 114192302389,
+  "conclusion": "success",
+  "observed_at": "2026-10-10T10:26:15Z",
+  "workflow_token_permissions": "contents: write",
+  "observations": [
+    {"path": "/releases?per_page=100", "status": 200, "id": 408861830, "draft": true, "asset_count": 0},
+    {"path": "/releases/408861830", "status": 200, "id": 408861830, "draft": true, "asset_count": 0},
+    {"path": "/releases/tags/v0.15.0", "status": 404}
+  ],
+  "interpretation": "A later Contents-write workflow token can read the first draft by inventory and exact ID. Tag lookup alone does not find this draft. The first immediate inventory miss is retained; these later observations do not establish its backend cause.",
+  "mutations": "None; publisher disabled, diagnostic performs GET only"
+}
