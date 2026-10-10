@@ -16,8 +16,39 @@ Python 3.12.14 was verified for T-001. From the repository root, run `python -m 
 
 The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records completed named-file/API/error/documentation/distribution exits and the integration protocol. All nine Phase 1 task results are tracked in canonical TASKS; Phase 2 remains pending and outside the current request. Use the current Git/remote state for actual integration/publication identity rather than treating this navigation as a branch snapshot. The current verified product suites contain 23 unit and 18 integration tests; extracted distribution checks exercise 36 real module cases on Python 3.12.14. Broader runtime/platform coverage is unverified.
 
-## Phase 2 JSON increment
+## Named-file range conclusion and paused-phase integration
 
-The current JSON-increment request supersedes the historical Phase 1 stopping statements above: activate Phase 2 and execute only T-010 through T-012 in [TASKS](docs/dev/TASKS.md), then pause before stdin work with Phase 2 incomplete and unmerged. Phase 1 is integrated and published; maintained tracking covers the eligible Phase 2 objects. Named-file `--json` composes with BOM policy while text remains the default; stdin and ranges remain deferred. Product checks now collect 25 unit and 21 integration tests on Python 3.12.14. The extraction checker now exercises 99 real text/JSON/BOM/error module cases with isolated import provenance. Preserve earlier checkpoint records and use actual Git/remote state for publication identities.
+The current request authorizes complete named-file range delivery T-018–T-024,
+required governing/task incorporation, concrete delegated artifact review, maintained
+hosted reconciliation, eligible archive and explicit integration into paused
+`phase/2-json-and-stdin`. T-018–T-024 are accepted, published through
+`bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa`, with unique issues #19–#25 closed/completed
+and native #7/#8/#9 closed after full associations/readback. Stop after verified/
+published reconciled feature integration; retain pending T-013–T-017 and do not release.
+Historical preparation/Phase 1 stops above do not limit this selected request.
 
-The [milestone 2.1 review](docs/dev/reports/phases/2/2.1.md) records the JSON increment's coherent code review, nonempty product checks, runnable examples and distribution exits. The selected JSON milestone is complete on its published phase branch; continue only after a new instruction authorizes stdin.
+Main [SPEC](docs/dev/SPEC.md), [PLAN](docs/dev/PLAN.md) and [TASKS](docs/dev/TASKS.md)
+with current adjacent QC supply complete requirements/strategy and sole T-001–T-024
+executable ownership. [Package](docs/dev/features/002_e7cae5b-named-file-ranges/README.md)
+retains archived feature sources/QC and implementation reports; archived checklists
+are historical, not executable owners. Preserve unchecked main Phase 2/2.2/2.3 and
+stdin/final tasks, stable dependencies, report prefixes, original failures and evidence.
+Existing design/layout seams suffice unchanged. Current root product checks collect
+31 unit/28 integration tests; distribution executes 315 isolated actual whole-input/
+range module cases plus silent unchanged API/signature probe, on Python 3.12.14.
+Other supported runtimes/platforms remain unverified.
+
+Accepted preparation was explicitly merged/published into default at
+`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`, then feature branch created and compatible
+JSON prerequisite merged/published at `806e989567aef425ddd933f33fbd8f9af5edae2a`.
+Default stays preparation-only without JSON. Concrete acceptance/publication of the
+current reconciliation/QC/archive checkpoint and final paused-phase merge are pending;
+no unseen acceptance or integration is inferred. Follow immediate per-commit push/
+exact readback and owning task/result/evidence/initial-checkbox contracts above.
+Use `PYTHONDONTWRITEBYTECODE=1 python -B` including children. Preserve protected
+coordinator resources/foreign material/manual controls and pending main work.
+No complete Phase 2/default merge or release follows this feature.
+
+## Published JSON prerequisite
+
+The separately published completed JSON milestone checkpoint `e63b8946bbb99347b0f73f070f9c728945ee5925` supplies T-010–T-012 and [milestone 2.1 review](docs/dev/reports/phases/2/2.1.md). Named-file `--json` composes with BOM policy and text remains default; stdin remains pending. Historical JSON-only verification recorded 25 unit/21 integration tests and 99 isolated extracted-module cases on Python 3.12.14. This compatible merge retains those results and pending T-013–T-017 without completing/integrating Phase 2 into default. Current range delivery authority and stop above govern this continuation.

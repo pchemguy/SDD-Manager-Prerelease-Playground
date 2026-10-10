@@ -2,9 +2,9 @@
 
 ## Scope and authority
 
-TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. No implementation exists.
+TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. This document specifies intended behavior; delivered capability and verification evidence belong to the owning task and implementation records.
 
-R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 retain the later separately requested range feature's contract as a deferred compatibility constraint. That feature is outside the initial executable hierarchy. No focused specification children are needed.
+R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 specify named-file range behavior, including text/JSON composition and its delivery acceptance. Range selection remains a separate feature extent outside the original two-phase executable hierarchy; stdin acquisition retains its own milestone. Delivery strategy and sole executable ownership belong to main PLAN/TASKS. Incorporated feature sources are retained as historical snapshots in the [named-file range package](features/002_e7cae5b-named-file-ranges/README.md). No focused specification children are needed.
 
 ## Public API and values
 
@@ -66,11 +66,13 @@ Use unittest with discoverable, nonempty product suites under `tests/unit/` and 
 
 Provide a source distribution containing the importable package, module entry and required user/API documentation. Verify its extracted contents by invoking `python -m textstats` in the extracted source context, without relying on imports from the original checkout or an unrelated installed package. Named-file success and failure and the delivered phase's JSON/stdin behavior must retain their specified contracts in that context. Packaging uses the standard library; no extra runtime dependency is required. Physical archive layout and check commands belong in planning/layout.
 
-## Deferred range feature
+<a id="deferred-range-feature"></a>
+
+## Named-file range feature
 
 ### F-001 Range grammar and validation
 
-A separately requested feature adds exactly one `--lines START:END` or `--lines=START:END`. START and END consist solely of ASCII decimal digits and represent positive inclusive one-based endpoints with START <= END. Leading zeros are decimal. No arbitrary endpoint or digit-count limit is permitted. Reject signs, surrounding or interior whitespace, Unicode digits, zero, reversal, open endpoints, extra colons, missing values and repeated range options. Repetition across the two spelling forms is also invalid. Reject with usage status 2, useful stderr, empty stdout and no traceback before acquiring input. Valid very large decimal endpoints must remain valid despite any interpreter conversion safeguard.
+Named-file CLI invocation accepts at most one `--lines START:END` or `--lines=START:END`. START and END consist solely of ASCII decimal digits and represent positive inclusive one-based endpoints with START <= END. Leading zeros are decimal. No arbitrary endpoint or digit-count limit is permitted. Reject signs, surrounding or interior whitespace, Unicode digits, zero, reversal, open endpoints, extra colons, missing values and repeated range options. Repetition across the two spelling forms is also invalid. Reject with usage status 2, useful stderr, empty stdout and no traceback before acquiring input. Valid very large decimal endpoints must remain valid despite any interpreter conversion safeguard. Without a range option, count the whole input. Options may precede or follow INPUT before `--`; options after `--` are filenames, preserving R-007 parsing and help behavior.
 
 ### F-002 Selection semantics and decode ordering
 
@@ -78,22 +80,39 @@ Decode the complete input before selecting lines; invalid bytes after END still 
 
 ### F-003 Composition and delivery boundary
 
-Range selection composes with `--keep-bom` and `--json` in either option order, using either accepted range spelling. Preserve default text output and R-008 error categories. Named-file text/JSON range behavior is the feature's delivery boundary. The public API remains whole-input with no range parameter or new export. Source-independent selection must be compatible with future stdin, but this feature does not implement or pull forward stdin acquisition/delivery.
+Range selection composes with `--keep-bom` and `--json` in either option order, using either accepted range spelling. Preserve default text output and R-008 error categories. Named-file text/JSON range behavior is the feature's delivery boundary. The public API remains whole-input with no range parameter or new export. Source-independent selection must be compatible with stdin under R-010; stdin acquisition/delivery remains its own milestone and is outside the named-file range feature extent. Literal `-` remains a named file until stdin delivery, and `./-` addresses a named file afterward. Success returns 0 and empty stderr; text/JSON counts are equal under R-007/R-009. Help and runnable named-file range documentation, nonempty unit/integration verification and isolated extracted-source module-entry verification are feature delivery obligations. No streaming, benchmark target, third-party dependency or release publication is required.
 
 ### F-004 Objective range acceptance
 
-| Complete input (escaped) | Range | Expected (lines, words) |
+Escapes below denote actual characters. Run every success example in text and JSON, with equal counts, status 0 and empty stderr.
+
+| Complete input | Range / policy | Expected (lines, words) |
 | --- | --- | --- |
-| `alpha beta\nbeta\nlast two` | 2:3 | (2, 3) |
-| `alpha beta\nbeta\nlast two` | 2:99 | (2, 3) |
-| `alpha beta\nbeta\nlast two` | 1:1 | (1, 2) |
+| `alpha beta\nbeta\nlast two` | 2:3 and 2:99 | (2, 3) |
+| `alpha beta\nbeta\nlast two` | 1:1 and 0001:0001 | (1, 2) |
 | `alpha beta\nbeta\nlast two` | 4:99 | (0, 0) |
 | `a\n\n` | 2:9 | (1, 0) |
 | `a\r\nb c\rd\n` | 2:3 | (2, 3) |
-| `a\n\ufeff` | 2:2, default BOM policy | (1, 1) |
-| Empty input | 1:99 | (0, 0) |
+| `a\n\ufeff` | 2:2, both BOM policies | (1, 1) |
+| Empty | 1:99 | (0, 0) |
+| `\ufeff` | 1:1, default / keep | (0, 0) / (1, 1) |
+| `\ufeff\ufeff` | 1:1, both policies | (1, 1) |
+| `alpha\u2028beta` | 1:1 | (1, 2) |
+| `\n` | 1:1 | (1, 0) |
 
-Acceptance also covers zero/reversed/negative/signed/Unicode-digit/whitespace/open/extra-colon/missing/repeated ranges, invalid UTF-8 after END, decimal leading zeros, endpoints far beyond EOF and all option-order combinations. Validate rejection before named-file access, including when the selected filename is missing. Very large endpoints select the available subset or empty content without overflow, truncation or an arbitrary cap.
+Use valid endpoints with more than 4,300 digits as both END (available subset) and START (empty), as well as many leading zeros that represent small valid endpoints. Never overflow, truncate or impose a cap. Cover every permutation of range/BOM/JSON flags, both range spellings, options before/after INPUT, and dash-prefixed files after `--`.
+
+| Invalid class | Representative values / invocations |
+| --- | --- |
+| Zero or reversed | `0:1`, `1:0`, `3:2` |
+| Signs | `-1:2`, `+1:2`, `1:-2`, `1:+2` |
+| Whitespace | ` 1:2`, `1:2 `, `1 :2`, `1:\t2` |
+| Non-ASCII digits | `١:٢`, `１:２` |
+| Open or extra separators | `:2`, `1:`, `:`, `1:2:3`, `1` |
+| Missing | `--lines`, `--lines=`, `--lines --json INPUT` |
+| Repeated | two spaced, two equals, or mixed forms, including identical valid values |
+
+Verify each rejection before acquisition using a controlled acquisition seam and a missing named file. Include bad bytes strictly after the selected END to prove full decode; controlled read failures and handle cleanup remain testable at the acquisition seam. Recheck whole-input acceptance from the whole-input acceptance matrix below, silent unchanged API, file byte preservation, text/JSON equivalence and failure stdout. Distribution checks must run the extracted package's real module entry with isolated imports and cover range successes, invalid ranges, BOM exposure and bad bytes after END. Documentation must describe named-file range delivery accurately and retain deferred stdin status.
 
 ## Whole-input acceptance matrix
 
@@ -127,6 +146,6 @@ Named-file and text API results agree for these inputs. CLI text and JSON agree 
 | R-006/R-010 | C-005 acquisition, C-006 API and C-008 CLI |
 | R-007/R-008/R-009 | C-007 parser, C-008 controller and C-009 rendering |
 | R-011/R-012/R-013 | Public boundaries C-001 through C-009, supported by documentation and product/distribution verification |
-| F-001 through F-004 | C-007/C-008 and deferred C-010 over C-002/C-003/C-004; no additional API export |
+| F-001 through F-004 | C-007/C-008 and C-010 over C-002/C-003/C-004; no additional API export |
 
-The adjacent [SPEC review report](SPEC-REVIEW-REPORT.md) owns the technical conformance assessment. The coordinator accepted SPEC and SPEC-REVIEW-REPORT at commit `bf3eb5e9a8d30a9e8a457f7708afa3b400100417`, SPEC blob `86cfd0c0cc6241bad1329a4873dbbc7517cc1160` and report blob `6b7b1637fc0095387b2c32846725f64c4cc2e715`, under delegated test-artifact review authority; published decision evidence is `37115e0`. Full-content assessment found no material issue and accepted the explicit constructor domain and staged dash-input settlements. This scope authorizes PLAN strategy, without accepting unseen layout/TASKS or implementation.
+The adjacent [SPEC review report](SPEC-REVIEW-REPORT.md) owns current technical conformance and preserves earlier review/acceptance evidence. Concrete delegated coordinator assessment remains separate from current technical QC before dependent use. Document conformance does not establish implementation, task completion, whole Phase 2 readiness or Git integration.

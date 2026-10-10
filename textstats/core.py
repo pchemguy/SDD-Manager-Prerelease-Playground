@@ -2,7 +2,7 @@
 
 Normalization belongs at the whole-input boundary. Counting normalized text
 and traversing preserved logical segments are separate internal operations so
-future selection can reuse them without removing an exposed interior BOM.
+selection can reuse them without removing an exposed interior BOM.
 """
 
 from collections.abc import Iterator
@@ -82,3 +82,19 @@ def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
         a final nonempty unterminated segment contributes one line.
     """
     return _count_normalized(_normalize_text(text, strip_bom))
+
+
+def _select_lines(normalized_text: str, start: int, end: int) -> str:
+    """Return available inclusive logical segments of already normalized text.
+
+    Endpoints are validated positive integers with start <= end. Preserve every
+    selected character/terminator; source and BOM policy belong to callers.
+    Arbitrarily large endpoints are comparisons, never loop bounds.
+    """
+    selected = []
+    for number, segment in enumerate(_logical_lines(normalized_text), 1):
+        if number > end:
+            break
+        if number >= start:
+            selected.append(segment)
+    return "".join(selected)

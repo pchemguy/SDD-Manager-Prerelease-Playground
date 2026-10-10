@@ -1,6 +1,6 @@
 # TextStats
 
-Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and optional JSON output. Stdin and line ranges remain planned.
+Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and optional JSON output. Named-file line ranges are delivered; stdin remains planned.
 
 ## Quick start
 
@@ -34,6 +34,62 @@ python -m textstats bom.txt --keep-bom --json
 ```
 
 These produce counts equivalent to `{"lines": 3, "words": 5}` and `{"lines": 1, "words": 1}`, respectively. Text remains the default.
+
+## Named-file ranges
+
+Select inclusive one-based logical lines with one `--lines START:END` or
+`--lines=START:END`. Both compose with JSON/BOM options before or after INPUT:
+
+```bash
+python -m textstats --lines 2:3 sample.txt
+python -m textstats sample.txt --json --lines=0002:0099
+```
+
+Both produce two lines and three words. Endpoints are nonempty positive ASCII
+decimals with START <= END. Leading zeros are decimal; there is no endpoint-size
+cap. An end past EOF selects available lines, and a start past EOF selects empty
+content (`lines=0 words=0`). Only CRLF, CR and LF terminate logical lines; blank
+terminated lines count, and a trailing terminator adds no phantom line. Unicode
+whitespace still determines words independently.
+
+Complete strict UTF-8 decode occurs before once-only whole-input BOM policy,
+line numbering and selection. Selected characters and terminators are preserved;
+an interior BOM exposed by selection is retained. Bad bytes after END still fail
+with status 1 and no counts. Input bytes remain unchanged. These examples use
+both text/JSON and BOM policies:
+
+```bash
+python -c "from pathlib import Path; Path('range.txt').write_bytes(b'\xef\xbb\xbfalpha beta\r\n\r\n\xef\xbb\xbf\nlast two')"
+python -m textstats --lines 2:2 range.txt
+python -m textstats range.txt --json --keep-bom --lines=2:2
+python -m textstats --lines 2:99 range.txt
+python -m textstats --keep-bom --lines 3:3 range.txt
+python -m textstats range.txt --json --lines 99:100
+```
+
+The outputs have counts 1/0, 1/0, 3/3, 1/1 and 0/0, respectively. The selected
+third line retains its interior BOM as a word. All commands return 0 with empty
+stderr; JSON has the same integer fields as whole-input output.
+
+Malformed, missing or repeated ranges return status 2 before file access, with
+empty stdout and useful usage/error stderr. Signs, whitespace, non-ASCII digits,
+zero, reversed endpoints and extra colons are invalid:
+
+```bash
+python -m textstats --lines 0:2 missing.txt
+python -m textstats --lines 3:2 missing.txt
+python -m textstats --lines=1:2 --lines 2:3 missing.txt
+python -m textstats --lines
+python -c "from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\n\xff')"
+python -m textstats --json --lines 1:1 bad-range.txt
+```
+
+The first four commands return 2; the last returns 1 for strict decoding, empty
+stdout and identifying stderr without a traceback. `--` still permits
+range-selected dash-prefixed files, and literal `-` is still a named file.
+Omitting `--lines` retains whole-input behavior. Public API functions remain
+whole-input with unchanged signatures. Future stdin acquisition is deferred;
+the normalized selection semantics do not depend on how complete text is acquired.
 
 ## Python API
 
@@ -69,7 +125,7 @@ python tools/package_source.py
 python tools/check_distribution.py
 ```
 
-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 99 real text/JSON/BOM/error module cases with inherited Python import paths removed and user-site packages disabled.
+The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 315 real whole-input/range text/JSON/BOM/error module cases with inherited Python import paths removed, user-site packages disabled and child bytecode writes disabled. Range cases include every acceptance anchor, option permutations, huge/leading-zero endpoints, invalid/repeated options and bad bytes after END; silent whole-input API compatibility is checked in the extraction too.
 
 A runnable extraction example for a Bash shell on Unix:
 
