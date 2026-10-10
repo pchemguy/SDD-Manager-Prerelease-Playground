@@ -90,7 +90,7 @@ version bump or release is authorized.
             Original result and publication evidence below remain historical. Retained extraction acceptance belongs to T-007/T-022 and this amendment.
         - T-012 — Historical milestone 2.1 review; retained, no current executable work.
             Original review/publication remains historical; current retained contracts are reassessed by the steering report.
-    - [ ] Milestone 2.2 — UTF-8 stdin and final delivery
+    - [x] Milestone 2.2 — UTF-8 stdin and final delivery
         - [x] T-013 — Add borrowed binary stdin acquisition
             Outcome: R-010 internal byte reader reaching EOF, strict locale-independent UTF-8 and retained stream ownership; no new public API export.
             Scope: `textstats/io.py`, `tests/unit/test_io.py` and input ownership/decode docstrings.
@@ -106,7 +106,7 @@ version bump or release is authorized.
             Scope: public API/module reference, README final instructions, `tools/check_distribution.py`, `tests/integration/test_distribution.py` and truthful root navigation.
             Depends on: T-014.
             Evidence: complete docs for final stdin ownership/strict decode/status/composition; execute all final documented examples. Rebuild/extract and actually invoke module entry for named-file and byte-fed stdin in text/BOM/empty/bad-byte/usage cases, maintaining import isolation. Run complete nonzero unit/integration suites and retain whole-input API/signatures. Retain delivered named-file range usage and extend final documented/extracted-source checks to stdin range composition; preserve whole-input public API.
-        - [ ] T-016 — Review, test and report milestone 2.2
+        - [x] T-016 — Review, test and report milestone 2.2
             Scope: complete stdin/input-source composition, documentation/distribution and prior delivered regressions.
             Depends on: T-013, T-014 and T-015.
             Evidence: code review plus source/format/BOM/locale/failure/ownership/nonempty discovery/extracted-source exits; repair all blockers and record final usability evidence, actual checks/counts and TODO dispositions.
@@ -558,3 +558,35 @@ Result/tests/documentation/current evidence and initial T-015 checkbox close in
 one task commit, immediately followed by push/exact remote readback and separately
 observed issue #16 reconciliation. Milestone/phase reviews remain T-016/T-017;
 Phase 2, milestone parents and integration are not yet complete.
+
+## T-016 completion evidence
+
+Published/exactly read back T-015 `ca24007134141265a1937c77e2fda504bb0d6129`
+and closed/completed issue #16 precede this distinct milestone review.
+The [milestone 2.2 report](reports/phases/2/2.2.md) records coherent implementation
+inspection of all package, acquisition/parser/controller, runner/builder/checker,
+product test and public-document boundaries against current R/F contracts.
+This inspection is separate from tests. No remaining bug/critical issue/contract
+violation or required evidence blocker was found; no new production repair was
+needed. Resolved M2.2-001 extraction acceptance and M2.2-002 child-flag findings
+identify actual evidence/repair provenance; TODO is None.
+
+Fresh traced borrowed acquisition, stdin CLI/module and faulty-extraction
+sensitivity checks passed 12 tests, status 0/no skips/warnings on Python 3.12.14.
+The identical committed source/test/public-doc bytes retain explicitly reused
+T-015 corrected full runner/separate discovery evidence: 37 unit/34 integration,
+478 isolated module cases, all twelve actual README/API fences and exact eleven
+archive source members. Real non-ASCII byte streams under differing locales,
+read/decode/ownership/error paths, selected interior BOM/EOF/huge endpoints,
+named-file and silent API regressions establish milestone exits and usefulness.
+Prior facility failures/unknown lost observations remain reported; new accepted
+evidence does not reconstruct history. Other runtime/platform coverage remains
+unverified; complete in-memory acquisition is the accepted design.
+
+This concrete report/result/current evidence, initial T-016 checkbox and eligible
+2.2 parent are one closing candidate requiring delegated report acceptance before
+the commit. Acceptance identity belongs in that commit's body rather than an
+invented own SHA in the report. Immediately publish/exactly read back before
+separately reconciling issue #17, verifying every milestone #5 issue association
+and closing/readback of that native milestone. T-017 and Phase 2 remain pending
+until their distinct final exits/report review and completed-phase integration.

@@ -106,3 +106,15 @@ owners. Their concrete reports and prospective completed-phase integration requi
 delegated acceptance before conclusion. Continue the explicit resume above,
 immediate per-commit push/exact readback and managed hosted closure gates.
 Stop after published completed Phase 2; no next phase, version change or release.
+
+## Current milestone 2.2 review checkpoint
+
+The [milestone 2.2 review](docs/dev/reports/phases/2/2.2.md) covers complete stdin,
+shared range/BOM/input-source behavior, documentation/distribution and retained
+API/named-file regressions. It records separate source inspection, twelve fresh
+focused tests and applicable unchanged T-015 full-suite/example/extraction evidence,
+resolved findings and TODO: None. Its concrete report requires delegated acceptance
+before owning closure/publication; managed issue/milestone closures follow actual
+publication and verified native associations. T-017 remains the final Phase 2 and
+cross-phase review/report owner; completed-phase integration remains separately
+reviewed. Existing explicit resume and final STOP boundary continue to govern.
