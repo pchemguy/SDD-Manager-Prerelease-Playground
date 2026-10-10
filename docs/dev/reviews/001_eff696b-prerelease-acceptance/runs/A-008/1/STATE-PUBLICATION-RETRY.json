@@ -1,0 +1,11 @@
+{
+  "actor": "coordinator",
+  "original_error": "invalid_schema",
+  "original_additional_checkpoint_fields": [
+    "phase_branch",
+    "phase_commit"
+  ],
+  "effect": "Evidence artifactscopied; invalidstate notwritten, no commit/provider/producteffects",
+  "correction": "Use allowed product/integration fields; pausedphase retained in exactassessment and ordinary currentstate prose",
+  "schema_recheck": "Passed"
+}

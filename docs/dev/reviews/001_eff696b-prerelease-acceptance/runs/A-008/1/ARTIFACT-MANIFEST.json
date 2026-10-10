@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "case_id": "A-008",
+  "files": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-independent-assessment.json",
+      "sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8",
+      "size": 8737
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-independent-check-evidence.json",
+      "sha256": "b2f82704c8fb6b8b07c9f13395a04bf558bd828038d3b8452ba90c8efc71c41a",
+      "size": 92711
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-deterministic-assessment.json",
+      "sha256": "ae86cd6502f4277e1c58b4c08389655faf6dc128b8ed30618e2dd4786d54a821",
+      "size": 1361
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-consumer-observations-screened.json",
+      "sha256": "58d6a036da5997ff8c0754447879e947188514214f5d23b77d4741fb701f0e66",
+      "size": 15953
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-assessor-checks.py",
+      "sha256": "619c38cc787044c37b42e90265be7a7a5a8599a6ef196bdcf9692d4a2adf0877",
+      "size": 7587
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-assessor-checks-attempt1.py",
+      "sha256": "d7c7a6661888988a3936a3022dc856865871c0ee92c4b465b0de745c75a6c33c",
+      "size": 7425
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-assessor-checks-attempt2.py",
+      "sha256": "6b385106b9607cbc5c8e298e17dc442ee7b3d1191477026241c6dffdacbd92e9",
+      "size": 7593
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a008-seal-assessment.py",
+      "sha256": "77877551eab054e516b43c0e2ae31b6d4a94041ac622e99071dc5b8ff0723ab7",
+      "size": 10205
+    }
+  ],
+  "screening": "Pinnedcore.no_secret for JSON, core.clean_bytes for scripttext",
+  "original_observation": {
+    "sha256": "9ce26cec008d769a663e0c5a71cb5259eeb975fcf80a577b1c2f678857864279",
+    "unchanged": true,
+    "screening_limit": "Protected generic runtime.credential key, screenedderivative renames key only; coordinator retains originalexact separately."
+  }
+}

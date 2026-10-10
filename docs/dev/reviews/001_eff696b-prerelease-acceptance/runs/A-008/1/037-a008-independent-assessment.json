@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "case_id": "A-008",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "independent_assessor": "/root/a008_feature_assessor",
+  "variant": "core",
+  "assistance": "Assisted procedural source-activation correction; first cloud read retained. Product dependency/ownership derivations passed on their original committed versions.",
+  "original_attempt": {
+    "source_activation": "Deviated from pinned-only initial orientation; cloud sdd-orient loaded before product AGENTS. Coordinator directed pinned-only continuation before authoring. No clean pinned-only initial activation claim.",
+    "feature_derivation": "Passed: original SPEC/PLAN/TASKS preserved byte-for-byte at final seal; no range/stdin corrective intervention observed."
+  },
+  "checkpoint_refs": {
+    "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "product_commit": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "paused_phase_branch": "phase/2-json-and-stdin",
+    "paused_phase_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925"
+  },
+  "assessment_scope": "Independent read-only sealed feature-preparation identity, original dependency derivation, upstream/QC/readiness and explicit-review coverage, actual Git/index/ref/source preservation, live metadata-only provider readback. No range implementation or installed-client acceptance claimed.",
+  "criteria": {
+    "identity": "Passed: one greater than published reserved sequence001; campaign002_e7cae5b and matching design-docs/feature/package suffix; full default baseline e7cae5b recorded. Active FEATURE roots/QC under docs/dev, navigation under features; feature implementation branch absent. Four preparation commits are descendants of actual refreshed default. Existing phase and default tips remain exact.",
+    "deltas_and_ownership": "Passed: precisely8 owned document paths; all other tracked paths at default unchanged including main governing documents/TASKS, code/tests/tools/protected resources. T018\u2013024 uniquely singly owned in FEATURE-TASKS and allunchecked, main T001\u2013017 retained. No source incorporation/archive or wholephase completion. PausedJSON e63b894 remains independently unchanged.",
+    "dependency_derivation": "Passed: original PLAN 91d8a5a requires alreadycompleted JSON2.1, compatible defaultpreparation/JSON baseline and future projection; original TASKS493d5e2 T018 depends on completedT012/T001 and T019 onT018/completedJSON. No task depends on pendingT013\u2013017/stdin acquisition. Futurestdin is only source-independent design compatibility. Supplied public brief expressly distinguished these boundaries; no coaching/correction of first range prerequisites observed.",
+    "backend_review_scope": "Passed: original PLAN2.4/2.5 deliverymilestones each end explicitT020/T023 code-review/testing/report; final2.6 exactlyoneT024 review depends on prior delivery closure, excludes its ownopenmilestone, featureextent only. Reportlinks use actual featureprefix, TODOoptions/provenance/owners and code-review/testing obligations explicit. Maintainedtracking confirmed; preparation left addedwork projection pending. LiveGET exact18issues/6milestones/labels identical to A007 independent metadata; foreignissue2/comment6097383663/bodyhash unchanged. No newphase or featureobjects activated.",
+    "qc": "Passed: adjacentSPEC/PLAN/TASKS rootreports identify exact reviewedblobs and actual acceptedgoverningstates, nochildren. Semanticcoverage maps fullgrammar/completeDecode/once-onlyBOM/sharedline/counting/output/API/docs/extraction contracts. Existingdesign/layout sufficient; no unnecessaryoverlays. Two deliverymilestones and2deliverytasks per group separately exclude reviewunits; explicit fragmentation/cohesion rationale supports boundedscope. No confirmedfindings/correctioncycles existed; no revisionfabricated. Originalroots/reports remain unchanged after exact delegatedacceptance ca0eded/515c3ea/fc26eb9 before dependentderivation per retainedmessages. Finalpackage records acceptance separately from technicalReady; unchanged reportpendingacceptance prose is a historic reviewcheckpoint qualified by exactpackage decisions, not missingtechnicalreadiness.",
+    "publication_and_stop": "Passed: provider exactref8036adb on design-docs, main e7cae5b and phasee63b894; cleanindex/worktree and four coherentpreparationcommits. Consumer structuredrecord reports immediate push/readback before each subsequentstep. Independentfinalreadback proves containment; nativefulltimingtranscript unavailable. No defaultmerge/execution branch/taskcompletion/producttests/release or provideractivation."
+  },
+  "source_provenance": {
+    "pinned_commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "unchanged_snapshot_files_verified": 134,
+    "cloud_orientation_returned_contents_sha256": "7e222b9ede64a6154c9844a86020f54f0ff3de35baeac684e4f5ba27d8c30b65",
+    "cloud_bytes_scope": "Consumer-reported exact UTF8 returnedcontents hash retained; separate assessor did not witness original toolbytes, so no independently verified cloud source identity or pristine pinned-only startup certified.",
+    "local_owner_reloads": [
+      "sdd-orient",
+      "sdd-manage",
+      "sdd-conventions",
+      "sdd-design",
+      "sdd-specify",
+      "sdd-plan",
+      "sdd-tasks",
+      "sdd-report",
+      "sdd-docs"
+    ]
+  },
+  "interventions_and_errors": [
+    {
+      "actor": "consumer/coordinator",
+      "event": "Initial cloud sdd-orient load disclosed; cloud re-read solely for requested contenthash, productAGENTS/pinnedowners then loaded. Root instructed unchanged pinned-only continuation before authoring. Original deviation retained."
+    },
+    {
+      "actor": "consumer",
+      "event": "Guessed missing feature-spec.md/planning.md reads exit1; corrected to actual instructed change-specification/delivery-plan/physical-layout/review references. Truncated batched reads followed by narrow reads; unrelated agent inventory summary exposure disclosed; no inference of pristine isolation."
+    },
+    {
+      "actor": "assessor",
+      "event": "First core.no_secret failed on exact consumer runtime.credential key containing benign handlingprose. Originalexact observation preserved SHA9ce26cec; narrowly screened derivative only renames key to authentication_handling, preserving all values. No actualcredential exposure identified. Firstfailedscript retained."
+    },
+    {
+      "actor": "assessor",
+      "event": "Second checkscript failed KeyError from wrong START tracked_file_sha256 schemafield; corrected to actual tracked_files. Originalsecondscript retained. No product or provider mutation; finalcheckrun passed."
+    }
+  ],
+  "deterministic_checks": {
+    "status": "Checks passed",
+    "artifact": "037-a008-deterministic-assessment.json",
+    "scope": "Harness facts only, not independent lifecyclegrade."
+  },
+  "coverage_limits": [
+    "Separate assessorcontext but shared broad filesystem; strict consumerisolation cannot be certified. No consumer access to assessorassets reported; names-only campaignreservation discovery legitimate.",
+    "Consumer observations are structuredretained claims/command summaries, not a complete native transcript. Exact committedobjects and liveproviderfacts independently verified; every historical push timing cannot be reconstructed independently.",
+    "Cloudinitialorientation exactbytes/hash consumerrecorded; no original-pin pristineactivation, automaticdiscovery/routing/installedclient certification.",
+    "No featureimplementation/runtime/counting/range/distribution acceptance; product code/test unchanged on text-onlydefault preparation branch, JSON is retained on distinctpausedphase. No unnecessary runtimechecks used to inflate preparationcoverage.",
+    "QC focused correction/interruption/staleReady/oversized variants not run by this case. Finalreadback establishes current hostedstate; no claim proof that no temporary create/delete effect everoccurred."
+  ],
+  "findings": [
+    {
+      "id": "A008-SOURCE-ACTIVATION-01",
+      "category": "Consumer/procedural",
+      "disposition": "Corrected with assistance; limits retained",
+      "confidence": "Confirmed reported deviation; localimmutable pin independently verified",
+      "proposal": "No confirmed SDD Manager instructiondefect established from this deviation or passing range derivation."
+    }
+  ],
+  "consumer_observation_sha256": "9ce26cec008d769a663e0c5a71cb5259eeb975fcf80a577b1c2f678857864279",
+  "seal_statement": "Read-only assessment complete. No product/provider mutations by assessor; safe artifacts available for coordinator publication before dependent cases."
+}
