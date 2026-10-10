@@ -6,7 +6,6 @@ It never substitutes a checkout import for extracted module execution.
 """
 
 import os
-import json
 import itertools
 from pathlib import Path
 import subprocess
@@ -68,34 +67,20 @@ def verify_archive(archive: Path) -> int:
                     0, f'lines={expected[0]} words={expected[1]}\n', ''), result
                 assert sample.read_bytes() == raw
                 count += 1
-                for json_args in [['--json', *options, 'sample.txt'], ['sample.txt', *options, '--json']]:
-                    result = invoke(['-m', 'textstats', *json_args])
-                    assert result.returncode == 0 and result.stderr == '', result
-                    assert result.stdout.endswith('\n') and result.stdout.count('\n') == 1, result
-                    payload = json.loads(result.stdout)
-                    assert payload == {'lines': expected[0], 'words': expected[1]}, result
-                    assert all(type(value) is int for value in payload.values()), result
-                    assert sample.read_bytes() == raw
-                    count += 1
         dash = root / '-sample'
         dash.write_bytes(b'alpha beta\n')
         result = invoke(['-m', 'textstats', '--', '-sample'])
         assert (result.returncode, result.stdout, result.stderr) == (0, 'lines=1 words=2\n', ''), result
         assert dash.read_bytes() == b'alpha beta\n'
         count += 1
-        result = invoke(['-m', 'textstats', '--json', '--', '-sample'])
-        assert result.returncode == 0 and result.stderr == '', result
-        assert json.loads(result.stdout) == {'lines': 1, 'words': 2}, result
-        count += 1
         bad = root / 'bad.txt'
         bad.write_bytes(b'valid prefix\n\xff')
         for args, input_name, cause in [(['missing.txt'], 'missing.txt', 'No such file'),
                                         (['bad.txt'], 'bad.txt', 'utf-8')]:
-            for format_option in [[], ['--json']]:
-                result = invoke(['-m', 'textstats', *format_option, *args])
-                assert result.returncode == 1 and result.stdout == '', result
-                assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
-                count += 1
+            result = invoke(['-m', 'textstats', *args])
+            assert result.returncode == 1 and result.stdout == '', result
+            assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
+            count += 1
         assert bad.read_bytes() == b'valid prefix\n\xff'
         for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt'],
                      ['--json'], ['--json', 'sample.txt', 'extra.txt'], ['--json', '--unknown', 'missing.txt'], ['--j', 'missing.txt']]:
@@ -104,7 +89,7 @@ def verify_archive(archive: Path) -> int:
             assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
             count += 1
         result = invoke(['-m', 'textstats', '--help'])
-        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout and '--json' in result.stdout and '--lines' in result.stdout, result
+        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout and '--json' not in result.stdout and '--lines' in result.stdout, result
         count += 1
         # Literal contract anchors are independent of checkout counting helpers.
         anchors = [
@@ -123,77 +108,80 @@ def verify_archive(archive: Path) -> int:
             ('\n', '1:1', (1, 0), (1, 0)),
         ]
 
-        def check_range(arguments, expected, json_mode=False):
+        def check_range(arguments, expected):
             nonlocal count
             result = invoke(['-m', 'textstats', *arguments])
-            assert result.returncode == 0 and result.stderr == '', result
-            assert result.stdout.endswith('\n') and result.stdout.count('\n') == 1, result
-            if json_mode:
-                payload = json.loads(result.stdout)
-                assert payload == dict(zip(('lines', 'words'), expected)), result
-                assert all(type(value) is int for value in payload.values()), result
-            else:
-                assert result.stdout == f'lines={expected[0]} words={expected[1]}\n', result
+            assert (result.returncode, result.stdout, result.stderr) == (
+                0, f'lines={expected[0]} words={expected[1]}\n', ''), result
             count += 1
 
         for text, endpoint, default, retained in anchors:
             raw = text.encode('utf-8')
             sample.write_bytes(raw)
             for keep, expected in [(False, default), (True, retained)]:
-                for json_mode in [False, True]:
-                    flags = (['--keep-bom'] if keep else []) + (['--json'] if json_mode else [])
-                    check_range([*flags, '--lines', endpoint, 'sample.txt'], expected, json_mode)
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    check_range([*flags, *spelling, 'sample.txt'], expected)
                     assert sample.read_bytes() == raw
 
         sample.write_bytes(b'alpha beta\nbeta\nlast two')
         for range_group in [('--lines', '2:3'), ('--lines=2:3',)]:
-            for groups in itertools.permutations([range_group, ('--keep-bom',), ('--json',)]):
-                for position in range(4):
-                    ordered = list(groups)
-                    ordered.insert(position, ('sample.txt',))
-                    check_range([arg for group in ordered for arg in group], (2, 3), True)
-                    assert sample.read_bytes() == b'alpha beta\nbeta\nlast two'
+            for keep in [False, True]:
+                option_groups = [range_group] + ([('--keep-bom',)] if keep else [])
+                for groups in itertools.permutations(option_groups):
+                    for position in range(len(groups) + 1):
+                        ordered = list(groups)
+                        ordered.insert(position, ('sample.txt',))
+                        check_range([arg for group in ordered for arg in group], (2, 3))
+                        assert sample.read_bytes() == b'alpha beta\nbeta\nlast two'
         huge = '9' * 5001
         for endpoint, expected in [('2:' + huge, (2, 3)), (huge + ':' + huge, (0, 0)),
                                    ('0' * 5000 + '2:' + '0' * 5000 + '3', (2, 3))]:
             for keep in [False, True]:
-                for json_mode in [False, True]:
-                    flags = (['--keep-bom'] if keep else []) + (['--json'] if json_mode else [])
-                    check_range([*flags, '--lines=' + endpoint, 'sample.txt'], expected, json_mode)
+                flags = ['--keep-bom'] if keep else []
+                for spelling in [['--lines', endpoint], ['--lines=' + endpoint]]:
+                    check_range([*flags, *spelling, 'sample.txt'], expected)
                     assert sample.read_bytes() == b'alpha beta\nbeta\nlast two'
 
         invalid = ['0:1', '1:0', '3:2', '-1:2', '+1:2', '1:-2', '1:+2',
                    ' 1:2', '1:2 ', '1 :2', '1:\t2', '١:٢', '１:２',
                    ':2', '1:', ':', '1:2:3', '1', '']
-        invalid_groups = [['--lines=' + value] for value in invalid] + [
-            ['--lines'], ['--lines', '--json'],
+        invalid_groups = [['--lines=' + value] for value in invalid] + [['--lines', value] for value in invalid] + [
+            ['--lines'], ['--lines', '--keep-bom'],
             ['--lines', '1:2', '--lines', '1:2'],
             ['--lines=1:2', '--lines=1:2'],
             ['--lines=1:2', '--lines', '2:3'],
         ]
         for group in invalid_groups:
             for keep in [False, True]:
-                for json_mode in [False, True]:
-                    flags = (['--keep-bom'] if keep else []) + (['--json'] if json_mode else [])
-                    # Missing file distinguishes usage validation from acquisition.
-                    result = invoke(['-m', 'textstats', *flags, 'missing.txt', *group])
-                    assert result.returncode == 2 and result.stdout == '', result
-                    assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
-                    count += 1
-        for keep in [False, True]:
-            for json_mode in [False, True]:
-                flags = (['--keep-bom'] if keep else []) + (['--json'] if json_mode else [])
-                result = invoke(['-m', 'textstats', *flags, '--lines', '1:1', 'bad.txt'])
-                assert result.returncode == 1 and result.stdout == '', result
-                assert 'bad.txt' in result.stderr and 'utf-8' in result.stderr and 'Traceback' not in result.stderr, result
-                assert bad.read_bytes() == b'valid prefix\n\xff'
+                flags = ['--keep-bom'] if keep else []
+                # Missing input distinguishes usage validation from acquisition.
+                result = invoke(['-m', 'textstats', *flags, 'missing.txt', *group])
+                assert result.returncode == 2 and result.stdout == '', result
+                assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
                 count += 1
-        for name in ['-sample', '-']:
+        for keep in [False, True]:
+            flags = ['--keep-bom'] if keep else []
+            result = invoke(['-m', 'textstats', *flags, '--lines', '1:1', 'bad.txt'])
+            assert result.returncode == 1 and result.stdout == '', result
+            assert 'bad.txt' in result.stderr and 'utf-8' in result.stderr and 'Traceback' not in result.stderr, result
+            assert bad.read_bytes() == b'valid prefix\n\xff'
+            count += 1
+        for name in ['-sample', '-', '--json']:
             path = root / name
             path.write_bytes(b'alpha beta\nbeta')
-            for json_mode in [False, True]:
-                check_range([*(['--json'] if json_mode else []), '--lines=2:2', '--', name], (1, 1), json_mode)
+            for arguments, expected in [(['--', name], (2, 3)),
+                                        (['--lines=2:2', '--', name], (1, 1))]:
+                check_range(arguments, expected)
                 assert path.read_bytes() == b'alpha beta\nbeta'
+        for option in ['--json', '--json=true', '--j']:
+            for name in ['sample.txt', 'missing.txt', 'bad.txt']:
+                for arguments in [[option, name], [name, option],
+                                  ['--keep-bom', '--lines=1:1', name, option]]:
+                    result = invoke(['-m', 'textstats', *arguments])
+                    assert (result.returncode, result.stdout) == (2, ''), result
+                    assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
+                    count += 1
 
         sample.write_bytes(b'a b\nc')
         api = invoke(['-c', 'import inspect; import textstats; '

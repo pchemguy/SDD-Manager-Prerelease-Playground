@@ -1,6 +1,6 @@
 # TextStats
 
-Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and optional JSON output. Named-file line ranges are delivered; stdin remains planned.
+Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and exact text output. Named-file line ranges are delivered; stdin remains planned.
 
 ## Quick start
 
@@ -26,23 +26,18 @@ BOM-only input produces `lines=0 words=0` by default and `lines=1 words=1` with 
 
 Missing, unreadable, read-failing or invalid UTF-8 input returns status 1 with identifying input/cause stderr, no traceback and empty stdout. Missing/extra inputs or unknown options return status 2 with useful usage/error stderr and empty stdout. Invocation validation precedes file access. No partial statistics are emitted.
 
-Add `--json` for one JSON object plus a newline containing only integer `lines` and `words` fields. Counts and errors follow the same contracts as the default text output; key order and spacing are unrestricted. Both options compose before or after INPUT:
-
-```bash
-python -m textstats --json sample.txt
-python -m textstats bom.txt --keep-bom --json
-```
-
-These produce counts equivalent to `{"lines": 3, "words": 5}` and `{"lines": 1, "words": 1}`, respectively. Text remains the default.
+`--json` output is unsupported. Existing JSON callers must use the text output;
+`--json`, `--json=value` and abbreviated `--j` are usage errors (status 2)
+before input acquisition. A file literally named `--json` works after `--`.
 
 ## Named-file ranges
 
 Select inclusive one-based logical lines with one `--lines START:END` or
-`--lines=START:END`. Both compose with JSON/BOM options before or after INPUT:
+`--lines=START:END`. Both compose with BOM options before or after INPUT:
 
 ```bash
 python -m textstats --lines 2:3 sample.txt
-python -m textstats sample.txt --json --lines=0002:0099
+python -m textstats sample.txt --lines=0002:0099
 ```
 
 Both produce two lines and three words. Endpoints are nonempty positive ASCII
@@ -56,20 +51,20 @@ Complete strict UTF-8 decode occurs before once-only whole-input BOM policy,
 line numbering and selection. Selected characters and terminators are preserved;
 an interior BOM exposed by selection is retained. Bad bytes after END still fail
 with status 1 and no counts. Input bytes remain unchanged. These examples use
-both text/JSON and BOM policies:
+both BOM policies:
 
 ```bash
 python -c "from pathlib import Path; Path('range.txt').write_bytes(b'\xef\xbb\xbfalpha beta\r\n\r\n\xef\xbb\xbf\nlast two')"
 python -m textstats --lines 2:2 range.txt
-python -m textstats range.txt --json --keep-bom --lines=2:2
+python -m textstats range.txt --keep-bom --lines=2:2
 python -m textstats --lines 2:99 range.txt
 python -m textstats --keep-bom --lines 3:3 range.txt
-python -m textstats range.txt --json --lines 99:100
+python -m textstats range.txt --lines 99:100
 ```
 
 The outputs have counts 1/0, 1/0, 3/3, 1/1 and 0/0, respectively. The selected
 third line retains its interior BOM as a word. All commands return 0 with empty
-stderr; JSON has the same integer fields as whole-input output.
+stderr, with the same exact text format as whole-input output.
 
 Malformed, missing or repeated ranges return status 2 before file access, with
 empty stdout and useful usage/error stderr. Signs, whitespace, non-ASCII digits,
@@ -81,7 +76,7 @@ python -m textstats --lines 3:2 missing.txt
 python -m textstats --lines=1:2 --lines 2:3 missing.txt
 python -m textstats --lines
 python -c "from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\n\xff')"
-python -m textstats --json --lines 1:1 bad-range.txt
+python -m textstats --lines 1:1 bad-range.txt
 ```
 
 The first four commands return 2; the last returns 1 for strict decoding, empty
@@ -125,7 +120,7 @@ python tools/package_source.py
 python tools/check_distribution.py
 ```
 
-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 315 real whole-input/range text/JSON/BOM/error module cases with inherited Python import paths removed, user-site packages disabled and child bytecode writes disabled. Range cases include every acceptance anchor, option permutations, huge/leading-zero endpoints, invalid/repeated options and bad bytes after END; silent whole-input API compatibility is checked in the extraction too.
+The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and real whole-input/range text/BOM/error and removed-option module cases with inherited Python import paths removed, user-site packages disabled and child bytecode writes disabled. Range cases include every acceptance anchor, option permutations, huge/leading-zero endpoints, invalid/repeated options and bad bytes after END; silent whole-input API compatibility is checked in the extraction too.
 
 A runnable extraction example for a Bash shell on Unix:
 
@@ -136,12 +131,11 @@ python -m zipfile -e dist/textstats-source.zip "$example_dir"
     cd "$example_dir/textstats-source"
     python -c "from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')"
     env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt
-    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats --json sample.txt
 )
 rm -r "$example_dir"
 ```
 
-The extracted commands print `lines=3 words=5` and an equivalent JSON object, each with a final newline and status 0. From an extracted root, the package builder/checker commands remain usable; the product-test commands above require a development checkout because test implementations and `tools/check_tests.py` are excluded. No installed console script or release publication is required.
+The extracted commands print `lines=3 words=5`, with a final newline and status 0. From an extracted root, the package builder/checker commands remain usable; the product-test commands above require a development checkout because test implementations and `tools/check_tests.py` are excluded. No installed console script or release publication is required.
 
 ## Development
 

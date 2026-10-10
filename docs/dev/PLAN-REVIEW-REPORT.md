@@ -2,14 +2,14 @@
 
 ## Current gate
 
-State: **Ready for scoped JSON-removal preparation conformance**, Revision 7; delegated candidate acceptance pending.
+State: **Ready for scoped JSON-removal preparation conformance**, Revision 7; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation conclusion remains pending.
 
 Phase 1 retains two cohesive delivery milestones; Phase 2 has three active delivery milestones 2.2/2.4/2.5. Historical 2.1 is retired, dedicated reviews 1.3/2.3/2.6 excluded. All retained contracts have routes; stdin/final work remains pending.
 
 | Current reviewed/governing source | SHA-256 |
 | --- | --- |
 | `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
-| `SPEC-REVIEW-REPORT.md` | `d0ceb34f5fc1fe8e6a1710f1244fdbea5260657fe9659517c907c6b47364e4d8` |
+| `SPEC-REVIEW-REPORT.md` | `212f31e181d24a19a9cdfa9923153cd2c7e5d0a7771dcc3dbcbf171ced75f0c4` |
 | `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
 | `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
 | `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
@@ -141,7 +141,7 @@ The sdd-plan owner assessed the complete current PLAN and affected upstream inpu
 
 Phase 1: two delivery milestones (small cohesive useful path plus robustness/distribution); Phase 2: three active delivery milestones 2.2/2.4/2.5. Historical 2.1 is explicitly retired, not an empty delivery group. Dedicated reviews 1.3/2.3/2.6 excluded. Dependencies no longer require JSON.
 
-| Current source | SHA-256 |
+| Preparation source at this review | SHA-256 |
 | --- | --- |
 | `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
 | `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |

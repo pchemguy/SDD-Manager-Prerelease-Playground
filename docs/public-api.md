@@ -43,20 +43,20 @@ With the default `strip_bom=True`, remove exactly one leading U+FEFF from the co
 
 ## Module command
 
-Use `python -m textstats [--keep-bom] [--json] [--lines START:END] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. Until stdin delivery, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
+Use `python -m textstats [--keep-bom] [--lines START:END] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. Until stdin delivery, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
 
 | Outcome | Status | stdout | stderr |
 | --- | --- | --- | --- |
 | Count success | 0 | Exactly `lines=<N> words=<N>` plus newline | Empty |
-| JSON count success (`--json`) | 0 | One object plus newline, only integer `lines` and `words` fields, same counts; key order/spacing unrestricted | Empty |
 | Help | 0 | Useful usage/options | Empty |
 | File open/read or strict decode failure | 1 | Empty | Identifies input and cause, no traceback |
 | Missing/extra input, unknown option or invalid/missing/repeated range | 2 | Empty | Useful usage/error, no traceback |
 
 The command validates invocation before opening input and prints counts only after
 complete acquisition, strict decode and counting. CLI error translation does not
-change the API exception contract. JSON composes with `--keep-bom` and `--lines`;
-text remains the default.
+change the API exception contract. Only exact text output is supported. `--json`, `--json=value` and `--j` fail
+with usage status 2 before acquisition; after `--`, a literal `--json` filename
+works in whole-input and range modes.
 
 ### Range grammar and ordering
 
@@ -84,7 +84,7 @@ success, read failure and decode failure, and bytes remain unchanged. Selection
 makes no bounded-memory promise. Public `count_text` and `count_file` always
 count whole input; `--lines` adds no public API argument or export.
 
-Runnable setup, mixed-terminator/blank/interior-BOM/EOF, text/JSON, BOM-policy and
+Runnable setup, mixed-terminator/blank/interior-BOM/EOF, text, BOM-policy and
 invalid/decode examples are in the [README](../README.md). Stdin acquisition is
 future work. The normalize/select/count rule is source-independent and can be
 reused after complete acquisition without changing public API semantics.
@@ -96,7 +96,7 @@ reused after complete acquisition without changing public API semantics.
 | `textstats.core` | Immutable statistics, once-only BOM normalization, shared CRLF/CR/LF traversal, preserved normalized selection and whole-text counting. |
 | `textstats.io` | Strict named-file acquisition and owned-handle lifetime, then shared whole-text counting. |
 | `textstats` | Direct public exports; import has no input or process effects. |
-| `textstats.cli` | Invocation/range validation before acquisition, BOM/selection ordering, expected failure translation and text/JSON rendering. |
+| `textstats.cli` | Invocation/range validation before acquisition, BOM/selection ordering, expected failure translation and text rendering. |
 | `textstats.__main__` | Minimal module-entry adapter returning the CLI process status. |
 
 Internal helpers are not additional public exports. Range selection reuses preserved logical segments without renormalizing an exposed interior BOM.

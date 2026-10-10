@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: **Ready for scoped JSON-removal preparation conformance**, Revision 5; delegated candidate acceptance pending.
+State: **Ready for scoped JSON-removal preparation conformance**, Revision 5; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation conclusion remains pending.
 
 R-001–R-008, R-011–R-013 and F-001–F-004 retain their complete text/count/BOM/range/error/resource/API/extraction obligations; R-009 is withdrawn and R-010 remains pending. No focused children.
 
@@ -116,7 +116,7 @@ The sdd-specify owner assessed the complete current SPEC and affected upstream i
 
 R-001–R-008 retained; R-009 withdrawn; R-010 pending; R-011–R-013 and F-001–F-004 retain text/count/BOM/range, lifetime and extraction matrices.
 
-| Current source | SHA-256 |
+| Preparation source at this review | SHA-256 |
 | --- | --- |
 | `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
 | `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |

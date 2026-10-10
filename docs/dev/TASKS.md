@@ -8,7 +8,7 @@ This complete two-phase hierarchy derives from [PROJECT](PROJECT.md),
 TASKS is the sole executable owner of T-001–T-024. Phase 1 is complete on default;
 historical JSON evidence remains preserved, while its delivery scope is withdrawn.
 Named-file range T-018–T-024 and added milestones 2.4–2.6 are reviewed, published
-and hosted-closed. Retained range acceptance is text/count/BOM/ranges; affected completion claims require amendment verification before conclusion. Historical results below are preserved unchanged.
+and hosted-closed. Retained range acceptance is text/count/BOM/ranges; affected retained completion claims are reassessed by current amendment verification; concrete conclusion acceptance remains pending. Historical results below are preserved unchanged.
 [Archived feature sources](features/002_e7cae5b-named-file-ranges/README.md) are
 historical snapshots, not additional executable owners.
 
@@ -414,3 +414,22 @@ issue validation/closure/readback before authorized sole-main ownership/current 
 archive reconciliation and concrete changed-artifact acceptance. Explicit verified/
 published paused-phase integration is still required afterward; no incomplete
 phase merge into default or release follows.
+
+## JSON-removal amendment evidence
+
+[Steering report](reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md)
+records the accepted reduction, source, current checks and remaining boundary.
+R-009 and completed historical T-010–T-012/2.1 delivery scope are withdrawn; no
+ID is reused or newly completed. Historical results/reports remain unchanged.
+Retained T-006/T-007 and T-018–T-024 text/count/BOM/range, API, documentation,
+resource/error and extraction acceptance passes current verification: 31 unit/
+28 integration tests and 241 real isolated extracted-module cases on Python
+3.12.14, plus ten runnable document fences with inspected exact count/error/API
+outputs. Controlled complete-decode-after-END/read-failure/owned-close coverage
+is converted to text. Core/I/O/API/entry/builder interfaces are unchanged.
+
+T-013–T-017, milestones 2.2/2.3 and whole Phase 2 remain unchecked and paused.
+Their retained text/BOM/range stdin composition stays required. Managed hosted
+briefs and retirement metadata require reconciliation after verified publication;
+original historical completion reasons stay preserved. This is steering evidence,
+not a new task result or initial checkbox closure.

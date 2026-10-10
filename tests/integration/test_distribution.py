@@ -19,20 +19,10 @@ APPROVED = {'README.md', 'docs/public-api.md', 'AI_DISCLOSURE.md', 'SDD-MANAGER.
 
 
 class DistributionTests(unittest.TestCase):
-    def test_checker_rejects_json_wrong_types_while_text_still_works(self):
-        with tempfile.TemporaryDirectory() as directory:
-            archive = build_archive(ROOT, Path(directory) / 'source.zip')
-            faulty = Path(directory) / 'faulty-json.zip'
-            with zipfile.ZipFile(archive) as source, zipfile.ZipFile(faulty, 'w') as target:
-                for name in source.namelist():
-                    data = source.read(name)
-                    if name == 'textstats-source/textstats/cli.py':
-                        original = b"{'lines': stats.lines, 'words': stats.words}"
-                        self.assertIn(original, data)
-                        data = data.replace(original, b"{'lines': str(stats.lines), 'words': str(stats.words)}")
-                    target.writestr(name, data)
-            with self.assertRaises((AssertionError, RuntimeError)):
-                verify_archive(faulty)
+    def test_checker_rejects_silently_accepted_removed_json_option(self):
+        self._assert_range_mutation_rejected(
+            b"    parser.add_argument('--keep-bom'",
+            b"    parser.add_argument('--json', action='store_true')\n    parser.add_argument('--keep-bom'")
 
     def test_checker_rejects_ignored_range_with_healthy_whole_input(self):
         self._assert_range_mutation_rejected(

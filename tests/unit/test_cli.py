@@ -2,7 +2,6 @@
 
 import contextlib
 import io
-import json
 import shutil
 import subprocess
 import sys
@@ -16,35 +15,30 @@ from textstats.cli import main
 
 
 class CliTests(unittest.TestCase):
-    def test_json_renders_integer_fields_and_composes_with_bom(self):
-        for args in [['--json', 'named'], ['named', '--json'],
-                     ['--keep-bom', '--json', 'named'], ['--json', 'named', '--keep-bom']]:
-            with self.subTest(args=args):
-                out, err = io.StringIO(), io.StringIO()
-                with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
-                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
-                        status = main(args)
-                self.assertEqual((status, err.getvalue()), (0, ''))
-                self.assertTrue(out.getvalue().endswith('\n'))
-                self.assertEqual(out.getvalue().count('\n'), 1)
-                payload = json.loads(out.getvalue())
-                self.assertEqual(payload, {'lines': 3, 'words': 4})
-                self.assertTrue(all(type(value) is int for value in payload.values()))
-                counter.assert_called_once_with('named', strip_bom='--keep-bom' not in args)
+    def test_removed_json_forms_reject_before_all_acquisition(self):
+        for option in ['--json', '--json=true', '--j']:
+            for args in [[option, 'named'], ['named', option],
+                         ['--keep-bom', option, 'named'],
+                         ['--lines=1:1', 'named', option]]:
+                with self.subTest(args=args):
+                    out, err = io.StringIO(), io.StringIO()
+                    with patch('textstats.io.open', return_value=io.BytesIO(b'a'), create=True) as acquire, patch('textstats.cli.count_file', return_value=TextStats(1, 1)) as counter:
+                        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                            status = main(args)
+                    self.assertEqual((status, out.getvalue()), (2, ''))
+                    self.assertIn('usage:', err.getvalue())
+                    self.assertIn('error:', err.getvalue())
+                    self.assertNotIn('Traceback', err.getvalue())
+                    acquire.assert_not_called()
+                    counter.assert_not_called()
 
-    def test_json_failure_and_invalid_usage_emit_no_result(self):
+    def test_literal_json_filename_after_termination(self):
         out, err = io.StringIO(), io.StringIO()
-        with patch('textstats.cli.count_file', side_effect=OSError('read failed')):
+        with patch('textstats.cli.count_file', return_value=TextStats(1, 2)) as counter:
             with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
-                self.assertEqual(main(['--json', 'named']), 1)
-        self.assertEqual(out.getvalue(), '')
-        self.assertIn('named', err.getvalue())
-        self.assertIn('read failed', err.getvalue())
-        for args in [['--json'], ['--json', 'one', 'two'], ['--j', 'named']]:
-            with patch('textstats.cli.count_file') as counter:
-                with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
-                    self.assertEqual(main(args), 2)
-            counter.assert_not_called()
+                status = main(['--', '--json'])
+        self.assertEqual((status, out.getvalue(), err.getvalue()), (0, 'lines=1 words=2\n', ''))
+        counter.assert_called_once_with('--json', strip_bom=True)
 
     def test_success_renders_completed_counts(self):
         out, err = io.StringIO(), io.StringIO()
@@ -179,15 +173,12 @@ class RangeCliTests(unittest.TestCase):
                 acquire.assert_not_called()
 
     def test_real_acquisition_normalizes_once_and_closes(self):
-        for options in [[], ['--keep-bom'], ['--json'], ['--json', '--keep-bom']]:
+        for options in [[], ['--keep-bom']]:
             stream = io.BytesIO('\ufeffa\n\ufeff'.encode())
             with patch('textstats.io.open', return_value=stream, create=True) as acquire:
                 status, out, err = self.invoke(['--lines=2:2', 'named', *options])
             self.assertEqual((status, err), (0, ''))
-            if '--json' in options:
-                self.assertEqual(__import__('json').loads(out), {'lines':1,'words':1})
-            else:
-                self.assertEqual(out, 'lines=1 words=1\n')
+            self.assertEqual(out, 'lines=1 words=1\n')
             acquire.assert_called_once_with('named', 'rb')
             self.assertTrue(stream.closed)
 
@@ -197,7 +188,7 @@ class RangeCliTests(unittest.TestCase):
                 raise OSError('controlled complete read failure')
         for stream, cause in [(io.BytesIO(b'a\n\xff'), 'utf-8'), (BrokenReader(), 'controlled complete read failure')]:
             with patch('textstats.io.open', return_value=stream, create=True):
-                status, out, err = self.invoke(['--lines', '1:1', '--json', 'named'])
+                status, out, err = self.invoke(['--lines', '1:1', 'named'])
             self.assertEqual((status, out), (1, ''))
             self.assertIn('named', err)
             self.assertIn(cause, err)
