@@ -1,0 +1,41 @@
+"""Direct imports, signatures and silent whole-text public calls."""
+import contextlib
+import importlib
+import inspect
+import io
+import unittest
+
+from textstats import TextStats, count_text
+
+
+class TextApiTests(unittest.TestCase):
+    def test_direct_exports_and_annotated_signatures(self):
+        package = importlib.import_module("textstats")
+        self.assertIs(package.TextStats, TextStats)
+        self.assertIs(package.count_text, count_text)
+        signature = inspect.signature(count_text)
+        self.assertEqual(list(signature.parameters), ["text", "strip_bom"])
+        self.assertIs(signature.parameters["text"].annotation, str)
+        self.assertIs(signature.parameters["strip_bom"].annotation, bool)
+        self.assertIs(signature.parameters["strip_bom"].kind, inspect.Parameter.KEYWORD_ONLY)
+        self.assertIs(signature.parameters["strip_bom"].default, True)
+        self.assertIs(signature.return_annotation, TextStats)
+        constructor = inspect.signature(TextStats)
+        self.assertEqual(list(constructor.parameters), ["lines", "words"])
+        for parameter in constructor.parameters.values():
+            self.assertIs(parameter.annotation, int)
+        with self.assertRaises(TypeError):
+            count_text("a", False)
+
+    def test_public_text_calls_are_silent_and_follow_bom_policy(self):
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            importlib.reload(importlib.import_module("textstats"))
+            default = count_text("\ufeff\n")
+            retained = count_text("\ufeff\n", strip_bom=False)
+            unicode_result = count_text("café\r\n世界\u2029fin")
+        self.assertEqual(default, TextStats(1, 0))
+        self.assertEqual(retained, TextStats(1, 1))
+        self.assertEqual(unicode_result, TextStats(2, 3))
+        self.assertEqual(stdout.getvalue(), "")
+        self.assertEqual(stderr.getvalue(), "")

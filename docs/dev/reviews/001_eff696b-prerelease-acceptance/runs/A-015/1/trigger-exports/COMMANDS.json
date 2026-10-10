@@ -1,0 +1,127 @@
+[
+  {
+    "argv": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_negative_counts_are_rejected_in_either_field (tests.unit.test_core.StatisticsTests.test_negative_counts_are_rejected_in_either_field) ... ok\ntest_non_integer_and_boolean_counts_are_rejected_in_either_field (tests.unit.test_core.StatisticsTests.test_non_integer_and_boolean_counts_are_rejected_in_either_field) ... ok\ntest_valid_values_have_value_equality (tests.unit.test_core.StatisticsTests.test_valid_values_have_value_equality) ... ok\ntest_mixed_and_consecutive_terminators_and_final_segment (tests.unit.test_core.TextCountingTests.test_mixed_and_consecutive_terminators_and_final_segment) ... ok\ntest_only_one_leading_bom_is_removed (tests.unit.test_core.TextCountingTests.test_only_one_leading_bom_is_removed) ... ok\ntest_unicode_whitespace_does_not_broaden_line_terminators (tests.unit.test_core.TextCountingTests.test_unicode_whitespace_does_not_broaden_line_terminators) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.TextCountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_direct_exports_and_annotated_signatures (tests.integration.test_api.TextApiTests.test_direct_exports_and_annotated_signatures) ... ok\ntest_public_text_calls_are_silent_and_follow_bom_policy (tests.integration.test_api.TextApiTests.test_public_text_calls_are_silent_and_follow_bom_policy) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--check"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "M  AGENTS.md\nM  README.md\nM  docs/dev/TASKS.md\nA  tests/__init__.py\nA  tests/integration/__init__.py\nA  tests/integration/test_api.py\nA  tests/unit/__init__.py\nA  tests/unit/test_core.py\nA  textstats/__init__.py\nA  textstats/core.py\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "log",
+      "-3",
+      "--format=%H %s"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191 Merge accepted TextStats preparation into main\n1e3305c8659045945244c06861079fef879ca3c3 Seal delegated TextStats preparation acceptance\n1510709f6e10d82d1b525b8c7cb221c5e1c5e20f Derive TextStats executable tasks and conformance QC\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "bundle",
+      "verify",
+      "/workspace/scratch/46b31bb4dff6/037-a015-trigger-artifacts/RETAINED.bundle"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "The bundle contains these 9 refs:\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/heads/trial/037-a015-staged\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/trial-delivery/trial/037-a015-staged\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n",
+    "stderr": "/workspace/scratch/46b31bb4dff6/037-a015-trigger-artifacts/RETAINED.bundle is okay\n"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "trial-delivery",
+      "refs/heads/trial/037-a015-staged"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191\trefs/heads/trial/037-a015-staged\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--name-only"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "returncode": 0,
+    "stdout": "AGENTS.md\nREADME.md\ndocs/dev/TASKS.md\ntests/__init__.py\ntests/integration/__init__.py\ntests/integration/test_api.py\ntests/unit/__init__.py\ntests/unit/test_core.py\ntextstats/__init__.py\ntextstats/core.py\n",
+    "stderr": ""
+  }
+]

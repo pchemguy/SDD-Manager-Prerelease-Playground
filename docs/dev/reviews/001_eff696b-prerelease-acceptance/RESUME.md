@@ -186,3 +186,10 @@ Original coordinator input inaccurately claimed a localmain ref existed. Actual 
 Actual accepted preparation88a retained with all tasks unchecked; exact baseline bundle/index/workfiles and hashes exported. Isolated caller-owned native pre-commit hook can hold the actual consumer commit after its own work. Clean plumbing probe exit73 is setup only, not an observed acceptance trigger. Separate localbare trial-delivery contains exact baseline; no localmain ref claimed.
 
 Automatic review rejected proposed external trialbranch creation because destination/checkpoint authorization was not recognized. Rejected command/reason retained; no retry/bypass. Materially safer local disposable destination selected; complete objects/recovery exports will be published on authorized external evidence branch. Original setup/probe/control/hook and ordinary rendered request retained. Publish setup before fresh consumer. Native OS termination/full transcript facilities unestablished; positive A008 cursor untouched.
+
+
+## A015 real staged trigger independently verified
+
+Actual T001 checks, initialcheckbox and10 owned staged files retained with HEAD/localdestination unchanged88a. Nativeprecommithold prevented closingcommit; consumer acknowledgedstop and sealedwithoutretry. Independent8 unit/2 integration tests Passed; actual HOLD/currentindex/workfiles match. Exactindex, stage0 blobs, patches, pendingworkfiles and verified baseline-retainingbundle exported for recovery.
+
+First assessor export screening rejected NUL commandprovenance held onlyin ephemeral memory; originalrecordbytes/hash unavailable, candidly retained asgap. Fresh independent commandcaptures and exactbinaryexports remain distinct. Coordinator pendingoperation schema values corrected without productstatechange. Publishtriggerexports before boundedcontrolrestore/freshcontinuation; aggregategrade pending.

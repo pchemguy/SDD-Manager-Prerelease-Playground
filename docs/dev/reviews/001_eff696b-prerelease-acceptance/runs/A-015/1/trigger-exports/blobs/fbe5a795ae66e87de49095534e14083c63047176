@@ -1,0 +1,72 @@
+"""Pure statistics, once-only BOM normalization and CRLF/CR/LF traversal.
+
+Counting holds the whole decoded string in memory and has no I/O effects.
+Internal traversal retains terminators so future selection can share its rules.
+"""
+from collections.abc import Iterator
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class TextStats:
+    """Immutable nonnegative integer line and word counts with value equality.
+
+    Boolean and other non-integer counts raise TypeError; negative integer
+    counts raise ValueError before a valid statistics value can be returned.
+    """
+
+    lines: int
+    words: int
+
+    def __post_init__(self) -> None:
+        for name, value in (("lines", self.lines), ("words", self.words)):
+            if not isinstance(value, int) or isinstance(value, bool):
+                raise TypeError(f"{name} must be an integer, excluding bool")
+            if value < 0:
+                raise ValueError(f"{name} must be nonnegative")
+
+
+def _normalize_text(text: str, strip_bom: bool) -> str:
+    """Remove at most one complete-input leading BOM, preserving all else."""
+    return text[1:] if strip_bom and text.startswith("\ufeff") else text
+
+
+def _logical_lines(text: str) -> Iterator[str]:
+    """Yield original segments using only CRLF, CR and LF terminators.
+
+    A trailing terminator has no phantom segment. No BOM normalization occurs.
+    """
+    start = 0
+    index = 0
+    while index < len(text):
+        character = text[index]
+        if character in "\r\n":
+            index += 1
+            if character == "\r" and index < len(text) and text[index] == "\n":
+                index += 1
+            yield text[start:index]
+            start = index
+        else:
+            index += 1
+    if start < len(text):
+        yield text[start:]
+
+
+def _count_normalized(text: str) -> TextStats:
+    """Count already normalized content without stripping any further BOM."""
+    return TextStats(sum(1 for _ in _logical_lines(text)), len(text.split()))
+
+
+def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
+    """Count a complete string silently, recognizing CRLF/CR/LF lines.
+
+    Args:
+        text: Complete input; Unicode whitespace separates words through split.
+        strip_bom: Remove exactly one leading U+FEFF when true. Interior and
+            repeated BOMs remain ordinary non-whitespace characters.
+
+    Returns:
+        Immutable line and word counts. Empty normalized text has zero lines;
+        a nonempty final unterminated segment contributes one line.
+    """
+    return _count_normalized(_normalize_text(text, strip_bom))

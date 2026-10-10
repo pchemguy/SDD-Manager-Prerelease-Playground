@@ -1,0 +1,82 @@
+[
+  {
+    "path": "AGENTS.md",
+    "mode": "100644",
+    "object": "07d178b2ec7674c6b0ff44f8671a88f5f63a9e1c",
+    "stage": 0,
+    "sha256": "94a36756c74cde9ddbf849319fa78d87de022e5e43727ba493ee2a72cdffd98a",
+    "bytes": 3333
+  },
+  {
+    "path": "README.md",
+    "mode": "100644",
+    "object": "d6cc1a815754fae18b4acd9ac9620e4409b0e5de",
+    "stage": 0,
+    "sha256": "91fac18f7cde29146e7d7bc8b56578fa0fe7571c7d2323a18b756b2a17934192",
+    "bytes": 487
+  },
+  {
+    "path": "docs/dev/TASKS.md",
+    "mode": "100644",
+    "object": "90bdd7273c02e1e256f377cc6beb1acf8942825c",
+    "stage": 0,
+    "sha256": "69a8bb22fdb3d780bf8fed3337b79e0b142b6155e6ab99ab7163299f8d38b8a5",
+    "bytes": 18820
+  },
+  {
+    "path": "tests/__init__.py",
+    "mode": "100644",
+    "object": "4b60f732ada5ebb428f1c50b11f14bdc4fe5b7bd",
+    "stage": 0,
+    "sha256": "658da45d69731c8f43d35f5eb2576ddfa049bfdb4faa2a0e86159b7119afd91c",
+    "bytes": 35
+  },
+  {
+    "path": "tests/integration/__init__.py",
+    "mode": "100644",
+    "object": "50b2e3350653fcfeabcf279baef56ae44981ea23",
+    "stage": 0,
+    "sha256": "390e99e4fd9a667e441eb546efc286617a2279b6bbd646ad1925dada6fb58086",
+    "bytes": 37
+  },
+  {
+    "path": "tests/integration/test_api.py",
+    "mode": "100644",
+    "object": "8ebd4fd49d89eaac0fe2c835d5ee4042b47e3347",
+    "stage": 0,
+    "sha256": "f41688c9d7e008f2392e3164a67300463df2da60c01b017d809d0d18d8ecf7be",
+    "bytes": 1973
+  },
+  {
+    "path": "tests/unit/__init__.py",
+    "mode": "100644",
+    "object": "92dbb03bafbe96596bf3dca4f18af7b3fe40d646",
+    "stage": 0,
+    "sha256": "02cba8dcdca61335a48784875b81cdbe69969965dd20385200b937f5e41b9a55",
+    "bytes": 35
+  },
+  {
+    "path": "tests/unit/test_core.py",
+    "mode": "100644",
+    "object": "cb397995495616fae1e786c6f8e3cf60ae7ce2b2",
+    "stage": 0,
+    "sha256": "b8b916e0fb69de98869fce96b97feea2e45bcd008d1aafe400ecf36e5614d692",
+    "bytes": 3743
+  },
+  {
+    "path": "textstats/__init__.py",
+    "mode": "100644",
+    "object": "4556fc22ff73d99f12ed07c81821fb992843fda1",
+    "stage": 0,
+    "sha256": "c5db9c29a9d1ab63f2cb818ed7f7ce6284d51ff2913784a53ce0b0d7461d762f",
+    "bytes": 142
+  },
+  {
+    "path": "textstats/core.py",
+    "mode": "100644",
+    "object": "fbe5a795ae66e87de49095534e14083c63047176",
+    "stage": 0,
+    "sha256": "3281653b8de71ac9865a30a22011439f1bd6f3417ec0cc44bb84cfc73432abee",
+    "bytes": 2603
+  }
+]

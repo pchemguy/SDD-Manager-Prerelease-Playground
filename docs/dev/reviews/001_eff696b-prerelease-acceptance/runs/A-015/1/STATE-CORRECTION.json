@@ -1,0 +1,14 @@
+{
+  "original_publication": "640f29eb809258107be0adb6e20040a26ad49295",
+  "original_pending_operation": {
+    "kind": "git",
+    "status": "local-only",
+    "description": "Owned completed T001 work/checklist staged; closingcommitheld; exactHEAD remains88a"
+  },
+  "corrected_pending_operation": {
+    "kind": "commit",
+    "status": "interrupted",
+    "description": "Actual completed T001 ownedwork/checklist staged; nativeprecommithold preventedclosingcommit; HEAD88a retained"
+  },
+  "reason": "Coordinator used unsupported kind/status values; corrected to actual interruptedcommit under pinnedschema without changing trigger/productstate"
+}
