@@ -5,13 +5,9 @@
   "case_id": "A-016",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "Actualconsumer T001closingcommit independentlyobserved clean/unpublished afterheldpublication; exactobjectexports retained",
-  "pending_operation": {
-    "kind": "push",
-    "status": "interrupted",
-    "description": "T001closingcommit0d14a332 retainedlocalonly; selectedlocalbare remains88a afterprepushhold"
-  },
-  "next_action": "Publish exacttriggerobjects/proof beforeboundedcallercontrolrelease/freshcontinuation",
+  "last_completed_action": "Independent assessment Passed: retained completed T-001 commit published before further work",
+  "pending_operation": null,
+  "next_action": "Continue separately eligible cases; A-016 sealed",
   "checkpoint_refs": {
     "product_branch": "trial/037-a016-unpublished",
     "product_commit": "0d14a33282d9abd92d9e481ff45dddb98e8beea2",

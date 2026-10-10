@@ -219,3 +219,10 @@ Procedural sourceactivation assistance retained: initialcloudorientation loadedb
 ## A009 selected incorporation eligible
 
 Actual A008independent Passed published0611f1b and sourceprogress eb10d24 verified. FreshmainSPEC-only ordinaryhandoff rendered after fetchofactualcurrentevidenceobjects and exactpredecessor publicationcomparison. StartingGit/index/status/trackedhashes and unchangedA008hostedbaseline retained. Remainingfeaturework is available; no implementation/integration or unselectedincorporation authorized. ConcretechangedSPEC/currentQC decisions delegatedcoordinator. Publishsetupbeforefreshconsumer.
+
+
+## A016 unpublished-commit recovery independently Passed
+
+Fresh continuation published retained T-001 commit 0d14a332 to the disposable local destination before tests, edits, selection or another commit. Independent assessment confirms exact commit, index and tracked workfiles survived the interruption; all three original deterministic checks Passed. Complete verified Git objects and exact recovery artifacts are exported in runs/A-016/1/final-exports.
+
+The controlled hold, bounded release and coordinator manifest correction remain recorded separately. This proves controlled local recovery; it does not claim live GitHub task-branch delivery, native process termination or strict filesystem isolation. Original-pin required totals are 18 Passed, 2 Failed and 12 unresolved; corrected A004/A005 reassessments remain separate. Full readiness remains Open.
