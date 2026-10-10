@@ -1,0 +1,37 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-010",
+      "status": "Passed",
+      "assessment_path": "../../A-010/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-json-and-stdin",
+        "product_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+        "integration_branch": "phase/2-json-and-stdin",
+        "integration_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+        "merge_parents": [
+          "e63b8946bbb99347b0f73f070f9c728945ee5925",
+          "6f1614480687f5978023df1122ec8b2567ff19d9"
+        ],
+        "feature_branch": "feature/002_e7cae5b-named-file-ranges",
+        "feature_commit": "6f1614480687f5978023df1122ec8b2567ff19d9",
+        "default_branch": "main",
+        "default_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-a022-acceptance-change",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-json-and-stdin",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "af641fb55bacb55f0d5d925cdfc2c4936826f265",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "acceptance_change": "For checked T-019 in canonical docs/dev/TASKS.md, expand its explicit F-002/F-004 acceptance evidence to include literal Unicode superscript endpoints U+00B2:U+00B3 (\u00b2:\u00b3), in both --lines spellings with either BOM policy and text/JSON modes, against a nonexistent named input. Require usage status2, useful stderr, empty stdout/no traceback and zero input acquisition. This adds a named acceptance specimen derived from the retained ASCII-only range grammar, without changing that grammar or other contracts. Preserve original completed-task evidence and record that the changed acceptance requires reassessment; do not falsely treat historical completion as proof of this new explicit specimen.",
+    "summary": "Work only in /workspace/scratch/46b31bb4dff6/037-a022-acceptance-change, an isolated fork of actual delivered range checkpoint795f3a3542c9981f8d43c8e182876f3efa5b5f16 on phase/2-json-and-stdin. Original tracked product bytes and24 canonical owners/19checked/fivepending retained. Pinned plugin is textstats-run-resources/plugin; read applicable project/plugin instructions. This scoped request authorizes incorporating the specified acceptance amendment, appropriate owner/QC and bounded reassessment necessary to orient truthful next work; do not implement a newly selected task or claim final phase completion. Preserve historical IDs/check evidence and unrelated/frozen records. Any owned commit must be immediately pushed to LOCAL remote trial-delivery at /workspace/scratch/46b31bb4dff6/037-a022-delivery.git and exact ref readback verified before further work. origin is read-only; no live GitHub refs or provider objects. Present concrete changed artifacts to delegated coordinator review before durable conclusion. Product baseline comparison source is supplied delivered checkpoint. Record actual commands/results/hashes/refs/limits externally, then STOP after orientation."
+  }
+}
