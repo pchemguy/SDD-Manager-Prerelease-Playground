@@ -43,3 +43,7 @@ Isolated first attempt `38046045373` failed again at immediate draft-creation in
 ## Actual upload stop and verified recovery
 
 Attempt 2 run `38046245961` reached the controlled post-acknowledgement stop: draft `408880857` retained uploaded archive `627714735`, checksum absent. Independent download verified all fixture member bytes before recovery. Recovery `38046420841` Passed: same release and first asset IDs/timestamps, only missing checksum `627720214` added, published/prerelease exact body/source, checksum hash `1ebd303abe58c45451ae67bd34ea2ac47c838db48df9b9d715257a1a939ce248`, latest absent. This is live-provider effect plus controlled response suppression, not native network interruption. Body-conflict and foreign-to-publisher inventory trials are dispatched. Sentinel `627726873` is coordinator owned in the isolated fixture; publisher must preserve it without deleting/clobbering. Original package release is unchanged.
+
+## Delegated layout assessment
+
+Coordinator accepted concrete layout/combined QC at `b3ba0338`, with exact blobs and substantive basis in LAYOUT-DECISION.json. Consumer may derive TASKS and owner QC; implementation and hosting remain held for actual prerequisites.
