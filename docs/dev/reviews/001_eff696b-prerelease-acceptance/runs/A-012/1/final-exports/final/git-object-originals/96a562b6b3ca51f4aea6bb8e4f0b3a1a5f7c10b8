@@ -1,0 +1,8 @@
+tree b34bf03700680d278548d57731a056a8ed597ea0
+parent 33f0ba2ed7ae187cce9643433f8f1f09282ef079
+author Codex <codex@openai.com> 1791648784 -0400
+committer Codex <codex@openai.com> 1791648784 -0400
+
+[T-021] Complete runnable named-file range documentation
+
+Document grammar, normalization/selection ordering, EOF and complete decode failures, unchanged API and deferred source-independent stdin boundary. Refresh truthful owned navigation without weakening manual instructions. All runnable guide fences and fresh nonempty 31-unit/26-integration checks passed; CLI executable AST unchanged. Concrete four-artifact decision ff5c536e1f76cd79bbc4bb155a35963498953240; task evidence and initial checkbox close together, milestone 2.5 remains open.

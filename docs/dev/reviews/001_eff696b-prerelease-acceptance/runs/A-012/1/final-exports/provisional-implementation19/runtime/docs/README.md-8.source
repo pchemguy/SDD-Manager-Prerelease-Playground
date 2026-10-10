@@ -1,0 +1,2 @@
+python tools/package_source.py
+python tools/check_distribution.py

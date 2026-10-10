@@ -1,0 +1,10 @@
+tree 6668048c068a7314a08dddab1709b7437271d1c3
+parent bf3eb5e9a8d30a9e8a457f7708afa3b400100417
+author Codex <codex@openai.com> 1791629822 -0400
+committer Codex <codex@openai.com> 1791629822 -0400
+
+Plan staged TextStats delivery and strategy QC
+
+Preserve two requested delivery milestones in each phase with useful named-file MVP, complete failure/documentation/distribution exits, later JSON/stdin increments and dedicated final phase reviews. Keep range feature deferred and hosting phase-gated.
+
+Record scoped SPEC/report acceptance and refresh acceptance-only QC identity. Strategy QC covers full contracts and explicitly assesses narrow milestone counts; links, identities and staged whitespace pass. Layout remains a separate pending checkpoint, so TASKS readiness is not claimed.

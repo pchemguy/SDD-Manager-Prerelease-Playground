@@ -1,0 +1,8 @@
+tree 1a45404dfae3a15473800b2f18e1e2257cc13e04
+parent e7cae5b2216ff7dd311b6f7296d829d1927a6a8a
+author Codex <codex@openai.com> 1791640129 -0400
+committer Codex <codex@openai.com> 1791640129 -0400
+
+[T-010] Add named-file JSON output and preserve text contracts
+
+Verify four JSON tests fail before implementation, then pass; 25 unit and 20 integration tests pass on Python 3.12.14. Update delivered help/docs/examples; stop before stdin. Fixes pchemguy/SDD-Manager-Prerelease-Playground#11

@@ -1,0 +1,8 @@
+unit: 31 tests
+integration: 28 tests
+extracted import: /tmp/tmpe6entbcg/textstats-source/textstats/__init__.py
+extracted import: /tmp/tmpfn9hku7i/textstats-source/textstats/__init__.py
+extracted import: /tmp/tmpjgsmb9_2/textstats-source/textstats/__init__.py
+extracted import: /tmp/tmpdzw57x_s/textstats-source/textstats/__init__.py
+extracted import: /tmp/tmp1hdgmy8m/textstats-source/textstats/__init__.py
+241 extracted module cases passed

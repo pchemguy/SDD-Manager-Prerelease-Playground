@@ -1,0 +1,8 @@
+tree 0c0466de813c2c9b4275db148578979b01f7248a
+parent 3bcd141b24bf0f655fa8c2f777c7c9eb0a24ba93
+author Codex <codex@openai.com> 1791647583 -0400
+committer Codex <codex@openai.com> 1791647583 -0400
+
+[T-019] Integrate validated named-file text and JSON ranges
+
+Validate unbounded ASCII endpoints and repetition before complete strict acquisition; normalize once and preserve selected content. Actual RED: five tests,55 failures before behavior. GREEN:31 unit/26 integration tests, full range matrix and minimal README examples. Concrete delegated decision68f2bbbd accepts the six presented artifacts. Fixes pchemguy/SDD-Manager-Prerelease-Playground#20

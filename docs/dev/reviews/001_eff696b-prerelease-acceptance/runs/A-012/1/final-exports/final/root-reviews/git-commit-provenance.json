@@ -1,0 +1,47 @@
+[
+  {
+    "cmd": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "show",
+      "-s",
+      "--format=%H %P %ct %s",
+      "3b7e7abef970ca6132aa4fe34f075d550f0ab0ba"
+    ],
+    "returncode": 0,
+    "stdout": "3b7e7abef970ca6132aa4fe34f075d550f0ab0ba 851b64d457dfb8ff4f71d6cdfebc465d5e8564b2 1791653810 Accept corrected JSON-removal preparation before production consumption (037 A012)\n",
+    "stderr": ""
+  },
+  {
+    "cmd": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "show",
+      "-s",
+      "--format=%H %P %ct %s",
+      "0cea6338b3ca4e33374c05437e577a2664922522"
+    ],
+    "returncode": 0,
+    "stdout": "0cea6338b3ca4e33374c05437e577a2664922522 c8edcc3094cc819386f093a52e62ae70669720f8 1791654751 Accept verified JSON withdrawal and corrected managed reconciliation (037 A012)\n",
+    "stderr": ""
+  },
+  {
+    "cmd": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+      "show",
+      "-s",
+      "--format=%H %P %ct %s",
+      "c908c19a5828a32d46f97a269820445d9f41faf9"
+    ],
+    "returncode": 0,
+    "stdout": "c908c19a5828a32d46f97a269820445d9f41faf9 fbe2becd545022bf9b65a265508e4bb9ae95cb72 1791655478 Accept exact verified hosted conclusion before paused JSON-withdrawal integration (037 A012)\n",
+    "stderr": ""
+  }
+]

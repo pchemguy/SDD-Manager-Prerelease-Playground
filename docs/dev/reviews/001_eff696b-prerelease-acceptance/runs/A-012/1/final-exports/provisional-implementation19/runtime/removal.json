@@ -1,0 +1,29 @@
+{
+  "literals": {
+    "removal": [
+      {
+        "name": "removed-json",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "literal-json-filename",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      },
+      {
+        "name": "retained-range",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      }
+    ]
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,275 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctYTAxMi1maW5hbC1hcnRpZmFjdHMvcHJvdmlzaW9uYWwtaW1wbGVtZW50YXRpb24xOS9wcm9kdWN0LWV4cG9ydC90ZXh0c3RhdHMvX19pbml0X18ucHkK"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "named.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "39f4089f56b4853733ed86388933f0eead5562beff8635a6b063201cabeb35af",
+        "before_sha256": "39f4089f56b4853733ed86388933f0eead5562beff8635a6b063201cabeb35af",
+        "input_sha256": "39f4089f56b4853733ed86388933f0eead5562beff8635a6b063201cabeb35af",
+        "name": "named.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=3 words=3\n",
+      "stdout_base64": "bGluZXM9MyB3b3Jkcz0zCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "empty.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "name": "empty.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=0 words=0\n",
+      "stdout_base64": "bGluZXM9MCB3b3Jkcz0wCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--keep-bom",
+        "keep-bom.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "before_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "name": "keep-bom.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=1\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0xCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--",
+        "-input.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "1a989ea86150171c687b0727f218eedbb94c4665a7da9b0add1bf5de607f2bf1",
+        "before_sha256": "1a989ea86150171c687b0727f218eedbb94c4665a7da9b0add1bf5de607f2bf1",
+        "input_sha256": "1a989ea86150171c687b0727f218eedbb94c4665a7da9b0add1bf5de607f2bf1",
+        "name": "-input.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "missing.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "missing.txt",
+        "stdin": false
+      },
+      "returncode": 1,
+      "status": "Completed",
+      "stderr": "textstats: 'missing.txt': [Errno 2] No such file or directory: 'missing.txt'\n",
+      "stderr_base64": "dGV4dHN0YXRzOiAnbWlzc2luZy50eHQnOiBbRXJybm8gMl0gTm8gc3VjaCBmaWxlIG9yIGRpcmVjdG9yeTogJ21pc3NpbmcudHh0Jwo=",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "decode.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8dd06b5ab6b594257e41b7d8dd440a4062eddc67fdab5c13b4dc300176896f6e",
+        "before_sha256": "8dd06b5ab6b594257e41b7d8dd440a4062eddc67fdab5c13b4dc300176896f6e",
+        "input_sha256": "8dd06b5ab6b594257e41b7d8dd440a4062eddc67fdab5c13b4dc300176896f6e",
+        "name": "decode.txt",
+        "stdin": false
+      },
+      "returncode": 1,
+      "status": "Completed",
+      "stderr": "textstats: 'decode.txt': 'utf-8' codec can't decode byte 0xff in position 1: invalid start byte\n",
+      "stderr_base64": "dGV4dHN0YXRzOiAnZGVjb2RlLnR4dCc6ICd1dGYtOCcgY29kZWMgY2FuJ3QgZGVjb2RlIGJ5dGUgMHhmZiBpbiBwb3NpdGlvbiAxOiBpbnZhbGlkIHN0YXJ0IGJ5dGUK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "before_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "usage-missing.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: the following arguments are required: INPUT\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogdGhlIGZvbGxvd2luZyBhcmd1bWVudHMgYXJlIHJlcXVpcmVkOiBJTlBVVAo=",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "usage-extra.txt",
+        "extra"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "before_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "usage-extra.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: unrecognized arguments: extra\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogdW5yZWNvZ25pemVkIGFyZ3VtZW50czogZXh0cmEK",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--unknown",
+        "usage-unknown.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-jpsc0_tx",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "before_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "usage-unknown.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: unrecognized arguments: --unknown\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogdW5yZWNvZ25pemVkIGFyZ3VtZW50czogLS11bmtub3duCg==",
+      "stdout": "",
+      "stdout_base64": ""
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "baseline"
+}

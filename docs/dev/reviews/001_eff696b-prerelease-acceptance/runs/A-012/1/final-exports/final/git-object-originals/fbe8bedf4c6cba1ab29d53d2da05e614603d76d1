@@ -1,0 +1,13 @@
+tree d49726af39be5aa18ac12c351ad6cb208167751c
+parent e7cae5b2216ff7dd311b6f7296d829d1927a6a8a
+parent 503dc510aef79bb7f8befc87e8072dd344182dd3
+author Codex <codex@openai.com> 1791646579 -0400
+committer Codex <codex@openai.com> 1791646579 -0400
+
+Merge accepted named-file range preparation into default main
+
+Objective: Enable accepted named-file range delivery with coherent full-project governing inputs.
+Review: Delegated concrete SPEC d9a2747 (decision 19b24aae), PLAN aeef000 (decision c9d0ca7), TASKS/joint QC 7cf177a (decision dd252be) accepted; current navigation records those scopes. PLAN count correction preserves the first assessment and failure.
+Delivered: Accepted feature SPEC/PLAN/TASKS/QC plus main SPEC/PLAN and pending stdin/final task composition/QC. Feature tasks remain unchecked/singly active-owned; no range source or hosted objects delivered.
+Verification: Prospective document-only merge matches source artifacts exactly, maintained local links and staged whitespace pass; pinned/coordinator-owned resources unchanged. No product tests claimed for this prerequisite.
+Integration: Campaign 002_e7cae5b original opening b0f93cf170addc80a92541acc4151058e57b6e64, branch-off e7cae5b2216ff7dd311b6f7296d829d1927a6a8a; preparation design-docs/002_e7cae5b-named-file-ranges tip 503dc510aef79bb7f8befc87e8072dd344182dd3 into default main parent e7cae5b2216ff7dd311b6f7296d829d1927a6a8a. Compatible completed JSON merge and feature task execution remain pending; final return target is paused phase/2-json-and-stdin. No phase completion/release.

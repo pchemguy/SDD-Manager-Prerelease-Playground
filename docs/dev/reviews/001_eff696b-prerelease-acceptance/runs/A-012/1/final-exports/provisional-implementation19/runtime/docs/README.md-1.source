@@ -1,0 +1,3 @@
+python -c "from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\r\nbeta\rlast two\n')"
+python -m textstats sample.txt
+python -m textstats --help

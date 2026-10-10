@@ -1,0 +1,138 @@
+[
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/000-stdout.bin",
+    "stderr": "commands/000-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/001-stdout.bin",
+    "stderr": "commands/001-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "status",
+      "--porcelain=v1",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/002-stdout.bin",
+    "stderr": "commands/002-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "--stage",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/003-stdout.bin",
+    "stderr": "commands/003-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/004-stdout.bin",
+    "stderr": "commands/004-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/005-stdout.bin",
+    "stderr": "commands/005-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "log",
+      "--format=%H %P %s",
+      "a16d44b7622d5ffd68b0f87603bbaa52a1f728fd..HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/006-stdout.bin",
+    "stderr": "commands/006-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-remote",
+      "trial-delivery",
+      "refs/heads/trial/qc-recovery"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/007-stdout.bin",
+    "stderr": "commands/007-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/008-stdout.bin",
+    "stderr": "commands/008-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-list",
+      "--objects",
+      "--all"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery",
+    "returncode": 0,
+    "stdout": "commands/009-stdout.bin",
+    "stderr": "commands/009-stderr.bin"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery-delivery.git",
+    "returncode": 0,
+    "stdout": "commands/010-stdout.bin",
+    "stderr": "commands/010-stderr.bin"
+  }
+]

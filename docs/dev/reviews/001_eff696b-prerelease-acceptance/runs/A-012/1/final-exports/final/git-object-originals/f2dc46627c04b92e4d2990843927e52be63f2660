@@ -1,0 +1,8 @@
+tree 1113d14226934a5010688ddf6aeccb9fecfc5bec
+parent 96a562b6b3ca51f4aea6bb8e4f0b3a1a5f7c10b8
+author Codex <codex@openai.com> 1791649193 -0400
+committer Codex <codex@openai.com> 1791649193 -0400
+
+[T-022] Verify ranges through isolated extracted module execution
+
+Execute 315 actual whole-input/range CLI cases plus unchanged silent API checks from the allowlisted extraction with isolated imports and bytecode-disabled children. Test-first range-specific faulty extracted archives passed the old checker, then both are rejected by the expanded checker. Fresh 31-unit/28-integration suites and current extraction pass. Concrete artifact decision ce2df08c4a716b0a830077e23fc383b424299523; result/evidence/initial checkbox together, milestone 2.5 remains open.

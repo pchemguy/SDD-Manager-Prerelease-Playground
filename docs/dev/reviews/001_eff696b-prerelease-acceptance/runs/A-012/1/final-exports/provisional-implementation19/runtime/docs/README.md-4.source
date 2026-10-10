@@ -1,0 +1,6 @@
+python -c "from pathlib import Path; Path('range.txt').write_bytes(b'\xef\xbb\xbfalpha beta\r\n\r\n\xef\xbb\xbf\nlast two')"
+python -m textstats --lines 2:2 range.txt
+python -m textstats range.txt --keep-bom --lines=2:2
+python -m textstats --lines 2:99 range.txt
+python -m textstats --keep-bom --lines 3:3 range.txt
+python -m textstats range.txt --lines 99:100

@@ -1,0 +1,3 @@
+python tools/check_tests.py
+python -m unittest discover -s tests/unit -t . -v
+python -m unittest discover -s tests/integration -t . -v

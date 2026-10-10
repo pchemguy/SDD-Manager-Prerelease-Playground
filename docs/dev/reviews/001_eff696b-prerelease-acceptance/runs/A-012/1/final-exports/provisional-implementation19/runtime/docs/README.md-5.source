@@ -1,0 +1,6 @@
+python -m textstats --lines 0:2 missing.txt
+python -m textstats --lines 3:2 missing.txt
+python -m textstats --lines=1:2 --lines 2:3 missing.txt
+python -m textstats --lines
+python -c "from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\n\xff')"
+python -m textstats --lines 1:1 bad-range.txt

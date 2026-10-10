@@ -1,0 +1,8 @@
+tree 9c26329256397c9545fc2226ca57763738614784
+parent f2dc46627c04b92e4d2990843927e52be63f2660
+author Codex <codex@openai.com> 1791649647 -0400
+committer Codex <codex@openai.com> 1791649647 -0400
+
+[T-023] Review and complete range documentation distribution milestone
+
+Review current implementation/docs/extraction as a coherent milestone independently of fresh actual checks. All runnable guide fences, 31-unit/28-integration runner and discovery, 315 extracted cases/API checks, exact archive bytes and usability/error demonstrations pass; TODO None. Concrete report decision ee49eb727938ab671daf6f9944c9cf4c086373f0. Report/result/evidence/initial checkbox and eligible milestone 2.5 parent close together; feature extent and main stdin/final remain pending.

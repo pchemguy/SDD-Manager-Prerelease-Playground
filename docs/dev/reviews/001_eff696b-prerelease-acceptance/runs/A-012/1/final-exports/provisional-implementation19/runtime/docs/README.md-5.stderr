@@ -1,0 +1,9 @@
+usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT
+python -m textstats: error: argument --lines: endpoints must be positive with START <= END
+usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT
+python -m textstats: error: argument --lines: endpoints must be positive with START <= END
+usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT
+python -m textstats: error: argument --lines: --lines may be specified only once
+usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT
+python -m textstats: error: argument --lines: expected one argument
+textstats: 'bad-range.txt': 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte

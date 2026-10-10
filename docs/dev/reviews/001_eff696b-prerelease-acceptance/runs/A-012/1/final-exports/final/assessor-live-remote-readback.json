@@ -1,0 +1,17 @@
+{
+  "cmd": [
+    "git",
+    "--no-optional-locks",
+    "-C",
+    "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "ls-remote",
+    "origin",
+    "refs/heads/phase/2-json-and-stdin",
+    "refs/heads/revision/003_795f3a3-remove-json",
+    "refs/heads/main"
+  ],
+  "observed_at": "2026-10-10T18:18:02.742016+00:00",
+  "returncode": 0,
+  "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1\trefs/heads/main\n77e7106e3134cc7053a2b1a045cf1a76cf0361ea\trefs/heads/phase/2-json-and-stdin\n160c0a980286c68f62d0d13b3238dad0748885e9\trefs/heads/revision/003_795f3a3-remove-json\n",
+  "stderr": ""
+}

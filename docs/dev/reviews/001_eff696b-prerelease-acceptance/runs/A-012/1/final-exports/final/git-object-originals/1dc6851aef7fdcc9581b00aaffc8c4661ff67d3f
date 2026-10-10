@@ -1,0 +1,8 @@
+tree 8d9b7662255ff1f736bb77de7bdb463f8bb19d84
+parent 636b46d8daf1455c940c98f4d535c9936c0f1733
+author Codex <codex@openai.com> 1791654783 -0400
+committer Codex <codex@openai.com> 1791654783 -0400
+
+Withdraw JSON output while retaining text and named-file ranges
+
+Steering amendment 003_795f3a3-remove-json removes the CLI option and renderer, preserves counting/BOM/ranges/API/resource/error contracts, reconciles docs/tests/extraction and reassesses retained completion evidence. No new task completes; retired T-010–T-012 remain historical and T-013–T-017 stay paused. Verified 31 unit/28 integration tests, 241 real isolated extracted-module cases, ten executed document fences and separate coherent code review on Python 3.12.14. Exact nineteen-artifact delegated implementation/report acceptance and corrected managed-hosting plan acceptance are published at 0cea6338b3ca4e33374c05437e577a2664922522. Hosted reconciliation follows exact commit publication; target integration remains pending.

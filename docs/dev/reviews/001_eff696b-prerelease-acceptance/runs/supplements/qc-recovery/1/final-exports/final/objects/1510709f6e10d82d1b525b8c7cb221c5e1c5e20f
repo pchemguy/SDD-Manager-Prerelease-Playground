@@ -1,0 +1,10 @@
+tree 786946032c0c7e9ef91b19b7ae70354724f6109a
+parent b3ba0338d71c167aaec8ca85317d09002557ea2d
+author Codex <codex@openai.com> 1791630573 -0400
+committer Codex <codex@openai.com> 1791630573 -0400
+
+Derive TextStats executable tasks and conformance QC
+
+Allocate 17 unchecked stable tasks across the accepted two-phase milestones: 11 bounded delivery units, four milestone reviews and two dedicated phase/final reviews. Include each unit tests/docs, failure/resource exits and isolated extracted-source acceptance; defer range implementation.
+
+Record exact delegated layout acceptance and refresh combined QC identity. Validate parent/name/indentation/unique-ID/dependency/review-unit checks, complete contract coverage and task-count rationale. Owner technical Ready remains separate from coordinator task-list acceptance; no implementation or hosted projection.

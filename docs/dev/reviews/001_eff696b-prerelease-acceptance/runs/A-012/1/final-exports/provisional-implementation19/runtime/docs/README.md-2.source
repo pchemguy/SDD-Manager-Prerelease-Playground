@@ -1,0 +1,5 @@
+python -c "from pathlib import Path; Path('bom.txt').write_bytes(b'\xef\xbb\xbf')"
+python -m textstats bom.txt
+python -m textstats --keep-bom bom.txt
+python -c "from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\n')"
+python -m textstats -- -sample

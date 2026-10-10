@@ -1,0 +1,2 @@
+python -m textstats --lines 2:3 sample.txt
+python -m textstats sample.txt --lines=0002:0099

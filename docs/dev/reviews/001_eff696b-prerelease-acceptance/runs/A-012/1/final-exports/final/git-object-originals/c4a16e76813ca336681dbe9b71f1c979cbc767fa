@@ -1,0 +1,8 @@
+tree f8818be9c63c30e5649dc535e70395042c45f104
+parent b292b58429553d18f32c37dd6374a3e5fc7e12fa
+author Codex <codex@openai.com> 1791640294 -0400
+committer Codex <codex@openai.com> 1791640294 -0400
+
+[T-011] Verify JSON contracts from isolated source extraction
+
+Prove checker sensitivity to wrong JSON types with RED then GREEN. Pass 25 unit and 21 integration tests plus 99 extracted module cases on Python 3.12.14; update runnable archive docs. Fixes pchemguy/SDD-Manager-Prerelease-Playground#12

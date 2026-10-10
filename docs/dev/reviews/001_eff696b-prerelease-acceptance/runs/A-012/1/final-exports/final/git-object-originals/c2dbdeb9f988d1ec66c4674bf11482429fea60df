@@ -1,0 +1,6 @@
+tree eae5849708c07a7b9e6dbaa6126ac738a7a708cf
+parent e2e4750ad3be531e53b189ac8519b5376db0ee9e
+author Codex <codex@openai.com> 1791626379 -0700
+committer Codex <codex@openai.com> 1791626379 -0700
+
+Establish isolated publisher workflow fixture (037 CP-012)

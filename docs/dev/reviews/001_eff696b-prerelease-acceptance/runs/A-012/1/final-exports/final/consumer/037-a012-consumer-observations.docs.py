@@ -1,0 +1,17 @@
+from pathlib import Path
+import re
+p=Path('README.md');s=p.read_text().replace('clean errors and optional JSON output','clean errors and exact text output')
+a=s.index('Add `--json`');b=s.index('## Named-file ranges',a);s=s[:a]+'''`--json` output is unsupported. Existing JSON callers must use the text output;
+`--json`, `--json=value` and abbreviated `--j` are usage errors (status 2)
+before input acquisition. A file literally named `--json` works after `--`.
+
+'''+s[b:]
+s=s.replace('JSON/BOM options','BOM options').replace(' --json','').replace('both text/JSON and BOM policies','both BOM policies').replace('stderr; JSON has the same integer fields as whole-input output.','stderr, with the same exact text format as whole-input output.').replace('315 real whole-input/range text/JSON/BOM/error module cases','real whole-input/range text/BOM/error and removed-option module cases').replace('The extracted commands print `lines=3 words=5` and an equivalent JSON object, each with a final newline and status 0.','The extracted commands print `lines=3 words=5`, with a final newline and status 0.')
+# Restore migration literal removed by command-only replacement.
+s=s.replace('A file literally named `--json` works after `--`.','A file literally named `--json` works after `--`.')
+# Avoid duplicate extraction example now that the alternate format is absent.
+s=s.replace('    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt','    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt')
+p.write_text(s)
+p=Path('docs/public-api.md');s=p.read_text().replace(' [--json]','');s=re.sub(r'^\| JSON count success.*\n','',s,flags=re.M).replace('JSON composes with `--keep-bom` and `--lines`;\ntext remains the default.','Only exact text output is supported. `--json`, `--json=value` and `--j` fail\nwith usage status 2 before acquisition; after `--`, a literal `--json` filename\nworks in whole-input and range modes.').replace('text/JSON','text');p.write_text(s)
+p=Path('AGENTS.md');s=p.read_text()+'''\n## Current JSON-removal steering checkpoint\n\nThe current commanded amendment retires JSON output while retaining exact text,\ncounting, BOM policy, complete strict decoding, resource ownership, unchanged\npublic API and named-file ranges. Canonical [TASKS](docs/dev/TASKS.md) retains\n24 stable identities: 21 active tasks (16 checked and five pending T-013–T-017)\nand retired historical T-010–T-012. Historical JSON/range reports remain frozen.\nThe [steering report](docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md)\nowns affected completion reassessment and current verification. Current SPEC,\nPLAN and adjacent QC govern the reduced scope; historical orientation statements\nabove describe their earlier checkpoints. Removed JSON options are usage errors\nbefore input acquisition; a literal `--json` filename works after `--`.\n\nUse `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` and\n`PYTHONDONTWRITEBYTECODE=1 python -B tools/check_distribution.py` for the current\ntext/count/BOM/range and isolated extracted-module checks, with bytecode disabled\nin children. Stop after accepted, verified and published steering integration\ninto paused `phase/2-json-and-stdin`; no stdin execution, full Phase 2 completion,\ndefault integration, version change or release follows.\n''';p.write_text(s)
+print('README/public guide/current orientation aligned; preserved historical controlling orientation and closed reports.')

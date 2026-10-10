@@ -1,0 +1,21 @@
+{
+  "cmd": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/assess.py",
+    "--inputs",
+    "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/dsl-inputs.json",
+    "--run-state",
+    "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/dsl-run-state.json",
+    "--contract",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-012.json",
+    "--evidence",
+    "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/literal-evidence.json",
+    "--output",
+    "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/original-dsl-assessment.json"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6",
+  "returncode": 2,
+  "stdout": "{\"schema_version\": 1, \"status\": \"Blocked\", \"cause\": \"invalid_schema\", \"next_action\": \"Resolve the reported prerequisite before retrying.\"}\n",
+  "stderr": ""
+}

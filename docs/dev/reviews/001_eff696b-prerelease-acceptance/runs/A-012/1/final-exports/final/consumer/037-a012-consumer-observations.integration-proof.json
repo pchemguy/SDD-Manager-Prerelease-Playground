@@ -1,0 +1,37 @@
+{
+  "merge": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+  "ordered_parents": [
+    "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "160c0a980286c68f62d0d13b3238dad0748885e9"
+  ],
+  "tree": "7323ff95312c01f9836d04cfa8729ca903105c2a",
+  "source_tree_equal": true,
+  "remote_exact_tip": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+  "revision_remote_exact_tip": "160c0a980286c68f62d0d13b3238dad0748885e9",
+  "main_unchanged": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+  "clean": true,
+  "branch": "phase/2-json-and-stdin",
+  "active_tasks": 21,
+  "checked_active_tasks": 16,
+  "pending_tasks": [
+    "T-013",
+    "T-014",
+    "T-015",
+    "T-016",
+    "T-017"
+  ],
+  "retired_historical_tasks": [
+    "T-010",
+    "T-011",
+    "T-012"
+  ],
+  "scoped_files": 19,
+  "fresh_merged_verification": {
+    "unit": 31,
+    "integration": 28,
+    "extracted_cases": 241,
+    "silent_api_probe": true,
+    "packaging": true
+  },
+  "distribution_sha256": "dbeb50148c0860d3a02b41898c7dcc23a99fa91efc6537792b685451af82b6b0"
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "document": "README.md",
+    "fence": 1,
+    "language": "bash",
+    "source_sha256": "1e14410989411c1cbbfcbfd92888c91820d079b1edc6793cfb8ee1c2f26511bc",
+    "cmd": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')\"\npython -m textstats sample.txt\npython -m textstats --help"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 2,
+    "language": "bash",
+    "source_sha256": "5cde0ea67eb5a6f1178937eab27969f24ac78010681fec720f7fed8729322d4b",
+    "cmd": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('bom.txt').write_bytes(b'\\xef\\xbb\\xbf')\"\npython -m textstats bom.txt\npython -m textstats --keep-bom bom.txt\npython -c \"from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\\n')\"\npython -m textstats -- -sample"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 3,
+    "language": "bash",
+    "source_sha256": "6c7e8da5c62525f8c9a2300627be235d310a9219775623480dabdf37c5f9c7b1",
+    "cmd": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 2:3 sample.txt\npython -m textstats sample.txt --lines=0002:0099"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 4,
+    "language": "bash",
+    "source_sha256": "c4e87b2c8e81923295d0c7c0408fe32f0c91ef9306619b9b23672ed01b716faa",
+    "cmd": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('range.txt').write_bytes(b'\\xef\\xbb\\xbfalpha beta\\r\\n\\r\\n\\xef\\xbb\\xbf\\nlast two')\"\npython -m textstats --lines 2:2 range.txt\npython -m textstats range.txt --keep-bom --lines=2:2\npython -m textstats --lines 2:99 range.txt\npython -m textstats --keep-bom --lines 3:3 range.txt\npython -m textstats range.txt --lines 99:100"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 5,
+    "language": "bash",
+    "source_sha256": "56a23b6505187133ca6a555a4a27def0145597a2e66ef11f899a50338fe25fc1",
+    "cmd": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 0:2 missing.txt\npython -m textstats --lines 3:2 missing.txt\npython -m textstats --lines=1:2 --lines 2:3 missing.txt\npython -m textstats --lines\npython -c \"from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\\n\\xff')\"\npython -m textstats --lines 1:1 bad-range.txt"
+    ],
+    "returncode": 1,
+    "expected_returncode": 1,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 6,
+    "language": "python",
+    "source_sha256": "0a1f135f49ec63eb9974c1f9be607e780d01fb50cf266902ec720870cbe0aafa",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 7,
+    "language": "bash",
+    "source_sha256": "c2546abe1a3c2dcbb369aba09235fc27e93b93f1e3ec39bbb0d2c370eb10b12f",
+    "cmd": [
+      "bash",
+      "-c",
+      "python tools/check_tests.py\npython -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 8,
+    "language": "bash",
+    "source_sha256": "71e513feb261febba04dc28e0d49b2451d18b7a7947d55a4e731caab605b1e1e",
+    "cmd": [
+      "bash",
+      "-c",
+      "python tools/package_source.py\npython tools/check_distribution.py"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 9,
+    "language": "bash",
+    "source_sha256": "ff7b0756decff670df70a24d3533e3f1d54f20572fbd18aa838305643c84e18a",
+    "cmd": [
+      "bash",
+      "-c",
+      "example_dir=$(mktemp -d)\npython -m zipfile -e dist/textstats-source.zip \"$example_dir\"\n(\n    cd \"$example_dir/textstats-source\"\n    python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\\\r\\\\nbeta\\\\rlast two\\\\n')\"\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n)\nrm -r \"$example_dir\""
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "docs/public-api.md",
+    "fence": 1,
+    "language": "python",
+    "source_sha256": "60b92a1c3e677f1826ddd1d8dedd8216e8689da258fce894ebd1e40d321433e3",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "passed": true
+  }
+]

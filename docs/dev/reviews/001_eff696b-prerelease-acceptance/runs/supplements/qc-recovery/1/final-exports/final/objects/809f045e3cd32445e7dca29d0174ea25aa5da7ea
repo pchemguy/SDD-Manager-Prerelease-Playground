@@ -1,0 +1,8 @@
+tree 49b71b48c52015c0ea2dc920eed9346f712985db
+parent 7d003c1cf31c994340d8644e95990ef2253754ed
+author Codex <codex@openai.com> 1791638340 -0400
+committer Codex <codex@openai.com> 1791638340 -0400
+
+[T-005] Handle named-file input failures without tracebacks
+
+Verify 23 unit and 14 integration tests; retain validation before acquisition and exact successful output. Close result, tests, documentation, evidence and initial task checkbox together. Fixes pchemguy/SDD-Manager-Prerelease-Playground#6

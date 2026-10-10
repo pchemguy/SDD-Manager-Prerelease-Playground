@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "037-a012-lifecycle-checks.py"
+  ],
+  "exit_code": 1,
+  "cause": "IndexError: list index out of range",
+  "location": "initial QC history split assumed exact Initial review heading; PLAN uses Initial strategy review",
+  "tool_capture_ref": "21909b",
+  "intervention": "Assessor-only correction to select actual retained Initial heading; no product changes"
+}

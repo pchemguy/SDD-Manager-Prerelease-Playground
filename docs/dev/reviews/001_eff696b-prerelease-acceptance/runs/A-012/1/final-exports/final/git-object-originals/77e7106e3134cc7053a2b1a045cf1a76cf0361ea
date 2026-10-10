@@ -1,0 +1,17 @@
+tree 7323ff95312c01f9836d04cfa8729ca903105c2a
+parent 795f3a3542c9981f8d43c8e182876f3efa5b5f16
+parent 160c0a980286c68f62d0d13b3238dad0748885e9
+author Codex <codex@openai.com> 1791655620 -0400
+committer Codex <codex@openai.com> 1791655620 -0400
+
+Integrate accepted JSON withdrawal into paused Phase 2
+
+Integrate campaign 003_795f3a3-remove-json from revision/003_795f3a3-remove-json into the actual paused phase/2-json-and-stdin checkpoint. JSON output is withdrawn; removed options produce usage status 2 before input acquisition, while a literal --json filename works after --. Exact text/count/BOM/named-file ranges, strict complete decoding, error/resource ownership and unchanged public API remain verified.
+
+Original checkpoint and ordered first parent: 795f3a3542c9981f8d43c8e182876f3efa5b5f16. Published revision source and ordered second parent: 160c0a980286c68f62d0d13b3238dad0748885e9. Campaign opening: 636b46d8daf1455c940c98f4d535c9936c0f1733; implementation: 1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f. Exact preparation, implementation/hosted plan, and final report/QC acceptance are published at coordinator 3b7e7abef970ca6132aa4fe34f075d550f0ab0ba, 0cea6338b3ca4e33374c05437e577a2664922522, and c908c19a5828a32d46f97a269820445d9f41faf9 respectively.
+
+Actual staged merge tree equals the exact published revision tree. Fresh merged-state verification passes 31 unit and 28 integration tests, source packaging and 241 isolated extracted module cases plus the silent unchanged API/signature probe. Twenty current owner-QC hashes, exact accepted conclusion blobs, original task completion/history preservation and scoped protected-path checks pass. Separate full code/contract review and all ten runnable document fences are recorded in the campaign report and external observations.
+
+All nineteen accepted managed hosted operations have read-before-write and exact independent GET readbacks. Retired T-010–T-012 retain historical completed states; existing phase label/milestone/task scopes reconcile without changing task associations. Original invalid-plan rejection and proxy readback failure are preserved; GET-only recovery verified the prior successful issue15 PATCH without replay. Unrelated issue2/comments/labels and milestone1 remain exact original material; root independent hosted comparison also passed.
+
+This merges only the JSON-removal amendment. T-013–T-017 remain pending, Phase 2 stays incomplete, main remains fbe8bedf4c6cba1ab29d53d2da05e614603d76d1, and no stdin task, default integration, release or version change follows. Stop at the verified/published paused checkpoint.

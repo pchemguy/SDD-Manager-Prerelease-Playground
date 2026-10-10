@@ -1,0 +1,8 @@
+tree aaf80af5ae566c69b26914a4b8b7856f1b028657
+parent c4a16e76813ca336681dbe9b71f1c979cbc767fa
+author Codex <codex@openai.com> 1791640471 -0400
+committer Codex <codex@openai.com> 1791640471 -0400
+
+[T-012] Review and complete milestone 2.1 JSON exits
+
+Review coherent JSON/default/API/errors/docs/distribution capability separately from tests. Eight runnable fences pass, including 25 unit and 21 integration tests and 99 extracted module cases on Python 3.12.14. TODO None; pause before stdin and leave Phase 2 incomplete/unmerged. Fixes pchemguy/SDD-Manager-Prerelease-Playground#13

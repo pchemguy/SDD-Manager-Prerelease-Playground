@@ -1,0 +1,188 @@
+[
+  {
+    "name": "capture-api",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/api.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/api-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "capture-baseline",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/baseline.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/baseline-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "capture-ranges",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/ranges.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/ranges-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "capture-removal",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+      "--suite",
+      "removal",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/removal.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/removal-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "independent-semantics",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-a012-semantic-checks.py",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "e0bf00fad498830b2c467f349774c66ced45de9a203ebd5c829286bb49aec471",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "nonempty-product-tests",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export/tools/check_tests.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "d8e20214cb2d995382bff46370ca980bdbe64c282bc9171520bc1e746dedb74c",
+    "stderr_sha256": "7624f5e22efa368e29fb0ec0c454384e9395d388b3f957674d69091e9ae44047"
+  },
+  {
+    "name": "distribution-exits",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export/tools/check_distribution.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/product-export",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "a4ed1dcc3ff3fdb7c1c4082cb6f0dc2a47e948777e1dcb6c80eab9f475351c69",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "capture-distribution",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/actual-extracted/textstats-source",
+      "--suite",
+      "distribution",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/distribution.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/distribution-provenance.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/actual-extracted/textstats-source",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "extracted-independent-semantics",
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-a012-semantic-checks.py",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/actual-extracted/textstats-source"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/final/runtime/actual-extracted/textstats-source",
+    "env_controlled": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "returncode": 0,
+    "stdout_sha256": "cc83f4cfeaf2f1c50e208731ee0b1144a58e49398935efeec157bc93b6dda80d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

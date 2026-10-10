@@ -1,0 +1,351 @@
+{
+  "checks": [
+    {
+      "name": "consumer-completed-seal",
+      "passed": true
+    },
+    {
+      "name": "starting-head",
+      "passed": true
+    },
+    {
+      "name": "actual-reached-ref",
+      "passed": true
+    },
+    {
+      "name": "ordered-two-parent-paused-integration",
+      "passed": true
+    },
+    {
+      "name": "actual-paused-branch",
+      "passed": true
+    },
+    {
+      "name": "actual-clean-index-worktree",
+      "passed": true
+    },
+    {
+      "name": "actual-main-unchanged",
+      "passed": true
+    },
+    {
+      "name": "retained-revision-branch",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:SPEC:PROJECT.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:SPEC:ARCHITECTURE.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:SPEC:DECOMPOSITION.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:SPEC:SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "preserved-initial-QC-history:SPEC",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:SPEC-REVIEW-REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:PROJECT.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:ARCHITECTURE.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:DECOMPOSITION.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:PLAN:layout.md",
+      "passed": true
+    },
+    {
+      "name": "preserved-initial-QC-history:PLAN",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:SPEC.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:SPEC-REVIEW-REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:PLAN.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:PLAN-REVIEW-REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:PROJECT.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:ARCHITECTURE.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:DECOMPOSITION.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:layout.md",
+      "passed": true
+    },
+    {
+      "name": "current-QC-identity:TASKS:TASKS.md",
+      "passed": true
+    },
+    {
+      "name": "preserved-initial-QC-history:TASKS",
+      "passed": true
+    },
+    {
+      "name": "twenty-current-QC-identities",
+      "passed": true
+    },
+    {
+      "name": "canonical-completion-history-byte-preserved",
+      "passed": true
+    },
+    {
+      "name": "sole-21-active-identities",
+      "passed": true
+    },
+    {
+      "name": "16checked5pending",
+      "passed": true
+    },
+    {
+      "name": "retired-IDs-preserved-nonexecuting",
+      "passed": true
+    },
+    {
+      "name": "unchanged-retained-source:textstats/core.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged-retained-source:textstats/io.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged-retained-source:textstats/__init__.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged-retained-source:textstats/__main__.py",
+      "passed": true
+    },
+    {
+      "name": "unchanged-retained-source:tools/package_source.py",
+      "passed": true
+    },
+    {
+      "name": "exact19-product-delta",
+      "passed": true
+    },
+    {
+      "name": "no-feature-overlay",
+      "passed": true
+    },
+    {
+      "name": "minimal-retained-phase-nested-record",
+      "passed": true
+    },
+    {
+      "name": "executed-docs-final-byte-equivalence:README.md",
+      "passed": true
+    },
+    {
+      "name": "executed-docs-final-byte-equivalence:docs/public-api.md",
+      "passed": true
+    },
+    {
+      "name": "four-owned-commits",
+      "passed": true
+    },
+    {
+      "name": "immediate-push-exact-readback:35",
+      "passed": true
+    },
+    {
+      "name": "immediate-push-exact-readback:67",
+      "passed": true
+    },
+    {
+      "name": "immediate-push-exact-readback:81",
+      "passed": true
+    },
+    {
+      "name": "immediate-push-exact-readback:92",
+      "passed": true
+    },
+    {
+      "name": "preparation-publication-before-production",
+      "passed": true
+    },
+    {
+      "name": "same25-issue-native-identities",
+      "passed": true
+    },
+    {
+      "name": "all-hosted-historical-states-associations",
+      "passed": true
+    },
+    {
+      "name": "all-native-milestone-states-counts",
+      "passed": true
+    },
+    {
+      "name": "foreign-issues-1to10-body-preserved",
+      "passed": true
+    },
+    {
+      "name": "foreign-milestone1-preserved",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/11",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/12",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/13",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/14",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/15",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/16",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/17",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/18",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/19",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/20",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/21",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/22",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/23",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/24",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:issues/25",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-label-preserved-id-and-scope",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:milestones/4",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:milestones/5",
+      "passed": true
+    },
+    {
+      "name": "fresh-GET-exact-managed:milestones/7",
+      "passed": true
+    },
+    {
+      "name": "fresh-root-GETs-all-success",
+      "passed": true
+    },
+    {
+      "name": "exact19-no-replayed-provider-writes",
+      "passed": true
+    },
+    {
+      "name": "no-new-retired-verification-closure",
+      "passed": true
+    },
+    {
+      "name": "provider-writes-after-implementation-publication",
+      "passed": true
+    },
+    {
+      "name": "milestone4-explicit-withdrawal",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "changed_paths": [
+    "README.md",
+    "AGENTS.md",
+    "textstats/cli.py",
+    "tools/check_distribution.py",
+    "docs/public-api.md",
+    "tests/unit/test_cli.py",
+    "tests/integration/test_distribution.py",
+    "tests/integration/test_cli.py",
+    "docs/dev/PLAN.md",
+    "docs/dev/PROJECT.md",
+    "docs/dev/TASKS.md",
+    "docs/dev/layout.md",
+    "docs/dev/DECOMPOSITION.md",
+    "docs/dev/SPEC-REVIEW-REPORT.md",
+    "docs/dev/TASKS-REVIEW-REPORT.md",
+    "docs/dev/PLAN-REVIEW-REPORT.md",
+    "docs/dev/SPEC.md",
+    "docs/dev/ARCHITECTURE.md",
+    "docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md"
+  ],
+  "limits": "Checks support independent semantic assessment; root fresh GET data observed, no assessor provider mutations."
+}

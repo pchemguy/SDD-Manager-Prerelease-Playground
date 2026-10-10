@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-fto_2gb9",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/runtime/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/runtime/actual-extracted/textstats-source/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctYTAxMi1maW5hbC1hcnRpZmFjdHMvcHJvdmlzaW9uYWwtaW1wbGVtZW50YXRpb24xOS9ydW50aW1lL2FjdHVhbC1leHRyYWN0ZWQvdGV4dHN0YXRzLXNvdXJjZS90ZXh0c3RhdHMvX19pbml0X18ucHkK"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "extracted-entry.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-fto_2gb9",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/runtime/actual-extracted/textstats-source",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "before_sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "input_sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "name": "extracted-entry.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/runtime/actual-extracted/textstats-source",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "distribution"
+}

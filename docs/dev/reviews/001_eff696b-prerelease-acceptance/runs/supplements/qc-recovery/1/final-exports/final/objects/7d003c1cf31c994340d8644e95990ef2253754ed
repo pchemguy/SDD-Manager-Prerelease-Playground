@@ -1,0 +1,8 @@
+tree ad480fda46d50769998ca86eec92d5093315ded2
+parent 373203d6f41bee2229eed900b761de8669678e0b
+author Codex <codex@openai.com> 1791637346 -0400
+committer Codex <codex@openai.com> 1791637346 -0400
+
+[T-004] Review named-file counting and complete milestone 1.1
+
+Record coherent code review, 21 unit and 12 integration passing tests, useful mixed UTF-8/BOM API/module demonstration, milestone exits and limits. Include review report/evidence and initial T-004 completion together with eligible milestone parent status; phase remains incomplete. Refs #5.

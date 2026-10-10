@@ -1,0 +1,78 @@
+{
+  "AGENTS.md": {
+    "sha256": "e8a3cd8ffb6aa3fbe73055cd34914a60f98ce7645bebf0323b8b3ff577d46400",
+    "blob": "3b7ef08e5098afdad581f124a8107f3e9cc8f89f"
+  },
+  "README.md": {
+    "sha256": "1619a5b6d21a761294e178fa891fbac9c87736f172689e7917dfcfc44c2c2f11",
+    "blob": "9514a0b19875441d6e7f7be55c13ed42b17e7d9d"
+  },
+  "docs/dev/ARCHITECTURE.md": {
+    "sha256": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5",
+    "blob": "1065972aa9aa21d1f4e6405515af37c6d77c292a"
+  },
+  "docs/dev/DECOMPOSITION.md": {
+    "sha256": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+    "blob": "d5ea6b517d68d85afb00a932d4508d8127fb9c38"
+  },
+  "docs/dev/PLAN-REVIEW-REPORT.md": {
+    "sha256": "8f706ceee2341252986864685d3faedf56446523dd0d3790f481174d95f69179",
+    "blob": "ed788d31f893ce8602ca024d93216186506150a3"
+  },
+  "docs/dev/PLAN.md": {
+    "sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+    "blob": "02f6384e4e5a726c694869bb056d2f8b345142a8"
+  },
+  "docs/dev/PROJECT.md": {
+    "sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+    "blob": "468e9e354918830b1ee77eafa6ff4f63c57ccb9d"
+  },
+  "docs/dev/SPEC-REVIEW-REPORT.md": {
+    "sha256": "a9c482bfea63d5aefa9a03bcac46b02a99237bf497bf5b1ba0ae027c29786ef9",
+    "blob": "2d7cebf57437631b001c3ed28e81cbb56f06cb78"
+  },
+  "docs/dev/SPEC.md": {
+    "sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+    "blob": "e77afdd309b8c229b9591089131512e333e1a983"
+  },
+  "docs/dev/TASKS-REVIEW-REPORT.md": {
+    "sha256": "8585c1ce53cdd3d100edf393bcaf81ce4bf6ba46fa8a9d5717608b3105a80354",
+    "blob": "206b8279c9d21b861680a5110e064ffb7c00bad9"
+  },
+  "docs/dev/TASKS.md": {
+    "sha256": "61d5a40036b5b4ecc9f078a81a19c4e00bb661abcc08d9df5344a69ef70afaca",
+    "blob": "4a49c2591fde8564f750c2f42dc1eff866cb5ed3"
+  },
+  "docs/dev/layout.md": {
+    "sha256": "144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502",
+    "blob": "b9f1c0140809100458f5f9317615de81c19480a5"
+  },
+  "docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md": {
+    "sha256": "7712a978ce077a649a06fa89952ff218ba5b73099d43bc9cbced77632f7c0405",
+    "blob": "b58311f7ead1059fa557849b9c0461b626b8c05a"
+  },
+  "docs/public-api.md": {
+    "sha256": "9b866f347dc1426ea5d5849ef13acb3623b84107d914735704132932404b7814",
+    "blob": "fb9eca6fd4c7d1402afa6458a6188560bc84e9fb"
+  },
+  "tests/integration/test_cli.py": {
+    "sha256": "d48fa53eda14825b6e76db752e82743ac6b8baeb840bb4c0c60d88242dee9d4b",
+    "blob": "00f692fc5ed64b3886c5faf6526dd98120e95d37"
+  },
+  "tests/integration/test_distribution.py": {
+    "sha256": "09fc45f6ca447684522a59792586467609c2596b505852b75ce199bd805399e1",
+    "blob": "be185595233ec108c2b02cffe907e471f0e1b5cc"
+  },
+  "tests/unit/test_cli.py": {
+    "sha256": "d07e7d2911899290e25e337dab162e12a9de2e98b22e8028575809aa9ad85654",
+    "blob": "1a4df0274e3699be14735bfea7a30135f4fe2c49"
+  },
+  "textstats/cli.py": {
+    "sha256": "0ed08a560cb158fa99eb0842056ae9236d78389f07d54de6d8ba09b257ed164e",
+    "blob": "8a308bccae8d3350b4dad8ce9918487a834fc4a4"
+  },
+  "tools/check_distribution.py": {
+    "sha256": "cfb0347b71adbadaee2adf0c447f008d3bf7be60b12b25ecb5826bbcdee98837",
+    "blob": "c6d47b836c8c5fab07b7a7f7143f1a52d92fcc44"
+  }
+}

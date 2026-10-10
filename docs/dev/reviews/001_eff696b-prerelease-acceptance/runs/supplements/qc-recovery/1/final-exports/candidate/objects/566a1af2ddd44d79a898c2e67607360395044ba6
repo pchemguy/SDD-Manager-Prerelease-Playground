@@ -1,0 +1,10 @@
+tree b630658e0a0a03f33144b89b856937e8827752c4
+parent 334a4dd3f257ffefeb18ab88dfedc425b44838fc
+author Codex <codex@openai.com> 1791629193 -0400
+committer Codex <codex@openai.com> 1791629193 -0400
+
+Prepare TextStats component decomposition for review
+
+Define ten logical component boundaries, provisional internal interfaces and verification seams over the accepted architecture. Preserve byte-level decoding/newline fidelity and normalized-counting collaboration for deferred range and stdin capabilities.
+
+Record scoped delegated architecture acceptance. Verify document links, heading spacing, unique component identities, dependency ownership and staged scope; no code or product tests run. SPEC awaits coordinator assessment.

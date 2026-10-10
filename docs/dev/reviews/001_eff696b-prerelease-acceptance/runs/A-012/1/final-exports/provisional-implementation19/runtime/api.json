@@ -1,0 +1,156 @@
+{
+  "literals": {
+    "api": {
+      "immutable": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_rows": [
+        {
+          "exception": null,
+          "name": "empty",
+          "result": [
+            0,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "plain",
+          "result": [
+            1,
+            2
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "trailing",
+          "result": [
+            1,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "blank",
+          "result": [
+            1,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "mixed",
+          "result": [
+            3,
+            3
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "double-lf",
+          "result": [
+            2,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "whitespace",
+          "result": [
+            1,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "unicode-separator",
+          "result": [
+            1,
+            2
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "bom-only",
+          "result": [
+            0,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "keep-bom",
+          "result": [
+            1,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "double-bom",
+          "result": [
+            1,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "interior",
+          "result": [
+            2,
+            3
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "file",
+          "result": [
+            2,
+            2
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": "UnicodeDecodeError",
+          "name": "file-invalid",
+          "result": null,
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": "OSError",
+          "name": "file-missing",
+          "result": null,
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    }
+  },
+  "schema_version": 1
+}

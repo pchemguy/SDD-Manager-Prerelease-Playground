@@ -1,0 +1,8 @@
+import subprocess,json,sys,os,time
+from pathlib import Path
+base=Path("/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations")
+cmd=sys.argv[1:]
+e=dict(os.environ,PYTHONDONTWRITEBYTECODE="1",GIT_ASKPASS="/workspace/scratch/46b31bb4dff6/playground-askpass.sh",GIT_TERMINAL_PROMPT="0")
+r=subprocess.run(cmd,cwd="/workspace/scratch/46b31bb4dff6/037-textstats-product",env=e,text=True,capture_output=True)
+with Path(str(base)+".commands.jsonl").open("a") as f:f.write(json.dumps(dict(command=cmd,exit_code=r.returncode,stdout=r.stdout,stderr=r.stderr,timestamp=time.time()))+"\n")
+print(r.stdout,end="");print(r.stderr,end="",file=sys.stderr);sys.exit(r.returncode)

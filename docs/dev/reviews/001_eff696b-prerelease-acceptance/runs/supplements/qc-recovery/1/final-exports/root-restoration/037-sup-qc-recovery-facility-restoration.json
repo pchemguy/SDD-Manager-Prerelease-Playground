@@ -1,0 +1,9 @@
+{
+  "trigger_publication": "5358293ba6317fcbe59dddbdb846689d0db7a9ac",
+  "restoration": "Removed only exact caller-owned LOCAL bare pre-receive refusal hook after independently frozen trigger publication/readback; no product/index/refs/files modification.",
+  "hook_sha256": "62f0dc7b826b0a66a6637df9d953ee96b41b7f92e4fd56549df863cc68577b7f",
+  "retained_HEAD": "7062a3ed1e5719373f3f7fe6efb66d3ffdd1c80e",
+  "remote_before": "a16d44b7622d5ffd68b0f87603bbaa52a1f728fd\trefs/heads/trial/qc-recovery",
+  "remote_after": "a16d44b7622d5ffd68b0f87603bbaa52a1f728fd\trefs/heads/trial/qc-recovery",
+  "live_provider_scope": "None; native local Git facility restored only."
+}
