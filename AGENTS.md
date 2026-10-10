@@ -16,15 +16,38 @@ Python 3.12.14 was verified for T-001. From the repository root, run `python -m 
 
 The [Phase 1 review](docs/dev/reports/phases/1/PHASE-REPORT.md) records completed named-file/API/error/documentation/distribution exits and the integration protocol. All nine Phase 1 task results are tracked in canonical TASKS; Phase 2 remains pending and outside the current request. Use the current Git/remote state for actual integration/publication identity rather than treating this navigation as a branch snapshot. The current verified product suites contain 23 unit and 18 integration tests; extracted distribution checks exercise 36 real module cases on Python 3.12.14. Broader runtime/platform coverage is unverified.
 
-## Active named-file range delivery
+## Named-file range conclusion and paused-phase integration
 
-The current request authorizes complete named-file range delivery T-018–T-024, required governing/task incorporation, concrete delegated artifact review, maintained hosted reconciliation, eligible feature archive and explicit integration into paused `phase/2-json-and-stdin`. Stop after that feature conclusion/integration; preserve pending stdin/final T-013–T-017 and do not release. Historical preparation/Phase 1 stopping statements above do not limit this selected request.
+The current request authorizes complete named-file range delivery T-018–T-024,
+required governing/task incorporation, concrete delegated artifact review, maintained
+hosted reconciliation, eligible archive and explicit integration into paused
+`phase/2-json-and-stdin`. T-018–T-024 are accepted, published through
+`bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa`, with unique issues #19–#25 closed/completed
+and native #7/#8/#9 closed after full associations/readback. Stop after verified/
+published reconciled feature integration; retain pending T-013–T-017 and do not release.
+Historical preparation/Phase 1 stops above do not limit this selected request.
 
-Active [package](docs/dev/features/002_e7cae5b-named-file-ranges/README.md), [FEATURE-SPEC](docs/dev/FEATURE-SPEC.md), [FEATURE-PLAN](docs/dev/FEATURE-PLAN.md) and [FEATURE-TASKS](docs/dev/FEATURE-TASKS.md) supply accepted named-file text/JSON range contracts and seven singly owned tasks; T-018–T-020 and milestone 2.4 are completed. Main [SPEC](docs/dev/SPEC.md), [PLAN](docs/dev/PLAN.md) and [TASKS](docs/dev/TASKS.md) with adjacent QC supply incorporated complete-project requirements/strategy and retained pending stdin/final composition. T-018–T-024 remain active-feature owned until final accepted transfer/archive. Existing design/layout seams suffice unchanged.
+Main [SPEC](docs/dev/SPEC.md), [PLAN](docs/dev/PLAN.md) and [TASKS](docs/dev/TASKS.md)
+with current adjacent QC supply complete requirements/strategy and sole T-001–T-024
+executable ownership. [Package](docs/dev/features/002_e7cae5b-named-file-ranges/README.md)
+retains archived feature sources/QC and implementation reports; archived checklists
+are historical, not executable owners. Preserve unchecked main Phase 2/2.2/2.3 and
+stdin/final tasks, stable dependencies, report prefixes, original failures and evidence.
+Existing design/layout seams suffice unchanged. Current root product checks collect
+31 unit/28 integration tests; distribution executes 315 isolated actual whole-input/
+range module cases plus silent unchanged API/signature probe, on Python 3.12.14.
+Other supported runtimes/platforms remain unverified.
 
-Accepted preparation was explicitly merged/published into default main at `fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`, followed by feature-branch creation and compatible JSON prerequisite merge/publication at `806e989567aef425ddd933f33fbd8f9af5edae2a`. Default main remains preparation-only without JSON. Added range-work associations were verified before edits/tests. Concrete changed governing/implementation/test artifacts require delegated coordinator review before acceptance/dependent use; Ready and tests do not supply unseen acceptance.
-
-Follow the pinned per-commit publication and single-task result/evidence/initial-checkbox closing contracts above. Use `PYTHONDONTWRITEBYTECODE=1 python -B` for every selected workflow Python invocation including children. Preserve coordinator-owned resources, foreign material, original evidence and pending main obligations. Milestone 2.4 review `33f0ba2ed7ae187cce9643433f8f1f09282ef079` is published, with T-018–T-020 issues #19–#21 and native milestone #7 closed/read back. Milestone 2.4 named-file range verification passed 31 unit/26 integration tests and ten text/JSON demonstrations on Python 3.12.14, with no skips/warnings. T-021 documentation is published at `96a562b6b3ca51f4aea6bb8e4f0b3a1a5f7c10b8` with issue #22 closed/read back. Current T-022 verification adds 315 real isolated whole-input/range module cases and silent unchanged API checks; two range-specific extraction mutants are rejected. The suites now contain 31 unit/28 integration tests. T-022 acceptance/completion, T-023–T-024 and feature conclusion/integration remain pending.
+Accepted preparation was explicitly merged/published into default at
+`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`, then feature branch created and compatible
+JSON prerequisite merged/published at `806e989567aef425ddd933f33fbd8f9af5edae2a`.
+Default stays preparation-only without JSON. Concrete acceptance/publication of the
+current reconciliation/QC/archive checkpoint and final paused-phase merge are pending;
+no unseen acceptance or integration is inferred. Follow immediate per-commit push/
+exact readback and owning task/result/evidence/initial-checkbox contracts above.
+Use `PYTHONDONTWRITEBYTECODE=1 python -B` including children. Preserve protected
+coordinator resources/foreign material/manual controls and pending main work.
+No complete Phase 2/default merge or release follows this feature.
 
 ## Published JSON prerequisite
 

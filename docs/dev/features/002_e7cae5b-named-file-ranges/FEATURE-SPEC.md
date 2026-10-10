@@ -1,10 +1,17 @@
+> Historical archived source/QC snapshot for completed named-file range feature.
+> Current sole executable owner: [main TASKS](../../TASKS.md). Main [SPEC](../../SPEC.md)
+> and [PLAN](../../PLAN.md) with current adjacent QC own incorporated requirements/strategy.
+> Original review identities, findings and stage statements below are historical;
+> archival path/link/header changes do not redefine their reviewed blobs or acceptance.
+> Archived Ready/checks do not establish current main conformance or full Phase 2 completion.
+
 # Named-file line-selection specification
 
 ## Scope, baseline and authority
 
-This active delta activates [SPEC F-001–F-004](SPEC.md#deferred-range-feature) for named-file delivery. It extends R-007/R-009 CLI invocation with range selection; R-001–R-006 and R-008 remain governing contracts. [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) already define the required pure selection seam, so no design overlay is necessary. Python 3.11+, standard library and unittest remain required.
+This active delta activates [SPEC F-001–F-004](../../SPEC.md#deferred-range-feature) for named-file delivery. It extends R-007/R-009 CLI invocation with range selection; R-001–R-006 and R-008 remain governing contracts. [PROJECT](../../PROJECT.md), [ARCHITECTURE](../../ARCHITECTURE.md) and [DECOMPOSITION](../../DECOMPOSITION.md) already define the required pure selection seam, so no design overlay is necessary. Python 3.11+, standard library and unittest remain required.
 
-Preparation baseline is published default `main` at `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`. Observed JSON implementation is separately published at `e63b8946bbb99347b0f73f070f9c728945ee5925` on paused `phase/2-json-and-stdin`: T-010–T-012 complete, T-013–T-017 pending. This feature does not complete, merge or resume that phase. Package [002_e7cae5b-named-file-ranges](features/002_e7cae5b-named-file-ranges/README.md) owns this delta; main documents remain unchanged.
+Preparation baseline is published default `main` at `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`. Observed JSON implementation is separately published at `e63b8946bbb99347b0f73f070f9c728945ee5925` on paused `phase/2-json-and-stdin`: T-010–T-012 complete, T-013–T-017 pending. This feature does not complete, merge or resume that phase. Package [002_e7cae5b-named-file-ranges](README.md) owns this delta; main documents remain unchanged.
 
 ## F-001 Invocation and validation
 

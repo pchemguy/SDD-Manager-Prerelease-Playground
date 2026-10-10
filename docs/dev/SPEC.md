@@ -4,7 +4,7 @@
 
 TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. This document specifies intended behavior; delivered capability and verification evidence belong to the owning task and implementation records.
 
-R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 specify named-file range behavior, including text/JSON composition and its delivery acceptance. Range selection remains a separate feature extent outside the original two-phase executable hierarchy; stdin acquisition retains its own milestone. Delivery strategy and executable ownership belong to PLAN and the active FEATURE-PLAN/FEATURE-TASKS. No focused specification children are needed.
+R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 specify named-file range behavior, including text/JSON composition and its delivery acceptance. Range selection remains a separate feature extent outside the original two-phase executable hierarchy; stdin acquisition retains its own milestone. Delivery strategy and sole executable ownership belong to main PLAN/TASKS. Incorporated feature sources are retained as historical snapshots in the [named-file range package](features/002_e7cae5b-named-file-ranges/README.md). No focused specification children are needed.
 
 ## Public API and values
 
@@ -148,4 +148,4 @@ Named-file and text API results agree for these inputs. CLI text and JSON agree 
 | R-011/R-012/R-013 | Public boundaries C-001 through C-009, supported by documentation and product/distribution verification |
 | F-001 through F-004 | C-007/C-008 and C-010 over C-002/C-003/C-004; no additional API export |
 
-The adjacent [SPEC review report](SPEC-REVIEW-REPORT.md) owns current technical conformance and preserves earlier review/acceptance evidence. The selected named-file range incorporation requires concrete delegated coordinator assessment of this SPEC/report checkpoint before dependent use. Document conformance does not establish implementation, task completion, whole Phase 2 readiness or Git integration.
+The adjacent [SPEC review report](SPEC-REVIEW-REPORT.md) owns current technical conformance and preserves earlier review/acceptance evidence. Concrete delegated coordinator assessment remains separate from current technical QC before dependent use. Document conformance does not establish implementation, task completion, whole Phase 2 readiness or Git integration.

@@ -1,3 +1,10 @@
+> Historical archived source/QC snapshot for completed named-file range feature.
+> Current sole executable owner: [main TASKS](../../TASKS.md). Main [SPEC](../../SPEC.md)
+> and [PLAN](../../PLAN.md) with current adjacent QC own incorporated requirements/strategy.
+> Original review identities, findings and stage statements below are historical;
+> archival path/link/header changes do not redefine their reviewed blobs or acceptance.
+> Archived Ready/checks do not establish current main conformance or full Phase 2 completion.
+
 # Range feature TASKS review report
 
 ## Current gate

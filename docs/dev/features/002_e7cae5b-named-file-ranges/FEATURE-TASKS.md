@@ -1,8 +1,18 @@
+> Historical archived source/QC snapshot for completed named-file range feature.
+> Current sole executable owner: [main TASKS](../../TASKS.md). Main [SPEC](../../SPEC.md)
+> and [PLAN](../../PLAN.md) with current adjacent QC own incorporated requirements/strategy.
+> Original review identities, findings and stage statements below are historical;
+> archival path/link/header changes do not redefine their reviewed blobs or acceptance.
+> Archived Ready/checks do not establish current main conformance or full Phase 2 completion.
+
+> The checked Phase 2 root below measures only this historical seven-task feature extent.
+> T-018–T-024 entries/evidence moved once into main TASKS; this list is retired from selection.
+
 # Named-file ranges executable feature hierarchy
 
 ## Governing sources and preparation stop
 
-This active feature list owns only the F-001–F-004 delta. Accepted [FEATURE-SPEC](FEATURE-SPEC.md)/[SPEC QC](FEATURE-SPEC-REVIEW-REPORT.md) at `b0f93cf170addc80a92541acc4151058e57b6e64` were accepted by decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Accepted [FEATURE-PLAN](FEATURE-PLAN.md)/[PLAN QC](FEATURE-PLAN-REVIEW-REPORT.md) at `91d8a5a124004a7ca5b9c5217f4d5d99d825aade` were accepted by decision `515c3ea3464e4d67c359fa7bb949fe6945816f2b`. Reuse main [design](ARCHITECTURE.md), [components](DECOMPOSITION.md), [SPEC](SPEC.md), [layout](layout.md) and [TASKS](TASKS.md); unchanged contracts stay with those owners.
+This active feature list owns only the F-001–F-004 delta. Accepted [FEATURE-SPEC](FEATURE-SPEC.md)/[SPEC QC](FEATURE-SPEC-REVIEW-REPORT.md) at `b0f93cf170addc80a92541acc4151058e57b6e64` were accepted by decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Accepted [FEATURE-PLAN](FEATURE-PLAN.md)/[PLAN QC](FEATURE-PLAN-REVIEW-REPORT.md) at `91d8a5a124004a7ca5b9c5217f4d5d99d825aade` were accepted by decision `515c3ea3464e4d67c359fa7bb949fe6945816f2b`. Reuse main [design](../../ARCHITECTURE.md), [components](../../DECOMPOSITION.md), [SPEC](../../SPEC.md), [layout](../../layout.md) and [TASKS](../../TASKS.md); unchanged contracts stay with those owners.
 
 Project IDs T-001–T-017 remain singly owned in main TASKS. New T-018–T-024 are singly owned here, all unchecked. Main default has Phase 1 complete and pending Phase 2 tasks; the paused published phase checkpoint `e63b8946bbb99347b0f73f070f9c728945ee5925` separately proves T-010–T-012 complete. Treat that checkpoint's evidence as the JSON prerequisite rather than marking its copies in main complete. T-013–T-017 remain outside feature execution, pending. Existing task/phase reports and foreign hosted material remain preserved.
 
@@ -78,7 +88,7 @@ README setup/help plus both minimal range examples executed in temporary named-f
 
 ## T-020 completion evidence
 
-Dedicated coherent milestone 2.4 implementation code review is recorded in [2.4 report](features/002_e7cae5b-named-file-ranges/phases/2/2.4.md), source `46e1455a5aca1f86d385a6bed649c4331c5f7296`. Parser/acquisition/normalized pipeline/API/output/error/tests/minimal docs were read separately from check execution; no blocker or repair found, TODO None. Fresh `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` passed 31 unit/26 integration tests on Python 3.12.14, no skips/warnings; ten real named-file text/JSON demonstrations passed exact counts/status/streams and unchanged bytes. Retained 99 extracted whole-input/text/JSON cases are explicitly not range extraction acceptance. Full range matrices and current relevant regressions satisfy 2.4; detailed docs/distribution and feature-extent review remain T-021–T-024, stdin/final main work pending.
+Dedicated coherent milestone 2.4 implementation code review is recorded in [2.4 report](phases/2/2.4.md), source `46e1455a5aca1f86d385a6bed649c4331c5f7296`. Parser/acquisition/normalized pipeline/API/output/error/tests/minimal docs were read separately from check execution; no blocker or repair found, TODO None. Fresh `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` passed 31 unit/26 integration tests on Python 3.12.14, no skips/warnings; ten real named-file text/JSON demonstrations passed exact counts/status/streams and unchanged bytes. Retained 99 extracted whole-input/text/JSON cases are explicitly not range extraction acceptance. Full range matrices and current relevant regressions satisfy 2.4; detailed docs/distribution and feature-extent review remain T-021–T-024, stdin/final main work pending.
 
 Concrete delegated report acceptance `beac0a623d27056d6deb9854674a9307dba3f89d` covers report blob `0597bdf91ce96c0ad0623be1e0696814abdc00c7`. Prior report presentation's pending-review sentence is historical; this current owning evidence records the actual accepted conclusion. T-018/T-019 commits were each published/read back, issues #19/#20 closed/completed with evidence before T-020. Unique T-020 issue #21/native milestone #7. Exactly T-020 report/result/current evidence/initial checkbox and eligible feature milestone 2.4 parent close together; immediately push/read back before issue closure and full associated-issue validation/milestone #7 closure. Whole feature and main Phase 2 remain unchecked.
 
@@ -156,7 +166,7 @@ whole-phase closure, default integration or release is claimed.
 
 Dedicated coherent milestone 2.5 review of published T-022 source
 `f2dc46627c04b92e4d2990843927e52be63f2660` is recorded in
-[2.5 report](features/002_e7cae5b-named-file-ranges/phases/2/2.5.md).
+[2.5 report](phases/2/2.5.md).
 Read five package modules, builder/checker, distribution and real range module
 tests, README/public API together and separately from check execution. No blocker
 or repair; TODO None. Fresh all runnable guide fences completed in a temporary
@@ -186,8 +196,8 @@ stdin/final T-013–T-017 stay pending.
 
 Dedicated coherent feature-extent review at published
 `4eeee9e9505b29b4a616292434561aab569dac7f` is recorded in
-[extent report](features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md)
-and [final implementation report](features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md).
+[extent report](phases/2/PHASE-REPORT.md)
+and [final implementation report](IMPLEMENTATION-REPORT.md).
 Cross-boundary review covers actual SPEC/design/feature PLAN/contracts and both
 delivery milestones; no blocker/repair, TODO None aggregated with provenance.
 Fresh root full runner passed 31 unit/28 integration tests, both OK/status 0,

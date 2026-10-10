@@ -2,7 +2,17 @@
 
 ## Current gate
 
-State: **Ready for current full strategy/layout conformance**. Reviewed PLAN SHA-256 `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199`, unchanged layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f`, governing SPEC `356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a` and SPEC QC `20704429d0e0aa70904a59e8be9adc1ea7ca2fc68b9b09923aa8978fe3b9ef48`. Revision 5 supplies the current affected incorporation assessment. Concrete delegated acceptance of this changed checkpoint is pending before TASKS reconciliation/dependent use; technical Ready is not acceptance. No implementation checks are claimed.
+State: **Ready for current full strategy/layout conformance**, Revision 6.
+PLAN `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199` and layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f` are unchanged; governing current
+SPEC `a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980` and SPEC QC `66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372` reflect ownership/archive navigation
+with unchanged behavioral contracts. Full Phase 1/Phase 2 strategy and source/task
+reconciliation assessed, with historical feature PLAN/QC retained under package.
+Concrete current checkpoint acceptance is pending before dependent integration.
+No unseen acceptance, whole Phase 2 readiness or implementation check is inferred.
+
+Earlier review/revision sections preserve exact stage-specific history and original
+findings. Their pending/active/status/identity statements are historical; this
+current gate and latest revision describe the reconciled checkpoint.
 
 ## Initial strategy review
 
@@ -75,3 +85,34 @@ Checks: complete owner conformance and dependency/count review; changed local li
 ## Revision 5
 
 Delegated coordinator review identified PLAN-RANGE-002 in the current Strategy checkpoint: it still claimed two delivery milestones per phase despite the incorporated four-milestone Phase 2 hierarchy. The integration owner corrected that current navigation claim to two Phase 1 and four Phase 2 delivery milestones, excluding dedicated phase/feature reviews; historical acceptance identities remain unchanged. Full revised PLAN SHA-256 `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199`. Rechecked current count claims against all 1.1–1.3 and 2.1–2.6 milestone definitions and retained Revision 4 contract/dependency/layout coverage. The finding is resolved; no strategy or behavioral change. Changed links and whitespace pass. Current technical gate Ready; concrete corrected checkpoint acceptance remains pending. No product tests or hosted changes.
+
+## Revision 6
+
+Reassessed complete unchanged main PLAN/layout against current main SPEC/QC and
+sole-main task/archive disposition. Exact PLAN `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199`, layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f`,
+SPEC `a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980`, SPEC QC `66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372`. PROJECT/design identities remain the
+current SPEC gate values. No strategy/root/child correction was needed; this cycle
+refreshes affected upstream/current-ownership conformance independently of archived
+feature Ready. Existing PLAN-RANGE-001/002 remain resolved with original evidence.
+
+| Phase | Delivery count / excluded review | Full strategy/count assessment |
+| --- | --- | --- |
+| 1 Named-file utility | Two: 1.1/1.2; exclude dedicated 1.3 | Retain explicit small-group assessment: early integrated useful API/file/CLI, then robust documented extracted delivery; further splitting would pad compact capability. |
+| 2 JSON and stdin | Four: 2.1/2.2/2.4/2.5; exclude whole-phase 2.3 and feature-extent 2.6 | JSON, borrowed stdin/final composition, early named-file range path and documented isolated range distribution are distinct useful bounded increments. Added two-milestone range extent is deliberately cohesive, with its own final review; pending stdin and whole-phase exits are preserved. |
+
+Full R coverage: R-001–R-007 in 1.1 retained thereafter, R-008 in 1.2, R-009 in
+2.1, R-010 in pending 2.2, R-011–R-013 in public/nonempty/extraction exits at all
+affected milestones. F-001–F-004 route through 2.4/2.5 and extent 2.6, retained in
+pending stdin 2.2/full-phase 2.3. Each delivery milestone has dedicated code review/
+tests/report; final reviews exclude their own still-open milestone prerequisite.
+Main TASKS now preserves every stable ID and completion evidence under those
+parents; feature extent cannot close the whole main Phase 2.
+
+Compatible JSON/default-preparation gates and explicit paused-phase feature target
+remain consistent; current default stays preparation-only and incomplete phase
+cannot merge into default. Design/layout pure-normalized selection and established
+acquisition/control seams suffice unchanged; no new owner, capability, task strategy
+or release is introduced. Full milestone names/counts/dependency/exit assessment,
+current upstream hash/navigation equivalence, local paths and whitespace pass.
+No unresolved conformance issue. Document review does not substitute implementation
+reports or concrete current checkpoint acceptance.
