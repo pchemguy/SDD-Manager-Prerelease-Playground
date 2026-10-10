@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "case_id": "A-020",
+  "evidence_class": "consumer",
+  "actor": "coordinator",
+  "fixture": "Unrelated staged/current distinct and separate untracked sentinels only; no product implementation/completion supplied",
+  "actual_preparation_merge": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+  "assessed_tracked_predecessor": "1e3305c8659045945244c06861079fef879ca3c3",
+  "owned_task": "T-001",
+  "positive_product_not_changed_by_setup": true,
+  "consumer_not_yet_dispatched": true
+}
