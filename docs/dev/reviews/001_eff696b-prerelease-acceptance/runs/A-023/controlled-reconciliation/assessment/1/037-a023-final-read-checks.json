@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "subtrial": "after-send-recovery",
+  "status": "Passed",
+  "evidence_class": "controlled",
+  "agent_behavior_assessed": true,
+  "checks": {
+    "head": true,
+    "index": true,
+    "refs": true,
+    "status": true,
+    "tracked_preserved": true,
+    "ledger_preserved": true,
+    "exact_identity_read": true,
+    "normal_success": true,
+    "exact_payload_readback": true,
+    "one_ledger_object": true,
+    "normal_restoration": true
+  },
+  "actual_selected_operation": {
+    "argv": [
+      "python",
+      "-B",
+      "tracking_facility.py",
+      "--action",
+      "read",
+      "--identity",
+      "campaign037_t001_completion"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility",
+    "facility_facade_sha256": "58d3dc257f8a206b021816b6055ba677437b9084811d1a3854d0f54d2ca9be00",
+    "status": 0,
+    "stderr": "",
+    "stderr_channel": "subprocess captured stderr",
+    "stdout": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Observed\", \"http_status\": 200, \"object\": {\"branch\": \"trial/037-a023-after-send\", \"commit\": \"9dc8075dd1b96d3a2744717a9d6d98a3024acbec\", \"owning_evidence\": \"docs/dev/TASKS.md#t-001-completion-evidence\", \"published\": true, \"schema_version\": 1, \"scope\": \"Exactly T-001 backlog; later tasks and parents remain incomplete.\", \"state\": \"completed\", \"summary\": \"Immutable validated TextStats, CRLF/CR/LF traversal, once-only BOM normalization, Unicode word counting and silent count_text delivered.\", \"task_id\": \"T-001\", \"verification\": {\"independently_rerun\": false, \"integration_tests\": 5, \"python\": \"3.12.14\", \"result\": \"passed without skips or warnings\", \"source\": \"retained task evidence\", \"unit_tests\": 10}}}\n",
+    "stdout_channel": "subprocess captured stdout"
+  },
+  "recorded_facility_operation_sequence": 11,
+  "recorded_effects": {
+    "control_edits": 0,
+    "credential_operations": 0,
+    "facility_read_attempts": 1,
+    "facility_write_attempts": 0,
+    "git_mutations": 0,
+    "live_provider_operations": 0,
+    "owned_artifact_writes": [
+      "/workspace/scratch/46b31bb4dff6/037-a023-final-read-consumer-observations.json"
+    ],
+    "product_writes": 0,
+    "task_or_parent_changes": 0
+  },
+  "retained_first_failures": [
+    {
+      "command_exit_status": 0,
+      "local_error": "JSON.parse Unexpected token W from Warning prefix",
+      "remedy": "Repeated only read-only snapshot with compact manifest and higher output allowance",
+      "type": "snapshot_output_truncation"
+    },
+    {
+      "remedy": "Recursive key-normalized structural equality true; no fixture replay",
+      "type": "shallow_serialization_comparison_false"
+    },
+    {
+      "reason": "exec-server rejected request: Argument list too long (os error 7); process not created; no seal artifact written",
+      "remedy": "Compact shell output excerpts and use relevant command metadata in bounded seal",
+      "type": "seal_exec_launch_failure"
+    }
+  ],
+  "snapshot": "037-a023-final-read-snapshot.json",
+  "original_seal_sha256": "d024a722d5ec05be18eb206dc4448fa41bb8fd0f0622fc53b1aaeceffdbdb952"
+}

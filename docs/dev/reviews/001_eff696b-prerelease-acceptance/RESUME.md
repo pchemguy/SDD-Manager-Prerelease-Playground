@@ -153,3 +153,10 @@ Denial/unavailableaccess independentlyPassed; rate-limit assistedPassed after or
 Fresh final same-identity read observed the exact previously applied T001 completion without replay. Independent pre-send continuation verified READ200 null, one WRITE201, then exact READ200; no product/index/ref changes. Aggregate independent grade pending. Exact original seals and actual chronology are retained. Controlled fixture evidence only; optional native/live facilities remain unestablished.
 
 A-020 fresh consumer is dispatched against accepted preparation88a5c4b on its published isolated trial branch. Foreign staged content, distinct unstaged content and untracked sentinel are explicitly outside task ownership. A separate assessor owns the exact index/blob/commit-diff preservation grade. Positive cursor remains A-007 pending independent assessment.
+
+
+## A-023 controlled reconciliation independently Passed
+
+Independent assessment verifies applied response loss, unreadable-effect uncertainty without replay, then exact-identity read of the existing effect without another write. Distinct pre-send WRITE applied nothing; fresh continuation actually read absence before one write and exact readback. All161 tracked bytes, index, HEAD, refs and status retained; ledger has exactly one object per isolated destination. Original failures, truncations, corrections and bounded control changes are retained with exact seals. Controlled fixture evidence only; native/live optional variants Not run and broad shared-filesystem isolation uncertified.
+
+Original-pin required totals13 Passed/2 Failed/17 unresolved. Separately pinned corrected A004/A005 reassessments remain attributed without double counting. A007 assessment and A020 preservation execution are pending; full readiness remains Open.

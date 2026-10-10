@@ -1,0 +1,35 @@
+{
+  "A003": {
+    "published_commit": "65b6f802f16a66ff58e6d251c5cf77d24cda1f9e",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+    "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "checkpoint_refs": {
+      "product_branch": "design-docs/main",
+      "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
+      "integration_branch": "main",
+      "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+    },
+    "remote_contains_publication": true
+  },
+  "A004": {
+    "published_commit": "d5afca6c76d921160ff0d8a53769a5d988cc8f00",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/reassess-fc193b0/1/037-a004-reassessed.json",
+    "sha256": "a457ea4b9bcea60e3232f74c8ec290ae6e56c790147ffcbe747f509003dd2a55",
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "checkpoint_refs": {
+      "product_branch": "phase/1-named-file-utility",
+      "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+      "integration_branch": "main",
+      "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+    },
+    "remote_contains_publication": true
+  },
+  "live_remote": {
+    "returncode": 0,
+    "stdout": "e6d0c8555a0e05954e5e4072c1a22ddf0020e083\trefs/heads/revision/001_eff696b-prerelease-acceptance\n",
+    "stderr": ""
+  }
+}
