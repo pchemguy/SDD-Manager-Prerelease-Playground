@@ -1,0 +1,25 @@
+# Named-file ranges feature package
+
+Campaign `002_e7cae5b`; full preparation baseline `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`, published default `main`. Preparation branch `design-docs/002_e7cae5b-named-file-ranges`; intended later implementation branch `feature/002_e7cae5b-named-file-ranges`. Preparation-only stops on design-docs without merge or implementation. Actual remote is `origin` at `pchemguy/SDD-Manager-Prerelease-Playground`.
+
+The separately paused `phase/2-json-and-stdin` at `e63b8946bbb99347b0f73f070f9c728945ee5925` supplies the completed JSON increment and remains incomplete/unmerged. A later execution handoff must establish a compatible published JSON baseline before executing text/JSON range work; do not absorb pending stdin work or claim Phase 2 complete.
+
+Active source: [FEATURE-SPEC](../../FEATURE-SPEC.md) and [SPEC QC](../../FEATURE-SPEC-REVIEW-REPORT.md). Existing accepted main architecture, decomposition and layout supply sufficient design. [FEATURE-PLAN](../../FEATURE-PLAN.md) and [PLAN QC](../../FEATURE-PLAN-REVIEW-REPORT.md) are active strategy sources; [FEATURE-TASKS](../../FEATURE-TASKS.md) and [TASKS QC](../../FEATURE-TASKS-REVIEW-REPORT.md) are active executable sources accepted at `493d5e2d2251922041c235b1c8377f3fdf827bce` (TASKS blob `95d31431ea3c751cbd769c5c7c2febf9f2d80b37`, QC blob `9233b996f602d4565f9cc2326910aa3b776de34a`) by delegated decision `fc26eb949892f196c5b81f84913a7121388b691b`. PLAN/QC were accepted at `91d8a5a124004a7ca5b9c5217f4d5d99d825aade` by delegated decision `515c3ea3464e4d67c359fa7bb949fe6945816f2b`. SPEC/QC were accepted at `b0f93cf170addc80a92541acc4151058e57b6e64` by delegated coordinator decision `ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d`. Maintained tracking remains enabled for eligible selected work; preparation itself does not project unaccepted tasks or activate an implementation phase. No release is requested. Preserve other packages and existing hosted foreign material.
+
+## Accepted preparation and handoff
+
+SPEC, PLAN and TASKS technical QC and concrete delegated acceptance cover the exact states above. Root TASKS and governing main documents retain their existing scope; FEATURE sources remain active and no source is archived; selected main SPEC incorporation is recorded below. All seven new task checkboxes are unchecked. The preparation branch is published; it remains unmerged and no implementation branch exists. Source/runtime tests and hosted feature projection were not executed during preparation. Maintained tracking is confirmed but future added-work projection is pending and required before task execution.
+
+Stop here before implementation. A later instruction must establish the default accepted-preparation merge/publication, compatible completed JSON baseline on the feature branch, exact paused-phase target and verified eligible hosted associations. Future feature-extent completion cannot close main stdin/final obligations or authorize a release. See accepted FEATURE-PLAN and FEATURE-TASKS for the governing gates.
+
+## Selected main SPEC incorporation
+
+The selected request incorporates accepted named-file F-001–F-004 into [main SPEC](../../SPEC.md) only, with [adjacent SPEC QC Revision 3](../../SPEC-REVIEW-REPORT.md#revision-3). Concrete delegated assessment of this changed SPEC/QC checkpoint is pending. This document incorporation neither delivers ranges nor integrates the preparation branch.
+
+FEATURE-SPEC/PLAN/TASKS and their QC remain active; T-018–T-024 remain unchecked with unchanged executable ownership. Main PLAN/TASKS, their reports and pending stdin/composition/docs/distribution/final obligations require authorized affected reassessment before dependent use. No source is archived, no task is transferred and no hosted object changes. Stop after selected incorporation/publication, before implementation or integration.
+
+## Authorized delivery continuation
+
+The current full range-delivery request supersedes historical preparation/selected-SPEC stops only for this accepted feature extent and required incorporation/integration. Main SPEC/QC at `d9a27477042f4d1e25850673079f2f768171724e` were accepted by decision `19b24aae16c305b6ab430c6f414a9d8f81866a65`. Incorporated main PLAN/current QC at `aeef000c7782b33ddf61d0fe8817d1014e5dc1c8` were accepted by `c9d0ca7c08ded18788c3e17d7d43077d324d307b`; main TASKS/joint current QC at `7cf177a2401240abe8e04303217d82de63b23ba6` were accepted by `dd252be368726422dc50be6604331b77128941a5`. These concrete states permit prerequisite preparation integration and eligible projection; no implementation acceptance is inferred.
+
+Main pending T-014/T-015/T-017 retain stdin/final work with range composition/review dependencies. Active FEATURE-TASKS still singly owns T-018–T-024; no transfer or archive yet. The execution target remains paused `phase/2-json-and-stdin`, preserving its completed JSON checkpoint and pending stdin/final obligations. Default preparation merge, compatible JSON merge, projection and task execution are pending. Stop after completed feature archive/verified target integration/publication, before main continuation or release.
