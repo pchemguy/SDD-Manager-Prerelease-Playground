@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "interventions": [
+    {
+      "scope": "prior tracking setup",
+      "actor": "root screening",
+      "result": "Rejected before copies/staging/commit",
+      "reason": "Original SETUP-COMMANDS.json NUL stdout at /commands/11/stdout and /commands/30/stdout, 154 NUL each",
+      "original_untouched": true,
+      "recovery": "Root retains original hash/manifest and narrow binary sidecars/screened derivative/separate publication manifest"
+    },
+    {
+      "scope": "this caller setup first attempt",
+      "actor": "caller assessor",
+      "result": "Stopped before authoring edits",
+      "reason": "Detached-only initialized repository had no refs; git show-ref exited 1",
+      "recovery": "Verified exact baseline/clean files, created explicit LOCAL fixture branch at actual baseline; no source/evidence/live refs changed"
+    }
+  ]
+}

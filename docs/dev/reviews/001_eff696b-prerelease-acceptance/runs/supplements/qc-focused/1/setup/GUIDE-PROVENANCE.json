@@ -1,0 +1,6 @@
+{
+  "pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "path": "acceptance/textstats/cases/assessor/DOCUMENT-QC.md",
+  "sha256": "1f1b9fdbc8743b421572bb14c6188b79ae42cbecc6b95e55ae1ed0978f8647f9",
+  "role": "caller/assessor only"
+}

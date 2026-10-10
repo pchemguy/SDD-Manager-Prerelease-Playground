@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "actor": "root review / caller author correction",
+  "stage": "before root setup publication and before any consumer dispatch",
+  "finding": "Residual inherited execution phrase required both delivery closures despite proposed single delivery milestone.",
+  "correction": "Only follows both delivery closures -> follows the delivery closure in caller FEATURE-TASKS; no ordinary input changed. Historical original source copies retain original phrasing.",
+  "original_task_candidate_sha256": "c79c8e535e13021cf0a87851a70ee8ca12e1c3439f08e7d05a3da89bc5213cfe",
+  "corrected_task_candidate_sha256": "a69409a41b647b1a79db13b7dc0eb15bed6d541a530cfc157039a1e4b81f477e",
+  "original_manifest_sha256": "7615119835424abcfcd27c5197081a379d13b3259d0c5dcd1fd0fc71eebb3458",
+  "first_candidate_preserved_under": "/workspace/scratch/46b31bb4dff6/037-sup-qc-focused-setups/caller-review-first-candidate",
+  "consumer_failure": false,
+  "other_equivalent_authored_count_residuals": "Focused rg found none beyond exact corrected phrase;2.5 references explicitly reserved historical identities.",
+  "source_evidence_live_repo_changes": false
+}
