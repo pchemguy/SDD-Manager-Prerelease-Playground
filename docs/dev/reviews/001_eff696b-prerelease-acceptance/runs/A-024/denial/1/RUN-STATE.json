@@ -4,10 +4,10 @@
   "phase": "P4",
   "case_id": "A-024",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Controlled denial setup published/readback40ac5f0; fresh isolated consumer dispatched",
-  "pending_operation": null,
-  "next_action": "Observe consumer-selected fault, preserve trigger, restore only facility and dispatch separate fresh continuation",
+  "role": "coordinator",
+  "last_completed_action": "Actual selected read Denied403 exit2; consumer stopped; independent trigger proves exact154trackedbytes/index/refs/status unchanged, ledger absent",
+  "pending_operation": "Controlled read campaign037_phase1_tracking; summary publication not sent",
+  "next_action": "Publish exact trigger; restore only facility mode then separate fresh continuation",
   "checkpoint_refs": {
     "product_branch": "trial/037-a024-denial",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -25,7 +25,11 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/SETUP.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/BINDINGS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/PUBLIC-INTERFACE.md"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/PUBLIC-INTERFACE.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-trigger-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/RUN-STATE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-trigger-provenance.json"
   ],
   "variant": "denial"
 }
