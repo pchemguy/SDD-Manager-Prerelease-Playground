@@ -1,0 +1,18 @@
+{
+  "status": "Prepared conditional tree; publication Blocked",
+  "actual_remote_main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+  "proposed_ordered_parents": [
+    "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "92171db4def72005c973f8a548a820cf1791aca3"
+  ],
+  "prospective_tree": "bf47060437fd3008d340a1a73ba7d631cec0c995",
+  "merge_tree_exit_status": 0,
+  "conflicts": false,
+  "changed_path_count": 31581,
+  "all_changed_paths_within_campaign": true,
+  "complete_campaign_subtree_equal_published_evidence": true,
+  "product_and_foreign_paths_preserved": true,
+  "merge_commit_created": false,
+  "provider_write": false,
+  "scope": "Read-only object preparation; product-main publication prerequisite not reached. No default-main retry, alternative live ref or wholeworkflowPass. Actual source assessments/report/registries retained exactly via subtree identity."
+}

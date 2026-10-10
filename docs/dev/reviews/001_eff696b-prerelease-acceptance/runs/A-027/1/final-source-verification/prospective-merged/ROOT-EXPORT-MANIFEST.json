@@ -1,0 +1,30 @@
+{
+  "MERGED-SOURCE-CHECKS.json": {
+    "sha256": "dbfffedf8815ae24980b235165726459c019a70d3007c5b16946cd8c75fc2b82",
+    "bytes": 31228
+  },
+  "publisher/command.json": {
+    "sha256": "878f75a553176641f6503d7c8b803c32a581fe5b5f176853be67128049c587b5",
+    "bytes": 670
+  },
+  "publisher/stderr.bin": {
+    "sha256": "dafa5873afecd625e388365a90f80f6ca70323902275350abafea5f813143ef0",
+    "bytes": 3237
+  },
+  "publisher/stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "support/command.json": {
+    "sha256": "cabb3d9b1292b7214ebec35000a5609a04befd39db1ec59443c88fde4d4c0af0",
+    "bytes": 722
+  },
+  "support/stderr.bin": {
+    "sha256": "ae1b5c2a0a2c11b040f91243f99b6887b0521427869d4923dd20ab201a94de54",
+    "bytes": 18153
+  },
+  "support/stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}
