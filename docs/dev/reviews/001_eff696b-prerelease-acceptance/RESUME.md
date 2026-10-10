@@ -167,3 +167,8 @@ Original-pin required totals13 Passed/2 Failed/17 unresolved. Separately pinned 
 Sealed independent assessment verifies actual phase2 tip e63b894 with main unchanged e7cae5b. Independent33 commands establish exact baseline/JSON captures,25 unit/21 integration tests,99 extracted-source cases and all8 documentation fences. All5 deterministic checks Passed separately. Phase2 projection precedes first-task implementation; issues11–13 and milestone4 closed in order, later tasks/milestones remain open. Exact pinned resources and foreign hosted material preserved; stdin untouched and incomplete phase unmerged.
 
 Original no-op main push rejection, cancelled issue11 operation and exact readback reconciliation remain retained. Independent grading uses actual retained tracked snapshots/archive without product mutations; historical timing/truncation/native transcript/shared-isolation/runtime limits stay explicit. Original-pin required totals14 Passed/2 Failed/16 unresolved, with corrected A004/A005 reassessments separately attributed. Publish this prerequisite before ordinary A008 preparation. Full readiness remains Open.
+
+
+## A-008 eligible feature preparation
+
+A007 exact independent assessment published5f16f79 and sourceprogress3b03357 verified. Actual product starting Git/index/status/tracked hashes retained; renderer fetched current evidence-tip object before exact published-prerequisite comparison. Fresh ordinary handoff contains only selected request/current authorization and public product preparation brief; no assessor criteria. Concrete document acceptance is delegated and must follow review of each current artifact. Stop before implementation; Phase2 remains incomplete/unmerged.
