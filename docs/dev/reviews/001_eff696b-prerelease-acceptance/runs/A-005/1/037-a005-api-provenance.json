@@ -1,0 +1,48 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-qsyk218a",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctdGV4dHN0YXRzLXByb2R1Y3QvdGV4dHN0YXRzL19faW5pdF9fLnB5Cg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "\nimport contextlib, io, json, pathlib, sys\nimport textstats\nvectors=json.load(sys.stdin)\nrows=[]\nfor v in vectors:\n    out,err=io.StringIO(),io.StringIO(); result=None; exception=None\n    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):\n        try:\n            if v['operation']=='text': s=textstats.count_text(v['text'],strip_bom=v['strip_bom'])\n            else:\n                path=pathlib.Path(v['name']+'.txt')\n                if v['operation']=='file': path.write_bytes(bytes.fromhex(v['hex']))\n                s=textstats.count_file(path,strip_bom=v['strip_bom'])\n            result=[s.lines,s.words]\n        except Exception as error:\n            exception='OSError' if isinstance(error,OSError) else type(error).__name__\n    rows.append(dict(name=v['name'],result=result,stdout=out.getvalue(),stderr=err.getvalue(),exception=exception))\nimmutable=False\ntry:\n    value=textstats.TextStats(1,2); value.lines=9\nexcept (AttributeError,TypeError): immutable=True\nprint(json.dumps(dict(rows=rows,immutable=immutable,origin=str(pathlib.Path(textstats.__file__).resolve()))))\n"
+      ],
+      "cwd": "/tmp/textstats-observation-qsyk218a",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+        "PYTHONUTF8": "0"
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "{\"rows\": [{\"name\": \"empty\", \"result\": [0, 0], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"plain\", \"result\": [1, 2], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"trailing\", \"result\": [1, 1], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"blank\", \"result\": [1, 0], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"mixed\", \"result\": [3, 3], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"double-lf\", \"result\": [2, 1], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"whitespace\", \"result\": [1, 0], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"unicode-separator\", \"result\": [1, 2], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"bom-only\", \"result\": [0, 0], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"keep-bom\", \"result\": [1, 1], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"double-bom\", \"result\": [1, 1], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"interior\", \"result\": [2, 3], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"file\", \"result\": [2, 2], \"stdout\": \"\", \"stderr\": \"\", \"exception\": null}, {\"name\": \"file-invalid\", \"result\": null, \"stdout\": \"\", \"stderr\": \"\", \"exception\": \"UnicodeDecodeError\"}, {\"name\": \"file-missing\", \"result\": null, \"stdout\": \"\", \"stderr\": \"\", \"exception\": \"OSError\"}], \"immutable\": true, \"origin\": \"/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__init__.py\"}\n",
+      "stdout_base64": "eyJyb3dzIjogW3sibmFtZSI6ICJlbXB0eSIsICJyZXN1bHQiOiBbMCwgMF0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJwbGFpbiIsICJyZXN1bHQiOiBbMSwgMl0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJ0cmFpbGluZyIsICJyZXN1bHQiOiBbMSwgMV0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJibGFuayIsICJyZXN1bHQiOiBbMSwgMF0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJtaXhlZCIsICJyZXN1bHQiOiBbMywgM10sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJkb3VibGUtbGYiLCAicmVzdWx0IjogWzIsIDFdLCAic3Rkb3V0IjogIiIsICJzdGRlcnIiOiAiIiwgImV4Y2VwdGlvbiI6IG51bGx9LCB7Im5hbWUiOiAid2hpdGVzcGFjZSIsICJyZXN1bHQiOiBbMSwgMF0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJ1bmljb2RlLXNlcGFyYXRvciIsICJyZXN1bHQiOiBbMSwgMl0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJib20tb25seSIsICJyZXN1bHQiOiBbMCwgMF0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJrZWVwLWJvbSIsICJyZXN1bHQiOiBbMSwgMV0sICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogbnVsbH0sIHsibmFtZSI6ICJkb3VibGUtYm9tIiwgInJlc3VsdCI6IFsxLCAxXSwgInN0ZG91dCI6ICIiLCAic3RkZXJyIjogIiIsICJleGNlcHRpb24iOiBudWxsfSwgeyJuYW1lIjogImludGVyaW9yIiwgInJlc3VsdCI6IFsyLCAzXSwgInN0ZG91dCI6ICIiLCAic3RkZXJyIjogIiIsICJleGNlcHRpb24iOiBudWxsfSwgeyJuYW1lIjogImZpbGUiLCAicmVzdWx0IjogWzIsIDJdLCAic3Rkb3V0IjogIiIsICJzdGRlcnIiOiAiIiwgImV4Y2VwdGlvbiI6IG51bGx9LCB7Im5hbWUiOiAiZmlsZS1pbnZhbGlkIiwgInJlc3VsdCI6IG51bGwsICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogIlVuaWNvZGVEZWNvZGVFcnJvciJ9LCB7Im5hbWUiOiAiZmlsZS1taXNzaW5nIiwgInJlc3VsdCI6IG51bGwsICJzdGRvdXQiOiAiIiwgInN0ZGVyciI6ICIiLCAiZXhjZXB0aW9uIjogIk9TRXJyb3IifV0sICJpbW11dGFibGUiOiB0cnVlLCAib3JpZ2luIjogIi93b3Jrc3BhY2Uvc2NyYXRjaC80NmIzMWJiNGRmZjYvMDM3LXRleHRzdGF0cy1wcm9kdWN0L3RleHRzdGF0cy9fX2luaXRfXy5weSJ9Cg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "api"
+}

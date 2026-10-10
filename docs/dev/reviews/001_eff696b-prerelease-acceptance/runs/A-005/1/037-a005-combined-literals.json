@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "literals": {
+    "api": {
+      "immutable": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout_rows": [
+        {
+          "exception": null,
+          "name": "empty",
+          "result": [
+            0,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "plain",
+          "result": [
+            1,
+            2
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "trailing",
+          "result": [
+            1,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "blank",
+          "result": [
+            1,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "mixed",
+          "result": [
+            3,
+            3
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "double-lf",
+          "result": [
+            2,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "whitespace",
+          "result": [
+            1,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "unicode-separator",
+          "result": [
+            1,
+            2
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "bom-only",
+          "result": [
+            0,
+            0
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "keep-bom",
+          "result": [
+            1,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "double-bom",
+          "result": [
+            1,
+            1
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "interior",
+          "result": [
+            2,
+            3
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": null,
+          "name": "file",
+          "result": [
+            2,
+            2
+          ],
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": "UnicodeDecodeError",
+          "name": "file-invalid",
+          "result": null,
+          "stderr": "",
+          "stdout": ""
+        },
+        {
+          "exception": "OSError",
+          "name": "file-missing",
+          "result": null,
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    "baseline": [
+      {
+        "name": "named",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=3 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "empty",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=0 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "keep-bom",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=1\n",
+        "unchanged": true
+      },
+      {
+        "name": "dash-filename",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      },
+      {
+        "name": "missing",
+        "no_traceback": false,
+        "returncode": 1,
+        "source_identified": true,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "decode",
+        "no_traceback": false,
+        "returncode": 1,
+        "source_identified": false,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "usage-missing",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "usage-extra",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "usage-unknown",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      }
+    ]
+  }
+}

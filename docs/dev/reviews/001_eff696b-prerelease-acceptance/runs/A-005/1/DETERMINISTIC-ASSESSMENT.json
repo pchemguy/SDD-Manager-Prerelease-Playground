@@ -1,0 +1,38 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "published",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-api",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-baseline",
+      "reason": "Literal invariant differs.",
+      "status": "Failed"
+    }
+  ],
+  "required_agent_checks": [
+    "Usable named-file API/CLI passes independent literal capture; every task has durable check/commit/push evidence.",
+    "Phase branch remains paused; integration unchanged; no premature phase completion.",
+    "Milestone 1.1 code review, focused checks and blocker repairs finish in its explicit last review task; its report is committed/pushed at docs/dev/reports/phases/<actual-phase-id>/<actual-milestone-id>.md.",
+    "Delivery and review task issues close with commit/check evidence before milestone closure; provider readback confirms milestone closed while the incomplete phase remains paused. Bugs, critical issues or required contract/check failures block closure."
+  ],
+  "schema_version": 1,
+  "status": "Checks failed"
+}
