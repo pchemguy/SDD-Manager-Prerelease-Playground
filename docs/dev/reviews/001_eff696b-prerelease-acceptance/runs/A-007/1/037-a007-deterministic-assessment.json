@@ -1,0 +1,37 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "published",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-baseline",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "product-json",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Phase 2 begins at published phase 1 integration; JSON and default text behavior pass independent captures.",
+    "Integration remains at phase 1; stdin work has not been implemented.",
+    "Phase 2 activation creates/readbacks only its own label, milestones and all issues after phase 1 completion/publication and before phase 2 first-task execution."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}

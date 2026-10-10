@@ -1,0 +1,36 @@
+{
+  "literals": {
+    "json": [
+      {
+        "json": {
+          "lines": 2,
+          "words": 3
+        },
+        "name": "json",
+        "returncode": 0,
+        "single_object_newline": true,
+        "stderr": "",
+        "unchanged": true
+      },
+      {
+        "name": "default",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "json": {
+          "lines": 1,
+          "words": 1
+        },
+        "name": "json-bom",
+        "returncode": 0,
+        "single_object_newline": true,
+        "stderr": "",
+        "unchanged": true
+      }
+    ]
+  },
+  "schema_version": 1
+}

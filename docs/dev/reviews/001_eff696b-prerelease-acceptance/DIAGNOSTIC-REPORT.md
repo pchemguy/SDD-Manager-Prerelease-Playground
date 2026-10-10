@@ -95,3 +95,10 @@ A-020 fresh consumer is dispatched against accepted preparation88a5c4b on its pu
 Independent assessment verifies applied response loss, unreadable-effect uncertainty without replay, then exact-identity read of the existing effect without another write. Distinct pre-send WRITE applied nothing; fresh continuation actually read absence before one write and exact readback. All161 tracked bytes, index, HEAD, refs and status retained; ledger has exactly one object per isolated destination. Original failures, truncations, corrections and bounded control changes are retained with exact seals. Controlled fixture evidence only; native/live optional variants Not run and broad shared-filesystem isolation uncertified.
 
 Original-pin required totals13 Passed/2 Failed/17 unresolved. Separately pinned corrected A004/A005 reassessments remain attributed without double counting. A007 assessment and A020 preservation execution are pending; full readiness remains Open.
+
+
+## A-007 independently Passed
+
+Sealed independent assessment verifies actual phase2 tip e63b894 with main unchanged e7cae5b. Independent33 commands establish exact baseline/JSON captures,25 unit/21 integration tests,99 extracted-source cases and all8 documentation fences. All5 deterministic checks Passed separately. Phase2 projection precedes first-task implementation; issues11–13 and milestone4 closed in order, later tasks/milestones remain open. Exact pinned resources and foreign hosted material preserved; stdin untouched and incomplete phase unmerged.
+
+Original no-op main push rejection, cancelled issue11 operation and exact readback reconciliation remain retained. Independent grading uses actual retained tracked snapshots/archive without product mutations; historical timing/truncation/native transcript/shared-isolation/runtime limits stay explicit. Original-pin required totals14 Passed/2 Failed/16 unresolved, with corrected A004/A005 reassessments separately attributed. Publish this prerequisite before ordinary A008 preparation. Full readiness remains Open.

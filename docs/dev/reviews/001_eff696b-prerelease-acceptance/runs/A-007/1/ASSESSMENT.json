@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "case_id": "A-007",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "sealed": true,
+  "assessment_scope": "Independent assessment of sealed actual JSON milestone: product and extracted-source literal captures; exact tracked snapshot product/tests/distribution/user examples; actual task parent diffs/QC/source review; authenticated read-only provider identity/status/preservation/order; requested unmerged stop.",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-json-and-stdin",
+    "product_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a"
+  },
+  "start": {
+    "product_branch": "main",
+    "product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a"
+  },
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "checks": {
+    "literal_json_default": "Passed: actual fresh-process baseline and JSON observations exactly satisfy all fixed contract literals; single newline-terminated exact JSON objects with integer fields and retained text/status/channels/byte preservation. Separate extracted-source JSON capture retains accepted actual import origins and original process channels. No counts derived from product code as expectations.",
+    "activation": "Passed: actual initial main/remote equality and retained Phase1 two-parent/review records plus live completed Phase1 hosted states; full Phase2 projection readback sequence31 verifies label, all3 milestones and all8 task issues with exact owning markers/associations before first task test edits32 and RED33. Only Phase2 label/milestones/issues added; independent current provider timestamps place all added issues after Phase1 hosted completion. Phase2 branch is a descendant fork of exact published Phase1 main.",
+    "task_persistence": "Passed: exactly3 new separate closing commits T010 b292b58429553d18f32c37dd6374a3e5fc7e12fa, T011 c4a16e76813ca336681dbe9b71f1c979cbc767fa, T012 e63b8946bbb99347b0f73f070f9c728945ee5925. Each actual parent diff contains its own result/tests/docs/current evidence and exactly one initial task closure with one leading owning ID. T012 owns report and eligible2.1 parent. Exact publication observations43/62/74 precede next task work; current live phase ref equals final tip.",
+    "qc": "Passed: governing design/SPEC/PLAN/layout and all adjacent QC reports preserve exact starting hashes and accepted root/upstream identities. Independent read of full retained reports establishes conformance/grouped coverage/count rationale and resolved finding history. TASKS changes are completion status, equivalent report navigation and appended observed evidence; every original outcome/scope/dependency/hierarchy remains intact, so prior reviewed conformance remains materially equivalent without fabricated new QC revision.",
+    "code_review": "Passed: CLI acquisition/counting completes before choosing format; json.dumps constructs only integer immutable lines/words and print adds final newline. Retained argparse usage-before-acquisition/allow_abbrev=False, named filenames and expected exception translation remain coherent. Core/io/public exports exact original bytes; no borrowed stdin acquisition, range work or extra exports. JSON and source-check extensions/tests use meaningful independent constants/composition/error/type fault sensitivity, no contract weakening observed.",
+    "product_tests": "Passed: actual final tools/check_tests.py on exact retained tracked snapshot passed25 unit/21 integration, nonzero/no skips; actual extracted checker passed99 text/JSON/BOM/error module cases. Snapshot and extracted files are compared byte-for-byte to sealed product/source manifest. Product checkout not used for generated test/build outputs.",
+    "distribution": "Passed: actual source builder imported from exact tracked snapshot produces explicit allowlist archive; archive hash/members/source commit/import origin retained. Every extracted member equals sealed actual product source; extracted JSON capture and real checker independently execute extraction origin. Current faulty-JSON-string-type sensitivity test rejects the corrupt extraction while retained text behavior passes.",
+    "docs_and_review_report": "Passed: all8 current README/public-guide runnable fences execute successfully in exact retained tracked snapshot, with safe environment bytecode suppression. Links resolve and public contracts/ownership/errors/default/JSON/help/portable source commands are truthful. T012 report at docs/dev/reports/phases/2/2.1.md exists in closing commit and retains separate substantive review, actual nonempty checks/usefulness/exits/TODO None and limits.",
+    "hosted_order": "Passed: independent exact-repository GET verifies unique actual issues11\u201313 closed/completed with evidence comments citing the corresponding durable commits; live closed_at values13:51:10/13:52:14/13:55:24 precede milestone4 closure13:55:41. Retained sequence74 verifies report-task publication before sequence77 issue13 close/readback, all-associated-issue validation and milestone closure; sequence79 verifies closed milestone3/0. Review verification campaign66 begins after issue12 closed readback65. Pending delivery-task closure was reconciled before this dependent review boundary.",
+    "scope_and_integration": "Passed: main exact local/live remote remains e7cae5b Phase1 integration; Phase2 remains incomplete/unmerged. Only T001\u2013012 checked; T013\u2013017/2.2/2.3/Phase2 unchecked, actual hosted issues14\u201318 and milestones5\u20136 open. No Phase2/final implementation report or release; io/core/public facade unchanged and CLI still treats literal dash as named input. No stdin implementation.",
+    "preservation": "Passed: all starting vendor/plugin/publisher resources, .github, docs/testing, prior governing/QC/Phase1 reports and disclosure/usage notices match hashes; original ignore rules preserved. Every original issue body/label/state/milestone and milestone description compared against actual retained A006 final snapshot; unrelated issue1 remains open and issue2 foreign comment6097383663 exact hash preserved. Added objects confined to Phase2. Final index/worktree clean and unchanged.",
+    "deterministic_contract": "Checks passed: all5 checks, retained separately; agent lifecycle grade is this independent judgment, not helper inference."
+  },
+  "first_attempts_and_interventions": [
+    {
+      "kind": "automatic_review_rejection",
+      "operation": "startup redundant main push",
+      "command": "git ls-remote origin refs/heads/main && GIT_ASKPASS=/workspace/scratch/46b31bb4dff6/playground-askpass.sh GIT_TERMINAL_PROMPT=0 git push origin main && git ls-remote origin refs/heads/main",
+      "reason": "This pushes the default/main branch to an external GitHub repository; although GitHub effects and scoped pushes are authorized, authorization does not clearly cover publishing directly to main, and the command could publish unintended local commits.",
+      "effect": "No push executed",
+      "intervention": "Read-only remote equality established no outstanding commits; did not replay rejected operation or use alternate transport/account. Coordinator explicitly endorsed equality-only resolution."
+    },
+    {
+      "kind": "T-010 behavioral RED",
+      "status": 1,
+      "tests": 4,
+      "failures": 34,
+      "cause": "Unchanged production argparse rejects --json",
+      "intervention": "Add authorized parser/rendering option; exact same focused tests GREEN."
+    },
+    {
+      "kind": "network_approval_cancellation",
+      "operation": "First issue11 closure process",
+      "error": "Unified exec process failed: network approval was cancelled before a decision was returned",
+      "initial_effect": "unknown",
+      "intervention": "Read issue11 and complete comment pagination: open, no matching completion comment. Only then re-ran same scoped closure operation; succeeded and exact state read back."
+    },
+    {
+      "kind": "T-011 behavioral RED",
+      "status": 1,
+      "tests": 1,
+      "failures": 1,
+      "cause": "Original checker accepts faulty extracted JSON string values while text still works",
+      "intervention": "Extend extracted JSON acceptance; same sensitivity test GREEN."
+    },
+    {
+      "sequence": 16,
+      "outcome": "Intentional git ls-files --error-unmatch gh.tkn status1 establishes credential absent from index, not an authentication failure; ignored status verified before transient read. No token printed."
+    },
+    {
+      "actor": "assessor",
+      "outcome": "Initial exploratory summaries assumed A006-style events/status schema and failed with KeyError/TypeError; corrected to actual A007 commands/exit_code schema. An unused one-off seal generation snippet had SyntaxError before any artifact write. ps environment lookup failed. Independent collector/captures/deterministic grader themselves completed on first execution without failure; these exploration limits do not substitute for observations."
+    }
+  ],
+  "prerequisite": {
+    "case": "A-006",
+    "status": "Passed",
+    "publication_commit": "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+    "published_assessment_bytes_independently_compared": true,
+    "assessment_sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+    "published_product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "actual_handoff_setup_commit": "7c1db38",
+    "later_evidence_ref_observation": "1711ce96e5fe80b72fe3a517df7e6e61257f7d72"
+  },
+  "limitations": [
+    "Separate ordinary consumer/assessor contexts share broad filesystem; native complete fresh isolation cannot be certified. Explicit source loading, not installed-client activation.",
+    "Actual Python3.12.14/current platform exercised; supported3.11+ and other platforms not independently certified.",
+    "Consumer structured83 command records retain actual returned output, with merged shell channels, unlogged early read-only commands and tool truncation disclosed; not a native complete transcript. Some long RED output/counts retained but omitted raw lines not reconstructed. Independent captures retain separate actual channels.",
+    "Retained sequence establishes historical lifecycle ordering; current provider/ref readback alone does not prove every historical timing operation. Read-only source inspection64 overlaps issue12 API reconciliation63/65; dependent review verification66 and report persistence occur after successful readback65. No claim all preliminary reading awaited closure.",
+    "T011 delivery testing began after T010 durable verified publication but while its hosted closure was pending/uncertain; policy allows independent activated delivery work while reconciliation remains pending, with review/next-phase gate blocked until actual readback. No unknown effect replay inferred successful without reconciliation.",
+    "Inherited historical RED/native limitations remain; no historical replay, stdin/range/full Phase2 integration, release or full runtime matrix claim.",
+    "Operational startup redundant main push rejected automatically, no push occurred; equality-only prerequisite resolution endorsed by coordinator. Initial issue11 network cancellation retained as unknown until actual state/comment readback. These are operational interventions, not altered product acceptance requirements."
+  ],
+  "mutations": {
+    "product_source": false,
+    "product_git": false,
+    "hosted": false,
+    "generated_outputs": "Independent capture artifacts and exact retained snapshot/archive/extraction only. Test/doc checker rebuilt dist/textstats-source.zip inside assessor snapshot/extracted copy; no product generated ignored output. Bytecode disabled through inherited PYTHONDONTWRITEBYTECODE=1 and top-level python-B."
+  },
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "evidence": {
+    "037-a007-assessor-checks.py": {
+      "sha256": "5d0f56863ef72595ce82e68594d456514cc00e107e501c121ac98bed215131c5"
+    },
+    "037-a007-seal-assessment.py": {
+      "sha256": "a4b077fe58a2434491858b76e603fbcc823d95d9f1b76f06fa30d8b7732c0cc4"
+    },
+    "037-a007-independent-check-evidence.json": {
+      "sha256": "934a2adf573a67a2721fc7b30794c9662cece5f49452cf71204b660a193f84f4"
+    },
+    "037-a007-consumer-observations.json": {
+      "sha256": "cfce349a7f0e7d09da78704c3aa5137019a4755d48bef1f21aa7e36de29c6b11"
+    },
+    "037-a007-baseline-literals.json": {
+      "sha256": "20eda200cc8a34deabe50182c9bbf3e70ef46d2182e79981d54222d0a6432ad6"
+    },
+    "037-a007-baseline-provenance.json": {
+      "sha256": "54d51a0c5d406ca045d70d15483ae84314a6dcf2e6d8e6fd1b559147d9391298"
+    },
+    "037-a007-json-literals.json": {
+      "sha256": "29495c96f01839e089f05613a01d8b37ace51a8835638c65ae1dc3efc523dacf"
+    },
+    "037-a007-json-provenance.json": {
+      "sha256": "35d0c6b8626292ee410ede5166663b79a5d4844c28dffed60e6034a3fd00318d"
+    },
+    "037-a007-extracted-json-literals.json": {
+      "sha256": "29495c96f01839e089f05613a01d8b37ace51a8835638c65ae1dc3efc523dacf"
+    },
+    "037-a007-extracted-json-provenance.json": {
+      "sha256": "c5520b14faa96f47901fc319f281cc5d03d63684e488a3b8d6ff3826837536df"
+    },
+    "037-a007-combined-literals.json": {
+      "sha256": "3197a74de95d7d3f74ad60b7bc0e24adeae3cdb8ce5d4dda20479b407e9adc18"
+    },
+    "037-a007-assessor-run-state.json": {
+      "sha256": "785a1e4fe9c966e3ea348c7a442cce518237d60652657aca3618d3cb213b30a8"
+    },
+    "037-a007-deterministic-assessment.json": {
+      "sha256": "fbf403129bb78ae198a15faf88fd69c0737634cd5b397a069f96e15c0f057076"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/INPUTS.json": {
+      "sha256": "45155cd8aec1b8d804e261d88eeee89bc5ec0c0fdf6c8c839e619ab7eea7d1c5"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/START.json": {
+      "sha256": "7ae36d4e372459d2c27ccdf9d39447d51cd7d183fcb0133d637ded477fc325bd"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/BINDINGS.json": {
+      "sha256": "fd45b4c3ea483d64628d46bd4451e97869a7110733d2041b4ea83f095ba88bb1"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/HANDOFF.md": {
+      "sha256": "f0ae18316acc59defd371de3c066d20953bd8afb66ad86f951c0039fcf579d3f"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/COMMON.md": {
+      "sha256": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-007.md": {
+      "sha256": "bdd041c1dca96bb0cc784c4de40ff5c03a6fcf9560545d312532026c1ab7f971"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/A-007.json": {
+      "sha256": "dac7ee06e80d99f031007d66b2f70ed9648fd584d75f6c676106146e556c9e0b"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py": {
+      "sha256": "bedfe314bd439a401f70155151aa520aa2fff01204e7491d1c17f1dbe2a95bdc"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/inputs.json": {
+      "sha256": "1caf7a7eb4738e2492dc7b6567dcda0957690e10281caf556926a40aa508af55"
+    },
+    "037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/expected.json": {
+      "sha256": "5c7646105a1c28f061ee1cf84bc41ac399d0bc90e2963c00e5754a89ac1534f7"
+    }
+  },
+  "actual_archive": {
+    "call": "tools.package_source.build_archive(exact_tracked_snapshot, independent_output)",
+    "import_origin": "/workspace/scratch/46b31bb4dff6/037-a007-assessor-runtime/exact-final-snapshot/tools/package_source.py",
+    "product_root": "/workspace/scratch/46b31bb4dff6/037-a007-assessor-runtime/exact-final-snapshot",
+    "archive": "/workspace/scratch/46b31bb4dff6/037-a007-assessor-runtime/actual-source.zip",
+    "sha256": "7bacb77f5a0dbd8c72109f965bfcb49ff4a308e315339c3aad506456dac4b66c",
+    "source_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925"
+  },
+  "seal_statement": "No further product or provider mutations. Actual captured evidence retained unchanged; coordinator may publish this grade before dependent work."
+}
