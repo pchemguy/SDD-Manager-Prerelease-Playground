@@ -1,0 +1,6 @@
+{
+  "base": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "purpose": "Clean first-creation proof for acknowledged-ID tooling repair",
+  "consumer_package_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "changes": "Both synchronized manifests version only; explicit isolated metadata fixture, not consumer plugin revision"
+}
