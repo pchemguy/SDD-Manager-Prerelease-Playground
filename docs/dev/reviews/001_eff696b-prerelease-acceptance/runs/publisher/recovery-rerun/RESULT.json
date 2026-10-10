@@ -1,0 +1,42 @@
+{
+  "observed_at": "2026-10-10T10:31:31.589624+00:00",
+  "run_id": 38045002859,
+  "conclusion": "success",
+  "candidate_source": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "tooling_source": "be0f6d46b970b031aac4fc1fb9f935c748034ec3",
+  "release": {
+    "id": 408861830,
+    "tag_name": "v0.15.0",
+    "name": "SDD Manager v0.15.0",
+    "draft": false,
+    "prerelease": true,
+    "body": "## Campaign 037 publisher trial\n\nTest-only prerelease of the exact pinned plugin package.\n\n## Retained fixture section\n\nLiteral transfer sample: `$(touch SHOULD_NOT_EXIST)` \u2014 preserve exactly.\n"
+  },
+  "assets": [
+    {
+      "id": 627669329,
+      "name": "sdd-manager.zip",
+      "size": 317911,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:28:52Z",
+      "updated_at": "2026-10-10T10:28:52Z"
+    },
+    {
+      "id": 627669376,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:28:54Z",
+      "updated_at": "2026-10-10T10:28:54Z"
+    }
+  ],
+  "downloaded_sha256": {
+    "sdd-manager.zip": "08ae8da54f128179b03cfd71f647cddf35af71f07195b971845aa126158a0217",
+    "sdd-manager.zip.sha256": "4d6552e9432f393a8e9a5163402d8fcce890a6d50d13cc7065062bb2ac21e15f"
+  },
+  "checksum_matches_downloaded_zip": true,
+  "archive_member_count": 133,
+  "every_archive_member_matches_committed_blob": true,
+  "latest_release_id": null,
+  "assistance": "First trial failed after draft creation. External sandbox restoration and read-only visibility diagnosis preceded this successful matching-draft recovery. First failure remains retained."
+}

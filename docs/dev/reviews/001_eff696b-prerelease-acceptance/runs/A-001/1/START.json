@@ -1,0 +1,11 @@
+{
+  "product_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+  "product_branch": "main",
+  "worktree_clean": true,
+  "plugin_revision": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "loading_mode": "explicit pinned-source skill files",
+  "consumer_context": "fresh separate context, no parent conversation inherited",
+  "filesystem_isolation": "not certified; unrestricted shared filesystem",
+  "consumer_input_sha256": "4ecac1d3e49cf2876bda3e72371e031e8af9317a90e11aa99864f7ba86c229a6",
+  "scope": "preparation only; real human checkpoints; no production implementation"
+}
