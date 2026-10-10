@@ -232,9 +232,9 @@
   },
   "A-027.core": {
     "status": "Blocked",
-    "agent_behavior_assessed": false,
+    "agent_behavior_assessed": true,
     "evidence_class": "inspection",
-    "reason": "Reached reporting is available for independent review; full workflow/evidence-main publication blocked by unpublished accepted product-main integration.",
-    "assessment_path": ""
+    "reason": "Independent scoped final reporting/reconciliation Passed; whole workflow Blocked at unpublished default product/evidence integration.",
+    "assessment_path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json"
   }
 }
