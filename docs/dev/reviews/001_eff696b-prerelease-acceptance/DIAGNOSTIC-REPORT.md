@@ -218,3 +218,10 @@ CP019–022 coverage inventory names remaining executable supplements and unavai
 ## CP022 fresh strict package validation
 
 Offline Agent Package Author plugin/each15skill/inventory commands executed against sourceebebd0c. Strict plugin validation reported39errors:4portablemanifestdifferences (missingcanonicalschema and client fields) plus35creatorstandalone sibling-resource containment errors. All120 explicit local SKILL-entry links independently resolve to existing files within actualpluginroot. Originalrawvalidatoroutputs/source/toolidentities and classification retained in runs/supplements/strict-package/1. Published primary format sources checked2026-10-10. Knownformatlimitsremainexplicit; no unrequestedmigration, installeddiscovery or universalportabilitypass inferred. No package/source mutation.
+
+
+## A021 actual partial task-transfer recovery independently Passed
+
+Fresh continuation inspected and retained actual held owner work, resumed the same operation identity and completed sole canonical ownership. Sole accepted ten-path checkpoint bf24fab09b2fad638d09ef892232912be1d6d338 immediately published to LOCAL trial-delivery with exact independent readback. Independent81 final checks and188 separate-local reconstruction checks Passed; original deterministic checks Passed with explicit local inputs. Canonical24 unique owners, preserved Phase1 evidence, pendingT010–024, accepted feature scopes/report provenance, currentQC/history and needed active source bytes verified. No implementation/archive/hosted/merge/release or whole-phase completion.
+
+Exact complete objects/bundle/index/workfiles/modes/commands/grade in runs/A-021/1/final-exports. Original trigger verification failures, known evidence metadatafetch, rawindex restoration, lost pre-failure in-memory captures, fresh parser false-cycle/correction and cooperative/shared-filesystem/native-transcript/local-delivery limits remain distinct. Required original-pin totals23 Passed/2 Failed/7 unresolved; correctedA004/A005 rechecks separate. A010 continues feature reconciliation/archive/paused integration; readinessOpen.

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "published",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Partial transfer/archive follows a real observed move/edit, not a prebuilt completed owner map.",
+    "Fresh continuation retains feature identity/actual paths, consults both lists, establishes sole selected ownership/links, preserves still-needed sources and history; no duplicate archive.",
+    "Feature transfer preserves review task IDs, report provenance and issue identities; scoped feature parent completion cannot close a whole-project milestone with unfinished work in another owner."
+  ]
+}

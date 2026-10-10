@@ -1,0 +1,5 @@
+{
+  "failure": "raw_index_exact false after read-only Git comparison commands in disposable verifier; all other193 checks true",
+  "effect": "Product untouched. Restore attempt retained. Initial copy bytes not recorded before commands; cannot claim no metadata refresh. Will retain verifier currentindex then recopy exact exportedindex and verify immediatebytes before no-mutation comparisons.",
+  "log_gap": "In-memory log not persisted before assertion in first restoration; retained raw artifacts and failure summary; exactcommandsequence present in tool input."
+}

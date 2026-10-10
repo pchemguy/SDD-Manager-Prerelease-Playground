@@ -1,0 +1,177 @@
+{
+  "checks": {
+    "head_exact": true,
+    "branch_exact": true,
+    "clean": true,
+    "sole_commit_single_parent": true,
+    "trial_delivery_exact": true,
+    "main_exact": true,
+    "paused_exact": true,
+    "origin_write_disabled": true,
+    "only_accepted_ten_paths": true,
+    "accepted_docs/dev/SPEC.md": true,
+    "accepted_docs/dev/PLAN.md": true,
+    "accepted_docs/dev/TASKS.md": true,
+    "accepted_docs/dev/FEATURE-TASKS.md": true,
+    "accepted_docs/dev/SPEC-REVIEW-REPORT.md": true,
+    "accepted_docs/dev/PLAN-REVIEW-REPORT.md": true,
+    "accepted_docs/dev/TASKS-REVIEW-REPORT.md": true,
+    "accepted_docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": true,
+    "accepted_AGENTS.md": true,
+    "accepted_docs/dev/features/002_e7cae5b-named-file-ranges/README.md": true,
+    "canonical24_unique": true,
+    "preserved_statuses": true,
+    "retired_source_no_executable_entries": true,
+    "phase1_exact": true,
+    "historic_completion_evidence_exact": true,
+    "T-018_Outcome:": true,
+    "T-018_Scope:": true,
+    "T-018_Depends on:": true,
+    "T-018_Evidence:": true,
+    "T-018_Report:": true,
+    "T-018_Reports:": true,
+    "T-019_Outcome:": true,
+    "T-019_Scope:": true,
+    "T-019_Depends on:": true,
+    "T-019_Evidence:": true,
+    "T-019_Report:": true,
+    "T-019_Reports:": true,
+    "T-020_Outcome:": true,
+    "T-020_Scope:": true,
+    "T-020_Depends on:": true,
+    "T-020_Evidence:": true,
+    "T-020_Report:": true,
+    "T-020_Reports:": true,
+    "T-021_Outcome:": true,
+    "T-021_Scope:": true,
+    "T-021_Depends on:": true,
+    "T-021_Evidence:": true,
+    "T-021_Report:": true,
+    "T-021_Reports:": true,
+    "T-022_Outcome:": true,
+    "T-022_Scope:": true,
+    "T-022_Depends on:": true,
+    "T-022_Evidence:": true,
+    "T-022_Report:": true,
+    "T-022_Reports:": true,
+    "T-023_Outcome:": true,
+    "T-023_Scope:": true,
+    "T-023_Depends on:": true,
+    "T-023_Evidence:": true,
+    "T-023_Report:": true,
+    "T-023_Reports:": true,
+    "T-024_Outcome:": true,
+    "T-024_Scope:": true,
+    "T-024_Depends on:": true,
+    "T-024_Evidence:": true,
+    "T-024_Report:": true,
+    "T-024_Reports:": true,
+    "phase2_parent_open": true,
+    "needed_feature_sources_exact": true,
+    "no_archive_added": true,
+    "unchanged_other_tracked": true,
+    "inspection_matches_original_hold": true,
+    "retained_original_receipt_exact": true,
+    "resume_keeps_identity": true,
+    "dependency_graph_acyclic": true,
+    "full_main_review_requires_feature_extent": true,
+    "no_main_work_absorbed": true,
+    "SPEC-REVIEW-REPORT.md_current_upstream_hashes": true,
+    "PLAN-REVIEW-REPORT.md_current_upstream_hashes": true,
+    "TASKS-REVIEW-REPORT.md_current_upstream_hashes": true,
+    "FEATURE-TASKS-REVIEW-REPORT.md_current_upstream_hashes": true,
+    "diff_whitespace": true
+  },
+  "graph": {
+    "T-001": [],
+    "T-002": [
+      "T-001"
+    ],
+    "T-003": [
+      "T-002"
+    ],
+    "T-004": [
+      "T-001",
+      "T-002",
+      "T-003"
+    ],
+    "T-005": [
+      "T-004"
+    ],
+    "T-006": [
+      "T-005"
+    ],
+    "T-007": [
+      "T-005",
+      "T-006"
+    ],
+    "T-008": [
+      "T-005",
+      "T-006",
+      "T-007"
+    ],
+    "T-009": [
+      "T-004",
+      "T-008"
+    ],
+    "T-010": [
+      "T-009"
+    ],
+    "T-011": [
+      "T-010"
+    ],
+    "T-012": [
+      "T-010",
+      "T-011"
+    ],
+    "T-013": [
+      "T-012"
+    ],
+    "T-014": [
+      "T-013",
+      "T-020"
+    ],
+    "T-015": [
+      "T-014",
+      "T-023"
+    ],
+    "T-016": [
+      "T-013",
+      "T-014",
+      "T-015"
+    ],
+    "T-017": [
+      "T-012",
+      "T-016",
+      "T-024"
+    ],
+    "T-018": [
+      "T-001",
+      "T-012"
+    ],
+    "T-019": [
+      "T-010",
+      "T-012",
+      "T-018"
+    ],
+    "T-020": [
+      "T-018",
+      "T-019"
+    ],
+    "T-021": [
+      "T-020"
+    ],
+    "T-022": [
+      "T-021"
+    ],
+    "T-023": [
+      "T-021",
+      "T-022"
+    ],
+    "T-024": [
+      "T-020",
+      "T-023"
+    ]
+  },
+  "count": 81
+}
