@@ -5,3 +5,7 @@ Fresh run, immutable plugin source `ea515f5624c8a34cc4572731a2590223a5eb27f4`. P
 Separate fresh conversation contexts are available, but tools share an unrestricted filesystem. Consumer handoffs exclude assessor assets and historical answers; the consumer checkout contains only pinned plugin resources and product instructions. Filesystem isolation is **not certified** because other source/evidence workspaces remain reachable. Record this limit for affected independent assessments; do not certify isolation-dependent cases.
 
 Installed plugin discovery, Windows CMD, Python 3.11 locally, native agent termination and isolated live response-loss facilities are not established. Actual CI targets Python 3.11. Optional absent controls remain Not run; missing required facilities block their respective claims. Native/controlled/cooperative evidence classes remain distinct.
+
+## Sandbox recovery
+
+Recovered source CP-012 `1fe66a9`, playground main `eff696b`, publisher candidate `fb7324d` and evidence `2cde2bb` from origin. Missing local workspaces were reconstructed from published refs. The original first dispatch/run happened: run `38043868742` failed; authenticated readback sees draft release `408861830` with exact fixture body and zero assets. Original uncommitted dispatch/log files were lost; provider observations are retained without inventing their contents. No consumer attempt has begun. Diagnose workflow-token readback before retrying; do not create a second release.
