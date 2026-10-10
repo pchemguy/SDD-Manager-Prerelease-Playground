@@ -6,6 +6,7 @@ It never substitutes a checkout import for extracted module execution.
 """
 
 import os
+import json
 from pathlib import Path
 import subprocess
 import sys
@@ -65,28 +66,43 @@ def verify_archive(archive: Path) -> int:
                     0, f'lines={expected[0]} words={expected[1]}\n', ''), result
                 assert sample.read_bytes() == raw
                 count += 1
+                for json_args in [['--json', *options, 'sample.txt'], ['sample.txt', *options, '--json']]:
+                    result = invoke(['-m', 'textstats', *json_args])
+                    assert result.returncode == 0 and result.stderr == '', result
+                    assert result.stdout.endswith('\n') and result.stdout.count('\n') == 1, result
+                    payload = json.loads(result.stdout)
+                    assert payload == {'lines': expected[0], 'words': expected[1]}, result
+                    assert all(type(value) is int for value in payload.values()), result
+                    assert sample.read_bytes() == raw
+                    count += 1
         dash = root / '-sample'
         dash.write_bytes(b'alpha beta\n')
         result = invoke(['-m', 'textstats', '--', '-sample'])
         assert (result.returncode, result.stdout, result.stderr) == (0, 'lines=1 words=2\n', ''), result
         assert dash.read_bytes() == b'alpha beta\n'
         count += 1
+        result = invoke(['-m', 'textstats', '--json', '--', '-sample'])
+        assert result.returncode == 0 and result.stderr == '', result
+        assert json.loads(result.stdout) == {'lines': 1, 'words': 2}, result
+        count += 1
         bad = root / 'bad.txt'
         bad.write_bytes(b'valid prefix\n\xff')
         for args, input_name, cause in [(['missing.txt'], 'missing.txt', 'No such file'),
                                         (['bad.txt'], 'bad.txt', 'utf-8')]:
-            result = invoke(['-m', 'textstats', *args])
-            assert result.returncode == 1 and result.stdout == '', result
-            assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
-            count += 1
+            for format_option in [[], ['--json']]:
+                result = invoke(['-m', 'textstats', *format_option, *args])
+                assert result.returncode == 1 and result.stdout == '', result
+                assert input_name in result.stderr and cause in result.stderr and 'Traceback' not in result.stderr, result
+                count += 1
         assert bad.read_bytes() == b'valid prefix\n\xff'
-        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt']]:
+        for args in [[], ['sample.txt', 'extra.txt'], ['--unknown', 'missing.txt'], ['--keep', 'missing.txt'],
+                     ['--json'], ['--json', 'sample.txt', 'extra.txt'], ['--json', '--unknown', 'missing.txt'], ['--j', 'missing.txt']]:
             result = invoke(['-m', 'textstats', *args])
             assert result.returncode == 2 and result.stdout == '', result
             assert 'usage:' in result.stderr and 'error:' in result.stderr and 'Traceback' not in result.stderr, result
             count += 1
         result = invoke(['-m', 'textstats', '--help'])
-        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout, result
+        assert result.returncode == 0 and result.stderr == '' and 'INPUT' in result.stdout and '--keep-bom' in result.stdout and '--json' in result.stdout, result
         count += 1
         print(f'{count} extracted module cases passed')
         return count

@@ -69,7 +69,7 @@ python tools/package_source.py
 python tools/check_distribution.py
 ```
 
-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 36 real module cases with inherited Python import paths removed and user-site packages disabled.
+The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 99 real text/JSON/BOM/error module cases with inherited Python import paths removed and user-site packages disabled.
 
 A runnable extraction example for a Bash shell on Unix:
 
@@ -80,11 +80,12 @@ python -m zipfile -e dist/textstats-source.zip "$example_dir"
     cd "$example_dir/textstats-source"
     python -c "from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')"
     env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt
+    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats --json sample.txt
 )
 rm -r "$example_dir"
 ```
 
-The extracted command prints `lines=3 words=5` and returns 0. From an extracted root, the package builder/checker commands remain usable; the product-test commands above require a development checkout because test implementations and `tools/check_tests.py` are excluded. No installed console script or release publication is required.
+The extracted commands print `lines=3 words=5` and an equivalent JSON object, each with a final newline and status 0. From an extracted root, the package builder/checker commands remain usable; the product-test commands above require a development checkout because test implementations and `tools/check_tests.py` are excluded. No installed console script or release publication is required.
 
 ## Development
 
