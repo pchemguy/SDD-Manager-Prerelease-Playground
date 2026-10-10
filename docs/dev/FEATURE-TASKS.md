@@ -10,7 +10,7 @@ Preparation stops before execution. A later separately authorized handoff must s
 
 ## Phase 2 — JSON and stdin
 
-- [ ] Phase 2 — JSON and stdin
+- [x] Phase 2 — JSON and stdin
     - [x] Milestone 2.4 — Named-file ranges
         - [x] T-018 — Implement pure normalized logical-line selection
             Outcome: internal C-010 selection using existing C-003 traversal; preserve selected contents/terminators, inclusive endpoints and available subsets without any BOM normalization or source dependency.
@@ -43,8 +43,8 @@ Preparation stops before execution. A later separately authorized handoff must s
             Depends on: T-021 and T-022.
             Evidence: code review plus actual docs examples, nonempty discovery and extraction provenance/real module checks, all relevant regressions and repairs for every blocker. Record usability demonstration, actual evidence/limits and TODO dispositions before milestone closure.
             Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md`.
-    - [ ] Milestone 2.6 — Range feature review
-        - [ ] T-024 — Review, test and report the Phase 2 range feature extent
+    - [x] Milestone 2.6 — Range feature review
+        - [x] T-024 — Review, test and report the Phase 2 range feature extent
             Scope: cross-milestone range feature and affected main contracts, source-independent normalized pipeline, unchanged public API, complete docs/extraction and retained named-file text/JSON. This is feature-extent review, not main Phase 2 or project completion.
             Depends on: T-020 and T-023; feature delivery milestones 2.4 and 2.5 completed/closed, excluding its own still-open 2.6.
             Evidence: code review and actual complete relevant product/docs/distribution exits, nonzero counts, final blocker repairs, feature usefulness/risk evidence, findings and TODO aggregation with provenance/options/owners/resolutions from both feature milestones. Reconcile feature parent claims only; do not complete main 2.2/2.3 or T-013–T-017. Reports must state pending stdin/final work and later incorporation/integration prerequisites.
@@ -181,3 +181,40 @@ parent close together; immediately publish/read back then close/read back issue
 #24 and validate every associated completed issue before native milestone #8
 closure. Feature 2.6/parent remain unchecked until T-024, while main Phase 2 and
 stdin/final T-013–T-017 stay pending.
+
+## T-024 completion evidence
+
+Dedicated coherent feature-extent review at published
+`4eeee9e9505b29b4a616292434561aab569dac7f` is recorded in
+[extent report](features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md)
+and [final implementation report](features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md).
+Cross-boundary review covers actual SPEC/design/feature PLAN/contracts and both
+delivery milestones; no blocker/repair, TODO None aggregated with provenance.
+Fresh root full runner passed 31 unit/28 integration tests, both OK/status 0,
+no skips/warnings; fresh root checker passed 315 actual isolated module cases and
+silent unchanged API/signature probe. Fresh 27 usability/API/documentation commands,
+temp build/Bash extraction and exact eleven-file source/doc ZIP comparisons pass.
+T-023's complete 32-command evidence remains applicable to identical product/docs
+bytes, with reused and fresh scopes explicitly distinguished. Runtime Python
+3.12.14; other platforms/versions, performance/stdin/release remain unverified.
+
+Actual parent-delta audit confirms T-018–T-023 each carries its result/current
+evidence/initial checkbox in one single owning-prefix commit; T-024 follows the
+same contract. Original genuine RED/GREEN and resolved evidence/tool interventions
+remain retained. Native8 original helper assertion failure occurred before mutation;
+helper-only correction to accepted empty TODO value then full association closure/
+readback succeeded, without changing accepted report. Main pending stdin/final
+work is retained rather than waived as a feature deferral.
+
+Concrete pair decision `44d271f41db658563585cc6a75aae17e81d71935` accepts extent
+`d76c1f39f55dc8ae81a67ddbb9ad4c5fe08f8ba4` and implementation report
+`e0019e493e01d81555908b30e4b2d5949831179a`; report presentation-time pending
+acceptance is historical and this current owning evidence records actual decision.
+T-024 result/reports/current evidence/initial checkbox and eligible feature 2.6/
+Phase 2 extent parents close together. These feature parents measure only this
+seven-task list; the main Phase 2 parent, 2.2/2.3 and T-013–T-017 stay unchecked.
+Immediately publish/read back, then issue #25 and complete native #9 associated-
+issue validation/closure/readback before authorized sole-main ownership/current QC/
+archive reconciliation and concrete changed-artifact acceptance. Explicit verified/
+published paused-phase integration is still required afterward; no incomplete
+phase merge into default or release follows.
