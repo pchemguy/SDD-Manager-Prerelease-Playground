@@ -5,9 +5,9 @@
   "case_id": "A-006",
   "attempt": 1,
   "role": "assessor",
-  "last_completed_action": "A-006 consumer sealed; all Phase1 tasks completed and two-parent main merge pushed/verified; A-026 three independent variants Passed",
+  "last_completed_action": "A-006 independently Passed: actual full Phase1 integrated, checked and published",
   "pending_operation": null,
-  "next_action": "Independent full A-006 assessment; no Phase2 work before assessed published predecessor",
+  "next_action": "Publish full A-006 assessment and source CP-016; then fresh A-007 JSON milestone consumer",
   "checkpoint_refs": {
     "product_branch": "main",
     "product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
@@ -153,6 +153,18 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/037-a026-failing-baseline-independent-check.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/DETERMINISTIC-ASSESSMENT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/037-a026-failing-baseline-final-snapshot.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/CONSUMER-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-api-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/actual-source.zip",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-assessor-checks.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-combined-literals.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-baseline-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-api-literals.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/DETERMINISTIC-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-independent-check-evidence.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-distribution-literals.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-distribution-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/037-a006-baseline-literals.json"
   ]
 }
