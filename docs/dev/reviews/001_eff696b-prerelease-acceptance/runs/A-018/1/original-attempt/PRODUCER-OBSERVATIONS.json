@@ -1,0 +1,217 @@
+{
+  "trial": "037-a018-rejected",
+  "role": "fresh ordinary consumer",
+  "scope": "T-005 only; tracking declined; trial-delivery only",
+  "input": "/workspace/scratch/46b31bb4dff6/037-a018-consumer-input.md",
+  "product_root": "/workspace/scratch/46b31bb4dff6/037-a018-rejected",
+  "baseline": "7d003c1cf31c994340d8644e95990ef2253754ed",
+  "pinned_package_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "setup_pin_supplied_by_coordinator": "d25735b",
+  "startup_publication": {
+    "command": "git push trial-delivery HEAD:refs/heads/trial/037-a018-rejected && git ls-remote trial-delivery refs/heads/trial/037-a018-rejected",
+    "exit_code": 0,
+    "output": "Everything up-to-date; exact 7d003c1cf31c994340d8644e95990ef2253754ed read back"
+  },
+  "read_operations": [
+    "cat scoped consumer input",
+    "pwd; rg --files governing instruction/task/design paths",
+    "cat product AGENTS and pinned package AGENTS; git status/log; cat TASKS",
+    "cat pinned sdd-manage and sdd-implement SKILL.md",
+    "cat startup/range/execution/completion and tracking/phase/QC/git/human review references (one result truncated)",
+    "cat sdd-orient/tdd/docs/verify/report skills and actual cli/tests/runner",
+    "cat relevant TDD/verify/docs/orient references and product documents/QC; git show baseline closing diff (result truncated)",
+    "cat SPEC/PROJECT/architecture/decomposition/layout/notices/README; rg PLAN; branch/status/hashes/nested AGENTS discovery (result truncated, exit 1 solely no nested AGENTS matches)",
+    "cat architecture/decomposition/tracking/phase/object-drafts/io/tests (result truncated)",
+    "cat completion/QC/in-code-docs references while awaiting coordinator review"
+  ],
+  "mutations": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (test-first edit script)",
+      "exit_code": 0,
+      "result": "Added CLI usage-before-acquisition and input/cause/status/closure tests; real missing/bad-byte subprocess tests; explicit -B on CLI and check-runner children"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (production edit script)",
+      "exit_code": 0,
+      "result": "Narrow expected OSError/UnicodeDecodeError handler returning 1 and identifying stderr; updated source docs"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (inherited API child correction)",
+      "exit_code": 0,
+      "result": "Added -B to inherited import-smoke subprocess after discovering first GREEN ran it without explicit -B; PYTHONDONTWRITEBYTECODE was inherited"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (TASKS evidence edit)",
+      "exit_code": 0,
+      "result": "Appended pending T-005 evidence; initial checkbox remains unchecked"
+    }
+  ],
+  "red": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests -v",
+    "exit_code": 1,
+    "tests": 7,
+    "errors": 4,
+    "classification": "expected behavioral RED allowed by scope",
+    "cause": "FileNotFoundError, PermissionError, controlled OSError and UnicodeDecodeError escaped instead of CLI status 1"
+  },
+  "green": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "exit_code": 0,
+      "unit": 24,
+      "integration": 13,
+      "skips": 0,
+      "warnings": 0,
+      "state": "handler implemented, inherited API smoke child not yet explicit -B"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "exit_code": 0,
+      "unit": 24,
+      "integration": 13,
+      "skips": 0,
+      "warnings": 0,
+      "state": "all Python child invocation lists now explicit -B"
+    }
+  ],
+  "other_checks": [
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "occurrences": 3
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B --version",
+      "exit_code": 0,
+      "output": "Python 3.12.14"
+    },
+    {
+      "command": "sha256sum changed artifacts and governing inputs",
+      "exit_code": 0,
+      "result": "Exact artifacts supplied to coordinator; governing hashes match accepted QC"
+    }
+  ],
+  "coordinator_review": {
+    "result": "failed; no acceptance",
+    "finding": "ArgumentParser defaults allow_abbrev=True, accepting undocumented --keep as --keep-bom rather than unknown-option status 2 before acquisition; R-008 blocker",
+    "delivery": "root collaboration message after exact-artifact review",
+    "worker_action": "stopped on first unexpected final acceptance failure after implementation, per original explicit task instruction; did not execute suggested correction/retry"
+  },
+  "retained_files": {
+    "textstats/cli.py": {
+      "sha256": "1020c2647f6d8ce3e6465a477e8347560561cde6d114e4e245e6faf02a74db99",
+      "git_blob": "7b0d068bf3dad014a753b1379022afba86f32ff7"
+    },
+    "tests/unit/test_cli.py": {
+      "sha256": "d1c792d764fa8479fc696f7712d26d6aacbc38daccbd6f62cb7e086502f98881",
+      "git_blob": "24eabdf4111cfb0df3ed6d45dd396cada93af6ff"
+    },
+    "tests/integration/test_cli.py": {
+      "sha256": "f5d90f274ebc54703a91bb4d1ac2d3cf5ae7e8c2ed97cea332c1175a894d6dd0",
+      "git_blob": "49cac55b124288efa7e67c010b08f5dfffb8c7d4"
+    },
+    "tests/integration/test_api.py": {
+      "sha256": "e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6",
+      "git_blob": "4db902de93c022a4b0e3899839719411e4e20e2b"
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "3903f4aa64c29aa6a9a61c20af2a5e7ca922f3955119a03415bb0a81dde73e56",
+      "git_blob": "8de65886d1a5e555a8c06a33f791c7c17e7c63ef"
+    }
+  },
+  "retained_state": {
+    "head": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "7d003c1cf31c994340d8644e95990ef2253754ed\n",
+      "stderr": ""
+    },
+    "branch": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "trial/037-a018-rejected\n",
+      "stderr": ""
+    },
+    "status": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exit_code": 0,
+      "stdout": " M docs/dev/TASKS.md\n M tests/integration/test_api.py\n M tests/integration/test_cli.py\n M tests/unit/test_cli.py\n M textstats/cli.py\n",
+      "stderr": ""
+    },
+    "index_diff": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--cached",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "retained_diff": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": " docs/dev/TASKS.md             | 10 ++++++++++\n tests/integration/test_api.py |  2 +-\n tests/integration/test_cli.py | 22 ++++++++++++++++++++--\n tests/unit/test_cli.py        | 44 ++++++++++++++++++++++++++++++++++++++++++-\n textstats/cli.py              | 17 +++++++++++------\n 5 files changed, 85 insertions(+), 10 deletions(-)\n",
+      "stderr": ""
+    },
+    "refs": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "show-ref"
+      ],
+      "exit_code": 0,
+      "stdout": "7d003c1cf31c994340d8644e95990ef2253754ed refs/heads/trial/037-a018-rejected\n7d003c1cf31c994340d8644e95990ef2253754ed refs/heads/trial/037-a026-preservation\n7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/origin/HEAD\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main\n809f045e3cd32445e7dca29d0174ea25aa5da7ea refs/remotes/origin/phase/1-named-file-utility\n7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/origin/trial/037-a026-preservation\n7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/trial-delivery/trial/037-a018-rejected\n",
+      "stderr": ""
+    },
+    "remote_readback": {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/trial/037-a018-rejected"
+      ],
+      "exit_code": 0,
+      "stdout": "7d003c1cf31c994340d8644e95990ef2253754ed\trefs/heads/trial/037-a018-rejected\n",
+      "stderr": ""
+    }
+  },
+  "owned_commits": [],
+  "retries": [],
+  "hosted_operations": [],
+  "credential_operations": [],
+  "task_complete": false,
+  "task_checkbox": "unchecked",
+  "publication_of_edits": "not attempted; uncommitted and unstaged",
+  "pending_work": [
+    "Add focused abbreviation-rejection/zero-acquisition test and observe behavioral RED",
+    "Set allow_abbrev=False in scoped parser",
+    "Rerun scoped/full checks and obtain corrected exact-artifact acceptance under renewed authority",
+    "Only after acceptance, close T-005 result/evidence/checkbox in one commit, publish immediately and exactly verify"
+  ],
+  "stopping_boundary": "first unexpected delegated final acceptance failure; no next task, integration, commit, retry or bypass",
+  "seal": "This observations file is sealed by the final filesystem operation; no later operations by consumer."
+}

@@ -5,9 +5,13 @@
   "case_id": "A-018",
   "attempt": 1,
   "role": "consumer",
-  "last_completed_action": "Actual pristine prerequisite and localbare delivery baseline observed; externalnativehook same-tip plumbing Passed, no consumer trigger yet",
-  "pending_operation": null,
-  "next_action": "Publishsetup then freshordinaryselectedtask consumer; independentlyobserveactualpublicationhold/rejection",
+  "last_completed_action": "Originalattempt independentlyNottriggered; actualargparseabbreviation contractfinding/partialworkexported",
+  "pending_operation": {
+    "kind": "task",
+    "status": "interrupted",
+    "description": "T005partialwork retainedunchecked; scopedunknownoption regressionrepair pending beforepublication"
+  },
+  "next_action": "Publishoriginalattemptexports then separatefreshscopedrepair worker throughactualpersistence/publicationboundary",
   "checkpoint_refs": {
     "product_branch": "trial/037-a018-rejected",
     "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
