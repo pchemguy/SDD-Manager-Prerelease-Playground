@@ -1,0 +1,11 @@
+{
+  "source": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "notes_source": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "tag": "v0.15.0",
+  "notes": "## Campaign 037 publisher trial\n\nTest-only prerelease of the exact pinned plugin package.\n\n## Retained fixture section\n\nLiteral transfer sample: `$(touch SHOULD_NOT_EXIST)` \u2014 preserve exactly.\n",
+  "notes_sha256": "606b038c4e60e630b727c971cdce205c666bdb363f412c76f27d62f05e5784e3",
+  "publish": true,
+  "prerelease": true,
+  "make_latest": false,
+  "request_id": "037-cp014-overlap-2"
+}

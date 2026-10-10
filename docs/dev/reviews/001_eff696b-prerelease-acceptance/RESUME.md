@@ -31,3 +31,7 @@ Independent assessor finds no material durable-state defect at the initial PROJE
 ## Delegated artifact review authority
 
 The user explicitly directs the test coordinator to assess and accept all intermediate test artifacts. Coordinator accepts PROJECT at `b7b017c`, blob `861ab8534bf96f22c8293922e34dbc292073bc1c`, after substantive and independent checks. Each future concrete artifact still receives its own assessment before dependent progression. No direct-human review claim or unseen-artifact preacceptance is made. Continue ARCHITECTURE under this retained test-specific delegation; ordinary product skill checkpoint behavior remains under observation.
+
+## CP-014 live trial dispatches
+
+Published tooling `fde1bf6` wraps the unchanged sole publisher only for explicitly selected controlled post-upload stop requests. Isolated metadata candidate `83fcaa4` and annotated tag `v0.15.0-cp014` are published/peeled verified; release absent before dispatch. Actual runs: partial `38046045373`; overlap-1 `38046050281`; overlap-2 `38046055292`; invalid-source `38046061342`. Observation sees overlap-1 running and overlap-2 plus invalid-source pending in the same tag group, while isolated partial trial runs in its different group. Completion/job timing, first failed effects, unchanged original assets and read-before-retry remain to be assessed. No lost response or clean state is inferred from dispatch alone.

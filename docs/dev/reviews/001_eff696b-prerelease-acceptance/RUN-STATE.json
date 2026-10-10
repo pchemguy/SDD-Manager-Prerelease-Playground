@@ -5,9 +5,17 @@
   "case_id": "A-001",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Coordinator substantively assessed and accepted exact ARCHITECTURE",
-  "pending_operation": null,
-  "next_action": "Consumer records scoped ARCHITECTURE acceptance and prepares DECOMPOSITION",
+  "last_completed_action": "Architecture accepted; four isolated publisher trial dispatches correlated",
+  "pending_operation": {
+    "kind": "api",
+    "status": "in_progress",
+    "description": "Controlled partial upload, overlapping publishers and invalid source trials running in parallel with consumer preparation",
+    "identity": {
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+      "operation_id": "037-cp014-four-dispatches"
+    }
+  },
+  "next_action": "Assess concrete DECOMPOSITION when presented; read actual CP-014 runs/drafts/assets before recovery",
   "checkpoint_refs": {
     "product_branch": "design-docs/main",
     "product_commit": "334a4dd3f257ffefeb18ab88dfedc425b44838fc",

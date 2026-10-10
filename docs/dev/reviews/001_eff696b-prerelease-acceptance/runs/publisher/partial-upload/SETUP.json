@@ -1,0 +1,11 @@
+{
+  "candidate": "83fcaa47479857f69ade044d463c793460826a61",
+  "tooling": "fde1bf67ddcbccc0ff1e4a5ec41b3533bd076044",
+  "tag": "v0.15.0-cp014",
+  "annotated_tag_object": "8970f42e3d83327edf49d45c4d01784ab57f7307",
+  "tag_peeled_remote_verified": true,
+  "release_absent_before_dispatch": true,
+  "delta_from_plugin": "Two synchronized manifest version values changed for isolated fixture; not immutable consumer candidate",
+  "injection_class": "Actual live-provider upload acknowledged then controlled response suppression; not native transport response loss",
+  "existing_plugin_prerelease": "Preserved"
+}
