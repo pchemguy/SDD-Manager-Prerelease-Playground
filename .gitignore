@@ -150,3 +150,7 @@ vite.config.ts.timestamp-*
 
 # Protected repository credentials
 *.tkn
+
+# Generated caches from the delivered product and its verification suites
+/textstats/**/__pycache__/
+/tests/**/__pycache__/
