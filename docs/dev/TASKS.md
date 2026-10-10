@@ -10,7 +10,7 @@ The user requested preparation through TASKS and stop before implementation. The
 
 ## Phase 1 — Named-file utility
 
-- [ ] Phase 1 — Named-file utility
+- [x] Phase 1 — Named-file utility
     - [x] Milestone 1.1 — Named-file counting
         - [x] T-001 — Implement immutable statistics and whole-text counting
             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.
@@ -53,12 +53,12 @@ The user requested preparation through TASKS and stop before implementation. The
             Depends on: T-005, T-006 and T-007.
             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.
             Report: [milestone 1.2 review](reports/phases/1/1.2.md).
-    - [ ] Milestone 1.3 — Phase 1 review
-        - [ ] T-009 — Review, test and report phase 1
+    - [x] Milestone 1.3 — Phase 1 review
+        - [x] T-009 — Review, test and report phase 1
             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.
             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.
             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.
-            Report: `docs/dev/reports/phases/1/PHASE-REPORT.md`.
+            Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).
 
 ## Phase 2 — JSON and stdin
 
@@ -182,3 +182,9 @@ Every updated README/public-guide runnable fence, including builder/checker and 
 Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.
 
 `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.
+
+## T-009 completion evidence
+
+After T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` was published/read back, issue #9 closed/completed and native milestone #2 closed/read back with all four associated issues closed, both delivery milestone gates were satisfied. Performed a separate coherent cross-milestone implementation code review and all Phase 1 exits, recorded in [phase report](reports/phases/1/PHASE-REPORT.md). M1.2-001 remains resolved and TODO is None; no additional production repair was required. T-009 uniquely maps to issue #10, milestone #3.
+
+Fresh product runner passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. Fresh extraction checker verified exact isolated import and 36 real module cases. Every current README/public-guide runnable fence, including separate extracted example, passed; documented discovery counts are nonzero, outputs are exact and user-guide links resolve. Complete branch-scope inspection retains coordinator resources/pinned package/publisher fixture unchanged. Bounded T-001–T-008 actual parent-diff audit confirms per-task result/evidence/initial checkbox composition and leading single owning IDs. T-009 report/evidence/initial task checkbox and eligible phase/review-milestone parent status close together, followed by verified publication and hosted issue/review-milestone closure. Then integrate the complete phase via explicit two-parent merge, verify merged state and publish/read back main; integration evidence belongs in that actual merge summary. Stop before Phase 2; all T-010–T-017 remain unchecked/unprojected. Broader runtime/platform matrix and release remain outside scope.
