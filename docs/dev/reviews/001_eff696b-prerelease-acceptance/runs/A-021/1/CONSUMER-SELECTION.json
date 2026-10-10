@@ -1,0 +1,168 @@
+{
+  "status": "read_only_manifest_awaiting_wrapper",
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer",
+  "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+  "branch": "design-docs/002_e7cae5b-named-file-ranges",
+  "observations": [
+    "Clean starting worktree; no selected documents mutated.",
+    "T-018\u2013T-024 pending and owned by FEATURE-TASKS; T-010\u2013T-017 pending in canonical TASKS.",
+    "Operations 02 and 03 are separable: after 02 both lists contain selected executable entries, requiring source retirement before readiness/commit.",
+    "No archive eligibility; sources retained because implementation/delivery incomplete.",
+    "QC evidence still pending until scoped review and checks; no publication, task execution, hosted write, merge or release."
+  ],
+  "operations": [
+    {
+      "id": "01_spec_plan",
+      "changes": [
+        "docs/dev/SPEC.md",
+        "docs/dev/PLAN.md"
+      ],
+      "pending": [
+        "docs/dev/TASKS.md",
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/TASKS-REVIEW-REPORT.md",
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+        "AGENTS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+      ],
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('SPEC.md'); f=r('FEATURE-SPEC.md')\ns=s.replace('No implementation exists.','Phase 1 is delivered; ranges and stdin delivery remain incomplete.')\ns=s.replace(\"F-001 through F-004 retain the later separately requested range feature's contract as a deferred compatibility constraint. That feature is outside the initial executable hierarchy.\",\"F-001 through F-004 govern accepted named-file ranges in Phase 2 milestones 2.4\u20132.6. Incorporation specifies intended behavior without asserting delivery.\")\ns=s.replace('## Deferred range feature','## Named-file range contracts')\na=f.index('## F-001'); b=f.index('## Ownership and readiness')\ndelta=f[a:b].replace('## F-','### F-')\na=s.index('### F-001'); b=s.index('## Whole-input acceptance matrix')\ns=s[:a]+delta+'\\n'+s[b:]\ns=s.replace('deferred C-010','C-010')\nw('SPEC.md',s)\ns=r('PLAN.md'); f=r('FEATURE-PLAN.md')\ns=s.replace('The separately requested range feature stays outside these phases and their initial executable hierarchy; its design seams and deferred SPEC contracts remain intact.','Accepted named-file ranges extend Phase 2 with milestones 2.4/2.5 and extent review 2.6. Existing 2.1/2.2/2.3 identities remain; whole Phase 2 requires both main and feature exits.')\ns=s.replace('No range option or public API extension is included.','Public API stays whole-input. Retain source-independent range composition when delivering stdin; acquisition remains main-owned.')\ns=s.replace('without authorizing the deferred range feature.','within the separately authorized execution scope.')\ns=s.replace('The final review does not execute separately requested future features or publish a product release.','Full final review includes incorporated range exits and feature report provenance after 2.4/2.5/2.6, while retaining pending stdin obligations. No release is authorized.')\ns=s.replace('Deferred separate feature; preserve shared terminators, once-only normalization, normalized counting and source-independent acquisition seam during every design/code review. No initial task or hosted projection for this feature.','2.4 named-file text/JSON selection and validation; 2.5 documented extracted delivery; 2.6 feature-extent review. Main stdin/final work remains pending.')\na=f.index('| Parent / new milestone'); b=f.index('## Tracking and preparation boundary')\ndelta=f[a:b].replace('Detailed tests and concrete edit scopes belong to FEATURE-TASKS','Detailed tests and concrete edit scopes belong to canonical TASKS after selected transfer')\na=s.index('## Coverage, dependencies and verification strategy')\ns=s[:a]+'## Named-file range delivery extent\\n\\n'+delta+'\\n'+s[a:]\nw('PLAN.md',s)\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer",
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "id": "02_add_main_owners",
+      "changes": [
+        "docs/dev/TASKS.md"
+      ],
+      "pending": [
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/TASKS-REVIEW-REPORT.md",
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+        "AGENTS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+      ],
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('TASKS.md'); f=r('FEATURE-TASKS.md')\nassert '        - [ ] T-018 \u2014' not in s\na=f.index('    - [ ] Milestone 2.4'); b=f.index('## Execution, ownership and integration rules')\ndelta=f[a:b].rstrip().replace('FEATURE-PLAN compatible baseline/projection prerequisites','PLAN compatible baseline/projection prerequisites')\na=s.index('## Completion and persistence rules')\ns=s[:a]+delta+'\\n\\n'+s[a:]\ns=s.replace('This complete initial two-phase hierarchy derives','This complete two-phase hierarchy including accepted ranges derives')\ns=s.replace('There is no pre-existing product task list or verified implementation; all checkboxes are unchecked. Monotonic project-wide IDs T-001 through T-017 are allocated here once and have exactly one executable owner.','Phase 1 completion and evidence are retained. Main Phase 2 stays pending; separate JSON checkpoint evidence remains on the paused branch. IDs T-001\u2013T-024 are stable. T-018\u2013T-024 are pending; paired source retirement is required before unique ownership is established.')\ns=s.replace('Deferred SPEC F-001 through F-004/C-010 have no implementation task or hosted issue in this hierarchy; preserve their design seams while implementing accepted whole-input capabilities.','SPEC F-001\u2013F-004/C-010 are covered by T-018\u2013T-024 in milestones 2.4/2.5/2.6; main stdin/final work remains pending.')\ns=s.replace('            Depends on: T-013.','            Depends on: T-013 and T-020 for retained range composition.')\ns=s.replace('            Depends on: T-014.','            Depends on: T-014 and T-023 for range documentation/distribution provenance.')\ns=s.replace('Range remains documented as future scope only, without runnable delivery claims.','Include delivered named-file range behavior and source-independent stdin composition; claim runnable capability only after actual delivery.')\ns=s.replace('            Depends on: T-012 and T-016, and completed/closed delivery milestones 2.1 and 2.2; excludes its own still-open review milestone.','            Depends on: T-012, T-016 and T-024, and completed/closed delivery milestones 2.1, 2.2, 2.4 and 2.5; excludes its own still-open review milestone 2.3.')\ns=s.replace('Do not execute range feature or publish a release.','Retain feature-report provenance without claiming whole-phase completion from feature extent. No release is authorized.')\nw('TASKS.md',s)\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer",
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "id": "03_retire_feature_owners",
+      "changes": [
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/TASKS.md"
+      ],
+      "pending": [
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/TASKS-REVIEW-REPORT.md",
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+        "AGENTS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+      ],
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\nf=r('FEATURE-TASKS.md'); s=r('TASKS.md')\nfor i in range(18,25): assert s.count('        - [ ] T-'+str(i).zfill(3)+' \u2014')==1\na=f.index('## Phase 2 \u2014'); b=f.index('## Execution, ownership and integration rules')\nf=f[:a]+'## Current task ownership\\n\\nT-018\u2013T-024 now have their sole executable entries in [canonical TASKS](TASKS.md), under unchanged milestones 2.4/2.5/2.6. All remain pending. This retained accepted preparation source has no executable checkboxes. Main T-013\u2013T-017 and whole Phase 2 remain incomplete. Feature reports keep the recorded package prefix.\\n\\n'+f[b:]\nf=f.replace('This active feature list owns only the F-001\u2013F-004 delta.','This retained preparation source records the accepted F-001\u2013F-004 delta; canonical TASKS owns its executable entries.')\nf=f.replace('New T-018\u2013T-024 are singly owned here, all unchecked.','T-018\u2013T-024 are singly owned in canonical TASKS, all unchecked.')\nf=f.replace(\"Every feature checkbox measures this list's extent only.\",\"Every canonical feature-extent checkbox measures its own extent only.\")\nf=f.replace('After a later authorized complete feature boundary, sdd-integrate-feature coordinates accepted incorporation and explicit TASKS/FEATURE-TASKS ownership reconciliation, preserving stable task IDs/issues and updating affected pending main composition/docs/final review dependencies.','Selected SPEC/PLAN incorporation and task transfer precede implementation under the current document-only instruction. A later complete implemented boundary must preserve stable identities and verify all delivery/integration exits.')\nw('FEATURE-TASKS.md',f)\ns=s.replace('T-018\u2013T-024 are pending; paired source retirement is required before unique ownership is established.','T-018\u2013T-024 remain pending and singly owned here; FEATURE-TASKS retains provenance without executable entries.')\nw('TASKS.md',s)\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer",
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "id": "04_conformance_navigation",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer",
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "changes": [
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/TASKS-REVIEW-REPORT.md",
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+        "AGENTS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+      ],
+      "pending": [],
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef h(n): return hashlib.sha256((p/n).read_bytes()).hexdigest()\nt=(p/'TASKS.md').read_text(); f=(p/'FEATURE-TASKS.md').read_text()\nids=re.findall(r'^        - \\[([ x])\\] (T-\\d+) \u2014',t,re.M)\nassert [x[1] for x in ids]==['T-'+str(i).zfill(3) for i in list(range(1,18))+list(range(18,25))]\nassert all(x[0]==' ' for x in ids[9:])\nassert not re.search(r'^\\s*- \\[[ x]\\] T-\\d+',f,re.M)\nbodies={\n'SPEC-REVIEW-REPORT.md':('SPEC/design conformance',['SPEC.md','PROJECT.md','ARCHITECTURE.md','DECOMPOSITION.md'],'Full current SPEC and accepted feature contracts were compared with design: R-001\u2013R-013 remain intact, F-001\u2013F-004 now specify named-file selection, complete strict decode, once-only BOM, preserved shared logical lines, unbounded ASCII grammar, before-access rejection, text/JSON/error/API compatibility and all success/invalid/extraction anchors. Existing C-010 seam suffices; no material design conflict or new export is introduced. Stdin acquisition remains pending. No implementation is verified.'),\n'PLAN-REVIEW-REPORT.md':('combined PLAN/layout conformance',['PLAN.md','layout.md','SPEC.md','SPEC-REVIEW-REPORT.md'],'Current main strategy provides delivery routes for all R/F contracts with existing layout. Phase 1 retains two delivery milestones plus excluded 1.3, justified by useful API/CLI and independent robustness/distribution. Phase 2 now has four delivery milestones 2.1/2.2/2.4/2.5 plus excluded full review 2.3 and extent review 2.6. The range extent retains two narrow useful increments rather than padded fragmentation: direct CLI and documented extracted delivery. Whole Phase 2 requires main stdin/final and range exits. Published preparation, compatible JSON baseline and future eligible projection remain prerequisites, not performed facts.'),\n'TASKS-REVIEW-REPORT.md':('TASKS/PLAN and unique ownership conformance',['TASKS.md','FEATURE-TASKS.md','PLAN.md','SPEC.md','layout.md'],'Reviewed current complete main hierarchy and source retirement. T-001\u2013T-024 occur once as executable owners in TASKS; feature list has no executable entries. T-001\u2013T-009 and their completion evidence remain intact. T-010\u2013T-024 and Phase 2 remain pending; separate JSON evidence does not mark main copies complete. Delivery task counts are 1.1 three, 1.2 three, 2.1 two, 2.2 three, 2.4 two, 2.5 two; the two-task groups retain bounded format/extraction and pure-selection/CLI or documentation/extraction outcomes rather than padded splits. Dedicated excluded reviews are T-004/T-008/T-012/T-016/T-020/T-023 and single-task 1.3 T-009, full 2.3 T-017, extent 2.6 T-024. Dependencies retain all main work, add range composition/documentation to T-014/T-015, and require T-024 before full phase review. Feature review cannot close whole Phase 2. Existing feature report prefixes and stable IDs survive transfer.'),\n'FEATURE-TASKS-REVIEW-REPORT.md':('retained preparation provenance and canonical ownership transfer',['FEATURE-TASKS.md','TASKS.md','PLAN.md','SPEC.md'],'Accepted seven-task source hierarchy transferred to TASKS without task completion or identity changes. Source entries retired, retaining accepted preparation provenance, current canonical links, future baseline/projection gates and feature report prefix. The retained source is not an executable checklist or proof of implemented capability. All seven tasks and main stdin/final work remain pending. Original accepted assessment is retained below.')\n}\nfor n,(scope,names,body) in bodies.items():\n s=(p/n).read_text()\n nums=[int(x) for x in re.findall(r'^## Revision (\\d+)$',s,re.M)]\n k=max(nums,default=0)+1\n gate='State: **Ready** for '+scope+'. Current SHA-256 identities: '+', '.join(x+' '+h(x) for x in names)+'. No confirmed conformance blocker remains. Human acceptance of existing feature inputs is retained; this document-only review does not authorize execution or establish implementation/delivery.\\n\\n'\n a=s.index('## Current gate\\n'); b=s.index('\\n## ',a+3)\n s=s[:a]+'## Current gate\\n\\n'+gate+s[b:]\n s+='\\n## Revision '+str(k)+'\\n\\n'+body+'\\n\\n'+gate\n (p/n).write_text(s)\nq=p/'features/002_e7cae5b-named-file-ranges/README.md'\ns=q.read_text(); s+='\\n## Selected document incorporation\\n\\nCurrent SPEC and PLAN incorporate accepted range contracts/strategy. [Canonical TASKS](../../TASKS.md) singly owns pending T-018\u2013T-024 in 2.4/2.5/2.6; retained FEATURE-TASKS records provenance without executable entries. Accepted FEATURE-SPEC/FEATURE-PLAN and their adjacent QC remain active because implementation and delivery are incomplete. No archive or campaign closure is eligible. Current main and feature task QC reports assess the changed ownership; historical Ready does not establish main conformance. This document checkpoint remains on design-docs; origin is read-only and trial-delivery is the authorized local publication destination. No default or paused-phase merge, hosted write, task execution or release occurs.\\n'\ns=s.replace('Root TASKS and governing main documents retain their existing scope; no feature source is incorporated or archived.','Main SPEC/PLAN and TASKS now incorporate the selected range delta; all needed feature sources remain retained and no source is archived.')\ns=s.replace('are active executable sources accepted','are retained preparation provenance accepted')\nq.write_text(s)\nq=Path('AGENTS.md'); s=q.read_text(); s+='\\n## Selected incorporation checkpoint\\n\\nThe current document-only request incorporates accepted named-file range SPEC/PLAN into main governing owners and transfers pending T-018\u2013T-024 to canonical TASKS. FEATURE-TASKS retains provenance without executable checkboxes. Preserve the accepted active source/QC pairs and feature report prefix until implementation/delivery and eligible archive gates are actually met. Main stdin/final work and Phase 2 remain pending. Work stays on design-docs; origin is read-only, trial-delivery is the authorized local publication destination. No task execution, hosted mutation, main/paused-phase merge or release is authorized.\\n'\ns=s.replace('FEATURE-TASKS owns the unchecked T-018\u2013T-024 delta; canonical TASKS retains the original obligations.','Canonical TASKS owns unchecked T-018\u2013T-024 and retains original main obligations; FEATURE-TASKS records accepted preparation provenance without executable entries.')\nq.write_text(s)\n"
+      ]
+    }
+  ],
+  "loaded_sha256": {
+    "AGENTS.md": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "textstats-run-resources/plugin/AGENTS.md": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "docs/dev/SPEC.md": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "docs/dev/TASKS.md": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "docs/dev/FEATURE-SPEC.md": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "docs/dev/FEATURE-PLAN.md": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "docs/dev/FEATURE-TASKS.md": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "docs/dev/PROJECT.md": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "docs/dev/ARCHITECTURE.md": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "docs/dev/DECOMPOSITION.md": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "docs/dev/layout.md": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+    "textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7"
+  },
+  "command_results": [
+    {
+      "command": "cat designated consumer input",
+      "result": "read authorization before discovery"
+    },
+    {
+      "command": "rg --files scoped document/instruction patterns in product",
+      "result": "current product owner paths discovered; no sibling discovery"
+    },
+    {
+      "command": "cat applicable AGENTS, pinned workflow and selected current documents",
+      "result": "loaded sources hashed; some combined outputs truncated, with subsequent selected reads"
+    },
+    {
+      "command": "git --no-optional-locks status --short; branch --show-current; rev-parse HEAD; diff --name-only",
+      "result": "clean at preparation HEAD on selected design-docs branch"
+    },
+    {
+      "command": "functions.exec compose operation manifest",
+      "result": "first composition had JavaScript syntax error before any execution; corrected manifest sealed"
+    }
+  ]
+}
