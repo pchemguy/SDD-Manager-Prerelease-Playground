@@ -1,0 +1,14 @@
+{
+  "037-a027-consumer-report.md": {
+    "sha256": "a0da309be62131f8d25cfa6d3e4b9166906dd67a6edfd34def6d93e20840890b",
+    "bytes": 13384
+  },
+  "037-a027-provisional-consumer-report-independent-review.json": {
+    "sha256": "a4fe22dd3bf892d6b37de4b7bd82ac1c970349171866b5e5e132e964ef184eda",
+    "bytes": 13525
+  },
+  "PROVENANCE.json": {
+    "sha256": "9157f0fdccb9ea6e622dc6a51b1e1e8da8d43539c1a64a6adc21437268cffc31",
+    "bytes": 862
+  }
+}
