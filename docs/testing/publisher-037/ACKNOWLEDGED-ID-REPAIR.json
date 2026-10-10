@@ -1,0 +1,12 @@
+{
+  "source_commit": "21e29c464bf148ba6c2c43dba5ec4d6fda5d26f5",
+  "source_repository": "pchemguy/SDD-Manager",
+  "files": {
+    ".github/scripts/release.py": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+    ".github/tests/test_release.py": "e67b33a376852e76eea2d6e87b8ba95b2d5e795b43450e0a1c23466461703c9c",
+    ".github/RELEASE-HANDOFF.md": "6b04a8d1a00ff101cca81336dc1ce02720e598901bd6c14b62ca12ba60263b55"
+  },
+  "package_source": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "consumer_plugin_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "scope": "Publisher-only tooling repair; shipped consumer package unchanged; prior failed tooling fde1bf6 retained"
+}

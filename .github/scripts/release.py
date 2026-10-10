@@ -148,25 +148,27 @@ def reconcile_release(api, data, files):
     if release is not None:
         verify_release(api, release, data, files, complete=not release['draft'])
     else:
-        api.create_draft(data)
-        release = api.find_release(data['tag'])
-        if release is None: raise ValueError('Draft creation readback is missing')
+        acknowledged = api.create_draft(data)
+        if not isinstance(acknowledged, dict):
+            raise ValueError('Draft creation acknowledgement is missing')
+        release = read_release(api, acknowledged.get('id'))
         verify_release(api, release, data, files, complete=False)
+    release_id = release['id']
     if release['draft']:
         for name, raw in files.items():
             # Read before each effect; uncertainty exits, later runs re-read first.
-            release = api.find_release(data['tag'])
-            if release is None or not release['draft']:
+            release = read_release(api, release_id)
+            if not release['draft']:
                 raise ValueError('Draft changed during upload')
             present = verify_release(api, release, data, files, complete=False)
             if name not in present:
                 api.upload(release, name, raw)
-        release = api.find_release(data['tag'])
+        release = read_release(api, release_id)
         verify_release(api, release, data, files, complete=True)
     if release['draft']:
         api.publish(release, data)
-    release = api.find_release(data['tag'])
-    if release is None or release['draft']:
+    release = read_release(api, release_id)
+    if release['draft']:
         raise ValueError('Published release readback is missing or still draft')
     verify_release(api, release, data, files, complete=True)
     if api.tag_source(data['tag']) != data['source']:
@@ -174,6 +176,16 @@ def reconcile_release(api, data, files):
     expected_latest = release['id'] if data['make_latest'] else before_latest
     if api.latest_id() != expected_latest:
         raise ValueError('Actual latest release differs from requested policy')
+    return release
+
+
+def read_release(api, release_id):
+    """Read the acknowledged identity without relying on inventory visibility."""
+    if type(release_id) is not int or release_id <= 0:
+        raise ValueError('Release acknowledgement has an invalid identity')
+    release = api.get_release(release_id)
+    if release is None or release.get('id') != release_id:
+        raise ValueError('Acknowledged release readback is missing or differs')
     return release
 
 
@@ -253,6 +265,12 @@ class GitHub:
             'tag_name': data['tag'], 'target_commitish': data['source'],
             'name': 'SDD Manager ' + data['tag'], 'body': data['notes'],
             'draft': True, 'prerelease': data['prerelease'], 'make_latest': 'false'})
+
+    def get_release(self, release_id):
+        release = self.request('GET', self.base + '/releases/' + str(release_id))
+        if release is None: return None
+        release['assets'] = self.pages(self.base + '/releases/' + str(release_id) + '/assets')
+        return release
 
     def upload(self, release, name, raw):
         from urllib.parse import quote

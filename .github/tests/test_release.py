@@ -113,6 +113,10 @@ class Provider:
     def tag_source(self,tag): self.events.append('tag'); return self.source
     def latest_id(self): self.events.append('latest'); return self.latest
     def find_release(self,tag): self.events.append('read'); return copy.deepcopy(self.release)
+    def get_release(self,release_id):
+        self.events.append('read-id')
+        if self.release is None or self.release['id'] != release_id: return None
+        return copy.deepcopy(self.release)
     def create_draft(self,data):
         self.events.append('create')
         self.release=dict(id=23,tag_name=data['tag'],name='SDD Manager '+data['tag'],body=data['notes'],draft=True,prerelease=data['prerelease'],assets=[])
@@ -136,7 +140,27 @@ class LifecycleTests(Contract):
         result=self.run_release()
         self.assertFalse(result['draft']); self.assertEqual(self.api.latest,19)
         self.assertLess(self.api.events.index('upload:sdd-manager.zip.sha256'),self.api.events.index('publish'))
-        self.assertIn('read',self.api.events[self.api.events.index('publish')+1:])
+        self.assertTrue(any(x in ('read', 'read-id') for x in self.api.events[self.api.events.index('publish')+1:]))
+    def test_fresh_publish_survives_lagging_release_inventory(self):
+        # The provider acknowledges creation, but its global inventory lags.
+        self.api.find_release=lambda tag: None
+        result=self.run_release()
+        self.assertFalse(result['draft'])
+        self.assertEqual(self.api.events.count('create'),1)
+        self.assertEqual(set(a['name'] for a in result['assets']),set(self.files))
+    def test_missing_acknowledged_release_stops_without_recreating(self):
+        self.api.get_release=lambda release_id: None
+        with self.assertRaises(ValueError): self.run_release()
+        self.assertEqual(self.api.events.count('create'),1)
+        self.assertFalse(any(x.startswith(('upload','publish')) for x in self.api.events))
+    def test_direct_read_cannot_substitute_another_release_identity(self):
+        original=self.api.get_release
+        def wrong(release_id):
+            release=original(release_id); release['id']=99; return release
+        self.api.get_release=wrong
+        with self.assertRaises(ValueError): self.run_release()
+        self.assertEqual(self.api.events.count('create'),1)
+        self.assertFalse(any(x.startswith(('upload','publish')) for x in self.api.events))
     def test_complete_rerun_has_no_mutation(self):
         self.run_release(); self.api.events=[]; self.run_release()
         self.assertFalse(any(x.startswith(('create','upload','publish')) for x in self.api.events))
@@ -213,6 +237,20 @@ class AdapterTests(Contract):
         api=publisher.GitHub('owner/repo',request=lambda *a,**k:None)
         self.assertIsNone(api.tag_source('v0.15.0'))
         with self.assertRaises(ValueError): api.find_release('v0.15.0')
+
+    def test_direct_release_read_uses_acknowledged_id_and_complete_assets(self):
+        calls=[]
+        def request(method,path,**kwargs):
+            calls.append((method,path))
+            if path.endswith('/releases/23'): return dict(id=23,tag_name='v0.15.0',assets=[])
+            if '&page=1' in path: return [dict(id=i,name=str(i)) for i in range(100)]
+            return [dict(id=101,name='last')]
+        api=publisher.GitHub('owner/repo',request=request)
+        self.assertTrue(hasattr(api,'get_release'), 'Direct acknowledged-ID readback is absent')
+        self.assertEqual(len(api.get_release(23)['assets']),101)
+        self.assertEqual(calls[0],('GET',api.base+'/releases/23'))
+        self.assertTrue(all(method=='GET' for method,path in calls))
+        self.assertTrue(any('page=2' in path for method,path in calls))
 
     def test_body_and_upload_are_structured_data(self):
         calls=[]
