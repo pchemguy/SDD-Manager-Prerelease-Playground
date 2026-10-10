@@ -1,0 +1,14 @@
+{
+  "command.json": {
+    "sha256": "05e1bcfdff64e6af009630ee5788411a671631a1bbec4832bc51e9dbcc5f5b7f",
+    "bytes": 807
+  },
+  "stderr.bin": {
+    "sha256": "677c4481ddd3525b63c9a11ca6b12d3817bf23ae2cdf586c120cd274a22d710b",
+    "bytes": 3237
+  },
+  "stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}
