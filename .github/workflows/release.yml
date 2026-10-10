@@ -91,3 +91,28 @@ jobs:
           PYTHONDONTWRITEBYTECODE: "1"
         run: |
           python tooling/.github/scripts/release.py --event "$GITHUB_EVENT_PATH" --root candidate --output build --expected-sha256 "$EXPECTED_SHA256"
+
+  diagnose-draft-readback:
+    if: ${{ fromJSON(inputs.handoff).request_id == '037-diagnose-draft-001' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Observe workflow-token release visibility without writes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PYCODE'
+          import json, os, urllib.request, urllib.error
+          base = 'https://api.github.com/repos/' + os.environ['GITHUB_REPOSITORY']
+          for path in ['/releases?per_page=100', '/releases/408861830', '/releases/tags/v0.15.0']:
+              headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'User-Agent': 'campaign-037-read-only-diagnostic'}
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(base + path, headers=headers), timeout=30) as response:
+                      data = json.load(response)
+                      rows = data if isinstance(data, list) else [data]
+                      print(json.dumps({'path': path, 'status': response.status, 'releases': [{'id': r.get('id'), 'tag': r.get('tag_name'), 'draft': r.get('draft'), 'assets': len(r.get('assets', []))} for r in rows]}))
+              except urllib.error.HTTPError as error:
+                  print(json.dumps({'path': path, 'status': error.code}))
+          PYCODE

@@ -1,0 +1,3 @@
+# Workflow-token readback probe
+
+Campaign 037 first trial created draft `408861830` and failed at list readback. The original repository credential sees that draft with no assets. This test-only tooling amendment adds a GET-only job under the same Contents-write workflow-token permission as the publisher. It executes only for request `037-diagnose-draft-001`, comparing list, exact release ID and tag lookups. Dispatch selects build-only (`publish: false`); the ordinary publisher remains disabled. Candidate package source stays pinned at `fb7324dfeb10f425938d12be9a5a60d5a28d39e3`; tooling identity advances separately. No release mutation or consumer package edit is included.
