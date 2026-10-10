@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "case_id": "A-015",
+  "observed_at": "2026-10-10T14:35:57.710914+00:00",
+  "actor": "coordinator",
+  "timing": "After consumer startup readback/orientation, before product test/implementation edits",
+  "original_ambiguity": "Stop at first failed/unavailable/held operation could include expected test-first RED",
+  "clarification": "Expected behavioral RED is ordinary authorized test-first evidence, not the operational stop. Proceed RED\u2192implementation\u2192GREEN/QC. Stop at first failed/unavailable/held persistence/publication operation or unexpected required final acceptance failure after implementation. No retry/bypass of callerheld operation.",
+  "consumer_proposal_rejected": "Do not skip observed RED chronology by writing production before first test execution.",
+  "effect": "No fixture/product completion authored; actual staged-work trigger remains unobserved",
+  "limits": "Clarified before taskwork, preserve original ambiguous handoff; grade assistance independently"
+}
