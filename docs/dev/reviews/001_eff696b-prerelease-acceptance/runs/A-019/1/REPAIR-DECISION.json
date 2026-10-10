@@ -1,0 +1,25 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "pending_tree": "b57a3f4c8e1b90dc19e96546fb1f5317c6760ba2",
+  "parents": [
+    "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+    "bbd5b80e588337f14d8ec3221fea2aded33f0239"
+  ],
+  "artifact_blobs": {
+    "textstats/core.py": "5b17cfdcd3f4285ac3bf59e47365dfd818665c6d",
+    "tests/unit/test_core.py": "fc4b9c4482e0d61706df61477bfd257db42b7bb6",
+    "tools/check_distribution.py": "5fa8987e58426c88f337e7453be14a0f49f93471",
+    "README.md": "ae819eb0f2ca5d44d83f0c1d3a16d047dc2fadfe",
+    "docs/public-api.md": "d3f3aaf1b0073a627bf2527ad1b6f0eadb4a53ca",
+    "AGENTS.md": "9492ddb0815ff63c277544cbbe436d752a340ebc",
+    "docs/dev/reports/phases/1/PHASE-REPORT.md": "abd55286a0e1bd3330368e3ab4df31739f3dd17b"
+  },
+  "review": "Concrete seven-artifact repaired delta compared with actual incoming parent, retained README competing sentence and original prospective held state. Direct split restores required U001C whitespace semantics without changing logical-line/BOM/API ownership. Literal U001C\u2013U001F unit cases, actual extracted U001C under both policies, original two prospective tests and runnable documentation exercise defect independently. Report appends actual retained merge/RED/GREEN and distinguishes historical failures/future publication. Accepted complete Phase1 integration only, no Phase2/hosted/release effects; unchanged task identities/resources and exact two parents required. Root inspected actual full runner/distribution/document command evidence; original failures stay distinct.",
+  "log_sha256": {
+    "037-a019-repair-red.json": "6f9cae6a693eef55d3e5099aad7623d1ad53867c89e03fc53e9a8116bf3bf1be",
+    "037-a019-repair-green.json": "a97f7c152662181078c59192ee45c66c891e53d4339f4d8fb77141a00e458b76",
+    "037-a019-repair-docs.json": "d06e44b48c68cd34c39df4e8f3ba9fd066e2df2e19cb36b22b73cfbdf6cb82f1",
+    "037-a019-repair-task-audit.json": "028bea3937a978269b39000183ddfd4669fdbfaa0aa386b7c6677b4811f84ef3"
+  }
+}
