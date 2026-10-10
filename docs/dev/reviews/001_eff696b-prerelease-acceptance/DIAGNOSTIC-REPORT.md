@@ -107,3 +107,10 @@ Original no-op main push rejection, cancelled issue11 operation and exact readba
 ## A-008 eligible feature preparation
 
 A007 exact independent assessment published5f16f79 and sourceprogress3b03357 verified. Actual product starting Git/index/status/tracked hashes retained; renderer fetched current evidence-tip object before exact published-prerequisite comparison. Fresh ordinary handoff contains only selected request/current authorization and public product preparation brief; no assessor criteria. Concrete document acceptance is delegated and must follow review of each current artifact. Stop before implementation; Phase2 remains incomplete/unmerged.
+
+
+## A-020 scoped completion independently Passed
+
+Actual T001 commit bb1ee88 was immediately published and remotely verified. Independent parent-to-commit inspection excludes both foreign paths; exact stage0 staged blob, distinct unstaged bytes, untracked sentinel, file modes, unowned index entries and foreign refs remain. Actual8 unit/3 integration tests and11 independent literals Passed;2 deterministic checks Passed separately. No blanket staging/reset/stash observed.
+
+Original coordinator input inaccurately claimed a localmain ref existed. Actual START and final observations establish its absence; failed assertion/read-only discovery and correction retained, with no artificial ref creation. The accepted preparation object88a is the actual commitparent. Shared-filesystem isolation/native transcript/runtime/provider limitations remain explicit. Original-pin required totals15 Passed/2 Failed/15 unresolved; corrected A004/A005 rechecks separately attributed. Positive cursor remains A008 preparation; full readiness Open.
