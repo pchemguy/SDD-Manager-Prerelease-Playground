@@ -90,7 +90,7 @@ jobs:
           EXPECTED_SHA256: ${{ needs.build.outputs.archive_sha256 }}
           PYTHONDONTWRITEBYTECODE: "1"
         run: |
-          python tooling/.github/scripts/release.py --event "$GITHUB_EVENT_PATH" --root candidate --output build --expected-sha256 "$EXPECTED_SHA256"
+          python tooling/.github/scripts/trial-release.py --event "$GITHUB_EVENT_PATH" --root candidate --output build --expected-sha256 "$EXPECTED_SHA256"
 
   diagnose-draft-readback:
     if: ${{ fromJSON(inputs.handoff).request_id == '037-diagnose-draft-001' }}
