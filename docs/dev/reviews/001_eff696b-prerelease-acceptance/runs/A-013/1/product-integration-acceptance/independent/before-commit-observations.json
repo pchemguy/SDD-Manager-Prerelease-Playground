@@ -1,0 +1,1532 @@
+{
+  "scope": "Actual pending integration independently observed before commit; native events are consumer readback channels rather than new assessor provider calls",
+  "ordered_actual_pending_parents": [
+    "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+  ],
+  "branch": "refs/heads/main",
+  "index_equals_phase_tree": true,
+  "index_target_candidate_tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "protected_selected_history_delta_empty": true,
+  "git_commands": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1\n",
+      "stderr": "",
+      "time": 1791660801.7678697
+    },
+    {
+      "command": [
+        "git",
+        "symbolic-ref",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "refs/heads/main\n",
+      "stderr": "",
+      "time": 1791660801.7702732
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "MERGE_HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff\n",
+      "stderr": "",
+      "time": 1791660801.7721603
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v2",
+        "--untracked-files=all"
+      ],
+      "returncode": 0,
+      "stdout": "1 M. N... 100644 100644 100644 4e4a21fa946c12ebbc8a618ac58bd63edaa9b26a 8f85712cf1238c7b8b8e3ea78963d66efce5b020 AGENTS.md\n1 M. N... 100644 100644 100644 076b2a8592d567a167c3884959fc0383c931cedf 399d51501ab77591cb4c8f83b2e9350029a2e342 README.md\n1 M. N... 100644 100644 100644 7787992d419a44870722f4c3c6c677ef6b04a0e3 1065972aa9aa21d1f4e6405515af37c6d77c292a docs/dev/ARCHITECTURE.md\n1 M. N... 100644 100644 100644 4a559eed6e875435537a0d7befea7dc4c67430f2 d5ea6b517d68d85afb00a932d4508d8127fb9c38 docs/dev/DECOMPOSITION.md\n1 D. N... 100644 000000 000000 95d31431ea3c751cbd769c5c7c2febf9f2d80b37 0000000000000000000000000000000000000000 docs/dev/FEATURE-TASKS.md\n1 M. N... 100644 100644 100644 ab431c9e3f339655fcb2d8c67ca2b1f661718e81 c3dc6e906666ffee6f06e772e94d990166da224f docs/dev/PLAN-REVIEW-REPORT.md\n1 M. N... 100644 100644 100644 7c1182cc78951b34f7644da005b0c2e4a644d39e 02f6384e4e5a726c694869bb056d2f8b345142a8 docs/dev/PLAN.md\n1 M. N... 100644 100644 100644 396d252178e097bde725121d1b89abc6e78d629f 468e9e354918830b1ee77eafa6ff4f63c57ccb9d docs/dev/PROJECT.md\n1 M. N... 100644 100644 100644 42fd72c96bc7e86c1cf02afb814e11dcb4fbe2cd f304f5dd6465de972ba6ad9032bcc556d411da60 docs/dev/SPEC-REVIEW-REPORT.md\n1 M. N... 100644 100644 100644 6c2be8ab711b93cecbf7b083d5d7d6d357eb5215 e77afdd309b8c229b9591089131512e333e1a983 docs/dev/SPEC.md\n1 M. N... 100644 100644 100644 b306132504ccd7909a90de407089094ac44fcbdb e8ec557562716f927e38811650e8a4a4f8ab1a4d docs/dev/TASKS-REVIEW-REPORT.md\n1 M. N... 100644 100644 100644 baf2e2ef1493034bbddbd2028864b0cebc5a5f85 2b730b4d796a34a37f387aa3bad0205176ddedc1 docs/dev/TASKS.md\n2 R. N... 100644 100644 100644 df422da6e03788fd272d9156364ece49f3da89dd 5bc5bb656c20a4b5a49161b878aa2930f2e34c01 R85 docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md\tdocs/dev/FEATURE-PLAN-REVIEW-REPORT.md\n2 R. N... 100644 100644 100644 1477856e1795d3e23a1c5fa8b99616f243fc853b 9a1a7ff9500e19784675a915939a4dba0606c5cb R89 docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md\tdocs/dev/FEATURE-PLAN.md\n2 R. N... 100644 100644 100644 e4a69263dac864a3ee1c179861c5da94bdc4cef0 c024165dd359ea14b4ff8b709d18ff1ed5a07e91 R82 docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md\tdocs/dev/FEATURE-SPEC-REVIEW-REPORT.md\n2 R. N... 100644 100644 100644 ad87c3f9daca1e6fba0c0097e6ee05397711158a 36cc60050778a11140214d4f094697451f08e2c1 R84 docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md\tdocs/dev/FEATURE-SPEC.md\n2 R. N... 100644 100644 100644 6595f2401435cb720e02dc623af3c8e9436baf3b a7b4ba1c1be28a9a63a3d62d0a88221697de3afd R90 docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md\tdocs/dev/FEATURE-TASKS-REVIEW-REPORT.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 0f6745c44039714502727beefc5f6561f323b443 docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 e0019e493e01d81555908b30e4b2d5949831179a docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md\n1 M. N... 100644 100644 100644 e15d39287748cab48c9b1407cc87e711c8926c44 5df04de4cf157582c3f35408c413530408c5e7ba docs/dev/features/002_e7cae5b-named-file-ranges/README.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 0597bdf91ce96c0ad0623be1e0696814abdc00c7 docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 fc89a37645234a4f5079919ad7692e71f5d87f6f docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 d76c1f39f55dc8ae81a67ddbb9ad4c5fe08f8ba4 docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md\n1 M. N... 100644 100644 100644 32d3194ce111a0feac516e7628bb0fe5ce78a314 b9f1c0140809100458f5f9317615de81c19480a5 docs/dev/layout.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 7224a82c3acb514c62c5c59fa0c2243eba487079 docs/dev/reports/IMPLEMENTATION-REPORT.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 747444b7228e7a24ec3e758688a760e9121ddda7 docs/dev/reports/phases/2/2.1.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 f562743f564d7fe560ac6dea354f433a6e004ed7 docs/dev/reports/phases/2/2.2.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 a5c067d593d2c6270360f362ace08e6ae88967b4 docs/dev/reports/phases/2/PHASE-REPORT.md\n1 A. N... 000000 100644 100644 0000000000000000000000000000000000000000 b58311f7ead1059fa557849b9c0461b626b8c05a docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md\n1 M. N... 100644 100644 100644 e6e685baad74dfba7615c72c9b646e2766bb87ad fd06856787309ee93a9f4216b1ef79bb38764b0b docs/public-api.md\n1 M. N... 100644 100644 100644 a801dbb032e6cd34bf23404b75dc6f8943f85ca9 4db902de93c022a4b0e3899839719411e4e20e2b tests/integration/test_api.py\n1 M. N... 100644 100644 100644 74d59ccba8b27867af58baa5ddfb2690a62c8ab6 8ecd23107c00b6dc2e4e9ee3bc1001c9af4cce04 tests/integration/test_cli.py\n1 M. N... 100644 100644 100644 f85b203a9ec1db8ee041aa2c2a8f61a76da63b95 ff14a246e1bd4dab33b76c52f66c3aabffa9676c tests/integration/test_distribution.py\n1 M. N... 100644 100644 100644 213d952b22ebf331d74367cb3ed655080f0870f6 6f10823c2ae9800380df6b87ee8492639663619f tests/unit/test_cli.py\n1 M. N... 100644 100644 100644 82d8acd8714d5735b0f2d467dd41995e78c83459 c619bf38f359d9a5d037b2003be8e93561df5cb9 tests/unit/test_core.py\n1 M. N... 100644 100644 100644 b27a4934bb0a234d620c5d545964409079d9c434 3efe43917075fb94130baefc16b8591b7304417e tests/unit/test_io.py\n1 M. N... 100644 100644 100644 a499e2f3c79dc8cdf0c12a8f31ed43988a1deda8 288bef6702e747d9be1ee826736ca1b809bcde99 textstats/__main__.py\n1 M. N... 100644 100644 100644 19fe35e860f62d49aac11c8251ad3cae3072a14d 09cb8442c5c40be306dd1780fab311fc4dc7cc25 textstats/cli.py\n1 M. N... 100644 100644 100644 5b17cfdcd3f4285ac3bf59e47365dfd818665c6d 872175963ba892670eb4f142df431a7bf050d581 textstats/core.py\n1 M. N... 100644 100644 100644 176d742290755832ab953bbec064468b2a211cdf c26e6ae6b41e741c5ca28753569682604623eb8c textstats/io.py\n1 M. N... 100644 100644 100644 693ff81401566258206bf0c2d8745b2d817fa318 ee9f7b15db23db46a72e614c9ace837fd8bdcb3c tools/check_distribution.py\n",
+      "stderr": "",
+      "time": 1791660801.778245
+    },
+    {
+      "command": [
+        "git",
+        "ls-files",
+        "--stage"
+      ],
+      "returncode": 0,
+      "stdout": "100644 346a8885a6cfe74e3227f235ef500c97f15bc776 0\t.github/RELEASE-HANDOFF.md\n100644 46544a4584913d554656b90c8cc0faef89ee5398 0\t.github/scripts/release.py\n100644 fe8ae55254bd6a1577de7c1b1053a3c615edb8a8 0\t.github/tests/test_release.py\n100644 a6b08178ea630825c330b1c9cbcd388e89f799e6 0\t.github/workflows/release.yml\n100644 774c500341bdf31152cf8b7eea572a30a63f70d7 0\t.gitignore\n100644 8f85712cf1238c7b8b8e3ea78963d66efce5b020 0\tAGENTS.md\n100644 7bb22d266be8343e620d007d703facc143173db6 0\tAI_DISCLOSURE.md\n100644 399d51501ab77591cb4c8f83b2e9350029a2e342 0\tREADME.md\n100644 ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1 0\tSDD-MANAGER.md\n100644 1065972aa9aa21d1f4e6405515af37c6d77c292a 0\tdocs/dev/ARCHITECTURE.md\n100644 d5ea6b517d68d85afb00a932d4508d8127fb9c38 0\tdocs/dev/DECOMPOSITION.md\n100644 c3dc6e906666ffee6f06e772e94d990166da224f 0\tdocs/dev/PLAN-REVIEW-REPORT.md\n100644 02f6384e4e5a726c694869bb056d2f8b345142a8 0\tdocs/dev/PLAN.md\n100644 468e9e354918830b1ee77eafa6ff4f63c57ccb9d 0\tdocs/dev/PROJECT.md\n100644 f304f5dd6465de972ba6ad9032bcc556d411da60 0\tdocs/dev/SPEC-REVIEW-REPORT.md\n100644 e77afdd309b8c229b9591089131512e333e1a983 0\tdocs/dev/SPEC.md\n100644 e8ec557562716f927e38811650e8a4a4f8ab1a4d 0\tdocs/dev/TASKS-REVIEW-REPORT.md\n100644 2b730b4d796a34a37f387aa3bad0205176ddedc1 0\tdocs/dev/TASKS.md\n100644 5bc5bb656c20a4b5a49161b878aa2930f2e34c01 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md\n100644 9a1a7ff9500e19784675a915939a4dba0606c5cb 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md\n100644 c024165dd359ea14b4ff8b709d18ff1ed5a07e91 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md\n100644 36cc60050778a11140214d4f094697451f08e2c1 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md\n100644 a7b4ba1c1be28a9a63a3d62d0a88221697de3afd 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md\n100644 0f6745c44039714502727beefc5f6561f323b443 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md\n100644 e0019e493e01d81555908b30e4b2d5949831179a 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md\n100644 5df04de4cf157582c3f35408c413530408c5e7ba 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/README.md\n100644 0597bdf91ce96c0ad0623be1e0696814abdc00c7 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md\n100644 fc89a37645234a4f5079919ad7692e71f5d87f6f 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md\n100644 d76c1f39f55dc8ae81a67ddbb9ad4c5fe08f8ba4 0\tdocs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md\n100644 b9f1c0140809100458f5f9317615de81c19480a5 0\tdocs/dev/layout.md\n100644 7224a82c3acb514c62c5c59fa0c2243eba487079 0\tdocs/dev/reports/IMPLEMENTATION-REPORT.md\n100644 d6707fbfbfd75914bc4b49adacb8e9dceba2fad2 0\tdocs/dev/reports/phases/1/1.1.md\n100644 cbc5b7950e86567fd7d81f0944a69491651c27c9 0\tdocs/dev/reports/phases/1/1.2.md\n100644 99097550d564dc2b35e9bead3421dc0446026c8f 0\tdocs/dev/reports/phases/1/PHASE-REPORT.md\n100644 747444b7228e7a24ec3e758688a760e9121ddda7 0\tdocs/dev/reports/phases/2/2.1.md\n100644 f562743f564d7fe560ac6dea354f433a6e004ed7 0\tdocs/dev/reports/phases/2/2.2.md\n100644 a5c067d593d2c6270360f362ace08e6ae88967b4 0\tdocs/dev/reports/phases/2/PHASE-REPORT.md\n100644 b58311f7ead1059fa557849b9c0461b626b8c05a 0\tdocs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md\n100644 fd06856787309ee93a9f4216b1ef79bb38764b0b 0\tdocs/public-api.md\n100644 3519f31852dc72eb8fd61eb849518846e581171a 0\tdocs/testing/publisher-037/SETUP.json\n100644 50fa8a4ed0a325ab4e1bb6d4869df5dcd3d412be 0\ttests/__init__.py\n100644 1133ee21f6b69b73f4cd2fe75c90401351db1b82 0\ttests/integration/__init__.py\n100644 4db902de93c022a4b0e3899839719411e4e20e2b 0\ttests/integration/test_api.py\n100644 8ecd23107c00b6dc2e4e9ee3bc1001c9af4cce04 0\ttests/integration/test_cli.py\n100644 ff14a246e1bd4dab33b76c52f66c3aabffa9676c 0\ttests/integration/test_distribution.py\n100644 3f6f2999a92e733edcc18bb803bc634d40dba54c 0\ttests/unit/__init__.py\n100644 6f10823c2ae9800380df6b87ee8492639663619f 0\ttests/unit/test_cli.py\n100644 c619bf38f359d9a5d037b2003be8e93561df5cb9 0\ttests/unit/test_core.py\n100644 3efe43917075fb94130baefc16b8591b7304417e 0\ttests/unit/test_io.py\n100644 bd367d487f47b71776ad74ce3ec17dc22458619b 0\ttextstats-run-resources/PLUGIN-SOURCE.json\n100644 36df609fc180fb64b1fb8b34e09c72381ec3a988 0\ttextstats-run-resources/plugin/.codex-plugin/plugin.json\n100644 b21cca2057f34a94b2e30c7820b927cb6ee32c00 0\ttextstats-run-resources/plugin/AGENTS.md\n100644 7bb22d266be8343e620d007d703facc143173db6 0\ttextstats-run-resources/plugin/AI_DISCLOSURE.md\n100644 4816775d4196094f9a3fb2a636b2b59aa67d4b92 0\ttextstats-run-resources/plugin/Greenfield Project Prompt Template.md\n100644 a0740f769398d0870cfba32ef7e707c4c4c2f57b 0\ttextstats-run-resources/plugin/LICENSE\n100644 4cbc8ca08d6d5e3f018301355f1ee2e47e9ac114 0\ttextstats-run-resources/plugin/README.md\n100644 ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1 0\ttextstats-run-resources/plugin/SDD-MANAGER.md\n100644 7bb22d266be8343e620d007d703facc143173db6 0\ttextstats-run-resources/plugin/assets/AI_DISCLOSURE.md\n100644 ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1 0\ttextstats-run-resources/plugin/assets/SDD-MANAGER.md\n100644 61f676b6266e5920b48c64667528c287a97e195e 0\ttextstats-run-resources/plugin/assets/icon.png\n100644 15e980d6ebf4774f9951d19c42df2ccff8955a3e 0\ttextstats-run-resources/plugin/assets/icon.svg\n100644 61f676b6266e5920b48c64667528c287a97e195e 0\ttextstats-run-resources/plugin/assets/logo.png\n100644 15e980d6ebf4774f9951d19c42df2ccff8955a3e 0\ttextstats-run-resources/plugin/assets/logo.svg\n100644 36df609fc180fb64b1fb8b34e09c72381ec3a988 0\ttextstats-run-resources/plugin/plugin.json\n100644 82248c3a5ebb5424df805f8719c099007e165bca 0\ttextstats-run-resources/plugin/skills/sdd-conventions/SKILL.md\n100644 3dab3d4e4dec031943d046ed7a549437b25436f0 0\ttextstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml\n100644 b20df81eb3b391b2e33d2fd8c4e20369b23f7e58 0\ttextstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg\n100644 cb36d54a708c6085fc36b5fef1fbff268646ffe5 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md\n100644 bd08ea06432f318cedf17cc3108a58af8f15ea96 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md\n100644 1141d97a90d45b7ad0b86f575d03228976a3609e 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md\n100644 d9153f92334f277209f1fd5396d3d7904dc03212 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md\n100644 9ef3cf68aa0447f2e214a6766d4846eede81ee3b 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md\n100644 a2c4d3aa3fa75b612dceb5dc5302d8e6b9dde527 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md\n100644 82d9503c93ac424ffb7ef2a82125d94fda885493 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md\n100644 72bd0a4cca48de252d99a5e8a03039ba2c5a196f 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md\n100644 bd0e99d3c1ff4f3410ae898d20881fb961e6474d 0\ttextstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md\n100644 e61c4852491a41d26e3e5cf4ef6d86dae22554d1 0\ttextstats-run-resources/plugin/skills/sdd-design/SKILL.md\n100644 d12f28e77909eec0b3e092597f9dcf7db49b5f08 0\ttextstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml\n100644 c6ba99d4568e4f7d75ffbfa0701ad42013bc0547 0\ttextstats-run-resources/plugin/skills/sdd-design/assets/icon.svg\n100644 b42c762672d3737fdfe6f8a333519c87e29cc7ac 0\ttextstats-run-resources/plugin/skills/sdd-design/references/architecture.md\n100644 9022f08d8b7ebffdb5044c42d189fa0c92c4cec2 0\ttextstats-run-resources/plugin/skills/sdd-design/references/decomposition.md\n100644 4f091c3c9ce409ce7c468d13bf0e69cd2740b419 0\ttextstats-run-resources/plugin/skills/sdd-design/references/exploration.md\n100644 6c6e2ebd872a9352d17f9e1451089c49680f12b4 0\ttextstats-run-resources/plugin/skills/sdd-docs/SKILL.md\n100644 23cbd5cdf2cf538927601a230c18638bb4f53e34 0\ttextstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml\n100644 abcfcf450057db9ddd954ff1ec2b4e629ba0f4c0 0\ttextstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg\n100644 31c3aa7b2818b0d8b14c266b90a83ac4d4a9fb5a 0\ttextstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md\n100644 342b4afe4e3596b9b1a22d5c7469437a90f5f525 0\ttextstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md\n100644 9f51adef2d5935b6a423005725a4681d1d1c877a 0\ttextstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md\n100644 aa1c1e657037e97e9c1f770f8b2ac0efcf71e409 0\ttextstats-run-resources/plugin/skills/sdd-forge/SKILL.md\n100644 d63cd5e6c4030779f767937aa95e04d773d89c68 0\ttextstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml\n100644 fd3590b54b4be1fe8e79e8ab0c8d36250c51ca4e 0\ttextstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg\n100644 5b629ebb94a6bab80d89ceabc3672a55c4676e9c 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md\n100644 36ee6189110d2319b46b8be35524285275982822 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md\n100644 5fbc1bd5cad73b39e7ab5e70f92e59d74af8d0a4 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-packaging.md\n100644 8d9f95d25c0b2efa43eaf2cd06d5b069db31d9a1 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md\n100644 8b611adc9b3c9898de665b9e8f426bdb652cace7 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-release-workflows.md\n100644 dbb6cddb18fc5711891241e1f4493088dba775e2 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github-releases.md\n100644 a21bb5ec4de7291082266b69e0518e03fdfc4614 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/github.md\n100644 e9165abd49085f09d0cf74b08b73c26582c65f2a 0\ttextstats-run-resources/plugin/skills/sdd-forge/references/release-highlights.md\n100644 d3825b2c598e6573409fe1aaacb762aafee68fc8 0\ttextstats-run-resources/plugin/skills/sdd-implement/SKILL.md\n100644 f50ba4ba0abbb5e08a0c451ab1705a4802dbe2ec 0\ttextstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml\n100644 8a2f97389aa0d69489783422c2e55eb302251d17 0\ttextstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg\n100644 5167a3ba9a97de0d43bb87f31973a1901d1365de 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/browser-capabilities.md\n100644 e5df84707816e0541560717fb3d66ba3dff89d44 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md\n100644 a3607d913dee65e478fc23390f92e06d41fc6ec5 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/environment-recovery.md\n100644 81402919f16d38b021bed35d47ccfd570018d154 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md\n100644 e89feee044835f89bc217211308aa992d8d8732f 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md\n100644 78b3755d2d5119d6c0ed2c2f16ceb6fbb5643a06 0\ttextstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md\n100644 71e4599ede6df67d287b36a27f65d17c066068be 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md\n100644 7d00c608c710962ad7c6737b325cd98875dd22f4 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml\n100644 46ba7ac9d910129ee3a41a1a85a5bd3f15b86444 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg\n100644 cebf9416c8683352b6fd066bc9c92a0204cb1f48 0\ttextstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md\n100644 c25203f73bef5da236dc72f672610002249f981f 0\ttextstats-run-resources/plugin/skills/sdd-manage/SKILL.md\n100644 1f2b46444ad69cbfdf7aac5829245bc2a2615291 0\ttextstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml\n100644 830c3ac25b2b88cf62b89ac70179ce41498192e7 0\ttextstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg\n100644 5d14404048625eda4260dc02c8b1dac031220661 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md\n100644 a71817e9ff75d734b647b1b5b237f47414b4f5f9 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md\n100644 963ca67e70f7f65a7ddf37700eacdf2faa7e9639 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/coordination.md\n100644 96e1bee22414550d30556e09f6f736b02968eeeb 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/credentials.md\n100644 28ea16cde6d0335b55af964348182feb2d865f7e 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md\n100644 ac2a66694acf0c7435ed7d6469e54c6dac2cb408 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/examples.md\n100644 15fb0fe786a0d3f56a37ca7b79ad6a0d8901a04b 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md\n100644 5a1b29497f561fa08f3e4a07aecd28ec5c079d09 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md\n100644 b83ee8bb17ed09c77df5a1156176a0dd81147501 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md\n100644 9d40275f249ddf8db6993a903f20ce52fae4e0c9 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/prerelease-review.md\n100644 0cec00be146b05788032cdc17984113123f14a45 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md\n100644 7abf28f242cc9b84ee16e19519a7f1f6fd0f1782 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md\n100644 2c3c1a6c7e3f7f95812d72d40fdf0646b9513868 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/revision-modes.md\n100644 1ad8c47d82ef183d458331272f8a9a4361516367 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md\n100644 7e4f466303d94a7e2d253595db7421e35ed038bc 0\ttextstats-run-resources/plugin/skills/sdd-manage/references/workflows.md\n100644 7e7d4c11900a109c8e45b540780e05b228ae644b 0\ttextstats-run-resources/plugin/skills/sdd-orient/SKILL.md\n100644 ed158258a6b466566be64ddfe4a28e177185cf37 0\ttextstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml\n100644 60d6d107bf8e1ee9650ecb11b7dc174465a3919f 0\ttextstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg\n100644 1e664a82486e4fafb13fe998d3c29588710acf5a 0\ttextstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md\n100644 45d4036b4696fca363509ef63c34ab9bb6e54ddd 0\ttextstats-run-resources/plugin/skills/sdd-plan/SKILL.md\n100644 68ea6836b1b490fe9a997dcc7a8cb3fc75af8668 0\ttextstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml\n100644 92a571408af0b8c438081e783280bac1278b4773 0\ttextstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg\n100644 98c0ebe4010999635b7254c4505e916c2a19f2d1 0\ttextstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md\n100644 cac865f26af0cf08abac926db0d4402a98109e0e 0\ttextstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md\n100644 0ebf37b133032547c9dcf024cdbfa0de0a18916f 0\ttextstats-run-resources/plugin/skills/sdd-plan/references/review.md\n100644 b3f821e619d78fb2bde6c2c13c29feddbf01bd51 0\ttextstats-run-resources/plugin/skills/sdd-report/SKILL.md\n100644 37c258a151f148267b16005872902f5c1042550d 0\ttextstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml\n100644 f2a15209df0860b1e5cd7e5bb40c44bc78890c9a 0\ttextstats-run-resources/plugin/skills/sdd-report/assets/icon.svg\n100644 d697641616c8c69327af01fad98238879544cfce 0\ttextstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md\n100644 0dcbbca446683b5466f076f73af8bb34d6d93819 0\ttextstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md\n100644 a554e01782a0dd049d20033fdb54a33a14647773 0\ttextstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md\n100644 5c68aaa854ef6d7159141682ba14695f3507c5d7 0\ttextstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md\n100644 54f094710bc3a1617c8031c959b362c5837aaeaa 0\ttextstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md\n100644 a069cfd1840c12f3307a6b99e70e89ebc5a7a133 0\ttextstats-run-resources/plugin/skills/sdd-report/references/releases.md\n100644 75a25e252162eb9d10f767638519b5f5629da651 0\ttextstats-run-resources/plugin/skills/sdd-specify/SKILL.md\n100644 d1cc2a459af4ea4493e3662fc15b8db377f2ad95 0\ttextstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml\n100644 c9cff07dd41a60d33692bb536d18aa6980a4149a 0\ttextstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg\n100644 64239362c0273e70b058af5ef8f6e4d8a795959e 0\ttextstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md\n100644 4acdee0c44c9d2a49261e25aadc1445c085e833d 0\ttextstats-run-resources/plugin/skills/sdd-specify/references/review.md\n100644 0ff7852868752f668d1a963fe5809c85000ea0f8 0\ttextstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md\n100644 47c40c9015f19c5a120d03e6d38c4c7628b5adfa 0\ttextstats-run-resources/plugin/skills/sdd-steer/SKILL.md\n100644 b53d7801ae392cdb6c1e64deb220f4f61e828099 0\ttextstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml\n100644 d577273d6ba5619d1374fcae56bdb8dcd29d7b6b 0\ttextstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg\n100644 1377a56a0a21580f686e2962604d553850d8c211 0\ttextstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md\n100644 424bed26bfe8a228eea5cac8028e77d9c2ee2e63 0\ttextstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md\n100644 69d13c6cc10337f93360460236e1eaed0345a103 0\ttextstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md\n100644 115dcfad8735c0aa6ad03048faaddb66852416c7 0\ttextstats-run-resources/plugin/skills/sdd-tasks/SKILL.md\n100644 e90fa5ecd4bbce3e7799b0d933367ea0144f2dcf 0\ttextstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml\n100644 8fe415c8e30e2bf394aea248036c9ec766e1bcb6 0\ttextstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg\n100644 a9fc420f41b01d4e101b30bcbd632ece624a4c8f 0\ttextstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md\n100644 cea681b5930de76765d8ea32b05bb6d036cdbf9e 0\ttextstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md\n100644 88dca872a9143345196473d0916445ed85707c56 0\ttextstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md\n100644 abf0390320aa14406af7a520b9b0739fdda9bf08 0\ttextstats-run-resources/plugin/skills/sdd-tdd/LICENSE\n100644 9760bd4e1cedb5ab7acf05c38149364654089e4d 0\ttextstats-run-resources/plugin/skills/sdd-tdd/SKILL.md\n100644 eb937f2c8becb535ca4c455bbbcb93bf4b317aef 0\ttextstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml\n100644 99a80528d2c95c83e41598b14f19c5ace9b83e3a 0\ttextstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg\n100644 92ce970bebdc920135a1bbe713f35d6a313d9c19 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md\n100644 deec846b8ba67f476de885e759bba15a9a9b10ab 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md\n100644 20772b47c30d2a804401b4f97bb3db9a949da8bf 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md\n100644 e9f9afb71e88da8e2a810c2646e346ab5dc34ab2 0\ttextstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md\n100644 3bb8edf6277c99fb60f0698bbc72a88c98af33b2 0\ttextstats-run-resources/plugin/skills/sdd-verify/SKILL.md\n100644 af341267164ded2e20f01c137c1d23aac0e66e5e 0\ttextstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml\n100644 b1f8167826407e756ba11cd9f5870b8d494101fa 0\ttextstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg\n100644 1101e288fdfd3f37e3083e49a5a3546424984b40 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md\n100644 0aafefecaf6bf4b8bf8ec0c5ec7b6c5d0f06aa32 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md\n100644 fec7587f01a2c680810ade03b291e8fa80ee4e42 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md\n100644 e40ddb56009ca0c26090d3384197eefb4b86b589 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md\n100644 124c1d32cfe467f2fadb101b9cbb65540f399c1c 0\ttextstats-run-resources/plugin/skills/sdd-verify/references/release-checks.md\n100644 db3821caecba190e1283572a02f31ebbb411bc22 0\ttextstats/__init__.py\n100644 288bef6702e747d9be1ee826736ca1b809bcde99 0\ttextstats/__main__.py\n100644 09cb8442c5c40be306dd1780fab311fc4dc7cc25 0\ttextstats/cli.py\n100644 872175963ba892670eb4f142df431a7bf050d581 0\ttextstats/core.py\n100644 c26e6ae6b41e741c5ca28753569682604623eb8c 0\ttextstats/io.py\n100644 ee9f7b15db23db46a72e614c9ace837fd8bdcb3c 0\ttools/check_distribution.py\n100644 febb2fc852f5cae6537562d1b48d24bcebfa679e 0\ttools/check_tests.py\n100644 a4247542b7fb5b0ecc866bde2311b41d5294509b 0\ttools/package_source.py\n",
+      "stderr": "",
+      "time": 1791660801.780796
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--name-status"
+      ],
+      "returncode": 0,
+      "stdout": "M\tAGENTS.md\nM\tREADME.md\nM\tdocs/dev/ARCHITECTURE.md\nM\tdocs/dev/DECOMPOSITION.md\nD\tdocs/dev/FEATURE-TASKS.md\nM\tdocs/dev/PLAN-REVIEW-REPORT.md\nM\tdocs/dev/PLAN.md\nM\tdocs/dev/PROJECT.md\nM\tdocs/dev/SPEC-REVIEW-REPORT.md\nM\tdocs/dev/SPEC.md\nM\tdocs/dev/TASKS-REVIEW-REPORT.md\nM\tdocs/dev/TASKS.md\nR085\tdocs/dev/FEATURE-PLAN-REVIEW-REPORT.md\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md\nR089\tdocs/dev/FEATURE-PLAN.md\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md\nR082\tdocs/dev/FEATURE-SPEC-REVIEW-REPORT.md\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md\nR084\tdocs/dev/FEATURE-SPEC.md\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md\nR090\tdocs/dev/FEATURE-TASKS-REVIEW-REPORT.md\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md\nA\tdocs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md\nA\tdocs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md\nM\tdocs/dev/features/002_e7cae5b-named-file-ranges/README.md\nA\tdocs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md\nA\tdocs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md\nA\tdocs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md\nM\tdocs/dev/layout.md\nA\tdocs/dev/reports/IMPLEMENTATION-REPORT.md\nA\tdocs/dev/reports/phases/2/2.1.md\nA\tdocs/dev/reports/phases/2/2.2.md\nA\tdocs/dev/reports/phases/2/PHASE-REPORT.md\nA\tdocs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md\nM\tdocs/public-api.md\nM\ttests/integration/test_api.py\nM\ttests/integration/test_cli.py\nM\ttests/integration/test_distribution.py\nM\ttests/unit/test_cli.py\nM\ttests/unit/test_core.py\nM\ttests/unit/test_io.py\nM\ttextstats/__main__.py\nM\ttextstats/cli.py\nM\ttextstats/core.py\nM\ttextstats/io.py\nM\ttools/check_distribution.py\n",
+      "stderr": "",
+      "time": 1791660801.7850115
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+        "--name-status"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "time": 1791660801.7876008
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "time": 1791660801.7954938
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+        "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+        "--",
+        "textstats-run-resources",
+        ".github",
+        "docs/dev/features",
+        "docs/dev/reports/phases/1",
+        "docs/dev/reports/phases/2/2.1.md",
+        "docs/dev/reports/phases/2/revisions"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "time": 1791660801.79815
+    }
+  ],
+  "consumer_native_own_closure_events": [
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "5be62f030312bafb040080371392ecd23db3fcf455a90924b17fd268d0963f61",
+      "response_bytes": 5859,
+      "headers": {
+        "X-RateLimit-Remaining": "4955",
+        "X-RateLimit-Reset": "1791660989",
+        "X-GitHub-Request-Id": "3521:B914C:7DDBF6:19E387D:6ACA9148"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "repository_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/labels{/name}",
+        "comments_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/comments",
+        "events_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/events",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "id": 5791788182,
+        "node_id": "I_kwDOVDjAUc8AAAABWTeslg",
+        "number": 18,
+        "title": "[T-017] Review, test and report phase 2 and final delivery",
+        "user": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 12626943170,
+            "node_id": "LA_kwDOVDjAUc8AAAAC8J_cwg",
+            "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+            "name": "sdd-phase-2-Ranges-and-stdin",
+            "color": "5319e7",
+            "default": false,
+            "description": "Named-file ranges and strict UTF-8 stdin; exact text output.",
+            "archived_at": null,
+            "archived_by": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+          "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+          "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+          "id": 18469339,
+          "node_id": "MI_kwDOVDjAUc4BGdHb",
+          "number": 6,
+          "title": "sdd-2.3-Phase-2-and-final-review",
+          "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+          "creator": {
+            "login": "pchemguy",
+            "id": 39730837,
+            "node_id": "MDQ6VXNlcjM5NzMwODM3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/pchemguy",
+            "html_url": "https://github.com/pchemguy",
+            "followers_url": "https://api.github.com/users/pchemguy/followers",
+            "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+            "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+            "repos_url": "https://api.github.com/users/pchemguy/repos",
+            "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "open_issues": 1,
+          "closed_issues": 0,
+          "state": "open",
+          "created_at": "2026-10-10T13:45:40Z",
+          "updated_at": "2026-10-10T13:46:18Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "comments": 0,
+        "created_at": "2026-10-10T13:46:18Z",
+        "updated_at": "2026-10-10T17:58:54Z",
+        "closed_at": null,
+        "assignee": null,
+        "author_association": "OWNER",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Task brief <!-- sdd-forge:task-id=T-017 -->\n\n**Context:** Current text/count/BOM/range acceptance; T-013\u2013T-017 remain pending and paused. Historical task results remain preserved; this amendment does not execute new main-list tasks.\n\nScope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n\nDepends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n\nEvidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n\nReports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.\n\n**Sources:** `docs/dev/TASKS.md`, `docs/dev/PLAN.md`, `docs/dev/SPEC.md`, `docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md`.\n<!-- /sdd-forge:task-id=T-017 -->",
+        "closed_by": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "c654c6a2d9b78e8c4d0732e9e6d9ea495904c0d182172478e48cb79ac84a78ed",
+      "response_bytes": 1614,
+      "headers": {
+        "X-GitHub-Request-Id": "3510:108295:84B313:1B5881D:6ACA914D",
+        "X-RateLimit-Remaining": "4984",
+        "X-RateLimit-Reset": "1791662544"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+        "id": 18469339,
+        "node_id": "MI_kwDOVDjAUc4BGdHb",
+        "number": 6,
+        "title": "sdd-2.3-Phase-2-and-final-review",
+        "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+        "creator": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 1,
+        "closed_issues": 0,
+        "state": "open",
+        "created_at": "2026-10-10T13:45:40Z",
+        "updated_at": "2026-10-10T13:46:18Z",
+        "due_on": null,
+        "closed_at": null
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?milestone=6&state=all&per_page=100",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "8c7154479edf4f1095d013d5b547890f5264487a15cce62c3dc02b93b282903a",
+      "response_bytes": 5861,
+      "headers": {
+        "X-RateLimit-Remaining": "4954",
+        "X-RateLimit-Reset": "1791660989",
+        "X-GitHub-Request-Id": "352C:2993B2:7DFE39:19F35FE:6ACA9151"
+      },
+      "response": [
+        {
+          "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+          "id": 5791788182,
+          "number": 18,
+          "title": "[T-017] Review, test and report phase 2 and final delivery",
+          "labels": [
+            {
+              "id": 12626943170,
+              "node_id": "LA_kwDOVDjAUc8AAAAC8J_cwg",
+              "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+              "name": "sdd-phase-2-Ranges-and-stdin",
+              "color": "5319e7",
+              "default": false,
+              "description": "Named-file ranges and strict UTF-8 stdin; exact text output.",
+              "archived_at": null,
+              "archived_by": null
+            }
+          ],
+          "state": "open",
+          "milestone": {
+            "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+            "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+            "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+            "id": 18469339,
+            "node_id": "MI_kwDOVDjAUc4BGdHb",
+            "number": 6,
+            "title": "sdd-2.3-Phase-2-and-final-review",
+            "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+            "creator": {
+              "login": "pchemguy",
+              "id": 39730837,
+              "node_id": "MDQ6VXNlcjM5NzMwODM3",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/pchemguy",
+              "html_url": "https://github.com/pchemguy",
+              "followers_url": "https://api.github.com/users/pchemguy/followers",
+              "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+              "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+              "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+              "repos_url": "https://api.github.com/users/pchemguy/repos",
+              "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "open_issues": 1,
+            "closed_issues": 0,
+            "state": "open",
+            "created_at": "2026-10-10T13:45:40Z",
+            "updated_at": "2026-10-10T13:46:18Z",
+            "due_on": null,
+            "closed_at": null
+          },
+          "body": "## Task brief <!-- sdd-forge:task-id=T-017 -->\n\n**Context:** Current text/count/BOM/range acceptance; T-013\u2013T-017 remain pending and paused. Historical task results remain preserved; this amendment does not execute new main-list tasks.\n\nScope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n\nDepends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n\nEvidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n\nReports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.\n\n**Sources:** `docs/dev/TASKS.md`, `docs/dev/PLAN.md`, `docs/dev/SPEC.md`, `docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md`.\n<!-- /sdd-forge:task-id=T-017 -->",
+          "state_reason": null
+        }
+      ]
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "5be62f030312bafb040080371392ecd23db3fcf455a90924b17fd268d0963f61",
+      "response_bytes": 5859,
+      "headers": {
+        "X-RateLimit-Remaining": "4950",
+        "X-RateLimit-Reset": "1791660989",
+        "X-GitHub-Request-Id": "3460:E47A7:D40D62:2BA2FC1:6ACA925B"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "repository_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/labels{/name}",
+        "comments_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/comments",
+        "events_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/events",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "id": 5791788182,
+        "node_id": "I_kwDOVDjAUc8AAAABWTeslg",
+        "number": 18,
+        "title": "[T-017] Review, test and report phase 2 and final delivery",
+        "user": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 12626943170,
+            "node_id": "LA_kwDOVDjAUc8AAAAC8J_cwg",
+            "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+            "name": "sdd-phase-2-Ranges-and-stdin",
+            "color": "5319e7",
+            "default": false,
+            "description": "Named-file ranges and strict UTF-8 stdin; exact text output.",
+            "archived_at": null,
+            "archived_by": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignees": [],
+        "milestone": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+          "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+          "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+          "id": 18469339,
+          "node_id": "MI_kwDOVDjAUc4BGdHb",
+          "number": 6,
+          "title": "sdd-2.3-Phase-2-and-final-review",
+          "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+          "creator": {
+            "login": "pchemguy",
+            "id": 39730837,
+            "node_id": "MDQ6VXNlcjM5NzMwODM3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/pchemguy",
+            "html_url": "https://github.com/pchemguy",
+            "followers_url": "https://api.github.com/users/pchemguy/followers",
+            "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+            "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+            "repos_url": "https://api.github.com/users/pchemguy/repos",
+            "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "open_issues": 1,
+          "closed_issues": 0,
+          "state": "open",
+          "created_at": "2026-10-10T13:45:40Z",
+          "updated_at": "2026-10-10T13:46:18Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "comments": 0,
+        "created_at": "2026-10-10T13:46:18Z",
+        "updated_at": "2026-10-10T17:58:54Z",
+        "closed_at": null,
+        "assignee": null,
+        "author_association": "OWNER",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Task brief <!-- sdd-forge:task-id=T-017 -->\n\n**Context:** Current text/count/BOM/range acceptance; T-013\u2013T-017 remain pending and paused. Historical task results remain preserved; this amendment does not execute new main-list tasks.\n\nScope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n\nDepends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n\nEvidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n\nReports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.\n\n**Sources:** `docs/dev/TASKS.md`, `docs/dev/PLAN.md`, `docs/dev/SPEC.md`, `docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md`.\n<!-- /sdd-forge:task-id=T-017 -->",
+        "closed_by": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "pinned_comment": null
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/comments?per_page=100",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "response_bytes": 2,
+      "headers": {
+        "X-RateLimit-Remaining": "4949",
+        "X-RateLimit-Reset": "1791660989",
+        "X-GitHub-Request-Id": "3461:373A78:CB72AD:29B5B73:6ACA925F"
+      },
+      "response": []
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/comments",
+      "request_payload": {
+        "body": "T-017 verified on phase/2-json-and-stdin at published commit c05b65958e2a386cf2ae8782dca3e749ed9b60ff. Final separate code review/report pair accepted at791d494; 37 unit/34 integration tests, 478 real extracted module cases and all12 README/API fences passed on Python3.12.14. TODO None; historical failures and runtime limits retained. Owning result, evidence and initial completion checkbox are atomic; exact origin branch readback verified. Target integration remains separate."
+      },
+      "status": 201,
+      "response_sha256": "1211763f11a01fc69d850e140c012d6ed2035340be9f583e06a4cbd23accba9c",
+      "response_bytes": 2227,
+      "headers": {
+        "X-GitHub-Request-Id": "3464:A56C4:DE7D04:2DD080A:6ACA9264",
+        "X-RateLimit-Remaining": "4982",
+        "X-RateLimit-Reset": "1791662544"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/comments/6101353644",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18#issuecomment-6101353644",
+        "issue_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "id": 6101353644,
+        "node_id": "IC_kwDOVDjAUc8AAAABa6tErA",
+        "user": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?u=77eff97e2e289115792e57b4be4e3c84d551a145&v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "created_at": "2026-10-10T19:30:44Z",
+        "updated_at": "2026-10-10T19:30:44Z",
+        "author_association": "OWNER",
+        "body": "T-017 verified on phase/2-json-and-stdin at published commit c05b65958e2a386cf2ae8782dca3e749ed9b60ff. Final separate code review/report pair accepted at791d494; 37 unit/34 integration tests, 478 real extracted module cases and all12 README/API fences passed on Python3.12.14. TODO None; historical failures and runtime limits retained. Owning result, evidence and initial completion checkbox are atomic; exact origin branch readback verified. Target integration remains separate.",
+        "reactions": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/comments/6101353644/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "minimized": null,
+        "pin": null
+      }
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+      "request_payload": {
+        "state": "closed",
+        "state_reason": "completed"
+      },
+      "status": 200,
+      "response_sha256": "8b218b2d07f027e32453a234028b53631a5589a3403940d429e8cc604f7990bd",
+      "response_bytes": 6815,
+      "headers": {
+        "Link": "<https://docs.github.com/en/rest/about-the-rest-api/api-versions>; rel=\"deprecation\"; type=\"text/html\"",
+        "X-RateLimit-Remaining": "4981",
+        "X-RateLimit-Reset": "1791662544",
+        "X-GitHub-Request-Id": "34ED:349995:11D8316:14EE0CC:6ACA926D"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "repository_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/labels{/name}",
+        "comments_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/comments",
+        "events_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/events",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "id": 5791788182,
+        "node_id": "I_kwDOVDjAUc8AAAABWTeslg",
+        "number": 18,
+        "title": "[T-017] Review, test and report phase 2 and final delivery",
+        "user": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 12626943170,
+            "node_id": "LA_kwDOVDjAUc8AAAAC8J_cwg",
+            "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+            "name": "sdd-phase-2-Ranges-and-stdin",
+            "color": "5319e7",
+            "default": false,
+            "description": "Named-file ranges and strict UTF-8 stdin; exact text output.",
+            "archived_at": null,
+            "archived_by": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+          "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+          "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+          "id": 18469339,
+          "node_id": "MI_kwDOVDjAUc4BGdHb",
+          "number": 6,
+          "title": "sdd-2.3-Phase-2-and-final-review",
+          "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+          "creator": {
+            "login": "pchemguy",
+            "id": 39730837,
+            "node_id": "MDQ6VXNlcjM5NzMwODM3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/pchemguy",
+            "html_url": "https://github.com/pchemguy",
+            "followers_url": "https://api.github.com/users/pchemguy/followers",
+            "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+            "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+            "repos_url": "https://api.github.com/users/pchemguy/repos",
+            "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "open_issues": 0,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2026-10-10T13:45:40Z",
+          "updated_at": "2026-10-10T19:30:54Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "comments": 1,
+        "created_at": "2026-10-10T13:46:18Z",
+        "updated_at": "2026-10-10T19:30:53Z",
+        "closed_at": "2026-10-10T19:30:53Z",
+        "assignee": null,
+        "author_association": "OWNER",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Task brief <!-- sdd-forge:task-id=T-017 -->\n\n**Context:** Current text/count/BOM/range acceptance; T-013\u2013T-017 remain pending and paused. Historical task results remain preserved; this amendment does not execute new main-list tasks.\n\nScope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n\nDepends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n\nEvidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n\nReports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.\n\n**Sources:** `docs/dev/TASKS.md`, `docs/dev/PLAN.md`, `docs/dev/SPEC.md`, `docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md`.\n<!-- /sdd-forge:task-id=T-017 -->",
+        "closed_by": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "8b218b2d07f027e32453a234028b53631a5589a3403940d429e8cc604f7990bd",
+      "response_bytes": 6815,
+      "headers": {
+        "X-RateLimit-Remaining": "4947",
+        "X-RateLimit-Reset": "1791660989",
+        "X-GitHub-Request-Id": "34F4:1E955C:1166B8D:147C814:6ACA9271"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "repository_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/labels{/name}",
+        "comments_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/comments",
+        "events_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/events",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+        "id": 5791788182,
+        "node_id": "I_kwDOVDjAUc8AAAABWTeslg",
+        "number": 18,
+        "title": "[T-017] Review, test and report phase 2 and final delivery",
+        "user": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 12626943170,
+            "node_id": "LA_kwDOVDjAUc8AAAAC8J_cwg",
+            "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+            "name": "sdd-phase-2-Ranges-and-stdin",
+            "color": "5319e7",
+            "default": false,
+            "description": "Named-file ranges and strict UTF-8 stdin; exact text output.",
+            "archived_at": null,
+            "archived_by": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignees": [],
+        "milestone": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+          "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+          "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+          "id": 18469339,
+          "node_id": "MI_kwDOVDjAUc4BGdHb",
+          "number": 6,
+          "title": "sdd-2.3-Phase-2-and-final-review",
+          "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+          "creator": {
+            "login": "pchemguy",
+            "id": 39730837,
+            "node_id": "MDQ6VXNlcjM5NzMwODM3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/pchemguy",
+            "html_url": "https://github.com/pchemguy",
+            "followers_url": "https://api.github.com/users/pchemguy/followers",
+            "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+            "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+            "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+            "repos_url": "https://api.github.com/users/pchemguy/repos",
+            "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "open_issues": 0,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2026-10-10T13:45:40Z",
+          "updated_at": "2026-10-10T19:30:54Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "comments": 1,
+        "created_at": "2026-10-10T13:46:18Z",
+        "updated_at": "2026-10-10T19:30:53Z",
+        "closed_at": "2026-10-10T19:30:53Z",
+        "assignee": null,
+        "author_association": "OWNER",
+        "active_lock_reason": null,
+        "sub_issues_summary": {
+          "total": 0,
+          "completed": 0,
+          "percent_completed": 0
+        },
+        "issue_dependencies_summary": {
+          "blocked_by": 0,
+          "total_blocked_by": 0,
+          "blocking": 0,
+          "total_blocking": 0
+        },
+        "body": "## Task brief <!-- sdd-forge:task-id=T-017 -->\n\n**Context:** Current text/count/BOM/range acceptance; T-013\u2013T-017 remain pending and paused. Historical task results remain preserved; this amendment does not execute new main-list tasks.\n\nScope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n\nDepends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n\nEvidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n\nReports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.\n\n**Sources:** `docs/dev/TASKS.md`, `docs/dev/PLAN.md`, `docs/dev/SPEC.md`, `docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md`.\n<!-- /sdd-forge:task-id=T-017 -->",
+        "closed_by": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "reactions": {
+          "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18/timeline",
+        "performed_via_github_app": null,
+        "state_reason": "completed",
+        "pinned_comment": null
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "6807cf38c0e0f373add3e53dfc360dec299013fd1fa3e2e430dbfb7efdf7a440",
+      "response_bytes": 1614,
+      "headers": {
+        "X-RateLimit-Remaining": "4980",
+        "X-RateLimit-Reset": "1791662544",
+        "X-GitHub-Request-Id": "34AA:360064:F9E8D9:12658DE:6ACA927A"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+        "id": 18469339,
+        "node_id": "MI_kwDOVDjAUc4BGdHb",
+        "number": 6,
+        "title": "sdd-2.3-Phase-2-and-final-review",
+        "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+        "creator": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 0,
+        "closed_issues": 1,
+        "state": "open",
+        "created_at": "2026-10-10T13:45:40Z",
+        "updated_at": "2026-10-10T19:30:54Z",
+        "due_on": null,
+        "closed_at": null
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?milestone=6&state=all&per_page=100",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "2564f72ceb753ac8343ce3d3115e40e90ca881c7ec7cb02c56924c65bbcee7ce",
+      "response_bytes": 6817,
+      "headers": {
+        "X-RateLimit-Remaining": "4946",
+        "X-RateLimit-Reset": "1791660989",
+        "X-GitHub-Request-Id": "34D2:358CB1:11D2D7F:14E8C38:6ACA927F"
+      },
+      "response": [
+        {
+          "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+          "id": 5791788182,
+          "number": 18,
+          "title": "[T-017] Review, test and report phase 2 and final delivery",
+          "labels": [
+            {
+              "id": 12626943170,
+              "node_id": "LA_kwDOVDjAUc8AAAAC8J_cwg",
+              "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+              "name": "sdd-phase-2-Ranges-and-stdin",
+              "color": "5319e7",
+              "default": false,
+              "description": "Named-file ranges and strict UTF-8 stdin; exact text output.",
+              "archived_at": null,
+              "archived_by": null
+            }
+          ],
+          "state": "closed",
+          "milestone": {
+            "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+            "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+            "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+            "id": 18469339,
+            "node_id": "MI_kwDOVDjAUc4BGdHb",
+            "number": 6,
+            "title": "sdd-2.3-Phase-2-and-final-review",
+            "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+            "creator": {
+              "login": "pchemguy",
+              "id": 39730837,
+              "node_id": "MDQ6VXNlcjM5NzMwODM3",
+              "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/pchemguy",
+              "html_url": "https://github.com/pchemguy",
+              "followers_url": "https://api.github.com/users/pchemguy/followers",
+              "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+              "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+              "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+              "repos_url": "https://api.github.com/users/pchemguy/repos",
+              "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "open_issues": 0,
+            "closed_issues": 1,
+            "state": "open",
+            "created_at": "2026-10-10T13:45:40Z",
+            "updated_at": "2026-10-10T19:30:54Z",
+            "due_on": null,
+            "closed_at": null
+          },
+          "body": "## Task brief <!-- sdd-forge:task-id=T-017 -->\n\n**Context:** Current text/count/BOM/range acceptance; T-013\u2013T-017 remain pending and paused. Historical task results remain preserved; this amendment does not execute new main-list tasks.\n\nScope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n\nDepends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n\nEvidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n\nReports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.\n\n**Sources:** `docs/dev/TASKS.md`, `docs/dev/PLAN.md`, `docs/dev/SPEC.md`, `docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md`.\n<!-- /sdd-forge:task-id=T-017 -->",
+          "state_reason": "completed"
+        }
+      ]
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+      "request_payload": {
+        "state": "closed"
+      },
+      "status": 200,
+      "response_sha256": "1e213e0eaa163af3281a9bf4f36921e26d6bba0e9738e9519a8315fe0b3f639b",
+      "response_bytes": 1634,
+      "headers": {
+        "X-RateLimit-Remaining": "4979",
+        "X-RateLimit-Reset": "1791662544",
+        "X-GitHub-Request-Id": "34D7:35F204:F2497E:11EB53E:6ACA9283"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+        "id": 18469339,
+        "node_id": "MI_kwDOVDjAUc4BGdHb",
+        "number": 6,
+        "title": "sdd-2.3-Phase-2-and-final-review",
+        "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+        "creator": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 0,
+        "closed_issues": 1,
+        "state": "closed",
+        "created_at": "2026-10-10T13:45:40Z",
+        "updated_at": "2026-10-10T19:31:15Z",
+        "due_on": null,
+        "closed_at": "2026-10-10T19:31:15Z"
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+      "request_payload": null,
+      "status": 200,
+      "response_sha256": "1e213e0eaa163af3281a9bf4f36921e26d6bba0e9738e9519a8315fe0b3f639b",
+      "response_bytes": 1634,
+      "headers": {
+        "X-RateLimit-Remaining": "4978",
+        "X-RateLimit-Reset": "1791662544",
+        "X-GitHub-Request-Id": "3406:34D46C:119B703:14B1C73:6ACA9289"
+      },
+      "response": {
+        "url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/6",
+        "labels_url": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6/labels",
+        "id": 18469339,
+        "node_id": "MI_kwDOVDjAUc4BGdHb",
+        "number": 6,
+        "title": "sdd-2.3-Phase-2-and-final-review",
+        "description": "Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.",
+        "creator": {
+          "login": "pchemguy",
+          "id": 39730837,
+          "node_id": "MDQ6VXNlcjM5NzMwODM3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/39730837?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pchemguy",
+          "html_url": "https://github.com/pchemguy",
+          "followers_url": "https://api.github.com/users/pchemguy/followers",
+          "following_url": "https://api.github.com/users/pchemguy/following{/other_user}",
+          "gists_url": "https://api.github.com/users/pchemguy/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/pchemguy/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/pchemguy/subscriptions",
+          "organizations_url": "https://api.github.com/users/pchemguy/orgs",
+          "repos_url": "https://api.github.com/users/pchemguy/repos",
+          "events_url": "https://api.github.com/users/pchemguy/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/pchemguy/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "open_issues": 0,
+        "closed_issues": 1,
+        "state": "closed",
+        "created_at": "2026-10-10T13:45:40Z",
+        "updated_at": "2026-10-10T19:31:15Z",
+        "due_on": null,
+        "closed_at": "2026-10-10T19:31:15Z"
+      }
+    }
+  ],
+  "consumer_target_transition_commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-api.py",
+        "/milestones?state=all&per_page=100"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "[\n  {\n    \"number\": 1,\n    \"title\": \"sdd-1.1-Named-file-counting\",\n    \"description\": \"<!-- sdd-forge:milestone-id=1.1 -->\\n\\nScope: R-001 through R-007's API, whole-input semantics, strict UTF-8 file acquisition, BOM option, module entry, one named input, dash-prefixed filenames through `--`, successful exact text output and help. Establish nonempty discoverable unit/integration product suites (R-012) alongside implementation. The minimum integrated slice is a real named-file CLI call through the same semantics used by the silent public API, not a mocked-only path.\\n\\nDependencies are the small immutable result, pure semantics and strict acquisition boundaries required by this path. Localized implementation units can build those collaborators and integrate the CLI within this milestone. Deliver API exceptions and owned-handle closure with the file API; CLI failure diagnostics/status robustness, runnable public documentation and distribution exits follow in 1.2. JSON, stdin and range behavior are deferred.\\n\\nExit evidence: whole-input sample matrix, direct API exports/signatures/immutability/silence, string/file equivalence, strict decode/lifetime checks and subprocess named-file/BOM/help/dash-filename success. Record actual nonzero test counts for both product suites. Its final dedicated milestone review performs code review of the complete path, applicable tests/regressions, blocker repair and a committed/pushed milestone report.\\n\\nDemonstrate a real UTF-8 file with mixed terminators and BOM policy through API and module CLI. This gives the human concrete usefulness/clarity evidence for continue, amend, simplify or stop at an authorized checkpoint. It does not authorize automatic steering or broaden a selected execution range.\\n\\n<!-- /sdd-forge:milestone-id=1.1 -->\\n\\nCoordinator preservation note: retain this unmanaged milestone paragraph during reconciliation.\\n\",\n    \"state\": \"closed\"\n  },\n  {\n    \"number\": 2,\n    \"title\": \"sdd-1.2-Failure-handling-and-distribution\",\n    \"description\": \"<!-- sdd-forge:milestone-id=1.2 -->\\n\\nDepends on completed/reviewed 1.1. Scope: R-008 CLI input/read/decode status 1 and usage status 2, identifying useful stderr, empty failure stdout, no traceback and validation before acquisition; R-011 public API/module docs and runnable README; R-013 extracted-source distribution; complete phase 1 R-012 acceptance and regression coverage. Preserve the useful counting/API/CLI path and unchanged input bytes.\\n\\nExit evidence: named-file failure/usage subprocess matrix and controlled read/unreadability/resource seams, successful-path regressions, documentation examples executed against delivered code, nonzero unit/integration counts and extracted-source module-entry invocation independent of the original checkout. Include successful named-file output and expected input/decode failures in distribution evidence. Its final milestone review performs code review, required tests/checks, repairs every contract/exit blocker and publishes a milestone report.\\n\\nDemonstrate useful error handling and the README's runnable invocation after extraction. This checkpoint informs confidence in usability/distribution and a human continue/amend/stop decision before phase 2, within the separately authorized execution scope.\\n\\n<!-- /sdd-forge:milestone-id=1.2 -->\",\n    \"state\": \"closed\"\n  },\n  {\n    \"number\": 3,\n    \"title\": \"sdd-1.3-Phase-1-review\",\n    \"description\": \"<!-- sdd-forge:milestone-id=1.3 -->\\n\\nThis dedicated review milestone contains exactly one phase code review/testing/report task, derived later in TASKS. It depends on both delivery milestones completing and, when tracking is active, closing with all constituent issues and reports. It has no separate milestone review task.\\n\\nReview API/CLI/acquisition/documentation/distribution interactions, run all applicable phase 1 checks and inspect complete code/contract conformance. Resolve bugs, critical code issues and SPEC/PLAN violations; publish the phase report and establish full phase exits. Then reconcile hosted review closure if active and explicitly merge, verify and publish the complete phase into the established main integration branch before phase 2 activation. A partial milestone/task range pauses on its phase branch rather than merging by implication.\\n\\n<!-- /sdd-forge:milestone-id=1.3 -->\",\n    \"state\": \"closed\"\n  },\n  {\n    \"number\": 4,\n    \"title\": \"sdd-2.1-Withdrawn-historical-JSON-increment\",\n    \"description\": \"Historical completed JSON delivery/review is withdrawn by accepted steering 003_795f3a3-remove-json. Stable 2.1/T-010\\u2013T-012 identities and original completion history retained; no remaining delivery work or new completion. Exact text/count/BOM/range contracts are verified in the steering report.\",\n    \"state\": \"closed\"\n  },\n  {\n    \"number\": 5,\n    \"title\": \"sdd-2.2-UTF-8-stdin-and-final-delivery\",\n    \"description\": \"Strict borrowed byte stdin, text/BOM composition, final docs/distribution exits and dedicated milestone review.\",\n    \"state\": \"open\"\n  },\n  {\n    \"number\": 6,\n    \"title\": \"sdd-2.3-Phase-2-and-final-review\",\n    \"description\": \"Single final phase review after delivery milestone closures; reports, complete checks and full-phase integration.\",\n    \"state\": \"open\"\n  },\n  {\n    \"number\": 7,\n    \"title\": \"sdd-2.4-Named-file-ranges\",\n    \"description\": \"Complete F-001\\u2013F-004 named-file validation, normalized selection and real text path; full decode/BOM/huge/EOF and API/error regressions; dedicated code review/testing/report T-020.\",\n    \"state\": \"closed\"\n  },\n  {\n    \"number\": 8,\n    \"title\": \"sdd-2.5-Range-documentation-and-distribution\",\n    \"description\": \"Complete runnable range/public API docs and isolated extracted-source module acceptance; regressions and dedicated code review/testing/report T-023.\",\n    \"state\": \"closed\"\n  },\n  {\n    \"number\": 9,\n    \"title\": \"sdd-2.6-Range-feature-review\",\n    \"description\": \"Single T-024 cross-milestone feature-extent review after 2.4/2.5 close; complete feature checks/reports/TODO disposition. Does not close Phase 2 stdin/final work.\",\n    \"state\": \"closed\"\n  }\n]\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791656793.7016304
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "import json; from pathlib import Path; d=json.loads(Path(\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-observations.json\").read_text()); issues=d[\"provider\"][0][\"response\"]; print([(i[\"number\"],i.get(\"title\"),i[\"state\"], [l[\"name\"] for l in i.get(\"labels\",[])],i.get(\"milestone\",{}).get(\"number\") if i.get(\"milestone\") else None) for i in issues if i.get(\"title\", \"\").startswith(\"[T-0\")]); print(\"Pagination\", [x[\"headers\"] for x in d[\"provider\"]])"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "[(25, '[T-024] Review, test and report the Phase 2 range feature extent', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 9), (24, '[T-023] Review, test and report milestone 2.5', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 8), (23, '[T-022] Verify range behavior from isolated extracted source', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 8), (22, '[T-021] Complete public and runnable named-file range documentation', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 8), (21, '[T-020] Review, test and report milestone 2.4', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 7), (20, '[T-019] Integrate range validation and named-file text CLI', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 7), (19, '[T-018] Implement pure normalized logical-line selection', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 7), (18, '[T-017] Review, test and report phase 2 and final delivery', 'open', ['sdd-phase-2-Ranges-and-stdin'], 6), (17, '[T-016] Review, test and report milestone 2.2', 'open', ['sdd-phase-2-Ranges-and-stdin'], 5), (16, '[T-015] Complete final documentation and source-package exits', 'open', ['sdd-phase-2-Ranges-and-stdin'], 5), (15, '[T-014] Integrate stdin across text CLI', 'open', ['sdd-phase-2-Ranges-and-stdin'], 5), (14, '[T-013] Add borrowed binary stdin acquisition', 'open', ['sdd-phase-2-Ranges-and-stdin'], 5), (13, '[T-012] Historical milestone 2.1 review; retained, no current executable work.', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 4), (12, '[T-011] Retired JSON extraction delivery; historically completed, capability withdrawn.', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 4), (11, '[T-010] Retired JSON CLI delivery; historically completed, capability withdrawn.', 'closed', ['sdd-phase-2-Ranges-and-stdin'], 4), (10, '[T-009] Review, test and report phase 1', 'closed', ['sdd-phase-1-Named-file-utility'], 3), (9, '[T-008] Review, test and report milestone 1.2', 'closed', ['sdd-phase-1-Named-file-utility'], 2), (8, '[T-007] Build and verify isolated source distribution', 'closed', ['sdd-phase-1-Named-file-utility'], 2), (7, '[T-006] Document public API and runnable named-file usage', 'closed', ['sdd-phase-1-Named-file-utility'], 2), (6, '[T-005] Complete named-file CLI failure and usage handling', 'closed', ['sdd-phase-1-Named-file-utility'], 2), (5, '[T-004] Review, test and report milestone 1.1', 'closed', ['sdd-phase-1-Named-file-utility'], 1), (4, '[T-003] Integrate named-file CLI and nonempty product checks', 'closed', ['sdd-phase-1-Named-file-utility'], 1), (3, '[T-002] Implement strict file acquisition and complete public API', 'closed', ['sdd-phase-1-Named-file-utility'], 1), (2, '[T-001] Implement immutable statistics and whole-text counting', 'closed', ['campaign-037-preserve', 'sdd-phase-1-Named-file-utility'], 1)]\nPagination [{'X-RateLimit-Remaining': '4939', 'X-RateLimit-Reset': '1791657381', 'X-GitHub-Request-Id': '350D:31A05F:706F2CA:173184F7:6ACA8350'}, {'X-RateLimit-Remaining': '4938', 'X-RateLimit-Reset': '1791657381', 'X-GitHub-Request-Id': '349E:1028A8:7C6207:19874A7:6ACA8359'}]\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791656811.64834
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path; p=Path(\"docs/dev/TASKS.md\"); p.write_text(p.read_text()+\"\\n## T-013 completion evidence\\n\\nAt published startup `77e7106e3134cc7053a2b1a045cf1a76cf0361ea`, explicit resume\\nauthority and coordinator startup acceptance `fb98e7b984134755845fc46390381d9933aa397e`\\nestablish current amended requirements and verified hosted T-013 issue #14,\\nphase label and milestone #5 associations. No retired JSON task is executed.\\n\\nThe internal borrowed binary reader reads to EOF and strictly decodes complete\\nUTF-8 without normalization, locale conversion or stream closure. Three new\\nbehavioral tests first failed because the reader was absent (three failures,\\nstatus 1); after implementation, `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest\\ntests.unit.test_io tests.integration.test_api -v` passed 15 tests, status 0.\\nEmpty/Unicode/mixed terminators/repeated and interior BOMs retain exact text;\\ninvalid bytes after a valid prefix and controlled OSError produce no partial\\ntext and never close the borrowed stream. Named-file owned-handle/API regressions\\npass and public exports/signatures are unchanged. CLI stdin remains T-014.\\n\\nThe full product runner passed 34 unit and 28 integration tests on Python 3.12.14,\\nwith no skips or warnings. Raw command/child streams, statuses, inputs and fixture\\nhashes are retained in external `037-a013-consumer-observations.json`. Source\\ndocstrings and current TASKS/AGENTS/QC navigation record the accepted resume\\nboundary; requirements, strategy, hierarchy and dependencies are unchanged.\\nThis task result/tests/current evidence and initial checkbox form one closing\\ncommit, followed immediately by push/exact readback before subsequent owned work.\\nIssue #14 closure remains a separately observed hosted operation.\\n\")"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791657103.024064
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path; import hashlib; base=Path(\"docs/dev\"); shared=[\"PROJECT.md\",\"ARCHITECTURE.md\",\"DECOMPOSITION.md\",\"SPEC.md\"]; specs=[(\"SPEC-REVIEW-REPORT.md\",shared,\"6\"),(\"PLAN-REVIEW-REPORT.md\",shared+[\"SPEC-REVIEW-REPORT.md\",\"PLAN.md\",\"layout.md\"],\"8\"),(\"TASKS-REVIEW-REPORT.md\",shared+[\"SPEC-REVIEW-REPORT.md\",\"PLAN.md\",\"PLAN-REVIEW-REPORT.md\",\"layout.md\",\"TASKS.md\"],\"5\")]; table=lambda names: \"| Current reviewed/governing source | SHA-256 |\\n| --- | --- |\\n\"+\"\".join(\"| `\"+n+\"` | `\"+hashlib.sha256((base/n).read_bytes()).hexdigest()+\"` |\\n\" for n in names); common=\"State: **Ready for explicitly authorized Phase 2 resume**. Accepted text-only amendment is integrated and published at `77e7106e3134cc7053a2b1a045cf1a76cf0361ea`, with delegated publication acceptance `963d058`. Current preparation/hosted associations/bounded closure plan are accepted at coordinator `fb98e7b984134755845fc46390381d9933aa397e`. Earlier pending and stop statements below retain their exact historical scope.\\n\\nR-001\u2013R-008/R-010\u2013R-013 and F-001\u2013F-004 are unchanged; JSON delivery identities remain retired. Explicit resume covers T-013\u2013T-017 and final Phase 2 exits/integration, with no release/version bump/next phase. No contract, design, strategy, layout, hierarchy, task outcome or dependency is changed by status maintenance. Technical document readiness does not preaccept task implementation or final integration.\\n\\n\"; \nfor name,names,rev in specs:\n p=base/name; old=p.read_text(); old=old.replace(\"## Current gate\", \"## Historical gate at accepted amendment publication\",1); title,body=old.split(\"\\n\",1); counts=\"\\nTASKS remains sole owner: 24 stable identities, 21 active/17 checked/four pending T-014\u2013T-017 in this T-013 candidate; three retired historical identities have no executable checkbox. Counts reflect completion status only.\\n\" if name.startswith(\"TASKS\") else \"\"; gate=\"\\n## Current gate\\n\\n\"+common+table(names)+counts+\"\\nNo unresolved preparation finding. Governing source hashes above identify the exact current equivalent state; task results/tests and runtime acceptance remain in owning TASKS evidence.\\n\"; tail=\"\\n## Revision \"+rev+\"\\n\\nResume status/navigation maintenance preserves every prior review section and finding. Reassessed exact source hashes, unchanged R/F contracts and design, delivery counts (Phase 1 two; Phase 2 three active delivery milestones, reviews excluded), all task outcomes/dependencies and sole canonical ownership. T-013 candidate completion changes only status/evidence; its task acceptance remains separately delegated. Historical review gates are preserved rather than overwritten. No unresolved document conformance finding; Ready for the authorized remaining work.\\n\"; p.write_text(title+gate+body+tail)"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791657136.5975409
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport hashlib,re\np=Path(\"docs/dev/TASKS.md\");s=p.read_text().replace(\"- [ ] T-014 \u2014\",\"- [x] T-014 \u2014\",1)\ns += \"\"\"\n## T-014 completion evidence\n\nBased on published T-013 `2d96774221165ac04096c8d57ddcefe85b2305e0` and\nverified closed/completed issue #14, the CLI now selects borrowed binary stdin\nfor input token `-`, including after `--`; an actual dash file uses `./-`.\nComplete strict UTF-8 decode precedes once-only BOM policy, optional shared line\nselection and normalized counting. Failure diagnostics identify stdin/cause,\nreturn 1 and emit no counts or traceback. Help/usage/range/removed-option\nvalidation precedes either source acquisition; public whole-input API is unchanged.\n\nThe trace harness initially lacked cwd on sys.path for module execution:\ntwo collection errors were a setup failure, not RED. After that helper-only\nrepair, the traced focused eight tests had 42 genuine failures because stdin\nwas treated as a named file. GREEN passed all eight tests after CLI integration.\nThe full traced `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` workflow\npassed 37 unit and 33 integration tests, status 0/no skips/warnings, including\n241 extracted named-file regressions. The subsequently expanded full invalid\nrange/duplicate stdin-before-acquisition matrix passed all three focused stdin\nunit tests; runtime code remained unchanged, so prior integration evidence applies.\n\nReal byte-fed subprocesses verify empty/Unicode/mixed terminators/BOM inputs,\nboth policies/spellings, option permutations/input positions, EOF subsets,\nexposed BOMs, unbounded/leading-zero endpoints, bad bytes after END, C and\nC.UTF-8 locales with Python UTF-8 mode/coercion disabled, and `./-` file bytes.\nControlled read failures and successful/error/usage/help paths retain borrowed\nownership. Six README stdin shell commands produced exact success counts\n3/5, 1/1, 2/3, 1/1 and 0/0, plus expected status-1 strict decoding stderr.\nA quoting failure while preparing README caused no mutation; original raw\nerror and corrected applied edit are retained externally.\n\nThe coordinator separately accepted minimal cooperating extraction maintenance:\nexactly two existing named dash-file fixture argv expressions now use `./-`;\nfixture bytes/assertions are unchanged, with no new stdin extraction acceptance\nbefore T-015. Current root evidence/QC completion hashes retain contract/strategy/\ndependency equivalence. This task's result/tests/docs/evidence/initial checkbox\nclose together; immediate push/exact readback precedes further owned work.\nIssue #15 closure is separately observed. Final public-reference and expanded\nextracted-stdin exits remain T-015; milestone and phase parents stay pending.\n\"\"\"\np.write_text(s)\np=Path(\"docs/dev/TASKS-REVIEW-REPORT.md\");s=p.read_text();current,history=s.split(\"## Historical gate at accepted amendment publication\",1)\ncurrent=current.replace(\"21 active/17 checked/four pending T-014\u2013T-017 in this T-013 candidate\",\"21 active/18 checked/three pending T-015\u2013T-017 in this T-014 candidate\")\ncurrent=re.sub(r\"(\\| `TASKS.md` \\| `)[0-9a-f]{64}(` \\|)\",lambda m:m[1]+hashlib.sha256(Path(\"docs/dev/TASKS.md\").read_bytes()).hexdigest()+m[2],current)\np.write_text(current+\"## Historical gate at accepted amendment publication\"+history)\nprint(\"T-014 result/evidence and initial checkbox; current TASKS QC equivalence hash refreshed\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T-014 result/evidence and initial checkbox; current TASKS QC equivalence hash refreshed\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791657695.8389747
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport hashlib,re\np=Path(\"docs/dev/TASKS.md\");s=p.read_text()\nassert s.count(\"- [ ] T-015 \u2014\")==1\ns=s.replace(\"- [ ] T-015 \u2014\",\"- [x] T-015 \u2014\",1)\ns+=\"\"\"\n## T-015 completion evidence\n\nPublished T-014 `dbf50d7b6d83c7ddf53f287d82b199db3e83fd89` and closed/completed\nissue #15 precede this task. The final public reference documents borrowed binary\nstdin, strict complete decoding, text/status/BOM/range composition and unchanged\nwhole-input API. README explains actual byte-fed isolated extraction and includes\na successful extracted stdin range example. Module-entry documentation and root\nnavigation reflect delivery; no public export/signature or archive allowlist changed.\n\nA new sensitivity test first failed because the old checker accepted an extracted\nCLI with stdin deliberately disabled while named-file behavior remained healthy:\none genuine failing test, status 1. After extending the checker, that test passed.\nThe extracted checker now executes 478 real named-file/stdin module cases plus\nimport provenance and silent API/signature probes. Byte-fed stdin covers empty,\nUnicode/mixed terminators, both BOM policies, C/C.UTF-8 locales with Python UTF-8\nmode/coercion disabled, every range anchor, spelling/order/input position, huge\nand leading-zero endpoints, usage-before-decode and invalid bytes after END.\nExisting named-file/removed-option/range regressions remain.\n\nThe final serialized retry ran every one of twelve README/public-reference fences,\nincluding full runner, separate unit/integration discovery, rebuild/checker and\nactual isolated extraction examples. Each suite collected/passed 37 unit and\n34 integration tests without skips/warnings; standalone extraction passed 478\ncases. Exact documented counts, status-1/status-2 streams and silent API assertions\npassed. Extracted named-file/stdin examples produced 3/5 and 2/3. Local public-guide\nlinks resolve. Eleven archive members exactly match current approved source bytes;\nno tests/development/coordinator/credential material is included.\n\nOriginal facility failures remain external: concurrent old log writers raced,\none captured checker aborted in logging, and lost first-channel entries cannot be\nreconstructed or counted. The surviving checkpoint is explicitly post-repair.\nA first lock repair had an indentation error before product execution. Lock plus\natomic replacement repaired the shared logger; subsequent child tracing uses\nexclusive immutable records. These facility failures do not establish product\nfailure or retroactive acceptance. The earlier fifteen child argv gaps retained\ninherited PYTHONDONTWRITEBYTECODE=1 but lacked explicit -B. Scoped maintenance\nadds only -B to the two old invocation fixtures without changing assertions.\nThe final corrected retry records 2,776 actual Python children, all with -B and\nbytecode suppression; only this retry supports that explicit-flag claim.\n\nThe first complete documentation campaign passed but its five owned example\nfiles were observed still present afterward; the next guarded retry stopped\nbefore product execution. Exact bytes/hashes and nonsymlink ownership were\nverified before explicit cleanup. The fresh successful retry's cleanup is\nindependently confirmed: all five inputs absent. Actual commands, separate raw\nstreams, statuses, fixture/input/source/archive hashes and child cwd/env are in\nexternal `037-a013-consumer-observations.json` and\n`037-a013-consumer-command-records/`; original observations remain unchanged.\nPython 3.12.14 is verified; other runtimes/platforms remain unverified.\n\nResult/tests/documentation/current evidence and initial T-015 checkbox close in\none task commit, immediately followed by push/exact remote readback and separately\nobserved issue #16 reconciliation. Milestone/phase reviews remain T-016/T-017;\nPhase 2, milestone parents and integration are not yet complete.\n\"\"\"\np.write_text(s)\nq=Path(\"docs/dev/TASKS-REVIEW-REPORT.md\")\nhead,historical=q.read_text().split(\"## Historical gate\",1)\nhead=re.sub(r\"(\\| `TASKS.md` \\| `)[0-9a-f]{64}(` \\|)\",lambda m:m[1]+hashlib.sha256(p.read_bytes()).hexdigest()+m[2],head)\nhead=head.replace(\"21 active/18 checked/three pending T-015\u2013T-017 in this T-014 candidate\",\"21 active/19 checked/two pending T-016\u2013T-017 in this T-015 candidate\")\nq.write_text(head+\"## Historical gate\"+historical)\na=Path(\"AGENTS.md\")\na.write_text(a.read_text()+\"\"\"\n## Current stdin and final-delivery checkpoint\n\nT-013/T-014 deliver complete strict binary stdin through the shared once-only\nBOM/range/count pipeline, with borrowed ownership, usage-before-acquisition and\nunchanged whole-input API/named-file behavior. T-015 completes public instructions\nand real extracted-source stdin exits. Current verified Python 3.12.14 checks\ncollect 37 unit/34 integration tests; isolated distribution executes 478 actual\nnamed-file/stdin module cases plus import/API probes. All twelve README/API fences\npassed, including extracted named-file and stdin-range demonstrations.\nThe final corrected retries use PYTHONDONTWRITEBYTECODE=1 and explicit python -B\nin children; prior observation gaps/failures remain in owning TASKS evidence.\nOther runtime/platform coverage remains unverified.\n\nCanonical TASKS and adjacent current QC retain T-016/T-017 as pending review/report\nowners. Their concrete reports and prospective completed-phase integration require\ndelegated acceptance before conclusion. Continue the explicit resume above,\nimmediate per-commit push/exact readback and managed hosted closure gates.\nStop after published completed Phase 2; no next phase, version change or release.\n\"\"\")\nprint(\"T015 result/evidence/initial checkbox and truthful current QC/navigation written together.\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T015 result/evidence/initial checkbox and truthful current QC/navigation written together.\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791658869.5321035,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\np=Path(\"docs/dev/reports/phases/2/2.2.md\");assert not p.exists()\np.write_text(\"\"\"# Milestone 2.2 review \u2014 UTF-8 stdin and final delivery\n\n## Identity and reviewed state\n\nOwning review task: T-016. Review assessment: applicable milestone exits verified;\ndelegated report acceptance, owning persistence and hosted closure are pending.\nThis report does not complete Phase 2 or integrate into main.\n\nReviewed `phase/2-json-and-stdin` at published/exactly read back\n`ca24007134141265a1937c77e2fda504bb0d6129`, after issue #16 was observed\nclosed/completed with its evidence comment and preserved native fields.\nDelivery commits are T-013 `2d96774221165ac04096c8d57ddcefe85b2305e0`,\nT-014 `dbf50d7b6d83c7ddf53f287d82b199db3e83fd89` and T-015\n`ca24007134141265a1937c77e2fda504bb0d6129`.\n[Current SPEC](../../../SPEC.md), [PLAN](../../../PLAN.md) milestone 2.2 and\n[canonical TASKS](../../../TASKS.md) govern. Startup acceptance\n`fb98e7b984134755845fc46390381d9933aa397e` authorizes this resumed range.\nThe accepted text-only amendment retains R-009 as withdrawn; retired JSON\nidentities are historical and were not replayed.\n\n## Delivered capability\n\nThe module CLI reads token `-` from borrowed binary stdin through EOF and\nstrictly decodes UTF-8 independently of the text locale. It applies whole-input\nBOM policy once, optional shared logical-line selection, then normalized counting.\nText output, named-file behavior, usage/input status categories and silent\nwhole-input public signatures remain stable. A token `-` after `--` still means\nstdin; `./-` selects an actual named file. Empty input counts zero/zero.\nInvalid bytes after a selected END still fail without partial counts.\n\nPublic instructions explain source ownership, decoding, composition, output and\nfailure behavior. The source ZIP contains the unchanged eleven-file allowlist and\nruns the real module for named-file and byte-fed stdin whole-input/range cases\nfrom isolated extraction. No new dependency, installed entry point, streaming\npromise, version or release was introduced.\n\n## Implementation code review\n\nSource inspection was performed separately from test execution across all five\npackage modules, the runner/builder/checker, all three unit files, all three\nintegration files and the current README/public reference. The complete path,\nnot only the final diff, was reviewed against R-001\u2013R-008/R-010\u2013R-013 and retained\nF-001\u2013F-004 composition.\n\n| Reviewed boundary | Inspection assessment |\n| --- | --- |\n| `textstats/io.py` byte acquisition | No locale text wrapper or newline translation. Named-file context management closes owned handles on all paths; borrowed reader reads complete bytes, strictly decodes, does not normalize and does not close. Expected failures produce no partial text. |\n| `textstats/core.py` semantics | Pure immutable values and Unicode whitespace counting remain unchanged. CRLF/CR/LF traversal preserves selected segments and final/blank/EOF semantics. Whole-input normalization removes at most one leading BOM; selection/counting do not remove an exposed interior BOM. |\n| `textstats/cli.py` parsing/control | Complete parse/validation precedes source access. Exact options, repetition, ASCII positivity/order and manual unbounded decimal conversion retain conversion-guard behavior. Named-file no-range API route is preserved; stdin/range use the same normalized pipeline. Only expected OSError/UnicodeDecodeError are translated; identifying stderr/status 1 and success rendering occur at the correct boundaries. |\n| Facade/module adapter | Direct exports, keyword-only BOM policy, silent API exception contracts and process status adapter remain unchanged; stdin adds no public API. |\n| Test runner and tests | Actual independent nonempty discovery, failure propagation and workflow exclusion are tested. Controlled borrowed/owned streams establish portable read/ownership behavior; real byte-fed processes independently cover CLI status/streams and differing locales. Literal expected counts and archive mutations avoid using checkout counters as extraction acceptance. |\n| Builder and extraction checker | Explicit regular-file allowlist excludes development, fixtures, resources and credentials. Extraction cwd, sanitized inherited import paths, disabled user site and exact imported location prevent checkout substitution. Real byte-fed module invocations cover both BOM policies, all range anchors/options/endpoints, errors and API compatibility. |\n| Public documentation | Delivered stdin and retained API/named-file/range behavior agree with inspected code. Complete-input memory use and verified-runtime limits are explicit; no deferred stdin wording remains in public instructions. |\n\nNo remaining bug, critical issue, contract violation or required evidence blocker\nwas located. No additional production repair was required by this review.\n\n## Findings and dispositions\n\n| Stable finding | Evidence, impact and disposition |\n| --- | --- |\n| M2.2-001 \u2014 extraction acceptance gap, resolved | Before T-015, `tools/check_distribution.py` accepted an extracted CLI with stdin disabled: the new sensitivity test failed while 241 named-file cases passed. This blocked final R-013 stdin acceptance, not named-file behavior. T-015 added actual byte-fed isolated cases and the same regression now rejects the faulty archive. Resolution: `ca24007134141265a1937c77e2fda504bb0d6129`; fresh T-016 sensitivity recheck passed. |\n| M2.2-002 \u2014 explicit child flag gap, resolved | Two retained invocation fixtures in `tests/integration/test_api.py` and `tests/unit/test_cli.py` inherited bytecode suppression but omitted required explicit `-B`; fifteen prior captured argv gaps remain historical. Scoped T-015 maintenance adds only that flag, preserving assertions. The corrected final campaign recorded 2,776 actual Python children, all with `-B` and `PYTHONDONTWRITEBYTECODE=1`. Earlier runs do not support this explicit-flag claim. |\n\nExternal evidence facility incidents remain visible in\n[T-015 evidence](../../../TASKS.md#t-015-completion-evidence): raced old JSON writes,\ncaptured logging/indentation failures, unknown lost first-channel entries and a\nfirst successful documentation campaign whose owned fixtures were later observed\nstill present. No historical content or removal is reconstructed. Logger locking\nwith atomic replacement and fresh exclusive immutable child records, verified\nfixture bytes before explicit cleanup, guarded retries and independently absent\nfinal fixtures establish the corrected campaign. These incidents are evidence\nlimitations, not product bugs or deferred code TODOs. The later guessed plural\nplugin-reference read failed without mutation; the actual linked\n`boundary-review.md` was then read. That navigation failure changes no product\nacceptance result.\n\n## Tests and evidence\n\nEnvironment: repository-root cwd, Python 3.12.14, standard library,\n`PYTHONDONTWRITEBYTECODE=1`; every corrected Python invocation uses `-B`.\nExternal runner/trace wrappers preserve actual argv/cwd, separate stdout/stderr,\nstatuses, byte inputs and fixture/source/archive hashes. The external prefix is\n`/workspace/scratch/46b31bb4dff6/037-a013-consumer-`.\n\nFresh T-016 command, executed through the external runner:\n\n```bash\nPYTHONDONTWRITEBYTECODE=1 python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-runner.py python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-trace-immutable.py -m unittest tests.unit.test_io.BorrowedAcquisitionTests tests.unit.test_cli.StdinCliTests tests.integration.test_cli.StdinModuleTests tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_stdin_with_healthy_named_file_behavior -v\n```\n\nObserved status 0: 12 tests, no skips/warnings. This freshly checks borrowed EOF/\nsuccess/read/decode ownership, parsing before borrowed access, real source/locale/\nBOM/range/error composition, dash-file distinction and faulty extraction rejection.\n\nPrior T-015 final corrected evidence is reused explicitly: reviewed source/test/\npublic-document bytes are identical to the published T-015 state, and this review\nchanges none of them. Its serialized `037-a013-consumer-docs-retry.py` campaign\nreturned 0 and executed all twelve README/API fences. The actual product commands\nwere run through `037-a013-consumer-trace-immutable.py`: `tools/check_tests.py`,\nseparate `-m unittest discover -s tests/unit -t . -v` and\n`-m unittest discover -s tests/integration -t . -v`, plus\n`tools/check_distribution.py`. They passed 37 unit/34 integration tests and 478\nisolated actual module cases, with no suite skips/warnings. Silent API/signature\nchecks, exact named-file bytes and removed-option errors remain covered.\nThe archive matched all eleven current allowlisted file bytes, with SHA-256\n`4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c`.\nPublic-guide local links resolved and staged whitespace/current QC hashes passed.\n\n## Usability and portability demonstration\n\nExecuted README byte-stream examples visibly produced counts 3/5, 1/1, 2/3,\n1/1 and 0/0 with status 0/empty stderr; malformed complete UTF-8 after END\nproduced status 1, empty stdout and an identifying stdin diagnostic. The actual\nisolated extracted example produced named-file 3/5 and stdin-range 2/3.\nIntegration/extraction fed non-ASCII bytes under C and C.UTF-8 with Python UTF-8\nmode and locale coercion disabled, establishing source decoding independence\nfor those exercised environments. Controlled read failures support portable\nownership/diagnostic evidence without relying on platform permission tricks.\n\n## Exit assessment and limits\n\nR-010 complete byte/strict UTF-8/EOF/empty/read/decode/borrowed ownership exits pass.\nR-011 final delivered public docs and actual runnable examples pass. R-012\nindependently nonempty unit/integration discovery and retained regressions pass.\nR-013 isolated real named-file/stdin module entry and final source/docs archive\npass. F-001\u2013F-004 named-file behavior and stdin composition remain verified.\n\nPython 3.11+ is the supported declaration; only Python 3.12.14 and the current\nUnix environment were exercised. Other supported runtimes/platforms are\nunverified, not an established defect or invented deferral. Complete in-memory\nacquisition remains the accepted design; no performance/bounded-memory claim is\nmade. The unknown original observation loss remains unknown despite trustworthy\nfresh acceptance.\n\n## TODO\n\nTODO: None.\n\n## Next boundary\n\nAfter concrete delegated acceptance, commit this T-016 report/result/current\nevidence with its initial owning checkbox and eligible milestone 2.2 parent.\nImmediately push/read back before further work; reconcile issue #17 with native\nfields preserved, enumerate all milestone #5 associations, and only then close/\nread back that native milestone. T-017 waits for the applicable closed delivery/\nfeature review milestones, performs separate cross-phase review and final checks,\nand supplies the required Phase 2/final implementation report pair. Main remains\nunchanged until completed-phase integration has its concrete delegated review.\nStop after published completed Phase 2; no next phase or release.\n\"\"\")\nprint(p)\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "docs/dev/reports/phases/2/2.2.md\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659089.0079708,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport hashlib,re\np=Path(\"docs/dev/TASKS.md\");s=p.read_text()\nassert s.count(\"- [ ] T-016 \u2014\")==1 and s.count(\"- [ ] Milestone 2.2 \u2014\")==1\ns=s.replace(\"- [ ] T-016 \u2014\",\"- [x] T-016 \u2014\",1).replace(\"- [ ] Milestone 2.2 \u2014\",\"- [x] Milestone 2.2 \u2014\",1)\ns+=\"\"\"\n## T-016 completion evidence\n\nPublished/exactly read back T-015 `ca24007134141265a1937c77e2fda504bb0d6129`\nand closed/completed issue #16 precede this distinct milestone review.\nThe [milestone 2.2 report](reports/phases/2/2.2.md) records coherent implementation\ninspection of all package, acquisition/parser/controller, runner/builder/checker,\nproduct test and public-document boundaries against current R/F contracts.\nThis inspection is separate from tests. No remaining bug/critical issue/contract\nviolation or required evidence blocker was found; no new production repair was\nneeded. Resolved M2.2-001 extraction acceptance and M2.2-002 child-flag findings\nidentify actual evidence/repair provenance; TODO is None.\n\nFresh traced borrowed acquisition, stdin CLI/module and faulty-extraction\nsensitivity checks passed 12 tests, status 0/no skips/warnings on Python 3.12.14.\nThe identical committed source/test/public-doc bytes retain explicitly reused\nT-015 corrected full runner/separate discovery evidence: 37 unit/34 integration,\n478 isolated module cases, all twelve actual README/API fences and exact eleven\narchive source members. Real non-ASCII byte streams under differing locales,\nread/decode/ownership/error paths, selected interior BOM/EOF/huge endpoints,\nnamed-file and silent API regressions establish milestone exits and usefulness.\nPrior facility failures/unknown lost observations remain reported; new accepted\nevidence does not reconstruct history. Other runtime/platform coverage remains\nunverified; complete in-memory acquisition is the accepted design.\n\nThis concrete report/result/current evidence, initial T-016 checkbox and eligible\n2.2 parent are one closing candidate requiring delegated report acceptance before\nthe commit. Acceptance identity belongs in that commit's body rather than an\ninvented own SHA in the report. Immediately publish/exactly read back before\nseparately reconciling issue #17, verifying every milestone #5 issue association\nand closing/readback of that native milestone. T-017 and Phase 2 remain pending\nuntil their distinct final exits/report review and completed-phase integration.\n\"\"\"\np.write_text(s)\nq=Path(\"docs/dev/TASKS-REVIEW-REPORT.md\");head,historical=q.read_text().split(\"## Historical gate\",1)\nhead=re.sub(r\"(\\| `TASKS.md` \\| `)[0-9a-f]{64}(` \\|)\",lambda m:m[1]+hashlib.sha256(p.read_bytes()).hexdigest()+m[2],head)\nhead=head.replace(\"21 active/19 checked/two pending T-016\u2013T-017 in this T-015 candidate\",\"21 active/20 checked/one pending T-017 in this T-016 candidate\")\nq.write_text(head+\"## Historical gate\"+historical)\na=Path(\"AGENTS.md\");a.write_text(a.read_text()+\"\"\"\n## Current milestone 2.2 review checkpoint\n\nThe [milestone 2.2 review](docs/dev/reports/phases/2/2.2.md) covers complete stdin,\nshared range/BOM/input-source behavior, documentation/distribution and retained\nAPI/named-file regressions. It records separate source inspection, twelve fresh\nfocused tests and applicable unchanged T-015 full-suite/example/extraction evidence,\nresolved findings and TODO: None. Its concrete report requires delegated acceptance\nbefore owning closure/publication; managed issue/milestone closures follow actual\npublication and verified native associations. T-017 remains the final Phase 2 and\ncross-phase review/report owner; completed-phase integration remains separately\nreviewed. Existing explicit resume and final STOP boundary continue to govern.\n\"\"\")\nreport=Path(\"docs/dev/reports/phases/2/2.2.md\")\ns=report.read_text().replace(\"Owning review task: T-016. Review assessment: applicable milestone exits verified;\",\"Owning review task: T-016. At this candidate checkpoint, applicable milestone exits are verified;\")\nreport.write_text(s)\nprint(\"T016 single-owner report/result/evidence/initial checkbox+eligible parent candidate, historical QC preserved.\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T016 single-owner report/result/evidence/initial checkbox+eligible parent candidate, historical QC preserved.\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659123.0714598,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-api.py",
+        "/issues?milestone=5&state=all&per_page=100"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "[\n  {\n    \"number\": 17,\n    \"title\": \"[T-016] Review, test and report milestone 2.2\",\n    \"labels\": [\n      {\n        \"id\": 12626943170,\n        \"node_id\": \"LA_kwDOVDjAUc8AAAAC8J_cwg\",\n        \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin\",\n        \"name\": \"sdd-phase-2-Ranges-and-stdin\",\n        \"color\": \"5319e7\",\n        \"default\": false,\n        \"description\": \"Named-file ranges and pending strict UTF-8 stdin; exact text output.\",\n        \"archived_at\": null,\n        \"archived_by\": null\n      }\n    ],\n    \"state\": \"open\",\n    \"milestone\": {\n      \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5\",\n      \"html_url\": \"https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/5\",\n      \"labels_url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5/labels\",\n      \"id\": 18469338,\n      \"node_id\": \"MI_kwDOVDjAUc4BGdHa\",\n      \"number\": 5,\n      \"title\": \"sdd-2.2-UTF-8-stdin-and-final-delivery\",\n      \"description\": \"Strict borrowed byte stdin, text/BOM composition, final docs/distribution exits and dedicated milestone review.\",\n      \"creator\": {\n        \"login\": \"pchemguy\",\n        \"id\": 39730837,\n        \"node_id\": \"MDQ6VXNlcjM5NzMwODM3\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/39730837?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/pchemguy\",\n        \"html_url\": \"https://github.com/pchemguy\",\n        \"followers_url\": \"https://api.github.com/users/pchemguy/followers\",\n        \"following_url\": \"https://api.github.com/users/pchemguy/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/pchemguy/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/pchemguy/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/pchemguy/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/pchemguy/orgs\",\n        \"repos_url\": \"https://api.github.com/users/pchemguy/repos\",\n        \"events_url\": \"https://api.github.com/users/pchemguy/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/pchemguy/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n      },\n      \"open_issues\": 1,\n      \"closed_issues\": 3,\n      \"state\": \"open\",\n      \"created_at\": \"2026-10-10T13:45:33Z\",\n      \"updated_at\": \"2026-10-10T19:02:32Z\",\n      \"due_on\": null,\n      \"closed_at\": null\n    },\n    \"state_reason\": null\n  },\n  {\n    \"number\": 16,\n    \"title\": \"[T-015] Complete final documentation and source-package exits\",\n    \"labels\": [\n      {\n        \"id\": 12626943170,\n        \"node_id\": \"LA_kwDOVDjAUc8AAAAC8J_cwg\",\n        \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin\",\n        \"name\": \"sdd-phase-2-Ranges-and-stdin\",\n        \"color\": \"5319e7\",\n        \"default\": false,\n        \"description\": \"Named-file ranges and pending strict UTF-8 stdin; exact text output.\",\n        \"archived_at\": null,\n        \"archived_by\": null\n      }\n    ],\n    \"state\": \"closed\",\n    \"milestone\": {\n      \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5\",\n      \"html_url\": \"https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/5\",\n      \"labels_url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5/labels\",\n      \"id\": 18469338,\n      \"node_id\": \"MI_kwDOVDjAUc4BGdHa\",\n      \"number\": 5,\n      \"title\": \"sdd-2.2-UTF-8-stdin-and-final-delivery\",\n      \"description\": \"Strict borrowed byte stdin, text/BOM composition, final docs/distribution exits and dedicated milestone review.\",\n      \"creator\": {\n        \"login\": \"pchemguy\",\n        \"id\": 39730837,\n        \"node_id\": \"MDQ6VXNlcjM5NzMwODM3\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/39730837?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/pchemguy\",\n        \"html_url\": \"https://github.com/pchemguy\",\n        \"followers_url\": \"https://api.github.com/users/pchemguy/followers\",\n        \"following_url\": \"https://api.github.com/users/pchemguy/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/pchemguy/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/pchemguy/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/pchemguy/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/pchemguy/orgs\",\n        \"repos_url\": \"https://api.github.com/users/pchemguy/repos\",\n        \"events_url\": \"https://api.github.com/users/pchemguy/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/pchemguy/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n      },\n      \"open_issues\": 1,\n      \"closed_issues\": 3,\n      \"state\": \"open\",\n      \"created_at\": \"2026-10-10T13:45:33Z\",\n      \"updated_at\": \"2026-10-10T19:02:32Z\",\n      \"due_on\": null,\n      \"closed_at\": null\n    },\n    \"state_reason\": \"completed\"\n  },\n  {\n    \"number\": 15,\n    \"title\": \"[T-014] Integrate stdin across text CLI\",\n    \"labels\": [\n      {\n        \"id\": 12626943170,\n        \"node_id\": \"LA_kwDOVDjAUc8AAAAC8J_cwg\",\n        \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin\",\n        \"name\": \"sdd-phase-2-Ranges-and-stdin\",\n        \"color\": \"5319e7\",\n        \"default\": false,\n        \"description\": \"Named-file ranges and pending strict UTF-8 stdin; exact text output.\",\n        \"archived_at\": null,\n        \"archived_by\": null\n      }\n    ],\n    \"state\": \"closed\",\n    \"milestone\": {\n      \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5\",\n      \"html_url\": \"https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/5\",\n      \"labels_url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5/labels\",\n      \"id\": 18469338,\n      \"node_id\": \"MI_kwDOVDjAUc4BGdHa\",\n      \"number\": 5,\n      \"title\": \"sdd-2.2-UTF-8-stdin-and-final-delivery\",\n      \"description\": \"Strict borrowed byte stdin, text/BOM composition, final docs/distribution exits and dedicated milestone review.\",\n      \"creator\": {\n        \"login\": \"pchemguy\",\n        \"id\": 39730837,\n        \"node_id\": \"MDQ6VXNlcjM5NzMwODM3\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/39730837?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/pchemguy\",\n        \"html_url\": \"https://github.com/pchemguy\",\n        \"followers_url\": \"https://api.github.com/users/pchemguy/followers\",\n        \"following_url\": \"https://api.github.com/users/pchemguy/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/pchemguy/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/pchemguy/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/pchemguy/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/pchemguy/orgs\",\n        \"repos_url\": \"https://api.github.com/users/pchemguy/repos\",\n        \"events_url\": \"https://api.github.com/users/pchemguy/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/pchemguy/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n      },\n      \"open_issues\": 1,\n      \"closed_issues\": 3,\n      \"state\": \"open\",\n      \"created_at\": \"2026-10-10T13:45:33Z\",\n      \"updated_at\": \"2026-10-10T19:02:32Z\",\n      \"due_on\": null,\n      \"closed_at\": null\n    },\n    \"state_reason\": \"completed\"\n  },\n  {\n    \"number\": 14,\n    \"title\": \"[T-013] Add borrowed binary stdin acquisition\",\n    \"labels\": [\n      {\n        \"id\": 12626943170,\n        \"node_id\": \"LA_kwDOVDjAUc8AAAAC8J_cwg\",\n        \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin\",\n        \"name\": \"sdd-phase-2-Ranges-and-stdin\",\n        \"color\": \"5319e7\",\n        \"default\": false,\n        \"description\": \"Named-file ranges and pending strict UTF-8 stdin; exact text output.\",\n        \"archived_at\": null,\n        \"archived_by\": null\n      }\n    ],\n    \"state\": \"closed\",\n    \"milestone\": {\n      \"url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5\",\n      \"html_url\": \"https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/5\",\n      \"labels_url\": \"https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/5/labels\",\n      \"id\": 18469338,\n      \"node_id\": \"MI_kwDOVDjAUc4BGdHa\",\n      \"number\": 5,\n      \"title\": \"sdd-2.2-UTF-8-stdin-and-final-delivery\",\n      \"description\": \"Strict borrowed byte stdin, text/BOM composition, final docs/distribution exits and dedicated milestone review.\",\n      \"creator\": {\n        \"login\": \"pchemguy\",\n        \"id\": 39730837,\n        \"node_id\": \"MDQ6VXNlcjM5NzMwODM3\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/39730837?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/pchemguy\",\n        \"html_url\": \"https://github.com/pchemguy\",\n        \"followers_url\": \"https://api.github.com/users/pchemguy/followers\",\n        \"following_url\": \"https://api.github.com/users/pchemguy/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/pchemguy/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/pchemguy/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/pchemguy/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/pchemguy/orgs\",\n        \"repos_url\": \"https://api.github.com/users/pchemguy/repos\",\n        \"events_url\": \"https://api.github.com/users/pchemguy/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/pchemguy/received_events\",\n        \"type\": \"User\",\n        \"user_view_type\": \"public\",\n        \"site_admin\": false\n      },\n      \"open_issues\": 1,\n      \"closed_issues\": 3,\n      \"state\": \"open\",\n      \"created_at\": \"2026-10-10T13:45:33Z\",\n      \"updated_at\": \"2026-10-10T19:02:32Z\",\n      \"due_on\": null,\n      \"closed_at\": null\n    },\n    \"state_reason\": \"completed\"\n  }\n]\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659181.7298503,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\npath=Path(\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-milestone.py\")\npath.write_text('''import importlib.util,sys,json\nfrom pathlib import Path\nspec=importlib.util.spec_from_file_location(\"api\",\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-api.py\");m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)\nnum=int(sys.argv[1])\nexpected={5:(\"sdd-2.2-UTF-8-stdin-and-final-delivery\",{14:\"T-013\",15:\"T-014\",16:\"T-015\",17:\"T-016\"}),6:(\"sdd-2.3-Phase-2-and-final-review\",{18:\"T-017\"})}\ntitle,owners=expected[num]\nbefore=m.api(f\"/milestones/{num}\")\nassert before[\"number\"]==num and before[\"title\"]==title\nissues=m.api(f\"/issues?milestone={num}&state=all&per_page=100\")\nledger=json.loads(Path(\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-observations.json\").read_text())\nassert not any(k.lower()==\"link\" for k in ledger[\"provider\"][-1][\"headers\"]),\"Unexhausted pagination\"\nassert len(issues)<100 and all(\"pull_request\" not in i for i in issues)\nassert {i[\"number\"] for i in issues}==set(owners), \"Unexpected association set\"\nfor issue in issues:\n tid=owners[issue[\"number\"]]\n assert issue[\"title\"].startswith(\"[\"+tid+\"] \") and f\"sdd-forge:task-id={tid}\" in issue[\"body\"]\n assert issue[\"milestone\"][\"number\"]==num\n assert issue[\"state\"]==\"closed\" and issue[\"state_reason\"]==\"completed\"\n assert \"sdd-phase-2-Ranges-and-stdin\" in [label[\"name\"] for label in issue[\"labels\"]]\nassert before[\"open_issues\"]==0 and before[\"closed_issues\"]==len(issues)\nif before[\"state\"]!=\"closed\":m.api(f\"/milestones/{num}\",\"PATCH\",{\"state\":\"closed\"})\nafter=m.api(f\"/milestones/{num}\")\nassert after[\"state\"]==\"closed\" and after[\"open_issues\"]==0\nfor k,v in before.items():\n if k not in {\"state\",\"closed_at\",\"updated_at\"}:assert after[k]==v,k\nprint(\"native milestone\",num,\"closed/readback; all-state associations\",sorted(owners),\"all closed/completed; all remaining fields preserved\")\n''')\ncompile(path.read_text(),str(path),\"exec\")\nprint(\"External guarded closure helper prepared; no provider call or hosted write executed.\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "External guarded closure helper prepared; no provider call or hosted write executed.\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659269.7026212,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-016",
+        "17",
+        "5",
+        "b49a26b36d68dc9bab8cf83633f5b7a2aae81eea",
+        "Accepted milestone report decision9338f067a575511b6d818a6898a458957f4670a8; separate implementation review, twelve fresh tests, unchanged full37/34, 478 extraction cases and twelve fences; TODO None."
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T-016 17 closed/completed; exact comment readback and native fields preserved b49a26b36d68dc9bab8cf83633f5b7a2aae81eea\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659429.861184,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-milestone.py",
+        "5"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "native milestone 5 closed/readback; all-state associations [14, 15, 16, 17] all closed/completed; all remaining fields preserved\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659462.8683395,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "import importlib.util,json\nfrom pathlib import Path\nspec=importlib.util.spec_from_file_location(\"api\",\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-api.py\");m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)\nd=json.loads(Path(\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-observations.json\").read_text())\nbaseline={}\nfor r in d[\"provider\"]:\n if \"/milestones?\" in r[\"endpoint\"] and isinstance(r.get(\"response\"),list):\n  for item in r[\"response\"]:\n   if item.get(\"number\") in [5,7,8,9]:baseline.setdefault(item[\"number\"],item)\nfor n in [5,7,8,9]:\n current=m.api(f\"/milestones/{n}\")\n assert current[\"id\"]==baseline[n][\"id\"] and current[\"title\"]==baseline[n][\"title\"]\n assert current[\"state\"]==\"closed\" and current[\"open_issues\"]==0\n print(\"T017 prerequisite\",n,current[\"id\"],current[\"title\"],\"closed, zero open issues verified\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T017 prerequisite 5 18469338 sdd-2.2-UTF-8-stdin-and-final-delivery closed, zero open issues verified\nT017 prerequisite 7 18471444 sdd-2.4-Named-file-ranges closed, zero open issues verified\nT017 prerequisite 8 18471447 sdd-2.5-Range-documentation-and-distribution closed, zero open issues verified\nT017 prerequisite 9 18471455 sdd-2.6-Range-feature-review closed, zero open issues verified\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659535.0427082,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\np=Path(\"docs/dev/reports/phases/2/PHASE-REPORT.md\");assert not p.exists()\np.write_text(\"\"\"# Phase 2 review \u2014 ranges, UTF-8 stdin and final delivery\n\n## Identity, authority and candidate state\n\nOwning final review task: T-017. This is the pre-integration review artifact:\nPhase 2 implementation and applicable final exits are verified at published\n`phase/2-json-and-stdin` source `b49a26b36d68dc9bab8cf83633f5b7a2aae81eea`.\nConcrete delegated acceptance of this report and the\n[final implementation report](../../IMPLEMENTATION-REPORT.md), task persistence,\nown review-milestone closure and prospective main integration are pending at this\ncandidate checkpoint. No target merge/publication is inferred.\n\nCurrent [SPEC](../../../SPEC.md), [PLAN](../../../PLAN.md), canonical\n[TASKS](../../../TASKS.md) and adjacent current QC govern. Explicit resume and\npublished startup acceptance `fb98e7b984134755845fc46390381d9933aa397e` cover the\nremaining five owners after accepted amendment\n`77e7106e3134cc7053a2b1a045cf1a76cf0361ea` / publication acceptance `963d058`.\nThe exact milestone 2.2 report candidate was accepted/published at coordinator\n`9338f067a575511b6d818a6898a458957f4670a8`, then committed/published as T-016\n`b49a26b36d68dc9bab8cf83633f5b7a2aae81eea`.\nR-009/JSON delivery is withdrawn; historical identities/reviews remain retained.\n\nFresh provider GETs established prerequisite native milestones #5 (2.2), #7 (2.4),\n#8 (2.5) and #9 (range feature review) closed with zero open issues and matching\noriginal IDs/titles. Milestone #5 closure followed exact published T-016 readback,\nissue #17 closed/completed and full all-state associations #14\u2013#17, each closed/\ncompleted with phase label and expected ownership, no extra associations,\npagination or PRs. Native fields were preserved. The accepted existing phase-label\ndescription correction changed only description, with fresh before/after readbacks\nand ID/name/color/all other fields preserved. Own final-review milestone #6\nremains open until this task's publication and issue #18 closure.\n\n## Delivered phase and retained behavior\n\nNamed-file and stdin input support exact text counts and both BOM policies.\nThe inclusive line-range grammar validates before acquisition, accepts unbounded\npositive ASCII decimals and leading zeros, preserves available logical segments\nand exposed interior BOMs, and decodes complete bytes even beyond END.\nBorrowed stdin reaches EOF with strict locale-independent UTF-8 and stays open;\nowned file handles close on all paths. Input/decode failure gives identifying\nstderr/status 1 without partial stdout or traceback. Usage failures give status 2\nbefore source access. Empty input and beyond-EOF selection count zero/zero.\n\nThe Phase 1 API retains exactly TextStats/count_text/count_file, immutable\nnonnegative integer values excluding bool, silent whole-input functions and\nkeyword-only BOM policy. Module help, option positions and dash-prefixed filenames\nremain usable; `-` denotes stdin even after `--`, while `./-` selects a dash file.\nRemoved JSON options are unknown usage; a literal `--json` filename remains usable\nafter option termination. No new public range/stream parameter or export exists.\n\nPublic README/API instructions and docstrings describe final delivered behavior.\nThe unchanged eleven-file source allowlist contains package, public docs/notices\nand builder/checker; actual extraction invokes the real module with isolated\nimports for named-file and byte-fed stdin success/ranges/failures.\n\n## Separate cross-phase implementation code review\n\nThis final review freshly inspected the integrated package and tools as a\ncross-phase capability, separately from test execution and from the earlier\nmilestone review. Current relevant tests and public instructions were assessed\nagainst the complete R/F matrix; the T-016-to-current product bytes are unchanged.\n\n| Cross-phase interaction | Assessment |\n| --- | --- |\n| Phase 1 values/API with later acquisition | Frozen/slotted validated values and whole-input silent signatures remain direct. count_file retains owned binary acquisition and unchanged OSError/decode exceptions; the stdin reader stays internal. |\n| Range feature with both sources | The controller performs complete strict acquisition, once-only whole-input BOM normalization, preserved shared selection and normalized counting. No selected-content second normalization exists. Huge endpoints are comparison values, not acquisition/loop limits. |\n| Parser/help with failure paths | Exact options and duplicate/ASCII/order checks run before file/stdin access. Unsupported/removed options and invalid range cannot produce partial counts. Expected acquisition failures alone are translated; named identity or stdin/cause/status remain coherent. |\n| Source/module/distribution boundary | Minimal module adapter returns controller status. Independent discovery excludes workflow fixtures and rejects zero suites. Allowlisted extraction clears inherited import paths, disables user site, checks imported location and exercises real byte-fed module entry rather than checkout counters. |\n| Instructions and scope | Public docs agree with final code, including both source lifetimes and complete decode after END. Historical feature/JSON/amendment reports remain checkpoint records rather than current executable owners; no release, new phase or version is introduced. |\n\nNo new bug, critical issue, contract violation or missing required exit evidence\nwas located. No production repair was required by this final review.\nThe bounded task-persistence audit inspected T-013\u2013T-016 subjects/diffs/ancestry:\neach has one leading owning task ID, exactly its own initial checkbox, current\nevidence and complete result, separately published/read back. T-017 receives the\nsame composition audit at closing and before integration. Protected resources\nand historical Phase 1/JSON/range/revision paths have an empty object/path diff\nfrom the accepted resume baseline; closed records were not compatibility-tested\nor changed.\n\n## Fresh final verification\n\nActual repository-root campaign:\n\n```bash\nPYTHONDONTWRITEBYTECODE=1 python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-runner.py python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-docs-retry.py\n```\n\nIt returned 0 and executed every one of twelve current README/API fences. Actual\nproduct tests/checker commands were run through the external immutable trace\nwrapper, preserving their full argv/cwd/separate raw streams/status/inputs/hashes.\nThe full runner and separate documented discovery each passed 37 unit and\n34 integration tests, no skips/warnings; rebuilt isolated distribution passed\n478 actual module cases plus exact import and silent API/signature probes.\nThe explicit eleven archive members exactly matched current source bytes, SHA-256\n`4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c`.\nAll 2,776 fresh recorded Python children used `-B` and\n`PYTHONDONTWRITEBYTECODE=1`; final temporary example inputs are independently\nconfirmed absent. Original failures/gaps remain external rather than rewritten.\n\nCoverage includes full-input/value/Unicode/terminator/BOM/API/file regression,\nborrowed/owned read/decode/lifetime seams, both sources/range spellings/policies,\nall acceptance anchors, option order/input positions, huge/leading-zero endpoints,\nEOF subsets, bad bytes after END and usage-before-acquisition. Real byte-fed\nnon-ASCII stdin ran under C and C.UTF-8 with Python UTF-8 mode/coercion disabled.\nArchive mutants are rejected for wrong counting, removed-option acceptance,\nignored ranges, second BOM normalization and disabled stdin.\n\nAll documented count/status/stream assertions pass. Useful examples produced\nstdin counts 3/5, 1/1, 2/3, 1/1 and 0/0; bad complete bytes after END gave clean\nstatus 1. Actual extracted named-file/stdin-range examples produced 3/5 and 2/3.\nThe unchanged public guide's local links resolve. Current source identities and\nreport links/headings/whitespace are checked in this task's closing evidence.\n\n## Findings, TODO and limits\n\n[Final implementation report](../../IMPLEMENTATION-REPORT.md#findings-and-todo-aggregation)\ndeduplicates relevant milestone/phase findings with source/repair references:\nM1.2-001, M2.2-001 and M2.2-002 are resolved; EVID-A010-001/002 are resolved\nhistorical evidence/tool interventions. All relevant milestone/phase TODO sections\nreport no deferred code item. Retired JSON and the closed removal amendment were\nread only for this specific TODO/provenance question; JSON was not re-executed.\nPrior ambiguous/truncated/failed observations and unknown lost first channels\nretain their limitations; successful fresh checks do not reconstruct them.\n\nTODO: None.\n\nPython 3.12.14 and this Unix environment are verified; the full declared Python\n3.11+/platform matrix is unverified. Portable controlled seams establish read/\nownership behavior without claiming real permission coverage on every platform.\nExternal notice links, installed packaging and release operations are outside\nthese exits. Complete in-memory decode is the accepted tradeoff, not a bounded\nmemory or benchmark claim.\n\n## Exit and publication boundary\n\nCurrent R-001\u2013R-008/R-010\u2013R-013 and retained F-001\u2013F-004 exits pass.\nR-009 remains withdrawn with stable identity and historical evidence.\nThis final owner supplies the two required substantive reports and all active\ntask/parent completion status in one accepted closing boundary; retired T-010\u2013\nT-012 gain no checkbox or new completion.\n\nFresh remote main readback is\n`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. After report acceptance, commit/push/\nexactly read back T-017, close issue #18, verify full native milestone #6 association\nand close/read back that review milestone. Then refresh the target, audit the\ncomplete prospective difference/persistence, and present the concrete two-parent\nintegration candidate for delegated acceptance. Verify the prospective merged\nstate, commit the accepted merge, immediately publish/exactly read back main and\nretain the phase branch. Actual final parents/checks/publication belong in the\nmerge body and externally required final seal, not an invented future SHA here.\nStop after published completed Phase 2; no subsequent task/phase, version or release.\n\"\"\")\np=Path(\"docs/dev/reports/IMPLEMENTATION-REPORT.md\");assert not p.exists()\np.write_text(\"\"\"# TextStats final implementation review\n\n## Review state and delivered result\n\nThis is T-017's pre-integration final review artifact, paired with the\n[Phase 2 report](phases/2/PHASE-REPORT.md). Current amended implementation and\nrequired final exits are verified at published\n`phase/2-json-and-stdin` `b49a26b36d68dc9bab8cf83633f5b7a2aae81eea`.\nAt this candidate checkpoint, report acceptance, final owning commit/publication,\nown hosted review closure and completed-phase integration remain pending.\nThe artifact records the review boundary; actual final integration identities\nand publication are recorded in the accepted merge body and external final seal.\n\nTextStats delivers a standard-library Python API and module CLI for line/word\ncounts from text, named UTF-8 files and borrowed binary stdin. It preserves raw\nCRLF/CR/LF logical-line semantics, Unicode whitespace words, once-only leading BOM\npolicy, immutable values and silent whole-input API. CLI ranges validate inclusive\npositive ASCII/unbounded endpoints before input access and preserve selected\ncontent. Complete strict UTF-8 decoding precedes selection, so bad bytes after END\nfail without partial counts. Public range/stream API extensions, bounded-memory\nclaims, third-party runtime requirements, installed entry points and release\npublication are absent from this accepted scope.\n\nThe explicit resume follows accepted text-only amendment\n`77e7106e3134cc7053a2b1a045cf1a76cf0361ea` / publication acceptance `963d058`.\nR-009 and T-010\u2013T-012 retain historical identities with JSON delivery withdrawn;\nremoved options are usage errors before input acquisition, while literal option\nfilenames still work after `--`. There are 24 stable canonical identities and\n21 active owners. Archived feature checklists are historical; main TASKS is sole\nexecutable owner. No strategy/requirements/design or new phase was invented.\n\n## Implementation and verification assessment\n\nThe final separate cross-phase code review assessed the full value/API/acquisition/\nparse/control/selection/count/render path, ownership/errors, packaging/isolation,\nnonempty discovery and user instructions. Earlier milestone reviews inform\nprovenance but do not substitute for this review. No remaining bug, critical\nissue, contract violation or required evidence blocker was found; no additional\nproduction repair was needed.\n\nFresh T-017 final checks returned status 0: full runner and separate discovery\npassed 37 unit/34 integration tests without skips/warnings; isolated extracted\nmodule checks passed 478 real named-file/stdin cases plus import/API probes.\nAll twelve actual README/API fences passed, including exact statuses/streams/counts\nand isolated extracted named-file 3/5 and stdin-range 2/3 demonstrations.\nThe eleven-file archive matched approved current source bytes; SHA-256\n`4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c`.\nAll 2,776 fresh recorded Python children used `-B` and bytecode suppression,\nwith fixture/input/source hashes and real extraction cwd/provenance retained.\nInputs are unchanged; temporary example fixtures are confirmed absent.\n\nThe [Phase 2 verification section](phases/2/PHASE-REPORT.md#fresh-final-verification)\ngives the actual external-wrapper campaign argv, coverage and runtime limits.\nCurrent public signatures/exports/value invariants/silence, owned and borrowed\nsuccess/read/decode lifetimes, text/status/help/usage, named-file/range regressions\nand locale-independent byte-fed stdin are covered. The extracted checker uses\nindependent literal contract anchors and rejects deliberately faulty archives,\nincluding disabled stdin while checkout/named-file behavior remains healthy.\n\n## Findings and TODO aggregation\n\nOnly specifically relevant findings/TODO sections were read from closed records\nfor final provenance aggregation. Their original bytes, evidence and historical\nscope remain unchanged; they were not subjected to current compatibility repair.\nIDs are deduplicated below. No unresolved/deferred code finding remains.\n\n| Finding / provenance | Impact, resolution and current disposition |\n| --- | --- |\n| M1.2-001, [milestone 1.2](phases/1/1.2.md) and [Phase 1](phases/1/PHASE-REPORT.md) | Unsupported abbreviated `--keep` acquired input instead of usage rejection. T-008 `7b9f570aa4452d2ca9d6105479640528cb113f0e` set allow_abbrev=False after behavioral RED and expanded extraction acceptance. Current unit/module/extracted removed/unknown-option regressions retain that resolution. Resolved. |\n| M2.2-001, [milestone 2.2](phases/2/2.2.md#findings-and-dispositions) | Old distribution checker accepted an extracted CLI with stdin disabled, blocking final R-013 stdin evidence. T-015 `ca24007134141265a1937c77e2fda504bb0d6129` added actual byte-fed checks; sensitivity recheck and fresh full distribution pass. Resolved. |\n| M2.2-002, [milestone 2.2](phases/2/2.2.md#findings-and-dispositions) | Two old child invocation fixtures inherited bytecode suppression but omitted explicit -B. Scoped T-015 flag-only maintenance preserved assertions. Earlier fifteen captured gaps remain; corrected final campaigns alone establish all recorded child flags/env. Resolved. |\n| EVID-A010-001, [range feature review](../features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md#milestone-findings-and-todo-aggregation) | Historical T-021 redirected log was incomplete and incidental process inspection failed. Fresh complete captured campaign resolved verification uncertainty without product repair; original ambiguous evidence is not success proof. Resolved facility/provenance intervention. |\n| EVID-A010-002, [range feature review](../features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md#milestone-findings-and-todo-aggregation) | Historical closure helper required an overly specific TODO heading and failed before mutation. Helper assertion was corrected; full association/closure/readback passed with original product report bytes. Resolved tool intervention. |\n\n| Reviewed TODO source | Aggregation result |\n| --- | --- |\n| [Milestone 1.1](phases/1/1.1.md) | None. |\n| [Milestone 1.2](phases/1/1.2.md), [Phase 1](phases/1/PHASE-REPORT.md) | None; M1.2-001 resolved as above. |\n| [Historical 2.1](phases/2/2.1.md) | None at its original checkpoint; capability withdrawn, not re-executed or reinstated. |\n| [Milestone 2.2](phases/2/2.2.md) | None; two resolved findings and explicit facility limits above. |\n| [Range 2.4](../features/002_e7cae5b-named-file-ranges/phases/2/2.4.md), [2.5](../features/002_e7cae5b-named-file-ranges/phases/2/2.5.md) | None; later-range documentation/distribution obligations were delivered rather than deferred defects. |\n| [Range feature extent](../features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md), [feature implementation](../features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md) | None; evidence interventions deduplicated above. |\n| [Closed removal amendment](phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md#todo) | None within its original selected scope. Its then-pending stdin/final tasks are current delivered work, not deferred defects; later accepted publication/resume supersedes historical stop/pending prose. |\n| [Current Phase 2](phases/2/PHASE-REPORT.md#findings-todo-and-limits) | No new unresolved finding or code deferral. |\n\nTODO: None. The deferred set is empty, so there is no unresolved code item\nrequiring invented solution alternatives, tradeoffs or follow-up owner.\nAccepted complete-input memory use remains a design tradeoff, not a defect.\nBroader runtime/platform tests could be future work only if separately requested;\nthis report does not allocate an additional phase/task.\n\nOriginal A-013 logging races, failed helper repairs/guards/navigation reads,\nearlier missing explicit argv flags, fixture cleanup discrepancy and unknown\nlost first-channel content remain in\n[TASKS evidence](../TASKS.md#t-015-completion-evidence) and the external observation\nprefix. Surviving original captures are retained; missing history is not\nreconstructed. Lock/atomic logging, exclusive immutable child records, verified\nowned-byte cleanup and fresh complete checks establish current acceptance.\nThese limits do not become deferred code TODOs or silently rewritten history.\n\n## Provenance, closures and completion boundary\n\nPhase 1 final review: T-009\n`5b17e4650c64c7c735991931b591bdabb8069215`.\nRange reviews: T-020 `33f0ba2ed7ae187cce9643433f8f1f09282ef079`,\nT-023 `4eeee9e9505b29b4a616292434561aab569dac7f`,\nT-024 `bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa`.\nCurrent stdin delivery: T-013 `2d96774221165ac04096c8d57ddcefe85b2305e0`,\nT-014 `dbf50d7b6d83c7ddf53f287d82b199db3e83fd89`,\nT-015 `ca24007134141265a1937c77e2fda504bb0d6129`.\nAccepted milestone 2.2 review: T-016\n`b49a26b36d68dc9bab8cf83633f5b7a2aae81eea`, coordinator decision\n`9338f067a575511b6d818a6898a458957f4670a8`.\nEach current owned task closed atomically and was immediately pushed/exactly\nread back before subsequent owned work; T-017's same audit precedes integration.\n\nFresh provider reads verify prerequisites #5/#7/#8/#9 closed with no open issues.\nIssues #14\u2013#17 are closed/completed; milestone #5 was closed only after its full\nassociated issue gate. The managed phase-label description is current with all\nother fields preserved. Issue #18 and milestone #6 follow T-017 publication.\nManual/foreign controls and protected resources remain outside writes.\n\nFresh remote main readback is\n`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`; target integration is not yet claimed\nat this review checkpoint. After the accepted final task/report pair is committed/\npublished and own hosted review closes, present the prospective two-parent merge\nfor delegated acceptance, verify its complete merged state, publish/read back\nmain and retain the phase branch. Final actual refs/parents/checks are recorded\nin the merge body and external seal. Stop after that completed Phase 2 publication.\n\nVerified environment is Python 3.12.14 on this Unix system. Other declared Python\n3.11+ runtimes/platforms, installed packaging and external notice availability\nremain unverified; releases are outside scope. No task, phase, release or version\nbump follows automatically.\n\"\"\")\nprint(\"Required distinct PHASE/IMPLEMENTATION report pair drafted from actual final checks and bounded TODO source provenance.\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "Required distinct PHASE/IMPLEMENTATION report pair drafted from actual final checks and bounded TODO source provenance.\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659912.272238,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport hashlib,re\np=Path(\"docs/dev/TASKS.md\");s=p.read_text()\nfor old,new in [(\"- [ ] T-017 \u2014\",\"- [x] T-017 \u2014\"),(\"- [ ] Milestone 2.3 \u2014\",\"- [x] Milestone 2.3 \u2014\"),(\"- [ ] Phase 2 \u2014 Ranges and stdin\",\"- [x] Phase 2 \u2014 Ranges and stdin\")]:\n assert s.count(old)==1;s=s.replace(old,new,1)\ns+=\"\"\"\n## T-017 completion evidence\n\nPublished/exactly read back T-016 `b49a26b36d68dc9bab8cf83633f5b7a2aae81eea`\nfollows exact report acceptance `9338f067a575511b6d818a6898a458957f4670a8`.\nIssue #17 is closed/completed with evidence and native fields preserved.\nFull all-state milestone #5 associations were exactly #14\u2013#17, all closed/\ncompleted with correct ownership/label and no extra objects/PRs/pagination;\nnative milestone #5 closed/read back with all other nonmechanical fields preserved.\nAccepted existing phase-label metadata maintenance changed description only,\nretaining ID 12626943170/name/color/every other field with fresh before/after GETs.\nFresh GETs verified original milestone #5/#7/#8/#9 identities/titles closed and\nzero open issues, satisfying this final task's delivery/feature-review dependencies.\n\nThe [Phase 2 report](reports/phases/2/PHASE-REPORT.md) and\n[final implementation report](reports/IMPLEMENTATION-REPORT.md) record separate\ncross-phase implementation code review against complete current R/F obligations,\nin addition to tests. The integrated value/API/file/stdin/parser/normalization/\nselection/count/output path, package isolation/discovery and user instructions\nhave no remaining located bug/critical/contract/evidence blocker. No new\nproduction repair was required. Relevant milestone/phase findings/TODO sections\nalone were read for required provenance aggregation; closed records remain exact\nhistorical bytes. Resolved M1.2-001/M2.2-001/M2.2-002 and EVID-A010-001/002 are\ndeduplicated with source/repair references. TODO is None; no deferral/options/\nowner or extra phase is invented. Retired JSON is not re-executed.\n\nFresh final serialized `037-a013-consumer-docs-retry.py` returned 0 and executed\nall twelve current README/API fences. Actual full runner and separate discovery\npassed 37 unit/34 integration tests, no skips/warnings; standalone rebuilt isolated\ndistribution passed 478 real module cases plus import/API probes. All documented\ncounts/status/streams pass, including real extracted named-file 3/5 and stdin-range\n2/3. Eleven archive entries match current allowlisted source bytes (SHA-256\n`4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c`).\nThe 2,776 fresh recorded Python children all use -B and bytecode suppression;\nowned temporary examples are confirmed absent. Prior facility/argv/cleanup failures\nand unknown lost first-channel entries remain unchanged limitations in external\nobservations, not reconstructed history. Python 3.12.14/current Unix is verified;\nother declared runtimes/platforms remain unverified.\n\nBounded current task-persistence audit confirms T-013\u2013T-016 each separately\ncommitted its exact result/current evidence/initial owning checkbox with one\nleading ID and published before further work. Protected and historical paths have\nempty object/path diff from accepted resume baseline. T-017 report pair/current\nevidence/initial owning checkbox and eligible 2.3/Phase2 parents are one closing\ncandidate requiring concrete delegated acceptance before commit; no other\nexecutable owner closes. All 21 active owners are then checked; three retired\nidentities remain without an executable checkbox. Current QC source hashes/counts\nand current report links/headings/whitespace are verified before closure.\n\nFresh established remote main readback is\n`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. After acceptance and owning commit,\nimmediately push/exactly read back, separately close issue #18 and validate/close/\nread back native milestone #6. Completed-phase target integration remains a\ndistinct concrete delegated gate: refresh target, inspect full prospective scope/\npersistence, verify two-parent merged state, publish/exactly read back main and\nretain the phase branch. Reports describe this pre-integration checkpoint; actual\nfinal merge parents/checks/publication are in its body and external final seal.\nStop after published completed Phase 2, with no new phase, version or release.\n\"\"\"\np.write_text(s)\nq=Path(\"docs/dev/TASKS-REVIEW-REPORT.md\");head,historical=q.read_text().split(\"## Historical gate\",1)\nhead=re.sub(r\"(\\| `TASKS.md` \\| `)[0-9a-f]{64}(` \\|)\",lambda m:m[1]+hashlib.sha256(p.read_bytes()).hexdigest()+m[2],head)\nhead=head.replace(\"21 active/20 checked/one pending T-017 in this T-016 candidate\",\"21 active/21 checked/no pending active owner in this T-017 candidate\")\nq.write_text(head+\"## Historical gate\"+historical)\na=Path(\"AGENTS.md\");a.write_text(a.read_text()+\"\"\"\n## Current complete Phase 2 review checkpoint\n\nThe [Phase 2 review](docs/dev/reports/phases/2/PHASE-REPORT.md) and\n[final implementation review](docs/dev/reports/IMPLEMENTATION-REPORT.md) record the\ncomplete amended text/count/BOM/range/stdin scope, separate cross-phase code review,\nfresh 37 unit/34 integration tests, 478 real isolated module cases and all twelve\nREADME/API fences. Resolved findings retain provenance; TODO is None. Python\n3.12.14/current Unix is verified and broader runtimes/platforms remain unverified.\nCanonical TASKS retains all 21 active owners checked and three retired historical\nJSON identities without executable checkboxes; current QC completion hashes match.\nThis owning final-review candidate requires concrete delegated report acceptance\nbefore its closing commit/publication. Native review closure follows publication.\n\nReports identify their pre-integration review checkpoint. Full completed-phase\ntwo-parent integration into established main has a separate concrete acceptance/\nmerged-state verification gate; use actual Git refs, accepted merge body and remote\nreadback for reached integration/publication identity rather than inferring it\nfrom historical navigation. Retain phase/2-json-and-stdin and preserve protected/\nforeign/manual material. Stop after published completed Phase 2; no further task,\nphase, version bump or release is authorized.\n\"\"\")\nprint(\"T017 reports/result/current evidence and sole initial task + eligible parents candidate composed; QC historical body preserved.\")\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T017 reports/result/current evidence and sole initial task + eligible parents candidate composed; QC historical body preserved.\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791659994.4867616,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "import importlib.util,json\ns=importlib.util.spec_from_file_location(\"api\",\"/workspace/scratch/46b31bb4dff6/037-a013-consumer-api.py\");m=importlib.util.module_from_spec(s);s.loader.exec_module(m)\nissue=m.api(\"/issues/18\");milestone=m.api(\"/milestones/6\");associated=m.api(\"/issues?milestone=6&state=all&per_page=100\")\nassert issue[\"title\"].startswith(\"[T-017] \") and \"sdd-forge:task-id=T-017\" in issue[\"body\"]\nassert issue[\"state\"]==\"open\" and issue[\"milestone\"][\"number\"]==6\nassert milestone[\"title\"]==\"sdd-2.3-Phase-2-and-final-review\" and milestone[\"state\"]==\"open\"\nassert len(associated)==1 and associated[0][\"number\"]==18 and \"pull_request\" not in associated[0]\nprint(json.dumps({\"task\":\"T-017\",\"issue\":{\"id\":issue[\"id\"],\"number\":18,\"state\":issue[\"state\"],\"milestone\":6},\"milestone\":{\"id\":milestone[\"id\"],\"number\":6,\"state\":milestone[\"state\"],\"open_issues\":milestone[\"open_issues\"]},\"exact_associations\":[18]}))\n"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "{\"task\": \"T-017\", \"issue\": {\"id\": 5791788182, \"number\": 18, \"state\": \"open\", \"milestone\": 6}, \"milestone\": {\"id\": 18469339, \"number\": 6, \"state\": \"open\", \"open_issues\": 1}, \"exact_associations\": [18]}\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791660370.1282082,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-017",
+        "18",
+        "6",
+        "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+        "Final separate code review/report pair accepted at791d494; 37 unit/34 integration tests, 478 real extracted module cases and all12 README/API fences passed on Python3.12.14. TODO None; historical failures and runtime limits retained."
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "T-017 18 closed/completed; exact comment readback and native fields preserved c05b65958e2a386cf2ae8782dca3e749ed9b60ff\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791660658.2629642,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-milestone.py",
+        "6"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "native milestone 6 closed/readback; all-state associations [18] all closed/completed; all remaining fields preserved\n",
+      "stderr": "",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791660682.4530742,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "checkout",
+        "main"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "Your branch is up to date with 'origin/main'.\n",
+      "stderr": "Switched to branch 'main'\n",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791660739.5723581,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "merge",
+        "--no-ff",
+        "--no-commit",
+        "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "stdout": "",
+      "stderr": "Automatic merge went well; stopped before committing as requested\n",
+      "status": 0,
+      "input_hex": null,
+      "input_sha256": null,
+      "time": 1791660740.2181132,
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+      }
+    }
+  ]
+}

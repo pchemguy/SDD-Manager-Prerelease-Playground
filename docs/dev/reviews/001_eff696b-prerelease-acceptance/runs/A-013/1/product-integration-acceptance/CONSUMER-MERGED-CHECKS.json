@@ -1,0 +1,178 @@
+{
+  "kind": "prospective_merged_phase_checks",
+  "tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "parents": [
+    "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+  ],
+  "full_runner": {
+    "status": 0,
+    "unit": 37,
+    "integration": 34,
+    "skips": 0,
+    "warnings": 0,
+    "completed": 1791660820.1274598
+  },
+  "standalone_checker": {
+    "status": 0,
+    "real_module_cases": 478,
+    "import_api_probes": true,
+    "completed": 1791660864.848155
+  },
+  "fresh_python_children": 1628,
+  "all_children_explicit_B_and_environment": true,
+  "archive_sha256": "d3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed",
+  "archive_members": [
+    {
+      "path": "README.md",
+      "bytes": 9025,
+      "sha256": "1e0935b184c9dbccd9b5186a6619da45da081cba524f8271e1630b29443d6829",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    },
+    {
+      "path": "docs/public-api.md",
+      "bytes": 7652,
+      "sha256": "b8f0a8ab2aedf6cfe35b8cd75118b520f91d99989fdb0c4857ec6288eec2ff76",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    },
+    {
+      "path": "AI_DISCLOSURE.md",
+      "bytes": 1192,
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        8,
+        34,
+        6
+      ]
+    },
+    {
+      "path": "SDD-MANAGER.md",
+      "bytes": 683,
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        8,
+        34,
+        6
+      ]
+    },
+    {
+      "path": "textstats/__init__.py",
+      "bytes": 200,
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        9,
+        31,
+        2
+      ]
+    },
+    {
+      "path": "textstats/__main__.py",
+      "bytes": 164,
+      "sha256": "e2e296c24d54ce9b76436f615db401c26729ca32ab560be602bac67260cf8e63",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    },
+    {
+      "path": "textstats/core.py",
+      "bytes": 3579,
+      "sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    },
+    {
+      "path": "textstats/io.py",
+      "bytes": 1958,
+      "sha256": "3fc2b6845a7fe8ab10786eaadc7d047984f657701be507208261c7f39353cb99",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    },
+    {
+      "path": "textstats/cli.py",
+      "bytes": 3831,
+      "sha256": "df1bac6a0b2158a9926b5a87aaff29d8cc8b2f299ee5ce4f22a4125a9fcd0c9b",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    },
+    {
+      "path": "tools/package_source.py",
+      "bytes": 1405,
+      "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        9,
+        31,
+        2
+      ]
+    },
+    {
+      "path": "tools/check_distribution.py",
+      "bytes": 15528,
+      "sha256": "5d307d5e31b0e65c4adce2661a4b7398a0524b5a44f28df814aed579e9048b79",
+      "zip_datetime": [
+        2026,
+        10,
+        10,
+        15,
+        32,
+        20
+      ]
+    }
+  ],
+  "qc_source_matches": 20,
+  "no_conflicts_or_unstaged_changes": true,
+  "exact_published_phase_tree": true,
+  "fresh_docs_reused_unchanged": {
+    "fences": 12,
+    "completion": 1791659762.7590818,
+    "preintegration_archive_sha256": "4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c"
+  }
+}
