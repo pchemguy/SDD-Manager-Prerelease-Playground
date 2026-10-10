@@ -1,0 +1,81 @@
+{
+  "compared_to": "0024d20c74c7f9bd70e2c540f4b3e377c1b62db9",
+  "runtime": "Python 3.12.14",
+  "kind": "AST behavior-preservation and documentation inventory; semantic API review recorded in revision report",
+  "files": [
+    {
+      "path": "acceptance/textstats/scripts/core.py",
+      "documentation_only_ast_equal": true,
+      "python_311_syntax": true,
+      "module_documented": true,
+      "documented_top_level_interfaces": [
+        "Stop",
+        "protected",
+        "sensitive_text",
+        "no_secret",
+        "clean_bytes",
+        "exact",
+        "validate",
+        "load",
+        "configuration",
+        "checkpoint",
+        "git",
+        "normalize",
+        "remote_read",
+        "repository",
+        "package",
+        "preflight",
+        "write_new",
+        "prepare",
+        "paths",
+        "ancestor_containment",
+        "observe_git",
+        "reconcile",
+        "export_recovery",
+        "observation",
+        "relative",
+        "task_history",
+        "validate_task_documents",
+        "task_identifier",
+        "task_lines",
+        "task_rows",
+        "ownership",
+        "assessment",
+        "main"
+      ],
+      "sha256": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80"
+    },
+    {
+      "path": "acceptance/textstats/tests/support.py",
+      "documentation_only_ast_equal": true,
+      "python_311_syntax": true,
+      "module_documented": true,
+      "documented_top_level_interfaces": [],
+      "sha256": "faeda5656d61619e95464f1a5b7e3d5552d14e9d787a6a079cbcf492cf715bed"
+    },
+    {
+      "path": "acceptance/textstats/tests/test_checkers.py",
+      "documentation_only_ast_equal": true,
+      "python_311_syntax": true,
+      "module_documented": true,
+      "documented_top_level_interfaces": [],
+      "sha256": "c83124a67d767568bad79cdc3461b33d87d06e58184ccdc0c64f8e1d90c3f8c5"
+    },
+    {
+      "path": "acceptance/textstats/tests/test_preflight.py",
+      "documentation_only_ast_equal": true,
+      "python_311_syntax": true,
+      "module_documented": true,
+      "documented_top_level_interfaces": [],
+      "sha256": "9a1d36f9c6c95e39cf968c183644e7497f080585126116e855fdb1d086167c48"
+    },
+    {
+      "path": "acceptance/textstats/tests/test_recovery.py",
+      "documentation_only_ast_equal": true,
+      "python_311_syntax": true,
+      "module_documented": true,
+      "documented_top_level_interfaces": [],
+      "sha256": "84e42ecb9b88a400330853be738cefd0fb16940b5db8226522f913e8fe6b1ec5"
+    }
+  ]
+}

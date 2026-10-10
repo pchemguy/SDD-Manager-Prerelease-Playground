@@ -1,0 +1,30 @@
+{
+  "public_only": {
+    "status": "Unavailable",
+    "tests": 0,
+    "failures": 0,
+    "errors": 1,
+    "cause": "ImportError",
+    "diagnostic": "",
+    "agent_behavior_assessed": false,
+    "child_returncode": 0
+  },
+  "wrong_public_correct_private": {
+    "status": "Passed",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "import_origin": "/tmp/sdd024-review-yggd0t9t/wrong_public/textstats/core.py",
+    "diagnostic": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+    "agent_behavior_assessed": false,
+    "child_returncode": 0
+  },
+  "dangling_receipt_symlink": {
+    "status": "Completed",
+    "lexical_symlink_preserved": true,
+    "referent_created": true,
+    "referent_status": "Completed"
+  },
+  "source": "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+  "scope": "Disposable fixtures, no source edits, no live provider writes."
+}

@@ -1,0 +1,60 @@
+{
+  "kind": "source helper counterexamples, not agent acceptance",
+  "results": [
+    {
+      "scenario": "supported_duplicate_control",
+      "documents": {
+        "TASKS.md": "- [ ] T-001 main\n",
+        "FEATURE-TASKS.md": "- [ ] T-001 feature\n"
+      },
+      "expected": "duplicate_task_ownership",
+      "observed": "duplicate_task_ownership",
+      "owners": null,
+      "matches_expected": true
+    },
+    {
+      "scenario": "custom_id_duplicate",
+      "documents": {
+        "TASKS.md": "- [ ] T-001 main\n- [ ] F-001 additional\n",
+        "FEATURE-TASKS.md": "- [ ] F-001 duplicate\n"
+      },
+      "expected": "duplicate_task_ownership",
+      "observed": "duplicate_task_ownership",
+      "owners": null,
+      "matches_expected": true
+    },
+    {
+      "scenario": "linked_report_is_evidence",
+      "documents": {
+        "TASKS.md": "- [x] T-001 implemented\n[Report](report.md)\n",
+        "report.md": "- [x] T-001 verified result (historical evidence, not executable task)\n"
+      },
+      "expected": "accepted",
+      "observed": "accepted",
+      "owners": [
+        "T-001"
+      ],
+      "matches_expected": true
+    },
+    {
+      "scenario": "fenced_example_is_not_owner",
+      "documents": {
+        "TASKS.md": "- [ ] T-001 actual\n\n```markdown\n- [ ] T-001 illustrative checklist\n```\n"
+      },
+      "expected": "accepted",
+      "observed": "accepted",
+      "owners": [
+        "T-001"
+      ],
+      "matches_expected": true
+    }
+  ],
+  "original_review_baseline": "54d55edebd8a7af6499d625bdbb357f864a4db1d",
+  "tested_state": {
+    "head": "bfb2454e055e2acc7c828d21ca15440a78514b59",
+    "pending_source_sha256": {
+      "acceptance/textstats/scripts/core.py": "1061421b32a1617a53914a8c658589cfbaabf62da1c1c749d88b7233dc121505",
+      "acceptance/textstats/cases/assessor/catalog_tools.py": "33b52d9d149278d6bad20da8798ad19dd3dc973747326cc61c1a327f8ca7bb67"
+    }
+  }
+}

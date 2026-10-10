@@ -1,0 +1,23 @@
+{
+  "working_head": "75a23eea0deef7586242597296bbc0047fb618af",
+  "source_sha256": {
+    "acceptance/textstats/cases/assessor/catalog_tools.py": "33b52d9d149278d6bad20da8798ad19dd3dc973747326cc61c1a327f8ca7bb67",
+    "acceptance/textstats/scripts/HELPER-INTERFACES.md": "7e4a54b2a8694617ddd50988f663f5f15979f20c46a2099401a6083af8eaad07",
+    "acceptance/textstats/scripts/core.py": "72ddbe9d32d4655659582e23e4be9645ab7c3abf19209120fc9ab95608eddb80",
+    "acceptance/textstats/tests/support.py": "faeda5656d61619e95464f1a5b7e3d5552d14e9d787a6a079cbcf492cf715bed",
+    "acceptance/textstats/tests/test_catalog.py": "a372f7b8e4ad33932e4d11f29661d87e2e8d2c03cebc006224d923438d05053b",
+    "acceptance/textstats/tests/test_checkers.py": "c83124a67d767568bad79cdc3461b33d87d06e58184ccdc0c64f8e1d90c3f8c5",
+    "acceptance/textstats/tests/test_preflight.py": "9a1d36f9c6c95e39cf968c183644e7497f080585126116e855fdb1d086167c48",
+    "acceptance/textstats/tests/test_recovery.py": "84e42ecb9b88a400330853be738cefd0fb16940b5db8226522f913e8fe6b1ec5"
+  },
+  "unmodified_package_files_verified": 106,
+  "python_311_syntax_files": 13,
+  "runtime": "Python 3.12.14",
+  "git": "git version 2.51.1",
+  "report_links": "valid",
+  "pending_todos": [
+    "TODO-017-001",
+    "TODO-017-002"
+  ],
+  "live_client_acceptance": "deferred separate review"
+}

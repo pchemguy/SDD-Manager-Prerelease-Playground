@@ -1,0 +1,14 @@
+{
+  "target": "feature/architecture-revision",
+  "first_parent": "85f2857b9e4a8cb6dcd1b4b9e2a5d2f5d7b2a14b",
+  "incoming_parent": "0cc0d14c190fc5676d57caa89a4ceee74d87a63a",
+  "source_reviewed": "2729c67662749dd8de10313d334e12432718c4d7",
+  "support_tests": 106,
+  "result": "Passed",
+  "seconds": 18.302,
+  "catalog_cases": 27,
+  "source_and_harness_hashes_verified": 241,
+  "imported_evidence_hashes_verified": 9,
+  "publication": "pending exact remote check",
+  "live_acceptance": "not run; separate campaign"
+}

@@ -1,0 +1,51 @@
+{
+  "baseline": "54d55edebd8a7af6499d625bdbb357f864a4db1d",
+  "kind": "source helper counterexamples, not agent acceptance",
+  "results": [
+    {
+      "scenario": "supported_duplicate_control",
+      "documents": {
+        "TASKS.md": "- [ ] T-001 main\n",
+        "FEATURE-TASKS.md": "- [ ] T-001 feature\n"
+      },
+      "expected": "duplicate_task_ownership",
+      "observed": "duplicate_task_ownership",
+      "owners": null,
+      "matches_expected": true
+    },
+    {
+      "scenario": "custom_id_duplicate",
+      "documents": {
+        "TASKS.md": "- [ ] T-001 main\n- [ ] F-001 additional\n",
+        "FEATURE-TASKS.md": "- [ ] F-001 duplicate\n"
+      },
+      "expected": "duplicate_task_ownership",
+      "observed": "accepted",
+      "owners": [
+        "T-001"
+      ],
+      "matches_expected": false
+    },
+    {
+      "scenario": "linked_report_is_evidence",
+      "documents": {
+        "TASKS.md": "- [x] T-001 implemented\n[Report](report.md)\n",
+        "report.md": "- [x] T-001 verified result (historical evidence, not executable task)\n"
+      },
+      "expected": "accepted",
+      "observed": "duplicate_task_ownership",
+      "owners": null,
+      "matches_expected": false
+    },
+    {
+      "scenario": "fenced_example_is_not_owner",
+      "documents": {
+        "TASKS.md": "- [ ] T-001 actual\n\n```markdown\n- [ ] T-001 illustrative checklist\n```\n"
+      },
+      "expected": "accepted",
+      "observed": "duplicate_task_ownership",
+      "owners": null,
+      "matches_expected": false
+    }
+  ]
+}

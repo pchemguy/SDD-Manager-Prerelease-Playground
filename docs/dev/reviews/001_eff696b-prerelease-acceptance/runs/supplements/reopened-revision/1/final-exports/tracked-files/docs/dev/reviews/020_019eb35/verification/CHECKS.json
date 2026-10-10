@@ -1,0 +1,20 @@
+{
+  "support_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s acceptance/textstats/tests -t acceptance/textstats -v",
+    "exit": 0,
+    "count": 79,
+    "result": "OK"
+  },
+  "initial_discovery": {
+    "exit": 1,
+    "result": "55 actual tests + one failed catalog-module import; command omitted required -t package root; no source defect"
+  },
+  "catalog": {
+    "cases": 27,
+    "result": "validated; static not runtime acceptance"
+  },
+  "references": "All changed live Markdown file references resolved; fenced template links excluded",
+  "package": "Version 0.14.4; skill discovery path, four icon paths and 15 skill name/description frontmatter valid",
+  "whitespace": "git diff --check passed",
+  "independent": "Five source decision scenarios assessed without material contradiction; inspected modified worktree, not runtime execution"
+}

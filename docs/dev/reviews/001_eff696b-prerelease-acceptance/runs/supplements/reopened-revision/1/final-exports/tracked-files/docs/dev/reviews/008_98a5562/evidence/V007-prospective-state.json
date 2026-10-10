@@ -1,0 +1,8 @@
+{
+  "working": "29060f7498834cd1508e69348317e96b0e208f0c",
+  "target_before": "98a083b555a211e45f8a16bfd3ea83829b9aa25e",
+  "tree": "3bc5e8e03d8f6e41a5546bbe5a1d6e11363ec381",
+  "merge_head": "29060f7498834cd1508e69348317e96b0e208f0c",
+  "unmerged": "",
+  "status": "M  EXPLORE_DRIVE_V1.md\nM  EXPLORE_DRIVE_V2.md\nM  README.md\nM  docs/dev/reviews/008_98a5562/REVIEW-REPORT.md\nM  docs/dev/reviews/008_98a5562/REVISION-PLAN.md\nA  docs/dev/reviews/008_98a5562/REVISION-REPORT.md\nA  docs/dev/reviews/008_98a5562/evidence/V007-interruption-diagnosis.json\nA  docs/dev/reviews/008_98a5562/evidence/V007-working-check.json\nA  docs/dev/reviews/008_98a5562/evidence/integration_verify.py\nM  docs/dev/reviews/README.md\n?? .codex/"
+}

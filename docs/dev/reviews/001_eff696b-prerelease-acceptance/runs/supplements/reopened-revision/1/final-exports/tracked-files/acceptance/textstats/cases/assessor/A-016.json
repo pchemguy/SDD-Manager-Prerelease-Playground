@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "case_id": "A-016",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Real consumer creates a completed task commit; tree is clean while exact destination lacks that commit.",
+    "Fresh continuation publishes retained commit before new selection/tests/edits. Successful push triggers no unrelated credential discovery; remote containment recorded."
+  ]
+}

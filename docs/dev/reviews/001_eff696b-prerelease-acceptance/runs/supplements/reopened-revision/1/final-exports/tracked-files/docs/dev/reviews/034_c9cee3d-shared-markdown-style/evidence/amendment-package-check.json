@@ -1,0 +1,9 @@
+{
+  "source": "229194acbb858c36314cc3af1831cf10a0481227",
+  "method": "Unmodified release workflow build in temporary output directory with pinned GIT_DIR",
+  "files": 131,
+  "byteForByte": true,
+  "sha256Verified": true,
+  "sha256": "50c66b98e66daf0062229c0643158a76cdcf0dbdc425bb8e3907a16562cf4538",
+  "version": "0.15.0"
+}

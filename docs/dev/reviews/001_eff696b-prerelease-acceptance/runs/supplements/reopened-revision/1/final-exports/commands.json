@@ -1,0 +1,369 @@
+[
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "6eca5ef55b0d8c6068a611ad1bbdd1763df3f8b0:docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopened-revision/1/artifact-acceptance/ARTIFACT-DECISION.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+    "exit": 0,
+    "stdout": "commands/000.stdout",
+    "stderr": "commands/000.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "log",
+      "--first-parent",
+      "--merges",
+      "-1",
+      "--format=%H",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/001.stdout",
+    "stderr": "commands/001.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "-s",
+      "--format=%P",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/002.stdout",
+    "stderr": "commands/002.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/003.stdout",
+    "stderr": "commands/003.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "branch",
+      "--show-current"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/004.stdout",
+    "stderr": "commands/004.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "status",
+      "--porcelain=v1"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/005.stdout",
+    "stderr": "commands/005.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "-u"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/006.stdout",
+    "stderr": "commands/006.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "-s",
+      "--format=%P",
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/007.stdout",
+    "stderr": "commands/007.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "merge-base",
+      "--is-ancestor",
+      "5636481308427f9e9efd39576e562f057db7acda",
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/008.stdout",
+    "stderr": "commands/008.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--name-only",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/009.stdout",
+    "stderr": "commands/009.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-files",
+      "-s",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/010.stdout",
+    "stderr": "commands/010.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "--absolute-git-dir"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/011.stdout",
+    "stderr": "commands/011.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--quiet"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/012.stdout",
+    "stderr": "commands/012.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--raw",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0",
+      "--",
+      "docs/dev/reviews/038_d6218f1-tracking-fidelity/README.md",
+      "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVIEW-REPORT.md",
+      "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVISION-PLAN.md",
+      "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVISION-REPORT.md",
+      "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order/REVISION-PLAN.md",
+      "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order/REVISION-REPORT.md",
+      "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVIEW-REPORT.md",
+      "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVISION-PLAN.md",
+      "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVISION-REPORT.md",
+      "docs/dev/reviews/040_a0685b5-revision-campaign-modes/evidence/check_merge_highlights.py",
+      "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVIEW-REPORT.md",
+      "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVISION-PLAN.md",
+      "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVISION-REPORT.md",
+      "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/source-application-assessment.md",
+      "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/source-checks.json",
+      "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/support-tests.txt"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/013.stdout",
+    "stderr": "commands/013.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/014.stdout",
+    "stderr": "commands/014.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "2e3b5ba69105e672682132c77e2f2f43dfb986a6:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/015.stdout",
+    "stderr": "commands/015.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/016.stdout",
+    "stderr": "commands/016.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-parse",
+      "2e3b5ba69105e672682132c77e2f2f43dfb986a6:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/017.stdout",
+    "stderr": "commands/017.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "-s",
+      "--format=%B",
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/018.stdout",
+    "stderr": "commands/018.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/019.stdout",
+    "stderr": "commands/019.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-remote",
+      "trial-delivery",
+      "refs/heads/revision/042_5e4d990-task-publication-continuation-review"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/020.stdout",
+    "stderr": "commands/020.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "ls-remote",
+      "trial-delivery",
+      "refs/heads/revision/037_a6c42dd-prerelease-review"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/021.stdout",
+    "stderr": "commands/021.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "show",
+      "-s",
+      "--format=%P",
+      "2e3b5ba69105e672682132c77e2f2f43dfb986a6"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/022.stdout",
+    "stderr": "commands/022.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "rev-list",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7..ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/023.stdout",
+    "stderr": "commands/023.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--check",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/024.stdout",
+    "stderr": "commands/024.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "bundle",
+      "create",
+      "/workspace/scratch/46b31bb4dff6/037-sup-reopened-final-artifacts/private-original/repository.bundle",
+      "--all"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/025.stdout",
+    "stderr": "commands/025.stderr"
+  },
+  {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "bundle",
+      "verify",
+      "/workspace/scratch/46b31bb4dff6/037-sup-reopened-final-artifacts/private-original/repository.bundle"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+    "exit": 0,
+    "stdout": "commands/026.stdout",
+    "stderr": "commands/026.stderr"
+  }
+]

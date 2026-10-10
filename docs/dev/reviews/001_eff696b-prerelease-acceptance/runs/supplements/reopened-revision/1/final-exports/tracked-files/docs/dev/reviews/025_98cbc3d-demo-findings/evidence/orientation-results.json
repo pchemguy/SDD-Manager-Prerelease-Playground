@@ -1,0 +1,144 @@
+{
+  "O1": {
+    "path": "/workspace/scratch/revision025-fixtures/o1-minimal-adoption",
+    "AGENTS_sha256": "5de77f2bbf6fb67721f21432e10c6231636d8452ad5cd6a4f740dc90c3e773b9",
+    "links": [
+      "README.md",
+      "src/main.py",
+      "tests/test_main.py",
+      "SDD-MANAGER.md",
+      "AI_DISCLOSURE.md"
+    ],
+    "missing_links": [],
+    "checks": [
+      {
+        "command": "python src/main.py 2 3",
+        "exit": 0,
+        "output": "5"
+      },
+      {
+        "command": "python -m unittest discover -s tests",
+        "exit": 0,
+        "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK"
+      }
+    ],
+    "git_status": {
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "exit": 0,
+      "output": "?? AGENTS.md"
+    }
+  },
+  "O2": {
+    "path": "/workspace/scratch/revision025-fixtures/o2-manual-maintenance",
+    "manual_rule_preserved": true,
+    "nested_rule_preserved": true,
+    "nested_rule_path": "/workspace/scratch/revision025-fixtures/o2-manual-maintenance/checks/AGENTS.md",
+    "links": [
+      "README.md",
+      "src/main.py",
+      "checks/test_main.py",
+      "docs/dev/FEATURE-TASKS.md",
+      "SDD-MANAGER.md",
+      "AI_DISCLOSURE.md"
+    ],
+    "missing_links": [],
+    "checks": [
+      {
+        "command": "python src/main.py 2 3",
+        "exit": 0,
+        "output": "5"
+      },
+      {
+        "command": "python -m unittest discover -s checks",
+        "exit": 0,
+        "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK"
+      }
+    ],
+    "git_status": {
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "exit": 0,
+      "output": "M AGENTS.md\n M README.md\n D tests/test_main.py\n?? checks/AGENTS.md\n?? checks/test_main.py\n?? docs/dev/FEATURE-TASKS.md"
+    }
+  },
+  "O3": {
+    "path": "/workspace/scratch/revision025-fixtures/o2-manual-maintenance/AGENTS.md",
+    "write_performed": false,
+    "bytes_equal": true,
+    "mtime_equal": true,
+    "sha256_before": "b75fdc0f6cba5c04be8dcddd2323b5a54c18dd843f0b11985be68f23f183fb89",
+    "sha256_after": "b75fdc0f6cba5c04be8dcddd2323b5a54c18dd843f0b11985be68f23f183fb89"
+  },
+  "O4": {
+    "path": "/workspace/scratch/revision025-fixtures/o4-owner-transfer",
+    "current_owner": "/workspace/scratch/revision025-fixtures/o4-owner-transfer/docs/dev/TASKS.md",
+    "archived_source": "/workspace/scratch/revision025-fixtures/o4-owner-transfer/docs/dev/features/counter-formatting/FEATURE-TASKS.md",
+    "transfer_record": "/workspace/scratch/revision025-fixtures/o4-owner-transfer/docs/dev/features/counter-formatting/README.md",
+    "archive_bytes_preserved": true,
+    "AGENTS_executable_checklist_count": 0,
+    "active_FEATURE_TASKS_exists": false,
+    "links": [
+      "README.md",
+      "src/main.py",
+      "tests/test_main.py",
+      "docs/dev/TASKS.md",
+      "docs/dev/features/counter-formatting/FEATURE-TASKS.md",
+      "docs/dev/TASKS.md",
+      "SDD-MANAGER.md",
+      "AI_DISCLOSURE.md"
+    ],
+    "missing_links": [],
+    "checks": [
+      {
+        "command": "python src/main.py 2 3",
+        "exit": 0,
+        "output": "5"
+      },
+      {
+        "command": "python -m unittest discover -s tests",
+        "exit": 0,
+        "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK"
+      }
+    ],
+    "git_status": {
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "exit": 0,
+      "output": "?? AGENTS.md\n?? docs/dev/TASKS.md\n?? docs/dev/features/counter-formatting/FEATURE-TASKS.md\n?? docs/dev/features/counter-formatting/README.md"
+    }
+  },
+  "O5": {
+    "path": "/workspace/scratch/revision025-fixtures/o5-interrupted-resume",
+    "status_before_resume": {
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "exit": 0,
+      "output": "M AGENTS.md\n M user-notes.txt"
+    },
+    "user_sha256_before": "23fc8ddee2e949a7361c056e906c1d88d12bbea145947388ae745f9467d09fe1",
+    "user_sha256_after": "23fc8ddee2e949a7361c056e906c1d88d12bbea145947388ae745f9467d09fe1",
+    "manual_prefix_preserved": true,
+    "links": [
+      "README.md",
+      "src/main.py",
+      "tests/test_main.py",
+      "SDD-MANAGER.md",
+      "AI_DISCLOSURE.md"
+    ],
+    "missing_links": [],
+    "checks": [
+      {
+        "command": "python src/main.py 2 3",
+        "exit": 0,
+        "output": "5"
+      },
+      {
+        "command": "python -m unittest discover -s tests",
+        "exit": 0,
+        "output": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK"
+      }
+    ],
+    "git_status": {
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "exit": 0,
+      "output": "M AGENTS.md\n M user-notes.txt"
+    }
+  }
+}

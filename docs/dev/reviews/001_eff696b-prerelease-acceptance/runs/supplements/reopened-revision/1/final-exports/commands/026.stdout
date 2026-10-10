@@ -1,0 +1,13 @@
+The bundle contains these 10 refs:
+ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0 refs/heads/revision/037_a6c42dd-prerelease-review
+2e3b5ba69105e672682132c77e2f2f43dfb986a6 refs/heads/revision/042_5e4d990-task-publication-continuation-review
+cedb509eb224ff4798349a924dd2e5d9235f18f7 refs/remotes/origin/revision/037_a6c42dd-prerelease-review
+ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0 refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review
+2e3b5ba69105e672682132c77e2f2f43dfb986a6 refs/remotes/trial-delivery/revision/042_5e4d990-task-publication-continuation-review
+804c6617638346465024c2a2b215223cec70aaa6 refs/tags/v0.14.7
+7bfe205fd53573552f4782c20087d7308451b55e refs/tags/v0.14.8
+556611f7aa05073a3dbfbbb7bcf36f7d6a5f6ace refs/tags/v0.14.9
+1ff33832d506c0e8baa5c1d3c9a2c9205807a5d2 refs/tags/v1-spec-plan-implement
+ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0 HEAD
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1

@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-10T17:22:51.212558+00:00",
+  "loaded": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "bytes": 4610
+    },
+    {
+      "path": "skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "bytes": 10142
+    },
+    {
+      "path": "skills/sdd-manage/references/revision-modes.md",
+      "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+      "bytes": 10160
+    },
+    {
+      "path": "skills/sdd-manage/references/review-and-revision.md",
+      "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+      "bytes": 10475
+    },
+    {
+      "path": "skills/sdd-conventions/references/workflow-identity.md",
+      "sha256": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+      "bytes": 8163
+    },
+    {
+      "path": "skills/sdd-conventions/references/review-campaigns.md",
+      "sha256": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+      "bytes": 8233
+    },
+    {
+      "path": "skills/sdd-report/references/campaign-artifacts.md",
+      "sha256": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+      "bytes": 12587
+    },
+    {
+      "path": "skills/sdd-report/references/object-drafts.md",
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+      "bytes": 13178
+    },
+    {
+      "path": "skills/sdd-manage/references/git-workflows.md",
+      "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+      "bytes": 10690
+    },
+    {
+      "path": "skills/sdd-manage/references/branch-management.md",
+      "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+      "bytes": 12794
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+      "exit": 0,
+      "stdout": "prepare-000.stdout",
+      "stderr": "prepare-000.stderr"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "log",
+        "--first-parent",
+        "--merges",
+        "-1",
+        "--format=%H%n%P%n%B",
+        "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+      "exit": 0,
+      "stdout": "prepare-001.stdout",
+      "stderr": "prepare-001.stderr"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "5636481308427f9e9efd39576e562f057db7acda:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+      "exit": 0,
+      "stdout": "prepare-002.stdout",
+      "stderr": "prepare-002.stderr"
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "5636481308427f9e9efd39576e562f057db7acda:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-reopened-revision",
+      "exit": 0,
+      "stdout": "prepare-003.stdout",
+      "stderr": "prepare-003.stderr"
+    }
+  ]
+}

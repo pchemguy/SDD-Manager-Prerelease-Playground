@@ -1,0 +1,14 @@
+test_incomplete_phase_and_outside_prerequisite_are_not_eligible (tests.test_trial_control.TrialControls.test_incomplete_phase_and_outside_prerequisite_are_not_eligible) ... ok
+test_missing_change_and_completed_transfer_cannot_be_triggers (tests.test_trial_control.TrialControls.test_missing_change_and_completed_transfer_cannot_be_triggers) ... ok
+test_optional_facilities_are_not_run_and_required_are_blocked (tests.test_trial_control.TrialControls.test_optional_facilities_are_not_run_and_required_are_blocked) ... ok
+test_partial_action_is_held_then_resumed_once (tests.test_trial_control.TrialControls.test_partial_action_is_held_then_resumed_once) ... ok
+test_pending_selected_transfer_cannot_already_be_completed (tests.test_trial_control.TrialControls.test_pending_selected_transfer_cannot_already_be_completed) ... ok
+test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) ... ok
+test_resume_rejects_drift_and_different_commands (tests.test_trial_control.TrialControls.test_resume_rejects_drift_and_different_commands) ... ok
+test_symlinked_receipt_parent_rejected_without_creation (tests.test_trial_control.TrialControls.test_symlinked_receipt_parent_rejected_without_creation) ... ok
+test_timeout_retains_safe_partial_channels_without_replay (tests.test_trial_control.TrialControls.test_timeout_retains_safe_partial_channels_without_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.033s
+
+OK

@@ -1,0 +1,8 @@
+{
+  "guard_path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/core.py",
+  "guard_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "clean_bytes_all_public_files": true,
+  "no_secret_json": true,
+  "failure_paths": [],
+  "raw_matches_printed": false
+}

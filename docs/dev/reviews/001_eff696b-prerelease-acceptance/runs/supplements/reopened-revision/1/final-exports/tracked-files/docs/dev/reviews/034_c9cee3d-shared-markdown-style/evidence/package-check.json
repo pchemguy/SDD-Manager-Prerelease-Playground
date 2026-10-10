@@ -1,0 +1,10 @@
+{
+  "source": "640f26c9feab7bbdc4ff8d654d3f822118cb425b",
+  "method": "Unmodified release workflow Build package and checksum step, run with pinned repository GIT_DIR in a temporary output directory",
+  "files": 131,
+  "byteForByte": true,
+  "newReferenceIncluded": true,
+  "sha256Verified": true,
+  "sha256": "f9bb3a7f9ba27eddf3ada0effb0d2084c04d4f1a80d81fe25c9be7256a557e29",
+  "version": "0.15.0"
+}

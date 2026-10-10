@@ -1,0 +1,238 @@
+{
+  "source": "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+  "fingerprint": "60840f4b62aa5566d1d25fe11f6e035ac9fd20c2e4a368ecf5868a024be459d1",
+  "file_count": 114,
+  "readme_local_links": [
+    {
+      "target": "SDD-MANAGER.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "AI_DISCLOSURE.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/repository-bootstrap.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/workflows.md#core-development-workflows",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/document-qc-gates.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-implement/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/git-workflows.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-steer/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/review-and-revision.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/workflows.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/branch-management.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/git-workflows.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/revision-authorization.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "acceptance/textstats/README.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/021_85f2857/DIAGNOSTIC-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/021_85f2857/REVISION-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-orient/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-conventions/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-design/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-specify/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-plan/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-tasks/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-implement/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-steer/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-integrate-feature/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-tdd/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-verify/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-docs/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-report/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-forge/SKILL.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-conventions/references/development-document-qc.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-manage/references/document-qc-gates.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/010_3f56922/REVISION-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/021_85f2857/DIAGNOSTIC-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/008_98a5562/REVISION-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "acceptance/textstats/README.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/CAPABILITY-MAP.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/README.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/003_39374c8/REVISION-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "docs/dev/reviews/001_49143fa/REVIEW-REPORT.md",
+      "included": false,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-tdd/references/upstream-provenance.md",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "LICENSE",
+      "included": true,
+      "exists_in_source": true
+    },
+    {
+      "target": "skills/sdd-tdd/LICENSE",
+      "included": true,
+      "exists_in_source": true
+    }
+  ],
+  "source_only_qualification": "Acceptance and development material linked here belongs to the source repository and is outside the pinned skill package.",
+  "root_disclosures_missing": [
+    "SDD-MANAGER.md",
+    "AI_DISCLOSURE.md"
+  ],
+  "asset_disclosures_present": true
+}

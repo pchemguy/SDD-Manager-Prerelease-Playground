@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-06T09:05:47.784197+00:00",
+  "status": "Stopped",
+  "reason": "Supported available full campaign scope exhausted after independent final diagnostics and verified report publication",
+  "coverage": {
+    "Passed": 20,
+    "Blocked": 7,
+    "Running": 0,
+    "Pending": 0
+  },
+  "blocked_ids": [
+    "A-014",
+    "A-017",
+    "A-019",
+    "A-021",
+    "A-023",
+    "A-024",
+    "A-026"
+  ],
+  "product_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+  "published_report_commit": "39d63589cb721326338b89e14ec56cf636aa5dda",
+  "report_destination": "refs/heads/revision/001_8e2d3a5-live-acceptance",
+  "publication_receipt": "FINAL-PUBLICATION.json",
+  "product_tracked_and_index_clean": true,
+  "preserved_untracked_sample": {
+    "path": "-json-9l969okj/sample.txt",
+    "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5"
+  },
+  "all_visible_consumer_assessor_contexts_completed": true,
+  "known_active_case_or_product_operation": null,
+  "historical_unknown_readonly_effects": [
+    "original helper session51706 poll rejected",
+    "earlier inline final-capture session identity discarded"
+  ],
+  "all_historical_process_quiescence_certified": false,
+  "next_action": "No automatic continuation. A missing-facility negative rerun or revised-plugin acceptance requires actual scoped inputs/facilities and a new source pin.",
+  "final_checkpoint_publication": "This containing commit is the STOP checkpoint; exact destination is verified by the completing primary execution context, without self-referential SHA mutation."
+}

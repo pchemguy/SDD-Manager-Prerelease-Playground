@@ -1,0 +1,1457 @@
+{
+  "consumer": "fresh ordinary isolated source consumer",
+  "baseline": "5e4d990e55817220661028f5e7ec643707bddd5a",
+  "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "bytecode_disabled": true,
+  "loaded_resources": {
+    "AGENTS.md": {
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "git_blob": "b21cca2057f34a94b2e30c7820b927cb6ee32c00"
+    },
+    "README.md": {
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+      "git_blob": "4cbc8ca08d6d5e3f018301355f1ee2e47e9ac114"
+    },
+    "skills/sdd-manage/SKILL.md": {
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "git_blob": "c25203f73bef5da236dc72f672610002249f981f"
+    },
+    "skills/sdd-implement/SKILL.md": {
+      "sha256": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+      "git_blob": "d3825b2c598e6573409fe1aaacb762aafee68fc8"
+    },
+    "skills/sdd-manage/references/revision-modes.md": {
+      "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+      "git_blob": "2c3c1a6c7e3f7f95812d72d40fdf0646b9513868"
+    },
+    "skills/sdd-manage/references/review-and-revision.md": {
+      "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+      "git_blob": "7abf28f242cc9b84ee16e19519a7f1f6fd0f1782"
+    },
+    "skills/sdd-conventions/references/review-campaigns.md": {
+      "sha256": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+      "git_blob": "82d9503c93ac424ffb7ef2a82125d94fda885493"
+    },
+    "skills/sdd-manage/references/git-workflows.md": {
+      "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+      "git_blob": "15fb0fe786a0d3f56a37ca7b79ad6a0d8901a04b"
+    },
+    "skills/sdd-implement/references/completion-and-checkpoints.md": {
+      "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+      "git_blob": "e5df84707816e0541560717fb3d66ba3dff89d44"
+    },
+    "skills/sdd-orient/SKILL.md": {
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "git_blob": "7e7d4c11900a109c8e45b540780e05b228ae644b"
+    },
+    "skills/sdd-report/SKILL.md": {
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "git_blob": "b3f821e619d78fb2bde6c2c13c29feddbf01bd51"
+    },
+    "skills/sdd-report/references/campaign-artifacts.md": {
+      "sha256": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+      "git_blob": "d697641616c8c69327af01fad98238879544cfce"
+    },
+    "skills/sdd-report/references/object-drafts.md": {
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+      "git_blob": "54f094710bc3a1617c8031c959b362c5837aaeaa"
+    },
+    "skills/sdd-conventions/references/workflow-identity.md": {
+      "sha256": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+      "git_blob": "bd0e99d3c1ff4f3410ae898d20881fb961e6474d"
+    },
+    "skills/sdd-manage/references/branch-management.md": {
+      "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+      "git_blob": "a71817e9ff75d734b647b1b5b237f47414b4f5f9"
+    },
+    "skills/sdd-conventions/references/markdown-style.md": {
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "git_blob": "9ef3cf68aa0447f2e214a6766d4846eede81ee3b"
+    },
+    "skills/sdd-orient/references/inspection-and-handoff.md": {
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "git_blob": "1e664a82486e4fafb13fe998d3c29588710acf5a"
+    },
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md": {
+      "sha256": "4f55ba0f992b382b6e2d864b05eb5daece0475c20db3e481f9a2f7215f48ef7d",
+      "git_blob": "f38a028096fd2dbe7536b8b43dbfbcee89d929cb"
+    },
+    "docs/dev/reviews/README.md": {
+      "sha256": "2b1f3b27b95232a9a3265543ee0f53e9bcb140f1692d012b196d69838284fe09",
+      "git_blob": "93481c776d6baa20e0ab8146481406c17d4002f2"
+    },
+    "skills/sdd-verify/SKILL.md": {
+      "sha256": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+      "git_blob": "3bb8edf6277c99fb60f0698bbc72a88c98af33b2"
+    },
+    "skills/sdd-verify/references/check-selection.md": {
+      "sha256": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+      "git_blob": "0aafefecaf6bf4b8bf8ec0c5ec7b6c5d0f06aa32"
+    },
+    "skills/sdd-verify/references/execution-and-evidence.md": {
+      "sha256": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+      "git_blob": "fec7587f01a2c680810ade03b291e8fa80ee4e42"
+    }
+  },
+  "original_attempts": [
+    {
+      "tool_chunk": "994f9a",
+      "exit_code": 0,
+      "limits": "Input read outside checkout explicitly authorized",
+      "command": "cat /workspace/scratch/46b31bb4dff6/037-sup-nested-setup/CONSUMER-INPUT.md"
+    },
+    {
+      "tool_chunk": "277e3d",
+      "exit_code": 0,
+      "limits": "none",
+      "command": "pwd; cat AGENTS.md; git status --short; git branch --show-current; git remote -v",
+      "limitation": "Initial plain git status could refresh index stat metadata; clean semantic index observed later. No initial raw index hash before this command was captured."
+    },
+    {
+      "tool_chunk": "848cd5",
+      "exit_code": 0,
+      "limits": "combined output truncated",
+      "command": "cat README.md skills/sdd-manage/SKILL.md; rg --files -g AGENTS.md -g '*037*' docs skills; cat skills/sdd-implement/SKILL.md"
+    },
+    {
+      "tool_chunk": "6d0268",
+      "exit_code": 0,
+      "limits": "none",
+      "command": "rg --files docs skills -g AGENTS.md -g '*037*'; cat skills/sdd-manage/references/revision-modes.md skills/sdd-manage/references/review-and-revision.md skills/sdd-conventions/references/review-campaigns.md"
+    },
+    {
+      "tool_chunk": "3310b1",
+      "exit_code": 0,
+      "limits": "none",
+      "command": "cat skills/sdd-manage/references/git-workflows.md skills/sdd-implement/references/completion-and-checkpoints.md"
+    },
+    {
+      "tool_chunk": "4bed9e",
+      "exit_code": 0,
+      "limits": "combined output truncated",
+      "command": "cat skills/sdd-orient/SKILL.md skills/sdd-report/SKILL.md skills/sdd-report/references/campaign-artifacts.md skills/sdd-report/references/object-drafts.md skills/sdd-conventions/references/workflow-identity.md skills/sdd-manage/references/branch-management.md skills/sdd-conventions/references/markdown-style.md; git ls-tree -d --name-only HEAD docs/dev/reviews/; git ls-tree -r --name-only HEAD docs/dev/reviews | rg '/037_|AGENTS.md|README.md$'; git rev-parse HEAD; git ls-remote trial-delivery"
+    },
+    {
+      "tool_chunk": "983a63",
+      "exit_code": 0,
+      "limits": "combined output truncated; parent record output not complete",
+      "command": "cat skills/sdd-conventions/references/workflow-identity.md; cat skills/sdd-report/references/object-drafts.md; cat skills/sdd-orient/references/inspection-and-handoff.md; cat docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md; cat docs/dev/reviews/README.md; command -v python3; git ls-tree -r --name-only HEAD | rg 'AGENTS.md$|docs/dev/features/|docs/dev/reports/.*/revisions/'"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "--unmerged"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "worktree /workspace/scratch/46b31bb4dff6/037-sup-nested-revision\nHEAD 5e4d990e55817220661028f5e7ec643707bddd5a\nbranch refs/heads/revision/037_a6c42dd-prerelease-review\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "trial-delivery"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a\trefs/heads/revision/037_a6c42dd-prerelease-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-tree",
+        "-r",
+        "--name-only",
+        "HEAD",
+        "docs/dev/features",
+        "docs/dev/reports/phases"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "check-ref-format",
+        "--branch",
+        "revision/042_5e4d990-task-publication-continuation-review"
+      ],
+      "exit_code": 0,
+      "stdout": "revision/042_5e4d990-task-publication-continuation-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a refs/heads/revision/037_a6c42dd-prerelease-review\n5e4d990e55817220661028f5e7ec643707bddd5a refs/remotes/origin/revision/037_a6c42dd-prerelease-review\n5e4d990e55817220661028f5e7ec643707bddd5a refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review\n804c6617638346465024c2a2b215223cec70aaa6 refs/tags/v0.14.7\n7bfe205fd53573552f4782c20087d7308451b55e refs/tags/v0.14.8\n556611f7aa05073a3dbfbbb7bcf36f7d6a5f6ace refs/tags/v0.14.9\n1ff33832d506c0e8baa5c1d3c9a2c9205807a5d2 refs/tags/v1-spec-plan-implement\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "trial-delivery"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a\trefs/heads/revision/037_a6c42dd-prerelease-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "switch",
+        "-c",
+        "revision/042_5e4d990-task-publication-continuation-review",
+        "5e4d990e55817220661028f5e7ec643707bddd5a"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Switched to a new branch 'revision/042_5e4d990-task-publication-continuation-review'\n"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": " docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md | 4 ++++\n docs/dev/reviews/README.md                                        | 2 ++\n 2 files changed, 6 insertions(+)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "add",
+        "--",
+        "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md",
+        "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md",
+        "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md",
+        "docs/dev/reviews/README.md"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": " .../REVISION-REPORT.md                             |  4 +++\n .../README.md                                      |  5 +++\n .../REVIEW-REPORT.md                               | 39 ++++++++++++++++++++++\n docs/dev/reviews/README.md                         |  2 ++\n 4 files changed, 50 insertions(+)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "exit_code": 0,
+      "stdout": "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\ndocs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md\ndocs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md\ndocs/dev/reviews/README.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "Record focused nested task publication and continuation review"
+      ],
+      "exit_code": 0,
+      "stdout": "[revision/042_5e4d990-task-publication-continuation-review 5636481] Record focused nested task publication and continuation review\n 4 files changed, 50 insertions(+)\n create mode 100644 docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md\n create mode 100644 docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "5636481308427f9e9efd39576e562f057db7acda\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "--format=fuller",
+        "--stat",
+        "5636481308427f9e9efd39576e562f057db7acda"
+      ],
+      "exit_code": 0,
+      "stdout": "commit 5636481308427f9e9efd39576e562f057db7acda\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 12:59:46 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 12:59:46 2026 -0400\n\n    Record focused nested task publication and continuation review\n\n .../REVISION-REPORT.md                             |  4 +++\n .../README.md                                      |  5 +++\n .../REVIEW-REPORT.md                               | 39 ++++++++++++++++++++++\n docs/dev/reviews/README.md                         |  2 ++\n 4 files changed, 50 insertions(+)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "push",
+        "trial-delivery",
+        "HEAD:refs/heads/revision/042_5e4d990-task-publication-continuation-review"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "To /workspace/scratch/46b31bb4dff6/037-sup-nested-delivery.git\n * [new branch]      HEAD -> revision/042_5e4d990-task-publication-continuation-review\n"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/revision/042_5e4d990-task-publication-continuation-review"
+      ],
+      "exit_code": 0,
+      "stdout": "5636481308427f9e9efd39576e562f057db7acda\trefs/heads/revision/042_5e4d990-task-publication-continuation-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "5636481308427f9e9efd39576e562f057db7acda:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md"
+      ],
+      "exit_code": 0,
+      "stdout": "9a8f5c19b8382d4d5e0a5dc1a7895a0eabf90952\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "5636481308427f9e9efd39576e562f057db7acda:docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md"
+      ],
+      "exit_code": 0,
+      "stdout": "3fbe06837de8de7ebf5ba2b5a4f57be9b2a9a66f\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "5636481308427f9e9efd39576e562f057db7acda:docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md"
+      ],
+      "exit_code": 0,
+      "stdout": "807f6f1201ac97fb6a4f796ff645c0a9af383387\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "5636481308427f9e9efd39576e562f057db7acda:docs/dev/reviews/README.md"
+      ],
+      "exit_code": 0,
+      "stdout": "80bfcbd45fba19d9098efcf6a2e96ae97e0dde3c\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "fetch",
+        "trial-delivery",
+        "refs/heads/revision/037_a6c42dd-prerelease-review:refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a\trefs/heads/revision/037_a6c42dd-prerelease-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/revision/042_5e4d990-task-publication-continuation-review"
+      ],
+      "exit_code": 0,
+      "stdout": "5636481308427f9e9efd39576e562f057db7acda\trefs/heads/revision/042_5e4d990-task-publication-continuation-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--name-status",
+        "5e4d990e55817220661028f5e7ec643707bddd5a",
+        "5636481308427f9e9efd39576e562f057db7acda"
+      ],
+      "exit_code": 0,
+      "stdout": "M\tdocs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\nA\tdocs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md\nA\tdocs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md\nM\tdocs/dev/reviews/README.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--name-only",
+        "5e4d990e55817220661028f5e7ec643707bddd5a",
+        "5636481308427f9e9efd39576e562f057db7acda"
+      ],
+      "exit_code": 0,
+      "stdout": "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\ndocs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md\ndocs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md\ndocs/dev/reviews/README.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "switch",
+        "revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "Your branch is up to date with 'origin/revision/037_a6c42dd-prerelease-review'.\n",
+      "stderr": "Switched to branch 'revision/037_a6c42dd-prerelease-review'\n"
+    },
+    {
+      "argv": [
+        "git",
+        "merge",
+        "--no-ff",
+        "--no-commit",
+        "5636481308427f9e9efd39576e562f057db7acda"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Automatic merge went well; stopped before committing as requested\n"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "--unmerged"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "exit_code": 0,
+      "stdout": "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\ndocs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md\ndocs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md\ndocs/dev/reviews/README.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--",
+        "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md"
+      ],
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md b/docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\nindex f38a028..807f6f1 100644\n--- a/docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\n+++ b/docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md\n@@ -344,3 +344,7 @@ A021 independently Passed after actual partial owner transfer and separate fresh\n Two isolated tracking scope-control setups were published/read back in `8f625d22dae5f887df62bd34f8cdee240eb8b38f` before fresh consumers. Token-only assesses a read-only recommendation/scope-choice subset; declined-tracking assesses bounded T001 LOCAL delivery. Both preserve original accepted preparation documents/QC and scope imported tracking choices to historical provenance. No new hosted namespace or full live tracking acceptance is inferred. Narrow NUL command-output screening rejection and exact sidecar/publication provenance remain recorded. Final independent grades are pending.\n \n [Compatibility evidence](COMPATIBILITY-EVIDENCE.json) establishes README, assets, manifests and all skills byte-equivalent to actual rendered source `629d4cb`; current README hash and all four retained PNG hashes exactly match original render provenance. Existing actual Mermaid CLI12 rendering/visual inspection therefore applies to current diagram bytes; no new rendering is claimed. Fresh strict findings remain classified inef3a458, without migration or universal portability. Native/client/platform facilities and remaining selected follow-ups retain their separate unresolved/Not-run dispositions. Full readiness R005 remains Open.\n+\n+## Supplemental child 042 \u2014 parent suspended\n+\n+A focused independent review of task closure, publication and interrupted continuation is active as child `042_5e4d990` from published parent checkpoint `5e4d990e55817220661028f5e7ec643707bddd5a` on `revision/042_5e4d990-task-publication-continuation-review`, returning only to `revision/037_a6c42dd-prerelease-review`. [Child review](../042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md) and [navigation](../042_5e4d990-task-publication-continuation-review/README.md) retain its bounded assessment. Parent execution and outstanding CP-017\u2013CP-025 scope remain suspended; this child does not establish their acceptance or complete campaign 037. Child report acceptance/integration is pending, with actual publication and return facts retained in Git/external observations.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--",
+        "docs/dev/reviews/README.md"
+      ],
+      "exit_code": 0,
+      "stdout": "diff --git a/docs/dev/reviews/README.md b/docs/dev/reviews/README.md\nindex 93481c7..80bfcbd 100644\n--- a/docs/dev/reviews/README.md\n+++ b/docs/dev/reviews/README.md\n@@ -56,3 +56,5 @@ Campaign directories combine a stable repository sequence with the starting comm\n New campaigns use REVIEW-PLAN, REVIEW-REPORT, REVISION-PLAN, and REVISION-REPORT in their directory as applicable. A focused review may start from a prompt and record its scope/criteria in REVIEW-REPORT. Accepted changes update relevant governing project documents while campaign records remain retained. Additional independent reports can use named subdirectories within the same campaign.\n \n | `041_ca99ca1` | Strict leading single-task subjects, atomic result/evidence/checklist closure and continuation/integration audits implemented and source/support checked; child integration/publication recorded in Git, parent 037 suspended. | [Review report](041_ca99ca1-task-commit-contract/REVIEW-REPORT.md), [revision plan](041_ca99ca1-task-commit-contract/REVISION-PLAN.md), [revision report](041_ca99ca1-task-commit-contract/REVISION-REPORT.md) |\n+\n+| `042_5e4d990` | Focused nested task closure/publication/continuation source review; eight inspected scenarios, zero confirmed inconsistencies; delegated acceptance/integration pending, parent 037 suspended. | [Child navigation](042_5e4d990-task-publication-continuation-review/README.md), [review report](042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md) |\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-m",
+        "Merge revision 042_5e4d990 \u2014 Task publication and continuation review\n\nObjective: Assess consistency of task closure, per-commit publication and\ninterrupted continuation while keeping parent campaign 037 suspended.\nReview: Focused semantic inspection of completion-and-checkpoints.md and\ngit-workflows.md at 5e4d990e55817220661028f5e7ec643707bddd5a; eight source\nassertions Passed, no confirmed inconsistencies. No behavioral task/client\nacceptance, push-denial fixture or support-suite execution is claimed.\nDelivered: Accepted focused review report, child navigation, active parent\nsuspension entry and shared navigation; no governing source edits.\nVerification: Prospective merged state had no conflicts; staged diff check,\nexact four accepted artifact hashes, child Markdown headings and all new\nlocal links Passed. Every other baseline tracked file remained byte-identical,\nincluding package/source and frozen campaign records. No task or release work.\nIntegration: Nested campaign 042_5e4d990; original opening commit\n5636481308427f9e9efd39576e562f057db7acda; original branch-off/source baseline\n5e4d990e55817220661028f5e7ec643707bddd5a. Child revision/042_5e4d990-task-publication-continuation-review\nreturns only to revision/037_a6c42dd-prerelease-review.\nPinned target parent 5e4d990e55817220661028f5e7ec643707bddd5a; child parent 5636481308427f9e9efd39576e562f057db7acda.\nDelegated coordinator accepted these exact four artifacts in decision commit\nb991e015485a29eb4cfb1a46fb62f699751804e0, record\nruns/supplements/nested-revision/1/ARTIFACT-DECISION.json.\nIncluded nested outcome: record-only focused review, zero source repairs.\nParent 037 remains incomplete and suspended; independent grade pending.\nTarget publication/readback and parent return are still required after this\ncommit; this summary does not itself establish closure or parent continuation.\n"
+      ],
+      "exit_code": 0,
+      "stdout": "[revision/037_a6c42dd-prerelease-review cedb509] Merge revision 042_5e4d990 \u2014 Task publication and continuation review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "cedb509eb224ff4798349a924dd2e5d9235f18f7\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "-s",
+        "--format=%P",
+        "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+      ],
+      "exit_code": 0,
+      "stdout": "5e4d990e55817220661028f5e7ec643707bddd5a 5636481308427f9e9efd39576e562f057db7acda\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "--format=fuller",
+        "--stat",
+        "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+      ],
+      "exit_code": 0,
+      "stdout": "commit cedb509eb224ff4798349a924dd2e5d9235f18f7\nMerge: 5e4d990 5636481\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 13:04:38 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 13:04:38 2026 -0400\n\n    Merge revision 042_5e4d990 \u2014 Task publication and continuation review\n    \n    Objective: Assess consistency of task closure, per-commit publication and\n    interrupted continuation while keeping parent campaign 037 suspended.\n    Review: Focused semantic inspection of completion-and-checkpoints.md and\n    git-workflows.md at 5e4d990e55817220661028f5e7ec643707bddd5a; eight source\n    assertions Passed, no confirmed inconsistencies. No behavioral task/client\n    acceptance, push-denial fixture or support-suite execution is claimed.\n    Delivered: Accepted focused review report, child navigation, active parent\n    suspension entry and shared navigation; no governing source edits.\n    Verification: Prospective merged state had no conflicts; staged diff check,\n    exact four accepted artifact hashes, child Markdown headings and all new\n    local links Passed. Every other baseline tracked file remained byte-identical,\n    including package/source and frozen campaign records. No task or release work.\n    Integration: Nested campaign 042_5e4d990; original opening commit\n    5636481308427f9e9efd39576e562f057db7acda; original branch-off/source baseline\n    5e4d990e55817220661028f5e7ec643707bddd5a. Child revision/042_5e4d990-task-publication-continuation-review\n    returns only to revision/037_a6c42dd-prerelease-review.\n    Pinned target parent 5e4d990e55817220661028f5e7ec643707bddd5a; child parent 5636481308427f9e9efd39576e562f057db7acda.\n    Delegated coordinator accepted these exact four artifacts in decision commit\n    b991e015485a29eb4cfb1a46fb62f699751804e0, record\n    runs/supplements/nested-revision/1/ARTIFACT-DECISION.json.\n    Included nested outcome: record-only focused review, zero source repairs.\n    Parent 037 remains incomplete and suspended; independent grade pending.\n    Target publication/readback and parent return are still required after this\n    commit; this summary does not itself establish closure or parent continuation.\n\n .../REVISION-REPORT.md                             |  4 +++\n .../README.md                                      |  5 +++\n .../REVIEW-REPORT.md                               | 39 ++++++++++++++++++++++\n docs/dev/reviews/README.md                         |  2 ++\n 4 files changed, 50 insertions(+)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "push",
+        "trial-delivery",
+        "HEAD:refs/heads/revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "To /workspace/scratch/46b31bb4dff6/037-sup-nested-delivery.git\n   5e4d990..cedb509  HEAD -> revision/037_a6c42dd-prerelease-review\n"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "trial-delivery",
+        "refs/heads/revision/037_a6c42dd-prerelease-review"
+      ],
+      "exit_code": 0,
+      "stdout": "cedb509eb224ff4798349a924dd2e5d9235f18f7\trefs/heads/revision/037_a6c42dd-prerelease-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "5636481308427f9e9efd39576e562f057db7acda",
+        "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "revision/037_a6c42dd-prerelease-review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref"
+      ],
+      "exit_code": 0,
+      "stdout": "cedb509eb224ff4798349a924dd2e5d9235f18f7 refs/heads/revision/037_a6c42dd-prerelease-review\n5636481308427f9e9efd39576e562f057db7acda refs/heads/revision/042_5e4d990-task-publication-continuation-review\n5e4d990e55817220661028f5e7ec643707bddd5a refs/remotes/origin/revision/037_a6c42dd-prerelease-review\ncedb509eb224ff4798349a924dd2e5d9235f18f7 refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review\n5636481308427f9e9efd39576e562f057db7acda refs/remotes/trial-delivery/revision/042_5e4d990-task-publication-continuation-review\n804c6617638346465024c2a2b215223cec70aaa6 refs/tags/v0.14.7\n7bfe205fd53573552f4782c20087d7308451b55e refs/tags/v0.14.8\n556611f7aa05073a3dbfbbb7bcf36f7d6a5f6ace refs/tags/v0.14.9\n1ff33832d506c0e8baa5c1d3c9a2c9205807a5d2 refs/tags/v1-spec-plan-implement\n",
+      "stderr": ""
+    }
+  ],
+  "limitations": [
+    "Initial tool calls predated durable capture; exact visible channels and original exit codes retained by chunk identity; truncated combined outputs are not complete transcripts. Subsequent commands capture separate stdout/stderr.",
+    "No /pyenv, agents, hosted writes, frozen package contents or sibling discovery."
+  ],
+  "state": "Accepted child integrated and published; returned on parent branch; parent remains suspended; STOP",
+  "initial_refs": "5e4d990e55817220661028f5e7ec643707bddd5a refs/heads/revision/037_a6c42dd-prerelease-review\n5e4d990e55817220661028f5e7ec643707bddd5a refs/remotes/origin/revision/037_a6c42dd-prerelease-review\n5e4d990e55817220661028f5e7ec643707bddd5a refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review\n804c6617638346465024c2a2b215223cec70aaa6 refs/tags/v0.14.7\n7bfe205fd53573552f4782c20087d7308451b55e refs/tags/v0.14.8\n556611f7aa05073a3dbfbbb7bcf36f7d6a5f6ace refs/tags/v0.14.9\n1ff33832d506c0e8baa5c1d3c9a2c9205807a5d2 refs/tags/v1-spec-plan-implement\n",
+  "initial_index_sha256": "2d05c3aa45de733d22999397a880bc2bf7ee1b22970659bb118d6945d6798b97",
+  "initial_tracked_hashes": {
+    ".codex-plugin/plugin.json": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    ".github/RELEASE-HANDOFF.md": "6b04a8d1a00ff101cca81336dc1ce02720e598901bd6c14b62ca12ba60263b55",
+    ".github/scripts/release.py": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+    ".github/tests/test_release.py": "e67b33a376852e76eea2d6e87b8ba95b2d5e795b43450e0a1c23466461703c9c",
+    ".github/workflows/release.yml": "64b52d5613b5b680af06d8c4527f2b2e38c5334e7e45b36acdf1745de52dfa3c",
+    ".gitignore": "32096350c3adb1d2f99b10f4da22602225e3a8b21c1189ba0b4fb6467b0c4aa9",
+    "AGENTS.md": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "EXPLORE_DRIVE_V1.md": "6594699e4052c6e76f971d30ba54931e1ef444077b9427ca9ce8537228a4b43b",
+    "EXPLORE_DRIVE_V2.md": "251669494f2dfd53689c18a165bbd5d4e4e3c0957852a1174e5d712cc7b19f26",
+    "Greenfield Project Prompt Template.md": "852c666018f223c49cc4732af5f1a1bf8db38061114721b9dc738ec702ec9617",
+    "LICENSE": "230ef093b2d68d0f37130d47064b1aff673c41830a15513801e0cc089e742ed2",
+    "README.md": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "SDD-MANAGER.md": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "acceptance/textstats/AGENTS.md": "78cabd1f4aefcd6d022541cdd93d4637bebf33f67d83ba1b02dc7cce4ee4bdc2",
+    "acceptance/textstats/DIAGNOSTICS.md": "36022224709a6c947609b41a2936287d286ed85f36fbe36a2128d9c6773c6e14",
+    "acceptance/textstats/EXECUTION.md": "9a451a2acd559078ecec3d30d785df35bf95b9ebbec9fed95461e96c9e81afa7",
+    "acceptance/textstats/OBJECTIVES.md": "00d8bf95bce0916840433fa25a2e732f865fd9345a00933fc568630a21a70e06",
+    "acceptance/textstats/README.md": "e858bbb56b0f5a29648a4c905c7a7d09c0141275c8d13a376a25e97d2152f82c",
+    "acceptance/textstats/RECOVERY.md": "b7b26651f90d2d62f8e74beebc026bac765f41f6914b3fc4f5c6851c2f8a6cb4",
+    "acceptance/textstats/SCENARIO.md": "95e87cd628f944b85f983a48a51385b264e5dca0e1a54e2dc183124099483c32",
+    "acceptance/textstats/SETUP.md": "a3afff1396023836a9f43d13a8e9e7e8ee063a53fcbd166c246d3c2b164ed291",
+    "acceptance/textstats/TRIAL-CONTROLS.md": "b60efe5627d577e946d8a378c6b26a9e335ce2d96fb755a6e846ad70b7f4af4c",
+    "acceptance/textstats/VARIANTS.md": "8107cdae703de0f6aa5fbe40842f421586e8af8e95d7e32ead8323c24d78e545",
+    "acceptance/textstats/cases/assessor/A-001.json": "5355048d16166ae2637378881a89bc43ba52498bcb71a316c02ce073f4a863d7",
+    "acceptance/textstats/cases/assessor/A-001.md": "36bc9b1a4550b8bdf30006b9c96e94e8e6e5daa566a8bcffa76077de0fd10f84",
+    "acceptance/textstats/cases/assessor/A-002.json": "73ecb38f842b3150edbc04c33b6429c0222093790d90ba76aae015f6377558e1",
+    "acceptance/textstats/cases/assessor/A-002.md": "991eff0ec8d2c6d96da58dc92101ccd076d480e22b6fc9aacf9811bc9382a391",
+    "acceptance/textstats/cases/assessor/A-003.json": "345479be23483e141bb117a24e4d52d524aeb07e6ad193a577cf0378380af022",
+    "acceptance/textstats/cases/assessor/A-003.md": "b18ba9497f845fbaf89863f588f78f25b743bac499c64aa0c3cae8e10a01f5a7",
+    "acceptance/textstats/cases/assessor/A-004.json": "6edf4035a58d29384e62cb4f1dadf6055a79a6d1a3d21a9d8b1695c2fac53348",
+    "acceptance/textstats/cases/assessor/A-004.md": "8a8cf32d95f5ed69657c820461f02dcf0180fd836658e3e612d3158ec3ec551e",
+    "acceptance/textstats/cases/assessor/A-005.json": "73857ba48ea73d5654d96e4b89fa9dd8ed708b1828689307c4451e40d0261105",
+    "acceptance/textstats/cases/assessor/A-005.md": "fdacaf708d6273197120537840c83f2544ec61f218e0d2d40868bc190268a1a4",
+    "acceptance/textstats/cases/assessor/A-006.json": "cd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a",
+    "acceptance/textstats/cases/assessor/A-006.md": "d2613c3b2dceaefcd4352fd2c9b2487158e79e1f86fd355173b05d9a66afacef",
+    "acceptance/textstats/cases/assessor/A-007.json": "dac7ee06e80d99f031007d66b2f70ed9648fd584d75f6c676106146e556c9e0b",
+    "acceptance/textstats/cases/assessor/A-007.md": "bdd041c1dca96bb0cc784c4de40ff5c03a6fcf9560545d312532026c1ab7f971",
+    "acceptance/textstats/cases/assessor/A-008.json": "a0cf85f3f2b23bd1202216aa73dcb2b59565c7fdf6d255d3ac71293fef02476b",
+    "acceptance/textstats/cases/assessor/A-008.md": "20737e2f722e19cfd6e3f3a2478839a0a31969fe8f26015a3e04b2ccd9744d0a",
+    "acceptance/textstats/cases/assessor/A-009.json": "284af8c0d3b275010b4e1ffbe8e9c9dc9f4171a0d841e1950fc591b796aabac8",
+    "acceptance/textstats/cases/assessor/A-009.md": "8e57fa578559c4dd30580644be5bab1ef7dec2b09fad0f48768da6538097045f",
+    "acceptance/textstats/cases/assessor/A-010.json": "4a1978af6507fc6952eaa69af9510f69e1ec01971000b06333a5598773f587f9",
+    "acceptance/textstats/cases/assessor/A-010.md": "76d041de3d6b71a5b4c2cd707b1d0930497e844156b1a40e51accf65aedc2966",
+    "acceptance/textstats/cases/assessor/A-011.json": "abfc04bcd7c08d9ffb943d796d9de2e7019e7da3061f01489ab99777cd3550ea",
+    "acceptance/textstats/cases/assessor/A-011.md": "771d8acdedd52097e48f8b6c055b7598cebacc1b6d14e46cb497bb7bd8167808",
+    "acceptance/textstats/cases/assessor/A-012.json": "6f7abfb34e29cc19ab1ca3bf2ca560fa0693ff47e5373977cab633d9ef61447e",
+    "acceptance/textstats/cases/assessor/A-012.md": "3c5dec3b706915bcdd9bf72814804979c9aa7812a57cc50708418ce88c00e377",
+    "acceptance/textstats/cases/assessor/A-013.json": "1aaafa1e10eec44bfcce3fb5cf727deece9e7f759d29857bb162593997e790bf",
+    "acceptance/textstats/cases/assessor/A-013.md": "7716c3b270ceb4142751be870f0dbe8db24741854c12bb0fcb0e8734ff934147",
+    "acceptance/textstats/cases/assessor/A-014.json": "cf4ff146dbe14816087c95f5b87677587748d721df197670cb15a48c707e15ab",
+    "acceptance/textstats/cases/assessor/A-014.md": "3236b318496dde0f4cfb09199de4e01d1738c6743263df9f728322918c423912",
+    "acceptance/textstats/cases/assessor/A-015.json": "ec780e2a829272a8819cf4751b1e63d072725a4ab250c38273572004fbc5ec98",
+    "acceptance/textstats/cases/assessor/A-015.md": "11d4f2f76f812d45bc0283df345b7f0cb9010a913b3c25b90332f64457a42d6e",
+    "acceptance/textstats/cases/assessor/A-016.json": "348f67bdaae1e5f32eb99082269f92a50d47a80445eff693a650692123cc6198",
+    "acceptance/textstats/cases/assessor/A-016.md": "618142db47445f781786b271f8b4698cdb1358570b66618865bb571d30213344",
+    "acceptance/textstats/cases/assessor/A-017.json": "91668b282080dd1c3f269824a4a9c162eac64f44cef78fa64cc01d195bfd19b8",
+    "acceptance/textstats/cases/assessor/A-017.md": "c3bdb4bf38d26e36792469e5ea3b24580ceebc53145f863425ec4846349d86c3",
+    "acceptance/textstats/cases/assessor/A-018.json": "7e4e8db13ab5998fdb7ecdc82e6765499f2d11c5dce6ca1dc3ef89148cfc1b6e",
+    "acceptance/textstats/cases/assessor/A-018.md": "72f8ac666d1f802642c8ba1d5bfcc221ad19885104308391ee8d8e61078bbf38",
+    "acceptance/textstats/cases/assessor/A-019.json": "7d430dfecb474f47259fedadd9295377389c7bc9867fce615ac543937a343b69",
+    "acceptance/textstats/cases/assessor/A-019.md": "82d8620af9e6c6cca52e1b0c527525b782a7f0bb22950d306ef2cf22d424eaa5",
+    "acceptance/textstats/cases/assessor/A-020.json": "0c8304e58752a77775fd6682d4f2237d8af4de13fb65f92a1f8efc1dc02a3196",
+    "acceptance/textstats/cases/assessor/A-020.md": "e5cd9543e98720e67da5bf85c57149fa40b660675c519481c1202f94246a1dce",
+    "acceptance/textstats/cases/assessor/A-021.json": "489c3b74620bdb4fda9cf0d629fbe712e3a5cccc1326508f3aad1fd513ebdfba",
+    "acceptance/textstats/cases/assessor/A-021.md": "3738e723a0871ff590bdba67a3b3d6b7cb5135d262206e2ec10e48edc7f1f4a3",
+    "acceptance/textstats/cases/assessor/A-022.json": "4bb534bf94b91ae3e63c32a5c228a6d196dbc2f9d649c5dc097fc6d8dbe1da83",
+    "acceptance/textstats/cases/assessor/A-022.md": "a090f1974fc5b607074d1fe736612c3205bef82b6bf1768ae35910d983cbdb53",
+    "acceptance/textstats/cases/assessor/A-023.json": "7a463f7c8467b7881f19418fde0df1b8fab5974cc486aa1b076e4b899e96a52a",
+    "acceptance/textstats/cases/assessor/A-023.md": "3888bd8113b8adde05dbad5dd7061292e9abe1a63d54019028bd79ad27904354",
+    "acceptance/textstats/cases/assessor/A-024.json": "a914fce4e80151d8ca5a8cc2de34fc48b307fb60828c8df5d37e3755df3bd1c1",
+    "acceptance/textstats/cases/assessor/A-024.md": "3bb09952d3bd65874d8612f7531728ee6c4dbd9592b8590efe552f9dee232fa5",
+    "acceptance/textstats/cases/assessor/A-025.json": "2ef61a3f9be1793a217fe12ab57ff10244ca94e04f4f2c0981bab2ebf1a9e665",
+    "acceptance/textstats/cases/assessor/A-025.md": "2e805dac55f447a00accceb66e9b1d5a7484f34ae674a8bf7d199e98be0b9a7b",
+    "acceptance/textstats/cases/assessor/A-026.json": "990f504174ae75ca811933f4f91c36920c2b91a1431bef69f1ea7ee7d6ba2e69",
+    "acceptance/textstats/cases/assessor/A-026.md": "8824e0cdf8576001c75855f239658c18b495ba46c4693401d090bbfee55c3c1d",
+    "acceptance/textstats/cases/assessor/A-027.json": "2fdf6bb368d54472a9c79fd1c56d8afeec6e7571444383e98c0bf819430511fb",
+    "acceptance/textstats/cases/assessor/A-027.md": "f7cc94019a35d39a1127fe43a009fd23627c3e0f98c5c9fa73b109ad268318cc",
+    "acceptance/textstats/cases/assessor/COMMON.md": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef",
+    "acceptance/textstats/cases/assessor/DOCUMENT-QC.md": "1f1b9fdbc8743b421572bb14c6188b79ae42cbecc6b95e55ae1ed0978f8647f9",
+    "acceptance/textstats/cases/assessor/INTERRUPTIONS.md": "bc01a5c14323ddad1e2e3a146e5c94959c6e476b24cbed5c27cb32e253bedd56",
+    "acceptance/textstats/cases/assessor/TRACKING-FIDELITY.md": "c8636c3697c41541b49a0d441a5c0d0a659f7607b432a6369ddbc3acc97429fb",
+    "acceptance/textstats/cases/assessor/capture.py": "bedfe314bd439a401f70155151aa520aa2fff01204e7491d1c17f1dbe2a95bdc",
+    "acceptance/textstats/cases/assessor/catalog_tools.py": "7f3c8c174d296d334e2f9b91e98279eb2e6874fb1d9d9b58a30257e61608d9b1",
+    "acceptance/textstats/cases/assessor/expected.json": "5c7646105a1c28f061ee1cf84bc41ac399d0bc90e2963c00e5754a89ac1534f7",
+    "acceptance/textstats/cases/assessor/inputs.json": "1caf7a7eb4738e2492dc7b6567dcda0957690e10281caf556926a40aa508af55",
+    "acceptance/textstats/cases/catalog.json": "e33aa2cd484c7784c2f7594ab0e9a5e32fb37b1ce0f1be812d7b087b24701528",
+    "acceptance/textstats/cases/consumer/A-001.md": "af76e76cd125981b55f20b7e43628449dbd94b40d40b868e73039eb6eb35fd44",
+    "acceptance/textstats/cases/consumer/A-002.md": "d8cef6b02d5e55c2746f2df71fbda17b8f59fbc5b090be85d7d550e98a7c8021",
+    "acceptance/textstats/cases/consumer/A-003.md": "dd208ec900829d9fa1e33e0b50eaf90c642400693ded4560159e5fb2d843fbdd",
+    "acceptance/textstats/cases/consumer/A-004.md": "b3511fd0f3ddaf934e44c055069eeab8c90cdfe22e27b6d63c5cd656bf80c2f9",
+    "acceptance/textstats/cases/consumer/A-005.md": "2eb75398ec7c137a83f6e7f2b55ba732a9123794edff8c34b9e88a78f26556d9",
+    "acceptance/textstats/cases/consumer/A-006.md": "e6309a59930578cba89697176a946c9f2d83b2e85170c636fa2aba1512e10c8e",
+    "acceptance/textstats/cases/consumer/A-007.md": "c1ab0742bdc0508edcc88cdffc20560b29b3399926932cbed47007f4ffb6ddc2",
+    "acceptance/textstats/cases/consumer/A-008.md": "d4cf848ee90c1fba968a7c7b7852cd0dc095987c86e6bff3405e8341383a55ba",
+    "acceptance/textstats/cases/consumer/A-009.md": "84a69ca5075c02c33e916c5093bbf7f87786714bd0fc6fce016b5b0a7769b24c",
+    "acceptance/textstats/cases/consumer/A-010.md": "5939b0192d9eb46f4bf5bf0941036d3cd9aef75695ca96405d3e96f3d427565e",
+    "acceptance/textstats/cases/consumer/A-011.md": "b07d5e0bcd0737f8ff6405f52d5844331af11ad44b81fd5a04f1d1fe6a88716f",
+    "acceptance/textstats/cases/consumer/A-012.md": "2cad3ef8637eced8e6ebccf9b0af9de4193f225bb86ada2c44e505ce61cbbf86",
+    "acceptance/textstats/cases/consumer/A-013.md": "03fd908ba04d0098dfd789f12b3e76a157f163c3778d38504bea14b4fd8eaad5",
+    "acceptance/textstats/cases/consumer/A-014.md": "12699dfd6da3768fff16f285dfdd9ed0419c6b89f7f077a136a0dfed13df5d4c",
+    "acceptance/textstats/cases/consumer/A-015.md": "cbde935d4de2ab656de3c3bb39b6f29b70c7fb1dbc5ce77bac4f317018ef2683",
+    "acceptance/textstats/cases/consumer/A-016.md": "bc830b1033e69474eb412d4918bbafa4b2cc7294478e110d9c0007b3df843c46",
+    "acceptance/textstats/cases/consumer/A-017.md": "16e1b17d06abb11daf95294e8319d83a631709e95c850d5c761bca05f0356a20",
+    "acceptance/textstats/cases/consumer/A-018.md": "8d30528f1a54b01d809e0df9102741c916ca1e9aeef126f08f91d3fcbd90a28e",
+    "acceptance/textstats/cases/consumer/A-019.md": "5d8a0712594e71c83e936f9c0a355612a1c1bcad13274f773e8d564e6815d401",
+    "acceptance/textstats/cases/consumer/A-020.md": "63230758fc6a5c7ff7dc1d6717fcb032b25a2bbe6aba217deeb9bc8242991936",
+    "acceptance/textstats/cases/consumer/A-021.md": "5330f3222936c9b2a2830a47ca6e8e8f94e61c772db1cfcd870712d113b1e2a0",
+    "acceptance/textstats/cases/consumer/A-022.md": "4c718a9ff68c144cffd12dec81c2c09c1d8806179a964281a2c6d253f97e50aa",
+    "acceptance/textstats/cases/consumer/A-023.md": "2d4768b85913c91546b5fe8ef4327f32d378d0e1efea3f149148785323ac6382",
+    "acceptance/textstats/cases/consumer/A-024.md": "cf04b91e0dcf887d8ac570ea2926b1e594be9742e74f71e957b190f40778fc1b",
+    "acceptance/textstats/cases/consumer/A-025.md": "93946c82da28371458fba1ada13872129934792645ec082d67618041945f847d",
+    "acceptance/textstats/cases/consumer/A-026.md": "afd6279e6873460834f14fac15a741fe38c08425d44372eee90760e2318ba3f6",
+    "acceptance/textstats/cases/consumer/A-027.md": "c299a88ca2a9a9f42522386939cfe809819bed0c2899b7fa7bf49429208b04fb",
+    "acceptance/textstats/cases/consumer/continuation.md": "d89c0ce6040ae6757f747bf1696acdfa8e1bb3b68f56170bdabcb16f9a7e0bed",
+    "acceptance/textstats/cases/consumer/preparation.md": "54074af951298328dc8eccd166747f7939fd69de4a9e325eeee9f7dd224c4080",
+    "acceptance/textstats/cases/consumer/tracking-fidelity.md": "7ad14d626c77262d4ac903a4eb2deca68e1c3e7e993dfc7713c77f71b6a4e069",
+    "acceptance/textstats/cases/consumer/uncontrolled-continuation.md": "d77cba7832502356e53ecb63412d7ef4cf6745b47cfc564ce91efeec047b3058",
+    "acceptance/textstats/schemas/inputs.schema.json": "5001aa7fb72c9fbb0ccc3d8dc5d33f81b3ab07aeea0850e071b733dd912d8ce3",
+    "acceptance/textstats/schemas/run-state.schema.json": "40f2451a96bb36a36c97c5e39bf343b39ac75a8cc415ac9db633695b5eecaf37",
+    "acceptance/textstats/scripts/HELPER-INTERFACES.md": "f430ba737412faa0794bb5bcb6e9cdc6e0bca516fcc9dfd0a72cd3ba76844d3c",
+    "acceptance/textstats/scripts/assess.py": "8937bf3feec620c76859277602f2bbb73aa9532831307f8e652a1987e1bea7f4",
+    "acceptance/textstats/scripts/campaign.py": "47fd15f83ab486f6ac1710f5406e3bed5f16b493ac80f32177deadfb02977a09",
+    "acceptance/textstats/scripts/contract_probe.py": "37125e5e497a3043da916c0f29c1786d82a946c241d58fe2e4a8a5a2071f7724",
+    "acceptance/textstats/scripts/core.py": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "acceptance/textstats/scripts/evidence_merge.py": "c20a6e7c8b6964af301bd1819f1de67d1b67bd5b76a08cde409bddf565f44960",
+    "acceptance/textstats/scripts/fault_adapter.py": "75620593a8c1a7bc4bc316521b7f98aed7cbdafe318714ac4a68c84022528388",
+    "acceptance/textstats/scripts/observe.py": "30638404f50d8395ed5a8be0b5c1fc25ea6ac2ab486695d4a4500ae5124e1f1b",
+    "acceptance/textstats/scripts/preflight.py": "5f7ff7811b11559e4f4a58c59263d9e4d65c17be15e36af6ed2df05b300f3249",
+    "acceptance/textstats/scripts/prepare.py": "eb224be7c0ef22b4fea393b31e6abe16b7d9d4b8a069e5f81fa6ae01c18d1d27",
+    "acceptance/textstats/scripts/trial_control.py": "46e8b9c0a54d7781c268e43ebe3a4f35d47d0b5e8b52eb0df7e5fbd3acb985ca",
+    "acceptance/textstats/templates/inputs.example.json": "eec1fdf027d2f6d1d885d52ecc6017acfa339c4a3ed587d38d60aa42c2f40e38",
+    "acceptance/textstats/tests/__init__.py": "dc190c6c86270325156bc6b5bfca3372e4b733966187b9ef06731c06cd19374d",
+    "acceptance/textstats/tests/support.py": "faeda5656d61619e95464f1a5b7e3d5552d14e9d787a6a079cbcf492cf715bed",
+    "acceptance/textstats/tests/test_campaign.py": "2d5625012912bce85f173413e378b647732cafcc1acba9b6a5ea19a42d820647",
+    "acceptance/textstats/tests/test_catalog.py": "b677602e4b131eefb231d6f6a6519eaa5f9a015cb94d5168ba8d944360966e59",
+    "acceptance/textstats/tests/test_checkers.py": "c83124a67d767568bad79cdc3461b33d87d06e58184ccdc0c64f8e1d90c3f8c5",
+    "acceptance/textstats/tests/test_contract_probe.py": "28afaf5cadd937a6c4b01c57dae26a09afe0ebdffb819550818aeef8f84073fc",
+    "acceptance/textstats/tests/test_evidence_merge.py": "bf605f53eca8ff144c5855aef8e0ced67fe129bfe6babfbff165f2b56a38b3da",
+    "acceptance/textstats/tests/test_fault_adapter.py": "71dbbb1afd0f9365946969640fddd5461846bf6e3309f20ed95fbe8082e0aff3",
+    "acceptance/textstats/tests/test_local_assessment.py": "4c7842a780156ac58a3a9092ce56b0addb4e48ade2581a52deff4ac8fca8fdca",
+    "acceptance/textstats/tests/test_package_docs.py": "73753d698c837a1a9ed09457d18c201a58f5f7bad6071c7f937c84f4b4f06acb",
+    "acceptance/textstats/tests/test_preflight.py": "ff6e7444e473acd5890282683cfad992f5ae87ec9681cb64bc358d7d35d1525c",
+    "acceptance/textstats/tests/test_recovery.py": "84e42ecb9b88a400330853be738cefd0fb16940b5db8226522f913e8fe6b1ec5",
+    "acceptance/textstats/tests/test_trial_control.py": "64199a604b29d117c8c591ea0488cb2cdce17394088ea235a01da48b7c93401d",
+    "assets/AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "assets/SDD-MANAGER.md": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "assets/icon.png": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+    "assets/icon.svg": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+    "assets/logo.png": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+    "assets/logo.svg": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+    "docs/dev/CAPABILITY-MAP.md": "0c70f94f74ddd592362eb888d89879b7069c137c6d5d62ceb4a1c78079fda7c5",
+    "docs/dev/reviews/001_49143fa/REVIEW-REPORT.md": "21988ae459bb5e0017a37441f71a659417c321b327f3702d86ad379c21d3595d",
+    "docs/dev/reviews/002_81011e7/REVIEW-PLAN.md": "27b4741b2f06d56f562aa8871fc1581f5719f8473738c9d416003ad6c432ee4c",
+    "docs/dev/reviews/002_81011e7/REVIEW-REPORT.md": "19fa8ff516906df794b239d69bc711b9ffb46e1308d29bfd7d486b68fba2059f",
+    "docs/dev/reviews/002_81011e7/REVISION-PLAN.md": "cb2321b995c12159a4bdac7a3fe1f500c4a99cbe518706fb5dfd277a93328d92",
+    "docs/dev/reviews/002_81011e7/REVISION-REPORT.md": "6ecb812904b89e629587a23437f3fef34a886819f3a79570690189c0510873b9",
+    "docs/dev/reviews/003_39374c8/REVIEW-REPORT.md": "7a2dd7105c78389aa4d305c0bcf85fdbbf6acbaecd05b58b1066b18e6e007d86",
+    "docs/dev/reviews/003_39374c8/REVISION-PLAN.md": "3954ae5a9ae7248d707cd72a1d8e4468c27b8cf90dca49a1f6abf98b926f713f",
+    "docs/dev/reviews/003_39374c8/REVISION-REPORT.md": "28ff011e109cbc30e8d7fdea9ad8e5ac2b7ce0bdaed2130846a6bdadde912489",
+    "docs/dev/reviews/004_af715bb/REVIEW-REPORT.md": "b5b4717ed25a7d8776cbd932b037d0b372ebe78e419b6b1a5225f4ca508f0667",
+    "docs/dev/reviews/004_af715bb/REVISION-PLAN.md": "7d778080e30153859b8159575ea47901e374256d0c42699a4fce85e873b2d10a",
+    "docs/dev/reviews/004_af715bb/REVISION-REPORT.md": "9f70685b1b549f51e970afbbc0e50a37d8aae848b0e1cc1869933095eac9e9d7",
+    "docs/dev/reviews/005_79fab0e/REVISION-PLAN.md": "d7f1f47efe43d66a5ba9e31471917b3f8181802c7340197d9875fb9d5b5d8c2d",
+    "docs/dev/reviews/005_79fab0e/REVISION-REPORT.md": "65864b865a61438f6cd3eb5c29e8bc279720aa3c1cd74a50fc1ed24f59bf5554",
+    "docs/dev/reviews/006_0393fee/REVISION-PLAN.md": "89a9e6818dff048fdf97578edd152611ca518616f0b2ba0cd6169706f5f0f3dc",
+    "docs/dev/reviews/006_0393fee/REVISION-REPORT.md": "3cff6c690f40a0b61be0950e26ecd91df695da3df832f2da880948de131b77df",
+    "docs/dev/reviews/007_df531c2/REVIEW-REPORT.md": "fa5b46eb29f7b08954e7a53f8d55cc2a74395b95ba563cc1f2f566706275bbd5",
+    "docs/dev/reviews/007_df531c2/REVISION-PLAN.md": "9f638fd919efafb4a2d255cb1de253e7e96074cc80bc8edfac26f93b0eda6325",
+    "docs/dev/reviews/007_df531c2/REVISION-REPORT.md": "cafea9048443ba2e057303764123f14910132dbd935eec69d7c4c7bd7c639239",
+    "docs/dev/reviews/008_98a5562/REVIEW-PLAN.md": "c31838c9daa1a4fda241118d04712ec4bc594af387f0992055d5729b3cf71df0",
+    "docs/dev/reviews/008_98a5562/REVIEW-REPORT.md": "62a502a699772a9ce4f7c5a52eec321a1fdfb7b503ad2bbdf17f0c672dbb11ef",
+    "docs/dev/reviews/008_98a5562/REVISION-PLAN.md": "64a861505e3d1be65cda67d71bd15ee11a3152316d4be91503fcfe5daa7a0419",
+    "docs/dev/reviews/008_98a5562/REVISION-REPORT.md": "97f0207781e6f9c88485a672ac60ad9ecac1e849ccdb93f03dd9e6b75a516758",
+    "docs/dev/reviews/008_98a5562/evidence/README.md": "9d292b22c629e37dae2a5ef502cdb6e3fc60d0c4901aebcca8a2a3462c8c17e1",
+    "docs/dev/reviews/008_98a5562/evidence/V007-committed-check.json": "ef13566d318848b463b9fcc996b0dcaa9b968dbfe39bd05a363859725a1c31e4",
+    "docs/dev/reviews/008_98a5562/evidence/V007-committed-state.json": "fec3a6450f6cc2e6b8b4f7459cfa70e40c388f24369960dacf1fa6cdb082c155",
+    "docs/dev/reviews/008_98a5562/evidence/V007-interruption-diagnosis.json": "9afe2c07ab5d0d8fb5907b26e6e80df7f98a6ce7cab5fec89865073353b6d878",
+    "docs/dev/reviews/008_98a5562/evidence/V007-merge-publication.json": "ae4e00e912a4cb38a48be0175a8bad4d31c3fbdbe7fef719322d329a03deae5c",
+    "docs/dev/reviews/008_98a5562/evidence/V007-prospective-check.json": "8780ee70e8ea747ba9e263dddd0d6f72e8737584d3bf4c8ff0130c2820c49de2",
+    "docs/dev/reviews/008_98a5562/evidence/V007-prospective-state.json": "8fb07f27a098aaa0eb3d0b79733c906c3306d54c745810ec6fbc63af18934a91",
+    "docs/dev/reviews/008_98a5562/evidence/V007-working-check.json": "f9c87e71bb6ba2f319f5cc77b641d96d1d2529c82c4740628b7d2b670dce2969",
+    "docs/dev/reviews/008_98a5562/evidence/environment.json": "968b45a23736edd852621715641359d90688ae4f28fbce4b3e06ad0fe7fd0fa3",
+    "docs/dev/reviews/008_98a5562/evidence/failure-results.json": "90775c82d655e9d66c00791fd7baf41301caf8c59776ad2a3ac56c69ee0d697a",
+    "docs/dev/reviews/008_98a5562/evidence/failure_fixture.py": "fa7b3226b3bf110dc47fecfbedc4b0d1f5c3fa6566af40c8f1ff92a5053641a5",
+    "docs/dev/reviews/008_98a5562/evidence/integration_verify.py": "48a2a5f2f05dc83e478410605244b647bbe61ff1c4e86376eeee89692da09bef",
+    "docs/dev/reviews/008_98a5562/evidence/lifecycle-results.json": "2d9a6ab07a94fb84fb767abb23686d34cddeb357f18a414bf59560a70184892e",
+    "docs/dev/reviews/008_98a5562/evidence/lifecycle_fixture.py": "f47c744d57305e41e9a97b1f85c105a0732d7799897aaf7c47d9d0334178a886",
+    "docs/dev/reviews/009_384beef/REVISION-PLAN.md": "cea1ef26ef9aee190a0e6d00c3c7e910f7d89b3a0b815441275a3fe6d8bfe156",
+    "docs/dev/reviews/009_384beef/REVISION-REPORT.md": "a85ac0b309f2524e703102ed9989aad4b6ae2701865f440dbe4c5c06632d0e90",
+    "docs/dev/reviews/009_384beef/evidence/directory-bootstrap.md": "8fa6cb3d7633611a6275e56028bbcbe24b847bcd17ff15e0815da1b33cdf939c",
+    "docs/dev/reviews/009_384beef/evidence/final-fix-full-green.log": "0d6b659a7208b8a7c5f88fb963df992b14d1da2778e8b93fbb22d04c6a53bc73",
+    "docs/dev/reviews/009_384beef/evidence/final-fix-green.log": "d25c0b8cefc7f837bd2a1015a5ea274bb4c80c087af707ad41aed517520df977",
+    "docs/dev/reviews/009_384beef/evidence/final-fix-red.log": "ec60f50654510258f24f5dca84354fd17abe01a4ffc0179077d1755028a2ce20",
+    "docs/dev/reviews/009_384beef/evidence/final-fix-report.md": "4639551a7ad144ae9870ef1562c9e7f3d30961850aa4b91c2148b853d1991b53",
+    "docs/dev/reviews/009_384beef/evidence/final-fix-review-repro.log": "7a6ed7ac2d532077e20ba0c118534888fd17f50d3ba6ec6b0e5d225f9089a468",
+    "docs/dev/reviews/009_384beef/evidence/final-integration-checks.json": "33e7da98ca0860c1bf47d905d7730c0c006ba6dd5c4447e14e7503929034eb7b",
+    "docs/dev/reviews/009_384beef/evidence/integration-verification.json": "bb9fb1a03dea04797b9cef4361c75236f147f9474ba2ea6efcab4046ceea6c88",
+    "docs/dev/reviews/009_384beef/evidence/merge-prospective-tests.log": "04d00da66c40f47aca8d143067ad153dc8a41e91d61d19c0252f1ee158ff2bae",
+    "docs/dev/reviews/009_384beef/evidence/relocation-checks.json": "71d184bfde263827af52477fc40ae27c3f0ce0ebd86b7e2d98d94abadcfdb18d",
+    "docs/dev/reviews/009_384beef/evidence/relocation-final-tests.log": "263b4df1fc717bb841692c46d39aca1754e698dbc17caac9598c7d14a302b7ad",
+    "docs/dev/reviews/009_384beef/evidence/task-1-report.md": "063eab3688f60eb6f5509edfd3b43de5281e83a54b9bd0765b956b81f9348f93",
+    "docs/dev/reviews/009_384beef/evidence/task-1-review.md": "5e4fd087d2b2bb8961450899f4d134cb6c1e7d077721adedd790dea9247dcab2",
+    "docs/dev/reviews/009_384beef/evidence/task-2-hardening-red.log": "77022c4a61c4e0a1b261ce8633eba80517ff0d0b392eb4d150c10b1698b4320c",
+    "docs/dev/reviews/009_384beef/evidence/task-2-path-red.log": "ca04cb5b8eb6d38e71ae62daf402aa6354e99d9b7a06499be787938e4fc3f131",
+    "docs/dev/reviews/009_384beef/evidence/task-2-red.log": "fa20845834cb3cab37fe5815c967730a7580cf8ca82f3196b4dfbc216a6d9cd1",
+    "docs/dev/reviews/009_384beef/evidence/task-2-report.md": "3b7a4ea9ed90c5b20a74f6fc633f573f8a58448d89de9a5db88ad41384147367",
+    "docs/dev/reviews/009_384beef/evidence/task-2-review-full-green.log": "96dc974e9e0a6e9faf1ca5d4d68a5a527e592b689f5febda8204d85d62293234",
+    "docs/dev/reviews/009_384beef/evidence/task-2-review-identity-red.log": "32d388603a21c1dba7fc5d10d09629fb08a9644fb4102b525918f4c25b734a75",
+    "docs/dev/reviews/009_384beef/evidence/task-2-review-red.log": "8e37fb73540fd467fccbb0f91b862571aba957ad0e53e8654141e4a35eb1a6d4",
+    "docs/dev/reviews/009_384beef/evidence/task-2-review.md": "222c0b3b590d893d68c2f87518aa585b0a7f0df2f6df698f5c398a2563a66851",
+    "docs/dev/reviews/009_384beef/evidence/task-2-sensitivity-bool-int.log": "a88a5dc2a01fa67869481fee9ffaf6f5bd7fc04f3b36fafaec5f2aaae9b73f7b",
+    "docs/dev/reviews/009_384beef/evidence/task-2-sensitivity-conflict-stages.log": "40622833168673caff8f83f02487e59067ad488a9b94f060e3a83f0890caa13a",
+    "docs/dev/reviews/009_384beef/evidence/task-2-sensitivity-unknown-publication.log": "3bef045a8130b8974ae28bea27814a0d69a3be832e5b48f993c497cbd73daef1",
+    "docs/dev/reviews/009_384beef/evidence/task-2-shallow-full-green.log": "0cf1da9cc11205a3d3e64659cf7eef8551c1209c809fe79a008808f3e20261d3",
+    "docs/dev/reviews/009_384beef/evidence/task-2-shallow-red.log": "a77dd84e59fe87e55e2c7c29c86f81e0ac0cf8ca81cf7b3e4487bbd2cfe5ca0b",
+    "docs/dev/reviews/009_384beef/evidence/task-3-catalog-tests.log": "871e722d7e09c5cf415a4a09979e411331fd6984214fb13bfd597ad9f3528cc1",
+    "docs/dev/reviews/009_384beef/evidence/task-3-fix-review-repro.log": "14b1369240736c4506a9715c29794e3287adbf2dc5ca7910a0cf5870d947795a",
+    "docs/dev/reviews/009_384beef/evidence/task-3-fixwave1-green.log": "810dcc2e41ef30505dd856829eb5acae23f048fdd0a18ca4d119d894ef8ea94e",
+    "docs/dev/reviews/009_384beef/evidence/task-3-fixwave1-red.log": "46312e57db1aefc16b191d2019026de64be74688cdf5fd1ef94bbf531111dad2",
+    "docs/dev/reviews/009_384beef/evidence/task-3-fixwave1-tests.log": "7eaffe62cccb850a93132f8f3c036246766afdc0cdd473b8a64d388241790b2a",
+    "docs/dev/reviews/009_384beef/evidence/task-3-report.md": "0272134e7417484ded534e08b92c3fbca44204f0e4e51718a2eb86ceb9fb84ae",
+    "docs/dev/reviews/009_384beef/evidence/task-3-review-repro.log": "8175c59d8aa9081c1412e4e05a2a3147b6c4237a939fad64feb5836cb7365cb8",
+    "docs/dev/reviews/009_384beef/evidence/task-3-review.md": "17bae2a38997ffa0297ff35cf1344e37fac14a06a62bf8a2bd27c0c6b31d42dc",
+    "docs/dev/reviews/009_384beef/evidence/task-3-tests.log": "f8ba706bec18ae53dd9e4d3b69c4261ca043cbca6444448bd30b61a59e0a154a",
+    "docs/dev/reviews/009_384beef/evidence/whole-bundle-review-repro.log": "46758632ab7bcb853d879cfc93f37aa540f8a8fe68a501b1f385151dbaf57fb8",
+    "docs/dev/reviews/009_384beef/evidence/whole-bundle-review.md": "10caef9a9594303763e52ef1c862c7b9c02dc2bf15a2368a0d70532fc81ddafb",
+    "docs/dev/reviews/010_3f56922/LIFECYCLE-POLICY.md": "3d956fcfa1533a8d3048f2e119c635e263197fdaf55ea5d0ad641121e5497ff0",
+    "docs/dev/reviews/010_3f56922/REVIEW-REPORT.md": "bb7095d24c3851638cd7c0a9cd4bb8a82e258f3be45a207096f208e585be9697",
+    "docs/dev/reviews/010_3f56922/REVISION-PLAN.md": "31250de4c2b37136b1cb34906e5b5e3ca5b1cf5b001b2f382f868cad8f9c50e6",
+    "docs/dev/reviews/010_3f56922/REVISION-REPORT.md": "34947774cafc34f28225848fb86db31f2df796654289450a0188cb491d425bc5",
+    "docs/dev/reviews/010_3f56922/evidence/consumer-assessments.md": "4703ff5760b3ab0dc481da5d86a05a2efe8ac448aa50cd81fb3b6c7d153b14dc",
+    "docs/dev/reviews/010_3f56922/evidence/merge-verification.json": "9d986acff7df1166a2ae9ab18e3c715ad6dd5c813f95ee5d64742c7fd18b5e55",
+    "docs/dev/reviews/010_3f56922/evidence/merged-support-tests.log": "2650810ba3df5847ec841c2731469c23c5e799df98d65b8062f971b38ea19177",
+    "docs/dev/reviews/010_3f56922/evidence/structural-verification.json": "83b1927a56d75475d08b0ff34699199096c7e6651b59ee09df9068fdc435d1f8",
+    "docs/dev/reviews/010_3f56922/evidence/support-tests.log": "8a0ce7043652fe61f393e072439b7262828d89d9f46b133b64547398f8c949d8",
+    "docs/dev/reviews/011_a3b2ad9/QC-POLICY.md": "6f7b6cac56af91b3f583eb78532989215f334f263ca30706a0039953ad134408",
+    "docs/dev/reviews/011_a3b2ad9/REVIEW-REPORT.md": "380f588d642422c7e890caff8d3607984ea069fda0fab538001866470006dbb9",
+    "docs/dev/reviews/011_a3b2ad9/REVISION-PLAN.md": "bc078c33c8af2675596b099d48e57332a9a1821ba50e9a39c08a85eeffb8c72e",
+    "docs/dev/reviews/012_21cba43/REVISION-REPORT.md": "0c67cc43383deccf633453ded75c4fefcdd6a08ccfa5d6519ed2895a98e4a830",
+    "docs/dev/reviews/013_86ce4eb/REVISION-PLAN.md": "1ee9aaac261cc01094fdd477e0dab5dc22e95d977a6a1d31ae65bc920f90c9b7",
+    "docs/dev/reviews/013_86ce4eb/REVISION-REPORT.md": "4cf89456291acf54b1473c3f9847d265d404e0e3cb014679c7bda62ae3bd91eb",
+    "docs/dev/reviews/014_f7c4de6/REVISION-PLAN.md": "641413758cbf86cb79632342a61ac1eb893c1339de48160fd8bd5b671c22bab8",
+    "docs/dev/reviews/014_f7c4de6/REVISION-REPORT.md": "3c35a01e8445f4842ab44a5ef0e9d9acf976973a2b7c1b7ced90749fce190f1b",
+    "docs/dev/reviews/015_5ef0e32/REVISION-PLAN.md": "950e49511245171cfc579c982d49a24dd676781c5427e21cb30be2d8cc9c7c7a",
+    "docs/dev/reviews/015_5ef0e32/REVISION-REPORT.md": "cd39bf69927cb0afdf10175467b47567bd17707df66881469400f3fc13a9fbf8",
+    "docs/dev/reviews/016_4d51bb4/REVISION-PLAN.md": "a5f8080925f478dc416cbda4a721b2cb44080690ddd5e18a315e866475007b7a",
+    "docs/dev/reviews/016_4d51bb4/REVISION-REPORT.md": "56bda7c588330b64f5431bb126532b6f026cfbf28d35bedfd330ad9792d51be3",
+    "docs/dev/reviews/017_54d55ed/REVIEW-PLAN.md": "4f136ed0b72a108ba2b3a44a486d8ad003b2cbca6dfec4105a89fe4ffd4ed3d1",
+    "docs/dev/reviews/017_54d55ed/REVIEW-REPORT.md": "0679e4d776ab7e961aa961c50e9fd447027158b2cd6b5b70c8e6c1ad38a12798",
+    "docs/dev/reviews/017_54d55ed/REVISION-PLAN.md": "0b840485c916f0e79552e1384f9a6d24a6d8f27fefcbf7ce50c0bc60a68f71f9",
+    "docs/dev/reviews/017_54d55ed/REVISION-REPORT.md": "290ef044048b8e3f2b55b265068fe3a6f9f0b81eb080be1fdc2149aa6665b2e7",
+    "docs/dev/reviews/017_54d55ed/evidence/catalog-validation.json": "98d1db3c433bc78d4b7c117acc7edc63edd578b6e5aa6ce265f7fcd6c2cc82db",
+    "docs/dev/reviews/017_54d55ed/evidence/documentation-verification.json": "b2136934cd05ae93ab4d81b82608843beee81ecee330c8410516197269ce2df4",
+    "docs/dev/reviews/017_54d55ed/evidence/final-validation.json": "3cc89a90851bfa22e4d61841a6a77452547e667d9e1ed4c28301568329ce62dc",
+    "docs/dev/reviews/017_54d55ed/evidence/module-documentation.json": "2845a8bf6bb1d1b50c53d996f3947aaacadb144ad885d42f2ffc803a218394d8",
+    "docs/dev/reviews/017_54d55ed/evidence/ownership-probes-corrected.json": "3a4f3eb7e4efd1229891abeec46fb01a590b84364575300ed0c725cad7a63eb8",
+    "docs/dev/reviews/017_54d55ed/evidence/ownership-probes.json": "f069bdb53825da6ee9706d0831f8737954309ff6d613b910ac81259b23babbf0",
+    "docs/dev/reviews/017_54d55ed/evidence/ownership-probes.py": "d0624c8d21fd5dae9625bac470d8da4a99dd4f09fd58c674a33f46d3bffc4020",
+    "docs/dev/reviews/017_54d55ed/evidence/package-presentation.json": "39b457782975a9ceec879f9a3453005ce438b68ddf1e5ff0ce8e95a4c4260040",
+    "docs/dev/reviews/017_54d55ed/evidence/package-structure.json": "48082b93b9a0c597f04584101883e49c75771fff230519097b6193522b593381",
+    "docs/dev/reviews/017_54d55ed/evidence/revision-boundary-validation.json": "0e6ff1020d5622078818bdc1de12eb90267a0ed7e2b854ac35809e30b2a22b86",
+    "docs/dev/reviews/017_54d55ed/evidence/revision-catalog.json": "98d1db3c433bc78d4b7c117acc7edc63edd578b6e5aa6ce265f7fcd6c2cc82db",
+    "docs/dev/reviews/017_54d55ed/evidence/revision-green-focused.txt": "f2ba3dc63c85163fcbc7188984888be1d286eca0d9417bab90d0544867eb7be0",
+    "docs/dev/reviews/017_54d55ed/evidence/revision-green-full.txt": "718620bf299a777144cfb8374943f2b781283e92e8c448a43adad3d7ae28f756",
+    "docs/dev/reviews/017_54d55ed/evidence/revision-merged-tests.txt": "d826b95b856f86a4e349fa24e10b91383c07dde03811eb831045fde07bfbdaa6",
+    "docs/dev/reviews/017_54d55ed/evidence/revision-red.txt": "aa47ae39e3f49ee810abca82dec77c76e858108e179888134dba0b3c137d18a8",
+    "docs/dev/reviews/017_54d55ed/evidence/source-inventory.json": "90e2211a321883d1d9a2315300896b66c5b0bc77a394360652022dd7622b041b",
+    "docs/dev/reviews/017_54d55ed/evidence/support-tests.txt": "446e8f9a7de52890faad582106177c95ed25991368b50988aa2337f8b27fb65d",
+    "docs/dev/reviews/018_0ea2adf/REVISION-PLAN.md": "b9ac11cc76cb7e2458242bb2a8ffdf263889b84567f6195ebe187c01ad4c0eb7",
+    "docs/dev/reviews/018_0ea2adf/REVISION-REPORT.md": "d58d95bdaaa3436d3b2a99effdc2fb7160abf14ce49f6a761bfeac923c8f7180",
+    "docs/dev/reviews/019_609d084/REVISION-PLAN.md": "ecb27d8d8f4e7fb5011b07ab66ec5878511bda377dc3b5f5d0b628bc9f3fbc2c",
+    "docs/dev/reviews/019_609d084/REVISION-REPORT.md": "ea81ff02d73e640564fd4b00afad82c550d6548a776214a9b6a8eb1904b1e5f0",
+    "docs/dev/reviews/019_609d084/evidence/SHA256.json": "c8c90937cd6126ef74c142fa85ed6dca0a79cd2c0fcf27eb5ac9a12777182488",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/ARCHITECTURE.md": "bf216226a4669380f32fea77a0a6c153a12fa5473c9e46a58fb90bb57c87276b",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/DECOMPOSITION.md": "c8fb554e2e43d579334d87297303d95bcd1cca70c2252b150c91deef5f3a8f16",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/PLAN-REVIEW-REPORT.md": "b132e2f4efc1d4019d794a6b900bb81e50212316654d7a650079d262812e2671",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/PLAN.md": "b5feada8c5c81b4ccaa82387d0abc3911da85ae5df1cb838bbce2fff7f952fbf",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/PROJECT.md": "126ce35b5c1950607c61afd109596e1d3672ee96b1b1d432551e62417c75945f",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/SPEC-REVIEW-REPORT.md": "f024d476e956202079bf5df43157455ad2a2f0831d7cad92cc12cdb6cabd9453",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/SPEC.md": "288fd3a7eb3a6d1254b21461a7d2377a951f1c123e9ad2b65cff56218c6a6292",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/TASKS-REVIEW-REPORT.md": "511f68c2da7cc9a2ea5c364bedc5849e3266c56b252ad28431603b620f8a0212",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/TASKS.md": "17458b4ac12245c63bd03b3de55c56e2de8ce448d2967911ff857cc12e887587",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-one/docs/dev/layout.md": "35526503ce8812911ae14e8bec8a7669cd00f7a6136eaff1365ba9fafba5561c",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/ARCHITECTURE.md": "bf216226a4669380f32fea77a0a6c153a12fa5473c9e46a58fb90bb57c87276b",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/DECOMPOSITION.md": "c8fb554e2e43d579334d87297303d95bcd1cca70c2252b150c91deef5f3a8f16",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/PLAN-REVIEW-REPORT.md": "963c55fbf7fabe529d0f3bd967b398d8d661cd0f6ce065682ceea41d905cf203",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/PLAN.md": "844ca4082ebe2c4a2dc19d56c0bb340e0d1e9530b7ccc19151398eea75110bd5",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/PROJECT.md": "126ce35b5c1950607c61afd109596e1d3672ee96b1b1d432551e62417c75945f",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/SPEC-REVIEW-REPORT.md": "ce2372817ac32e3a6afcff1fbf3ec704e0f80cbd8b1d3213e6c4ffee3c7d5dc3",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/SPEC.md": "288fd3a7eb3a6d1254b21461a7d2377a951f1c123e9ad2b65cff56218c6a6292",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/TASKS-REVIEW-REPORT.md": "fc0ce5b32c49addebda2899396a9f45c069d89a981ded6b0eb7b67862618e478",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/TASKS.md": "6d04b9419d99b035c36d62759da54a31eced509402a3357302ef4cf481f3ad74",
+    "docs/dev/reviews/019_609d084/evidence/initial/case-two/docs/dev/layout.md": "35526503ce8812911ae14e8bec8a7669cd00f7a6136eaff1365ba9fafba5561c",
+    "docs/dev/reviews/019_609d084/evidence/local-review-initial.md": "c099fd123881be0d9ea4a1c4bd6c8e2cae36747cd53327d0eae9ba4c6cdebbdd",
+    "docs/dev/reviews/019_609d084/evidence/local-review-recheck.md": "25303b069b0fcc5b266503f4b5aed9c63ac704102cf093709c09cfd19742c605",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/ARCHITECTURE.md": "bf216226a4669380f32fea77a0a6c153a12fa5473c9e46a58fb90bb57c87276b",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/DECOMPOSITION.md": "c8fb554e2e43d579334d87297303d95bcd1cca70c2252b150c91deef5f3a8f16",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/PLAN-REVIEW-REPORT.md": "4075fddeae7ed9ade6b3c70f6fd4218aed8b51f827a93078b0157fd9ac4389ff",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/PLAN.md": "b5feada8c5c81b4ccaa82387d0abc3911da85ae5df1cb838bbce2fff7f952fbf",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/PROJECT.md": "126ce35b5c1950607c61afd109596e1d3672ee96b1b1d432551e62417c75945f",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/SPEC-REVIEW-REPORT.md": "68eda087d54bf45449b3057d521b0ab053c71920183822778680055764fcc39b",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/SPEC.md": "3cd4150c4fef26070bca04388a829882de9b002c6f43ac9b21f211e36f2eb0e6",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/TASKS-REVIEW-REPORT.md": "c6300f22473e7d21f15c57a153b5de4cf47d47a5fc26555d2ee8f1151d15a0c9",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/TASKS.md": "17458b4ac12245c63bd03b3de55c56e2de8ce448d2967911ff857cc12e887587",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-one/docs/dev/layout.md": "35526503ce8812911ae14e8bec8a7669cd00f7a6136eaff1365ba9fafba5561c",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/ARCHITECTURE.md": "bf216226a4669380f32fea77a0a6c153a12fa5473c9e46a58fb90bb57c87276b",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/DECOMPOSITION.md": "c8fb554e2e43d579334d87297303d95bcd1cca70c2252b150c91deef5f3a8f16",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/PLAN-REVIEW-REPORT.md": "c0ce2d648943d6df4afca706457fb9cb7be198fc2e49c3feace429da7f264f3f",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/PLAN.md": "844ca4082ebe2c4a2dc19d56c0bb340e0d1e9530b7ccc19151398eea75110bd5",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/PROJECT.md": "126ce35b5c1950607c61afd109596e1d3672ee96b1b1d432551e62417c75945f",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/SPEC-REVIEW-REPORT.md": "859ad482f994a8e12a49046f14908def1ad8eae5f6f8b41eb4c0476253d1a256",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/SPEC.md": "3cd4150c4fef26070bca04388a829882de9b002c6f43ac9b21f211e36f2eb0e6",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/TASKS-REVIEW-REPORT.md": "5cefce3a7e88457559f3e7e2b30eb1ad2c1601eb7174ccf4fd76f77348a727dc",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/TASKS.md": "6d04b9419d99b035c36d62759da54a31eced509402a3357302ef4cf481f3ad74",
+    "docs/dev/reviews/019_609d084/evidence/rechecked/case-two/docs/dev/layout.md": "35526503ce8812911ae14e8bec8a7669cd00f7a6136eaff1365ba9fafba5561c",
+    "docs/dev/reviews/019_609d084/evidence/support-tests.txt": "3cf1d2d65f9b3d908f612af14f96fe5958c9bbdd2cfd6c1a8e365fb96991d632",
+    "docs/dev/reviews/020_019eb35/REVISION-PLAN.md": "01d61a5b7545ea0ff45a2feb14ab6e656f53af8c270f10f25c4dfb14d4649184",
+    "docs/dev/reviews/020_019eb35/REVISION-REPORT.md": "713d3245d8551af709735474befdfcc8c1f855fc269dd8efe5f36c354ed8e28b",
+    "docs/dev/reviews/020_019eb35/independent/ASSESSMENT.md": "66ee2f6cafe9fca78b4ec6f403b21a1a4e6a609e6aee2428ae65b7aecae15cb1",
+    "docs/dev/reviews/020_019eb35/independent/SOURCE-HASHES.json": "0ae68e72cf50eb4fa2d14eda1a543584c8cf8948f7a1ef4d0f9180b86af50d90",
+    "docs/dev/reviews/020_019eb35/verification/CHECKS.json": "d96a3ae632b4ff0159e547ea99792e43d18bca31d3e6651025a2096f14193012",
+    "docs/dev/reviews/020_019eb35/verification/INITIAL-DISCOVERY.log": "2ba75b58830d10cbb3fe776eb0deb493bee86e799c9c051bbda400390f2d8cfd",
+    "docs/dev/reviews/020_019eb35/verification/MERGED-SUPPORT-TESTS.log": "aad4605e4c83389e5752ac0a198cc18db409199e458222bdc6351081a5c66036",
+    "docs/dev/reviews/020_019eb35/verification/SUPPORT-TESTS.log": "508ef60329add16d16c8d3d46e4c58852470ed2f78a2052b8407e2dc809bb91b",
+    "docs/dev/reviews/021_85f2857/AUTHORIZATION-AMENDMENT-SUPPLEMENT.md": "57ffc97383ae6dc9a02200b7e7d411032d4307d8ab4c816af430d3fd2a723c05",
+    "docs/dev/reviews/021_85f2857/DIAGNOSTIC-REPORT.md": "389a4538dc8b224569e974d48841a899462f2347a8f738ff23a86f553221cd6e",
+    "docs/dev/reviews/021_85f2857/FINAL-EVIDENCE-INTEGRATION.json": "79280ec4bcf43ca344f50adfb37f3c2cab156b9275072f02e21e0d8920a02762",
+    "docs/dev/reviews/021_85f2857/FINAL-PUBLICATION.json": "9709c2f16b47b78628d009ff3dfe2e4f9367bbe1ba943ffa0389a2cee2f65624",
+    "docs/dev/reviews/021_85f2857/IMPORT-PROVENANCE.json": "0b9b577dede2fbcbf7c061d99dd7a26c76d6b4c1293da3d79c6db9faf8630bc2",
+    "docs/dev/reviews/021_85f2857/PROPOSED-AMENDMENTS.md": "2eb0b75f99a1c3a0dd59eedfd691c729b94d775b7eab904ceb2ef3a54f4f8d10",
+    "docs/dev/reviews/021_85f2857/README.md": "14154cbe39cc5470b5415a45a104cd25203f39b042b9c4b4a9eeea174c84cc09",
+    "docs/dev/reviews/021_85f2857/REVIEW-REPORT.md": "35e36d62f55fa297ee235d9b83851f38dbeef01dcbdf3c8c4cd08be28358d793",
+    "docs/dev/reviews/021_85f2857/REVISION-PLAN.md": "472961c5abac91c2fb881768caf915c6be1fb3d27d6fa6fae8b0310ad249ecc2",
+    "docs/dev/reviews/021_85f2857/REVISION-REPORT.md": "2cbd6a7f8a2d99edbabd4391ff9cc31bc851a96139b62ad941d35b2e9d6e9dc4",
+    "docs/dev/reviews/021_85f2857/STOP-CHECKPOINT.json": "64bdecc41f5b2f48d136cee361ec5c668ec0a95076b144579417ab1dad301edf",
+    "docs/dev/reviews/021_85f2857/TEST-MAIN-PUBLICATION.json": "b04b288b9acf526803fd95cb07d7b63f055f40cd10aa826c7b9beb8e520c9683",
+    "docs/dev/reviews/021_85f2857/evidence/final-integration.json": "dbd0faf304819881c7bb7e1a498a9b6a7a3f045fba642e588e1a52cb0c73e1bb",
+    "docs/dev/reviews/021_85f2857/evidence/independent-consistency-review.md": "1d62f5544cf41cd76e805ed5d47e8fc71b891f651fcfc544e99ffa83f50148b1",
+    "docs/dev/reviews/021_85f2857/evidence/merged-support-suite.txt": "703281c0e9a68f3fa7f1fa036d81ad6eff80e5e8a2e5436a29bcd5bdd947fd31",
+    "docs/dev/reviews/021_85f2857/evidence/prospective-integration.json": "25ba0038cd94a29dcfeaf9d45ddb76882e112c3d1cd306c353e7a93e2d139cdf",
+    "docs/dev/reviews/021_85f2857/evidence/source-validation.json": "bee7feecbdccb92b2d82aa1a7e2eacb477e638e873c526b66fbb487fb375262c",
+    "docs/dev/reviews/021_85f2857/evidence/support-suite.txt": "83f55b77ea00c69bb9e51f41e9b1e801f90c114fa8b23eaf1b5b083a7dca7552",
+    "docs/dev/reviews/021_85f2857/runs/A-004/1/AUTHORIZATION-AMENDMENT-PROPOSAL.md": "19133696794bf26d89528fe41a5485a6dbe0f160d98a8ed572567d316fdd66d9",
+    "docs/dev/reviews/021_85f2857/runs/A-027/1/independent-assessment/RECONCILIATION.json": "6a7afd010a440b3f7a9c9eadf55b67cf2db1fd594e8a3951dc19c5749be520f9",
+    "docs/dev/reviews/021_85f2857/runs/A-027/1/independent-assessment/RETAINED-ATTEMPT-ASSESSMENTS.json": "4048f110f3c3fc0937245f17aace382d89470c78e5c4882f29a84c91e127a84b",
+    "docs/dev/reviews/022_4d24148/REVISION-REPORT.md": "585d092d8d7ddb2950236c400e594afc5d690510f5934c56cb27d22817a4a3a9",
+    "docs/dev/reviews/023_642e93d/REVISION-REPORT.md": "634ee48d7030d300d6a2ade45a8a4e458e205e4166a87bd086c729246d46f006",
+    "docs/dev/reviews/023_642e93d/merged-package-tests.txt": "c58b86b99bb8e96fc626d3f0f4567e8274ee04a311da1aa3f212bf33afa03726",
+    "docs/dev/reviews/023_642e93d/package-validation.json": "37661504c921d635e6420cfe249da94779bd716f3f0ac75d2f5b88b60064faeb",
+    "docs/dev/reviews/023_642e93d/support-suite.txt": "7c6c85e2459ec6ebc4a61aa21fb959eb2218d66f81800c316ac200edc7a85f10",
+    "docs/dev/reviews/024_ed2d571/FINAL-REVISION.json": "db20896da63613a3ff364f72dfebbf3199bc4c1c90dbfa8c76519dd43b139c59",
+    "docs/dev/reviews/024_ed2d571/REVIEW-PLAN.md": "2e711594ffa20531733df592824aab8bcfdd6250bd53e85836e31ecb41c5e051",
+    "docs/dev/reviews/024_ed2d571/REVIEW-REPORT.md": "4c397876ae17b58c7b2a0671db858e8b2bed12b1af21b459ec3ff207570c329f",
+    "docs/dev/reviews/024_ed2d571/REVISION-PLAN.md": "8bd26bf12f26efc52ba244e5447b2739bd9ad65f54187e0184823af22556ba4e",
+    "docs/dev/reviews/024_ed2d571/REVISION-REPORT.md": "ab16b0d51b3225bb8b3ad7cf117483667be47536ccacc8ce9e0fc4ca149e244e",
+    "docs/dev/reviews/024_ed2d571/campaign-index-check.json": "d1c93fd8a885de22eedc4258946aea8b44418c8ef8ad47ad3b8f5bda411cce4c",
+    "docs/dev/reviews/024_ed2d571/catalog-validation.json": "98d1db3c433bc78d4b7c117acc7edc63edd578b6e5aa6ce265f7fcd6c2cc82db",
+    "docs/dev/reviews/024_ed2d571/defect-reproductions.json": "44fd0d629f60e421d39b26c22acc62f5820f9ff272a0a6a4bd4adaba0621d0c6",
+    "docs/dev/reviews/024_ed2d571/final-integrity-checks.json": "13221ae458d243d3b98b349b22fb62ec7a94ead530a73c1cad3ac60c1004a5a5",
+    "docs/dev/reviews/024_ed2d571/independent/REPAIR-REVIEW.md": "931aa9aedffa80d560d53e11520935e92ae05eba34178baa5e3d7a006bf4e748",
+    "docs/dev/reviews/024_ed2d571/independent/REVIEW-REPORT.md": "027718c3b517865cf74dea554edc45e713bf6eb58bca93b294f14bcbf67391cc",
+    "docs/dev/reviews/024_ed2d571/log-format-normalization.json": "389c669133b0b8a8997f919f1b1b8694d8bf2ab6f94291dcdfdc6a34673e0376",
+    "docs/dev/reviews/024_ed2d571/merged-integrity.json": "2dc73a08684b795b13ecad422f44447cc586a54f81921253b1337176e278301a",
+    "docs/dev/reviews/024_ed2d571/merged-repair-checks.txt": "79665f91f213ca40d1e68cc22b4636b8d90a1e6a0f6d4dbefb2f4816f2b392ce",
+    "docs/dev/reviews/024_ed2d571/navigation-checks.json": "8793c1d9a1731161b656d6f3f745e52a9a70799adc4c85b1b2790151da2077b5",
+    "docs/dev/reviews/024_ed2d571/package-checks.json": "b16f713fef8897337c3b572af0993e5f34fbb139ea2d97b64218f462ed968114",
+    "docs/dev/reviews/024_ed2d571/package-green.txt": "6920218ca651bc7e4f98f7f554fd602417339cff6ea94c6192aea1c08ded5566",
+    "docs/dev/reviews/024_ed2d571/package-navigation.json": "91885850d357211621e81d19b54f108cdae85f087291a4a7c4e2526c00fa5ff4",
+    "docs/dev/reviews/024_ed2d571/package-red.txt": "94b232b518efef2fb10db121fb8cc54076065dee8303e79333e122067e9f50ef",
+    "docs/dev/reviews/024_ed2d571/probe-green.txt": "77f2406f9d7012fdb5a66f732f3979567a51c147a6a6a84f9b8ebee451eb2a11",
+    "docs/dev/reviews/024_ed2d571/probe-red.txt": "b20af73d78d0e0b1788c6a3d1bf304dfa452dcb2e14ad3becd29050e3d828182",
+    "docs/dev/reviews/024_ed2d571/receipt-green.txt": "61b86f34a49e0f17d060c9fe6e2718c487316ca490b4934464265fde7cc2dde4",
+    "docs/dev/reviews/024_ed2d571/receipt-red.txt": "8b9bc30d11e4efc46da644198c87a2b54e90dbca729dffade0cd180e32bc1705",
+    "docs/dev/reviews/024_ed2d571/release-evidence-checks.json": "e5efce7437eac99dc55e9aaa9881f281e98d3b4047a1a15fd264b68053b84004",
+    "docs/dev/reviews/024_ed2d571/repaired-catalog-validation.json": "98d1db3c433bc78d4b7c117acc7edc63edd578b6e5aa6ce265f7fcd6c2cc82db",
+    "docs/dev/reviews/024_ed2d571/repaired-package-validation.json": "a66e8fe7de9d004314d39b1e01c1c7cc429f702913adcfedad175954a8a3965a",
+    "docs/dev/reviews/024_ed2d571/repaired-support-suite.txt": "e06019f1a56f8c94b69b83f95eb1c3c9ec96a6bf562311a79fe4adacf9543cbf",
+    "docs/dev/reviews/024_ed2d571/support-suite.txt": "97f089dee9cf8fe2f8988c8221c63291ebffc897d08eefccbab98d2f42375fa6",
+    "docs/dev/reviews/024_ed2d571/variant-accounting-check.json": "960e85da12627e85a7dc143aedebf4d2ac64e06acf2ac3cc34dd4562706720e2",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/README.md": "e76969649fd1a07674a39be27090d6cc8e062d1e7a93b2b5f4b233461e2d32fe",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/REVISION-PLAN.md": "78becf4ba72dfdc973e32ff547e8a1a842c2c3def2ad98731cd90262df76530b",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/REVISION-REPORT.md": "33816962a5e458fc004a3a5aa2def04478ae0ac000e2c298ba9ced9849dd08b0",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/SDD-MANAGER-FINDINGS.md": "11fc33d4beab2e6b5e13fbb97b76f575ab4332f9dc1afc0aeee0a4b6d02721cd",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/baseline-consumer.md": "9c0795977922c264dd00e973e506dfb24b02fc6808c2138f8ec90442b4f648b9",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/decisions-consumer.md": "d2e57c627732e73fab2cefb53d68ae5afedaec338a657f305f2084a1336d9dd3",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/exercise_orientation.py": "28b359c1b40f5beba86351bc0b2121f7d0608a82ad86861e20a26ba20c183db8",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/fixture-link-check.json": "4789857e35ed414c3e2e6da214c071ac6da2061dfd49f743ed840a2aad918c8c",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/independent-review.md": "1166731725d3d2f572f31d1391e65262fa7ba2e11f853bac589f46a9c0d5dab8",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/main-support-tests.txt": "d92c93f625f3466c83fe52acc74f1623dbeb6df5871efdc882c5e134edf276a6",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/orientation-fixtures.zip": "16c703bd4f64763cbe8a2967b135ba3d2a7fd390e36b72de89e1605f258b2287",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/orientation-recovery-consumer.md": "517f80fd0951baf3da87048f0aa92044a94000802855f8c27d439848c02df457",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/orientation-results.json": "a24084deb7d17ba494b04059dd0a64cc7e2038586940121f28441fa030b3b339",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/source-checks.json": "d1167dc3e1b6b65017da7b2bc43bc27863fcc81a2d108b4298fd6257ecf579b7",
+    "docs/dev/reviews/025_98cbc3d-demo-findings/evidence/support-tests.txt": "17377e98be9d1142dd2bee3602521919e19ca71606479b79f5d79bb7e292b14b",
+    "docs/dev/reviews/026_ad9c0c9-preimplementation-baseline/REVISION-PLAN.md": "67019646eec89a70585482342371cc8462af620d9a94011a76956cf6871bf5aa",
+    "docs/dev/reviews/026_ad9c0c9-preimplementation-baseline/REVISION-REPORT.md": "76147518ba93fc6acaeb4dd14a6d5c0ff9ff87c539e36346e23efb5e5821e538",
+    "docs/dev/reviews/026_ad9c0c9-preimplementation-baseline/verify_git_lifecycle.py": "e6394df87ea63b09a7574bc25be1633851fc8fc596c2bfc00cd28f6fcc978f23",
+    "docs/dev/reviews/028_5e2624e-remove-authorization-policy/REVISION-PLAN.md": "fd4bcc5486fe66d61da9041d790705c6cedd6270e57f65ae58319d29010855c1",
+    "docs/dev/reviews/028_5e2624e-remove-authorization-policy/REVISION-REPORT.md": "64f45fc211dc0f3031e79bd5f10d0b9cf5c809da7f7621c7446d3f79f22fa379",
+    "docs/dev/reviews/029_4a93f0f-closed-campaign-records/REVISION-PLAN.md": "9d98c462fb40bf48ff76fe4d409d930d4e5ea222380477ff257f7c806a9553e8",
+    "docs/dev/reviews/029_4a93f0f-closed-campaign-records/REVISION-REPORT.md": "ad41be7b961fe3a0f9d666069b86079a01dc8406ede1d5a81ce2b34d73771ec9",
+    "docs/dev/reviews/030_a3f35e4-greenfield-prompt-template/REVISION-PLAN.md": "ee14dcda4d9da7c0c9e1da6c32d4d1147d15ab945ce2c9dfc89e0bd0ec4d88c9",
+    "docs/dev/reviews/030_a3f35e4-greenfield-prompt-template/REVISION-REPORT.md": "9f04f6898015dd31f9f8124919ef7a9f40cfa19ada34b9ffd42d227d64f15b65",
+    "docs/dev/reviews/031_646af89-github-release-workflow/REVISION-PLAN.md": "6af09b62c046a848a1d2567f6d261b14b64c7a9b651105da3480f664213a1b80",
+    "docs/dev/reviews/031_646af89-github-release-workflow/REVISION-REPORT.md": "e3dd9219fdc0d806de96cf31b7cd1623b10e7ea3df85ff0e45dfdad468cf238c",
+    "docs/dev/reviews/032_a64f6b7-release-highlights/REVISION-PLAN.md": "96f1a9eafbd6e44505e0139eb80b8f91cef6bf99750676d7f681c15ff8539dbe",
+    "docs/dev/reviews/032_a64f6b7-release-highlights/REVISION-REPORT.md": "a74fa50177f29b1173c374dab26a744ec6cdd95b88f8a6b8d0b2323bf25d9922",
+    "docs/dev/reviews/032_a64f6b7-release-highlights/verify_fixtures.py": "6f430f4889e7a7493ef9cfb325c362885efa80fb5b0877dd797d0d9bdf4f7322",
+    "docs/dev/reviews/033_04f0b63-human-document-checkpoints/REVIEW-REPORT.md": "42bc42d94a35362f5987049e820f2a3c2601aaa9300b44b0365d87c4ee329ddb",
+    "docs/dev/reviews/033_04f0b63-human-document-checkpoints/REVISION-PLAN.md": "15418a5669ef44e9eb784ff607d74ad355ace3718f12de70c01c0b055d0237cb",
+    "docs/dev/reviews/033_04f0b63-human-document-checkpoints/REVISION-REPORT.md": "3bfdf7bbdbee3d02e0f042b24af4188742ecf990da94669fbb942793d57a1dff",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/REVIEW-REPORT.md": "a73bc302c52283b4a5541935bfae1fc27232d30140efae4e63df7ff8b5dc4d8d",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/REVISION-PLAN.md": "fe155dd661f4fcdb9545fb3e52e38ff44b705a803e86c28a1db5235d7eeed5a7",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/REVISION-REPORT.md": "60f7e2d44e1da420044ee147f2c3bc15dce739b6f46f00246c8f8407b9251306",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/amendment-package-check.json": "411d7284d3b079069484e403f7c1275b4d35170399e693244c74b66df26bd043",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/amendment-source-checks.json": "cf11bf61beb65c02983e8100ab9af0560f7527d772952ea663b5bab9dcfb2ea6",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/amendment-support-tests.log": "ca35081994565373d4582e373925fe358f0b3f8213aa0eae23ced7d71a7c8468",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/final-source-checks.json": "20fab5434d95396e339688e709246b3cefbda81eb6f3f56f7a1854a10a021d32",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/marker-package-check.json": "53b0db8b1a74b333daa8dfc092b6023da5f5288a330f1f8bf2889bfeaeef9c5b",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/marker-source-checks.json": "ee02b469c9721ac17aa9e152275bfec3c4d09d172b4298f7cb7ba6c8a8562333",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/marker-support-tests.log": "2a8f874853a8e6673808bec7d6682c5e6493c0dfc1341962b01491caa4b148cd",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/package-check.json": "5e533048b874f6884459362294332df618b917c86b5f35bf99d6f6b024fc478d",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/skill-validation.json": "a16b51af31284d6c7c566de9e2297dceb690bdc3fac098f8efd9d5caedff5f82",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/source-checks.json": "2793616f02ef326b75700d92555f58ecdaec75e798462f7c8aae298242b80a71",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/support-tests.log": "0b7798f8fb0d20001007791ba5411b46b3fe1d511eadcfa375faf763193783cc",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/verify_markdown.mjs": "bf645aa542521534dfc20486d3cf413fc8fcc9349695567498a0752d4b4473c7",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/verify_markers.mjs": "a46e0c8008277640b8d0b9ab8e11f682f5e76b09527537032a670c9b5aabbfd0",
+    "docs/dev/reviews/034_c9cee3d-shared-markdown-style/evidence/verify_spacing.mjs": "29bf726c4bdda9ced98fdc14c0f1a5b269fa5975be177a1a42b4828e62ea8b7d",
+    "docs/dev/reviews/035_6ac4f0a-per-commit-publication/REVISION-PLAN.md": "36d0c564ff48c3e01bd765667e0ed2c7440cb31e07001aaf89a0b4b48ff58005",
+    "docs/dev/reviews/035_6ac4f0a-per-commit-publication/REVISION-REPORT.md": "7c2fbf24e44dd8d0618c9e4e3e18f85b6296a448ef6ae7189567f884b994eefc",
+    "docs/dev/reviews/035_6ac4f0a-per-commit-publication/evidence/package-check.json": "a164a5616ab6e6274219e9ec5d3298f6321493f89cd453a4d0cb7bb1d41ec4c9",
+    "docs/dev/reviews/035_6ac4f0a-per-commit-publication/evidence/source-checks.json": "555f8f9827df3dca624c92c99dc2913b303fb393b30792a2759da5a682426a4d",
+    "docs/dev/reviews/035_6ac4f0a-per-commit-publication/evidence/support-tests.log": "1100c9136fca6f6ac7a5714d042b787eedd4f3b39640cdf1f7d70938e1413b20",
+    "docs/dev/reviews/035_6ac4f0a-per-commit-publication/evidence/verify_documents.mjs": "0d92a6493ec133e91b02bf3ea1c07e8e4b741bb06150dac749d0066e5b46f7c6",
+    "docs/dev/reviews/036_b969895-prerelease-review/REVISION-PLAN.md": "715e599fa7b0640915de7ff1aac272af8e73fb67e6b98df53447ee24ff0aab32",
+    "docs/dev/reviews/036_b969895-prerelease-review/REVISION-REPORT.md": "83d7632495015d51c5df976744c28484e79b9ce2bb0b85f8b868a9290b8e6a21",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/COMPATIBILITY-EVIDENCE.json": "abc00ee9005c4aa827d297c800c15563cae303d71925ebbef5f0b752a2ac4a7d",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVIEW-PLAN.md": "2c50088c6c89e81a7b6a35692c9349087a3bc82faa3a9a3f5d48608093a31c13",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVIEW-REPORT.md": "fdd7221e117c9d5b978de717917368938418b65c21819460a2c10fe5dfbfcbf0",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-PLAN.md": "bcad8806235cf7158d2dbcbcaedc6a8678d2b59c2b1b3a88719fd72e1946c38d",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md": "4f55ba0f992b382b6e2d864b05eb5daece0475c20db3e481f9a2f7215f48ef7d",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/SOURCE-INVENTORY.md": "8a8c7fa5ebea34c51d051ab3599dc1381d2de607fb22d67da7e0dc8c3265eee7",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/diagram-evidence/readme-1.png": "ca8ebdefa2e13b13df825cb0c2f51b185a9ce05e33521de0e38ef659302c9c15",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/diagram-evidence/readme-2.png": "ec562a582260c019c38dfccef88ef631f926bddc1e665b1db79529a426c7f0dd",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/diagram-evidence/readme-3.png": "361f705379654aa3aa77aabfa869130e785d9a46667319329366bbafdcf68a18",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/diagram-evidence/readme-4.png": "da9373442c0fc17af887eaa0e5be56f97bf118c53a5f2dd5274b07b44afb4a33",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/diagram-evidence/render.json": "c80c3cc70ce56852afd99bf6684c955240888e283c163d9742acabac49a637e9",
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/README.md": "6bf9fbdf3f289274e038c3a3c6fb72b37893a565012b46d36e54e89472d66aed",
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVIEW-REPORT.md": "a968396c9734e5699d00cf83f65b9571b004172525fd12ab0d95d34702dad559",
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVISION-PLAN.md": "f62054bded81d508ee72bf6ad131fb120cd108dc6f28c50ce983281801425fe4",
+    "docs/dev/reviews/038_d6218f1-tracking-fidelity/REVISION-REPORT.md": "f180e400e076e7dbb87033629032bad8456b9a7593aa2a9b1770916e00a1e6fb",
+    "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order/REVISION-PLAN.md": "53b897f772f9cee818b8dadaaf768420055d7316208803f70bc17c24d84ef01d",
+    "docs/dev/reviews/039_8bb3b3d-greenfield-prompt-order/REVISION-REPORT.md": "5d13cfb83a3ca77a62affa8080914cf7ee56bb9a1590be5629efbe31cf53cde5",
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVIEW-REPORT.md": "beb2c5dde136858c7816e801d23071fa8154317eb687e4e384cfc5df470ae2e4",
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVISION-PLAN.md": "a004f5a6f2497589401078343895de57b5e62dfebda05e63845ea30b5a10681f",
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/REVISION-REPORT.md": "b3cb9fc50888160e40b8a87588570a5e1b255bb0f9e9175d3d736530d741d3ec",
+    "docs/dev/reviews/040_a0685b5-revision-campaign-modes/evidence/check_merge_highlights.py": "75a0a4ff3303ccaa1d9602a575e88ea687087b5aa1a185a82bb574f5fe7fe46b",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVIEW-REPORT.md": "43e427ab80ec0466311f86ef04eaaeab7d11d4a1ccf50f6af7d161879a8097fb",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVISION-PLAN.md": "104854608a92a8cb3b6954284f3d3c5a28426448e713264cec62b3bcba9a2fd8",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/REVISION-REPORT.md": "d1fd64dc87840c7c25f66e7e86528a0507dc1401bf8aa9f2d5afdf2d2d82b723",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/source-application-assessment.md": "4ff2da5c26808e234b4f352f0160dab658a2c8d36df14bf3c32f59e599e59023",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/source-checks.json": "71be32806266b82caf2a3d6ab7fd2595f6484ec0c22ac6bcbb7128f6e3c26ba1",
+    "docs/dev/reviews/041_ca99ca1-task-commit-contract/evidence/support-tests.txt": "48890d26f04105c8b3c99473ad456b5fc67effe2be7a1de592ba8a17a7749c33",
+    "docs/dev/reviews/README.md": "2b1f3b27b95232a9a3265543ee0f53e9bcb140f1692d012b196d69838284fe09",
+    "plugin.json": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "skills/sdd-conventions/SKILL.md": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3",
+    "skills/sdd-conventions/agents/openai.yaml": "3afb66258ca9ee5f7e35b0986ac130e34a4a73c4d5c41b1c7de94e19133e4cea",
+    "skills/sdd-conventions/assets/icon.svg": "5702cda32d79bc28857dedfe0f9811d382d8b2e4c46d1ac571d8114aabd279a4",
+    "skills/sdd-conventions/references/backend-object-lifecycle.md": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "skills/sdd-conventions/references/design-heuristics.md": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448",
+    "skills/sdd-conventions/references/development-document-qc.md": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "skills/sdd-conventions/references/hosting-tokens.md": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324",
+    "skills/sdd-conventions/references/markdown-style.md": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "skills/sdd-conventions/references/modularity.md": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283",
+    "skills/sdd-conventions/references/review-campaigns.md": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+    "skills/sdd-conventions/references/task-hierarchy.md": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "skills/sdd-conventions/references/workflow-identity.md": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+    "skills/sdd-design/SKILL.md": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774",
+    "skills/sdd-design/agents/openai.yaml": "102d11e8960f1f7af69bfcbacbe71defad289b9c368d11a610fb6b19e61dd3b6",
+    "skills/sdd-design/assets/icon.svg": "98c55eb98b3e3702037698739b96fb550da2223bf733fb576650d0a4c5504864",
+    "skills/sdd-design/references/architecture.md": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b",
+    "skills/sdd-design/references/decomposition.md": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+    "skills/sdd-design/references/exploration.md": "52a98f770a5e4745847dee060466231c8bc971d5c79c7f7dd4d745a6e675187a",
+    "skills/sdd-docs/SKILL.md": "ef125969d670b75c0760ad8a7751c41ca8940ebc05a8a3a517658c6405929a7b",
+    "skills/sdd-docs/agents/openai.yaml": "9715602c3bdcd14d41e6e99e24edb32389499e0ec96b0aad5cdf4b30b187de15",
+    "skills/sdd-docs/assets/icon.svg": "69e272ee97e9957387f8ca8b51bec3d3d176c33e6bf6b20d2bff5b3536f507e2",
+    "skills/sdd-docs/references/in-code-documentation.md": "40c179cf40c73ad36d76f722950eeaf33ab1c37993edd370f6fa16305d2a5465",
+    "skills/sdd-docs/references/review-and-findings.md": "61bda144ac45af632307b12bb3cf9652727b83c3b3ffc57558188d0d2a6837b1",
+    "skills/sdd-docs/references/standalone-documentation.md": "b2ced68b8f869efc47206261795e225b42455b513c7a2be4f091cd891c3ef951",
+    "skills/sdd-forge/SKILL.md": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+    "skills/sdd-forge/agents/openai.yaml": "65a79f791a2285753a0e6ca9eb83e203b181c0277ada5706add85f4c86c18783",
+    "skills/sdd-forge/assets/icon.svg": "ca997d09da83d706126f43dc2ace19c00ee9036ae67dcce225e688a09d398d33",
+    "skills/sdd-forge/references/github-issue-lifecycle.md": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+    "skills/sdd-forge/references/github-milestone-lifecycle.md": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+    "skills/sdd-forge/references/github-packaging.md": "bf2a71e63b75b117853097199120d628d67d2c419962aa441978c124e4c780ed",
+    "skills/sdd-forge/references/github-projection.md": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29",
+    "skills/sdd-forge/references/github-release-workflows.md": "2c90b8d5d00b217a809bad6a54661f0ab698b8ae1550af47ce86547f02e25d46",
+    "skills/sdd-forge/references/github-releases.md": "317892eaecb199b87a8b17ee0a0f45a722c3849bdcf88e11301f91b9c8df96d6",
+    "skills/sdd-forge/references/github.md": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+    "skills/sdd-forge/references/release-highlights.md": "4e4ebeaed8757d36ab9c7c98d759e724d30571f3d7aff48d783b1de60e236984",
+    "skills/sdd-implement/SKILL.md": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+    "skills/sdd-implement/agents/openai.yaml": "438f0f659f42428e943046f75e10eb5b21384802baf3ce8eb010b9598d00cb7b",
+    "skills/sdd-implement/assets/icon.svg": "4fd314a8f182561a13fbf6fe062e4aee5fd0e0330dccd9943ec14aa5dab34c48",
+    "skills/sdd-implement/references/browser-capabilities.md": "fd64b9332dac9d5a89249968996bdcfdcd3e1211f06220af8247cd7a25309642",
+    "skills/sdd-implement/references/completion-and-checkpoints.md": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+    "skills/sdd-implement/references/environment-recovery.md": "0254c7e5dc5477a012d6eca8c049d222f42c712b5ef1f03abc8b4270f34f9523",
+    "skills/sdd-implement/references/range-selection.md": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+    "skills/sdd-implement/references/startup-and-continuation.md": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+    "skills/sdd-implement/references/task-execution.md": "1979b2bbd64bd4b5370f607c1646b7a7fbb05f63cccd44dc907f98ce50831dfe",
+    "skills/sdd-integrate-feature/SKILL.md": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+    "skills/sdd-integrate-feature/agents/openai.yaml": "48018ed1de138598f6be61e916b701638234e2d0e570ed42d39760e0f4de8392",
+    "skills/sdd-integrate-feature/assets/icon.svg": "9b68ea07e6b5916efa646ad8f639cb1872523bb40630043a317cc862440dc006",
+    "skills/sdd-integrate-feature/references/feature-incorporation.md": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+    "skills/sdd-manage/SKILL.md": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "skills/sdd-manage/agents/openai.yaml": "c3d318cf2a1074db8bc3c956109b12b1a3399c3835eded7bbac57f9ee7f5a778",
+    "skills/sdd-manage/assets/icon.svg": "d263da0cf62afe30dec52294f51c33a0d522b25c44049224a2274037e8ace44d",
+    "skills/sdd-manage/references/agent-orientation.md": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+    "skills/sdd-manage/references/branch-management.md": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+    "skills/sdd-manage/references/coordination.md": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+    "skills/sdd-manage/references/credentials.md": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21",
+    "skills/sdd-manage/references/document-qc-gates.md": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "skills/sdd-manage/references/examples.md": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+    "skills/sdd-manage/references/git-workflows.md": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+    "skills/sdd-manage/references/human-document-review.md": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "skills/sdd-manage/references/phase-activation.md": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+    "skills/sdd-manage/references/prerelease-review.md": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+    "skills/sdd-manage/references/repository-bootstrap.md": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+    "skills/sdd-manage/references/review-and-revision.md": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+    "skills/sdd-manage/references/revision-modes.md": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+    "skills/sdd-manage/references/tracking-decision.md": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+    "skills/sdd-manage/references/workflows.md": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+    "skills/sdd-orient/SKILL.md": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "skills/sdd-orient/agents/openai.yaml": "36dbb7990b7f504c1fa4b614651ad26431ab6af5a623be8250b780ce156667c9",
+    "skills/sdd-orient/assets/icon.svg": "ef235e59b6a56e0d21629b3b6c1b2ca9cc97cd678d02bcb31b0e2f7bc11bf1f2",
+    "skills/sdd-orient/references/inspection-and-handoff.md": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "skills/sdd-plan/SKILL.md": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "skills/sdd-plan/agents/openai.yaml": "8672b642e8c5ae2114cd839af1152435c7da485b4a25c3dd62d15c78d124ac98",
+    "skills/sdd-plan/assets/icon.svg": "44568c513e736771f4dde159c1903c6da19a774474ce65aeb8992dd694706659",
+    "skills/sdd-plan/references/delivery-plan.md": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+    "skills/sdd-plan/references/physical-layout.md": "e6abc9b84068ff8def13af02360020bdd80dc4c431667cf416aa4a9953bbfc41",
+    "skills/sdd-plan/references/review.md": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "skills/sdd-report/SKILL.md": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+    "skills/sdd-report/agents/openai.yaml": "bfe1a84a61bf154a5cb846d41b10d73e88a596044d21e6d1f151d1dc78ae221c",
+    "skills/sdd-report/assets/icon.svg": "aca30e96cbe5d44d759da47cc1db33c87dce1d04bf77142feac8475eecbab074",
+    "skills/sdd-report/references/campaign-artifacts.md": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+    "skills/sdd-report/references/change-kinds.md": "7cc7d31e5926fab5c4778b385f282d8f536713536c1038cc63409a1734da886b",
+    "skills/sdd-report/references/completion-reports.md": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+    "skills/sdd-report/references/document-qc-reports.md": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7",
+    "skills/sdd-report/references/object-drafts.md": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+    "skills/sdd-report/references/releases.md": "da89ce5c4fe7b8c6a4c1549900629cf6b3c29bcdd60f1585e32e18db3a885a86",
+    "skills/sdd-specify/SKILL.md": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "skills/sdd-specify/agents/openai.yaml": "c61e7eb38f097029d947314b441959b17aae2303440a52022cd386d78171e6b5",
+    "skills/sdd-specify/assets/icon.svg": "ebeaf7c64a2fb958088765c46c48e8269625f03ddccefec9dc7b76ff7379f2ad",
+    "skills/sdd-specify/references/change-specification.md": "74ad9a214189fa094c48acfd6c1daacb4eef43fe64ea18946ff5e6628a3be94c",
+    "skills/sdd-specify/references/review.md": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "skills/sdd-specify/references/system-specification.md": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+    "skills/sdd-steer/SKILL.md": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+    "skills/sdd-steer/agents/openai.yaml": "421038f108a077de64e16c95011ed4f6bff87d47e16c53894bbcc0dc581cc4ae",
+    "skills/sdd-steer/assets/icon.svg": "b9d353ce223194b53f52a4853ed1cc9468718ed0ee57074b5988a309f54d14d1",
+    "skills/sdd-steer/references/amendment-execution.md": "c185174fd72625f51a151bb6085140e9599f848e26f461d1131c87f2865d0cac",
+    "skills/sdd-steer/references/objective-and-impact.md": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+    "skills/sdd-steer/references/verification-and-stop.md": "833b62f3807e8eb425f0fe2ad9ef4418cabbb77ae0f2ee7371435793de17398d",
+    "skills/sdd-tasks/SKILL.md": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "skills/sdd-tasks/agents/openai.yaml": "60b43614f445a40f3d52d21869962189bdfe0252461317a6712a55d176797aa2",
+    "skills/sdd-tasks/assets/icon.svg": "dad3203c0386ce1a697600ae82fc1e03f530111626192018df24dd7c5ac69eb0",
+    "skills/sdd-tasks/references/conformance-review.md": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "skills/sdd-tasks/references/progress-review.md": "32be8fbaa5e67e807d7c7f7be964c56ab7f65bd6398784606090fcdd9e40a912",
+    "skills/sdd-tasks/references/task-derivation.md": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7",
+    "skills/sdd-tdd/LICENSE": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+    "skills/sdd-tdd/SKILL.md": "49efacb9ed6ae3b59069e986672dc5350cc0b147c3ad960b3ffc04f105c54cda",
+    "skills/sdd-tdd/agents/openai.yaml": "f0049fe541cbffe331d4ccb9e903ed49bb96f1011cefecd1ced49fbd1bd19da4",
+    "skills/sdd-tdd/assets/icon.svg": "37e86ed29c77f13846f9c315627c5e139d1348d7eed26eef2ff94354c334239f",
+    "skills/sdd-tdd/references/test-first-cycle.md": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+    "skills/sdd-tdd/references/testing-strategy.md": "fd834570d97f993fe270627fcedc308f0a97642ff000b8970a0b1c1bf33cab5f",
+    "skills/sdd-tdd/references/upstream-provenance.md": "668d85251c25027ac1494c9bb89367fa3c1885c23424e3987d02f7fd0b02ca33",
+    "skills/sdd-tdd/references/writing-good-tests.md": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+    "skills/sdd-verify/SKILL.md": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+    "skills/sdd-verify/agents/openai.yaml": "3176532ba151974e4f6186c589a9e8ba59247367629ace97788cf70e1bdfe40a",
+    "skills/sdd-verify/assets/icon.svg": "60c4fbc478c5c5569c7db40ee7d2b90c061fb8e0b7a2274ec8757cbcadc6c837",
+    "skills/sdd-verify/references/boundary-review.md": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+    "skills/sdd-verify/references/check-selection.md": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+    "skills/sdd-verify/references/execution-and-evidence.md": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+    "skills/sdd-verify/references/failure-assessment.md": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6",
+    "skills/sdd-verify/references/release-checks.md": "7c38ee14568eccccc724df033b647506a574fb34a8e3e398020bd1e543d89240"
+  },
+  "source_checks": [
+    {
+      "id": "SC-001",
+      "criterion": "atomic result/evidence/initial checkbox",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-002",
+      "criterion": "single owning ID and non-task exemption",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-003",
+      "criterion": "partial checkpoint remains unchecked",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-004",
+      "criterion": "publication barrier includes ancillary commits",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-005",
+      "criterion": "publication failure blocks advancement",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-006",
+      "criterion": "bounded continuation audit and forward recovery",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-007",
+      "criterion": "subset versus full phase integration",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    },
+    {
+      "id": "SC-008",
+      "criterion": "committed merge awaiting push is resumed",
+      "passed": true,
+      "method": "Actual selected-source substring assertions plus manual cross-reference semantic inspection; not runtime task fixture execution"
+    }
+  ],
+  "owned_paths": [
+    "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md",
+    "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md",
+    "docs/dev/reviews/README.md"
+  ],
+  "child": {
+    "campaign": "042_5e4d990",
+    "branch": "revision/042_5e4d990-task-publication-continuation-review",
+    "parent": "revision/037_a6c42dd-prerelease-review",
+    "baseline": "5e4d990e55817220661028f5e7ec643707bddd5a",
+    "opening_commit": "5636481308427f9e9efd39576e562f057db7acda",
+    "published_tip": "5636481308427f9e9efd39576e562f057db7acda"
+  },
+  "artifact_checks": {
+    "heading_separation": "Passed for two child artifacts",
+    "local_links": "Passed for two child artifacts and manually checked new navigation/suspension links",
+    "protected_tracked_hashes": "All baseline tracked paths except two authorized parent/shared navigation additions identical",
+    "source_hashes_unchanged": true
+  },
+  "review_artifacts": {
+    "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md": {
+      "sha256": "27910ba95456ebf2b11323d2496b18715bf43ac882ffdb30cedec1983c7b6939",
+      "git_blob": "9a8f5c19b8382d4d5e0a5dc1a7895a0eabf90952"
+    },
+    "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md": {
+      "sha256": "01278635ffb51607d9ce1709487fe48e91cfe302fe9719d36ce88244adb0678e",
+      "git_blob": "3fbe06837de8de7ebf5ba2b5a4f57be9b2a9a66f"
+    },
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md": {
+      "sha256": "0047adb41b344eeb08adb6c64d0f097fe031d1cbef22165787d8d5db56fdbe47",
+      "git_blob": "807f6f1201ac97fb6a4f796ff645c0a9af383387"
+    },
+    "docs/dev/reviews/README.md": {
+      "sha256": "4e28a52b6cd3cc0922a857c9e28385705ed191119c3595f5e9b06f6b10090d39",
+      "git_blob": "80bfcbd45fba19d9098efcf6a2e96ae97e0dde3c"
+    }
+  },
+  "delegated_acceptance": {
+    "decision_commit": "b991e015485a29eb4cfb1a46fb62f699751804e0",
+    "decision_path": "runs/supplements/nested-revision/1/ARTIFACT-DECISION.json",
+    "accepted_child_tip": "5636481308427f9e9efd39576e562f057db7acda",
+    "decision_message": "Concrete 4 artifact child record accepted; verified explicit two-parent merge only into LOCAL refreshed parent 037 with owned path/link/hash preservation checks; immediate publish/readback, return parent and STOP without parent execution. No postclosure report editing. Independent grade pending.",
+    "source": "Actual parent delegation message; external decision artifact not loaded by isolated consumer"
+  },
+  "merged_checks": {
+    "target_parent": "5e4d990e55817220661028f5e7ec643707bddd5a",
+    "source_parent": "5636481308427f9e9efd39576e562f057db7acda",
+    "owned_diff": "Exact four accepted paths",
+    "no_conflicts": true,
+    "diff_check": "Passed",
+    "accepted_artifact_hashes": "Exact four SHA256 hashes preserved",
+    "all_other_baseline_files": "Exact SHA256 preservation including package, governing source and all frozen campaign files",
+    "links": [
+      {
+        "owner": "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md",
+        "link": "REVIEW-REPORT.md",
+        "exists": true
+      },
+      {
+        "owner": "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md",
+        "link": "../042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md",
+        "exists": true
+      },
+      {
+        "owner": "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md",
+        "link": "../042_5e4d990-task-publication-continuation-review/README.md",
+        "exists": true
+      },
+      {
+        "owner": "docs/dev/reviews/README.md",
+        "link": "042_5e4d990-task-publication-continuation-review/README.md",
+        "exists": true
+      },
+      {
+        "owner": "docs/dev/reviews/README.md",
+        "link": "042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md",
+        "exists": true
+      }
+    ],
+    "headings": "Both child artifacts passed",
+    "support_suite": "Not run: record-only integration, no plugin or tooling changes",
+    "live_behavior": "Not run; no task fixture/transport-loss/client claim"
+  },
+  "integration": {
+    "merge_commit": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+    "parents": [
+      "5e4d990e55817220661028f5e7ec643707bddd5a",
+      "5636481308427f9e9efd39576e562f057db7acda"
+    ],
+    "target_branch": "revision/037_a6c42dd-prerelease-review",
+    "remote": "trial-delivery",
+    "exact_readback": "cedb509eb224ff4798349a924dd2e5d9235f18f7\trefs/heads/revision/037_a6c42dd-prerelease-review",
+    "child_contained": true,
+    "return_branch": "revision/037_a6c42dd-prerelease-review",
+    "return_head": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+    "worktree_clean": true,
+    "parent_execution_resumed": false
+  },
+  "final_refs": "cedb509eb224ff4798349a924dd2e5d9235f18f7 refs/heads/revision/037_a6c42dd-prerelease-review\n5636481308427f9e9efd39576e562f057db7acda refs/heads/revision/042_5e4d990-task-publication-continuation-review\n5e4d990e55817220661028f5e7ec643707bddd5a refs/remotes/origin/revision/037_a6c42dd-prerelease-review\ncedb509eb224ff4798349a924dd2e5d9235f18f7 refs/remotes/trial-delivery/revision/037_a6c42dd-prerelease-review\n5636481308427f9e9efd39576e562f057db7acda refs/remotes/trial-delivery/revision/042_5e4d990-task-publication-continuation-review\n804c6617638346465024c2a2b215223cec70aaa6 refs/tags/v0.14.7\n7bfe205fd53573552f4782c20087d7308451b55e refs/tags/v0.14.8\n556611f7aa05073a3dbfbbb7bcf36f7d6a5f6ace refs/tags/v0.14.9\n1ff33832d506c0e8baa5c1d3c9a2c9205807a5d2 refs/tags/v1-spec-plan-implement",
+  "final_index_sha256": "36539d0f47154f62e2a89b8bd3ec4c134c58ae82756924fb2bf6eca2501a20a5",
+  "final_artifact_hashes": {
+    "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md": "27910ba95456ebf2b11323d2496b18715bf43ac882ffdb30cedec1983c7b6939",
+    "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md": "01278635ffb51607d9ce1709487fe48e91cfe302fe9719d36ce88244adb0678e",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md": "0047adb41b344eeb08adb6c64d0f097fe031d1cbef22165787d8d5db56fdbe47",
+    "docs/dev/reviews/README.md": "4e28a52b6cd3cc0922a857c9e28385705ed191119c3595f5e9b06f6b10090d39"
+  }
+}
