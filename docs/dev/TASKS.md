@@ -6,9 +6,9 @@ This complete two-phase hierarchy derives from [PROJECT](PROJECT.md),
 [ARCHITECTURE](ARCHITECTURE.md), [DECOMPOSITION](DECOMPOSITION.md), [SPEC](SPEC.md),
 [PLAN](PLAN.md) and [layout](layout.md), with current adjacent SPEC/PLAN/TASKS QC.
 TASKS is the sole executable owner of T-001–T-024. Phase 1 is complete on default;
-completed JSON evidence was incorporated through the compatible published merge.
+historical JSON evidence remains preserved, while its delivery scope is withdrawn.
 Named-file range T-018–T-024 and added milestones 2.4–2.6 are reviewed, published
-and hosted-closed. Their verified status/evidence is transferred here unchanged.
+and hosted-closed. Retained range acceptance is text/count/BOM/ranges; affected retained completion claims are reassessed by current amendment verification; concrete conclusion acceptance remains pending. Historical results below are preserved unchanged.
 [Archived feature sources](features/002_e7cae5b-named-file-ranges/README.md) are
 historical snapshots, not additional executable owners.
 
@@ -19,10 +19,10 @@ PLAN. Preserve pending stdin/final T-013–T-017, milestones 2.2/2.3 and whole P
 required. A feature extent parent does not establish whole-project completion.
 
 Execution selection/completion belongs to sdd-implement. The authorized current
-boundary ends after concrete reconciliation/QC/archive acceptance and verified/
-published explicit feature integration into paused `phase/2-json-and-stdin`.
+boundary ends after concrete JSON-removal acceptance and verified/
+published explicit steering integration into paused `phase/2-json-and-stdin`.
 Later main stdin/final execution needs its own selected authorization. No full
-Phase 2 merge into default or release follows this feature.
+Phase 2 merge into default or release follows this amendment.
 
 ## Phase 1 — Named-file utility
 
@@ -42,7 +42,7 @@ Phase 2 merge into default or release follows this feature.
             Outcome: R-007 real module entry, exactly one input, `--keep-bom`, `--` dash-filename handling, exact text success and help; first useful end-to-end slice with R-012 collection evidence.
             Scope: `textstats/cli.py`, `textstats/__main__.py`, CLI docstrings, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and `tools/check_tests.py`.
             Depends on: T-002.
-            Evidence: real subprocess named-file/BOM/mixed-terminator/empty/help/dash-filename invocations with prescribed status/stdout/stderr, API equivalence and unchanged input. The standard-library test runner discovers unit/integration independently, reports counts, rejects zero collection in either suite and propagates test failure; workflow fixtures are excluded. Demonstrate a real file through API and CLI for milestone feedback. Complete CLI failure diagnostics/status robustness follows in T-005; JSON/stdin/range remain deferred.
+            Evidence: real subprocess named-file/BOM/mixed-terminator/empty/help/dash-filename invocations with prescribed status/stdout/stderr, API equivalence and unchanged input. The standard-library test runner discovers unit/integration independently, reports counts, rejects zero collection in either suite and propagates test failure; workflow fixtures are excluded. Demonstrate a real file through API and CLI for milestone feedback. Complete CLI failure diagnostics/status robustness follows in T-005; stdin/range remain deferred.
         - [x] T-004 — Review, test and report milestone 1.1
             Scope: complete core/acquisition/public API/CLI capability and relevant dependencies; no extra feature delivery.
             Depends on: T-001, T-002 and T-003.
@@ -58,7 +58,7 @@ Phase 2 merge into default or release follows this feature.
             Outcome: R-011 public API/module reference and runnable README for delivered phase 1 behavior.
             Scope: `docs/public-api.md`, `README.md`, public module/function docstrings and discoverability links in `AGENTS.md` as needed.
             Depends on: T-005.
-            Evidence: document all three exports/signatures, constructor invariants, count/BOM/strict UTF-8/exception/lifetime/silence contracts, setup/check commands, exact text/help/status usage and planned distribution boundary. Execute every runnable named-file/API/help example against delivered code and current suites; documentation advertises neither JSON/stdin nor range as delivered.
+            Evidence: document all three exports/signatures, constructor invariants, count/BOM/strict UTF-8/exception/lifetime/silence contracts, setup/check commands, exact text/help/status usage and planned distribution boundary. Execute every runnable named-file/API/help example against delivered code and current suites; documentation advertises neither stdin nor range as delivered.
         - [x] T-007 — Build and verify isolated source distribution
             Outcome: R-013 allowlisted source archive and extracted-source module-entry acceptance, completing phase 1 distribution exits.
             Scope: `tools/package_source.py`, `tools/check_distribution.py`, `tests/integration/test_distribution.py`, distribution instructions in README and necessary generated-artifact ignore rules while preserving existing rules.
@@ -76,41 +76,32 @@ Phase 2 merge into default or release follows this feature.
             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.
             Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).
 
-## Phase 2 — JSON and stdin
+## Phase 2 — Ranges and stdin
 
-- [ ] Phase 2 — JSON and stdin
-    - [x] Milestone 2.1 — JSON output
-        - [x] T-010 — Add JSON CLI output with retained text behavior
-            Outcome: R-009 named-file JSON with only integer lines/words, one object plus newline and unchanged default text/errors.
-            Scope: `textstats/cli.py`, unit rendering/parser checks, `tests/integration/test_cli.py`, delivered-option help, README and API/module CLI documentation.
-            Depends on: T-009, completed phase 1 integration/publication and verified authorized phase 2 activation.
-            Evidence: parse subprocess JSON and assert exact keys/integer types/count equality for semantic/BOM examples and option composition; assert text default remains exact and errors retain empty stdout/status/diagnostics. Run nonempty suites and documented JSON examples. Stdin and range remain deferred.
-        - [x] T-011 — Verify JSON from extracted source
-            Outcome: extend R-013 distribution acceptance to the delivered alternate format and retained named-file behavior.
-            Scope: `tools/check_distribution.py`, `tests/integration/test_distribution.py` and extracted-source JSON instructions in README.
-            Depends on: T-010.
-            Evidence: rebuild/extract allowlisted source and invoke extracted module for JSON/BOM plus text/error regressions; verify isolated import location, object keys/types/count equality and exact process statuses/streams. Run nonempty product suites and documented archive examples. This delivery check extends portability evidence, not a duplicated code-review/report task.
-        - [x] T-012 — Review, test and report milestone 2.1
-            Scope: JSON integration and all affected named-file/text/error/docs/distribution contracts.
-            Depends on: T-010 and T-011.
-            Evidence: code review plus JSON/composition/default/failure and extracted-source checks, blocker repairs, actual counts and demonstration feedback; publish report with TODO dispositions.
-            Report: [milestone 2.1 review](reports/phases/2/2.1.md).
+- [ ] Phase 2 — Ranges and stdin
+    - Milestone 2.1 — Withdrawn historical JSON increment (no current delivery work)
+        - T-010 — Retired JSON CLI delivery; historically completed, capability withdrawn.
+            Original result and publication evidence below remain historical. No replacement task, current JSON acceptance or new completion is claimed.
+        - T-011 — Retired JSON extraction delivery; historically completed, capability withdrawn.
+            Original result and publication evidence below remain historical. Retained extraction acceptance belongs to T-007/T-022 and this amendment.
+        - T-012 — Historical milestone 2.1 review; retained, no current executable work.
+            Original review/publication remains historical; current retained contracts are reassessed by the steering report.
     - [ ] Milestone 2.2 — UTF-8 stdin and final delivery
         - [ ] T-013 — Add borrowed binary stdin acquisition
             Outcome: R-010 internal byte reader reaching EOF, strict locale-independent UTF-8 and retained stream ownership; no new public API export.
             Scope: `textstats/io.py`, `tests/unit/test_io.py` and input ownership/decode docstrings.
-            Depends on: T-012 and milestone 2.1 completion/closure.
+            Depends on: T-009 and the verified text-only/range amendment checkpoint.
             Evidence: borrowed byte-stream empty/Unicode/mixed-terminator/BOM inputs, EOF, invalid bytes and controlled read errors; never close borrowed stream on success/failure; no partial decoded result. Verify named-file acquisition/API regressions. CLI consumer follows in T-014 within the same milestone.
-        - [ ] T-014 — Integrate stdin across text and JSON CLI
-            Outcome: R-010 input `-` through R-007/R-009 policies with R-008 error categories and unchanged named-file/public API behavior.
+        - [ ] T-014 — Integrate stdin across text CLI
+            Outcome: R-010 input `-` through R-007 policy with R-008 error categories and unchanged named-file/public API behavior.
             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py`, help/README stdin usage and error documentation.
             Depends on: T-013 and reviewed range feature T-024.
-            Evidence: real byte-fed subprocess stdin in text/JSON modes with both BOM policies, Unicode/mixed terminators/empty data; invalid bytes and controlled read errors identify stdin, return 1, leave stdout empty and avoid traceback. Check under differing locale, preserved borrowed-stream ownership at controlled seams, named-file `./-`, option/usage regressions and no input mutation. Retain named-file range validation and compose the shared normalized selection/counting pipeline with stdin, including complete decode after END, exposed interior BOMs, EOF subsets, both spellings and all text/JSON/BOM policies. Run nonempty suites and newly runnable stdin examples.
+            Evidence: real byte-fed subprocess stdin in text modes with both BOM policies, Unicode/mixed terminators/empty data; invalid bytes and controlled read errors identify stdin, return 1, leave stdout empty and avoid traceback. Check under differing locale, preserved borrowed-stream ownership at controlled seams, named-file `./-`, option/usage regressions and no input mutation. Retain named-file range validation and compose the shared normalized selection/counting pipeline with stdin, including complete decode after END, exposed interior BOMs, EOF subsets, both spellings and both BOM policies. Run nonempty suites and newly runnable stdin examples.
         - [ ] T-015 — Complete final documentation and source-package exits
-            Outcome: final R-011/R-012/R-013 usability/portability acceptance across delivered API/named-file/JSON/stdin behavior.
+            Outcome: final R-011/R-012/R-013 usability/portability acceptance across delivered API/named-file/stdin behavior.
             Scope: public API/module reference, README final instructions, `tools/check_distribution.py`, `tests/integration/test_distribution.py` and truthful root navigation.
             Depends on: T-014.
-            Evidence: complete docs for final stdin ownership/strict decode/status/composition; execute all final documented examples. Rebuild/extract and actually invoke module entry for named-file and byte-fed stdin in text/JSON/BOM/empty/bad-byte/usage cases, maintaining import isolation. Run complete nonzero unit/integration suites and retain whole-input API/signatures. Retain delivered named-file range usage and extend final documented/extracted-source checks to stdin range composition; preserve whole-input public API.
+            Evidence: complete docs for final stdin ownership/strict decode/status/composition; execute all final documented examples. Rebuild/extract and actually invoke module entry for named-file and byte-fed stdin in text/BOM/empty/bad-byte/usage cases, maintaining import isolation. Run complete nonzero unit/integration suites and retain whole-input API/signatures. Retain delivered named-file range usage and extend final documented/extracted-source checks to stdin range composition; preserve whole-input public API.
         - [ ] T-016 — Review, test and report milestone 2.2
             Scope: complete stdin/input-source composition, documentation/distribution and prior delivered regressions.
             Depends on: T-013, T-014 and T-015.
@@ -119,7 +110,7 @@ Phase 2 merge into default or release follows this feature.
     - [ ] Milestone 2.3 — Phase 2 and final review
         - [ ] T-017 — Review, test and report phase 2 and final delivery
             Scope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.
-            Depends on: T-012, T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.1, 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.
+            Depends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.
             Evidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.
             Reports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.
 
@@ -127,15 +118,15 @@ Phase 2 merge into default or release follows this feature.
         - [x] T-018 — Implement pure normalized logical-line selection
             Outcome: internal C-010 selection using existing C-003 traversal; preserve selected contents/terminators, inclusive endpoints and available subsets without any BOM normalization or source dependency.
             Scope: `textstats/core.py`, `tests/unit/test_core.py` and internal selection/counting docstrings; public exports/signatures unchanged.
-            Depends on: T-012's verified published milestone 2.1 completion/closure and the FEATURE-PLAN compatible baseline/projection prerequisites; existing pure core from T-001.
+            Depends on: T-001 and completed Phase 1; accepted named-file range baseline/projection prerequisites.
             Evidence: F-002/F-004 empty/final/blank/mixed CRLF/CR/LF, Unicode separators, EOF subset/empty, huge endpoints and exposed interior BOM. Verify normalized counting consumes selected content without a second normalization, plus whole-input core/API regression checks. This pure prerequisite leads directly to the real CLI path in T-019 within the same milestone.
-        - [x] T-019 — Integrate range validation and named-file text or JSON CLI
+        - [x] T-019 — Integrate range validation and named-file text CLI
             Outcome: complete F-001/F-002/F-003 named-file path, both range spellings, all option orders and existing output/error/API behavior; minimal runnable range help/README demonstration.
             Scope: `textstats/cli.py`, cooperating `textstats/io.py` acquisition seam if needed, `tests/unit/test_cli.py`, `tests/unit/test_io.py`, `tests/integration/test_cli.py`, `tests/integration/test_api.py` and focused README/module documentation.
-            Depends on: T-018 and retained completed JSON T-010–T-012 checkpoint; no stdin implementation dependency.
-            Evidence: full invalid-range matrix including missing/repeated/mixed forms, ASCII positivity/order, >4,300-digit valid endpoints and many leading zeros without interpreter guard failure. Controlled seam and missing-file subprocess show usage rejection before acquisition. Decode complete bytes before selection, failing bad bytes after END; preserve owned-handle cleanup and unchanged file bytes. Run real text/JSON examples for every F-004 anchor, all range/BOM/JSON permutations, both spellings, INPUT placement and `--` dash-file support. Verify no-range API/CLI/JSON/signature/export/silence/error regressions; literal `-` remains a file. Run nonempty suites and execute the minimal README examples.
+            Depends on: T-018 and completed Phase 1 text/error checkpoint; no stdin implementation dependency.
+            Evidence: full invalid-range matrix including missing/repeated/mixed forms, ASCII positivity/order, >4,300-digit valid endpoints and many leading zeros without interpreter guard failure. Controlled seam and missing-file subprocess show usage rejection before acquisition. Decode complete bytes before selection, failing bad bytes after END; preserve owned-handle cleanup and unchanged file bytes. Run real text examples for every F-004 anchor, all range/BOM permutations, both spellings, INPUT placement and `--` dash-file support. Verify no-range API/CLI/signature/export/silence/error regressions; literal `-` remains a file. Run nonempty suites and execute the minimal README examples.
         - [x] T-020 — Review, test and report milestone 2.4
-            Scope: integrated parser, complete acquisition, normalized shared selection/counting and named-file text/JSON path; retained core/API/CLI failures and resource ownership.
+            Scope: integrated parser, complete acquisition, normalized shared selection/counting and named-file text path; retained core/API/CLI failures and resource ownership.
             Depends on: T-018 and T-019.
             Evidence: code review and actual focused/full relevant tests, actual nonzero discovery counts, all F matrices, complete-decode/BOM/huge-endpoint regression evidence, repairs for every blocker and 2.4 human demonstration evidence. Report findings/TODO dispositions and limits; tests alone cannot complete this review.
             Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md`.
@@ -144,12 +135,12 @@ Phase 2 merge into default or release follows this feature.
             Outcome: accurate full range grammar/semantics/errors/composition/delivery boundary, with public API explicitly whole-input and stdin acquisition still deferred.
             Scope: `README.md`, `docs/public-api.md`, relevant core/I/O/CLI module/function docstrings and truthful owned root `AGENTS.md` navigation; preserve manual instructions and protected resources.
             Depends on: T-020 and reviewed/closed milestone 2.4.
-            Evidence: execute documented named-file text/JSON examples in both BOM policies, selected blank/mixed/EOF/interior-BOM and invalid/decode cases; compare docs/help to delivered F contracts and retained public signatures/exports/exception/handle/status contracts. Review future stdin wording for source independence without asserting delivered acquisition. Run relevant nonempty product regressions.
+            Evidence: execute documented named-file text examples in both BOM policies, selected blank/mixed/EOF/interior-BOM and invalid/decode cases; compare docs/help to delivered F contracts and retained public signatures/exports/exception/handle/status contracts. Review future stdin wording for source independence without asserting delivered acquisition. Run relevant nonempty product regressions.
         - [x] T-022 — Verify range behavior from isolated extracted source
-            Outcome: R-013 feature exits execute the real extracted module for named-file text/JSON range behavior and failures with truthful import provenance.
+            Outcome: R-013 feature exits execute the real extracted module for named-file text range behavior and failures with truthful import provenance.
             Scope: `tools/check_distribution.py`, cooperating `tools/package_source.py` allowlist only if needed, `tests/integration/test_distribution.py` and distribution usage documentation.
             Depends on: T-021.
-            Evidence: rebuild/extract source, isolate subprocess cwd/import environment and verify imported package belongs to extraction. Invoke its actual `python -m textstats` entry for F-004 success anchors, option/BOM/JSON composition, huge decimal/leading-zero endpoints, invalid/missing/repeated ranges and bad bytes after END; statuses/stdout/stderr retain contracts. Confirm archive docs and unchanged API, named-file/no-range/JSON/usage/error regressions and no coordinator resources/secrets. Use the selected supported Python executable with bytecode disabled in all child processes. Run independently nonempty unit/integration suites and extraction checks; archive listing/import alone is insufficient.
+            Evidence: rebuild/extract source, isolate subprocess cwd/import environment and verify imported package belongs to extraction. Invoke its actual `python -m textstats` entry for F-004 success anchors, option/BOM composition, huge decimal/leading-zero endpoints, invalid/missing/repeated ranges and bad bytes after END; statuses/stdout/stderr retain contracts. Confirm archive docs and unchanged API, named-file/no-range/usage/error regressions and no coordinator resources/secrets. Use the selected supported Python executable with bytecode disabled in all child processes. Run independently nonempty unit/integration suites and extraction checks; archive listing/import alone is insufficient.
         - [x] T-023 — Review, test and report milestone 2.5
             Scope: complete delivered range documentation, help/usability, isolated distribution and retained product behavior.
             Depends on: T-021 and T-022.
@@ -157,7 +148,7 @@ Phase 2 merge into default or release follows this feature.
             Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md`.
     - [x] Milestone 2.6 — Range feature review
         - [x] T-024 — Review, test and report the Phase 2 range feature extent
-            Scope: cross-milestone range feature and affected main contracts, source-independent normalized pipeline, unchanged public API, complete docs/extraction and retained named-file text/JSON. This is feature-extent review, not main Phase 2 or project completion.
+            Scope: cross-milestone range feature and affected main contracts, source-independent normalized pipeline, unchanged public API, complete docs/extraction and retained named-file text. This is feature-extent review, not main Phase 2 or project completion.
             Depends on: T-020 and T-023; feature delivery milestones 2.4 and 2.5 completed/closed, excluding its own still-open 2.6.
             Evidence: code review and actual complete relevant product/docs/distribution exits, nonzero counts, final blocker repairs, feature usefulness/risk evidence, findings and TODO aggregation with provenance/options/owners/resolutions from both feature milestones. Reconcile feature parent claims only; do not complete main 2.2/2.3 or T-013–T-017. Reports must state pending stdin/final work and later incorporation/integration prerequisites.
             Reports: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md` and `docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md`.
@@ -423,3 +414,23 @@ issue validation/closure/readback before authorized sole-main ownership/current 
 archive reconciliation and concrete changed-artifact acceptance. Explicit verified/
 published paused-phase integration is still required afterward; no incomplete
 phase merge into default or release follows.
+
+## JSON-removal amendment evidence
+
+[Steering report](reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md)
+records the accepted reduction, source, current checks and remaining boundary.
+R-009 and completed historical T-010–T-012/2.1 delivery scope are withdrawn; no
+ID is reused or newly completed. Historical results/reports remain unchanged.
+Retained T-006/T-007 and T-018–T-024 text/count/BOM/range, API, documentation,
+resource/error and extraction acceptance passes current verification: 31 unit/
+28 integration tests and 241 real isolated extracted-module cases on Python
+3.12.14, plus ten runnable document fences with inspected exact count/error/API
+outputs. Controlled complete-decode-after-END/read-failure/owned-close coverage
+is converted to text. Core/I/O/API/entry/builder interfaces are unchanged.
+
+T-013–T-017, milestones 2.2/2.3 and whole Phase 2 remain unchecked and paused.
+Their retained text/BOM/range stdin composition stays required. Managed hosted
+briefs and retirement metadata were reconciled after exact verified implementation
+publication, with nineteen accepted operations/readbacks; original historical
+completion reasons and five pending open tasks remain preserved. This is steering evidence,
+not a new task result or initial checkbox closure.

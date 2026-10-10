@@ -2,7 +2,25 @@
 
 ## Current gate
 
-State: **Ready for current full strategy/layout conformance**, Revision 6.
+State: **Verified scoped JSON-removal conformance**, Revision 7; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
+
+Phase 1 retains two cohesive delivery milestones; Phase 2 has three active delivery milestones 2.2/2.4/2.5. Historical 2.1 is retired, dedicated reviews 1.3/2.3/2.6 excluded. All retained contracts have routes; stdin/final work remains pending.
+
+| Current reviewed/governing source | SHA-256 |
+| --- | --- |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+| `SPEC-REVIEW-REPORT.md` | `a9c482bfea63d5aefa9a03bcac46b02a99237bf497bf5b1ba0ae027c29786ef9` |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
+| `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
+
+Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped issue. Actual 31 unit / 28 integration tests, 241 isolated extracted cases and ten runnable document fences verify retained completion claims. Hosted retirement and affected briefs are reconciled with preserved history and pending work. The current source identities below govern this accepted implementation checkpoint; final report/integration acceptance remains pending. Full Phase 2 remains incomplete. Historical records and original findings below remain preserved.
+
+## Historical gate before JSON-removal correction
+
+State: **Ready for scoped JSON-removal preparation conformance**, Revision 7; delegated candidate acceptance pending.
 PLAN `e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199` and layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f` are unchanged; governing current
 SPEC `a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980` and SPEC QC `66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372` reflect ownership/archive navigation
 with unchanged behavioral contracts. Full Phase 1/Phase 2 strategy and source/task
@@ -116,3 +134,23 @@ or release is introduced. Full milestone names/counts/dependency/exit assessment
 current upstream hash/navigation equivalence, local paths and whitespace pass.
 No unresolved conformance issue. Document review does not substitute implementation
 reports or concrete current checkpoint acceptance.
+
+## Revision 7
+
+The sdd-plan owner assessed the complete current PLAN and affected upstream inputs under the commanded JSON reduction. Finding PLAN-JSON-001: current JSON delivery/acceptance conflicted with the accepted removal. Steering corrected the affected clauses and rechecked retained contracts, stable IDs, dependencies, ownership and scoped count/conformance rules. Original findings/results remain preserved above.
+
+Phase 1: two delivery milestones (small cohesive useful path plus robustness/distribution); Phase 2: three active delivery milestones 2.2/2.4/2.5. Historical 2.1 is explicitly retired, not an empty delivery group. Dedicated reviews 1.3/2.3/2.6 excluded. Dependencies no longer require JSON.
+
+| Preparation source at this review | SHA-256 |
+| --- | --- |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+| `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
+| `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
+| `TASKS.md` | `f0d360d57741a19f0c183ed024d6e183c206850fa2d0332cc5b46c3ea2335fca` |
+
+No confirmed scoped preparation issue remains. Technical Ready applies to this amendment's inputs only; runtime completion and delegated review remain pending. Design/layout ownership and dependency directions suffice unchanged. Historical package/report contents are excluded from current validation.
+
+Delegated review found stale Current gate hashes and obsolete alternate-output/agreement wording in this first candidate. Finding PLAN-JSON-002: corrected the current gate to the actual reviewed source hashes and retirement counts; prior gate retained as historical above and exact first candidate preserved externally. Rechecked current source identities, dependencies, retained matrices, local links and pending task boundary. Resolved; no production consumption occurred before correction.

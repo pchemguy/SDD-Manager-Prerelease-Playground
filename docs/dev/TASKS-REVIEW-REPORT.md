@@ -2,7 +2,27 @@
 
 ## Current gate
 
-State: **Ready for current complete sole-main TASKS conformance**, Revision 3.
+State: **Verified scoped JSON-removal conformance**, Revision 4; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
+
+TASKS alone owns 24 stable task identities: 21 active checklist tasks, 16 checked, five unchecked T-013–T-017; retired historical T-010–T-012 have no current checkbox or new completion. Delivery counts 1.1=3,1.2=3,2.2=3,2.4=2,2.5=2; dedicated reviews excluded; small range groups remain cohesive. Retained affected completion acceptance passes current runtime/docs/extraction checks; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
+
+| Current reviewed/governing source | SHA-256 |
+| --- | --- |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+| `SPEC-REVIEW-REPORT.md` | `a9c482bfea63d5aefa9a03bcac46b02a99237bf497bf5b1ba0ae027c29786ef9` |
+| `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
+| `PLAN-REVIEW-REPORT.md` | `8f706ceee2341252986864685d3faedf56446523dd0d3790f481174d95f69179` |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
+| `TASKS.md` | `61d5a40036b5b4ecc9f078a81a19c4e00bb661abcc08d9df5344a69ef70afaca` |
+
+Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped issue. Actual 31 unit / 28 integration tests, 241 isolated extracted cases and ten runnable document fences verify retained completion claims. Hosted retirement and affected briefs are reconciled with preserved history and pending work. The current source identities below govern this accepted implementation checkpoint; final report/integration acceptance remains pending. Full Phase 2 remains incomplete. Historical records and original findings below remain preserved.
+
+## Historical gate before JSON-removal correction
+
+State: **Ready for scoped JSON-removal preparation conformance**, Revision 4; delegated candidate acceptance pending.
 Main TASKS SHA-256 `3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841` singly owns T-001–T-024; no active FEATURE-TASKS
 exists. Archived source checklists/QC are historical, with basenames/identity/
 findings preserved. Current SPEC `a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980` / QC `66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372` and unchanged
@@ -126,3 +146,25 @@ current selected links/HTML anchor and whitespace. Current main owner and packag
 AGENTS navigation are coherent. Product tests/hosted/merge evidence stays in owning
 implementation reports; this QC assesses documents and does not claim a later
 paused-phase integration or concrete current acceptance.
+
+## Revision 4
+
+The sdd-tasks owner assessed the complete current TASKS and affected upstream inputs under the commanded JSON reduction. Finding TASKS-JSON-001: current JSON delivery/acceptance conflicted with the accepted removal. Steering corrected the affected clauses and rechecked retained contracts, stable IDs, dependencies, ownership and scoped count/conformance rules. Original findings/results remain preserved above.
+
+Stable T-001–T-024 identities preserved: 21 active checklist tasks, 16 checked and five unchecked T-013–T-017; three retired historical identities have no current checkbox. Delivery counts: 1.1 three, 1.2 three, 2.2 three, 2.4 two, 2.5 two; exclude dedicated reviews. Two-task range groups retain cohesive pure-to-CLI and docs-to-extraction handoffs. No ID reuse, new completion, stdin execution or parent closure.
+
+| Preparation source at this review | SHA-256 |
+| --- | --- |
+| `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
+| `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
+| `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
+| `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
+| `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
+| `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
+| `TASKS.md` | `f0d360d57741a19f0c183ed024d6e183c206850fa2d0332cc5b46c3ea2335fca` |
+
+No confirmed scoped preparation issue remains. Technical Ready applies to this amendment's inputs only; runtime completion and delegated review remain pending. Design/layout ownership and dependency directions suffice unchanged. Historical package/report contents are excluded from current validation.
+
+Delegated review found stale Current gate hashes and obsolete alternate-output/agreement wording in this first candidate. Finding TASKS-JSON-002: corrected the current gate to the actual reviewed source hashes and retirement counts; prior gate retained as historical above and exact first candidate preserved externally. Rechecked current source identities, dependencies, retained matrices, local links and pending task boundary. Resolved; no production consumption occurred before correction.
+
+Runtime/status recheck: current TASKS root records 31 unit/28 integration tests, 241 isolated module cases and ten verified document fences. T-006/T-007 and T-018–T-024 retain verified text/count/BOM/range/docs/extraction acceptance; original JSON delivery claims remain retired. Only completion/evidence wording changes after accepted preparation: retained contracts, task structure, dependencies and the five pending checkboxes are equivalent to that reviewed preparation. Current root identity is recorded in the Current gate. Historical initial results remain unchanged.

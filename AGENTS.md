@@ -52,3 +52,23 @@ No complete Phase 2/default merge or release follows this feature.
 ## Published JSON prerequisite
 
 The separately published completed JSON milestone checkpoint `e63b8946bbb99347b0f73f070f9c728945ee5925` supplies T-010–T-012 and [milestone 2.1 review](docs/dev/reports/phases/2/2.1.md). Named-file `--json` composes with BOM policy and text remains default; stdin remains pending. Historical JSON-only verification recorded 25 unit/21 integration tests and 99 isolated extracted-module cases on Python 3.12.14. This compatible merge retains those results and pending T-013–T-017 without completing/integrating Phase 2 into default. Current range delivery authority and stop above govern this continuation.
+
+## Current JSON-removal steering checkpoint
+
+The current commanded amendment retires JSON output while retaining exact text,
+counting, BOM policy, complete strict decoding, resource ownership, unchanged
+public API and named-file ranges. Canonical [TASKS](docs/dev/TASKS.md) retains
+24 stable identities: 21 active tasks (16 checked and five pending T-013–T-017)
+and retired historical T-010–T-012. Historical JSON/range reports remain frozen.
+The [steering report](docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md)
+owns affected completion reassessment and current verification. Current SPEC,
+PLAN and adjacent QC govern the reduced scope; historical orientation statements
+above describe their earlier checkpoints. Removed JSON options are usage errors
+before input acquisition; a literal `--json` filename works after `--`.
+
+Use `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` and
+`PYTHONDONTWRITEBYTECODE=1 python -B tools/check_distribution.py` for the current
+text/count/BOM/range and isolated extracted-module checks, with bytecode disabled
+in children. Stop after accepted, verified and published steering integration
+into paused `phase/2-json-and-stdin`; no stdin execution, full Phase 2 completion,
+default integration, version change or release follows.
