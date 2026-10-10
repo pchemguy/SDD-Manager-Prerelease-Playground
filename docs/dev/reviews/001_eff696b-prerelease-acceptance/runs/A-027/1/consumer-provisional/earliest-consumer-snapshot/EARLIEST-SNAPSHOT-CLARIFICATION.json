@@ -1,0 +1,6 @@
+{
+  "earliest_consumer_captured_provisional_report_sha256": "179fd969e351035e0e79ecb8bbdb02c4b742d41134507aa41eac2b1027623d74",
+  "first_independently_reviewed_draft_sha256": "a0da309be62131f8d25cfa6d3e4b9166906dd67a6edfd34def6d93e20840890b",
+  "reviewed_draft_publication_commit": "342857eb4152d76a2b66f8fdc819ab42c3e32152",
+  "clarification": "The first published independently reviewed draft contains additive supplement sections after the earliest consumer snapshot. Its original PROVENANCE first-draft wording refers to root first independently reviewed publication, not earliest consumer bytes. Both exact versions and original publication metadata are retained; no rewritten history or final case grade."
+}
