@@ -125,7 +125,7 @@ python tools/package_source.py
 python tools/check_distribution.py
 ```
 
-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 99 real text/JSON/BOM/error module cases with inherited Python import paths removed and user-site packages disabled.
+The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 315 real whole-input/range text/JSON/BOM/error module cases with inherited Python import paths removed, user-site packages disabled and child bytecode writes disabled. Range cases include every acceptance anchor, option permutations, huge/leading-zero endpoints, invalid/repeated options and bad bytes after END; silent whole-input API compatibility is checked in the extraction too.
 
 A runnable extraction example for a Bash shell on Unix:
 

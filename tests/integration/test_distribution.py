@@ -34,6 +34,30 @@ class DistributionTests(unittest.TestCase):
             with self.assertRaises((AssertionError, RuntimeError)):
                 verify_archive(faulty)
 
+    def test_checker_rejects_ignored_range_with_healthy_whole_input(self):
+        self._assert_range_mutation_rejected(
+            b'if args.lines is None:', b'if True:')
+
+    def test_checker_rejects_second_bom_normalization_after_selection(self):
+        self._assert_range_mutation_rejected(
+            b'_count_normalized(_select_lines(normalized, *args.lines))',
+            b'__import__("textstats").count_text(_select_lines(normalized, *args.lines))')
+
+    def _assert_range_mutation_rejected(self, original, replacement):
+        """Alter only extracted range behavior; checkout and whole-input stay healthy."""
+        with tempfile.TemporaryDirectory() as directory:
+            archive = build_archive(ROOT, Path(directory) / 'source.zip')
+            faulty = Path(directory) / 'faulty-range.zip'
+            with zipfile.ZipFile(archive) as source, zipfile.ZipFile(faulty, 'w') as target:
+                for name in source.namelist():
+                    data = source.read(name)
+                    if name == 'textstats-source/textstats/cli.py':
+                        self.assertIn(original, data)
+                        data = data.replace(original, replacement)
+                    target.writestr(name, data)
+            with self.assertRaises((AssertionError, RuntimeError)):
+                verify_archive(faulty)
+
     def test_archive_exact_allowlist_excludes_unrelated_material(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / 'source'
@@ -74,7 +98,7 @@ class DistributionTests(unittest.TestCase):
                 verify_archive(faulty)
 
     def test_documented_checker_script_builds_and_runs(self):
-        result = subprocess.run([sys.executable, str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
+        result = subprocess.run([sys.executable, '-B', str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
                                 capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('extracted import:', result.stdout)

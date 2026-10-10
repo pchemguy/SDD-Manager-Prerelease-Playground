@@ -33,7 +33,7 @@ Preparation stops before execution. A later separately authorized handoff must s
             Scope: `README.md`, `docs/public-api.md`, relevant core/I/O/CLI module/function docstrings and truthful owned root `AGENTS.md` navigation; preserve manual instructions and protected resources.
             Depends on: T-020 and reviewed/closed milestone 2.4.
             Evidence: execute documented named-file text/JSON examples in both BOM policies, selected blank/mixed/EOF/interior-BOM and invalid/decode cases; compare docs/help to delivered F contracts and retained public signatures/exports/exception/handle/status contracts. Review future stdin wording for source independence without asserting delivered acquisition. Run relevant nonempty product regressions.
-        - [ ] T-022 — Verify range behavior from isolated extracted source
+        - [x] T-022 — Verify range behavior from isolated extracted source
             Outcome: R-013 feature exits execute the real extracted module for named-file text/JSON range behavior and failures with truthful import provenance.
             Scope: `tools/check_distribution.py`, cooperating `tools/package_source.py` allowlist only if needed, `tests/integration/test_distribution.py` and distribution usage documentation.
             Depends on: T-021.
@@ -114,3 +114,40 @@ Task result/current evidence/initial checkbox close together; milestone 2.5 and
 feature parent remain unchecked. Publish/read back then close/read back unique
 issue #22 before dependent T-022. Range extraction, later dedicated reviews,
 feature conclusion/integration and pending main stdin/final remain separate gates.
+
+## T-022 completion evidence
+
+Extended the unchanged eleven-file source allowlist's checker to execute 315 actual
+isolated extracted-module cases: retained 99 whole-input/text/JSON/BOM/error/help
+checks plus 52 literal F-004 anchor combinations, 48 range-spelling/option-order/
+INPUT-position combinations, 12 huge/leading-zero cases, 96 invalid/missing/repeated
+usage cases on missing input, four complete-decode-after-END failures and four
+range-selected dash/literal-minus cases. All check exact status/streams/counts and
+sample bytes. The extraction also passes a silent public whole-input/export/
+keyword-only-signature probe. Actual import location belongs to extraction;
+PYTHONPATH/PYTHONHOME/PYTHONSTARTUP are removed, user-site disabled, and all checker
+children use the selected interpreter with -B plus bytecode-disabled environment.
+No checkout helper replaces actual extracted CLI execution.
+
+Before checker changes, two independently faulty extracted archives retained healthy
+whole-input behavior but ignored range selection or normalized an exposed BOM twice.
+The old checker accepted each through all 99 cases, causing two genuine behavioral
+expect-rejection failures. The original RED is retained; simplified equivalent BOM
+mutant test source was rerun before implementation with the same two failures.
+GREEN rejects both mutants (two tests). Fresh complete runner passed 31 unit/28
+integration tests on Python 3.12.14, no skips/warnings, both suite summaries and exit
+0 captured. Fresh current rebuilt extraction passed 315 cases. All eleven archived
+source/docs bytes match current checkout, including updated README; credentials,
+coordinator resources, development records and tests remain excluded. Whitespace
+passes; production package behavior is unchanged. README/AGENTS accurately describe
+current checker/suite coverage, with presentation-time pending acceptance historical.
+
+Concrete four-artifact decision `ce2df08c4a716b0a830077e23fc383b424299523` accepts
+checker `6c4eb3baeb61e583caba86f3e9cbc48d0fb038db`, integration tests
+`0d972097b798e6d35970d13767f10a957818048f`, README
+`6e4fca7d8fcaa73b9e228f186aedc74cf9ea01a9` and AGENTS
+`b9c19857fb95f290b92dc8c0cf09533345602b68` at published T-021 baseline.
+Result/current evidence/initial task checkbox close in one commit; milestone 2.5
+and feature parent remain unchecked. Immediately publish/read back, then close/read
+back unique issue #23 before dependent T-023. No stdin/final Phase 2 execution,
+whole-phase closure, default integration or release is claimed.
