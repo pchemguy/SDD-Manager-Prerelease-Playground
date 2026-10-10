@@ -1,0 +1,16 @@
+{
+  "name": "bundle",
+  "args": [
+    "git",
+    "bundle",
+    "create",
+    "/workspace/scratch/46b31bb4dff6/037-a014-cross-setup-artifacts/prerequisite.bundle",
+    "main",
+    "phase/1-named-file-utility"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

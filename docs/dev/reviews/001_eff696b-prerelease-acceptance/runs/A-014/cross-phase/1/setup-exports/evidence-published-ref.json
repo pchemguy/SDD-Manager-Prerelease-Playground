@@ -1,0 +1,14 @@
+{
+  "name": "evidence-published-ref",
+  "args": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/revision/001_eff696b-prerelease-acceptance"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

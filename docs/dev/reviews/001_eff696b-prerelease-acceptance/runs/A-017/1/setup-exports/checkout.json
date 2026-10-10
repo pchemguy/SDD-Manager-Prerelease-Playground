@@ -1,0 +1,14 @@
+{
+  "args": [
+    "git",
+    "checkout",
+    "-b",
+    "trial/a017-failed-check",
+    "7d003c1cf31c994340d8644e95990ef2253754ed"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+  "returncode": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

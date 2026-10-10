@@ -1,0 +1,8 @@
+7b9f570aa4452d2ca9d6105479640528cb113f0e [T-008] Review distribution milestone and reject option abbreviations
+f7e3309b672cb13b1d8158613e81d50e8d1ecc18 [T-007] Build and verify isolated TextStats source distribution
+fde1537b5c4ba1bcef4f538dfb47276d564e4aaa [T-006] Document public API and runnable named-file usage
+809f045e3cd32445e7dca29d0174ea25aa5da7ea [T-005] Handle named-file input failures without tracebacks
+7d003c1cf31c994340d8644e95990ef2253754ed [T-004] Review named-file counting and complete milestone 1.1
+373203d6f41bee2229eed900b761de8669678e0b [T-003] Integrate named-file CLI and nonempty product checks
+f28f6e415b3e0c13353a61e82354c47b0d2cabb2 [T-002] Implement strict file acquisition and complete public API
+9dc8075dd1b96d3a2744717a9d6d98a3024acbec [T-001] Implement immutable statistics and whole-text counting

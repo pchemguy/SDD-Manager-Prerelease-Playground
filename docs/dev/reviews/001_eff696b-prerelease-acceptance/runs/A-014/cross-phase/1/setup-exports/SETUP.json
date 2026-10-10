@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "case_id": "A-014",
+  "variant": "cross-phase",
+  "setup_status": "Actual prerequisite state prepared and independently verified; required cross-phase variant Blocked by local-only publication facility",
+  "dispatch_status": "Not dispatched; STOP before dispatch pending destination/publication resolution",
+  "actual_source_checkpoint": "7b9f570aa4452d2ca9d6105479640528cb113f0e",
+  "actual_t009_completion": "5b17e4650c64c7c735991931b591bdabb8069215",
+  "actual_positive_merge": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+  "main_baseline": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+  "branch": "phase/1-named-file-utility",
+  "workspace": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+  "trial_remote": "/workspace/scratch/46b31bb4dff6/037-a014-cross-remote.git",
+  "origin_policy": "GitHub read-only; push URL disabled; existing hosted objects foreign/protected",
+  "selected_range": [
+    "T-009",
+    "T-010"
+  ],
+  "outside_prerequisites": {
+    "T-001 through T-008": "Actual separate completed and published closing objects, independently assessed in sealed Passed A006 before this setup; retained rather than fabricated",
+    "last_closure": "7b9f570aa4452d2ca9d6105479640528cb113f0e",
+    "review_gates": "Actual reports 1.1/1.2 and sealed independent hosted closure/order checks retained; no live objects reused by trial"
+  },
+  "publication": {
+    "actual_prerequisite_a006_assessment_commit": "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+    "evidence_ref": "refs/heads/revision/001_eff696b-prerelease-acceptance",
+    "evidence_live_readback": "334f39c28e43528e6cbae20c435cddf6791b9c04",
+    "trial_main": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "trial_phase": "7b9f570aa4452d2ca9d6105479640528cb113f0e"
+  },
+  "initial_tasks": {
+    "T-001": true,
+    "T-002": true,
+    "T-003": true,
+    "T-004": true,
+    "T-005": true,
+    "T-006": true,
+    "T-007": true,
+    "T-008": true,
+    "T-009": false,
+    "T-010": false,
+    "T-011": false,
+    "T-012": false,
+    "T-013": false,
+    "T-014": false,
+    "T-015": false,
+    "T-016": false,
+    "T-017": false
+  },
+  "original_governing_file_sha256": {
+    "AGENTS.md": "d0e4e72d4468466d2762054f39385fd7b16ac6be70e8fb443354ed80c741e054",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "docs/dev/TASKS.md": "71fe79fe1e1ca0c783d62700f19848cbac61d039d54c7d84e239c1b5319be6b9",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "docs/dev/reports/phases/1/1.1.md": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+    "docs/dev/reports/phases/1/1.2.md": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53"
+  },
+  "source_plugin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "a004": "Original Failed retained separately; corrected assessor-only recheck is separate identity, not original relabel",
+  "limitations": [
+    "Local bare trial delivery is not GitHub hosted publication; A014 guide explicitly prohibits local-only full certification.",
+    "Shared filesystem broad access; native full fresh isolation unavailable/unclaimed.",
+    "Python3.12.14 only; bytecode disabled; no Python3.11/runtime/platform matrix.",
+    "Prior remote trial-creation automatic rejection remains external intervention; no retry, hosting bypass or live hosted write.",
+    "Preparation is assessor fixture/ref/config setup only; no task implementation/review/phase merge performed."
+  ],
+  "consumer_handoff": "HANDOFF-DRAFT.md"
+}

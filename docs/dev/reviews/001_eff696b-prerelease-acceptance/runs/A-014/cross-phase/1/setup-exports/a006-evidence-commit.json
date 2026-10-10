@@ -1,0 +1,13 @@
+{
+  "name": "a006-evidence-commit",
+  "args": [
+    "git",
+    "rev-parse",
+    "39f4c3c"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

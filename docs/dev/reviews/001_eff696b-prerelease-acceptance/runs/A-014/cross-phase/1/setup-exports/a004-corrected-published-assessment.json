@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "status": "Passed",
+  "consumer_workflow_outcome": "Passed",
+  "agent_behavior_assessed": true,
+  "literal_contract_conflict": false,
+  "coordinator_disposition_required": false,
+  "assessment_scope": "Reassessment only of retained actual first-task lifecycle under corrected published assessor pin; no fresh consumer rerun, no rewritten old result",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "checks": {
+    "production_semantics": "Passed: 17 independent fixed vectors, both BOM policies, CRLF/CR/LF and Unicode whitespace/separators",
+    "constructor_immutability": "Passed: strict nonnegative integers including bool rejection, equality and ordinary assignment/deletion protection",
+    "silent_public_api": "Passed: imports/calls and keyword-only policy; 5 integration tests",
+    "product_tests": "Passed: 10 unit, 5 integration, nonzero discovery, no skips",
+    "task_closing": "Passed: exactly leading [T-001], one task-owned 11-path commit contains implementation/tests/docstrings/current evidence/initial checkbox",
+    "qc": "Passed: governing design/SPEC/PLAN/layout and their reports unchanged from accepted start; actual TASKS change is sole completion plus evidence, no requirement/decomposition amendment. Report historical hash retained legitimately for routine progress.",
+    "scope": "Passed: only T-001 checked, 16 other tasks and parents unchecked; incomplete phase tip not ancestor of main; no later source files/features",
+    "hosted": "Passed: independent authenticated GET readback verifies issue closure with completion evidence and fixture preservation; all milestones open and remaining Phase 1 issues open",
+    "publication": "Passed: API remote ref readback exact main/phase/design tips and immutable source hashes verified",
+    "per_commit_order": "Supported by recorded consumer sequence: merge commit49 -> push/readback50-51 -> branch52-53 -> task work; task commit69 followed by publication before hosted closure. Actual remote tips establish containment, but retrospective ordering cannot be independently reconstructed from refs alone.",
+    "RED": "Observed consumer evidence distinguishes initial absent-package import/setup error from subsequent collected behavioral RED (10 unit tests validation/equality/immutability failures plus missing-count errors; 5 integration tests with 2 missing-count errors). Meaningful RED output is retained in consumer observations and committed task evidence; native full transcript unavailable, so no stronger transcript completeness certification."
+  },
+  "findings": [],
+  "limitations": [
+    "Fresh assessor context and fresh consumer reported; shared filesystem exposes test assets, isolation uncertified.",
+    "Python3.12.14 exercised; no Python3.11 runtime claim.",
+    "Native full transcript unavailable; some consumer source/RED batches truncated and chronology reconstructed; no historical RED tree checkpoint retained.",
+    "No complete public-file API/CLI/distribution assessment required for T-001; later tasks remain unselected."
+  ],
+  "evidence": {
+    "consumer_observations_sha256": "13b5bd5f8c5c3ba58f2b018a97e1b25677f43b2ada7466fd277b749befbcc2a1",
+    "independent_check_evidence": "037-a004-independent-check-evidence.json",
+    "independent_check_evidence_sha256": "4195d8f3e4e4a0cdf4dc873d9aa3cb4d2f06737a306bcec7608d5e0d6ca1d114",
+    "governing_qc_hashes": {
+      "docs/dev/PROJECT.md": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "docs/dev/ARCHITECTURE.md": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "docs/dev/DECOMPOSITION.md": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "docs/dev/SPEC.md": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+      "docs/dev/SPEC-REVIEW-REPORT.md": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+      "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "docs/dev/PLAN-REVIEW-REPORT.md": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+      "docs/dev/TASKS-REVIEW-REPORT.md": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+      "docs/dev/layout.md": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f"
+    }
+  },
+  "mutations": {
+    "product": false,
+    "git": false,
+    "hosted": false
+  },
+  "reassessment_only": true,
+  "assessor_pin": "fc193b0a41f12e1eea7d2313d0664cb279bb932e",
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "original_assessment": {
+    "path": "037-a004-independent-assessment.json",
+    "sha256": "33484c29ae4e82110d8fbc7621f61a46a0619eb77958f10e23ed730b8fefebbf",
+    "status": "Failed",
+    "assessor_criteria_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4"
+  },
+  "eligibility_evidence": "037-a004-recheck-eligibility.json",
+  "source_repair": {
+    "criteria_sha256": {
+      "acceptance/textstats/cases/assessor/A-004.md": "8a8cf32d95f5ed69657c820461f02dcf0180fd836658e3e612d3158ec3ec551e",
+      "acceptance/textstats/cases/assessor/A-004.json": "6edf4035a58d29384e62cb4f1dadf6055a79a6d1a3d21a9d8b1695c2fac53348"
+    },
+    "published_ref": "fc193b0a41f12e1eea7d2313d0664cb279bb932e",
+    "plugin_bytes_unchanged": true
+  },
+  "resolved_findings": [
+    {
+      "id": "A004-contract-source-conflict",
+      "severity": "contract contradiction",
+      "literal_contract": "cases/assessor/A-004.md: Associated issue closes with completion evidence. Phase 1 is incomplete, integration unchanged, no phase 2 work.",
+      "source_requirement": "Pinned ea515f5624c8a34cc4572731a2590223a5eb27f4 skills/sdd-implement/references/startup-and-continuation.md, Working branch and integration continuation, requires accepted design-docs preparation merged, verified and published into actual default before creating implementation branch; skills/sdd-manage/references/git-workflows.md Work and prepare boundary calls this document-only boundary independent of phase completion.",
+      "observed": "Start main eff696b38f0b8a94bd6f91ca1c64d54fd714df46; reached main88a5c4b4424f4bba76940e40b1d6523b1f6fe191 with parents eff696b38f0b8a94bd6f91ca1c64d54fd714df46 and accepted preparation1e3305c8659045945244c06861079fef879ca3c3. Task9dc8075dd1b96d3a2744717a9d6d98a3024acbec remains unmerged.",
+      "judgment": "Consumer followed ordinary pinned workflow correctly. Literal unchanged-integration clause is false; cannot certify unqualified A-004 Passed without an explicit harness/source reconciliation. This is preparation integration, not prohibited partial phase integration."
+    }
+  ],
+  "provenance_statement": "Original actual lifecycle was executed under unchanged plugin ea515f5. This is an independently supported regrade using corrected assessor fc193b0, not proof of fresh consumer execution under fc193b0. Original Failed outcome remains immutable."
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "case_id": "A-005",
+  "status": "Passed",
+  "consumer_workflow_outcome": "Passed",
+  "agent_behavior_assessed": true,
+  "literal_contract_conflict": false,
+  "coordinator_disposition_required": false,
+  "assessment_scope": "Reassessment only of retained actual milestone1.1 lifecycle under separately published corrected assessor355e3d3; original Failed record preserved, no fresh consumer rerun, no product changes",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "start": {
+    "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "checks": {
+    "api": "Passed: exact independently captured literals; silent immutable API, strict decode and filesystem exceptions",
+    "baseline": "Passed corrected baseline-success: exact four actual captured success rows. Original full baseline missing/decode failures retained and pending A006/milestone1.2 obligations.",
+    "product_tests": "Passed: actual 21 unit / 12 integration, zero skips, status0; runner collection/failure fixture checks exercise nonempty independent suites",
+    "lifetime": "Passed: independent controlled handles close on success/decode/read errors; PermissionError preserved; all calls silent. Actual real-file decode/equivalence covered by API capture and integration suite.",
+    "code_review": "Passed for accepted milestone1.1: reviewed core, acquisition, exports, CLI, module entry, runner, tests and report against unchanged accepted SPEC/PLAN/TASKS; no additional milestone blocker found. Whole-file read, strict decode before counts, CRLF preservation, once-only BOM and help-before-acquisition are structurally supported.",
+    "task_closing": "Passed: exact three separate task commits T002 f28f6e4, T003 373203d, T004 7d003c1; each exactly one owning initial executable checkbox and result/evidence; final report+milestone checkbox in T004; all retained in exact published remote tip",
+    "final_review": "Passed: explicit last task T004 report at docs/dev/reports/phases/1/1.1.md records coherent code review, actual focused/full applicable checks, useful demonstration, TODO None and honest unverified future obligations; report committed and published",
+    "qc": "Passed: all governing design/SPEC/PLAN/layout and their QC reports exact starting bytes. TASKS changes only progress/evidence/report link, no requirement/scope/dependency amendment. Review excludes final review units from delivery counts while requiring execution. Existing historical TASKS report hash is valid for equivalent hierarchy; historical preparation stops superseded by explicit current scope.",
+    "hosted": "Passed: independent authenticated GET verifies issues2\u20135 closed/completed with task/commit/check evidence comments; issue closed_at precedes milestone closed_at; milestone1 closed, milestones2/3 and issues6\u201310 open; labels/parent associations preserved",
+    "preservation": "Passed: exact starting protected resource/plugin/publisher/ignore/disclosure hashes; every initial hosted issue body and labels exact; foreign issue2 retained comment and all three milestone descriptions exact. Pre-existing unrelated issue1 remains open.",
+    "scope": "Passed: Phase1 unchecked, only T001\u2013004 checked and milestone1.1 checked; main exact88a5c4b unchanged, phase HEAD not ancestor of main, no merge/release/later work, clean final index/worktree",
+    "publication_order": "Consumer sealed sequence records each commit push/exact remote readback before subsequent work and issue reconciliation, independently verified separate commit content plus final remote containment. Retrospective refs cannot independently establish every operation ordering.",
+    "RED": "T002 recorded14 tests/six behavioral NotImplementedError errors; T003 recorded7 focused tests/four assertions/five behavioral errors including empty-suite and failure propagation. Committed evidence and sealed command summaries agree; tests structurally exercise real failures. No retained historical RED tree or complete raw RED/native transcript available, so actual full RED execution completeness is not independently certified.",
+    "help": "Passed independently observed real module --help status0, meaningful usage, empty stderr; retained test exercises help without acquisition."
+  },
+  "findings": [],
+  "limitations": [
+    "Fresh separate assessor context; shared filesystem isolation uncertified.",
+    "Native full transcript unavailable; sealed consumer sequence summarizes historical RED/push/check chronology rather than providing complete raw transcript; no retained historical RED tree.",
+    "Only Python3.12.14 assessed; no Python3.11/full runtime or platform permission matrix claim.",
+    "Controlled open/read failure probes establish portable resource behavior; no operating-system enforcement matrix claim.",
+    "Complete CLI R008 failure handling, public API guide and extracted distribution are accepted later milestone tasks and remain unverified; JSON/stdin/range unselected.",
+    "A004 predecessor is published fc193b0 reassessment of retained original product under corrected assessor criteria, not a fresh consumer rerun; original failure retained and shipped plugin unchanged."
+  ],
+  "evidence": {
+    "037-a005-consumer-observations.json": {
+      "sha256": "2532bb272b0028b514596a85358b4c1162a98710670a5dcf7795e2affdf7b604"
+    },
+    "037-a005-assessor-checks.py": {
+      "sha256": "25f960150941f05cd8a610a878d80ec3ad17466157767a9b8acd04896ff1f985"
+    },
+    "037-a005-independent-check-evidence.json": {
+      "sha256": "f3e20a2c6828e4d6b10443046dd4139ff6bdde35f8de9c81b076ceb4d70ddd91"
+    },
+    "037-a005-api-literals.json": {
+      "sha256": "f104844ccb8159b3dcb0d51056aa88b96ceb16b457bf58b18e2ab72abe4108ef"
+    },
+    "037-a005-api-provenance.json": {
+      "sha256": "653570eb5a8f37d0d8ca1f00ca4c11337ebb57ba5403b82a6facdba662a47fff"
+    },
+    "037-a005-baseline-literals.json": {
+      "sha256": "630252acca97408fad04157ba673e17762a4ae3c2dc47c18ae46de699d89e811"
+    },
+    "037-a005-baseline-provenance.json": {
+      "sha256": "5bf43d6139775c2ebc6d936a85314226bd3a3d2d1779f72a0f5b22156a195a8c"
+    },
+    "037-a005-combined-literals.json": {
+      "sha256": "bbf840e2d716519d93865bb81828e1415e1cd6d820fc592f63e5bde5ea9c8c79"
+    },
+    "resources/acceptance/textstats/cases/assessor/A-005.md": {
+      "sha256": "124cf661556df10833865bb27169f3ddac4aa85d74322e1c2718a6b147152eb9"
+    },
+    "resources/acceptance/textstats/cases/assessor/A-005.json": {
+      "sha256": "46332d636b6d35e36e1049a70c5bf5150d7ae75e554d566ac5378bdc72a6d6d1"
+    },
+    "resources/acceptance/textstats/cases/assessor/COMMON.md": {
+      "sha256": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef"
+    },
+    "resources/acceptance/textstats/cases/assessor/capture.py": {
+      "sha256": "bedfe314bd439a401f70155151aa520aa2fff01204e7491d1c17f1dbe2a95bdc"
+    },
+    "runs/A-005/1/START.json": {
+      "sha256": "a476204123930c271f661bfb70f28530c3bb99ffefcd63bfeb9ad71186faa04f"
+    },
+    "runs/A-005/1/BINDINGS.json": {
+      "sha256": "589fd4a40a97fc33a15b409e0d413debbbaed5397a7f58aec0fb0a0b4e31c245"
+    },
+    "runs/A-005/1/HANDOFF.md": {
+      "sha256": "f6809ca89ee5feca1cdc4a7e6295f925abc28b878b175ac3850aaaa07f8a3aff"
+    },
+    "milestone_report": {
+      "path": "docs/dev/reports/phases/1/1.1.md",
+      "sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade"
+    },
+    "037-a005-reassessed-literals.json": {
+      "sha256": "b7cfc6ab862bf8d720d6aed3cdd78a1e2db05ca45a70c96fd344f81f745c7182"
+    },
+    "037-a005-reassessment-provenance.json": {
+      "sha256": "fd7770cf98424e30adfb2d85198fc699a28f3ef3f88252c2c70c31315b4b2af7"
+    }
+  },
+  "mutations": {
+    "product": false,
+    "git": false,
+    "hosted": false
+  },
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "red_evidence_disposition": {
+    "native_raw_red_certification": "Not certified",
+    "corrected_grade_implication": "Does not itself establish an additional observed workflow failure: sealed command/result summaries and committed task evidence retain nonempty behavioral RED results consistent with actual meaningful tests. A corrected bounded lifecycle grade may rely on those records only with this explicit evidence limitation; any claim requiring independent historical RED execution or native full-transcript certification remains blocked. No raw output is reconstructed or waived."
+  },
+  "reassessment_only": true,
+  "fresh_consumer_execution": false,
+  "assessor_pin": "355e3d31e053d3a27078d1b75e753ea179ec1112",
+  "original_assessment": {
+    "path": "037-a005-independent-assessment.json",
+    "sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+    "assessor_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "status": "Failed"
+  },
+  "eligibility_evidence": {
+    "path": "037-a005-recheck-eligibility.json",
+    "sha256": "2dff9fee60531e61071ba10b7f08cef38c19af61743d32631179dfe40ca9eb82"
+  },
+  "source_repair": {
+    "published_ref": "355e3d31e053d3a27078d1b75e753ea179ec1112",
+    "guide_sha256": "fdacaf708d6273197120537840c83f2544ec61f218e0d2d40868bc190268a1a4",
+    "contract_sha256": "73857ba48ea73d5654d96e4b89fa9dd8ed708b1828689307c4451e40d0261105",
+    "shipped_plugin_unchanged": true
+  },
+  "resolved_findings": [
+    {
+      "id": "A005-premature-baseline-failure-criterion",
+      "severity": "contract/source-scope conflict",
+      "literal_contract": "Original selected A005 JSON product-baseline requires missing/decode errors without traceback and decode input-source identification at milestone1.1. No waiver applied.",
+      "actual_failed_rows": [
+        {
+          "name": "missing",
+          "differences": {
+            "no_traceback": {
+              "actual": false,
+              "expected": true
+            }
+          }
+        },
+        {
+          "name": "decode",
+          "differences": {
+            "no_traceback": {
+              "actual": false,
+              "expected": true
+            },
+            "source_identified": {
+              "actual": false,
+              "expected": true
+            }
+          }
+        }
+      ],
+      "governing_product_evidence": [
+        "docs/dev/PLAN.md milestone1.1 explicitly defers CLI failure diagnostics/status robustness to1.2; milestone1.2 maps R008",
+        "docs/dev/TASKS.md T003 explicitly defers full CLI failure diagnostics/status to T005; T005 remains open",
+        "docs/dev/reports/phases/1/1.1.md accurately records that accepted boundary"
+      ],
+      "judgment": "Consumer fulfilled accepted useful counting/API/CLI success milestone and properly stopped. Original A005 literal contract nevertheless fails; unqualified Passed is unsupported. Source/contract reconciliation and independent reassessment would require separate evidence; no consumer replay/repair or criteria mutation performed by assessor."
+    }
+  ],
+  "provenance_statement": "Actual consumer ran unchanged pluginea515f5. Original assessment failed premature baseline criterion. This corrected source-aligned bounded assessment reuses exact immutable actual evidence and published product checkpoint, with separate help/provider readback only; does not certify native historical RED or full transcript/isolation."
+}

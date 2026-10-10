@@ -1,0 +1,13 @@
+diff --git a/textstats/core.py b/textstats/core.py
+index 5b17cfd..4492af7 100644
+--- a/textstats/core.py
++++ b/textstats/core.py
+@@ -65,7 +65,7 @@ def _logical_lines(text: str) -> Iterator[str]:
+ 
+ def _count_normalized(text: str) -> TextStats:
+     """Count preserved logical lines and str.split words without normalization."""
+-    return TextStats(sum(1 for _ in _logical_lines(text)), len(text.split()))
++    return TextStats(sum(1 for _ in _logical_lines(text)), len(text.replace("\x1c", "").split()))
+ 
+ 
+ def count_text(text: str, *, strip_bom: bool = True) -> TextStats:

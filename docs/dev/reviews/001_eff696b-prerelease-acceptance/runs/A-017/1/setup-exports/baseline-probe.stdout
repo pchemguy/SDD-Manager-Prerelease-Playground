@@ -1,0 +1,10 @@
+{
+  "status": "Passed",
+  "tests": 2,
+  "failures": 0,
+  "errors": 0,
+  "import_origin": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/__init__.py",
+  "diagnostic": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+  "agent_behavior_assessed": false,
+  "child_returncode": 0
+}

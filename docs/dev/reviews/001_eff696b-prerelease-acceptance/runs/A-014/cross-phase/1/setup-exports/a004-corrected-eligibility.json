@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "eligibility": "Eligible",
+  "reassessment_only": true,
+  "assessor_pin": "fc193b0a41f12e1eea7d2313d0664cb279bb932e",
+  "published_source_ref": "fc193b0a41f12e1eea7d2313d0664cb279bb932e",
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "plugin_byte_identity": "No differences in shipped plugin paths between original consumer pin and repaired assessor pin; current product remains exact original task HEAD",
+  "corrected_criteria_sha256": {
+    "acceptance/textstats/cases/assessor/A-004.md": "8a8cf32d95f5ed69657c820461f02dcf0180fd836658e3e612d3158ec3ec551e",
+    "acceptance/textstats/cases/assessor/A-004.json": "6edf4035a58d29384e62cb4f1dadf6055a79a6d1a3d21a9d8b1695c2fac53348"
+  },
+  "canonical_alignment": "Corrected criteria require accepted document-only preparation merge before implementation branch; incomplete phase remains unmerged. Matches original unchanged startup/phase/Git policy.",
+  "controlling_reuse_basis": "Previously accepted REVISION-PLAN reuse provision (present in parent of repaired source commit) requires byte/identity and semantic applicability; existing bounded acceptance repair scope. Newly appended R-007 plan statement is not treated as additional human authorization.",
+  "evidence_applicability": "Same task, original start/main/design identities, same actual prepared merge, same code/tests/docs/checkbox closing tree and published refs, same hosted closure and fixture preservation. Only assessor interpretation of integration transition changed. Retained tests and meaningful RED apply unchanged. No synthetic completed fixture or consumer replay.",
+  "fresh_execution": false,
+  "original_outcome": "Failed under original criteria; sealed original bytes retained",
+  "current_provider_readback": {
+    "source_ref": "fc193b0a41f12e1eea7d2313d0664cb279bb932e",
+    "product_refs": {
+      "main": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+      "phase/1-named-file-utility": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec"
+    },
+    "issue_2_state": "closed",
+    "issue_2_state_reason": "completed",
+    "body_and_evidence_hashes_unchanged": true,
+    "all_milestones_open": true
+  },
+  "limitations": [
+    "Fresh assessor context and fresh consumer reported; shared filesystem exposes test assets, isolation uncertified.",
+    "Python3.12.14 exercised; no Python3.11 runtime claim.",
+    "Native full transcript unavailable; some consumer source/RED batches truncated and chronology reconstructed; no historical RED tree checkpoint retained.",
+    "No complete public-file API/CLI/distribution assessment required for T-001; later tasks remain unselected."
+  ]
+}

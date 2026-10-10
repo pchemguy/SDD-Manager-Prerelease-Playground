@@ -1,0 +1,12 @@
+{
+  "name": "refs",
+  "args": [
+    "git",
+    "show-ref"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

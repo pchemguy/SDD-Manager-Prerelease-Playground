@@ -1,0 +1,10 @@
+{
+  "api": "Exact full sealed actual evidence equality",
+  "baseline": "7d003c1cf31c994340d8644e95990ef2253754ed",
+  "usable_milestone": "Passed counting/API/four named-file success plus usage behavior",
+  "pending_R008": "Original missing/decode traceback and decode identification failures retained; selected T-005 owns repair",
+  "tests": {
+    "unit": 21,
+    "integration": 12
+  }
+}

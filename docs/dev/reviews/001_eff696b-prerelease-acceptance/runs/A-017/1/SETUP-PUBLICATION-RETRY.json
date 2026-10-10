@@ -1,0 +1,8 @@
+{
+  "actor": "coordinator",
+  "original_error": "FileNotFoundError copying nested predecessor/corrected-bounded-reassessment.json without creating destination parent",
+  "partial_effect": "Exact earlier A017 setup copies only; no commit/product/facility change",
+  "correction": "Create each nested destination parent and recopy every exact manifest-verified artifact",
+  "original_ephemeral_command_record_hash": null,
+  "retention": "Native tool call/error retained; original command record bytes not separately persisted"
+}
