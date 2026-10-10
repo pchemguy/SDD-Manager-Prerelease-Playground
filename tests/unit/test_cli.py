@@ -48,6 +48,34 @@ class CliTests(unittest.TestCase):
             self.assertIn('--keep-bom', out.getvalue())
             self.assertEqual(err.getvalue(), '')
 
+    def test_expected_input_failures_have_status_and_diagnostic(self):
+        failures = [FileNotFoundError('missing input'), PermissionError('access denied'),
+                    OSError('controlled read failure'), UnicodeDecodeError('utf-8', b'\xff', 0, 1, 'invalid start byte')]
+        for failure in failures:
+            with self.subTest(failure=type(failure).__name__):
+                out, err = io.StringIO(), io.StringIO()
+                with patch('textstats.cli.count_file', side_effect=failure):
+                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main(['affected.txt'])
+                self.assertEqual(status, 1)
+                self.assertEqual(out.getvalue(), '')
+                self.assertIn('affected.txt', err.getvalue())
+                self.assertIn(str(failure), err.getvalue())
+                self.assertNotIn('Traceback', err.getvalue())
+
+    def test_usage_validates_before_acquisition(self):
+        for args in [[], ['missing', 'extra'], ['--unknown', 'missing']]:
+            with self.subTest(args=args):
+                out, err = io.StringIO(), io.StringIO()
+                with patch('textstats.cli.count_file') as counter:
+                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main(args)
+                counter.assert_not_called()
+                self.assertEqual((status, out.getvalue()), (2, ''))
+                self.assertIn('usage:', err.getvalue())
+                self.assertIn('error:', err.getvalue())
+                self.assertNotIn('Traceback', err.getvalue())
+
 
 class CheckRunnerTests(unittest.TestCase):
     def invoke_fixture(self, unit_source, integration_source):

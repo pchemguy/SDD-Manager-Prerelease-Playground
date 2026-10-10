@@ -54,3 +54,24 @@ class ModuleCliTests(unittest.TestCase):
             self.assertEqual(result.returncode, 2)
             self.assertEqual(result.stdout, '')
             self.assertIn('usage:', result.stderr)
+
+    def test_missing_and_invalid_utf8_are_clean_input_failures(self):
+        with tempfile.TemporaryDirectory() as directory:
+            missing = Path(directory) / 'absent.txt'
+            bad = Path(directory) / 'bad.txt'
+            bad.write_bytes(b'valid prefix\n\xff')
+            for path, cause in [(missing, 'No such file'), (bad, 'utf-8')]:
+                for options in [[], ['--keep-bom']]:
+                    with self.subTest(path=path, options=options):
+                        result = self.invoke(*options, str(path))
+                        self.assertEqual((result.returncode, result.stdout), (1, ''))
+                        self.assertIn(str(path), result.stderr)
+                        self.assertIn(cause, result.stderr)
+                        self.assertNotIn('Traceback', result.stderr)
+            self.assertEqual(bad.read_bytes(), b'valid prefix\n\xff')
+
+    def test_unknown_option_is_usage_even_with_missing_input(self):
+        result = self.invoke('--unknown', 'nonexistent.txt')
+        self.assertEqual((result.returncode, result.stdout), (2, ''))
+        self.assertIn('usage:', result.stderr)
+        self.assertNotIn('Traceback', result.stderr)

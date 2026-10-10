@@ -1,10 +1,11 @@
 """Named-file CLI parsing and exact text presentation.
 
-Milestone 1.1 delivers success, BOM policy, option termination and help.
-Complete input-failure diagnostics belong to the following milestone.
+Expected acquisition/decode failures produce an identifying stderr diagnostic
+and status 1; invocation errors produce status 2 before acquisition.
 """
 
 import argparse
+import sys
 from .io import count_file
 
 
@@ -15,11 +16,11 @@ def main(argv: list[str] | None = None) -> int:
         argv: Invocation arguments excluding the executable; None uses sys.argv.
 
     Returns:
-        Zero on success/help or argparse's usage status on invalid invocation.
+        Zero on success/help, one for input failures, or two for invalid usage.
 
     Help and usage validate without acquiring input. Before stdin delivery a
-    literal '-' remains a named filename. Expected file/decode exceptions still
-    propagate here until the failure-handling task is delivered.
+    literal '-' remains a named filename. Expected file/decode failures are
+    translated without a traceback; the public file API retains its exceptions.
     """
     parser = argparse.ArgumentParser(prog='python -m textstats', description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
@@ -28,6 +29,10 @@ def main(argv: list[str] | None = None) -> int:
         args = parser.parse_args(argv)
     except SystemExit as exit_request:
         return int(exit_request.code)
-    stats = count_file(args.input, strip_bom=not args.keep_bom)
+    try:
+        stats = count_file(args.input, strip_bom=not args.keep_bom)
+    except (OSError, UnicodeDecodeError) as failure:
+        print(f"textstats: {args.input!r}: {failure}", file=sys.stderr)
+        return 1
     print(f'lines={stats.lines} words={stats.words}')
     return 0
