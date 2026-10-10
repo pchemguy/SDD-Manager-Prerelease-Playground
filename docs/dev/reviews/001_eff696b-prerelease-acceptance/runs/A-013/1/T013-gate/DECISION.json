@@ -1,0 +1,43 @@
+{
+  "accepted": true,
+  "scope": "Exact seven-artifact T013 closing candidate; subsequent same-tree singleowning task commit/immediatepush/exactreadback/issue14closure permitted under startupplan; no A013 finalgrade",
+  "base_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+  "candidate_tree": "070a307d036152ee5875cb88353337c540f4b68f",
+  "artifacts": {
+    "AGENTS.md": {
+      "sha256": "8b84fa33dd0171e45c4019041148ddf5a997e5d6dda0ecfd682e9c49eac4b3e9",
+      "bytes": 9632
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "f3d5717d63571597a2da28cb2ddf720c8ab0b684684404cc0a5e3ce74c02612a",
+      "bytes": 23467
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "f801d9247b0665035b89f13e2c40b3a3e352e38e516ed826547692a315fc7787",
+      "bytes": 18024
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "dfdea40aba2005268a6e83d7e48515832e52a7d7584a65c3710715d43bf5f76a",
+      "bytes": 25327
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "f97209188f0adbc95f0ca4001e0634b78f6c7800b169cbb9839d1af3cb885261",
+      "bytes": 68245
+    },
+    "tests/unit/test_io.py": {
+      "sha256": "75850ccae3401fd8b1685f1e7b91971544a922d3bdffe05891483c1eb1c4e060",
+      "bytes": 3355
+    },
+    "textstats/io.py": {
+      "sha256": "3fc2b6845a7fe8ab10786eaadc7d047984f657701be507208261c7f39353cb99",
+      "bytes": 1958
+    }
+  },
+  "root_review": [
+    "Full io/tests/task/navigation/QC candidate review; strict borrowed completebytes/UTF8 exceptions and noclose with unchangedfile/publicAPI accepted",
+    "Initial T013 checkbox only plusactualownresults/tests/evidence; allotherparents/tasks unchanged, scopejustified",
+    "20currentQCidentities, historicalbodybytepreservation and34unit28integration241extracted independent applicability accepted",
+    "Original firstcandidate missingH1blankline retained, correctedthreeQCreports/crosshashes; production/test/toolbytes unchanged"
+  ],
+  "future_boundary": "T014\u201317 finalreports/nativeclosures/mainintegration need subsequentactualchecks/reviews; no release/version/nextphase."
+}

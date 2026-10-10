@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "scope": "Independent provisional T-013 exact closing candidate acceptance; not final A013 grade",
+  "base_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+  "candidate_tree": "070a307d036152ee5875cb88353337c540f4b68f",
+  "findings": [],
+  "checks": [
+    "Independent exact-tree exported source review: borrowed internal byte reader invokes complete binary read then strict UTF-8 decode with no locale conversion, terminator/BOM normalization, stream closure or new public export. Read/decode failures propagate with no partial returned text; owned-file acquisition/API unchanged.",
+    "Fresh corrected-export focused tests pass 15. Independently recorded predecessor candidate full runner passes 34 unit/28 integration and 241 extracted module cases; separate extracted checker passes 241. Corrected tree differs from prior candidate only in three QC reports, with exact production/tests/tool bytes identical, making runtime applicability explicit.",
+    "All current QC source and cross-QC hashes match actual corrected export. Every prior report body is preserved byte-exact inside historical section; existing TASKS completion history body unchanged. Requirements/design/strategy/layout/task outcomes/dependencies unchanged.",
+    "Only initial T013 checkbox changes; all other task/parent states unchanged. Exactly seven scoped files compose source/tests/docstrings/task result/evidence/status and authorized resume/QC navigation; T014\u201317 remain pending, retired JSON tasks not selected.",
+    "Original consumer RED: three borrowed-reader tests fail because callable reader absent, then focused/full GREEN recorded. Original missing-reference cat and invalid grep-pattern discovery failures retained as nonruntime failures. Root format intervention is explicit; first candidate d8dc and corrected candidate070a retained separately."
+  ],
+  "evidence": [
+    "corrected-candidate.tar",
+    "corrected-files.json",
+    "corrected-invariants.json",
+    "corrected-focused-command.json",
+    "runtime-commands.json",
+    "consumer-first-failures.json"
+  ],
+  "limits": [
+    "First independent full-run tool display was truncated; explicitly recorded rerun retains complete channels and passes. Both runs used own exports only.",
+    "Commit, immediate publication/exact readback and hosted issue14 closure not yet performed; those remain subsequent observed gates.",
+    "Final CLI stdin delivery, documentation exits, final reports/native reviews/full-phase integration still pending."
+  ]
+}

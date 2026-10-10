@@ -1,0 +1,71 @@
+[
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--name-status"
+    ],
+    "returncode": 0,
+    "stdout": "M\tAGENTS.md\nM\tdocs/dev/PLAN-REVIEW-REPORT.md\nM\tdocs/dev/SPEC-REVIEW-REPORT.md\nM\tdocs/dev/TASKS-REVIEW-REPORT.md\nM\tdocs/dev/TASKS.md\nM\ttests/unit/test_io.py\nM\ttextstats/io.py\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--stat"
+    ],
+    "returncode": 0,
+    "stdout": " AGENTS.md                       | 15 +++++++++++++\n docs/dev/PLAN-REVIEW-REPORT.md  | 23 +++++++++++++++++++-\n docs/dev/SPEC-REVIEW-REPORT.md  | 20 ++++++++++++++++-\n docs/dev/TASKS-REVIEW-REPORT.md | 27 ++++++++++++++++++++++-\n docs/dev/TASKS.md               | 48 +++++++++++++++++++++++++++++++++--------\n tests/unit/test_io.py           | 36 +++++++++++++++++++++++++++++++\n textstats/io.py                 | 16 ++++++++++++--\n 7 files changed, 171 insertions(+), 14 deletions(-)\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "status",
+      "--porcelain=v2",
+      "--untracked-files=all"
+    ],
+    "returncode": 0,
+    "stdout": "1 M. N... 100644 100644 100644 3b7ef08e5098afdad581f124a8107f3e9cc8f89f 598cf6fd5765c5a4c619bfa3823f5d536efb2a4f AGENTS.md\n1 M. N... 100644 100644 100644 ed788d31f893ce8602ca024d93216186506150a3 51da2037ff45e72fd68a25ad4a208bb0227cfd0c docs/dev/PLAN-REVIEW-REPORT.md\n1 M. N... 100644 100644 100644 2d7cebf57437631b001c3ed28e81cbb56f06cb78 90e898b2e376e8924a8415c97059dcad5d5c2ae8 docs/dev/SPEC-REVIEW-REPORT.md\n1 M. N... 100644 100644 100644 206b8279c9d21b861680a5110e064ffb7c00bad9 0c2fe2f44df98fe5d272d1c6603a34c18c9ae1fe docs/dev/TASKS-REVIEW-REPORT.md\n1 M. N... 100644 100644 100644 4a49c2591fde8564f750c2f42dc1eff866cb5ed3 00b20a9ca926f2e2751d8ba51672ba84864db7c3 docs/dev/TASKS.md\n1 M. N... 100644 100644 100644 b27a4934bb0a234d620c5d545964409079d9c434 3efe43917075fb94130baefc16b8591b7304417e tests/unit/test_io.py\n1 M. N... 100644 100644 100644 c1494da9eef51eb13bc2695fc31f2d1fdf1aeeb3 c26e6ae6b41e741c5ca28753569682604623eb8c textstats/io.py\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--cached",
+      "--",
+      "textstats/io.py",
+      "tests/unit/test_io.py"
+    ],
+    "returncode": 0,
+    "stdout": "diff --git a/tests/unit/test_io.py b/tests/unit/test_io.py\nindex b27a493..3efe439 100644\n--- a/tests/unit/test_io.py\n+++ b/tests/unit/test_io.py\n@@ -5,6 +5,42 @@ import unittest\n from unittest.mock import patch\n \n from textstats import TextStats, count_file\n+from textstats import io as acquisition\n+\n+\n+class BorrowedAcquisitionTests(unittest.TestCase):\n+    def reader(self):\n+        reader = getattr(acquisition, '_read_stream_text', None)\n+        self.assertTrue(callable(reader), 'borrowed binary UTF-8 reader is required')\n+        return reader\n+\n+    def test_complete_bytes_preserve_unicode_terminators_and_boms(self):\n+        reader = self.reader()\n+        for text in ['', '\u03b1\\r\\n\u732b\\r\u03b2 \u03b3\\n', '\\ufeff', '\\ufeff\\ufeffa\\n\\ufeff']:\n+            with self.subTest(text=text):\n+                stream = io.BytesIO(text.encode('utf-8'))\n+                self.assertEqual(reader(stream), text)\n+                self.assertEqual(stream.read(), b'')\n+                self.assertFalse(stream.closed)\n+\n+    def test_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership(self):\n+        reader = self.reader()\n+        stream = io.BytesIO(b'valid\\r\\n\\xff')\n+        with self.assertRaises(UnicodeDecodeError):\n+            reader(stream)\n+        self.assertFalse(stream.closed)\n+\n+    def test_read_failure_propagates_without_closing_borrowed_stream(self):\n+        reader = self.reader()\n+        failure = OSError('controlled borrowed read failure')\n+        class BrokenReader(io.BytesIO):\n+            def read(self, *args):\n+                raise failure\n+        stream = BrokenReader()\n+        with self.assertRaises(OSError) as raised:\n+            reader(stream)\n+        self.assertIs(raised.exception, failure)\n+        self.assertFalse(stream.closed)\n \n \n class FileAcquisitionTests(unittest.TestCase):\ndiff --git a/textstats/io.py b/textstats/io.py\nindex c1494da..c26e6ae 100644\n--- a/textstats/io.py\n+++ b/textstats/io.py\n@@ -1,10 +1,12 @@\n-\"\"\"Complete strict UTF-8 named-file acquisition, preserving raw terminators.\n+\"\"\"Complete strict UTF-8 byte acquisition, preserving raw terminators.\n \n-This module owns only handles it opens. Acquisition and decoding finish before\n+This module owns only handles it opens; supplied binary streams stay open.\n+Acquisition and decoding finish before\n counting; filesystem and decode exceptions propagate without output or results.\n \"\"\"\n \n from os import PathLike\n+from typing import BinaryIO\n from .core import TextStats, count_text\n \n \n@@ -36,3 +38,13 @@ def _read_file_text(path: str | PathLike[str]) -> str:\n     \"\"\"\n     with open(path, \"rb\") as stream:\n         return stream.read().decode(\"utf-8\", errors=\"strict\")\n+\n+\n+def _read_stream_text(stream: BinaryIO) -> str:\n+    \"\"\"Read a borrowed binary stream through EOF and decode complete UTF-8.\n+\n+    No locale decoding, newline translation or BOM normalization occurs here.\n+    Read/decode exceptions propagate; no partial text returns. The caller owns\n+    the stream, which remains open on success and failure.\n+    \"\"\"\n+    return stream.read().decode(\"utf-8\", errors=\"strict\")\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "archive",
+      "--format=tar",
+      "d8dcba59fa28524a741d13bbd82f2b72008fd12d",
+      "-o",
+      "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/provisional-T013/candidate.tar"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

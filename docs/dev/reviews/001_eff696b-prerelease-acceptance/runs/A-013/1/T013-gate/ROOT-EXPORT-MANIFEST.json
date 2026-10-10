@@ -1,0 +1,70 @@
+{
+  "DECISION.json": {
+    "sha256": "8792bd1ba877ecd468b6abb67722278a83a517e10a5ebaa2b6613de923307232",
+    "bytes": 2077
+  },
+  "independent/ASSESSMENT.json": {
+    "sha256": "89d2c0fe8e589533990983e6f833df1fa4ba5ea1c448756d436eea09229c95e6",
+    "bytes": 2613
+  },
+  "independent/candidate.tar": {
+    "sha256": "7574829ac3737c3d0d5b310944e24501c477fc27d7ad3485db46810522e70131",
+    "bytes": 1331200
+  },
+  "independent/commands.json": {
+    "sha256": "51d4bdfc072a261511cb0ae65169b6ee615958e8531908946a5461ad39a53753",
+    "bytes": 6037
+  },
+  "independent/consumer-first-failures.json": {
+    "sha256": "c6de0f327ff436b4813f0222cb4c4c6845b5649c935c7e06de63f302f87a9b9d",
+    "bytes": 34246
+  },
+  "independent/corrected-candidate.tar": {
+    "sha256": "710cc5035023512ba0bb27a542887d229ed74a84b8e2947b9b73c7e36d5a07fc",
+    "bytes": 1331200
+  },
+  "independent/corrected-files.json": {
+    "sha256": "88322be97489d46a3b7022d7d4cfa8a05909aaccedba518bfd90c76033647e7d",
+    "bytes": 35696
+  },
+  "independent/corrected-focused-command.json": {
+    "sha256": "aa660730d48a4884f08367faa05c663292d73141b15e620786b981ff8f94833c",
+    "bytes": 2612
+  },
+  "independent/corrected-invariants.json": {
+    "sha256": "0bde642fbe88ae3c86062907700e673a3cb07f6217cf332732d6dcb5980fa694",
+    "bytes": 1331
+  },
+  "independent/runtime-commands.json": {
+    "sha256": "8c1aaf1926b5c9a6d92373042a1bf055f31d076002ccd4b6cf2949aef3292b2e",
+    "bytes": 10461
+  },
+  "product/AGENTS.md": {
+    "sha256": "8b84fa33dd0171e45c4019041148ddf5a997e5d6dda0ecfd682e9c49eac4b3e9",
+    "bytes": 9632
+  },
+  "product/docs/dev/PLAN-REVIEW-REPORT.md": {
+    "sha256": "f3d5717d63571597a2da28cb2ddf720c8ab0b684684404cc0a5e3ce74c02612a",
+    "bytes": 23467
+  },
+  "product/docs/dev/SPEC-REVIEW-REPORT.md": {
+    "sha256": "f801d9247b0665035b89f13e2c40b3a3e352e38e516ed826547692a315fc7787",
+    "bytes": 18024
+  },
+  "product/docs/dev/TASKS-REVIEW-REPORT.md": {
+    "sha256": "dfdea40aba2005268a6e83d7e48515832e52a7d7584a65c3710715d43bf5f76a",
+    "bytes": 25327
+  },
+  "product/docs/dev/TASKS.md": {
+    "sha256": "f97209188f0adbc95f0ca4001e0634b78f6c7800b169cbb9839d1af3cb885261",
+    "bytes": 68245
+  },
+  "product/tests/unit/test_io.py": {
+    "sha256": "75850ccae3401fd8b1685f1e7b91971544a922d3bdffe05891483c1eb1c4e060",
+    "bytes": 3355
+  },
+  "product/textstats/io.py": {
+    "sha256": "3fc2b6845a7fe8ab10786eaadc7d047984f657701be507208261c7f39353cb99",
+    "bytes": 1958
+  }
+}
