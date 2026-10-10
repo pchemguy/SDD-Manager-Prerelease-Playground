@@ -118,3 +118,24 @@ before owning closure/publication; managed issue/milestone closures follow actua
 publication and verified native associations. T-017 remains the final Phase 2 and
 cross-phase review/report owner; completed-phase integration remains separately
 reviewed. Existing explicit resume and final STOP boundary continue to govern.
+
+## Current complete Phase 2 review checkpoint
+
+The [Phase 2 review](docs/dev/reports/phases/2/PHASE-REPORT.md) and
+[final implementation review](docs/dev/reports/IMPLEMENTATION-REPORT.md) record the
+complete amended text/count/BOM/range/stdin scope, separate cross-phase code review,
+fresh 37 unit/34 integration tests, 478 real isolated module cases and all twelve
+README/API fences. Resolved findings retain provenance; TODO is None. Python
+3.12.14/current Unix is verified and broader runtimes/platforms remain unverified.
+Canonical TASKS retains all 21 active owners checked and three retired historical
+JSON identities without executable checkboxes; current QC completion hashes match.
+This owning final-review candidate requires concrete delegated report acceptance
+before its closing commit/publication. Native review closure follows publication.
+
+Reports identify their pre-integration review checkpoint. Full completed-phase
+two-parent integration into established main has a separate concrete acceptance/
+merged-state verification gate; use actual Git refs, accepted merge body and remote
+readback for reached integration/publication identity rather than inferring it
+from historical navigation. Retain phase/2-json-and-stdin and preserve protected/
+foreign/manual material. Stop after published completed Phase 2; no further task,
+phase, version bump or release is authorized.

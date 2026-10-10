@@ -82,7 +82,7 @@ version bump or release is authorized.
 
 ## Phase 2 — Ranges and stdin
 
-- [ ] Phase 2 — Ranges and stdin
+- [x] Phase 2 — Ranges and stdin
     - Milestone 2.1 — Withdrawn historical JSON increment (no current delivery work)
         - T-010 — Retired JSON CLI delivery; historically completed, capability withdrawn.
             Original result and publication evidence below remain historical. No replacement task, current JSON acceptance or new completion is claimed.
@@ -111,8 +111,8 @@ version bump or release is authorized.
             Depends on: T-013, T-014 and T-015.
             Evidence: code review plus source/format/BOM/locale/failure/ownership/nonempty discovery/extracted-source exits; repair all blockers and record final usability evidence, actual checks/counts and TODO dispositions.
             Report: `docs/dev/reports/phases/2/2.2.md`.
-    - [ ] Milestone 2.3 — Phase 2 and final review
-        - [ ] T-017 — Review, test and report phase 2 and final delivery
+    - [x] Milestone 2.3 — Phase 2 and final review
+        - [x] T-017 — Review, test and report phase 2 and final delivery
             Scope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.
             Depends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.
             Evidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.
@@ -590,3 +590,61 @@ invented own SHA in the report. Immediately publish/exactly read back before
 separately reconciling issue #17, verifying every milestone #5 issue association
 and closing/readback of that native milestone. T-017 and Phase 2 remain pending
 until their distinct final exits/report review and completed-phase integration.
+
+## T-017 completion evidence
+
+Published/exactly read back T-016 `b49a26b36d68dc9bab8cf83633f5b7a2aae81eea`
+follows exact report acceptance `9338f067a575511b6d818a6898a458957f4670a8`.
+Issue #17 is closed/completed with evidence and native fields preserved.
+Full all-state milestone #5 associations were exactly #14–#17, all closed/
+completed with correct ownership/label and no extra objects/PRs/pagination;
+native milestone #5 closed/read back with all other nonmechanical fields preserved.
+Accepted existing phase-label metadata maintenance changed description only,
+retaining ID 12626943170/name/color/every other field with fresh before/after GETs.
+Fresh GETs verified original milestone #5/#7/#8/#9 identities/titles closed and
+zero open issues, satisfying this final task's delivery/feature-review dependencies.
+
+The [Phase 2 report](reports/phases/2/PHASE-REPORT.md) and
+[final implementation report](reports/IMPLEMENTATION-REPORT.md) record separate
+cross-phase implementation code review against complete current R/F obligations,
+in addition to tests. The integrated value/API/file/stdin/parser/normalization/
+selection/count/output path, package isolation/discovery and user instructions
+have no remaining located bug/critical/contract/evidence blocker. No new
+production repair was required. Relevant milestone/phase findings/TODO sections
+alone were read for required provenance aggregation; closed records remain exact
+historical bytes. Resolved M1.2-001/M2.2-001/M2.2-002 and EVID-A010-001/002 are
+deduplicated with source/repair references. TODO is None; no deferral/options/
+owner or extra phase is invented. Retired JSON is not re-executed.
+
+Fresh final serialized `037-a013-consumer-docs-retry.py` returned 0 and executed
+all twelve current README/API fences. Actual full runner and separate discovery
+passed 37 unit/34 integration tests, no skips/warnings; standalone rebuilt isolated
+distribution passed 478 real module cases plus import/API probes. All documented
+counts/status/streams pass, including real extracted named-file 3/5 and stdin-range
+2/3. Eleven archive entries match current allowlisted source bytes (SHA-256
+`4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c`).
+The 2,776 fresh recorded Python children all use -B and bytecode suppression;
+owned temporary examples are confirmed absent. Prior facility/argv/cleanup failures
+and unknown lost first-channel entries remain unchanged limitations in external
+observations, not reconstructed history. Python 3.12.14/current Unix is verified;
+other declared runtimes/platforms remain unverified.
+
+Bounded current task-persistence audit confirms T-013–T-016 each separately
+committed its exact result/current evidence/initial owning checkbox with one
+leading ID and published before further work. Protected and historical paths have
+empty object/path diff from accepted resume baseline. T-017 report pair/current
+evidence/initial owning checkbox and eligible 2.3/Phase2 parents are one closing
+candidate requiring concrete delegated acceptance before commit; no other
+executable owner closes. All 21 active owners are then checked; three retired
+identities remain without an executable checkbox. Current QC source hashes/counts
+and current report links/headings/whitespace are verified before closure.
+
+Fresh established remote main readback is
+`fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. After acceptance and owning commit,
+immediately push/exactly read back, separately close issue #18 and validate/close/
+read back native milestone #6. Completed-phase target integration remains a
+distinct concrete delegated gate: refresh target, inspect full prospective scope/
+persistence, verify two-parent merged state, publish/exactly read back main and
+retain the phase branch. Reports describe this pre-integration checkpoint; actual
+final merge parents/checks/publication are in its body and external final seal.
+Stop after published completed Phase 2, with no new phase, version or release.
