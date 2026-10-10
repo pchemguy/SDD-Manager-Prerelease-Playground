@@ -4,10 +4,10 @@
   "phase": "P2",
   "case_id": "A-005",
   "attempt": 1,
-  "role": "assessor",
-  "last_completed_action": "A-005 independently captured API/baseline; original deterministic baseline Failed for future milestone failure-handling requirements; full independent judgment pending",
+  "role": "coordinator",
+  "last_completed_action": "A-005 original independently Failed due premature full-phase baseline errors; accepted milestone lifecycle Passed; exact sealed result retained",
   "pending_operation": null,
-  "next_action": "Publish original literal failure and independent judgment; bounded source criterion repair/recheck before successful dependent gate",
+  "next_action": "Publish source scope repair and independent newly pinned assessor recheck before A-006",
   "checkpoint_refs": {
     "product_branch": "phase/1-named-file-utility",
     "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
@@ -91,6 +91,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/037-a005-api-provenance.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/DETERMINISTIC-ASSESSMENT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/037-a005-api-literals.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/037-a005-baseline-literals.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/037-a005-baseline-literals.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/037-a005-independent-check-evidence.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/037-a005-assessor-checks.py"
   ]
 }
