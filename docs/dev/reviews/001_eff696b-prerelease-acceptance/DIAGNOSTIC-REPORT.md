@@ -14,3 +14,9 @@ First projection independently Passed after coordinator-crash recovery; [first a
 ## A-003 second reconciliation — bounded outcome
 
 [Read-only consumer](runs/A-003/1/CONSUMER-SECOND-READONLY-OBSERVATIONS.json) and [independent assessment](runs/A-003/1/SECOND-READONLY-ASSESSMENT.json) establish identity reuse and unchanged eligible hierarchy; existing unrelated material is preserved. Full A-003 remains **Blocked**, separately from bounded Passed, until actual preservation-fixture execution is permitted and assessed. [Platform rejection](runs/A-003/1/PLATFORM-FIXTURE-REJECTION.json) is an environment/authorization barrier, not a plugin or consumer defect. No implementation began.
+
+## A-003 full outcome
+
+[Full independent assessment](runs/A-003/1/ASSESSMENT.json) is **Passed** after the explicitly authorized [preservation setup](runs/A-003/1/SECOND-PRESERVATION-FIXTURE.json) and [fresh consumer reconciliation](runs/A-003/1/CONSUMER-PRESERVATION-OBSERVATIONS.json). Original nine issues/three milestones/phase label reused; exact managed-region contents and fixture unmanaged text, label, comment and milestone paragraph preserved. Product/source/QC/index/published refs remain unchanged. The earlier bounded Passed/full Blocked outcome remains historical, with platform approval intervention visible. No material instruction/consumer defect is identified.
+
+Five required variants now independently Passed: A-001.core, A-002.core, A-003.core, A-025.core and A-014.prerequisite-refusal. Remaining 27 required variants are pending; A-014 full case is not complete. Optional/supplemental and native/installed/platform gaps remain separate. R-005 full readiness stays open.
