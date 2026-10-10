@@ -430,6 +430,7 @@ is converted to text. Core/I/O/API/entry/builder interfaces are unchanged.
 
 T-013–T-017, milestones 2.2/2.3 and whole Phase 2 remain unchecked and paused.
 Their retained text/BOM/range stdin composition stays required. Managed hosted
-briefs and retirement metadata require reconciliation after verified publication;
-original historical completion reasons stay preserved. This is steering evidence,
+briefs and retirement metadata were reconciled after exact verified implementation
+publication, with nineteen accepted operations/readbacks; original historical
+completion reasons and five pending open tasks remain preserved. This is steering evidence,
 not a new task result or initial checkbox closure.

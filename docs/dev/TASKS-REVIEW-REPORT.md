@@ -2,23 +2,23 @@
 
 ## Current gate
 
-State: **Ready for scoped JSON-removal preparation conformance**, Revision 4; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation conclusion remains pending.
+State: **Verified scoped JSON-removal conformance**, Revision 4; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
 
-TASKS alone owns 24 stable task identities: 21 active checklist tasks, 16 checked, five unchecked T-013–T-017; retired historical T-010–T-012 have no current checkbox or new completion. Delivery counts 1.1=3,1.2=3,2.2=3,2.4=2,2.5=2; dedicated reviews excluded; small range groups remain cohesive. Retained affected completion acceptance passes current runtime/docs/extraction checks; implementation conclusion remains pending.
+TASKS alone owns 24 stable task identities: 21 active checklist tasks, 16 checked, five unchecked T-013–T-017; retired historical T-010–T-012 have no current checkbox or new completion. Delivery counts 1.1=3,1.2=3,2.2=3,2.4=2,2.5=2; dedicated reviews excluded; small range groups remain cohesive. Retained affected completion acceptance passes current runtime/docs/extraction checks; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
 
 | Current reviewed/governing source | SHA-256 |
 | --- | --- |
 | `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
-| `SPEC-REVIEW-REPORT.md` | `212f31e181d24a19a9cdfa9923153cd2c7e5d0a7771dcc3dbcbf171ced75f0c4` |
+| `SPEC-REVIEW-REPORT.md` | `a9c482bfea63d5aefa9a03bcac46b02a99237bf497bf5b1ba0ae027c29786ef9` |
 | `PLAN.md` | `4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d` |
-| `PLAN-REVIEW-REPORT.md` | `5228e3c190a77513b6247b4cce920243c3b2f8933262fdd0d2fdc1f2d13ccfea` |
+| `PLAN-REVIEW-REPORT.md` | `8f706ceee2341252986864685d3faedf56446523dd0d3790f481174d95f69179` |
 | `PROJECT.md` | `27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de` |
 | `ARCHITECTURE.md` | `91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5` |
 | `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
 | `layout.md` | `144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502` |
-| `TASKS.md` | `4f45d70f9c0b59a734dd2a11cc77100e0c084a8d7af3d3f43fb0c0650c398e08` |
+| `TASKS.md` | `61d5a40036b5b4ecc9f078a81a19c4e00bb661abcc08d9df5344a69ef70afaca` |
 
-Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped preparation issue. The material JSON reduction invalidated older source identities; this gate and the latest revision apply to the corrected candidate. Ready does not conclude runtime verification, delegated acceptance, or full Phase 2 completion. Historical records and original findings below remain preserved.
+Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped issue. Actual 31 unit / 28 integration tests, 241 isolated extracted cases and ten runnable document fences verify retained completion claims. Hosted retirement and affected briefs are reconciled with preserved history and pending work. The current source identities below govern this accepted implementation checkpoint; final report/integration acceptance remains pending. Full Phase 2 remains incomplete. Historical records and original findings below remain preserved.
 
 ## Historical gate before JSON-removal correction
 

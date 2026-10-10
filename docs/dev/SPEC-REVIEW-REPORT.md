@@ -2,7 +2,7 @@
 
 ## Current gate
 
-State: **Ready for scoped JSON-removal preparation conformance**, Revision 5; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation conclusion remains pending.
+State: **Verified scoped JSON-removal conformance**, Revision 5; preparation accepted at coordinator `3b7e7abef970ca6132aa4fe34f075d550f0ab0ba`; implementation accepted at coordinator `0cea6338b3ca4e33374c05437e577a2664922522`, published/exactly read back as `1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f`; nineteen hosted operations/readbacks verified; final integration checkpoint review pending.
 
 R-001–R-008, R-011–R-013 and F-001–F-004 retain their complete text/count/BOM/range/error/resource/API/extraction obligations; R-009 is withdrawn and R-010 remains pending. No focused children.
 
@@ -13,7 +13,7 @@ R-001–R-008, R-011–R-013 and F-001–F-004 retain their complete text/count/
 | `DECOMPOSITION.md` | `cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430` |
 | `SPEC.md` | `475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7` |
 
-Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped preparation issue. The material JSON reduction invalidated older source identities; this gate and the latest revision apply to the corrected candidate. Ready does not conclude runtime verification, delegated acceptance, or full Phase 2 completion. Historical records and original findings below remain preserved.
+Owner review and focused local-link/hierarchy/diff checks found no unresolved scoped issue. Actual 31 unit / 28 integration tests, 241 isolated extracted cases and ten runnable document fences verify retained completion claims. Hosted retirement and affected briefs are reconciled with preserved history and pending work. The current source identities below govern this accepted implementation checkpoint; final report/integration acceptance remains pending. Full Phase 2 remains incomplete. Historical records and original findings below remain preserved.
 
 ## Historical gate before JSON-removal correction
 
