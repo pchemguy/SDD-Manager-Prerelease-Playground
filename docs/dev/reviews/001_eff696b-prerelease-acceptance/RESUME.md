@@ -113,3 +113,10 @@ Source R-008 repair `355e3d3` published/verified with113 support tests Passed. [
 ## Parallel A-026 verification-only setup
 
 Three standalone dedicated trial clones fork actual assessed milestone7d003c1 with unchanged pinned plugin. Owned trial branches published/verified. Independent public baseline Passed2tests0failures0errors before disclosed core-only fixture injection; fixturecommit `8604602` published/verified and independently executed from a separate archived workspace:2tests2assertionfailures0errors, retained raw proof. This is coordinator setup, not an unmodified product defect. Ordinary verification-only inputs are separately bound for preservation, empty selection and failing baseline; no repair/closure/hosted effect authorized. Positive A-006 cursor/product remains untouched; contexts independent, filesystem isolation uncertified. Publish setup before dispatch.
+
+
+## A-026 independently Passed; A-006 integration sealed
+
+All three A-026 variants independently Passed: preservation21 unit/12 integration; actual zero-selection exit5 rejected; actual disclosed fixture2tests/2assertion failures retained without repair. Exact169tracked bytes/modes,index,refs,status and task state preserved per variant; independent remote readbacks unchanged. Fixture signature side effect and extra read-only verification retained. Native full transcript, continuous mutation/hosted audit and shared-filesystem isolation remain uncertified. Original-pin required totals8Passed/2Failed/22unresolved; A004/A005 corrected assessor outcomes separately attributed.
+
+A-006 consumer sealed main two-parent merge `e7cae5b2216ff7dd311b6f7296d829d1927a6a8a`, exact remote verified; phase tip `5b17e4650c64c7c735991931b591bdabb8069215` retained. Consumer23unit/18integration/36extracted cases and runnable guide examples Passed. All Phase1 issues/milestones closed; Phase2 untouched. Own example-file reappearance mechanism unestablished and retained. Independent full A-006 assessment pending; no case Passed claim yet.

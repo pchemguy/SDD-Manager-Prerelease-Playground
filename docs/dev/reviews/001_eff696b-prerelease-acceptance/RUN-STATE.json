@@ -4,17 +4,21 @@
   "phase": "P2",
   "case_id": "A-006",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Corrected assessor-pin A-005 Passed published/readback atfa73830; product checkpoint unchanged; fresh phase1 completion input rendered",
+  "role": "assessor",
+  "last_completed_action": "A-006 consumer sealed; all Phase1 tasks completed and two-parent main merge pushed/verified; A-026 three independent variants Passed",
   "pending_operation": null,
-  "next_action": "Fresh Phase1 completion/integration consumer, then independent full-phase assessment before A-007",
+  "next_action": "Independent full A-006 assessment; no Phase2 work before assessed published predecessor",
   "checkpoint_refs": {
-    "product_branch": "phase/1-named-file-utility",
-    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "product_branch": "main",
+    "product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
     "integration_branch": "main",
-    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
-    "remote": "origin"
+    "remote": "origin",
+    "merge_parents": [
+      "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+      "5b17e4650c64c7c735991931b591bdabb8069215"
+    ]
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/INPUTS.json",
@@ -138,6 +142,17 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/CONSUMER-OBSERVATIONS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/CONSUMER-OBSERVATIONS.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/CONSUMER-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/037-a026-preservation-independent-check.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/DETERMINISTIC-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/037-a026-preservation-final-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/037-a026-empty-selection-final-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/DETERMINISTIC-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/037-a026-empty-selection-independent-check.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/037-a026-failing-baseline-independent-check.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/DETERMINISTIC-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/037-a026-failing-baseline-final-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/CONSUMER-OBSERVATIONS.json"
   ]
 }

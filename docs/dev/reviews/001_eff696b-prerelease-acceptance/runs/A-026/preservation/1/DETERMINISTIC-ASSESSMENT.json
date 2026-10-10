@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Verification only preserves source/task/index state and accurately records actual commands, collection counts (including zero) and scope limits.",
+    "Exact original task ownership, source bytes, staged/unstaged intent and HEAD remain preserved; report missing review/TODO evidence separately without creating review tasks or closing objects."
+  ],
+  "variant_selection_required": false,
+  "selected_variant": "preservation"
+}

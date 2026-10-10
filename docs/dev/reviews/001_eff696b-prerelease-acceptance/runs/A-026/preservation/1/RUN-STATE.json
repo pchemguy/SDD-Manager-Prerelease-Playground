@@ -6,9 +6,9 @@
   "variant": "preservation",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Variant independently Passed; originalconsumer/provenance and exact preservation retained",
+  "last_completed_action": "Variant independently Passed; exact consumer seal, final snapshot and independent command evidence retained",
   "pending_operation": null,
-  "next_action": "Publish independently assessed result; preserve trial refs/fixtures",
+  "next_action": "Publish independent result; preserve trial refs and fixtures",
   "checkpoint_refs": {
     "product_branch": "trial/037-a026-preservation",
     "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
@@ -23,6 +23,9 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/START.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/HANDOFF.md",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/CONSUMER-OBSERVATIONS.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/RUN-STATE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/037-a026-preservation-independent-check.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/037-a026-preservation-final-snapshot.json"
   ]
 }

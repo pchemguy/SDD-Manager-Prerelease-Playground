@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/unit",
+    "-p",
+    "test_missing_037_*.py"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a026-empty-selection",
+  "returncode": 5,
+  "stdout": "",
+  "stderr": "\n----------------------------------------------------------------------\nRan 0 tests in 0.000s\n\nNO TESTS RAN\n"
+}
