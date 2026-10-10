@@ -4,14 +4,10 @@
   "phase": "P4",
   "case_id": "A-024",
   "attempt": 1,
-  "role": "consumer",
-  "last_completed_action": "Exact trigger published664c7dd; only facility CONTROL restored denial to normal",
-  "pending_operation": {
-    "kind": "api",
-    "status": "interrupted",
-    "description": "Controlled summary publication to campaign037_phase1_tracking remains pending"
-  },
-  "next_action": "Separate fresh continuation performs same scoped operation then independent assessment",
+  "role": "coordinator",
+  "last_completed_action": "Independent controlled variant Passed; exact original/derived seals, before-trigger-reached proof and single ledger effect retained",
+  "pending_operation": null,
+  "next_action": "Publish assessment; preserve facility/refs",
   "checkpoint_refs": {
     "product_branch": "trial/037-a024-denial",
     "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
@@ -35,7 +31,14 @@
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/CONSUMER-OBSERVATIONS.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-trigger-provenance.json",
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/RESTORATION.json",
-    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/CONTINUATION-HANDOFF.md"
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/CONTINUATION-HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/CONTINUATION-OBSERVATIONS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-assessment-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-reached-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-continuation-payload.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-continuation-publication-observations.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/037-a024-denial-deterministic-checks.json"
   ],
   "variant": "denial"
 }
