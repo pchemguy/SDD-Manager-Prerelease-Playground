@@ -2,21 +2,21 @@
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
   "phase": "P3",
-  "case_id": "A-013",
+  "case_id": "A-027",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Completed and independently assessed T013\u2013T017; phase c05b659 published, local main merge549a assessed, publication blocked.",
+  "last_completed_action": "Final independent reporting/reconciliation Passed and published92171db; checked prospective source/evidence preparation published47b5143; source CP023/024/025-preparation published785b4da.",
   "pending_operation": {
     "kind": "task",
     "status": "blocked",
-    "description": "Automatic review rejected default main publication twice before execution; no further retry without explicit recognized exact-main authorization.",
+    "description": "Default product main publication and A014 named new live refs rejected before execution; explicit recognized authorization required before remaining dependent integration.",
     "identity": {
       "task_id": "T-017",
       "branch": "phase/2-json-and-stdin",
       "repository": "pchemguy/SDD-Manager-Prerelease-Playground"
     }
   },
-  "next_action": "Publish final independent assessment and reconcile reached reports; complete unaffected source review checkpoints, preserve blocked default-main boundary.",
+  "next_action": "Obtain explicit recognized authorization for product549a to main and named A014 trial destinations; preserve blocked state until then, refresh exact target/source identities before future integration.",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
     "product_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
@@ -24,7 +24,7 @@
     "integration_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "remote": "origin",
-    "evidence_commit": "be27c345281f9d367c3327284b39c6a18eb14fd2"
+    "evidence_commit": "47b514352f1a4cc42a350e8129e1766e466b6fd5"
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",

@@ -1,3 +1,9 @@
+## Final reached publication checkpoint
+
+All completed source/evidence review checkpoints are published: source `785b4da2dbe6bbee849a26efba3f0b204d8c02ed`, evidence predecessor `47b514352f1a4cc42a350e8129e1766e466b6fd5`. Requested e7c2554 andd70b962 are verified ancestors of the live evidence branch. Final independent reporting Passed within scope; full required readiness remains false (original27P/2F/3Blocked, corrected29P/3Blocked, optional2Notrun,14supplements separate). The following checkpoint publishes the independent preparation grade and this reached status.
+
+Local product main549a remains unpublished after two automatic approval rejections before Git launch; remote mainfbe8/phasec05 remain unchanged. A014 named live trial refs are separately rejected. Source/evidence prospective integration preparations passed scoped checks; no final main commit/publication was created. Exact prepared objects, original failures and limits are retained. Do not retry via another actor/transport/ref. Remaining dependent work resumes only after recognized explicit destination/integration authorization and fresh identity gates. See FINAL-PUBLICATION-STATUS.json and the published source INTEGRATION-PREPARATION.md. Earlier cursor entries below remain historical.
+
 ## Current reached checkpoint — default publication blocked
 
 T013–T017 are completed and published at phase `c05b65958e2a386cf2ae8782dca3e749ed9b60ff`. Accepted local two-parent main merge `549a25f4f1bc7702afa0b729fc0894918ec9d16d` remains unpublished; remote main is `fbe8bedf4c6cba1ab29d53d2da05e614603d76d1`. Automatic approval review rejected both main-push requests before Git executed. A013 independent final disposition is **Blocked**, not a consumer instruction defect. No retry or transport/actor workaround is authorized by this state. Final assessed records are under `runs/A-013/1/final-exports`; prior chronology below remains historical. Reporting and source review preparation may continue.
