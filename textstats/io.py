@@ -25,6 +25,14 @@ def count_file(path: str | PathLike[str], *, strip_bom: bool = True) -> TextStat
     Every opened handle closes on success or failure. Binary input prevents
     newline translation; no partial count is returned after read/decode failure.
     """
+    return count_text(_read_file_text(path), strip_bom=strip_bom)
+
+
+def _read_file_text(path: str | PathLike[str]) -> str:
+    """Acquire complete strict UTF-8 text before any normalization or selection.
+
+    Binary mode preserves terminators; the owned handle closes on every path.
+    File/read/decode exceptions propagate unchanged and no partial text returns.
+    """
     with open(path, "rb") as stream:
-        text = stream.read().decode("utf-8", errors="strict")
-    return count_text(text, strip_bom=strip_bom)
+        return stream.read().decode("utf-8", errors="strict")

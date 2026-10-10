@@ -150,3 +150,64 @@ class CheckRunnerTests(unittest.TestCase):
         result = self.invoke_fixture(self.BAD, self.GOOD)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('controlled product failure', result.stderr)
+
+
+class RangeCliTests(unittest.TestCase):
+    INVALID = ['0:1', '1:0', '3:2', '-1:2', '+1:2', '1:-2', '1:+2',
+               ' 1:2', '1:2 ', '1 :2', '1:\t2', '١:٢', '１:２', ':2', '1:', ':', '1:2:3', '1', '']
+
+    def invoke(self, args):
+        out, err = io.StringIO(), io.StringIO()
+        with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+            status = main(args)
+        return status, out.getvalue(), err.getvalue()
+
+    def test_full_invalid_matrix_precedes_file_acquisition(self):
+        invalid = [[ '--lines', value, 'missing'] for value in self.INVALID]
+        invalid += [['--lines='+value, 'missing'] for value in self.INVALID]
+        invalid += [['missing', '--lines'], ['missing', '--lines='],
+                    ['--lines', '--json', 'missing'],
+                    ['--lines', '1:2', '--lines', '1:2', 'missing'],
+                    ['--lines=1:2', '--lines=1:2', 'missing'],
+                    ['--lines', '1:2', '--lines=1:2', 'missing']]
+        for args in invalid:
+            with self.subTest(args=args), patch('textstats.io.open', create=True) as acquire:
+                status, out, err = self.invoke(args)
+                self.assertEqual((status, out), (2, ''))
+                self.assertIn('usage:', err)
+                self.assertNotIn('Traceback', err)
+                acquire.assert_not_called()
+
+    def test_real_acquisition_normalizes_once_and_closes(self):
+        for options in [[], ['--keep-bom'], ['--json'], ['--json', '--keep-bom']]:
+            stream = io.BytesIO('\ufeffa\n\ufeff'.encode())
+            with patch('textstats.io.open', return_value=stream, create=True) as acquire:
+                status, out, err = self.invoke(['--lines=2:2', 'named', *options])
+            self.assertEqual((status, err), (0, ''))
+            if '--json' in options:
+                self.assertEqual(__import__('json').loads(out), {'lines':1,'words':1})
+            else:
+                self.assertEqual(out, 'lines=1 words=1\n')
+            acquire.assert_called_once_with('named', 'rb')
+            self.assertTrue(stream.closed)
+
+    def test_full_decode_after_end_and_read_failure_close(self):
+        class BrokenReader(io.BytesIO):
+            def read(self, *args):
+                raise OSError('controlled complete read failure')
+        for stream, cause in [(io.BytesIO(b'a\n\xff'), 'utf-8'), (BrokenReader(), 'controlled complete read failure')]:
+            with patch('textstats.io.open', return_value=stream, create=True):
+                status, out, err = self.invoke(['--lines', '1:1', '--json', 'named'])
+            self.assertEqual((status, out), (1, ''))
+            self.assertIn('named', err)
+            self.assertIn(cause, err)
+            self.assertNotIn('Traceback', err)
+            self.assertTrue(stream.closed)
+
+    def test_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard(self):
+        huge = '9' * 5001
+        for value, expected in [('1:'+huge, (2, 2)), (huge+':'+huge, (0,0)),
+                                ('0'*5001+'1:'+'0'*5001+'1', (1,1))]:
+            with patch('textstats.io.open', return_value=io.BytesIO(b'a\nb'), create=True):
+                status, out, err = self.invoke(['named', '--lines='+value])
+            self.assertEqual((status,out,err),(0,f'lines={expected[0]} words={expected[1]}\n',''))

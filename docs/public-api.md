@@ -43,7 +43,7 @@ With the default `strip_bom=True`, remove exactly one leading U+FEFF from the co
 
 ## Module command
 
-Use `python -m textstats [--keep-bom] [--json] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. Until stdin delivery, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
+Use `python -m textstats [--keep-bom] [--json] [--lines START:END] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. Until stdin delivery, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
 
 | Outcome | Status | stdout | stderr |
 | --- | --- | --- | --- |
@@ -53,7 +53,7 @@ Use `python -m textstats [--keep-bom] [--json] INPUT` from the source root. Exac
 | File open/read or strict decode failure | 1 | Empty | Identifies input and cause, no traceback |
 | Missing/extra input or unknown option | 2 | Empty | Useful usage/error, no traceback |
 
-The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. JSON composes with `--keep-bom`; text remains the default. Stdin and ranges are future work. Runnable examples and setup/check instructions are in the [README](../README.md).
+The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. JSON composes with `--keep-bom`; text remains the default. Named-file ranges select inclusive logical lines after complete strict decode and once-only BOM policy; public API remains whole-input. Stdin remains future work. Runnable examples and setup/check instructions are in the [README](../README.md).
 
 ## Module responsibilities
 
@@ -65,4 +65,4 @@ The command validates invocation before opening input and prints counts only aft
 | `textstats.cli` | Invocation validation, BOM policy, expected failure translation and text/JSON rendering. |
 | `textstats.__main__` | Minimal module-entry adapter returning the CLI process status. |
 
-Internal helpers are not additional public exports. Future range selection can reuse preserved logical segments without renormalizing an exposed interior BOM.
+Internal helpers are not additional public exports. Range selection reuses preserved logical segments without renormalizing an exposed interior BOM.

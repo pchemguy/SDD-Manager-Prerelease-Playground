@@ -1,6 +1,6 @@
 # TextStats
 
-Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and optional JSON output. Stdin and line ranges remain planned.
+Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. The silent API and named-file command support BOM policy, clean errors and optional JSON output. Named-file line ranges are delivered; stdin remains planned.
 
 ## Quick start
 
@@ -34,6 +34,23 @@ python -m textstats bom.txt --keep-bom --json
 ```
 
 These produce counts equivalent to `{"lines": 3, "words": 5}` and `{"lines": 1, "words": 1}`, respectively. Text remains the default.
+
+## Named-file range quick start
+
+Select inclusive one-based logical lines with one `--lines START:END` or
+`--lines=START:END`; combine it with JSON/BOM options before or after INPUT:
+
+```bash
+python -m textstats --lines 2:3 sample.txt
+python -m textstats sample.txt --json --lines=2:99
+```
+
+Both produce two lines and three words. Endpoints are positive ASCII decimals
+with START <= END; leading zeros are decimal and endpoint size is unbounded.
+Invalid/missing/repeated ranges are usage errors before file access. Complete
+strict UTF-8 decode and BOM policy occur before numbering; selection preserves
+CRLF/CR/LF segments and exposed interior BOMs, and beyond-EOF starts select empty
+content. The public API remains whole-input and literal `-` remains a file.
 
 ## Python API
 
