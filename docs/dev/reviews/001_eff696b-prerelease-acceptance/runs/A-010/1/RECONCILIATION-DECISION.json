@@ -1,0 +1,74 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "baseline": "bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa",
+  "artifacts": {
+    "docs/dev/SPEC.md": {
+      "sha256": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+      "blob": "fc4b62d4eff740d9ef8611f0bf9e30e3eb62581b"
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+      "blob": "e93d70e659bd25fb1fe5fffde90742949ffa0377"
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372",
+      "blob": "2d9e7caa632ba6f20dde5d67a4b58958258c50e9"
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "1e4b8505f11c76f366fc56c04a7af612667ca365f88f5c71e4dc0a04b794f267",
+      "blob": "6ccf8320fd2fc2f5ea04e6bce57818c8f95d823a"
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f",
+      "blob": "e540a24acaeefac901f3bdf04430dac156ad5831"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+      "sha256": "04d081f24c8c80b61910896381e2cc482915bd9349e9d016f275113cd73a9277",
+      "blob": "5df04de4cf157582c3f35408c413530408c5e7ba"
+    },
+    "AGENTS.md": {
+      "sha256": "ffaeb37b8b2f403844b4db50951176bfb2e9d3b3ea809554073af3119d287fe1",
+      "blob": "201b5377c1204366cf36b50b23e64e3ca02f9c31"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md": {
+      "sha256": "6f4c3c803d306e44438670cf607effc7fddd6878fe19bb354cd2b80d6cc14341",
+      "blob": "36cc60050778a11140214d4f094697451f08e2c1"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md": {
+      "sha256": "4399e14de65ce907e53f7f3427e02349f597cea39493e8fd334b2bb84eccc592",
+      "blob": "c024165dd359ea14b4ff8b709d18ff1ed5a07e91"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md": {
+      "sha256": "cbdd7319326f4a7505db74f90f4b9a129d8de71906f1fc812bcb4658bf8c93aa",
+      "blob": "9a1a7ff9500e19784675a915939a4dba0606c5cb"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md": {
+      "sha256": "da8e3a456cb8348ad37722da0ea73029068928646f287ff06025403d6cfe94e8",
+      "blob": "5bc5bb656c20a4b5a49161b878aa2930f2e34c01"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md": {
+      "sha256": "5620df436d5057958c89546b60a1483110ccf8f6d0ce77fb105bfaa2839b5133",
+      "blob": "0f6745c44039714502727beefc5f6561f323b443"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md": {
+      "sha256": "477d59388a842ba10c1679cc211cb1c47abdd279a99f9a4ac59f31c0389a787e",
+      "blob": "a7b4ba1c1be28a9a63a3d62d0a88221697de3afd"
+    }
+  },
+  "archive_moves": {
+    "docs/dev/FEATURE-SPEC.md": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md",
+    "docs/dev/FEATURE-SPEC-REVIEW-REPORT.md": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md",
+    "docs/dev/FEATURE-PLAN.md": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md",
+    "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md",
+    "docs/dev/FEATURE-TASKS.md": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md"
+  },
+  "review": "Concrete thirteen artifacts and six source-path removals inspected. Three archived source/QC pairs (six files), original bodies/history with authorized relative-link and historical headers retained. Main SPEC behavioral sections/HTML anchor unchanged; main PLAN/design/layout unchanged. Canonical24 unique entries with19 checked/5 pending and exact outcomes/scopes/dependencies/report prefixes/evidence; fullmainPhase2/2.2/2.3 andT013\u201317 remain unchecked. Current SPEC Revision4/PLAN Revision6/TASKS Revision3 fullconformance and actual governing identities coherent; DAG/count exclusions, source ownership/current-versus-historical QC/navigation/119links reviewed. Correction of six-pairs wording to three pairs preserves original candidate. Accept sole non-task reconciliation checkpoint then immediate push/exactreadback. Maintain existing managed hosted identities/generated source links as needed, preserving foreign content/comments/status/reasons. Explicit verified two-parent integration only into pausedphase2 follows; verify mergedstate and publish/readback before stopping. No stdin/fullphase/default integration/release authorized here.",
+  "verification_sha256": "3fb2216139d209e31d016391056b7b19f500405e63f884d729ac3754df4883a1",
+  "retained_count_correction": {
+    "original_path": "/workspace/scratch/46b31bb4dff6/037-a010-reconciliation-TASKS-QC-before-count-correction.md",
+    "original_sha256": "58aa1b2479eb14b17c212d7583391ed4113e1a5efa4968cb1881dafc385c0161",
+    "resolution": "Three source/QC pairs, six files; no behavioral or task change"
+  }
+}
