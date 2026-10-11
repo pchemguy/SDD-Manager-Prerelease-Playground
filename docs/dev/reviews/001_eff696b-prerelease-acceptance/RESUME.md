@@ -1,3 +1,7 @@
+## Current authorized recovery cursor
+
+Product main549a andA14preparedlivephase7b9/main88a are published/readback after explicit user reply. Additive A013 independent eventual Passed is publishedb12955a; originalBlockedrejections remain unchanged. A014 freshconsumer T009–T010 is Running. ExactT009tree937568/report44143 has scopedindependent Passed androotconcreteacceptance, pending ownatomiccommit/push. Actualprospective trialmainintegration mustthenreceive its owncurrentchecks/identity gate beforepublication/T010. EarlierBlocked cursor entries below remain historical.
+
 ## Final reached publication checkpoint
 
 All completed source/evidence review checkpoints are published: source `785b4da2dbe6bbee849a26efba3f0b204d8c02ed`, evidence predecessor `47b514352f1a4cc42a350e8129e1766e466b6fd5`. Requested e7c2554 andd70b962 are verified ancestors of the live evidence branch. Final independent reporting Passed within scope; full required readiness remains false (original27P/2F/3Blocked, corrected29P/3Blocked, optional2Notrun,14supplements separate). The following checkpoint publishes the independent preparation grade and this reached status.

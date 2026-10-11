@@ -2,29 +2,29 @@
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
   "phase": "P3",
-  "case_id": "A-027",
+  "case_id": "A-014",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Final independent reporting/reconciliation Passed and published92171db; checked prospective source/evidence preparation published47b5143; source CP023/024/025-preparation published785b4da.",
+  "last_completed_action": "Product549amainpublished/independentreassessmentPassed inb12955a; preparedA14live7b9/88arefspublished; exactT009candidate937568 independentlyreviewed/rootaccepted",
   "pending_operation": {
     "kind": "task",
-    "status": "blocked",
-    "description": "Default product main publication and A014 named new live refs rejected before execution; explicit recognized authorization required before remaining dependent integration.",
+    "status": "in_progress",
+    "description": "Publish exactacceptedT009thenassess actualprospective trialmainintegration beforeT010",
     "identity": {
-      "task_id": "T-017",
-      "branch": "phase/2-json-and-stdin",
+      "task_id": "T-009",
+      "branch": "trial/037-a014-cross-phase",
       "repository": "pchemguy/SDD-Manager-Prerelease-Playground"
     }
   },
-  "next_action": "Obtain explicit recognized authorization for product549a to main and named A014 trial destinations; preserve blocked state until then, refresh exact target/source identities before future integration.",
+  "next_action": "Consumer atomicT009commit/push/readback, thenactualtwo-parenttrialmainmergecandidate/freshchecks/gate beforepublication andT010.",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
     "product_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
     "integration_branch": "main",
-    "integration_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "integration_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "remote": "origin",
-    "evidence_commit": "47b514352f1a4cc42a350e8129e1766e466b6fd5"
+    "evidence_commit": "b12955aa0a914a37f4cf030c15ebdb62293f759c"
   },
   "evidence_paths": [
     "docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",
