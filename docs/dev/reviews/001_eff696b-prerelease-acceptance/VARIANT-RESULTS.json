@@ -84,17 +84,17 @@
     "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json"
   },
   "A-013.core": {
-    "status": "Blocked",
+    "status": "Passed",
     "agent_behavior_assessed": true,
     "evidence_class": "consumer",
-    "reason": "Phase implementation/reports published; accepted main merge549a remains local after two automatic approval rejections before execution.",
-    "assessment_path": "runs/A-013/1/ASSESSMENT.json"
+    "reason": "Additive independent eventual Passed after explicit authorized exactmain549 publication; originalBlocked/rejections/restoration/assistance retained.",
+    "assessment_path": "runs/A-013/authorized-publication-reassessment/1/ASSESSMENT.json"
   },
   "A-014.cross-phase": {
-    "status": "Blocked",
+    "status": "Running",
     "agent_behavior_assessed": false,
     "evidence_class": "consumer",
-    "reason": "Reporting disposition only; not a successful product prerequisite",
+    "reason": "Exactauthorizedpreparedlivephase/mainrefs nowpublished; freshconsumer T009\u2192T010 and independent assessment running. OriginalBlockedrejections retained.",
     "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/cross-phase/1/LIVE-PUBLICATION-REJECTION.json"
   },
   "A-014.prerequisite-refusal": {

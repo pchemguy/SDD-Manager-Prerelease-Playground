@@ -1,0 +1,794 @@
+{
+  "ASSESSMENT.json": {
+    "sha256": "e5543123015aac7492a1e55e25cf4cd338a075e77d2ceb1b45f783617dc400db",
+    "bytes": 8491
+  },
+  "INDEPENDENT-OBSERVATIONS.json": {
+    "sha256": "9b0cd21f62f3446126f3c6b8ec902be154396b28b07b72a3764d5f390f0ad1a8",
+    "bytes": 74126
+  },
+  "LIFECYCLE-CONTINUITY.json": {
+    "sha256": "d35fbcb10363b47a2781373c785ac6558b5621c3bc0c208728f037b3ace6043e",
+    "bytes": 1791
+  },
+  "ORIGINAL-EVIDENCE-HASHES.json": {
+    "sha256": "d203b8246fd9a76f88ba57fc13026263ea46f01127fdd5fe4d2f2520fcbcc933",
+    "bytes": 720
+  },
+  "SCREENED-MANIFEST.json": {
+    "sha256": "d64caad5afabdbaac2e3e5899d2aa0c768fc59d02095d4663498d9480a37368d",
+    "bytes": 43161
+  },
+  "exact-549-readonly-export/.github/RELEASE-HANDOFF.md": {
+    "sha256": "384d7ef09f2477a3741cdf083c5d2fb454171ab1d9af7865896a0bdd6aaab498",
+    "bytes": 3437
+  },
+  "exact-549-readonly-export/.github/scripts/release.py": {
+    "sha256": "46f8cedbc1b92157076b56f4ae7032ddda28bcd4f98b04097d03a98ca01ccb13",
+    "bytes": 16388
+  },
+  "exact-549-readonly-export/.github/tests/test_release.py": {
+    "sha256": "d01a7a91d2965bf49087bd8fe1f5b18032a72a272ae23b8db547b48ef1bf4def",
+    "bytes": 12800
+  },
+  "exact-549-readonly-export/.github/workflows/release.yml": {
+    "sha256": "64b52d5613b5b680af06d8c4527f2b2e38c5334e7e45b36acdf1745de52dfa3c",
+    "bytes": 3098
+  },
+  "exact-549-readonly-export/.gitignore": {
+    "sha256": "18ed2d81b3a643c8be0b76f16f55407e3ea833041d67575b3cbc6f1f051a7880",
+    "bytes": 2481
+  },
+  "exact-549-readonly-export/AGENTS.md": {
+    "sha256": "37fb35f329f1bcd51c95f293f9d3668a8d55866dad224cc5c05c543c3e12719f",
+    "bytes": 13016
+  },
+  "exact-549-readonly-export/AI_DISCLOSURE.md": {
+    "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "bytes": 1192
+  },
+  "exact-549-readonly-export/README.md": {
+    "sha256": "1e0935b184c9dbccd9b5186a6619da45da081cba524f8271e1630b29443d6829",
+    "bytes": 9025
+  },
+  "exact-549-readonly-export/SDD-MANAGER.md": {
+    "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "bytes": 683
+  },
+  "exact-549-readonly-export/docs/dev/ARCHITECTURE.md": {
+    "sha256": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5",
+    "bytes": 6921
+  },
+  "exact-549-readonly-export/docs/dev/DECOMPOSITION.md": {
+    "sha256": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+    "bytes": 8550
+  },
+  "exact-549-readonly-export/docs/dev/PLAN-REVIEW-REPORT.md": {
+    "sha256": "f3d5717d63571597a2da28cb2ddf720c8ab0b684684404cc0a5e3ce74c02612a",
+    "bytes": 23467
+  },
+  "exact-549-readonly-export/docs/dev/PLAN.md": {
+    "sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+    "bytes": 16371
+  },
+  "exact-549-readonly-export/docs/dev/PROJECT.md": {
+    "sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+    "bytes": 5876
+  },
+  "exact-549-readonly-export/docs/dev/SPEC-REVIEW-REPORT.md": {
+    "sha256": "f801d9247b0665035b89f13e2c40b3a3e352e38e516ed826547692a315fc7787",
+    "bytes": 18024
+  },
+  "exact-549-readonly-export/docs/dev/SPEC.md": {
+    "sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+    "bytes": 15353
+  },
+  "exact-549-readonly-export/docs/dev/TASKS-REVIEW-REPORT.md": {
+    "sha256": "c794461b50f111677b25eb1c292d4a6734fa46a230c2f7790975fcf57dd58ecd",
+    "bytes": 25324
+  },
+  "exact-549-readonly-export/docs/dev/TASKS.md": {
+    "sha256": "c0f9718171d069e34de57b24c94a0d2daa7f001ceb8b2552fab5fa4566191616",
+    "bytes": 80648
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md": {
+    "sha256": "da8e3a456cb8348ad37722da0ea73029068928646f287ff06025403d6cfe94e8",
+    "bytes": 3572
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md": {
+    "sha256": "cbdd7319326f4a7505db74f90f4b9a129d8de71906f1fc812bcb4658bf8c93aa",
+    "bytes": 9200
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md": {
+    "sha256": "4399e14de65ce907e53f7f3427e02349f597cea39493e8fd334b2bb84eccc592",
+    "bytes": 3048
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md": {
+    "sha256": "6f4c3c803d306e44438670cf607effc7fddd6878fe19bb354cd2b80d6cc14341",
+    "bytes": 7433
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md": {
+    "sha256": "477d59388a842ba10c1679cc211cb1c47abdd279a99f9a4ac59f31c0389a787e",
+    "bytes": 5457
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md": {
+    "sha256": "5620df436d5057958c89546b60a1483110ccf8f6d0ce77fb105bfaa2839b5133",
+    "bytes": 27580
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md": {
+    "sha256": "91f47691cfd153f8f52e5f966e5c058bc809f6376ca59453f90062444d56e9b3",
+    "bytes": 6854
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+    "sha256": "04d081f24c8c80b61910896381e2cc482915bd9349e9d016f275113cd73a9277",
+    "bytes": 8377
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md": {
+    "sha256": "f4fb5d3c7466da67a730e6db2850e4694aaf65408e90b0173e6fae601369a4a5",
+    "bytes": 5858
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md": {
+    "sha256": "0f0b5bfdbf52e4ad2648901d242b63579b9b7c62b11b3c050d925e8416178f4e",
+    "bytes": 7824
+  },
+  "exact-549-readonly-export/docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md": {
+    "sha256": "4ceade7b8eb0cfeceb9986e16e4f16fa44d3b05dc7ff83a9456303a9cb944303",
+    "bytes": 8489
+  },
+  "exact-549-readonly-export/docs/dev/layout.md": {
+    "sha256": "144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502",
+    "bytes": 9263
+  },
+  "exact-549-readonly-export/docs/dev/reports/IMPLEMENTATION-REPORT.md": {
+    "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+    "bytes": 10235
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/1/1.1.md": {
+    "sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+    "bytes": 6689
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/1/1.2.md": {
+    "sha256": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53",
+    "bytes": 6611
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/1/PHASE-REPORT.md": {
+    "sha256": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03",
+    "bytes": 6875
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/2/2.1.md": {
+    "sha256": "413a6a64fbe4ccc48b84c961d87fc078b40139a9161a5a0c927cba7152106760",
+    "bytes": 5545
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/2/2.2.md": {
+    "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+    "bytes": 11107
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/2/PHASE-REPORT.md": {
+    "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+    "bytes": 10224
+  },
+  "exact-549-readonly-export/docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md": {
+    "sha256": "7712a978ce077a649a06fa89952ff218ba5b73099d43bc9cbced77632f7c0405",
+    "bytes": 8093
+  },
+  "exact-549-readonly-export/docs/public-api.md": {
+    "sha256": "b8f0a8ab2aedf6cfe35b8cd75118b520f91d99989fdb0c4857ec6288eec2ff76",
+    "bytes": 7652
+  },
+  "exact-549-readonly-export/docs/testing/publisher-037/SETUP.json": {
+    "sha256": "46201f3043609562f8723a6e239cbe2ecd2406829356832c9144a3bb4af77a00",
+    "bytes": 736
+  },
+  "exact-549-readonly-export/tests/__init__.py": {
+    "sha256": "986bc8697e637d909ca4bc3d2a3f97a027161b4f4ced0f57c77ae4152e62fbbe",
+    "bytes": 67
+  },
+  "exact-549-readonly-export/tests/integration/__init__.py": {
+    "sha256": "6d74eb5943bc4a44d8e67cf5ad5a899df9bc968c1d63a908dc66d865c188b3e8",
+    "bytes": 36
+  },
+  "exact-549-readonly-export/tests/integration/test_api.py": {
+    "sha256": "e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6",
+    "bytes": 4945
+  },
+  "exact-549-readonly-export/tests/integration/test_cli.py": {
+    "sha256": "5772231c79f945727357ac24ea9f89950533b2468a6f62fe3a1c5568e18d378b",
+    "bytes": 15810
+  },
+  "exact-549-readonly-export/tests/integration/test_distribution.py": {
+    "sha256": "e165b81e9a2fa0c3a608ee761099b67a45717284aa4134325e728cae3d22baef",
+    "bytes": 5313
+  },
+  "exact-549-readonly-export/tests/unit/__init__.py": {
+    "sha256": "9c7fd62fe7e489b7c5124c32df27746ef9419531e46f4263ea89f21f8a497978",
+    "bytes": 42
+  },
+  "exact-549-readonly-export/tests/unit/test_cli.py": {
+    "sha256": "e32050a6fd72ff766f537fa084140fc57854af621c6f504fd0455474bf821a10",
+    "bytes": 13741
+  },
+  "exact-549-readonly-export/tests/unit/test_core.py": {
+    "sha256": "d5c06ca4a550b7cbc1865d3dc9bac34fdb666c271c026ac62e4c3e45eebb9df0",
+    "bytes": 5635
+  },
+  "exact-549-readonly-export/tests/unit/test_io.py": {
+    "sha256": "75850ccae3401fd8b1685f1e7b91971544a922d3bdffe05891483c1eb1c4e060",
+    "bytes": 3355
+  },
+  "exact-549-readonly-export/textstats/__init__.py": {
+    "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+    "bytes": 200
+  },
+  "exact-549-readonly-export/textstats/__main__.py": {
+    "sha256": "e2e296c24d54ce9b76436f615db401c26729ca32ab560be602bac67260cf8e63",
+    "bytes": 164
+  },
+  "exact-549-readonly-export/textstats/cli.py": {
+    "sha256": "df1bac6a0b2158a9926b5a87aaff29d8cc8b2f299ee5ce4f22a4125a9fcd0c9b",
+    "bytes": 3831
+  },
+  "exact-549-readonly-export/textstats/core.py": {
+    "sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+    "bytes": 3579
+  },
+  "exact-549-readonly-export/textstats/io.py": {
+    "sha256": "3fc2b6845a7fe8ab10786eaadc7d047984f657701be507208261c7f39353cb99",
+    "bytes": 1958
+  },
+  "exact-549-readonly-export/textstats-run-resources/PLUGIN-SOURCE.json": {
+    "sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+    "bytes": 23639
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/.codex-plugin/plugin.json": {
+    "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "bytes": 1880
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/AGENTS.md": {
+    "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "bytes": 4610
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/AI_DISCLOSURE.md": {
+    "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "bytes": 1192
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/Greenfield Project Prompt Template.md": {
+    "sha256": "852c666018f223c49cc4732af5f1a1bf8db38061114721b9dc738ec702ec9617",
+    "bytes": 1599
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/LICENSE": {
+    "sha256": "230ef093b2d68d0f37130d47064b1aff673c41830a15513801e0cc089e742ed2",
+    "bytes": 1065
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/README.md": {
+    "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "bytes": 40495
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/SDD-MANAGER.md": {
+    "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "bytes": 683
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/assets/AI_DISCLOSURE.md": {
+    "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "bytes": 1192
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/assets/SDD-MANAGER.md": {
+    "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "bytes": 683
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/assets/icon.png": {
+    "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+    "bytes": 14257
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/assets/icon.svg": {
+    "sha256": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+    "bytes": 581
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/assets/logo.png": {
+    "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+    "bytes": 14257
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/assets/logo.svg": {
+    "sha256": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+    "bytes": 581
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/plugin.json": {
+    "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "bytes": 1880
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md": {
+    "sha256": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3",
+    "bytes": 3230
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/agents/openai.yaml": {
+    "sha256": "3afb66258ca9ee5f7e35b0986ac130e34a4a73c4d5c41b1c7de94e19133e4cea",
+    "bytes": 505
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/assets/icon.svg": {
+    "sha256": "5702cda32d79bc28857dedfe0f9811d382d8b2e4c46d1ac571d8114aabd279a4",
+    "bytes": 570
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md": {
+    "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "bytes": 8846
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md": {
+    "sha256": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448",
+    "bytes": 1597
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": {
+    "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "bytes": 14298
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/hosting-tokens.md": {
+    "sha256": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324",
+    "bytes": 2971
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": {
+    "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "bytes": 4823
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md": {
+    "sha256": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283",
+    "bytes": 2201
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md": {
+    "sha256": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+    "bytes": 8233
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md": {
+    "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "bytes": 4120
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md": {
+    "sha256": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+    "bytes": 8163
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-design/SKILL.md": {
+    "sha256": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774",
+    "bytes": 5255
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-design/agents/openai.yaml": {
+    "sha256": "102d11e8960f1f7af69bfcbacbe71defad289b9c368d11a610fb6b19e61dd3b6",
+    "bytes": 412
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-design/assets/icon.svg": {
+    "sha256": "98c55eb98b3e3702037698739b96fb550da2223bf733fb576650d0a4c5504864",
+    "bytes": 562
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-design/references/architecture.md": {
+    "sha256": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b",
+    "bytes": 3789
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md": {
+    "sha256": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+    "bytes": 3720
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-design/references/exploration.md": {
+    "sha256": "52a98f770a5e4745847dee060466231c8bc971d5c79c7f7dd4d745a6e675187a",
+    "bytes": 2997
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-docs/SKILL.md": {
+    "sha256": "ef125969d670b75c0760ad8a7751c41ca8940ebc05a8a3a517658c6405929a7b",
+    "bytes": 3608
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-docs/agents/openai.yaml": {
+    "sha256": "9715602c3bdcd14d41e6e99e24edb32389499e0ec96b0aad5cdf4b30b187de15",
+    "bytes": 471
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-docs/assets/icon.svg": {
+    "sha256": "69e272ee97e9957387f8ca8b51bec3d3d176c33e6bf6b20d2bff5b3536f507e2",
+    "bytes": 587
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md": {
+    "sha256": "40c179cf40c73ad36d76f722950eeaf33ab1c37993edd370f6fa16305d2a5465",
+    "bytes": 2857
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-docs/references/review-and-findings.md": {
+    "sha256": "61bda144ac45af632307b12bb3cf9652727b83c3b3ffc57558188d0d2a6837b1",
+    "bytes": 2719
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-docs/references/standalone-documentation.md": {
+    "sha256": "b2ced68b8f869efc47206261795e225b42455b513c7a2be4f091cd891c3ef951",
+    "bytes": 3329
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/SKILL.md": {
+    "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+    "bytes": 6230
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/agents/openai.yaml": {
+    "sha256": "65a79f791a2285753a0e6ca9eb83e203b181c0277ada5706add85f4c86c18783",
+    "bytes": 508
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/assets/icon.svg": {
+    "sha256": "ca997d09da83d706126f43dc2ace19c00ee9036ae67dcce225e688a09d398d33",
+    "bytes": 579
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md": {
+    "sha256": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+    "bytes": 4746
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md": {
+    "sha256": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+    "bytes": 3722
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github-packaging.md": {
+    "sha256": "bf2a71e63b75b117853097199120d628d67d2c419962aa441978c124e4c780ed",
+    "bytes": 5843
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md": {
+    "sha256": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29",
+    "bytes": 6201
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github-release-workflows.md": {
+    "sha256": "2c90b8d5d00b217a809bad6a54661f0ab698b8ae1550af47ce86547f02e25d46",
+    "bytes": 7995
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github-releases.md": {
+    "sha256": "317892eaecb199b87a8b17ee0a0f45a722c3849bdcf88e11301f91b9c8df96d6",
+    "bytes": 9028
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/github.md": {
+    "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+    "bytes": 11244
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-forge/references/release-highlights.md": {
+    "sha256": "4e4ebeaed8757d36ab9c7c98d759e724d30571f3d7aff48d783b1de60e236984",
+    "bytes": 19622
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/SKILL.md": {
+    "sha256": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+    "bytes": 7860
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/agents/openai.yaml": {
+    "sha256": "438f0f659f42428e943046f75e10eb5b21384802baf3ce8eb010b9598d00cb7b",
+    "bytes": 620
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/assets/icon.svg": {
+    "sha256": "4fd314a8f182561a13fbf6fe062e4aee5fd0e0330dccd9943ec14aa5dab34c48",
+    "bytes": 588
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/references/browser-capabilities.md": {
+    "sha256": "fd64b9332dac9d5a89249968996bdcfdcd3e1211f06220af8247cd7a25309642",
+    "bytes": 2594
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md": {
+    "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+    "bytes": 16082
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/references/environment-recovery.md": {
+    "sha256": "0254c7e5dc5477a012d6eca8c049d222f42c712b5ef1f03abc8b4270f34f9523",
+    "bytes": 2247
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md": {
+    "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+    "bytes": 3619
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md": {
+    "sha256": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+    "bytes": 10259
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md": {
+    "sha256": "1979b2bbd64bd4b5370f607c1646b7a7fbb05f63cccd44dc907f98ce50831dfe",
+    "bytes": 3337
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md": {
+    "sha256": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+    "bytes": 3894
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-integrate-feature/agents/openai.yaml": {
+    "sha256": "48018ed1de138598f6be61e916b701638234e2d0e570ed42d39760e0f4de8392",
+    "bytes": 459
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-integrate-feature/assets/icon.svg": {
+    "sha256": "9b68ea07e6b5916efa646ad8f639cb1872523bb40630043a317cc862440dc006",
+    "bytes": 591
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md": {
+    "sha256": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+    "bytes": 14410
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": {
+    "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "bytes": 10142
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/agents/openai.yaml": {
+    "sha256": "c3d318cf2a1074db8bc3c956109b12b1a3399c3835eded7bbac57f9ee7f5a778",
+    "bytes": 524
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/assets/icon.svg": {
+    "sha256": "d263da0cf62afe30dec52294f51c33a0d522b25c44049224a2274037e8ace44d",
+    "bytes": 590
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md": {
+    "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+    "bytes": 4057
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": {
+    "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+    "bytes": 12794
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md": {
+    "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+    "bytes": 10928
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md": {
+    "sha256": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21",
+    "bytes": 5877
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": {
+    "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "bytes": 6404
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/examples.md": {
+    "sha256": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+    "bytes": 19957
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": {
+    "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+    "bytes": 10690
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": {
+    "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "bytes": 6069
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": {
+    "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+    "bytes": 4216
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/prerelease-review.md": {
+    "sha256": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+    "bytes": 9774
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md": {
+    "sha256": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+    "bytes": 8700
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md": {
+    "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+    "bytes": 10475
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/revision-modes.md": {
+    "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+    "bytes": 10160
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md": {
+    "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+    "bytes": 4640
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md": {
+    "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+    "bytes": 18358
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": {
+    "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "bytes": 4869
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-orient/agents/openai.yaml": {
+    "sha256": "36dbb7990b7f504c1fa4b614651ad26431ab6af5a623be8250b780ce156667c9",
+    "bytes": 491
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-orient/assets/icon.svg": {
+    "sha256": "ef235e59b6a56e0d21629b3b6c1b2ca9cc97cd678d02bcb31b0e2f7bc11bf1f2",
+    "bytes": 571
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": {
+    "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "bytes": 10400
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md": {
+    "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "bytes": 5229
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-plan/agents/openai.yaml": {
+    "sha256": "8672b642e8c5ae2114cd839af1152435c7da485b4a25c3dd62d15c78d124ac98",
+    "bytes": 371
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-plan/assets/icon.svg": {
+    "sha256": "44568c513e736771f4dde159c1903c6da19a774474ce65aeb8992dd694706659",
+    "bytes": 590
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md": {
+    "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+    "bytes": 6939
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md": {
+    "sha256": "e6abc9b84068ff8def13af02360020bdd80dc4c431667cf416aa4a9953bbfc41",
+    "bytes": 3711
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-plan/references/review.md": {
+    "sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "bytes": 4434
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/SKILL.md": {
+    "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+    "bytes": 3910
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/agents/openai.yaml": {
+    "sha256": "bfe1a84a61bf154a5cb846d41b10d73e88a596044d21e6d1f151d1dc78ae221c",
+    "bytes": 454
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/assets/icon.svg": {
+    "sha256": "aca30e96cbe5d44d759da47cc1db33c87dce1d04bf77142feac8475eecbab074",
+    "bytes": 580
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md": {
+    "sha256": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+    "bytes": 12587
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md": {
+    "sha256": "7cc7d31e5926fab5c4778b385f282d8f536713536c1038cc63409a1734da886b",
+    "bytes": 4573
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md": {
+    "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+    "bytes": 6388
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md": {
+    "sha256": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7",
+    "bytes": 4724
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md": {
+    "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+    "bytes": 13178
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-report/references/releases.md": {
+    "sha256": "da89ce5c4fe7b8c6a4c1549900629cf6b3c29bcdd60f1585e32e18db3a885a86",
+    "bytes": 5111
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md": {
+    "sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "bytes": 4530
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-specify/agents/openai.yaml": {
+    "sha256": "c61e7eb38f097029d947314b441959b17aae2303440a52022cd386d78171e6b5",
+    "bytes": 387
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-specify/assets/icon.svg": {
+    "sha256": "ebeaf7c64a2fb958088765c46c48e8269625f03ddccefec9dc7b76ff7379f2ad",
+    "bytes": 591
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-specify/references/change-specification.md": {
+    "sha256": "74ad9a214189fa094c48acfd6c1daacb4eef43fe64ea18946ff5e6628a3be94c",
+    "bytes": 2220
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-specify/references/review.md": {
+    "sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "bytes": 3962
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md": {
+    "sha256": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+    "bytes": 4546
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-steer/SKILL.md": {
+    "sha256": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+    "bytes": 4952
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-steer/agents/openai.yaml": {
+    "sha256": "421038f108a077de64e16c95011ed4f6bff87d47e16c53894bbcc0dc581cc4ae",
+    "bytes": 592
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-steer/assets/icon.svg": {
+    "sha256": "b9d353ce223194b53f52a4853ed1cc9468718ed0ee57074b5988a309f54d14d1",
+    "bytes": 551
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-steer/references/amendment-execution.md": {
+    "sha256": "c185174fd72625f51a151bb6085140e9599f848e26f461d1131c87f2865d0cac",
+    "bytes": 3900
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md": {
+    "sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+    "bytes": 3139
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md": {
+    "sha256": "833b62f3807e8eb425f0fe2ad9ef4418cabbb77ae0f2ee7371435793de17398d",
+    "bytes": 7111
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md": {
+    "sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "bytes": 5035
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tasks/agents/openai.yaml": {
+    "sha256": "60b43614f445a40f3d52d21869962189bdfe0252461317a6712a55d176797aa2",
+    "bytes": 338
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tasks/assets/icon.svg": {
+    "sha256": "dad3203c0386ce1a697600ae82fc1e03f530111626192018df24dd7c5ac69eb0",
+    "bytes": 599
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md": {
+    "sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "bytes": 3731
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tasks/references/progress-review.md": {
+    "sha256": "32be8fbaa5e67e807d7c7f7be964c56ab7f65bd6398784606090fcdd9e40a912",
+    "bytes": 2291
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md": {
+    "sha256": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7",
+    "bytes": 7133
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/LICENSE": {
+    "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+    "bytes": 1070
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md": {
+    "sha256": "49efacb9ed6ae3b59069e986672dc5350cc0b147c3ad960b3ffc04f105c54cda",
+    "bytes": 3588
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/agents/openai.yaml": {
+    "sha256": "f0049fe541cbffe331d4ccb9e903ed49bb96f1011cefecd1ced49fbd1bd19da4",
+    "bytes": 480
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/assets/icon.svg": {
+    "sha256": "37e86ed29c77f13846f9c315627c5e139d1348d7eed26eef2ff94354c334239f",
+    "bytes": 574
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md": {
+    "sha256": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+    "bytes": 3693
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/references/testing-strategy.md": {
+    "sha256": "fd834570d97f993fe270627fcedc308f0a97642ff000b8970a0b1c1bf33cab5f",
+    "bytes": 2602
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/references/upstream-provenance.md": {
+    "sha256": "668d85251c25027ac1494c9bb89367fa3c1885c23424e3987d02f7fd0b02ca33",
+    "bytes": 1278
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md": {
+    "sha256": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+    "bytes": 4076
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/SKILL.md": {
+    "sha256": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+    "bytes": 4789
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/agents/openai.yaml": {
+    "sha256": "3176532ba151974e4f6186c589a9e8ba59247367629ace97788cf70e1bdfe40a",
+    "bytes": 544
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/assets/icon.svg": {
+    "sha256": "60c4fbc478c5c5569c7db40ee7d2b90c061fb8e0b7a2274ec8757cbcadc6c837",
+    "bytes": 563
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md": {
+    "sha256": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+    "bytes": 2497
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md": {
+    "sha256": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+    "bytes": 4516
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md": {
+    "sha256": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+    "bytes": 4774
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/references/failure-assessment.md": {
+    "sha256": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6",
+    "bytes": 2625
+  },
+  "exact-549-readonly-export/textstats-run-resources/plugin/skills/sdd-verify/references/release-checks.md": {
+    "sha256": "7c38ee14568eccccc724df033b647506a574fb34a8e3e398020bd1e543d89240",
+    "bytes": 5263
+  },
+  "exact-549-readonly-export/tools/check_distribution.py": {
+    "sha256": "5d307d5e31b0e65c4adce2661a4b7398a0524b5a44f28df814aed579e9048b79",
+    "bytes": 15528
+  },
+  "exact-549-readonly-export/tools/check_tests.py": {
+    "sha256": "1c0bc3d2c5ef400806aa9de66ec4af40c632acf206d90105c6f8559b2413b619",
+    "bytes": 1192
+  },
+  "exact-549-readonly-export/tools/package_source.py": {
+    "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+    "bytes": 1405
+  },
+  "seal.py": {
+    "sha256": "7db6cfe4174df3082ee07903c06859db4de1b00f38e8e60f097557ec28176b1a",
+    "bytes": 7496
+  },
+  "verify.py": {
+    "sha256": "fd9e39c64080f794ade8b0700961da802c1a3d41cf1a14025a49e71247e51570",
+    "bytes": 5395
+  }
+}
