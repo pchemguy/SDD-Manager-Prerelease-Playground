@@ -1,0 +1,6 @@
+{
+  "status": 1,
+  "classification": "Root export command typo before final commit",
+  "observed_error": "python: cannot find __main__ module in /workspace/scratch/46b31bb4dff6/037-final-completion-receipt",
+  "repair": "Invoke actual existing 037-authorized-export.py with source and destination arguments; no record bytes or publication guard changed."
+}

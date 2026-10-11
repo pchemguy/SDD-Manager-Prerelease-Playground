@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "scope": "Bounded independent actualfinalSOURCE integration/mainpublication; additive after completedA027 evidenceworkflow",
+  "status": "Passed actual source integration/publication",
+  "agent_behavior_assessed": true,
+  "assessed_at": "2026-10-11T04:27:44.130670+00:00",
+  "source_main_commit": "58e7e15a2b0bd4f1870a24f1b566e68ceb5fd70e",
+  "ordered_merge_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "2442d183dffa65dbaa8cb7d7df13f8689ce71201"
+  ],
+  "tree": "269fea74b9fc45155c8b8397d706f5c711dd9474",
+  "actual_commit_exact_approved_tree_parents": true,
+  "actual_commit_body_sha256": "4dc126c0b2d76b6be7ab6ca8d11a70d21f48a214628cc65b7d149aeae9ba5819",
+  "approved_body_sha256": "4dc126c0b2d76b6be7ab6ca8d11a70d21f48a214628cc65b7d149aeae9ba5819",
+  "actual_commit_body_exact_approved": true,
+  "worktree_index_clean": true,
+  "independent_live_publication": {
+    "method": "Actual read-only git ls-remote origin exactmain/revisionrefs usingexistingtransientaskpass; actualtoolreturnedstatus0",
+    "main_ref": "refs/heads/main",
+    "main_commit": "58e7e15a2b0bd4f1870a24f1b566e68ceb5fd70e",
+    "retained_revision_ref": "refs/heads/revision/037_a6c42dd-prerelease-review",
+    "retained_revision_commit": "2442d183dffa65dbaa8cb7d7df13f8689ce71201",
+    "verified": true
+  },
+  "prospective_grade": {
+    "path": "ASSESSMENT.prospective-final-source.json",
+    "sha256": "f5d0a31069a364e4cb85845abdbdddbc65fa23062b0091a1387f8de373500672",
+    "status": "Passed prospective source gate"
+  },
+  "fresh_exact_final_merged_checks": [
+    {
+      "name": "support",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "acceptance/textstats/tests",
+        "-t",
+        "acceptance/textstats",
+        "-v"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "391372df6d3c3e6c7926729c320951390d8c58c74f63248cdf88125a5b9423e4",
+      "stdout_bytes": 0,
+      "stderr_bytes": 18153,
+      "summary": [
+        "Ran 113 tests in 16.840s",
+        "OK"
+      ],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    },
+    {
+      "name": "publisher",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".github/tests",
+        "-v"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "36dba16df1c56ff65844d570e64996fc1ae589d9d8211a8e50ca2418500187f4",
+      "stdout_bytes": 0,
+      "stderr_bytes": 3237,
+      "summary": [
+        "Ran 26 tests in 0.191s",
+        "OK"
+      ],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    },
+    {
+      "name": "unstaged-whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_bytes": 0,
+      "summary": [],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    },
+    {
+      "name": "staged-whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_bytes": 0,
+      "summary": [],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    }
+  ],
+  "shipped133_path_mode_blob_equal_EA": true,
+  "canonical_legacy_manifests": "Byte identical version0.15.0",
+  "frozen16_objects_modes_exact_b246": true,
+  "frozen_closed_contents_read": false,
+  "publisher_script_sha256": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+  "publisher_tooling4a56_equal": true,
+  "source_current_report_counts": {
+    "original_required": {
+      "Passed": 30,
+      "Failed": 2
+    },
+    "corrected_required": {
+      "Passed": 32
+    },
+    "optional": {
+      "Not run": 2
+    },
+    "supplement_scopes": 14
+  },
+  "source_opening_commit": "d692b9040da1fd2eb620f2f27a5c91968b15bae4",
+  "cumulative_children": "U001-U008 with included038/039/040/041 actualdeliveries unchanged; LOCAL042fixtures distinct",
+  "product_completion_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+  "playground_evidence_main_commit": "b26379977bd07730f09d7f278594418a9219f67d",
+  "A027_assessment_postcheckpoint": "2cb1b661a925dccf9ba15450d2f2f3537a60ce34",
+  "first_failures_and_provenance": [
+    "Rootpreflight FileNotFound fromguessed.claude-plugin path beforetests; actualrootplugin.jsonverification subsequentlycorrected and originalFIRST-ROOT-PREFLIGHT-FAILURE.json retained",
+    "ActualsourcecheckpointHTTP502/remoteold785 thennormalretry exactsame244Succeeded; publicreceiptpendingadditiveexport"
+  ],
+  "required_acceptance_readiness": false,
+  "claim_limits": [
+    "Strict39 andR005 Open unchanged; no readiness/installed/native/client/platform relaxation",
+    "Current source suites fresh113/26 onexact269tree distinctfrom earlierfb27/d428 and actualpositiveproduct37/34/478",
+    "FouractualhistoricalPNG and120plugincontainedentrylinks unchangedpackage/diagramobjects; no newrender inferred",
+    "Productcompletion549/evidenceintegrationb263/A27currentfinalgrade2cb separatefromsourcea6+244merge",
+    "No productruntime reruns/sourcewrites/providerwrites byassessor",
+    "Actual normalmainpublication independentlyverified onlyforthisexactsourcecommit; no productionrelease/tag/versionchange/universalreadiness",
+    "Sourcecanonicalshippedbytes remainimmutableEA515. Freshsource113/26 distinctfromoriginalproductruntime/native/provideracceptance andearlierpreparedtrees",
+    "Currentactive-doc reportstoCP025next areaccurate preintegrationcheckpointbytes; thisactualmergebody/receipt recordslatercompletionwithoutrewritinghistory",
+    "No additionalsource/defaultmerge, productruntime reruns or providerwrites byassessor"
+  ]
+}

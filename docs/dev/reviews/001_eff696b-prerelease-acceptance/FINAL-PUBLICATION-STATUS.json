@@ -1,6 +1,6 @@
 {
-  "published_source_revision_tip": "785b4da2dbe6bbee849a26efba3f0b204d8c02ed",
-  "published_evidence_predecessor": "bd88d797d55f755a895fcafeaeda17c4354f310f",
+  "published_source_revision_tip": "2442d183dffa65dbaa8cb7d7df13f8689ce71201",
+  "published_evidence_predecessor": "2cb1b661a925dccf9ba15450d2f2f3537a60ce34",
   "user_requested_checkpoints": {
     "e7c2554314ef8049acc3b155946a988bf390ecdd": "Contained in verified remote evidence ancestry",
     "d70b962fc1118be6f87c532018e9db72eb42890c": "Contained in verified remote evidence ancestry"
@@ -9,7 +9,7 @@
   "actual_product_main": "b26379977bd07730f09d7f278594418a9219f67d",
   "accepted_local_main_merge": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
   "main_pushes_rejected_before_execution": 2,
-  "source_final_main_commit_created": false,
+  "source_final_main_commit_created": true,
   "evidence_final_main_commit_created": true,
   "source_candidate_preparation": "Actual prospective a6+3de merge d428 fresh113/26 checks; later785 source checkpoint changes only listed review documents, no test rerun claimed",
   "later_source_review_only_delta": [
@@ -31,7 +31,7 @@
   },
   "optional_not_run": 2,
   "supplements_outside_required": 14,
-  "remaining_operation": "Source final assessed-candidate record and actual source main integration; no second evidence boundary merge required.",
+  "remaining_operation": "None within authorized campaign scope. Original failures/optional Not run/strict-installed-platform-transcript limitations and R005 Open remain; no production action selected.",
   "historical_before_authorized_resumption": {
     "actual_product_main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
     "original_required": {
@@ -51,5 +51,13 @@
     "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
     "7be5abfa51b19b463f817f43a79fd45be656e047"
   ],
-  "whole_A027_status": "Passed"
+  "whole_A027_status": "Passed",
+  "actual_source_main": "58e7e15a2b0bd4f1870a24f1b566e68ceb5fd70e",
+  "source_final_main_publication_verified": true,
+  "source_final_independent_bounded_status": "Passed",
+  "source_final_main_ordered_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "2442d183dffa65dbaa8cb7d7df13f8689ce71201"
+  ],
+  "source_final_main_tree": "269fea74b9fc45155c8b8397d706f5c711dd9474"
 }

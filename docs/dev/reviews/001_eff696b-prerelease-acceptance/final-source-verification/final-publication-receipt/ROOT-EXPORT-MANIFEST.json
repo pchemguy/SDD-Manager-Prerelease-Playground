@@ -1,0 +1,14 @@
+{
+  "RECEIPT.json": {
+    "sha256": "cde9d25b4fe671c759cde106a9ce29436c2fcf32320283da82648d980e8bd9ce",
+    "bytes": 1954
+  },
+  "ROOT-EXPORT-COMMAND-RETRY.json": {
+    "sha256": "feb0a6e0e4c459542a0bea503850771b19f57571ce54e35707c92220fb982737",
+    "bytes": 357
+  },
+  "SOURCE-MERGE-MESSAGE.txt": {
+    "sha256": "4dc126c0b2d76b6be7ab6ca8d11a70d21f48a214628cc65b7d149aeae9ba5819",
+    "bytes": 5832
+  }
+}

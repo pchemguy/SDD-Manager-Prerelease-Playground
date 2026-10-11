@@ -1,0 +1,15 @@
+{
+  "scope": "Only new bounded source prospective/final publication grades; existingA027grades immutable; sharedfilesystemsealing cooperative",
+  "files": [
+    {
+      "path": "ASSESSMENT.prospective-final-source.json",
+      "sha256": "f5d0a31069a364e4cb85845abdbdddbc65fa23062b0091a1387f8de373500672",
+      "bytes": 5660
+    },
+    {
+      "path": "ASSESSMENT.final-source-published.json",
+      "sha256": "e0e4820b18a1901d67d86b7d5797bfa841ba130d7414f21e24f358b65cc7866a",
+      "bytes": 6378
+    }
+  ]
+}

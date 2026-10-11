@@ -5,13 +5,13 @@
   "case_id": "A-027",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "All required variants reconciled; A027 independent wholePassed after actual main b263799 publication/readback. Post-merge checkpoint retained without second boundary merge.",
+  "last_completed_action": "Actual source main58e7 and playground mainb263 published/readback independently verified; CP023/024/025 complete within authorized scope.",
   "pending_operation": {
     "kind": "none",
     "status": "complete",
-    "description": "Product and evidence final integration verified; source final integration separate"
+    "description": "All authorized publication and source/evidence integration completed and independently verified"
   },
-  "next_action": "Source final CP024 record and CP025 actual source integration remain separate; product behavior and campaign evidence workflow complete.",
+  "next_action": "Authorized campaign complete. Preserve retained branches/checkpoints and all original failures/limits; no additional merge or production action.",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
     "product_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",

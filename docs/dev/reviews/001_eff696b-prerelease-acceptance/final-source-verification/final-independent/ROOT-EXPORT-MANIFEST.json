@@ -1,0 +1,14 @@
+{
+  "ASSESSMENT.final-source-published.json": {
+    "sha256": "e0e4820b18a1901d67d86b7d5797bfa841ba130d7414f21e24f358b65cc7866a",
+    "bytes": 6378
+  },
+  "ASSESSMENT.prospective-final-source.json": {
+    "sha256": "f5d0a31069a364e4cb85845abdbdddbc65fa23062b0091a1387f8de373500672",
+    "bytes": 5660
+  },
+  "MANIFEST.json": {
+    "sha256": "ff62d2315a6cb8da8ea03caa5e7ba98283c7a659535fcabe70f00fe7e80955e8",
+    "bytes": 510
+  }
+}

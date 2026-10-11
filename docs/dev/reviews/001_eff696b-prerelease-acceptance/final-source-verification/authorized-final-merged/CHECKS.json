@@ -1,0 +1,75 @@
+{
+  "ordered_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "2442d183dffa65dbaa8cb7d7df13f8689ce71201"
+  ],
+  "prospective_tree": "269fea74b9fc45155c8b8397d706f5c711dd9474",
+  "checks": [
+    {
+      "name": "support",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "acceptance/textstats/tests",
+        "-t",
+        "acceptance/textstats",
+        "-v"
+      ],
+      "status": 0,
+      "elapsed_seconds": 16.95465565699942,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "391372df6d3c3e6c7926729c320951390d8c58c74f63248cdf88125a5b9423e4"
+    },
+    {
+      "name": "publisher",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".github/tests",
+        "-v"
+      ],
+      "status": 0,
+      "elapsed_seconds": 0.2491465490002156,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "36dba16df1c56ff65844d570e64996fc1ae589d9d8211a8e50ca2418500187f4"
+    },
+    {
+      "name": "unstaged-whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": 0,
+      "elapsed_seconds": 0.002839282999957504,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "staged-whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "status": 0,
+      "elapsed_seconds": 0.008325668999532354,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "shipped_133_paths_modes_blobs_exact_EA": true,
+  "frozen_16_objects_modes_exact_b246": true,
+  "manifests_byte_identical_version": "0.15.0",
+  "publisher_sha256": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+  "scope": "Fresh actual final prospective source merged-state; no native/installed/strict/platform or new render acceptance inferred."
+}

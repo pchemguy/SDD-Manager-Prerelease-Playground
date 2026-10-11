@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "scope": "Bounded independent actual final prospective SOURCE integration gate; separate from completedA027 evidenceworkflow",
+  "status": "Passed prospective source gate",
+  "actual_source_main_publication": "Pending actualsource mergecommit/normalpush/exactreadback",
+  "observed_at": "2026-10-11T04:26:10.868007+00:00",
+  "ordered_prospective_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "2442d183dffa65dbaa8cb7d7df13f8689ce71201"
+  ],
+  "prospective_tree": "269fea74b9fc45155c8b8397d706f5c711dd9474",
+  "index_stage0_exact_tree": true,
+  "fresh_checks_record_sha256": "ff36d1f4cbff1cad2f58b4d68f06e52fc2d563342a869a4d02739f99b32b4dfe",
+  "raw_checks": [
+    {
+      "name": "support",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "acceptance/textstats/tests",
+        "-t",
+        "acceptance/textstats",
+        "-v"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "391372df6d3c3e6c7926729c320951390d8c58c74f63248cdf88125a5b9423e4",
+      "stdout_bytes": 0,
+      "stderr_bytes": 18153,
+      "summary": [
+        "Ran 113 tests in 16.840s",
+        "OK"
+      ],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    },
+    {
+      "name": "publisher",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".github/tests",
+        "-v"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "36dba16df1c56ff65844d570e64996fc1ae589d9d8211a8e50ca2418500187f4",
+      "stdout_bytes": 0,
+      "stderr_bytes": 3237,
+      "summary": [
+        "Ran 26 tests in 0.191s",
+        "OK"
+      ],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    },
+    {
+      "name": "unstaged-whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_bytes": 0,
+      "summary": [],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    },
+    {
+      "name": "staged-whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_bytes": 0,
+      "summary": [],
+      "scope": "Independent retained exactfreshrootcommands/rawchannels, no assessor rerun"
+    }
+  ],
+  "shipped133_path_mode_blob_exact_EA": true,
+  "package_inventory_sha256": "57f801f564195322ffbbf698a66045bddb29feff354db9e7001c6a5404adcd93",
+  "canonical_legacy_manifest_equal_version": "0.15.0",
+  "frozen16_path_mode_objects_exact_b246": true,
+  "frozen_inventory_sha256": "9d2be4bee60b18017494b329eaf574276d7c8a667a6c6534e0db976b73211942",
+  "frozen_closed_content_read": false,
+  "release_script_sha256": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+  "release_script_exact_actual_tooling4a56": true,
+  "report_only_delta_after785": [
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/INTEGRATION-PREPARATION.md",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVIEW-REPORT.md",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-PLAN.md",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md",
+    "docs/dev/reviews/README.md"
+  ],
+  "merge_message": {
+    "path": "037-source-final-merge-message.txt",
+    "sha256": "4dc126c0b2d76b6be7ab6ca8d11a70d21f48a214628cc65b7d149aeae9ba5819",
+    "independently_reviewed": "Concreteopeningd692/U001-U008/fullcumulative038-041/fixes/providerandconsumerclasses/retained failures/freshversusreusedsourceandproductchecks/exactparenttreebindings/30P2Fandcorrected32P/no prodoruniversalreadiness; exactpublication must followcommit"
+  },
+  "A027_postmerge_published_grade_bytes_equal": true,
+  "independent_source_live_readback": {
+    "method": "Actualreadonlygit lsremote origin exactmain/revisionrefs, transientexistingaskpass/status0",
+    "main": "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "revision": "2442d183dffa65dbaa8cb7d7df13f8689ce71201"
+  },
+  "first_failure_preservation": [
+    "Rootpreflight FileNotFound fromguessed.claude-plugin path beforetests; actualrootplugin.jsonverification subsequentlycorrected and originalFIRST-ROOT-PREFLIGHT-FAILURE.json retained",
+    "ActualsourcecheckpointHTTP502/remoteold785 thennormalretry exactsame244Succeeded; publicreceiptpendingadditiveexport"
+  ],
+  "retained_limits": [
+    "Strict39 andR005 Open unchanged; no readiness/installed/native/client/platform relaxation",
+    "Current source suites fresh113/26 onexact269tree distinctfrom earlierfb27/d428 and actualpositiveproduct37/34/478",
+    "FouractualhistoricalPNG and120plugincontainedentrylinks unchangedpackage/diagramobjects; no newrender inferred",
+    "Productcompletion549/evidenceintegrationb263/A27currentfinalgrade2cb separatefromsourcea6+244merge",
+    "No productruntime reruns/sourcewrites/providerwrites byassessor",
+    "Finalsourcecommitmusthaveexactparents/tree/message followedindependentactualmainreadback"
+  ]
+}

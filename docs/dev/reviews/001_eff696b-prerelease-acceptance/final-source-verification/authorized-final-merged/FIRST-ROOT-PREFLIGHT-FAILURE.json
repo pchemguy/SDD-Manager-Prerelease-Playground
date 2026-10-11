@@ -1,0 +1,7 @@
+{
+  "status": 1,
+  "classification": "Root preflight path assumption error before test execution",
+  "attempt": "133 member inventory succeeded, then canonical/legacy equality used nonexistent .claude-plugin/plugin.json instead of actual root plugin.json",
+  "observed_error": "FileNotFoundError: /workspace/scratch/46b31bb4dff6/037-authorized-source-main/.claude-plugin/plugin.json",
+  "repair": "Use actual tracked legacy root plugin.json; no source or guard changed; no product failure inferred."
+}

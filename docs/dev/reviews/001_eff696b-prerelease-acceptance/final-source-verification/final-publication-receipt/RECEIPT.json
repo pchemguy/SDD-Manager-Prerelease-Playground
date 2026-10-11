@@ -1,0 +1,36 @@
+{
+  "source_revision_tip": "2442d183dffa65dbaa8cb7d7df13f8689ce71201",
+  "source_main": "58e7e15a2b0bd4f1870a24f1b566e68ceb5fd70e",
+  "source_main_ordered_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "2442d183dffa65dbaa8cb7d7df13f8689ce71201"
+  ],
+  "source_main_tree": "269fea74b9fc45155c8b8397d706f5c711dd9474",
+  "source_main_push_status": 0,
+  "source_main_exact_remote_readback": true,
+  "evidence_revision_predecessor": "2cb1b661a925dccf9ba15450d2f2f3537a60ce34",
+  "playground_main": "b26379977bd07730f09d7f278594418a9219f67d",
+  "retained_product_completion": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+  "playground_main_ordered_parents": [
+    "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "7be5abfa51b19b463f817f43a79fd45be656e047"
+  ],
+  "playground_main_push_status": 0,
+  "playground_main_exact_remote_readback": true,
+  "requested_checkpoints_verified_ancestors": [
+    "e7c2554314ef8049acc3b155946a988bf390ecdd",
+    "d70b962fc1118be6f87c532018e9db72eb42890c"
+  ],
+  "trial_refs": {
+    "trial/037-a014-cross-phase": "dfcd658828d8e326c713683f3cdb9be05e044849",
+    "trial/037-a014-cross-main": "a7285d78a7fb1ee3966850656de6594317d5125f",
+    "trial/037-a014-cross-json": "2d2fbfcc38808104b66267a9179660136c75dc97"
+  },
+  "source_checkpoint_first_push_failure": {
+    "status": 1,
+    "actual_output": "error: RPC failed; HTTP 502 curl 22 The requested URL returned error: 502\nsend-pack: unexpected disconnect while reading sideband packet\nfatal: the remote end hung up unexpectedly\nEverything up-to-date",
+    "subsequent_actual_remote": "785b4da2dbe6bbee849a26efba3f0b204d8c02ed",
+    "reconciliation": "Only after remote-old verification, same ordinary exact244 push succeeded and remote244 readback matched."
+  },
+  "scope": "Actual publication receipt; whole independent source publication assessment supplied separately. No production release/tag/version or universal installed/platform/strict readiness."
+}
