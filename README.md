@@ -1,6 +1,6 @@
 # TextStats
 
-Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. Phase 1 delivers the silent API, named-file module command, BOM policy and clean error handling. JSON, stdin and line ranges remain planned.
+Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. Phase 1 delivers the silent API, named-file module command, BOM policy and clean error handling. Named-file JSON output is also delivered; stdin and line ranges remain planned.
 
 ## Quick start
 
@@ -25,6 +25,18 @@ python -m textstats -- -sample
 BOM-only input produces `lines=0 words=0` by default and `lines=1 words=1` with `--keep-bom`. The dash-prefixed file produces `lines=1 words=2`. Options can appear before or after INPUT; `--` ends option parsing. At this phase a literal `-` is a filename. Exactly one file is required.
 
 Missing, unreadable, read-failing or invalid UTF-8 input returns status 1 with identifying input/cause stderr, no traceback and empty stdout. Missing/extra inputs or unknown options return status 2 with useful usage/error stderr and empty stdout. Invocation validation precedes file access. No partial statistics are emitted.
+
+## JSON output
+
+Use `--json` to emit one object with exactly integer `lines` and `words` fields, followed by a newline. Counts match the default text format and the API. The option composes with `--keep-bom`, before or after INPUT:
+
+```bash
+python -m textstats --json sample.txt
+python -m textstats sample.txt --json
+python -m textstats --json --keep-bom bom.txt
+```
+
+The sample produces `{"lines": 3, "words": 5}`; retained BOM-only input produces `{"lines": 1, "words": 1}`. JSON key order and spacing are unrestricted. Text stays the default, and input/usage failures retain their statuses and empty stdout. Stdin remains planned; literal `-` is still a named file.
 
 ## Python API
 
@@ -60,7 +72,7 @@ python tools/package_source.py
 python tools/check_distribution.py
 ```
 
-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 36 real module cases with inherited Python import paths removed and user-site packages disabled.
+The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 36 retained named-file text/help/error module cases with inherited Python import paths removed and user-site packages disabled. Dedicated extracted-source JSON acceptance is planned in T-011; this T-010 checkpoint verifies JSON from the checkout.
 
 A runnable extraction example for a Bash shell on Unix:
 

@@ -2,6 +2,7 @@
 
 import contextlib
 import io
+import json
 import shutil
 import subprocess
 import sys
@@ -15,6 +16,51 @@ from textstats.cli import main
 
 
 class CliTests(unittest.TestCase):
+    def test_json_success_composes_with_bom_and_option_order(self):
+        for args, policy in [(["--json", "named"], True),
+                             (["named", "--json"], True),
+                             (["--json", "--keep-bom", "named"], False),
+                             (["--keep-bom", "named", "--json"], False),
+                             (["named", "--json", "--keep-bom"], False)]:
+            with self.subTest(args=args):
+                out, err = io.StringIO(), io.StringIO()
+                with patch("textstats.cli.count_file", return_value=TextStats(3, 4)) as counter:
+                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main(args)
+                self.assertEqual((status, err.getvalue()), (0, ""))
+                self.assertEqual(out.getvalue().count("\n"), 1)
+                self.assertTrue(out.getvalue().endswith("\n"))
+                value = json.loads(out.getvalue())
+                self.assertEqual(value, {"lines": 3, "words": 4})
+                self.assertTrue(all(type(count) is int for count in value.values()))
+                counter.assert_called_once_with("named", strip_bom=policy)
+
+    def test_json_input_failures_retain_empty_stdout_and_status(self):
+        for failure in [PermissionError("controlled unreadable"), OSError("controlled read failure"),
+                        UnicodeDecodeError("utf-8", b"\xff", 0, 1, "invalid start byte")]:
+            with self.subTest(failure=type(failure).__name__):
+                out, err = io.StringIO(), io.StringIO()
+                with patch("textstats.cli.count_file", side_effect=failure):
+                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main(["--json", "affected.txt"])
+                self.assertEqual((status, out.getvalue()), (1, ""))
+                self.assertIn("affected.txt", err.getvalue())
+                self.assertIn(str(failure), err.getvalue())
+                self.assertNotIn("Traceback", err.getvalue())
+
+    def test_json_usage_validates_before_acquisition(self):
+        for args in [["--json"], ["--json", "one", "two"],
+                     ["--json", "--unknown", "missing"], ["--j", "missing"]]:
+            with self.subTest(args=args):
+                out, err = io.StringIO(), io.StringIO()
+                with patch("textstats.cli.count_file") as counter:
+                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
+                        status = main(args)
+                counter.assert_not_called()
+                self.assertEqual((status, out.getvalue()), (2, ""))
+                self.assertIn("usage:", err.getvalue())
+                self.assertIn("error:", err.getvalue())
+
     def test_success_renders_completed_counts(self):
         out, err = io.StringIO(), io.StringIO()
         with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
@@ -46,6 +92,7 @@ class CliTests(unittest.TestCase):
             counter.assert_not_called()
             self.assertIn('usage:', out.getvalue())
             self.assertIn('--keep-bom', out.getvalue())
+            self.assertIn('--json', out.getvalue())
             self.assertEqual(err.getvalue(), '')
 
     def test_expected_input_failures_have_status_and_diagnostic(self):
