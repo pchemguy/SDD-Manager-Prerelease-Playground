@@ -1,0 +1,93 @@
+name: Release plugin
+run-name: Release ${{ fromJSON(inputs.handoff).request_id }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      handoff:
+        description: Exact-source curated release handoff JSON (see release handoff guide)
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sdd-release-${{ github.repository }}-${{ fromJSON(inputs.handoff).tag }}
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      source: ${{ steps.input.outputs.source }}
+      archive_sha256: ${{ steps.package.outputs.archive_sha256 }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: tooling
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Validate structured handoff
+        id: input
+        run: |
+          python - <<'PYCODE'
+          import importlib.util
+          import os
+          spec = importlib.util.spec_from_file_location("publisher", "tooling/.github/scripts/release.py")
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          data = module.read_event(os.environ["GITHUB_EVENT_PATH"])
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write("source=" + data["source"] + "\n")
+          PYCODE
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ steps.input.outputs.source }}
+          path: candidate
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Run candidate support and publisher contracts
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python -m unittest discover -s candidate/acceptance/textstats/tests -t candidate/acceptance/textstats -v
+          python -m unittest discover -s tooling/.github/tests -v
+      - name: Inspect package without provider writes
+        id: package
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python tooling/.github/scripts/release.py --event "$GITHUB_EVENT_PATH" --root candidate --output build --build-only
+
+  publish:
+    needs: build
+    if: ${{ fromJSON(inputs.handoff).publish == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: tooling
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.build.outputs.source }}
+          path: candidate
+          persist-credentials: false
+      - name: Reconcile and verify the single publisher
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          EXPECTED_SHA256: ${{ needs.build.outputs.archive_sha256 }}
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          python tooling/.github/scripts/release.py --event "$GITHUB_EVENT_PATH" --root candidate --output build --expected-sha256 "$EXPECTED_SHA256"

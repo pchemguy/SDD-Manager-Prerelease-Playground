@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "case_id": "A-014",
+  "variant": "cross-phase",
+  "scope": "Exact T010 precommit candidate only",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "source_head": "a7285d78a7fb1ee3966850656de6594317d5125f",
+  "staged_tree": "6fa480a4a168292ec49061e099c05ec02d200fa5",
+  "identities": "IDENTITIES.json",
+  "checks": {
+    "scope": "Exactly seven task-owned paths; minimal --json parser flag plus integer-only serialization over existing stats, unchanged acquisition/default/error flow. TASKS initial T010 flip only; milestone2.1/phase2 and T011 onward unchecked. Current orientation explicitly selected boundary/inactive tracking.",
+    "literal_json": "Independently captured actual checkout JSON suite exactly matches pinned literal expected values/types/single object newline/default text/BOM and unchanged bytes. Provenance retained; capture is not broader extracted JSON acceptance.",
+    "verification": "Exact staged private copy check_tests status0 26unit21integration and existing36 extracted text module cases. Consumer actual meaningful RED5tests83failures preceded minimal production change; corrected GREEN and all8 docs fences raw status0 inspected/retained.",
+    "docs": "README/API/help reflect delivered JSON, semantic keys/types/newline/option composition and retained failures/default/BOM. Dedicated extracted JSON T011 unselected/unclaimed; checker/test unchanged.",
+    "source_archive": {
+      "sha256": "89f50d70070624e7a2e9584475141a5333add647eff42f45c88f952a8640abe0",
+      "members_equal_current_exact_private_candidate": true,
+      "dedicated_extracted_json_acceptance": "Not run here; belongs T011"
+    },
+    "preservation": "Protected resources/publisher/governing roots/QC/source core/io/facade, prior phase report and distribution checker unchanged. Unknown untracked samples preserved/excluded.",
+    "phase_order": "Published actual Phase1 merge a7285 preceded consumer Phase2 activation04:02:28 and meaningful RED04:03:17; no T010 implementation before required prior phase boundaries."
+  },
+  "pending_gates": [
+    "Atomic T010 commit exact subject/parent/tree/result/evidence/initial flip and immediate exact trial-json publication",
+    "Final range-boundary stop with retained phase1 and phase2 refs, no phase2 main merge or T011+"
+  ],
+  "overall_A014": "Pending final T010 persisted/publication assessment.",
+  "limits": [
+    "Original Blocked setup/live rejection retained unchanged",
+    "Shared filesystem isolation and native full transcript uncertified",
+    "Python3.12.14 only"
+  ]
+}

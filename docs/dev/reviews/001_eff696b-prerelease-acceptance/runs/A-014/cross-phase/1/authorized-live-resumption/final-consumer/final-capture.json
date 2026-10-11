@@ -1,0 +1,184 @@
+{
+  "time_utc": "2026-10-11T04:11:29.805868+00:00",
+  "head": "2d2fbfcc38808104b66267a9179660136c75dc97",
+  "tree": "6fa480a4a168292ec49061e099c05ec02d200fa5",
+  "branch": "phase/2-json-and-stdin",
+  "records": [
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "2d2fbfcc38808104b66267a9179660136c75dc97\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD^{tree}"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "6fa480a4a168292ec49061e099c05ec02d200fa5\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "phase/2-json-and-stdin\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "?? -sample\n?? bom.txt\n?? sample.txt\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "--name-only",
+        "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+        "HEAD",
+        "--",
+        "textstats-run-resources",
+        ".github",
+        "docs/testing/publisher-037"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "origin",
+        "refs/heads/trial/037-a014-cross-phase",
+        "refs/heads/trial/037-a014-cross-main",
+        "refs/heads/trial/037-a014-cross-json"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "2d2fbfcc38808104b66267a9179660136c75dc97\trefs/heads/trial/037-a014-cross-json\na7285d78a7fb1ee3966850656de6594317d5125f\trefs/heads/trial/037-a014-cross-main\ndfcd658828d8e326c713683f3cdb9be05e044849\trefs/heads/trial/037-a014-cross-phase\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "-s",
+        "--format=%s",
+        "dfcd658828d8e326c713683f3cdb9be05e044849"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "[T-009] Review and verify complete named-file phase\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "-s",
+        "--format=%H%n%P%n%T",
+        "dfcd658828d8e326c713683f3cdb9be05e044849"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "dfcd658828d8e326c713683f3cdb9be05e044849\n7b9f570aa4452d2ca9d6105479640528cb113f0e\n93756800aafe8abb0d8719176a14eb81ba42b4e1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "dfcd658828d8e326c713683f3cdb9be05e044849^",
+        "dfcd658828d8e326c713683f3cdb9be05e044849",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex c089e55..db16422 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -10,7 +10,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n ## Phase 1 \u2014 Named-file utility\n \n-- [ ] Phase 1 \u2014 Named-file utility\n+- [x] Phase 1 \u2014 Named-file utility\n     - [x] Milestone 1.1 \u2014 Named-file counting\n         - [x] T-001 \u2014 Implement immutable statistics and whole-text counting\n             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.\n@@ -53,12 +53,12 @@ The user requested preparation through TASKS and stop before implementation. The\n             Depends on: T-005, T-006 and T-007.\n             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.\n             Report: [milestone 1.2 review](reports/phases/1/1.2.md).\n-    - [ ] Milestone 1.3 \u2014 Phase 1 review\n-        - [ ] T-009 \u2014 Review, test and report phase 1\n+    - [x] Milestone 1.3 \u2014 Phase 1 review\n+        - [x] T-009 \u2014 Review, test and report phase 1\n             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.\n             Depends on: T-004 and T-008, and completed/closed delivery milestones 1.1 and 1.2; excludes its own still-open review milestone.\n             Evidence: full phase code review plus applicable product/docs/extracted-source checks, actual nonzero suite counts, blocker repairs and phase report carrying unresolved milestone findings/TODOs. Commit/push report and task completion, reconcile eligible hosted closures, then full phase integration/merged-state verification/publication under the manager gate. No partial-range merge or phase 2 activation before these exits.\n-            Report: `docs/dev/reports/phases/1/PHASE-REPORT.md`.\n+            Report: [phase 1 review](reports/phases/1/PHASE-REPORT.md).\n \n ## Phase 2 \u2014 JSON and stdin\n \n@@ -182,3 +182,9 @@ Every updated README/public-guide runnable fence, including builder/checker and\n Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.\n \n `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005\u2013T-007 commits were separately published/read back and issues #6\u2013#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.\n+\n+## T-009 completion evidence\n+\n+Complete Phase 1 code review, source/runtime identities, original failures and resolved findings, actual checks/QC, milestone TODO aggregation and exit assessment are in the [phase report](reports/phases/1/PHASE-REPORT.md). Scoped runtime assistance added explicit `-B` only to existing Python child argv in tests/checker; no semantic or governing amendment. After correcting the consumer quoting defect, 23 unit/18 integration tests, 36 isolated extracted module cases and every runnable user-guide fence pass on Python 3.12.14 with bytecode disabled. Initial failed runs remain retained. T-001\u2013T-008 closing commits individually contain one initial owning checkbox plus result/evidence. Current fork tracking is explicitly disabled; copied hosted identities are protected and no issue/milestone write is made.\n+\n+This concrete T-009 report/checklist/result candidate awaits coordinator acceptance before the owning commit, immediate trial phase publication/readback, and two-parent local main integration/merged checks/trial main publication. Status in the proposed candidate reflects verified task and parent exits; durable completion and integration are not asserted before their actual operations. Phase 2 is eligible only afterward for selected T-010; T-011 onward and Phase 2 main integration are outside scope.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "-s",
+        "--format=%s",
+        "2d2fbfcc38808104b66267a9179660136c75dc97"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "[T-010] Add named-file JSON output with retained text behavior\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "show",
+        "-s",
+        "--format=%H%n%P%n%T",
+        "2d2fbfcc38808104b66267a9179660136c75dc97"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "2d2fbfcc38808104b66267a9179660136c75dc97\na7285d78a7fb1ee3966850656de6594317d5125f\n6fa480a4a168292ec49061e099c05ec02d200fa5\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "diff",
+        "2d2fbfcc38808104b66267a9179660136c75dc97^",
+        "2d2fbfcc38808104b66267a9179660136c75dc97",
+        "--",
+        "docs/dev/TASKS.md"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+      "status": 0,
+      "stdout": "diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md\nindex db16422..1f29f02 100644\n--- a/docs/dev/TASKS.md\n+++ b/docs/dev/TASKS.md\n@@ -64,7 +64,7 @@ The user requested preparation through TASKS and stop before implementation. The\n \n - [ ] Phase 2 \u2014 JSON and stdin\n     - [ ] Milestone 2.1 \u2014 JSON output\n-        - [ ] T-010 \u2014 Add JSON CLI output with retained text behavior\n+        - [x] T-010 \u2014 Add JSON CLI output with retained text behavior\n             Outcome: R-009 named-file JSON with only integer lines/words, one object plus newline and unchanged default text/errors.\n             Scope: `textstats/cli.py`, unit rendering/parser checks, `tests/integration/test_cli.py`, delivered-option help, README and API/module CLI documentation.\n             Depends on: T-009, completed phase 1 integration/publication and verified authorized phase 2 activation.\n@@ -188,3 +188,15 @@ Performed coherent milestone code review of the package/acquisition/API/CLI, tes\n Complete Phase 1 code review, source/runtime identities, original failures and resolved findings, actual checks/QC, milestone TODO aggregation and exit assessment are in the [phase report](reports/phases/1/PHASE-REPORT.md). Scoped runtime assistance added explicit `-B` only to existing Python child argv in tests/checker; no semantic or governing amendment. After correcting the consumer quoting defect, 23 unit/18 integration tests, 36 isolated extracted module cases and every runnable user-guide fence pass on Python 3.12.14 with bytecode disabled. Initial failed runs remain retained. T-001\u2013T-008 closing commits individually contain one initial owning checkbox plus result/evidence. Current fork tracking is explicitly disabled; copied hosted identities are protected and no issue/milestone write is made.\n \n This concrete T-009 report/checklist/result candidate awaits coordinator acceptance before the owning commit, immediate trial phase publication/readback, and two-parent local main integration/merged checks/trial main publication. Status in the proposed candidate reflects verified task and parent exits; durable completion and integration are not asserted before their actual operations. Phase 2 is eligible only afterward for selected T-010; T-011 onward and Phase 2 main integration are outside scope.\n+\n+## T-010 completion evidence\n+\n+Selected T-009 through T-010 inclusive. Phase 1 task `dfcd658828d8e326c713683f3cdb9be05e044849` was accepted, committed and immediately published/read back to the authorized trial phase ref. Concrete report acceptance decision `c837cd750ad7bcb932add989644e8c851ce15f34` and actual merge acceptance decision `d244a40538aac6eb374fb1fd5a1a6bc76d66adce` preceded their corresponding operations. Complete Phase 1 two-parent integration `a7285d78a7fb1ee3966850656de6594317d5125f` has ordered parents `88a5c4b4424f4bba76940e40b1d6523b1f6fe191` / `dfcd658828d8e326c713683f3cdb9be05e044849`, tree `93756800aafe8abb0d8719176a14eb81ba42b4e1`. Fresh merged-state 23 unit/18 integration and 36 extracted checks passed before its immediate authorized trial main publication/readback and independent confirmation. Phase 2 activation followed that confirmation on `phase/2-json-and-stdin` from this published merge. Current fork tracking is explicitly disabled; no historical hosted object is written.\n+\n+Added named-file `--json` as a parser/output policy over the same completed statistics. Output has exactly integer `lines` and `words`, one object and a final newline; default exact text, BOM policy, whole-input API and error categories remain unchanged. Help, README, CLI/public module reference and root orientation describe the delivered checkpoint. No new acquisition path, public export, range or stdin capability.\n+\n+Meaningful test-first RED: `python -B -m unittest tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics tests.integration.test_cli.ModuleCliTests.test_json_option_like_filename_after_double_dash -v` ran 5 tests with 83 failing subcases because `--json` was unsupported (usage status 2). Original raw failure retained before production change. GREEN `python -B tools/check_tests.py` passes 26 unit and 21 integration tests, no skips, on Python 3.12.14 with PYTHONDONTWRITEBYTECODE=1 and explicit child `-B`. Coverage: fourteen independent whole-input semantic/BOM cases across five option arrangements; parsed exact keys and actual int types, final newline, API/equal exact text counts and unchanged bytes; controlled unreadability/read/decode and real missing/bad-byte JSON failures; usage validation before acquisition, rejected abbreviation, double-dash option-like filename and help.\n+\n+Every seven README and one public-guide runnable fence executed successfully in a private copy of current ordinary product files, avoiding uncertain root sample ownership. JSON examples produce three/five and retained BOM-only one/one objects; retained API/text/BOM/help/dash examples pass. Documented independent suite discovery also passes 26/21. Existing archive/checker and separate extracted text example pass 36 retained module cases; dedicated extracted-source JSON acceptance remains T-011, unselected and unclaimed. Documentation local links and changed whitespace pass. Review inspected minimal CLI data flow and unchanged error/acquisition/counting boundaries; no blocker found.\n+\n+Only T-010 initially closes in this result/evidence/tests/docs/checklist candidate. Phase 2 and milestone 2.1 remain unchecked. Publish/read back this task only to `refs/heads/trial/037-a014-cross-json` and stop on its retained phase branch; do not integrate Phase 2 into main or execute T-011 onward. Uncertain untracked root README samples are preserved and excluded from staging/archive; shared filesystem isolation cannot be certified. Other runtimes/platforms, stdin/ranges and release publication remain outside this checkpoint.\n",
+      "stderr": ""
+    }
+  ],
+  "untracked_preserved": {
+    "sample.txt": "c7f4c99277e25426e1feb4bee0b57b79da34978f57a66b9ddab5211972378eec",
+    "bom.txt": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+    "-sample": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248"
+  },
+  "isolation_certified": false,
+  "stopping_boundary": "T-010 complete; T-011 onward unselected; no Phase 2 main integration",
+  "private_current_source_archive_sha256": "89f50d70070624e7a2e9584475141a5333add647eff42f45c88f952a8640abe0"
+}

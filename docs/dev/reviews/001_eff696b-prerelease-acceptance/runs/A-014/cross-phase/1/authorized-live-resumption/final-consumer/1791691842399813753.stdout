@@ -1,0 +1,44 @@
+[phase/2-json-and-stdin 2d2fbfc] [T-010] Add named-file JSON output with retained text behavior
+ 7 files changed, 159 insertions(+), 10 deletions(-)
+2d2fbfcc38808104b66267a9179660136c75dc97
+a7285d78a7fb1ee3966850656de6594317d5125f
+6fa480a4a168292ec49061e099c05ec02d200fa5
+[T-010] Add named-file JSON output with retained text behavior
+
+Render exactly integer lines/words as one JSON object and final newline; compose BOM/input option order while retaining exact default text, API and error categories. Include meaningful RED (5 tests/83 failing subcases), GREEN 26 unit/21 integration, all user-guide fence checks, current source archive membership and retained 36 text checks in owning evidence. Exactly T-010 initially closes with its result/tests/docs; Phase 2 parents remain open. Concrete seven-path tree 6fa480a4a168292ec49061e099c05ec02d200fa5 accepted in coordinator decision a955461e62e266a847a7cc3c6ecda15236b9def2. Stop before T-011, stdin/ranges/releases or Phase 2 main integration; protected historical hosted objects untouched.
+
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index db16422..1f29f02 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -64,7 +64,7 @@ The user requested preparation through TASKS and stop before implementation. The
+ 
+ - [ ] Phase 2 — JSON and stdin
+     - [ ] Milestone 2.1 — JSON output
+-        - [ ] T-010 — Add JSON CLI output with retained text behavior
++        - [x] T-010 — Add JSON CLI output with retained text behavior
+             Outcome: R-009 named-file JSON with only integer lines/words, one object plus newline and unchanged default text/errors.
+             Scope: `textstats/cli.py`, unit rendering/parser checks, `tests/integration/test_cli.py`, delivered-option help, README and API/module CLI documentation.
+             Depends on: T-009, completed phase 1 integration/publication and verified authorized phase 2 activation.
+@@ -188,3 +188,15 @@ Performed coherent milestone code review of the package/acquisition/API/CLI, tes
+ Complete Phase 1 code review, source/runtime identities, original failures and resolved findings, actual checks/QC, milestone TODO aggregation and exit assessment are in the [phase report](reports/phases/1/PHASE-REPORT.md). Scoped runtime assistance added explicit `-B` only to existing Python child argv in tests/checker; no semantic or governing amendment. After correcting the consumer quoting defect, 23 unit/18 integration tests, 36 isolated extracted module cases and every runnable user-guide fence pass on Python 3.12.14 with bytecode disabled. Initial failed runs remain retained. T-001–T-008 closing commits individually contain one initial owning checkbox plus result/evidence. Current fork tracking is explicitly disabled; copied hosted identities are protected and no issue/milestone write is made.
+ 
+ This concrete T-009 report/checklist/result candidate awaits coordinator acceptance before the owning commit, immediate trial phase publication/readback, and two-parent local main integration/merged checks/trial main publication. Status in the proposed candidate reflects verified task and parent exits; durable completion and integration are not asserted before their actual operations. Phase 2 is eligible only afterward for selected T-010; T-011 onward and Phase 2 main integration are outside scope.
++
++## T-010 completion evidence
++
++Selected T-009 through T-010 inclusive. Phase 1 task `dfcd658828d8e326c713683f3cdb9be05e044849` was accepted, committed and immediately published/read back to the authorized trial phase ref. Concrete report acceptance decision `c837cd750ad7bcb932add989644e8c851ce15f34` and actual merge acceptance decision `d244a40538aac6eb374fb1fd5a1a6bc76d66adce` preceded their corresponding operations. Complete Phase 1 two-parent integration `a7285d78a7fb1ee3966850656de6594317d5125f` has ordered parents `88a5c4b4424f4bba76940e40b1d6523b1f6fe191` / `dfcd658828d8e326c713683f3cdb9be05e044849`, tree `93756800aafe8abb0d8719176a14eb81ba42b4e1`. Fresh merged-state 23 unit/18 integration and 36 extracted checks passed before its immediate authorized trial main publication/readback and independent confirmation. Phase 2 activation followed that confirmation on `phase/2-json-and-stdin` from this published merge. Current fork tracking is explicitly disabled; no historical hosted object is written.
++
++Added named-file `--json` as a parser/output policy over the same completed statistics. Output has exactly integer `lines` and `words`, one object and a final newline; default exact text, BOM policy, whole-input API and error categories remain unchanged. Help, README, CLI/public module reference and root orientation describe the delivered checkpoint. No new acquisition path, public export, range or stdin capability.
++
++Meaningful test-first RED: `python -B -m unittest tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics tests.integration.test_cli.ModuleCliTests.test_json_option_like_filename_after_double_dash -v` ran 5 tests with 83 failing subcases because `--json` was unsupported (usage status 2). Original raw failure retained before production change. GREEN `python -B tools/check_tests.py` passes 26 unit and 21 integration tests, no skips, on Python 3.12.14 with PYTHONDONTWRITEBYTECODE=1 and explicit child `-B`. Coverage: fourteen independent whole-input semantic/BOM cases across five option arrangements; parsed exact keys and actual int types, final newline, API/equal exact text counts and unchanged bytes; controlled unreadability/read/decode and real missing/bad-byte JSON failures; usage validation before acquisition, rejected abbreviation, double-dash option-like filename and help.
++
++Every seven README and one public-guide runnable fence executed successfully in a private copy of current ordinary product files, avoiding uncertain root sample ownership. JSON examples produce three/five and retained BOM-only one/one objects; retained API/text/BOM/help/dash examples pass. Documented independent suite discovery also passes 26/21. Existing archive/checker and separate extracted text example pass 36 retained module cases; dedicated extracted-source JSON acceptance remains T-011, unselected and unclaimed. Documentation local links and changed whitespace pass. Review inspected minimal CLI data flow and unchanged error/acquisition/counting boundaries; no blocker found.
++
++Only T-010 initially closes in this result/evidence/tests/docs/checklist candidate. Phase 2 and milestone 2.1 remain unchecked. Publish/read back this task only to `refs/heads/trial/037-a014-cross-json` and stop on its retained phase branch; do not integrate Phase 2 into main or execute T-011 onward. Uncertain untracked root README samples are preserved and excluded from staging/archive; shared filesystem isolation cannot be certified. Other runtimes/platforms, stdin/ranges and release publication remain outside this checkpoint.
+?? -sample
+?? bom.txt
+?? sample.txt
+2d2fbfcc38808104b66267a9179660136c75dc97	refs/heads/trial/037-a014-cross-json
+a7285d78a7fb1ee3966850656de6594317d5125f	refs/heads/trial/037-a014-cross-main
+dfcd658828d8e326c713683f3cdb9be05e044849	refs/heads/trial/037-a014-cross-phase

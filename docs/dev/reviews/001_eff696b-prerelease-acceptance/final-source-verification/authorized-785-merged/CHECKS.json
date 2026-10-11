@@ -1,0 +1,42 @@
+{
+  "prospective_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "785b4da2dbe6bbee849a26efba3f0b204d8c02ed"
+  ],
+  "tree": "fb27aae9f036fdb074b9a6813b9a4492912ca786",
+  "checks": [
+    {
+      "name": "support",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "acceptance/textstats/tests",
+        "-t",
+        "acceptance/textstats",
+        "-v"
+      ],
+      "status": 0,
+      "elapsed_seconds": 18.097155313999792
+    },
+    {
+      "name": "publisher",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".github/tests",
+        "-v"
+      ],
+      "status": 0,
+      "elapsed_seconds": 0.22096575800060236
+    }
+  ],
+  "scope": "Fresh actual prospective source support; subsequent review-only report deltas require exact scope attribution."
+}

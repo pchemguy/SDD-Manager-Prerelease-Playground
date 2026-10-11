@@ -1,0 +1,11 @@
+{
+  "files": 96,
+  "manifest_sha256": "fbe630fd43c7e92ac994b3a8cdab80159a5b50f73427aeb6ab8b06171e5e64ca",
+  "archive_sha256": "5d602102ecc6861c021d277f45e8f513477d18d2ba480ba4322fb3a3042dc031",
+  "final_capture_sha256": "08a60ebbe1b72d8a13f4c45411f8d78ddacbc11feb1a37598eb213fe47662d3a",
+  "excluded_from_manifest": [
+    "manifest.sha256",
+    "seal.json",
+    "sealed-capture.tar.gz"
+  ]
+}

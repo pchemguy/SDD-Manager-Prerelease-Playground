@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
   "run_id": "001_eff696b-prerelease-acceptance",
-  "phase": "P3",
-  "case_id": "A-014",
+  "phase": "P5",
+  "case_id": "A-027",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "Product549amainpublished/independentreassessmentPassed inb12955a; preparedA14live7b9/88arefspublished; exactT009candidate937568 independentlyreviewed/rootaccepted",
+  "last_completed_action": "A013 and A014 additive independent eventual Passed; exact product main and all three trial refs published/read back",
   "pending_operation": {
     "kind": "task",
     "status": "in_progress",
-    "description": "Publish exactacceptedT009thenassess actualprospective trialmainintegration beforeT010",
+    "description": "Fresh final status/reconciliation and actual evidence main integration",
     "identity": {
-      "task_id": "T-009",
-      "branch": "trial/037-a014-cross-phase",
-      "repository": "pchemguy/SDD-Manager-Prerelease-Playground"
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+      "branch": "main",
+      "task_id": "A-027"
     }
   },
-  "next_action": "Consumer atomicT009commit/push/readback, thenactualtwo-parenttrialmainmergecandidate/freshchecks/gate beforepublication andT010.",
+  "next_action": "Publish independently assessed final report, then prepare and assess actual evidence-only merge549 plus exact published evidence tip before publication.",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
     "product_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",

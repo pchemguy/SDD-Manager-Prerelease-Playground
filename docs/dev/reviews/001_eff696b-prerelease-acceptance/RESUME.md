@@ -1,3 +1,7 @@
+## Current authorized checkpoint — A014 completed
+
+A013 and A014 have additive independent eventual Passed assessments; original blocked attempts remain. Actual main549a and trial phase dfcd658/main a7285d78/JSON2d2fbfc are published with exact readbacks. T011 and Phase2 trial integration remain unselected. Current required outcomes: original29 Passed/2 Failed/one A027 Running; corrected31 Passed/one Running, two optional Not run and14 supplements separate. Next: fresh final report, scoped independent reconciliation, then actual evidence-only merge and publication. No whole A027 completion or installed/strict/platform readiness claimed.
+
 ## Current authorized recovery cursor
 
 Product main549a andA14preparedlivephase7b9/main88a are published/readback after explicit user reply. Additive A013 independent eventual Passed is publishedb12955a; originalBlockedrejections remain unchanged. A014 freshconsumer T009–T010 is Running. ExactT009tree937568/report44143 has scopedindependent Passed androotconcreteacceptance, pending ownatomiccommit/push. Actualprospective trialmainintegration mustthenreceive its owncurrentchecks/identity gate beforepublication/T010. EarlierBlocked cursor entries below remain historical.

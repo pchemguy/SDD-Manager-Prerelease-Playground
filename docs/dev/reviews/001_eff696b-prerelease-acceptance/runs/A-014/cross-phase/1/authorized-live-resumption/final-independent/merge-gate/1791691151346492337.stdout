@@ -1,0 +1,65 @@
+Your branch is up to date with 'trial/main'.
+unit: 23 tests
+integration: 18 tests
+extracted import: /tmp/tmpkrnsqsm4/textstats-source/textstats/__init__.py
+extracted import: /tmp/tmp_blbjn94/textstats-source/textstats/__init__.py
+36 extracted module cases passed
+extracted import: /tmp/tmp9komia1h/textstats-source/textstats/__init__.py
+36 extracted module cases passed
+88a5c4b4424f4bba76940e40b1d6523b1f6fe191
+dfcd658828d8e326c713683f3cdb9be05e044849
+93756800aafe8abb0d8719176a14eb81ba42b4e1
+ .gitignore                                |   7 ++
+ AGENTS.md                                 |   6 +-
+ README.md                                 |  81 +++++++++++++++++++-
+ docs/dev/TASKS.md                         | 106 ++++++++++++++++++++++----
+ docs/dev/reports/phases/1/1.1.md          |  49 ++++++++++++
+ docs/dev/reports/phases/1/1.2.md          |  50 ++++++++++++
+ docs/dev/reports/phases/1/PHASE-REPORT.md |  54 +++++++++++++
+ docs/public-api.md                        |  67 +++++++++++++++++
+ tests/__init__.py                         |   1 +
+ tests/integration/__init__.py             |   1 +
+ tests/integration/test_api.py             | 101 +++++++++++++++++++++++++
+ tests/integration/test_cli.py             |  79 +++++++++++++++++++
+ tests/integration/test_distribution.py    |  66 ++++++++++++++++
+ tests/unit/__init__.py                    |   1 +
+ tests/unit/test_cli.py                    | 121 ++++++++++++++++++++++++++++++
+ tests/unit/test_core.py                   |  93 +++++++++++++++++++++++
+ tests/unit/test_io.py                     |  41 ++++++++++
+ textstats/__init__.py                     |   6 ++
+ textstats/__main__.py                     |   6 ++
+ textstats/cli.py                          |  38 ++++++++++
+ textstats/core.py                         |  84 +++++++++++++++++++++
+ textstats/io.py                           |  30 ++++++++
+ tools/check_distribution.py               |  97 ++++++++++++++++++++++++
+ tools/check_tests.py                      |  33 ++++++++
+ tools/package_source.py                   |  35 +++++++++
+ 25 files changed, 1232 insertions(+), 21 deletions(-)
+M  .gitignore
+M  AGENTS.md
+M  README.md
+M  docs/dev/TASKS.md
+A  docs/dev/reports/phases/1/1.1.md
+A  docs/dev/reports/phases/1/1.2.md
+A  docs/dev/reports/phases/1/PHASE-REPORT.md
+A  docs/public-api.md
+A  tests/__init__.py
+A  tests/integration/__init__.py
+A  tests/integration/test_api.py
+A  tests/integration/test_cli.py
+A  tests/integration/test_distribution.py
+A  tests/unit/__init__.py
+A  tests/unit/test_cli.py
+A  tests/unit/test_core.py
+A  tests/unit/test_io.py
+A  textstats/__init__.py
+A  textstats/__main__.py
+A  textstats/cli.py
+A  textstats/core.py
+A  textstats/io.py
+A  tools/check_distribution.py
+A  tools/check_tests.py
+A  tools/package_source.py
+?? -sample
+?? bom.txt
+?? sample.txt

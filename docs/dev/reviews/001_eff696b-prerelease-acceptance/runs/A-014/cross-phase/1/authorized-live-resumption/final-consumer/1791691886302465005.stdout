@@ -1,0 +1,8 @@
+/workspace/scratch/46b31bb4dff6/037-a014-authorized-consumer-artifacts/final-capture.json
+FINAL CAPTURE SHA256 08a60ebbe1b72d8a13f4c45411f8d78ddacbc11feb1a37598eb213fe47662d3a
+HEAD 2d2fbfcc38808104b66267a9179660136c75dc97 TREE 6fa480a4a168292ec49061e099c05ec02d200fa5 BRANCH phase/2-json-and-stdin
+REMOTE READBACK
+2d2fbfcc38808104b66267a9179660136c75dc97	refs/heads/trial/037-a014-cross-json
+a7285d78a7fb1ee3966850656de6594317d5125f	refs/heads/trial/037-a014-cross-main
+dfcd658828d8e326c713683f3cdb9be05e044849	refs/heads/trial/037-a014-cross-phase
+STOPPED; tracked clean; unknown samples preserved; protected paths diff empty

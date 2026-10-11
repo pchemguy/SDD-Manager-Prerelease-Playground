@@ -1,0 +1,7 @@
+2d2fbfcc38808104b66267a9179660136c75dc97
+a7285d78a7fb1ee3966850656de6594317d5125f
+6fa480a4a168292ec49061e099c05ec02d200fa5
+[T-010] Add named-file JSON output with retained text behavior
+
+Render exactly integer lines/words as one JSON object and final newline; compose BOM/input option order while retaining exact default text, API and error categories. Include meaningful RED (5 tests/83 failing subcases), GREEN 26 unit/21 integration, all user-guide fence checks, current source archive membership and retained 36 text checks in owning evidence. Exactly T-010 initially closes with its result/tests/docs; Phase 2 parents remain open. Concrete seven-path tree 6fa480a4a168292ec49061e099c05ec02d200fa5 accepted in coordinator decision a955461e62e266a847a7cc3c6ecda15236b9def2. Stop before T-011, stdin/ranges/releases or Phase 2 main integration; protected historical hosted objects untouched.
+

@@ -1,0 +1,378 @@
+/workspace/scratch/46b31bb4dff6/037-a014-cross-phase
+/workspace/scratch/46b31bb4dff6/037-a014-cross-phase  7b9f570 [phase/1-named-file-utility]
+7b9f570aa4452d2ca9d6105479640528cb113f0e [T-008] Review distribution milestone and reject option abbreviations
+f7e3309b672cb13b1d8158613e81d50e8d1ecc18 [T-007] Build and verify isolated TextStats source distribution
+fde1537b5c4ba1bcef4f538dfb47276d564e4aaa [T-006] Document public API and runnable named-file usage
+809f045e3cd32445e7dca29d0174ea25aa5da7ea [T-005] Handle named-file input failures without tracebacks
+7d003c1cf31c994340d8644e95990ef2253754ed [T-004] Review named-file counting and complete milestone 1.1
+373203d6f41bee2229eed900b761de8669678e0b [T-003] Integrate named-file CLI and nonempty product checks
+f28f6e415b3e0c13353a61e82354c47b0d2cabb2 [T-002] Implement strict file acquisition and complete public API
+9dc8075dd1b96d3a2744717a9d6d98a3024acbec [T-001] Implement immutable statistics and whole-text counting
+commit 7b9f570aa4452d2ca9d6105479640528cb113f0e
+Author:     Codex <codex@openai.com>
+AuthorDate: Sat Oct 10 09:27:07 2026 -0400
+Commit:     Codex <codex@openai.com>
+CommitDate: Sat Oct 10 09:27:07 2026 -0400
+
+    [T-008] Review distribution milestone and reject option abbreviations
+    
+    Complete coherent code review; fix M1.2-001 after two behavioral RED failures.23 unit+18 integration and36 extracted module cases pass. Record report/exits/TODO and close only this review task plus eligible milestone parent. Fixes pchemguy/SDD-Manager-Prerelease-Playground#9
+
+ README.md                        |  2 +-
+ docs/dev/TASKS.md                | 12 +++++++---
+ docs/dev/reports/phases/1/1.2.md | 50 ++++++++++++++++++++++++++++++++++++++++
+ tests/integration/test_cli.py    | 10 ++++----
+ tests/unit/test_cli.py           |  2 +-
+ textstats/cli.py                 |  2 +-
+ tools/check_distribution.py      |  2 +-
+ 7 files changed, 69 insertions(+), 11 deletions(-)
+commit 7b9f570aa4452d2ca9d6105479640528cb113f0e
+Author: Codex <codex@openai.com>
+Date:   Sat Oct 10 09:27:07 2026 -0400
+
+    [T-008] Review distribution milestone and reject option abbreviations
+    
+    Complete coherent code review; fix M1.2-001 after two behavioral RED failures.23 unit+18 integration and36 extracted module cases pass. Record report/exits/TODO and close only this review task plus eligible milestone parent. Fixes pchemguy/SDD-Manager-Prerelease-Playground#9
+
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index e7d0de7..c089e55 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -32,7 +32,7 @@ The user requested preparation through TASKS and stop before implementation. The
+             Depends on: T-001, T-002 and T-003.
+             Evidence: sdd-verify code review plus applicable semantic/lifetime/API/subprocess/nonempty discovery checks; sdd-implement repairs every bug, critical issue or milestone SPEC/PLAN violation before closure. Record actual checks/counts, demonstration usefulness and evidence limits; publish milestone report with TODO section and dispositions.
+             Report: [milestone 1.1 review](reports/phases/1/1.1.md).
+-    - [ ] Milestone 1.2 — Failure handling and distribution
++    - [x] Milestone 1.2 — Failure handling and distribution
+         - [x] T-005 — Complete named-file CLI failure and usage handling
+             Outcome: R-008 complete expected error paths while preserving R-007 success/help and R-006 exceptions.
+             Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and relevant source error documentation.
+@@ -48,11 +48,11 @@ The user requested preparation through TASKS and stop before implementation. The
+             Scope: `tools/package_source.py`, `tools/check_distribution.py`, `tests/integration/test_distribution.py`, distribution instructions in README and necessary generated-artifact ignore rules while preserving existing rules.
+             Depends on: T-005 and T-006.
+             Evidence: build `dist/textstats-source.zip` with approved top-level/package/docs/disclosure/tool contents; exclude credentials/caches/coordinator resources/workflow fixtures. Extract temporarily, sanitize checkout import paths, verify imported package belongs to extraction, and actually invoke its `python -m textstats` from extracted source cwd. Check text/BOM/named-file success and input/decode/usage failures, exact outputs/statuses and unchanged inputs. Run archive/check integration plus nonempty product suites and the documented extracted-source example. No third-party build dependency or release publication.
+-        - [ ] T-008 — Review, test and report milestone 1.2
++        - [x] T-008 — Review, test and report milestone 1.2
+             Scope: complete named-file robustness, API/module docs, README and source distribution plus retained 1.1 behavior.
+             Depends on: T-005, T-006 and T-007.
+             Evidence: code review and complete milestone failure/regression/docs/nonempty discovery/extracted-source exits; repair every blocker before closure. Record usability/distribution demonstration, actual commands/counts and TODO section with allowed deferral evidence.
+-            Report: `docs/dev/reports/phases/1/1.2.md`.
++            Report: [milestone 1.2 review](reports/phases/1/1.2.md).
+     - [ ] Milestone 1.3 — Phase 1 review
+         - [ ] T-009 — Review, test and report phase 1
+             Scope: cross-milestone/API/CLI/resource/docs/distribution code review and all phase 1 exits.
+@@ -176,3 +176,9 @@ Tests preceded production functionality. With valid importable NotImplementedErr
+ `python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14, no skips/warnings. `python tools/check_distribution.py` verified exact extracted import path and 35 actual `python -s -m textstats` invocations from temporary extracted cwd with inherited PYTHONPATH/PYTHONHOME removed and user-site packages disabled: fourteen semantic/Unicode/terminator/BOM cases under both policies, dash-file success, missing/decode failures, three usage errors and help. Exact success/status/streams, input identity/cause/no traceback and unchanged sample/bad/dash bytes were verified; temporary extractions clean up on failure too. The checker builds an ignored archive and imports no checkout product code for acceptance.
+ 
+ Every updated README/public-guide runnable fence, including builder/checker and a separate Bash extraction/example, executed successfully. The extracted example returned exact three lines/five words; checkout-only test commands are explicitly distinguished from archive tools. Local user-guide links and diff whitespace passed. Other runtimes/platforms, locale-varied stdin, JSON/ranges, installed packaging and release publication remain unverified/outside Phase 1. Result/tests/docs/evidence/initial checkbox close together before publication and issue #8 reconciliation.
++
++## T-008 completion evidence
++
++Performed coherent milestone code review of the package/acquisition/API/CLI, tests/runner, docs and distribution, separately from test execution; scope, located finding M1.2-001, repair/RED/GREEN and exit assessment are in [milestone 1.2 report](reports/phases/1/1.2.md). Fixed argparse's unintended abbreviation acceptance after two targeted regression tests failed (input acquisition for `--keep` and status 1 rather than 2). `allow_abbrev=False` now rejects unsupported spelling before acquisition; extracted checker includes the additional regression and README truthfully reports 36 cases.
++
++`python tools/check_tests.py` passed 23 unit and 18 integration tests on Python 3.12.14 without skips/warnings; `python tools/check_distribution.py` verified isolated extracted import and 36 actual module processes. Current source review found no remaining milestone blocker, docs/examples retain applicable executed evidence and TODO is None. T-005–T-007 commits were separately published/read back and issues #6–#8 closed before this review. T-008 uniquely maps to issue #9/milestone #2. Report, scoped repair/tests/docs, evidence, initial task checkbox and eligible milestone parent status close together; publish/read back before review issue closure and milestone #2 validation/closure. Phase review remains unchecked until that hosted gate succeeds.
+# Git branch management
+
+Use this coordinator procedure for mutating branch setup, reuse, continuation, and authorized phase transitions. Apply **sdd-conventions**' **Workflow identity** rules; use [Git workflows](git-workflows.md) for explicit integration/publication. Local Git operations require no hosting backend. Execution/steering owners retain their commits and pushes; sdd-orient observes state without branch mutations.
+
+## Establish context and identity
+
+1. Use current orientation to identify eligible worktree, actual branch/HEAD, applicable instructions, pending-change ownership, authorized workflow/range, and accepted sources. Read-only review or selection creates no branch. Implementation pushes outstanding commits on the current established branch before task work or new branch setup; never create a branch to evade a push blocker.
+2. Establish working branch, target, starting checkpoint, relevant HEADs and remote destinations. Project preparation resolves the actual repository default branch from remote/project evidence; do not guess `main` or `master`. Its target is that default branch. Main implementation identifies its actual main integration branch explicitly; revision/feature implementation targets may be that branch or the active phase. Steering targets the paused implementation branch. For a revision nested within another active campaign, apply [revision modes](revision-modes.md#nested-revision-campaign): default source and return target are the actual parent campaign branch, with parent execution suspended. A prefix proves neither target nor ownership.
+3. Allocate or recover the convention's campaign identity for revision/steering/feature, or the owning PLAN/TASKS phase number for main implementation. Inspect reviews, features, phase-nested revisions and relevant remote state for allocation/collisions. Record the full baseline, actual working/target identities, scope, and active source links in the existing campaign/task/change record before dependent work. Preparation-only can reserve identity without authorizing implementation.
+4. For revision/steering, ensure the workflow-specific revision directory/record matches the branch identity; steering uses the owning phase report directory's revisions prefix; a steering report can begin with objective/context and gain verification results later. For feature preparation, reserve its features directory with a concise README identifying full baseline, branch/target, scope, and active sources. Main documents remain in docs/dev. Do not fabricate optional review stages or a second registry.
+
+## Create or reuse
+
+- For a closed revision amendment, establish [reopened campaign eligibility](revision-modes.md#eligibility-and-authority) before reuse; retain its original identity and record the new source/target checkpoint. An active blocked workflow resumes rather than reopening.
+- Reuse only when context, history, target and pending work fit the same scope. Preserve suitable legacy/in-flight names or explicit project/user overrides and their recorded association; no automatic migration.
+- For new work, choose the workflow convention's branch name and validate it with `git check-ref-format --branch`. Inspect local/remote name collisions and worktree occupancy. An unrelated occupied name needs a distinct slug suffix without changing campaign identity; remote uncertainty is not proof the name is free.
+- Create project preparation branches from the refreshed default checkpoint, and dependent implementation branches from the verified/published default preparation checkpoint under the gate below. Other scoped branches start from their established target checkpoint. Use a separate worktree where unrelated dirty work or target availability requires it; preserve original staging/work and never implicitly stash/reset/clean. Do not check out one branch in two worktrees.
+- An unborn/detached/conflicted state, missing usable checkpoint/target/remote, unresolved ownership or inability to establish identity blocks setup. Report the concrete decision/facility rather than guessing a different destination.
+- Publish branch checkpoints through the active owner's ordinary Git push and verify remote containment; do not create the same remote ref through a duplicate API operation. This manager needs no sdd-forge branch capability or PR workflow.
+
+## Main phase lifecycle
+
+Before the first implementation branch, complete the preparation integration gate below. Later phase branches still require the preceding phase's verified integration/publication. A new accepted preparation delta must pass the same gate before a new dependent implementation branch.
+
+Apply [phase activation](phase-activation.md) before the phase's first task and every authorized next-phase transition. Hosting reads the complete plan but projects only the eligible phase. Require explicit review units and confirmed phase objects when tracking is active.
+
+Select main-project work on the owning `phase/<number>-<slug>` branch. A bounded task or milestone request within an incomplete phase ends with verified commits/pushes and a paused phase branch, not a merge into main. Record completed range, remaining phase work, applicable evidence and current target context.
+
+When all phase work, delivery and phase reviews/reports, applicable hosted milestone closures and exit evidence are complete, use the Git protocol for one explicit merge into the established main integration branch, verify the merged state, publish, and confirm containment. A checkbox or completed subset is insufficient. Failed exits or publication retain branch/merge state; do not create the next phase.
+
+Only when the request authorizes further work, create the next phase branch from the updated verified/published main checkpoint and re-establish its scope. Split an authorized cross-phase range into sequential phase segments; each phase must meet its exit before the next branch starts. Do not execute extra tasks or perform an unrequested continuation to fill a phase. An explicit instruction to integrate a partial phase is a recorded override with its scope/evidence consequences, not the default.
+
+Feature/revision integration into a phase updates that phase's accepted inputs and evidence; it does not complete the phase. Steering returns control after its amendment merge. Standalone revision/feature boundaries retain their own accepted scope and integration gates.
+
+## Continuation
+
+Recover identities and actual file paths from retained records and Git; names alone do not prove state. Distinguish incomplete phase work, pending archive/reconciliation, uncommitted merge, completed merge awaiting push, and an already integrated campaign. Resume the same authorized operation rather than allocate another identity or repeat an existing merge. Report ambiguous ownership/target and preserve valid work. Retain branches unless deletion is explicitly requested or covered by project policy.
+
+## Preparation integration gate
+
+The default branch is the repository's actual configured default, commonly `main` or `master`, but any valid name is supported. Discover it from remote/project evidence and carry that exact branch and remote destination through merge, push and implementation handoff. The conventional preparation name `design-docs/main` denotes initial project preparation; its suffix does not select the default target.
+
+Apply this gate to initial project preparation, feature preparation, and accepted project-document preparation needed by a revision, including direct calls to document owners. Preimplementation project documents include PROJECT, architecture/decomposition and children, SPEC, PLAN/layout, TASKS and feature counterparts, their required adjacent QC reports, feature navigation, and applicable root orientation/disclosure. Commit these owned artifacts on a dedicated design-docs branch before implementation. Campaign review/revision plans and reports remain on the campaign revision branch; they are outside this gate. Document amendments and task/status evidence produced during already active implementation or checkpoint steering remain with that scoped working branch; do not relocate ongoing execution or historical records.
+
+1. **Prepare separately.** Before authoring project preparation documents, establish `design-docs/main` for initial preparation or `design-docs/<campaign>-<slug>` for scoped preparation. Create it from the refreshed default checkpoint; validate names, collisions and worktree ownership. Preserve the campaign suffix where applicable. Keep implementation and campaign review/revision artifacts off this branch. Commit and push coherent project-document/QC checkpoints there through coordination persistence.
+2. **Honor the boundary.** Preparation-only finishes with committed/pushed documents on the design-docs branch and stops. A request that authorizes implementation also authorizes the prerequisite preparation merge and publication; do not request the same authority again. An explicit unmerged/local-only boundary is honored and blocks dependent implementation when the required published baseline cannot be established.
+3. **Establish readiness.** Identify the exact accepted preparation tip, its owned paths, current document QC evidence, and actual default target. Inspect the full branch difference, including older commits. Unaccepted decisions, unresolved required reviews, unrelated changes or implementation mixed into the preparation difference block integration; preserve work and resolve ownership rather than merging it by implication.
+4. **Integrate preparation first.** Use [Git workflows](git-workflows.md#merge-verify-and-publish) for a two-parent explicit merge into the refreshed default branch, merged-state verification, target commit and publication. This preparation boundary is eligible independently of implementation phase completion. Record preparation tip, target parent, merge commit and publication in existing navigation or handoff evidence; revision campaign evidence remains on its revision branch. A failed merge, check or push stops the transition before a new dependent implementation branch is created.
+5. **Verify containment and branch afterward.** Confirm `git merge-base --is-ancestor <preparation-tip> <default-tip>` succeeds and the established remote contains the verified default merge. Create the implementation branch from that updated default checkpoint only after publication succeeds. A feature or revision may retain a separately established implementation integration target, such as an active phase, but its new execution branch still starts from this accepted default preparation baseline; resolve incompatible target histories before execution.
+6. **Resume from evidence.** A previously integrated preparation tip needs containment/publication verification, not another merge. Campaign-only review/revision work can create its revision branch and persist campaign records without a design-docs stage. If that revision also needs new project preparation, preserve its campaign branch, complete the project-document gate separately, and incorporate the published default checkpoint into the existing revision branch before source implementation. For an already created but unused implementation branch, check baseline containment before use. Preserve branches with existing implementation and report a missing baseline as a prerequisite conflict; do not reset, replay tasks or silently merge unfinished implementation into default.
+
+Ready QC reports and a pushed design-docs branch do not establish the default-branch baseline. Preparation integration does not complete any task, phase, feature incorporation, hosted projection or product acceptance. Record these states separately and retain design-docs branches unless deletion is authorized.
+
+**The default-branch push is mandatory after the preparation merge.** Push the verified merge commit to the actual default branch and verify remote containment before creating a dependent implementation branch. Carry the existing request, repository/ref, merge SHA, document scope and checks through coordination. A failed push retains the merge and blocks implementation; use [Git recovery](git-workflows.md#platform-authorization-rejection) for a host denial.
+
+## Descriptive directory association
+
+For new revision, feature and phase-nested steering packages, reserve `<campaign>-<slug>` with the matching complete branch suffix. Discover both suffixed and established unsuffixed directories by their stable sequence/baseline prefix; different slugs do not permit duplicate sequence reservations. Record collision suffixes and actual paths in existing context. Continuation uses that association; never migrate retained directories from the default alone.
+# Startup and continuation
+
+## Push before task work
+
+Use the current **sdd-orient** handoff to establish the eligible Git worktree, current branch, HEAD, governing instructions, and pending-change ownership. Resolve the established remote destination from repository policy and branch configuration. This prerequisite inspection enables the first execution action: push outstanding commits before any task selection, check execution, or edit.
+
+Check the current branch against the established remote branch and push all unpushed commits, independently of worktree cleanliness. Verify that the remote contains those commits; when no new remote changes occurred, its branch tip should match local HEAD. If no commits are outstanding, continue without creating a push solely for ceremony. Do not force-push, guess a destination, initialize Git, or reset pending work. Report missing destination, access failure, detached or unusable branch state, or divergence that prevents the required push; stop further implementation until resolved.
+
+Attempt the required push with existing shell authentication; do not discover/request tokens first. On a 403 or explicit credential failure, pass sanitized destination, transport, operation, and cause to **sdd-manage**'s **Hosting credentials** protocol for recovery and retry. Confirm remote containment before proceeding; unresolved access remains a push blocker.
+
+## Interpret the startup task state
+
+| Observed state | Action |
+| --- | --- |
+| Checked task or parent has a pending completion reassessment | After startup pushing, assess its current acceptance within the authorized range; correct unsupported status, preserve historical evidence, and retain the note until reassessment is resolved. Report out-of-range work as a scope conflict. |
+| Last checked task is ahead of the last completed task commit | Confirm task ownership and existing completion evidence, finish its commit and push, and coordinate its issue closure. Do not reimplement completed work. |
+| Current task is unchecked with task-owned pending changes | Inspect existing work and resume the remaining implementation and verification. |
+| Clean tree and checklist agrees with committed task boundary | Select eligible work within the requested range; do not treat cleanliness as proof that required issue closure has occurred. |
+| Missing or contradictory completion evidence | Obtain the missing checks or repair incomplete work within scope before treating the task as complete. |
+| Ambiguous task identity, ownership, or conflicting changes | Preserve changes and report the ambiguity before mutating the affected work. |
+
+Use the last task commit as the historical completed boundary; later maintenance, reconciliation, or steering-amendment commits do not establish another completed task. A pending reassessment disputes current acceptance without erasing that history. Preserve stable IDs in the owning TASKS or FEATURE-TASKS. If no task has been committed, use the established preimplementation baseline.
+
+Continuation finishes the interrupted task before new task selection. If it falls outside the newly requested range or the user directs a conflicting action, report the scope conflict rather than silently expanding or discarding work. Apply the shared [backend object lifecycle](../../sdd-conventions/references/backend-object-lifecycle.md): inspect pending milestone closures, report persistence, local parent reconciliation and phase integration before replaying transitions. Recover exact object/report identities, verify uncertain effects and finish the earliest unmet authorized transition. Do not repeat a completed review or activate a new phase while predecessor closure/publication is pending.
+
+When hosted tracking is active, check pending references and closures for verified completed tasks within the established maintained tracking scope through **sdd-forge** as part of normal completion processing, including older tasks completed while hosting was unavailable. Do not limit reconciliation to the resumed or latest task or infer completion from hosted state. Hosting unavailability permits further independent task execution only inside an already verified activated phase, for tasks whose projection and dependencies are satisfied. It does not waive missing initial or added-work projection, dependent review/closure or next-phase gates. Preserve and publish retained verified results; report hosted closure pending. An actual explicit human override is required to cross an unmet tracking gate in local-only mode.
+
+## Select the authorized range
+
+Use [range selection](range-selection.md) to resolve task, next-N-task, milestone, or phase requests into precise IDs, prerequisite evidence, and exit conditions. For feature work, select from the active FEATURE-TASKS and inspect relevant TASKS prerequisites; for main work, use TASKS. Report ambiguous active scope and unmet out-of-range prerequisites rather than selecting silently.
+
+Keep the selected range and checkpoint visible throughout execution. A user may change the range or pause work; preserve completed commits and current pending work, report the new boundary, and follow the latest instruction. A separate steering request does not authorize automatic continuation afterward.
+
+## Working branch and integration continuation
+
+Before creating a new dependent implementation branch, require **sdd-manage**'s [preparation integration gate](../../sdd-manage/references/branch-management.md#preparation-integration-gate): project preparation and required QC reports committed on design-docs, accepted tip explicitly merged into the actual default branch, merged state verified, target published and containment confirmed. Create the phase/feature execution branch from that default checkpoint afterward. Ready reports, local merges and a design-docs push are insufficient. A failed prerequisite prevents branch creation and task execution; retain the document/merge state. Campaign plans/reports remain on revision branches. For a continued revision needing project preparation, integrate the published default baseline into its existing campaign branch before source execution; preserve in-flight implementation and raise incompatible histories rather than resetting them.
+
+After startup pushing, establish or reuse the selected range's working branch and target under **sdd-manage**'s **Branch management** reference. Record its starting checkpoint in existing task/change evidence. Load [tracking decision](../../sdd-manage/references/tracking-decision.md) and [phase activation](../../sdd-manage/references/phase-activation.md) before further task edits/tests, including a resumed task with a missed prerequisite. Creating an implementation branch alone does not establish hosted readiness. Requested/confirmed tracking with missing/partial/unknown projection is a blocker; preserve work and apply the manager's [omission recovery](../../sdd-manage/references/tracking-decision.md#recover-an-omitted-requested-gate), not an implicit downgrade. Preserve unfinished task ownership before branch setup; do not create a new branch to evade pending work or push blockers. On continuation, distinguish unfinished tasks, completed tasks awaiting commit/push, an uncommitted merge awaiting conflict repair or verification, and a verified merge awaiting target publication. Finish the authorized state rather than repeating tasks or merging again. Ambiguous branch/target identities or out-of-range work block the affected continuation.
+
+## Check the claimed task closing boundary
+
+Apply the [task persistence audit and recovery](completion-and-checkpoints.md#task-persistence-audit-and-recovery) to the latest claimed closing task and selected pending work after startup publication and before advancing. Inspect its actual subject, result/evidence and owning checklist transition. Do not treat an aggregate multi-task commit, detached checkbox commit or malformed subject as a compliant closing boundary. Preserve verified published work; report affected identities and diffs to the manager for scoped recovery rather than automatically rewriting history or replaying implementation.
+
+## Current preparation inputs
+
+After pushing outstanding commits and reconciling pending state, use **sdd-manage**'s **Document QC gates** reference before new task execution or hosted projection. Inspect current owning task/design/SPEC/PLAN/layout review scope and evidence; ordinary completion status updates alone do not invalidate unchanged contract/decomposition review. Do not use a stale Ready label to resume changed requirements or select a guessed repair scope. Coordinate focused missing review within existing authorization; report a correction requiring new decisions or paths as a blocker. This does not postpone publication of an already verified committed result or authorize new implementation while resolving readiness.
+
+## Optional tracking decision at handoff
+
+Use **sdd-manage**'s [tracking decision](../../sdd-manage/references/tracking-decision.md) before dependent phase activation. Carry the recommendation, actual confirmation/decline, repository/scope and observed hosted state separately. A supplied GitHub token recommends enabled tracking but does not activate it; unresolved activation choices return to the manager. Reuse confirmed scope without repeated approval. Late confirmation reconciles retained evidence instead of replaying product tasks.
+
+## Scoped authority handoff
+
+Carry the existing request, destination/ref or hosted identity, payload scope, checks and explicit limits through the manager's [coordination handoff](../../sdd-manage/references/coordination.md#coordinate-execution). Keep credentials protected and optional tracking decisions separate. Preserve blocked publication under [Git recovery](../../sdd-manage/references/git-workflows.md#platform-authorization-rejection).
+
+## Environment readiness
+
+For observed installation/runtime blockers, use [environment recovery](environment-recovery.md) after the push-first prerequisite. Return actual attempts, supported alternatives and remaining required capabilities to the manager. Browser detail is conditional; ordinary engine/CLI work loads no browser prerequisites.
+# Range selection
+
+Resolve a human request against TASKS and any active FEATURE-TASKS before implementation starts. For an explicit feature request, select from FEATURE-TASKS and check external prerequisites in TASKS; for an explicit main-project request, use TASKS. If both contain eligible work and an unqualified “next” has no clear active scope, report the ambiguity instead of mixing the lists or choosing silently. Read the relevant PLAN or FEATURE-PLAN exits, dependency notes, and the current Git and worktree evidence from orientation. A checked item in either list alone does not establish completion; review task evidence if status is disputed or stale, obtaining **sdd-tasks** progress review when needed, and route feature-delta reconciliation to **sdd-integrate-feature**; direct checkpoint amendments require a human command to **sdd-steer**. Resolve interrupted or ambiguous task state using the **sdd-orient** handoff before selecting new work.
+
+Inspect **Completion reassessment pending** notes in owning entries or linked evidence. Treat affected checked tasks and parents as disputed, assess their current acceptance and dependency consequences, and include in-scope reassessment in the requested range rather than skipping it because every box is checked. Report an out-of-range reassessment as a scope conflict. Selection-only reports these facts without running checks, correcting status, or clearing notes.
+
+1. Identify the applicable task list and requested unit: one named task, the next eligible task, the next N eligible tasks, a named milestone, the next milestone, a named phase, or the next phase. Count explicit milestone/phase review/report tasks as tasks too; do not skip them or append out-of-range review work. Count **tasks** only for “N tasks”; count phase or milestone units only when the request names that unit. Resolve “next” from verified completion and dependency order, not from the first unchecked box alone.
+2. Expand the request to precise task IDs and enclosing milestone or phase. Use globally unique IDs for dependencies across lists; check prerequisites and identify any blocked or out-of-range dependency. Do not silently expand the authorized range; report the dependency and obtain its resolution through the appropriate workflow.
+3. State the selected IDs, prerequisite evidence, expected end condition, and the stopping boundary. An implementation agent must stop at that boundary for human review, even if subsequent tasks are ready. If no eligible work remains, report why without inventing work.
+
+A selection-only request is read-only and stops after reporting the range. It does not enter the push-first execution protocol. Selection within an implementation request follows startup pushing and interrupted-task handling. It does not mark tasks done, run checks, create a commit, or authorize the implementation workflow. A user may explicitly select a different valid order; document the dependency consequences instead of silently replacing their range.
+
+## Phase branch segments
+
+For main TASKS, identify the owning phase of each selected task and its full exit obligations. Execute a partial range on that phase branch and stop after persistence without integrating an unfinished phase. Split an authorized range spanning phases into sequential phase segments; complete/verify/publish each phase before starting the next branch. If the request excludes remaining work or evidence needed for the phase exit, report the blocker or pause rather than expanding the selected IDs. Selection-only identifies these boundaries without branch changes.
+# Execute one task
+
+Execute only the current task before its closing commit and verified publication. Follow the [task commit contract](completion-and-checkpoints.md#task-commit-contract); do not implement the next task early to accumulate a combined result.
+
+Read its outcome, dependencies, acceptance conditions, expected paths, and relevant SPEC, design, PLAN, and layout. For feature work, include applicable accepted feature documents. Inspect existing implementation and tests before editing; preserve useful pending work and project conventions.
+
+## Coordinate the development cycle
+
+1. Use **sdd-tdd** to derive relevant scenarios and write or revise tests. For changed behavior or a bug fix, observe the intended failure before the production change; apply authorized exceptions and preserve existing work when historical RED evidence is absent. Behavior-preserving refactoring can use established coverage.
+2. Apply production changes within the task scope. Satisfy the accepted contract rather than merely weakening an assertion or hardcoding a passing fixture. Keep component ownership and physical placement consistent with governing design and layout.
+3. Use **sdd-docs** after substantive changes to review affected module and API documentation, README, guides, and examples. It reports amendments needed in governing documents to the user; independent work may continue, but a disputed acceptance condition remains unresolved.
+4. Use **sdd-verify** for the required checks and acceptance assessment. Inspect actual evidence, failures, warnings, skips, coverage limitations, and declared project or boundary checks.
+5. Repair implementation failures within scope. Coordinate test repairs with **sdd-tdd** and documentation repairs with **sdd-docs**. Repeat affected verification after relevant changes; existing evidence may be reused only when still applicable.
+
+Development-cycle test runs do not replace the verification campaign. Verification does not mark the task complete or repair code itself. Read the evidence and decide completion under [completion and checkpoints](completion-and-checkpoints.md).
+
+## Scope and blockers
+
+- Preserve unrelated code, documentation, and pending changes. Do not reset or delete existing implementation to reconstruct a test-first history.
+- Report missing requirements, conflicting authoritative documents, unavailable prerequisites, or dependencies outside the selected range. Do not turn an unresolved decision into implementation policy.
+- Report observed pre-existing or unrelated failures; do not silently expand repairs beyond authorization or claim the suite passes. Resolve whether required acceptance can be established before marking completion.
+- If work cannot be completed, keep the task unchecked or correct an unsupported checked claim, including one from an earlier durable task result. Preserve partial work, historical evidence, and any unresolved completion-reassessment note; report the blocker and remaining steps. Commit a partial checkpoint only when the user or project policy authorizes it, clearly distinguishing it from a completed task commit.
+- Do not create feature overlays, reconcile the task hierarchy, or perform a checkpoint amendment merely to make the selected task pass. Those changes require their own established scope and owning workflow.
+
+# TASKS review report
+
+## Current gate
+
+State: **Ready for TASKS/PLAN conformance**. [TASKS](TASKS.md) SHA-256 `64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2` contains the complete initial two-phase hierarchy with no children. The coordinator accepted the published task-list/report checkpoint; acceptance-only TASKS annotation retains equivalent reviewed scope. Preparation is complete and stops before implementation, hosted projection and default-branch integration.
+
+Governing current SHA-256 identities: PLAN `b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8`, layout `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f`, combined PLAN QC `f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e`, SPEC `5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a`, SPEC QC `44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899`, PROJECT `cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d`, ARCHITECTURE `51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302` and DECOMPOSITION `30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee`.
+
+The exact accepted layout/combined-QC checkpoint is `b3ba0338d71c167aaec8ca85317d09002557ea2d`, layout blob `4039da9d2e0422ad3b53fc82f18b63612e75ccac` and report blob `b59fa054824a3a8768e59c2dc15f90c7b9b7d330` (coordinator decision `0e5c6d9`). Current layout has only its acceptance annotation changed; PLAN QC Revision 2 rechecked equivalent placement and refreshed current identity. Accepted strategy and behavioral/design semantics remain unchanged.
+
+## Initial review
+
+On 2026-10-10 the sdd-tasks owner read every task against accepted design/SPEC/PLAN/layout and current upstream QC. Initial TASKS SHA-256 was `b67dfc17dfd452cc4a42c2a265d4ce190d0b71b3d09d99f6f59220ebef0e98cc`, governing PLAN SHA-256 `16f5704523ccba7be5b8062e5f684964dcd4d17eb3d695f105060daae9b7ee32` and combined PLAN QC SHA-256 `b5c7f4d8b58b822d364f3a73955080bca035b250b8d53e3174fbef9f7a872464`; other governing identities are unchanged from the current gate. Assessed delivery/exit coverage, bounded semantic scope, interfaces, integration/failures/docs/distribution, unique executable ownership, exact checklist form, dependencies and mandatory review units. All 17 tasks and every parent are unchecked; no prior product completion or active FEATURE-TASKS exists.
+
+| Delivery milestone | Delivery count and IDs | Excluded review task | Scope/count assessment |
+| --- | --- | --- | --- |
+| 1.1 Named-file counting | 3: T-001/T-002/T-003 | T-004 | Pure core/text API, strict file/full API and real CLI integration are localized coherent collaborators, each with own checks/docs. No whole subsystem hidden behind one task; CLI produces usefulness within the first milestone. Discovery support accompanies capability tests, not artificial tasks. |
+| 1.2 Failure handling and distribution | 3: T-005/T-006/T-007 | T-008 | Error contract, runnable public docs and isolated source delivery are independent bounded outcomes; integrated failures/regressions and distribution acceptance close in this milestone. No task merely repeats a report-only review. |
+| 2.1 JSON output | 2: T-010/T-011 | T-012 | Explicit 1–2 fragmentation assessment: retain compact JSON implementation/composition with own docs/tests and independently meaningful extracted-source portability extension. A third delivery task would split a small cohesive format capability or pad review work. T-011 changes acceptance/check delivery code, so it is not report-only inflation. |
+| 2.2 UTF-8 stdin and final delivery | 3: T-013/T-014/T-015 | T-016 | Borrowed-byte acquisition, source/format CLI composition and final docs/source-package exits are bounded compatible increments with no new public API; final integration evidence is gathered before the milestone review. |
+
+Dedicated review milestones 1.3 and 2.3 contain exactly T-009 and T-017, respectively, excluded from delivery counts and not from execution selection. Their prerequisite clauses require all delivery milestones complete/closed without depending on their own still-open milestone. Totals: 11 delivery tasks, four milestone review tasks and two phase review tasks = 17 tasks; phase 1 has nine and phase 2 eight. Each phase retains two delivery milestones plus one dedicated review milestone from PLAN.
+
+| Planned outcome / SPEC scope | Executable coverage |
+| --- | --- |
+| 1.1 / R-001 through R-007 and early R-012 | T-001 values/semantics/text API, T-002 decode/full API/ownership, T-003 real CLI and collection runner; T-004 whole-path review/report. |
+| 1.2 / R-008/R-011/R-012/R-013 | T-005 expected failures/usage, T-006 public docs/examples, T-007 allowlisted extracted module check; T-008 milestone review and T-009 phase exits/integration gate. |
+| 2.1 / R-009 plus retained contracts | T-010 JSON/default/error composition/docs, T-011 extracted-source JSON acceptance; T-012 milestone review. |
+| 2.2 / R-010 and final R-011/R-012/R-013 | T-013 bytes/ownership, T-014 stdin CLI/source/format/failures, T-015 final examples/distribution; T-016 milestone review and T-017 final phase/report aggregation. |
+| F-001 through F-004 / C-010 | Explicit separate-feature deferral, preserved shared terminators/normalization/source seams, no feature implementation or extra API export. |
+| Review/lifecycle | Every delivery milestone's final task is code review/testing/report with repair/blocker/TODO obligations; final phase tasks gather reports/exits and gate verified hosted closure/integration/publication before later activation. |
+
+No confirmed conformance finding remains or was identified in this initial review; no Revision cycle is fabricated. Task scopes use accepted physical owners without strategy changes, unsupported features or premature source creation. Individual acceptance clauses provide feasible verification evidence, including portable controlled failures plus real subprocess/module execution. Documentation/discovery/package obligations are neither omitted nor only asserted in reports.
+
+## Performed checks and evidence limits
+
+Read the full task list and compared all outcomes/exits against PLAN/SPEC/design/layout. Programmatic document checks verified exactly T-001 through T-017 with one owning checklist each, only unchecked status, phase heading/root-checkbox agreement, four/eight-space nested parents/tasks, PLAN milestone ID/name equality, backward-resolving prerequisite IDs, exactly one task in each phase review milestone and the final milestone review task in every delivery group. No active feature list supplies duplicate ownership.
+
+Markdown link/headings, exact source identities and staged whitespace/scope checks accompany this checkpoint. Proposed report paths are the pinned lifecycle's future evidence locations, not links claiming nonexistent reports. Product tests, tools, package artifacts and code do not exist, so all task verification clauses remain planned. No code/runtime/distribution acceptance result, task completion, hosted object or default-branch preparation integration is claimed.
+
+Preparation-only is complete with scoped coordinator task-list/report acceptance recorded below and stops on design-docs before production implementation. Future execution additionally needs the manager's accepted-preparation default integration/publication and verified eligible-phase hosted projection, plus a separately authorized bounded range. Task acceptance cannot preaccept those unperformed actions.
+
+## Revision 1
+
+The coordinator accepted TASKS/report commit `1510709f6e10d82d1b525b8c7cb221c5e1c5e20f`, TASKS blob `a4a5a4c645fd87c6d00cc057b662b1234b4adc26` and report blob `d6e9306e34157632bcf4cdea638427770edb4ad9`, after full substantive review under delegated test-artifact assessment authority (published decision `df4dfd5`). The sdd-tasks owner recorded this scoped decision in TASKS's preparation boundary; current TASKS SHA-256 is `64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2`. Actual diff inspection confirms every task/parent checkbox, ID, title, scope, dependency, evidence clause and persistence rule is unchanged. Initial reviewed state and counts/findings are retained above.
+
+PLAN's stale layout-review status was corrected without a strategy change; PLAN QC Revision 3 establishes its current SHA-256 `b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8` and unchanged coverage. Current combined PLAN QC SHA-256 is `f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e`; layout/SPEC/QC/design identities remain unchanged. Rechecked acceptance annotations, exact current hashes and unchanged hierarchy against these equivalent governing semantics. Retain Ready, all prior count rationale and no confirmed findings. Root navigation now identifies accepted preparation and the unchanged preparation-only stopping boundary. No completion checkbox, implementation file, hosted object or default integration was created.
+# PLAN review report
+
+## Current gate
+
+State: **Ready for combined strategy/layout conformance**. [PLAN](PLAN.md) SHA-256 `b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8` and [layout](layout.md) SHA-256 `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f` are reviewed against current accepted SPEC SHA-256 `5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a` and current SPEC review SHA-256 `44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899`. Governing design SHA-256 identities are PROJECT `cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d`, ARCHITECTURE `51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302` and DECOMPOSITION `30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee`. No focused children exist.
+
+The coordinator accepted the published strategy/report checkpoint, with exact scope recorded in Revision 1. The coordinator accepted the layout/combined-QC checkpoint; acceptance-only layout annotation has equivalent reviewed placement content and TASKS authoring is eligible. There is no unresolved confirmed technical finding; no implementation or runnable product verification is claimed.
+
+## Initial strategy review
+
+On 2026-10-10 the sdd-plan owner read complete PLAN against the accepted SPEC/design and current QC evidence. Initial strategy PLAN SHA-256 was `62373f9d8dd92adae27e5a29e453fbbbfee9b0128efd52a1fb115e1b99ac4996`; governing SPEC/QC/design hashes were the same values retained in the current gate. SPEC/report acceptance at commit `bf3eb5e9a8d30a9e8a457f7708afa3b400100417` (SPEC blob `86cfd0c0cc6241bad1329a4873dbbc7517cc1160`, report blob `6b7b1637fc0095387b2c32846725f64c4cc2e715`; coordinator decision `37115e0`) is recorded. The subsequent acceptance-only SPEC annotation was rechecked in SPEC report Revision 2, with exact updated identities and unchanged behavior.
+
+Review assessed meaningful MVP usefulness, complete obligation coverage, bounded growth, dependencies, failures/lifetime, documentation/distribution exits, code-review/report units, staged hosting and integration gates. It deliberately excludes physical placement until accepted strategy enables layout.
+
+| Phase | Delivery milestone count | Excluded review unit | Scope/count assessment |
+| --- | --- | --- | --- |
+| 1 Named-file utility | 2: 1.1 and 1.2 | Dedicated 1.3, exactly one phase review task | Explicit 1–2 fragmentation review: retain the user's boundaries. 1.1 yields useful real API/CLI counting; 1.2 supplies independent robustness/documentation/distribution readiness. Scope is narrow, dependencies short and end-to-end integration timely; splitting to reach 3–5 would add handoff overhead or pad the plan. |
+| 2 JSON and stdin | 2: 2.1 and 2.2 | Dedicated 2.3, exactly one phase review task | Explicit 1–2 fragmentation review: retain the user's separate alternate-format and input-source increments. Each adds independently assessable behavior with retained baseline checks; 2.2 closes final docs/distribution. Neither requires another phase or quota-driven milestone. |
+
+Each of the four delivery milestones reserves its own final milestone code review/testing/report task, excluded from delivery counts. Each dedicated phase review milestone has exactly one phase task and no extra milestone task. Detailed delivery task counts and scope belong to TASKS after layout acceptance.
+
+| Contract group | Delivery coverage and conformance |
+| --- | --- |
+| R-001 through R-007 | 1.1 real named-file/API/CLI success, complete semantics/API exception/lifetime coverage and nonempty suites; earliest useful path requires no prior skeleton milestone. |
+| R-008 | 1.2 CLI failure/usage completeness and preservation of existing success path; later formats/sources retain error categories. |
+| R-009/R-010 | Sequential 2.1 JSON then 2.2 stdin, with composition and phase 1 regressions. Strict byte/locale/lifetime obligations are not deferred past final exits. |
+| R-011/R-012/R-013 | Early suites, 1.2 docs/README/source exit, subsequent option/source documentation and extracted-source behavior checks; actual collected counts required above zero. |
+| F-001 through F-004 | Honest deferred separate feature, with existing semantic/source seams retained. No range implementation, task projection or new public API included. |
+| Lifecycle and reports | Mandatory code review and tests remain separate obligations; blocker repair and report/TODO requirements are explicit. Full phase completion/closure/integration/publication gates next activation; partial ranges pause. |
+
+No confirmed strategy finding was identified. All significant accepted contracts have a feasible delivery route or explicit accepted future-feature deferral. Milestones are integrated capabilities rather than component/file inventories; dependency and verification breadth supports bounded task derivation. Required public docs/distribution are not postponed indefinitely. Planned tests/checks are obligations, not performed evidence.
+
+## Checks and limits
+
+Owner conformance review found no invented capability, prerequisite delaying usefulness, omitted error/resource boundary or hidden delivery reordering. The risks match accepted in-memory and function-pipeline design. Document links/headings and milestone identity uniqueness are checked with staged scope/whitespace verification at publication. No correction/recheck cycle or Revision section is invented for this initial strategy review.
+
+Remaining dependency: accept this strategy checkpoint, then author and assess layout, append combined PLAN/layout assessment here, and present the separate layout checkpoint. TASKS authoring remains held until both strategy and placement are technically ready and have actual delegated scoped acceptance. Preparation remains on design-docs; no phase is activated now.
+
+## Revision 1
+
+The coordinator accepted strategy-only PLAN/report commit `928c319ed84a919c6424adfa4522918e054a1d43`, PLAN blob `8fe5bccad16fcfda6bf554f1b82dc324a4c8f048` and report blob `70408868785610c4521266b839777a96db734126`, under delegated test-artifact review authority (published decision `af5a37a`). The sdd-plan owner recorded the scoped decision and updated PLAN's placement-status navigation. The actual PLAN diff contains those evidence/status annotations only; milestones, contracts, exits, dependencies and strategy remain equivalent to the accepted state. Exact current PLAN SHA-256: `16f5704523ccba7be5b8062e5f684964dcd4d17eb3d695f105060daae9b7ee32`.
+
+Prepared the separate layout proposal, SHA-256 `2129fb5b133f81e0caafa59bfcaaea720869363a190404cc83a5cb7aedf2ed65`, and reviewed it against all accepted structural/behavioral/strategy inputs. The current SPEC and QC hashes above are unchanged; PROJECT/design hashes remain equivalent to the initial assessment. This is a combined placement recheck cycle, not a fabricated defect or replacement of the initial strategy review.
+
+| Placement coverage | Assessment |
+| --- | --- |
+| C-001/C-002/C-003/C-004 and text portion of C-006 | Cohesive pure core module, unit semantic/value checks and API integration; once-only normalization/shared terminators remain callable without I/O dependencies. |
+| C-005 and file portion of C-006 | Byte I/O module and core dependency preserve complete decode/newline/ownership seams; direct public exports in facade are unambiguous. Future borrowed stdin has the same I/O owner. |
+| C-007/C-008/C-009 and module entry | Cohesive CLI module plus minimal entry adapter; unit controlled-failure seams and real module subprocess integration. No dependency cycle or duplicate counting owner. |
+| Deferred C-010 | No premature feature file/task; future pure selection remains alongside shared traversal or an accepted focused amendment. |
+| R-011/R-012 | Public reference and source docstrings, runnable README updates, nonempty independent unittest suites, package discovery markers and count-enforcing runner. Workflow fixtures explicitly excluded from product verification. |
+| R-013 | Allowlisted standard-library source archive, temporary isolated extraction, exact module entry invocation and imported-location validation. Package/README/public reference/disclosures included; credentials/coordinator resources/unchecked records excluded. |
+| Incremental task placement | Core then file/API then integrated CLI fit 1.1; failure/docs/package exits fit 1.2; JSON/stdin local collaborators and docs/check extensions fit phase 2. Proposed commands clearly unrun and files absent, preventing false completion claims. |
+
+Combined owner review finds no confirmed scope/ownership/dependency/placement gap or new product requirement. Retain the initial two-milestone count assessments and all mandatory review/report outcomes. Layout has no unresolved placement choice. Markdown links/headings, changed document hashes and staged diff scope/whitespace were checked for this checkpoint. No source, test implementation or tool file was created or run.
+
+Technical readiness is Ready for TASKS input conformance, but the separate coordinator layout acceptance is still required. After actual scoped acceptance, refresh acceptance-only identities if annotated and derive TASKS with sdd-tasks. Preparation remains on design-docs and stops before production implementation; no phase has been activated or projected.
+
+## Revision 2
+
+The coordinator accepted the separate layout and combined PLAN QC at commit `b3ba0338d71c167aaec8ca85317d09002557ea2d`, layout blob `4039da9d2e0422ad3b53fc82f18b63612e75ccac` and report blob `b59fa054824a3a8768e59c2dc15f90c7b9b7d330`, under delegated test-artifact review authority (decision `0e5c6d9`). The sdd-plan owner recorded that scoped decision in layout's checkpoint paragraph. Current layout SHA-256 is `834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f`; its actual diff changes acceptance evidence only, with every path/owner/command/distribution constraint unchanged. PLAN/SPEC/design identities remain unchanged. Recheck retains combined Ready and prior coverage/count conclusions. TASKS authoring and its owner QC may proceed; no task acceptance, hosted projection or implementation is implied.
+
+## Revision 3
+
+The sdd-plan owner corrected only PLAN's stale placement-status sentence from pending assessment to actual scoped coordinator layout acceptance at `b3ba0338d71c167aaec8ca85317d09002557ea2d`. Current PLAN SHA-256 is `b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8`; prior SHA-256 `16f5704523ccba7be5b8062e5f684964dcd4d17eb3d695f105060daae9b7ee32` remains preserved in Revision 1/2 evidence. All strategic phase/milestone names, outcomes, requirements, dependencies and exits are unchanged. Layout/SPEC/design identities remain unchanged. Actual diff inspection and status/navigation recheck retain equivalent combined conformance and Ready. This annotation correction adds no implementation or projection authority.
+# SPEC review report
+
+## Current gate
+
+State: **Ready** for SPEC/design conformance. The coordinator accepted the published SPEC/report checkpoint; the acceptance-only annotation has equivalent reviewed semantic content, and PLAN strategy is eligible. No unresolved confirmed technical finding remains. No implementation or product test result is claimed.
+
+Reviewed scope: [SPEC](SPEC.md), requirements R-001 through R-013 and deferred F-001 through F-004; no children. Exact current reviewed SHA-256: `5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a`. Governing document SHA-256 identities are PROJECT `cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d`, ARCHITECTURE `51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302` and DECOMPOSITION `30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee`.
+
+The governing semantic content has scoped coordinator acceptance at PROJECT commit `b7b017cf7480bded8ad7f7de4a4eed690083b39c` / blob `861ab8534bf96f22c8293922e34dbc292073bc1c`, ARCHITECTURE commit `334a4dd3f257ffefeb18ab88dfedc425b44838fc` / blob `1e46cf6139b9998f902b16300afed0f63b53e257`, and DECOMPOSITION commit `566a1af2ddd44d79a898c2e67607360395044ba6` / blob `0afa55c7082455d7e102f9c3d056d474e686da57`. Subsequent edits to these roots record those scoped decisions only; inspection found no changed product/design obligation. Current hashes identify the exact governing state used here.
+
+## Initial review
+
+On 2026-10-10 the sdd-specify owner read the complete draft against the supplied product request and the accepted PROJECT/design. Initial SPEC SHA-256 was `2f1b1b52d8cbbe4da6cdf5f917308ce787a74e3c37c7b0a5a66b53d6e02d4566`. Review assessed canonical ownership, signatures, success/error/resource behavior, staged delivery, objective acceptance, extension boundaries, scope and editorial consistency. Planning milestone/task counts are not applicable to SPEC.
+
+| Coverage | Assessment |
+| --- | --- |
+| R-001/R-002 and C-001/C-006 | Fixed exports/signatures, immutable nonnegative result, whole-input APIs and silence preserved. Constructor negative/non-integer exceptions, bool exclusion and value equality settle the delegated value boundary and are explicit for coordinator review. |
+| R-003/R-004/R-005 and C-002/C-003/C-004 | Every supplied whole-input example retained; CRLF/CR/LF, no phantom line, Unicode word whitespace and once-only leading BOM behavior are consistent. Extra anchors exercise interior BOM and lone terminators without adding capabilities. |
+| R-006/R-008/R-010 and C-005/C-006/C-008 | Strict complete binary decode preserves terminators, required API exceptions propagate, owned files close and borrowed stdin stays open. No partial output/result and input preservation are covered. |
+| R-007/R-008/R-009 and C-007/C-008/C-009 | Exact text output, status categories, one input, dash filenames, help, validation-before-acquisition, JSON fields and unchanged text default are assessable. Literal `-` before stdin delivery and `./-` afterward explicitly settle staged grammar. |
+| R-011/R-012/R-013 | API/module docs, runnable README, discoverable nonempty unit/integration suites, separate workflow fixtures and extracted-source module invocation have explicit acceptance obligations. |
+| F-001 through F-004 and C-010 | Full range grammar/rejection/decode/selection/BOM/subset examples retained as deferred feature obligations. No cap, no extra API export and source-independent stdin compatibility preserved without feature implementation. |
+
+| Finding | Location and consequence | Owner / correction | Current disposition |
+| --- | --- | --- | --- |
+| SPEC-QC-001 | F-003's phrase “mixed separate/equals range spelling” could suggest that multiple range options compose, contradicting F-001's exactly-one rule. | sdd-specify: express either accepted spelling without implying repeated options. | Resolved by Revision 1. |
+
+No other confirmed conformance issue was found. The compact single-root specification has one behavioral owner per requirement and sufficient design links; no child split or new interface is justified. Non-domain API argument behavior remains deliberately unspecified beyond the explicitly defined statistics constructor.
+
+## Revision 1
+
+The sdd-specify owner changed only F-003's ambiguous composition phrase to “using either accepted range spelling.” Revised SPEC SHA-256 is `5aefa1d7a1c3dca289cb778b4352a9e97623b4f3bcba2f4b43362c8f6aac7c45`; governing identities are the unchanged current hashes above. Rechecked F-001/F-003 and the full option/range boundary: exactly one option, either spelling, and repeated mixed forms rejected before acquisition. SPEC-QC-001 is resolved; no scope or design change was needed.
+
+Document links and heading spacing were checked across changed preparation documents, and requirement identity uniqueness was checked. Staged diff whitespace and scope inspection are part of checkpoint verification. No product code, runtime acceptance tests or packaging check can be executed yet. Ready is technical conformance only; coordinator assessment of this concrete SPEC/report checkpoint remains the next gate.
+
+## Revision 2
+
+After actual coordinator acceptance of SPEC/report commit `bf3eb5e9a8d30a9e8a457f7708afa3b400100417` (SPEC blob `86cfd0c0cc6241bad1329a4873dbbc7517cc1160`, report blob `6b7b1637fc0095387b2c32846725f64c4cc2e715`; decision `37115e0`), sdd-specify appended its exact scoped decision to SPEC's review boundary. The current SPEC SHA-256 is `5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a`. The actual diff changes only acceptance evidence, not requirements R-001 through R-013/F-001 through F-004, examples, interfaces or delivery obligations. Governing hashes remain unchanged. Owner recheck retains equivalent full conformance evidence and resolved SPEC-QC-001; Ready remains current. PLAN strategy may proceed; layout and TASKS remain separate review gates.

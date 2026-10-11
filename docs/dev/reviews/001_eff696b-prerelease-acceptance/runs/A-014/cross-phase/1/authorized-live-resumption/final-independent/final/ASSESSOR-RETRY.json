@@ -1,0 +1,9 @@
+{
+  "scope": "Independent assessor final-capture retry",
+  "original_status": 1,
+  "error": "AssertionError from assessor erroneously requiring textual ls-remote output order main/phase/json; actual remote results correctly listed json/main/phase.",
+  "actual_observation": "final/live.stdout retains exact reached refs; no product failure occurred.",
+  "correction": "Compare complete exact ref lines independent of output ordering.",
+  "retry_status": 0,
+  "product_mutation": false
+}

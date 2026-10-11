@@ -1,0 +1,8 @@
+a7285d78a7fb1ee3966850656de6594317d5125f refs/heads/main
+dfcd658828d8e326c713683f3cdb9be05e044849 refs/heads/phase/1-named-file-utility
+2d2fbfcc38808104b66267a9179660136c75dc97 refs/heads/phase/2-json-and-stdin
+2d2fbfcc38808104b66267a9179660136c75dc97 refs/remotes/origin/trial/037-a014-cross-json
+a7285d78a7fb1ee3966850656de6594317d5125f refs/remotes/origin/trial/037-a014-cross-main
+dfcd658828d8e326c713683f3cdb9be05e044849 refs/remotes/origin/trial/037-a014-cross-phase
+88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/trial/main
+7b9f570aa4452d2ca9d6105479640528cb113f0e refs/remotes/trial/phase/1-named-file-utility

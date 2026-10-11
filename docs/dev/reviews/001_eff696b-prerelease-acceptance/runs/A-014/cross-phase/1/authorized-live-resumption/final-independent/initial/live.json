@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/trial/037-a014-cross-phase",
+    "refs/heads/trial/037-a014-cross-main",
+    "refs/heads/trial/037-a014-cross-json"
+  ],
+  "status": 0,
+  "time": "2026-10-11T03:53:25.594630+00:00"
+}
