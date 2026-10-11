@@ -59,7 +59,7 @@ class DistributionTests(unittest.TestCase):
                 verify_archive(faulty)
 
     def test_documented_checker_script_builds_and_runs(self):
-        result = subprocess.run([sys.executable, str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
+        result = subprocess.run([sys.executable, "-B", str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
                                 capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('extracted import:', result.stdout)

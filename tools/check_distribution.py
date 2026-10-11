@@ -38,7 +38,7 @@ def verify_archive(archive: Path) -> int:
         environment['PYTHONNOUSERSITE'] = '1'
 
         def invoke(arguments):
-            return subprocess.run([sys.executable, '-s', *arguments], cwd=root,
+            return subprocess.run([sys.executable, "-B", '-s', *arguments], cwd=root,
                                   env=environment, capture_output=True, text=True)
 
         imported = invoke(['-c', 'import textstats; print(textstats.__file__)'])

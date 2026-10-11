@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 class ModuleCliTests(unittest.TestCase):
     def invoke(self, *args, cwd=ROOT):
-        return subprocess.run([sys.executable, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+        return subprocess.run([sys.executable, "-B", '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
 
     def test_named_file_matrix_and_bom_option_order(self):
         cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)), ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
