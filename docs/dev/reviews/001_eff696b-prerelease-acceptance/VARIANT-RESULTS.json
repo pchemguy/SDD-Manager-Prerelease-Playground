@@ -231,10 +231,10 @@
     "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json"
   },
   "A-027.core": {
-    "status": "Running",
-    "agent_behavior_assessed": false,
-    "evidence_class": "inspection",
-    "reason": "Fresh current report reconciliation and actual final evidence integration pending; original Blocked assessment retained.",
-    "assessment_path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json"
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer and independent actual integration",
+    "reason": "Additive independent whole Passed after actual evidence main merge b263799 parents549+7be and exact remote publication; original Blocked assessment and limits retained.",
+    "assessment_path": "runs/A-027/authorized-final-reconciliation/1/final-independent/ASSESSMENT.final-published.json"
   }
 }

@@ -1,0 +1,62 @@
+{
+  "A014-FINAL-PUBLISHED-LEDGER-AUDIT.json": {
+    "sha256": "53bfbde963c920efb2fcc4f46beffae5beaeac9a9f2f57032c0fc667603d6930",
+    "bytes": 19006
+  },
+  "ACTUAL-MERGE-HELPER.independent.json": {
+    "sha256": "dbc7a1dd5e892b334c5ee8941d737903c35c27f2f175f73d71159eb4c1249782",
+    "bytes": 5295016
+  },
+  "ASSESSMENT.final-published.json": {
+    "sha256": "88e573ce55639d5b9bd0845309c3aa87e05d439a2a2050a187747ea77041b3dc",
+    "bytes": 7737
+  },
+  "ASSESSMENT.preintegration.json": {
+    "sha256": "898aadfac55e26e404e918b0938f5396728e41810b54321c2a4ca7af3888e8e7",
+    "bytes": 21072
+  },
+  "ASSESSMENT.prospective-evidence-integration.json": {
+    "sha256": "5b6fc430b58f1f17153ed7c21762d6eae0556ba36142c7535ef1dba299decce1",
+    "bytes": 23303
+  },
+  "COMPATIBILITY-PNG-LINK-AUDIT.json": {
+    "sha256": "26efc2191109d4a56c4635dca81bf7891059d9aec7e814febc0d96eadee452aa",
+    "bytes": 36919
+  },
+  "CURRENT-LEDGER-SOURCE-AUDIT.json": {
+    "sha256": "116caf679295d9b3d87c9d1120508227e3f45b23ac49da25f2e35d5c38a00e17",
+    "bytes": 85767
+  },
+  "FRESH-PROSPECTIVE-SOURCE-AUDIT.json": {
+    "sha256": "2196d26518b2bdcf447b937dd6d2ba21bb96aeef196ce1aa977610c21d109df3",
+    "bytes": 2593
+  },
+  "SOURCE-MERGED-CHECK-CONTRACT.json": {
+    "sha256": "efdc4dc666329f06c6a9f818a9828123ae377501e061dce7c6b1a37410143e2f",
+    "bytes": 2858
+  },
+  "audit.py": {
+    "sha256": "a90632567894747d34f2a65c925dc3896345e9cfec38eeb2960307565d56c794",
+    "bytes": 6783
+  },
+  "final-sealed/ACTUAL-MERGE-HELPER.independent.json": {
+    "sha256": "dbc7a1dd5e892b334c5ee8941d737903c35c27f2f175f73d71159eb4c1249782",
+    "bytes": 5295016
+  },
+  "final-sealed/ASSESSMENT.final-published.json": {
+    "sha256": "88e573ce55639d5b9bd0845309c3aa87e05d439a2a2050a187747ea77041b3dc",
+    "bytes": 7737
+  },
+  "final-sealed/ASSESSMENT.preintegration.json": {
+    "sha256": "898aadfac55e26e404e918b0938f5396728e41810b54321c2a4ca7af3888e8e7",
+    "bytes": 21072
+  },
+  "final-sealed/ASSESSMENT.prospective-evidence-integration.json": {
+    "sha256": "5b6fc430b58f1f17153ed7c21762d6eae0556ba36142c7535ef1dba299decce1",
+    "bytes": 23303
+  },
+  "final-sealed/MANIFEST.json": {
+    "sha256": "ce99da3ddd505fbf515b824571bb37967b5de2f977edd46f8ca8661d653613cc",
+    "bytes": 883
+  }
+}

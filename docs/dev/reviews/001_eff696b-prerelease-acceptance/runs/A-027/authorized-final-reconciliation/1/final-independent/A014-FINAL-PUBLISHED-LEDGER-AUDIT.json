@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "scope": "Independent published fullA14/currentledger; A27whole integration Pending",
+  "evidence_head": "bd88d797d55f755a895fcafeaeda17c4354f310f",
+  "A014_assessment_sha256": "2352b6643b75dbc23f44d77b76f2c0c5a53803a014ccda22d5dd08a47ea673b7",
+  "published_grade_byte_equal": true,
+  "A014_current_grade": "Passed",
+  "T010_exact_commit_parents_tree": "2d2fbfcc38808104b66267a9179660136c75dc97\na7285d78a7fb1ee3966850656de6594317d5125f\n6fa480a4a168292ec49061e099c05ec02d200fa5\n",
+  "Phase1_exact_commit_parents_tree": "a7285d78a7fb1ee3966850656de6594317d5125f\n88a5c4b4424f4bba76940e40b1d6523b1f6fe191 dfcd658828d8e326c713683f3cdb9be05e044849\n93756800aafe8abb0d8719176a14eb81ba42b4e1\n",
+  "ledgers": {
+    "VARIANT-RESULTS.json": {
+      "sha256": "a34be0848326574a6a993ebafc76a1493f84c1f73e96a5937f79b3fe1aa0b929",
+      "published_byte_equal": true,
+      "required_counts": {
+        "Passed": 29,
+        "Failed": 2,
+        "Running": 1
+      },
+      "A014": {
+        "status": "Passed",
+        "agent_behavior_assessed": true,
+        "evidence_class": "consumer",
+        "reason": "Additive independently assessed eventual authorized cross-phase Passed; actual T009/Phase1 integration/T010 trial refs published. First Blocked, assistance, failures and T011/Phase2 limits retained.",
+        "assessment_path": "runs/A-014/cross-phase/1/authorized-live-resumption/final-independent/final/ASSESSMENT.json"
+      },
+      "A027": {
+        "status": "Running",
+        "agent_behavior_assessed": false,
+        "evidence_class": "inspection",
+        "reason": "Fresh current report reconciliation and actual final evidence integration pending; original Blocked assessment retained.",
+        "assessment_path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json"
+      }
+    },
+    "VARIANT-RESULTS.corrected-rechecks.json": {
+      "sha256": "a9e1627a96a53f7c10f50451e8809679448e9a97bc5249d74d75812c32556667",
+      "published_byte_equal": true,
+      "required_counts": {
+        "Passed": 31,
+        "Running": 1
+      },
+      "A014": {
+        "status": "Passed",
+        "agent_behavior_assessed": true,
+        "evidence_class": "consumer",
+        "reason": "Additive independently assessed eventual authorized cross-phase Passed; actual T009/Phase1 integration/T010 trial refs published. First Blocked, assistance, failures and T011/Phase2 limits retained.",
+        "assessment_path": "runs/A-014/cross-phase/1/authorized-live-resumption/final-independent/final/ASSESSMENT.json"
+      },
+      "A027": {
+        "status": "Running",
+        "agent_behavior_assessed": false,
+        "evidence_class": "inspection",
+        "reason": "Fresh current report reconciliation and actual final evidence integration pending; original Blocked assessment retained.",
+        "assessment_path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json"
+      }
+    }
+  },
+  "historical59_assessment_preservation": [
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+      "original_sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json",
+      "original_sha256": "5e0a56c6cc219f5c4187344c35d8e274dc0f895a56af6bd850021c5726233d0b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+      "original_sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/reassess-fc193b0/1/037-a004-reassessed.json",
+      "original_sha256": "a457ea4b9bcea60e3232f74c8ec290ae6e56c790147ffcbe747f509003dd2a55",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+      "original_sha256": "27b5658a5b0718ef3bd998f3be5bcc754164d19abe11efb4141e88f95b6e832d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+      "original_sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json",
+      "original_sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json",
+      "original_sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json",
+      "original_sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json",
+      "original_sha256": "0c48fd81b210bc7ff85acae1dbc347a6c7e0388e33ca56d74db851cae83b9717",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-011/1/ASSESSMENT.json",
+      "original_sha256": "06180e16ec544b20ce8669bf2d4be25d8f97dbd4c145933b0c175ccac59de28c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json",
+      "original_sha256": "02a1ece91cb007ebf9702ee4d976cd0213e5323d658c3f277bcabeaedbad5cac",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/cross-phase/1/LIVE-PUBLICATION-REJECTION.json",
+      "original_sha256": "f6e7c1398932478bbd3aeff9eac7d4251b2c78317251305ac54042db2699d481",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+      "original_sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json",
+      "original_sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ASSESSMENT.json",
+      "original_sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json",
+      "original_sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ASSESSMENT.json",
+      "original_sha256": "dc19b5da07a1be075c29d27963ec72ad603f796f37cb6c550c6fc25e4e21c2e2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/ASSESSMENT.json",
+      "original_sha256": "cab8ee43325bfb3753479d5fd044f01d02c4cc2f50f170c37bb05f4cf407d054",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json",
+      "original_sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-021/1/ASSESSMENT.json",
+      "original_sha256": "2a4e21e580b966f4b570d6f927238113c6483145c4390ccb7a0fb7e6d330e7ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-022/1/ASSESSMENT.json",
+      "original_sha256": "9de9ed003f7cb8a7639a5faba19c861ae88a1e94d2425e02c70fad9d76551f64",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/assessment/1/ASSESSMENT.json",
+      "original_sha256": "dda63f1db0405507b1cc962ed5272b05eb9b8b7244a2c3a2c0a2a9235872fcf0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json",
+      "original_sha256": "fcfd2912f42fd6154e30e5a28f4c67fac723aba3421ef7d0568daa66e19548bb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json",
+      "original_sha256": "c0eeefbdab5076621ea2ec5174967ed49d51db8266c6af275d0dc5487cc5ba01",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/unavailable-access/1/ASSESSMENT.json",
+      "original_sha256": "7bb0f8a105946a407e45d59406feccda25f97fabd55f631800360e161177e351",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json",
+      "original_sha256": "5ffdd7c191b46806c9e339c0fde4634cf8db65399dd8427906b7ed4c410cc84b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
+      "original_sha256": "931f7ee4366b3f9f252e8ab970f14cd1bf33ae27f836f24515a176b794b2abbe",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json",
+      "original_sha256": "d50edfc4040f3a8e73dc3a37546eb9f86f404858dd272c363d5ac8d0782a3e7a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+      "original_sha256": "9fad8f53674fb192c5461fce0745b799edf09c31afcc460138b1ff457ff3d187",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/ASSESSMENT.json",
+      "original_sha256": "33484c29ae4e82110d8fbc7621f61a46a0619eb77958f10e23ed730b8fefebbf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/ASSESSMENT.json",
+      "original_sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/FIRST-ASSESSMENT.json",
+      "original_sha256": "4dea03ff7e4f68c5004309eced499a7801d3b0aaabdd582199a22c5441f9444c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/SECOND-READONLY-ASSESSMENT.json",
+      "original_sha256": "711b26c0d5fe1607cc2688c7bcff1ed7278471f35d13cd495f6bc1359c758ed4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/trigger-exports/ASSESSMENT.json",
+      "original_sha256": "f5689aa709124f1bf96beaa4ef466afd4f1083da65f5eb24128d39f7d3bbd31c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/conflict-exports/ASSESSMENT.json",
+      "original_sha256": "8211bbdfaf1cd610706bd4352c1cfdb81bdf58acae0fd658338745a7e6a81991",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/prospective-exports/ASSESSMENT.json",
+      "original_sha256": "84afa734d21747fc3281b3cc408e01d39b4221debb36374aab8f1f1dfb004f39",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/coverage-inventory/037-supplemental-coverage-assessment.json",
+      "original_sha256": "357562c5ab8ab61912abf990969889db22bde3398adf49d7deda0a90efe9e641",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/highlights/1/final-exports/assessment.json",
+      "original_sha256": "2f2fb8e0e906bd242dc940b1a754f115af7b0bcb11830712ac80c70f277bea44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/ASSESSMENT.json",
+      "original_sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/final-exports/independent-assessment.json",
+      "original_sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/nested-revision/1/final-exports/ASSESSMENT.md",
+      "original_sha256": "cd31436300af86945b7eaad646822b86babe191b2ee276d26012039ac1ef16d7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/final-exports/assessment.json",
+      "original_sha256": "d1410beefe3707bc6c9f651a140054a48c4e1d313c9f6750055c5c8ad84ddb2e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/ASSESSMENT.json",
+      "original_sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/final-exports/independent-assessment.json",
+      "original_sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/ASSESSMENT.json",
+      "original_sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+      "original_sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/FINAL-SAME-CYCLE-ASSESSMENT.json",
+      "original_sha256": "be5e9554a89051e45f2890b5d58d846e2a96f4ce67614a11b2e9df5ade1949ee",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/actual-trigger-assessment.json",
+      "original_sha256": "46a9415937470b6b2d836a969209effb76238a3e7274dc4478084a21531dfc6c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/provisional-candidate-assessment.json",
+      "original_sha256": "e8a4b96bfd60750895ed7387085a2b6aced3c42c76a14a4c19da5fdbb5e40343",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/ASSESSMENT.json",
+      "original_sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.json",
+      "original_sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.md",
+      "original_sha256": "7ce214f8e55cfd58eb2a08e3b3ae2b8a11bf952f8e34e1d7ab92f1f9250b1cd1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopen-nonqualifying/1/final-exports/GRADE.json",
+      "original_sha256": "583046bdeacd9d222128148e97b5373e0c96d58376e60fd3f31305eb4194c09d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopened-revision/1/final-exports/ASSESSMENT.md",
+      "original_sha256": "70017b334050b65fe38708924c9cec3fa8234090147654a67923e276f0ecbd25",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/final-exports/independent-assessment.json",
+      "original_sha256": "3b15edec460ed67c3f6990fe3ff8ac11e8a8ace51500a1f6fcf69282acf6ca0a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/strict-package/1/ASSESSMENT.json",
+      "original_sha256": "3ddeb7d3eb6d5ee3195c8a3dd3657dcb38a5783b9fb52714bbb6fcc221a20837",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/ASSESSMENT.json",
+      "original_sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+      "original_sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "unchanged": true
+    }
+  ],
+  "independent_live_readback": {
+    "method": "Actual readonly git ls-remote origin exactrefs, existing askpass transient env, status0",
+    "observed_at": "2026-10-11T04:15:57.214325+00:00",
+    "refs": {
+      "refs/heads/main": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+      "refs/heads/revision/001_eff696b-prerelease-acceptance": "bd88d797d55f755a895fcafeaeda17c4354f310f",
+      "refs/heads/trial/037-a014-cross-json": "2d2fbfcc38808104b66267a9179660136c75dc97",
+      "refs/heads/trial/037-a014-cross-main": "a7285d78a7fb1ee3966850656de6594317d5125f",
+      "refs/heads/trial/037-a014-cross-phase": "dfcd658828d8e326c713683f3cdb9be05e044849"
+    }
+  },
+  "own_initial_audit_error": "First snapshot attempted product2dobject in evidence repo where absent; failedbeforeoutput; correct independent productrepo037-a014-cross-phase used subsequently",
+  "claim_limits": [
+    "Shared broad filesystem access prevents isolation certification.",
+    "Native full agent transcript unavailable; observed private command/status/raw outputs and communicated ownership are bounded evidence.",
+    "Only local Python3.12.14/runtime environment checked; no broader runtime/platform/client certification.",
+    "T011 dedicated extracted JSON acceptance unselected/unclaimed; existing extracted text checks retained, source ZIP members equal current candidate.",
+    "Assisted eventualPassed; originalBlocked immutable",
+    "No fresh product tests/providerwrites by assessor",
+    "A27whole currentlyRunning, finalintegrationnotclaimed"
+  ]
+}

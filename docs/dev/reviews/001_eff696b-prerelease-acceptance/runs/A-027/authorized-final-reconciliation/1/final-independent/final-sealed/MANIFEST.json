@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "path": "ASSESSMENT.preintegration.json",
+      "sha256": "898aadfac55e26e404e918b0938f5396728e41810b54321c2a4ca7af3888e8e7",
+      "bytes": 21072
+    },
+    {
+      "path": "ASSESSMENT.prospective-evidence-integration.json",
+      "sha256": "5b6fc430b58f1f17153ed7c21762d6eae0556ba36142c7535ef1dba299decce1",
+      "bytes": 23303
+    },
+    {
+      "path": "ASSESSMENT.final-published.json",
+      "sha256": "88e573ce55639d5b9bd0845309c3aa87e05d439a2a2050a187747ea77041b3dc",
+      "bytes": 7737
+    },
+    {
+      "path": "ACTUAL-MERGE-HELPER.independent.json",
+      "sha256": "dbc7a1dd5e892b334c5ee8941d737903c35c27f2f175f73d71159eb4c1249782",
+      "bytes": 5295016
+    }
+  ],
+  "scope": "Additive independent pre/prospective/final actual published A027 assessments; prior originals remain immutable; broad shared filesystem sealing is cooperative"
+}

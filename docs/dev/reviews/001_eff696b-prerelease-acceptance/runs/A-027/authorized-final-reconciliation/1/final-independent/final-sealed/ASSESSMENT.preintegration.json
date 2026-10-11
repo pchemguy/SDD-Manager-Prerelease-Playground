@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "variant": "core",
+  "status": "Running",
+  "scoped_reporting_reconciliation_grade": "Passed",
+  "full_final_workflow_grade": "Pending actual integration/publication",
+  "agent_behavior_assessed": true,
+  "assessment_scope": "Exact new ordinary readonly final report and independent all27/32required/2optional/14supplement reconciliation before evidence-main integration",
+  "checkpoint_refs": {
+    "product_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d"
+  },
+  "product_worktree_clean": true,
+  "report": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a027-authorized-consumer-artifacts/STATUS-REPORT.final.md",
+    "sha256": "e0dbd26784caa0cca2effe6dcc33a9bca98ce2a8850c454101b1e294c553fbba",
+    "bytes": 16743
+  },
+  "evidence_head_independently_readback": "bd88d797d55f755a895fcafeaeda17c4354f310f",
+  "deterministic_retained_head": {
+    "schema_version": 1,
+    "status": "Checks passed",
+    "checks": [
+      {
+        "id": "retained-head",
+        "status": "Passed",
+        "reason": "Literal invariant satisfied."
+      }
+    ],
+    "agent_behavior_assessed": false,
+    "required_agent_checks": [
+      "Independent reconciliation covers all 27 IDs/attempts and preserves first results, interventions and assisted outcomes.",
+      "Evidence reconciles commands, commits/parents/remote refs/hosted identities and source hashes. Fixture actions and consumer decisions distinguished; blocked cases/client/isolation gaps remain explicit.",
+      "Four-answer report states findings/confidence/actions/bounded proposals or explicit no-confirmed-defect conclusion, unresolved effects and verified stopping/next-action checkpoint.",
+      "Assess required report placement, code review versus testing, closure ordering and TODO aggregation separately; unavailable provider readback/live interruption control is Blocked or Not run, never covered by support-test success.",
+      "Required and optional variant totals, evidence classes and unavailable-facility reasons are separately reconciled; historical grades are not retroactively split.",
+      "Final report and linked proposals are published, then evidence-only two-parent integration preserves product/source/assessment bytes and main publication is verified; explicit stopping limits and retained pending integration are accurately reported."
+    ]
+  },
+  "consumer_loaded_snapshot_integrity": [
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/AGENTS.md",
+      "snapshot": "read-AGENTS.md",
+      "sha256": "37fb35f329f1bcd51c95f293f9d3668a8d55866dad224cc5c05c543c3e12719f",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/SDD-MANAGER.md",
+      "snapshot": "read-SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/README.md",
+      "snapshot": "read-README.md",
+      "sha256": "1e0935b184c9dbccd9b5186a6619da45da081cba524f8271e1630b29443d6829",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/public-api.md",
+      "snapshot": "read-docs__public-api.md",
+      "sha256": "b8f0a8ab2aedf6cfe35b8cd75118b520f91d99989fdb0c4857ec6288eec2ff76",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/PROJECT.md",
+      "snapshot": "read-docs__dev__PROJECT.md",
+      "sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/ARCHITECTURE.md",
+      "snapshot": "read-docs__dev__ARCHITECTURE.md",
+      "sha256": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/DECOMPOSITION.md",
+      "snapshot": "read-docs__dev__DECOMPOSITION.md",
+      "sha256": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/SPEC.md",
+      "snapshot": "read-docs__dev__SPEC.md",
+      "sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/PLAN.md",
+      "snapshot": "read-docs__dev__PLAN.md",
+      "sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/TASKS.md",
+      "snapshot": "read-docs__dev__TASKS.md",
+      "sha256": "c0f9718171d069e34de57b24c94a0d2daa7f001ceb8b2552fab5fa4566191616",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/TASKS-REVIEW-REPORT.md",
+      "snapshot": "read-docs__dev__TASKS-REVIEW-REPORT.md",
+      "sha256": "c794461b50f111677b25eb1c292d4a6734fa46a230c2f7790975fcf57dd58ecd",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "snapshot": "read-docs__dev__reports__IMPLEMENTATION-REPORT.md",
+      "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "snapshot": "read-docs__dev__reports__phases__2__PHASE-REPORT.md",
+      "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/textstats/core.py",
+      "snapshot": "read-textstats__core.py",
+      "sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/textstats/__init__.py",
+      "snapshot": "read-textstats____init__.py",
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/textstats/__main__.py",
+      "snapshot": "read-textstats____main__.py",
+      "sha256": "e2e296c24d54ce9b76436f615db401c26729ca32ab560be602bac67260cf8e63",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "snapshot": "read-textstats-run-resources__plugin__skills__sdd-manage__SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "snapshot": "read-textstats-run-resources__plugin__skills__sdd-report__SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-product-status/textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md",
+      "snapshot": "read-textstats-run-resources__plugin__skills__sdd-report__references__completion-reports.md",
+      "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/SUPPLEMENTAL-PUBLIC-OUTCOMES.json",
+      "snapshot": "read-SUPPLEMENTAL-PUBLIC-OUTCOMES.json",
+      "sha256": "a6ece55db67625c99d644c5184aaca6eb9cb6217e86af7f90ad212920be7095b",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/fresh-repair-RESULT.json",
+      "snapshot": "read-fresh-repair-RESULT.json",
+      "sha256": "d69f8d524ee8cfe13c62ea3580969ec79bcab37c08a62c0eb9612eb02eee9f92",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/CURRENT-PUBLIC-FACTS.json",
+      "snapshot": "read-CURRENT-PUBLIC-FACTS.json",
+      "sha256": "a27c76b460d083aee285d5df42b9d0276170f76d465cb45594f9c55a4e262939",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/VARIANT-RESULTS.json",
+      "snapshot": "read-VARIANT-RESULTS.json",
+      "sha256": "405ca1503837de4299fcb27619e85b08046dccda52168568af03155b3e0a134f",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/VARIANT-RESULTS.corrected-rechecks.json",
+      "snapshot": "read-VARIANT-RESULTS.corrected-rechecks.json",
+      "sha256": "7a3b3c3a64c8067bcef96bdd8d1a322a4bf899a82be0a6030ba4ef9fa39bbb61",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/repaired-complete-rerun-RESULT.json",
+      "snapshot": "read-repaired-complete-rerun-RESULT.json",
+      "sha256": "231c35fc605c3c6907204c549016af628a13d53cc42f907c2b90f82c9c5e70e1",
+      "record_match": true
+    },
+    {
+      "version": "v1",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/SOURCE-PUBLISHER-APPLICABILITY.json",
+      "snapshot": "read-SOURCE-PUBLISHER-APPLICABILITY.json",
+      "sha256": "925abae156a6c7be25e3ba1e148a75e4021e109f881d1df57d378479908968cc",
+      "record_match": true
+    },
+    {
+      "version": "v3",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/CURRENT-PUBLIC-FACTS.json",
+      "snapshot": "read-v3-CURRENT-PUBLIC-FACTS.json",
+      "sha256": "1b007840379f28685138e3a62bd1ca53a01e3ec34652d6fc7651e96800921eaf",
+      "record_match": true
+    },
+    {
+      "version": "v3",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/VARIANT-RESULTS.json",
+      "snapshot": "read-v3-VARIANT-RESULTS.json",
+      "sha256": "a34be0848326574a6a993ebafc76a1493f84c1f73e96a5937f79b3fe1aa0b929",
+      "record_match": true
+    },
+    {
+      "version": "v3",
+      "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/VARIANT-RESULTS.corrected-rechecks.json",
+      "snapshot": "read-v3-VARIANT-RESULTS.corrected-rechecks.json",
+      "sha256": "a9e1627a96a53f7c10f50451e8809679448e9a97bc5249d74d75812c32556667",
+      "record_match": true
+    }
+  ],
+  "variant_reconciliation": [
+    {
+      "variant": "A-001.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-002.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-003.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-004.core",
+      "original": "Failed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-005.core",
+      "original": "Failed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-006.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-007.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-008.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-009.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-010.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-011.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-012.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-013.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-014.cross-phase",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-014.prerequisite-refusal",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-015.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-016.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-017.failed-check",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-018.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-019.integration-recovery",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-020.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-021.partial-transfer",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-022.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-023.controlled-reconciliation",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-023.live-response-loss",
+      "original": "Not run",
+      "corrected": "Not run",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-024.denial",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-024.rate-limit",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-024.unavailable-access",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-024.native-recovery",
+      "original": "Not run",
+      "corrected": "Not run",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-025.core",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-026.empty-selection",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-026.failing-baseline",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-026.preservation",
+      "original": "Passed",
+      "corrected": "Passed",
+      "report_exact_match": true
+    },
+    {
+      "variant": "A-027.core",
+      "original": "Running",
+      "corrected": "Running",
+      "report_exact_match": true
+    }
+  ],
+  "original_required_counts": {
+    "Passed": 29,
+    "Failed": 2,
+    "Running": 1
+  },
+  "corrected_required_counts": {
+    "Passed": 31,
+    "Running": 1
+  },
+  "optional_counts": {
+    "Not run": 2
+  },
+  "supplement_scopes": 14,
+  "audits": [
+    {
+      "path": "CURRENT-LEDGER-SOURCE-AUDIT.json",
+      "sha256": "116caf679295d9b3d87c9d1120508227e3f45b23ac49da25f2e35d5c38a00e17"
+    },
+    {
+      "path": "COMPATIBILITY-PNG-LINK-AUDIT.json",
+      "sha256": "26efc2191109d4a56c4635dca81bf7891059d9aec7e814febc0d96eadee452aa"
+    },
+    {
+      "path": "FRESH-PROSPECTIVE-SOURCE-AUDIT.json",
+      "sha256": "2196d26518b2bdcf447b937dd6d2ba21bb96aeef196ce1aa977610c21d109df3"
+    },
+    {
+      "path": "A014-FINAL-PUBLISHED-LEDGER-AUDIT.json",
+      "sha256": "53bfbde963c920efb2fcc4f46beffae5beaeac9a9f2f57032c0fc667603d6930"
+    }
+  ],
+  "independent_agent_checks": [
+    {
+      "criterion": "All27 IDs/34variants and prior attempts/14supplements",
+      "status": "Passed scoped reconciliation",
+      "basis": "Exact catalog/report row comparison and published dictionary bytes; all59 original/supplement assessment bytes unchanged. A004/A005 originalFailed vs separatecorrectedPassed; A013/A014 assisted eventualPass vs originalBlocked and allpublicationrejections preserved."
+    },
+    {
+      "criterion": "Source/package/Git/publication/hosted/provenance reconciled",
+      "status": "Passed within explicit limits",
+      "basis": "Report distinguishes actual main549/phasec05 and A14 scopedtrial2d/a728/dfcd, independent exactlive readback corroborated. Current785/EA/fb2/4a56/170 source roles separated; all133 byte/mode and frozen16 inventory,120links,4historicalPNG independently corroborated; source113/26 retainedraw distinctfromproduct37/34/478."
+    },
+    {
+      "criterion": "Fouranswer findings/confidence/actions/boundedproposals/reachedcheckpoint",
+      "status": "Passed",
+      "basis": "Reports concretepositive runtimebehavior, withdrawnJSON versus isolatedtrial; no confirmed consumerinstructiondefect withinscope; strict39 andnative/client/platform/missingchannels unresolved; next actualevidence549+publishedEtip integration explicit."
+    },
+    {
+      "criterion": "Reportplacement/review vs tests/closureordering/TODOaggregation",
+      "status": "Passed within recorded provider/transcript scope",
+      "basis": "Ordinaryreport includes separate T016milestone/T017PHASE+IMPLEMENTATION pair, review vs test provenance, issuebeforemilestone ordering/native manualcontrols; TODO_None does not waive evidence/native limitations. No new providerGET claimed byconsumer."
+    },
+    {
+      "criterion": "Actual final evidenceintegration/mainpublication",
+      "status": "Pending",
+      "basis": "Currentremote main549 and evidencebd88 separate; no finalmergecommit yet. Prospective/actualmergeorderedparents/content/campaignonlydelta/bytepreservation and exactmain readback require later independentassessment."
+    }
+  ],
+  "first_attempts_and_interventions": [
+    "OriginalA004/A005Failures separatelycorrected pinned rechecks without retroactivegrade",
+    "OriginalA013Blocked and failed mainpush attempts then explicitauthorization/restoration/additive198exportsPassed",
+    "OriginalA014Blocked/liverejections then preciselyauthorizedtrialcontinuation, child-BeditNameError/faults/meaningfulRED5tests83subcases, preserved uncertainuntracked samples andfirstassessorrefordererror",
+    "EarlierA027provisional/prepared grades and ledgerhash/serialization/guarderrors retained; no retrospectivecompleteclaim",
+    "HistoricalA14NULJSON unchanged plus screenedreversiblederivative; noallhistoricalJSONguardpass"
+  ],
+  "consumer_limits": [
+    "Ordinaryworker only actualread-only549product and sanitizedcurrentfacts; assessororacles not supplied",
+    "Shared broad filesystemprevents isolationcertification; retainedcommands are structuredboundedobservations, not complete native transcript",
+    "Providerfacts suppliedrecords distinctfrom ownreadonlyGit; independent assessor liveexactrefs corroborate publication",
+    "No newproductruntime reruns, source/providerwrites byassessor",
+    "Source support and publisherCI3.11 distinctfrom local3.12product and unexecutedWindows/local3.11/client/nativefacilities"
+  ],
+  "required_acceptance_readiness": false,
+  "final_integration_requirement": {
+    "product_tip": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "evidence_tip": "Pending exact final published report+pregrade checkpoint",
+    "ordered_parents": [
+      "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+      "Pending exact final published evidence tip"
+    ],
+    "scope": "Campaign-only docs/dev/reviews/001_eff696b-prerelease-acceptance; alloutsideobjects/product/source/originalassessmentbytes preserved",
+    "publication": "Pending exactremote main proof"
+  }
+}

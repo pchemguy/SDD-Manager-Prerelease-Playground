@@ -1,0 +1,10 @@
+{
+  "ACTUAL-MERGE-HELPER.json": {
+    "sha256": "dbc7a1dd5e892b334c5ee8941d737903c35c27f2f175f73d71159eb4c1249782",
+    "bytes": 5295016
+  },
+  "CANDIDATE.json": {
+    "sha256": "60de5f78ddd751426f0f403f58206c548d6530c1926d9360d08fb2121972abf6",
+    "bytes": 552
+  }
+}

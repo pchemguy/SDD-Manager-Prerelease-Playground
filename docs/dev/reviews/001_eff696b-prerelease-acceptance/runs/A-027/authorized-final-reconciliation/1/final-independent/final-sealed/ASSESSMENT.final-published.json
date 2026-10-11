@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "variant": "core",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assessment_type": "Additive actual final evidence integration/publication reconciliation; original Blocked and scoped/prepared outcomes immutable",
+  "assessed_at": "2026-10-11T04:20:35.256596+00:00",
+  "scoped_reporting_reconciliation_grade": "Passed",
+  "full_final_workflow_grade": "Passed",
+  "checkpoint_refs": {
+    "product_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "product_branch": "main",
+    "integration_commit": "b26379977bd07730f09d7f278594418a9219f67d",
+    "integration_branch": "main",
+    "evidence_source_commit": "7be5abfa51b19b463f817f43a79fd45be656e047",
+    "merge_parents": [
+      "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+      "7be5abfa51b19b463f817f43a79fd45be656e047"
+    ],
+    "tree": "3cc862c60b2d2a76ace2f966d77009895b715dc8",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "b26379977bd07730f09d7f278594418a9219f67d"
+  },
+  "independent_live_publication": {
+    "method": "Actual read-only git ls-remote origin exact refs using existing transientaskpass; actual toolreturnedstatus0",
+    "main": "b26379977bd07730f09d7f278594418a9219f67d",
+    "evidence_branch": "7be5abfa51b19b463f817f43a79fd45be656e047",
+    "publication_verified": true
+  },
+  "actual_merge_check": {
+    "path": "ACTUAL-MERGE-HELPER.independent.json",
+    "sha256": "dbc7a1dd5e892b334c5ee8941d737903c35c27f2f175f73d71159eb4c1249782",
+    "changed_paths": 33209,
+    "campaign_only": true,
+    "helper_publication_verified": false,
+    "publication_independently_verified_separately": true,
+    "actual_tree_equals_assessed_prospective": true,
+    "worktree_index_clean": true,
+    "all191outside_path_mode_objects_preserved": true,
+    "all59original_assessment_hashes_preserved": true
+  },
+  "report": {
+    "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/authorized-final-reconciliation/1/consumer/STATUS-REPORT.final.md",
+    "sha256": "e0dbd26784caa0cca2effe6dcc33a9bca98ce2a8850c454101b1e294c553fbba",
+    "immutable_preintegration_report_correctly_says_pending": true,
+    "final_actual_checkpoint_recorded_separately": true
+  },
+  "current_required_original_counts_after_this_assessment": {
+    "Passed": 30,
+    "Failed": 2
+  },
+  "current_required_corrected_recheck_counts_after_this_assessment": {
+    "Passed": 32
+  },
+  "optional_counts": {
+    "Not run": 2
+  },
+  "numbered_cases": 27,
+  "required_variants": 32,
+  "optional_variants": 2,
+  "supplement_scopes": 14,
+  "current_published_preintegration_ledger_at_actual_merge": {
+    "original": {
+      "Passed": 29,
+      "Failed": 2,
+      "Running": 1
+    },
+    "corrected": {
+      "Passed": 31,
+      "Running": 1
+    },
+    "qualification": "These immutablepreintegration dictionaries accuratelydescribe publicationtime; additive finalstatus/grade publication followsverifiedmerge, nosecondboundarymerge required."
+  },
+  "independent_agent_checks": [
+    {
+      "criterion": "All27 IDs/34variants and prior attempts/14supplements",
+      "status": "Passed scoped reconciliation",
+      "basis": "Exact catalog/report row comparison and published dictionary bytes; all59 original/supplement assessment bytes unchanged. A004/A005 originalFailed vs separatecorrectedPassed; A013/A014 assisted eventualPass vs originalBlocked and allpublicationrejections preserved."
+    },
+    {
+      "criterion": "Source/package/Git/publication/hosted/provenance reconciled",
+      "status": "Passed within explicit limits",
+      "basis": "Report distinguishes actual main549/phasec05 and A14 scopedtrial2d/a728/dfcd, independent exactlive readback corroborated. Current785/EA/fb2/4a56/170 source roles separated; all133 byte/mode and frozen16 inventory,120links,4historicalPNG independently corroborated; source113/26 retainedraw distinctfromproduct37/34/478."
+    },
+    {
+      "criterion": "Fouranswer findings/confidence/actions/boundedproposals/reachedcheckpoint",
+      "status": "Passed",
+      "basis": "Reports concretepositive runtimebehavior, withdrawnJSON versus isolatedtrial; no confirmed consumerinstructiondefect withinscope; strict39 andnative/client/platform/missingchannels unresolved; next actualevidence549+publishedEtip integration explicit."
+    },
+    {
+      "criterion": "Reportplacement/review vs tests/closureordering/TODOaggregation",
+      "status": "Passed within recorded provider/transcript scope",
+      "basis": "Ordinaryreport includes separate T016milestone/T017PHASE+IMPLEMENTATION pair, review vs test provenance, issuebeforemilestone ordering/native manualcontrols; TODO_None does not waive evidence/native limitations. No new providerGET claimed byconsumer."
+    },
+    {
+      "criterion": "Actual final evidenceintegration/mainpublication",
+      "status": "Passed",
+      "basis": "Actual committedb263 exacttree3cc/orderedparents549+7be; independent pinnedhelper Passed33209campaignonlypaths; prospective exactobjects/header/source/originalassessment/report bytes remain equal. Actual independent read-only ls-remote mainb263/evidenceref7be status0 separately observed; worktreeclean. Productcompletion549 retained separately."
+    }
+  ],
+  "preintegration_assessment": {
+    "path": "ASSESSMENT.preintegration.json",
+    "sha256": "898aadfac55e26e404e918b0938f5396728e41810b54321c2a4ca7af3888e8e7"
+  },
+  "prospective_assessment": {
+    "path": "ASSESSMENT.prospective-evidence-integration.json",
+    "sha256": "5b6fc430b58f1f17153ed7c21762d6eae0556ba36142c7535ef1dba299decce1"
+  },
+  "first_attempts_and_interventions": [
+    "OriginalA004/A005Failures separatelycorrected pinned rechecks without retroactivegrade",
+    "OriginalA013Blocked and failed mainpush attempts then explicitauthorization/restoration/additive198exportsPassed",
+    "OriginalA014Blocked/liverejections then preciselyauthorizedtrialcontinuation, child-BeditNameError/faults/meaningfulRED5tests83subcases, preserved uncertainuntracked samples andfirstassessorrefordererror",
+    "EarlierA027provisional/prepared grades and ledgerhash/serialization/guarderrors retained; no retrospectivecompleteclaim",
+    "HistoricalA14NULJSON unchanged plus screenedreversiblederivative; noallhistoricalJSONguardpass"
+  ],
+  "required_acceptance_readiness": false,
+  "claim_limits": [
+    "Ordinaryworker only actualread-only549product and sanitizedcurrentfacts; assessororacles not supplied",
+    "Shared broad filesystemprevents isolationcertification; retainedcommands are structuredboundedobservations, not complete native transcript",
+    "Providerfacts suppliedrecords distinctfrom ownreadonlyGit; independent assessor liveexactrefs corroborate publication",
+    "No newproductruntime reruns, source/providerwrites byassessor",
+    "Source support and publisherCI3.11 distinctfrom local3.12product and unexecutedWindows/local3.11/client/nativefacilities",
+    "A027 reporting/workflow Passed does not erase originalA004/A005 Failed or strict39 format/portability/native/client/runtime/readiness limits",
+    "OriginalA013/A014/A027 Blocked/prepared grades and allrejections remain unchanged; assistedcurrentSuccess additive",
+    "Exactmerged evidencewhitespace diagnostics retained; cleanup forbidden because literal/exportbytes immutable",
+    "Finalcurrentassessment/publication cursor may be additive afterverifiedintegration underEXECUTION; preintegrationfinalreport not rewritten",
+    "Sourcecampaign finala6+laterpublishedtip integration/publication remains separate pendingrootwork; thisPassed certifies exactplaygroundevidence finalworkflow only",
+    "No second evidenceboundarymerge/productruntime reruns/sourcewrites/providerwrites by assessor"
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "assessment_type": "Actual staged prospective evidence integration",
+  "status": "Passed prospective scoped gate",
+  "full_final_workflow_grade": "Pending actual commit/main publication",
+  "agent_behavior_assessed": true,
+  "observed_at": "2026-10-11T04:19:06.546846+00:00",
+  "product_completion_sha": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+  "evidence_source_sha": "7be5abfa51b19b463f817f43a79fd45be656e047",
+  "ordered_prospective_parents": [
+    "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "7be5abfa51b19b463f817f43a79fd45be656e047"
+  ],
+  "prospective_tree": "3cc862c60b2d2a76ace2f966d77009895b715dc8",
+  "index_stage0_exact_tree": true,
+  "unmerged_index_paths": [],
+  "changed_path_count": 33209,
+  "all_delta_campaign_only": true,
+  "campaign_subtree_exact_published_evidence": true,
+  "all_outside_paths_modes_objects_exact_product": true,
+  "outside_object_count": 191,
+  "campaign_object_count": 33209,
+  "whole_tree_inventory_digest": "14d27dbfe32d11b83189f04155bfd84dee45ded385a58eb24138de571ad2df48",
+  "product_runtime_unchanged": true,
+  "report_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/authorized-final-reconciliation/1/consumer/STATUS-REPORT.final.md",
+  "report_sha256": "e0dbd26784caa0cca2effe6dcc33a9bca98ce2a8850c454101b1e294c553fbba",
+  "preintegration_grade_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/authorized-final-reconciliation/1/preintegration-independent/ASSESSMENT.preintegration.json",
+  "preintegration_grade_sha256": "898aadfac55e26e404e918b0938f5396728e41810b54321c2a4ca7af3888e8e7",
+  "original59_assessment_preservation": [
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+      "sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93",
+      "recorded_sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json",
+      "sha256": "5e0a56c6cc219f5c4187344c35d8e274dc0f895a56af6bd850021c5726233d0b",
+      "recorded_sha256": "5e0a56c6cc219f5c4187344c35d8e274dc0f895a56af6bd850021c5726233d0b",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+      "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+      "recorded_sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/reassess-fc193b0/1/037-a004-reassessed.json",
+      "sha256": "a457ea4b9bcea60e3232f74c8ec290ae6e56c790147ffcbe747f509003dd2a55",
+      "recorded_sha256": "a457ea4b9bcea60e3232f74c8ec290ae6e56c790147ffcbe747f509003dd2a55",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+      "sha256": "27b5658a5b0718ef3bd998f3be5bcc754164d19abe11efb4141e88f95b6e832d",
+      "recorded_sha256": "27b5658a5b0718ef3bd998f3be5bcc754164d19abe11efb4141e88f95b6e832d",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+      "sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+      "recorded_sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json",
+      "sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c",
+      "recorded_sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json",
+      "sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8",
+      "recorded_sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json",
+      "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829",
+      "recorded_sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json",
+      "sha256": "0c48fd81b210bc7ff85acae1dbc347a6c7e0388e33ca56d74db851cae83b9717",
+      "recorded_sha256": "0c48fd81b210bc7ff85acae1dbc347a6c7e0388e33ca56d74db851cae83b9717",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-011/1/ASSESSMENT.json",
+      "sha256": "06180e16ec544b20ce8669bf2d4be25d8f97dbd4c145933b0c175ccac59de28c",
+      "recorded_sha256": "06180e16ec544b20ce8669bf2d4be25d8f97dbd4c145933b0c175ccac59de28c",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json",
+      "sha256": "02a1ece91cb007ebf9702ee4d976cd0213e5323d658c3f277bcabeaedbad5cac",
+      "recorded_sha256": "02a1ece91cb007ebf9702ee4d976cd0213e5323d658c3f277bcabeaedbad5cac",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/cross-phase/1/LIVE-PUBLICATION-REJECTION.json",
+      "sha256": "f6e7c1398932478bbd3aeff9eac7d4251b2c78317251305ac54042db2699d481",
+      "recorded_sha256": "f6e7c1398932478bbd3aeff9eac7d4251b2c78317251305ac54042db2699d481",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+      "sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+      "recorded_sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json",
+      "sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04",
+      "recorded_sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ASSESSMENT.json",
+      "sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75",
+      "recorded_sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json",
+      "sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8",
+      "recorded_sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ASSESSMENT.json",
+      "sha256": "dc19b5da07a1be075c29d27963ec72ad603f796f37cb6c550c6fc25e4e21c2e2",
+      "recorded_sha256": "dc19b5da07a1be075c29d27963ec72ad603f796f37cb6c550c6fc25e4e21c2e2",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/ASSESSMENT.json",
+      "sha256": "cab8ee43325bfb3753479d5fd044f01d02c4cc2f50f170c37bb05f4cf407d054",
+      "recorded_sha256": "cab8ee43325bfb3753479d5fd044f01d02c4cc2f50f170c37bb05f4cf407d054",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json",
+      "sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335",
+      "recorded_sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-021/1/ASSESSMENT.json",
+      "sha256": "2a4e21e580b966f4b570d6f927238113c6483145c4390ccb7a0fb7e6d330e7ff",
+      "recorded_sha256": "2a4e21e580b966f4b570d6f927238113c6483145c4390ccb7a0fb7e6d330e7ff",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-022/1/ASSESSMENT.json",
+      "sha256": "9de9ed003f7cb8a7639a5faba19c861ae88a1e94d2425e02c70fad9d76551f64",
+      "recorded_sha256": "9de9ed003f7cb8a7639a5faba19c861ae88a1e94d2425e02c70fad9d76551f64",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/assessment/1/ASSESSMENT.json",
+      "sha256": "dda63f1db0405507b1cc962ed5272b05eb9b8b7244a2c3a2c0a2a9235872fcf0",
+      "recorded_sha256": "dda63f1db0405507b1cc962ed5272b05eb9b8b7244a2c3a2c0a2a9235872fcf0",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json",
+      "sha256": "fcfd2912f42fd6154e30e5a28f4c67fac723aba3421ef7d0568daa66e19548bb",
+      "recorded_sha256": "fcfd2912f42fd6154e30e5a28f4c67fac723aba3421ef7d0568daa66e19548bb",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json",
+      "sha256": "c0eeefbdab5076621ea2ec5174967ed49d51db8266c6af275d0dc5487cc5ba01",
+      "recorded_sha256": "c0eeefbdab5076621ea2ec5174967ed49d51db8266c6af275d0dc5487cc5ba01",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/unavailable-access/1/ASSESSMENT.json",
+      "sha256": "7bb0f8a105946a407e45d59406feccda25f97fabd55f631800360e161177e351",
+      "recorded_sha256": "7bb0f8a105946a407e45d59406feccda25f97fabd55f631800360e161177e351",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json",
+      "sha256": "5ffdd7c191b46806c9e339c0fde4634cf8db65399dd8427906b7ed4c410cc84b",
+      "recorded_sha256": "5ffdd7c191b46806c9e339c0fde4634cf8db65399dd8427906b7ed4c410cc84b",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
+      "sha256": "931f7ee4366b3f9f252e8ab970f14cd1bf33ae27f836f24515a176b794b2abbe",
+      "recorded_sha256": "931f7ee4366b3f9f252e8ab970f14cd1bf33ae27f836f24515a176b794b2abbe",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json",
+      "sha256": "d50edfc4040f3a8e73dc3a37546eb9f86f404858dd272c363d5ac8d0782a3e7a",
+      "recorded_sha256": "d50edfc4040f3a8e73dc3a37546eb9f86f404858dd272c363d5ac8d0782a3e7a",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+      "sha256": "9fad8f53674fb192c5461fce0745b799edf09c31afcc460138b1ff457ff3d187",
+      "recorded_sha256": "9fad8f53674fb192c5461fce0745b799edf09c31afcc460138b1ff457ff3d187",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/ASSESSMENT.json",
+      "sha256": "33484c29ae4e82110d8fbc7621f61a46a0619eb77958f10e23ed730b8fefebbf",
+      "recorded_sha256": "33484c29ae4e82110d8fbc7621f61a46a0619eb77958f10e23ed730b8fefebbf",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/ASSESSMENT.json",
+      "sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+      "recorded_sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/FIRST-ASSESSMENT.json",
+      "sha256": "4dea03ff7e4f68c5004309eced499a7801d3b0aaabdd582199a22c5441f9444c",
+      "recorded_sha256": "4dea03ff7e4f68c5004309eced499a7801d3b0aaabdd582199a22c5441f9444c",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/SECOND-READONLY-ASSESSMENT.json",
+      "sha256": "711b26c0d5fe1607cc2688c7bcff1ed7278471f35d13cd495f6bc1359c758ed4",
+      "recorded_sha256": "711b26c0d5fe1607cc2688c7bcff1ed7278471f35d13cd495f6bc1359c758ed4",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/trigger-exports/ASSESSMENT.json",
+      "sha256": "f5689aa709124f1bf96beaa4ef466afd4f1083da65f5eb24128d39f7d3bbd31c",
+      "recorded_sha256": "f5689aa709124f1bf96beaa4ef466afd4f1083da65f5eb24128d39f7d3bbd31c",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/conflict-exports/ASSESSMENT.json",
+      "sha256": "8211bbdfaf1cd610706bd4352c1cfdb81bdf58acae0fd658338745a7e6a81991",
+      "recorded_sha256": "8211bbdfaf1cd610706bd4352c1cfdb81bdf58acae0fd658338745a7e6a81991",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/prospective-exports/ASSESSMENT.json",
+      "sha256": "84afa734d21747fc3281b3cc408e01d39b4221debb36374aab8f1f1dfb004f39",
+      "recorded_sha256": "84afa734d21747fc3281b3cc408e01d39b4221debb36374aab8f1f1dfb004f39",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/coverage-inventory/037-supplemental-coverage-assessment.json",
+      "sha256": "357562c5ab8ab61912abf990969889db22bde3398adf49d7deda0a90efe9e641",
+      "recorded_sha256": "357562c5ab8ab61912abf990969889db22bde3398adf49d7deda0a90efe9e641",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/highlights/1/final-exports/assessment.json",
+      "sha256": "2f2fb8e0e906bd242dc940b1a754f115af7b0bcb11830712ac80c70f277bea44",
+      "recorded_sha256": "2f2fb8e0e906bd242dc940b1a754f115af7b0bcb11830712ac80c70f277bea44",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/ASSESSMENT.json",
+      "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "recorded_sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/final-exports/independent-assessment.json",
+      "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "recorded_sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/nested-revision/1/final-exports/ASSESSMENT.md",
+      "sha256": "cd31436300af86945b7eaad646822b86babe191b2ee276d26012039ac1ef16d7",
+      "recorded_sha256": "cd31436300af86945b7eaad646822b86babe191b2ee276d26012039ac1ef16d7",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/final-exports/assessment.json",
+      "sha256": "d1410beefe3707bc6c9f651a140054a48c4e1d313c9f6750055c5c8ad84ddb2e",
+      "recorded_sha256": "d1410beefe3707bc6c9f651a140054a48c4e1d313c9f6750055c5c8ad84ddb2e",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/ASSESSMENT.json",
+      "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "recorded_sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/final-exports/independent-assessment.json",
+      "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "recorded_sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/ASSESSMENT.json",
+      "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "recorded_sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+      "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "recorded_sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/FINAL-SAME-CYCLE-ASSESSMENT.json",
+      "sha256": "be5e9554a89051e45f2890b5d58d846e2a96f4ce67614a11b2e9df5ade1949ee",
+      "recorded_sha256": "be5e9554a89051e45f2890b5d58d846e2a96f4ce67614a11b2e9df5ade1949ee",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/actual-trigger-assessment.json",
+      "sha256": "46a9415937470b6b2d836a969209effb76238a3e7274dc4478084a21531dfc6c",
+      "recorded_sha256": "46a9415937470b6b2d836a969209effb76238a3e7274dc4478084a21531dfc6c",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/provisional-candidate-assessment.json",
+      "sha256": "e8a4b96bfd60750895ed7387085a2b6aced3c42c76a14a4c19da5fdbb5e40343",
+      "recorded_sha256": "e8a4b96bfd60750895ed7387085a2b6aced3c42c76a14a4c19da5fdbb5e40343",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/ASSESSMENT.json",
+      "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "recorded_sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.json",
+      "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "recorded_sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.md",
+      "sha256": "7ce214f8e55cfd58eb2a08e3b3ae2b8a11bf952f8e34e1d7ab92f1f9250b1cd1",
+      "recorded_sha256": "7ce214f8e55cfd58eb2a08e3b3ae2b8a11bf952f8e34e1d7ab92f1f9250b1cd1",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopen-nonqualifying/1/final-exports/GRADE.json",
+      "sha256": "583046bdeacd9d222128148e97b5373e0c96d58376e60fd3f31305eb4194c09d",
+      "recorded_sha256": "583046bdeacd9d222128148e97b5373e0c96d58376e60fd3f31305eb4194c09d",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopened-revision/1/final-exports/ASSESSMENT.md",
+      "sha256": "70017b334050b65fe38708924c9cec3fa8234090147654a67923e276f0ecbd25",
+      "recorded_sha256": "70017b334050b65fe38708924c9cec3fa8234090147654a67923e276f0ecbd25",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/final-exports/independent-assessment.json",
+      "sha256": "3b15edec460ed67c3f6990fe3ff8ac11e8a8ace51500a1f6fcf69282acf6ca0a",
+      "recorded_sha256": "3b15edec460ed67c3f6990fe3ff8ac11e8a8ace51500a1f6fcf69282acf6ca0a",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/strict-package/1/ASSESSMENT.json",
+      "sha256": "3ddeb7d3eb6d5ee3195c8a3dd3657dcb38a5783b9fb52714bbb6fcc221a20837",
+      "recorded_sha256": "3ddeb7d3eb6d5ee3195c8a3dd3657dcb38a5783b9fb52714bbb6fcc221a20837",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/ASSESSMENT.json",
+      "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "recorded_sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "equal": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+      "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "recorded_sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "equal": true
+    }
+  ],
+  "source_and_package_integrity": "Complete campaign subtree exactpublished7be ensures pinned resources/allrecord/packagearchive integrity; exactoutside objects preserve ordinary product133 sourcepackage pinnedresources and allunrelated histories",
+  "checks": [
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "status": 2,
+      "stdout_bytes": 565821,
+      "stdout_sha256": "a6898f38e15a3313a0223eae4beee46f06542a9f1ef93dbcef91f96281f55922",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "qualification": "Evidence staged whitespace diagnostics arise in exact unchanged inherited published fixture/export bytes, including literalCRLF samples; preserve source data. Unstaged diff must be empty."
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "status": 0,
+      "stdout_bytes": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "qualification": "Evidence staged whitespace diagnostics arise in exact unchanged inherited published fixture/export bytes, including literalCRLF samples; preserve source data. Unstaged diff must be empty."
+    }
+  ],
+  "report_links_and_proposals": "Exact final report earlier independently assessed; all34 variants/14supplements and hashreferences resolve in preserved campaign. Bounded no-confirmedinstructiondefect/strict39 compatibilityproposal retained, no authorizationformigration. Grade audit pointers remainrelative intact underexport.",
+  "publication": {
+    "status": "Pending actual finalmain merge publication",
+    "evidence_remote_tip_previously_verified": "7be5abfa51b19b463f817f43a79fd45be656e047",
+    "main_before_merge": "549a25f4f1bc7702afa0b729fc0894918ec9d16d"
+  },
+  "claim_limits": [
+    "Scoped report+prospective integrity Passed do not confer actualfinalworkflowPassed",
+    "Literal evidence whitespace preserved; no extra productruntime reruns foridenticalproducttree",
+    "HistoricalfirstFailed/Blocked/assistance/errors/native/client/provider/lostchannels/NULgap records immutable",
+    "Final committedmerge must havethese exact orderedparents/tree, then actualremote main readback separately verified"
+  ]
+}

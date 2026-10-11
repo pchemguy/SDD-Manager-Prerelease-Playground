@@ -1,0 +1,11 @@
+{
+  "prospective_tree": "3cc862c60b2d2a76ace2f966d77009895b715dc8",
+  "ordered_parents": [
+    "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "7be5abfa51b19b463f817f43a79fd45be656e047"
+  ],
+  "changed_paths_count": 33209,
+  "campaign_subtree_exact_published_evidence": true,
+  "all_outside_campaign_paths_modes_objects_preserved": true,
+  "product_runtime_scope": "Product code bytes are unchanged from retained549; actual prior product checks reused only within exact unchanged byte scope. No new runtime behavior or provider acceptance inferred."
+}

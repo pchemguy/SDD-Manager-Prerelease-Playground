@@ -5,23 +5,18 @@
   "case_id": "A-027",
   "attempt": 1,
   "role": "coordinator",
-  "last_completed_action": "A013 and A014 additive independent eventual Passed; exact product main and all three trial refs published/read back",
+  "last_completed_action": "All required variants reconciled; A027 independent wholePassed after actual main b263799 publication/readback. Post-merge checkpoint retained without second boundary merge.",
   "pending_operation": {
-    "kind": "task",
-    "status": "in_progress",
-    "description": "Fresh final status/reconciliation and actual evidence main integration",
-    "identity": {
-      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
-      "branch": "main",
-      "task_id": "A-027"
-    }
+    "kind": "none",
+    "status": "complete",
+    "description": "Product and evidence final integration verified; source final integration separate"
   },
-  "next_action": "Publish independently assessed final report, then prepare and assess actual evidence-only merge549 plus exact published evidence tip before publication.",
+  "next_action": "Source final CP024 record and CP025 actual source integration remain separate; product behavior and campaign evidence workflow complete.",
   "checkpoint_refs": {
     "product_branch": "phase/2-json-and-stdin",
     "product_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
     "integration_branch": "main",
-    "integration_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "integration_commit": "b26379977bd07730f09d7f278594418a9219f67d",
     "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
     "remote": "origin",
     "evidence_commit": "b12955aa0a914a37f4cf030c15ebdb62293f759c"

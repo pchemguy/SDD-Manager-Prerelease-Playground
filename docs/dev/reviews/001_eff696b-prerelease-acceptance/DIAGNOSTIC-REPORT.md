@@ -1,3 +1,7 @@
+## Current completed evidence workflow — actual main publication verified
+
+A027 whole independent Passed after exact main `b26379977bd07730f09d7f278594418a9219f67d` publication, ordered parents retained product549a then published evidence7be5abf. All33209 delta paths stay within campaign evidence; all191 outside objects/modes and59 original assessment hashes remain intact. [Final additive independent assessment](runs/A-027/authorized-final-reconciliation/1/final-independent/ASSESSMENT.final-published.json) retains original Blocked/scoped/prospective outcomes. Current original required30 Passed/2 Failed; separately corrected selection32 Passed; optional2 Not run and14 supplements separate. Broad readiness remains false; strict/installed/runtime/platform/transcript and historical limits remain. This post-merge checkpoint records actual completion without a second boundary merge. Source final integration remains a separate next operation. Earlier headers below are historical reached checkpoints.
+
 # Current authorized reconciliation — final evidence integration pending
 
 Product main `549a25f4f1bc7702afa0b729fc0894918ec9d16d` is published with exact readback. A013 and A014 have additive independent eventual Passed assessments; original Blocked attempts and actual automatic rejections remain unchanged. A014 published exact trial phase `dfcd658`, Phase1 main `a7285d78`, and JSON `2d2fbfc`, then stopped before T011 or Phase2 integration.

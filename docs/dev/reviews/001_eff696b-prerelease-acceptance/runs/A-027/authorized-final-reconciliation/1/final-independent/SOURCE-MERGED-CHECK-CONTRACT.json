@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "scope": "Fresh final prospective-source checks for root sole writer/publisher; no execution by assessor",
+  "prior_exact_record": "runs/A-027/1/final-source-verification/prospective-merged/MERGED-SOURCE-CHECKS.json",
+  "runtime": "Python3.12.14",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "acceptance/textstats/tests",
+        "-t",
+        "acceptance/textstats",
+        "-v"
+      ],
+      "prior_tests": 113,
+      "expected_exit": 0
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".github/tests",
+        "-v"
+      ],
+      "prior_tests": 26,
+      "expected_exit": 0
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "expected_exit": 0
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "expected_exit": 0
+    }
+  ],
+  "checks": [
+    "Run in actual noff/nocommit merge worktree from refreshed a6target and exact published source-tip",
+    "Retain actual ordered parents, index-tree hash before tests, working/index status and command raw stdout/stderr/status, runtime and bytecode environment",
+    "Fresh source support tests do not certify installed/client/native/runtime/platform or publisher provider workflow",
+    "Compare all133 PACKAGE_PATHS file names/modes/blobbytes to retainedEA515 pin; manifests identical and version0.15.0",
+    "Compare16frozen038-041 object/mode inventory tob246f8f; no frozen content read",
+    "Preserve4diagramPNG hashes and README render hash; no new render assumed",
+    "Source release.py exacthash03a2 matches actual4a56toolingfixture release.py; wrapper/candidate/providercalls distinct",
+    "If package build occurs after commit, use release.py --build-only with structured exactsource/tag/notes handoff; build_package requiresHEAD=declaredsource; no publisher write implied",
+    "Validate final report changes and source campaign scope without retesting identical producttree",
+    "Final committed merge must preserve two parents and identical checked prospective tree; readexact live main publication separately"
+  ],
+  "source_package_paths": [
+    "assets",
+    "skills",
+    ".codex-plugin",
+    "LICENSE",
+    "plugin.json",
+    "README.md",
+    "AGENTS.md",
+    "Greenfield Project Prompt Template.md",
+    "SDD-MANAGER.md",
+    "AI_DISCLOSURE.md"
+  ],
+  "limits": [
+    "Strict creator39 errors retained; no migration or readiness relaxation",
+    "Historical prepared-tree113/26 records remain immutable; final fresh records additive",
+    "Actual final parent/tree/pub identities pending root delivery"
+  ]
+}
