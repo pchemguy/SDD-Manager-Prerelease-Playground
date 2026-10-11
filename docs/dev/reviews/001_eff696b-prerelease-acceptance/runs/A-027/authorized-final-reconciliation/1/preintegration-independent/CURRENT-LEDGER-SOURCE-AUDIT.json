@@ -1,0 +1,2049 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "scope": "Independent published-record audit; final report/integration Pending",
+  "observed_at": "2026-10-11T04:08:24.869992+00:00",
+  "evidence_head": "d244a40538aac6eb374fb1fd5a1a6bc76d66adce",
+  "guard_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "ledgers": {
+    "VARIANT-RESULTS.json": {
+      "sha256": "405ca1503837de4299fcb27619e85b08046dccda52168568af03155b3e0a134f",
+      "entries": 34,
+      "case_ids": 27,
+      "required_counts": {
+        "Passed": 28,
+        "Failed": 2,
+        "Running": 1,
+        "Blocked": 1
+      },
+      "optional_counts": {
+        "Not run": 2
+      },
+      "published_byte_equal": true,
+      "resolved_paths": [
+        {
+          "variant": "A-001.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93"
+        },
+        {
+          "variant": "A-002.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "5e0a56c6cc219f5c4187344c35d8e274dc0f895a56af6bd850021c5726233d0b"
+        },
+        {
+          "variant": "A-003.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042"
+        },
+        {
+          "variant": "A-004.core",
+          "path": "runs/A-004/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "33484c29ae4e82110d8fbc7621f61a46a0619eb77958f10e23ed730b8fefebbf"
+        },
+        {
+          "variant": "A-005.core",
+          "path": "runs/A-005/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84"
+        },
+        {
+          "variant": "A-006.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6"
+        },
+        {
+          "variant": "A-007.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c"
+        },
+        {
+          "variant": "A-008.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8"
+        },
+        {
+          "variant": "A-009.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829"
+        },
+        {
+          "variant": "A-010.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "0c48fd81b210bc7ff85acae1dbc347a6c7e0388e33ca56d74db851cae83b9717"
+        },
+        {
+          "variant": "A-011.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-011/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "06180e16ec544b20ce8669bf2d4be25d8f97dbd4c145933b0c175ccac59de28c"
+        },
+        {
+          "variant": "A-012.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "02a1ece91cb007ebf9702ee4d976cd0213e5323d658c3f277bcabeaedbad5cac"
+        },
+        {
+          "variant": "A-013.core",
+          "path": "runs/A-013/authorized-publication-reassessment/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "e5543123015aac7492a1e55e25cf4cd338a075e77d2ceb1b45f783617dc400db"
+        },
+        {
+          "variant": "A-014.cross-phase",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/cross-phase/1/LIVE-PUBLICATION-REJECTION.json",
+          "exists": true,
+          "sha256": "f6e7c1398932478bbd3aeff9eac7d4251b2c78317251305ac54042db2699d481"
+        },
+        {
+          "variant": "A-014.prerequisite-refusal",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f"
+        },
+        {
+          "variant": "A-015.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04"
+        },
+        {
+          "variant": "A-016.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75"
+        },
+        {
+          "variant": "A-017.failed-check",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8"
+        },
+        {
+          "variant": "A-018.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "dc19b5da07a1be075c29d27963ec72ad603f796f37cb6c550c6fc25e4e21c2e2"
+        },
+        {
+          "variant": "A-019.integration-recovery",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "cab8ee43325bfb3753479d5fd044f01d02c4cc2f50f170c37bb05f4cf407d054"
+        },
+        {
+          "variant": "A-020.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335"
+        },
+        {
+          "variant": "A-021.partial-transfer",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-021/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "2a4e21e580b966f4b570d6f927238113c6483145c4390ccb7a0fb7e6d330e7ff"
+        },
+        {
+          "variant": "A-022.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-022/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "9de9ed003f7cb8a7639a5faba19c861ae88a1e94d2425e02c70fad9d76551f64"
+        },
+        {
+          "variant": "A-023.controlled-reconciliation",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/assessment/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "dda63f1db0405507b1cc962ed5272b05eb9b8b7244a2c3a2c0a2a9235872fcf0"
+        },
+        {
+          "variant": "A-024.denial",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "fcfd2912f42fd6154e30e5a28f4c67fac723aba3421ef7d0568daa66e19548bb"
+        },
+        {
+          "variant": "A-024.rate-limit",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "c0eeefbdab5076621ea2ec5174967ed49d51db8266c6af275d0dc5487cc5ba01"
+        },
+        {
+          "variant": "A-024.unavailable-access",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/unavailable-access/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "7bb0f8a105946a407e45d59406feccda25f97fabd55f631800360e161177e351"
+        },
+        {
+          "variant": "A-025.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "5ffdd7c191b46806c9e339c0fde4634cf8db65399dd8427906b7ed4c410cc84b"
+        },
+        {
+          "variant": "A-026.empty-selection",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "931f7ee4366b3f9f252e8ab970f14cd1bf33ae27f836f24515a176b794b2abbe"
+        },
+        {
+          "variant": "A-026.failing-baseline",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "d50edfc4040f3a8e73dc3a37546eb9f86f404858dd272c363d5ac8d0782a3e7a"
+        },
+        {
+          "variant": "A-026.preservation",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "9fad8f53674fb192c5461fce0745b799edf09c31afcc460138b1ff457ff3d187"
+        },
+        {
+          "variant": "A-027.core",
+          "path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json",
+          "exists": true,
+          "sha256": "b74b390626cc85879c635f65f34a8d50b6cfd158435dac60ff8bf019363d0317"
+        }
+      ]
+    },
+    "VARIANT-RESULTS.corrected-rechecks.json": {
+      "sha256": "7a3b3c3a64c8067bcef96bdd8d1a322a4bf899a82be0a6030ba4ef9fa39bbb61",
+      "entries": 34,
+      "case_ids": 27,
+      "required_counts": {
+        "Passed": 30,
+        "Running": 1,
+        "Blocked": 1
+      },
+      "optional_counts": {
+        "Not run": 2
+      },
+      "published_byte_equal": true,
+      "resolved_paths": [
+        {
+          "variant": "A-001.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93"
+        },
+        {
+          "variant": "A-002.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "5e0a56c6cc219f5c4187344c35d8e274dc0f895a56af6bd850021c5726233d0b"
+        },
+        {
+          "variant": "A-003.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042"
+        },
+        {
+          "variant": "A-004.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/reassess-fc193b0/1/037-a004-reassessed.json",
+          "exists": true,
+          "sha256": "a457ea4b9bcea60e3232f74c8ec290ae6e56c790147ffcbe747f509003dd2a55"
+        },
+        {
+          "variant": "A-005.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+          "exists": true,
+          "sha256": "27b5658a5b0718ef3bd998f3be5bcc754164d19abe11efb4141e88f95b6e832d"
+        },
+        {
+          "variant": "A-006.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6"
+        },
+        {
+          "variant": "A-007.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c"
+        },
+        {
+          "variant": "A-008.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8"
+        },
+        {
+          "variant": "A-009.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829"
+        },
+        {
+          "variant": "A-010.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "0c48fd81b210bc7ff85acae1dbc347a6c7e0388e33ca56d74db851cae83b9717"
+        },
+        {
+          "variant": "A-011.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-011/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "06180e16ec544b20ce8669bf2d4be25d8f97dbd4c145933b0c175ccac59de28c"
+        },
+        {
+          "variant": "A-012.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "02a1ece91cb007ebf9702ee4d976cd0213e5323d658c3f277bcabeaedbad5cac"
+        },
+        {
+          "variant": "A-013.core",
+          "path": "runs/A-013/authorized-publication-reassessment/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "e5543123015aac7492a1e55e25cf4cd338a075e77d2ceb1b45f783617dc400db"
+        },
+        {
+          "variant": "A-014.cross-phase",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/cross-phase/1/LIVE-PUBLICATION-REJECTION.json",
+          "exists": true,
+          "sha256": "f6e7c1398932478bbd3aeff9eac7d4251b2c78317251305ac54042db2699d481"
+        },
+        {
+          "variant": "A-014.prerequisite-refusal",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f"
+        },
+        {
+          "variant": "A-015.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04"
+        },
+        {
+          "variant": "A-016.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75"
+        },
+        {
+          "variant": "A-017.failed-check",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8"
+        },
+        {
+          "variant": "A-018.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "dc19b5da07a1be075c29d27963ec72ad603f796f37cb6c550c6fc25e4e21c2e2"
+        },
+        {
+          "variant": "A-019.integration-recovery",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "cab8ee43325bfb3753479d5fd044f01d02c4cc2f50f170c37bb05f4cf407d054"
+        },
+        {
+          "variant": "A-020.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335"
+        },
+        {
+          "variant": "A-021.partial-transfer",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-021/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "2a4e21e580b966f4b570d6f927238113c6483145c4390ccb7a0fb7e6d330e7ff"
+        },
+        {
+          "variant": "A-022.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-022/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "9de9ed003f7cb8a7639a5faba19c861ae88a1e94d2425e02c70fad9d76551f64"
+        },
+        {
+          "variant": "A-023.controlled-reconciliation",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/assessment/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "dda63f1db0405507b1cc962ed5272b05eb9b8b7244a2c3a2c0a2a9235872fcf0"
+        },
+        {
+          "variant": "A-024.denial",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "fcfd2912f42fd6154e30e5a28f4c67fac723aba3421ef7d0568daa66e19548bb"
+        },
+        {
+          "variant": "A-024.rate-limit",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "c0eeefbdab5076621ea2ec5174967ed49d51db8266c6af275d0dc5487cc5ba01"
+        },
+        {
+          "variant": "A-024.unavailable-access",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/unavailable-access/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "7bb0f8a105946a407e45d59406feccda25f97fabd55f631800360e161177e351"
+        },
+        {
+          "variant": "A-025.core",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "5ffdd7c191b46806c9e339c0fde4634cf8db65399dd8427906b7ed4c410cc84b"
+        },
+        {
+          "variant": "A-026.empty-selection",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "931f7ee4366b3f9f252e8ab970f14cd1bf33ae27f836f24515a176b794b2abbe"
+        },
+        {
+          "variant": "A-026.failing-baseline",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "d50edfc4040f3a8e73dc3a37546eb9f86f404858dd272c363d5ac8d0782a3e7a"
+        },
+        {
+          "variant": "A-026.preservation",
+          "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+          "exists": true,
+          "sha256": "9fad8f53674fb192c5461fce0745b799edf09c31afcc460138b1ff457ff3d187"
+        },
+        {
+          "variant": "A-027.core",
+          "path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json",
+          "exists": true,
+          "sha256": "b74b390626cc85879c635f65f34a8d50b6cfd158435dac60ff8bf019363d0317"
+        }
+      ]
+    }
+  },
+  "historical_assessment_records": [
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+      "sha256": "a689a9b7185ac897deb1658e040767d286a82704c4e48b758948671187c1fb93",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json",
+      "sha256": "5e0a56c6cc219f5c4187344c35d8e274dc0f895a56af6bd850021c5726233d0b",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+      "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/reassess-fc193b0/1/037-a004-reassessed.json",
+      "sha256": "a457ea4b9bcea60e3232f74c8ec290ae6e56c790147ffcbe747f509003dd2a55",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+      "sha256": "27b5658a5b0718ef3bd998f3be5bcc754164d19abe11efb4141e88f95b6e832d",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+      "sha256": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json",
+      "sha256": "77d58b84b9fbeb2afecffd564c59f944f0ccb93fd1972cb8d9e04c201a45927c",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json",
+      "sha256": "bcfbe5f0039a21545ef92432d9dbd5e732834fd09d8a84c13b461ffa84d176e8",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json",
+      "sha256": "8d22ee7ca3284e4b68600dd47b281baf8394ce7324e6389a514606389b2ad829",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json",
+      "sha256": "0c48fd81b210bc7ff85acae1dbc347a6c7e0388e33ca56d74db851cae83b9717",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-011/1/ASSESSMENT.json",
+      "sha256": "06180e16ec544b20ce8669bf2d4be25d8f97dbd4c145933b0c175ccac59de28c",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json",
+      "sha256": "02a1ece91cb007ebf9702ee4d976cd0213e5323d658c3f277bcabeaedbad5cac",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/cross-phase/1/LIVE-PUBLICATION-REJECTION.json",
+      "sha256": "f6e7c1398932478bbd3aeff9eac7d4251b2c78317251305ac54042db2699d481",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+      "sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Rejected"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json",
+      "sha256": "b4bc019f7926b465803ce1b88e08c3d15d8b375cb41013e9156ee59f30280e04",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ASSESSMENT.json",
+      "sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json",
+      "sha256": "51cdcb0987f933a4bfcd3f781e9f5f9321e09eef9e1f0d714d69dd6feb177ff8",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ASSESSMENT.json",
+      "sha256": "dc19b5da07a1be075c29d27963ec72ad603f796f37cb6c550c6fc25e4e21c2e2",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/ASSESSMENT.json",
+      "sha256": "cab8ee43325bfb3753479d5fd044f01d02c4cc2f50f170c37bb05f4cf407d054",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json",
+      "sha256": "741173c30f628f71c4a148c49fdc859319b106b4a2c86403850ebf3393b6b335",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-021/1/ASSESSMENT.json",
+      "sha256": "2a4e21e580b966f4b570d6f927238113c6483145c4390ccb7a0fb7e6d330e7ff",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-022/1/ASSESSMENT.json",
+      "sha256": "9de9ed003f7cb8a7639a5faba19c861ae88a1e94d2425e02c70fad9d76551f64",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/assessment/1/ASSESSMENT.json",
+      "sha256": "dda63f1db0405507b1cc962ed5272b05eb9b8b7244a2c3a2c0a2a9235872fcf0",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json",
+      "sha256": "fcfd2912f42fd6154e30e5a28f4c67fac723aba3421ef7d0568daa66e19548bb",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json",
+      "sha256": "c0eeefbdab5076621ea2ec5174967ed49d51db8266c6af275d0dc5487cc5ba01",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/unavailable-access/1/ASSESSMENT.json",
+      "sha256": "7bb0f8a105946a407e45d59406feccda25f97fabd55f631800360e161177e351",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json",
+      "sha256": "5ffdd7c191b46806c9e339c0fde4634cf8db65399dd8427906b7ed4c410cc84b",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json",
+      "sha256": "931f7ee4366b3f9f252e8ab970f14cd1bf33ae27f836f24515a176b794b2abbe",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json",
+      "sha256": "d50edfc4040f3a8e73dc3a37546eb9f86f404858dd272c363d5ac8d0782a3e7a",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json",
+      "sha256": "9fad8f53674fb192c5461fce0745b799edf09c31afcc460138b1ff457ff3d187",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/1/ASSESSMENT.json",
+      "sha256": "33484c29ae4e82110d8fbc7621f61a46a0619eb77958f10e23ed730b8fefebbf",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/1/ASSESSMENT.json",
+      "sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/FIRST-ASSESSMENT.json",
+      "sha256": "4dea03ff7e4f68c5004309eced499a7801d3b0aaabdd582199a22c5441f9444c",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/SECOND-READONLY-ASSESSMENT.json",
+      "sha256": "711b26c0d5fe1607cc2688c7bcff1ed7278471f35d13cd495f6bc1359c758ed4",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/trigger-exports/ASSESSMENT.json",
+      "sha256": "f5689aa709124f1bf96beaa4ef466afd4f1083da65f5eb24128d39f7d3bbd31c",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/conflict-exports/ASSESSMENT.json",
+      "sha256": "8211bbdfaf1cd610706bd4352c1cfdb81bdf58acae0fd658338745a7e6a81991",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/prospective-exports/ASSESSMENT.json",
+      "sha256": "84afa734d21747fc3281b3cc408e01d39b4221debb36374aab8f1f1dfb004f39",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/coverage-inventory/037-supplemental-coverage-assessment.json",
+      "sha256": "357562c5ab8ab61912abf990969889db22bde3398adf49d7deda0a90efe9e641",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/highlights/1/final-exports/assessment.json",
+      "sha256": "2f2fb8e0e906bd242dc940b1a754f115af7b0bcb11830712ac80c70f277bea44",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/ASSESSMENT.json",
+      "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/final-exports/independent-assessment.json",
+      "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/nested-revision/1/final-exports/ASSESSMENT.md",
+      "sha256": "cd31436300af86945b7eaad646822b86babe191b2ee276d26012039ac1ef16d7",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Not JSON"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/final-exports/assessment.json",
+      "sha256": "d1410beefe3707bc6c9f651a140054a48c4e1d313c9f6750055c5c8ad84ddb2e",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/ASSESSMENT.json",
+      "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/final-exports/independent-assessment.json",
+      "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/ASSESSMENT.json",
+      "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+      "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/FINAL-SAME-CYCLE-ASSESSMENT.json",
+      "sha256": "be5e9554a89051e45f2890b5d58d846e2a96f4ce67614a11b2e9df5ade1949ee",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/actual-trigger-assessment.json",
+      "sha256": "46a9415937470b6b2d836a969209effb76238a3e7274dc4478084a21531dfc6c",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/provisional-candidate-assessment.json",
+      "sha256": "e8a4b96bfd60750895ed7387085a2b6aced3c42c76a14a4c19da5fdbb5e40343",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/ASSESSMENT.json",
+      "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.json",
+      "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.md",
+      "sha256": "7ce214f8e55cfd58eb2a08e3b3ae2b8a11bf952f8e34e1d7ab92f1f9250b1cd1",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Not JSON"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopen-nonqualifying/1/final-exports/GRADE.json",
+      "sha256": "583046bdeacd9d222128148e97b5373e0c96d58376e60fd3f31305eb4194c09d",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopened-revision/1/final-exports/ASSESSMENT.md",
+      "sha256": "70017b334050b65fe38708924c9cec3fa8234090147654a67923e276f0ecbd25",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Not JSON"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/final-exports/independent-assessment.json",
+      "sha256": "3b15edec460ed67c3f6990fe3ff8ac11e8a8ace51500a1f6fcf69282acf6ca0a",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/strict-package/1/ASSESSMENT.json",
+      "sha256": "3ddeb7d3eb6d5ee3195c8a3dd3657dcb38a5783b9fb52714bbb6fcc221a20837",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/ASSESSMENT.json",
+      "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+      "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+      "recorded_sha_match": true,
+      "published_byte_equal": true,
+      "clean_bytes": true,
+      "generic_json_guard": "Passed"
+    }
+  ],
+  "supplement_scopes": 14,
+  "prior_preparatory_attempts": [
+    {
+      "attempt": 1,
+      "status": "Failed before ledger write",
+      "operation": "Original assessment screening via actual imported pinned core generic no_secret",
+      "exact_record_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+      "error": "invalid_nonsecret_configuration",
+      "rejected_value_path": [
+        "independent_raw_git_observations",
+        6,
+        "stdout"
+      ],
+      "contains_NUL": true,
+      "sensitive_text_match": false,
+      "disposition": "Preserve original published bytes/hash; derivative retains rejection and omits copied guard-rejected JSON content. Original no_secret compliance not certified; no actual credential exposure inferred from NUL-only rejection."
+    },
+    {
+      "attempt": 2,
+      "status": "Passed derivative screening",
+      "operation": "Same pinned guard; derivative JSON no_secret and clean_bytes with exact original record hashes retained"
+    },
+    {
+      "attempt": 3,
+      "status": "Failed root generic JSON sniff",
+      "error": "invalid_nonsecret_configuration",
+      "scope": "First derivative complete JSON lexeme .bin parsed as NUL-containing JSON string; initial extension-based guard claim incorrect",
+      "disposition": "Preserve first seven artifacts unchanged/private, new additive mirror retains raw channel and two exact non-JSON lexical fragments with inverse proof"
+    }
+  ],
+  "own_preparatory_failures": [
+    "Attempt1: JSONDecodeError on nonJSON assessment before output write",
+    "Attempt2: zip member prefix omitted before output write",
+    "Attempt3: original abbreviated b246 ambiguous; explicit b246f8f commit selected before final audit",
+    "Attempt4: current source main is preintegration a6c42dd and lacks archive revision-modes asset; comparison corrected to archive declared fb2a source, with current-source applicability pending separate actual integration assessment"
+  ],
+  "inherited_NUL_guard_gap": {
+    "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+    "sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+    "rejected_records": [
+      "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json"
+    ]
+  },
+  "source_integrity": {
+    "source_head": "785b4da2dbe6bbee849a26efba3f0b204d8c02ed",
+    "pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "zip_sha256": "935ad686d34caa953979a6d7de85152621c923a7bd43337b8238ecb1aabece6b",
+    "member_count": 133,
+    "members": [
+      {
+        "path": ".codex-plugin/plugin.json",
+        "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "AI_DISCLOSURE.md",
+        "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "Greenfield Project Prompt Template.md",
+        "sha256": "852c666018f223c49cc4732af5f1a1bf8db38061114721b9dc738ec702ec9617",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "230ef093b2d68d0f37130d47064b1aff673c41830a15513801e0cc089e742ed2",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "README.md",
+        "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "SDD-MANAGER.md",
+        "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/AI_DISCLOSURE.md",
+        "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/SDD-MANAGER.md",
+        "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/icon.png",
+        "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/icon.svg",
+        "sha256": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/logo.png",
+        "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/logo.svg",
+        "sha256": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "plugin.json",
+        "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/SKILL.md",
+        "sha256": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/agents/openai.yaml",
+        "sha256": "3afb66258ca9ee5f7e35b0986ac130e34a4a73c4d5c41b1c7de94e19133e4cea",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/assets/icon.svg",
+        "sha256": "5702cda32d79bc28857dedfe0f9811d382d8b2e4c46d1ac571d8114aabd279a4",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/backend-object-lifecycle.md",
+        "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/design-heuristics.md",
+        "sha256": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/development-document-qc.md",
+        "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/hosting-tokens.md",
+        "sha256": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/markdown-style.md",
+        "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/modularity.md",
+        "sha256": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/review-campaigns.md",
+        "sha256": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/task-hierarchy.md",
+        "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-conventions/references/workflow-identity.md",
+        "sha256": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-design/SKILL.md",
+        "sha256": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-design/agents/openai.yaml",
+        "sha256": "102d11e8960f1f7af69bfcbacbe71defad289b9c368d11a610fb6b19e61dd3b6",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-design/assets/icon.svg",
+        "sha256": "98c55eb98b3e3702037698739b96fb550da2223bf733fb576650d0a4c5504864",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-design/references/architecture.md",
+        "sha256": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-design/references/decomposition.md",
+        "sha256": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-design/references/exploration.md",
+        "sha256": "52a98f770a5e4745847dee060466231c8bc971d5c79c7f7dd4d745a6e675187a",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-docs/SKILL.md",
+        "sha256": "ef125969d670b75c0760ad8a7751c41ca8940ebc05a8a3a517658c6405929a7b",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-docs/agents/openai.yaml",
+        "sha256": "9715602c3bdcd14d41e6e99e24edb32389499e0ec96b0aad5cdf4b30b187de15",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-docs/assets/icon.svg",
+        "sha256": "69e272ee97e9957387f8ca8b51bec3d3d176c33e6bf6b20d2bff5b3536f507e2",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-docs/references/in-code-documentation.md",
+        "sha256": "40c179cf40c73ad36d76f722950eeaf33ab1c37993edd370f6fa16305d2a5465",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-docs/references/review-and-findings.md",
+        "sha256": "61bda144ac45af632307b12bb3cf9652727b83c3b3ffc57558188d0d2a6837b1",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-docs/references/standalone-documentation.md",
+        "sha256": "b2ced68b8f869efc47206261795e225b42455b513c7a2be4f091cd891c3ef951",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/SKILL.md",
+        "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/agents/openai.yaml",
+        "sha256": "65a79f791a2285753a0e6ca9eb83e203b181c0277ada5706add85f4c86c18783",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/assets/icon.svg",
+        "sha256": "ca997d09da83d706126f43dc2ace19c00ee9036ae67dcce225e688a09d398d33",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github-issue-lifecycle.md",
+        "sha256": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github-milestone-lifecycle.md",
+        "sha256": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github-packaging.md",
+        "sha256": "bf2a71e63b75b117853097199120d628d67d2c419962aa441978c124e4c780ed",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github-projection.md",
+        "sha256": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github-release-workflows.md",
+        "sha256": "2c90b8d5d00b217a809bad6a54661f0ab698b8ae1550af47ce86547f02e25d46",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github-releases.md",
+        "sha256": "317892eaecb199b87a8b17ee0a0f45a722c3849bdcf88e11301f91b9c8df96d6",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/github.md",
+        "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-forge/references/release-highlights.md",
+        "sha256": "4e4ebeaed8757d36ab9c7c98d759e724d30571f3d7aff48d783b1de60e236984",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/SKILL.md",
+        "sha256": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/agents/openai.yaml",
+        "sha256": "438f0f659f42428e943046f75e10eb5b21384802baf3ce8eb010b9598d00cb7b",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/assets/icon.svg",
+        "sha256": "4fd314a8f182561a13fbf6fe062e4aee5fd0e0330dccd9943ec14aa5dab34c48",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/references/browser-capabilities.md",
+        "sha256": "fd64b9332dac9d5a89249968996bdcfdcd3e1211f06220af8247cd7a25309642",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/references/completion-and-checkpoints.md",
+        "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/references/environment-recovery.md",
+        "sha256": "0254c7e5dc5477a012d6eca8c049d222f42c712b5ef1f03abc8b4270f34f9523",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/references/range-selection.md",
+        "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/references/startup-and-continuation.md",
+        "sha256": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-implement/references/task-execution.md",
+        "sha256": "1979b2bbd64bd4b5370f607c1646b7a7fbb05f63cccd44dc907f98ce50831dfe",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-integrate-feature/SKILL.md",
+        "sha256": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-integrate-feature/agents/openai.yaml",
+        "sha256": "48018ed1de138598f6be61e916b701638234e2d0e570ed42d39760e0f4de8392",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-integrate-feature/assets/icon.svg",
+        "sha256": "9b68ea07e6b5916efa646ad8f639cb1872523bb40630043a317cc862440dc006",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-integrate-feature/references/feature-incorporation.md",
+        "sha256": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/SKILL.md",
+        "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/agents/openai.yaml",
+        "sha256": "c3d318cf2a1074db8bc3c956109b12b1a3399c3835eded7bbac57f9ee7f5a778",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/assets/icon.svg",
+        "sha256": "d263da0cf62afe30dec52294f51c33a0d522b25c44049224a2274037e8ace44d",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/agent-orientation.md",
+        "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/branch-management.md",
+        "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/coordination.md",
+        "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/credentials.md",
+        "sha256": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/document-qc-gates.md",
+        "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/examples.md",
+        "sha256": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/git-workflows.md",
+        "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/human-document-review.md",
+        "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/phase-activation.md",
+        "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/prerelease-review.md",
+        "sha256": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/repository-bootstrap.md",
+        "sha256": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/review-and-revision.md",
+        "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/revision-modes.md",
+        "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/tracking-decision.md",
+        "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-manage/references/workflows.md",
+        "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-orient/SKILL.md",
+        "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-orient/agents/openai.yaml",
+        "sha256": "36dbb7990b7f504c1fa4b614651ad26431ab6af5a623be8250b780ce156667c9",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-orient/assets/icon.svg",
+        "sha256": "ef235e59b6a56e0d21629b3b6c1b2ca9cc97cd678d02bcb31b0e2f7bc11bf1f2",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-orient/references/inspection-and-handoff.md",
+        "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-plan/SKILL.md",
+        "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-plan/agents/openai.yaml",
+        "sha256": "8672b642e8c5ae2114cd839af1152435c7da485b4a25c3dd62d15c78d124ac98",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-plan/assets/icon.svg",
+        "sha256": "44568c513e736771f4dde159c1903c6da19a774474ce65aeb8992dd694706659",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-plan/references/delivery-plan.md",
+        "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-plan/references/physical-layout.md",
+        "sha256": "e6abc9b84068ff8def13af02360020bdd80dc4c431667cf416aa4a9953bbfc41",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-plan/references/review.md",
+        "sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/SKILL.md",
+        "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/agents/openai.yaml",
+        "sha256": "bfe1a84a61bf154a5cb846d41b10d73e88a596044d21e6d1f151d1dc78ae221c",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/assets/icon.svg",
+        "sha256": "aca30e96cbe5d44d759da47cc1db33c87dce1d04bf77142feac8475eecbab074",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/references/campaign-artifacts.md",
+        "sha256": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/references/change-kinds.md",
+        "sha256": "7cc7d31e5926fab5c4778b385f282d8f536713536c1038cc63409a1734da886b",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/references/completion-reports.md",
+        "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/references/document-qc-reports.md",
+        "sha256": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/references/object-drafts.md",
+        "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-report/references/releases.md",
+        "sha256": "da89ce5c4fe7b8c6a4c1549900629cf6b3c29bcdd60f1585e32e18db3a885a86",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-specify/SKILL.md",
+        "sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-specify/agents/openai.yaml",
+        "sha256": "c61e7eb38f097029d947314b441959b17aae2303440a52022cd386d78171e6b5",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-specify/assets/icon.svg",
+        "sha256": "ebeaf7c64a2fb958088765c46c48e8269625f03ddccefec9dc7b76ff7379f2ad",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-specify/references/change-specification.md",
+        "sha256": "74ad9a214189fa094c48acfd6c1daacb4eef43fe64ea18946ff5e6628a3be94c",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-specify/references/review.md",
+        "sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-specify/references/system-specification.md",
+        "sha256": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-steer/SKILL.md",
+        "sha256": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-steer/agents/openai.yaml",
+        "sha256": "421038f108a077de64e16c95011ed4f6bff87d47e16c53894bbcc0dc581cc4ae",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-steer/assets/icon.svg",
+        "sha256": "b9d353ce223194b53f52a4853ed1cc9468718ed0ee57074b5988a309f54d14d1",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-steer/references/amendment-execution.md",
+        "sha256": "c185174fd72625f51a151bb6085140e9599f848e26f461d1131c87f2865d0cac",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-steer/references/objective-and-impact.md",
+        "sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-steer/references/verification-and-stop.md",
+        "sha256": "833b62f3807e8eb425f0fe2ad9ef4418cabbb77ae0f2ee7371435793de17398d",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tasks/SKILL.md",
+        "sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tasks/agents/openai.yaml",
+        "sha256": "60b43614f445a40f3d52d21869962189bdfe0252461317a6712a55d176797aa2",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tasks/assets/icon.svg",
+        "sha256": "dad3203c0386ce1a697600ae82fc1e03f530111626192018df24dd7c5ac69eb0",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tasks/references/conformance-review.md",
+        "sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tasks/references/progress-review.md",
+        "sha256": "32be8fbaa5e67e807d7c7f7be964c56ab7f65bd6398784606090fcdd9e40a912",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tasks/references/task-derivation.md",
+        "sha256": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/LICENSE",
+        "sha256": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/SKILL.md",
+        "sha256": "49efacb9ed6ae3b59069e986672dc5350cc0b147c3ad960b3ffc04f105c54cda",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/agents/openai.yaml",
+        "sha256": "f0049fe541cbffe331d4ccb9e903ed49bb96f1011cefecd1ced49fbd1bd19da4",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/assets/icon.svg",
+        "sha256": "37e86ed29c77f13846f9c315627c5e139d1348d7eed26eef2ff94354c334239f",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/references/test-first-cycle.md",
+        "sha256": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/references/testing-strategy.md",
+        "sha256": "fd834570d97f993fe270627fcedc308f0a97642ff000b8970a0b1c1bf33cab5f",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/references/upstream-provenance.md",
+        "sha256": "668d85251c25027ac1494c9bb89367fa3c1885c23424e3987d02f7fd0b02ca33",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-tdd/references/writing-good-tests.md",
+        "sha256": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/SKILL.md",
+        "sha256": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/agents/openai.yaml",
+        "sha256": "3176532ba151974e4f6186c589a9e8ba59247367629ace97788cf70e1bdfe40a",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/assets/icon.svg",
+        "sha256": "60c4fbc478c5c5569c7db40ee7d2b90c061fb8e0b7a2274ec8757cbcadc6c837",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/references/boundary-review.md",
+        "sha256": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/references/check-selection.md",
+        "sha256": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/references/execution-and-evidence.md",
+        "sha256": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/references/failure-assessment.md",
+        "sha256": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "skills/sdd-verify/references/release-checks.md",
+        "sha256": "7c38ee14568eccccc724df033b647506a574fb34a8e3e398020bd1e543d89240",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      }
+    ],
+    "pngs": [
+      {
+        "path": "assets/icon.png",
+        "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      },
+      {
+        "path": "assets/logo.png",
+        "sha256": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+        "meta_equal": true,
+        "pin_byte_equal": true,
+        "archive_declared_source_byte_equal": true,
+        "current_source_byte_equal": true
+      }
+    ],
+    "publisher_sha256": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+    "fixture_publisher_bytes_equal": true,
+    "publisher_recorded_sha_equal": true,
+    "frozen_object_count": 16,
+    "frozen_inventory_sha256": "9d2be4bee60b18017494b329eaf574276d7c8a667a6c6534e0db976b73211942",
+    "frozen_b246_inventory_equal": true,
+    "frozen_contents_read": false,
+    "archive_declared_source": "fb2a06bb3f3ed5beeba03c045019d6c1f461de09"
+  },
+  "limits": [
+    "No final A027 workflow grade before exact report/tree and actual main publication",
+    "Historical A004/A005 Failed unchanged; separately corrected rechecks",
+    "Prior prepared grades/ledger errors immutable",
+    "Shared filesystem isolation, Python3.12.14 Unix, missing native/original channels and independent providerGET gaps remain",
+    "Strict creator Failed39 and historical NUL-only genericJSON rejection retained"
+  ]
+}

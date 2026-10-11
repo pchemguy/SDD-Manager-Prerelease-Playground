@@ -1,0 +1,24 @@
+{
+  "current_source_commit": "fb2a06bb3f3ed5beeba03c045019d6c1f461de09",
+  "current_publisher_script_sha256": "03a2c1e5686ad1b9e0cae64db3a359a7c049e8c084667ed5496eec2613ebfa4b",
+  "actual_tooling_fixture_commit": "4a56c7d3560297edcbc0934dcf99526841e1dab0",
+  "actual_tooling_script_bytes_equal_current_source": true,
+  "actual_live_records": [
+    {
+      "published_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/fresh-repair/RESULT.json",
+      "sha256": "d69f8d524ee8cfe13c62ea3580969ec79bcab37c08a62c0eb9612eb02eee9f92",
+      "actual_tooling_source": "4a56c7d3560297edcbc0934dcf99526841e1dab0",
+      "actual_run_id": 38047635040,
+      "release_id": 408893787
+    },
+    {
+      "published_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/publisher/repaired-complete-rerun/RESULT.json",
+      "sha256": "231c35fc605c3c6907204c549016af628a13d53cc42f907c2b90f82c9c5e70e1",
+      "actual_tooling_source": "4a56c7d3560297edcbc0934dcf99526841e1dab0",
+      "actual_run_id": 38047846884,
+      "release_id": 408893787
+    }
+  ],
+  "workflow_fixture_difference": "Fixture invokes trial-release.py and retains GET-only diagnostic job. Wrapper imports exact ordinary release.py and only injects actual acknowledged-upload suppression for request_id prefix037-cp014-partial-. Clean fresh-repair and complete-rerun requests do not select that controlled fault. This is bounded equivalent publisher behavior, not an assertion that entire fixture YAML equals current source YAML.",
+  "limits": "Separate isolated metadata candidate170adc differs consumer EA manifests; actual archive133members match its own exactfixture source. No current source/default workflow dispatch or production release is claimed; source26tests fresh separately."
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "argv": [
+      "git",
+      "status",
+      "--porcelain=v1"
+    ],
+    "status": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "status": 0,
+    "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "--no-patch",
+      "--format=fuller",
+      "HEAD"
+    ],
+    "status": 0,
+    "stdout": "commit 549a25f4f1bc7702afa0b729fc0894918ec9d16d\nMerge: fbe8bed c05b659\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 15:40:36 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 15:40:36 2026 -0400\n\n    Integrate completed Phase 2 ranges and UTF-8 stdin\n    \n    Objective: Complete the amended TextStats phase so named UTF-8 files and borrowed\n    binary stdin deliver exact text line/word counts, inclusive logical-line ranges\n    and both BOM policies, with clean usage/input failures and unchanged silent\n    whole-input API. Complete final documentation, source-distribution and review exits.\n    \n    Review: Separate milestone and cross-phase source/contract reviews assessed the\n    value/API/acquisition/parser/normalization/selection/count/output path, ownership,\n    errors, nonempty discovery, isolation and public instructions. No remaining bug,\n    critical issue, contract violation or deferred code finding was located. The\n    milestone report was accepted at coordinator 9338f067a575511b6d818a6898a458957f4670a8;\n    the distinct Phase 2/final report pair was accepted with independent review at\n    791d494ac22f376a75d7edc7bc09b97045041b82. Reports retain resolved findings and\n    original evidence failures/limits. TODO: None.\n    \n    Delivered: T-013 through T-017 complete strict locale-independent EOF acquisition\n    from stdin without closing it, once-only whole-input BOM normalization and shared\n    range/count semantics. Complete decoding still rejects bad bytes after END;\n    usage validates before acquisition; ./- addresses a dash-named file. README/API\n    examples and the isolated checker now exercise real byte-fed stdin. Named-file\n    ranges and archived feature 002_e7cae5b outcomes integrated at\n    795f3a3542c9981f8d43c8e182876f3efa5b5f16 are retained. Revision 003_795f3a3 JSON\n    withdrawal integrated at 77e7106e3134cc7053a2b1a045cf1a76cf0361ea is retained:\n    removed options are usage errors, literal option filenames remain usable and\n    historical JSON identities/evidence stay preserved. This enclosing phase result\n    includes those prior campaign outcomes once; no release or version change occurs.\n    Canonical TASKS has all 21 active owners complete among 24 stable identities;\n    three retired identities gain no executable checkbox or replay. Bounded actual\n    closing-commit audits verify each of the five resumed owners separately persisted\n    its complete result/current evidence/initial checkbox under one leading task ID\n    and was immediately pushed/exactly read back before subsequent owned work.\n    \n    Merged verification: On the actual prospective main tree, PYTHONDONTWRITEBYTECODE=1\n    python -B tools/check_tests.py (through the immutable external trace wrapper)\n    passed 37 unit/34 integration tests, no skips/warnings. Fresh standalone\n    python -B tools/check_distribution.py passed 478 real isolated module cases plus\n    exact extracted import and silent API/signature probes. All 1,628 fresh recorded\n    Python children use explicit -B and bytecode suppression. Eleven archive members\n    match current source bytes; current rebuilt ZIP SHA256 is\n    d3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed.\n    The earlier fresh 12 README/API fence campaign is reused only for unchanged exact\n    document/product bytes. Its ZIP hash 4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c\n    identifies that earlier archive checkpoint; this merge checkout records new ZIP\n    timestamps while member content remains exact. All 20 current QC identities match.\n    Python 3.12.14/current Unix is verified; broader declared runtimes/platforms are\n    unverified. Original logging races, lost first channels, earlier argv gaps and\n    fixture-cleanup discrepancy remain explicit limits, not reconstructed history.\n    \n    Hosted chronology: Published T-016 preceded issue #17 evidence/closure and full\n    milestone #5 association/closure/readback. Accepted label maintenance changed only\n    the existing phase description with every other field preserved. Published T-017\n    preceded issue #18 evidence/closure and full milestone #6 association/closure/readback.\n    Delivery/review milestones #5/#6/#7/#8/#9 are closed with no open issues. Native fields,\n    manual controls and protected resources are preserved; late manual hash guards\n    establish only their stated boundary and do not invent original startup snapshots.\n    \n    Integration: phase/2-json-and-stdin published source\n    c05b65958e2a386cf2ae8782dca3e749ed9b60ff merges into refreshed established main\n    parent fbe8bedf4c6cba1ab29d53d2da05e614603d76d1. Current resume baseline is\n    77e7106e3134cc7053a2b1a045cf1a76cf0361ea. Nested JSON-removal campaign opening\n    636b46d8daf1455c940c98f4d535c9936c0f1733 and original checkpoint\n    795f3a3542c9981f8d43c8e182876f3efa5b5f16 remain in retained history.\n    This explicit two-parent merge has no conflict; prospective tree\n    190b6865846d66933bcdcd112e1fcfa7ca2f04ef equals the exact accepted/published phase\n    tree. The full 41-path target difference is coherent accepted range/archive,\n    withdrawal, stdin and final review work; protected/historical paths have an empty\n    diff from the accepted resume baseline. Immediate target push/exact readback\n    follows this commit. Retain the phase branch and stop after completed Phase 2\n    publication; no next task/phase, version bump or release is authorized.\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "log",
+      "-8",
+      "--format=%H %s"
+    ],
+    "status": 0,
+    "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d Integrate completed Phase 2 ranges and UTF-8 stdin\nc05b65958e2a386cf2ae8782dca3e749ed9b60ff [T-017] Complete Phase 2 and final implementation review\nb49a26b36d68dc9bab8cf83633f5b7a2aae81eea [T-016] Review and report UTF-8 stdin milestone exits\nca24007134141265a1937c77e2fda504bb0d6129 [T-015] Complete stdin documentation and isolated source exits\ndbf50d7b6d83c7ddf53f287d82b199db3e83fd89 [T-014] Integrate binary stdin with text and range counting\n2d96774221165ac04096c8d57ddcefe85b2305e0 [T-013] Add borrowed binary UTF-8 acquisition\n77e7106e3134cc7053a2b1a045cf1a76cf0361ea Integrate accepted JSON withdrawal into paused Phase 2\n160c0a980286c68f62d0d13b3238dad0748885e9 Conclude verified JSON withdrawal and managed tracking reconciliation\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "show",
+      "--format=fuller",
+      "--stat",
+      "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+    ],
+    "status": 0,
+    "stdout": "commit c05b65958e2a386cf2ae8782dca3e749ed9b60ff\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 15:29:31 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 15:29:31 2026 -0400\n\n    [T-017] Complete Phase 2 and final implementation review\n    \n    Record separate cross-phase implementation review and the required Phase 2 and\n    final implementation reports. Aggregate relevant historical findings/TODOs with\n    repair provenance while preserving their original records. Complete this sole\n    initial owning checkbox, eligible milestone/phase parents and equivalent QC\n    completion identities atomically; completed-phase main integration remains a\n    distinct concrete reviewed boundary.\n    \n    Fresh final serialized campaign passed 37 unit and 34 integration tests, 478 real\n    isolated module cases plus import/API probes and all twelve README/API fences.\n    All 2,776 fresh recorded Python children use explicit -B and bytecode suppression.\n    Exact eleven archive members match source; temporary examples are absent.\n    Python 3.12.14/current Unix is verified; broader runtimes/platforms are unverified.\n    Original facility failures, missing channels and historical argv gaps remain\n    explicit evidence limits. TODO: None; no production repair required.\n    \n    Exact five-file candidate tree 190b6865846d66933bcdcd112e1fcfa7ca2f04ef was\n    accepted by delegated coordinator and independent review. Acceptance is published\n    and exactly read back at 791d494ac22f376a75d7edc7bc09b97045041b82,\n    runs/A-013/1/T017-report-acceptance/DECISION.json. Startup acceptance and T-016\n    publication/closure precede this result. Immediately push/exactly read back this\n    commit before own hosted issue/milestone closure and prospective integration.\n    \n    Closes pchemguy/SDD-Manager-Prerelease-Playground#18\n\n AGENTS.md                                 |  21 +++++\n docs/dev/TASKS-REVIEW-REPORT.md           |   4 +-\n docs/dev/TASKS.md                         |  64 ++++++++++++-\n docs/dev/reports/IMPLEMENTATION-REPORT.md | 134 ++++++++++++++++++++++++++\n docs/dev/reports/phases/2/PHASE-REPORT.md | 152 ++++++++++++++++++++++++++++++\n 5 files changed, 370 insertions(+), 5 deletions(-)\n",
+    "stderr": ""
+  }
+]

@@ -1,3 +1,13 @@
+# Current authorized reconciliation — final evidence integration pending
+
+Product main `549a25f4f1bc7702afa0b729fc0894918ec9d16d` is published with exact readback. A013 and A014 have additive independent eventual Passed assessments; original Blocked attempts and actual automatic rejections remain unchanged. A014 published exact trial phase `dfcd658`, Phase1 main `a7285d78`, and JSON `2d2fbfc`, then stopped before T011 or Phase2 integration.
+
+Current required original outcomes are29 Passed/2 Failed/one A027 Running; separately corrected selection31 Passed/one Running. Two optional variants are Not run and14 supplements remain separate. [Fresh ordinary final status report](runs/A-027/authorized-final-reconciliation/1/consumer/STATUS-REPORT.final.md) preserves all34 identities, four answers, source/provider/consumer attribution, first attempts, bounded proposals and limitations. Whole A027 remains pending actual default evidence integration; no future publication is claimed.
+
+Fresh actual prospective source tree `fb27aae9f036fdb074b9a6813b9a4492912ca786` passed113 support tests and26 publisher tests. All133 shipped path/mode/blob identities remain accepted EA515; strict39 errors, installed/platform/runtime, shared filesystem, structured transcript/lost-channel and historical JSON-format limitations remain. R005 is Open and full readiness remains false. No production tag/release/version bump is selected.
+
+Earlier current headers below are retained historical checkpoints, superseded only by this actual reached state.
+
 # Current reached prerelease assessment — publication blocked
 
 Current conditional integration preparation independently Passed within preparation scope: actual source prospective merge checks113support/26publisher,133 package members/frozen16 preserved; actual evidence31581campaign-only delta and exact subtree/outside-object preservation. [Independent preparation assessment](runs/A-027/1/conditional-integration-preparation/INDEPENDENT-ASSESSMENT.json) is additive to the earlier final report snapshot. Source preparation/current findings are published785b4da. No default commit/publication or wholeworkflowPass is inferred. [Final publication status](FINAL-PUBLICATION-STATUS.json) names remaining operations and verified user-requested ancestry.

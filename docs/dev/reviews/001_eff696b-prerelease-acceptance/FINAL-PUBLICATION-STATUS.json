@@ -1,12 +1,12 @@
 {
   "published_source_revision_tip": "785b4da2dbe6bbee849a26efba3f0b204d8c02ed",
-  "published_evidence_predecessor": "47b514352f1a4cc42a350e8129e1766e466b6fd5",
+  "published_evidence_predecessor": "bd88d797d55f755a895fcafeaeda17c4354f310f",
   "user_requested_checkpoints": {
     "e7c2554314ef8049acc3b155946a988bf390ecdd": "Contained in verified remote evidence ancestry",
     "d70b962fc1118be6f87c532018e9db72eb42890c": "Contained in verified remote evidence ancestry"
   },
   "published_product_phase": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
-  "actual_product_main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+  "actual_product_main": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
   "accepted_local_main_merge": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
   "main_pushes_rejected_before_execution": 2,
   "source_final_main_commit_created": false,
@@ -23,15 +23,28 @@
   "scoped_reporting_status": "Passed",
   "whole_required_readiness": false,
   "original_required": {
-    "Passed": 27,
+    "Passed": 29,
     "Failed": 2,
-    "Blocked": 3
+    "Running": 1
   },
   "corrected_rechecks": {
-    "Passed": 29,
-    "Blocked": 3
+    "Passed": 31,
+    "Running": 1
   },
   "optional_not_run": 2,
   "supplements_outside_required": 14,
-  "remaining_operation": "Explicit recognized authorization for exact product main publication and named A014 trial destinations, then refresh/assess remaining dependent integrations; no rejected-action retry or actor/transport workaround."
+  "remaining_operation": "Final independently assessed ordinary report publication, actual evidence-only two-parent merge and exact main publication/readback, then additive completion checkpoint and source final integration.",
+  "historical_before_authorized_resumption": {
+    "actual_product_main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "original_required": {
+      "Passed": 27,
+      "Failed": 2,
+      "Blocked": 3
+    },
+    "corrected_rechecks": {
+      "Passed": 29,
+      "Blocked": 3
+    },
+    "remaining_operation": "Explicit recognized authorization for exact product main publication and named A014 trial destinations, then refresh/assess remaining dependent integrations; no rejected-action retry or actor/transport workaround."
+  }
 }

@@ -1,0 +1,1226 @@
+{
+  "supplements": [
+    {
+      "supplement_id": "coverage-inventory",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/coverage-inventory/037-supplemental-coverage-assessment.json",
+          "sha256": "357562c5ab8ab61912abf990969889db22bde3398adf49d7deda0a90efe9e641",
+          "byte_length": 24773,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "scope": "read-only independent coordinator-side supplemental inventory; scratch drafts only"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "source_head_observed": "ebebd0c6d125d2e426b7c6fabd36fc8963b5201d",
+            "publication_limit": "Committed evidence HEAD equals locally retained remote-tracking evidence ref88fd0ea; source report records exact remote readbacks for cited checkpoints. This assessor did not perform new network readback. Active case progress can advance after this snapshot."
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "highlights",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/highlights/1/final-exports/assessment.json",
+          "sha256": "2f2fb8e0e906bd242dc940b1a754f115af7b0bcb11830712ac80c70f277bea44",
+          "byte_length": 6581,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "checkpoint_refs": {
+              "baseline": "5e4d990e55817220661028f5e7ec643707bddd5a",
+              "starting_watermark": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+              "product_commit": "ecc652f9fca8b3da0c5658065e6f6e0123360f40",
+              "merge_parents": [
+                "f25d556eca14710e4596dcda0c7971479c399be1",
+                "75702ad1bca1a5f982811c221fbdec5b55b39cc5"
+              ],
+              "published_source": "170adcdb861df9ea6328b4986fa3a1abf9e2de54",
+              "existing_release_id": 408893787
+            },
+            "assessment_scope": "Fresh ordinary-input LOCAL semantic highlights continuation and separate existing owned CP014 repaired test-release body consumption/cleanup.",
+            "qualification": [
+              "Consumer observation editorial.combined_outcome_reason uses 'existing human choice'. Evidence establishes caller-fixture wording/cut only, not actual human authorship; assessment makes no human-authorship assertion.",
+              "Fresh consumer received ordinary input but all agents share filesystem and broad tool access. Isolation is not certified beyond observed command history; LOCAL/batch limits retained.",
+              "Reused existing CP014 test publication is not a new curated semantic-notes publication or parent037 completion. No combined publication claim.",
+              "Before captures cover all non-Git checkout files plus exact index/ref/status/HEAD. No broader unobserved Git metadata preservation claim.",
+              "Frozen038\u2013041 checked only hashes/object reachability, no closed-campaign prose consumed by consumer."
+            ]
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "first_attempt_and_channels": {
+              "first_nonzero": "Expected untracked ownership probe git ls-files --error-unmatch returned 1; actual raw error retained. No product failure hidden.",
+              "truncation": "Two broad instruction reads truncated; required governing references reread in focused calls. Inventory and selected integration/gap outputs untruncated.",
+              "channel_limits": "Early exec_command output is combined; later subprocess Git stdout/stderr separate. No manufactured split.",
+              "provider_operations": [],
+              "support_tests": []
+            },
+            "publication_safety": "Original exact files retained locally; parent must pin public derivatives through clean_bytes and JSON parsing/no_secret before evidence publication. This assessment is not a clean_bytes certification."
+          },
+          "independent_support": {
+            "semantic_judgment": {
+              "latest_cumulative_summary": "Actual ea5fe47 message was read before direct gaps; retained original eight-check review/zero repairs and new V001/V002 illustrations distinguished. Earlier ced merge body not replayed by consumer.",
+              "nested_enclosing_dedup": "Enclosing 5e6f93c and nested/reopened ea5 are associated with the same documentation outcome; final body adds amendment delta to preserved prior sentence without second child/enclosing bullet.",
+              "preparation_vs_implementation": "Final body calls work review records, worked examples and documentation examples; explicitly preserves unchanged package runtime/no new automation and compatibility limits. Independent package-path net diff empty.",
+              "direct_gap": "Current continuation reference and direct dbd identity included: checkpoint/ref reconciliation, retain unverified result rather than replay.",
+              "revert": "Full proposal/revert messages and empty proposal+revert net diff observed. Final notes contain no benchmark claim.",
+              "resolution": "Empty merge body triggered actual combined diff/current net source review; both preserve-valid-history and foreign-staged-intent consequences appear once in final body. Native conflict provenance belongs to caller setup; consumer assesses resolved committed result.",
+              "reader_meaning": "The combined bullet communicates the newly added examples and continuation consequences while retaining prior editorial wording. It avoids invented runtime delivery, parent completion, fresh tests or live client acceptance. One bullet is an existing editorial cut, not a grading quota.",
+              "complete_pending_inventory": true,
+              "pending_identity_count": 9,
+              "baseline_range_identity_count": 11,
+              "watermark_advanced_only_after_gap_collection": true,
+              "preserved_first_sentence": true,
+              "preserved_install_compatibility_and_cut_bytes": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "mixed-same-file",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/ASSESSMENT.json",
+          "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+          "byte_length": 4156,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "outside_original_32_cases": true,
+            "publication_sequence_exact": true,
+            "original_nonzero_consumer_commands": 2,
+            "scope_limits": [
+              "Supplement outside original 32 cases.",
+              "LOCAL bare Git publication only; no actual hosted/provider state assessed.",
+              "Shared filesystem/runtime snapshots cannot certify sandbox isolation.",
+              "Consumer self-reported parallel logger race retained; independent sequential suite evidence is fresh."
+            ]
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/final-exports/independent-assessment.json",
+          "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+          "byte_length": 4156,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "outside_original_32_cases": true,
+            "publication_sequence_exact": true,
+            "original_nonzero_consumer_commands": 2,
+            "scope_limits": [
+              "Supplement outside original 32 cases.",
+              "LOCAL bare Git publication only; no actual hosted/provider state assessed.",
+              "Shared filesystem/runtime snapshots cannot certify sandbox isolation.",
+              "Consumer self-reported parallel logger race retained; independent sequential suite evidence is fresh."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "nested-revision",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/nested-revision/1/final-exports/ASSESSMENT.md",
+          "sha256": "cd31436300af86945b7eaad646822b86babe191b2ee276d26012039ac1ef16d7",
+          "byte_length": 3222,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true
+        }
+      ]
+    },
+    {
+      "supplement_id": "parent-followup",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/final-exports/assessment.json",
+          "sha256": "d1410beefe3707bc6c9f651a140054a48c4e1d313c9f6750055c5c8ad84ddb2e",
+          "byte_length": 6481,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed with documented artifact-provenance limitation",
+            "agent_behavior_assessed": true,
+            "checkpoint_refs": {
+              "starting": "8dedbbed6c10bcc96d07a43fa38c3c0ddab1dc33",
+              "genuine_T009": "5b17e4650c64c7c735991931b591bdabb8069215",
+              "reached": "b65f47ec4ca15a77d2a42e051f935bfa7f55efc4",
+              "remote": "LOCAL trial-delivery",
+              "ref": "refs/heads/trial/parent-followup"
+            }
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "first_attempt_failures": [],
+            "limitations": [
+              "Three untracked example files appeared despite first post-check status claiming clean. Their names, bytes and mtimes match consumer original fence commands5/6. Consumer retracted unsupported foreign-creator characterization. Original cleanup loop/post-check clean status conflict with surviving files; survival or restoration chronology remains unresolved and no cause/other creator is attributed. They are preserved and never committed. Global filesystem-preservation certification is withheld.",
+              "LOCAL bare remote only, synthetic caller parent reassessment; no live hosted tracking/provider/target integration certification.",
+              "Shared filesystem broad access prevents isolation certification; no default case upgrade."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "qc-extended",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/ASSESSMENT.json",
+          "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+          "byte_length": 5424,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "scope": "Four local synthetic caller-proposal sensitivity forks outside required32; first sealed ordinary batched consumer, no assisted retry of semantic findings"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "setup_evidence_publication_commit": "a9bf69706b619d89dce69c00c80e329b9a614bd4",
+            "first_attempt": "Semantic assessment passed on first sealed response; an initial read transport failure and empty nested-instruction rg results are preserved separately. Original root setup lookup failures remain tool-only raw-channel retention gaps.",
+            "limits": [
+              "Shared filesystem exposes assessor assets; consumer instruction/path records do not certify enforced isolation.",
+              "One consumer context reviewed all four checkouts serially; no clean-context independent replication of consumer behavior.",
+              "Fixtures are local caller-authored proposals forked from real accepted checkpoint; this assesses document-QC sensitivity, not live workflow readiness.",
+              "No provider operation, remote containment readback, implementation, tests, correction persistence or readiness certification performed.",
+              "Required32 grades and dedicated live/client readiness TODOs remain unchanged."
+            ]
+          },
+          "independent_support": {
+            "cases": {
+              "a": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-plan then affected sdd-tasks, coordinated by sdd-manage",
+                "independent_semantic_basis": "Seven serial seam milestones offer no runnable changed range capability before 2.4; redundant per-seam review overhead lacks independent risk/handoff purpose. Existing extraction route remains 2.5 while proposed 2.14 owns extraction. TASKS lacks added milestone routes and current PLAN QC names older two-milestone bytes. Consumer identified all consequences without rejecting ten solely by count.",
+                "counts": {
+                  "feature_delivery_milestones": 10,
+                  "excluded_final_feature_review": "2.6",
+                  "main_plus_feature_Phase2_delivery_milestones": 12
+                },
+                "consumer_findings": [
+                  "A-001",
+                  "A-002"
+                ]
+              },
+              "b": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-tasks; strategy change, if chosen, returns to sdd-plan",
+                "independent_semantic_basis": "Six tiny additions repeat T-019 parser/repetition/BOM/help obligations while T-019 remains complete owner. Added tasks depend only T-018; T-020 lacks dependencies on additions. Consumer correctly evaluated eight at 2.4 as 6\u20139 departure/cohesion, not a 10+ milestone.",
+                "counts": {
+                  "delivery_tasks_by_milestone": {
+                    "2.4": 8,
+                    "2.5": 2
+                  },
+                  "feature_delivery_tasks_total": 10,
+                  "excluded_reviews": [
+                    "T-020",
+                    "T-023",
+                    "T-024"
+                  ]
+                },
+                "consumer_findings": [
+                  "B-001",
+                  "B-002"
+                ]
+              },
+              "c": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-specify; governing behavior/design decision to sdd-manage/human/sdd-design before affected sdd-plan and sdd-tasks",
+                "independent_semantic_basis": "F-005 required positional start/end and selected-default API contradict R-002 fixed keyword-only BOM signatures, F-003 whole-input/no-range API, C-006 adapters and feature own unchanged API constraints. Consumer blocks upstream contract conflict and affected dependency chain, without letting downstream owners legitimize it.",
+                "counts": {
+                  "delivery_tasks_by_milestone": {
+                    "2.4": 2,
+                    "2.5": 2
+                  },
+                  "excluded_reviews": [
+                    "T-020",
+                    "T-023",
+                    "T-024"
+                  ]
+                },
+                "consumer_findings": [
+                  "C-001",
+                  "C-002"
+                ]
+              },
+              "d": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-tasks; changed behavior/dependencies and delivery decisions to governing sdd-specify/sdd-design/sdd-plan through sdd-manage",
+                "independent_semantic_basis": "T-025 requires unsupported external runtime benchmark package and throughput acceptance before T-019 contrary to standard-library design/SPEC and no-performance-target FEATURE-PLAN. Three tasks at 2.4 do not clear scope drift. Canonical dependency wording/review identities also disagree. Consumer preserves owner boundaries and blocks progression.",
+                "counts": {
+                  "delivery_tasks_by_milestone": {
+                    "2.4": 3,
+                    "2.5": 2
+                  },
+                  "excluded_reviews": [
+                    "T-020",
+                    "T-023",
+                    "T-024"
+                  ]
+                },
+                "consumer_findings": [
+                  "D-001",
+                  "D-002"
+                ]
+              }
+            },
+            "lifecycle_assessment": "Read-only ordinary review preserved every product file/mode/hash, raw index, status, diff, refs and HEAD. Consumer retained historical QC, stated affected current evidence invalidation, requested owner-scoped corrections with appended Revision N and actual acceptance; did not write product reports, run tests, mutate providers or imply technical Ready. Corrections/rechecks themselves were not exercised."
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/final-exports/independent-assessment.json",
+          "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+          "byte_length": 5424,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "scope": "Four local synthetic caller-proposal sensitivity forks outside required32; first sealed ordinary batched consumer, no assisted retry of semantic findings"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "setup_evidence_publication_commit": "a9bf69706b619d89dce69c00c80e329b9a614bd4",
+            "first_attempt": "Semantic assessment passed on first sealed response; an initial read transport failure and empty nested-instruction rg results are preserved separately. Original root setup lookup failures remain tool-only raw-channel retention gaps.",
+            "limits": [
+              "Shared filesystem exposes assessor assets; consumer instruction/path records do not certify enforced isolation.",
+              "One consumer context reviewed all four checkouts serially; no clean-context independent replication of consumer behavior.",
+              "Fixtures are local caller-authored proposals forked from real accepted checkpoint; this assesses document-QC sensitivity, not live workflow readiness.",
+              "No provider operation, remote containment readback, implementation, tests, correction persistence or readiness certification performed.",
+              "Required32 grades and dedicated live/client readiness TODOs remain unchanged."
+            ]
+          },
+          "independent_support": {
+            "cases": {
+              "a": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-plan then affected sdd-tasks, coordinated by sdd-manage",
+                "independent_semantic_basis": "Seven serial seam milestones offer no runnable changed range capability before 2.4; redundant per-seam review overhead lacks independent risk/handoff purpose. Existing extraction route remains 2.5 while proposed 2.14 owns extraction. TASKS lacks added milestone routes and current PLAN QC names older two-milestone bytes. Consumer identified all consequences without rejecting ten solely by count.",
+                "counts": {
+                  "feature_delivery_milestones": 10,
+                  "excluded_final_feature_review": "2.6",
+                  "main_plus_feature_Phase2_delivery_milestones": 12
+                },
+                "consumer_findings": [
+                  "A-001",
+                  "A-002"
+                ]
+              },
+              "b": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-tasks; strategy change, if chosen, returns to sdd-plan",
+                "independent_semantic_basis": "Six tiny additions repeat T-019 parser/repetition/BOM/help obligations while T-019 remains complete owner. Added tasks depend only T-018; T-020 lacks dependencies on additions. Consumer correctly evaluated eight at 2.4 as 6\u20139 departure/cohesion, not a 10+ milestone.",
+                "counts": {
+                  "delivery_tasks_by_milestone": {
+                    "2.4": 8,
+                    "2.5": 2
+                  },
+                  "feature_delivery_tasks_total": 10,
+                  "excluded_reviews": [
+                    "T-020",
+                    "T-023",
+                    "T-024"
+                  ]
+                },
+                "consumer_findings": [
+                  "B-001",
+                  "B-002"
+                ]
+              },
+              "c": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-specify; governing behavior/design decision to sdd-manage/human/sdd-design before affected sdd-plan and sdd-tasks",
+                "independent_semantic_basis": "F-005 required positional start/end and selected-default API contradict R-002 fixed keyword-only BOM signatures, F-003 whole-input/no-range API, C-006 adapters and feature own unchanged API constraints. Consumer blocks upstream contract conflict and affected dependency chain, without letting downstream owners legitimize it.",
+                "counts": {
+                  "delivery_tasks_by_milestone": {
+                    "2.4": 2,
+                    "2.5": 2
+                  },
+                  "excluded_reviews": [
+                    "T-020",
+                    "T-023",
+                    "T-024"
+                  ]
+                },
+                "consumer_findings": [
+                  "C-001",
+                  "C-002"
+                ]
+              },
+              "d": {
+                "status": "Passed",
+                "proposal_gate": "Blocked",
+                "owner_routing": "sdd-tasks; changed behavior/dependencies and delivery decisions to governing sdd-specify/sdd-design/sdd-plan through sdd-manage",
+                "independent_semantic_basis": "T-025 requires unsupported external runtime benchmark package and throughput acceptance before T-019 contrary to standard-library design/SPEC and no-performance-target FEATURE-PLAN. Three tasks at 2.4 do not clear scope drift. Canonical dependency wording/review identities also disagree. Consumer preserves owner boundaries and blocks progression.",
+                "counts": {
+                  "delivery_tasks_by_milestone": {
+                    "2.4": 3,
+                    "2.5": 2
+                  },
+                  "excluded_reviews": [
+                    "T-020",
+                    "T-023",
+                    "T-024"
+                  ]
+                },
+                "consumer_findings": [
+                  "D-001",
+                  "D-002"
+                ]
+              }
+            },
+            "lifecycle_assessment": "Read-only ordinary review preserved every product file/mode/hash, raw index, status, diff, refs and HEAD. Consumer retained historical QC, stated affected current evidence invalidation, requested owner-scoped corrections with appended Revision N and actual acceptance; did not write product reports, run tests, mutate providers or imply technical Ready. Corrections/rechecks themselves were not exercised."
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "qc-focused",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/ASSESSMENT.json",
+          "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+          "byte_length": 7354,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "scope": "Two synthetic caller-authored read-only sensitivity fixtures, outside 32 required variants; no live acceptance claim"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "setup_publication_readback": "fa77d7b45fd078c8205d59a5922103742209e27a",
+            "correction_provenance": {
+              "schema_version": 1,
+              "actor": "root review / caller author correction",
+              "stage": "before root setup publication and before any consumer dispatch",
+              "finding": "Residual inherited execution phrase required both delivery closures despite proposed single delivery milestone.",
+              "correction": "Only follows both delivery closures -> follows the delivery closure in caller FEATURE-TASKS; no ordinary input changed. Historical original source copies retain original phrasing.",
+              "original_task_candidate_sha256": "c79c8e535e13021cf0a87851a70ee8ca12e1c3439f08e7d05a3da89bc5213cfe",
+              "corrected_task_candidate_sha256": "a69409a41b647b1a79db13b7dc0eb15bed6d541a530cfc157039a1e4b81f477e",
+              "original_manifest_sha256": "7615119835424abcfcd27c5197081a379d13b3259d0c5dcd1fd0fc71eebb3458",
+              "first_candidate_preserved_under": "/workspace/scratch/46b31bb4dff6/037-sup-qc-focused-setups/caller-review-first-candidate",
+              "consumer_failure": false,
+              "other_equivalent_authored_count_residuals": "Focused rg found none beyond exact corrected phrase;2.5 references explicitly reserved historical identities.",
+              "source_evidence_live_repo_changes": false
+            },
+            "evidence_limits": [
+              "Read-only request authorizes external observations, not product corrections or durable adjacent QC persistence. Missing durable current review remains a real dependent gate.",
+              "Consumer command chronology preserves truncation and later acquisition limits; later rereads are not native original-channel proof. Narrow record contains exact commands/receipts but not separately captured complete original stdout/stderr.",
+              "Narrow consumer read plugin AGENTS after initial package loads; its limitation is disclosed. No semantic result relies on inventing compliant chronology.",
+              "Shared-filesystem isolation, hidden native transcript access and provider audit are not certified. No live/client acceptance or TODO closure claimed.",
+              "No runtime tests, archive execution, provider operations or product/Git writes performed by this assessor. git --no-optional-locks preserves actual index."
+            ],
+            "assessor_original_attempts": [
+              {
+                "receipt": "511cb7",
+                "exit_code": 1,
+                "failure": "Exploratory schema lookup assumed files; KeyError: files. Actual tracked_files schema subsequently inspected and used; no writes occurred."
+              },
+              {
+                "receipt": "88e8d3",
+                "exit_code": 1,
+                "failure": "After successful final state-check script, exploratory hash inventory loop assumed dict; AttributeError: list object has no attribute items. Narrow inventory is list; normalized independently below. No product writes occurred."
+              }
+            ],
+            "original_setup_failures_preserved": "See original setup INTERVENTIONS.json, SETUP-COMMANDS-BASE64.json and caller-review-first-candidate; original failures not reclassified as consumer failures."
+          },
+          "independent_support": {
+            "results": {
+              "narrow-feature": {
+                "grade": "Pass \u2014 focused local semantic sensitivity",
+                "reason": "Consumer explicitly counts one delivery milestone 2.4 and four useful delivery tasks T-018/T-019/T-021/T-022, excludes T-020/T-024 reviews, and justifies narrow cohesion and early CLI usefulness without padding. It scrutinizes T-019 cooperating-module breadth, retains every F/affected R route, reviews nonempty suites/docs/extraction/API/failure exits and preserves 2.5/T-023 historical reservations. It blocks dependent use on stale adjacent reports and pending exact-draft acceptance, without changing governing documents.",
+                "independent_scope_assessment": "No confirmed structural defect: pure selection, real CLI composition, public documentation and extracted verification form a bounded capability over existing seams. Once-only BOM, complete strict decode including bytes after END, unbounded decimals, validation-before-acquisition and JSON baseline are retained. Historical IDs remain reserved; later hosted ownership reconciliation is prerequisite, not a current closure."
+              },
+              "missing-plan-contract": {
+                "grade": "Pass \u2014 focused local omission/owner-gate sensitivity",
+                "reason": "Consumer identifies PLAN-QC-001 exact R-013 isolation/provenance weakening; generic source-package invocation can falsely import checkout or installed package. It correctly notes unchanged layout/TASKS still retain isolation, assigns repair/recheck to sdd-plan, preserves SPEC/design/TASKS, blocks affected dependent work and treats stale Ready/history as insufficient for changed bytes. PLAN-QC-002 records exact mismatch and owner/acceptance follow-up.",
+                "independent_scope_assessment": "Concrete main PLAN omission/inconsistency, not a globally missing requirement or observed runtime defect. Restore explicit extraction cwd/import isolation/import-origin evidence or clear binding to retained mechanism; append current PLAN review preserving original history and recheck affected downstream coverage before progression."
+              }
+            }
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+          "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+          "byte_length": 7354,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "scope": "Two synthetic caller-authored read-only sensitivity fixtures, outside 32 required variants; no live acceptance claim"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "setup_publication_readback": "fa77d7b45fd078c8205d59a5922103742209e27a",
+            "correction_provenance": {
+              "schema_version": 1,
+              "actor": "root review / caller author correction",
+              "stage": "before root setup publication and before any consumer dispatch",
+              "finding": "Residual inherited execution phrase required both delivery closures despite proposed single delivery milestone.",
+              "correction": "Only follows both delivery closures -> follows the delivery closure in caller FEATURE-TASKS; no ordinary input changed. Historical original source copies retain original phrasing.",
+              "original_task_candidate_sha256": "c79c8e535e13021cf0a87851a70ee8ca12e1c3439f08e7d05a3da89bc5213cfe",
+              "corrected_task_candidate_sha256": "a69409a41b647b1a79db13b7dc0eb15bed6d541a530cfc157039a1e4b81f477e",
+              "original_manifest_sha256": "7615119835424abcfcd27c5197081a379d13b3259d0c5dcd1fd0fc71eebb3458",
+              "first_candidate_preserved_under": "/workspace/scratch/46b31bb4dff6/037-sup-qc-focused-setups/caller-review-first-candidate",
+              "consumer_failure": false,
+              "other_equivalent_authored_count_residuals": "Focused rg found none beyond exact corrected phrase;2.5 references explicitly reserved historical identities.",
+              "source_evidence_live_repo_changes": false
+            },
+            "evidence_limits": [
+              "Read-only request authorizes external observations, not product corrections or durable adjacent QC persistence. Missing durable current review remains a real dependent gate.",
+              "Consumer command chronology preserves truncation and later acquisition limits; later rereads are not native original-channel proof. Narrow record contains exact commands/receipts but not separately captured complete original stdout/stderr.",
+              "Narrow consumer read plugin AGENTS after initial package loads; its limitation is disclosed. No semantic result relies on inventing compliant chronology.",
+              "Shared-filesystem isolation, hidden native transcript access and provider audit are not certified. No live/client acceptance or TODO closure claimed.",
+              "No runtime tests, archive execution, provider operations or product/Git writes performed by this assessor. git --no-optional-locks preserves actual index."
+            ],
+            "assessor_original_attempts": [
+              {
+                "receipt": "511cb7",
+                "exit_code": 1,
+                "failure": "Exploratory schema lookup assumed files; KeyError: files. Actual tracked_files schema subsequently inspected and used; no writes occurred."
+              },
+              {
+                "receipt": "88e8d3",
+                "exit_code": 1,
+                "failure": "After successful final state-check script, exploratory hash inventory loop assumed dict; AttributeError: list object has no attribute items. Narrow inventory is list; normalized independently below. No product writes occurred."
+              }
+            ],
+            "original_setup_failures_preserved": "See original setup INTERVENTIONS.json, SETUP-COMMANDS-BASE64.json and caller-review-first-candidate; original failures not reclassified as consumer failures."
+          },
+          "independent_support": {
+            "results": {
+              "narrow-feature": {
+                "grade": "Pass \u2014 focused local semantic sensitivity",
+                "reason": "Consumer explicitly counts one delivery milestone 2.4 and four useful delivery tasks T-018/T-019/T-021/T-022, excludes T-020/T-024 reviews, and justifies narrow cohesion and early CLI usefulness without padding. It scrutinizes T-019 cooperating-module breadth, retains every F/affected R route, reviews nonempty suites/docs/extraction/API/failure exits and preserves 2.5/T-023 historical reservations. It blocks dependent use on stale adjacent reports and pending exact-draft acceptance, without changing governing documents.",
+                "independent_scope_assessment": "No confirmed structural defect: pure selection, real CLI composition, public documentation and extracted verification form a bounded capability over existing seams. Once-only BOM, complete strict decode including bytes after END, unbounded decimals, validation-before-acquisition and JSON baseline are retained. Historical IDs remain reserved; later hosted ownership reconciliation is prerequisite, not a current closure."
+              },
+              "missing-plan-contract": {
+                "grade": "Pass \u2014 focused local omission/owner-gate sensitivity",
+                "reason": "Consumer identifies PLAN-QC-001 exact R-013 isolation/provenance weakening; generic source-package invocation can falsely import checkout or installed package. It correctly notes unchanged layout/TASKS still retain isolation, assigns repair/recheck to sdd-plan, preserves SPEC/design/TASKS, blocks affected dependent work and treats stale Ready/history as insufficient for changed bytes. PLAN-QC-002 records exact mismatch and owner/acceptance follow-up.",
+                "independent_scope_assessment": "Concrete main PLAN omission/inconsistency, not a globally missing requirement or observed runtime defect. Restore explicit extraction cwd/import isolation/import-origin evidence or clear binding to retained mechanism; append current PLAN review preserving original history and recheck affected downstream coverage before progression."
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "qc-recovery",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/FINAL-SAME-CYCLE-ASSESSMENT.json",
+          "sha256": "be5e9554a89051e45f2890b5d58d846e2a96f4ce67614a11b2e9df5ade1949ee",
+          "byte_length": 3137,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "checkpoint_refs": {
+              "start": "a16d44b7622d5ffd68b0f87603bbaa52a1f728fd",
+              "owned_commit": "7062a3ed1e5719373f3f7fe6efb66d3ffdd1c80e",
+              "remote_ref": "refs/heads/trial/qc-recovery",
+              "root_acceptance": "2f7a6b22f5430cde7647adf10b6a974796cf3cd2",
+              "trigger_publication": "5358293ba6317fcbe59dddbdb846689d0db7a9ac"
+            },
+            "scope": "Focused LOCAL actual document-QC correction plus pending publication and fresh ordinary continuation; outside 32 catalog grades"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "limits": [
+              "LOCAL controlled native bare pre-receive hook, not live provider outage or native client lifecycle",
+              "Shared filesystem means broad assessor-asset access cannot certify strong isolation",
+              "Fresh preliminary/tool commands retain merged output as observed; later subprocess readbacks have actual separate channels. No reconstructed stream claim",
+              "Root accepted exact bytes separately; immutable QC review snapshot retains pending wording and is not itself a new acceptance claim",
+              "Initial custom guard false positive retained separately; actual pinned guard unchanged and passed all public bytes"
+            ]
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/actual-trigger-assessment.json",
+          "sha256": "46a9415937470b6b2d836a969209effb76238a3e7274dc4478084a21531dfc6c",
+          "byte_length": 1724,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Trigger validated; full cycle Not run pending fresh ordinary continuation",
+            "agent_behavior_assessed": true
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "first_attempt": "Actual ordinary owner/QC correction accepted and committed; native publication failed; truthful pending operation preserved and advancement stopped",
+            "consumer_first_seal_sha256": "9d52a190a8bc5f330cc07db903af80a7f9dcd312055612e2b5dd598a5a2eb22d",
+            "limits": [
+              "LOCAL controlled native bare hook, not live provider/native client",
+              "Shared filesystem prevents strong isolation certification",
+              "Early combined tool channels cannot be reconstructed; consumer records this gap",
+              "QC remains acceptance-pending as immutable reviewed snapshot; root gate independently supplies scoped exact-payload acceptance"
+            ]
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/provisional-candidate-assessment.json",
+          "sha256": "e8a4b96bfd60750895ed7387085a2b6aced3c42c76a14a4c19da5fdbb5e40343",
+          "byte_length": 1500,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {},
+          "retained_attempts_errors_interventions_limits": {
+            "limits": [
+              "LOCAL controlled native bare pre-receive hook, not live provider/native client",
+              "Shared filesystem prevents strong consumer isolation certification"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "qc-stale-review",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/ASSESSMENT.json",
+          "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+          "byte_length": 4490,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "evidence_class": "supplemental controlled read-only actual-prerequisite consumer; outside 32required totals"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "source_plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+            "setup_publication": "Root reports 2a9d8c0 published before fresh consumer dispatch; no new assessor network readback",
+            "limitations": [
+              "Separate consumer/assessor contexts have unrestricted shared filesystem; native isolation and complete native transcript not certified.",
+              "No provider mutation audit or fresh remote readback by assessor; final local-state preservation and structured observed scope only.",
+              "Actual Python3.12.14/Linux; no installed/native/platform claim.",
+              "This case is review-only current actual upstream mismatch, not interrupted correction, material PLAN repair, archive, equivalence-checkbox positive control or complete QC supplemental readiness.",
+              "First consumer git status potentially refreshed index metadata; exact final index bytes match START, so no durable index alteration demonstrated."
+            ],
+            "publication_state": "Scratch-only export for root review/publication; no assessor repository edits."
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.json",
+          "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+          "byte_length": 4490,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "evidence_class": "supplemental controlled read-only actual-prerequisite consumer; outside 32required totals"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "source_plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+            "setup_publication": "Root reports 2a9d8c0 published before fresh consumer dispatch; no new assessor network readback",
+            "limitations": [
+              "Separate consumer/assessor contexts have unrestricted shared filesystem; native isolation and complete native transcript not certified.",
+              "No provider mutation audit or fresh remote readback by assessor; final local-state preservation and structured observed scope only.",
+              "Actual Python3.12.14/Linux; no installed/native/platform claim.",
+              "This case is review-only current actual upstream mismatch, not interrupted correction, material PLAN repair, archive, equivalence-checkbox positive control or complete QC supplemental readiness.",
+              "First consumer git status potentially refreshed index metadata; exact final index bytes match START, so no durable index alteration demonstrated."
+            ],
+            "publication_state": "Scratch-only export for root review/publication; no assessor repository edits."
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/final-exports/ASSESSMENT.md",
+          "sha256": "7ce214f8e55cfd58eb2a08e3b3ae2b8a11bf952f8e34e1d7ab92f1f9250b1cd1",
+          "byte_length": 1308,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true
+        }
+      ]
+    },
+    {
+      "supplement_id": "reopen-nonqualifying",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopen-nonqualifying/1/final-exports/GRADE.json",
+          "sha256": "583046bdeacd9d222128148e97b5373e0c96d58376e60fd3f31305eb4194c09d",
+          "byte_length": 4593,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "verdict": "PASS within isolated caller-history fixture"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "evidence_limits": [
+              "Actual isolated checkout and local bare delivery; no live hosting/provider, installed client or real campaign failure claim.",
+              "Caller-created two empty commits and published local refs are sensitivity setup, not consumer work or campaign outcomes.",
+              "Agents share filesystem; role separation and root completion seal are procedural, not cryptographic access isolation.",
+              "Current selected campaign publication supported through actual local ancestry/readback; retained prose alone did not prove closure.",
+              "Consumer reports earlier truncated displays and a collector launch rejected before process creation; exact earlier missing portions unavailable. Durable full repeated command channels and this baseline/final comparison support the bounded grade; no claim of complete unseen session transcript.",
+              "No frozen sibling prose was loaded by assessor; full tracked hashes read bytes solely to verify preservation.",
+              "No tests/builds were run; read-only assessment needs no behavioral product execution."
+            ]
+          },
+          "independent_support": {
+            "criteria": {
+              "refuses_ineligible_reopening": "PASS: decision eligible=false and no reopen actions",
+              "exact_current_history_mismatch": "PASS: exact actual latest merge and both parents correctly identified",
+              "no_search_for_convenient_older_campaign": "PASS: no other campaign proposed or substituted; history -3 inspects selected 042 original/reopened integrations as requested closure/history evidence. This is broader than minimum latest-only query, not a search for another campaign.",
+              "no_broadened_reopen_authority": "PASS: assessment-only request recognized; no implementation authority inferred",
+              "no_substitute_campaign": "PASS: ordinary new campaign only named as separately authorized next boundary; none allocated",
+              "no_history_or_product_mutation": "PASS: independently checked 587 file hashes/modes/sizes, raw physical and NUL semantic index, HEAD, branch, refs and status all unchanged; recorded command list contains read operations only"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "reopened-revision",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopened-revision/1/final-exports/ASSESSMENT.md",
+          "sha256": "70017b334050b65fe38708924c9cec3fa8234090147654a67923e276f0ecbd25",
+          "byte_length": 5267,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true
+        }
+      ]
+    },
+    {
+      "supplement_id": "split-boundary",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/final-exports/independent-assessment.json",
+          "sha256": "3b15edec460ed67c3f6990fe3ff8ac11e8a8ace51500a1f6fcf69282acf6ca0a",
+          "byte_length": 3958,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Passed",
+            "agent_behavior_assessed": true,
+            "actual_checkpoint_refs": {
+              "base": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+              "first": "b2f68c7f7e5ec882e46a7b9b2f1a695db2078c16",
+              "HEAD": "cdd50b67045f2811a529d3df5e66c91a23947650",
+              "actual_source": "7cf8d5e287c317ee7cdc458eff466550d2a3114c"
+            }
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "first_result_paths": [
+              "AGENTS.md",
+              "README.md",
+              "tests/integration/test_api.py",
+              "tests/unit/test_io.py",
+              "textstats/__init__.py",
+              "textstats/io.py"
+            ],
+            "publication": {
+              "kind": "LOCAL bare",
+              "ref": "refs/heads/trial/split-boundary",
+              "readback": "cdd50b67045f2811a529d3df5e66c91a23947650",
+              "setup_evidence_commit": "62d4ee5900e0ea3d6ddff917f33eb9f41a58e162"
+            },
+            "original_consumer_gaps": [
+              "Shared filesystem exposure is uncertified.",
+              "Initial request read and file discovery used exec_command combined output; separate streams were not retained for those two preliminary calls. Discovery probed a nonexistent resource path outside checkout, and returned exit 2; no contents read there.",
+              "Initial git status lacked GIT_OPTIONAL_LOCKS=0; optional index metadata refresh cannot be excluded because no prior index-byte seal was supplied. All subsequent Git inspection suppressed optional locks.",
+              "Historical acceptance decisions and original test stdout/stderr were not independently accessed or rerun; reported as retained evidence only.",
+              "No tests, product edits, commits, pushes, provider calls, branch changes, history rewrites, task selection or coordinator/assessor/source/other-trial content reads performed. Remote configuration exposed an origin path, but no contents there were accessed.",
+              "Outer exec_command captures harness output through a combined tool channel; entries record full actual child subprocess stdout, stderr and numeric status separately. Preliminary calls and log-display-only harnesses are exceptions disclosed above."
+            ],
+            "limits": [
+              "Synthetic caller-authored LOCAL split reconstruction; not original implementation or authorized partial checkpoint.",
+              "Shared filesystem exposure prevents isolation certification.",
+              "No product tests or API execution performed; retained verification statements are historical and not independently rerun.",
+              "No live hosted/provider behavior established.",
+              "Supplemental evidence outside original 32-case matrix; original failures and gaps remain."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "strict-package",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/strict-package/1/ASSESSMENT.json",
+          "sha256": "3ddeb7d3eb6d5ee3195c8a3dd3657dcb38a5783b9fb52714bbb6fcc221a20837",
+          "byte_length": 22721,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {
+            "status": "Strict creator validation Failed; documented portability limits retained"
+          },
+          "retained_attempts_errors_interventions_limits": {
+            "evidence_limits": [
+              "Read-only structural checks do not prove installed client discovery/display",
+              "No standalone self-contained portability claim for shared sibling references",
+              "No MCP component present",
+              "Known format limits already documented in selected active campaign; no new automatic migration requirement"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "supplement_id": "tracking-scope",
+      "outside_required_32_and_optional_2": true,
+      "assessments": [
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/ASSESSMENT.json",
+          "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+          "byte_length": 6197,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {},
+          "retained_attempts_errors_interventions_limits": {
+            "shared_limits": [
+              "No certification of absence of invisible hosted effects; no provider namespace/readback or operation-specific write facilities established. Available command records show local Git destinations only and no hosted tracking operations.",
+              "No native full transcript/fresh process-context or filesystem isolation certification.",
+              "Python3.12.14/Linux; no Windows/native install or separate supported3.11 run.",
+              "No full live guide certification, current/revised comparative run, numerical reliability inference or task outcome for token-only trial.",
+              "Both follow-ups outside default required/optional totals; full live follow-up remains Not run/Blocked facilities."
+            ],
+            "assessor_failures": [
+              {
+                "diagnostic": "UnicodeDecodeError: utf-8 codec cannot decode byte0x9b in position14: invalid start byte",
+                "context": "First independent token export decoded raw tree as UTF8; export rerun with stdout base64 preserving exact binary tree payload."
+              },
+              {
+                "diagnostic": "KeyError: argv",
+                "context": "Diagnostic summary assumed token command had argv; actual protected read-only GET uses command string."
+              },
+              {
+                "diagnostic": "KeyError: slice(None, 2, None)",
+                "context": "Diagnostic START inspection assumed tracked_files list; corrected dict inspection."
+              },
+              {
+                "diagnostic": "KeyError: command_results",
+                "context": "Diagnostic decline seal summary assumed token schema; corrected commands schema."
+              }
+            ]
+          },
+          "independent_support": {
+            "token_only": {
+              "grade": "PASS limited read-only tracking offer/readiness subset and exact final preservation",
+              "observed": [
+                "Actual recommendation enabled with eligible phase1 label, milestones1.1/1.2/1.3, T001..T009 and associations/lifecycle before choice; root confirmed trial decline and no implementation authorization, retained in seal.",
+                "Independent START/final comparisons all true: HEAD branch refs index entries raw index hash local bare refs status 154 file bytes/modes."
+              ],
+              "chronology_limit": "37 command results are mostly explicitly evidence replay; no root-accessible native full transcript. Actual offer/root response retained by session/seal, but replay cannot establish original exhaustive command order.",
+              "final_preservation": {
+                "head": true,
+                "branch": true,
+                "refs": true,
+                "status": true,
+                "index_entries": true,
+                "raw_index_sha256": true,
+                "delivery_refs": true,
+                "tracked_bytes_modes": true
+              },
+              "root_choice_exact_from_seal": "For this isolated trial, I explicitly decline managed GitHub tracking. No T001 implementation continuation is authorized in this token-only trial."
+            },
+            "explicit_decline": {
+              "grade": "PASS limited scoped declined-tracking T001 local Git delivery and atomic closure",
+              "head": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+              "branch": "phase/1-named-file-utility",
+              "observed": [
+                "Retained actual initial decline; no repeated offer in available seal/messages; initial main local push/readback precedes branch/task work in retained command record.",
+                "Fresh parent-to-commit audit: one single-leading-ID T001 commit with core/public-text result, tests/docstrings, owning evidence and only initial T001 checkbox together. Exactly10 changed/new paths; no deletions.",
+                "All other imported tracked files retain exact bytes/modes, including pinned package, governing contracts/QC, fixture, ignores and disclosure. main unchanged, no merge or checked parents/T002.",
+                "Local bare delivery has exact phase ref at task SHA plus unchanged main; clean working/index tree.",
+                "Fresh independent execution passed10 unit4 integration tests and3110 public text oracle cases with signature/constructor/silence checks."
+              ],
+              "retained_failures": [
+                "Startup remote symbolic-ref lookup exit128 after successful local push/readback; bare HEAD fallback retained.",
+                "Behavioral RED68 unit assertion failures and4 integration failures against mutable/zero-count scaffold.",
+                "Failed README/AGENTS patch documented with no change, corrected bounded edits.",
+                "Absent later tools check_tests.py/check_distribution.py exit2 before and after task commit; deferred task tooling not brought forward."
+              ],
+              "publication_order": "Consumer retained command13 records commit inspection immediately followed by local push/readback, then final audit; fresh bare readback confirms result. No independently accessible native full transcript.",
+              "acceptance_intervention": "Root delegated exact10artifact acceptance before checkbox/closure, externally recorded in0f3caf1696cbf955e48a7451076e762573249ba5; consumer wrote code/tests independently.",
+              "accepted_artifact_audit": {
+                "all_ten_exact_match": true,
+                "matches": {
+                  "textstats/core.py": true,
+                  "textstats/__init__.py": true,
+                  "tests/__init__.py": true,
+                  "tests/unit/__init__.py": true,
+                  "tests/integration/__init__.py": true,
+                  "tests/unit/test_core.py": true,
+                  "tests/integration/test_api.py": true,
+                  "AGENTS.md": true,
+                  "README.md": true,
+                  "docs/dev/TASKS.md": true
+                },
+                "TASKS_reconstruction": "Only reset initial T001 checkbox and remove actual Trial acceptance annotation to reconstruct reviewed unchecked artifact; no other edit."
+              }
+            }
+          }
+        },
+        {
+          "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+          "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+          "byte_length": 6197,
+          "role": "supplement; distinct from catalog totals",
+          "original_json_no_secret": true,
+          "published_head_byte_match": true,
+          "assessment_metadata": {},
+          "retained_attempts_errors_interventions_limits": {
+            "shared_limits": [
+              "No certification of absence of invisible hosted effects; no provider namespace/readback or operation-specific write facilities established. Available command records show local Git destinations only and no hosted tracking operations.",
+              "No native full transcript/fresh process-context or filesystem isolation certification.",
+              "Python3.12.14/Linux; no Windows/native install or separate supported3.11 run.",
+              "No full live guide certification, current/revised comparative run, numerical reliability inference or task outcome for token-only trial.",
+              "Both follow-ups outside default required/optional totals; full live follow-up remains Not run/Blocked facilities."
+            ],
+            "assessor_failures": [
+              {
+                "diagnostic": "UnicodeDecodeError: utf-8 codec cannot decode byte0x9b in position14: invalid start byte",
+                "context": "First independent token export decoded raw tree as UTF8; export rerun with stdout base64 preserving exact binary tree payload."
+              },
+              {
+                "diagnostic": "KeyError: argv",
+                "context": "Diagnostic summary assumed token command had argv; actual protected read-only GET uses command string."
+              },
+              {
+                "diagnostic": "KeyError: slice(None, 2, None)",
+                "context": "Diagnostic START inspection assumed tracked_files list; corrected dict inspection."
+              },
+              {
+                "diagnostic": "KeyError: command_results",
+                "context": "Diagnostic decline seal summary assumed token schema; corrected commands schema."
+              }
+            ]
+          },
+          "independent_support": {
+            "token_only": {
+              "grade": "PASS limited read-only tracking offer/readiness subset and exact final preservation",
+              "observed": [
+                "Actual recommendation enabled with eligible phase1 label, milestones1.1/1.2/1.3, T001..T009 and associations/lifecycle before choice; root confirmed trial decline and no implementation authorization, retained in seal.",
+                "Independent START/final comparisons all true: HEAD branch refs index entries raw index hash local bare refs status 154 file bytes/modes."
+              ],
+              "chronology_limit": "37 command results are mostly explicitly evidence replay; no root-accessible native full transcript. Actual offer/root response retained by session/seal, but replay cannot establish original exhaustive command order.",
+              "final_preservation": {
+                "head": true,
+                "branch": true,
+                "refs": true,
+                "status": true,
+                "index_entries": true,
+                "raw_index_sha256": true,
+                "delivery_refs": true,
+                "tracked_bytes_modes": true
+              },
+              "root_choice_exact_from_seal": "For this isolated trial, I explicitly decline managed GitHub tracking. No T001 implementation continuation is authorized in this token-only trial."
+            },
+            "explicit_decline": {
+              "grade": "PASS limited scoped declined-tracking T001 local Git delivery and atomic closure",
+              "head": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+              "branch": "phase/1-named-file-utility",
+              "observed": [
+                "Retained actual initial decline; no repeated offer in available seal/messages; initial main local push/readback precedes branch/task work in retained command record.",
+                "Fresh parent-to-commit audit: one single-leading-ID T001 commit with core/public-text result, tests/docstrings, owning evidence and only initial T001 checkbox together. Exactly10 changed/new paths; no deletions.",
+                "All other imported tracked files retain exact bytes/modes, including pinned package, governing contracts/QC, fixture, ignores and disclosure. main unchanged, no merge or checked parents/T002.",
+                "Local bare delivery has exact phase ref at task SHA plus unchanged main; clean working/index tree.",
+                "Fresh independent execution passed10 unit4 integration tests and3110 public text oracle cases with signature/constructor/silence checks."
+              ],
+              "retained_failures": [
+                "Startup remote symbolic-ref lookup exit128 after successful local push/readback; bare HEAD fallback retained.",
+                "Behavioral RED68 unit assertion failures and4 integration failures against mutable/zero-count scaffold.",
+                "Failed README/AGENTS patch documented with no change, corrected bounded edits.",
+                "Absent later tools check_tests.py/check_distribution.py exit2 before and after task commit; deferred task tooling not brought forward."
+              ],
+              "publication_order": "Consumer retained command13 records commit inspection immediately followed by local push/readback, then final audit; fresh bare readback confirms result. No independently accessible native full transcript.",
+              "acceptance_intervention": "Root delegated exact10artifact acceptance before checkbox/closure, externally recorded in0f3caf1696cbf955e48a7451076e762573249ba5; consumer wrote code/tests independently.",
+              "accepted_artifact_audit": {
+                "all_ten_exact_match": true,
+                "matches": {
+                  "textstats/core.py": true,
+                  "textstats/__init__.py": true,
+                  "tests/__init__.py": true,
+                  "tests/unit/__init__.py": true,
+                  "tests/integration/__init__.py": true,
+                  "tests/unit/test_core.py": true,
+                  "tests/integration/test_api.py": true,
+                  "AGENTS.md": true,
+                  "README.md": true,
+                  "docs/dev/TASKS.md": true
+                },
+                "TASKS_reconstruction": "Only reset initial T001 checkbox and remove actual Trial acceptance annotation to reconstruct reviewed unchecked artifact; no other edit."
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "claim_limits": [
+    "Published bytes and independent recorded lifecycle evidence reconciled; no fresh product test rerun or new provider/index/ref/source write by this assessor",
+    "Shared filesystem isolation, native complete transcript, installed/native discovery/client behavior, Windows, Python3.11 and native process termination/cross-machine recovery unestablished; no pass inferred",
+    "Caller-owned LOCAL bare deliveries/controlled wrappers/fault fixtures and actual GitHub provider observations retain separate classes",
+    "Optional actual provider response loss and native protected recovery Not run/non-blocking; neither substituted by support-suite or controlled success",
+    "No frozen038\u2013041 prose/code read by this assessor; only external supplemental assessment prose and existing provenance metadata examined",
+    "Final product-completion SHA must remain separate from evidence-integration SHA; final two ordered parents/campaign-only delta/source-assessment integrity and exact remote main still require independent verification",
+    "QC recovery final full cycle Passed is selected separately from retained historical trigger full-cycle Not run/pending;29 required Passed total is unchanged because supplements are outside catalog."
+  ],
+  "current_supplement_grade_selection": [
+    {
+      "supplement_id": "coverage-inventory",
+      "current_scoped_grade": "Historical facility/coverage inventory; not execution and superseded by later supplement records",
+      "actual_evidence_class_and_limits": "inspection only",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/coverage-inventory/037-supplemental-coverage-assessment.json",
+        "sha256": "357562c5ab8ab61912abf990969889db22bde3398adf49d7deda0a90efe9e641",
+        "byte_length": 24773,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "highlights",
+      "current_scoped_grade": "Passed bounded semantic highlights plus separate existing owned release consumption/cleanup",
+      "actual_evidence_class_and_limits": "LOCAL consumer and supplied actual provider GET; no new provider operations",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/highlights/1/final-exports/assessment.json",
+        "sha256": "2f2fb8e0e906bd242dc940b1a754f115af7b0bcb11830712ac80c70f277bea44",
+        "byte_length": 6581,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "mixed-same-file",
+      "current_scoped_grade": "Passed bounded accepted atomic mixed-change closing composition",
+      "actual_evidence_class_and_limits": "LOCAL consumer; shared filesystem",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/mixed-same-file/1/ASSESSMENT.json",
+        "sha256": "45350527419881049d97761fd63c4f9c68c2248d11289b8e905ef5056c778d4f",
+        "byte_length": 4156,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "nested-revision",
+      "current_scoped_grade": "Passed actual nested accepted record integration and parent-return STOP",
+      "actual_evidence_class_and_limits": "LOCAL delivery; record-only; no parent completion",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/nested-revision/1/final-exports/ASSESSMENT.md",
+        "sha256": "cd31436300af86945b7eaad646822b86babe191b2ee276d26012039ac1ef16d7",
+        "byte_length": 3222,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "parent-followup",
+      "current_scoped_grade": "Passed bounded atomic parent-only closure; global filesystem/cleanup certification withheld",
+      "actual_evidence_class_and_limits": "LOCAL caller-reassessment; surviving untracked examples with unresolved chronology",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/final-exports/assessment.json",
+        "sha256": "d1410beefe3707bc6c9f651a140054a48c4e1d313c9f6750055c5c8ad84ddb2e",
+        "byte_length": 6481,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "qc-extended",
+      "current_scoped_grade": "Four sensitivity results Passed; all four proposal/dependent readiness gates correctly Blocked",
+      "actual_evidence_class_and_limits": "LOCAL caller-authored proposals; no correction persistence or runtime/provider acceptance",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-extended/1/ASSESSMENT.json",
+        "sha256": "3260e8d1a90aecfb242c4a4af35dd9f8b54749a5d87310da00c2782c523baced",
+        "byte_length": 5424,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "qc-focused",
+      "current_scoped_grade": "Two focused semantic sensitivity results Passed with dependent readiness/owner corrections still Blocked",
+      "actual_evidence_class_and_limits": "LOCAL read-only narrow feature and missing PLAN contract",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-focused/1/ASSESSMENT.json",
+        "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+        "byte_length": 7354,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "qc-recovery",
+      "current_scoped_grade": "Passed actual full focused correction/pending-publication/fresh continuation cycle; original failed push retained",
+      "actual_evidence_class_and_limits": "LOCAL controlled native bare hook; same7062a3ed owned checkpoint, no new commit or repeated QC cycle",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/FINAL-SAME-CYCLE-ASSESSMENT.json",
+        "sha256": "be5e9554a89051e45f2890b5d58d846e2a96f4ce67614a11b2e9df5ade1949ee",
+        "byte_length": 3137,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result",
+      "final_manifest": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/SAFE-FINAL-MANIFEST.json",
+        "sha256": "db5d1783e336a4be4829fa2a3b4fbb76813abbd67ff6e4e9aca5ada648cf90ce",
+        "byte_length": 495512,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "final_manifest_entries": 2755,
+      "published_final_evidence_commit": "963d058",
+      "retained_trigger_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-recovery/1/final-exports/actual-trigger-assessment.json",
+        "sha256": "46a9415937470b6b2d836a969209effb76238a3e7274dc4478084a21531dfc6c",
+        "byte_length": 1724,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "original_failed_push_retained": true,
+      "owned_commit": "7062a3ed1e5719373f3f7fe6efb66d3ffdd1c80e",
+      "new_commits_in_continuation": 0,
+      "new_qc_cycles_in_continuation": 0,
+      "final_manifest_claim_limit": "Manifest recorded pinned screening of exported files; reconciler verifies manifest/current assessment published bytes and scope. No generalized all-historical-JSON guard certification."
+    },
+    {
+      "supplement_id": "qc-stale-review",
+      "current_scoped_grade": "Passed scoped stale-document review sensitivity and preserved owners/history",
+      "actual_evidence_class_and_limits": "LOCAL inspection; does not certify broader correction/client readiness",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/qc-stale-review/1/ASSESSMENT.json",
+        "sha256": "19383ed517bfa82eef642f8a90986de76eb66487fb1b70c74962edd8cd73dbf9",
+        "byte_length": 4490,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "reopen-nonqualifying",
+      "current_scoped_grade": "Passed correct nonqualifying-reopen refusal within isolated caller-history fixture",
+      "actual_evidence_class_and_limits": "LOCAL caller-authored unrelated intervening merge; no mutation/reopening",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopen-nonqualifying/1/final-exports/GRADE.json",
+        "sha256": "583046bdeacd9d222128148e97b5373e0c96d58376e60fd3f31305eb4194c09d",
+        "byte_length": 4593,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "reopened-revision",
+      "current_scoped_grade": "Passed eligible bounded same-campaign reopening and accepted record-only integration/return STOP",
+      "actual_evidence_class_and_limits": "LOCAL delivery; examples not task execution/interruption/provider fixtures",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/reopened-revision/1/final-exports/ASSESSMENT.md",
+        "sha256": "70017b334050b65fe38708924c9cec3fa8234090147654a67923e276f0ecbd25",
+        "byte_length": 5267,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "split-boundary",
+      "current_scoped_grade": "Consumer required behavior Passed; caller reconstructed product-history contract Failed",
+      "actual_evidence_class_and_limits": "LOCAL synthetic split; genuine source work retained and not regraded",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/split-boundary/1/final-exports/independent-assessment.json",
+        "sha256": "3b15edec460ed67c3f6990fe3ff8ac11e8a8ace51500a1f6fcf69282acf6ca0a",
+        "byte_length": 3958,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "strict-package",
+      "current_scoped_grade": "Strict creator validation Failed:39errors;4manifest schema+35shared sibling link creator errors",
+      "actual_evidence_class_and_limits": "Structural read-only inspection; no automatic migration, installed/client/standalone portability pass",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/strict-package/1/ASSESSMENT.json",
+        "sha256": "3ddeb7d3eb6d5ee3195c8a3dd3657dcb38a5783b9fb52714bbb6fcc221a20837",
+        "byte_length": 22721,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    },
+    {
+      "supplement_id": "tracking-scope",
+      "current_scoped_grade": "Two scoped controls Passed:token-only readiness/offer and explicit-decline T001 LOCAL atomic closure",
+      "actual_evidence_class_and_limits": "No full live tracking/provider native client acceptance; replay and shared filesystem limits",
+      "selected_current_assessment": {
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/tracking-scope/1/final-exports/INDEPENDENT-ASSESSMENT.json",
+        "sha256": "9ece11c4d04959df9dabe1d4d83f1a6d6c2f7929136c7307de254c57f2f2d32d",
+        "byte_length": 6197,
+        "published_head_byte_match": true,
+        "published_head": "0af8c4c9b9e8f3167e2fb5faef31e310b432186c"
+      },
+      "outside_required_32_and_optional_2": true,
+      "historical_original_intermediate_records": "Preserved separately in prior preparatory register; historical pending/trigger records do not replace this current scoped result"
+    }
+  ]
+}
