@@ -1,0 +1,217 @@
+{
+  "literals": {
+    "ranges": [
+      {
+        "name": "two-last",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "one",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      },
+      {
+        "name": "partial-eof",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "past-eof",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=0 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "empty",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=0 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "trailing-blank",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "mixed",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "unicode",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      },
+      {
+        "name": "bom",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=0 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "keep-bom",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=1\n",
+        "unchanged": true
+      },
+      {
+        "name": "exposed-interior",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      },
+      {
+        "name": "double-bom",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=1\n",
+        "unchanged": true
+      },
+      {
+        "name": "decimal-zeroes",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "bom-after",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=1\n",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-0",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-1",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-2",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-3",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-4",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-5",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-6",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-7",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-8",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "invalid-9",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "range-missing",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "range-repeat",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "decode-after-end",
+        "no_traceback": true,
+        "returncode": 1,
+        "source_identified": true,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "equals",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      }
+    ]
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,6 @@
+tree 22061b6791955ab91a70d6ed2a404830a339087b
+parent d9a27477042f4d1e25850673079f2f768171724e
+author Codex <codex@openai.com> 1791645995 -0400
+committer Codex <codex@openai.com> 1791645995 -0400
+
+Incorporate accepted named-file range delivery into main PLAN

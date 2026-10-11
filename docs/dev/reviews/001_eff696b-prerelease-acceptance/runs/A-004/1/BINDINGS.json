@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-003",
+      "status": "Passed",
+      "assessment_path": "../../A-003/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "design-docs/main",
+        "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
+        "integration_branch": "main",
+        "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "remote": "origin",
+      "remote_ref": "refs/heads/design-docs/main",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "65b6f802f16a66ff58e6d251c5cf77d24cda1f9e",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product checkout /workspace/scratch/46b31bb4dff6/037-textstats-product is clean and published on design-docs/main at 1e3305c8659045945244c06861079fef879ca3c3. Main is published eff696b38f0b8a94bd6f91ca1c64d54fd714df46. Preparation has delegated coordinator acceptance; it is not integrated. All tasks are unchecked; no implementation exists. Maintained Phase 1 tracking is enabled and verified, with nine task issues2\u201310 and three native milestones1\u20133; existing issue1, fixture label/text/comment and milestone paragraph are pre-existing material to preserve. Use pinned package textstats-run-resources/plugin/ at source ea515f5624c8a34cc4572731a2590223a5eb27f4 and product AGENTS. This request supersedes preparation-only stopping statements for the selected first task. Full test-artifact assessment is delegated to coordinator. All scoped workflow GitHub effects and every commit/push to the two established campaign repositories are explicitly authorized; push and verify after every commit, before advancing. Stop at first task durable completion, leaving the phase incomplete; no phase2 work or release requested."
+  }
+}

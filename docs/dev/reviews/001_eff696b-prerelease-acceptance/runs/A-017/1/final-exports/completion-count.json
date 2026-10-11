@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "rev-list",
+    "--count",
+    "4a9c0625aad481bbe46db25a945f5c9fad135716..HEAD"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+  "returncode": 0,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "GIT_OPTIONAL_LOCKS": "0"
+  }
+}

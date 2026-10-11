@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.unit.test_io.BorrowedAcquisitionTests",
+    "tests.unit.test_cli.StdinCliTests",
+    "tests.integration.test_cli.StdinModuleTests",
+    "tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_stdin_with_healthy_named_file_behavior",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/provisional-T016/product-export",
+  "returncode": 0,
+  "stdout": "extracted import: /tmp/tmphwm_ivas/textstats-source/textstats/__init__.py\n",
+  "stderr": "test_complete_bytes_preserve_unicode_terminators_and_boms (tests.unit.test_io.BorrowedAcquisitionTests.test_complete_bytes_preserve_unicode_terminators_and_boms) ... ok\ntest_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership (tests.unit.test_io.BorrowedAcquisitionTests.test_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership) ... ok\ntest_read_failure_propagates_without_closing_borrowed_stream (tests.unit.test_io.BorrowedAcquisitionTests.test_read_failure_propagates_without_closing_borrowed_stream) ... ok\ntest_stdin_failures_identify_source_and_keep_stream_open (tests.unit.test_cli.StdinCliTests.test_stdin_failures_identify_source_and_keep_stream_open) ... ok\ntest_stdin_is_binary_and_borrowed_for_whole_input_and_ranges (tests.unit.test_cli.StdinCliTests.test_stdin_is_binary_and_borrowed_for_whole_input_and_ranges) ... ok\ntest_usage_and_help_precede_borrowed_acquisition (tests.unit.test_cli.StdinCliTests.test_usage_and_help_precede_borrowed_acquisition) ... ok\ntest_binary_stdin_matrix_is_independent_of_text_locale (tests.integration.test_cli.StdinModuleTests.test_binary_stdin_matrix_is_independent_of_text_locale) ... ok\ntest_explicit_dash_file_is_distinct_from_stdin (tests.integration.test_cli.StdinModuleTests.test_explicit_dash_file_is_distinct_from_stdin) ... ok\ntest_stdin_complete_decode_and_usage_failures (tests.integration.test_cli.StdinModuleTests.test_stdin_complete_decode_and_usage_failures) ... ok\ntest_stdin_option_permutations_and_unbounded_endpoints (tests.integration.test_cli.StdinModuleTests.test_stdin_option_permutations_and_unbounded_endpoints) ... ok\ntest_stdin_range_anchors_and_both_spellings (tests.integration.test_cli.StdinModuleTests.test_stdin_range_anchors_and_both_spellings) ... ok\ntest_checker_rejects_ignored_stdin_with_healthy_named_file_behavior (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_stdin_with_healthy_named_file_behavior) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 21.554s\n\nOK\n"
+}

@@ -1,0 +1,31 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "baseline": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+  "artifact_sha256": {
+    "docs/dev/SPEC.md": "6c0c1d277e3c4a02b7404d03146a75869b96e1b39b4bb79f08572df24f325adc",
+    "docs/dev/PLAN.md": "70dda02c6e367afeccd2519c07fd0f2fe01f3387ba58747cbecacf0fa2c76b6a",
+    "docs/dev/TASKS.md": "8332c90fa658f5e031d1e1abe9dfe3f8fffef471db4d7fa8fd1d8964f993db51",
+    "docs/dev/FEATURE-TASKS.md": "d2ec6db757fd63c212ac2dff74c61b1de31c0e68e6797c9de141a28f5f5bc96e",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "80773ab21cf4b5cd8cbf04a55bc0190362375ebf9457a65c8c247d3aa9cb74d4",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "9ea73d53d6aab7fd570548489585b558b63f8ac279c84bd0f3c38fa654b4a646",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "b559d2cc78c85943e6fd26942da876741a9a3d10ef06d9bfd65ca31007e09e62",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": "20c3fc4f828658ea448a7518e9209759d31e06d52935e950288498a0ab10d6ca",
+    "AGENTS.md": "d880767d9ed47167a5dbcb3f72a31bbcf2d1f9e779faff5e5384e29aa720f94a",
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "a693812f1b483128b624ccb7809601341570d7c4af9ff757d66b89c4e5a3f8e4"
+  },
+  "artifact_blobs": {
+    "AGENTS.md": "4689003f96479510546ce675cb44611992ee27a5",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": "c535e76ad603a9c3dd316e33a094202c47757574",
+    "docs/dev/FEATURE-TASKS.md": "a4a503ec9d8391b38c42b00cdfc401d84c931bae",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "245e75c147be21a527a2f85c2829503c98728628",
+    "docs/dev/PLAN.md": "75a893109a4e72b97a759d5edc75092ff4a5e4c7",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "edb1c102bcbd4438df87c8db9328f25c863055de",
+    "docs/dev/SPEC.md": "0079a12d7a89159652ae38127771a609842cfaba",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "07691371e7c6874f7806dea8f6551edebc7ec8bb",
+    "docs/dev/TASKS.md": "97c034359eec997bb28d051fba6f6c607bae2d15",
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "f6a7cc7b5e3db71e8537d637934c2c827edc2f1e"
+  },
+  "review": "Concrete ten-file governing/task/QC/navigation delta inspected with consumer-selected original operations and heldsource identity. SPEC incorporates acceptedF001\u2013004 exactly with stablelegacyanchor/Rcontracts; PLAN adds2.4/2.5/2.6, explicitly4Phase2deliverymilestones plus excludedreviews, publisheddefault/compatibleJSON/prerequisites and pendingstdin/fullfinalcomposition. CanonicalT001\u2013024 single owners, originalPhase1completion/evidence exact, T010\u201324pending and separatecompletedJSONcheckpointnot fabricated into main. Featuretasksource retainsprovenance withoutduplicatecheckboxes; selectedsourcesstayactive/noarchive. MainT014rangecomposition,T015distributionprovenance,T017wholephase+T024 dependencies/reportprefixes consistent/acyclic. AdjacentQC retainsoriginalhistory, materialcorrections andcurrentexactupstreamhashes while concreteacceptancepending; navigationreconcilescurrentdocumentonlyauthorization. Freshrecoveryexactheldreceipt/ops3\u20134 plus actual discoveredanchor/strategy/task/QCfixes disclosed. No production/hosted/merge/release or falseparentcompletion. Accept exactlypresented10artifacts for one incorporationcheckpoint, immediateLOCALpublication/exactreadback, thenstop; no executable task closes.",
+  "consumer_seal_sha256": "e846e1461ca67738a74311fb89c64dc5c5f62eb7a372bf3581c5d7570222b6d5"
+}

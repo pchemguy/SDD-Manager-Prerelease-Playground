@@ -1,0 +1,15 @@
+{
+  "export_manifest_scope": "EXPORT-MANIFEST.json covers exact original341 assessor artifacts. Two original consumer seals additionally copied and verified against independent assessment seal hashes.",
+  "consumer_seals": {
+    "token-only": {
+      "sha256": "58609d81170c0d1882275dfbede300e6720ba9a39c0767ea19f811c03516282f",
+      "bytes": 229669
+    },
+    "explicit-decline": {
+      "sha256": "b4ea4331f45bdfd776a0d379ae473ee7f8d8623a4c83bf23ce61bc4e79156432",
+      "bytes": 356488
+    }
+  },
+  "scope": "Limited read-only token recommendation/choice and declined-tracking localT001 atomicclosure subsets independentlyPassed; full live TRACKING-FIDELITY certification remainsNotrun/Blocked facilities; no requiredcountincrement",
+  "original_failures": "Assessor treeUTF8decode/schemaassumptions, actualconsumer RED/absentlater-tools/failedpatch and commandreplaychronology limits retained."
+}

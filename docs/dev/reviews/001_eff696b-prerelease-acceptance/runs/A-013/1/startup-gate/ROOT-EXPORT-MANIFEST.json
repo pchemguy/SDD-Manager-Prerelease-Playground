@@ -1,0 +1,10 @@
+{
+  "DECISION.json": {
+    "sha256": "0aae330ed29107d522122151335f28fd1351d240122b7f4615e5c0f5baecf4a4",
+    "bytes": 10004
+  },
+  "root-first-get.py": {
+    "sha256": "b89c39faebb692731c5ae32c32b99ec2c786c589d95d185c60343e678d67196b",
+    "bytes": 3623
+  }
+}

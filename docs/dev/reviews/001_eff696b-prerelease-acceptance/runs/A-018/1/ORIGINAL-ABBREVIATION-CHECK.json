@@ -1,0 +1,15 @@
+{
+  "args": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "-m",
+    "textstats",
+    "--keep",
+    "/workspace/scratch/46b31bb4dff6/a018-original-check-xje5d_09/input.txt"
+  ],
+  "status": 0,
+  "stdout": "lines=1 words=2\n",
+  "stderr": "",
+  "input_sha256": "01186fcf04b4b447f393e552964c08c7b419c1ad7a25c342a0b631b1967d3a27",
+  "undocumented_abbreviation_accepted": true
+}

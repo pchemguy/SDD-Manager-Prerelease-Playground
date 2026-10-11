@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "Accepted exact bounded reopened amendment artifacts",
+  "reviewer": "root delegated concrete artifact review",
+  "child_commit": "2e3b5ba69105e672682132c77e2f2f43dfb986a6",
+  "original_opening": "5636481308427f9e9efd39576e562f057db7acda",
+  "original_baseline": "5e4d990e55817220661028f5e7ec643707bddd5a",
+  "current_reopening_target": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+  "artifacts": [
+    {
+      "path": "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/README.md",
+      "sha256": "59886ee74e92556098cdc264f81975a71eccb45cb6f599a237d7a5d5bcf2d413",
+      "git_blob": "e20e9009f37758582890c6ff037ac42735b7f8c5"
+    },
+    {
+      "path": "docs/dev/reviews/042_5e4d990-task-publication-continuation-review/REVIEW-REPORT.md",
+      "sha256": "271ca59d93c938feb168d972ec1c46dae8e9c21707dce94b8f2da4b2269fbf2c",
+      "git_blob": "f826055749e81074709b872991f1f8da7d817a4a"
+    }
+  ],
+  "checks": "Full actualtwo-fileappenddiff read; currenteligibility/explicitauthority/retainedopening+baseline, two unusedstableVactions, semanticexamples sourceordering and scope/limits, originaltext retention verified. No executionorhostedclaims.",
+  "authorized_next": "Explicit verifiedtwo-parent merge complete acceptedamendedtip into refreshed established LOCALparent037, publish/readback, self-containedcumulativesummary withfixedopening, returncleanparent STOP. No source/governingchanges/newcampaign/parentcontinuation."
+}

@@ -1,0 +1,6 @@
+{
+  "response": "204/no-content",
+  "request_id": "037-cp014-partial-002",
+  "observed_at": "2026-10-10T10:49:27.746165+00:00",
+  "reason": "First isolated attempt failed at immediate draft creation readback before upload trigger. Existing exact empty draft independently reconciled before new attempt; no creation replay."
+}

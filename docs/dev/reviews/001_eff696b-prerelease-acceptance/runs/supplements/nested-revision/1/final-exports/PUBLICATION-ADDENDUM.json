@@ -1,0 +1,22 @@
+{
+  "derivative_scope": "Publication derivative omits exactly two historical negative-test source copies. Full original remains unchanged locally; opaque Git bundle and all other exported objects were screened by the same pinned guard without modification.",
+  "original_manifest_sha256": "c4cb27742a14acec3fb5bd0fa00fdb0fa68bf8ce68522bdd010b7687dc3a5a6e",
+  "screening_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "omitted_files": {
+    "tracked-files/acceptance/textstats/tests/test_preflight.py": {
+      "sha256": "ff6e7444e473acd5890282683cfad992f5ae87ec9681cb64bc358d7d35d1525c",
+      "bytes": 14003,
+      "reason": "sensitive_content_not_exportable",
+      "classification": "Historical synthetic negative test literals for recognizable token or credential-URL rejection; no runtime credential observed",
+      "source_baseline": "5e4d990e55817220661028f5e7ec643707bddd5a"
+    },
+    "tracked-files/acceptance/textstats/tests/test_recovery.py": {
+      "sha256": "84e42ecb9b88a400330853be738cefd0fb16940b5db8226522f913e8fe6b1ec5",
+      "bytes": 23409,
+      "reason": "sensitive_content_not_exportable",
+      "classification": "Historical synthetic negative test literals for recognizable token or credential-URL rejection; no runtime credential observed",
+      "source_baseline": "5e4d990e55817220661028f5e7ec643707bddd5a"
+    }
+  },
+  "limits": "Derivative tracked-file copy is intentionally incomplete by two files; omission does not alter independent nested assessment or source preservation evidence. No scanner pattern weakened or bypassed."
+}

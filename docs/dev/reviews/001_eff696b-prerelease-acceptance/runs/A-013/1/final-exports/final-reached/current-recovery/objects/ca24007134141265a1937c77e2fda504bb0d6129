@@ -1,0 +1,12 @@
+tree fac0997aa4e5ff9dda2e0d209067e643dedd28ea
+parent dbf50d7b6d83c7ddf53f287d82b199db3e83fd89
+author Codex <codex@openai.com> 1791658903 -0400
+committer Codex <codex@openai.com> 1791658903 -0400
+
+[T-015] Complete stdin documentation and isolated source exits
+
+Document final borrowed UTF-8 stdin and unchanged whole-input API; extend isolated extracted-module checks to byte-fed stdin and ranges. Sensitivity regression proves the checker rejects a disabled stdin path. Preserve prior logger failures and observation gaps, and add explicit -B only to two cooperating invocation fixtures.
+
+Verified on Python 3.12.14: 37 unit and 34 integration tests, 478 extracted module cases, all 12 README/API fences and exact eleven-file source archive. Fresh 2776 traced Python children use -B and bytecode suppression. Initial owning checkbox, result, current evidence and truthful QC/navigation close atomically under published startup scope fb98e7b984134755845fc46390381d9933aa397e. Milestone/final reports and integration remain pending.
+
+Closes #16

@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "cat-file",
+    "-e",
+    "45d4036b4696fca363509ef63c34ab9bb6e54ddd"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+  "returncode": 0,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "GIT_OPTIONAL_LOCKS": "0"
+  }
+}

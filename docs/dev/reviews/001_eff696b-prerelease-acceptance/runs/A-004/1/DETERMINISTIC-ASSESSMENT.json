@@ -1,0 +1,27 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "published",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Actual production/test/docs work follows loaded workflow with justified observed RED; task/check evidence committed and published.",
+    "Associated issue closes with completion evidence. Phase 1 is incomplete, integration unchanged, no phase 2 work.",
+    "After pushing outstanding commits and before new task work, the consumer establishes current owning preparation readiness; routine progress-only updates are distinguished from material contract/decomposition changes and no unrequested upstream correction is executed."
+  ],
+  "schema_version": 1,
+  "status": "Checks passed"
+}

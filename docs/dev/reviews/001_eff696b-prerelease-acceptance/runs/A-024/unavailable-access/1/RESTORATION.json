@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "actor": "coordinator",
+  "reason": "Actual unavailable read and independent preserved trigger published8cb171c before bounded restoration",
+  "evidence_class": "controlled",
+  "changed_path": "/workspace/scratch/46b31bb4dff6/037-a024-unavailable-access-facility/CONTROL.json",
+  "before_sha256": "ab51ce259199a953e16bdfab775c7bb420ce6734784286b5c73a49327b3cb47a",
+  "after_sha256": "625836cd4bad68ca19674b1b263f0546c9e4afe95ac7f7c2c50fcb83853f0b51",
+  "before": {
+    "mode": "unavailable-access"
+  },
+  "after": {
+    "mode": "normal"
+  },
+  "observed_at": "2026-10-10T13:53:02.145180+00:00",
+  "unchanged_destination": "campaign037_phase1_tracking",
+  "ledger_absent": true,
+  "no_product_git_credential_provider_change": true
+}

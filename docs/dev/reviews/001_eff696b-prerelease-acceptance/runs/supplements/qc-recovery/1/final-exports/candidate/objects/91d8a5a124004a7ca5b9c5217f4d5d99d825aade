@@ -1,0 +1,6 @@
+tree 80150942b78caf5f2a7f7bd7cfcada942be9a9f3
+parent b0f93cf170addc80a92541acc4151058e57b6e64
+author Codex <codex@openai.com> 1791643052 -0400
+committer Codex <codex@openai.com> 1791643052 -0400
+
+Plan bounded named-file range delivery and compatibility gates

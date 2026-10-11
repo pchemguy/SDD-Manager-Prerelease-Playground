@@ -1,0 +1,27 @@
+{
+  "task": "T-016",
+  "candidate_tree": "c1a3d44edc98a3a11c2d491ba7da92ee32307253",
+  "parent_commit": "ca24007134141265a1937c77e2fda504bb0d6129",
+  "files": {
+    "docs/dev/reports/phases/2/2.2.md": {
+      "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+      "bytes": 11107,
+      "candidate_tree_byte_match": true
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "2e00ab7a18a1b3cb6796d3bec9bd282812ec7089e0c5a908b52304243cb311f3",
+      "bytes": 76663,
+      "candidate_tree_byte_match": true
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "2b9996769c1f6416fc4916aecafcb24eae83464765a5c99eb144c4e6c4f7d026",
+      "bytes": 25318,
+      "candidate_tree_byte_match": true
+    },
+    "AGENTS.md": {
+      "sha256": "9b8e7b41c662980b35001f28f1b865e393d74f63417735cf0b18498a53566ea7",
+      "bytes": 11627,
+      "candidate_tree_byte_match": true
+    }
+  }
+}

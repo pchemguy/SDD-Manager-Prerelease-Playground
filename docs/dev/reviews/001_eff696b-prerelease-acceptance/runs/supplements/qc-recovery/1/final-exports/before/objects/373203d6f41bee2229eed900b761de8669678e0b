@@ -1,0 +1,8 @@
+tree 374a24d9ede12f0685f341ea93ccb570bb2c88d7
+parent f28f6e415b3e0c13353a61e82354c47b0d2cabb2
+author Codex <codex@openai.com> 1791637180 -0400
+committer Codex <codex@openai.com> 1791637180 -0400
+
+[T-003] Integrate named-file CLI and nonempty product checks
+
+Deliver exact text success, BOM policy, option termination, help and real module entry over count_file. Add count-enforcing independent product discovery with process fixtures for empty collection and failure propagation; maintain source docs and current navigation. Include initial T-003 checkbox and behavioral RED/current GREEN evidence. Verification: 21 unit and 12 integration tests passed. Refs #4.

@@ -1,0 +1,85 @@
+---
+name: sdd-report
+description: Use when drafting a task issue, Git commit message, pull request description, or evidence-backed task, milestone, phase or final implementation report, review/revision campaign plan or report, package preparation result, curated Git release highlights, release notes or release outcome for an SDD project. Adapt the summary to feature, bug, code health, performance, security, testing, documentation, integration, or compatibility work without inventing results.
+---
+
+# Report SDD work
+
+For Markdown output or document work within this skill's scope, apply the shared [Markdown style](../sdd-conventions/references/markdown-style.md): blank lines after headings and around top-level lists and code blocks, plus four-space structural indentation, including nested lists, with exactly one space after each list marker. This applies to direct calls as well as coordinated work; it does not expand editing or review authority.
+
+Choose the requested output and load only its reference:
+
+| Output | Load |
+| --- | --- |
+| First SDD commit disclosure/usage evidence (drafting only) | **sdd-manage**: `skills/sdd-manage/references/repository-bootstrap.md` (bundled dependency) |
+| Planned task issue title and body, task/amendment or merge commit message, or pull request draft | [drafts for hosted and Git objects](references/object-drafts.md) |
+| Task, milestone, phase, final implementation, branch boundary, or interrupted-work status report | [completion reports](references/completion-reports.md) |
+| Package/workflow preparation, Git release highlights, release notes or release outcomes | [package and release reporting](references/releases.md) |
+| Adjacent SPEC/PLAN/TASKS preparation QC reports and appended correction/recheck sections | [document QC reports](references/document-qc-reports.md) |
+| Review plan/report or revision plan/report, including focused prompt-driven review | [campaign artifacts](references/campaign-artifacts.md) |
+| Kind-specific emphasis and reusable What, Why, Verification, Result patterns | [change kinds](references/change-kinds.md) |
+
+Use the owning TASKS or active FEATURE-TASKS entry, applicable design, SPEC, PLAN, and layout, actual changes, verification output, and Git evidence appropriate to the requested output. Obtain hosted issue references from **sdd-forge** when available; a guessed issue number is never acceptable. Separate *planned*, *performed*, *verified*, and *blocked* statements. State missing or limited evidence plainly; do not turn an example, unchecked task, or intended benchmark into a completed result. Follow project-specific title and reporting conventions where they exist.
+
+Compose only the requested text or structured draft. Keep a concise shared core of **What**, **Why**, **Verification**, and **Result**, varying the labels and optional sections to suit the actual change. For a planned issue, Verification is an acceptance or check plan and Result is an intended outcome, not a completed claim. Emoji labels are optional presentation, not required metadata.
+
+Task-associated subjects must begin with exactly one owning `[<task-id>]` marker and an imperative description; use the [task subject rules](references/object-drafts.md#task-commit-subjects) and return composition conflicts to the commit owner. Do not invent IDs for non-task campaign, preparation or merge work.
+
+This skill drafts reports and messages. The active implementation or steering workflow owns its work commits and task status; **sdd-manage** coordinates other persistence and explicit boundary merges, **sdd-forge** owns hosted issue/milestone mutations, and any future PR workflow owns PR creation or merge. A draft does not grant authorization for those actions or establish task completion. Return the draft, source task IDs and issue references actually resolved, evidence used, and any facts still needed before publication.
+# Change kinds and evidence
+
+Start with the actual outcome, reason, checks performed, and result. Select only the fields that improve understanding of this change; the labels below are examples, not a fixed questionnaire. Keep a planned issue in future or acceptance language and a completed report in past or present evidence language. The icon column offers optional PR title prefixes when the project uses them.
+
+| Icon | Kind | Add to the shared core when relevant | Evidence boundary |
+| --- | --- | --- | --- |
+| ✨ | Feature or behavior | User-visible capability, changed contract, acceptance conditions | Distinguish specified behavior from verified implementation. |
+| 🐛 | Bug fix | Reproduction, cause, affected behavior, regression check | Say whether the original failure was reproduced. |
+| 🧹 | Code health or refactor | Maintainability problem, preserved behavior, ownership or coupling improvement | Cite checks supporting behavior preservation; do not promise it without evidence. |
+| ⚡ | Performance | Baseline/current measurements, input size, environment, method, relative change | State uncertainty, simulated conditions, or absence of a meaningful gain. |
+| 🔒 | Security | Risk, affected guarantee, solution, regression checks | Avoid credentials and unnecessary exploit detail; distinguish mitigation from proof. |
+| 🧪 | Testing | Gap, added scenarios, coverage or failure-path result | Describe scenarios rather than inventing a coverage percentage. |
+| 📝 | Documentation | Audience, corrected guidance, links or examples reviewed | Do not claim runtime verification for a text-only check. |
+| 🔧 | Build, packaging, or tooling | Affected environments, reproducibility, installation or build checks | Name platforms actually exercised and those still untested. |
+| 🔄 | Integration or migration | Cross-component effect, compatibility, transition and rollback conditions | Identify data or API assumptions and the checks that exercised them. |
+
+Choose the dominant change; an icon does not certify the work.
+
+Use these labels when relevant to the requested report and the project's style:
+
+| Icon | Label | Domain | Description |
+| --- | --- | --- | --- |
+| 🎯 | What | | Actual or intended change. |
+| 💡 | Why | | Underlying need or governing rule. |
+| ✅ | Verification | | Commands, inspection, and outcomes actually observed. |
+| ✨ | Result | | Supported effect and limitations. |
+| 📊 | Measured Improvement | Performance | Baseline and current measurements, method, environment, and uncertainty; only when measured. |
+| ⚡ | No meaningful gain | Performance | State upfront in a PR or completion summary; explain the rationale. |
+| ⚠️ | Risk | Security | Potential impact and remaining exposure. |
+| 🛡️ | Solution | Security | Mitigation, how it addresses the risk, and relevant checks. |
+| 📊 | Coverage | Testing | Prior gap, added scenarios, and coverage evidence. |
+
+## Examples
+
+These illustrate completed-summary formats. Their details are scenario-specific and must be replaced with evidence from the current task.
+
+### Code health
+
+```markdown
+- 🎯 **What:** Renamed `common.py` to `fs.py` and documented its filesystem responsibility in the layout.
+- 💡 **Why:** The project assigns each module a focused owner and disallows generic dumping-ground modules.
+- ✅ **Verification:** Inspected the updated layout and references, ran layout checks, and passed `pytest tests/unit`.
+- ✨ **Result:** Shared filesystem utility ownership is explicit; the cited checks support behavior preservation within their scope.
+
+```
+
+### Performance
+
+```markdown
+- 🎯 **What:** Used `array.frombytes()`, `array.tobytes()`, and `array.byteswap()` for little-endian unsigned 64-bit conversion.
+- 💡 **Why:** Big-endian hosts need the little-endian format without slow per-item packing and unpacking.
+- 📊 **Measured Improvement:** In an ad-hoc simulated big-endian run of one million values, decode fell from 0.154 s to 0.008 s (reported as roughly 18×), and encode from 0.415 s to 0.013 s (roughly 30×). The simulation and rounded values limit the claim.
+- ✅ **Verification:** The local timing script measured speed only; portability and round-trip correctness still need separate checks.
+
+```
+
+For omission or recovery reports, separate instruction, actual user grant/choice, observed state, failure cause and evidence limits. Cite the actual basis for a diagnosis; an agent-authored inactive-mode line is not a user refusal, and a supplied token is not confirmation of an optional capability.

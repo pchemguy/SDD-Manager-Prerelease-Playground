@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_id": "A-004",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Actual production/test/docs work follows loaded workflow with justified observed RED; task/check evidence committed and published.",
+    "Associated issue closes with completion evidence. Phase 1 is incomplete and its implementation branch remains unmerged; no phase 2 work. If accepted preparation was unintegrated at the starting checkpoint, the required document-only preparation merge must be verified and published before implementation branch creation. Distinguish that prerequisite integration from prohibited incomplete-phase integration; record both actual starting and reached integration refs.",
+    "After pushing outstanding commits and before new task work, the consumer establishes current owning preparation readiness; routine progress-only updates are distinguished from material contract/decomposition changes and no unrequested upstream correction is executed."
+  ]
+}

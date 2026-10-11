@@ -1,0 +1,16 @@
+{
+  "actor": "coordinator",
+  "reason": "User reports crash after synthetic credential assessment and first projection checkpoint",
+  "source_head": "434069a",
+  "evidence_head": "0dab522",
+  "product_head": "1e3305c8659045945244c06861079fef879ca3c3",
+  "fetch_results": "All three origin fetches succeeded; owning branch tips equal published refs; worktrees clean. No lost published changes or product edits found.",
+  "local_only_recovered": [
+    "A-003 structured first observations",
+    "A-003 unsanitized assessment (not published)"
+  ],
+  "recheck": "Independent fresh assessor rebuilt metadata/hash-only first assessment using six live GETs and current literal governing clauses. No blind hosted replay.",
+  "validation": "Pinned catalog and bounded INPUTS/RUN-STATE validators passed. jsonschema unavailable in both Python runtimes; pinned stdlib validator used.",
+  "first_assessment_sha256": "4dea03ff7e4f68c5004309eced499a7801d3b0aaabdd582199a22c5441f9444c",
+  "next": "Second reconciliation after this checkpoint is published; full A-003 still pending."
+}

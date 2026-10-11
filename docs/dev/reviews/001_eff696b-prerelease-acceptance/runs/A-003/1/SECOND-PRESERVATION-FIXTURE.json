@@ -1,0 +1,91 @@
+{
+  "actor": "coordinator fixture, not consumer work or genuine human authorship",
+  "scope": "Unmanaged issue text, foreign label, comment and milestone paragraph; no implementation or generated section change",
+  "observed_at": "2026-10-10T12:16:13.564939+00:00",
+  "issue": {
+    "number": 2,
+    "id": 5790847351,
+    "body_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652",
+    "labels": [
+      {
+        "id": 12625616051,
+        "name": "campaign-037-preserve"
+      },
+      {
+        "id": 12625690902,
+        "name": "sdd-phase-1-Named-file-utility"
+      }
+    ],
+    "state": "open",
+    "milestone_number": 1,
+    "comments": 1
+  },
+  "comment": {
+    "id": 6097383663,
+    "body_sha256": "f7b64d43b11867705802a3c512b2c640d9946655ea7aa1aabe9b297da5e28945",
+    "created_at": "2026-10-10T12:15:52Z",
+    "updated_at": "2026-10-10T12:15:52Z"
+  },
+  "milestone": {
+    "number": 1,
+    "id": 18467474,
+    "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0",
+    "state": "open"
+  },
+  "operations": [
+    {
+      "method": "GET",
+      "endpoint": "/issues/2",
+      "status": 200,
+      "id": 5790847351
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/issues/2",
+      "status": 200,
+      "id": 5790847351
+    },
+    {
+      "method": "GET",
+      "endpoint": "/issues/2/comments?per_page=100",
+      "status": 200,
+      "id": null
+    },
+    {
+      "method": "POST",
+      "endpoint": "/issues/2/comments",
+      "status": 201,
+      "id": 6097383663
+    },
+    {
+      "method": "GET",
+      "endpoint": "/milestones/1",
+      "status": 200,
+      "id": 18467474
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "/milestones/1",
+      "status": 200,
+      "id": 18467474
+    },
+    {
+      "method": "GET",
+      "endpoint": "/issues/2",
+      "status": 200,
+      "id": 5790847351
+    },
+    {
+      "method": "GET",
+      "endpoint": "/milestones/1",
+      "status": 200,
+      "id": 18467474
+    },
+    {
+      "method": "GET",
+      "endpoint": "/issues/comments/6097383663",
+      "status": 200,
+      "id": 6097383663
+    }
+  ]
+}

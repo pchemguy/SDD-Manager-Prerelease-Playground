@@ -1,0 +1,39 @@
+{
+  "source_commit": "2d18ec0c74fa4dfec62a28ab9c0c1701134817b1",
+  "push_initial": [
+    {
+      "chunk_id": "3248bf",
+      "wall_time_seconds": 1.00149633,
+      "session_id": 66013,
+      "original_token_count": 0,
+      "output": ""
+    }
+  ],
+  "push_completion_observation": {
+    "chunk_id": "6771fb",
+    "exit_code": 0,
+    "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   d3f206a..2d18ec0  2d18ec0c74fa4dfec62a28ab9c0c1701134817b1 -> main\n",
+    "provenance": "Retained tool completion observation; fields shown here are not a claim of complete transcript capture"
+  },
+  "remote_verification_initial": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "8c264b",
+      "wall_time_seconds": 1.001059855,
+      "session_id": 49319,
+      "original_token_count": 0,
+      "output": ""
+    }
+  },
+  "remote_verification_final": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "783758",
+      "wall_time_seconds": 5.000434818,
+      "exit_code": 0,
+      "original_token_count": 37,
+      "output": "2d18ec0c74fa4dfec62a28ab9c0c1701134817b1\trefs/heads/main\nc380436e0f8337d2faf3f299d24dc0b95f621acf\trefs/heads/revision/001_8e2d3a5-live-acceptance\n"
+    }
+  },
+  "publication_verified": true
+}

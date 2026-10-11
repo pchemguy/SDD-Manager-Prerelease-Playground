@@ -1,0 +1,10 @@
+{
+  "stage": "First ordinary consumer provisional status report, prior to final product exits/integration",
+  "report_sha256": "a0da309be62131f8d25cfa6d3e4b9166906dd67a6edfd34def6d93e20840890b",
+  "independent_review_sha256": "a4fe22dd3bf892d6b37de4b7bd82ac1c970349171866b5e5e132e964ef184eda",
+  "full_case_grade": "Pending",
+  "original_required_lens": "27 Passed, two original Failed, Running stdin/final case, Blocked cross-phase, Pending final reconciliation",
+  "corrected_recheck_lens": "29 Passed with the same three unresolved",
+  "preservation": "Exact first provisional draft and independent review preserved before later reached-state refresh",
+  "limits": "Underlying exact consumer snapshots/command observations remain locally retained and await final publication screening; this checkpoint does not assert final product or evidence integration"
+}

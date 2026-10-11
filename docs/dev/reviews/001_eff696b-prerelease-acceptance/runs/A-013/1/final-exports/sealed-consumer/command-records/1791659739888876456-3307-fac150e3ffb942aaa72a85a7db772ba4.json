@@ -1,0 +1,41 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-s",
+      "-m",
+      "textstats",
+      "missing.txt"
+    ],
+    "cwd": "/tmp/tmp2yiu4z_m/textstats-source",
+    "stdout": "",
+    "stderr": "textstats: 'missing.txt': [Errno 2] No such file or directory: 'missing.txt'\n",
+    "status": 1,
+    "time": 1791659739.8887913,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "fixtures": {
+      "/tmp/tmp2yiu4z_m/textstats-source/sample.txt": {
+        "sha256": "9d1e0e2d9459d06523ad13e28a4093c2316baafe7aec5b25f30eba2e113599c4",
+        "bytes": 1
+      },
+      "/tmp/tmp2yiu4z_m/textstats-source/bad.txt": {
+        "sha256": "f3aed4332d915e609308980dc15bf0a502e131229bd899d5e8ee52bef8bd8703",
+        "bytes": 14
+      },
+      "/tmp/tmp2yiu4z_m/textstats-source/-sample": {
+        "sha256": "87de0dca21b2429312a4b9a9150097c67d3eb2dc2167e862e1055a531b52d248",
+        "bytes": 11
+      }
+    },
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "scope": "Root actual readbacks after T017 native closures and before prospective main merge commit/publication",
+  "relation_to_late_baseline": "All four complete semantic hashes equal consumer late pre-T017 closure/integration baseline",
+  "future_publication_not_claimed": true,
+  "original_startup_not_reconstructed": true
+}

@@ -1,0 +1,113 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-qakn3zvv",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t010-candidate/files",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t010-candidate/files/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctYTAxNC1hdXRob3JpemVkLWluZGVwZW5kZW50L3QwMTAtY2FuZGlkYXRlL2ZpbGVzL3RleHRzdGF0cy9fX2luaXRfXy5weQo="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--json",
+        "json.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-qakn3zvv",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t010-candidate/files",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "ae34092dcc2a4346dfa0cfb1ecb05c68356a81fbcc745dcec607b8ea499a3cdd",
+        "before_sha256": "ae34092dcc2a4346dfa0cfb1ecb05c68356a81fbcc745dcec607b8ea499a3cdd",
+        "input_sha256": "ae34092dcc2a4346dfa0cfb1ecb05c68356a81fbcc745dcec607b8ea499a3cdd",
+        "name": "json.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stdout_base64": "eyJsaW5lcyI6IDIsICJ3b3JkcyI6IDN9Cg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "default.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-qakn3zvv",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t010-candidate/files",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "ae34092dcc2a4346dfa0cfb1ecb05c68356a81fbcc745dcec607b8ea499a3cdd",
+        "before_sha256": "ae34092dcc2a4346dfa0cfb1ecb05c68356a81fbcc745dcec607b8ea499a3cdd",
+        "input_sha256": "ae34092dcc2a4346dfa0cfb1ecb05c68356a81fbcc745dcec607b8ea499a3cdd",
+        "name": "default.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=2 words=3\n",
+      "stdout_base64": "bGluZXM9MiB3b3Jkcz0zCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--keep-bom",
+        "--json",
+        "json-bom.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-qakn3zvv",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t010-candidate/files",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "before_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "input_sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5",
+        "name": "json-bom.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "{\"lines\": 1, \"words\": 1}\n",
+      "stdout_base64": "eyJsaW5lcyI6IDEsICJ3b3JkcyI6IDF9Cg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t010-candidate/files",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "json"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "subtrial": "before-send-trigger",
+  "status": "Partial criteria passed; recovery pending",
+  "evidence_class": "controlled",
+  "agent_behavior_assessed": true,
+  "snapshot": "037-a023-before-send-trigger-snapshot.json",
+  "checks": {
+    "head_preserved": true,
+    "refs_preserved": true,
+    "index_preserved": true,
+    "status_preserved": true,
+    "tracked_worktree_preserved": true,
+    "no_applied_ledger": true
+  },
+  "payload_sha256": "0ae0e61aead0dd25675e0bbb940e7cf6045345a0b9335bbc852fceca5b14dcc8",
+  "original_seal_sha256": "f8e2696445e1aa4b820ea531260e8aff5691c7beee5e41947f333d777633dd61",
+  "limits": [
+    "Fresh task context has broad shared filesystem; native full transcript unavailable."
+  ]
+}

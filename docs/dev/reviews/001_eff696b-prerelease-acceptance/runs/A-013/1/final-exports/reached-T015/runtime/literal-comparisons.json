@@ -1,0 +1,26 @@
+[
+  {
+    "suite": "api",
+    "passed": true
+  },
+  {
+    "suite": "baseline",
+    "passed": true
+  },
+  {
+    "suite": "ranges",
+    "passed": true
+  },
+  {
+    "suite": "removal",
+    "passed": true
+  },
+  {
+    "suite": "stdin",
+    "passed": true
+  },
+  {
+    "suite": "distribution",
+    "passed": true
+  }
+]

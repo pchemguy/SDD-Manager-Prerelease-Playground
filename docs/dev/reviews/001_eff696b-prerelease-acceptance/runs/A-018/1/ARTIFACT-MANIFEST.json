@@ -1,0 +1,101 @@
+{
+  "case": "A-018",
+  "artifacts": [
+    {
+      "path": "A005-CORRECTED-ASSESSMENT.json",
+      "sha256": "27b5658a5b0718ef3bd998f3be5bcc754164d19abe11efb4141e88f95b6e832d",
+      "mode": "0o644",
+      "size": 11631
+    },
+    {
+      "path": "A005-ORIGINAL-ASSESSMENT.json",
+      "sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+      "mode": "0o644",
+      "size": 9944
+    },
+    {
+      "path": "BASELINE.bundle",
+      "sha256": "c811553eb0fe4a8202aa34fdc8b4f90706eadd0cdd523521b9ec24c0eec36369",
+      "mode": "0o644",
+      "size": 387718
+    },
+    {
+      "path": "BINDINGS-DRAFT.json",
+      "sha256": "79194f522fd3f26c86552230a7165457977c7b9d9c655c1f6b802eec81b63b04",
+      "mode": "0o644",
+      "size": 2747
+    },
+    {
+      "path": "CONTROL.json",
+      "sha256": "fde11d4ab34d781660b600f79cdfa908f1a18c3985db2032823093d0dba3946c",
+      "mode": "0o644",
+      "size": 324
+    },
+    {
+      "path": "DESTINATION-STATE.json",
+      "sha256": "cff531047d6340b02a6f2a925ffcd3c735f58cd89d3eb107f7eab55435237d58",
+      "mode": "0o644",
+      "size": 477
+    },
+    {
+      "path": "FACILITY-PROBE.json",
+      "sha256": "3ebd557019ce0d02d42533dc530a3fc4b4afc14542b0b51c0adf2b5f0fc28903",
+      "mode": "0o644",
+      "size": 718
+    },
+    {
+      "path": "INITIAL-INDEX.bin",
+      "sha256": "347d40fae7d8941b43b65608a9ac7ee4c2c0bdcce7f1154d614c5aa9e2886df0",
+      "mode": "0o644",
+      "size": 24192
+    },
+    {
+      "path": "INITIAL-TRACKED.tar",
+      "sha256": "881d41585edd2e826f0b253c536099d081aa24432719c10ff2322f633ed2cdbe",
+      "mode": "0o644",
+      "size": 1054720
+    },
+    {
+      "path": "ORDINARY-HANDOFF-DRAFT.md",
+      "sha256": "0265f4a80c167279cdfde7020db1b9b5c222189e0ca15509e0f3bbdb48df823d",
+      "mode": "0o644",
+      "size": 1944
+    },
+    {
+      "path": "SETUP-NOTES.md",
+      "sha256": "c22a761fa81042798124da284ecf03f987e1f9ce02855e38d844df2f2d5a779e",
+      "mode": "0o644",
+      "size": 2042
+    },
+    {
+      "path": "SETUP-PROVENANCE.json",
+      "sha256": "b911a313bcbd6c1a8fa4916e2a57c4a41ab9c076561cbf5b8737346ab3a05417",
+      "mode": "0o644",
+      "size": 3816
+    },
+    {
+      "path": "START.json",
+      "sha256": "d56a79a4dc5ae2e3d34ba19eed8844bf09a84b81e456f3b5a4d33d9d230fa50c",
+      "mode": "0o644",
+      "size": 67829
+    },
+    {
+      "path": "capture_gate.py",
+      "sha256": "8fc7ab78707966777e92bd69c725c11bf6d7e7f6ee71ef90fdc0d1937f17f5d9",
+      "mode": "0o644",
+      "size": 4463
+    },
+    {
+      "path": "hooks/update",
+      "sha256": "7d85c2ec481df22c3b50a4929508b1dc19c91236f0bf0bc9e4c676a84be957b4",
+      "mode": "0o755",
+      "size": 143
+    },
+    {
+      "path": "prepare_publication_facilities.py",
+      "sha256": "e714a7e6e7b170671ba594116548a08480d41d702900632c3b1c5839291ea0b0",
+      "mode": "0o644",
+      "size": 15697
+    }
+  ]
+}

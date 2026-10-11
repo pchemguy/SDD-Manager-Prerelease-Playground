@@ -1,0 +1,9 @@
+7b9f570aa4452d2ca9d6105479640528cb113f0e	refs/heads/trial/037-a014-cross-phase
+Python 3.12.14
+unit: 23 tests
+integration: 18 tests
+extracted import: /tmp/tmpq9c88qgg/textstats-source/textstats/__init__.py
+extracted import: /tmp/tmp9_moyab7/textstats-source/textstats/__init__.py
+36 extracted module cases passed
+extracted import: /tmp/tmp1k6up40o/textstats-source/textstats/__init__.py
+36 extracted module cases passed

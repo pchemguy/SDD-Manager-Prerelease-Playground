@@ -1,0 +1,16 @@
+{
+  "target_branch": "feature/architecture-revision",
+  "target_parent": "78d51c48189a5bb734df638f0075a5071de61a4d",
+  "working_branch": "revision/009_384beef-textstats-test-project",
+  "working_parent": "bf70e4d2363733d83642c4777b232133ab0f4e0e",
+  "support_tests": {
+    "collected": 67,
+    "passed": 67,
+    "failures": 0,
+    "errors": 0
+  },
+  "catalog_cases": 27,
+  "live_acceptance": "follow-up; not run",
+  "plugin_files": 97,
+  "plugin_unchanged": true
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-016",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent assessment Passed: retained completed T-001 commit published before further work",
+  "pending_operation": null,
+  "next_action": "Continue separately eligible cases; A-016 sealed",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a016-unpublished",
+    "product_commit": "0d14a33282d9abd92d9e481ff45dddb98e8beea2",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "trial-delivery"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/A003-ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ARTIFACT-MANIFEST.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/BASELINE.bundle",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/BINDINGS-DRAFT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/CONTROL.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/DESTINATION-STATE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/FACILITY-PROBE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/INITIAL-INDEX.bin",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/INITIAL-TRACKED.tar",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ORDINARY-HANDOFF-DRAFT.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/SETUP-NOTES.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/SETUP-PROVENANCE.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/START.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/capture_gate.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/hooks/pre-push",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/prepare_publication_facilities.py"
+  ]
+}

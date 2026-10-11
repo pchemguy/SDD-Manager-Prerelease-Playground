@@ -1,0 +1,15 @@
+{
+  "source_commit": "ebebd0c6d125d2e426b7c6fabd36fc8963b5201d",
+  "validator_hashes": {
+    "create_openai_presentation.py": "4eb12bf247af41e938116e7f1dc97db50b173fdf4ebef3dae64f139be0a9ae2d",
+    "validate_plugin.py": "6224ff031dc267029abbe2fcd67ddf41aeaf4b0c731d15b52ae2c0e70203491a",
+    "validate_skill.py": "2bea796cc6a9719f49eed138ed23dd34a6605114d270287253a515bb38737977",
+    "inspect_package.py": "ef8dbe9123e9128abbbf0a4c1de9b7820d1efd07a4f9c8239e75f7f9862b5dd4"
+  },
+  "package_manifest_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+  "authorities": [
+    "https://agent-plugins.org/specification",
+    "https://agentskills.io/specification"
+  ],
+  "scope": "Read-only offline strict validation; no migration, installation or behavioral portability claim"
+}

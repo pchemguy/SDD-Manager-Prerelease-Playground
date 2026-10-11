@@ -1,0 +1,13 @@
+{
+  "status": "Failed export attempt retained",
+  "reason": "no_secret rejects literal NUL in -z name-list command stdout JSON; binary exports already completed and remain exact; no protected content observed",
+  "effect": "Product/control unchanged. New provenance uses newline name listing; original binary exports retained.",
+  "rejected_record_location": "in-memory records array, stdout of git diff --cached --name-only -z",
+  "rejected_field": "records[-3].stdout (name-list command record, exact array index unavailable)",
+  "rejection_reason": "Literal NULs violate no_secret JSON configuration policy",
+  "original_rejected_json_retained": false,
+  "original_rejected_json_sha256": null,
+  "retention_gap": "Exact rejected JSON bytes and original command-result sequence were not serialized before screening raised. They cannot be reconstructed exactly; no manufactured original artifact/hash is supplied.",
+  "safe_new_provenance": "COMMANDS.json comes from a fresh independent rerun using git diff --cached --name-only (newline paths), rather than rewriting any sealed original.",
+  "sealed_originals_unchanged": true
+}

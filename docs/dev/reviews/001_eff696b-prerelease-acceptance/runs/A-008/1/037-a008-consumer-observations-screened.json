@@ -1,0 +1,268 @@
+{
+  "status": "sealed",
+  "consumer": "/root/a008_feature_consumer",
+  "scope": "A-008 bounded named-file line-selection feature preparation only; stop before implementation",
+  "inputs": [
+    "/workspace/scratch/46b31bb4dff6/037-a008-consumer-input.md",
+    "/workspace/scratch/46b31bb4dff6/037-a008-preparation-brief.md"
+  ],
+  "checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "starting_state": {
+    "branch": "phase/2-json-and-stdin",
+    "head": "e63b8946bbb99347b0f73f070f9c728945ee5925",
+    "status": "clean",
+    "default": "main",
+    "default_head": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "completed": "T-001\u2013T-012 on actual delivery branches",
+    "pending": "T-013\u2013T-017; stdin not implemented"
+  },
+  "campaign": {
+    "id": "002_e7cae5b",
+    "slug": "named-file-ranges",
+    "baseline": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "allocation_evidence": "Inspected main path identities, phase revision path identities and relevant remote refs; highest allocated sequence 001 in published revision/001_eff696b-prerelease-acceptance. Read names only, not coordinator campaign contents.",
+    "preparation_branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "future_implementation_branch": "feature/002_e7cae5b-named-file-ranges",
+    "future_target": "phase/2-json-and-stdin",
+    "remote": "origin",
+    "repository": "pchemguy/SDD-Manager-Prerelease-Playground"
+  },
+  "source_activation_deviation": {
+    "initial_call": {
+      "tool": "skills__read",
+      "package": "c0/sdd-orient",
+      "resource": "skill://Plugin_2a5e1d0e954481919caf2295ca60371b/sdd-orient/SKILL.md",
+      "returned_contents_utf8_sha256": "7e222b9ede64a6154c9844a86020f54f0ff3de35baeac684e4f5ba27d8c30b65"
+    },
+    "preceding_commands": [
+      "cat /workspace/scratch/46b31bb4dff6/037-a008-consumer-input.md",
+      "cat /workspace/scratch/46b31bb4dff6/037-a008-preparation-brief.md",
+      "pwd; rg --files -g AGENTS.md -g '*SKILL.md' -g 'PROJECT*' -g 'ARCHITECTURE*' -g 'SPEC*' -g 'PLAN*' -g 'TASKS*' -g '*FEATURE*' -g '*config*'"
+    ],
+    "disclosure": "Reported mistaken cloud activation promptly to coordinator. Cloud skill recaptured once solely to compute requested exact bytes hash. Selected authoring used unchanged pinned local skills exclusively after reading product AGENTS; no cloud instructions treated as an override.",
+    "governing_skills_root": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin",
+    "local_owners_read": [
+      "sdd-orient",
+      "sdd-manage",
+      "sdd-conventions",
+      "sdd-design",
+      "sdd-specify",
+      "sdd-plan",
+      "sdd-tasks",
+      "sdd-report",
+      "sdd-docs"
+    ],
+    "relevant_references": "Local workflow/branch/git/human-review/QC/tracking/phase-activation/credential/agent-orientation; workflow-identity/Markdown/modularity/design-heuristics/task-hierarchy/backend-lifecycle/document-QC; change-specification/review; delivery-plan/physical-layout/review; task-derivation/conformance-review; document-QC-reports; standalone-documentation."
+  },
+  "substantive_decisions": [
+    {
+      "stage": "design reuse",
+      "decision": "Accepted main architecture/decomposition already define shared logical traversal, normalized counting, once-only BOM and source-independent range selection. Existing layout explicitly accommodates core selection. No unnecessary design/layout overlays created."
+    },
+    {
+      "stage": "SPEC",
+      "artifact_commit": "b0f93cf170addc80a92541acc4151058e57b6e64",
+      "artifact_blob": "ad87c3f9daca1e6fba0c0097e6ee05397711158a",
+      "qc_blob": "e4a69263dac864a3ee1c179861c5da94bdc4cef0",
+      "coordinator_decision": "accepted",
+      "published_decision": "ca0eded9d6e8a7f40ba4e3c9ed4d8370b884db6d",
+      "dependent_plan_started_after_message": true
+    },
+    {
+      "stage": "PLAN",
+      "artifact_commit": "91d8a5a124004a7ca5b9c5217f4d5d99d825aade",
+      "artifact_blob": "1477856e1795d3e23a1c5fa8b99616f243fc853b",
+      "qc_blob": "df422da6e03788fd272d9156364ece49f3da89dd",
+      "coordinator_decision": "accepted",
+      "published_decision": "515c3ea3464e4d67c359fa7bb949fe6945816f2b",
+      "dependent_tasks_started_after_message": true
+    },
+    {
+      "stage": "TASKS",
+      "artifact_commit": "493d5e2d2251922041c235b1c8377f3fdf827bce",
+      "artifact_blob": "95d31431ea3c751cbd769c5c7c2febf9f2d80b37",
+      "qc_blob": "9233b996f602d4565f9cc2326910aa3b776de34a",
+      "coordinator_decision": "accepted",
+      "published_decision": "fc26eb949892f196c5b81f84913a7121388b691b"
+    },
+    {
+      "stage": "hierarchy",
+      "decision": "Reuse exact Phase 2 \u2014 JSON and stdin parent; new 2.4 and 2.5 delivery milestones with 2 delivery tasks each and respective T-020/T-023 reviews, plus final single-task 2.6 feature-extent review T-024. All T-018\u2013T-024 unchecked. Scoped feature parent/review cannot close main unfinished Phase2."
+    },
+    {
+      "stage": "future baseline",
+      "decision": "Main lacks JSON; future execution must first publish accepted preparation on default, then create feature branch and incorporate verified/published completed JSON checkpoint compatibly before edits/tests. Target paused phase, preserve pending stdin/final obligations; no incomplete phase default merge."
+    },
+    {
+      "stage": "tracking",
+      "decision": "Maintained tracking confirmed; added-work projection pending before future execution. No projection/closure was performed in preparation, and coordinator explicitly instructed no projection/closure at final acceptance."
+    }
+  ],
+  "commits": [
+    {
+      "sha": "b0f93cf170addc80a92541acc4151058e57b6e64",
+      "subject": "Specify named-file range feature on isolated preparation branch",
+      "push": "new branch push succeeded",
+      "readback": "ls-remote exact SHA",
+      "before_further_work": true
+    },
+    {
+      "sha": "91d8a5a124004a7ca5b9c5217f4d5d99d825aade",
+      "subject": "Plan bounded named-file range delivery and compatibility gates",
+      "push": "b0f93cf..91d8a5a succeeded",
+      "readback": "ls-remote exact SHA",
+      "before_further_work": true
+    },
+    {
+      "sha": "493d5e2d2251922041c235b1c8377f3fdf827bce",
+      "subject": "Derive bounded range feature tasks and conformance evidence",
+      "push": "91d8a5a..493d5e2 succeeded",
+      "readback": "ls-remote exact SHA",
+      "before_further_work": true
+    },
+    {
+      "sha": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "subject": "Record accepted range preparation and active feature ownership",
+      "push": "493d5e2..8036adb succeeded",
+      "readback": "ls-remote exact SHA",
+      "before_further_work": true
+    }
+  ],
+  "command_results": [
+    {
+      "commands": "cat product AGENTS.md, pinned plugin AGENTS.md/SKILL.md and selected references; rg --files applicable product paths; git --no-optional-locks status/branch/log/remote/worktree/ls-tree inspection",
+      "result": "Clean eligible product worktree, applicable instructions and accepted current documents inspected. No coordinator acceptance resource contents read. Some batched output truncated; narrower subsequent reads used."
+    },
+    {
+      "commands": "cat textstats-run-resources/plugin/skills/sdd-specify/references/feature-spec.md",
+      "result": "No such file; erroneous guessed reference. Loaded instructed change-specification.md next. No dependent authoring from missing file.",
+      "exit": 1
+    },
+    {
+      "commands": "cat textstats-run-resources/plugin/skills/sdd-plan/references/planning.md",
+      "result": "No such file; erroneous guessed reference. Loaded instructed delivery-plan.md/physical-layout.md/review.md next. No dependent authoring from missing file.",
+      "exit": 1
+    },
+    {
+      "commands": "git --no-optional-locks check-ignore gh.tkn; git --no-optional-locks ls-files gh.tkn",
+      "cwd": "/workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground",
+      "result": "Effective ignored gh.tkn, no tracked entry, before helper use. Credential not printed/copied/read into report."
+    },
+    {
+      "commands": "GIT_ASKPASS=/workspace/scratch/46b31bb4dff6/playground-askpass.sh GIT_TERMINAL_PROMPT=0 git ls-remote --symref origin HEAD refs/heads/main refs/heads/phase/2-json-and-stdin 'refs/heads/design-docs/*' 'refs/heads/feature/*' 'refs/heads/revision/*'",
+      "result": "Default HEAD main e7cae5b, phase e63b894, design-docs/main and revision001 identified; no selected name collision."
+    },
+    {
+      "commands": "GIT_ASKPASS=/workspace/scratch/46b31bb4dff6/playground-askpass.sh GIT_TERMINAL_PROMPT=0 git fetch origin main; git check-ref-format --branch design-docs/002_e7cae5b-named-file-ranges; git switch -c design-docs/002_e7cae5b-named-file-ranges origin/main",
+      "result": "Fetch succeeded, valid branch created from refreshed default e7cae5b."
+    },
+    {
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B - <<'PY' [SPEC/package/QC authoring heredoc retained in tool transcript b665-style earlier call]; git diff --check; git add scoped SPEC/QC/package; git commit -m 'Specify named-file range feature on isolated preparation branch'",
+      "transcript_result": "772207",
+      "result": "3 files/90 insertions, b0f93cf; immediate push and exact readback succeeded via session85296."
+    },
+    {
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B - <<'PY' [PLAN/QC/package authoring heredoc retained in tool transcript]; git diff --check; git add scoped PLAN/QC/package; git commit -m 'Plan bounded named-file range delivery and compatibility gates'",
+      "transcript_result": "9e3eb0",
+      "result": "3 files/65 insertions/1 deletion,91d8a5a; immediate push/readback succeeded via session31783."
+    },
+    {
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B - <<'PY' [TASKS/QC/package authoring heredoc retained in tool transcript]; git diff --check; git add scoped TASKS/QC/package; git commit -m 'Derive bounded range feature tasks and conformance evidence'",
+      "transcript_result": "b66517",
+      "result": "3 files/84 insertions/1 deletion,493d5e2; immediate push/readback succeeded via session24612."
+    },
+    {
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B - <<'PY' [accepted navigation heredoc retained in tool transcript]; git diff --check; git add AGENTS.md docs/dev/features/002_e7cae5b-named-file-ranges/README.md; git commit -m 'Record accepted range preparation and active feature ownership'",
+      "transcript_result": "9e692c",
+      "result": "2 files/15 insertions/1 deletion,8036adb; immediate push/readback succeeded via session68445."
+    },
+    {
+      "commands": "For each owned commit: GIT_ASKPASS=/workspace/scratch/46b31bb4dff6/playground-askpass.sh GIT_TERMINAL_PROMPT=0 git push [initial -u then normal] origin design-docs/002_e7cae5b-named-file-ranges; GIT_ASKPASS=/workspace/scratch/46b31bb4dff6/playground-askpass.sh GIT_TERMINAL_PROMPT=0 git ls-remote origin refs/heads/design-docs/002_e7cae5b-named-file-ranges; git rev-parse HEAD; git ls-tree HEAD selectedpaths",
+      "result": "Every push exit0 and exact readback matched owned tip before further project work. No push failure/retry/denial/force push."
+    },
+    {
+      "commands": "PYTHONDONTWRITEBYTECODE=1 python -B [independent local-target/headings/hierarchy/path-diff inspection scripts]; git diff --check; git status --short",
+      "transcript_results": [
+        "59baa5",
+        "177240",
+        "541be2"
+      ],
+      "result": "All current owned Markdown localtargets/headings pass; unique allunchecked T018\u2013024,1phase/3milestones/7tasks correctindent; exact8ownedpaths changed; clean; protectedresources/mainTASKS/reports/production/tests/tools preserved."
+    }
+  ],
+  "limits_and_errors": [
+    "Initial cloud skill activation deviated from pinned-only orientation; exact returned content hash and corrective disclosure retained.",
+    "Two guessed nonexistent skill reference reads were corrected using actual pinned SKILL.md links.",
+    "Some large read outputs were truncated; no test, implementation or wholeproject readiness inferred from them.",
+    "Relevant remote campaign path identities were listed only for allocation; closed/coordinator contents were not read.",
+    "One collaboration list_agents inventory disclosed unrelated agent status summaries; no unrelated files were read or acted on.",
+    "No production/test/distribution execution performed; all code/test evidence in feature documents is planned."
+  ],
+  "runtime": {
+    "python": "All invoked Python commands used PYTHONDONTWRITEBYTECODE=1 python -B; script subprocesses used Git only; no Python children spawned.",
+    "pyenv_used": false,
+    "environment_changes": false,
+    "authentication_handling": "Existing protected helper used transiently after effective ignored/untracked checks; no credential exposed, copied or embedded in args/URLs/artifacts."
+  },
+  "final_verification": {
+    "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "status": "clean",
+    "artifacts": [
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AGENTS.md",
+        "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+        "blob": "eb835f31bf29b4ee02a1724d69f76f9578467bde"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/FEATURE-SPEC.md",
+        "sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+        "blob": "ad87c3f9daca1e6fba0c0097e6ee05397711158a"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+        "sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+        "blob": "e4a69263dac864a3ee1c179861c5da94bdc4cef0"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/FEATURE-PLAN.md",
+        "sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+        "blob": "1477856e1795d3e23a1c5fa8b99616f243fc853b"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+        "sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+        "blob": "df422da6e03788fd272d9156364ece49f3da89dd"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/FEATURE-TASKS.md",
+        "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+        "blob": "95d31431ea3c751cbd769c5c7c2febf9f2d80b37"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+        "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+        "blob": "9233b996f602d4565f9cc2326910aa3b776de34a"
+      },
+      {
+        "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+        "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+        "blob": "da3e6db80667d879a96bf363c964eda321f4698e"
+      }
+    ],
+    "verification": "PASS local links/headings, exactly 8 owned paths, main/pausedphase/protectedresources/code/tests/tools/mainTASKS/reports unchanged; no feature implementation branch"
+  },
+  "effects": {
+    "implementation": false,
+    "task_completion": false,
+    "default_merge": false,
+    "feature_implementation_branch_created": false,
+    "phase_closure": false,
+    "hosted_mutations": false,
+    "release": false,
+    "closed_record_edits": false,
+    "foreign_material_edits": false,
+    "production_tests_run": false
+  },
+  "stopping_point": "Accepted and published feature preparation on isolated design-docs branch; no operations after this observation seal."
+}

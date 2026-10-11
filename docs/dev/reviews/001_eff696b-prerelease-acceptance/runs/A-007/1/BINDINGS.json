@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-006",
+      "status": "Passed",
+      "assessment_path": "../../A-006/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+        "integration_branch": "main",
+        "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+        "merge_parents": [
+          "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+          "5b17e4650c64c7c735991931b591bdabb8069215"
+        ],
+        "phase_branch": "phase/1-named-file-utility",
+        "phase_commit": "5b17e4650c64c7c735991931b591bdabb8069215"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "remote": "origin",
+      "remote_ref": "refs/heads/main",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product checkout /workspace/scratch/46b31bb4dff6/037-textstats-product is clean on published main e7cae5b2216ff7dd311b6f7296d829d1927a6a8a after complete Phase1 two-parent integration. All T001\u2013009 and Phase1 milestones/review are complete; issues2\u201310 and native milestones1\u20133 closed. T010\u2013017 remain unchecked and Phase2 has no hosted projection yet. Maintained tracking is enabled; preserve issue1, foreign issue2 text/labels/comment6097383663 and milestone1 paragraph. Use unchanged pinned package textstats-run-resources/plugin/ at ea515f5624c8a34cc4572731a2590223a5eb27f4 and product AGENTS. This request authorizes Phase2 activation and milestone2.1 JSON implementation, including its scoped checks/review/report/tracking effects; stop before stdin work and leave Phase2 incomplete/unmerged. Concrete test artifact assessments/decisions are delegated to coordinator. All scoped commits/pushes and GitHub effects are authorized; push and verify every commit before further work. No release requested. Existing protected playground API authentication is available at /workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground/gh.tkn only for transient in-memory use after ignored/untracked verification; do not copy or expose credential material."
+  }
+}

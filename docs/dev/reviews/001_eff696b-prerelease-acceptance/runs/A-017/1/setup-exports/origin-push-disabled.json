@@ -1,0 +1,15 @@
+{
+  "args": [
+    "git",
+    "remote",
+    "set-url",
+    "--push",
+    "origin",
+    "disabled://read-only"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+  "returncode": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

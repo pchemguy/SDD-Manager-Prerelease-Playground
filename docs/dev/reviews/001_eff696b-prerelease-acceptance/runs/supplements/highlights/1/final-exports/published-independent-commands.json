@@ -1,0 +1,78 @@
+[
+  {
+    "argv": [
+      "git",
+      "-C",
+      "037-sup-highlights-published",
+      "rev-parse",
+      "--is-shallow-repository"
+    ],
+    "returncode": 0,
+    "stdout": "false\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "037-sup-highlights-published",
+      "for-each-ref",
+      "--format=%(refname) %(objectname)",
+      "refs/tags"
+    ],
+    "returncode": 0,
+    "stdout": "refs/tags/v0.15.0 7085eb5443cc773e05d7307c9228adaafd42e41e\nrefs/tags/v0.15.0-cp014 8970f42e3d83327edf49d45c4d01784ab57f7307\nrefs/tags/v0.15.0-cp014-repair 032a78df6a5bca5a1b979fe71cef403f13713132\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "037-sup-highlights-published",
+      "check-ignore",
+      "-v",
+      ".release-highlights.md"
+    ],
+    "returncode": 0,
+    "stdout": ".git/info/exclude:8:/.release-highlights.md\t.release-highlights.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "037-sup-highlights-published",
+      "ls-files",
+      "--error-unmatch",
+      ".release-highlights.md"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "error: pathspec '.release-highlights.md' did not match any file(s) known to git\nDid you forget to 'git add'?\n"
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "037-sup-highlights-published",
+      "remote",
+      "-v"
+    ],
+    "returncode": 0,
+    "stdout": "origin\t/workspace/scratch/46b31bb4dff6/037-release-source (fetch)\norigin\tfile:///dev/null (push)\ntrial-delivery\t/workspace/scratch/46b31bb4dff6/037-sup-highlights-published-delivery.git (fetch)\ntrial-delivery\t/workspace/scratch/46b31bb4dff6/037-sup-highlights-published-delivery.git (push)\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "037-sup-highlights-published",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

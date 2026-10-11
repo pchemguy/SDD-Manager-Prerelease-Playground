@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "variant": "core",
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "scope": "Complete independent reconciliation and ordinary final reporting assessment at actual blocked-main stop; wholefinalworkflow/evidencemainpublication not completed",
+  "scoped_reporting_reconciliation_grade": "Passed",
+  "full_final_workflow_grade": "Blocked",
+  "assessed_at": "2026-10-10T19:57:44.575686+00:00",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "integration_branch": "main",
+    "integration_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "phase_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+    "merge_parents": [
+      "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+      "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+    ],
+    "tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef"
+  },
+  "evidence": {
+    "final_ordinary_report": "FINAL-ORDINARY-REPORT.md",
+    "final_ordinary_report_sha256": "00ecbc765ab57d1357f17ee9fef947dc9c2a60734a80752376e1505a6dea9961",
+    "A013_final_independent_assessment": "A013-FINAL-INDEPENDENT-ASSESSMENT.json",
+    "A013_final_independent_assessment_sha256": "ef96dabb49056c5be080a33a03d19abf0f1fc0f323cc955b424374a02c5b1dc8",
+    "reconciliation": "FINAL-CURRENT-RECONCILIATION.json",
+    "reconciliation_sha256": "722cafebfcefc77d558e7ca2f35a72534cd15c2075f053d42b2d94193cc849fa",
+    "read_only_proofs": "FINAL-READONLY-PROOFS.json",
+    "read_only_proofs_sha256": "84d9c30811efed29df2a3a6c417ff45596fc964945fbd4a19889c53613a87f11"
+  },
+  "independent_lifecycle_checks": [
+    {
+      "criterion": "All27IDs/32required/2optional/allattempts and14separate supplements reconciled",
+      "status": "Passed within documented retained evidence",
+      "basis": "Original27P2F3Blocked; effective29P3Blocked with correctedpins/firstfailures preserved; optional2Notrun and native/client/LOCAL/provider classes distinct"
+    },
+    {
+      "criterion": "Commands/Gitrefs/parents/hostedidentities/source/assessment hashes reconciled",
+      "status": "Passed within explicit provenance limits",
+      "basis": "Actual549a parent[fbe,c05]tree190b clean; phasec05published/live mainfbe unchanged; inspected finalactualcommands and snapshot hashes; independentA13Blocked corroborated; no consumer/rootPassedtrust alone"
+    },
+    {
+      "criterion": "Four-answer ordinary reached report and stopping/next-action checkpoint",
+      "status": "Passed",
+      "basis": "Concrete delivered findings/fixes/confidence/actions/explicit no confirmedconsumerinstructiondefect bounded to inspection, currentBlockreason/no retry/no release; priorprovisional records separately retained"
+    },
+    {
+      "criterion": "Reportplacement/code review vs tests/closureordering/TODOaggregation",
+      "status": "Passed within assessed partialpublicationboundary",
+      "basis": "ExactT0162.2 andT017PHASE/IMPLEMENTATION pair; separate coherent review/findings/provenance; issuebeforemilestone afterworkingtip publication; no unresolvedcodeTODO but publicationBlockexplicit"
+    },
+    {
+      "criterion": "Final evidence-only two-parent integration and mainpublication",
+      "status": "Blocked / Not completed",
+      "basis": "Productdefault549a unpublished after2autoreviewrejections beforelaunch; evidence integration prerequisite missing; existingevidencebranch may publish scoped report only; no conditional preview exists"
+    }
+  ],
+  "first_attempts_and_interventions": {
+    "retained_prior_assessment_record_count": 37,
+    "original_A004_A005_failed": "Preserved; corrected bounded separate recheckPasses not retroactiveoriginalgrade",
+    "A013": "Firstsetup/logging/childflags/docs-cleanup/wholehistoryguard/assessorcomposition failures and originaldeterministic9Pass+publishedFail retained in sealedA013evidence; finalBlocked",
+    "A027preparatory": "OriginalNULJSONscreen rejection, firstextension-based all7guardclaim rejected byrootgenericJSONsniff, replacementfragment builderSyntaxError retained; new9filegenericguardpassed derivative with exactinverse; priorprovisional2.3 shorthand corrected byexplicitTASKS pair",
+    "publication": "Both defaultpushs rejected beforeGitlaunch; no fabricatedprocessstatus/providerwrite; stop/no workaround"
+  },
+  "findings_and_proposals": {
+    "confirmed_current_product_runtime_defect": "None established by final reporting inspection; knownM1.2-001/M2.2-001/M2.2-002 resolved and deduplicated withownerprovenance",
+    "consumer_instruction_defect": "No confirmedinstructiondefect withinactualA13/A27boundedinspection; platformapproval barrier not reclassified aspluginfailure",
+    "source_harness_fixes": "Published correctedA004/A005criteria scope retained separately; source-onlysupporttests/publisher/package checks do not upgrade behavioral/native readiness",
+    "bounded_action": "Retainlocal549a/publishedphasec05/reportingbranch and exactblockedproof; future exactdefaultpublication needs platformrecognizedexplicitauthority; no retry bythis assessor",
+    "no_automatic_migration_or_new_product_repair_proposed": true
+  },
+  "publishclaim_limits": [
+    "Current mainfbe unchanged; defaultproduct/evidence integration not completed, requiredreadinessfalse",
+    "OriginalA14NULJSON remains inheritedpublicationformatgap; firstrejected derivativeguardclaim retained; noallhistoricalJSONguardpass",
+    "Allnewfinalassessmentfiles screened actualpinned wholefileclean_bytes and genericJSONsniff/no_secret regardlessextension",
+    "No producttests/providerwrites/ref/index/source/evidence mutation or frozen038\u2013041prose/code reads byassessor",
+    "Prospective conditional evidence merge must be assessed separately iflaterprepared; none existsnow",
+    "Final ordinary report and61actual artifacts plus actual34-entry currentregistries now independently verified as published on existing evidencebranch; this does not publish549a/default or completeevidencemain workflow."
+  ],
+  "pinned_guard_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "published_actual_report_and_registry_verification": {
+    "path": "FINAL-PUBLISHED-RECORD-PROOFS.json",
+    "sha256": "0bd7028b971883d0ff429a970ec93eb3df0688c9b0eea5e2b7b3206735c61fd2",
+    "report_and61artifacts_commit": "957610922c8f16c72e3804bc59051d05200e1330",
+    "A013grade_commit": "858f4533ae960e1ef98b6492e5d67cb0542ca00a",
+    "root_current27P2F3B_and29P3B_registries_exact_verified": true,
+    "main_still_fbe": true
+  }
+}

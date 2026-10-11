@@ -1,0 +1,14 @@
+{
+  "SOURCE-PUBLISHER-APPLICABILITY.json": {
+    "sha256": "925abae156a6c7be25e3ba1e148a75e4021e109f881d1df57d378479908968cc",
+    "bytes": 1777
+  },
+  "fresh-repair-RESULT.json": {
+    "sha256": "d69f8d524ee8cfe13c62ea3580969ec79bcab37c08a62c0eb9612eb02eee9f92",
+    "bytes": 1493
+  },
+  "repaired-complete-rerun-RESULT.json": {
+    "sha256": "231c35fc605c3c6907204c549016af628a13d53cc42f907c2b90f82c9c5e70e1",
+    "bytes": 1252
+  }
+}

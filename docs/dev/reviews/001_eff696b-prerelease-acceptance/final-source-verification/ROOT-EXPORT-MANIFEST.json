@@ -1,0 +1,18 @@
+{
+  "SOURCE-INTEGRITY.json": {
+    "sha256": "7b82867cd6bd0d9f450231a79f76f81febc37398ce449e5096f513cff03a945e",
+    "bytes": 16273
+  },
+  "command.json": {
+    "sha256": "3b4e0c0b905d95d15e2a17af808c1443f5487a0614392d7dfa251faeadec5a47",
+    "bytes": 736
+  },
+  "stderr.bin": {
+    "sha256": "51ec02612e6dc146631d41b9adbafd875fa175309f3a3f546d14ae83720e707f",
+    "bytes": 18153
+  },
+  "stdout.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

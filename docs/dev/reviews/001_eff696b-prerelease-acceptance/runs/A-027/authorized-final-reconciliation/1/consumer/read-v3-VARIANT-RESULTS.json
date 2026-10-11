@@ -1,0 +1,240 @@
+{
+  "A-001.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json"
+  },
+  "A-002.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-002/1/ASSESSMENT.json"
+  },
+  "A-003.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json"
+  },
+  "A-004.core": {
+    "status": "Failed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Original criteria Failed retained; separate corrected published bounded reassessment Passed in independent current register; original outcome unchanged.",
+    "assessment_path": "runs/A-004/1/ASSESSMENT.json"
+  },
+  "A-005.core": {
+    "status": "Failed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Original criteria Failed retained; separate corrected published bounded reassessment Passed in independent current register; original outcome unchanged.",
+    "assessment_path": "runs/A-005/1/ASSESSMENT.json"
+  },
+  "A-006.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-006/1/ASSESSMENT.json"
+  },
+  "A-007.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json"
+  },
+  "A-008.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-008/1/ASSESSMENT.json"
+  },
+  "A-009.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-009/1/ASSESSMENT.json"
+  },
+  "A-010.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-010/1/ASSESSMENT.json"
+  },
+  "A-011.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-011/1/ASSESSMENT.json"
+  },
+  "A-012.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-012/1/ASSESSMENT.json"
+  },
+  "A-013.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Additive independent eventual Passed after explicit authorized exactmain549 publication; originalBlocked/rejections/restoration/assistance retained.",
+    "assessment_path": "runs/A-013/authorized-publication-reassessment/1/ASSESSMENT.json"
+  },
+  "A-014.cross-phase": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Additive independently assessed eventual authorized cross-phase Passed; actual T009/Phase1 integration/T010 trial refs published. First Blocked, assistance, failures and T011/Phase2 limits retained.",
+    "assessment_path": "runs/A-014/cross-phase/1/authorized-live-resumption/final-independent/final/ASSESSMENT.json"
+  },
+  "A-014.prerequisite-refusal": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json"
+  },
+  "A-015.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-015/1/ASSESSMENT.json"
+  },
+  "A-016.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/ASSESSMENT.json"
+  },
+  "A-017.failed-check": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-017/1/ASSESSMENT.json"
+  },
+  "A-018.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-018/1/ASSESSMENT.json"
+  },
+  "A-019.integration-recovery": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-019/1/ASSESSMENT.json"
+  },
+  "A-020.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json"
+  },
+  "A-021.partial-transfer": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-021/1/ASSESSMENT.json"
+  },
+  "A-022.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-022/1/ASSESSMENT.json"
+  },
+  "A-023.controlled-reconciliation": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "controlled",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-023/controlled-reconciliation/assessment/1/ASSESSMENT.json"
+  },
+  "A-023.live-response-loss": {
+    "status": "Not run",
+    "agent_behavior_assessed": false,
+    "evidence_class": "live-provider",
+    "reason": "Reporting disposition only; not a successful product prerequisite",
+    "assessment_path": ""
+  },
+  "A-024.denial": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "controlled",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/denial/1/ASSESSMENT.json"
+  },
+  "A-024.rate-limit": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "controlled",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/rate-limit/1/ASSESSMENT.json"
+  },
+  "A-024.unavailable-access": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "controlled",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-024/unavailable-access/1/ASSESSMENT.json"
+  },
+  "A-024.native-recovery": {
+    "status": "Not run",
+    "agent_behavior_assessed": false,
+    "evidence_class": "native",
+    "reason": "Reporting disposition only; not a successful product prerequisite",
+    "assessment_path": ""
+  },
+  "A-025.core": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-025/1/ASSESSMENT.json"
+  },
+  "A-026.empty-selection": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/empty-selection/1/ASSESSMENT.json"
+  },
+  "A-026.failing-baseline": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/failing-baseline/1/ASSESSMENT.json"
+  },
+  "A-026.preservation": {
+    "status": "Passed",
+    "agent_behavior_assessed": true,
+    "evidence_class": "consumer",
+    "reason": "Usable only within independently recorded bounded contract/actual checkpoint and publication; source/client/native/isolation limits remain",
+    "assessment_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-026/preservation/1/ASSESSMENT.json"
+  },
+  "A-027.core": {
+    "status": "Running",
+    "agent_behavior_assessed": false,
+    "evidence_class": "inspection",
+    "reason": "Fresh current report reconciliation and actual final evidence integration pending; original Blocked assessment retained.",
+    "assessment_path": "runs/A-027/1/final-independent/FINAL-INDEPENDENT-ASSESSMENT.json"
+  }
+}

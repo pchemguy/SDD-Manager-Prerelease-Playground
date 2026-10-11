@@ -1,0 +1,37 @@
+{
+  "checkpoint_refs": {
+    "product_branch": "a019/target",
+    "product_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "integration_branch": "a019/target",
+    "integration_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "merge_parents": [
+      "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+      "bbd5b80e588337f14d8ec3221fea2aded33f0239"
+    ],
+    "incoming_branch": "a019/incoming",
+    "incoming_commit": "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+    "tree": "b57a3f4c8e1b90dc19e96546fb1f5317c6760ba2"
+  },
+  "local_publication": {
+    "remote": "trial-delivery",
+    "path": "/workspace/scratch/46b31bb4dff6/037-a019-remote.git",
+    "ref": "refs/heads/a019/target",
+    "commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "readback": "bbd5b80e588337f14d8ec3221fea2aded33f0239\trefs/heads/a019/incoming\n2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749\trefs/heads/a019/target\n",
+    "incoming_retained": true
+  },
+  "github_origin_trial_write": false,
+  "historical_evidence_remote": {
+    "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance",
+    "observed_commit": "2a9d8c00724ed1bb7bb8aef9a0a571191a9de1a4",
+    "all_selected_setup_trigger_and_review_publications_are_ancestors": true,
+    "observed_at": "2026-10-10T16:16:16.971977+00:00"
+  },
+  "final_evidence_publication": "Pending root publication; these new assessor files are locally verified only",
+  "git_metadata_absent": [
+    "MERGE_HEAD",
+    "MERGE_MSG",
+    "MERGE_MODE",
+    "AUTO_MERGE"
+  ]
+}

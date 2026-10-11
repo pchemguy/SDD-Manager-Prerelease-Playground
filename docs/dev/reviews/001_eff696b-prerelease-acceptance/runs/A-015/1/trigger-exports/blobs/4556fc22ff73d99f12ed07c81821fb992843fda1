@@ -1,0 +1,4 @@
+"""TextStats text API; named-file support follows in T-002."""
+from .core import TextStats, count_text
+
+__all__ = ["TextStats", "count_text"]

@@ -1,0 +1,496 @@
+test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... 
+  test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) (empty='unit') ... ERROR
+  test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) (empty='integration') ... ERROR
+test_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ERROR
+test_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ERROR
+test_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok
+test_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok
+test_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok
+test_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok
+test_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok
+test_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok
+test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok
+test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok
+test_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok
+test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok
+test_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok
+test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok
+test_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok
+test_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok
+test_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok
+test_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok
+test_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok
+test_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok
+test_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok
+test_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok
+
+======================================================================
+ERROR: test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) (empty='unit')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 113, in test_either_empty_suite_is_rejected
+    result = self.invoke_fixture(unit, integration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 99, in invoke_fixture
+    return subprocess.run([sys.executable, -B, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) (empty='integration')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 113, in test_either_empty_suite_is_rejected
+    result = self.invoke_fixture(unit, integration)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 99, in invoke_fixture
+    return subprocess.run([sys.executable, -B, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 105, in test_nonempty_success_reports_independent_counts
+    result = self.invoke_fixture(self.GOOD, self.GOOD)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 99, in invoke_fixture
+    return subprocess.run([sys.executable, -B, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 119, in test_product_failure_is_propagated
+    result = self.invoke_fixture(self.BAD, self.GOOD)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 99, in invoke_fixture
+    return subprocess.run([sys.executable, -B, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.010s
+
+FAILED (errors=4)
+test_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok
+test_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok
+test_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok
+test_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok
+test_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok
+test_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ERROR
+test_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok
+test_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok
+test_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ERROR
+test_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ERROR
+test_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ERROR
+test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... 
+  test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/absent.txt'), options=[]) ... ERROR
+  test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/absent.txt'), options=['--keep-bom']) ... ERROR
+  test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/bad.txt'), options=[]) ... ERROR
+  test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/bad.txt'), options=['--keep-bom']) ... ERROR
+test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... 
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt']) ... ERROR
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom']) ... ERROR
+test_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... 
+  test_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) (option='--unknown') ... ERROR
+  test_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) (option='--keep') ... ERROR
+test_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok
+test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ERROR
+test_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ERROR
+test_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ERROR
+
+======================================================================
+ERROR: test_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_api.py", line 54, in test_initial_import_is_silent_in_fresh_process
+    result = subprocess.run([sys.executable, -B, "-c", "import textstats"], capture_output=True, text=True)
+                                              ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 47, in test_dash_filenames_and_double_dash_termination
+    result = self.invoke('--', name, cwd=directory)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 53, in test_exactly_one_input_is_required
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 35, in test_help_without_input
+    result = self.invoke(option)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/absent.txt'), options=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 66, in test_missing_and_invalid_utf8_are_clean_input_failures
+    result = self.invoke(*options, str(path))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/absent.txt'), options=['--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 66, in test_missing_and_invalid_utf8_are_clean_input_failures
+    result = self.invoke(*options, str(path))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/bad.txt'), options=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 66, in test_missing_and_invalid_utf8_are_clean_input_failures
+    result = self.invoke(*options, str(path))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) (path=PosixPath('/tmp/tmpgc1bxxez/bad.txt'), options=['--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 66, in test_missing_and_invalid_utf8_are_clean_input_failures
+    result = self.invoke(*options, str(path))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['--keep-bom', '/tmp/tmplm7t9cj8/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmplm7t9cj8/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 28, in test_named_file_matrix_and_bom_option_order
+    result = self.invoke(*args)
+             ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) (option='--unknown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 76, in test_unknown_option_is_usage_even_with_missing_input
+    result = self.invoke(option, 'nonexistent.txt')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) (option='--keep')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 76, in test_unknown_option_is_usage_even_with_missing_input
+    result = self.invoke(option, 'nonexistent.txt')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 17, in invoke
+    return subprocess.run([sys.executable, -B, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_distribution.py", line 59, in test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy
+    verify_archive(faulty)
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tools/check_distribution.py", line 44, in verify_archive
+    imported = invoke(['-c', 'import textstats; print(textstats.__file__)'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tools/check_distribution.py", line 41, in invoke
+    return subprocess.run([sys.executable, -B, '-s', *arguments], cwd=root,
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_distribution.py", line 46, in test_checker_verifies_real_extracted_module_with_polluted_import_environment
+    self.assertGreaterEqual(verify_archive(archive), 10)
+                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tools/check_distribution.py", line 44, in verify_archive
+    imported = invoke(['-c', 'import textstats; print(textstats.__file__)'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tools/check_distribution.py", line 41, in invoke
+    return subprocess.run([sys.executable, -B, '-s', *arguments], cwd=root,
+                                            ^
+NameError: name 'B' is not defined
+
+======================================================================
+ERROR: test_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_distribution.py", line 62, in test_documented_checker_script_builds_and_runs
+    result = subprocess.run([sys.executable, -B, str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
+                                              ^
+NameError: name 'B' is not defined
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.021s
+
+FAILED (errors=31)

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "A-020",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Owned task/amendment commit excludes every unrelated staged/unstaged path; exact content, modes and index intent remain.",
+    "No blanket staging/reset/stash; inspect parent-to-commit diff and before/after index blobs, not only clean-tree claim."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "cmd": [
+    "git",
+    "--no-optional-locks",
+    "-C",
+    "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "status",
+    "--porcelain=v1"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "observed_after_all_assessor_owned_runtime_checks": true,
+  "assessor_product_mutations": false
+}

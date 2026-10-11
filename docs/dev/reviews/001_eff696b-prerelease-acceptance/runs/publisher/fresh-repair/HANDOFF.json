@@ -1,0 +1,11 @@
+{
+  "source": "170adcdb861df9ea6328b4986fa3a1abf9e2de54",
+  "tag": "v0.15.0-cp014-repair",
+  "notes_source": "170adcdb861df9ea6328b4986fa3a1abf9e2de54",
+  "notes": "## Campaign 037 fresh-create repair proof\n\nTest-only isolated metadata fixture with acknowledged-ID publisher readback.\n\n## Preserved literal section\n\n`$(touch SHOULD_NOT_EXIST)` remains literal.\n",
+  "notes_sha256": "5abb87b0d74e040839cbe4dd2196a2d5126cbec205a8c976782868cc02e20d3c",
+  "publish": true,
+  "prerelease": true,
+  "make_latest": false,
+  "request_id": "037-cp014-fresh-repair-001"
+}

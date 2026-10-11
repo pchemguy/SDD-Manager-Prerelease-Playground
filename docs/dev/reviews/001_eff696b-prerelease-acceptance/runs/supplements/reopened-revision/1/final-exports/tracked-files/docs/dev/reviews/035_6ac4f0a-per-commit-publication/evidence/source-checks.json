@@ -1,0 +1,11 @@
+{
+  "source": "78a6c2ec8dc841ebb49af161c527e4464ae3eaf1",
+  "changedMarkdownFiles": 11,
+  "currentLocalLinksAndAnchors": 125,
+  "style": "Parser-based block separation and marker checks on changed Markdown and Markdown templates; unchanged nested indentation not reaudited",
+  "closedRecordsUnchanged": true,
+  "version": "0.15.0",
+  "limits": [
+    "Eight workflow scenarios are separately assessed against source, not executed by fresh live agents."
+  ]
+}

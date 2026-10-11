@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P3",
+  "case_id": "A-012",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Observed exact reached paused-phase integration after completed consumer seal",
+  "pending_operation": null,
+  "next_action": "Publish independent grade only after lifecycle judgment and safe complete artifact manifest",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-json-and-stdin",
+    "product_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+    "integration_branch": "phase/2-json-and-stdin",
+    "integration_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+    "merge_parents": [
+      "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+      "160c0a980286c68f62d0d13b3238dad0748885e9"
+    ],
+    "remote": "origin",
+    "remote_ref": "refs/heads/phase/2-json-and-stdin",
+    "remote_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea"
+  },
+  "evidence_paths": [
+    "037-a012-final-artifacts/final/runtime/literal-evidence.json"
+  ]
+}

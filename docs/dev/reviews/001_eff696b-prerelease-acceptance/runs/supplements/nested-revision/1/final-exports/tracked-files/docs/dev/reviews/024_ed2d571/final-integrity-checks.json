@@ -1,0 +1,20 @@
+{
+  "reviewed_source": "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+  "source_unchanged": true,
+  "owned_changes_only": true,
+  "report_local_links_resolve": true,
+  "canonical_findings": [
+    "R-001",
+    "R-002",
+    "R-003",
+    "R-004",
+    "R-005"
+  ],
+  "defects": 4,
+  "evidence_gaps": 1,
+  "support_tests": 107,
+  "whitespace_check": "Passed",
+  "review_branch": "revision/024_ed2d571-pre-release-review",
+  "source_repairs": 0,
+  "new_live_campaign": false
+}

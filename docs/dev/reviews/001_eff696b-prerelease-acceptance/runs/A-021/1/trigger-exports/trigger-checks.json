@@ -1,0 +1,50 @@
+{
+  "status": "Trigger independently observed; final recovery grade pending",
+  "checks": {
+    "all_preexisting_refs_exact": true,
+    "receipt_held2": true,
+    "actual_commands_match_consumer_selection": true,
+    "raw_index_exact": true,
+    "HEAD_exact": true,
+    "unstaged_exact_selected": true,
+    "source_owner_unchanged": true,
+    "staged_empty": true,
+    "T-018_both_real_unchecked_owners": true,
+    "T-019_both_real_unchecked_owners": true,
+    "T-020_both_real_unchecked_owners": true,
+    "T-021_both_real_unchecked_owners": true,
+    "T-022_both_real_unchecked_owners": true,
+    "T-023_both_real_unchecked_owners": true,
+    "T-024_both_real_unchecked_owners": true,
+    "receipt_docs/dev/SPEC.md": true,
+    "receipt_docs/dev/PLAN.md": true,
+    "receipt_docs/dev/TASKS.md": true,
+    "receipt_docs/dev/FEATURE-TASKS.md": true,
+    "receipt_docs/dev/SPEC-REVIEW-REPORT.md": true,
+    "receipt_docs/dev/PLAN-REVIEW-REPORT.md": true,
+    "receipt_docs/dev/TASKS-REVIEW-REPORT.md": true,
+    "receipt_docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": true,
+    "receipt_AGENTS.md": true,
+    "receipt_docs/dev/features/002_e7cae5b-named-file-ranges/README.md": true,
+    "actual_published_start_refs_exact": true
+  },
+  "added_refs": {
+    "refs/remotes/origin/revision/001_eff696b-prerelease-acceptance": "8e51a8c2e379d349e7babdfcbbd8d13d6704fe2d"
+  },
+  "trigger": "Canonical TASKS now has T018\u2013024 pending entries; unchanged FEATURE-TASKS still has all7 executable pending entries. SPEC/PLAN genuinely incorporated. Source retirement operation3 and QC/navigationoperation4 not executed.",
+  "actor": "Consumer-selected argv invoked by actual fresh consumer through caller-authorized wrapper; no assessor edits",
+  "command_channels": "Full receipt command argv/results retained verbatim, outputs empty; wrapper command/result retained in consumer observations. Native full transcript unavailable.",
+  "interventions": [
+    "InitialconsumerJavaScriptsyntaxerror corrected beforeexecution",
+    "Truncatedreads followed byselectedrereads",
+    "Callerholdafter2",
+    "Assessor firstexportassert failed onextra evidence ref, retained separately"
+  ],
+  "limits": [
+    "Shared broad filesystem, no strict isolation",
+    "Local bare remote, no liveGitHubproductdelivery",
+    "No nativekill/crossmachineextension",
+    "No final grade until fresh continuation"
+  ],
+  "metadata_intervention": "Root prior metadata-only evidencefetch8e51a8c recorded inSTARTpublishedbee04f2; allactualSTARTrefs/index verified exact. No task/workfile mutation."
+}

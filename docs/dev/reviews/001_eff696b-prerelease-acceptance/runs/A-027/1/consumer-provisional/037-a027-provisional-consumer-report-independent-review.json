@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "case_id": "A-027",
+  "stage": "Independent review of fresh provisional ordinary reporting consumer; additive only",
+  "assessed_at": "2026-10-10T19:12:46.786600+00:00",
+  "status": "Provisional report coherent within explicitly pending boundary; final case grade Pending",
+  "agent_behavior_assessed": true,
+  "current_consumer_report": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a027-consumer-report.md",
+    "sha256": "a0da309be62131f8d25cfa6d3e4b9166906dd67a6edfd34def6d93e20840890b",
+    "byte_length": 13384
+  },
+  "initial_provisional_report_retained": {
+    "actual_report_source": "/workspace/scratch/46b31bb4dff6/037-a027-consumer-report.md",
+    "snapshot": "/workspace/scratch/46b31bb4dff6/037-a027-consumer-artifacts/provisional-report.md",
+    "sha256": "179fd969e351035e0e79ecb8bbdb02c4b742d41134507aa41eac2b1027623d74",
+    "captured_utc": "2026-10-10T19:04:25.786872+00:00",
+    "state": "Provisional; awaiting actual product final reports/integration"
+  },
+  "snapshot_source_integrity": [
+    {
+      "snapshot": "initial-source-00-ordinary-input.md",
+      "declared_sha256": "9c30a42e371064a5c858b2fc2e160a1c4ea8ba763d1e08de4690aea6a9e36c62",
+      "observed_sha256": "9c30a42e371064a5c858b2fc2e160a1c4ea8ba763d1e08de4690aea6a9e36c62",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-01-AGENTS.md",
+      "declared_sha256": "a20f9982bfcc82bc6220d7d3f5246a4d0849a03a71b2c0e22e172348ec258af3",
+      "observed_sha256": "a20f9982bfcc82bc6220d7d3f5246a4d0849a03a71b2c0e22e172348ec258af3",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-02-SKILL.md",
+      "declared_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "observed_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-03-SKILL.md",
+      "declared_sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "observed_sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-04-completion-reports.md",
+      "declared_sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "observed_sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-05-TASKS.md",
+      "declared_sha256": "bae83dd77578f0eee03fecfc7df2ff17fc19df25ba5949ea43056816853b985c",
+      "observed_sha256": "bae83dd77578f0eee03fecfc7df2ff17fc19df25ba5949ea43056816853b985c",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-06-PROJECT.md",
+      "declared_sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+      "observed_sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-07-SPEC.md",
+      "declared_sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+      "observed_sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-08-PLAN.md",
+      "declared_sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+      "observed_sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-09-DIAGNOSTIC-REPORT.md",
+      "declared_sha256": "1ecc0e6cdc5b411b95a9ae5179940c937f4b08f0c1c83d0ae54939e7aa37e486",
+      "observed_sha256": "1ecc0e6cdc5b411b95a9ae5179940c937f4b08f0c1c83d0ae54939e7aa37e486",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-10-VARIANT-RESULTS.json",
+      "declared_sha256": "c34075349406499249de10d9aa85f76be19eb6b3fe259df6d168c08ddcc50cfe",
+      "observed_sha256": "c34075349406499249de10d9aa85f76be19eb6b3fe259df6d168c08ddcc50cfe",
+      "match": true
+    },
+    {
+      "snapshot": "initial-source-11-VARIANT-RESULTS.corrected-rechecks.json",
+      "declared_sha256": "0bfc43f10837683b0b72181049d913fd50479d9f9acc61eefc1f40de539b5538",
+      "observed_sha256": "0bfc43f10837683b0b72181049d913fd50479d9f9acc61eefc1f40de539b5538",
+      "match": true
+    }
+  ],
+  "retained_initial_a013_observations": {
+    "sha256": "2c0f62bf0bc51f561ea657bec4c4c5f1da81811be61a081eef4b2abb15db70ce",
+    "bytes": 9425124,
+    "command_count": 223,
+    "claims_attributed_to_actual_record_indices": [
+      186,
+      187,
+      192,
+      195,
+      198,
+      208,
+      209
+    ],
+    "retained_records_not_new_assessor_product_tests": true
+  },
+  "source_verification_snapshot_checks": [
+    {
+      "snapshot": "final-source-publisher-command.json",
+      "sha256": "05e1bcfdff64e6af009630ee5788411a671631a1bbec4832bc51e9dbcc5f5b7f",
+      "matches_consumer_snapshot_provenance": true
+    },
+    {
+      "snapshot": "final-source-publisher-stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches_consumer_snapshot_provenance": true
+    },
+    {
+      "snapshot": "final-source-publisher-stderr.bin",
+      "sha256": "677c4481ddd3525b63c9a11ca6b12d3817bf23ae2cdf586c120cd274a22d710b",
+      "matches_consumer_snapshot_provenance": true
+    },
+    {
+      "snapshot": "final-source-publisher-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "bd4fd94b5e0fe49df81e1bedd02c3579b9fd22f98c04bd976a76981c6b5cefa7",
+      "matches_consumer_snapshot_provenance": true
+    },
+    {
+      "snapshot": "final-source-package-SOURCE-ARCHIVE.json",
+      "sha256": "c119d41c34a3a1de82b419ce853f61b513a86d65575126d16857d2d960c04993",
+      "matches_consumer_snapshot_provenance": true
+    },
+    {
+      "snapshot": "final-source-package-sdd-manager.zip.sha256",
+      "sha256": "7be1feb3278e39d760c772c5cc25a4d51510c1617d0ed67f0385e8133679b940",
+      "matches_consumer_snapshot_provenance": true
+    },
+    {
+      "snapshot": "final-source-package-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "65aede5bc08d1ab8bb2357294a879d5c30ee67987ed05c33a862c14f446fda49",
+      "matches_consumer_snapshot_provenance": true
+    }
+  ],
+  "report_assessment": {
+    "report_placement": "External ordinary status report is concrete and reviewable; actual T016 milestone2.2 report and T017 milestone2.3/phase pair placement require final product evidence, not this status report",
+    "code_review_versus_testing": "Draft correctly separates recorded product implementation review, recorded actual runtime commands, independently graded historical cases, source support tests and its own read-only report inspection; final review conclusions remain pending",
+    "closure_ordering": "Draft attributes actual T013\u2013015 push/readback/native closure records, does not infer T016 publication from local owning commit, and holds T017/default integration; final record order still needs verification",
+    "TODO_aggregation": "Draft preserves later scoped supplement/source limits and historical subtotals; final T016/T017 actual report TODO aggregation remains pending and cannot be supplied by campaign totals alone",
+    "original_and_corrected_lenses": "Correctly preserves27originalPass/2originalFail/3unresolved vs29effectivePass/3unresolved, twooptionalNotrun outside32, supplements outside all34",
+    "supplement_current_selection": "QCfinalsame-cycle scopedPass retained separately from pending trigger; split consumerPass/fixtureFail and strictcreator39errors limits retained; no default upgrades",
+    "facility_and_isolation": "LOCAL/controlled/provider/native/install/runtime/platform/shared filesystem limits explicit; no missing facility pass inferred",
+    "four_answers": "Concrete findings/confidence/actions/bounded next action present; explicit no confirmed defect conclusion is bounded to this reporting inspection, not unqualified package readiness",
+    "stopping_next_action": "Correctly holds final report, completePhase2/defaultintegration, no version/release/nextphase; fresh final reached records required"
+  },
+  "intermediate_reached_state": {
+    "observed_utc": "2026-10-10T19:10:54.160374+00:00",
+    "source": "Actual parent collaboration message; not own live readback",
+    "T016_candidate_delegated_acceptance_evidence": "9338f067a575511b6d818a6898a458957f4670a8",
+    "T016_local_commit": "b49a26b36d68dc9bab8cf83633f5b7a2aae81eea",
+    "T016_publication_and_native_readbacks": "In progress; not inferred complete",
+    "cursor_publication": "19c3d45f1b46f86c5ab04a9dc6052d8aefaa00d1",
+    "T017_and_integration": "Pending"
+  },
+  "required_final_refresh": [
+    "Actual final independently assessed/published A013 T016/T017 records, actual report placement/code review/TODO aggregation and exact closure/publication chronology",
+    "Actual two-parent completed-product main integration/productcompletionSHA and exact live main readback",
+    "Final four-answer diagnostic report and linked bounded proposals published",
+    "Final evidence-only two-parent integration with exact ordered parents/campaign-only delta/source-and-assessment integrity plus main readback",
+    "Source final exact opening/main/frozen16 preservation provenance and originally guessed nonexistent-directory narrow probe retained as superseded historical error"
+  ],
+  "material_limits": [
+    "No final A013/A027 grade manufactured from provisional consumer prose or root-supplied intermediate identities",
+    "No product tests/build/provider writes/source/evidence/index/ref mutations by this assessor",
+    "All prior ledgers unchanged; this review artifact is additive",
+    "Original A014 inherited NUL JSON gap and first rejected derivative error remain explicit; no all-historical-JSON guard claim",
+    "No frozen038\u2013041 prose/code read"
+  ],
+  "guard": {
+    "actual_import": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/core.py",
+    "sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "new_artifact_bytes_and_generic_json_passed": true
+  },
+  "selected_actual_observation_readback_checks": [
+    {
+      "index": 186,
+      "actual_argv": [
+        "bash",
+        "-c",
+        "python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-trace-immutable.py tools/check_tests.py"
+      ],
+      "status": 0,
+      "stdout_sha256": "0a5251e38e8c4e9d2a8ae528da43b2c2a377be6c5494f7cb8960d3a7f3d96d50",
+      "stderr_sha256": "bd091d4c1e45626df74a5f3c4ff57e00ac957531f1382a14ab087f2ecf58c0d1"
+    },
+    {
+      "index": 187,
+      "actual_argv": [
+        "bash",
+        "-c",
+        "python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-trace-immutable.py -m unittest discover -s tests/unit -t . -v"
+      ],
+      "status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "c163c0c50127b01b5ebbe0170db6f20d20bcf15fd434ae2cf21911f25bf3fa3a"
+    },
+    {
+      "index": 192,
+      "actual_argv": [
+        "bash",
+        "-c",
+        "python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-trace-immutable.py -m unittest discover -s tests/integration -t . -v"
+      ],
+      "status": 0,
+      "stdout_sha256": "8a88b35a2e0e50aa662c0c7b7d7201a55b61c223ca358c66f0048ad62cb6b894",
+      "stderr_sha256": "e6e189dc52382d120b5282af9200a8a1c84cb786614d52fb23ee28610f9e3f78"
+    },
+    {
+      "index": 195,
+      "actual_argv": [
+        "bash",
+        "-c",
+        "python -B /workspace/scratch/46b31bb4dff6/037-a013-consumer-trace-immutable.py tools/check_distribution.py"
+      ],
+      "status": 0,
+      "stdout_sha256": "8d1ebe79133461455f13bd377f04e7c46f2f93c4e983dc79f62d0eb5b6a2ce74",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "index": 198,
+      "actual_argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-docs-retry.py"
+      ],
+      "status": 0,
+      "stdout_sha256": "993de9a62f85e68959a13e7a87d0c5f0e3bd573beecb7f53ae805f2571d0a2b5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "index": 208,
+      "actual_argv": [
+        "git",
+        "ls-remote",
+        "--heads",
+        "origin",
+        "refs/heads/phase/2-json-and-stdin"
+      ],
+      "status": 0,
+      "stdout_sha256": "99af2fd5f6787c138b6d7325ce98ea45ed47f72bba7634b2978f958314c9754a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "index": 209,
+      "actual_argv": [
+        "python",
+        "-B",
+        "/workspace/scratch/46b31bb4dff6/037-a013-consumer-close.py",
+        "T-015",
+        "16",
+        "5",
+        "ca24007134141265a1937c77e2fda504bb0d6129",
+        "37 unit/34 integration tests; 478 isolated module cases; all 12 README/API fences; exact eleven-file archive and 2776 corrected child flags verified."
+      ],
+      "status": 0,
+      "stdout_sha256": "a8c42d87966c05a5f474afe91628bf6a627163388f095c2204ad5653e7ea798f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "selected_actual_observation_readback_result": "Recorded statuses0,37unit/34integration,478extracted cases,exactT015remote and closure helper output independently read; provider nested records remain attributed and final review pending"
+}

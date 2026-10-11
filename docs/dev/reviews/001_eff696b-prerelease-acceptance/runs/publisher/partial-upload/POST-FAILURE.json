@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-10-10T10:48:00.036367+00:00",
+  "release": {
+    "id": 408880857,
+    "tag_name": "v0.15.0-cp014",
+    "name": "SDD Manager v0.15.0-cp014",
+    "body": "## Controlled live-provider trial\n\nIsolated metadata fixture for post-upload stop and read-before-retry.\n",
+    "draft": true,
+    "prerelease": true,
+    "assets": []
+  }
+}

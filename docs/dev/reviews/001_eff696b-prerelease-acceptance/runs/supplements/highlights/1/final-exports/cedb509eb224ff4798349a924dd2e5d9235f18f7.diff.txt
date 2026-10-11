@@ -1,0 +1,39 @@
+commit cedb509eb224ff4798349a924dd2e5d9235f18f7
+Merge: 5e4d990 5636481
+Author:     Codex <codex@openai.com>
+AuthorDate: Sat Oct 10 13:04:38 2026 -0400
+Commit:     Codex <codex@openai.com>
+CommitDate: Sat Oct 10 13:04:38 2026 -0400
+
+    Merge revision 042_5e4d990 — Task publication and continuation review
+    
+    Objective: Assess consistency of task closure, per-commit publication and
+    interrupted continuation while keeping parent campaign 037 suspended.
+    Review: Focused semantic inspection of completion-and-checkpoints.md and
+    git-workflows.md at 5e4d990e55817220661028f5e7ec643707bddd5a; eight source
+    assertions Passed, no confirmed inconsistencies. No behavioral task/client
+    acceptance, push-denial fixture or support-suite execution is claimed.
+    Delivered: Accepted focused review report, child navigation, active parent
+    suspension entry and shared navigation; no governing source edits.
+    Verification: Prospective merged state had no conflicts; staged diff check,
+    exact four accepted artifact hashes, child Markdown headings and all new
+    local links Passed. Every other baseline tracked file remained byte-identical,
+    including package/source and frozen campaign records. No task or release work.
+    Integration: Nested campaign 042_5e4d990; original opening commit
+    5636481308427f9e9efd39576e562f057db7acda; original branch-off/source baseline
+    5e4d990e55817220661028f5e7ec643707bddd5a. Child revision/042_5e4d990-task-publication-continuation-review
+    returns only to revision/037_a6c42dd-prerelease-review.
+    Pinned target parent 5e4d990e55817220661028f5e7ec643707bddd5a; child parent 5636481308427f9e9efd39576e562f057db7acda.
+    Delegated coordinator accepted these exact four artifacts in decision commit
+    b991e015485a29eb4cfb1a46fb62f699751804e0, record
+    runs/supplements/nested-revision/1/ARTIFACT-DECISION.json.
+    Included nested outcome: record-only focused review, zero source repairs.
+    Parent 037 remains incomplete and suspended; independent grade pending.
+    Target publication/readback and parent return are still required after this
+    commit; this summary does not itself establish closure or parent continuation.
+
+ .../REVISION-REPORT.md                             |  4 +++
+ .../README.md                                      |  5 +++
+ .../REVIEW-REPORT.md                               | 39 ++++++++++++++++++++++
+ docs/dev/reviews/README.md                         |  2 ++
+ 4 files changed, 50 insertions(+)

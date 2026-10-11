@@ -1,0 +1,200 @@
+{
+  "scope": "Delegated current startup acceptance before T013, not completed A013",
+  "accepted": true,
+  "product_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+  "independent_provisional_gate": {
+    "schema_version": 1,
+    "case_id": "A-013",
+    "status": "Passed",
+    "scope": "Independent provisional preparation-readiness gate before T-013; not runtime or completed case acceptance",
+    "agent_behavior_assessed": true,
+    "timestamp_utc": "2026-10-10T18:26:37.811001+00:00",
+    "checkpoint_refs": {
+      "product_branch": "phase/2-json-and-stdin",
+      "product_commit": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea"
+    },
+    "source_hashes": {
+      "PLAN.md": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+      "PROJECT.md": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+      "TASKS.md": "61d5a40036b5b4ecc9f078a81a19c4e00bb661abcc08d9df5344a69ef70afaca",
+      "layout.md": "144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502",
+      "DECOMPOSITION.md": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+      "SPEC-REVIEW-REPORT.md": "a9c482bfea63d5aefa9a03bcac46b02a99237bf497bf5b1ba0ae027c29786ef9",
+      "TASKS-REVIEW-REPORT.md": "8585c1ce53cdd3d100edf393bcaf81ce4bf6ba46fa8a9d5717608b3105a80354",
+      "PLAN-REVIEW-REPORT.md": "8f706ceee2341252986864685d3faedf56446523dd0d3790f481174d95f69179",
+      "SPEC.md": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+      "ARCHITECTURE.md": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5"
+    },
+    "actual_active_entries": 21,
+    "actual_checked": [
+      "T-001",
+      "T-002",
+      "T-003",
+      "T-004",
+      "T-005",
+      "T-006",
+      "T-007",
+      "T-008",
+      "T-009",
+      "T-018",
+      "T-019",
+      "T-020",
+      "T-021",
+      "T-022",
+      "T-023",
+      "T-024"
+    ],
+    "actual_pending": [
+      "T-013",
+      "T-014",
+      "T-015",
+      "T-016",
+      "T-017"
+    ],
+    "findings": [],
+    "assessment": [
+      "Reviewed current source and adjacent current QC gates against actual independent 77e7106 committed export. Governing hashes for PROJECT/design/SPEC/PLAN/layout match their current owning QC references; current TASKS is recorded in TASKS QC gate. Its latest recheck explicitly retains equivalent contracts/hierarchy/dependencies after completion/evidence-only changes.",
+      "Current R-010 requires borrowed byte input through EOF, strict complete UTF-8 independent of locale, open stdin after success/failure, no partial output, source/cause error identification and unchanged whole-file API. F contracts require range/BOM normalization and complete decode after END; T013/T014/T015 cover these with controlled seams and real subprocess/extraction checks.",
+      "Exactly 21 active canonical checkbox tasks: 16 checked; T013 through T017 alone pending. T010/T011/T012 are preserved as historical retired entries without current checkboxes. Three active Phase 2 delivery milestones 2.2/2.4/2.5, excluded dedicated whole-phase 2.3 and feature-extent 2.6; pending 2.2 has three delivery tasks plus mandatory T016 review.",
+      "T017 separately requires final code review and PHASE-REPORT plus final IMPLEMENTATION-REPORT aggregating admissible unresolved/deferred milestone/phase findings, provenance/options/tradeoffs/owners/resolutions, hosted closure then phase merge/publication. No completed feature review substitutes final phase review.",
+      "Existing historical amendment stop statements require later explicit authorization, which the rendered A013 request supplies. This authorization does not require a document-contract edit; consumer must record current selection/orientation rather than treat historical pending statements as runtime completion."
+    ],
+    "limits": [
+      "Hosted fresh association readbacks not included in this readiness gate; independent root/provider gate pending.",
+      "No product runtime tests executed for this provisional preparation gate. Final lifecycle acceptance remains pending.",
+      "First independent before sample was clean tracked/index state matching setup; ignored caches/archive additionally present at sample were individually recorded, not claimed absent."
+    ],
+    "evidence": [
+      "initial/before.json",
+      "initial/product-start.tar",
+      "initial/product-export/docs/dev/SPEC.md",
+      "initial/product-export/docs/dev/PLAN.md",
+      "initial/product-export/docs/dev/TASKS.md"
+    ]
+  },
+  "native_associations": [
+    {
+      "task_id": "T-013",
+      "issue_number": 14,
+      "native_id": 5791785817,
+      "milestone_number": 5,
+      "title": "[T-013] Add borrowed binary stdin acquisition",
+      "body_sha256": "0c278d2b786f4e350d90de4bfdc2eb4a2d0befca04c98b6cde942f21987619db",
+      "labels": [
+        [
+          12626943170,
+          "sdd-phase-2-Ranges-and-stdin"
+        ]
+      ]
+    },
+    {
+      "task_id": "T-014",
+      "issue_number": 15,
+      "native_id": 5791786390,
+      "milestone_number": 5,
+      "title": "[T-014] Integrate stdin across text CLI",
+      "body_sha256": "2dfabb363dab335ae9f4f7ab6a8bceaeb56421febdd5d0d1fc95294ef67e406d",
+      "labels": [
+        [
+          12626943170,
+          "sdd-phase-2-Ranges-and-stdin"
+        ]
+      ]
+    },
+    {
+      "task_id": "T-015",
+      "issue_number": 16,
+      "native_id": 5791786938,
+      "milestone_number": 5,
+      "title": "[T-015] Complete final documentation and source-package exits",
+      "body_sha256": "608f5bf4270bde5f0334faf6fdbacd682f0de29d14c6407915856b8fd8a707cd",
+      "labels": [
+        [
+          12626943170,
+          "sdd-phase-2-Ranges-and-stdin"
+        ]
+      ]
+    },
+    {
+      "task_id": "T-016",
+      "issue_number": 17,
+      "native_id": 5791787598,
+      "milestone_number": 5,
+      "title": "[T-016] Review, test and report milestone 2.2",
+      "body_sha256": "21d75ccff4e118259302567acf0d09d9a5e55537b9ec927d0932587e006b01ec",
+      "labels": [
+        [
+          12626943170,
+          "sdd-phase-2-Ranges-and-stdin"
+        ]
+      ]
+    },
+    {
+      "task_id": "T-017",
+      "issue_number": 18,
+      "native_id": 5791788182,
+      "milestone_number": 6,
+      "title": "[T-017] Review, test and report phase 2 and final delivery",
+      "body_sha256": "c13115bd0e54b4df46c5799eb516ddf493e8ea5522dbecc144812f9c7e363662",
+      "labels": [
+        [
+          12626943170,
+          "sdd-phase-2-Ranges-and-stdin"
+        ]
+      ]
+    }
+  ],
+  "provider_gets": [
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "d4b5683a762a4a8e290a80ad9822e0c4067f68b0640f3824ef7aeccbc5ce1190",
+      "response_bytes": 172627,
+      "headers": {
+        "X-RateLimit-Remaining": "4939",
+        "X-RateLimit-Reset": "1791657381",
+        "X-GitHub-Request-Id": "350D:31A05F:706F2CA:173184F7:6ACA8350"
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "48eb671254b8bf66eeece44cbc17354d6731107c464063793d684b79b5368b80",
+      "response_bytes": 18708,
+      "headers": {
+        "X-RateLimit-Remaining": "4938",
+        "X-RateLimit-Reset": "1791657381",
+        "X-GitHub-Request-Id": "349E:1028A8:7C6207:19874A7:6ACA8359"
+      }
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels/sdd-phase-2-Ranges-and-stdin",
+      "status": 200,
+      "response_sha256": "0865a5b4d17dcf20b170a6234baca04b310bc4636d7f1a7cfd70ade3e3b616eb",
+      "response_bytes": 366,
+      "headers": {
+        "X-RateLimit-Remaining": "4970",
+        "X-RateLimit-Reset": "1791658420",
+        "X-GitHub-Request-Id": "3598:350533:10ED6E1:13E6693:6ACA83E2"
+      }
+    }
+  ],
+  "bounded_future_plan": "After each exact task closing commit is published/read back and verified: GET existing associated issue; preserve title/body/labels/milestone/manual content; append only absent owning task/commit/actualcheck evidence comment; close completed; GET exactreadback. T016 accepted milestone report and allfour issuesclosed precede milestone5close; T017 accepted PHASE/IMPLEMENTATION reports and issue18closure precede milestone6close. Allclosureeffects must precede completedPhase2mainintegration. No new issue/milestone/label objects or otherowner/body modifications.",
+  "status_maintenance_scope": "Preserve prior currentgates ashistorical; record current explicitresume authorization and assessed/published77e conclusion in threeQC/TASKS/AGENTS as part owningT013. No governing contract/dependency/designstrategy change. Exact T013 candidate includingallQCidentities requires delegatedrootreview before closingcommit.",
+  "root_first_failures": [
+    {
+      "operation": "GET-only full start snapshot",
+      "script": "037-a013-safe-start-get.py",
+      "returncode": 1,
+      "failure": "urllib URLError: Tunnel connection failed:403Forbidden. No provider-write; independent root full snapshot absent. Original tool trace truncated; no complete separate-channel retention claimed. Existing exact script retained. Separate from consumer fresh successful native GET evidence inspected above."
+    },
+    {
+      "operation": "First startup gate creation",
+      "failure": "Assertion expected exactlytwo providerrecords; consumer concurrentlycompletedadditionalapprovedphase-labelGET. Stopped before any artifactwrite/stage/commit/push. Corrected to >=two with allactualrecords200GET; firsttwo associationlists retained. Original tooltrace remains; no independentlycomplete scriptarchive claimed."
+    }
+  ],
+  "limits": "Sharedfilesystem, explicitpackage loading,Python3.12.14 only; startup approval does not establish runtime/task/phase/installedclient/providerfutureeffects."
+}

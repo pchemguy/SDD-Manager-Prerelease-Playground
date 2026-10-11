@@ -1,0 +1,43 @@
+{
+  "own_native_closure_inspected_original_channels": [
+    {
+      "method": "PATCH",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+      "status": 200,
+      "response_sha256": "8b218b2d07f027e32453a234028b53631a5589a3403940d429e8cc604f7990bd",
+      "state": "closed",
+      "closed_at": "2026-10-10T19:30:53Z"
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/18",
+      "status": 200,
+      "response_sha256": "8b218b2d07f027e32453a234028b53631a5589a3403940d429e8cc604f7990bd",
+      "state": "closed",
+      "closed_at": "2026-10-10T19:30:53Z"
+    },
+    {
+      "method": "PATCH",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+      "status": 200,
+      "response_sha256": "1e213e0eaa163af3281a9bf4f36921e26d6bba0e9738e9519a8315fe0b3f639b",
+      "state": "closed",
+      "closed_at": "2026-10-10T19:31:15Z"
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/6",
+      "status": 200,
+      "response_sha256": "1e213e0eaa163af3281a9bf4f36921e26d6bba0e9738e9519a8315fe0b3f639b",
+      "state": "closed",
+      "closed_at": "2026-10-10T19:31:15Z"
+    }
+  ],
+  "independent_provider_GET": false,
+  "exact_original_report_pair_read": true,
+  "phase_report_sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+  "implementation_report_sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+  "reported_unresolved_code_TODO_set": [],
+  "published_resumption_proof_commit": "aa2a56b9058b790886096c1441a82dd35470de80",
+  "published_proof_bytes_match": true
+}

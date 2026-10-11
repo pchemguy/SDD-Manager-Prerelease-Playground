@@ -1,0 +1,47 @@
+{
+  "case_id": "A-019",
+  "assessment_publication": "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+  "positive_merge": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+  "actual_ordered_parents": [
+    "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "5b17e4650c64c7c735991931b591bdabb8069215"
+  ],
+  "product_source_mutated": false,
+  "evidence_source_mutated": false,
+  "origin_write_disabled": true,
+  "publication_destination": "/workspace/scratch/46b31bb4dff6/037-a019-remote.git",
+  "limitations": [
+    "Shared broad filesystem: native isolation not certified.",
+    "Local trial-delivery objects are not GitHub product publication.",
+    "Prior GitHub trial branch write rejection retained by coordinator; no GitHub trial push attempted here."
+  ],
+  "trial_target": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+  "trial_incoming": "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+  "trial_target_branch": "a019/target",
+  "trial_incoming_branch": "a019/incoming",
+  "baseline_checks": "23 unit, 18 integration and 36 extraction cases passed before injection",
+  "competing_path": "README.md",
+  "regression_path": "textstats/core.py",
+  "prospective_check": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/integration -t . -v",
+  "local_publication_readback": {
+    "target": "3ebf358ae5851a797f7390c1e75889b2cb18673d\trefs/heads/a019/target",
+    "incoming": "bbd5b80e588337f14d8ec3221fea2aded33f0239\trefs/heads/a019/incoming"
+  },
+  "valid-original-contract": {
+    "returncode": 0,
+    "test_count": 2,
+    "failure_count": 0
+  },
+  "regression-sensitivity": {
+    "returncode": 1,
+    "test_count": 2,
+    "failure_count": 2
+  },
+  "ready_for_consumer_dispatch_after_root_publication": true,
+  "actual_conflict_trigger_observed": false,
+  "actual_prospective_consumer_failure_observed": false,
+  "assessor_sensitivity_only_not_consumer_trigger": true,
+  "interventions": [
+    "Unexpected own source files reappeared as untracked; exact baseline/incoming matching established then exported and scoped removal performed. Unknown mechanism, no isolation certification."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "scope": "Independent provisional exact T017 final PHASE/IMPLEMENTATION report-pair and atomic closing candidate; native own closure and main integration not accepted",
+  "candidate_tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "reviewed_product_commit": "b49a26b36d68dc9bab8cf83633f5b7a2aae81eea",
+  "report_sha256": {
+    "docs/dev/reports/phases/2/PHASE-REPORT.md": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+    "docs/dev/reports/IMPLEMENTATION-REPORT.md": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc"
+  },
+  "findings": [],
+  "assessment": [
+    "Required report pair exists at current layout-owned paths with resolving local links. Separate substantive final cross-phase implementation review covers integrated API/value/acquisition/parser/BOM/selection/render/module/discovery/extraction/docs interactions, and is explicitly distinguished from delivery-milestone review and tests. It identifies exact reviewed published source, current amended R/F contract scope and retired JSON identities; no invented phase or release.",
+    "Final report deduplicates findings M1.2-001, M2.2-001/002 and historical EVID-A010-001/002 with impact, source report/repair identities and resolved disposition. Independently inspected all listed relevant milestone/phase/feature/amendment TODO sections, unchanged from review parent: none has an admissible unresolved code item. Empty deferred set therefore requires no invented solution options/tradeoffs/owner; current limitations and facility losses remain explicit.",
+    "Independent original API/baseline/ranges/removal/stdin/distribution literal evidence passed on actual T015 archive extraction, whose all11 member bytes match committed runtime/docs. Independent all12final README/API fences and full runner37unit/34integration, separate discovery and checker478 passed on exact immutable T015 export. All runtime/tests/public docs are unchanged in T016/T017 report-only candidates, establishing explicit evidence applicability. Consumer final fresh campaign statements are separately trace-backed and not confused with own observations.",
+    "Only T017 initial checkbox, review milestone2.3 and eligible wholePhase2 parent flip;21activeowners nowchecked, retired T010\u201312 remain noncheckbox history. Prior TASKS completion history and all closed-report bytes are unchanged, currentQC TASKS identity matches exactcandidate. Five scoped files contain bothreports/currentevidence/QC/navigation/initialstatus together.",
+    "Native prerequisites5/7/8/9 are described as closed, ownissue18/reviewmilestone6 still pending until publication. Reports truthfully identify this as preintegrationreview and require taskpublication/nativeownclosure before prospective two-parent targetreview/verification/mainpublication. No future SHA/merge is fabricated."
+  ],
+  "screening": {
+    "pinned_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "whole_files_clean_bytes": 191,
+    "valid_JSON_sniff_no_secret": [
+      "textstats-run-resources/PLUGIN-SOURCE.json",
+      "textstats-run-resources/plugin/plugin.json",
+      "textstats-run-resources/plugin/.codex-plugin/plugin.json",
+      "docs/testing/publisher-037/SETUP.json"
+    ],
+    "extension_based_JSON_detection": false
+  },
+  "evidence": [
+    "candidate.tar",
+    "FILES.json",
+    "invariants-and-TODO-provenance.json",
+    "../reached-T015/runtime/literal-evidence.json",
+    "../reached-T015/archive-provenance.json",
+    "../reached-T015/docs-commands.json",
+    "../reached-T015/docs-assessment.json",
+    "../reached-T016/lifecycle-provider-observations.json"
+  ],
+  "limits": [
+    "Consumer native readbacks and independently rerun Git/runtime evidence remain distinguished. No independent provider GET is asserted.",
+    "Initial helper/logging/channel-loss/cleanup/childargv/format interventions remain visible; later successful checks do not reconstruct missing original channels.",
+    "T017 actualcommit/push/readback/issue18andmilestone6 closure and mainintegration/publication remain subsequent gates. Final A013case grade waits completedseal."
+  ]
+}

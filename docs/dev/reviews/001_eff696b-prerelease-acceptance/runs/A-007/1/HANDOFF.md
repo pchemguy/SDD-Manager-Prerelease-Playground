@@ -1,0 +1,7 @@
+# JSON increment
+
+Start phase 2 and implement milestone 2.1 JSON output while preserving default behavior. Pause before stdin work and leave phase 2 incomplete.
+
+## Actual product current state and authorization
+
+Product checkout /workspace/scratch/46b31bb4dff6/037-textstats-product is clean on published main e7cae5b2216ff7dd311b6f7296d829d1927a6a8a after complete Phase1 two-parent integration. All T001–009 and Phase1 milestones/review are complete; issues2–10 and native milestones1–3 closed. T010–017 remain unchecked and Phase2 has no hosted projection yet. Maintained tracking is enabled; preserve issue1, foreign issue2 text/labels/comment6097383663 and milestone1 paragraph. Use unchanged pinned package textstats-run-resources/plugin/ at ea515f5624c8a34cc4572731a2590223a5eb27f4 and product AGENTS. This request authorizes Phase2 activation and milestone2.1 JSON implementation, including its scoped checks/review/report/tracking effects; stop before stdin work and leave Phase2 incomplete/unmerged. Concrete test artifact assessments/decisions are delegated to coordinator. All scoped commits/pushes and GitHub effects are authorized; push and verify every commit before further work. No release requested. Existing protected playground API authentication is available at /workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground/gh.tkn only for transient in-memory use after ignored/untracked verification; do not copy or expose credential material.

@@ -1,0 +1,11 @@
+{
+  "source": "83fcaa47479857f69ade044d463c793460826a61",
+  "notes_source": "83fcaa47479857f69ade044d463c793460826a61",
+  "tag": "v0.15.0-cp014",
+  "notes": "## Controlled live-provider trial\n\nIsolated metadata fixture for post-upload stop and read-before-retry.\n\nControlled conflicting body sentinel.\n",
+  "notes_sha256": "0f964f6a2c4d994f94f685d4572c1760a3633345b2153667af5c215e455eab40",
+  "publish": true,
+  "prerelease": true,
+  "make_latest": false,
+  "request_id": "037-cp014-body-conflict-001"
+}

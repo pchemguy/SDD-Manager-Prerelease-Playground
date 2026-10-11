@@ -1,0 +1,28 @@
+{
+  "renderer": "@mermaid-js/mermaid-cli 12.0.0",
+  "readme_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+  "actual_render_count": 4,
+  "visual_inspection": "All four actual PNGs inspected; labels, edges and branch directions readable without clipping at native size. Tall vertical diagrams require scrolling.",
+  "images": [
+    {
+      "diagram": "Preparation",
+      "path": "readme-1.png",
+      "sha256": "ca8ebdefa2e13b13df825cb0c2f51b185a9ce05e33521de0e38ef659302c9c15"
+    },
+    {
+      "diagram": "Implementation and continuation",
+      "path": "readme-2.png",
+      "sha256": "ec562a582260c019c38dfccef88ef631f926bddc1e665b1db79529a426c7f0dd"
+    },
+    {
+      "diagram": "Steering",
+      "path": "readme-3.png",
+      "sha256": "361f705379654aa3aa77aabfa869130e785d9a46667319329366bbafdcf68a18"
+    },
+    {
+      "diagram": "Review and revision",
+      "path": "readme-4.png",
+      "sha256": "da9373442c0fc17af887eaa0e5be56f97bf118c53a5f2dd5274b07b44afb4a33"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "037-a012-lifecycle-checks.py"
+  ],
+  "exit_code": 1,
+  "cause": "StopIteration",
+  "tool_capture_ref": "4fc6d6",
+  "intervention": "Assessor-only normalize actual command field rather than assuming cmd; preserve exact original records untouched"
+}

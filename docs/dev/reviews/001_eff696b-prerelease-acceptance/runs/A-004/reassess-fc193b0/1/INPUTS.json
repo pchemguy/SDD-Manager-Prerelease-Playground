@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "run_id": "037-A004-assessor-recheck-fc193b0",
+  "mode": "independent-reassessment-only",
+  "plugin_revision": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "assessor_revision": "fc193b0a41f12e1eea7d2313d0664cb279bb932e",
+  "retained_original_attempt": "runs/A-004/1",
+  "fresh_consumer_execution": false,
+  "reason": "Separately published bounded harness repair; independent byte/identity/semantic applicability established; old Failed outcome remains."
+}

@@ -1,0 +1,297 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index ac47830..575f023 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -6,8 +6,8 @@ Preserve `textstats-run-resources/`, existing ignore rules and the separate publ
+ 
+ ## Product orientation
+ 
+-The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordinator acceptance for this test. The [architecture](docs/dev/ARCHITECTURE.md) has scoped delegated coordinator acceptance. The [decomposition](docs/dev/DECOMPOSITION.md) has scoped delegated coordinator acceptance. The [SPEC](docs/dev/SPEC.md) and [owner review](docs/dev/SPEC-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The [PLAN strategy](docs/dev/PLAN.md) has scoped delegated coordinator acceptance. The [layout](docs/dev/layout.md) and combined [PLAN review](docs/dev/PLAN-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The canonical [TASKS](docs/dev/TASKS.md) and [owner review](docs/dev/TASKS-REVIEW-REPORT.md) have scoped delegated coordinator acceptance; sdd-implement owns future range selection/execution and completion. Preparation is complete under the current request and stops before implementation, hosted projection and default-branch integration. No implementation task has started. Source and product tests do not exist yet. Do not treat coordinator resources as product implementation.
++The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordinator acceptance for this test. The [architecture](docs/dev/ARCHITECTURE.md) has scoped delegated coordinator acceptance. The [decomposition](docs/dev/DECOMPOSITION.md) has scoped delegated coordinator acceptance. The [SPEC](docs/dev/SPEC.md) and [owner review](docs/dev/SPEC-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The [PLAN strategy](docs/dev/PLAN.md) has scoped delegated coordinator acceptance. The [layout](docs/dev/layout.md) and combined [PLAN review](docs/dev/PLAN-REVIEW-REPORT.md) have scoped delegated coordinator acceptance. The canonical [TASKS](docs/dev/TASKS.md) and [owner review](docs/dev/TASKS-REVIEW-REPORT.md) have scoped delegated coordinator acceptance; sdd-implement owns range selection/execution and completion. The original preparation request stopped before implementation, hosted projection and default-branch integration. The current request continues T-001 on the isolated trial branch without shared integration or hosted tracking. The T-001 checkpoint delivers the pure text/statistics API in `textstats/core.py` and `textstats/__init__.py`, with product tests in `tests/unit/` and `tests/integration/`. Canonical completion evidence belongs to `docs/dev/TASKS.md`. Later tasks remain incomplete; do not treat coordinator resources as product implementation.
+ 
+-Preparation uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary, and stop before implementation under the current request. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Future task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).
++Preparation uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary. The currently authorized implementation range is T-001 only; stop before T-002 and preserve the incomplete phase. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Future task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).
+ 
+-Python 3.12.14 is available in the preparation environment. The layout proposes `textstats/`, unit/integration product tests, `docs/public-api.md` and standard-library test/package/distribution check tools. Its commands are planned and have not been validated because implementation files do not exist. After delivery, run `python tools/check_tests.py` and `python tools/check_distribution.py` from the repository root; the test runner must reject empty product suites.
++Python 3.12.14 is available in the preparation environment. The current pure-text checkpoint validates `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/unit -t . -v` and the corresponding `tests/integration` discovery from the repository root. File input, CLI, `docs/public-api.md` and standard-library check/package/distribution tools remain later-task scope. After delivery, run `python tools/check_tests.py` and `python tools/check_distribution.py` from the repository root; the test runner must reject empty product suites.
+diff --git a/README.md b/README.md
+index 01b2d16..486a465 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,5 @@
+ # TextStats
+ 
+-TextStats is being prepared as a Python 3.11+ text statistics API and command-line utility. No product implementation is available yet. The [project brief](docs/dev/PROJECT.md) captures the requested capabilities and delivery boundaries; runnable usage instructions will be added with the documentation milestone.
++TextStats is being prepared as a Python 3.11+ text statistics API and command-line utility. The pure whole-text API is available; named-file input and the command-line utility remain planned. The [project brief](docs/dev/PROJECT.md) captures the requested capabilities and delivery boundaries; runnable usage instructions will be added with the documentation milestone.
+ 
+ Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 839c4ff..6561a47 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -12,11 +12,13 @@ The user requested preparation through TASKS and stop before implementation. The
+ 
+ - [ ] Phase 1 — Named-file utility
+     - [ ] Milestone 1.1 — Named-file counting
+-        - [ ] T-001 — Implement immutable statistics and whole-text counting
++        - [x] T-001 — Implement immutable statistics and whole-text counting
+             Outcome: cohesive pure core and silent public text API under R-001 through R-005, including strict integer/nonnegative constructor validation, shared terminator traversal and once-only BOM normalization.
+             Scope: `textstats/core.py`, text/statistics exports in `textstats/__init__.py`, source docstrings, unittest package markers, `tests/unit/test_core.py` and public text cases in `tests/integration/test_api.py`. Do not publish undefined file exports before T-002 supplies them.
+             Depends on: none within the list; execution prerequisites above apply.
+             Evidence: all whole-input SPEC examples, Unicode separators/whitespace, repeated/interior BOMs, both policies, immutable value/equality and invalid constructor cases; direct imports/signatures and captured API silence. Discover focused unit and integration suites and record nonzero counts. Public file counting/module CLI remain later tasks within this same useful milestone.
++            Completion evidence (2026-10-10): continued from published isolated baseline `88a5c4b4424f4bba76940e40b1d6523b1f6fe191` on `trial/037-a016-unpublished`; hosted tracking explicitly declined by the continuation request. Delivered frozen validated `TextStats`, once-only BOM normalization, shared CRLF/CR/LF segment traversal, normalized counting and direct silent text exports; file export remains T-002. Google-style source/API docstrings and accurate root orientation/README reviewed against the accepted contracts. Governing SPEC/PLAN/layout/TASKS QC inputs were current; only this task's completion/evidence and current orientation change, preserving contracts and hierarchy.
++            Test-first evidence: `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/unit -t . -v` first ran 8 tests against an executable zero-count/unvalidated/unfrozen interface and exited 1 with 49 behavioral assertion failures, without collection/import errors. After implementation, final unit discovery ran 10 tests and exited 0; `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/integration -t . -v` ran 3 tests and exited 0, no skips/warnings. Coverage includes the complete whole-input matrix under both policies, Unicode whitespace/separators, repeated/interior BOMs, preserved traversal segments and normalized BOM seam, immutable/equal values, invalid constructors, direct exports, typed keyword-only signature and captured API silence. `git diff --check` exited 0. Coordinator inspected and accepted the exact source/test artifacts at the delegated review boundary before completion. No unresolved T-001 finding; API/file/CLI/distribution and milestone/phase exits remain later-task scope. T-001 result, current evidence and initial checkbox close together; publication must still be verified before reporting durable completion.
+         - [ ] T-002 — Implement strict file acquisition and complete public API
+             Outcome: R-006 byte-preserving strict UTF-8 file input and R-002 whole-file API, with required exceptions and owned-handle cleanup.
+             Scope: `textstats/io.py`, complete exports in `textstats/__init__.py`, module/API docstrings, `tests/unit/test_io.py` and real-file public API cases in `tests/integration/test_api.py`.
+diff --git a/tests/__init__.py b/tests/__init__.py
+new file mode 100644
+index 0000000..c13b7ac
+--- /dev/null
++++ b/tests/__init__.py
+@@ -0,0 +1 @@
++"""TextStats product tests, independent of coordinator workflow fixtures."""
+diff --git a/tests/integration/__init__.py b/tests/integration/__init__.py
+new file mode 100644
+index 0000000..71a65d1
+--- /dev/null
++++ b/tests/integration/__init__.py
+@@ -0,0 +1 @@
++"""Public TextStats boundary tests."""
+diff --git a/tests/integration/test_api.py b/tests/integration/test_api.py
+new file mode 100644
+index 0000000..9a1ca9b
+--- /dev/null
++++ b/tests/integration/test_api.py
+@@ -0,0 +1,40 @@
++"""Verify the delivered public text API, signature and silence."""
++
++import contextlib
++import inspect
++import io
++import unittest
++
++from textstats import TextStats, count_text
++
++
++class PublicTextTests(unittest.TestCase):
++    def test_direct_exports_are_core_values(self):
++        from textstats.core import TextStats as CoreStats, count_text as core_count
++        self.assertIs(TextStats, CoreStats)
++        self.assertIs(count_text, core_count)
++
++    def test_signature_is_whole_input_and_keyword_only_policy(self):
++        signature = inspect.signature(count_text)
++        self.assertEqual(list(signature.parameters), ["text", "strip_bom"])
++        self.assertEqual(signature.parameters["text"].annotation, str)
++        self.assertEqual(signature.parameters["strip_bom"].annotation, bool)
++        self.assertIs(signature.parameters["strip_bom"].default, True)
++        self.assertEqual(signature.parameters["strip_bom"].kind, inspect.Parameter.KEYWORD_ONLY)
++        self.assertIs(signature.return_annotation, TextStats)
++        with self.assertRaises(TypeError):
++            count_text("a", False)
++
++    def test_public_counts_default_policy_and_silence(self):
++        stdout, stderr = io.StringIO(), io.StringIO()
++        with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++            default = count_text("\ufeff\r\nα β\rγ\n")
++            retaining = count_text("\ufeff\r\nα β\rγ\n", strip_bom=False)
++        self.assertEqual(default, TextStats(3, 3))
++        self.assertEqual(retaining, TextStats(3, 4))
++        self.assertEqual(stdout.getvalue(), "")
++        self.assertEqual(stderr.getvalue(), "")
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/tests/unit/__init__.py b/tests/unit/__init__.py
+new file mode 100644
+index 0000000..1f0bfda
+--- /dev/null
++++ b/tests/unit/__init__.py
+@@ -0,0 +1 @@
++"""Pure component contract tests."""
+diff --git a/tests/unit/test_core.py b/tests/unit/test_core.py
+new file mode 100644
+index 0000000..fdd30e7
+--- /dev/null
++++ b/tests/unit/test_core.py
+@@ -0,0 +1,84 @@
++"""Exercise R-001/R-003/R-004/R-005 with independently specified counts."""
++
++from dataclasses import FrozenInstanceError
++import unittest
++
++from textstats.core import TextStats, _count_normalized, _logical_lines, count_text
++
++
++class StatisticsTests(unittest.TestCase):
++    def test_value_equality_and_nonnegative_integers(self):
++        self.assertEqual(TextStats(0, 0), TextStats(lines=0, words=0))
++        self.assertNotEqual(TextStats(1, 2), TextStats(2, 1))
++        self.assertEqual(TextStats(10**100, 3).lines, 10**100)
++
++    def test_immutable_fields(self):
++        value = TextStats(1, 2)
++        for field in ("lines", "words"):
++            with self.subTest(field=field), self.assertRaises(FrozenInstanceError):
++                setattr(value, field, 4)
++            with self.subTest(delete=field), self.assertRaises(FrozenInstanceError):
++                delattr(value, field)
++
++    def test_negative_counts_rejected(self):
++        for counts in ((-1, 0), (0, -1), (-1, -1)):
++            with self.subTest(counts=counts), self.assertRaises(ValueError):
++                TextStats(*counts)
++
++    def test_noninteger_counts_rejected_in_either_field(self):
++        for invalid in (True, False, 1.0, "1", None, [], complex(1)):
++            for counts in ((invalid, 0), (0, invalid)):
++                with self.subTest(counts=counts), self.assertRaises(TypeError):
++                    TextStats(*counts)
++
++
++class CountingTests(unittest.TestCase):
++    def test_shared_traversal_preserves_content_and_terminators(self):
++        text = "a\r\n\rb\u2028c\nlast"
++        self.assertEqual(list(_logical_lines(text)), ["a\r\n", "\r", "b\u2028c\n", "last"])
++        self.assertEqual(list(_logical_lines("")), [])
++        self.assertEqual(list(_logical_lines("\n")), ["\n"])
++
++    def test_already_normalized_counting_retains_exposed_bom(self):
++        self.assertEqual(_count_normalized("\ufeff"), TextStats(1, 1))
++
++    def test_whole_input_spec_matrix_both_policies(self):
++        cases = (
++            ("", (0, 0), (0, 0)),
++            ("alpha beta", (1, 2), (1, 2)),
++            ("alpha\n", (1, 1), (1, 1)),
++            ("\n", (1, 0), (1, 0)),
++            ("alpha\r\nbeta\rgamma\n", (3, 3), (3, 3)),
++            ("alpha\n\n", (2, 1), (2, 1)),
++            (" \t", (1, 0), (1, 0)),
++            ("alpha\u2028beta", (1, 2), (1, 2)),
++            ("\ufeff", (0, 0), (1, 1)),
++            ("\ufeff\ufeff", (1, 1), (1, 1)),
++            ("\ufeffalpha beta", (1, 2), (1, 2)),
++            ("a\ufeffb", (1, 1), (1, 1)),
++            ("\r\n", (1, 0), (1, 0)),
++            ("\r", (1, 0), (1, 0)),
++        )
++        for text, stripped, retained in cases:
++            for policy, expected in ((True, stripped), (False, retained)):
++                with self.subTest(text=text, strip_bom=policy):
++                    self.assertEqual(count_text(text, strip_bom=policy), TextStats(*expected))
++
++    def test_unicode_whitespace_does_not_broaden_line_terminators(self):
++        text = "α\u0085β\u2028γ\u2029δ\vε\fζ\u00a0η\u2003θ"
++        self.assertEqual(count_text(text), TextStats(1, 8))
++        self.assertEqual(count_text("\u2028\u0085\u2029"), TextStats(1, 0))
++
++    def test_mixed_terminators_and_final_segment(self):
++        self.assertEqual(count_text("a\r\n\rb\n\nc"), TextStats(5, 3))
++        self.assertEqual(count_text("\r\n\r\n"), TextStats(2, 0))
++        self.assertEqual(count_text("\r\n\r"), TextStats(2, 0))
++
++    def test_repeated_and_interior_boms_remain_words(self):
++        self.assertEqual(count_text("\ufeff\ufeff\n"), TextStats(1, 1))
++        self.assertEqual(count_text("\ufeff\n\ufeff"), TextStats(2, 1))
++        self.assertEqual(count_text("a \ufeff b"), TextStats(1, 3))
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/textstats/__init__.py b/textstats/__init__.py
+new file mode 100644
+index 0000000..02f81c8
+--- /dev/null
++++ b/textstats/__init__.py
+@@ -0,0 +1,5 @@
++"""Silent whole-text statistics API. Named-file support is not delivered yet."""
++
++from .core import TextStats, count_text
++
++__all__ = ["TextStats", "count_text"]
+diff --git a/textstats/core.py b/textstats/core.py
+new file mode 100644
+index 0000000..d0ca761
+--- /dev/null
++++ b/textstats/core.py
+@@ -0,0 +1,77 @@
++"""Pure whole-text counting with CRLF/CR/LF lines and Unicode word whitespace.
++
++Normalization is separate from traversal and normalized counting so future
++line selection can reuse the same boundaries without stripping a BOM twice.
++"""
++
++from collections.abc import Iterator
++from dataclasses import dataclass
++
++
++@dataclass(frozen=True)
++class TextStats:
++    """Immutable, equal-by-value nonnegative integer line and word counts.
++
++    Raises:
++        TypeError: Either count is not an integer, or is a boolean.
++        ValueError: Either count is negative.
++    """
++
++    lines: int
++    words: int
++
++    def __post_init__(self) -> None:
++        for name, value in (("lines", self.lines), ("words", self.words)):
++            if not isinstance(value, int) or isinstance(value, bool):
++                raise TypeError(f"{name} must be an integer, excluding bool")
++            if value < 0:
++                raise ValueError(f"{name} must be nonnegative")
++
++
++def _normalize_text(text: str, strip_bom: bool) -> str:
++    """Remove exactly one leading BOM when requested; preserve all other text."""
++    if strip_bom and text.startswith("\ufeff"):
++        return text[1:]
++    return text
++
++
++def _logical_lines(text: str) -> Iterator[str]:
++    """Yield original segments terminated only by CRLF, CR or LF.
++
++    Terminators stay attached; empty input and a trailing phantom segment yield
++    nothing. Unicode separators are ordinary segment content.
++    """
++    start = index = 0
++    while index < len(text):
++        character = text[index]
++        index += 1
++        if character == "\r":
++            if index < len(text) and text[index] == "\n":
++                index += 1
++        elif character != "\n":
++            continue
++        yield text[start:index]
++        start = index
++    if start < len(text):
++        yield text[start:]
++
++
++def _count_normalized(text: str) -> TextStats:
++    """Count already normalized content without applying any BOM policy."""
++    return TextStats(sum(1 for _ in _logical_lines(text)), len(text.split()))
++
++
++def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
++    """Return whole-input statistics silently, without modifying input.
++
++    Args:
++        text: Complete text to count. CRLF, CR and LF terminate lines;
++            other Unicode separators affect words only through str.split().
++        strip_bom: Remove exactly one leading U+FEFF by default. False retains
++            every BOM as ordinary non-whitespace.
++
++    Returns:
++        Immutable line and word counts. A nonempty unterminated final segment
++        contributes one line; a trailing terminator adds no phantom line.
++    """
++    return _count_normalized(_normalize_text(text, strip_bom))

@@ -1,0 +1,23 @@
+diff --git a/textstats/core.py b/textstats/core.py
+index 5b17cfd..f131f90 100644
+--- a/textstats/core.py
++++ b/textstats/core.py
+@@ -68,7 +68,7 @@ def _count_normalized(text: str) -> TextStats:
+     return TextStats(sum(1 for _ in _logical_lines(text)), len(text.split()))
+ 
+ 
+-def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
++def _fixture_original_count_text(text: str, *, strip_bom: bool = True) -> TextStats:
+     """Return whole-input counts without writing to stdout or stderr.
+ 
+     Args:
+@@ -82,3 +82,9 @@ def count_text(text: str, *, strip_bom: bool = True) -> TextStats:
+         a final nonempty unterminated segment contributes one line.
+     """
+     return _count_normalized(_normalize_text(text, strip_bom))
++
++
++def count_text(*args, **kwargs):
++    """Disclosed isolated fixture: deliberate line-count regression."""
++    stats = _fixture_original_count_text(*args, **kwargs)
++    return type(stats)(lines=stats.lines + 1, words=stats.words)

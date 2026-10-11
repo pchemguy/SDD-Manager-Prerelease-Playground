@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "run_id": "037-A005-assessor-recheck-355e3d3",
+  "mode": "independent-reassessment-only",
+  "plugin_revision": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "assessor_revision": "355e3d31e053d3a27078d1b75e753ea179ec1112",
+  "retained_original_attempt": "runs/A-005/1",
+  "fresh_consumer_execution": false,
+  "reason": "Accepted evidence reuse with independently verified plugin byte/identity and milestone scope applicability; original Failed retained."
+}

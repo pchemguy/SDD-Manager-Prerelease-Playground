@@ -1,0 +1,179 @@
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 4727e95..8de6588 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -152,3 +152,13 @@ Real module processes verify named UTF-8/mixed terminator/Unicode/BOM/empty inpu
+ Completed the separate coherent milestone implementation code review, actual nonempty runner, API/module demonstration and exit assessment in [milestone 1.1 report](reports/phases/1/1.1.md), reviewed at published T-003 source `373203d6f41bee2229eed900b761de8669678e0b`. The runner passed 21 unit and 12 integration tests on Python 3.12.14, with no skips/warnings. Mixed-terminator/non-ASCII/BOM temporary-file API and real CLI returned three lines/four words with exact streams/status and unchanged bytes; BOM-only default versus retaining calls visibly produced zero/zero versus one/one. Source review found no milestone contract blocker and no required repair; TODO is None. Full runtime/platform matrix, complete CLI failure diagnostics, public guide/distribution and later phase capabilities remain unverified/planned in their owning tasks.
+ 
+ T-002/T-003 separate closing commits were inspected and published before this review; provider readback confirms issues #3/#4 closed/completed with evidence, and T-001 #2 remains closed. Unique T-004 issue is #5 in native milestone #1. The report/evidence, initial T-004 checkbox and eligible milestone 1.1 parent close together; phase and unselected tasks remain unchecked. Publish/read back this task commit before closing issue #5, then validate all milestone-associated task issues and close/read back milestone #1. Stop on the incomplete phase branch, with main unchanged and no release or T-005 work.
++
++## T-005 completion evidence
++
++Selected T-005 only on isolated `trial/037-a018-rejected`, starting from clean milestone 1.1 completion `7d003c1cf31c994340d8644e95990ef2253754ed`. Startup `git push trial-delivery HEAD:refs/heads/trial/037-a018-rejected` returned Everything up-to-date; `git ls-remote trial-delivery refs/heads/trial/037-a018-rejected` read back that exact tip before task work. The current bounded input supersedes historical stops/branch naming for this trial, declines hosted tracking and excludes GitHub writes, credentials, default-branch integration and later tasks. Latest task closing diff has the single T-004 subject, substantive report/evidence and initial owning checkbox together. Current governing SPEC/PLAN/layout/design hashes match accepted QC; completion annotations do not change contracts.
++
++Delivered CLI-only translation of expected OSError and UnicodeDecodeError into status 1 with identifying input/cause stderr, empty stdout and no traceback. Acquisition/counting finishes before success output. Argparse retains useful status 2 usage diagnostics and validates before acquisition; help/success/BOM/options/dash filenames retain prior behavior. The file API keeps silent exceptions and owned-handle cleanup; updated CLI source documentation states the boundary.
++
++Tests preceded implementation. `PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests -v` collected seven tests and returned 1 with four expected behavioral errors: missing, unreadable, controlled read and strict decode exceptions escaped instead of returning 1. Existing success/help/usage tests passed. After the narrow handler change, `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py` returned 0 with 24 unit and 13 integration tests, no skips/warnings. Inspection found the inherited API import-smoke child lacked explicit -B (the no-bytecode environment was inherited); its invocation was corrected, and the same full runner again returned 0 with 24/13 tests. These are distinct observed runs, with the second covering explicit -B on every test child; no persistence or failed-check retry occurred.
++
++Coverage includes controlled missing/unreadable/read/decode CLI errors with input/cause/status/streams and owned-stream closure; validation before any acquisition for missing/extra input and unknown options; real module subprocess missing/bad-byte inputs with both BOM policies, no traceback/partial stdout and byte preservation; retained complete API/core/named-file/BOM/help/dash behavior; independent nonempty discovery and runner failure propagation. Runtime is Python 3.12.14. `git diff --check` passed. Source/docstring/scope inspection found no T-005 contract blocker. Other runtimes/platform permission behavior, public guide/distribution, JSON/stdin/range and milestone/phase review remain outside this task. Concrete artifact acceptance is delegated to the coordinator for the exact presented content. T-005 status remains pending that assessment and closing persistence; all later tasks and milestone 1.2/phase remain incomplete.
+diff --git a/tests/integration/test_api.py b/tests/integration/test_api.py
+index a801dbb..4db902d 100644
+--- a/tests/integration/test_api.py
++++ b/tests/integration/test_api.py
+@@ -51,7 +51,7 @@ class TextApiTests(unittest.TestCase):
+         self.assertEqual(stderr.getvalue(), "")
+ 
+     def test_initial_import_is_silent_in_fresh_process(self):
+-        result = subprocess.run([sys.executable, "-c", "import textstats"], capture_output=True, text=True)
++        result = subprocess.run([sys.executable, "-B", "-c", "import textstats"], capture_output=True, text=True)
+         self.assertEqual(result.returncode, 0, result.stderr)
+         self.assertEqual(result.stdout, "")
+         self.assertEqual(result.stderr, "")
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+index 663662c..49cac55 100644
+--- a/tests/integration/test_cli.py
++++ b/tests/integration/test_cli.py
+@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
+ 
+ class ModuleCliTests(unittest.TestCase):
+     def invoke(self, *args, cwd=ROOT):
+-        return subprocess.run([sys.executable, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
++        return subprocess.run([sys.executable, '-B', '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+ 
+     def test_named_file_matrix_and_bom_option_order(self):
+         cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)), ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
+@@ -49,8 +49,26 @@ class ModuleCliTests(unittest.TestCase):
+                 self.assertEqual(path.read_bytes(), b'alpha beta\n')
+ 
+     def test_exactly_one_input_is_required(self):
+-        for args in [[], ['one', 'two']]:
++        for args in [[], ['one', 'two'], ['--unknown', 'missing']]:
+             result = self.invoke(*args)
+             self.assertEqual(result.returncode, 2)
+             self.assertEqual(result.stdout, '')
+             self.assertIn('usage:', result.stderr)
++
++    def test_missing_and_invalid_utf8_files_have_input_failure_status(self):
++        with tempfile.TemporaryDirectory() as directory:
++            missing = Path(directory) / 'missing.txt'
++            invalid = Path(directory) / 'invalid.txt'
++            raw = b'valid\n\xff'
++            invalid.write_bytes(raw)
++            for path, cause in [(missing, 'No such file'), (invalid, 'utf-8')]:
++                for args in [[str(path)], ['--keep-bom', str(path)]]:
++                    with self.subTest(args=args):
++                        result = self.invoke(*args)
++                        self.assertEqual(result.returncode, 1)
++                        self.assertEqual(result.stdout, '')
++                        self.assertIn(str(path), result.stderr)
++                        self.assertIn(cause, result.stderr)
++                        self.assertNotIn('Traceback', result.stderr)
++            self.assertEqual(invalid.read_bytes(), raw)
++            self.assertFalse(missing.exists())
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+index 2a5787a..24eabdf 100644
+--- a/tests/unit/test_cli.py
++++ b/tests/unit/test_cli.py
+@@ -48,6 +48,48 @@ class CliTests(unittest.TestCase):
+             self.assertIn('--keep-bom', out.getvalue())
+             self.assertEqual(err.getvalue(), '')
+ 
++    def test_usage_is_validated_before_acquisition(self):
++        for args in [[], ['one', 'two'], ['--unknown', 'named']]:
++            with self.subTest(args=args):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.cli.count_file') as counter:
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        self.assertEqual(main(args), 2)
++                counter.assert_not_called()
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('usage:', err.getvalue())
++                self.assertIn('error:', err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++    def test_open_failures_identify_input_and_cause(self):
++        for failure in [FileNotFoundError('missing cause'), PermissionError('unreadable cause')]:
++            with self.subTest(failure=type(failure)):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.io.open', side_effect=failure, create=True):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        self.assertEqual(main(['named']), 1)
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('named', err.getvalue())
++                self.assertIn(str(failure), err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
++    def test_read_and_decode_failures_close_handles_without_partial_output(self):
++        class BrokenReader(io.BytesIO):
++            def read(self, *args):
++                raise OSError('controlled read cause')
++        for stream, cause in [(BrokenReader(b'valid'), 'controlled read cause'),
++                              (io.BytesIO(b'valid\n\xff'), 'utf-8')]:
++            with self.subTest(cause=cause):
++                out, err = io.StringIO(), io.StringIO()
++                with patch('textstats.io.open', return_value=stream, create=True):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        self.assertEqual(main(['named']), 1)
++                self.assertTrue(stream.closed)
++                self.assertEqual(out.getvalue(), '')
++                self.assertIn('named', err.getvalue())
++                self.assertIn(cause, err.getvalue())
++                self.assertNotIn('Traceback', err.getvalue())
++
+ 
+ class CheckRunnerTests(unittest.TestCase):
+     def invoke_fixture(self, unit_source, integration_source):
+@@ -68,7 +110,7 @@ class CheckRunnerTests(unittest.TestCase):
+             fixture.mkdir()
+             (fixture / '__init__.py').touch()
+             (fixture / 'test_foreign.py').write_text('raise RuntimeError("workflow fixture collected")\n')
+-            return subprocess.run([sys.executable, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
++            return subprocess.run([sys.executable, '-B', str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+ 
+     GOOD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(2 + 2, 4)\n'
+     BAD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.fail("controlled product failure")\n'
+diff --git a/textstats/cli.py b/textstats/cli.py
+index 1f99a69..7b0d068 100644
+--- a/textstats/cli.py
++++ b/textstats/cli.py
+@@ -1,10 +1,11 @@
+ """Named-file CLI parsing and exact text presentation.
+ 
+-Milestone 1.1 delivers success, BOM policy, option termination and help.
+-Complete input-failure diagnostics belong to the following milestone.
++Invocation validation precedes acquisition. Expected file/read/decode failures
++produce identifying stderr and status 1 without partial stdout or traceback.
+ """
+ 
+ import argparse
++import sys
+ from .io import count_file
+ 
+ 
+@@ -15,11 +16,11 @@ def main(argv: list[str] | None = None) -> int:
+         argv: Invocation arguments excluding the executable; None uses sys.argv.
+ 
+     Returns:
+-        Zero on success/help or argparse's usage status on invalid invocation.
++        Zero on success/help, one on file/read/decode failure, or two for usage.
+ 
+     Help and usage validate without acquiring input. Before stdin delivery a
+-    literal '-' remains a named filename. Expected file/decode exceptions still
+-    propagate here until the failure-handling task is delivered.
++    literal '-' remains a named filename. Expected OSError and UnicodeDecodeError
++    are translated only here; the silent file API retains its exceptions.
+     """
+     parser = argparse.ArgumentParser(prog='python -m textstats', description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
+     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
+@@ -28,6 +29,10 @@ def main(argv: list[str] | None = None) -> int:
+         args = parser.parse_args(argv)
+     except SystemExit as exit_request:
+         return int(exit_request.code)
+-    stats = count_file(args.input, strip_bom=not args.keep_bom)
++    try:
++        stats = count_file(args.input, strip_bom=not args.keep_bom)
++    except (OSError, UnicodeDecodeError) as failure:
++        print(f'{parser.prog}: {args.input!r}: {failure}', file=sys.stderr)
++        return 1
+     print(f'lines={stats.lines} words={stats.words}')
+     return 0

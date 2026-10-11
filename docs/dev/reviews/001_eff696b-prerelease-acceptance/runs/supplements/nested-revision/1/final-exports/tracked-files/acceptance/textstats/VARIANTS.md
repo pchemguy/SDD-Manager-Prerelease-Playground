@@ -1,0 +1,11 @@
+# Required core and optional extended coverage
+
+The catalog declares variant IDs, required/optional classification, evidence class and execution facilities. Required variants are selected by default within the existing case/phase scope. Optional variants require explicit selection. A `variants` input map bounds case and variant scope and must agree with any case/phase filters; unknown, empty or duplicate selections are rejected. Legacy inputs remain valid; old assessment records retain their original case grades.
+
+Record new variant evidence under `runs/<case>/<attempt>/<variant>/`, with `variant` in the coordinator checkpoint and an independently graded result keyed as `<case>.<variant>`. Passed results must state `agent_behavior_assessed: true` and their `evidence_class`. Consumer, controlled, live-provider, native and inspection evidence are distinct. Do not promote a controlled wrapper result to native/live recovery.
+
+Use `scripts/campaign.py --catalog cases/catalog.json --results <grades.json> [--selection <selection.json>]` to render required and optional totals. The results object contains variant grades, including status, reason, evidence class and independent-assessment flag. A historical unsplit case grade is displayed as legacy evidence, never distributed into invented variant passes. This helper reports supplied grades; it does not perform independent assessment.
+
+Missing required evidence is Blocked and prevents required readiness. Optional facilities that are missing or unselected are Not run/non-blocking and excluded from required totals. Executed optional failures stay visible; a reproduced failure of a required contract must be escalated against that contract. Required readiness is true only when a nonempty selected required set has independent Passed grades. Optional cases cannot gate required dependencies.
+
+A-023 separates controlled reconciliation from optional actual GitHub response loss. A-024 separates required denial, rate-limit and unavailable-access handling from optional protected native credential/session recovery. Reports must identify what actually ran and state each optional variant's full-execution requirements. Optional status never grants a fabricated pass or waives important ordinary core checks.

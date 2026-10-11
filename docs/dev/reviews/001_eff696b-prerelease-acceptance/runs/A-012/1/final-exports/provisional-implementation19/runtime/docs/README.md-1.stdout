@@ -1,0 +1,13 @@
+lines=3 words=5
+usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT
+
+Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.
+
+positional arguments:
+  INPUT              named UTF-8 file (use -- before dash-prefixed names)
+
+options:
+  -h, --help         show this help message and exit
+  --keep-bom         retain a leading Unicode BOM as ordinary content
+  --lines START:END  select inclusive positive ASCII decimal logical lines
+                     (one range only)

@@ -1,0 +1,9 @@
+{
+  "bundle_clone_returncode": 0,
+  "restored_head": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+  "exact_index_entries": "Passed",
+  "exact_workfiles_hashes_modes": "Passed",
+  "exact_unstaged_binary_patch": "Passed",
+  "restoration_workspace": "/workspace/scratch/46b31bb4dff6/037-a017-restore-verification-m2l9qyio/product",
+  "scope": "Assessor-only reconstruction validation; no consumer dispatch, no product changes in original trial"
+}

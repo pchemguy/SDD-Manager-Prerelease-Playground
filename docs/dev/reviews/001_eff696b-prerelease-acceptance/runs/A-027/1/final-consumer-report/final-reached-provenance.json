@@ -1,0 +1,156 @@
+{
+  "captured_utc": "2026-10-10T19:48:57.555410+00:00",
+  "sources": [
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal.json",
+      "snapshot": "final-reached-source-00-037-a013-consumer-blocked-seal.json",
+      "sha256": "b412f23d320d90ab77ab1c2368e9bd20f1ed7efa03222c91948e365e49e9bf0a",
+      "bytes": 8555
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal-command.json",
+      "snapshot": "final-reached-source-01-037-a013-consumer-blocked-seal-command.json",
+      "sha256": "ec8a06fce4e2cf689cfa99a40e40b1ae2fd0230e8e54b7e0c3f7b77ff1e1a69e",
+      "bytes": 1015
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-main-push-rejection.json",
+      "snapshot": "final-reached-source-02-037-a013-consumer-main-push-rejection.json",
+      "sha256": "fdc397f4fdc27a8fdb0fe80dbe968a373f46e423ce903fe5536dced2be602696",
+      "bytes": 1337
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-main-push-narrowed-rejection.json",
+      "snapshot": "final-reached-source-03-037-a013-consumer-main-push-narrowed-rejection.json",
+      "sha256": "13bee1bed5a89976b9d2374409cb221bc1800b51ce7e86c954e5836fd8fb5888",
+      "bytes": 1156
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-integration-candidate.json",
+      "snapshot": "final-reached-source-04-037-a013-consumer-integration-candidate.json",
+      "sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+      "bytes": 3858
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-observations.json",
+      "snapshot": "final-reached-source-05-037-a013-consumer-observations.json",
+      "sha256": "528a19e045f34d281087ac3243536308d05e79eaf313a77eb087352b6c9d9c96",
+      "bytes": 10181699
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AGENTS.md",
+      "snapshot": "final-reached-source-06-AGENTS.md",
+      "sha256": "37fb35f329f1bcd51c95f293f9d3668a8d55866dad224cc5c05c543c3e12719f",
+      "bytes": 13016
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/TASKS.md",
+      "snapshot": "final-reached-source-07-TASKS.md",
+      "sha256": "c0f9718171d069e34de57b24c94a0d2daa7f001ceb8b2552fab5fa4566191616",
+      "bytes": 80648
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/reports/phases/2/2.2.md",
+      "snapshot": "final-reached-source-08-2.2.md",
+      "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+      "bytes": 11107
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "snapshot": "final-reached-source-09-PHASE-REPORT.md",
+      "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+      "bytes": 10224
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "snapshot": "final-reached-source-10-IMPLEMENTATION-REPORT.md",
+      "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+      "bytes": 10235
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T016/lifecycle-provider-observations.json",
+      "snapshot": "final-reached-source-11-lifecycle-provider-observations.json",
+      "sha256": "1b7a34de4c58bbb638b2bf1c2be6369f1f25fdc88df8af31a48112843c0f1b67",
+      "bytes": 80018
+    },
+    {
+      "source": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T017/lifecycle-provider-observations.json",
+      "snapshot": "final-reached-source-12-lifecycle-provider-observations.json",
+      "sha256": "a862b7984c6b7c0c0e077cd2b88223be6be3f0e9e56c80778cae23937adad2fe",
+      "bytes": 28536
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_status": 0,
+      "stdout": "main\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_status": 0,
+      "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show",
+        "-s",
+        "--format=%H%n%T%n%P",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_status": 0,
+      "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\n190b6865846d66933bcdcd112e1fcfa7ca2f04ef\nfbe8bedf4c6cba1ab29d53d2da05e614603d76d1 c05b65958e2a386cf2ae8782dca3e749ed9b60ff\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref",
+        "--verify",
+        "refs/heads/phase/2-json-and-stdin"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_status": 0,
+      "stdout": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff refs/heads/phase/2-json-and-stdin\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref",
+        "--verify",
+        "refs/remotes/origin/main"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_status": 0,
+      "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 refs/remotes/origin/main\n",
+      "stderr": ""
+    }
+  ],
+  "limit": "No new product checks/provider requests executed; current remote claims use retained original actual command/provider readbacks."
+}

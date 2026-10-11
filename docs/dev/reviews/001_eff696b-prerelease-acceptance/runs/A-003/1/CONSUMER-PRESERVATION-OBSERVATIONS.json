@@ -1,0 +1,1485 @@
+{
+  "consumer": "a003-preservation",
+  "limits": [
+    "Shared filesystem isolation uncertified",
+    "Native full transcript unavailable",
+    "Some combined read tool outputs were truncated; individually re-read TASKS/PLAN and relevant instructions where needed"
+  ],
+  "loaded_sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d905c30b1bfc4ade497fa8bb2d850c71e0fae0db8a491a7651e53540678c067c"
+    },
+    {
+      "path": "textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9"
+    },
+    {
+      "path": "SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    {
+      "path": "AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "README.md",
+      "sha256": "af9961caa90a943d12b5c995893a8214628b0006049aebe0d38421bbf28bf373"
+    },
+    {
+      "path": "docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d"
+    },
+    {
+      "path": "docs/dev/TASKS.md",
+      "sha256": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2"
+    },
+    {
+      "path": "docs/dev/PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+    },
+    {
+      "path": "docs/dev/SPEC-REVIEW-REPORT.md",
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899"
+    },
+    {
+      "path": "docs/dev/PLAN-REVIEW-REPORT.md",
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e"
+    },
+    {
+      "path": "docs/dev/TASKS-REVIEW-REPORT.md",
+      "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md",
+      "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github.md",
+      "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md",
+      "sha256": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md",
+      "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md",
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md",
+      "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md",
+      "sha256": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md",
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6"
+    },
+    {
+      "path": "textstats-run-resources/plugin/README.md",
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa"
+    },
+    {
+      "path": "textstats-run-resources/plugin/plugin.json",
+      "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85"
+    }
+  ],
+  "pinned_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "chronology": [
+    {
+      "sequence": 1,
+      "operation": "Read authorized consumer input"
+    },
+    {
+      "sequence": 2,
+      "operation": "Discover product AGENTS and pinned skill paths"
+    },
+    {
+      "sequence": 3,
+      "operation": "Read product and package AGENTS, orient/forge skills"
+    },
+    {
+      "sequence": 4,
+      "operation": "Read manage skill, GitHub backend, orientation reference"
+    },
+    {
+      "sequence": 5,
+      "operation": "Read projection, phase activation, tracking, coordination, credentials references"
+    },
+    {
+      "sequence": 6,
+      "operation": "Read QC gate, lifecycle, hierarchy, report skill"
+    },
+    {
+      "sequence": 7,
+      "operation": "Read shared QC/style/drafts and product documents (combined output truncated)"
+    },
+    {
+      "sequence": 8,
+      "operation": "Read TASKS and PLAN, inspect clean Git HEAD/branch/remotes and discover applicable nested instructions/features"
+    },
+    {
+      "sequence": 9,
+      "operation": "Verify supplied conventional authentication input effectively ignored and untracked; re-read PLAN"
+    },
+    {
+      "sequence": 10,
+      "time": "2026-10-10T12:18:34.101921+00:00",
+      "method": "GET",
+      "endpoint": "/user",
+      "status": 200,
+      "response_sha256": "ffaddf3865576c5064d413bb9f7ff82ff00e5ecaf25d32813fd5b772fee0d2a7"
+    },
+    {
+      "sequence": 11,
+      "time": "2026-10-10T12:18:37.442355+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground",
+      "status": 200,
+      "response_sha256": "c7451386d2371259e52688b5c3a05026d7080b43c12481ecae3f1166454355fe"
+    },
+    {
+      "sequence": 12,
+      "time": "2026-10-10T12:18:39.969681+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels?per_page=100",
+      "status": 200,
+      "response_sha256": "434b5495633f227a15533da2c5faac7ac12890a3c2daf82de0a34e82fae13d57"
+    },
+    {
+      "sequence": 13,
+      "time": "2026-10-10T12:18:42.510013+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "92fb4f15163f9cf4720a17e3ecb01ca5393c6d513fd57521cbe0f29623a68aa6"
+    },
+    {
+      "sequence": 14,
+      "time": "2026-10-10T12:18:45.422499+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "7d89c43356195e54d549fbe9f744a025302e864269773ce70a3087baccb7c0f2"
+    },
+    {
+      "sequence": 15,
+      "time": "2026-10-10T12:18:49.199813+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/2/comments?per_page=100",
+      "status": 200,
+      "response_sha256": "c66c5fc97da0fa3bc8f75ece6caa5a1fb8c31666be203d181259fa7b5d867fdb"
+    },
+    {
+      "sequence": 16,
+      "time": "2026-10-10T12:19:51.134127+00:00",
+      "operation": "Read product brief, README, usage/disclosure, SPEC QC and human review reference"
+    },
+    {
+      "sequence": 17,
+      "time": "2026-10-10T12:19:51.134140+00:00",
+      "operation": "Read package README/manifest and TASKS QC; package README output truncated"
+    },
+    {
+      "sequence": 18,
+      "time": "2026-10-10T12:19:51.135021+00:00",
+      "operation": "Verify exact governing hashes against current TASKS QC; full owning hierarchy unique and unchecked"
+    },
+    {
+      "sequence": 19,
+      "time": "2026-10-10T12:19:55.999248+00:00",
+      "operation": "Hosted readback",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels?per_page=100",
+      "status": 200,
+      "response_sha256": "434b5495633f227a15533da2c5faac7ac12890a3c2daf82de0a34e82fae13d57",
+      "pagination_complete": true
+    },
+    {
+      "sequence": 20,
+      "time": "2026-10-10T12:19:59.453697+00:00",
+      "operation": "Hosted readback",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "92fb4f15163f9cf4720a17e3ecb01ca5393c6d513fd57521cbe0f29623a68aa6",
+      "pagination_complete": true
+    },
+    {
+      "sequence": 21,
+      "time": "2026-10-10T12:20:02.450251+00:00",
+      "operation": "Hosted readback",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "7d89c43356195e54d549fbe9f744a025302e864269773ce70a3087baccb7c0f2",
+      "pagination_complete": true
+    },
+    {
+      "sequence": 22,
+      "time": "2026-10-10T12:20:05.018178+00:00",
+      "operation": "Hosted readback",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/2/comments?per_page=100",
+      "status": 200,
+      "response_sha256": "c66c5fc97da0fa3bc8f75ece6caa5a1fb8c31666be203d181259fa7b5d867fdb",
+      "pagination_complete": true
+    },
+    {
+      "sequence": 23,
+      "time": "2026-10-10T12:20:55.822907+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "status": 200,
+      "response_sha256": "92fb4f15163f9cf4720a17e3ecb01ca5393c6d513fd57521cbe0f29623a68aa6",
+      "pagination_complete": true
+    },
+    {
+      "sequence": 24,
+      "time": "2026-10-10T12:20:59.557130+00:00",
+      "method": "GET",
+      "endpoint": "/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels?per_page=100",
+      "status": 200,
+      "response_sha256": "434b5495633f227a15533da2c5faac7ac12890a3c2daf82de0a34e82fae13d57",
+      "pagination_complete": true
+    },
+    {
+      "sequence": 25,
+      "operation": "Final Git inspection",
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "sequence": 26,
+      "operation": "Final Git inspection",
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "output": "1e3305c8659045945244c06861079fef879ca3c3"
+    },
+    {
+      "sequence": 27,
+      "operation": "Final Git inspection",
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "origin",
+        "refs/heads/design-docs/main",
+        "refs/heads/main"
+      ],
+      "exit_code": 0,
+      "output": "1e3305c8659045945244c06861079fef879ca3c3\trefs/heads/design-docs/main\neff696b38f0b8a94bd6f91ca1c64d54fd714df46\trefs/heads/main"
+    }
+  ],
+  "writes": [],
+  "identity": {
+    "login": "pchemguy",
+    "id": 39730837,
+    "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+    "repository_id": 1413005393,
+    "default_branch": "main"
+  },
+  "before": {
+    "labels": [
+      {
+        "id": 12624578628,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIRA",
+        "name": "accessibility",
+        "color": "f143ab",
+        "description_sha256": "a0e29a556c55309dcf78098b04d2c5c8e6c082d4df0e108596880faec3273e4e",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578614,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvINg",
+        "name": "bug",
+        "color": "d73a4a",
+        "description_sha256": "ba26e412cc494b92f18f01c968c2b3241803b752eb09f1577844190076120a92",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12625616051,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8Iucsw",
+        "name": "campaign-037-preserve",
+        "color": "5319e7",
+        "description_sha256": "cf6fc320df3a5d3a51954bfd5f4cd9f440e2eca098c6f8471ea8f165b83d6f5c",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578638,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvITg",
+        "name": "documentation",
+        "color": "0075ca",
+        "description_sha256": "d1aadc4e1b60c7b31dfbed5db1beb3a9f178166309def32db138e2e6546c2059",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578649,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIWQ",
+        "name": "duplicate",
+        "color": "cfd3d7",
+        "description_sha256": "092850c4484f11177dce84173d1a26030b145f573db994baa043648947130102",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578660,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIZA",
+        "name": "enhancement",
+        "color": "a2eeef",
+        "description_sha256": "528e05403b406e202bb0bd23d3917d0688aaa7bf834fac8273682631bb42bbca",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578682,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIeg",
+        "name": "good first issue",
+        "color": "7057ff",
+        "description_sha256": "e7b33d49b02e3a67c41178ae81e03df423dd08d3cd6695030623de3910789d96",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578673,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIcQ",
+        "name": "help wanted",
+        "color": "008672",
+        "description_sha256": "2a68d328096f7ecf792863fc4701db1a85072417d4dac3d606847541e0423a65",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578690,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIgg",
+        "name": "invalid",
+        "color": "e4e669",
+        "description_sha256": "b0b7cab1d96254957703fa96a85a0400491637e8c110b6e79dff077194dd7bed",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578698,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIig",
+        "name": "question",
+        "color": "d876e3",
+        "description_sha256": "c758420437639eac26ad21aad1ff43032947a061a29e688a7cc442d7d936d2b5",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12625690902,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8IzBFg",
+        "name": "sdd-phase-1-Named-file-utility",
+        "color": "1d76db",
+        "description_sha256": "5c71f446784eef2fbc16bcbf8fdbc03a1b622649f4299cb62386ec81a3bca168",
+        "markers": [],
+        "closing_markers": []
+      },
+      {
+        "id": 12624578707,
+        "node_id": "LA_kwDOVDjAUc8AAAAC8HvIkw",
+        "name": "wontfix",
+        "color": "ffffff",
+        "description_sha256": "7005a3da62f74e32c046e5df2439b2911db569848f9e40c38024b20617530777",
+        "markers": [],
+        "closing_markers": []
+      }
+    ],
+    "milestones": [
+      {
+        "id": 18467474,
+        "number": 1,
+        "node_id": "MI_kwDOVDjAUc4BGcqS",
+        "title": "sdd-1.1-Named-file-counting",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/1",
+        "due_on": null,
+        "created_at": "2026-10-10T11:33:56Z",
+        "updated_at": "2026-10-10T12:16:00Z",
+        "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0",
+        "markers": [
+          {
+            "kind": "milestone-id",
+            "identity": "1.1"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "milestone-id",
+            "identity": "1.1"
+          }
+        ],
+        "outside_generated_sha256": "0f2d1d7111a77f1b4f04f5685825a7093a48dde871688abaaae1bbf42d1f48ec",
+        "generated_sha256": "e842130b8c096d0196cb563e08e22a657a410e681854158424eb8051c43b2d93",
+        "generated_field_names": []
+      },
+      {
+        "id": 18467475,
+        "number": 2,
+        "node_id": "MI_kwDOVDjAUc4BGcqT",
+        "title": "sdd-1.2-Failure-handling-and-distribution",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/2",
+        "due_on": null,
+        "created_at": "2026-10-10T11:34:04Z",
+        "updated_at": "2026-10-10T11:36:50Z",
+        "description_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be",
+        "markers": [
+          {
+            "kind": "milestone-id",
+            "identity": "1.2"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "milestone-id",
+            "identity": "1.2"
+          }
+        ],
+        "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "generated_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be",
+        "generated_field_names": []
+      },
+      {
+        "id": 18467477,
+        "number": 3,
+        "node_id": "MI_kwDOVDjAUc4BGcqV",
+        "title": "sdd-1.3-Phase-1-review",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/milestone/3",
+        "due_on": null,
+        "created_at": "2026-10-10T11:34:13Z",
+        "updated_at": "2026-10-10T11:36:59Z",
+        "description_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263",
+        "markers": [
+          {
+            "kind": "milestone-id",
+            "identity": "1.3"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "milestone-id",
+            "identity": "1.3"
+          }
+        ],
+        "outside_generated_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "generated_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263",
+        "generated_field_names": []
+      }
+    ],
+    "issues": [
+      {
+        "id": 5790855234,
+        "number": 10,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlwQg",
+        "title": "[T-009] Review, test and report phase 1",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/10",
+        "created_at": "2026-10-10T11:36:59Z",
+        "updated_at": "2026-10-10T11:36:59Z",
+        "body_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 3,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-009"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-009"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "1bac9fbcafa0e30b8a63dd2d3baa39e78a14da50d4cd3cea8b33cf7d551c8a36",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Report:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790854318,
+        "number": 9,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlsrg",
+        "title": "[T-008] Review, test and report milestone 1.2",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/9",
+        "created_at": "2026-10-10T11:36:50Z",
+        "updated_at": "2026-10-10T11:36:50Z",
+        "body_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 2,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-008"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-008"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "bb70fbc62143d5eab4b5010e08b0a133f1eefdbf82b1b4341ae66823fefc9518",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Report:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790853387,
+        "number": 8,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlpCw",
+        "title": "[T-007] Build and verify isolated source distribution",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/8",
+        "created_at": "2026-10-10T11:36:41Z",
+        "updated_at": "2026-10-10T11:36:41Z",
+        "body_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 2,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-007"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-007"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "78730af82981d338c490142b16da4eff07f3e62214e5fe0bc55f737e8e5f89b8",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790852415,
+        "number": 7,
+        "node_id": "I_kwDOVDjAUc8AAAABWSllPw",
+        "title": "[T-006] Document public API and runnable named-file usage",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/7",
+        "created_at": "2026-10-10T11:36:31Z",
+        "updated_at": "2026-10-10T11:36:32Z",
+        "body_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 2,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-006"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-006"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "d96ca153675d380513da799722b0dad549ee07ee906c82d2e49ee3cef6745e37",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790851199,
+        "number": 6,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlgfw",
+        "title": "[T-005] Complete named-file CLI failure and usage handling",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/6",
+        "created_at": "2026-10-10T11:36:20Z",
+        "updated_at": "2026-10-10T11:36:20Z",
+        "body_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 2,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-005"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-005"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "e63033f9fc33235e365734fdd62e4a51e0523c2d112e49d63368444b482aa71e",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790850206,
+        "number": 5,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlcng",
+        "title": "[T-004] Review, test and report milestone 1.1",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/5",
+        "created_at": "2026-10-10T11:36:11Z",
+        "updated_at": "2026-10-10T11:36:11Z",
+        "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 1,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-004"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-004"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "53e22a1eb0b1ef60c38d3bfc1f133dd94b9b07eefec6c2de191d842568a8e18e",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Report:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790849215,
+        "number": 4,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlYvw",
+        "title": "[T-003] Integrate named-file CLI and nonempty product checks",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/4",
+        "created_at": "2026-10-10T11:36:02Z",
+        "updated_at": "2026-10-10T11:36:02Z",
+        "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 1,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-003"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-003"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "23acc7417895b7f9f4c6901d3193f4a903230848372163173768d0a2e4785326",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790848274,
+        "number": 3,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlVEg",
+        "title": "[T-002] Implement strict file acquisition and complete public API",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/3",
+        "created_at": "2026-10-10T11:35:53Z",
+        "updated_at": "2026-10-10T11:35:53Z",
+        "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0",
+        "labels": [
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 1,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-002"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-002"
+          }
+        ],
+        "outside_generated_sha256": "430d9b14e14bb9a8b6daba1beee7b38b6a5d9fef7022d7c19ce6bd3a34a7b2ee",
+        "generated_sha256": "c55f832a7836db7e9341b2f38ab92377a8e7e6998b81f44c54d54092a0107196",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790847351,
+        "number": 2,
+        "node_id": "I_kwDOVDjAUc8AAAABWSlRdw",
+        "title": "[T-001] Implement immutable statistics and whole-text counting",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/2",
+        "created_at": "2026-10-10T11:35:45Z",
+        "updated_at": "2026-10-10T12:15:52Z",
+        "body_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652",
+        "labels": [
+          {
+            "id": 12625616051,
+            "name": "campaign-037-preserve"
+          },
+          {
+            "id": 12625690902,
+            "name": "sdd-phase-1-Named-file-utility"
+          }
+        ],
+        "milestone_number": 1,
+        "comments": 1,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-001"
+          }
+        ],
+        "closing_markers": [
+          {
+            "kind": "task-id",
+            "identity": "T-001"
+          }
+        ],
+        "outside_generated_sha256": "62829f3731999bb8369feda2742c3addb4cda51e438dc854350659ce94438714",
+        "generated_sha256": "141a34cd18940f5d9d869f425a71388990d2f2f86a010b0f7633ba2aaf6c698f",
+        "generated_field_names": [
+          "What:",
+          "Why:",
+          "Scope:",
+          "Dependencies:",
+          "Verification plan:",
+          "Result:",
+          "Sources:"
+        ]
+      },
+      {
+        "id": 5790780797,
+        "number": 1,
+        "node_id": "I_kwDOVDjAUc8AAAABWShNfQ",
+        "title": "Campaign 037 unrelated preservation fixture",
+        "state": "open",
+        "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/1",
+        "created_at": "2026-10-10T11:25:54Z",
+        "updated_at": "2026-10-10T11:25:54Z",
+        "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce",
+        "labels": [
+          {
+            "id": 12625616051,
+            "name": "campaign-037-preserve"
+          }
+        ],
+        "milestone_number": null,
+        "comments": 0,
+        "assignees": [],
+        "is_pr": false,
+        "markers": [],
+        "closing_markers": []
+      }
+    ],
+    "issue_2_comments": [
+      {
+        "id": 6097383663,
+        "user_id": 39730837,
+        "body_sha256": "f7b64d43b11867705802a3c512b2c640d9946655ea7aa1aabe9b297da5e28945",
+        "created_at": "2026-10-10T12:15:52Z",
+        "updated_at": "2026-10-10T12:15:52Z"
+      }
+    ]
+  },
+  "credential_checks": {
+    "effectively_ignored": true,
+    "untracked": true,
+    "protected_transient_api_use": true
+  },
+  "comparisons": [
+    {
+      "issue": 10,
+      "task_id": "T-009",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true,
+        "Report": true
+      },
+      "body_length": 1463,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-009 -->"
+      ]
+    },
+    {
+      "issue": 9,
+      "task_id": "T-008",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true,
+        "Report": true
+      },
+      "body_length": 1229,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-008 -->"
+      ]
+    },
+    {
+      "issue": 8,
+      "task_id": "T-007",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Outcome": true,
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true
+      },
+      "body_length": 1714,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-007 -->"
+      ]
+    },
+    {
+      "issue": 7,
+      "task_id": "T-006",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Outcome": true,
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true
+      },
+      "body_length": 1340,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-006 -->"
+      ]
+    },
+    {
+      "issue": 6,
+      "task_id": "T-005",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Outcome": true,
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true
+      },
+      "body_length": 1449,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-005 -->"
+      ]
+    },
+    {
+      "issue": 5,
+      "task_id": "T-004",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true,
+        "Report": true
+      },
+      "body_length": 1303,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-004 -->"
+      ]
+    },
+    {
+      "issue": 4,
+      "task_id": "T-003",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Outcome": true,
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true
+      },
+      "body_length": 1609,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-003 -->"
+      ]
+    },
+    {
+      "issue": 3,
+      "task_id": "T-002",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Outcome": true,
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true
+      },
+      "body_length": 1492,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-002 -->"
+      ]
+    },
+    {
+      "issue": 2,
+      "task_id": "T-001",
+      "title_matches": true,
+      "canonical_field_exact_substrings": {
+        "Outcome": true,
+        "Scope": true,
+        "Depends on": true,
+        "Evidence": true
+      },
+      "body_length": 1763,
+      "generated_heading_lines": [
+        "## Task brief <!-- sdd-forge:task-id=T-001 -->"
+      ]
+    }
+  ],
+  "git": {
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "branch": "design-docs/main",
+    "status": "",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+  },
+  "input_sha256": "0fcf348a306bc2967f33a0f11cf92afb5aeb54126c037b21fec4383a9f7c95e3",
+  "readiness_hash_checks": [
+    {
+      "source": "TASKS.md",
+      "sha256": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "layout.md",
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "PLAN-REVIEW-REPORT.md",
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "SPEC.md",
+      "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "SPEC-REVIEW-REPORT.md",
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "ARCHITECTURE.md",
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "hash_present_in_current_tasks_report": true
+    },
+    {
+      "source": "DECOMPOSITION.md",
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "hash_present_in_current_tasks_report": true
+    }
+  ],
+  "phase_label_check": {
+    "name_matches": true,
+    "description_length": 74,
+    "description_has_phase_name": false,
+    "description_contains_named_file": true,
+    "description_contains_api": true,
+    "description_contains_cli": true,
+    "description_sha256": "5c71f446784eef2fbc16bcbf8fdbc03a1b622649f4299cb62386ec81a3bca168"
+  },
+  "milestone_comparisons": [
+    {
+      "milestone": 1,
+      "id": "1.1",
+      "plan_paragraph_matches": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "plan_paragraph_count": 4,
+      "all_plan_section_content_present": true,
+      "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+    },
+    {
+      "milestone": 2,
+      "id": "1.2",
+      "plan_paragraph_matches": [
+        true,
+        true,
+        true
+      ],
+      "plan_paragraph_count": 3,
+      "all_plan_section_content_present": true,
+      "description_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be"
+    },
+    {
+      "milestone": 3,
+      "id": "1.3",
+      "plan_paragraph_matches": [
+        true,
+        true
+      ],
+      "plan_paragraph_count": 2,
+      "all_plan_section_content_present": true,
+      "description_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263"
+    }
+  ],
+  "after": {
+    "objects": [
+      {
+        "kind": "issue",
+        "id": 5790855234,
+        "number": 10,
+        "unchanged": true,
+        "content_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf"
+      },
+      {
+        "kind": "issue",
+        "id": 5790854318,
+        "number": 9,
+        "unchanged": true,
+        "content_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361"
+      },
+      {
+        "kind": "issue",
+        "id": 5790853387,
+        "number": 8,
+        "unchanged": true,
+        "content_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6"
+      },
+      {
+        "kind": "issue",
+        "id": 5790852415,
+        "number": 7,
+        "unchanged": true,
+        "content_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c"
+      },
+      {
+        "kind": "issue",
+        "id": 5790851199,
+        "number": 6,
+        "unchanged": true,
+        "content_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba"
+      },
+      {
+        "kind": "issue",
+        "id": 5790850206,
+        "number": 5,
+        "unchanged": true,
+        "content_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+      },
+      {
+        "kind": "issue",
+        "id": 5790849215,
+        "number": 4,
+        "unchanged": true,
+        "content_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+      },
+      {
+        "kind": "issue",
+        "id": 5790848274,
+        "number": 3,
+        "unchanged": true,
+        "content_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+      },
+      {
+        "kind": "issue",
+        "id": 5790847351,
+        "number": 2,
+        "unchanged": true,
+        "content_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652"
+      },
+      {
+        "kind": "issue",
+        "id": 5790780797,
+        "number": 1,
+        "unchanged": true,
+        "content_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce"
+      },
+      {
+        "kind": "milestone",
+        "id": 18467474,
+        "number": 1,
+        "unchanged": true,
+        "content_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+      },
+      {
+        "kind": "milestone",
+        "id": 18467475,
+        "number": 2,
+        "unchanged": true,
+        "content_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be"
+      },
+      {
+        "kind": "milestone",
+        "id": 18467477,
+        "number": 3,
+        "unchanged": true,
+        "content_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263"
+      },
+      {
+        "kind": "label",
+        "id": 12624578628,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "a0e29a556c55309dcf78098b04d2c5c8e6c082d4df0e108596880faec3273e4e"
+      },
+      {
+        "kind": "label",
+        "id": 12624578614,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "ba26e412cc494b92f18f01c968c2b3241803b752eb09f1577844190076120a92"
+      },
+      {
+        "kind": "label",
+        "id": 12625616051,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "cf6fc320df3a5d3a51954bfd5f4cd9f440e2eca098c6f8471ea8f165b83d6f5c"
+      },
+      {
+        "kind": "label",
+        "id": 12624578638,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "d1aadc4e1b60c7b31dfbed5db1beb3a9f178166309def32db138e2e6546c2059"
+      },
+      {
+        "kind": "label",
+        "id": 12624578649,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "092850c4484f11177dce84173d1a26030b145f573db994baa043648947130102"
+      },
+      {
+        "kind": "label",
+        "id": 12624578660,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "528e05403b406e202bb0bd23d3917d0688aaa7bf834fac8273682631bb42bbca"
+      },
+      {
+        "kind": "label",
+        "id": 12624578682,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "e7b33d49b02e3a67c41178ae81e03df423dd08d3cd6695030623de3910789d96"
+      },
+      {
+        "kind": "label",
+        "id": 12624578673,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "2a68d328096f7ecf792863fc4701db1a85072417d4dac3d606847541e0423a65"
+      },
+      {
+        "kind": "label",
+        "id": 12624578690,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "b0b7cab1d96254957703fa96a85a0400491637e8c110b6e79dff077194dd7bed"
+      },
+      {
+        "kind": "label",
+        "id": 12624578698,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "c758420437639eac26ad21aad1ff43032947a061a29e688a7cc442d7d936d2b5"
+      },
+      {
+        "kind": "label",
+        "id": 12625690902,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "5c71f446784eef2fbc16bcbf8fdbc03a1b622649f4299cb62386ec81a3bca168"
+      },
+      {
+        "kind": "label",
+        "id": 12624578707,
+        "number": null,
+        "unchanged": true,
+        "content_sha256": "7005a3da62f74e32c046e5df2439b2911db569848f9e40c38024b20617530777"
+      }
+    ],
+    "issue_2_comments": [
+      {
+        "id": 6097383663,
+        "user_id": 39730837,
+        "body_sha256": "f7b64d43b11867705802a3c512b2c640d9946655ea7aa1aabe9b297da5e28945",
+        "created_at": "2026-10-10T12:15:52Z",
+        "updated_at": "2026-10-10T12:15:52Z"
+      }
+    ]
+  },
+  "hierarchy": {
+    "phases": [
+      [
+        "1",
+        "Named-file utility"
+      ],
+      [
+        "2",
+        "JSON and stdin"
+      ]
+    ],
+    "task_ids": [
+      "T-001",
+      "T-002",
+      "T-003",
+      "T-004",
+      "T-005",
+      "T-006",
+      "T-007",
+      "T-008",
+      "T-009",
+      "T-010",
+      "T-011",
+      "T-012",
+      "T-013",
+      "T-014",
+      "T-015",
+      "T-016",
+      "T-017"
+    ],
+    "checked_count": 0,
+    "feature_owner_present": false
+  },
+  "task_to_issue": {
+    "T-009": 10,
+    "T-008": 9,
+    "T-007": 8,
+    "T-006": 7,
+    "T-005": 6,
+    "T-004": 5,
+    "T-003": 4,
+    "T-002": 3,
+    "T-001": 2
+  },
+  "stop_boundary": "Reconciliation before implementation; no branch, integration, commit, closure or release operation authorized/performed",
+  "result": {
+    "status": "Verified idempotent reconciliation; no corrective differences",
+    "hosted_write_count": 0,
+    "created": [],
+    "updated": [],
+    "conflicts": [],
+    "matched_phase_label_id": 12625690902,
+    "matched_milestone_numbers": [
+      1,
+      2,
+      3
+    ],
+    "matched_issue_numbers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "preserved_unrelated_issue_number": 1,
+    "preserved_extra_label": "campaign-037-preserve",
+    "preserved_issue_2_comment_ids": [
+      6097383663
+    ],
+    "all_observed_user_and_generated_hashes_unchanged": true,
+    "future_phase_objects": []
+  },
+  "remote_refs": {
+    "refs/heads/design-docs/main": "1e3305c8659045945244c06861079fef879ca3c3",
+    "refs/heads/main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+  },
+  "seal_time": "2026-10-10T12:21:03.978498+00:00"
+}

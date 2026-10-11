@@ -1,0 +1,84 @@
+{
+  "checkedSource": "229194acbb858c36314cc3af1831cf10a0481227",
+  "workingTreeChanges": [],
+  "markedVersion": "17.0.5",
+  "files": 98,
+  "links": 439,
+  "scenarios": [
+    {
+      "id": "SC-001",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-002",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-003",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-004",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-005",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-006",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-007",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-008",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-009",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-010",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-011",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-012",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-013",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    },
+    {
+      "id": "SC-014",
+      "result": "passed",
+      "method": "local parser/source assertion"
+    }
+  ],
+  "limits": [
+    "Heading/list candidate scan plus representative parser assertions; not a complete general-purpose Markdown linter.",
+    "Source checks do not establish live agent behavior.",
+    "Closed records and verbatim transcripts excluded."
+  ]
+}

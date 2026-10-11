@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-007",
+      "status": "Passed",
+      "assessment_path": "../../A-007/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/2-json-and-stdin",
+        "product_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925",
+        "integration_branch": "main",
+        "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/2-json-and-stdin",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "5f16f79e4bd608a321a329dc365ee4627e4fa0fc",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-007/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product checkout /workspace/scratch/46b31bb4dff6/037-textstats-product is paused on published phase/2-json-and-stdin at e63b8946bbb99347b0f73f070f9c728945ee5925; main remains completed Phase1 e7cae5b2216ff7dd311b6f7296d829d1927a6a8a. T001\u2013012 completed, JSON milestone2.1 accepted, T013\u2013017 remain pending and stdin is not implemented. Current governing product documents and the unchanged pinned plugin textstats-run-resources/plugin/ at ea515f5624c8a34cc4572731a2590223a5eb27f4 apply. Supplied preparation brief /workspace/scratch/46b31bb4dff6/037-a008-preparation-brief.md contains the product requirements. This authorizes bounded named-file range feature preparation only, through its concrete artifact reviews and ordinary durable publication, then stop before implementation. Concrete document assessments and acceptance decisions are delegated to coordinator; send each exact current artifact for review before dependent derivation. Maintained tracking remains enabled for eligible selected work; preserve all existing unrelated packages, issue1, foreign issue2 text/labels/comment6097383663 and milestone1 paragraph. All scoped commits/pushes and required hosted effects are authorized: push and verify every owned commit immediately before further work. No release requested. Existing protected playground API authentication is available at /workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground/gh.tkn only for transient memory use after ignored/untracked verification; never copy or expose credential material."
+  }
+}

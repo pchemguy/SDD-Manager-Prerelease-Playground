@@ -1,0 +1,220 @@
+[
+  {
+    "document": "README.md",
+    "fence": 1,
+    "language": "bash",
+    "actual_code": "python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')\"\npython -m textstats sample.txt\npython -m textstats --help\n",
+    "code_sha256": "63aac188fae5b607a4d7765834eabb0c34e468d2e4e46fba1a58a95cfaf53e6a",
+    "command": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')\"\npython -m textstats sample.txt\npython -m textstats --help\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "lines=3 words=5\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount CRLF/CR/LF lines and Unicode whitespace words in UTF-8 input.\n\npositional arguments:\n  INPUT              named UTF-8 file or - for binary stdin (use ./- for a\n                     file named -; -- before dash-prefixed names)\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading Unicode BOM as ordinary content\n  --lines START:END  select inclusive positive ASCII decimal logical lines\n                     (one range only)\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 2,
+    "language": "bash",
+    "actual_code": "python -c \"from pathlib import Path; Path('bom.txt').write_bytes(b'\\xef\\xbb\\xbf')\"\npython -m textstats bom.txt\npython -m textstats --keep-bom bom.txt\npython -c \"from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\\n')\"\npython -m textstats -- -sample\n",
+    "code_sha256": "9ea0750ac8b8f3fe1f3f40017d39d3a08449e44bbe22305e66367805e4cb96f5",
+    "command": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('bom.txt').write_bytes(b'\\xef\\xbb\\xbf')\"\npython -m textstats bom.txt\npython -m textstats --keep-bom bom.txt\npython -c \"from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\\n')\"\npython -m textstats -- -sample\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "lines=0 words=0\nlines=1 words=1\nlines=1 words=2\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 3,
+    "language": "bash",
+    "actual_code": "python -m textstats --lines 2:3 sample.txt\npython -m textstats sample.txt --lines=0002:0099\n",
+    "code_sha256": "26628911e58d93791dd703b1b95f460d749a140a2622754c007f9656491acd6c",
+    "command": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 2:3 sample.txt\npython -m textstats sample.txt --lines=0002:0099\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "lines=2 words=3\nlines=2 words=3\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 4,
+    "language": "bash",
+    "actual_code": "python -c \"from pathlib import Path; Path('range.txt').write_bytes(b'\\xef\\xbb\\xbfalpha beta\\r\\n\\r\\n\\xef\\xbb\\xbf\\nlast two')\"\npython -m textstats --lines 2:2 range.txt\npython -m textstats range.txt --keep-bom --lines=2:2\npython -m textstats --lines 2:99 range.txt\npython -m textstats --keep-bom --lines 3:3 range.txt\npython -m textstats range.txt --lines 99:100\n",
+    "code_sha256": "50666b097ee2d8e09eba90bd95fa0a1a251952a8f927d8aeb3e789b906c2b061",
+    "command": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('range.txt').write_bytes(b'\\xef\\xbb\\xbfalpha beta\\r\\n\\r\\n\\xef\\xbb\\xbf\\nlast two')\"\npython -m textstats --lines 2:2 range.txt\npython -m textstats range.txt --keep-bom --lines=2:2\npython -m textstats --lines 2:99 range.txt\npython -m textstats --keep-bom --lines 3:3 range.txt\npython -m textstats range.txt --lines 99:100\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "lines=1 words=0\nlines=1 words=0\nlines=3 words=3\nlines=1 words=1\nlines=0 words=0\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 5,
+    "language": "bash",
+    "actual_code": "python -m textstats --lines 0:2 missing.txt\npython -m textstats --lines 3:2 missing.txt\npython -m textstats --lines=1:2 --lines 2:3 missing.txt\npython -m textstats --lines\npython -c \"from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\\n\\xff')\"\npython -m textstats --lines 1:1 bad-range.txt\n",
+    "code_sha256": "21da2443dc850dfd63153b96c53cd473e5ac7e2915446070b215806c39f46427",
+    "command": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 0:2 missing.txt\npython -m textstats --lines 3:2 missing.txt\npython -m textstats --lines=1:2 --lines 2:3 missing.txt\npython -m textstats --lines\npython -c \"from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\\n\\xff')\"\npython -m textstats --lines 1:1 bad-range.txt\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected one argument\ntextstats: 'bad-range.txt': 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte\n",
+    "expected_returncode": 1,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 6,
+    "language": "bash",
+    "actual_code": "printf 'alpha beta\\r\\nbeta\\rlast two\\n' | python -B -m textstats -\nprintf '\\357\\273\\277' | python -B -m textstats --keep-bom -\nprintf 'alpha beta\\nbeta\\nlast two' | python -B -m textstats - --lines=2:99\nprintf 'a\\n\\357\\273\\277' | python -B -m textstats --lines 2:2 -\nprintf '' | python -B -m textstats -\n",
+    "code_sha256": "665c4fdd9b001f68e64653d37c55d8ba8818976b3bb7305a7c9d545c02b39714",
+    "command": [
+      "bash",
+      "-c",
+      "printf 'alpha beta\\r\\nbeta\\rlast two\\n' | python -B -m textstats -\nprintf '\\357\\273\\277' | python -B -m textstats --keep-bom -\nprintf 'alpha beta\\nbeta\\nlast two' | python -B -m textstats - --lines=2:99\nprintf 'a\\n\\357\\273\\277' | python -B -m textstats --lines 2:2 -\nprintf '' | python -B -m textstats -\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "lines=3 words=5\nlines=1 words=1\nlines=2 words=3\nlines=1 words=1\nlines=0 words=0\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 7,
+    "language": "bash",
+    "actual_code": "printf 'ok\\n\\377' | python -B -m textstats --lines 1:1 -\n",
+    "code_sha256": "4c5af8861fe8a9b3f570db6fab1928d546907b5b53e9758484be2f984375fb80",
+    "command": [
+      "bash",
+      "-c",
+      "printf 'ok\\n\\377' | python -B -m textstats --lines 1:1 -\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "textstats: stdin: 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte\n",
+    "expected_returncode": 1,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 8,
+    "language": "python",
+    "actual_code": "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\nbeta\\rlast two\\n\") == TextStats(3, 5)\nassert count_file(\"sample.txt\") == TextStats(3, 5)\nassert count_text(\"\\ufeff\") == TextStats(0, 0)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\n",
+    "code_sha256": "178f7cd935bac307e6b2cf02db5279d1a78f945bd33c6e7e75b527c58aa11d1d",
+    "command": [
+      "python",
+      "-B",
+      "-c",
+      "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\nbeta\\rlast two\\n\") == TextStats(3, 5)\nassert count_file(\"sample.txt\") == TextStats(3, 5)\nassert count_text(\"\\ufeff\") == TextStats(0, 0)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 9,
+    "language": "bash",
+    "actual_code": "python tools/check_tests.py\npython -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v\n",
+    "code_sha256": "5bbb7cc79a9c1c82b6c4544c359580dd50731890671c3fd026bfa79f0f3007f6",
+    "command": [
+      "bash",
+      "-c",
+      "python tools/check_tests.py\npython -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "unit: 37 tests\nintegration: 34 tests\nextracted import: /tmp/tmp2hv5ioaa/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpafrsz__m/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp_kj7u4vw/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpbt2t0w7b/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpddic_0tc/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpjwro6t8t/textstats-source/textstats/__init__.py\n478 extracted module cases passed\nextracted import: /tmp/tmp7hefplfv/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpravgbdrn/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp74ez6yfr/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpkrl9gtic/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpluacia1s/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp3xaoruqt/textstats-source/textstats/__init__.py\n478 extracted module cases passed\n",
+    "stderr": "test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_literal_json_filename_after_termination (tests.unit.test_cli.CliTests.test_literal_json_filename_after_termination) ... ok\ntest_removed_json_forms_reject_before_all_acquisition (tests.unit.test_cli.CliTests.test_removed_json_forms_reject_before_all_acquisition) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_full_decode_after_end_and_read_failure_close (tests.unit.test_cli.RangeCliTests.test_full_decode_after_end_and_read_failure_close) ... ok\ntest_full_invalid_matrix_precedes_file_acquisition (tests.unit.test_cli.RangeCliTests.test_full_invalid_matrix_precedes_file_acquisition) ... ok\ntest_real_acquisition_normalizes_once_and_closes (tests.unit.test_cli.RangeCliTests.test_real_acquisition_normalizes_once_and_closes) ... ok\ntest_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard (tests.unit.test_cli.RangeCliTests.test_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard) ... ok\ntest_stdin_failures_identify_source_and_keep_stream_open (tests.unit.test_cli.StdinCliTests.test_stdin_failures_identify_source_and_keep_stream_open) ... ok\ntest_stdin_is_binary_and_borrowed_for_whole_input_and_ranges (tests.unit.test_cli.StdinCliTests.test_stdin_is_binary_and_borrowed_for_whole_input_and_ranges) ... ok\ntest_usage_and_help_precede_borrowed_acquisition (tests.unit.test_cli.StdinCliTests.test_usage_and_help_precede_borrowed_acquisition) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_preserved_normalized_logical_segments_and_eof (tests.unit.test_core.SelectionTests.test_preserved_normalized_logical_segments_and_eof) ... ok\ntest_selection_and_normalized_counting_do_not_strip_exposed_bom (tests.unit.test_core.SelectionTests.test_selection_and_normalized_counting_do_not_strip_exposed_bom) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_complete_bytes_preserve_unicode_terminators_and_boms (tests.unit.test_io.BorrowedAcquisitionTests.test_complete_bytes_preserve_unicode_terminators_and_boms) ... ok\ntest_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership (tests.unit.test_io.BorrowedAcquisitionTests.test_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership) ... ok\ntest_read_failure_propagates_without_closing_borrowed_stream (tests.unit.test_io.BorrowedAcquisitionTests.test_read_failure_propagates_without_closing_borrowed_stream) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 37 tests in 0.278s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_literal_json_filename_in_whole_and_range_modes (tests.integration.test_cli.ModuleCliTests.test_literal_json_filename_in_whole_and_range_modes) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_removed_json_usage_even_on_missing_or_undecodable_file (tests.integration.test_cli.ModuleCliTests.test_removed_json_usage_even_on_missing_or_undecodable_file) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_all_option_permutations_spellings_and_input_positions (tests.integration.test_cli.RangeModuleTests.test_all_option_permutations_spellings_and_input_positions) ... ok\ntest_dash_named_files_after_option_termination (tests.integration.test_cli.RangeModuleTests.test_dash_named_files_after_option_termination) ... ok\ntest_every_feature_anchor_text_and_bom_policy (tests.integration.test_cli.RangeModuleTests.test_every_feature_anchor_text_and_bom_policy) ... ok\ntest_huge_and_leading_zero_endpoints (tests.integration.test_cli.RangeModuleTests.test_huge_and_leading_zero_endpoints) ... ok\ntest_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure (tests.integration.test_cli.RangeModuleTests.test_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure) ... ok\ntest_binary_stdin_matrix_is_independent_of_text_locale (tests.integration.test_cli.StdinModuleTests.test_binary_stdin_matrix_is_independent_of_text_locale) ... ok\ntest_explicit_dash_file_is_distinct_from_stdin (tests.integration.test_cli.StdinModuleTests.test_explicit_dash_file_is_distinct_from_stdin) ... ok\ntest_stdin_complete_decode_and_usage_failures (tests.integration.test_cli.StdinModuleTests.test_stdin_complete_decode_and_usage_failures) ... ok\ntest_stdin_option_permutations_and_unbounded_endpoints (tests.integration.test_cli.StdinModuleTests.test_stdin_option_permutations_and_unbounded_endpoints) ... ok\ntest_stdin_range_anchors_and_both_spellings (tests.integration.test_cli.StdinModuleTests.test_stdin_range_anchors_and_both_spellings) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_ignored_range_with_healthy_whole_input (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_range_with_healthy_whole_input) ... ok\ntest_checker_rejects_ignored_stdin_with_healthy_named_file_behavior (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_stdin_with_healthy_named_file_behavior) ... ok\ntest_checker_rejects_second_bom_normalization_after_selection (tests.integration.test_distribution.DistributionTests.test_checker_rejects_second_bom_normalization_after_selection) ... ok\ntest_checker_rejects_silently_accepted_removed_json_option (tests.integration.test_distribution.DistributionTests.test_checker_rejects_silently_accepted_removed_json_option) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 34 tests in 78.087s\n\nOK\ntest_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_literal_json_filename_after_termination (tests.unit.test_cli.CliTests.test_literal_json_filename_after_termination) ... ok\ntest_removed_json_forms_reject_before_all_acquisition (tests.unit.test_cli.CliTests.test_removed_json_forms_reject_before_all_acquisition) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_full_decode_after_end_and_read_failure_close (tests.unit.test_cli.RangeCliTests.test_full_decode_after_end_and_read_failure_close) ... ok\ntest_full_invalid_matrix_precedes_file_acquisition (tests.unit.test_cli.RangeCliTests.test_full_invalid_matrix_precedes_file_acquisition) ... ok\ntest_real_acquisition_normalizes_once_and_closes (tests.unit.test_cli.RangeCliTests.test_real_acquisition_normalizes_once_and_closes) ... ok\ntest_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard (tests.unit.test_cli.RangeCliTests.test_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard) ... ok\ntest_stdin_failures_identify_source_and_keep_stream_open (tests.unit.test_cli.StdinCliTests.test_stdin_failures_identify_source_and_keep_stream_open) ... ok\ntest_stdin_is_binary_and_borrowed_for_whole_input_and_ranges (tests.unit.test_cli.StdinCliTests.test_stdin_is_binary_and_borrowed_for_whole_input_and_ranges) ... ok\ntest_usage_and_help_precede_borrowed_acquisition (tests.unit.test_cli.StdinCliTests.test_usage_and_help_precede_borrowed_acquisition) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_preserved_normalized_logical_segments_and_eof (tests.unit.test_core.SelectionTests.test_preserved_normalized_logical_segments_and_eof) ... ok\ntest_selection_and_normalized_counting_do_not_strip_exposed_bom (tests.unit.test_core.SelectionTests.test_selection_and_normalized_counting_do_not_strip_exposed_bom) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_complete_bytes_preserve_unicode_terminators_and_boms (tests.unit.test_io.BorrowedAcquisitionTests.test_complete_bytes_preserve_unicode_terminators_and_boms) ... ok\ntest_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership (tests.unit.test_io.BorrowedAcquisitionTests.test_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership) ... ok\ntest_read_failure_propagates_without_closing_borrowed_stream (tests.unit.test_io.BorrowedAcquisitionTests.test_read_failure_propagates_without_closing_borrowed_stream) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 37 tests in 0.381s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_literal_json_filename_in_whole_and_range_modes (tests.integration.test_cli.ModuleCliTests.test_literal_json_filename_in_whole_and_range_modes) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_removed_json_usage_even_on_missing_or_undecodable_file (tests.integration.test_cli.ModuleCliTests.test_removed_json_usage_even_on_missing_or_undecodable_file) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_all_option_permutations_spellings_and_input_positions (tests.integration.test_cli.RangeModuleTests.test_all_option_permutations_spellings_and_input_positions) ... ok\ntest_dash_named_files_after_option_termination (tests.integration.test_cli.RangeModuleTests.test_dash_named_files_after_option_termination) ... ok\ntest_every_feature_anchor_text_and_bom_policy (tests.integration.test_cli.RangeModuleTests.test_every_feature_anchor_text_and_bom_policy) ... ok\ntest_huge_and_leading_zero_endpoints (tests.integration.test_cli.RangeModuleTests.test_huge_and_leading_zero_endpoints) ... ok\ntest_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure (tests.integration.test_cli.RangeModuleTests.test_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure) ... ok\ntest_binary_stdin_matrix_is_independent_of_text_locale (tests.integration.test_cli.StdinModuleTests.test_binary_stdin_matrix_is_independent_of_text_locale) ... ok\ntest_explicit_dash_file_is_distinct_from_stdin (tests.integration.test_cli.StdinModuleTests.test_explicit_dash_file_is_distinct_from_stdin) ... ok\ntest_stdin_complete_decode_and_usage_failures (tests.integration.test_cli.StdinModuleTests.test_stdin_complete_decode_and_usage_failures) ... ok\ntest_stdin_option_permutations_and_unbounded_endpoints (tests.integration.test_cli.StdinModuleTests.test_stdin_option_permutations_and_unbounded_endpoints) ... ok\ntest_stdin_range_anchors_and_both_spellings (tests.integration.test_cli.StdinModuleTests.test_stdin_range_anchors_and_both_spellings) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_ignored_range_with_healthy_whole_input (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_range_with_healthy_whole_input) ... ok\ntest_checker_rejects_ignored_stdin_with_healthy_named_file_behavior (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_stdin_with_healthy_named_file_behavior) ... ok\ntest_checker_rejects_second_bom_normalization_after_selection (tests.integration.test_distribution.DistributionTests.test_checker_rejects_second_bom_normalization_after_selection) ... ok\ntest_checker_rejects_silently_accepted_removed_json_option (tests.integration.test_distribution.DistributionTests.test_checker_rejects_silently_accepted_removed_json_option) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 34 tests in 91.571s\n\nOK\n",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 10,
+    "language": "bash",
+    "actual_code": "python tools/package_source.py\npython tools/check_distribution.py\n",
+    "code_sha256": "3c9021d5895e560216ac6baa689ab058f5eeac9812bf7a3edeb080a759e714d5",
+    "command": [
+      "bash",
+      "-c",
+      "python tools/package_source.py\npython tools/check_distribution.py\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export/dist/textstats-source.zip\nextracted import: /tmp/tmpudarng2f/textstats-source/textstats/__init__.py\n478 extracted module cases passed\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "README.md",
+    "fence": 11,
+    "language": "bash",
+    "actual_code": "example_dir=$(mktemp -d)\npython -m zipfile -e dist/textstats-source.zip \"$example_dir\"\n(\n    cd \"$example_dir/textstats-source\"\n    python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\\\r\\\\nbeta\\\\rlast two\\\\n')\"\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n    printf 'alpha beta\\nbeta\\nlast two' | env -u PYTHONPATH -u PYTHONHOME python -B -s -m textstats --lines=2:99 -\n)\nrm -r \"$example_dir\"\n",
+    "code_sha256": "4f62b72f7b0a212a188ed08caf66a3f2b20287871a5e7b193582832fe2134768",
+    "command": [
+      "bash",
+      "-c",
+      "example_dir=$(mktemp -d)\npython -m zipfile -e dist/textstats-source.zip \"$example_dir\"\n(\n    cd \"$example_dir/textstats-source\"\n    python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\\\r\\\\nbeta\\\\rlast two\\\\n')\"\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n    printf 'alpha beta\\nbeta\\nlast two' | env -u PYTHONPATH -u PYTHONHOME python -B -s -m textstats --lines=2:99 -\n)\nrm -r \"$example_dir\"\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "lines=3 words=5\nlines=2 words=3\n",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  },
+  {
+    "document": "docs/public-api.md",
+    "fence": 1,
+    "language": "python",
+    "actual_code": "from pathlib import Path\nfrom textstats import TextStats, count_text, count_file\n\nassert TextStats(lines=2, words=3) == TextStats(2, 3)\nassert count_text(\"a b\\nc\") == TextStats(2, 3)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\nassert count_file(Path(\"sample.txt\"), strip_bom=True) == TextStats(3, 5)\n",
+    "code_sha256": "0cf496f7fe3e6a620870f9cf63f622b0169a012b30fc73f37cd9ea80ddfabf0b",
+    "command": [
+      "python",
+      "-B",
+      "-c",
+      "from pathlib import Path\nfrom textstats import TextStats, count_text, count_file\n\nassert TextStats(lines=2, words=3) == TextStats(2, 3)\nassert count_text(\"a b\\nc\") == TextStats(2, 3)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\nassert count_file(Path(\"sample.txt\"), strip_bom=True) == TextStats(3, 5)\n"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "expected_returncode": 0,
+    "passed": true
+  }
+]

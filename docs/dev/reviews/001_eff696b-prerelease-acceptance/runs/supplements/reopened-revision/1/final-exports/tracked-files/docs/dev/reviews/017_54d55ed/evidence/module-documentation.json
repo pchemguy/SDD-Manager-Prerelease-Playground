@@ -1,0 +1,275 @@
+[
+  {
+    "path": "acceptance/textstats/cases/assessor/capture.py",
+    "module_documented": true,
+    "top_level_interfaces": [
+      {
+        "name": "channels",
+        "documented": false
+      },
+      {
+        "name": "invoke",
+        "documented": false
+      },
+      {
+        "name": "cli_observation",
+        "documented": false
+      },
+      {
+        "name": "_capture",
+        "documented": false
+      },
+      {
+        "name": "capture",
+        "documented": false
+      },
+      {
+        "name": "main",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/cases/assessor/catalog_tools.py",
+    "module_documented": true,
+    "top_level_interfaces": [
+      {
+        "name": "require",
+        "documented": false
+      },
+      {
+        "name": "asset",
+        "documented": false
+      },
+      {
+        "name": "validate_contract",
+        "documented": false
+      },
+      {
+        "name": "validate_catalog",
+        "documented": false
+      },
+      {
+        "name": "render",
+        "documented": false
+      },
+      {
+        "name": "main",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/scripts/assess.py",
+    "module_documented": true,
+    "top_level_interfaces": []
+  },
+  {
+    "path": "acceptance/textstats/scripts/core.py",
+    "module_documented": true,
+    "top_level_interfaces": [
+      {
+        "name": "Stop",
+        "documented": false
+      },
+      {
+        "name": "protected",
+        "documented": true
+      },
+      {
+        "name": "sensitive_text",
+        "documented": false
+      },
+      {
+        "name": "no_secret",
+        "documented": false
+      },
+      {
+        "name": "clean_bytes",
+        "documented": false
+      },
+      {
+        "name": "exact",
+        "documented": false
+      },
+      {
+        "name": "validate",
+        "documented": true
+      },
+      {
+        "name": "load",
+        "documented": false
+      },
+      {
+        "name": "configuration",
+        "documented": false
+      },
+      {
+        "name": "checkpoint",
+        "documented": false
+      },
+      {
+        "name": "git",
+        "documented": false
+      },
+      {
+        "name": "normalize",
+        "documented": false
+      },
+      {
+        "name": "remote_read",
+        "documented": false
+      },
+      {
+        "name": "repository",
+        "documented": false
+      },
+      {
+        "name": "package",
+        "documented": false
+      },
+      {
+        "name": "preflight",
+        "documented": false
+      },
+      {
+        "name": "write_new",
+        "documented": false
+      },
+      {
+        "name": "prepare",
+        "documented": false
+      },
+      {
+        "name": "paths",
+        "documented": false
+      },
+      {
+        "name": "ancestor_containment",
+        "documented": true
+      },
+      {
+        "name": "observe_git",
+        "documented": false
+      },
+      {
+        "name": "reconcile",
+        "documented": false
+      },
+      {
+        "name": "export_recovery",
+        "documented": false
+      },
+      {
+        "name": "observation",
+        "documented": false
+      },
+      {
+        "name": "relative",
+        "documented": false
+      },
+      {
+        "name": "ownership",
+        "documented": true
+      },
+      {
+        "name": "assessment",
+        "documented": false
+      },
+      {
+        "name": "main",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/scripts/observe.py",
+    "module_documented": true,
+    "top_level_interfaces": []
+  },
+  {
+    "path": "acceptance/textstats/scripts/preflight.py",
+    "module_documented": true,
+    "top_level_interfaces": []
+  },
+  {
+    "path": "acceptance/textstats/scripts/prepare.py",
+    "module_documented": true,
+    "top_level_interfaces": []
+  },
+  {
+    "path": "acceptance/textstats/tests/__init__.py",
+    "module_documented": true,
+    "top_level_interfaces": []
+  },
+  {
+    "path": "acceptance/textstats/tests/support.py",
+    "module_documented": false,
+    "top_level_interfaces": [
+      {
+        "name": "git",
+        "documented": false
+      },
+      {
+        "name": "Sandbox",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/tests/test_catalog.py",
+    "module_documented": true,
+    "top_level_interfaces": [
+      {
+        "name": "module",
+        "documented": false
+      },
+      {
+        "name": "CatalogIntegrity",
+        "documented": false
+      },
+      {
+        "name": "HandoffIntegrity",
+        "documented": false
+      },
+      {
+        "name": "CaptureSensitivity",
+        "documented": false
+      },
+      {
+        "name": "FailedCaptureProvenance",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/tests/test_checkers.py",
+    "module_documented": false,
+    "top_level_interfaces": [
+      {
+        "name": "CheckerTests",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/tests/test_preflight.py",
+    "module_documented": false,
+    "top_level_interfaces": [
+      {
+        "name": "PreflightTests",
+        "documented": false
+      }
+    ]
+  },
+  {
+    "path": "acceptance/textstats/tests/test_recovery.py",
+    "module_documented": false,
+    "top_level_interfaces": [
+      {
+        "name": "RecoveryTests",
+        "documented": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "identity": "campaign037_phase1_tracking",
+  "phase": "1",
+  "name": "Named-file utility",
+  "milestones": [
+    {
+      "id": "1.1",
+      "name": "Named-file counting",
+      "completed": false
+    },
+    {
+      "id": "1.2",
+      "name": "Failure handling and distribution",
+      "completed": false
+    },
+    {
+      "id": "1.3",
+      "name": "Phase 1 review",
+      "completed": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-001",
+      "name": "Implement immutable statistics and whole-text counting",
+      "milestone": "1.1",
+      "completed": false
+    },
+    {
+      "id": "T-002",
+      "name": "Implement strict file acquisition and complete public API",
+      "milestone": "1.1",
+      "completed": false
+    },
+    {
+      "id": "T-003",
+      "name": "Integrate named-file CLI and nonempty product checks",
+      "milestone": "1.1",
+      "completed": false
+    },
+    {
+      "id": "T-004",
+      "name": "Review, test and report milestone 1.1",
+      "milestone": "1.1",
+      "completed": false
+    },
+    {
+      "id": "T-005",
+      "name": "Complete named-file CLI failure and usage handling",
+      "milestone": "1.2",
+      "completed": false
+    },
+    {
+      "id": "T-006",
+      "name": "Document public API and runnable named-file usage",
+      "milestone": "1.2",
+      "completed": false
+    },
+    {
+      "id": "T-007",
+      "name": "Build and verify isolated source distribution",
+      "milestone": "1.2",
+      "completed": false
+    },
+    {
+      "id": "T-008",
+      "name": "Review, test and report milestone 1.2",
+      "milestone": "1.2",
+      "completed": false
+    },
+    {
+      "id": "T-009",
+      "name": "Review, test and report phase 1",
+      "milestone": "1.3",
+      "completed": false
+    }
+  ],
+  "completed_tasks": 0,
+  "implementation": "not started",
+  "source": {
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "files": {
+      "docs/dev/TASKS.md": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+      "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+    }
+  },
+  "scope": "Controlled Phase 1 tracking summary only; no task or parent completion; no live GitHub projection"
+}

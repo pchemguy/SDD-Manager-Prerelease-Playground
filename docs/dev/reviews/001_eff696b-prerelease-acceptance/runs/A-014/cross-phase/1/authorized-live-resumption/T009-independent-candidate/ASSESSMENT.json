@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "case_id": "A-014",
+  "variant": "cross-phase",
+  "scope": "Concrete T-009 precommit candidate acceptance only",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "source_head": "7b9f570aa4452d2ca9d6105479640528cb113f0e",
+  "target_main": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+  "staged_tree": "93756800aafe8abb0d8719176a14eb81ba42b4e1",
+  "report_sha256": "44143b947ab368a95d3095cf5fe23bfed2e09733f6d8cccb6c584f351e1228a3",
+  "tasks_sha256": "fee72d464890772e19da9a42a246d01ebbd3f21aa16e2080d805d0446fc8c912",
+  "checks": {
+    "report_substance": "Complete separate code review of package/API/acquisition/CLI/tests/docs/distribution, actual count/exit evidence, prior milestone TODO None retained and resolved M1.2-001 preserved; local/runtime/isolation limits explicit.",
+    "scope": "Exactly seven staged task-owned paths. Five code deltas solely insert explicit -B child argv; package semantics, governing roots/QC, milestone reports and pinned resources retained. TASKS flips T009 and eligible 1.3/phase parents only; T010 onward remain unchecked.",
+    "independent_private_verification": "Exact staged seven files copied over sealed private baseline. Python -B check_tests status0:23 unit/18 integration and36 actual extracted module cases. Consumer raw corrected tests/checker and all seven actual user-guide fences independently inspected, status0.",
+    "failures": "Consumer original bare-B NameError failure retained and identified as edit failure rather than meaningful product RED. Original A014 Blocked facility/rejection records remain distinct.",
+    "ownership": "Tracking explicitly inactive for this authorized fork; historical native objects foreign/protected. No current native closure claimed. Three uncertain reappearing samples are untracked/excluded and preserved; no cleanup accepted by assumption.",
+    "prospective_integration": "Main88a is actual ancestor of source7b9; exact candidate has no target-only conflict. Prospective report accurately requires published task then two-parent integration, merged-state verification and exact trial-main publication before T010; those future operations remain unassessed."
+  },
+  "pending_gates": [
+    "Actual T009 closing commit exact subject/result/evidence/initial checkbox and immediate trial-phase exact readback.",
+    "Actual two-parent merge ordered parent88a then reached T009 tip, merged-state checks and exact trial-main publication.",
+    "Authorized Phase2 activation then bounded T010 task persistence/publication assessment."
+  ],
+  "overall_A014_grade": "Pending; this scoped candidate acceptance is not full cross-phase execution pass.",
+  "limits": [
+    "Shared broad filesystem prevents isolation certification.",
+    "Native full transcript unavailable; external consumer chronology/raw command files observed.",
+    "Python3.12.14 only; no broader supported-runtime/platform certification."
+  ]
+}

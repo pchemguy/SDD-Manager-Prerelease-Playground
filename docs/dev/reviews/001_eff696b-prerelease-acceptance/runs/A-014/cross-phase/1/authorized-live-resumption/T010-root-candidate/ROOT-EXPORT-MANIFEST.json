@@ -1,0 +1,38 @@
+{
+  "CANDIDATE.json": {
+    "sha256": "6c4a2f55512a3cd44c276cdd2a66c718ca6824d28b7265b1a95c364b3fce7a00",
+    "bytes": 4224
+  },
+  "files/AGENTS.md": {
+    "sha256": "a6d1a1626ac3b093131d2bdc3d24f3ef90dbc039d5c72e0a978b7bdb28b555f6",
+    "bytes": 4404
+  },
+  "files/README.md": {
+    "sha256": "3fee1459e1064988923d7c546e376d3bb434a662c22b5dc78d232c8a19e145c4",
+    "bytes": 5310
+  },
+  "files/docs/dev/TASKS.md": {
+    "sha256": "b81a72d93988cd44d4ed11e9798cde7a8b013621be3cf7fb18c80de83dadd0aa",
+    "bytes": 40875
+  },
+  "files/docs/public-api.md": {
+    "sha256": "01bb196cc9695df7cd74c207f47599e3bcc62fb00b881098530d758ff2316fd9",
+    "bytes": 5136
+  },
+  "files/tests/integration/test_cli.py": {
+    "sha256": "db04407c6177b013b3ae2bb4997430a69d36ea2e44f514f4df7cc526e0c6b4a4",
+    "bytes": 8537
+  },
+  "files/tests/unit/test_cli.py": {
+    "sha256": "c31e16682147d87c300e7de8f2fd6529e4cdb8de2bf28bc7c06f0157c09d668b",
+    "bytes": 9210
+  },
+  "files/textstats/cli.py": {
+    "sha256": "5052a8f58950effeb4f546f672b06c9776b3c8bea6c67f4ccdce8347561f7ed5",
+    "bytes": 1866
+  },
+  "textstats-source.zip": {
+    "sha256": "89f50d70070624e7a2e9584475141a5333add647eff42f45c88f952a8640abe0",
+    "bytes": 12542
+  }
+}

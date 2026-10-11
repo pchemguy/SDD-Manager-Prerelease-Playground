@@ -1,0 +1,13 @@
+{
+  "name": "actual-t009-parent",
+  "args": [
+    "git",
+    "rev-parse",
+    "5b17e4650c64c7c735991931b591bdabb8069215^"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

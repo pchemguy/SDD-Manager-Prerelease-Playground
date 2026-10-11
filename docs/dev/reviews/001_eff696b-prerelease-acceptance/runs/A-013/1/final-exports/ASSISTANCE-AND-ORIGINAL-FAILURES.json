@@ -1,0 +1,31 @@
+{
+  "scope": "Assessor and consumer original failures remain separate from successful repaired evidence",
+  "assessor": [
+    {
+      "failure": "First final literal-evidence composition nested capture envelopes instead of extracting their literals, producing6literal failures",
+      "originals": [
+        "final-reached/runtime/literal-evidence.json",
+        "final-reached/original-DSL-assessment.json",
+        "final-reached/commands.json"
+      ],
+      "repair": "Explicit extraction only; actual original capture values and original A013 contract unchanged",
+      "fresh_result": "Only true unpublished invariant fails"
+    },
+    {
+      "failure": "Initial run-state remote_commit copied desired local merge instead of sampled remote fbe8",
+      "original": "final-reached/run-state.json",
+      "repair": "run-state-actual.json binds actual remote fbe8; original checks use product_commit/merge_parents, unaffected"
+    },
+    {
+      "failure": "First route-proof audit filter omitted actual --heads ls-remote variant; tool returned AssertionError1",
+      "original": "audit-scripts/final-route-proof.original.py",
+      "repair": "Accept both actual observed argv shapes, retain exact selected commands; no product correction"
+    },
+    {
+      "failure": "Pinned complete recovery helper exited2 sensitive_content_not_exportable before any export",
+      "original": "final-reached/commands.json",
+      "repair": "Separate complete current tracked/index/blob exports plus reached commit/tree objects; whole reachable-history bundle remains unclaimed"
+    }
+  ],
+  "consumer": "Exact original full sealed observations, immutable records, surviving race checkpoint, both platform push rejections and actual seal preserved under sealed-consumer; unknown overwritten bytes/channels remain unavailable, not reconstructed"
+}

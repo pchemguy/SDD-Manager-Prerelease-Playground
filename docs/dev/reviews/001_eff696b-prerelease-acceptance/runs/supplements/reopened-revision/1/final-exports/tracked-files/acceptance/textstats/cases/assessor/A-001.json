@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "case_id": "A-001",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Actual repository/worktree and applicable instructions are observed. Full design/SPEC, MVP plan/layout and valid parent/child tasks are produced and published.",
+    "No production implementation or completed-task claim appears; tests/unit and tests/integration requirements survive in generated product artifacts.",
+    "Accepted PLAN/TASKS reserve a final single-task phase review milestone per phase, and every delivery milestone ends with an explicit milestone review/testing/report task with stable IDs and report links. Preparation does not create hosted future-phase objects.",
+    "SPEC/design, PLAN/SPEC and TASKS/PLAN preparation QC reports are adjacent to their roots, cover applicable children and identify current accepted sources. Delivery counts exclude mandatory review units; semantic scope and count-trigger rationale are assessed. Confirmed issues are corrected/rechecked with retained findings and appended revisions before dependent progression; no administrative implementation tasks are added solely for preparation QC."
+  ]
+}

@@ -1,0 +1,12 @@
+The bundle contains these 9 refs:
+7d003c1cf31c994340d8644e95990ef2253754ed refs/heads/trial/037-a026-preservation
+2de7cd7c40aa231f78f9a4067d673f7be1c4b328 refs/heads/trial/a017-failed-check
+7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/origin/HEAD
+88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/remotes/origin/main
+809f045e3cd32445e7dca29d0174ea25aa5da7ea refs/remotes/origin/phase/1-named-file-utility
+dd252be368726422dc50be6604331b77128941a5 refs/remotes/origin/revision/001_eff696b-prerelease-acceptance
+7d003c1cf31c994340d8644e95990ef2253754ed refs/remotes/origin/trial/037-a026-preservation
+2de7cd7c40aa231f78f9a4067d673f7be1c4b328 refs/remotes/trial-delivery/trial/a017-failed-check
+2de7cd7c40aa231f78f9a4067d673f7be1c4b328 HEAD
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1

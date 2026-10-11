@@ -1,0 +1,10 @@
+{
+  "args": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/phase/1-named-file-utility"
+  ],
+  "returncode": 0,
+  "interpretation": "Read-only current ref observation; retained original/reassessment evidence supplies historic baseline publication. No fresh hosted API acceptance."
+}

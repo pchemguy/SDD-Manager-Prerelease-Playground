@@ -1,0 +1,17 @@
+test_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok
+test_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok
+test_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok
+test_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok
+test_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok
+test_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok
+test_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok
+test_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok
+test_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok
+test_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok
+test_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok
+test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.083s
+
+OK

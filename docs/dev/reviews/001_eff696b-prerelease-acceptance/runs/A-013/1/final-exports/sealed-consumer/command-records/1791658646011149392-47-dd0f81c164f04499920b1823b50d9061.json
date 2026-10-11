@@ -1,0 +1,24 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/tmp/tmpqupxmzma/tools/check_tests.py"
+    ],
+    "cwd": "/tmp/tmpqupxmzma",
+    "stdout": "unit: 1 tests\nintegration: 1 tests\n",
+    "stderr": "test_contract (tests.unit.test_contract.Contract.test_contract) ... FAIL\n\n======================================================================\nFAIL: test_contract (tests.unit.test_contract.Contract.test_contract)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/tmp/tmpqupxmzma/tests/unit/test_contract.py\", line 4, in test_contract\n    self.fail(\"controlled product failure\")\nAssertionError: controlled product failure\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\ntest_contract (tests.integration.test_contract.Contract.test_contract) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+    "status": 1,
+    "time": 1791658646.0110495,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

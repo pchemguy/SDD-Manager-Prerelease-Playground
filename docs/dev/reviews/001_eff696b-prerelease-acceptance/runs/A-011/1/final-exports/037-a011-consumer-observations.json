@@ -1,0 +1,416 @@
+{
+  "request": "Assess removing JSON output while retaining text output, counting, BOM policy and line selection. Assessment only.",
+  "status": "Assessment complete; implementation not authorized or performed. Whole Phase 2 remains paused.",
+  "baseline": {
+    "product": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "branch": "phase/2-json-and-stdin",
+    "head": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "plugin_source_commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "setup_readback_from_handoff": "5eee6326c2ab2228a38bcd50a26fe9bce37fa13f",
+    "worktree": "clean in initial and final read-only Git status",
+    "task_owner": "docs/dev/TASKS.md",
+    "task_counts": {
+      "total": 24,
+      "checked": 19,
+      "pending": 5
+    },
+    "pending": [
+      "T-013",
+      "T-014",
+      "T-015",
+      "T-016",
+      "T-017"
+    ],
+    "last_task_commit": "bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa",
+    "last_task": "T-024",
+    "last_task_observation": "Leading single [T-024] prefix; parent diff contains task result/current evidence, initial checkbox and feature-only parent transitions in the same commit. Later reconciliation and integration commits do not advance task completion. Historical checklist parent claims apply only to its feature extent."
+  },
+  "routing": {
+    "skills_loaded": [
+      "pinned sdd-manage",
+      "pinned sdd-orient",
+      "pinned sdd-steer assessment / objective-and-impact"
+    ],
+    "authority": "User and current consumer input authorize only read-only assessment and externally written observations. Historical AGENTS implementation/publication instructions do not override the current boundary.",
+    "instruction_boundary_quotes": [
+      "Discussion, assessment, or review alone does not authorize edits.",
+      "An assessment-only request creates no branch.",
+      "For an assessment-only request, return the proposed amendment boundary and expected evidence, then stop."
+    ],
+    "no_new_campaign": "No campaign identity, revision branch, feature overlay, repository report, task selection or provider reconciliation created."
+  },
+  "conclusion": "JSON removal is a breaking change to an implemented CLI capability, localized in production to the output option and serialization branch. It need not change acquisition or counting. A coherent future amendment must also reconcile current requirements, planned task acceptance, docs and verification tools. It cannot be represented as merely removing an import.",
+  "observed_implementation": [
+    {
+      "path": "textstats/cli.py",
+      "fact": "Imports json, registers --json store_true, and prints json.dumps with lines/words on args.json; otherwise prints exact text. Both whole-file and selected paths compute TextStats before the shared rendering decision."
+    },
+    {
+      "path": "textstats/core.py",
+      "fact": "Immutable TextStats; normalization, preserved logical traversal, normalized count and source-independent selection are separate pure functions. Neither JSON nor CLI is a dependency."
+    },
+    {
+      "path": "textstats/io.py",
+      "fact": "Binary complete read followed by strict UTF-8 decode; with-context closes owned handles. count_file remains whole-input."
+    },
+    {
+      "path": "textstats/__init__.py; textstats/__main__.py",
+      "fact": "Exactly three public exports; minimal module entry returns CLI status. No JSON API export or argument exists."
+    }
+  ],
+  "impacts": [
+    {
+      "area": "Production and CLI compatibility",
+      "paths": [
+        "textstats/cli.py"
+      ],
+      "proposed": "Remove JSON option registration, json import and JSON renderer; preserve the existing text renderer for every valid retained invocation. Update module/help description accordingly.",
+      "impact": "Existing --json users and scripts lose support. Consistent with retained R-008 unknown-option handling, propose --json (and --json=value or abbreviated --j) be status 2 before acquisition, with empty stdout/useful stderr/no traceback; do not silently ignore it or retain an alias.",
+      "edge": "After --, literal --json remains a filename under retained option-termination semantics. No API signature change, new dependency or source-file restructuring needed."
+    },
+    {
+      "area": "Governing requirements",
+      "paths": [
+        "docs/dev/PROJECT.md",
+        "docs/dev/SPEC.md"
+      ],
+      "proposed": "Reconcile established phase/output scope; mark stable R-009 explicitly withdrawn/superseded by the authorized amendment rather than renumber unrelated requirements. Remove live JSON obligations from F-003/F-004, whole-input acceptance and R-010/R-011/R-013 downstream references.",
+      "impact": "R-001\u2013R-008 retained; stdin R-010 remains pending with text/BOM/range composition. Complete matrices must remain for retained modes rather than disappear with JSON."
+    },
+    {
+      "area": "Design and layout",
+      "paths": [
+        "docs/dev/ARCHITECTURE.md",
+        "docs/dev/DECOMPOSITION.md",
+        "docs/dev/layout.md"
+      ],
+      "proposed": "Align output policy and C-007/C-008/C-009 wording and relevant test/check descriptions to text only.",
+      "impact": "Dependency direction and physical ownership suffice unchanged; preserve C-002/C-003/C-004/C-005/C-006/C-010 seams. Their preparation-era 'no implementation' statements are observed stale status wording, not evidence that current implementation is absent; broad cleanup is outside this assessment."
+    },
+    {
+      "area": "Delivery strategy and canonical executable tasks",
+      "paths": [
+        "docs/dev/PLAN.md",
+        "docs/dev/TASKS.md",
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/TASKS-REVIEW-REPORT.md"
+      ],
+      "proposed": "Reconcile Phase 2/milestone 2.1 outcome and live acceptance, JSON prerequisites and all downstream text/JSON clauses while preserving stable phase/milestone/task identities and historical evidence. Reassess affected readiness and checked completion claims under changed acceptance in a separately authorized amendment.",
+      "impact": "T-010\u2013T-012 are directly affected. T-019\u2013T-024 include named-file text/JSON implementation/docs/extracted/review acceptance and are also affected. T-018 pure selection remains semantically valid, but its milestone-2.1 prerequisite wording needs reconciliation. T-006/T-007 and baseline error/counting obligations retain useful work; historical phase evidence must not be rewritten as if JSON had never existed.",
+      "pending": "T-013\u2013T-017 stay unchecked; T-013 prerequisite on T-012/2.1, T-014 title/outcome/mode matrix, T-015 final docs/extraction, and T-016/T-017 reviews/dependencies require assessment against revised scope. Do not remove stdin delivery or infer parent completion by removing JSON."
+    },
+    {
+      "area": "Product verification",
+      "paths": [
+        "tests/unit/test_cli.py",
+        "tests/integration/test_cli.py"
+      ],
+      "proposed": "Retire JSON rendering/shape/type success requirements; retain text anchors, failures, acquisition ordering and resource coverage embedded in mixed JSON tests. Convert JSON-only controlled complete-decode/read-failure tests to text before retiring JSON paths.",
+      "impact": "Range matrix currently loops over json_mode and flag permutations. Keep both range spellings, BOM modes, input positions, invalid grammar/huge endpoints, EOF and exposed BOM cases. Add removal-specific unknown-option-before-acquisition and literal --json after -- coverage when implementation is authorized.",
+      "risk": "Blind deletion of whole mixed tests would drop retained semantic/lifetime coverage. No predicted new suite counts are claimed."
+    },
+    {
+      "area": "Distribution verification and packaging",
+      "paths": [
+        "tools/check_distribution.py",
+        "tests/integration/test_distribution.py",
+        "tools/package_source.py"
+      ],
+      "proposed": "Replace JSON success/shape/type branches and help assertions with retained text coverage and explicit removed-option rejection; retire JSON wrong-type mutation test while retaining independent extraction, broken text output, ignored range and second-BOM-normalization sensitivity checks.",
+      "impact": "Current checker requires JSON and would fail against a text-only CLI. Its three-option all-permutation loop currently checks exclusively JSON, so removing that loop without replacing text/BOM/range permutations would lose retained coverage. Allowlist, archive root, source isolation, no input mutation and actual extracted module invocation remain valid; no allowlist/file additions needed.",
+      "evidence": "315 isolated cases is historical current evidence, not the revised required count. A future amendment must record actual fresh counts and regenerate the archive only under separate authorization; no build occurred here."
+    },
+    {
+      "area": "Public docs and orientation",
+      "paths": [
+        "README.md",
+        "docs/public-api.md",
+        "textstats/cli.py docstrings",
+        "AGENTS.md"
+      ],
+      "proposed": "Update synopsis/help, advertised capabilities/output table, JSON examples and mixed range/distribution examples to text-only equivalents; maintain accurate test/check evidence and pending-stdin wording.",
+      "impact": "Preserve API docs, concrete expected counts, range/decode/order/error explanations and runnable extraction guidance. Explain CLI compatibility loss concisely. Avoid rewriting archived milestone/feature sources or reports as current docs."
+    },
+    {
+      "area": "Historical records, protected resources and hosting",
+      "paths": [
+        "docs/dev/features/002_e7cae5b-named-file-ranges/",
+        "textstats-run-resources/",
+        "docs/testing/publisher-037/",
+        ".github/"
+      ],
+      "proposed": "Preserve closed archived sources/QC/results and original failures/check evidence. Record any authorized amendment prospectively in current owners without pretending original task results tested text-only scope.",
+      "impact": "Existing hosted issue/milestone associations may require scoped readback/reassessment/reconciliation in later authorized work; no reopening, closing, reparenting, new task IDs or projection is implied by this assessment. No provider state was read or written."
+    }
+  ],
+  "retained_contracts": [
+    {
+      "id": "API R-001/R-002",
+      "contract": "Exactly TextStats, count_text(text, *, strip_bom=True), count_file(path, *, strip_bom=True); immutable equal-by-value nonnegative integer fields excluding bool; TypeError/ValueError construction behavior; silent whole-input APIs, no range/export additions."
+    },
+    {
+      "id": "Counting R-003/R-004",
+      "contract": "CRLF one terminator; CR/LF logical boundaries; each terminator contributes one line, nonempty final segment one, no trailing phantom, empty zero. U+0085/U+2028/U+2029 do not terminate lines; str.split Unicode whitespace determines words independently."
+    },
+    {
+      "id": "BOM R-005",
+      "contract": "Remove exactly one complete-input leading U+FEFF by default, preserve second/interior BOMs; --keep-bom/False retain all. Normalize once before numbering and never normalize the selected text again."
+    },
+    {
+      "id": "Acquisition R-006",
+      "contract": "Read complete bytes and strict UTF-8 decode before selection/counting, preserving terminators; bytes after END can still fail. Close owned handles on success/failure, retain API OSError subclasses/UnicodeDecodeError, silent no partial result and unchanged inputs."
+    },
+    {
+      "id": "CLI R-007/R-008",
+      "contract": "Exactly one named input, recognized retained options before/after input until --, no abbreviations; help succeeds without acquisition. Exact lines=<N> words=<N> newline, success 0/empty stderr; input failures 1, usage 2, failures empty stdout/useful identifying stderr/no traceback; validation precedes access."
+    },
+    {
+      "id": "Current input-stage boundary",
+      "contract": "Literal - is currently a named file. Stdin remains pending; future stdin ownership, complete byte EOF/strict locale-independent decode, no-close policy and ./- named-file escape remain planned independently of format removal."
+    },
+    {
+      "id": "Ranges F-001/F-002 and retained F-003/F-004",
+      "contract": "At most one spaced/equal --lines START:END; positive ordered inclusive one-based ASCII decimal endpoints with leading zeros, no size cap/interpreter guard limitation. All invalid/missing/repeated classes fail before access. Preserve logical segments/terminators, available subset beyond END, empty beyond START, blank/mixed/final/Unicode/exposed-BOM semantics, both spellings/option placements and whole-input fallback."
+    },
+    {
+      "id": "R-011/R-012/R-013",
+      "contract": "Accurate runnable delivered docs, nonempty independently discovered unit/integration product suites separate from workflow fixtures, allowlisted source package and actual isolated extracted-module execution, unchanged API and input bytes. Python 3.11+ standard library; no new performance/streaming/dependency/release obligation."
+    }
+  ],
+  "proposed_acceptance_evidence": [
+    "Inspect revised current governing documents, live task acceptance/dependencies, public docs, source/help/checkers for consistent JSON withdrawal, preserving stable IDs and historical results.",
+    "Demonstrate --json and other removed-option forms reject with status 2 before any read even with missing/undecodable input; stdout empty, useful stderr, no traceback. Retain literal --json filename after -- in whole-input/range mode.",
+    "Run retained full whole-input and range acceptance matrices in text with both BOM policies, both range spellings, huge endpoints/leading zeros, all retained option permutations and input positions; exact success stream/status and unchanged input.",
+    "Exercise complete-decode errors strictly after END, controlled read failures, owned-handle closure, API immutability/signatures/silence and parse-before-acquisition through retained seams and real module subprocesses.",
+    "Verify help no longer advertises JSON and retains useful --keep-bom/--lines/INPUT guidance; execute updated runnable documentation examples.",
+    "Independently discover and execute nonempty unit/integration suites; record actual counts. Build and invoke real extracted package with isolated imports and refreshed text/BOM/range/failure coverage; retain meaningful checker sensitivity.",
+    "Verify no stdin task or full-phase/default integration/release follows the amendment; phase returns paused and pending tasks remain unchecked. These are proposed future checks, not executed observations."
+  ],
+  "limits": [
+    "Static/read-only assessment only: no runtime product invocation, tests, build, extraction, dependency install, Git mutation, provider access or task execution.",
+    "Historical 31 unit/28 integration tests and 315 extracted cases are recorded project evidence, not independently rerun here; no text-only completion/compatibility certification.",
+    "Consumer input and local branch/HEAD state establish current assessment baseline. Remote publication and setup readback were supplied in the handoff and not independently provider-verified.",
+    "Adjacent current QC gates contain pre-integration pending-acceptance wording; actual HEAD and current consumer input establish completed named-file integration for this request. Assessment does not reopen those historical decisions.",
+    "Initial tool captures merge stderr/stdout and some are truncated; supplemental structured subprocess captures retain separate complete stdout/stderr/exit/status/truncation for material loaded files and Git state. One overbroad grep traversed pinned plugin instructions and was truncated; no conclusions rely on omitted output.",
+    "Raw index comparison covers structured readback period; no pre-first-tool hash exists. Every Git command suppresses optional locks and no index/ref/worktree writes were requested."
+  ],
+  "stop": {
+    "assessment_only": true,
+    "parent_phase": "paused",
+    "next_action": "None. Return impact assessment and stop.",
+    "authorization_needed_for": "Any future implementation/amendment, task execution, project/index/ref/branch/provider changes or tests/builds."
+  },
+  "loaded_files": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AGENTS.md",
+      "sha256": "ffaeb37b8b2f403844b4db50951176bfb2e9d3b3ea809554073af3119d287fe1",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/README.md",
+      "sha256": "2e5bc84b6bdd7f9e984924e0847776f976069701741428819ffebcee625244f3",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/public-api.md",
+      "sha256": "0906a4966e3bb3a3a80b613210f68ea681c0f0fb9317a2ecc252472d90fa00c8",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/ARCHITECTURE.md",
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/DECOMPOSITION.md",
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/SPEC.md",
+      "sha256": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PLAN.md",
+      "sha256": "e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/layout.md",
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/TASKS.md",
+      "sha256": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/SPEC-REVIEW-REPORT.md",
+      "sha256": "66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372",
+      "scope": "partial gate read initially; full captured readback"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PLAN-REVIEW-REPORT.md",
+      "sha256": "1e4b8505f11c76f366fc56c04a7af612667ca365f88f5c71e4dc0a04b794f267",
+      "scope": "partial gate read initially; full captured readback"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/TASKS-REVIEW-REPORT.md",
+      "sha256": "ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f",
+      "scope": "partial gate read initially; full captured readback"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/cli.py",
+      "sha256": "157fb57e45d3c1c6490adf063221a3b4ffa827f411a6ea7055fdaf8b8630bcef",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/core.py",
+      "sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/io.py",
+      "sha256": "9b428eebeba81169ca54e53b1449430f4e247b0285d54c50735a3da3864764f0",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__init__.py",
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__main__.py",
+      "sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tests/unit/test_cli.py",
+      "sha256": "6ae12b7fe9ad2513479fa9f6b1815e292f8c7310f20d9f73ed410a00f8a2b1ba",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tests/integration/test_cli.py",
+      "sha256": "1c46d26bcfa0f11879c1182684022f84b36ccf0eae0ce364f9acb87bf6d28920",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tests/integration/test_distribution.py",
+      "sha256": "b9385a4195ec9bff898bf2d91cd8891387b6333d0f6163c995db69c36d40f59c",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tools/check_distribution.py",
+      "sha256": "bf75ab9be6440da96af6c17308a4c671acc64c9e94713f4e623dcb27bfa21767",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/tools/package_source.py",
+      "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/PLUGIN-SOURCE.json",
+      "sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/README.md",
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/plugin.json",
+      "sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md",
+      "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+      "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-steer/SKILL.md",
+      "sha256": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-steer/references/objective-and-impact.md",
+      "sha256": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "scope": "full"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a011-consumer-input.md",
+      "sha256": "82d7b1b73a66257c723246dc5e00c6e61f49eeaa3c94797f4eae5eb557fca283",
+      "scope": "full"
+    }
+  ],
+  "command_evidence": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a011-consumer-observations.command-log.json",
+    "separate_stream_complete_captures": 47,
+    "initial_tool_captures": 14,
+    "status": "read-only commands completed; truncation and initial merged-stream limitations explicit in log"
+  },
+  "plugin_pin_verification": {
+    "commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "fingerprint": "68672b03b03ca46740126d7976e3043171b1f047cb45a86891dc1222799ead7f",
+    "files_compared": 133,
+    "all_match": true,
+    "mismatches": []
+  },
+  "index_observation": {
+    "before_structured_readback": "0d9264a9cb91889bb8107afe1a904f1b8c9b036db6389d96c6de01edc71231b2",
+    "after_structured_readback": "0d9264a9cb91889bb8107afe1a904f1b8c9b036db6389d96c6de01edc71231b2",
+    "unchanged": true,
+    "limit": "Initial raw index hash was not captured before first tool call; every Git command used --no-optional-locks."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "case_id": "A-015",
+  "decision": "Accepted",
+  "observed_at": "2026-10-10T14:38:06.188373+00:00",
+  "authority": "Delegated concrete product artifact review",
+  "scope": "T001 current core/publictext/tests and truthful orientation only; no case grade or futuretask/parent/integration acceptance",
+  "reviewed_sha256": {
+    "textstats/core.py": "3281653b8de71ac9865a30a22011439f1bd6f3417ec0cc44bb84cfc73432abee",
+    "textstats/__init__.py": "c5db9c29a9d1ab63f2cb818ed7f7ce6284d51ff2913784a53ce0b0d7461d762f",
+    "tests/unit/test_core.py": "b8b916e0fb69de98869fce96b97feea2e45bcd008d1aafe400ecf36e5614d692",
+    "tests/integration/test_api.py": "f41688c9d7e008f2392e3164a67300463df2da60c01b017d809d0d18d8ecf7be",
+    "AGENTS.md": "94a36756c74cde9ddbf849319fa78d87de022e5e43727ba493ee2a72cdffd98a",
+    "README.md": "91fac18f7cde29146e7d7bc8b56578fa0fe7571c7d2323a18b756b2a17934192"
+  },
+  "assessment": "Read exact current source/tests against accepted task: immutable integer/nonnegative validated values; shared CRLF/CR/LF traversal; once-only BOM policy; silent typed keyword-only direct text API; unit/integration semantics, constructor/signature/silence checks and truthful delivered/planned documentation. Consumer actual RED and8 unit/2 integration GREEN retained; independent trigger/continuation grade pending.",
+  "next_authorized_action": "Ordinary finalverification/QC/evidence/initialcheckbox and ownedstage/closingpersistence subject to existing calleroperationhold. Stop on held persistence, no bypass/retry."
+}

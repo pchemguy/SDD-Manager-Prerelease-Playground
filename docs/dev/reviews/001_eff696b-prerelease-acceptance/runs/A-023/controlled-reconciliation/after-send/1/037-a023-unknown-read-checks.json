@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "subtrial": "unknown-read",
+  "status": "Partial criteria passed; final reconciliation pending",
+  "evidence_class": "controlled",
+  "agent_behavior_assessed": true,
+  "checks": {
+    "same_tracked": true,
+    "same_index": true,
+    "same_refs": true,
+    "same_head": true,
+    "same_status": true,
+    "same_ledger": true,
+    "control_read_unavailable": true
+  },
+  "snapshot": "037-a023-unknown-read-snapshot.json",
+  "original_seal_sha256": "b8a28b5b3b91f0fc3b71afb3d05769a2a98feafb01e86425d84820f660383cdd"
+}

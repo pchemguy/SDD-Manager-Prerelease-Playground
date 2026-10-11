@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "scope": "Independent provisional T016 milestone implementation-report closing candidate; final phase/report/integration not accepted",
+  "candidate_tree": "c1a3d44edc98a3a11c2d491ba7da92ee32307253",
+  "reviewed_product_commit": "ca24007134141265a1937c77e2fda504bb0d6129",
+  "report_sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+  "findings": [],
+  "assessment": [
+    "Report is at current PLAN/layout owning milestone path and identifies T016, exact published reviewed source/delivery commits, accepted amended contracts and retirement. It explicitly distinguishes inspection code review from executed tests, delivered capability from current milestone/phase persistence and subsequent native closures/integration.",
+    "Substantive separate whole-path inspection covers byte acquisition/owned and borrowed cleanup, immutable public API, shared counting/BOM/ranges, parse-before-acquisition, complete-decode-before-END selection, errors/rendering, module adapter, nonempty discovery/mutation-sensitive extraction and final public docs. No code/contract blocker observed by independent assessor source inspection.",
+    "Resolved M2.2-001 has actual disabled-extracted-stdin sensitivity RED then new matrix/rejection and resolution commit; M2.2-002 distinguishes prior missing-B from inherited no-bytecode and corrected fresh childargv evidence. TODO None is admissible: identified product/evidence blockers repaired, while logger loss/runtime matrix/fixture/navigation incidents are expressly retained limitations, not fabricated unresolved implementation tasks.",
+    "Exact runtime/tests/public-doc/tool files are byte-identical to reached T015. Reuse of consumer final37unit/34integration/478extracted/all12fences is explicit rather than called freshly rerun. Independent actual-consumer archive matches all11 committed allowlist sources; independent original suites API/baseline/ranges/removal/stdin/distribution pass literally on that actual extraction. Independent fresh candidate12 targeted tests pass, including faulty-extraction sensitivity.",
+    "Only T016 initial checkbox and eligible milestone2.2 parent change, with T017/phase2/review2.3 remaining pending; prior TASKS completion history unchanged and current QC TASKS hash matches. Four scoped owning docs compose report/result/current evidence/navigation/status."
+  ],
+  "screening": {
+    "pinned_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "whole_files_clean_bytes": 189,
+    "valid_JSON_sniff_no_secret": [
+      "textstats-run-resources/PLUGIN-SOURCE.json",
+      "textstats-run-resources/plugin/plugin.json",
+      "textstats-run-resources/plugin/.codex-plugin/plugin.json",
+      "docs/testing/publisher-037/SETUP.json"
+    ],
+    "extension_based_JSON_detection": false
+  },
+  "evidence": [
+    "candidate.tar",
+    "FILES.json",
+    "invariants.json",
+    "focused-command.json",
+    "../reached-T015/archive-provenance.json",
+    "../reached-T015/runtime/literal-evidence.json"
+  ],
+  "limits": [
+    "Independent all12 documentation-fence execution is still ongoing on a separate immutable T015 export, so not asserted completed by this provisional grade.",
+    "T016 owning commit/publication/native issue17/milestone5 closure are subsequent gates not yet observed. Final T017 PHASE and IMPLEMENTATION report pair/integration remain pending."
+  ]
+}

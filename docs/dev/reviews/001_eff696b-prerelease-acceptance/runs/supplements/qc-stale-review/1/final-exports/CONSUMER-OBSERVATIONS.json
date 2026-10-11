@@ -1,0 +1,262 @@
+{
+  "assessment": "Blocked for dependent main PLAN/TASKS use; read-only assessment complete",
+  "snapshot": {
+    "root": "/workspace/scratch/46b31bb4dff6/037-sup-qc-stale-review",
+    "head": "d9a27477042f4d1e25850673079f2f768171724e",
+    "branch": null,
+    "detached": true,
+    "status_porcelain": "",
+    "requested_retained_head": "d9a27477042f4d1e25850673079f2f768171724e"
+  },
+  "input": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-consumer-input.md",
+    "sha256": "c8872109960b0d2b2089040376b5de26efde62dba29bde809f8f741426dbd2cc"
+  },
+  "loaded_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "40d6c049debcebe9d160d19a72424edb57ad7fc172948c4709713352770102c2",
+      "git_blob": "b276b3a374741cbae0e1a1720cfd114baeef4f19"
+    },
+    {
+      "path": "SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "git_blob": "ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1"
+    },
+    {
+      "path": "docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "git_blob": "396d252178e097bde725121d1b89abc6e78d629f"
+    },
+    {
+      "path": "docs/dev/ARCHITECTURE.md",
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "git_blob": "7787992d419a44870722f4c3c6c677ef6b04a0e3"
+    },
+    {
+      "path": "docs/dev/DECOMPOSITION.md",
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "git_blob": "4a559eed6e875435537a0d7befea7dc4c67430f2"
+    },
+    {
+      "path": "docs/dev/SPEC.md",
+      "sha256": "356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a",
+      "git_blob": "6c2be8ab711b93cecbf7b083d5d7d6d357eb5215"
+    },
+    {
+      "path": "docs/dev/SPEC-REVIEW-REPORT.md",
+      "sha256": "20704429d0e0aa70904a59e8be9adc1ea7ca2fc68b9b09923aa8978fe3b9ef48",
+      "git_blob": "42fd72c96bc7e86c1cf02afb814e11dcb4fbe2cd"
+    },
+    {
+      "path": "docs/dev/PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "git_blob": "2489ae62baa0159775f721355808fb56af8697cf"
+    },
+    {
+      "path": "docs/dev/PLAN-REVIEW-REPORT.md",
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+      "git_blob": "1c2fe42dba149449987db10c0a0346878221f839"
+    },
+    {
+      "path": "docs/dev/layout.md",
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "git_blob": "32d3194ce111a0feac516e7628bb0fe5ce78a314"
+    },
+    {
+      "path": "docs/dev/FEATURE-PLAN.md",
+      "sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+      "git_blob": "1477856e1795d3e23a1c5fa8b99616f243fc853b"
+    },
+    {
+      "path": "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+      "sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+      "git_blob": "df422da6e03788fd272d9156364ece49f3da89dd"
+    },
+    {
+      "path": "docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "sha256": "c9cdca92844174fe4dc952241fec28f55e6c4d7501a9ceeb9390f310eaeab6a9",
+      "git_blob": "375b0608517f953a043962509539c4e695673911"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "git_blob": "c25203f73bef5da236dc72f672610002249f981f"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "git_blob": "7e7d4c11900a109c8e45b540780e05b228ae644b"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+      "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+      "git_blob": "45d4036b4696fca363509ef63c34ab9bb6e54ddd"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "git_blob": "28ea16cde6d0335b55af964348182feb2d865f7e"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "git_blob": "5a1b29497f561fa08f3e4a07aecd28ec5c079d09"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+      "sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+      "git_blob": "0ebf37b133032547c9dcf024cdbfa0de0a18916f"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md",
+      "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+      "git_blob": "98c0ebe4010999635b7254c4505e916c2a19f2d1"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+      "git_blob": "1141d97a90d45b7ad0b86f575d03228976a3609e"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "git_blob": "1e664a82486e4fafb13fe998d3c29588710acf5a"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "git_blob": "9ef3cf68aa0447f2e214a6766d4846eede81ee3b"
+    }
+  ],
+  "commands_and_results": [
+    {
+      "command": "cat /workspace/scratch/46b31bb4dff6/037-sup-qc-consumer-input.md",
+      "result": "Read scope and requested observations path; exit 0"
+    },
+    {
+      "command": "pwd; cat AGENTS.md",
+      "result": "Confirmed designated root and pinned package/current SPEC-only incorporation checkpoint; exit 0"
+    },
+    {
+      "command": "cat SDD-MANAGER.md textstats-run-resources/plugin/skills/sdd-manage/SKILL.md; git rev-parse HEAD; git status --short; rg --files -g AGENTS.md -g '*PLAN*' -g '*SPEC*' -g '*PROJECT*' -g '*ARCHITECTURE*' -g '*DECOMPOSITION*' docs textstats-run-resources/plugin/skills/sdd-plan",
+      "result": "HEAD matches retained input; status empty; only designated paths discovered; exit 0"
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-orient/SKILL.md textstats-run-resources/plugin/skills/sdd-plan/SKILL.md textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md; rg --files docs -g AGENTS.md; cat docs/dev/PLAN.md docs/dev/PLAN-REVIEW-REPORT.md",
+      "result": "No nested docs AGENTS found; output truncated, relevant documents reread below; exit 0"
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-plan/references/review.md textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md; cat docs/dev/PROJECT.md docs/dev/ARCHITECTURE.md docs/dev/DECOMPOSITION.md",
+      "result": "Review/count/invalidation criteria and accepted design inspected; output truncated, PROJECT and QC fully reread; exit 0"
+    },
+    {
+      "command": "cat docs/dev/SPEC.md docs/dev/SPEC-REVIEW-REPORT.md",
+      "result": "Full current SPEC/QC read; incorporated range acceptance and pending delegated acceptance explicit; exit 0"
+    },
+    {
+      "command": "cat docs/dev/PLAN.md docs/dev/layout.md docs/dev/FEATURE-PLAN.md docs/dev/FEATURE-PLAN-REVIEW-REPORT.md docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "result": "Full current strategy/layout/active feature strategy/navigation read; accepted feature route exists but main scope remains deferred; exit 0"
+    },
+    {
+      "command": "git --no-optional-locks rev-parse --show-toplevel HEAD; git --no-optional-locks branch --show-current; git --no-optional-locks status --porcelain=v1; sha256sum [13 designated governing files]; cat textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "result": "Detached retained HEAD, clean status; SHA-256 mismatch against PLAN QC upstream SPEC/QC identities confirmed; full QC criteria read; exit 0",
+      "sha256sum_paths": [
+        "AGENTS.md",
+        "SDD-MANAGER.md",
+        "docs/dev/PROJECT.md",
+        "docs/dev/ARCHITECTURE.md",
+        "docs/dev/DECOMPOSITION.md",
+        "docs/dev/SPEC.md",
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/layout.md",
+        "docs/dev/FEATURE-PLAN.md",
+        "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+      ]
+    },
+    {
+      "command": "cat docs/dev/PROJECT.md; cat textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md; cat docs/dev/PLAN-REVIEW-REPORT.md",
+      "result": "Full PROJECT, human/orientation/style references and PLAN QC reread; exit 0"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B (this observations sealing script)",
+      "result": "Hash all actual loaded files and HEAD blobs, recheck HEAD/status with optional locks suppressed, write only requested external observations JSON"
+    }
+  ],
+  "findings": [
+    {
+      "id": "PLAN-ASSESS-001",
+      "severity": "blocker",
+      "location": "docs/dev/PLAN-REVIEW-REPORT.md / Current gate and Revision 3",
+      "finding": "Ready is not current against the incorporated SPEC. Report identifies SPEC 5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a and SPEC QC 44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899; actual loaded identities are 356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a and 20704429d0e0aa70904a59e8be9adc1ea7ca2fc68b9b09923aa8978fe3b9ef48. PLAN/layout/design hashes still match. Change is material behavior/acceptance, not an acceptance-only annotation.",
+      "consequence": "Prior Ready cannot authorize current dependent TASKS generation, implementation or hosted projection.",
+      "follow_up": "sdd-manage coordinate authorized sdd-plan affected conformance reassessment and coherent adjacent report with exact current inputs; preserve prior evidence."
+    },
+    {
+      "id": "PLAN-ASSESS-002",
+      "severity": "blocker",
+      "location": "PLAN Objective; 2.2; 2.3; Coverage F-001\u2013F-004; current SPEC F-003/F-004; active FEATURE-PLAN",
+      "finding": "Main PLAN calls F contracts deferred and gives only seam preservation, explicitly excludes ranges from 2.2, and treats 2.3 as final all-SPEC delivery without a reconciled route/dependency for current named-file range acceptance. FEATURE-PLAN supplies 2.4/2.5/2.6 and requires published JSON, default preparation integration, compatible JSON baseline, paused-phase target and added-work projection. Feature-only QC does not establish complete main strategy conformance.",
+      "consequence": "Main final documentation/distribution/regression and pending stdin composition boundaries are not established against incorporated acceptance; consumers could omit ranges or falsely close whole Phase 2.",
+      "follow_up": "Separately authorize strategy incorporation/reconciliation under sdd-integrate-feature and owner QC. Retain separate named-file extent, original stdin/final obligations, review boundaries and executable owners; do not invent new public API or force feature completion to mean Phase 2 completion."
+    },
+    {
+      "id": "PLAN-ASSESS-003",
+      "severity": "blocker",
+      "location": "SPEC Behavioral ownership/review boundary; SPEC QC Current gate; AGENTS Selected SPEC incorporation",
+      "finding": "Current incorporated SPEC/QC has technical Ready but explicitly pending concrete delegated acceptance. Historical SPEC acceptance and active FEATURE-SPEC acceptance do not accept this main checkpoint.",
+      "consequence": "Dependent use held independently of PLAN QC currency.",
+      "follow_up": "Obtain concrete acceptance of exact incorporated checkpoint through existing authority outside this review scope."
+    }
+  ],
+  "supported_conclusions": {
+    "unchanged_R_strategy": "R-001\u2013R-013 retains meaningful early integrated API/named-file path, strict decoding/lifetime/failure boundaries, JSON then stdin, early nonempty tests and isolated extraction exits. No new defect asserted for unaffected concerns.",
+    "counts": [
+      {
+        "phase": "1",
+        "delivery_milestones": [
+          "1.1",
+          "1.2"
+        ],
+        "excluded_review": "1.3",
+        "assessment": "Two cohesive useful delivery boundaries; existing explicit fragmentation rationale remains supported."
+      },
+      {
+        "phase": "2 original extent",
+        "delivery_milestones": [
+          "2.1",
+          "2.2"
+        ],
+        "excluded_review": "2.3",
+        "assessment": "Two distinct format/input-source increments justified for unchanged extent; needs combined affected assessment with range strategy."
+      },
+      {
+        "phase": "2 feature extent",
+        "delivery_milestones": [
+          "2.4",
+          "2.5"
+        ],
+        "excluded_review": "2.6",
+        "assessment": "Two cohesive CLI then documented distribution outcomes; feature review cannot replace main phase review."
+      }
+    ],
+    "layout": "Existing pure-core selection seam, complete byte acquisition, CLI validation/control and existing suites/docs/extraction owners support bounded range placement; no new design overlay/physical owner indicated by loaded documents."
+  },
+  "necessary_follow_up_outside_scope": [
+    "Resolve exact incorporated SPEC acceptance checkpoint.",
+    "Authorized affected main PLAN/feature strategy and QC reassessment/incorporation.",
+    "Authorized sdd-tasks reassessment of dependent main/feature ownership, pending stdin/composition/docs/distribution/final exits and any actual changed checked acceptance; do not infer failed completed Phase 1 claims.",
+    "Before future execution independently verify required preparation integration/publication, compatible published JSON baseline, exact paused-phase target and added-work hosted projection."
+  ],
+  "limits": [
+    "Assessment only. No governing file edits, task execution, commits, refs changes, pushes, hosted mutations, source tests or extraction. Only requested external observations artifact written.",
+    "No sibling discovery, coordinator assessments/cases/catalog/history contents or agents. Git history and remote provider state not inspected; product navigation publication claims were read, not independently certified.",
+    "TASKS/FEATURE-TASKS and runtime source not substantively reviewed; completion dispute/status correction is not concluded.",
+    "Initial git status --short occurred before loading optional-lock suppression guidance and could refresh index metadata; no intentional index/ref changes, final status clean. Later inspections suppress optional locks.",
+    "Some first reads were truncated; target PLAN/report/current SPEC/report and PROJECT/QC/human references were fully reread.",
+    "No whole-project readiness, runtime regression or accepted feature archive eligibility claimed."
+  ]
+}

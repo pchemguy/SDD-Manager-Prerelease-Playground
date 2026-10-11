@@ -1,0 +1,13 @@
+{
+  "original_path": "/workspace/scratch/46b31bb4dff6/037-a019-conflict-artifacts/COMMANDS.json",
+  "original_sha256": "2fb3df97ed3056c1b45ce0708dd7044435b3bd641a3100655d18e48524a4ebaa",
+  "original_retained_exact_locally": true,
+  "public_derivative": "COMMANDS-screened.json",
+  "derivative_sha256": "84d525822a695d9089638480a4f427bdc25541058b6d8be8b51b3a287d0d0f82",
+  "transformation": "Only /12/stdout containing NUL replaced by exact binary sidecar reference/hash; all other JSON values retained",
+  "reason": "Original core.no_secret rejects NUL-delimited command stdout in JSON",
+  "binary_sidecar": "COMMAND12-STDOUT.bin",
+  "binary_sha256": "56557e6bff8ee6d8111de0576c56a902aa16c3d3f0a3fd25b030b7ac2dd02117",
+  "original_source_manifest": "SHA256SUMS.json",
+  "native_screening_failure_retained": true
+}

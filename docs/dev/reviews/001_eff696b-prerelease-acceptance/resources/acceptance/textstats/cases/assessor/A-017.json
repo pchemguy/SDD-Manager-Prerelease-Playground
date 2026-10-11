@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "A-017",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Genuine failing required acceptance is observed during selected task work; failure retained and task/parent remain incomplete.",
+    "Consumer routes scoped repair, performs actual rerun and advances only after required success; no default partial merge."
+  ]
+}

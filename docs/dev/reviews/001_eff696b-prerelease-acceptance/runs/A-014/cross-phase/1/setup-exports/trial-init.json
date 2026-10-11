@@ -1,0 +1,13 @@
+{
+  "name": "trial-init",
+  "args": [
+    "git",
+    "init",
+    "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

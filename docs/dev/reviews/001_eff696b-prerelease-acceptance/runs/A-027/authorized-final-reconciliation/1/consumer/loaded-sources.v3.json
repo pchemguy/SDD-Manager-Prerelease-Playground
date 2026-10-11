@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/CURRENT-PUBLIC-FACTS.json",
+    "sha256": "1b007840379f28685138e3a62bd1ca53a01e3ec34652d6fc7651e96800921eaf",
+    "bytes": 3554
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/VARIANT-RESULTS.json",
+    "sha256": "a34be0848326574a6a993ebafc76a1493f84c1f73e96a5937f79b3fe1aa0b929",
+    "bytes": 12863
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-authorized-status-inputs/VARIANT-RESULTS.corrected-rechecks.json",
+    "sha256": "a9e1627a96a53f7c10f50451e8809679448e9a97bc5249d74d75812c32556667",
+    "bytes": 12989
+  }
+]

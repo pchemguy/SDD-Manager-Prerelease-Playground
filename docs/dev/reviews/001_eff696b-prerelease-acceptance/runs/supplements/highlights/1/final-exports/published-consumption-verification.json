@@ -1,0 +1,92 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "-C",
+        "037-sup-highlights-published",
+        "rev-parse",
+        "refs/tags/v0.15.0^{commit}"
+      ],
+      "returncode": 0,
+      "stdout": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "-C",
+        "037-sup-highlights-published",
+        "rev-parse",
+        "refs/tags/v0.15.0-cp014-repair^{commit}"
+      ],
+      "returncode": 0,
+      "stdout": "170adcdb861df9ea6328b4986fa3a1abf9e2de54\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "-C",
+        "037-sup-highlights-published",
+        "merge-base",
+        "--is-ancestor",
+        "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+        "170adcdb861df9ea6328b4986fa3a1abf9e2de54"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "-C",
+        "037-sup-highlights-published",
+        "rev-list",
+        "170adcdb861df9ea6328b4986fa3a1abf9e2de54..HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "-C",
+        "037-sup-highlights-published",
+        "check-ignore",
+        "-v",
+        ".release-highlights.md"
+      ],
+      "returncode": 0,
+      "stdout": ".git/info/exclude:8:/.release-highlights.md\t.release-highlights.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "-C",
+        "037-sup-highlights-published",
+        "ls-files",
+        ".release-highlights.md"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "draft_body_bytes_equal_provided_authenticated_body": true,
+  "provided_body_sha256": "5abb87b0d74e040839cbe4dd2196a2d5126cbec205a8c976782868cc02e20d3c",
+  "provided_body_sha256_matches_state": true,
+  "published_owned_draft_absent": true,
+  "source_tag_watermark_equal": true,
+  "frontmatter_absent_from_published_body": true,
+  "no_literal_sideeffect_marker": true
+}

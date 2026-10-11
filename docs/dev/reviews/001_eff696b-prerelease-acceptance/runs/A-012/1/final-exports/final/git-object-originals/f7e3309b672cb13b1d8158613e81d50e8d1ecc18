@@ -1,0 +1,8 @@
+tree 6c3d585685857cdd30b5c3cd9c17421301db797a
+parent fde1537b5c4ba1bcef4f538dfb47276d564e4aaa
+author Codex <codex@openai.com> 1791638674 -0400
+committer Codex <codex@openai.com> 1791638674 -0400
+
+[T-007] Build and verify isolated TextStats source distribution
+
+Allowlist eleven source/doc/tool files; verify exact extracted import and35 actual module cases.23 unit and18 integration tests pass, including corrupted-extraction sensitivity and runnable archive example. Fixes pchemguy/SDD-Manager-Prerelease-Playground#8

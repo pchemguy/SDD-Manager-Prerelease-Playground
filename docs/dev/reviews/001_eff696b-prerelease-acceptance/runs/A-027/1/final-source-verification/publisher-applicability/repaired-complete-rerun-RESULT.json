@@ -1,0 +1,31 @@
+{
+  "assessment": "Passed complete reconciliation with unchanged release/body/asset identities and timestamps",
+  "run_id": 38047846884,
+  "tooling_source": "4a56c7d3560297edcbc0934dcf99526841e1dab0",
+  "release_id": 408893787,
+  "assets": [
+    {
+      "id": 627764794,
+      "name": "sdd-manager.zip",
+      "size": 317929,
+      "state": "uploaded",
+      "created_at": "2026-10-10T11:13:55Z",
+      "updated_at": "2026-10-10T11:13:55Z"
+    },
+    {
+      "id": 627764858,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82,
+      "state": "uploaded",
+      "created_at": "2026-10-10T11:13:56Z",
+      "updated_at": "2026-10-10T11:13:56Z"
+    }
+  ],
+  "body": "## Campaign 037 fresh-create repair proof\n\nTest-only isolated metadata fixture with acknowledged-ID publisher readback.\n\n## Preserved literal section\n\n`$(touch SHOULD_NOT_EXIST)` remains literal.\n",
+  "draft": false,
+  "prerelease": true,
+  "latest_id": null,
+  "first_run_archive_sha256": "3cf208d423726531e308bdbf004866f4516fcd03d9db014d4d01d0c55b5196e3",
+  "evidence_class": "actual repaired GitHub workflow with byte verification plus independent provider identity/state readback; native mutation audit unavailable",
+  "observed_at": "2026-10-10T11:20:18.805740+00:00"
+}

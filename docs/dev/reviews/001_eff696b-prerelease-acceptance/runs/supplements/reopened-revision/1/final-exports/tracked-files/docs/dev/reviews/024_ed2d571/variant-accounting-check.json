@@ -1,0 +1,642 @@
+{
+  "schema_version": 1,
+  "required": {
+    "Blocked": 32
+  },
+  "optional": {
+    "Not run": 2
+  },
+  "required_ready": false,
+  "variants": [
+    {
+      "id": "A-001.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-001",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-002.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-002",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-003.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-003",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-004.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-004",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-005.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-005",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-006.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-006",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-007.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-007",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-008.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-008",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-009.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-009",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-010.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-010",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-011.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-011",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-012.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-012",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-013.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-013",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-014.cross-phase",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-014",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-014.prerequisite-refusal",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-014",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-015.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-015",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-016.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-016",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-017.failed-check",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-017",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-018.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-018",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-019.integration-recovery",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-019",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-020.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-020",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-021.partial-transfer",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-021",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-022.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-022",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-023.controlled-reconciliation",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-023",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.denial",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-024",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.rate-limit",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-024",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.unavailable-access",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-024",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-025.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-025",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-026.empty-selection",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-026",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-026.failing-baseline",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-026",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-026.preservation",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-026",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-027.core",
+      "requirement": "required",
+      "evidence_class": "inspection",
+      "facilities": [],
+      "case_id": "A-027",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-023.live-response-loss",
+      "requirement": "optional",
+      "evidence_class": "live-provider",
+      "facilities": [
+        "isolated_hosted_identity",
+        "post_write_response_suppression"
+      ],
+      "case_id": "A-023",
+      "status": "Not run",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.native-recovery",
+      "requirement": "optional",
+      "evidence_class": "native",
+      "facilities": [
+        "protected_handoff",
+        "recoverable_native_credentials",
+        "fresh_context"
+      ],
+      "case_id": "A-024",
+      "status": "Not run",
+      "reason": "No independent variant evidence supplied"
+    }
+  ],
+  "unexecuted": [
+    {
+      "id": "A-001.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-001",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-002.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-002",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-003.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-003",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-004.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-004",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-005.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-005",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-006.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-006",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-007.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-007",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-008.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-008",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-009.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-009",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-010.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-010",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-011.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-011",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-012.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-012",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-013.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-013",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-014.cross-phase",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-014",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-014.prerequisite-refusal",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-014",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-015.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-015",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-016.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-016",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-017.failed-check",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-017",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-018.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-018",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-019.integration-recovery",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-019",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-020.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-020",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-021.partial-transfer",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-021",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-022.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-022",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-023.controlled-reconciliation",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-023",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.denial",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-024",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.rate-limit",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-024",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.unavailable-access",
+      "requirement": "required",
+      "evidence_class": "controlled",
+      "facilities": [],
+      "case_id": "A-024",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-025.core",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-025",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-026.empty-selection",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-026",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-026.failing-baseline",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-026",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-026.preservation",
+      "requirement": "required",
+      "evidence_class": "consumer",
+      "facilities": [],
+      "case_id": "A-026",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-027.core",
+      "requirement": "required",
+      "evidence_class": "inspection",
+      "facilities": [],
+      "case_id": "A-027",
+      "status": "Blocked",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-023.live-response-loss",
+      "requirement": "optional",
+      "evidence_class": "live-provider",
+      "facilities": [
+        "isolated_hosted_identity",
+        "post_write_response_suppression"
+      ],
+      "case_id": "A-023",
+      "status": "Not run",
+      "reason": "No independent variant evidence supplied"
+    },
+    {
+      "id": "A-024.native-recovery",
+      "requirement": "optional",
+      "evidence_class": "native",
+      "facilities": [
+        "protected_handoff",
+        "recoverable_native_credentials",
+        "fresh_context"
+      ],
+      "case_id": "A-024",
+      "status": "Not run",
+      "reason": "No independent variant evidence supplied"
+    }
+  ],
+  "legacy": {},
+  "runtime_acceptance_from_support_checks": false
+}

@@ -1,0 +1,20 @@
+{
+  "index_sha256": "696bcce1c8ef2608f9b24ca833c7e21dfa6073aa17a2881c0d805338c7730f1b",
+  "length": 75765,
+  "setup_index_sha256": "696bcce1c8ef2608f9b24ca833c7e21dfa6073aa17a2881c0d805338c7730f1b",
+  "setup_physical_match": true,
+  "command": {
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "/workspace/scratch/46b31bb4dff6/037-sup-reopen-nonqualifying",
+      "rev-parse",
+      "--git-path",
+      "index"
+    ],
+    "stdout": ".git/index\n",
+    "stderr": "",
+    "exit_code": 0
+  }
+}

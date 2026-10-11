@@ -1,0 +1,62 @@
+{
+  "ARTIFACT-MANIFEST.json": {
+    "sha256": "37de1538b6d5dec1a617a8db32ebf604a9cff3537e185700096f6b4e18d3eadf",
+    "bytes": 907
+  },
+  "DECISION.json": {
+    "sha256": "d9885932bdedb7b559cea0df47102d1e81b432d6b7e2d2eec10955e4c12ecc79",
+    "bytes": 2266
+  },
+  "independent/ASSESSMENT.json": {
+    "sha256": "34394d2955d0f398e33ee09b7ac1e994b2f1dbb1b40064c2e70c6c0bc39d7713",
+    "bytes": 3509
+  },
+  "independent/FILES.json": {
+    "sha256": "8adb21005cc80fea0c15d0b3993386ad80bfc78e85677656e4d98a66bf4b0762",
+    "bytes": 35860
+  },
+  "independent/candidate.tar": {
+    "sha256": "578df17d800d8e78fc7875c4c2e487f2cf0b8f81b24c291b17fc499b17bcaa7b",
+    "bytes": 1372160
+  },
+  "independent/focused-command.json": {
+    "sha256": "84f9ce50d9250aa9a67cfa9282d12d0e8f3a0bfba84747da4029e527a8ee81cf",
+    "bytes": 2648
+  },
+  "independent/invariants.json": {
+    "sha256": "a4092c9e09a1f7fcd15a65f3df5bea2dec047295387be16b609507d96d45c028",
+    "bytes": 889
+  },
+  "product/AGENTS.md": {
+    "sha256": "9b8e7b41c662980b35001f28f1b865e393d74f63417735cf0b18498a53566ea7",
+    "bytes": 11627
+  },
+  "product/docs/dev/TASKS-REVIEW-REPORT.md": {
+    "sha256": "2b9996769c1f6416fc4916aecafcb24eae83464765a5c99eb144c4e6c4f7d026",
+    "bytes": 25318
+  },
+  "product/docs/dev/TASKS.md": {
+    "sha256": "2e00ab7a18a1b3cb6796d3bec9bd282812ec7089e0c5a908b52304243cb311f3",
+    "bytes": 76663
+  },
+  "product/docs/dev/reports/phases/2/2.2.md": {
+    "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+    "bytes": 11107
+  },
+  "reached-T015/archive-provenance.json": {
+    "sha256": "a4bdd07d3fe8dd98ffc53b973b27f50be5639ceb0b5d7db68cf1cda1946158f7",
+    "bytes": 2103
+  },
+  "reached-T015/docs-assessment.json": {
+    "sha256": "b34be9fc3f7ae0c5f48974dad95c0d552efded6cfa9feb3363cf95696ac9e476",
+    "bytes": 1971
+  },
+  "reached-T015/docs-commands.json": {
+    "sha256": "31975b5044b5ec12f79ca79bea9d5b2fd9ca62a36bb5a3d3a7088bf7db24bb54",
+    "bytes": 35878
+  },
+  "reached-T015/runtime/literal-evidence.json": {
+    "sha256": "3aa4e7fb97afcb2c4ba671ef80eed8baa340298e1e7febc541c1d68512744b5c",
+    "bytes": 11774
+  }
+}

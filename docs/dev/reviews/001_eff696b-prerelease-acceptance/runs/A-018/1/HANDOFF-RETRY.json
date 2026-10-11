@@ -1,0 +1,7 @@
+{
+  "original_render_status": 2,
+  "original_error": "checkpoint not retained/published at exact destination",
+  "cause": "Published positivephase tip newer than isolated clone retainedobjects; no product/prerequisite failure",
+  "bounded_correction": "Bind exact already-published retained trial/037-a026-preservation7d checkpoint for actual prerequisite containment; original draft preserved",
+  "consumer_dispatched": false
+}

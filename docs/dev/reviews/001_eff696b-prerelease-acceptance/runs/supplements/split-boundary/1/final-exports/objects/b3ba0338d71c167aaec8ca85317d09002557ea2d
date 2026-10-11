@@ -1,0 +1,10 @@
+tree b1c277a449ac1a22ee59ea2bc8b80629a858591e
+parent 928c319ed84a919c6424adfa4522918e054a1d43
+author Codex <codex@openai.com> 1791630155 -0400
+committer Codex <codex@openai.com> 1791630155 -0400
+
+Propose TextStats layout and assess combined readiness
+
+Allocate flat pure core, byte I/O, public facade, CLI and module entry; map independent unit/integration tests, count-enforcing runner, public docs and isolated extracted-source packaging checks. Keep coordinator resources and deferred feature implementation outside edits.
+
+Record scoped strategy acceptance and refresh PLAN evidence/status identity. Preserve initial review and append combined placement QC with exact hashes. Links, headings and staged whitespace pass; all implementation paths remain proposed. TASKS awaits separate layout assessment.

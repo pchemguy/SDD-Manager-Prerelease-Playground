@@ -1,0 +1,50 @@
+{
+  "index.original": {
+    "bytes": 26726,
+    "sha256": "16e611346cb1db7d575f3b6b5d3e3aabf89e41682640e96f872c90a372d55bf4"
+  },
+  "before.json": {
+    "bytes": 67857,
+    "sha256": "af6f9d3b8ed9f186011437e842db9a0546fa04c9cae59a7dd69708789760d806"
+  },
+  "product-start.tar": {
+    "bytes": 1320960,
+    "sha256": "bb443a56f3e4bd7f17f20031cb079d8018a296a72dd81bc5ab6c0e80a3dcfc4a"
+  },
+  "pinned-assessor/capture.py": {
+    "bytes": 8719,
+    "sha256": "bedfe314bd439a401f70155151aa520aa2fff01204e7491d1c17f1dbe2a95bdc"
+  },
+  "pinned-assessor/A-013.json": {
+    "bytes": 14946,
+    "sha256": "1aaafa1e10eec44bfcce3fb5cf727deece9e7f759d29857bb162593997e790bf"
+  },
+  "pinned-assessor/A-013.md": {
+    "bytes": 2201,
+    "sha256": "7716c3b270ceb4142751be870f0dbe8db24741854c12bb0fcb0e8734ff934147"
+  },
+  "pinned-assessor/inputs.json": {
+    "bytes": 15940,
+    "sha256": "1caf7a7eb4738e2492dc7b6567dcda0957690e10281caf556926a40aa508af55"
+  },
+  "pinned-assessor/expected.json": {
+    "bytes": 12899,
+    "sha256": "5c7646105a1c28f061ee1cf84bc41ac399d0bc90e2963c00e5754a89ac1534f7"
+  },
+  "pinned-assessor/DOCUMENT-QC.md": {
+    "bytes": 3408,
+    "sha256": "1f1b9fdbc8743b421572bb14c6188b79ae42cbecc6b95e55ae1ed0978f8647f9"
+  },
+  "pinned-assessor/COMMON.md": {
+    "bytes": 8256,
+    "sha256": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef"
+  },
+  "pinned-assessor/core.py": {
+    "bytes": 56822,
+    "sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0"
+  },
+  "pinned-assessor/assess.py": {
+    "bytes": 167,
+    "sha256": "8937bf3feec620c76859277602f2bbb73aa9532831307f8e652a1987e1bea7f4"
+  }
+}

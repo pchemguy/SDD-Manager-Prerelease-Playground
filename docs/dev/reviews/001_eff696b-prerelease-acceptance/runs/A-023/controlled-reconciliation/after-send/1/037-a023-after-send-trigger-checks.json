@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "subtrial": "after-send-trigger",
+  "status": "Partial criteria passed; recovery pending",
+  "evidence_class": "controlled",
+  "agent_behavior_assessed": true,
+  "snapshot": "037-a023-after-send-trigger-snapshot.json",
+  "checks": {
+    "head_preserved": true,
+    "refs_preserved": true,
+    "index_preserved": true,
+    "status_preserved": true,
+    "tracked_worktree_preserved": true,
+    "actual_fixture_effect_present": true
+  },
+  "original_operation": {
+    "argv": [
+      "python",
+      "-B",
+      "tracking_facility.py",
+      "--action",
+      "write",
+      "--identity",
+      "campaign037_t001_completion",
+      "--payload",
+      "/workspace/scratch/46b31bb4dff6/037-a023-after-send-completion-payload.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility",
+    "status": 2,
+    "stdout": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Uncertain\", \"http_status\": null, \"reason\": \"Success response discarded after applied fixture write; read exact identity before retry\"}\n",
+    "stderr": ""
+  },
+  "original_failure": {
+    "argv": [
+      "python",
+      "-B",
+      "tracking_facility.py",
+      "--action",
+      "write",
+      "--identity",
+      "campaign037_t001_completion",
+      "--payload",
+      "/workspace/scratch/46b31bb4dff6/037-a023-after-send-completion-payload.json"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility",
+    "status": 2,
+    "stdout": "{\"schema_version\": 1, \"identity\": \"campaign037_t001_completion\", \"evidence_class\": \"controlled\", \"agent_behavior_assessed\": false, \"status\": \"Uncertain\", \"http_status\": null, \"reason\": \"Success response discarded after applied fixture write; read exact identity before retry\"}\n",
+    "stderr": ""
+  },
+  "pending_destination": {
+    "facility": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility",
+    "identity": "campaign037_t001_completion"
+  },
+  "assessor_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Failed before output",
+      "reason": "core.no_secret rejects NUL in own git ls-files -z provenance; no publication artifact or product/facility mutation"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Captured",
+      "repair": "external provenance uses path array"
+    }
+  ],
+  "limits": [
+    "Consumer seals and durable state are assessed; independent native full transcript unavailable.",
+    "Fresh task contexts used; shared broad filesystem prevents certification of inaccessible assessor assets.",
+    "Controlled ledger is not live provider recovery."
+  ]
+}

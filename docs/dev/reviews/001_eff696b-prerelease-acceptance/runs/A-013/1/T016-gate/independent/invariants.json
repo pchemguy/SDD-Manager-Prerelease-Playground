@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "only_T016_and_milestone22_checkboxes": true,
+    "prior_TASKS_completion_history_exact": true,
+    "current_TASKS_QC_hash_exact": true,
+    "report_sha_exact": true,
+    "reused_runtime_source_exact": true
+  },
+  "checkbox_diff": [
+    [
+      [
+        "    ",
+        " ",
+        "Milestone 2.2 \u2014 UTF-8 stdin and final delivery"
+      ],
+      [
+        "    ",
+        "x",
+        "Milestone 2.2 \u2014 UTF-8 stdin and final delivery"
+      ]
+    ],
+    [
+      [
+        "        ",
+        " ",
+        "T-016 \u2014 Review, test and report milestone 2.2"
+      ],
+      [
+        "        ",
+        "x",
+        "T-016 \u2014 Review, test and report milestone 2.2"
+      ]
+    ]
+  ],
+  "changed_paths": [
+    "AGENTS.md",
+    "docs/dev/TASKS.md",
+    "docs/dev/TASKS-REVIEW-REPORT.md"
+  ],
+  "added_paths": [
+    "docs/dev/reports/phases/2/2.2.md"
+  ]
+}

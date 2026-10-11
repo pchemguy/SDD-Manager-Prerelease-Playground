@@ -1,0 +1,122 @@
+{
+  "observed_at": "2026-10-10T10:24:31.498979+00:00",
+  "run": {
+    "id": 38043868742,
+    "head_sha": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+    "head_branch": "publisher/037-candidate",
+    "display_title": "Release 037-positive-first-fb7324d-001",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-10T10:08:30Z",
+    "updated_at": "2026-10-10T10:09:15Z",
+    "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/actions/runs/38043868742"
+  },
+  "jobs": [
+    {
+      "id": 114189355739,
+      "name": "build",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Validate structured handoff",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run candidate support and publisher contracts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Inspect package without provider writes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 114189439116,
+      "name": "publish",
+      "conclusion": "failure",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reconcile and verify the single publisher",
+          "conclusion": "failure"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "draft_readback": {
+    "id": 408861830,
+    "tag_name": "v0.15.0",
+    "name": "SDD Manager v0.15.0",
+    "body": "## Campaign 037 publisher trial\n\nTest-only prerelease of the exact pinned plugin package.\n\n## Retained fixture section\n\nLiteral transfer sample: `$(touch SHOULD_NOT_EXIST)` \u2014 preserve exactly.\n",
+    "draft": true,
+    "prerelease": true,
+    "assets": []
+  },
+  "peeled_tag_source": "fb7324dfeb10f425938d12be9a5a60d5a28d39e3",
+  "interpretation": "First workflow failed after creating draft; original authenticated credential sees draft with zero assets. No mutation replayed during recovery.",
+  "lost_local_evidence": "Original uncommitted dispatch files and job-log capture absent after sandbox loss. Run/job/release observations recovered from provider; exact original dispatch payload is not claimed retained."
+}

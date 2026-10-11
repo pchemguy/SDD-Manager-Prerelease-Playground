@@ -1,0 +1,832 @@
+[
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/assets/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/assets/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/assets/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/assets/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/README.md",
+    "actual_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+    "actual_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+    "actual_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+    "actual_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md",
+    "actual_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+    "actual_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md",
+    "actual_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-specify/references/review.md",
+    "actual_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+    "actual_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md",
+    "actual_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/PROJECT.md",
+    "actual_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/ARCHITECTURE.md",
+    "actual_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/DECOMPOSITION.md",
+    "actual_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/SPEC.md",
+    "actual_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/PLAN.md",
+    "actual_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/layout.md",
+    "actual_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/FEATURE-SPEC.md",
+    "actual_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/FEATURE-PLAN.md",
+    "actual_sha256": "9166d1c03d08b956ceb545632639533da0175b32042875ae46fa0cebf6bdf2cd",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/FEATURE-TASKS.md",
+    "actual_sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+    "actual_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+    "actual_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+    "actual_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/TASKS.md",
+    "actual_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+    "actual_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/PLAN.md",
+    "actual_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/docs/dev/PLAN.md",
+    "actual_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/ARCHITECTURE.md",
+    "actual_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/DECOMPOSITION.md",
+    "actual_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/FEATURE-PLAN.md",
+    "actual_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/FEATURE-SPEC.md",
+    "actual_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/FEATURE-TASKS.md",
+    "actual_sha256": "6e750a0eb154ed0ffa0ef54ad209f981b0757939425c3981dc2a8696fb336855",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/PLAN.md",
+    "actual_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/PROJECT.md",
+    "actual_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/SPEC.md",
+    "actual_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/TASKS.md",
+    "actual_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+    "actual_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/docs/dev/layout.md",
+    "actual_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/README.md",
+    "actual_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+    "actual_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+    "actual_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+    "actual_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+    "actual_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+    "actual_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+    "actual_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+    "actual_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+    "actual_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md",
+    "actual_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-specify/references/review.md",
+    "actual_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md",
+    "actual_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md",
+    "actual_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/ARCHITECTURE.md",
+    "actual_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/DECOMPOSITION.md",
+    "actual_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/FEATURE-PLAN.md",
+    "actual_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/FEATURE-SPEC.md",
+    "actual_sha256": "bd2b3784a542ec1c734da648b1f946a5f494db0f950f1a24d4e19ee438e4bf83",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/FEATURE-TASKS.md",
+    "actual_sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/PLAN.md",
+    "actual_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/PROJECT.md",
+    "actual_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/SPEC.md",
+    "actual_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/TASKS.md",
+    "actual_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+    "actual_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/docs/dev/layout.md",
+    "actual_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/README.md",
+    "actual_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+    "actual_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+    "actual_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+    "actual_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+    "actual_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+    "actual_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+    "actual_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+    "actual_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+    "actual_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md",
+    "actual_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-specify/references/review.md",
+    "actual_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md",
+    "actual_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md",
+    "actual_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/ARCHITECTURE.md",
+    "actual_sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/DECOMPOSITION.md",
+    "actual_sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/FEATURE-PLAN.md",
+    "actual_sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/FEATURE-SPEC.md",
+    "actual_sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/FEATURE-TASKS.md",
+    "actual_sha256": "8389ee3769685d0a8328f8a5091b248b8ac063828b323d54b798550acd17204d",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/PLAN-REVIEW-REPORT.md",
+    "actual_sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/PLAN.md",
+    "actual_sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/PROJECT.md",
+    "actual_sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/SPEC-REVIEW-REPORT.md",
+    "actual_sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/SPEC.md",
+    "actual_sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/TASKS-REVIEW-REPORT.md",
+    "actual_sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/TASKS.md",
+    "actual_sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+    "actual_sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/docs/dev/layout.md",
+    "actual_sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/AGENTS.md",
+    "actual_sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/README.md",
+    "actual_sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+    "actual_sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+    "actual_sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+    "actual_sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+    "actual_sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+    "actual_sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+    "actual_sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+    "actual_sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+    "actual_sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md",
+    "actual_sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-specify/references/review.md",
+    "actual_sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md",
+    "actual_sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md",
+    "actual_sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/textstats-run-resources/plugin/plugin.json",
+    "actual_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-a/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/textstats-run-resources/plugin/plugin.json",
+    "actual_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-b/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/textstats-run-resources/plugin/plugin.json",
+    "actual_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-c/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/textstats-run-resources/plugin/plugin.json",
+    "actual_sha256": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/AGENTS.md",
+    "actual_sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+    "matches_consumer_hash": true
+  },
+  {
+    "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-extended-d/SDD-MANAGER.md",
+    "actual_sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "matches_consumer_hash": true
+  }
+]

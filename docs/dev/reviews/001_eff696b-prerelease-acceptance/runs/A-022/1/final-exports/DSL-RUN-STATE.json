@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-022",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent reached-state read-only observation",
+  "pending_operation": null,
+  "next_action": "Publish independent evidence outside product",
+  "checkpoint_refs": {
+    "product_commit": "e454fda1fc851c9c224f37541f242a3d8d746709",
+    "product_branch": "phase/2-json-and-stdin",
+    "remote": "trial-delivery"
+  },
+  "evidence_paths": []
+}

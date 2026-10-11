@@ -1,0 +1,453 @@
+[
+  {
+    "name": "actual-t009-parent",
+    "args": [
+      "git",
+      "rev-parse",
+      "5b17e4650c64c7c735991931b591bdabb8069215^"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "actual-main-first-parent",
+    "args": [
+      "git",
+      "rev-parse",
+      "e7cae5b^1"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "source-parent",
+    "args": [
+      "git",
+      "show",
+      "-s",
+      "--format=raw",
+      "7b9f570aa4452d2ca9d6105479640528cb113f0e"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "live-positive-readback",
+    "args": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main",
+      "refs/heads/phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "evidence-published-ref",
+    "args": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/revision/001_eff696b-prerelease-acceptance"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "a006-evidence-commit",
+    "args": [
+      "git",
+      "rev-parse",
+      "39f4c3c"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "a006-evidence-contained",
+    "args": [
+      "git",
+      "merge-base",
+      "--is-ancestor",
+      "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+      "334f39c28e43528e6cbae20c435cddf6791b9c04"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "bare-init",
+    "args": [
+      "git",
+      "init",
+      "--bare",
+      "/workspace/scratch/46b31bb4dff6/037-a014-cross-remote.git"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "trial-init",
+    "args": [
+      "git",
+      "init",
+      "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "import-actual-prerequisite",
+    "args": [
+      "git",
+      "fetch",
+      "--no-tags",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "7b9f570aa4452d2ca9d6105479640528cb113f0e"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "main-baseline",
+    "args": [
+      "git",
+      "branch",
+      "main",
+      "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "retain-original-phase",
+    "args": [
+      "git",
+      "checkout",
+      "-b",
+      "phase/1-named-file-utility",
+      "7b9f570aa4452d2ca9d6105479640528cb113f0e"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "origin-read-url",
+    "args": [
+      "git",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "origin-disabled-push",
+    "args": [
+      "git",
+      "remote",
+      "set-url",
+      "--push",
+      "origin",
+      "/nonexistent/protected-live-origin-a014-cross"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "trial-remote",
+    "args": [
+      "git",
+      "remote",
+      "add",
+      "trial",
+      "/workspace/scratch/46b31bb4dff6/037-a014-cross-remote.git"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "push-prerequisite",
+    "args": [
+      "git",
+      "push",
+      "trial",
+      "main",
+      "phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "readback-prerequisite",
+    "args": [
+      "git",
+      "ls-remote",
+      "trial",
+      "refs/heads/main",
+      "refs/heads/phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "main-tracking-local",
+    "args": [
+      "git",
+      "branch",
+      "--set-upstream-to=trial/main",
+      "main"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "phase-tracking-local",
+    "args": [
+      "git",
+      "branch",
+      "--set-upstream-to=trial/phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "push-default-local",
+    "args": [
+      "git",
+      "config",
+      "remote.pushDefault",
+      "trial"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "identity-name",
+    "args": [
+      "git",
+      "config",
+      "user.name",
+      "Codex"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "identity-mail",
+    "args": [
+      "git",
+      "config",
+      "user.email",
+      "codex@openai.com"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "runner",
+    "args": [
+      "python",
+      "-B",
+      "tools/check_tests.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "distribution",
+    "args": [
+      "python",
+      "-B",
+      "tools/check_distribution.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "status",
+    "args": [
+      "git",
+      "status",
+      "--porcelain=v2",
+      "--untracked-files=all"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "index",
+    "args": [
+      "git",
+      "ls-files",
+      "--stage",
+      "-z"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "refs",
+    "args": [
+      "git",
+      "show-ref"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "worktree-diff",
+    "args": [
+      "git",
+      "diff",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "index-diff",
+    "args": [
+      "git",
+      "diff",
+      "--cached",
+      "--binary"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "bundle",
+    "args": [
+      "git",
+      "bundle",
+      "create",
+      "/workspace/scratch/46b31bb4dff6/037-a014-cross-setup-artifacts/prerequisite.bundle",
+      "main",
+      "phase/1-named-file-utility"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "bundle-verify",
+    "args": [
+      "git",
+      "bundle",
+      "verify",
+      "/workspace/scratch/46b31bb4dff6/037-a014-cross-setup-artifacts/prerequisite.bundle"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  },
+  {
+    "name": "out-of-range-closure-history",
+    "args": [
+      "git",
+      "log",
+      "--format=%H %s",
+      "88a5c4b4424f4bba76940e40b1d6523b1f6fe191..7b9f570aa4452d2ca9d6105479640528cb113f0e"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase",
+    "exit_code": 0,
+    "env": {
+      "PYTHONDONTWRITEBYTECODE": "1"
+    }
+  }
+]

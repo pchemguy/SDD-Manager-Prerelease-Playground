@@ -1,0 +1,82 @@
+{
+  "status": "Passed",
+  "case": "CP020 supplemental mixed same-file persistence",
+  "outside_original_32_cases": true,
+  "head": "7cf8d5e287c317ee7cdc458eff466550d2a3114c",
+  "base": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+  "gate": "c8edcc3094cc819386f093a52e62ae70669720f8",
+  "sealed_consumer_sha256": "4929881dd7f5b1b79e1c2d95a8d8a0c5f440391b040500532822c9ff2dcbf7c3",
+  "observations_match_seal": true,
+  "checks": {
+    "one_owned_commit": true,
+    "baseline_parent": true,
+    "single_T002_subject": true,
+    "only_T002_initial_checkbox": true,
+    "scope_owned": true,
+    "local_exact_readback": true,
+    "complete_remote_objects_identical": true,
+    "all_independent_tests_pass": true,
+    "semantic_foreign_preserved": true,
+    "remaining_only_foreign": true
+  },
+  "nonowned_baseline_files": 156,
+  "nonowned_object_or_mode_changes": [],
+  "accepted_six_nonowner_artifacts_match": {
+    "AGENTS.md": true,
+    "README.md": true,
+    "textstats/__init__.py": true,
+    "textstats/io.py": true,
+    "tests/unit/test_io.py": true,
+    "tests/integration/test_api.py": true
+  },
+  "refs_exact_expected": true,
+  "final_ref_map": {
+    "refs/heads/phase/1-named-file-utility": "7cf8d5e287c317ee7cdc458eff466550d2a3114c",
+    "refs/remotes/origin/phase/1-named-file-utility": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+    "refs/remotes/trial-delivery/phase/1-named-file-utility": "7cf8d5e287c317ee7cdc458eff466550d2a3114c"
+  },
+  "initial_ref_map": {
+    "refs/heads/phase/1-named-file-utility": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+    "refs/remotes/origin/phase/1-named-file-utility": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+    "refs/remotes/trial-delivery/phase/1-named-file-utility": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932"
+  },
+  "complete_remote_git_objects": 312,
+  "test_counts": [
+    15,
+    7,
+    4
+  ],
+  "independent_tests_in_export_only": true,
+  "publication_sequence_exact": true,
+  "initial_checkbox_and_current_evidence_with_result": true,
+  "all_T003_through_T017_and_all_parents_unchecked": true,
+  "evidence_core_unchanged": true,
+  "raw_index_not_expected_equal_after_owned_commit": true,
+  "original_nonzero_consumer_commands": 2,
+  "consumer_logger_race": "Parallel GREEN checks both passed, but shared JSON runner lacked locking; unit GREEN entry was lost by concurrent writer. Raw outputs were also returned by tool. Final verification repeated sequentially to retain both exact outputs.",
+  "scope_limits": [
+    "Supplement outside original 32 cases.",
+    "LOCAL bare Git publication only; no actual hosted/provider state assessed.",
+    "Shared filesystem/runtime snapshots cannot certify sandbox isolation.",
+    "Consumer self-reported parallel logger race retained; independent sequential suite evidence is fresh."
+  ],
+  "behavior_findings": [
+    "No implementation or persistence blocker identified in strict whole-file named-file API.",
+    "Unbounded binary source.read() consumes complete regular-file input; strict UTF-8 decode occurs before result and context-manager lifetime closes success/read/decode paths.",
+    "Original staged blank-line/comment suffix remains byte-exact in final index relative to clean owned HEAD facade; original unstaged comment suffix remains byte-exact in final worktree relative to final index.",
+    "Foreign note unchanged, untracked and excluded from commit. Ordinary index legitimately incorporates newly committed owned entries.",
+    "Seven accepted paths only; six nonowner artifacts keep their exact accepted blobs; TASKS differs solely by authorized owning closure evidence and initial T-002 completion.",
+    "Sole [T-002] commit includes acquisition, facade, tests, truthful current docs, evidence and initial checkbox; immediate LOCAL push/readback verified with all 312 complete reachable objects identical."
+  ],
+  "ordinary_index_changes_only_owned_entries": [
+    "AGENTS.md",
+    "README.md",
+    "docs/dev/TASKS.md",
+    "tests/integration/test_api.py",
+    "tests/unit/test_io.py",
+    "textstats/__init__.py",
+    "textstats/io.py"
+  ],
+  "foreign_note_mode": "0o644",
+  "nonowned_actual_workfile_hashes_modes_preserved": true
+}

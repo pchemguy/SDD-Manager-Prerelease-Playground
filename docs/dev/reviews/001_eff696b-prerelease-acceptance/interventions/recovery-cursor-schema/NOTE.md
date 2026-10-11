@@ -1,0 +1,3 @@
+# Coordinator cursor schema repair
+
+Recovery coordinator wrote pending_operation as a string in evidence checkpoints 8fe535f, 777e98a, d61fd81 and da5ed07. The pinned validator rejected that value when run before da5ed07, but the shell command continued and committed the checkpoint despite the validation failure. This is a coordinator persistence defect, not observed consumer/plugin behavior. Published history is retained; the last original cursor is preserved here, and this correction uses the schema-required object. The actual pending boundary and all case/provider results remain unchanged. Inputs and corrected cursor must validate before this repair commit. Subsequent validation/persistence commands use fail-fast shell execution.

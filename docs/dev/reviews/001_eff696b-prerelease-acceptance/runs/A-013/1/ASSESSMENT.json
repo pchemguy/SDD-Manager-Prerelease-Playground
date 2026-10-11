@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "status": "Blocked",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "scope": "Independent actual resumed T013\u201317 stdin/final Phase2 workflow through completed blocked-stop seal; phase published, accepted two-parent main merge local, main publication blocked by automatic approval review",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "integration_branch": "main",
+    "integration_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "phase_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+    "merge_parents": [
+      "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+      "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+    ],
+    "tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef"
+  },
+  "blocking_boundary": {
+    "consumer_instruction_defect": false,
+    "cause": "Original and narrowed exact main-push actions rejected by automatic approval review before execution. Platform-recognized explicit user request for exact main integration required; delegated/file authorization was not accepted. Consumer stopped without workaround.",
+    "main_merge_published": false,
+    "working_phase_published": true,
+    "seal_sha256": "b412f23d320d90ab77ab1c2368e9bd20f1ed7efa03222c91948e365e49e9bf0a"
+  },
+  "original_deterministic_assessment": {
+    "status": "Checks failed",
+    "exit_code": 1,
+    "passed": 9,
+    "failed": [
+      "published"
+    ],
+    "original_contract_unchanged": true,
+    "path": "final-reached/original-DSL-actual-state-assessment.json",
+    "first_assessor_composition_failure_retained": true
+  },
+  "assessment": [
+    "Current amended governing source hashes/preparation QC,21active owners/16initial completed and5pending, retired JSON identities and unchanged concerns were independently checked before selected implementation. Independent initial live/files/index/refs and published A012 predecessor are retained with timing/provenance limits.",
+    "All five actual task commits atomically include owning initial checkbox/result/evidence, exact reviewed tree and scoped code/tests/docs/QC/navigation. Actual immediate phase push/readback precedes subsequent work. Final21active owners complete; retired010\u201312 remain historical without executable checkbox.133 pinned package bytes/index modes and protected/closed-history paths preserved.",
+    "Independent original literal API/baseline/ranges/removal/stdin/distribution suites pass on actual final549a own exact export. Earlier independent focused/full tests, actual extracted11-member archive and all12 README/API fences establish strict borrowed EOF/UTF8/nonclosure, full decode before selection, once-only BOM policy, both range forms/ordering/huge errors, locale-independent bytes, help-before-acquisition, named/API regressions and isolated extraction behavior. Actual merged consumer fresh37unit/34integration,478real extracted cases/API probes and1628fresh children all-B/env1 are independently trace/member-audited.",
+    "Distinct milestone2.2 implementation review and final PHASE/IMPLEMENTATION pair were substantively independently reviewed before integration and committed/published in owning T016/T017. Relevant current/historical TODO sections independently inspected; admissible unresolved set empty. Deduplicated resolved finding IDs carry source/repair provenance; no fabricated unresolved alternatives/owners. Native own issue17/milestone5 andissue18/milestone6 closure follows task publication and precedes local main merge. Authorized phase-label maintenance changes description only; other fields preserved.",
+    "Actual accepted no-conflict main merge has ordered[fbe8,c05b] and tree190b equal published phase, coherent41path main scope; clean local state. Prospective integration gate passed and was published before commit. Both actual push requests were rejected before Git launch; no Git status/streams or remote write is invented. Fresh independent remote readback stillfbe8. Required published-phase integration exit is therefore Blocked, not completed or Passed.",
+    "Exact sealed original observations10,181,699bytes,7,537immutable records/aggregate and4,053,370byte surviving race checkpoint are copied with original hashes and whole-file/genericJSON guard. All original RED/facility/logger/argv/fixture-cleanup/format failures and scoped coordinator repairs are retained. Later successful serialized runs do not reconstruct overwritten first channels."
+  ],
+  "evidence": [
+    "initial/before.json",
+    "initial/MANIFEST.json",
+    "initial/published-predecessor-proof.json",
+    "provisional-preparation-readiness.json",
+    "provisional-T013/ASSESSMENT.json",
+    "reached-T014/lifecycle-invariants.json",
+    "reached-T015/runtime/literal-evidence.json",
+    "reached-T015/docs-assessment.json",
+    "reached-T015/archive-provenance.json",
+    "provisional-T016/ASSESSMENT.json",
+    "provisional-T017/ASSESSMENT.json",
+    "prospective-integration/ASSESSMENT.json",
+    "prospective-integration/independent-audit.json",
+    "final-reached/route-preservation-and-task-proof.json",
+    "final-reached/full-file-preservation-inventory.json",
+    "final-reached/runtime/literal-evidence-corrected-envelope.json",
+    "final-reached/original-DSL-actual-state-assessment.json",
+    "final-reached/current-recovery/manifest.json",
+    "sealed-consumer/MANIFEST.json",
+    "sealed-consumer/037-a013-consumer-blocked-seal.json",
+    "sealed-consumer/037-a013-consumer-blocked-seal-command.json",
+    "ASSISTANCE-AND-ORIGINAL-FAILURES.json"
+  ],
+  "limits": [
+    "No hard filesystem/tool isolation exists; broad shared filesystem access is available. Fresh rendered context and surviving scoped reads do not certify inaccessible siblings or universal original read chronology. Frozen038\u2013041 prose/code was not read by this assessor.",
+    "Provider records are independently inspected consumer GET/PATCH channels, not independently reexecuted provider GETs. Separate root four-resource late GET hash guard establishes only its stated premerge/blocked-stop boundary, not startup full snapshots or postpublication.",
+    "Current Python3.12.14/Unix tested; broader declared runtimes/platforms unverified. Complete full-input acquisition may use input-sized memory under accepted contract.",
+    "Pinned helper whole reachable-history recovery was rejected as sensitive_content_not_exportable; original failure retained. Separate recovery is complete for191 current tracked files/index/blobs plus207 reached objects, not complete reachable history or arbitrary ignored/protected machine state.",
+    "Tool-render truncation and original logging gaps remain explicit; captured exact artifact bytes, fresh reruns and scopes establish the stated evidence. Initial wallclock timestamp is not external clock-synchronization proof."
+  ],
+  "screening": {
+    "pinned_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "whole_file_clean_bytes": true,
+    "generic_json_loads_sniff_no_secret_regardless_extension": true,
+    "contract_guard_relaxed": false
+  }
+}

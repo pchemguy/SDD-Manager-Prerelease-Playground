@@ -1,0 +1,10 @@
+{
+  "status": "Failed",
+  "tests": 2,
+  "failures": 2,
+  "errors": 0,
+  "import_origin": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/textstats/__init__.py",
+  "diagnostic": "FF\n======================================================================\nFAIL: test_bom_empty_and_trailing_line (__main__.child.<locals>.Counts.test_bom_empty_and_trailing_line)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/contract_probe.py\", line 32, in test_bom_empty_and_trailing_line\n    value=product.count_text('\\ufeffa\\n');self.assertEqual((value.lines,value.words),(1,1))\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: (2, 1) != (1, 1)\n\nFirst differing element 0:\n2\n1\n\n- (2, 1)\n?  ^\n\n+ (1, 1)\n?  ^\n\n\n======================================================================\nFAIL: test_crlf_and_final_segment (__main__.child.<locals>.Counts.test_crlf_and_final_segment)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/contract_probe.py\", line 30, in test_crlf_and_final_segment\n    value=product.count_text('one two\\r\\nthree');self.assertEqual((value.lines,value.words),(2,3))\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Tuples differ: (3, 3) != (2, 3)\n\nFirst differing element 0:\n3\n2\n\n- (3, 3)\n?  ^\n\n+ (2, 3)\n?  ^\n\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (failures=2)\n",
+  "agent_behavior_assessed": false,
+  "child_returncode": 0
+}

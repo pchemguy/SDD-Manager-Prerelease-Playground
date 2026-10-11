@@ -1,0 +1,15 @@
+{
+  "name": "source-parent",
+  "args": [
+    "git",
+    "show",
+    "-s",
+    "--format=raw",
+    "7b9f570aa4452d2ca9d6105479640528cb113f0e"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

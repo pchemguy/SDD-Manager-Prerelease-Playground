@@ -1,0 +1,11 @@
+{
+  "decision": "Accepted",
+  "artifact": "docs/dev/ARCHITECTURE.md",
+  "commit": "334a4dd3f257ffefeb18ab88dfedc425b44838fc",
+  "blob": "1e46cf6139b9998f902b16300afed0f63b53e257",
+  "actor": "test coordinator under user delegation",
+  "basis": "Read full committed architecture and compared with accepted PROJECT and exact product request. Acyclic pure core/acquisition/API/CLI/presentation ownership; complete strict decoding and no partial output; opened versus borrowed handle lifetime; exactly-once BOM normalization; shared CRLF/CR/LF semantics; source-independent future range/stdin seam; public API unchanged. Whole-input memory choice fits absence of bounded-memory requirements. Physical layout correctly deferred. No implementation or premature projection. No material issue found.",
+  "next_step": "Prepare DECOMPOSITION; retain its own concrete review checkpoint",
+  "evidence_class": "delegated coordinator acceptance, not direct-human artifact review",
+  "observed_at": "2026-10-10T10:44:32.649903+00:00"
+}

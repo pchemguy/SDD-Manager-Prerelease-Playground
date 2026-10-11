@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "037-a012-lifecycle-checks.py"
+  ],
+  "exit_code": 1,
+  "cause": "KeyError: 'cmd'",
+  "tool_capture_ref": "6126dd",
+  "intervention": "Assessor-only account for seal completion-marker record without command; no product changes"
+}

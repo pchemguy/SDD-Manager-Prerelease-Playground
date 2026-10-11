@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "scope": "Independent actual retained root fresh prospective source commands/rawchannels and exact tree identity; final source merge/reportdelta/publication Pending",
+  "record_sha256": "42f52c77da1d280ded392d5e6a5f879e0e715604c59afb904fd8cb646bc2b8c3",
+  "prospective_parents": [
+    "a6c42dd754843abf9bafca7dee2aee9e733b046a",
+    "785b4da2dbe6bbee849a26efba3f0b204d8c02ed"
+  ],
+  "tree": "fb27aae9f036fdb074b9a6813b9a4492912ca786",
+  "raw_checks": [
+    {
+      "name": "support",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "acceptance/textstats/tests",
+        "-t",
+        "acceptance/textstats",
+        "-v"
+      ],
+      "recorded_status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_sha256": "b42693f274d27d87af90c18866f1a065cd6674bd54989d87712f3042759d9acf",
+      "stderr_bytes": 18153,
+      "summary": [
+        "Ran 113 tests in 17.981s",
+        "OK"
+      ],
+      "raw_OK": true,
+      "scope": "Independent retained channel inspection; not assessor rerun"
+    },
+    {
+      "name": "publisher",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".github/tests",
+        "-v"
+      ],
+      "recorded_status": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_sha256": "1d28ccfa12e1c53f1022e19c6a47d1cec1afa1b527f40842d0f297bd9a5a63b8",
+      "stderr_bytes": 3237,
+      "summary": [
+        "Ran 26 tests in 0.166s",
+        "OK"
+      ],
+      "raw_OK": true,
+      "scope": "Independent retained channel inspection; not assessor rerun"
+    }
+  ],
+  "package133_mode_blob_inventory_equal_EA": true,
+  "package_inventory_count": 133,
+  "package_inventory_sha256": "57f801f564195322ffbbf698a66045bddb29feff354db9e7001c6a5404adcd93",
+  "frozen16_mode_blob_inventory_equal_b246": true,
+  "frozen_count": 16,
+  "frozen_inventory_sha256": "9d2be4bee60b18017494b329eaf574276d7c8a667a6c6534e0db976b73211942",
+  "frozen_content_read": false,
+  "manifests_byte_identical": true,
+  "manifest_version": "0.15.0",
+  "claim_limits": [
+    "113support/26publisher freshsource only, no installed/native/client/readiness upgrade",
+    "Finalreport-only source changes must be attributed and assessed against exact lasttestedtree; do not call futurefinal tree freshlytested",
+    "No source writes or runtime reruns by assessor"
+  ]
+}

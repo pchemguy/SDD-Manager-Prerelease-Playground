@@ -1,0 +1,119 @@
+{
+  "run": {
+    "id": 38046045373,
+    "display_title": "Release 037-cp014-partial-001",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-10T10:46:00Z",
+    "updated_at": "2026-10-10T10:46:45Z",
+    "head_sha": "fde1bf67ddcbccc0ff1e4a5ec41b3533bd076044"
+  },
+  "jobs": [
+    {
+      "id": 114195672668,
+      "name": "build",
+      "started_at": "2026-10-10T10:46:04Z",
+      "completed_at": "2026-10-10T10:46:31Z",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Validate structured handoff",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run candidate support and publisher contracts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Inspect package without provider writes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 114195673528,
+      "name": "diagnose-draft-readback",
+      "started_at": "2026-10-10T10:46:02Z",
+      "completed_at": "2026-10-10T10:46:01Z",
+      "conclusion": "skipped",
+      "steps": []
+    },
+    {
+      "id": 114195760654,
+      "name": "publish",
+      "started_at": "2026-10-10T10:46:34Z",
+      "completed_at": "2026-10-10T10:46:44Z",
+      "conclusion": "failure",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reconcile and verify the single publisher",
+          "conclusion": "failure"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "conclusion": "skipped"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

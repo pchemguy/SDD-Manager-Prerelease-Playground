@@ -1,0 +1,7 @@
+{
+  "actor": "coordinator",
+  "original_publication": "268ca809733874c59c65652e891a1c03b12bb6ac",
+  "reason": "Triggermanifestcopy collided with setupmanifest basename; both exact originals retained in publishedhistory",
+  "correction": "SetupARTIFACT-MANIFEST restoredexact; trigger manifest separately retained TRIGGER-ARTIFACT-MANIFEST",
+  "product_effects": false
+}

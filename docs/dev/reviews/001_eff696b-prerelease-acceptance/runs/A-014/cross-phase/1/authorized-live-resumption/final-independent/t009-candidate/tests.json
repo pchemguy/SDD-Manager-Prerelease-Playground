@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "tools/check_tests.py"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a014-authorized-independent/t009-candidate/files",
+  "status": 0
+}

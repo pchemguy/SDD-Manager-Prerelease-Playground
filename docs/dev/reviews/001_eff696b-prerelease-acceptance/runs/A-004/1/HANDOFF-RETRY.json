@@ -1,0 +1,12 @@
+{
+  "actor": "coordinator",
+  "original_renderer_result": {
+    "exit_code": 2,
+    "error": "assessment evidence publication unverified"
+  },
+  "cause": "Product clone had not fetched new evidence commit65b6f80; publication had independently been verified in evidence clone.",
+  "followup_script_error": "Missing HANDOFF.md prevented scratch input copy; no consumer dispatched",
+  "remedy": "Normal git fetch origin updated only remote tracking evidence tip0dab522 to65b6f80; renderer retried with exact same bindings and passed",
+  "retention": "Original initial START retained; actual consumer starting snapshot recorded after authorized fetch",
+  "product_files_index_head": "unchanged; clean"
+}

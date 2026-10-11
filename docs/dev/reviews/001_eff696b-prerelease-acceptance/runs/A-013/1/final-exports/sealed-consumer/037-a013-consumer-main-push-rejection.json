@@ -1,0 +1,17 @@
+{
+  "kind": "verbatim automatic review rejection preserved",
+  "verbatim": "This action was rejected due to unacceptable risk.\nReason: This pushes a merge commit to the repository\u2019s default/protected `main` branch, a high-impact history/service mutation; the user\u2019s generic requests to push commits do not explicitly authorize this exact main-branch integration.\nDo not bypass this rejection through a workaround or indirect execution. Continue with a safer alternative, or carry out checks to prove that the action is authorized or low risk before trying again. Complete unaffected work without asking for confirmation. Report anything that remains blocked, clarify why it was blocked by auto-review, inform the user of the risk and ask for approval.",
+  "attempted_argv": [
+    "git",
+    "push",
+    "origin",
+    "main"
+  ],
+  "local_accepted_merge": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+  "execution": "not launched",
+  "observed_remote_main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+  "controlling_delegated_instruction_path": "/workspace/scratch/46b31bb4dff6/037-a013-consumer-input.md",
+  "instruction_sha256": "b9b37f2e63e2bb4d29f4c8eacb4e0f6449e63f858259cf91d8f91b0d85ed0443",
+  "integration_gate_reported_by_coordinator": "b187f05e3c78cffcde61a7ce52a97a7197bffdaa",
+  "no_retry_per_coordinator": true
+}

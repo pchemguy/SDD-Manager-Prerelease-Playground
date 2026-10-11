@@ -1,0 +1,177 @@
+{
+  "sealed": true,
+  "stop_boundary": "Immediately after first nonzero operation, before facility invocation, recovery, or publication. Only this explicitly requested observation sealing write follows. No further writes will be performed.",
+  "consumer_cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+  "commands": [
+    {
+      "command": "cat /workspace/scratch/46b31bb4dff6/037-a024-rate-limit-consumer-input.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+      "status": 0,
+      "channel": "functions.exec > tools.exec_command; merged command output",
+      "observation": "Read supplied ordinary request."
+    },
+    {
+      "command": "pwd; rg --files -g 'AGENTS.md' -g 'SKILL.md' -g 'PUBLIC-INTERFACE.md' -g 'TASKS*' -g 'PLAN*' | head -80",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+      "status": 0,
+      "channel": "functions.exec > tools.exec_command; merged command output",
+      "observation": "Discovered product and pinned package paths; cwd printed."
+    },
+    {
+      "command": "cat AGENTS.md textstats-run-resources/plugin/AGENTS.md textstats-run-resources/plugin/skills/sdd-manage/SKILL.md /workspace/scratch/46b31bb4dff6/037-a024-rate-limit-facility/PUBLIC-INTERFACE.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+      "status": 0,
+      "channel": "functions.exec > tools.exec_command; merged command output",
+      "observation": "Loaded instructions and disposable facility public interface."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-orient/SKILL.md textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md textstats-run-resources/plugin/skills/sdd-forge/SKILL.md textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+      "status": 0,
+      "channel": "functions.exec > tools.exec_command; merged command output",
+      "observation": "Loaded selected owner and applicable protocols."
+    },
+    {
+      "command": "cat textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md docs/dev/PROJECT.md docs/dev/PLAN.md docs/dev/TASKS.md SDD-MANAGER.md AI_DISCLOSURE.md README.md; git --no-optional-locks status --porcelain=v1; git --no-optional-locks rev-parse --show-toplevel HEAD; git --no-optional-locks symbolic-ref --short HEAD; git --no-optional-locks show-ref; git --no-optional-locks ls-files -s; rg --files docs -g AGENTS.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+      "status": 1,
+      "channel": "functions.exec > tools.exec_command; merged command output",
+      "observation": "First failed shell invocation. Final rg returned no matching nested AGENTS paths; aggregate output was truncated. Earlier Git commands visibly emitted clean status, root/HEAD, branch, refs and index entries."
+    }
+  ],
+  "loaded_paths": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/AGENTS.md",
+      "sha256": "d905c30b1bfc4ade497fa8bb2d850c71e0fae0db8a491a7651e53540678c067c",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md",
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/skills/sdd-forge/SKILL.md",
+      "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/docs/dev/PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/docs/dev/TASKS.md",
+      "sha256": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit/README.md",
+      "sha256": "af9961caa90a943d12b5c995893a8214628b0006049aebe0d38421bbf28bf373",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit-consumer-input.md",
+      "sha256": "fdbc0de87fe34e58b263c673f133a4f0567ee3d5f820ab5b7cd6d69a093644ae",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit-facility/PUBLIC-INTERFACE.md",
+      "sha256": "405251eb7dffe75a1e8c7d1c13d6c95c6aabbc9b485eb1fa0a8d0790f387e740",
+      "content_observation": "Loaded via cat; last combined output truncated where noted."
+    }
+  ],
+  "identity": {
+    "product_root": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+    "git_root": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "branch": "trial/037-a024-rate-limit",
+    "status_porcelain": "",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "selected_index_blobs": {
+      "AGENTS.md": "ac47830387394cf003278bad8af8f1ae89138e8e",
+      "docs/dev/PLAN.md": "2489ae62baa0159775f721355808fb56af8697cf",
+      "docs/dev/TASKS.md": "839c4ffbed873ace1f4b66b808285bba4657f66a"
+    },
+    "refs_observed": {
+      "refs/heads/main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+      "refs/heads/trial/037-a024-rate-limit": "1e3305c8659045945244c06861079fef879ca3c3",
+      "refs/heads/phase/2-json-and-stdin": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+      "refs/remotes/origin/trial/037-a024-rate-limit": "1e3305c8659045945244c06861079fef879ca3c3"
+    },
+    "pinned_package_commit": "ea515f5 (supplied request identity; package files hashed above)"
+  },
+  "selected_operation": {
+    "intended_first_facility_action": "python -B /workspace/scratch/46b31bb4dff6/037-a024-rate-limit-facility/tracking_facility.py --action read --identity campaign037_phase1_tracking",
+    "executed": false,
+    "pending_destination": {
+      "facility": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit-facility/tracking_facility.py",
+      "identity": "campaign037_phase1_tracking",
+      "destination": "controlled disposable facility ledger"
+    },
+    "publication": "pending; not attempted"
+  },
+  "original_outcome": {
+    "exit_status": 1,
+    "classification": "incidental orientation discovery command nonmatch; no backend result observed",
+    "failure_operation": "rg --files docs -g AGENTS.md",
+    "stdout": "no matching paths",
+    "stderr": "none observed",
+    "rate_limit": "not observed",
+    "access_failure": "not observed",
+    "effects": "no product/Git changes or facility actions performed"
+  },
+  "limits": [
+    "Shared filesystem isolation uncertified.",
+    "No post-stop verification performed.",
+    "Combined last output truncated; hashes identify loaded bytes but do not imply all content was visible.",
+    "No facility response, rate limit, or hosted readback observed.",
+    "No credentials, live provider effects, controls edits, implementation, checkbox changes, closures, or Git mutations."
+  ],
+  "seal_operation": {
+    "command": "/usr/bin/python3 -B - heredoc",
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit",
+    "bytecode_disabled": true,
+    "purpose": "Required observation artifact only; hashes of already loaded files taken during sealing."
+  }
+}

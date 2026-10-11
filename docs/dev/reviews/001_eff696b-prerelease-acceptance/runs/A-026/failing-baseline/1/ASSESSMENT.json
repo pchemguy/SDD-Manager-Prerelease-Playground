@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "case_id": "A-026",
+  "variant": "failing-baseline",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assessor": "/root/a026_assessor",
+  "checkpoint_refs": {
+    "product_commit": "86046022c97564a753b0f62a86e0bacaecf650b4",
+    "product_branch": "trial/037-a026-failing-baseline",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "integration_branch": "main",
+    "fork_origin": "7d003c1cf31c994340d8644e95990ef2253754ed"
+  },
+  "original_attempt": {
+    "status": "Passed",
+    "assistance": "Disclosed coordinator fixture preparation only; no consumer repair/retry."
+  },
+  "preservation_checks": {
+    "head": true,
+    "branch": true,
+    "refs": true,
+    "index": true,
+    "status": true,
+    "diff": true,
+    "cached_diff": true,
+    "tracked_files": true,
+    "task_checkboxes": true
+  },
+  "tracked_file_count": 169,
+  "before_evidence": "037-a026-failing-baseline-start-snapshot.json",
+  "after_evidence": "037-a026-failing-baseline-final-snapshot.json",
+  "consumer_evidence": {
+    "path": "037-a026-failing-baseline-consumer-observations.json",
+    "sha256": "d16a9bf048cd28eb98385c14a592abbb9584095f185790b7054ced898ab53b50",
+    "sealed_at": "2026-10-10T13:30:23.441731+00:00"
+  },
+  "independent_check_path": "037-a026-failing-baseline-independent-check.json",
+  "baseline_evidence": {
+    "unmodified": "037-a026-unmodified-public-baseline.json",
+    "fixture_failed_before_dispatch": "037-a026-failing-public-baseline.json",
+    "unmodified_result": "Actual public baseline 2 tests,0failures,0errors,exit0 at real usable milestone.",
+    "retained_fixture_result": "Separate isolated archive of fixturecommit86046022c97564a753b0f62a86e0bacaecf650b4:2tests,2genuine assertionfailures,0errors,exit1 before consumer dispatch."
+  },
+  "fixture_attribution": {
+    "source": "Coordinator exact pinned convenience injector, committed and published only disposable clone.",
+    "effect": "Deliberate off-by-one line count plus incidental public count_text signature change to (*args, **kwargs). Signature assertion failure is a real additional fixture effect and is retained; not a shared plugin/unmodified product defect.",
+    "consumer": "Correctly classifies failures at supplied fixture starting HEAD; does not falsely establish a newly isolated prior baseline or repair/clear completion."
+  },
+  "extra_verification_scope": {
+    "assessment": "Additional read-only declared unit/integration suites and tools/check_tests.py remain bounded current-work verification under ordinary product instructions; no unauthorized implementation/lifecycle changes.",
+    "unit": "21 test methods,44 failing assertions/subtests,0errors; failure totals may exceed method count.",
+    "integration": "12 test methods,21 failures,0errors; public signature failure included.",
+    "runner": "Independently rerun reproduces21unit/44failures and12integration/21failures,exit1."
+  },
+  "publication_readback": {
+    "remote": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+    "command": [
+      "git",
+      "-C",
+      "/workspace/scratch/46b31bb4dff6/037-a026-failing-baseline",
+      "ls-remote",
+      "origin",
+      "refs/heads/trial/037-a026-failing-baseline"
+    ],
+    "returncode": 0,
+    "stdout": "86046022c97564a753b0f62a86e0bacaecf650b4\trefs/heads/trial/037-a026-failing-baseline\n",
+    "stderr": "",
+    "exact_trial_tip_matches": true
+  },
+  "backend_lifecycle": {
+    "historical_report": "docs/dev/reports/phases/1/1.1.md retained separate review/testing evidence and TODO None; correctly historical, not current failing fixture acceptance.",
+    "gaps": "No fresh code review, demo, broader runtimes/platforms/distribution/phase exits or provider state; consumer retains scope limits.",
+    "writes": "No review tasks/report/TODO edits or hosted closures observed in retained command evidence."
+  },
+  "coverage_limits": [
+    "Fresh context uses shared filesystem; assessor-asset isolation not certified.",
+    "Native complete consumer transcript unavailable; sealed structured commands/results and disclosed initial-discovery observations retained.",
+    "Continuous mutation/hosted write audit unavailable; exact before/after tracked bytes/index/refs/tasks show preservation but cannot exclude transient reverted writes.",
+    "Provider objects not independently read; no hosted API calls observed.",
+    "Consumer did not independently execute an earlier separate baseline; assessor independently did before dispatch."
+  ],
+  "source_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "assessed_at": "2026-10-10T13:31:53.386695+00:00"
+}

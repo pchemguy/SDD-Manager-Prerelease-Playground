@@ -1,0 +1,15 @@
+{
+  "run_id": 38046245961,
+  "publish_job_id": 114196347332,
+  "conclusion": "failure",
+  "trigger_reached": true,
+  "actual_provider_acknowledgement": {
+    "observed_at": "2026-10-10T10:50:03.9283475Z",
+    "release_id": 408880857,
+    "asset_id": 627714735,
+    "asset_name": "sdd-manager.zip"
+  },
+  "error": "Campaign 037 controlled post-upload response suppression; next run must reconcile actual effect",
+  "classification": "Controlled suppression after API acknowledged actual upload; not native network response loss or uncontrolled termination",
+  "stopped_state": "Same draft, one uploaded archive, checksum absent; no publication until recovery"
+}

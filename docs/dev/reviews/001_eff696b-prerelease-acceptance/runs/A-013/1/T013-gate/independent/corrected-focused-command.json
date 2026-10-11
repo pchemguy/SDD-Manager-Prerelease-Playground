@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.unit.test_io",
+    "tests.integration.test_api",
+    "-v"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/provisional-T013/corrected-product-export",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_complete_bytes_preserve_unicode_terminators_and_boms (tests.unit.test_io.BorrowedAcquisitionTests.test_complete_bytes_preserve_unicode_terminators_and_boms) ... ok\ntest_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership (tests.unit.test_io.BorrowedAcquisitionTests.test_invalid_bytes_after_valid_prefix_preserve_borrowed_ownership) ... ok\ntest_read_failure_propagates_without_closing_borrowed_stream (tests.unit.test_io.BorrowedAcquisitionTests.test_read_failure_propagates_without_closing_borrowed_stream) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.046s\n\nOK\n"
+}

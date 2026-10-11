@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scope": "Independent predecessor regression literal observations from exact initial 77e7106 export, not A013 final acceptance",
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "suite": "api",
+      "passed": true
+    },
+    {
+      "suite": "baseline",
+      "passed": true
+    },
+    {
+      "suite": "ranges",
+      "passed": true
+    },
+    {
+      "suite": "removal",
+      "passed": true
+    }
+  ]
+}

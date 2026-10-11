@@ -1,0 +1,36 @@
+{
+  "pinned_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "whole_files": [
+    {
+      "path": "ASSESSMENT.json",
+      "sha256": "c7fc2f035aa246e1060a9d74db5a82246f9fd60b4212122cc4dad3e71ca0b97b",
+      "bytes": 2505
+    },
+    {
+      "path": "independent-audit.json",
+      "sha256": "bbec3c1fd4291a5a23af4484229ff689584a9a54ce125e12e363bc6e852d3ff6",
+      "bytes": 351889
+    },
+    {
+      "path": "candidate.json",
+      "sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+      "bytes": 3858
+    },
+    {
+      "path": "before-commit-observations.json",
+      "sha256": "7d6174ad64f076f4bbffaf2cd5288bb89e2cebeb6e61875e2a7a6ca32a0d73c8",
+      "bytes": 184867
+    },
+    {
+      "path": "merge-message.txt",
+      "sha256": "eb51fa5b0e635b530fe212cc2adfcc2029adb6fe2db10244a973ad3d367e1157",
+      "bytes": 4975
+    },
+    {
+      "path": "actual-prospective-source.zip",
+      "sha256": "d3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed",
+      "bytes": 17539
+    }
+  ],
+  "JSON_sniff_regardless_extension": true
+}

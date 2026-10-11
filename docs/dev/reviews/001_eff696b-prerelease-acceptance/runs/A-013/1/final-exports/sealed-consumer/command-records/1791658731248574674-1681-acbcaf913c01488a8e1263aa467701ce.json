@@ -1,0 +1,43 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "--lines",
+      "2:2",
+      "--",
+      "--json"
+    ],
+    "cwd": "/tmp/tmpnfkndfp8",
+    "stdout": "lines=1 words=2\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791658731.2485292,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product"
+    },
+    "fixtures": {
+      "/tmp/tmpnfkndfp8/--lines": {
+        "sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "bytes": 5
+      },
+      "/tmp/tmpnfkndfp8/--json": {
+        "sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "bytes": 5
+      },
+      "/tmp/tmpnfkndfp8/-sample": {
+        "sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "bytes": 5
+      }
+    },
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

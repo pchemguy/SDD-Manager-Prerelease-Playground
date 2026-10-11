@@ -1,0 +1,12 @@
+diff --git a/docs/dev/FEATURE-SPEC.md b/docs/dev/FEATURE-SPEC.md
+index ad87c3f..98d2414 100644
+--- a/docs/dev/FEATURE-SPEC.md
++++ b/docs/dev/FEATURE-SPEC.md
+@@ -63,3 +63,7 @@ Verify each rejection before acquisition using a controlled acquisition seam and
+ ## Ownership and readiness
+ 
+ F-001 belongs to C-007 parsing; F-002 uses C-005 acquisition, C-002 once-only normalization, C-003 traversal, C-010 selection and C-004 counting; F-003 uses C-008/C-009 orchestration/rendering with C-006 compatibility. F-004 checks these collaborating boundaries through existing product suites and extraction tools. No material behavioral or design decision remains open. The adjacent [owner QC](FEATURE-SPEC-REVIEW-REPORT.md) reports technical readiness; concrete delegated acceptance is a separate checkpoint before planning. No implementation is authorized here.
++
++## Proposed public API amendment
++
++F-005: Both public `count_text` and `count_file` must require positional `start` and `end` range arguments, and default to selected rather than whole-input counting. This changes their public signatures and whole-input semantics. Existing architecture/component ownership and accepted main contracts are unchanged in this proposal.

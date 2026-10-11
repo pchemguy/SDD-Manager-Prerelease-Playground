@@ -1,0 +1,23 @@
+{
+  "agent_behavior_assessed": false,
+  "checks": [
+    {
+      "id": "active-ownership",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    },
+    {
+      "id": "final-head",
+      "reason": "Literal invariant satisfied.",
+      "status": "Passed"
+    }
+  ],
+  "required_agent_checks": [
+    "Exact observed identity, retained valid work and readback before any uncertain-effect retry; no duplicate effect. Evidence class is explicit.",
+    "Independently observe fixture send-then-lost-response, applied effect readback and pre-send unapplied effect. Fresh consumer chooses bounded reconciliation; fixture responses are not GitHub acceptance."
+  ],
+  "schema_version": 1,
+  "selected_variant": "controlled-reconciliation",
+  "status": "Checks passed",
+  "variant_selection_required": false
+}

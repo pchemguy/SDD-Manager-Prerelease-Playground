@@ -1,0 +1,28 @@
+{
+  "wrapper_orig_argv": [
+    "python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal-runner.py",
+    "python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal.py"
+  ],
+  "argv": [
+    "python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal.py"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "stdout": "{\"seal_path\": \"/workspace/scratch/46b31bb4dff6/037-a013-consumer-blocked-seal.json\", \"seal_sha256\": \"b412f23d320d90ab77ab1c2368e9bd20f1ed7efa03222c91948e365e49e9bf0a\", \"main_merge_published\": false, \"remote_main\": \"fbe8bedf4c6cba1ab29d53d2da05e614603d76d1\", \"local_merge\": \"549a25f4f1bc7702afa0b729fc0894918ec9d16d\"}\n",
+  "stderr": "",
+  "status": 0,
+  "input_hex": null,
+  "input_sha256": null,
+  "started": 1791661615.0701616,
+  "completed": 1791661620.3952947,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8"
+  }
+}

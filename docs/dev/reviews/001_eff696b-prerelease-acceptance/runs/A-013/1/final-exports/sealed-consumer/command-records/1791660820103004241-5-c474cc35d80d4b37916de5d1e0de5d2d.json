@@ -1,0 +1,24 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product/tools/check_distribution.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "stdout": "extracted import: /tmp/tmp2_98cz7w/textstats-source/textstats/__init__.py\n478 extracted module cases passed\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791660820.1028552,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

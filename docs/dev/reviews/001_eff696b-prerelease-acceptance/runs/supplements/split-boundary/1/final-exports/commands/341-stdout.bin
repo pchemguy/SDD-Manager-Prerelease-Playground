@@ -1,0 +1,10 @@
+commit cdd50b67045f2811a529d3df5e66c91a23947650
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 13:58:06 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 13:58:06 2026 -0400
+
+    [T-002] Mark initial task completion separately (caller fixture)
+
+ docs/dev/TASKS.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "A-022",
+  "status": "Accepted pending-incorporation artifacts only",
+  "reviewer": "root delegated concrete artifact review",
+  "artifacts": [
+    {
+      "path": "docs/dev/TASKS.md",
+      "sha256": "e983281ea5090d5930aafe374c0b6b3de8cd4e5fd49fa968d605a997d449bb4a",
+      "git_blob": "a25d1e5544c843582e022d050207f06def2d1916"
+    },
+    {
+      "path": "docs/dev/TASKS-REVIEW-REPORT.md",
+      "sha256": "1b3e0fd77ed33a328c7e6d7c0a991d3108f7fdd51826654b3b9e52d73372afd9",
+      "git_blob": "84d8e039557ed109730de64b465f832475d00efa"
+    }
+  ],
+  "checks": "Actual two-path diff, explicit durable pending-reassessment note/history retention/currentQC Blocked,16 original prospective outputs and unchanged24owners/19checked/fivepending inspected; original concludedcandidate withheld/corrected with exactretention.",
+  "authorized_next": "Persist exact2pendingartifacts as non-task amendment checkpoint; immediately LOCALpush/readback then repeat16current-ownerchecks and affectedQC before presenting resolvedcandidate. No taskimplementation/provider/fullphasecompletion.",
+  "limits": "Prospective probes do not yet resolve current-owner reassessment; this gate does not accept concluded amendment."
+}

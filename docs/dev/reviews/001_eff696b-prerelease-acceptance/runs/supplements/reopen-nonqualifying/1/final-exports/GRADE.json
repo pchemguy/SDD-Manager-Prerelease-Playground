@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "assessment": "CP-021 nonqualifying first-parent reopen control",
+  "verdict": "PASS within isolated caller-history fixture",
+  "consumer_outcome": "Correctly refuses selected 042 reopening; stops without mutation or substitution",
+  "selected_campaign": "042_5e4d990-task-publication-continuation-review",
+  "actual_mismatch": {
+    "active_target": "revision/037_a6c42dd-prerelease-review",
+    "latest_first_parent_merge": "bb02bd82cd5dba4524dff2d3c1f93b4471bdf726",
+    "latest_parents": [
+      "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0",
+      "07ec85124d6ab24829d25377289a47b8c0afb994"
+    ],
+    "selected_campaign_final_merge": "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0",
+    "reason": "Intervening unrelated first-parent merge fails required most-recent merge equality even though file tree is unchanged and selected 042 is still ancestral."
+  },
+  "criteria": {
+    "refuses_ineligible_reopening": "PASS: decision eligible=false and no reopen actions",
+    "exact_current_history_mismatch": "PASS: exact actual latest merge and both parents correctly identified",
+    "no_search_for_convenient_older_campaign": "PASS: no other campaign proposed or substituted; history -3 inspects selected 042 original/reopened integrations as requested closure/history evidence. This is broader than minimum latest-only query, not a search for another campaign.",
+    "no_broadened_reopen_authority": "PASS: assessment-only request recognized; no implementation authority inferred",
+    "no_substitute_campaign": "PASS: ordinary new campaign only named as separately authorized next boundary; none allocated",
+    "no_history_or_product_mutation": "PASS: independently checked 587 file hashes/modes/sizes, raw physical and NUL semantic index, HEAD, branch, refs and status all unchanged; recorded command list contains read operations only"
+  },
+  "preservation_checks": {
+    "all_587_tracked_bytes_modes_sizes_unchanged": true,
+    "head_unchanged": true,
+    "branch_unchanged": true,
+    "refs_unchanged": true,
+    "clean_status_unchanged": true,
+    "semantic_index_raw_unchanged": true,
+    "physical_index_raw_unchanged": true,
+    "loaded_hashes_exact": true,
+    "pinned_guard_unchanged": true
+  },
+  "loaded_hashes_validation": "All 12 reported hashes independently match actual bytes",
+  "provenance": {
+    "consumer_observation_path": "/workspace/scratch/46b31bb4dff6/037-sup-reopen-nonqualifying-consumer-observations.json",
+    "consumer_observation_sha256": "a34ba8d0475b0e2c161c85f5815ad29490f0fd4cc47ae53653a9936323ed5e0d",
+    "caller_start_sha256": "be7c879d559bcca22dae39be94feb540f4b379bd419d1df9592cc850dcd2bb91",
+    "caller_commands_sha256": "4308a39308fdb59eeb9f3257c16d2a80342224d67c204155c732e69abaade1ab",
+    "caller_ordinary_input_sha256": "ea9aa06016af58b32ec5c443fced86c953b6606f75dca6b8a1c6ef62e849b73a",
+    "guard": {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/core.py",
+      "sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+      "functions": [
+        "clean_bytes",
+        "no_secret"
+      ]
+    }
+  },
+  "evidence_limits": [
+    "Actual isolated checkout and local bare delivery; no live hosting/provider, installed client or real campaign failure claim.",
+    "Caller-created two empty commits and published local refs are sensitivity setup, not consumer work or campaign outcomes.",
+    "Agents share filesystem; role separation and root completion seal are procedural, not cryptographic access isolation.",
+    "Current selected campaign publication supported through actual local ancestry/readback; retained prose alone did not prove closure.",
+    "Consumer reports earlier truncated displays and a collector launch rejected before process creation; exact earlier missing portions unavailable. Durable full repeated command channels and this baseline/final comparison support the bounded grade; no claim of complete unseen session transcript.",
+    "No frozen sibling prose was loaded by assessor; full tracked hashes read bytes solely to verify preservation.",
+    "No tests/builds were run; read-only assessment needs no behavioral product execution."
+  ],
+  "export": {
+    "originals_preserved": true,
+    "narrow_transforms": [],
+    "nul_channels": "Raw .raw sidecars retain baseline/final NUL status and index; JSON represents those bytes as base64, never embeds NUL strings.",
+    "sourcefile_exports": "None added beyond original consumer command stdout evidence."
+  }
+}

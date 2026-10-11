@@ -1,0 +1,19 @@
+{
+  "private_original_manifest_sha256": "5c359289520982ef2d117e94d2d85843e0be3db5326eb25a9e9d67cb59cde008",
+  "public_derivative": "two exact source copies omitted; original unchanged",
+  "omissions": [
+    {
+      "path": "tracked-files/acceptance/textstats/tests/test_preflight.py",
+      "sha256": "ff6e7444e473acd5890282683cfad992f5ae87ec9681cb64bc358d7d35d1525c",
+      "bytes": 14003,
+      "reason": "synthetic historical negative fixture literal flagged by unchanged clean_bytes"
+    },
+    {
+      "path": "tracked-files/acceptance/textstats/tests/test_recovery.py",
+      "sha256": "84e42ecb9b88a400330853be738cefd0fb16940b5db8226522f913e8fe6b1ec5",
+      "bytes": 23409,
+      "reason": "synthetic historical negative fixture literal flagged by unchanged clean_bytes"
+    }
+  ],
+  "consumer_seal_sha256": "9b2c329f976b46bfa5ff09ae52efbc748dfba2cd9e9baa6e3054d4edd3a14777"
+}

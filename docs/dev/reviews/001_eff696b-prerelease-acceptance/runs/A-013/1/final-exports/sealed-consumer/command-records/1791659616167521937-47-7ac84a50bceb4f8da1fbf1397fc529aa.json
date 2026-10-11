@@ -1,0 +1,51 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-s",
+      "-m",
+      "textstats",
+      "-",
+      "--lines",
+      ":"
+    ],
+    "cwd": "/tmp/tmp1u8n8at6/textstats-source",
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+    "status": 2,
+    "time": 1791659616.1674511,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "fixtures": {
+      "/tmp/tmp1u8n8at6/textstats-source/sample.txt": {
+        "sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "bytes": 24
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/--json": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/bad.txt": {
+        "sha256": "f3aed4332d915e609308980dc15bf0a502e131229bd899d5e8ee52bef8bd8703",
+        "bytes": 14
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/-": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      },
+      "/tmp/tmp1u8n8at6/textstats-source/-sample": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      }
+    },
+    "input_hex": "ff",
+    "input_text": null,
+    "input_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89"
+  }
+}

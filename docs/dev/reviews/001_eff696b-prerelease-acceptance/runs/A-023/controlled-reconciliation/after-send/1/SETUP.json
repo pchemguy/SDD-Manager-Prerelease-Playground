@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "variant": "controlled-reconciliation",
+  "subtrial": "after-send",
+  "evidence_class": "controlled",
+  "fixture_control": {
+    "read": "normal",
+    "write": "after-send-loss"
+  },
+  "actual_tracked_predecessor": "1e3305c8659045945244c06861079fef879ca3c3",
+  "actual_completed_task_checkpoint": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+  "completed_task_assessment": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-004/reassess-fc193b0/1/037-a004-reassessed.json",
+  "completed_task_evidence_published": "d5afca6c76d921160ff0d8a53769a5d988cc8f00",
+  "facility": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-facility",
+  "ledger_initially_absent": true,
+  "facility_files": {
+    "tracking_facility.py": "58d3dc257f8a206b021816b6055ba677437b9084811d1a3854d0f54d2ca9be00",
+    "fault_adapter.py": "75620593a8c1a7bc4bc316521b7f98aed7cbdafe318714ac4a68c84022528388",
+    "CONTROL.json": "c32ecb7ec127097f94c32bff27dafb87bb9ecf3f8f1b85f7c83029355de3f9a4",
+    "core.py": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "PUBLIC-INTERFACE.md": "405251eb7dffe75a1e8c7d1c13d6c95c6aabbc9b485eb1fa0a8d0790f387e740"
+  },
+  "positive_product_unchanged_by_setup": true,
+  "fresh_consumer_not_yet_dispatched": true
+}

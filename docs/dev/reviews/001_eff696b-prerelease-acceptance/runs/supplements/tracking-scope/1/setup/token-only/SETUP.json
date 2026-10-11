@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "case": "SUP-TRACKING-TOKEN-ONLY",
+  "ready_to_dispatch": false,
+  "publication_gate": "Caller setup must be reviewed and externally published by root before fresh consumer dispatch. No consumer run occurred.",
+  "actual_accepted_preparation": "1e3305c8659045945244c06861079fef879ca3c3",
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "source_mode": "exact committed package files already within accepted product checkpoint; unchanged product bytes",
+  "baseline_file_count": 154,
+  "worktree": "/workspace/scratch/46b31bb4dff6/037-sup-token-only",
+  "local_delivery": "/workspace/scratch/46b31bb4dff6/037-sup-token-only-delivery.git",
+  "origin_fetch_only": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+  "origin_pushurl": "file:///dev/null",
+  "no_live_ref_created": true,
+  "authentication": "No credential reads/copies/probes; root attaches already protected GET/fetch mechanism after publication. Actual operation-specific live write facilities are not established.",
+  "imported_scope_reconciliation": {
+    "actual_PLAN_sentence": "User-authorized GitHub tracking is confirmed for the scoped workflow",
+    "actual_AGENTS_scope": "Preparation-only stop before implementation/default integration",
+    "resolution": "Preserve actual documents/history/QC hashes; current independent trial input explicitly supersedes original stopping/access choices. No document edit removes or falsifies prior confirmation.",
+    "token_only_choice": null
+  },
+  "scope": "Read-only pre-execution recommendation/scope-choice subset",
+  "limits": [
+    "Not full live TRACKING-FIDELITY certification: no isolated hosted-write namespace/live provider readback, and native filesystem/transcript isolation uncertified.",
+    "Local bare delivery does not demonstrate GitHub product publication; external sanitized evidence publication by root is distinct.",
+    "Token-only request is readiness-only and cannot demonstrate task persistence or post-choice projection. Root must retain actual offered scope choice/response and create any separate later authorized handoff.",
+    "Decline evidence may demonstrate no repeated enable question/local progress; absence of invisible hosted effects cannot be certified from final local state alone.",
+    "Default main adopted from genuine accepted preparation as a caller fixture, not a consumer preparation-merge result; no invented two-parent integration chronology.",
+    "Python3.12.14/Linux only; no native installation, Windows or supported3.11 consumer runtime pass."
+  ]
+}

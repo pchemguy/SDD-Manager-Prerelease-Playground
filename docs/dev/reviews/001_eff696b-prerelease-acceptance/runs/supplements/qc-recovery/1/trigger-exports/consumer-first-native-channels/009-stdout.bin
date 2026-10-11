@@ -1,0 +1,99 @@
+# Human review of development documents
+
+## Entry and existing progress
+
+At greenfield entry, walk the human through the necessary document chain. At existing or interrupted project/feature entry, sdd-orient observes actual progress, decisions, document identities and unresolved instructions; the selected owners assess missing technical readiness. Orientation remains read-only and does not silently author or repair documents.
+
+Reuse acceptable existing inputs and proceed to the next eligible stage within the request. Missing retrospective human-acceptance records alone do not require interactive replay. File presence alone does not establish readiness. Preserve an actual pending checkpoint, requested review or explicit stopping instruction; interruption does not erase it.
+
+If the human explicitly requests interactive review of existing artifacts, begin with that review before dependent progression. Present concise substantive analysis and resolve the selected review, rather than listing files or announcing a Ready result. Important issues found at startup warrant a concrete concern, its consequence and affected next stage, and an offer of interactive review before advancing. An offer does not activate interactive mode until selected. Declining it does not clear a consequential readiness blocker; continue independent eligible work when possible.
+
+## Created-document checkpoints
+
+Each newly created necessary root/proposal has its own human review checkpoint, including direct owner calls and combined preparation requests. Relevant focused children are presented with their root.
+
+| New document/proposal | Owner | Hold before |
+| --- | --- | --- |
+| PROJECT | sdd-design | Dependent ARCHITECTURE or other use of the brief. |
+| ARCHITECTURE / FEATURE_ARCHITECTURE | sdd-design | Dependent DECOMPOSITION or contract work. |
+| DECOMPOSITION / FEATURE_DECOMPOSITION | sdd-design | Dependent SPEC. |
+| SPEC / FEATURE-SPEC | sdd-specify | Dependent PLAN. |
+| PLAN / FEATURE-PLAN | sdd-plan | Dependent layout or TASKS. |
+| layout / needed feature layout proposal | sdd-plan | Dependent TASKS. |
+| TASKS / FEATURE-TASKS | sdd-tasks | Implementation or hosted task projection. |
+
+Preserve dependency order: PROJECT, ARCHITECTURE, DECOMPOSITION, SPEC, PLAN, layout, TASKS. PLAN and layout have distinct checkpoints even when requested together. Optional feature overlays remain optional; reuse sufficient main design, strategy and layout. Do not create documents merely to fill this table. A feature brief is established in exploration/package evidence; create PROJECT only when genuinely selected. Use existing layout/feature-plan owners for a scoped placement proposal, without inventing a FEATURE-LAYOUT filename.
+
+1. Complete the selected root/proposal and children, perform applicable owner QC and persist the reviewable result under existing Git authority.
+2. Present links and concise analysis of purpose/coverage, consequential choices and rationale, consistency/gaps, assumptions/open questions, QC evidence/limits and a reasoned recommendation. For features, include changed behavior, affected main guarantees, compatibility/integration effects and scope/deferrals. Name the dependent operation being held.
+3. Pause for the human decision. Agent QC, Ready, commits/pushes and broad authorization to develop or prepare through TASKS do not accept an unreviewed new document. Silence or comments without acceptance keep the checkpoint pending.
+4. Record the actual decision with document/proposal scope and exact presented state (commit/blob or content identity) in existing preparation, handoff or active campaign evidence. Keep pending, accepted and revise decisions distinguishable from technical readiness. No new journal, registry or mandatory report per design root is required.
+5. Route requested revisions to the current owner, recheck affected concerns and present the revised state for the review to conclude. Acceptance-and-proceed clears the presented scope and its authorized next step; it cannot preaccept unseen downstream documents. If the human explicitly changes checkpoint scope, retain that decision; generic authorization is not a waiver.
+
+## QC, operation authority and continuation
+
+Human acceptance, technical readiness and Git integration/publication are separate gates. Human acceptance does not turn Blocked into Ready. Authorized checkpoint commits/pushes use existing repository-operation authority without another permission question. Preparation-only stops before implementation; accepted documents still need their established preparation integration gate before an implementation branch is created.
+
+At the PLAN checkpoint, review strategy, SPEC conformance, counts/dependencies and relevant existing layout. If new layout is still pending, identify that limitation and hold TASKS; do not author future layout to satisfy combined QC before PLAN review. After PLAN acceptance, prepare/review layout, update the adjacent PLAN QC report with combined coverage, and present the separate layout checkpoint. A strategy-scoped Ready result must not claim combined TASKS readiness while layout is pending.
+
+Routine maintenance, completion/evidence edits and material corrections to existing startup inputs do not automatically activate a full interactive review. Reassess affected technical readiness and route consequential decisions appropriately. A selected active interactive review does remain pending through its requested revisions. After interruption, reuse valid work and actual decisions, resume the next eligible stage, and preserve the unresolved human boundary without inventing acceptance or regenerating documents.
+
+Feature campaigns follow the same entry, presentation and continuation rules for each necessary new delta. Their accepted incorporation, bounded implementation and final verification/publication keep their existing owners and gates. This protocol adds no approval per implementation task or repository operation. Read-only review does not authorize repairs or unrequested downstream stages.
+# Shared Markdown style
+
+Apply these rules whenever SDD Manager authors, revises or reviews Markdown. They cover all document types: main and feature development documents and focused children, active reports, README and guides, AGENTS.md, skill instructions and references, templates, release notes and hosted Markdown drafts. Direct skill calls use the same rules as coordinated workflows. Respect controlling human/project instructions; surface a real conflict rather than silently choosing an incompatible format.
+
+## Heading separation
+
+Place a blank line after every Markdown heading, including ATX (`#` through `######`) and Setext headings (text followed by an `=` or `-` underline). This applies before prose, another heading, a list, a table or a fenced block. Separate headings from preceding content with a blank line as well; the beginning of a document or template needs no leading blank line. A heading at the end of a file still has a following blank line.
+
+## List separation
+
+Place a blank line before and after each entire top-level, non-indented list. Treat its nested items and continuation blocks as part of that list. Do not require blank lines around nested lists or between ordinary list items; compact nesting is preferred when the content permits it. No leading blank line is needed when a list begins the document; a final list has a trailing blank line.
+
+## Indentation and lists
+
+Use spaces, never tabs, for Markdown structural indentation. Use **four spaces per indentation level**, including nested bulleted, numbered, mixed and task lists. Start a top-level list at its container's left margin; indent each child list four additional spaces relative to its parent. Keep siblings at the same indentation and preserve their intended parentage.
+
+Use **exactly one ordinary ASCII space after each list marker**, at every nesting level: `- item`, `* item`, `+ item`, `1. item` and `1) item`. Do not pad markers with multiple spaces or tabs to align their text. In a task item such as `- [ ] task`, this separator is the space between the bullet and checkbox. Indentation before the marker still follows the four-space nesting rule.
+
+Indent continuation paragraphs and nested blocks to stay attached to their list item. Normally this uses the next four-space level; when a wide ordered-list marker requires more space, use the smallest additional four-space level that reaches the item's content column. Do not trade valid Markdown attachment for a mechanically fixed absolute column. TASKS retains its phase/milestone/task checklist semantics with its owner; this reference supplies the common spacing rule.
+
+````markdown
+## Supported variants
+
+- Linux
+    - x64
+        - Command-line launcher
+    - arm64
+- Windows
+    1. Extract the archive.
+    2. Start the launcher.
+
+1. Prepare the package.
+    - Verify its contents.
+
+    Keep the checksum beside the package.
+
+    ```text
+    package.zip
+    package.zip.sha256
+    ```
+
+2. Publish the verified assets.
+
+````
+
+## Code-block separation
+
+Place a blank line before and after code blocks, including fenced and indented blocks. Apply this separation to blocks nested in list items as well, keeping them attached to their item. Blank separator lines do not change the code's contents or relative indentation. No leading blank line is needed when a code block begins the document; a final block has a trailing blank line.
+
+## Literal content and templates
+
+Apply the rules inside Markdown examples and templates intended to produce documents, including fenced `markdown`/`md` samples. Preserve literal source code, data and verbatim quotations according to their own syntax and fidelity requirements. Do not interpret a shell comment or Python string inside a code fence as a Markdown heading, or reindent YAML/Python as though it were a list. Adjust a nested code fence's Markdown container indentation when needed without changing its relative internal code indentation.
+
+## Scoped review
+
+Check heading separation, top-level list and code-block separation, single-space list-marker separators, and list nesting/continuations in the selected current documents and active records, using syntax-aware inspection or rendering where attachment is uncertain. Text searches help discover candidates but do not prove correct parsing. Check examples/templates as well as surrounding prose. Repairs remain with the authorized artifact owner; this convention does not authorize edits or introduce a new human acceptance gate, formatter or dependency.
+
+Follow the [closed campaign record boundary](review-campaigns.md#closed-campaign-records). Closed records are excluded from routine style checks and repairs; consult them only for a specific historical need, without a maintenance obligation. Current source checks do not validate live agent behavior.

@@ -1,0 +1,53 @@
+[
+  {
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/product-export",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/api-retry.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/api-retry-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/product-export",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/baseline-retry.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/baseline-retry-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/product-export",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/ranges-retry.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/ranges-retry-provenance.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

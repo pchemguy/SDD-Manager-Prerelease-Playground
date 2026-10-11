@@ -1,0 +1,322 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index a28d052..7a4573d 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -11,3 +11,7 @@ The [TextStats project brief](docs/dev/PROJECT.md) has scoped delegated coordina
+ Development uses the pinned [SDD Manager](SDD-MANAGER.md) package identified above. Read applicable nested instructions for selected paths. Keep each newly created document's human review boundary and the current request's selected task boundary. Follow the pinned [publication procedure](textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md): push and verify each workflow-owned commit before advancing or creating another commit. Task execution uses the pinned [task commit contract](textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md#task-commit-contract).
+ 
+ Python 3.12.14 was verified for T-001. From the repository root, run `python -m unittest discover -s tests/unit -t . -v` and `python -m unittest discover -s tests/integration -t . -v`; both now collect actual product tests. `textstats/core.py` owns pure semantics; `textstats/__init__.py` now exports `TextStats`, `count_text` and `count_file`. Strict file acquisition and the baseline named-file CLI are delivered. Run `python tools/check_tests.py` for independently discovered nonempty unit/integration suites. Complete CLI failure handling is delivered. See the [public API/module reference](docs/public-api.md) and runnable [README](README.md). Run `python tools/package_source.py` for the allowlisted source ZIP and `python tools/check_distribution.py` for isolated extracted-import and real module-entry checks. Product tests require a checkout; the archive includes only package/docs/notices and the builder/checker. See [T-001 evidence](docs/dev/TASKS.md#t-001-completion-evidence) for the published baseline and bounded checks.
++
++## Current selected checkpoint
++
++The current T-009 through T-010 request supersedes historical Phase-1-only stops. Phase 1 was reviewed, integrated into local main and published to the explicitly authorized trial main ref before Phase 2 activation. T-010 adds named-file `--json` with retained text/BOM/error/API behavior. Current fork hosted tracking is explicitly disabled; historical issue identities are protected and not maintained here. Stop after T-010 on `phase/2-json-and-stdin`; T-011 and later tasks, stdin/range/release work and Phase 2 main integration are unselected. Source-distribution checker currently covers 36 retained text/help/error cases; extracted-source JSON acceptance belongs to T-011.
+diff --git a/README.md b/README.md
+index 076b2a8..c13d067 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+ # TextStats
+ 
+-Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. Phase 1 delivers the silent API, named-file module command, BOM policy and clean error handling. JSON, stdin and line ranges remain planned.
++Count logical lines and Unicode whitespace words in complete text or a named UTF-8 file. TextStats runs from a source checkout with Python 3.11+ and the standard library; installation and third-party dependencies are unnecessary. Phase 1 delivers the silent API, named-file module command, BOM policy and clean error handling. Named-file JSON output is also delivered; stdin and line ranges remain planned.
+ 
+ ## Quick start
+ 
+@@ -26,6 +26,18 @@ BOM-only input produces `lines=0 words=0` by default and `lines=1 words=1` with
+ 
+ Missing, unreadable, read-failing or invalid UTF-8 input returns status 1 with identifying input/cause stderr, no traceback and empty stdout. Missing/extra inputs or unknown options return status 2 with useful usage/error stderr and empty stdout. Invocation validation precedes file access. No partial statistics are emitted.
+ 
++## JSON output
++
++Use `--json` to emit one object with exactly integer `lines` and `words` fields, followed by a newline. Counts match the default text format and the API. The option composes with `--keep-bom`, before or after INPUT:
++
++```bash
++python -m textstats --json sample.txt
++python -m textstats sample.txt --json
++python -m textstats --json --keep-bom bom.txt
++```
++
++The sample produces `{"lines": 3, "words": 5}`; retained BOM-only input produces `{"lines": 1, "words": 1}`. JSON key order and spacing are unrestricted. Text stays the default, and input/usage failures retain their statuses and empty stdout. Stdin remains planned; literal `-` is still a named file.
++
+ ## Python API
+ 
+ ```python
+@@ -60,7 +72,7 @@ python tools/package_source.py
+ python tools/check_distribution.py
+ ```
+ 
+-The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 36 real module cases with inherited Python import paths removed and user-site packages disabled.
++The archive is `dist/textstats-source.zip`, with root `textstats-source/`. Its explicit allowlist contains the five package modules, README, public API guide, disclosure/usage notices and package builder/checker. It excludes credentials, caches, tests, development records, coordinator resources and workflow fixtures. The checker verifies the extracted package import location and 36 retained named-file text/help/error module cases with inherited Python import paths removed and user-site packages disabled. Dedicated extracted-source JSON acceptance is planned in T-011; this T-010 checkpoint verifies JSON from the checkout.
+ 
+ A runnable extraction example for a Bash shell on Unix:
+ 
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index db16422..1f29f02 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -64,7 +64,7 @@ The user requested preparation through TASKS and stop before implementation. The
+ 
+ - [ ] Phase 2 — JSON and stdin
+     - [ ] Milestone 2.1 — JSON output
+-        - [ ] T-010 — Add JSON CLI output with retained text behavior
++        - [x] T-010 — Add JSON CLI output with retained text behavior
+             Outcome: R-009 named-file JSON with only integer lines/words, one object plus newline and unchanged default text/errors.
+             Scope: `textstats/cli.py`, unit rendering/parser checks, `tests/integration/test_cli.py`, delivered-option help, README and API/module CLI documentation.
+             Depends on: T-009, completed phase 1 integration/publication and verified authorized phase 2 activation.
+@@ -188,3 +188,15 @@ Performed coherent milestone code review of the package/acquisition/API/CLI, tes
+ Complete Phase 1 code review, source/runtime identities, original failures and resolved findings, actual checks/QC, milestone TODO aggregation and exit assessment are in the [phase report](reports/phases/1/PHASE-REPORT.md). Scoped runtime assistance added explicit `-B` only to existing Python child argv in tests/checker; no semantic or governing amendment. After correcting the consumer quoting defect, 23 unit/18 integration tests, 36 isolated extracted module cases and every runnable user-guide fence pass on Python 3.12.14 with bytecode disabled. Initial failed runs remain retained. T-001–T-008 closing commits individually contain one initial owning checkbox plus result/evidence. Current fork tracking is explicitly disabled; copied hosted identities are protected and no issue/milestone write is made.
+ 
+ This concrete T-009 report/checklist/result candidate awaits coordinator acceptance before the owning commit, immediate trial phase publication/readback, and two-parent local main integration/merged checks/trial main publication. Status in the proposed candidate reflects verified task and parent exits; durable completion and integration are not asserted before their actual operations. Phase 2 is eligible only afterward for selected T-010; T-011 onward and Phase 2 main integration are outside scope.
++
++## T-010 completion evidence
++
++Selected T-009 through T-010 inclusive. Phase 1 task `dfcd658828d8e326c713683f3cdb9be05e044849` was accepted, committed and immediately published/read back to the authorized trial phase ref. Concrete report acceptance decision `c837cd750ad7bcb932add989644e8c851ce15f34` and actual merge acceptance decision `d244a40538aac6eb374fb1fd5a1a6bc76d66adce` preceded their corresponding operations. Complete Phase 1 two-parent integration `a7285d78a7fb1ee3966850656de6594317d5125f` has ordered parents `88a5c4b4424f4bba76940e40b1d6523b1f6fe191` / `dfcd658828d8e326c713683f3cdb9be05e044849`, tree `93756800aafe8abb0d8719176a14eb81ba42b4e1`. Fresh merged-state 23 unit/18 integration and 36 extracted checks passed before its immediate authorized trial main publication/readback and independent confirmation. Phase 2 activation followed that confirmation on `phase/2-json-and-stdin` from this published merge. Current fork tracking is explicitly disabled; no historical hosted object is written.
++
++Added named-file `--json` as a parser/output policy over the same completed statistics. Output has exactly integer `lines` and `words`, one object and a final newline; default exact text, BOM policy, whole-input API and error categories remain unchanged. Help, README, CLI/public module reference and root orientation describe the delivered checkpoint. No new acquisition path, public export, range or stdin capability.
++
++Meaningful test-first RED: `python -B -m unittest tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics tests.integration.test_cli.ModuleCliTests.test_json_option_like_filename_after_double_dash -v` ran 5 tests with 83 failing subcases because `--json` was unsupported (usage status 2). Original raw failure retained before production change. GREEN `python -B tools/check_tests.py` passes 26 unit and 21 integration tests, no skips, on Python 3.12.14 with PYTHONDONTWRITEBYTECODE=1 and explicit child `-B`. Coverage: fourteen independent whole-input semantic/BOM cases across five option arrangements; parsed exact keys and actual int types, final newline, API/equal exact text counts and unchanged bytes; controlled unreadability/read/decode and real missing/bad-byte JSON failures; usage validation before acquisition, rejected abbreviation, double-dash option-like filename and help.
++
++Every seven README and one public-guide runnable fence executed successfully in a private copy of current ordinary product files, avoiding uncertain root sample ownership. JSON examples produce three/five and retained BOM-only one/one objects; retained API/text/BOM/help/dash examples pass. Documented independent suite discovery also passes 26/21. Existing archive/checker and separate extracted text example pass 36 retained module cases; dedicated extracted-source JSON acceptance remains T-011, unselected and unclaimed. Documentation local links and changed whitespace pass. Review inspected minimal CLI data flow and unchanged error/acquisition/counting boundaries; no blocker found.
++
++Only T-010 initially closes in this result/evidence/tests/docs/checklist candidate. Phase 2 and milestone 2.1 remain unchecked. Publish/read back this task only to `refs/heads/trial/037-a014-cross-json` and stop on its retained phase branch; do not integrate Phase 2 into main or execute T-011 onward. Uncertain untracked root README samples are preserved and excluded from staging/archive; shared filesystem isolation cannot be certified. Other runtimes/platforms, stdin/ranges and release publication remain outside this checkpoint.
+diff --git a/docs/public-api.md b/docs/public-api.md
+index e6e685b..d17db85 100644
+--- a/docs/public-api.md
++++ b/docs/public-api.md
+@@ -43,16 +43,17 @@ With the default `strip_bom=True`, remove exactly one leading U+FEFF from the co
+ 
+ ## Module command
+ 
+-Use `python -m textstats [--keep-bom] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. In Phase 1, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
++Use `python -m textstats [--json] [--keep-bom] INPUT` from the source root. Exactly one named UTF-8 file is required. Recognized options work before or after INPUT; `--` terminates option parsing for dash-prefixed filenames. Until stdin delivery, literal `-` is a named file. Help (`-h` or `--help`) requires no acquisition.
+ 
+ | Outcome | Status | stdout | stderr |
+ | --- | --- | --- | --- |
+-| Count success | 0 | Exactly `lines=<N> words=<N>` plus newline | Empty |
++| Default text success | 0 | Exactly `lines=<N> words=<N>` plus newline | Empty |
++| JSON success (`--json`) | 0 | One object with only integer `lines`/`words` and a final newline | Empty |
+ | Help | 0 | Useful usage/options | Empty |
+ | File open/read or strict decode failure | 1 | Empty | Identifies input and cause, no traceback |
+ | Missing/extra input or unknown option | 2 | Empty | Useful usage/error, no traceback |
+ 
+-The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. JSON, stdin and ranges are future work. Runnable examples and setup/check instructions are in the [README](../README.md).
++The command validates invocation before opening input and prints counts only after complete acquisition, decode and counting. CLI error translation does not change the API exception contract. The `--json` option composes with `--keep-bom` and retains the same counts/statuses. JSON key order and spacing are unrestricted; booleans and extra fields are excluded. Stdin and ranges are future work. Runnable examples and setup/check instructions are in the [README](../README.md).
+ 
+ ## Module responsibilities
+ 
+@@ -61,7 +62,7 @@ The command validates invocation before opening input and prints counts only aft
+ | `textstats.core` | Immutable statistics, once-only BOM normalization, shared CRLF/CR/LF traversal and whole-text counting. |
+ | `textstats.io` | Strict named-file acquisition and owned-handle lifetime, then shared whole-text counting. |
+ | `textstats` | Direct public exports; import has no input or process effects. |
+-| `textstats.cli` | Invocation validation, BOM policy, expected failure translation and exact text rendering. |
++| `textstats.cli` | Invocation validation, BOM policy, expected failure translation and text/JSON rendering. |
+ | `textstats.__main__` | Minimal module-entry adapter returning the CLI process status. |
+ 
+ Internal helpers are not additional public exports. Future range selection can reuse preserved logical segments without renormalizing an exposed interior BOM.
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+index 55939e6..a2290ed 100644
+--- a/tests/integration/test_cli.py
++++ b/tests/integration/test_cli.py
+@@ -1,6 +1,7 @@
+ """Real module-entry named-file checks with exact process streams and bytes."""
+ 
+ import os
++import json
+ import subprocess
+ import sys
+ import tempfile
+@@ -13,6 +14,72 @@ ROOT = Path(__file__).resolve().parents[2]
+ 
+ 
+ class ModuleCliTests(unittest.TestCase):
++    def test_json_semantic_matrix_and_option_composition(self):
++        cases = [("", (0, 0), (0, 0)), ("alpha beta", (1, 2), (1, 2)),
++                 ("alpha\n", (1, 1), (1, 1)), ("\n", (1, 0), (1, 0)),
++                 ("α\r\n猫\rβ γ\n", (3, 4), (3, 4)), ("alpha\n\n", (2, 1), (2, 1)),
++                 (" \t", (1, 0), (1, 0)), ("alpha\u2028beta", (1, 2), (1, 2)),
++                 ("\ufeff", (0, 0), (1, 1)), ("\ufeff\ufeff", (1, 1), (1, 1)),
++                 ("\ufeffalpha beta", (1, 2), (1, 2)), ("a\ufeffb", (1, 1), (1, 1)),
++                 ("\r\n", (1, 0), (1, 0)), ("\r", (1, 0), (1, 0))]
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "sample.txt"
++            for text, default, retained in cases:
++                raw = text.encode("utf-8")
++                path.write_bytes(raw)
++                choices = [(["--json", str(path)], True, default),
++                           ([str(path), "--json"], True, default),
++                           (["--json", "--keep-bom", str(path)], False, retained),
++                           (["--keep-bom", str(path), "--json"], False, retained),
++                           ([str(path), "--json", "--keep-bom"], False, retained)]
++                for args, policy, expected in choices:
++                    with self.subTest(text=text, args=args):
++                        result = self.invoke(*args)
++                        self.assertEqual((result.returncode, result.stderr), (0, ""))
++                        self.assertEqual(result.stdout.count("\n"), 1)
++                        self.assertTrue(result.stdout.endswith("\n"))
++                        value = json.loads(result.stdout)
++                        self.assertEqual(set(value), {"lines", "words"})
++                        self.assertTrue(all(type(count) is int for count in value.values()))
++                        self.assertEqual((value["lines"], value["words"]), expected)
++                        self.assertEqual(count_file(path, strip_bom=policy), TextStats(*expected))
++                        text_result = self.invoke(*([] if policy else ["--keep-bom"]), str(path))
++                        self.assertEqual((text_result.returncode, text_result.stdout, text_result.stderr),
++                                         (0, f"lines={expected[0]} words={expected[1]}\n", ""))
++                        self.assertEqual(path.read_bytes(), raw)
++
++    def test_json_errors_retain_status_streams_and_diagnostics(self):
++        with tempfile.TemporaryDirectory() as directory:
++            bad = Path(directory) / "bad.txt"
++            bad.write_bytes(b"valid prefix\n\xff")
++            for path, cause in [(bad, "utf-8"), (bad.with_name("absent.txt"), "No such file")]:
++                for options in [["--json"], ["--keep-bom", "--json"]]:
++                    with self.subTest(path=path, options=options):
++                        result = self.invoke(*options, str(path))
++                        self.assertEqual((result.returncode, result.stdout), (1, ""))
++                        self.assertIn(str(path), result.stderr)
++                        self.assertIn(cause, result.stderr)
++                        self.assertNotIn("Traceback", result.stderr)
++            self.assertEqual(bad.read_bytes(), b"valid prefix\n\xff")
++        for args in [["--json"], ["--json", "one", "two"],
++                     ["--json", "--unknown", "missing"], ["--j", "missing"]]:
++            result = self.invoke(*args)
++            self.assertEqual((result.returncode, result.stdout), (2, ""))
++            self.assertIn("usage:", result.stderr)
++            self.assertNotIn("Traceback", result.stderr)
++
++    def test_json_option_like_filename_after_double_dash(self):
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / "--json"
++            path.write_bytes(b"alpha beta\n")
++            result = self.invoke("--json", "--", "--json", cwd=directory)
++            self.assertEqual((result.returncode, result.stderr), (0, ""))
++            self.assertEqual(json.loads(result.stdout), {"lines": 1, "words": 2})
++            text_result = self.invoke("--", "--json", cwd=directory)
++            self.assertEqual((text_result.returncode, text_result.stdout, text_result.stderr),
++                             (0, "lines=1 words=2\n", ""))
++            self.assertEqual(path.read_bytes(), b"alpha beta\n")
++
+     def invoke(self, *args, cwd=ROOT):
+         return subprocess.run([sys.executable, "-B", '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+ 
+@@ -37,6 +104,7 @@ class ModuleCliTests(unittest.TestCase):
+             self.assertEqual(result.stderr, '')
+             self.assertIn('usage:', result.stdout)
+             self.assertIn('--keep-bom', result.stdout)
++            self.assertIn('--json', result.stdout)
+             self.assertIn('INPUT', result.stdout)
+ 
+     def test_dash_filenames_and_double_dash_termination(self):
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+index 9fc5e23..728f294 100644
+--- a/tests/unit/test_cli.py
++++ b/tests/unit/test_cli.py
+@@ -2,6 +2,7 @@
+ 
+ import contextlib
+ import io
++import json
+ import shutil
+ import subprocess
+ import sys
+@@ -15,6 +16,51 @@ from textstats.cli import main
+ 
+ 
+ class CliTests(unittest.TestCase):
++    def test_json_success_composes_with_bom_and_option_order(self):
++        for args, policy in [(["--json", "named"], True),
++                             (["named", "--json"], True),
++                             (["--json", "--keep-bom", "named"], False),
++                             (["--keep-bom", "named", "--json"], False),
++                             (["named", "--json", "--keep-bom"], False)]:
++            with self.subTest(args=args):
++                out, err = io.StringIO(), io.StringIO()
++                with patch("textstats.cli.count_file", return_value=TextStats(3, 4)) as counter:
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(args)
++                self.assertEqual((status, err.getvalue()), (0, ""))
++                self.assertEqual(out.getvalue().count("\n"), 1)
++                self.assertTrue(out.getvalue().endswith("\n"))
++                value = json.loads(out.getvalue())
++                self.assertEqual(value, {"lines": 3, "words": 4})
++                self.assertTrue(all(type(count) is int for count in value.values()))
++                counter.assert_called_once_with("named", strip_bom=policy)
++
++    def test_json_input_failures_retain_empty_stdout_and_status(self):
++        for failure in [PermissionError("controlled unreadable"), OSError("controlled read failure"),
++                        UnicodeDecodeError("utf-8", b"\xff", 0, 1, "invalid start byte")]:
++            with self.subTest(failure=type(failure).__name__):
++                out, err = io.StringIO(), io.StringIO()
++                with patch("textstats.cli.count_file", side_effect=failure):
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(["--json", "affected.txt"])
++                self.assertEqual((status, out.getvalue()), (1, ""))
++                self.assertIn("affected.txt", err.getvalue())
++                self.assertIn(str(failure), err.getvalue())
++                self.assertNotIn("Traceback", err.getvalue())
++
++    def test_json_usage_validates_before_acquisition(self):
++        for args in [["--json"], ["--json", "one", "two"],
++                     ["--json", "--unknown", "missing"], ["--j", "missing"]]:
++            with self.subTest(args=args):
++                out, err = io.StringIO(), io.StringIO()
++                with patch("textstats.cli.count_file") as counter:
++                    with contextlib.redirect_stdout(out), contextlib.redirect_stderr(err):
++                        status = main(args)
++                counter.assert_not_called()
++                self.assertEqual((status, out.getvalue()), (2, ""))
++                self.assertIn("usage:", err.getvalue())
++                self.assertIn("error:", err.getvalue())
++
+     def test_success_renders_completed_counts(self):
+         out, err = io.StringIO(), io.StringIO()
+         with patch('textstats.cli.count_file', return_value=TextStats(3, 4)) as counter:
+@@ -46,6 +92,7 @@ class CliTests(unittest.TestCase):
+             counter.assert_not_called()
+             self.assertIn('usage:', out.getvalue())
+             self.assertIn('--keep-bom', out.getvalue())
++            self.assertIn('--json', out.getvalue())
+             self.assertEqual(err.getvalue(), '')
+ 
+     def test_expected_input_failures_have_status_and_diagnostic(self):
+diff --git a/textstats/cli.py b/textstats/cli.py
+index 19fe35e..3dd0da0 100644
+--- a/textstats/cli.py
++++ b/textstats/cli.py
+@@ -1,16 +1,17 @@
+-"""Named-file CLI parsing and exact text presentation.
++"""Named-file CLI parsing, exact text and integer-only JSON presentation.
+ 
+ Expected acquisition/decode failures produce an identifying stderr diagnostic
+ and status 1; invocation errors produce status 2 before acquisition.
+ """
+ 
+ import argparse
++import json
+ import sys
+ from .io import count_file
+ 
+ 
+ def main(argv: list[str] | None = None) -> int:
+-    """Parse one named file and emit its completed counts.
++    """Parse one named file and emit completed counts as text or JSON.
+ 
+     Args:
+         argv: Invocation arguments excluding the executable; None uses sys.argv.
+@@ -23,6 +24,7 @@ def main(argv: list[str] | None = None) -> int:
+     translated without a traceback; the public file API retains its exceptions.
+     """
+     parser = argparse.ArgumentParser(prog='python -m textstats', allow_abbrev=False, description='Count CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.')
++    parser.add_argument('--json', action='store_true', help='emit one JSON object with integer lines and words')
+     parser.add_argument('--keep-bom', action='store_true', help='retain a leading Unicode BOM as ordinary content')
+     parser.add_argument('input', metavar='INPUT', help='named UTF-8 file (use -- before dash-prefixed names)')
+     try:
+@@ -34,5 +36,8 @@ def main(argv: list[str] | None = None) -> int:
+     except (OSError, UnicodeDecodeError) as failure:
+         print(f"textstats: {args.input!r}: {failure}", file=sys.stderr)
+         return 1
+-    print(f'lines={stats.lines} words={stats.words}')
++    if args.json:
++        print(json.dumps({'lines': stats.lines, 'words': stats.words}))
++    else:
++        print(f'lines={stats.lines} words={stats.words}')
+     return 0

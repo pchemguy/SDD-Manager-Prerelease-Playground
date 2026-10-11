@@ -1,0 +1,7 @@
+{
+  "cmd": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output tests.unit.test_cli.CliTests.test_usage_failures_validate_before_acquisition tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_failure -v",
+  "chunk_id": "363844",
+  "wall_time_seconds": 0,
+  "exit_code": 1,
+  "original_token_count": 2648
+}

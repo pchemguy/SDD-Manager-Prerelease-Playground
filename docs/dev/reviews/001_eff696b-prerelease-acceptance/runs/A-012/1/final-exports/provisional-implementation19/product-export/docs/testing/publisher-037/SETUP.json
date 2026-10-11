@@ -1,0 +1,12 @@
+{
+  "campaign": "037",
+  "source_revision": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "original_playground_main": "e2e4750ad3be531e53b189ac8519b5376db0ee9e",
+  "purpose": "Default-branch dispatch discovery and tooling only; candidate/product/evidence live on isolated branches",
+  "tooling_hashes": {
+    ".github/workflows/release.yml": "64b52d5613b5b680af06d8c4527f2b2e38c5334e7e45b36acdf1745de52dfa3c",
+    ".github/scripts/release.py": "46f8cedbc1b92157076b56f4ae7032ddda28bcd4f98b04097d03a98ca01ccb13",
+    ".github/tests/test_release.py": "d01a7a91d2965bf49087bd8fe1f5b18032a72a272ae23b8db547b48ef1bf4def"
+  },
+  "effects": "Owned workflow setup, fixtures and test releases; preserve foreign objects; no production release"
+}

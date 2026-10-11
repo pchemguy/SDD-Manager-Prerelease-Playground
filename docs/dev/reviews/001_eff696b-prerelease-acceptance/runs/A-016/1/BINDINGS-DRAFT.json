@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-003",
+      "status": "Passed",
+      "assessment_path": "A003-ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "design-docs/main",
+        "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
+        "integration_branch": "main",
+        "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+      "remote": "origin",
+      "remote_ref": "refs/heads/trial/037-a023-before-send",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "65b6f802f16a66ff58e6d251c5cf77d24cda1f9e",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-003/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Use only `/workspace/scratch/46b31bb4dff6/037-a016-unpublished`. It is clean on `trial/037-a016-unpublished` at `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`. No local main branch exists. The exact baseline is published to the separate local bare destination `trial-delivery`, `/workspace/scratch/46b31bb4dff6/037-a016-remote.git`; use only that destination and preserve this trial branch. GitHub `origin` is read-only for this request. Shared branch updates, integration/default-branch merges, live API operations and credential access are outside scope.\n\nThe selected remaining task is T-001 only. Continue through its normal durable completion boundary and stop before the next task. This request supersedes historical stopping boundaries and ordinary branch naming only for this isolated scope. Accepted governing product documents and pinned package `textstats-run-resources/plugin/` source `ea515f5624c8a34cc4572731a2590223a5eb27f4` apply. Hosted tracking is explicitly declined; do not inspect or modify shared backlog. Concrete test-artifact assessment is delegated to the coordinator. Preserve coordinator resources and unrelated work. Keep later tasks and phase incomplete.\n\nStop immediately at the first failed, unavailable or held persistence operation, or unexpected required-check failure; expected TDD RED while developing this selected task is permitted. Report the exact command/status and retained files/index/refs. Do not retry, bypass controls, use --no-verify, change hook/config/control files or select another task. Invoke Python with `PYTHONDONTWRITEBYTECODE=1 python -B`, including child Python processes; do not use `/pyenv`. Record actual commands/results and checks. This draft is not authorization to start before coordinator dispatch.\n"
+  }
+}

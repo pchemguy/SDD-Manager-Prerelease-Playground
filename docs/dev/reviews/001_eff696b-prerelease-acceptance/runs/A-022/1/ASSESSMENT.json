@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "case_id": "A-022",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "outcome": "Assisted eventual pass; original first concluded candidate failed lifecycle criteria and was withheld.",
+  "initial_outcome": "Failed",
+  "initial_outcome_scope": "First candidate attempted completed reassessment/orientation without durable pending-incorporation checkpoint. Prospective probe occurred before acceptance amendment; no original pending chronology is inferred.",
+  "checkpoint_refs": {
+    "product_branch": "phase/2-json-and-stdin",
+    "product_commit": "e454fda1fc851c9c224f37541f242a3d8d746709",
+    "remote": "trial-delivery"
+  },
+  "starting_product_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+  "pending_incorporation_commit": "f8c3a4f9de188a19a959ba6199685ac280c65b00",
+  "publication": {
+    "status": "published",
+    "scope": "LOCAL trial-delivery bare repository only",
+    "exact_ref": "refs/heads/phase/2-json-and-stdin",
+    "exact_observed_head": "e454fda1fc851c9c224f37541f242a3d8d746709",
+    "live_github_publication_assessed": false
+  },
+  "original_pinned_dsl": {
+    "status": "Checks passed",
+    "agent_behavior_assessed": false,
+    "artifact": "original-pinned-DSL.json",
+    "checks": [
+      "active-ownership",
+      "final-head",
+      "published"
+    ],
+    "independent_of_lifecycle_grade": true
+  },
+  "required_agent_checks": [
+    {
+      "criterion": "Actual changed acceptance affects already checked runtime task; historical check evidence remains with durable pending-reassessment note.",
+      "status": "Passed after correction",
+      "evidence": [
+        "Initial sole canonical owner has checked T-019 with original completion evidence. ASCII-only governing F-001 already rejects the selected superscript specimen; independent baseline execution confirms existing runtime behavior, so this is an explicit evidence amendment, not grammar or implementation change.",
+        "Trigger f8c3a4f9 persists selected specimen and Completion reassessment pending after incorporation; current QC Revision4 is Blocked. Exact root pending artifacts match retained Git blobs and SHA256. Original checked statuses and completion section are byte-preserved.",
+        "Reached e454fda retains trigger Revision4 and adds Revision5, resolving only the named specimen after actual post-incorporation consumer checks. Original pre-incorporation probes are explicitly distinct."
+      ]
+    },
+    {
+      "criterion": "Orientation/selection exposes reassessment; owner rechecks in scope before completion; parent status not inferred from feature subset.",
+      "status": "Passed after correction",
+      "evidence": [
+        "Consumer records17\u201320 establish pending commit/push/readback before repeated current-owner probe. First external probe import failed and was retained; explicit checkout PYTHONPATH rerun captured eight actual module and eight controlled CLI cases with zero acquisitions.",
+        "Independent final exact-export probe repeated16 observations successfully, checking status2, useful ASCII stderr, empty stdout/no traceback and both acquisition functions untouched.",
+        "Independent owner/parent comparison confirms24 unique canonical owners,19 checked/five pending, unchanged parent states/dependencies and unchanged original completion evidence. Phase2/2.2/2.3 and T013\u2013017 remain pending.",
+        "Affected current TASKS QC hash matches exact owner, unchanged governing inputs and equivalent bounded count rationale; root resolved gate matches exact2 current artifact bytes/blobs. Orientation names T013 after T012 as candidate and requires separate execution authorization/current hosted projection evidence; no T013 implementation occurred."
+      ]
+    }
+  ],
+  "independent_checks": {
+    "artifact": "semantic-checks.json",
+    "literal_evidence": [
+      "baseline-literal.json",
+      "final-literal.json"
+    ],
+    "only_changed_product_paths": [
+      "docs/dev/TASKS.md",
+      "docs/dev/TASKS-REVIEW-REPORT.md"
+    ],
+    "other185tracked_paths_modes_and_hashes_unchanged": true,
+    "final_clean": true,
+    "assessor_index_unchanged_during_final_checks": true,
+    "git_bundle_and_all_new_reachable_objects_retained": true
+  },
+  "original_attempt_and_interventions": [
+    "Initial inventory missing external path (exit2), Git object-information lookup exit128, shell backtick substitutions accidentally attempted non-secret command text outside product; exact outer stderr retained and candidate rebuilt from unchanged HEAD. No runtime result claimed for accidental missing module.",
+    "Initial broad heading assertion exit1 found unchanged historical heading; bounded comparison correction retained failure and preserved original history.",
+    "First concluded candidate/prospective probes retained as Failed lifecycle candidate; root withheld acceptance and required durable pending incorporation followed by fresh owner reassessment. This was coordinator assistance, not autonomous first-attempt success.",
+    "Post-incorporation external-script import exit1 retained, corrected with explicit authorized checkout PYTHONPATH, followed by actual full successful raw observation capture.",
+    "Exact root pending and resolved concrete gates independently observed in authorized evidence commit objects; root supplied their identities. No additional consumer coaching by assessor."
+  ],
+  "limits": [
+    "Shared filesystem and broad access prevent consumer isolation certification.",
+    "LOCAL isolated delivery is independently read back; no live origin/provider writes or current hosted object reconciliation occurred.",
+    "Python3.12.14 in this environment only; other runtimes/platforms and extracted-source acceptance were not repeated.",
+    "QC Ready applies only to affected canonical acceptance amendment with unchanged governing inputs/decomposition; historical feature QC and full Phase2 acceptance are not renewed.",
+    "Original first inventory output is a summarized retained record with full tool stdout stated retained in conversation; assessor cannot certify byte-complete capture of that inventory from the supplied JSON alone."
+  ],
+  "artifacts_directory": "/workspace/scratch/46b31bb4dff6/037-a022-final-artifacts",
+  "publisher": "Root coordinator only; assessor made no product/index/provider modifications."
+}

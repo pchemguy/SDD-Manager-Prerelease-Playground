@@ -1,0 +1,15 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Correction required before acceptance",
+  "scope": "Current main PLAN and adjacent QC",
+  "original_commit": "9e8afe0778d9a58f83af7d69ce78db4c2b3bc1b2",
+  "original_blobs": {
+    "docs/dev/PLAN.md": "f016fb1a99e5fdcd777be31df080ac89a033bc6c",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "984b26fa4d7f08821e72e77f3c9177713ef217a8"
+  },
+  "finding": "Current Strategy checkpoint incorrectly describes two delivery milestones per phase, conflicting with incorporated Phase2 four-delivery-milestone hierarchy. Update current statement and matching QC identity together; preserve historical accepted checkpoint evidence.",
+  "other_review": "Inspected named-file milestone strategy, completed JSON prerequisite, pending stdin/final scope, feature review hierarchy, report placement and explicit paused-phase integration target conform.",
+  "publication": "Consumer exact push/readback of original checkpoint recorded; no dependent task mutation before this correction.",
+  "observation_correction": "Consumer update called appended QC Revision3; actual appended Revision4 confirmed by literal current document.",
+  "next_action": "Bounded owner correction/current QC before concrete acceptance and dependent TASKS work"
+}

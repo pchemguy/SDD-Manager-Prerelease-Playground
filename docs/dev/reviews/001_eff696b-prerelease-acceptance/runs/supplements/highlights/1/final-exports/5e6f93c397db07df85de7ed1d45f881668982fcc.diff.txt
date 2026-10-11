@@ -1,0 +1,16 @@
+commit 5e6f93c397db07df85de7ed1d45f881668982fcc
+Merge: 5e4d990 ea5fe47
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:47 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:47 2026 -0400
+
+    Caller fixture enclosing review integration
+    
+    Combined scope: retain accepted focused task-publication review records from nested042 and its related reopened amendment. Original opening5636481308427f9e9efd39576e562f057db7acda and baseline5e4d990e55817220661028f5e7ec643707bddd5a retained. Latest cumulative child summary at ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0 covers original eight semantic source checks, zero governing repairs, plus V001 atomic result/evidence/initialcheckbox-publication-hosted ordering and V002 resume existing pending publication without task replay. These are review records and illustrative examples, not runtime feature/client acceptance or completed parent037. This caller-authored LOCAL merge combines genuine previously assessed records only; no actual source campaign completion is claimed.
+
+ .../REVISION-REPORT.md                             |  4 ++
+ .../README.md                                      | 11 ++++
+ .../REVIEW-REPORT.md                               | 72 ++++++++++++++++++++++
+ docs/dev/reviews/README.md                         |  2 +
+ 4 files changed, 89 insertions(+)

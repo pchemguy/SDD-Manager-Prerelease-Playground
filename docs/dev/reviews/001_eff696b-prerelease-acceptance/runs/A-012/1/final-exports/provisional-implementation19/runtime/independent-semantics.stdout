@@ -1,0 +1,540 @@
+{
+  "import_origin": "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/provisional-implementation19/product-export/textstats/__init__.py",
+  "checks": [
+    {
+      "name": "usage-before-acquisition:['--json', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['missing', '--json']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--json']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--json', '--lines', '1:1', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--json=1', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--j', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--lines', '0:1', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--lines', '\u0661:\u0662', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition:['--lines', '1:2', '--lines', '1:2', 'missing']",
+      "actual": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "expected": [
+        2,
+        "",
+        0,
+        0,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "help",
+      "actual": [
+        0,
+        0,
+        0,
+        "",
+        false,
+        true,
+        true
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        "",
+        false,
+        true,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "name": "owned-resource:success",
+      "actual": [
+        [
+          2,
+          3
+        ],
+        true,
+        [
+          "owned",
+          "rb"
+        ],
+        "",
+        ""
+      ],
+      "expected": [
+        [
+          2,
+          3
+        ],
+        true,
+        [
+          "owned",
+          "rb"
+        ],
+        "",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "owned-resource:decode",
+      "actual": [
+        "UnicodeDecodeError",
+        true,
+        [
+          "owned",
+          "rb"
+        ],
+        "",
+        ""
+      ],
+      "expected": [
+        "UnicodeDecodeError",
+        true,
+        [
+          "owned",
+          "rb"
+        ],
+        "",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "owned-resource:read",
+      "actual": [
+        "OSError",
+        true,
+        [
+          "owned",
+          "rb"
+        ],
+        "",
+        ""
+      ],
+      "expected": [
+        "OSError",
+        true,
+        [
+          "owned",
+          "rb"
+        ],
+        "",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "public-exports",
+      "actual": [
+        "TextStats",
+        "count_file",
+        "count_text"
+      ],
+      "expected": [
+        "TextStats",
+        "count_file",
+        "count_text"
+      ],
+      "passed": true
+    },
+    {
+      "name": "public-signature:count_file",
+      "actual": [
+        [
+          "path",
+          "strip_bom"
+        ],
+        "KEYWORD_ONLY",
+        true
+      ],
+      "expected": [
+        [
+          "path",
+          "strip_bom"
+        ],
+        "KEYWORD_ONLY",
+        true
+      ],
+      "passed": true
+    },
+    {
+      "name": "public-signature:count_text",
+      "actual": [
+        [
+          "text",
+          "strip_bom"
+        ],
+        "KEYWORD_ONLY",
+        true
+      ],
+      "expected": [
+        [
+          "text",
+          "strip_bom"
+        ],
+        "KEYWORD_ONLY",
+        true
+      ],
+      "passed": true
+    },
+    {
+      "name": "literal-json-filename",
+      "actual": [
+        0,
+        "lines=1 words=2\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=1 words=2\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "interior-bom",
+      "actual": [
+        0,
+        "lines=1 words=1\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=1 words=1\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "interior-bom-immutable",
+      "actual": "610aefbbbf",
+      "expected": "610aefbbbf",
+      "passed": true
+    },
+    {
+      "name": "bom-only",
+      "actual": [
+        0,
+        "lines=0 words=0\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=0 words=0\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "bom-only-immutable",
+      "actual": "efbbbf",
+      "expected": "efbbbf",
+      "passed": true
+    },
+    {
+      "name": "kept-bom",
+      "actual": [
+        0,
+        "lines=1 words=1\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=1 words=1\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "kept-bom-immutable",
+      "actual": "efbbbf",
+      "expected": "efbbbf",
+      "passed": true
+    },
+    {
+      "name": "double-bom",
+      "actual": [
+        0,
+        "lines=1 words=1\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=1 words=1\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "double-bom-immutable",
+      "actual": "efbbbfefbbbf",
+      "expected": "efbbbfefbbbf",
+      "passed": true
+    },
+    {
+      "name": "mixed",
+      "actual": [
+        0,
+        "lines=2 words=3\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=2 words=3\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "mixed-immutable",
+      "actual": "610d0a6220630d640a",
+      "expected": "610d0a6220630d640a",
+      "passed": true
+    },
+    {
+      "name": "huge-end",
+      "actual": [
+        0,
+        "lines=2 words=2\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=2 words=2\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "huge-start",
+      "actual": [
+        0,
+        "lines=0 words=0\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=0 words=0\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "huge-zeros",
+      "actual": [
+        0,
+        "lines=2 words=2\n",
+        ""
+      ],
+      "expected": [
+        0,
+        "lines=2 words=2\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "integer-digit-guard",
+      "actual": [
+        0,
+        4300,
+        "lines=2 words=2\n",
+        ""
+      ],
+      "expected": [
+        0,
+        4300,
+        "lines=2 words=2\n",
+        ""
+      ],
+      "passed": true
+    },
+    {
+      "name": "decode-after-end",
+      "actual": [
+        1,
+        "",
+        true,
+        false
+      ],
+      "expected": [
+        1,
+        "",
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "name": "public-file-whole-input",
+      "actual": [
+        2,
+        3
+      ],
+      "expected": [
+        2,
+        3
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

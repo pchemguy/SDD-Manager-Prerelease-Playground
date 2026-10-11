@@ -1,0 +1,13 @@
+tree 5bed00f5edfc13cd5312e876a1909f0d8f33411b
+parent fbe8bedf4c6cba1ab29d53d2da05e614603d76d1
+parent e63b8946bbb99347b0f73f070f9c728945ee5925
+author Codex <codex@openai.com> 1791646698 -0400
+committer Codex <codex@openai.com> 1791646698 -0400
+
+Merge published JSON prerequisite into named-file range feature
+
+Objective: Establish the compatible text/JSON baseline required by accepted range delivery.
+Review: Inspected exact checkpoint source/tests/docs/distribution/report equality and retained main/feature task ownership. Existing completed JSON milestone evidence is retained; no range implementation accepted here.
+Delivered: Published T-010 through T-012 JSON implementation and historical completion evidence. Pending T-013 through T-017 and accepted range dependencies remain unchanged; active feature tasks stay unchecked.
+Verification: Prospective merged state check_tests.py passed 25 unit/21 integration tests on Python 3.12.14, no skips/warnings; check_distribution.py verified isolated import and 99 actual module cases. Staged whitespace and unresolved-index checks passed. Only conflict was AGENTS.md historical/current navigation; resolved by retaining current range instructions and a truthful JSON prerequisite note, preserving controlling instructions.
+Integration: Campaign 002_e7cae5b opening b0f93cf170addc80a92541acc4151058e57b6e64, branch-off e7cae5b2216ff7dd311b6f7296d829d1927a6a8a. Feature/002_e7cae5b-named-file-ranges parent fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 receives paused phase/2-json-and-stdin published source e63b8946bbb99347b0f73f070f9c728945ee5925. Default preparation is published; final target remains paused phase. No stdin work, complete Phase 2 claim, default phase merge or release.

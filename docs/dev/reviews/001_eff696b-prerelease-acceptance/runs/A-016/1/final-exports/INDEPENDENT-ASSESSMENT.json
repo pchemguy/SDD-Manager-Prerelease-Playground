@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "case_id": "A-016",
+  "stage": "independent unpublished commit and fresh continuation assessment",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assistance": "Controlled external publication hold removed after published preservation; coordinator manifest basename collision corrected with original history retained. Product source/task work was not rewritten for continuation.",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a016-unpublished",
+    "product_commit": "0d14a33282d9abd92d9e481ff45dddb98e8beea2"
+  },
+  "publication": {
+    "remote": "trial-delivery",
+    "path": "/workspace/scratch/46b31bb4dff6/037-a016-remote.git",
+    "ref": "refs/heads/trial/037-a016-unpublished",
+    "tip": "0d14a33282d9abd92d9e481ff45dddb98e8beea2",
+    "contains_head": true,
+    "containment_returncode": 0
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Controlled interruption correctly observed; required publication held, local completion remains unpublished, consumer stopped without retry or advancing.",
+      "publication_success": false,
+      "behavior_grade": "Passed interruption requirements",
+      "evidence": "037-a016-trigger-checks.json",
+      "delegated_review": "Root accepted exact T-001 source/tests before initial completion; retained RED/GREEN structured observations and output truncation limit preserved."
+    },
+    {
+      "attempt": 2,
+      "outcome": "Passed after bounded facility restoration; fresh consumer published exact retained commit before new work, audited persistence and stopped at T-001.",
+      "publication_success": true,
+      "behavior_grade": "Passed continuation requirements",
+      "evidence": "037-a016-continuation-observations.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": "real-first-attempt-trigger-retained",
+      "status": "Passed",
+      "detail": {
+        "trigger_checks_sha256": "c72423fbdebd82b0c144dfc87380b4f0769a7a28cb2233a4cb7d828ed5b8641f",
+        "local_commit": "0d14a33282d9abd92d9e481ff45dddb98e8beea2",
+        "clean": true,
+        "remote_tip_before": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+        "actual_final_consumer_command": "PYTHONDONTWRITEBYTECODE=1 git push trial-delivery HEAD:refs/heads/trial/037-a016-unpublished"
+      }
+    },
+    {
+      "id": "published-trigger-recovery-bytes-and-commit-order",
+      "status": "Passed",
+      "detail": {
+        "trigger_publication": "268ca809733874c59c65652e891a1c03b12bb6ac",
+        "restoration_publication": "a6ffc8ca4643c677d2ab9f245b370e7c3e249fcb",
+        "observed_remote_tracking_tip": "492fac66427a136200d356576be09f3dee8b2c47",
+        "contained_in_observed_tip": true,
+        "export_byte_comparisons": [
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/037-a016-consumer-input.md",
+            "sha256": "0e4edad62d1984bafc540490309dd027b42aceafc1ad87919d4f9ade29163a98",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/037-a016-consumer-observations.json",
+            "sha256": "02d7bbba41844c6c8ac33442d35625e9c7de2e42a2c37e867d54874f09863f05",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/TRIGGER-ARTIFACT-MANIFEST.json",
+            "sha256": "70492843d446b4de961e41dbdfbd1145e40ae77ec1cea9efc3e3f74429dcfddf",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/COMMIT-DELTA.patch",
+            "sha256": "abcee5993eeba15431cb70e495aa6a984d72476cbdcab5ee0919cac9625f0c60",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/HEAD-COMMIT.txt",
+            "sha256": "2ac4a1098339d97d7ba3e9f4d022de1ceccb0d6a83c1ee572fd5647ecf544356",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/HOLD.json",
+            "sha256": "673b1952ed20bae3752041ac3ad6d0f4f2fca550a5d7f02968d0cf51ec445c59",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/INDEX.bin",
+            "sha256": "d93a6906aaa06e1db2de5fba689ecf7818333a374c7532012b1d06fa0242ed47",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/OBJECTS.bundle",
+            "sha256": "fb365d62f0e9fafe0255b716362a6ce4b35de143346afafd8a62365a52483f52",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/SNAPSHOT.json",
+            "sha256": "a6b28686be36e49ca720b354f184e1179ee28930965ef838cd15135538f35875",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/STAGED.patch",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/TRACKED-WORKFILES.tar",
+            "sha256": "cc1816193ae59759adbc9c0f26828e5e6dfa0e132610b8de9773a5a0c74ebb9e",
+            "matches_original": true
+          },
+          {
+            "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-016/1/trigger-exports/UNSTAGED.patch",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "matches_original": true
+          }
+        ],
+        "live_readback_provenance": "Root separately verified exact live evidence tip 492fac66427a136200d356576be09f3dee8b2c47. Assessor independently inspected retained objects, observed remote-tracking tip and containment without accessing authentication or live APIs."
+      }
+    },
+    {
+      "id": "bounded-external-control-restoration",
+      "status": "Passed",
+      "detail": {
+        "actor": "coordinator",
+        "operation": "Only externalcaller CONTROL active true\u2192false",
+        "trigger_publication": "268ca809733874c59c65652e891a1c03b12bb6ac",
+        "restoration_at": "2026-10-10T15:01:04.095440+00:00",
+        "product_unchanged": true
+      }
+    },
+    {
+      "id": "separate-fresh-continuation-observations-sealed",
+      "status": "Passed",
+      "detail": {
+        "continuation_sha256": "c3cbf44f894a85708fa0ed60282d228a88d50feb70dc8790c92edf1e4c622a6a",
+        "original_seal_preserved_sha256": "02d7bbba41844c6c8ac33442d35625e9c7de2e42a2c37e867d54874f09863f05",
+        "fresh_context_provenance": "Root dispatched separate fresh consumer; shared filesystem access prevents certification of strict access isolation."
+      }
+    },
+    {
+      "id": "actual-publish-before-tests-edits-new-selection",
+      "status": "Passed",
+      "detail": {
+        "initial_read_only_inspection_commands": [
+          "cat /workspace/scratch/46b31bb4dff6/037-a016-continuation-input.md",
+          "pwd && rg --files -g AGENTS.md -g '*HANDOFF*' -g '*handoff*' -g 'SKILL.md' -g '*T001*' -g '*STATE*' -g '*TASK*' -g '*task*'",
+          "cat AGENTS.md && cat textstats-run-resources/plugin/AGENTS.md && cat textstats-run-resources/plugin/skills/sdd-implement/SKILL.md && cat textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md",
+          "cat textstats-run-resources/plugin/skills/sdd-manage/SKILL.md && cat textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md && cat textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md && cat textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md && git status --porcelain=v1 && git branch --show-current && git rev-parse HEAD HEAD^ && git remote -v"
+        ],
+        "publication_sequence": [
+          {
+            "command": "git ls-remote trial-delivery refs/heads/trial/037-a016-unpublished",
+            "chunk_id": "a6210c",
+            "wall_time_seconds": 2.6049e-05,
+            "exit_code": 0,
+            "original_token_count": 20,
+            "output": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191\trefs/heads/trial/037-a016-unpublished\n"
+          },
+          {
+            "command": "git push trial-delivery HEAD:refs/heads/trial/037-a016-unpublished",
+            "chunk_id": "81f5bb",
+            "wall_time_seconds": 2.4067e-05,
+            "exit_code": 0,
+            "original_token_count": 28,
+            "output": "To /workspace/scratch/46b31bb4dff6/037-a016-remote.git\n   88a5c4b..0d14a33  HEAD -> trial/037-a016-unpublished\n"
+          },
+          {
+            "command": "git ls-remote trial-delivery refs/heads/trial/037-a016-unpublished",
+            "chunk_id": "b28c9c",
+            "wall_time_seconds": 2.4557e-05,
+            "exit_code": 0,
+            "original_token_count": 20,
+            "output": "0d14a33282d9abd92d9e481ff45dddb98e8beea2\trefs/heads/trial/037-a016-unpublished\n"
+          }
+        ],
+        "subsequent_command_list": [
+          "cat textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md && git show --format=fuller --stat HEAD && git diff HEAD^ HEAD -- docs/dev/TASKS.md && git status --porcelain=v1 && git diff HEAD^ HEAD --name-status && git ls-tree HEAD textstats-run-resources/plugin && git ls-tree HEAD^ textstats-run-resources/plugin",
+          "cat textstats-run-resources/plugin/skills/sdd-orient/SKILL.md && cat textstats-run-resources/plugin/skills/sdd-report/SKILL.md && sed -n '78,150p' textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md && git rev-parse HEAD HEAD^ HEAD^{tree} && git status --porcelain=v1 && git diff --exit-code && git diff --cached --exit-code && git ls-files -s AGENTS.md README.md docs/dev/TASKS.md textstats tests && git diff HEAD^ HEAD -- textstats-run-resources .gitignore .github docs/testing/publisher-037",
+          "cat textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md && cat textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md && git --no-optional-locks diff HEAD^ HEAD -- textstats tests AGENTS.md README.md && git --no-optional-locks ls-remote trial-delivery refs/heads/trial/037-a016-unpublished && git --no-optional-locks status --porcelain=v1"
+        ],
+        "interpretation": "Loading pinned instructions and inspecting Git pending state are startup prerequisite observations. No test command, product edit, task selection, commit or credential operation precedes successful publication; following commands only audit retained persistence."
+      }
+    },
+    {
+      "id": "no-reimplementation-advance-or-unrelated-credential-discovery",
+      "status": "Passed",
+      "detail": {
+        "publication_attempts_in_continuation": 1,
+        "new_tests_edits_commits_selection": false,
+        "credential_discovery": false,
+        "origin_writes": false,
+        "seal_outcome": "T-001 retained durable checkpoint published and exact verified. Stopped before T-002/integration."
+      }
+    },
+    {
+      "id": "exact-local-delivery-containment",
+      "status": "Passed",
+      "detail": {
+        "remote": "trial-delivery",
+        "path": "/workspace/scratch/46b31bb4dff6/037-a016-remote.git",
+        "ref": "refs/heads/trial/037-a016-unpublished",
+        "tip": "0d14a33282d9abd92d9e481ff45dddb98e8beea2",
+        "contains_head": true,
+        "containment_returncode": 0
+      }
+    },
+    {
+      "id": "same-commit-index-workfiles-and-scope-retained",
+      "status": "Passed",
+      "detail": {
+        "head": "0d14a33282d9abd92d9e481ff45dddb98e8beea2",
+        "parents": [
+          "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+        ],
+        "index_entries_equal": true,
+        "binary_index_hash_equal": true,
+        "tracked_paths_hashes_modes_equal": true,
+        "status": [],
+        "unchanged_task_completion_commit_count": 1,
+        "early_optional_lock_inspection_limitation": [
+          "Historical test output and delegated acceptance were carried from the authorized handoff and committed evidence; not separately accessed or re-executed.",
+          "Early git status inspections lacked --no-optional-locks before the orient reference was read; no content/index-entry delta observed. Subsequent inspections suppressed optional locks."
+        ]
+      }
+    },
+    {
+      "id": "coordinator-manifest-collision-correction-disclosed",
+      "status": "Passed",
+      "detail": {
+        "original_setup_manifest_restored_exact": true,
+        "intervention": {
+          "actor": "coordinator",
+          "original_publication": "268ca809733874c59c65652e891a1c03b12bb6ac",
+          "reason": "Triggermanifestcopy collided with setupmanifest basename; both exact originals retained in publishedhistory",
+          "correction": "SetupARTIFACT-MANIFEST restoredexact; trigger manifest separately retained TRIGGER-ARTIFACT-MANIFEST",
+          "product_effects": false
+        },
+        "trigger_manifest_retained_separately": true,
+        "history_preserved": true
+      }
+    },
+    {
+      "id": "complete-verified-final-export",
+      "status": "Passed",
+      "detail": {
+        "bundle_verification": {
+          "returncode": 0,
+          "stdout": "The bundle contains these 10 refs:\n0d14a33282d9abd92d9e481ff45dddb98e8beea2 refs/heads/trial/037-a016-unpublished\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/heads/trial/037-a023-before-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/HEAD\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-after-send\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec refs/remotes/origin/trial/037-a023-before-send\n0d14a33282d9abd92d9e481ff45dddb98e8beea2 refs/remotes/trial-delivery/trial/037-a016-unpublished\n7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0\n8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014\n032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair\n0d14a33282d9abd92d9e481ff45dddb98e8beea2 HEAD\nThe bundle records a complete history.\nThe bundle uses this hash algorithm: sha1\n",
+          "stderr": "/workspace/scratch/46b31bb4dff6/037-a016-final-artifacts/OBJECTS.bundle is okay\n"
+        },
+        "artifact_directory": "/workspace/scratch/46b31bb4dff6/037-a016-final-artifacts",
+        "manifest": "ARTIFACT-MANIFEST.json"
+      }
+    }
+  ],
+  "coverage_limits": [
+    "Strictly local disposable bare destination; no live GitHub product delivery claim.",
+    "Fresh separate worker contexts observed; shared filesystem access prevents filesystem isolation certification.",
+    "Structured producer observations are not a complete native runtime transcript; initial RED output truncation retained.",
+    "Native OS termination and cross-machine restoration were not established; no optional-extension pass claimed.",
+    "Original hook START/HOLD path/index capture was line-oriented; independent trigger/final snapshots parse NUL lists to arrays and retain complete tracked binary workfiles/index/objects.",
+    "Early continuation git status used optional locks before orient reference; actual final index entries and raw index hash both unchanged.",
+    "No unaffected product tests replayed; initial completion evidence and delegated review were retained, publish-before-work chronology inspected independently."
+  ],
+  "source_immutable": true,
+  "first_attempt_retained": true,
+  "artifact_directory": "/workspace/scratch/46b31bb4dff6/037-a016-final-artifacts",
+  "safe_publication_pending": "This final assessment and final exports are local pending root authorized evidence publication."
+}

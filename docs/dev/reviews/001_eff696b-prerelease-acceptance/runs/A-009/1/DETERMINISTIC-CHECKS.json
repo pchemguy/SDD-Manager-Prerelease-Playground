@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "published",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Only selected SPEC owners change; outside impacts are reported. FEATURE-TASKS remains active sole executable owner.",
+    "Still-needed sources persist; no whole package archive, implementation or phase completion.",
+    "Selected SPEC-only incorporation preserves feature implementation-review task/report ownership and links outside its selected scope; it does not create implementation reports, close feature/project milestones or move unselected feature records. Selected preparation QC reports follow their own authorized adjacency scope.",
+    "Selected main SPEC incorporation includes its authorized adjacent QC reassessment, preserves the active feature task owner, and reports affected unselected PLAN/TASKS invalidation without editing them or claiming whole-project readiness. Literal selected-path restrictions are honored; a required missing report scope is reported as blocked."
+  ]
+}

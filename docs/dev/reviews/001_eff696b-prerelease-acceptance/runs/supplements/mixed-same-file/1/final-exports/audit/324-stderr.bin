@@ -1,0 +1,12 @@
+test_file_signature_and_keyword_only_policy (tests.integration.test_api.PublicFileApiTests.test_file_signature_and_keyword_only_policy) ... ok
+test_real_file_spec_matrix_matches_text_and_preserves_bytes_silently (tests.integration.test_api.PublicFileApiTests.test_real_file_spec_matrix_matches_text_and_preserves_bytes_silently) ... ok
+test_real_missing_file_and_invalid_bytes_preserve_exception_and_input (tests.integration.test_api.PublicFileApiTests.test_real_missing_file_and_invalid_bytes_preserve_exception_and_input) ... ok
+test_public_bom_and_empty_results (tests.integration.test_api.PublicTextApiTests.test_public_bom_and_empty_results) ... ok
+test_public_calls_are_silent_and_preserve_input (tests.integration.test_api.PublicTextApiTests.test_public_calls_are_silent_and_preserve_input) ... ok
+test_public_exports_match_the_core (tests.integration.test_api.PublicTextApiTests.test_public_exports_match_the_core) ... ok
+test_signature_is_whole_text_with_keyword_only_policy (tests.integration.test_api.PublicTextApiTests.test_signature_is_whole_text_with_keyword_only_policy) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK

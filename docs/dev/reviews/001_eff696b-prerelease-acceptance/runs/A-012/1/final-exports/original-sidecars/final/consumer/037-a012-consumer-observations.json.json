@@ -1,0 +1,11 @@
+{
+  "original_path": "final/consumer/037-a012-consumer-observations.json",
+  "original_sha256": "344129d88ee9a9827af7330dd9aa082c4979ab22f277457f0094a47c5e628ec7",
+  "original_bytes": 22528,
+  "original_mode": "0o644",
+  "original_retained": true,
+  "publication_form": "explicit screened derivative",
+  "original_guard_disposition": "invalid_nonsecret_configuration",
+  "derivative_path": "screened-derivatives/final/consumer/037-a012-consumer-observations.json.json",
+  "limits": "Raw protected or guard-limited bytes remain local; no guard behavior was changed."
+}

@@ -1,0 +1,30 @@
+{
+  "case_id": "A-012",
+  "starting_product_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+  "starting_paused_phase": "phase/2-json-and-stdin",
+  "starting_main_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+  "required_agent_checks": [
+    "Minimal retained revision record and matching convention branch; existing docs/code/tests/task retirement directly edited, no feature overlay.",
+    "JSON removal passes independent capture; retained behavior survives. Amendment integrates/publishes into paused phase 2 and consumer stops without implementation continuation.",
+    "Historical JSON IDs/evidence preserved but obsolete executable work is retired; inspect owner lists/PLAN/SPEC/hosted projection and original input before attribution.",
+    "Steering records use docs/dev/reports/phases/<actual-phase-id>/revisions/<actual-revision-id>/ with retained stable identity. Invalidated managed milestone acceptance is reconciled explicitly; retired work is not closed as verified completion.",
+    "Steering retains amendment ownership while affected preparation conformance is rechecked before production consumes changed governing inputs. Adjacent reports retain original findings and append correction/recheck evidence; unselected invalidated inputs are reported without resuming main implementation."
+  ],
+  "assessor_boundaries": {
+    "product_operations": "read-only git --no-optional-locks and file reads",
+    "runtime_checks": "exact assessor-owned exports only",
+    "provider_actions": "none; root sole publisher",
+    "finalization": "only after root consumer-completed seal",
+    "shared_filesystem": "consumer accessible parent scratch means isolation certification unavailable"
+  },
+  "current_disposition": "Not graded; preparation remains active",
+  "original_assessor_errors": [
+    {
+      "attempt": "initial capture from relocated script",
+      "returncode": 1,
+      "cause": "ModuleNotFoundError: core",
+      "retained": "initial/capture-commands.json",
+      "retry": "exact original pinned capture location succeeded; initial api/baseline/ranges owned export"
+    }
+  ]
+}

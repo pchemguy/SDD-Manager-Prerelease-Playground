@@ -1,0 +1,6 @@
+{
+  "initial_report": "Root incorrectly read13:19:25 -0400 asUTC and inferred earlier occupied output. Consumer retained that original warning and redirected fresh export.",
+  "corrected_fact": "mtime13:19:25 -0400 equals17:19:25UTC and matches fresh dispatch; assessor earlier absence probe exit1 corroborates initially absent requested output. No preexisting overwrite established.",
+  "scope": "External evidence only; original first consumer record retained; fresh consumer correction followup updated only external seal.",
+  "seal_sha256": "3298d9711575169a314ba7e85532feedae117e67485ddcf4ab37269823dc021f"
+}

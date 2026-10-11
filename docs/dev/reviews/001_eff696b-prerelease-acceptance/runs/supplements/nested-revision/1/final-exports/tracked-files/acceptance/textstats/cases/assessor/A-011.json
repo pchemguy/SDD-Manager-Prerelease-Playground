@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "case_id": "A-011",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "unchanged-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    }
+  ],
+  "required_agent_checks": [
+    "Assessment describes retained contracts and impacts, using actual amended candidate scope.",
+    "No revision branch, governing/source/test edits or resumed task execution. Compare complete before/after state."
+  ]
+}

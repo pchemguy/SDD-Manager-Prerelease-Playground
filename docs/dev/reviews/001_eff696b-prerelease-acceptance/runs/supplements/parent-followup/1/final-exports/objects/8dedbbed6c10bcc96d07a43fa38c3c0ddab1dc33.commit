@@ -1,0 +1,6 @@
+tree 5e94237e6410488e2346beee9b5a35f4628b827b
+parent 5b17e4650c64c7c735991931b591bdabb8069215
+author Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655229 -0400
+committer Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655229 -0400
+
+[T-009] Record scoped parent reassessment pending (caller local trial)

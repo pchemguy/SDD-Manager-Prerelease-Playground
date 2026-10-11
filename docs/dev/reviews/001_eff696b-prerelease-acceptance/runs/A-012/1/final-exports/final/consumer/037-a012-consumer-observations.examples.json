@@ -1,0 +1,144 @@
+[
+  {
+    "document": "README.md",
+    "fence": 1,
+    "command": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')\"\npython -m textstats sample.txt\npython -m textstats --help\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "lines=3 words=5\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\n\nCount CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.\n\npositional arguments:\n  INPUT              named UTF-8 file (use -- before dash-prefixed names)\n\noptions:\n  -h, --help         show this help message and exit\n  --keep-bom         retain a leading Unicode BOM as ordinary content\n  --lines START:END  select inclusive positive ASCII decimal logical lines\n                     (one range only)\n",
+    "stderr": "",
+    "time": 1791654040.3991108
+  },
+  {
+    "document": "README.md",
+    "fence": 2,
+    "command": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('bom.txt').write_bytes(b'\\xef\\xbb\\xbf')\"\npython -m textstats bom.txt\npython -m textstats --keep-bom bom.txt\npython -c \"from pathlib import Path; Path('-sample').write_bytes(b'alpha beta\\n')\"\npython -m textstats -- -sample\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "lines=0 words=0\nlines=1 words=1\nlines=1 words=2\n",
+    "stderr": "",
+    "time": 1791654040.6153326
+  },
+  {
+    "document": "README.md",
+    "fence": 3,
+    "command": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 2:3 sample.txt\npython -m textstats sample.txt --lines=0002:0099\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "lines=2 words=3\nlines=2 words=3\n",
+    "stderr": "",
+    "time": 1791654040.69755
+  },
+  {
+    "document": "README.md",
+    "fence": 4,
+    "command": [
+      "bash",
+      "-c",
+      "python -c \"from pathlib import Path; Path('range.txt').write_bytes(b'\\xef\\xbb\\xbfalpha beta\\r\\n\\r\\n\\xef\\xbb\\xbf\\nlast two')\"\npython -m textstats --lines 2:2 range.txt\npython -m textstats range.txt --keep-bom --lines=2:2\npython -m textstats --lines 2:99 range.txt\npython -m textstats --keep-bom --lines 3:3 range.txt\npython -m textstats range.txt --lines 99:100\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "lines=1 words=0\nlines=1 words=0\nlines=3 words=3\nlines=1 words=1\nlines=0 words=0\n",
+    "stderr": "",
+    "time": 1791654040.9782531
+  },
+  {
+    "document": "README.md",
+    "fence": 5,
+    "command": [
+      "bash",
+      "-c",
+      "python -m textstats --lines 0:2 missing.txt\npython -m textstats --lines 3:2 missing.txt\npython -m textstats --lines=1:2 --lines 2:3 missing.txt\npython -m textstats --lines\npython -c \"from pathlib import Path; Path('bad-range.txt').write_bytes(b'ok\\n\\xff')\"\npython -m textstats --lines 1:1 bad-range.txt\n"
+    ],
+    "expected_final_status": 1,
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\nusage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: expected one argument\ntextstats: 'bad-range.txt': 'utf-8' codec can't decode byte 0xff in position 3: invalid start byte\n",
+    "time": 1791654041.2486787
+  },
+  {
+    "document": "README.md",
+    "fence": 6,
+    "command": [
+      "python",
+      "-B",
+      "-c",
+      "from textstats import TextStats, count_text, count_file\n\nassert count_text(\"alpha beta\\r\\nbeta\\rlast two\\n\") == TextStats(3, 5)\nassert count_file(\"sample.txt\") == TextStats(3, 5)\nassert count_text(\"\\ufeff\") == TextStats(0, 0)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "time": 1791654041.2896507
+  },
+  {
+    "document": "README.md",
+    "fence": 7,
+    "command": [
+      "bash",
+      "-c",
+      "python tools/check_tests.py\npython -m unittest discover -s tests/unit -t . -v\npython -m unittest discover -s tests/integration -t . -v\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "unit: 31 tests\nintegration: 28 tests\nextracted import: /tmp/tmpn20eegs_/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp1s97ftgh/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpq9rlulvp/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpkvji3_hd/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp7izx7w3u/textstats-source/textstats/__init__.py\n241 extracted module cases passed\nextracted import: /tmp/tmpyipxtvxp/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpuilc1mc2/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmps1cp8hoq/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp1k961n5w/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpkl5701t9/textstats-source/textstats/__init__.py\n241 extracted module cases passed\n",
+    "stderr": "test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_literal_json_filename_after_termination (tests.unit.test_cli.CliTests.test_literal_json_filename_after_termination) ... ok\ntest_removed_json_forms_reject_before_all_acquisition (tests.unit.test_cli.CliTests.test_removed_json_forms_reject_before_all_acquisition) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_full_decode_after_end_and_read_failure_close (tests.unit.test_cli.RangeCliTests.test_full_decode_after_end_and_read_failure_close) ... ok\ntest_full_invalid_matrix_precedes_file_acquisition (tests.unit.test_cli.RangeCliTests.test_full_invalid_matrix_precedes_file_acquisition) ... ok\ntest_real_acquisition_normalizes_once_and_closes (tests.unit.test_cli.RangeCliTests.test_real_acquisition_normalizes_once_and_closes) ... ok\ntest_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard (tests.unit.test_cli.RangeCliTests.test_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_preserved_normalized_logical_segments_and_eof (tests.unit.test_core.SelectionTests.test_preserved_normalized_logical_segments_and_eof) ... ok\ntest_selection_and_normalized_counting_do_not_strip_exposed_bom (tests.unit.test_core.SelectionTests.test_selection_and_normalized_counting_do_not_strip_exposed_bom) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 31 tests in 0.278s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_literal_json_filename_in_whole_and_range_modes (tests.integration.test_cli.ModuleCliTests.test_literal_json_filename_in_whole_and_range_modes) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_removed_json_usage_even_on_missing_or_undecodable_file (tests.integration.test_cli.ModuleCliTests.test_removed_json_usage_even_on_missing_or_undecodable_file) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_all_option_permutations_spellings_and_input_positions (tests.integration.test_cli.RangeModuleTests.test_all_option_permutations_spellings_and_input_positions) ... ok\ntest_dash_named_files_after_option_termination (tests.integration.test_cli.RangeModuleTests.test_dash_named_files_after_option_termination) ... ok\ntest_every_feature_anchor_text_and_bom_policy (tests.integration.test_cli.RangeModuleTests.test_every_feature_anchor_text_and_bom_policy) ... ok\ntest_huge_and_leading_zero_endpoints (tests.integration.test_cli.RangeModuleTests.test_huge_and_leading_zero_endpoints) ... ok\ntest_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure (tests.integration.test_cli.RangeModuleTests.test_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_ignored_range_with_healthy_whole_input (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_range_with_healthy_whole_input) ... ok\ntest_checker_rejects_second_bom_normalization_after_selection (tests.integration.test_distribution.DistributionTests.test_checker_rejects_second_bom_normalization_after_selection) ... ok\ntest_checker_rejects_silently_accepted_removed_json_option (tests.integration.test_distribution.DistributionTests.test_checker_rejects_silently_accepted_removed_json_option) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 37.751s\n\nOK\ntest_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok\ntest_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok\ntest_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok\ntest_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok\ntest_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok\ntest_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok\ntest_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok\ntest_literal_json_filename_after_termination (tests.unit.test_cli.CliTests.test_literal_json_filename_after_termination) ... ok\ntest_removed_json_forms_reject_before_all_acquisition (tests.unit.test_cli.CliTests.test_removed_json_forms_reject_before_all_acquisition) ... ok\ntest_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok\ntest_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok\ntest_full_decode_after_end_and_read_failure_close (tests.unit.test_cli.RangeCliTests.test_full_decode_after_end_and_read_failure_close) ... ok\ntest_full_invalid_matrix_precedes_file_acquisition (tests.unit.test_cli.RangeCliTests.test_full_invalid_matrix_precedes_file_acquisition) ... ok\ntest_real_acquisition_normalizes_once_and_closes (tests.unit.test_cli.RangeCliTests.test_real_acquisition_normalizes_once_and_closes) ... ok\ntest_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard (tests.unit.test_cli.RangeCliTests.test_valid_huge_and_leading_zero_decimals_do_not_use_conversion_guard) ... ok\ntest_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok\ntest_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok\ntest_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok\ntest_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok\ntest_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok\ntest_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok\ntest_preserved_normalized_logical_segments_and_eof (tests.unit.test_core.SelectionTests.test_preserved_normalized_logical_segments_and_eof) ... ok\ntest_selection_and_normalized_counting_do_not_strip_exposed_bom (tests.unit.test_core.SelectionTests.test_selection_and_normalized_counting_do_not_strip_exposed_bom) ... ok\ntest_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok\ntest_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok\ntest_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok\ntest_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok\ntest_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok\ntest_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok\ntest_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok\ntest_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok\n\n----------------------------------------------------------------------\nRan 31 tests in 0.243s\n\nOK\ntest_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok\ntest_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok\ntest_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok\ntest_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok\ntest_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok\ntest_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok\ntest_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok\ntest_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok\ntest_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok\ntest_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok\ntest_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok\ntest_literal_json_filename_in_whole_and_range_modes (tests.integration.test_cli.ModuleCliTests.test_literal_json_filename_in_whole_and_range_modes) ... ok\ntest_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok\ntest_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok\ntest_removed_json_usage_even_on_missing_or_undecodable_file (tests.integration.test_cli.ModuleCliTests.test_removed_json_usage_even_on_missing_or_undecodable_file) ... ok\ntest_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok\ntest_all_option_permutations_spellings_and_input_positions (tests.integration.test_cli.RangeModuleTests.test_all_option_permutations_spellings_and_input_positions) ... ok\ntest_dash_named_files_after_option_termination (tests.integration.test_cli.RangeModuleTests.test_dash_named_files_after_option_termination) ... ok\ntest_every_feature_anchor_text_and_bom_policy (tests.integration.test_cli.RangeModuleTests.test_every_feature_anchor_text_and_bom_policy) ... ok\ntest_huge_and_leading_zero_endpoints (tests.integration.test_cli.RangeModuleTests.test_huge_and_leading_zero_endpoints) ... ok\ntest_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure (tests.integration.test_cli.RangeModuleTests.test_invalid_range_is_usage_on_missing_file_and_decode_after_end_is_input_failure) ... ok\ntest_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok\ntest_checker_rejects_ignored_range_with_healthy_whole_input (tests.integration.test_distribution.DistributionTests.test_checker_rejects_ignored_range_with_healthy_whole_input) ... ok\ntest_checker_rejects_second_bom_normalization_after_selection (tests.integration.test_distribution.DistributionTests.test_checker_rejects_second_bom_normalization_after_selection) ... ok\ntest_checker_rejects_silently_accepted_removed_json_option (tests.integration.test_distribution.DistributionTests.test_checker_rejects_silently_accepted_removed_json_option) ... ok\ntest_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok\ntest_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok\ntest_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 40.280s\n\nOK\n",
+    "time": 1791654120.131084
+  },
+  {
+    "document": "README.md",
+    "fence": 8,
+    "command": [
+      "bash",
+      "-c",
+      "python tools/package_source.py\npython tools/check_distribution.py\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "/tmp/tmpfozb8bs5/checkout/dist/textstats-source.zip\nextracted import: /tmp/tmp56ze26sy/textstats-source/textstats/__init__.py\n241 extracted module cases passed\n",
+    "stderr": "",
+    "time": 1791654134.9711714
+  },
+  {
+    "document": "README.md",
+    "fence": 9,
+    "command": [
+      "bash",
+      "-c",
+      "example_dir=$(mktemp -d)\npython -m zipfile -e dist/textstats-source.zip \"$example_dir\"\n(\n    cd \"$example_dir/textstats-source\"\n    python -c \"from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\\\r\\\\nbeta\\\\rlast two\\\\n')\"\n    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt\n)\nrm -r \"$example_dir\"\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "lines=3 words=5\n",
+    "stderr": "",
+    "time": 1791654135.1640944
+  },
+  {
+    "document": "docs/public-api.md",
+    "fence": 1,
+    "command": [
+      "python",
+      "-B",
+      "-c",
+      "from pathlib import Path\nfrom textstats import TextStats, count_text, count_file\n\nassert TextStats(lines=2, words=3) == TextStats(2, 3)\nassert count_text(\"a b\\nc\") == TextStats(2, 3)\nassert count_text(\"\\ufeff\", strip_bom=False) == TextStats(1, 1)\nassert count_file(Path(\"sample.txt\"), strip_bom=True) == TextStats(3, 5)\n"
+    ],
+    "expected_final_status": 0,
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "time": 1791654135.2112195
+  }
+]

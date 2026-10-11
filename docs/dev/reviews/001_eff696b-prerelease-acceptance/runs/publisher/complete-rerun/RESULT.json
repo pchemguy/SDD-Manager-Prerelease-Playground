@@ -1,0 +1,35 @@
+{
+  "observed_at": "2026-10-10T10:34:22.567358+00:00",
+  "run": {
+    "id": 38045221676,
+    "head_sha": "be0f6d46b970b031aac4fc1fb9f935c748034ec3",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/actions/runs/38045221676"
+  },
+  "release_id": 408861830,
+  "assets": [
+    {
+      "id": 627669329,
+      "name": "sdd-manager.zip",
+      "size": 317911,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:28:52Z",
+      "updated_at": "2026-10-10T10:28:52Z"
+    },
+    {
+      "id": 627669376,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82,
+      "state": "uploaded",
+      "created_at": "2026-10-10T10:28:54Z",
+      "updated_at": "2026-10-10T10:28:54Z"
+    }
+  ],
+  "release_and_assets_identity_timestamps_unchanged": true,
+  "exact_body_unchanged": true,
+  "draft": false,
+  "prerelease": true,
+  "latest_release_id": null,
+  "limit": "Same identities/timestamps and successful publisher reconciliation establish no duplicate or asset replacement; native provider mutation audit log is unavailable."
+}

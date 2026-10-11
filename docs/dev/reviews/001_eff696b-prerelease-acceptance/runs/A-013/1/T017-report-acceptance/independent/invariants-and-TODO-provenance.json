@@ -1,0 +1,256 @@
+{
+  "checks": {
+    "only_T017_review23_phase2_checkbox_changes": true,
+    "prior_TASKS_completion_history_exact": true,
+    "current_TASKS_QC_hash_exact": true,
+    "exact_five_owning_paths": true,
+    "all_21_active_tasks_checked": true,
+    "final_report_local_link_targets_exist": true
+  },
+  "checkbox_diff": [
+    [
+      [
+        "",
+        " ",
+        "Phase 2 \u2014 Ranges and stdin"
+      ],
+      [
+        "",
+        "x",
+        "Phase 2 \u2014 Ranges and stdin"
+      ]
+    ],
+    [
+      [
+        "    ",
+        " ",
+        "Milestone 2.3 \u2014 Phase 2 and final review"
+      ],
+      [
+        "    ",
+        "x",
+        "Milestone 2.3 \u2014 Phase 2 and final review"
+      ]
+    ],
+    [
+      [
+        "        ",
+        " ",
+        "T-017 \u2014 Review, test and report phase 2 and final delivery"
+      ],
+      [
+        "        ",
+        "x",
+        "T-017 \u2014 Review, test and report phase 2 and final delivery"
+      ]
+    ]
+  ],
+  "changed_paths": [
+    "AGENTS.md",
+    "docs/dev/TASKS.md",
+    "docs/dev/TASKS-REVIEW-REPORT.md"
+  ],
+  "added_paths": [
+    "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+    "docs/dev/reports/phases/2/PHASE-REPORT.md"
+  ],
+  "relevant_closed_TODO_sources": {
+    "docs/dev/reports/phases/1/1.1.md": {
+      "sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+      "todo_sections": [
+        "## TODO\n\nNone.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/reports/phases/1/1.2.md": {
+      "sha256": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53",
+      "todo_sections": [
+        "## TODO\n\nNone. M1.2-001 is resolved; no noncritical finding is deferred.\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/reports/phases/1/PHASE-REPORT.md": {
+      "sha256": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03",
+      "todo_sections": [
+        "## Findings, TODO and limits\n\nResolved finding: M1.2-001, parser accepted unsupported `--keep`, repaired/tested in T-008 at `7b9f570aa4452d2ca9d6105479640528cb113f0e`, with original RED and current extracted regression. No deferred milestone finding or new phase finding remains.\n\nTODO: None.\n\nEvidence covers local Python 3.12.14 in this environment, not a full supported-version/platform matrix, unrestricted real permission failures beyond controlled seams, external notice-link availability, installed packaging, JSON/stdin/ranges or release publication. The source archive is generated/ignored; reproducible builder source is tracked. This phase result does not claim completion of the entire two-phase project; no final IMPLEMENTATION-REPORT is produced before the full task list completes.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/reports/phases/2/2.1.md": {
+      "sha256": "413a6a64fbe4ccc48b84c961d87fc078b40139a9161a5a0c927cba7152106760",
+      "todo_sections": [
+        "## TODO\n\nNone.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/reports/phases/2/2.2.md": {
+      "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+      "todo_sections": [
+        "## TODO\n\nTODO: None.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md": {
+      "sha256": "f4fb5d3c7466da67a730e6db2850e4694aaf65408e90b0173e6fae601369a4a5",
+      "todo_sections": [
+        "## TODO\n\nNone.\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md": {
+      "sha256": "0f0b5bfdbf52e4ad2648901d242b63579b9b7c62b11b3c050d925e8416178f4e",
+      "todo_sections": [
+        "## Findings and TODO disposition\n\nTODO: None. There is no unresolved bug, critical issue or SPEC/PLAN violation.\nThe T-021 ambiguous redirected log and incidental process-inspection error remain\nretained in its owning evidence; its complete fresh captured check resolved the\nverification uncertainty. T-022 preserves both genuine RED runs, the simplified\nmutant provenance and GREEN; no failure was hidden or treated as success.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md": {
+      "sha256": "4ceade7b8eb0cfeceb9986e16e4f16fa44d3b05dc7ff83a9456303a9cb944303",
+      "todo_sections": [
+        "## Milestone findings and TODO aggregation\n\n| Provenance | Findings / disposition |\n| --- | --- |\n| [2.4 implementation review](2.4.md) | No unresolved bug, critical issue or contract violation; TODO None. Detailed docs/extraction were explicit next-milestone obligations and are now delivered/reviewed in 2.5. Historical 99-case extraction count remains truthful to that checkpoint. |\n| [2.5 documentation/distribution review](2.5.md) | No unresolved product defect or eligible deferred item; TODO None. Both range-specific mutation RED runs and subsequent GREEN are preserved. |\n| Feature extent | No additional blocker or admissible code deferral. Pending main stdin/final work is outside this feature, with accepted dependencies retained; it is not a waived feature defect. |\n| EVID-A010-001, T-021 verification provenance | Earlier redirected runner returned 0 with incomplete log; incidental ps exited 1. Fresh complete captured 31/26 check and subsequent 31/28 checks resolve verification uncertainty. Original ambiguous evidence is retained, not counted as proof; no product repair. |\n| EVID-A010-002, T-023 hosted closure helper | Original native8 helper exited 1 before mutation because it required literal heading `## TODO` instead of accepted `## Findings and TODO disposition`/`TODO: None`. Pinned reports require the empty TODO value, not that heading. Helper-only assertion corrected; full associated-issue validation, closure and exact readback then passed. Accepted product report bytes unchanged. Diagnostic rg on a guessed nonexistent forge reference returned 2; actual report rules were read. |\n\nTODO: None. No unresolved required check, bug, critical issue or contract\nviolation is deferred. Resolved evidence/tool interventions retain provenance and\nchosen resolution; no follow-up code owner or alternative is needed for an empty\ndeferred set. Main pending work keeps its existing owners/tasks.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md": {
+      "sha256": "91f47691cfd153f8f52e5f966e5c058bc809f6376ca59453f90062444d56e9b3",
+      "todo_sections": [
+        "## TODO aggregation\n\nTODO: None. Delivery milestone 2.4 and 2.5 each report no unresolved product defect\nor admissible deferred item; final feature review adds none. Resolved findings and\nevidence interventions are referenced above with provenance/resolution. There is\nno eligible unresolved item requiring options/tradeoffs/follow-up owner. Main\nstdin/final tasks retain original ownership and are independent planned work.\n\n"
+      ],
+      "unchanged_from_review_parent": true
+    },
+    "docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md": {
+      "sha256": "7712a978ce077a649a06fa89952ff218ba5b73099d43bc9cbced77632f7c0405",
+      "todo_sections": [
+        "## TODO\n\nNone outside the selected amendment. Pending stdin/final tasks remain outside its execution scope.\n"
+      ],
+      "unchanged_from_review_parent": true
+    }
+  },
+  "local_links": [
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/PHASE-REPORT.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/PHASE-REPORT.md#fresh-final-verification",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/1/1.2.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/1/PHASE-REPORT.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/2.2.md#findings-and-dispositions",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/2.2.md#findings-and-dispositions",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md#milestone-findings-and-todo-aggregation",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md#milestone-findings-and-todo-aggregation",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/1/1.1.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/1/1.2.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/1/PHASE-REPORT.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/2.1.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/2.2.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../features/002_e7cae5b-named-file-ranges/phases/2/2.4.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../features/002_e7cae5b-named-file-ranges/phases/2/2.5.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md#todo",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "phases/2/PHASE-REPORT.md#findings-todo-and-limits",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/IMPLEMENTATION-REPORT.md",
+      "target": "../TASKS.md#t-015-completion-evidence",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "target": "../../IMPLEMENTATION-REPORT.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "target": "../../../SPEC.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "target": "../../../PLAN.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "target": "../../../TASKS.md",
+      "file_exists": true
+    },
+    {
+      "source": "docs/dev/reports/phases/2/PHASE-REPORT.md",
+      "target": "../../IMPLEMENTATION-REPORT.md#findings-and-todo-aggregation",
+      "file_exists": true
+    }
+  ]
+}

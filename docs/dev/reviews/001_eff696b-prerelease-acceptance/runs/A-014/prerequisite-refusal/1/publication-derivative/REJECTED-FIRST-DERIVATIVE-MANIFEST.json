@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "retained_private_directory": "/workspace/scratch/46b31bb4dff6/037-a014-refusal-publication-derivative",
+  "files": {
+    "PROVENANCE.json": {
+      "sha256": "30aa22c7f0bc6cd03a6a771c81719117f6d90a26fc3aaa594c650358437b0a93",
+      "byte_length": 2147
+    },
+    "independent-raw-git-observations-006-stdout-json-value.bin": {
+      "sha256": "ea962a2681b05093cb6377416d83e11b3ac8b10f83aa901a5f39aec1e0f987f7",
+      "byte_length": 10818
+    },
+    "independent-raw-git-observations-006-stdout.bin": {
+      "sha256": "69d4f21cacb29710e668c9048fc8623fe53f3444173c262f49bd6c08b7544476",
+      "byte_length": 10046
+    },
+    "PUBLIC-MANIFEST.json": {
+      "sha256": "ca4c2c11faa0fd2dc58e55d6a26892aba7549d3f4e940d69516c29f7556769d3",
+      "byte_length": 1654
+    },
+    "INVERSE-PROOF.json": {
+      "sha256": "1946fe582de2e9a7717891c884e789d7db5e004778fd78148e35d6002508f5ad",
+      "byte_length": 780
+    },
+    "ORIGINAL-MANIFEST.json": {
+      "sha256": "2909f823428e2d09c810ac7d27856b1c520da55f0c05073643d04fd85b5bdda6",
+      "byte_length": 913
+    },
+    "ASSESSMENT-PUBLICATION-DERIVATIVE.json": {
+      "sha256": "99057c2986e6cf55d7a1f30f387ea4023f030ea66e75e7ae5c3bba5f9fc11518",
+      "byte_length": 58683
+    }
+  },
+  "failed_claim": "First PUBLIC-MANIFEST all7-new-files guard claim did not apply generic JSON sniff to extension .bin; exact JSON lexeme sidecar parses as string containing NUL and fails no_secret",
+  "actual_rejected_file": "independent-raw-git-observations-006-stdout-json-value.bin",
+  "error": "invalid_nonsecret_configuration",
+  "first_directory_unchanged": true,
+  "disposition": "Original first seven artifacts retained unchanged/private; none copied as a complete JSON lexeme to new publishable directory",
+  "attribution": "Assessor screening implementation error; no original assessment/product/credential exposure inferred"
+}

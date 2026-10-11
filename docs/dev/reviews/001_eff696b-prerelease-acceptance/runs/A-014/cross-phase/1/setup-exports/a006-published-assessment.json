@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "case_id": "A-006",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assessment_scope": "Sealed actual consumer Phase1 completion and full two-parent integration: independent final Git/source/docs/task-diff review, actual API/baseline/extracted-source capture, actual product runner and distribution checker, every runnable user-document fence in exact tracked final snapshot, controlled lifetime/error probes and authenticated read-only provider inspection.",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "merge_parents": [
+      "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+      "5b17e4650c64c7c735991931b591bdabb8069215"
+    ],
+    "phase_branch": "phase/1-named-file-utility",
+    "phase_commit": "5b17e4650c64c7c735991931b591bdabb8069215"
+  },
+  "start": {
+    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "checks": {
+    "api": "Passed: all immutable contract literals exactly equal actual fresh separate-process capture; silent API, once-only BOM/counting/immutability and strict expected file exceptions.",
+    "baseline": "Passed: every success/error/usage literal equals actual captured process behavior; expected failures have empty stdout/status1, source/cause stderr and no traceback; usage status2, no partial counts; controlled acquisition failure/lifetime verified independently.",
+    "distribution": "Passed: independently built actual source archive from actual final product allowlist into assessor directory, hashed/extracted and compared every archive member to actual source; capture verifies actual extracted import origin and exact literal module output. Actual extracted checker executes36 module cases with sanitized import environment; independent actual product suite exercises corrupted extracted CLI and polluted checkout PYTHONPATH sensitivity.",
+    "product_tests": "Passed: actual final runner23 unit/18 integration, no skips, status0; nonempty independent collection/failure propagation and real API/CLI/distribution coverage inspected.",
+    "docs": "Passed: all7 current README/public-guide runnable fences executed against exact tracked final snapshot, including source build/extraction/module example; links resolve, contracts/signatures/ownership/errors match source; JSON/stdin/ranges truthful future scope.",
+    "code_review": "Passed: independently inspected core shared terminator traversal/BOM/immutable validation; binary owned acquisition strict complete decoding; public facade, argparse validation before acquisition with allow_abbrev=False, expected exception translation, exact presentation; runner and literal11-file allowlist/extraction checker and meaningful sensitivity tests; no additional phase blocker found.",
+    "task_persistence": "Passed: exactly5 new separate closing commits T005\u2013009; literal leading single task subject, result/tests/docs/evidence and exactly one initial executable checkbox in each actual parent diff. Review T008 owns scoped abbreviation repair/report/eligible1.2 parent, T009 owns phase report/eligible phase/review parent. Earlier T001\u2013004 retained accepted predecessor results.",
+    "review_reports": "Passed: explicit dedicated T008 milestone1.2 and T009 final phase-review tasks; published reports contain coherent code review, actual checks, repaired M1.2-001, usefulness, exits, TODO None and truthful provenance/limits. Phase report at docs/dev/reports/phases/1/PHASE-REPORT.md was committed in actual T009 tip and survives main merge.",
+    "hosted_order": "Passed: independent GET verifies exactly9 scoped task issues2\u201310 closed/completed, exactly3 native milestones closed, identity/body/labels/associations preserved and evidence comments cite each new task commit. Real provider closed_at proves issues6\u20139 precede milestone2 and review issue10 precedes milestone3; retained observed closure/readback milestone2 at13:27:58 precedes T009 review command at13:28:45, with milestone1 already closed at start. No uncertain closure bypass observed.",
+    "integration": "Passed: exact main HEAD e7cae5b has ordered2 parents accepted-preparation main88a5c4b and pinned final phase5b17e465; trees equal, phase ancestor retained, main exact remote GET equals merge and phase exact remote retained. Actual sealed event71 executes --no-ff --no-commit on actual main then full23/18/36/doc checks/links/whitespace at prospective merge; event74 verifies exact tree then commits/pushes/readbacks. Independent actual final merged checks/captures pass; merge body contains objective/review/delivery/actual checks/TODO/parents/scope.",
+    "scope": "Passed: exactly T001\u2013009 checked and Phase1 plus three parents complete; Phase2 T010\u2013017 unchecked, no Phase2 directory/final implementation report. Actual source has no JSON/stdin/range implementation; initial/final GET lists only existingPhase1 hosted objects, retained API operation sequence has no Phase2 creation/projection or release.",
+    "preservation": "Passed: all starting pinned resource/plugin/publisher paths, governing design/SPEC/PLAN/layout/QC reports and disclosures exact hashes; existing ignore prefix retained with scoped additions. Independent provider readback preserves all initial issue bodies/labels/parent associations, every milestone description, unrelated issue1 open and retained foreign issue2 comment hash. Final index/worktree clean and unchanged by assessed source operations.",
+    "red_evidence": "Current A006 retained raw command result channels establish T005 meaningful12-test RED4 errors/4 failures; T0074-test RED3 errors/1 failure against valid NotImplementedError declarations; T008 actual2-test RED2 failures for abbreviation before scoped repair. Current actual GREEN and inspected tests align. Inherited A004/A005 historical raw RED/native completeness remains uncertified; no historical RED tree replay or native full transcript claim."
+  },
+  "first_attempts_and_interventions": [
+    {
+      "event": 0,
+      "outcome": "Command status1: shell brace expression not expanded for sha256sum; next narrower correct command status0 at event1. Retained, no workflow pass inferred from failure."
+    },
+    {
+      "event": 24,
+      "outcome": "Original T007 faulty extraction test targeted wrong archive CLI member before source inspection corrected path; original RED actually establishes absent packaging/checker, not corrupted-extraction sensitivity. Current repaired actual sensitivity test passes."
+    },
+    {
+      "events": [
+        33,
+        34,
+        35,
+        59,
+        74,
+        81,
+        82
+      ],
+      "outcome": "Consumer-owned README example files reappeared after cleanup. Exact expected own bytes and original clean state checked before scoped removals; root denied product writes. Final seal and independent start/final Git status clean. Mechanism unestablished; no causal attribution or isolation certification."
+    }
+  ],
+  "prerequisite": {
+    "case": "A-005",
+    "status": "Passed under corrected assessor-only pin355e3d3",
+    "published_commit": "fa73830e4973ce479c418ee3b36ec17e2282be33",
+    "published_assessment_bytes_independently_compared": true,
+    "original_failure_retained": true,
+    "fresh_consumer_replay": false,
+    "consumer_plugin_unchanged": "ea515f5624c8a34cc4572731a2590223a5eb27f4"
+  },
+  "limitations": [
+    "Separate assessor context with shared broad filesystem; native/full fresh isolation not certified.",
+    "Only Python3.12.14/local environment independently exercised; no Python3.11 or full supported-runtime/platform matrix.",
+    "Permission/read failures use controlled seams; no unrestricted operating-system permission matrix.",
+    "Inherited historical RED/native transcript completeness limitations preserved; current sealed raw A006 command channels are evidence records, not a native full-transcript guarantee.",
+    "Prospective historical operations established by retained actual raw command output and durable merge/tree/parents; retrospective final refs cannot independently prove every earlier timing operation.",
+    "Unexplained owned example-file reappearance retained as an environment observation; final clean state observed, causal mechanism unknown.",
+    "Installed packaging, external notice-link availability, JSON/stdin/ranges, release and Phase2 unexecuted/outside scope."
+  ],
+  "mutations": {
+    "product_source": false,
+    "git": false,
+    "hosted": false,
+    "generated_ignored_archive_side_effect": "Existing runner integration test invokes checkout checker and rebuilds ignored dist/textstats-source.zip; no source/index/tracked changes. Bytecode disabled. Independent captures/build/extraction/docs otherwise confined to assessor outputs."
+  },
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "evidence": {
+    "037-a006-consumer-input.md": {
+      "sha256": "177b9388811cc8d3c0df3dd89339e8300c20daddaddce0cd4709b24fdb716bac"
+    },
+    "037-a006-consumer-observations.json": {
+      "sha256": "55478b897fca988499779c28007cdbc5966386bddb72b231842e345cc3a0a083"
+    },
+    "037-a006-assessor-checks.py": {
+      "sha256": "35da26ab86be9c3a20e498d5dfacfa6ee68c7b58fc814f0ec8e465aa56e2d08c"
+    },
+    "037-a006-independent-check-evidence.json": {
+      "sha256": "cb1541b9e84f91d81f4f068179edb97d487276e340b39d67a56f9991a4d035f0"
+    },
+    "037-a006-api-literals.json": {
+      "sha256": "f104844ccb8159b3dcb0d51056aa88b96ceb16b457bf58b18e2ab72abe4108ef"
+    },
+    "037-a006-api-provenance.json": {
+      "sha256": "f2f56ebbef38d9362aa26da27501cbe64266d783f587471cd05043e4496cbd2e"
+    },
+    "037-a006-baseline-literals.json": {
+      "sha256": "20eda200cc8a34deabe50182c9bbf3e70ef46d2182e79981d54222d0a6432ad6"
+    },
+    "037-a006-baseline-provenance.json": {
+      "sha256": "49f69cb9e9029c7159349fba08f5650ec76ab4d9eeae09e238b644ae8f11d59a"
+    },
+    "037-a006-distribution-literals.json": {
+      "sha256": "0751fe65c72dc99646dec991fda56b4e4bca0ff20c139f785d391a4485543abd"
+    },
+    "037-a006-distribution-provenance.json": {
+      "sha256": "459c5ff20ac932ae821612025c435c7cad6ddb6f036c2cda3c06841cdf4291b8"
+    },
+    "037-a006-combined-literals.json": {
+      "sha256": "08188fda72a1c6ce46d56b4aa3bd63ecf5168942ede617ac351b3f9c4d1ca154"
+    },
+    "assessor/A-006.json": {
+      "sha256": "cd85b2355aaaee4027b73dc049397a15ecdffa1b787f460bfcae4c34efed322a"
+    },
+    "assessor/A-006.md": {
+      "sha256": "d2613c3b2dceaefcd4352fd2c9b2487158e79e1f86fd355173b05d9a66afacef"
+    },
+    "assessor/COMMON.md": {
+      "sha256": "3861f34aceff1c717c56c222b8d117f1cb77ec1e381ec915b84885be50fac9ef"
+    },
+    "assessor/capture.py": {
+      "sha256": "bedfe314bd439a401f70155151aa520aa2fff01204e7491d1c17f1dbe2a95bdc"
+    },
+    "runs/A-006/1/START.json": {
+      "sha256": "6e69c56c148d79417a9696d5bec5adb5e7dbec394566d3598ac419f564d68124"
+    },
+    "runs/A-006/1/BINDINGS.json": {
+      "sha256": "c6d49a604f4d540d07344a7964790b224685909491414782af139d7bc4ad355a"
+    },
+    "runs/A-006/1/HANDOFF.md": {
+      "sha256": "177b9388811cc8d3c0df3dd89339e8300c20daddaddce0cd4709b24fdb716bac"
+    },
+    "actual-source.zip": {
+      "call": "tools.package_source.build_archive(actual_product_root, independent_output)",
+      "product_root": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "archive": "/workspace/scratch/46b31bb4dff6/037-a006-assessor-runtime/actual-source.zip",
+      "sha256": "a8feba2316f1a5c59307bb208b39be9e7d2556b0c4bf69736f5160a9f59b8fce",
+      "source_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a"
+    },
+    "reports": {
+      "docs/dev/reports/phases/1/1.2.md": {
+        "sha256": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53"
+      },
+      "docs/dev/reports/phases/1/PHASE-REPORT.md": {
+        "sha256": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03"
+      },
+      "docs/dev/reports/phases/1/1.1.md": {
+        "sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade"
+      }
+    }
+  }
+}

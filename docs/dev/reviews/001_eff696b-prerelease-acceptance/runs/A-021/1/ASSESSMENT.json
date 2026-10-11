@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "case_id": "A-021",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "independent_assessor": "/root/a021_dirty_transfer_assessor",
+  "variant": "partial-transfer",
+  "evidence_class": "Consumer behavior with a caller-owned cooperative hold and local bare remote delivery",
+  "checkpoint_refs": {
+    "product_commit": "bf24fab09b2fad638d09ef892232912be1d6d338",
+    "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "integration_branch": "main",
+    "paused_phase_commit": "e63b8946bbb99347b0f73f070f9c728945ee5925",
+    "paused_phase_branch": "phase/2-json-and-stdin"
+  },
+  "prerequisite": "Actual A-008 preparation object 8036adb, independently assessed and published, with seven pending feature-owned tasks. The positive product remained read-only; setup performed no transfer.",
+  "criteria": {
+    "actual_partial_work": "Passed. The actual consumer selected and executed operations 1/2 through the authorized wrapper. Main SPEC/PLAN changed and canonical TASKS gained T-018\u2013T-024 while unchanged FEATURE-TASKS still owned all seven pending entries. Source retirement remained pending. This was a real selected list transfer rather than QC-only work; HEAD and index stayed unchanged.",
+    "fresh_recovery": "Passed. A separate fresh consumer consulted both lists and current governing owners, verified the exact held snapshot, retained the original receipt and resumed the same operation identity. Remaining operations retired source entries and reassessed conformance/navigation. Canonical TASKS now singly owns all 24 IDs; FEATURE-TASKS retains provenance and its canonical link without executable entries. The consumer corrected discovered anchor, strategy/task wording and QC whitespace issues. No reset, new feature identity or duplicate archive occurred.",
+    "source_history": "Passed. Accepted FEATURE-SPEC/PLAN and their adjacent QC remained byte-for-byte unchanged. Original Phase 1 completion evidence and other tracked files were preserved. Transferred task outcomes, scopes, dependencies, evidence and report prefixes match accepted source details, with the governing PLAN link updated. Needed sources remain active. Changed owners have current exact upstream QC hashes and retained revision history. Published decision ee49eb7 accepts exactly the ten committed artifact hashes; historical pending-acceptance review prose is qualified by that separate decision.",
+    "backend_lifecycle": "Passed within the selected scope. T-001\u2013T-009 statuses and evidence remain complete; T-010\u2013T-024 and whole Phase 2 remain pending. Main final review T-017 requires feature extent T-024, while T-014/T-015 retain stdin work and range composition obligations. Stable milestone/review IDs and report prefixes survive transfer. No hosted write or closure was authorized or recorded; live provider recovery is not certified.",
+    "persistence": "Passed. bf24fab is the sole new commit and single child of 8036adb. Exactly ten accepted paths changed; worktree/index are clean. Exact local trial-delivery ref readback independently confirms publication. Main and paused JSON refs remain unchanged and origin writes are disabled. No GitHub product publication, merge, release or whole-phase completion is claimed."
+  },
+  "deterministic_checks": {
+    "status": "Checks passed",
+    "artifact": "deterministic-assessment.json",
+    "independent_fact_checks": 81,
+    "restoration_checks": 188
+  },
+  "retained_attempts_and_interventions": [
+    "Initial consumer JavaScript composition failed before execution; corrected selected manifest retained.",
+    "Long source reads were truncated and followed by selected rereads. Content-read and identity-only source records remain distinguished.",
+    "Caller held after consumer-selected operation 2; no assessor-authored transfer edits.",
+    "Root fetched evidence tip 8e51a8c before handoff solely to verify predecessor publication. Actual START at bee04f2 establishes the resulting refs/index baseline.",
+    "First assessor trigger assertion used the original setup refs and failed on the known added evidence ref. The failure and actual START correction remain retained.",
+    "First local restoration comparisons refreshed raw index metadata. The changed verifier copy and failed assertion remain retained; corrected observations use a separate index, leaving the restored raw index exact. In-memory command-log gaps before failed assertions are explicitly disclosed.",
+    "Fresh consumer resumed the retained operation identity, then repaired REC-001 anchor, REC-002 strategy/task semantics and REC-003 QC whitespace/navigation.",
+    "Supplemental consumer dependency parser initially read successor blocks and reported a false cycle. The failed check remains recorded; a line-anchored parser passed without product changes prompted by that false result.",
+    "Coordinator accepted exactly ten artifacts before one checkpoint commit, immediately followed by local push/readback."
+  ],
+  "coverage_limits": [
+    "Separate fresh consumer and independent assessor contexts share a broad filesystem; strict filesystem isolation is not certified.",
+    "Structured command records and verbatim wrapper operations/channels are retained, rather than a complete native agent transcript. Inline verification bodies are described in observations and remain in the session transcript.",
+    "Cooperative hold only. Native termination and cross-machine recovery extensions were not run and are nonblocking.",
+    "Publication used a local bare remote. GitHub product delivery and hosted mutation/reconciliation were not tested.",
+    "Only document incorporation and task ownership were assessed. No implementation, runtime, distribution, archive, merge, release or whole-phase completion acceptance."
+  ],
+  "findings": [],
+  "seal_statement": "Independent read-only final assessment complete. The assessor did not mutate the consumer product or positive campaign. Exact final objects/index/workfiles were exported and reconstructed in a separate local verifier; original failures remain retained."
+}

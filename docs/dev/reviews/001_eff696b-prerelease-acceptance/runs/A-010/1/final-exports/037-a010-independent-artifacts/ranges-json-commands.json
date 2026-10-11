@@ -1,0 +1,88 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-7dcm7qs2",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctdGV4dHN0YXRzLXByb2R1Y3QvdGV4dHN0YXRzL19faW5pdF9fLnB5Cg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--json",
+        "--lines",
+        "2:3",
+        "json-range.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-7dcm7qs2",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "before_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "input_sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "name": "json-range.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "{\"lines\": 2, \"words\": 3}\n",
+      "stdout_base64": "eyJsaW5lcyI6IDIsICJ3b3JkcyI6IDN9Cg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines=2:2",
+        "--json",
+        "range-json-order.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-7dcm7qs2",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "before_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "input_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "name": "range-json-order.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "{\"lines\": 1, \"words\": 2}\n",
+      "stdout_base64": "eyJsaW5lcyI6IDEsICJ3b3JkcyI6IDJ9Cg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "ranges-json"
+}

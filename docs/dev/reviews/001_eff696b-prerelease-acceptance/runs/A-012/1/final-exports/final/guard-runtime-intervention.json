@@ -1,0 +1,18 @@
+{
+  "original_bulk_screening": "Bounded initially only by live exec session; unchanged core guard on very long unbroken hex JSON exceeded useful runtime. No successful screening result assumed.",
+  "original_result": {
+    "session": 33272,
+    "interrupt": "write_stdin Ctrl-C",
+    "exit_code": 130,
+    "stdout": "",
+    "stderr": ""
+  },
+  "intermediate_pid_attempt": {
+    "command": "kill -TERM 136789",
+    "observed_error": "/bin/bash: line 1: kill: (136789) - No such process",
+    "no_process_signal_succeeded": true,
+    "tool_capture_ref": "356fc1"
+  },
+  "correction": "Exact raw original retained; per-file guard time bounded without changing core, explicit reversible144character chunk derivative and individually guarded rawchannels; original outerJSON exact byte reconstruction verified.",
+  "final_manifest_check_tool_capture_ref": "79074e"
+}

@@ -1,0 +1,8 @@
+tree 6bb2f0205f03a8a4635a3263b5f48aa11422b1fa
+parent 88a5c4b4424f4bba76940e40b1d6523b1f6fe191
+author Codex <codex@openai.com> 1791644009 -0400
+committer Codex <codex@openai.com> 1791644009 -0400
+
+[T-001] Implement immutable whole-text statistics
+
+Deliver validated immutable counts, once-only BOM normalization and shared CRLF/CR/LF traversal through the silent text API. Include scoped source documentation, product tests, initial completion checkbox and current task evidence together. Expected RED: 8 tests with 49 assertion failures. Final verification: 10 unit and 3 integration tests passed; whitespace checks passed. Hosted tracking declined; later tasks and phase remain incomplete.

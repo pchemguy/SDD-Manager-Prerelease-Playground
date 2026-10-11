@@ -1,0 +1,24 @@
+{
+  "reviewed_source": "719540de681cb3cfcf3e8a06dbeb7f4940cc755a",
+  "support_command": "PYTHONDONTWRITEBYTECODE=1 python -m unittest discover -s acceptance/textstats/tests -t acceptance/textstats -v",
+  "support_tests": 112,
+  "support_seconds": 24.085,
+  "support_result": "OK",
+  "python": "Python 3.12.14",
+  "source_local_links_anchors": 211,
+  "release_layout_files": 122,
+  "import_sha256": "11fc33d4beab2e6b5e13fbb97b76f575ab4332f9dc1afc0aeee0a4b6d02721cd",
+  "consumer_cases": {
+    "decision": 12,
+    "orientation_fixture": 5,
+    "recovery_decision": 6
+  },
+  "live_cases_executed": 0,
+  "independent_result": "No source blockers;23 scoped consumer cases pass",
+  "whitespace_command": "git -c core.whitespace=trailing-space,space-before-tab,cr-at-eol diff --check 98cbc3d",
+  "limits": [
+    "Imported CRLF preserved;original source-relative links are consumer provenance",
+    "Modeled decision results are not provider operations or actual browser recovery",
+    "Live TextStats and installed/native facility tests not selected"
+  ]
+}

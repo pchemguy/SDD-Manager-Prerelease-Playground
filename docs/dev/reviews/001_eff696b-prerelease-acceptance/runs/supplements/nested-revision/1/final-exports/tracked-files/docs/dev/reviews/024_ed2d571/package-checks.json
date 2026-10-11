@@ -1,0 +1,88 @@
+{
+  "source": "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "skill_results": [
+    {
+      "skill": "sdd-conventions",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-design",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-docs",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-forge",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-implement",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-integrate-feature",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-manage",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-orient",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-plan",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-report",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-specify",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-steer",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-tasks",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-tdd",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "skill": "sdd-verify",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "portable_plugin_result": {
+    "exit_code": 1,
+    "output": "ERROR: plugin.json: manifest-schema: $schema must equal https://agent-plugins.org/schemas/1.0.0/plugin.schema.json\nERROR: plugin.json: manifest-unknown: unknown field 'hooks'; clients report and ignore it, but strict authoring fails\nERROR: plugin.json: manifest-unknown: unknown field 'interface'; clients report and ignore it, but strict authoring fails\nERROR: plugin.json: manifest-unknown: unknown field 'skills'; clients report and ignore it, but strict authoring fails\n",
+    "interpretation": "Expected nonconformance: intentional exact Codex manifest copy, portable conformance not claimed."
+  },
+  "manifest_copies_equal": true,
+  "parsed_svg_count": 16
+}

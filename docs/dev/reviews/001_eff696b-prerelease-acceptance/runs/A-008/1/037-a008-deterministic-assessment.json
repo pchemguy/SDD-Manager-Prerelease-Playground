@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "Checks passed",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    },
+    {
+      "id": "published",
+      "status": "Passed",
+      "reason": "Literal invariant satisfied."
+    }
+  ],
+  "agent_behavior_assessed": false,
+  "required_agent_checks": [
+    "Feature branch/package identity and reserved directory correspond; deltas and FEATURE-TASKS exist at convention root paths; unrelated active package preserved.",
+    "Named-file range completion does not depend on delivering future stdin. Trace first derived feature dependency to supplied input/pinned guidance; do not coach consumer.",
+    "Feature preparation derives its explicit review tasks and final review milestone without activating future phases or incorporating unselected documents; planned report links use the feature prefix.",
+    "Selected feature preparation includes adjacent FEATURE-SPEC/FEATURE-PLAN/FEATURE-TASKS QC reports where those roots are produced, reviewed against accepted main/feature inputs. Scope/count assessments, retained correction cycles and current readiness precede dependent implementation; no whole-project rewrite is inferred."
+  ]
+}

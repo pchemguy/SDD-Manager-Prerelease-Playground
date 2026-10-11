@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "screening": "UTF-8 parse, raw/decoded JSON NUL, private-key/GitHub-token/API-key patterns; no claim of universal secret detection",
+  "findings": [],
+  "safe_for_root_review": true,
+  "artifacts": [
+    {
+      "path": "037-sup-qc-missing-plan-contract-consumer-observations.json",
+      "sha256": "e0c55c58683e0c36b1feae4a56620fcfaaffa64e9643c31c0237b9a079db2909",
+      "bytes": 288733
+    },
+    {
+      "path": "037-sup-qc-narrow-feature-consumer-observations.json",
+      "sha256": "60aedf258dd33cb7f5142abb8036f811c771c6165286948bc4a3de57039c8da8",
+      "bytes": 28520
+    },
+    {
+      "path": "ASSESSOR-COMMANDS-BASE64.json",
+      "sha256": "674e09f498475eaf3472f19c7c9dbc4638e3237ed34bb35c8be207bce03f36c7",
+      "bytes": 126155
+    },
+    {
+      "path": "ASSESSOR-ORIGINAL-FAILED-ATTEMPTS.json",
+      "sha256": "0c8ac05c5783b1159ccbf12c714a7fb7b5f5680d33ab374ae953e8f694069d56",
+      "bytes": 2701
+    },
+    {
+      "path": "ASSESSOR-SCRIPT.py",
+      "sha256": "45162231d88a4e6a09c19cbaaa2bb1aa3cf18c37c02b6794ff0667f5a8b03512",
+      "bytes": 1962
+    },
+    {
+      "path": "INDEPENDENT-ASSESSMENT.json",
+      "sha256": "2a1af7cb4a499cf82b40ce1a73375f7080136142e0404fb2b983fed56baa7abb",
+      "bytes": 7354
+    },
+    {
+      "path": "STATE-CHECKS.json",
+      "sha256": "724571e715c2e95f8b364d419d4611c1e58cbb8df611c80617900004e4f2cf2b",
+      "bytes": 574
+    },
+    {
+      "path": "missing-plan-contract-AFTER.diff",
+      "sha256": "73099bd4b1cf43ce1d10f56efe2110988accb05bd07c08cf3be58986298ca3a7",
+      "bytes": 5137
+    },
+    {
+      "path": "missing-plan-contract-AFTER.json",
+      "sha256": "5a9c8ea23231f8ff54d10909232d1495e6883728b497c926b8bc39afb621e52d",
+      "bytes": 52907
+    },
+    {
+      "path": "narrow-feature-AFTER.diff",
+      "sha256": "092fa9b30e73d3e5040a5eb0bb812d388d28d54090fefeade3b796ee9600209c",
+      "bytes": 21967
+    },
+    {
+      "path": "narrow-feature-AFTER.json",
+      "sha256": "3c65227f665d2aaed132af1226bf80490534b8c7edf3368a1ce899500271d93e",
+      "bytes": 52945
+    }
+  ],
+  "publication_owner": "root sole evidence publisher",
+  "no_provider_or_git_writes": true
+}

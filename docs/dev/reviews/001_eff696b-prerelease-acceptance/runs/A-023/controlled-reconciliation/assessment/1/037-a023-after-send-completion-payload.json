@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "task_id": "T-001",
+  "state": "completed",
+  "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+  "branch": "trial/037-a023-after-send",
+  "published": true,
+  "owning_evidence": "docs/dev/TASKS.md#t-001-completion-evidence",
+  "summary": "Immutable validated TextStats, CRLF/CR/LF traversal, once-only BOM normalization, Unicode word counting and silent count_text delivered.",
+  "verification": {
+    "source": "retained task evidence",
+    "python": "3.12.14",
+    "unit_tests": 10,
+    "integration_tests": 5,
+    "result": "passed without skips or warnings",
+    "independently_rerun": false
+  },
+  "scope": "Exactly T-001 backlog; later tasks and parents remain incomplete."
+}

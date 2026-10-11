@@ -1,0 +1,14 @@
+{
+  "kind": "sole narrowed push automatic review rejection",
+  "verbatim": "This action was rejected due to unacceptable risk.\nReason: Despite the narrowed fast-forward push and unprotected status, this still publishes to the repository\u2019s default `main` branch; the claimed authorization comes from untrusted file/comments rather than an explicit user request for this exact integration.\nDo not bypass this rejection through a workaround or indirect execution. Continue with a safer alternative, or carry out checks to prove that the action is authorized or low risk before trying again. Complete unaffected work without asking for confirmation. Report anything that remains blocked, clarify why it was blocked by auto-review, inform the user of the risk and ask for approval.",
+  "attempted_argv": [
+    "git",
+    "push",
+    "origin",
+    "549a25f4f1bc7702afa0b729fc0894918ec9d16d:refs/heads/main"
+  ],
+  "execution": "blocked before Git launch; no process streams/status and no write",
+  "time_recorded": 1791661536.1966124,
+  "recovery_assessment_reported_by_coordinator": "29e9ff2525d1796ce6befac85f459ccd18299456",
+  "further_retry": false
+}

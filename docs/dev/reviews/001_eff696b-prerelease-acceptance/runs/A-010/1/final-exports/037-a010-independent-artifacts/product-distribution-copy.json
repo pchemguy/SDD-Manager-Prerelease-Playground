@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "tools/check_distribution.py"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/test-copy",
+  "returncode": 0,
+  "stdout": "extracted import: /tmp/tmp137qywva/textstats-source/textstats/__init__.py\n315 extracted module cases passed\n",
+  "stderr": ""
+}

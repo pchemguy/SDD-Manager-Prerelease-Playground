@@ -1,0 +1,13 @@
+# Integrate current work
+
+Complete the authorized current integration using actual repository state and its required checks. Stop after the integration boundary.
+
+## Actual product current state and authorization
+
+Integrate complete Phase 1 named-file utility into current target, publish verified integration to local trial-delivery, retain incoming and stop before Phase 2 or release.
+
+Work in /workspace/scratch/46b31bb4dff6/037-a019-integration. Clean current target a019/target is 3ebf358ae5851a797f7390c1e75889b2cb18673d; complete incoming a019/incoming is bbd5b80e588337f14d8ec3221fea2aded33f0239. Both exact tips published/read back locally. Local trial-delivery is /workspace/scratch/46b31bb4dff6/037-a019-remote.git; GitHub origin read-only, never a trial write destination. Target originates at real pre-integration main 88a5c4b4424f4bba76940e40b1d6523b1f6fe191; original completed incoming parent is 5b17e4650c64c7c735991931b591bdabb8069215. Original main integration e7cae5b2216ff7dd311b6f7296d829d1927a6a8a establishes full-phase completion provenance; selected target does not contain it.
+
+T-001 through T-009, milestone/phase reports and native issues #2–#10/milestones #1–#3 are complete and assessed/published. No hosted mutation, Phase 2 or release requested. Use pinned package in textstats-run-resources/plugin and applicable product instructions. Inspect actual current files/index/refs before integration. Required merged verification includes nonempty unit/integration suites, extracted-source checker, runnable user-document examples and target public assertions tests/integration/test_prospective_contract.py. Python commands/children use PYTHONDONTWRITEBYTECODE=1 python -B.
+
+At an actual merge conflict, preserve reached index/files/parents and stop before resolution, commit or publication. For this trial retain competing edits; no force/reset/clean restart. Concrete prospective code/test acceptance is delegated coordinator. Every owned commit must immediately push/exact readback before further work. Maintained existing hosted state is historical; no API/credential discovery or hosted mutation is needed.

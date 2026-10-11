@@ -1,0 +1,22 @@
+commit 7062a3ed1e5719373f3f7fe6efb66d3ffdd1c80e
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:09:30 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:09:30 2026 -0400
+
+    Correct range task proposal and append document QC recovery
+    
+    Remove the unaccepted benchmark dependency and throughput gate against
+    unchanged accepted FEATURE-PLAN/SPEC/design. Preserve original QC history
+    and append actual entry findings, source identities and Revision 1 recheck.
+    
+    Scoped document link/style/hierarchy/count/ownership/preservation checks
+    and git diff --check passed; product tests and tasks were not executed.
+    
+    Exact owner and QC payloads were accepted by delegated root gate
+    2f7a6b22f5430cde7647adf10b6a974796cf3cd2. This ordinary document checkpoint
+    does not complete tasks, integrate preparation or assert publication.
+
+ docs/dev/FEATURE-TASKS-REVIEW-REPORT.md | 49 ++++++++++++++++++++++++++++++++-
+ docs/dev/FEATURE-TASKS.md               |  5 ----
+ 2 files changed, 48 insertions(+), 6 deletions(-)

@@ -1,0 +1,19 @@
+{
+  "decision": "Accepted",
+  "actor": "delegated coordinator",
+  "task": "T-001",
+  "baseline": "1e3305c8659045945244c06861079fef879ca3c3",
+  "artifact_blobs": {
+    "textstats/core.py": "ecc898a4146de6586216782ef574d31437a23b56",
+    "textstats/__init__.py": "69a4a69f6ea5efb05b6f720a2308ab6730aed0c2",
+    "tests/__init__.py": "b5da099e8826319217b20cb86e46e2fb70a202fe",
+    "tests/unit/__init__.py": "007301d0e6315649ce6e6412d28071626f6a9311",
+    "tests/integration/__init__.py": "1133ee21f6b69b73f4cd2fe75c90401351db1b82",
+    "tests/unit/test_core.py": "d5d02c2e5da2987e81720740caa777eafc35175c",
+    "tests/integration/test_api.py": "ca07141b5d2d0ee56cae5bf27819d077ccc3ac7c",
+    "AGENTS.md": "d4d8e689441d96b391403482d587d06afd956740",
+    "README.md": "d245e31611f7e34ade93dd1f42eeccc2428d2a91",
+    "docs/dev/TASKS.md": "29187b4bc9d70b7fb0459d0f379f5b5249bd58fa"
+  },
+  "review": "Concrete core/text-only facade/tests/markers and owning navigation/result inspected. Immutable validated counts, bool/noninteger/negative exclusion, CRLF/CR/LF preserved segments, direct Unicode str.split word semantics and exactly-once complete-input BOM handling fulfill bounded T001. Whole-input literal matrices, mixed/final lines/Unicode/repeated-BOM tests and direct signatures/captured call silence are coherent; actual10unit/4integration/nonzero14-test verification and behavioral scaffoldRED retained. Full-delivery missingtool attempts truthfully scoped to laterT003/T007. Explicit actualtrialdecline preserved; no hosted activation authorized. Accept single taskresult/evidence/initialcheckboxclosure and immediate LOCAL deliverypush/exactreadback. No T002/parentclosure/phaseintegration/liveGitHubdelivery/runtimebreadth inferred. Independent supplemental grade remains pending."
+}

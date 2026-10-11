@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+    "--product-root",
+    "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+    "--suite",
+    "api",
+    "--output",
+    "/workspace/scratch/46b31bb4dff6/037-a017-final-artifacts/api-literals.json",
+    "--provenance",
+    "/workspace/scratch/46b31bb4dff6/037-a017-final-artifacts/api-provenance.json"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+  "returncode": 0,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "GIT_OPTIONAL_LOCKS": "0"
+  }
+}

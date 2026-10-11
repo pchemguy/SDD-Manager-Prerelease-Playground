@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "case_id": "A-011",
+  "attempt": 1,
+  "status": "Passed",
+  "first_attempt_status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": false,
+  "evidence_metadata_correction": true,
+  "checkpoint_refs": {
+    "product_branch": "phase/2-json-and-stdin",
+    "product_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "integration_branch": "phase/2-json-and-stdin",
+    "integration_commit": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "merge_parents": [
+      "e63b8946bbb99347b0f73f070f9c728945ee5925",
+      "6f1614480687f5978023df1122ec8b2567ff19d9"
+    ],
+    "feature_branch": "feature/002_e7cae5b-named-file-ranges",
+    "feature_commit": "6f1614480687f5978023df1122ec8b2567ff19d9",
+    "default_branch": "main",
+    "default_commit": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1"
+  },
+  "deterministic_original": {
+    "agent_behavior_assessed": false,
+    "checks": [
+      {
+        "id": "active-ownership",
+        "reason": "Literal invariant satisfied.",
+        "status": "Passed"
+      },
+      {
+        "id": "unchanged-head",
+        "reason": "Literal invariant satisfied.",
+        "status": "Passed"
+      }
+    ],
+    "required_agent_checks": [
+      "Assessment describes retained contracts and impacts, using actual amended candidate scope.",
+      "No revision branch, governing/source/test edits or resumed task execution. Compare complete before/after state."
+    ],
+    "schema_version": 1,
+    "status": "Checks passed"
+  },
+  "independent_checks": [
+    {
+      "criterion": "Assessment describes retained contracts and impacts using actual amended candidate scope.",
+      "status": "Passed",
+      "evidence": "Independent actual source/spec/design/plan/task/public-doc/tests/distribution reads match consumer assessment. JSON withdrawal is correctly breaking CLI presentation change; shared counting/API/BOM/range/error/whole-decode boundaries retained. Governing and downstream JSON clauses, mixed tests/checker permutations/docs/history/hosted planning impacts identified. Pending stdin/final work remains paused,24sole-main IDs19checked/fivepending."
+    },
+    {
+      "criterion": "No revision branch, governing/source/test edits or resumed task execution; compare complete before/after state.",
+      "status": "Passed",
+      "evidence": "Exact187tracked bytes/modes, raw index SHA256 and semantic index entries, all refs/HEAD/branch/status equal START both preseal/final. Consumer61read commands audited; no product/test/build/provider invocation, no task advancement or branch creation. External observations only."
+    }
+  ],
+  "complete_state_comparison": {
+    "head": {
+      "equal": true
+    },
+    "branch": {
+      "equal": true
+    },
+    "refs": {
+      "equal": true
+    },
+    "status": {
+      "equal": true
+    },
+    "index_entries": {
+      "equal": true
+    },
+    "index_sha256": {
+      "equal": true
+    },
+    "tracked_files": {
+      "equal": true
+    },
+    "tracked_file_count": 187,
+    "changed_tracked": []
+  },
+  "consumer_seal": {
+    "path": "037-a011-fresh-consumer-observations.json",
+    "sha256": "3298d9711575169a314ba7e85532feedae117e67485ddcf4ab37269823dc021f",
+    "loaded_files_independently_hash_matched": 38
+  },
+  "original_attempt_and_corrections": {
+    "original_semantic_outcome": "Passed; no product behavior repair/retry",
+    "initial_truncation": "Original14tool captures retained incl four marked truncation; supplemented47full separate-channel readonly captures. Consumer overbroad pinned-resource grep retained.",
+    "coordinator_mtime_false_alarm": "Incorrect timezone interpretation prompted fresh export. Correction17:19:25UTC matches dispatch; initial assessor absence probe exit1, no preexisting overwrite established. Original first observations retained and final fresh seal includes superseding provenance correction.",
+    "deterministic_helper": "Both exact original DSL calls rc0; no failed helper/schema correction; independent lifecycle grade separate."
+  },
+  "limits": [
+    "Shared filesystem exposes assessor assets in broad accessible workspace; fresh context/no assessor text in observed consumer captures does not certify filesystem-enforced isolation.",
+    "Static assessment only; local Python assessor helper runtime, no actual product runtime/test/build/extracted package acceptance rerun. Historical31/28/315counts not fresh performance/compatibility evidence.",
+    "No hosted provider read/write by consumer or assessor. Identical local refs/files and read-only command audit establish local preservation; independently certified live hosted unchanged state not claimed.",
+    "Exact5eee632published input object readback locally matched; live publication supplied by coordinator, not independently browsed here."
+  ],
+  "publication": {
+    "status": "Not published by assessor",
+    "publisher": "root coordinator"
+  },
+  "artifacts_directory": "/workspace/scratch/46b31bb4dff6/037-a011-final-artifacts"
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "case_id": "A-019",
+  "status": "Running",
+  "variant": "integration-recovery",
+  "boundary": "first actual conflict observed and retained",
+  "aggregate_pass": false,
+  "agent_behavior_assessed": true,
+  "actual_trigger": {
+    "merge_command": "git merge --no-ff --no-commit bbd5b80e588337f14d8ec3221fea2aded33f0239",
+    "exit_code": 1,
+    "HEAD": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+    "MERGE_HEAD": "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+    "ORIG_HEAD": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+    "conflict_paths": [
+      "README.md"
+    ],
+    "stages": [
+      [
+        "100644",
+        "01b2d1633d313d18d307382e311f2e7f730ee13c",
+        "1",
+        "README.md"
+      ],
+      [
+        "100644",
+        "fd3b34a8be2b053c9012d4204e789f33bb6fa857",
+        "2",
+        "README.md"
+      ],
+      [
+        "100644",
+        "07dcb5d5cfb95a8911d95383245d09cc22707faf",
+        "3",
+        "README.md"
+      ]
+    ],
+    "remote_readback": {
+      "target": "3ebf358ae5851a797f7390c1e75889b2cb18673d\trefs/heads/a019/target",
+      "incoming": "bbd5b80e588337f14d8ec3221fea2aded33f0239\trefs/heads/a019/incoming"
+    }
+  },
+  "checks": {
+    "source_legitimacy": "Competing README orientations from scoped actual-parent commits; exact stage1/base,stage2/target,stage3/incoming independently match real objects. Separate core contract regression remains unrepaired incoming object.",
+    "complete_predecessor": "A006 original complete phase verified in setup, reports/task closures/exit evidence retained.",
+    "preservation": "All sealed key hashes match actual files/index/metadata; no resolution, test, completion commit or publication observed.",
+    "exports": "Bundle plus pending-object pack restored in isolated verifier; exact actual merge metadata, raw index stages/status and workfile hashes agree; every stage object and AUTO_MERGE tree exists.",
+    "positive_source_mutation": false
+  },
+  "next_permitted_action": "Root publish/export exact evidence then dispatch separate fresh conflict-resolution consumer; observe required prospective failure and stop again before commit.",
+  "loaded_pin_hashes": {
+    "skills/sdd-manage/SKILL.md": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "skills/sdd-orient/SKILL.md": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "skills/sdd-manage/references/git-workflows.md": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+    "skills/sdd-manage/references/branch-management.md": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+    "skills/sdd-orient/references/inspection-and-handoff.md": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "skills/sdd-implement/references/completion-and-checkpoints.md": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258"
+  },
+  "limitations": [
+    "Shared broad filesystem; native full isolation not certified.",
+    "Consumer command/result evidence is retained seal, not native full transcript certification.",
+    "Local trial-delivery publication is not GitHub product publication.",
+    "Setup file-reappearance interventions and failures remain retained; mechanism unknown.",
+    "Initial absent observations-file probes were availability observations; no trigger result inferred."
+  ],
+  "interventions": [
+    {
+      "actor": "independent assessor",
+      "operation": "disposable export-restoration verifier only",
+      "first_attempt": "Exact status assertion failed because clone auto-added upstream origin/a019/target; original trial has none. Index stage equality already agreed.",
+      "correction": "Removed only clone-generated upstream config in verifier, reran exact status/index/workfile/merge metadata checks successfully; original trial untouched."
+    }
+  ],
+  "restoration_verification": {
+    "workspace": "/workspace/scratch/46b31bb4dff6/037-a019-conflict-restoration-verifier",
+    "exact_index": true,
+    "exact_status": true,
+    "exact_workfiles": true,
+    "auto_merge_tree_retained": "d501a3730052259d67a0f759175a62b426c389d2",
+    "pack_sha256": "6d93d6590c9eefc368a61075772d37f24329d4b169233e23784ad09da9179bf8"
+  }
+}

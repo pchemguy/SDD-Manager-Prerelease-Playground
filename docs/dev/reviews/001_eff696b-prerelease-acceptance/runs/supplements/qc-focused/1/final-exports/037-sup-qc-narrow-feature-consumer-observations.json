@@ -1,0 +1,453 @@
+{
+  "scope": "Fresh assessment-only consumer of CONSUMER-INPUT.md; pinned local SDD Manager; no agents, product mutation, provider call, tests, implementation, Git index/ref/config effects.",
+  "date": "2026-10-10",
+  "product_root": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+  "retained_head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+  "orientation": {
+    "branch": "fixture",
+    "dirty_paths": [
+      "docs/dev/FEATURE-PLAN.md",
+      "docs/dev/FEATURE-TASKS.md"
+    ],
+    "dirty_owner": "Caller proposal per request; preserved unchanged.",
+    "scope_priority": "Read-only input supersedes inherited complete-Phase-1/preparation/publication instructions."
+  },
+  "command_channels": [
+    {
+      "sequence": 1,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat /workspace/scratch/46b31bb4dff6/037-sup-qc-focused-setups/narrow-feature/CONSUMER-INPUT.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6",
+      "chunk_id": "92546d",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 2,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat AGENTS.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "9f16b4",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 3,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat textstats-run-resources/plugin/skills/sdd-manage/SKILL.md; rg --files -g AGENTS.md -g '*SKILL.md' docs textstats-run-resources/plugin/skills/sdd-plan textstats-run-resources/plugin/skills/sdd-tasks textstats-run-resources/plugin/skills/sdd-implement",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "23c998",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 4,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat textstats-run-resources/plugin/skills/sdd-orient/SKILL.md textstats-run-resources/plugin/skills/sdd-plan/SKILL.md textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "c2bf03",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 5,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat textstats-run-resources/plugin/skills/sdd-plan/references/review.md textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "510309",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 6,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "git --no-optional-locks status --short; git --no-optional-locks rev-parse HEAD; git --no-optional-locks branch --show-current; rg --files docs/dev -g '*.md' -g '!reports/**'; cat docs/dev/FEATURE-SPEC.md docs/dev/FEATURE-PLAN.md docs/dev/FEATURE-TASKS.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": null,
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 7,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat docs/dev/FEATURE-SPEC.md docs/dev/ARCHITECTURE.md docs/dev/DECOMPOSITION.md docs/dev/layout.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "d3a170",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 8,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat docs/dev/PROJECT.md docs/dev/PLAN.md docs/dev/SPEC.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": null,
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 9,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat docs/dev/FEATURE-PLAN.md docs/dev/FEATURE-PLAN-REVIEW-REPORT.md docs/dev/FEATURE-TASKS-REVIEW-REPORT.md docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "5c6a92",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 10,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat docs/dev/layout.md docs/dev/DECOMPOSITION.md textstats/core.py textstats/io.py textstats/cli.py",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "25adfe",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 11,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "414790",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 12,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat docs/dev/PROJECT.md docs/dev/TASKS.md docs/dev/features/002_e7cae5b-named-file-ranges/README.md SDD-MANAGER.md AI_DISCLOSURE.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "01df12",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 13,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "git --no-optional-locks status --porcelain=v1 --untracked-files=all; git --no-optional-locks rev-parse --show-toplevel HEAD; git --no-optional-locks branch --show-current; rg --files -g AGENTS.md; sed -n '1,125p' docs/dev/PLAN.md; sed -n '125,190p' docs/dev/TASKS.md; cat README.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "9a12b7",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 14,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat textstats-run-resources/plugin/AGENTS.md textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md; sed -n '75,125p' docs/dev/TASKS.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "fb632c",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    },
+    {
+      "sequence": 15,
+      "channel": "commentary/functions.exec/tools.exec_command",
+      "command": "cat textstats-run-resources/plugin/README.md textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature",
+      "chunk_id": "04e8e8",
+      "exit_code": 0,
+      "receipt": "Original tool response; no command rerun is substituted as original evidence."
+    }
+  ],
+  "owner_assessment": {
+    "plan": {
+      "structural_result": "Coherent; no confirmed semantic decomposition or coverage defect.",
+      "counts": {
+        "delivery_milestones": 1,
+        "delivery_ids": [
+          "2.4"
+        ],
+        "excluded_final_review": "2.6 / T-024"
+      },
+      "rationale": "Explicit 1\u20132 assessment is warranted. Retain one milestone: this is a narrow existing utility extension, not independent new subsystems. Four internal tasks reach real text/JSON usefulness at T-019, then complete user explanation and independently portable source delivery before the consolidated milestone exit. Parser complexity and extensive failure/option matrices remain within a single CLI contract increment. Docs and extraction establish different evidence, but can coherently form this milestone's complete usable outcome; they need not be padded into separate milestones. Early examples and demonstrations prevent usefulness waiting for final feature review.",
+      "coverage": "F-001 validation/pre-acquisition/huge decimals routes through T-019; F-002 shared selection through T-018 with full-decode/once-only BOM integration T-019; F-003 compatibility through T-019/T-021/T-022; F-004 and R-011\u2013R-013 objective semantic/process/docs/extraction checks at delivery and both reviews. Retained R-001\u2013R-009 regressions and deferred R-010 acquisition are explicit.",
+      "placement": "Main core has _logical_lines/_normalize_text/_count_normalized seams; layout permits C-010 co-location. Existing I/O opens binary input and completely decodes, but exposes count_file rather than a separate acquisition return seam; T-019 explicitly allows cooperating I/O refactor while retaining public API. No missing design/layout proposal is demonstrated."
+    },
+    "tasks": {
+      "structural_result": "Coherent executable draft against proposed strategy; blocked for dependent use by stale durable QC and missing exact-draft acceptance.",
+      "counts": {
+        "2.4": {
+          "delivery_tasks": 4,
+          "ids": [
+            "T-018",
+            "T-019",
+            "T-021",
+            "T-022"
+          ],
+          "excluded_review": "T-020"
+        },
+        "2.6": {
+          "delivery_tasks": 0,
+          "excluded_review": "T-024; intentionally final review-only"
+        }
+      },
+      "rationale": "Four tasks are not proof of quality by count. Actual responsibilities are distinct and bounded: pure traversal selection, one real parser/controller/acquisition integration, public documentation, isolated extracted verification. Tests and relevant minimal docs remain inside implementing owners; independent extraction is product acceptance rather than report-only padding. T-019's multiple cooperating modules serve one invocation contract, not a hidden whole subsystem. All active task IDs are unique and singly owned, unchecked, and dependencies are acyclic: T-018\u2192T-019\u2192T-021\u2192T-022\u2192T-020\u2192T-024. Stable IDs justify placing T-020 after T-022 instead of renumbering. Each delivery ends with dedicated review; final feature review waits for delivery closure and excludes itself.",
+      "reviews": "T-020 requires complete code review, checks, repair, useful demonstration, findings/TODO provenance and milestone report after all four deliverables. T-024 checks cross-boundary extent and final reports, carries TODOs, preserves pending main Phase 2 obligations. Neither is redundant merely because the feature has one delivery milestone: integration and extent/future-main ownership are distinct review scopes.",
+      "identity_transition": "Reserved T-023/former 2.5 are explicitly retired from candidate execution without asserting completed work or reusing IDs. Retaining original source identity and requiring later accepted ownership/hosted-history reconciliation is coherent; it is not permission to delete or close their objects. No current provider inventory was inspected."
+    },
+    "gates": {
+      "technical_assessment": "No structural correction required on inspected draft semantics. External assessment cannot update adjacent Ready evidence.",
+      "durable_qc": "Blocked: FEATURE-PLAN-REVIEW-REPORT still assesses two delivery milestones 2.4/2.5; FEATURE-TASKS-REVIEW-REPORT still assesses two delivery tasks in each and T-023 review. Their reviewed blob identities do not cover materially changed draft boundaries/dependencies/review scope.",
+      "acceptance": "Pending for exact modified PLAN and TASKS bytes. Historical scoped acceptance remains valid for original objects only; no replay or retroactive acceptance was inferred.",
+      "execution": "Not authorized. Later accepted preparation default merge/verification/publication, verified compatible completed JSON checkpoint on feature branch, established paused-phase target and eligible added-work projection/readback are explicit prerequisites. Current checkout CLI lacks JSON; proposal correctly forbids treating this text-only checkout as completed text/JSON baseline. No remote state or current JSON contents were verified."
+    }
+  },
+  "findings": [
+    {
+      "id": "NF-QC-001",
+      "location": "docs/dev/FEATURE-PLAN-REVIEW-REPORT.md and docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+      "kind": "durable readiness blocker",
+      "reason": "Review objects describe original two-delivery-milestone strategy and old hierarchy; current unaccepted one-milestone draft materially consolidates delivery review and reserves prior identities.",
+      "follow_up": "Under later write authority, sdd-plan should append current strategy/layout/count reassessment preserving original report history; obtain exact-draft PLAN acceptance. Then sdd-tasks should persist current hierarchy/dependency/review reassessment and obtain exact-draft TASKS acceptance. Do not use inherited Ready as current evidence."
+    }
+  ],
+  "necessary_owner_follow_up": [
+    "Preserve original review/acceptance/source chronology; append authorized rechecks tied to these exact hashes rather than overwrite past findings.",
+    "Resolve explicit retired milestone/task ownership and any actual hosted objects within accepted future reconciliation scope before execution/projection.",
+    "Separately authorize implementation and satisfy refreshed-default preparation, compatible JSON baseline, paused-phase target and added-work projection gates. Keep main T-013\u2013T-017 pending."
+  ],
+  "limitations": [
+    "No product tests, archive build, module invocation, provider read/write, commit, fetch, branch/index/config mutation or agents were performed.",
+    "Some tool responses were truncated, including initial combined references/documents and main TASKS. Key FEATURE-PLAN/TASKS, spec, design seams and conventions were fully observed in later scoped reads; original partial reads remain recorded. Missing initial chunk IDs for two responses reflect aggregate truncation; no later replay is represented as original proof.",
+    "Plugin AGENTS was discovered/read after initial skill loads, not before. Its explicit README instruction led to package README loading; historical links/overviews there were incidental and not followed. No caller assessments, sibling setup contents or external catalogs were inspected.",
+    "Unchanged main sources contain preparation-era 'no code'/'all unchecked' wording alongside current status/evidence; assessment relies on observed code/current owning checklists, not those historical assertions.",
+    "Hash inventory below is computed from currently present bytes after reads; no writes to those sources occurred. Whole-file hashes for partly loaded files do not assert full-content review.",
+    "Final record-write payload is self-referential and therefore not embedded as an exact command in its own body. Actual final tools.exec_command input/output is retained in the native commentary tool transcript; preceding command strings above are exact."
+  ],
+  "stopping_point": "External requested record only; assessment ends here without product report/status/ref/index/task/provider effects.",
+  "loaded_hashes": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-focused-setups/narrow-feature/CONSUMER-INPUT.md",
+      "sha256": "4cbcf49d4dfd705f75826f26f91bd592968e6cab6e77fd765121ce60e9dbfac6",
+      "bytes": 1376
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/AGENTS.md",
+      "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+      "git_blob_sha1": "eb835f31bf29b4ee02a1724d69f76f9578467bde",
+      "bytes": 6119
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "git_blob_sha1": "7bb22d266be8343e620d007d703facc143173db6",
+      "bytes": 1192
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/README.md",
+      "sha256": "150967f90086ec52b90b9533026188cd2ef430e49c4f2a345eb21f807c303e5b",
+      "git_blob_sha1": "076b2a8592d567a167c3884959fc0383c931cedf",
+      "bytes": 4454
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "git_blob_sha1": "ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1",
+      "bytes": 683
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/ARCHITECTURE.md",
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "git_blob_sha1": "7787992d419a44870722f4c3c6c677ef6b04a0e3",
+      "bytes": 6953
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/DECOMPOSITION.md",
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "git_blob_sha1": "4a559eed6e875435537a0d7befea7dc4c67430f2",
+      "bytes": 8596
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md",
+      "sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+      "git_blob_sha1": "df422da6e03788fd272d9156364ece49f3da89dd",
+      "bytes": 3043
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/FEATURE-PLAN.md",
+      "sha256": "02a98fd49ce085ff07e30602209a15c7c1752460e20dd6b5fc4afdcd2e1b0754",
+      "git_blob_sha1": "c560ae28b95a7e213c17c203cd08d006b33e24ed",
+      "bytes": 9135
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md",
+      "sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+      "git_blob_sha1": "e4a69263dac864a3ee1c179861c5da94bdc4cef0",
+      "bytes": 2519
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/FEATURE-SPEC.md",
+      "sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+      "git_blob_sha1": "ad87c3f9daca1e6fba0c0097e6ee05397711158a",
+      "bytes": 6919
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+      "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+      "git_blob_sha1": "9233b996f602d4565f9cc2326910aa3b776de34a",
+      "bytes": 3891
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/FEATURE-TASKS.md",
+      "sha256": "a69409a41b647b1a79db13b7dc0eb15bed6d541a530cfc157039a1e4b81f477e",
+      "git_blob_sha1": "e4346c8b131a52c5301a9cdfa274ddb10f1bc9cc",
+      "bytes": 11099
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "git_blob_sha1": "2489ae62baa0159775f721355808fb56af8697cf",
+      "bytes": 13093
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "git_blob_sha1": "396d252178e097bde725121d1b89abc6e78d629f",
+      "bytes": 5884
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/SPEC.md",
+      "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+      "git_blob_sha1": "6e406906e53b643695e2c455151e46a0dafd743c",
+      "bytes": 13290
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/TASKS.md",
+      "sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+      "git_blob_sha1": "11f45a467d23e45735cdd6ad5777c22dd64b154a",
+      "bytes": 37339
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+      "git_blob_sha1": "da3e6db80667d879a96bf363c964eda321f4698e",
+      "bytes": 2981
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/docs/dev/layout.md",
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "git_blob_sha1": "32d3194ce111a0feac516e7628bb0fe5ce78a314",
+      "bytes": 9273
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "git_blob_sha1": "b21cca2057f34a94b2e30c7820b927cb6ee32c00",
+      "bytes": 4610
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/README.md",
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+      "git_blob_sha1": "4cbc8ca08d6d5e3f018301355f1ee2e47e9ac114",
+      "bytes": 40495
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+      "git_blob_sha1": "cb36d54a708c6085fc36b5fef1fbff268646ffe5",
+      "bytes": 8846
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+      "git_blob_sha1": "1141d97a90d45b7ad0b86f575d03228976a3609e",
+      "bytes": 14298
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "git_blob_sha1": "9ef3cf68aa0447f2e214a6766d4846eede81ee3b",
+      "bytes": 4823
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+      "git_blob_sha1": "72bd0a4cca48de252d99a5e8a03039ba2c5a196f",
+      "bytes": 4120
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "git_blob_sha1": "c25203f73bef5da236dc72f672610002249f981f",
+      "bytes": 10142
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+      "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+      "git_blob_sha1": "5d14404048625eda4260dc02c8b1dac031220661",
+      "bytes": 4057
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "git_blob_sha1": "28ea16cde6d0335b55af964348182feb2d865f7e",
+      "bytes": 6404
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "git_blob_sha1": "5a1b29497f561fa08f3e4a07aecd28ec5c079d09",
+      "bytes": 6069
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "git_blob_sha1": "7e7d4c11900a109c8e45b540780e05b228ae644b",
+      "bytes": 4869
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "git_blob_sha1": "1e664a82486e4fafb13fe998d3c29588710acf5a",
+      "bytes": 10400
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+      "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+      "git_blob_sha1": "45d4036b4696fca363509ef63c34ab9bb6e54ddd",
+      "bytes": 5229
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md",
+      "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+      "git_blob_sha1": "98c0ebe4010999635b7254c4505e916c2a19f2d1",
+      "bytes": 6939
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+      "sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+      "git_blob_sha1": "0ebf37b133032547c9dcf024cdbfa0de0a18916f",
+      "bytes": 4434
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md",
+      "sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+      "git_blob_sha1": "115dcfad8735c0aa6ad03048faaddb66852416c7",
+      "bytes": 5035
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md",
+      "sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+      "git_blob_sha1": "a9fc420f41b01d4e101b30bcbd632ece624a4c8f",
+      "bytes": 3731
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats/cli.py",
+      "sha256": "43e7e042edb7693ea2ba828726b691e2372feecb7954d7d05734c82a7b6319c1",
+      "git_blob_sha1": "19fe35e860f62d49aac11c8251ad3cae3072a14d",
+      "bytes": 1606
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats/core.py",
+      "sha256": "98b3374375eb7e6d4a301cabff99eb5e09ccccecbd9a808954e9c5cae084609f",
+      "git_blob_sha1": "5b17cfdcd3f4285ac3bf59e47365dfd818665c6d",
+      "bytes": 2973
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-sup-qc-narrow-feature/textstats/io.py",
+      "sha256": "a45b0a1f320109f43d92e1b01507c2c2da941af51af09ede378724038db32b9f",
+      "git_blob_sha1": "176d742290755832ab953bbec064468b2a211cdf",
+      "bytes": 1169
+    }
+  ]
+}

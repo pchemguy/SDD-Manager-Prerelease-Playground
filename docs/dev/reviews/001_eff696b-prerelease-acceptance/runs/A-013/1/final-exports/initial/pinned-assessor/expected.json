@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "literals": {
+    "api": {
+      "returncode": 0,
+      "stdout_rows": [
+        {
+          "name": "empty",
+          "result": [
+            0,
+            0
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "plain",
+          "result": [
+            1,
+            2
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "trailing",
+          "result": [
+            1,
+            1
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "blank",
+          "result": [
+            1,
+            0
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "mixed",
+          "result": [
+            3,
+            3
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "double-lf",
+          "result": [
+            2,
+            1
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "whitespace",
+          "result": [
+            1,
+            0
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "unicode-separator",
+          "result": [
+            1,
+            2
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "bom-only",
+          "result": [
+            0,
+            0
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "keep-bom",
+          "result": [
+            1,
+            1
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "double-bom",
+          "result": [
+            1,
+            1
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "interior",
+          "result": [
+            2,
+            3
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "file",
+          "result": [
+            2,
+            2
+          ],
+          "stdout": "",
+          "stderr": "",
+          "exception": null
+        },
+        {
+          "name": "file-invalid",
+          "result": null,
+          "stdout": "",
+          "stderr": "",
+          "exception": "UnicodeDecodeError"
+        },
+        {
+          "name": "file-missing",
+          "result": null,
+          "stdout": "",
+          "stderr": "",
+          "exception": "OSError"
+        }
+      ],
+      "stderr": "",
+      "immutable": true
+    },
+    "baseline": [
+      {
+        "name": "named",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=3 words=3\n"
+      },
+      {
+        "name": "empty",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=0 words=0\n"
+      },
+      {
+        "name": "keep-bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=1\n"
+      },
+      {
+        "name": "dash-filename",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      },
+      {
+        "name": "missing",
+        "returncode": 1,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true,
+        "source_identified": true
+      },
+      {
+        "name": "decode",
+        "returncode": 1,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true,
+        "source_identified": true
+      },
+      {
+        "name": "usage-missing",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "usage-extra",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "usage-unknown",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      }
+    ],
+    "json": [
+      {
+        "name": "json",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "json": {
+          "lines": 2,
+          "words": 3
+        },
+        "single_object_newline": true
+      },
+      {
+        "name": "default",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "json-bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "json": {
+          "lines": 1,
+          "words": 1
+        },
+        "single_object_newline": true
+      }
+    ],
+    "ranges": [
+      {
+        "name": "two-last",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "one",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      },
+      {
+        "name": "partial-eof",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "past-eof",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=0 words=0\n"
+      },
+      {
+        "name": "empty",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=0 words=0\n"
+      },
+      {
+        "name": "trailing-blank",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=0\n"
+      },
+      {
+        "name": "mixed",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "unicode",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      },
+      {
+        "name": "bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=0 words=0\n"
+      },
+      {
+        "name": "keep-bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=1\n"
+      },
+      {
+        "name": "exposed-interior",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      },
+      {
+        "name": "double-bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=1\n"
+      },
+      {
+        "name": "decimal-zeroes",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "bom-after",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=1\n"
+      },
+      {
+        "name": "invalid-0",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-1",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-2",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-3",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-4",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-5",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-6",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-7",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-8",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "invalid-9",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "range-missing",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "range-repeat",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "decode-after-end",
+        "returncode": 1,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true,
+        "source_identified": true
+      },
+      {
+        "name": "equals",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      }
+    ],
+    "removal": [
+      {
+        "name": "removed-json",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      },
+      {
+        "name": "literal-json-filename",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      },
+      {
+        "name": "retained-range",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      }
+    ],
+    "stdin": [
+      {
+        "name": "stdin",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "stdin-empty",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=0 words=0\n"
+      },
+      {
+        "name": "stdin-bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=0 words=0\n"
+      },
+      {
+        "name": "stdin-keep-bom",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=1\n"
+      },
+      {
+        "name": "stdin-mixed-range",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=2 words=3\n"
+      },
+      {
+        "name": "stdin-interior",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      },
+      {
+        "name": "stdin-decode",
+        "returncode": 1,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true,
+        "source_identified": true
+      },
+      {
+        "name": "stdin-decode-after-end",
+        "returncode": 1,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true,
+        "source_identified": true
+      },
+      {
+        "name": "stdin-json-removed",
+        "returncode": 2,
+        "stdout": "",
+        "stderr_nonempty": true,
+        "no_traceback": true,
+        "unchanged": true
+      }
+    ],
+    "distribution": [
+      {
+        "name": "extracted-entry",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "stdout": "lines=1 words=2\n"
+      }
+    ],
+    "ranges-json": [
+      {
+        "name": "json-range",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "json": {
+          "lines": 2,
+          "words": 3
+        },
+        "single_object_newline": true
+      },
+      {
+        "name": "range-json-order",
+        "returncode": 0,
+        "stderr": "",
+        "unchanged": true,
+        "json": {
+          "lines": 1,
+          "words": 2
+        },
+        "single_object_newline": true
+      }
+    ]
+  }
+}

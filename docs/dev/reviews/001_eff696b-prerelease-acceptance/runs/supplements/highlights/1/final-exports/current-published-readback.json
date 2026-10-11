@@ -1,0 +1,25 @@
+{
+  "method": "GET",
+  "status": 200,
+  "route": "releases/408893787",
+  "id": 408893787,
+  "tag": "v0.15.0-cp014-repair",
+  "draft": false,
+  "prerelease": true,
+  "url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/releases/tag/v0.15.0-cp014-repair",
+  "body_sha256": "5abb87b0d74e040839cbe4dd2196a2d5126cbec205a8c976782868cc02e20d3c",
+  "assets": [
+    {
+      "id": 627764794,
+      "name": "sdd-manager.zip",
+      "size": 317929
+    },
+    {
+      "id": 627764858,
+      "name": "sdd-manager.zip.sha256",
+      "size": 82
+    }
+  ],
+  "source_commit": "170adcdb861df9ea6328b4986fa3a1abf9e2de54",
+  "scope": "Fresh existing owned CP014 repaired test-release body readback, no mutation or new semantic notes publication. Prior actual publisher transfer/verification retained separately."
+}

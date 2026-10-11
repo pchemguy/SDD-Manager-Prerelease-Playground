@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "identity": "campaign037_t001_completion",
+  "task_id": "T-001",
+  "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+  "product_checkout": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+  "branch": "trial/037-a023-before-send",
+  "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+  "state": "completed",
+  "reason": "completed",
+  "evidence": {
+    "owning_list": "docs/dev/TASKS.md",
+    "completion_evidence": "docs/dev/TASKS.md#t-001-completion-evidence",
+    "commit_subject": "[T-001] Implement immutable statistics and whole-text counting",
+    "retained_tests": {
+      "runtime": "Python 3.12.14",
+      "unit_passed": 10,
+      "integration_passed": 5
+    },
+    "published": "Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed",
+    "composition": "Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit"
+  },
+  "issue_association": {
+    "issue": 2,
+    "milestone": 1,
+    "phase": 1
+  },
+  "parents_complete": false,
+  "remaining_tasks_complete": false,
+  "limits": "Controlled facility only; no live GitHub changes; no task repetition or phase integration."
+}

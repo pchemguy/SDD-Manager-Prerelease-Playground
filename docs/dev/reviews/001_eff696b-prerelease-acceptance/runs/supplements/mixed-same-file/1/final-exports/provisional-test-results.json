@@ -1,0 +1,46 @@
+[
+  {
+    "argv": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_mixed_terminators_and_final_segments (tests.unit.test_core.CountingTests.test_mixed_terminators_and_final_segments) ... ok\ntest_normalization_removes_one_bom_only (tests.unit.test_core.CountingTests.test_normalization_removes_one_bom_only) ... ok\ntest_spec_whole_input_matrix (tests.unit.test_core.CountingTests.test_spec_whole_input_matrix) ... ok\ntest_unicode_whitespace_does_not_broaden_line_terminators (tests.unit.test_core.CountingTests.test_unicode_whitespace_does_not_broaden_line_terminators) ... ok\ntest_unicode_words_and_whitespace_runs (tests.unit.test_core.CountingTests.test_unicode_words_and_whitespace_runs) ... ok\ntest_fields_cannot_be_changed_or_deleted (tests.unit.test_core.TextStatsTests.test_fields_cannot_be_changed_or_deleted) ... ok\ntest_negative_count_in_either_field (tests.unit.test_core.TextStatsTests.test_negative_count_in_either_field) ... ok\ntest_noninteger_count_in_either_field (tests.unit.test_core.TextStatsTests.test_noninteger_count_in_either_field) ... ok\ntest_value_equality_and_integer_fields (tests.unit.test_core.TextStatsTests.test_value_equality_and_integer_fields) ... ok\ntest_zero_and_large_counts (tests.unit.test_core.TextStatsTests.test_zero_and_large_counts) ... ok\ntest_bom_policy_preserves_repeated_and_interior_boms (tests.unit.test_io.FileAcquisitionTests.test_bom_policy_preserves_repeated_and_interior_boms) ... ok\ntest_open_oserror_subclasses_propagate_unchanged_and_silently (tests.unit.test_io.FileAcquisitionTests.test_open_oserror_subclasses_propagate_unchanged_and_silently) ... ok\ntest_read_failure_closes_and_propagates_without_counting_partial_input (tests.unit.test_io.FileAcquisitionTests.test_read_failure_closes_and_propagates_without_counting_partial_input) ... ok\ntest_strict_decode_failure_closes_without_counting_partial_input (tests.unit.test_io.FileAcquisitionTests.test_strict_decode_failure_closes_without_counting_partial_input) ... ok\ntest_success_closes_owned_handle_without_newline_translation (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_handle_without_newline_translation) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.006s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/integration",
+      "-t",
+      ".",
+      "-v"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_file_signature_and_keyword_only_policy (tests.integration.test_api.PublicFileApiTests.test_file_signature_and_keyword_only_policy) ... ok\ntest_real_file_spec_matrix_matches_text_and_preserves_bytes_silently (tests.integration.test_api.PublicFileApiTests.test_real_file_spec_matrix_matches_text_and_preserves_bytes_silently) ... ok\ntest_real_missing_file_and_invalid_bytes_preserve_exception_and_input (tests.integration.test_api.PublicFileApiTests.test_real_missing_file_and_invalid_bytes_preserve_exception_and_input) ... ok\ntest_public_bom_and_empty_results (tests.integration.test_api.PublicTextApiTests.test_public_bom_and_empty_results) ... ok\ntest_public_calls_are_silent_and_preserve_input (tests.integration.test_api.PublicTextApiTests.test_public_calls_are_silent_and_preserve_input) ... ok\ntest_public_exports_match_the_core (tests.integration.test_api.PublicTextApiTests.test_public_exports_match_the_core) ... ok\ntest_signature_is_whole_text_with_keyword_only_policy (tests.integration.test_api.PublicTextApiTests.test_signature_is_whole_text_with_keyword_only_policy) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.005s\n\nOK\n"
+  },
+  {
+    "argv": [
+      "python",
+      "-B",
+      "independent_api_probe.py"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": "test_binary_acquisition_closure_and_exceptions (__main__.FileAPI.test_binary_acquisition_closure_and_exceptions) ... ok\ntest_exports_signatures (__main__.FileAPI.test_exports_signatures) ... ok\ntest_real_errors_no_partial (__main__.FileAPI.test_real_errors_no_partial) ... ok\ntest_real_file_matrix_and_preservation (__main__.FileAPI.test_real_file_matrix_and_preservation) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.008s\n\nOK\n"
+  }
+]

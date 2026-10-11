@@ -1,0 +1,16 @@
+{
+  "directory": "/tmp/sdd007-r_dl953t",
+  "passed": [
+    "valid convention branch names and combined allocation",
+    "partial phase push leaves main unchanged and creates no next phase",
+    "two-parent complete phase integration and remote containment",
+    "next phase starts from published main tip",
+    "minimal steering record and merge to paused phase only",
+    "SPEC-only incorporation retains active unchecked task owner",
+    "interrupted archive paths inspected then finished under same identity",
+    "archive link repair and historical snapshot with main task owner",
+    "feature integrates to active phase without completing main phase",
+    "local bare remote with no hosting backend and distinct collision slug"
+  ],
+  "limits": "Executed Git/file primitives and explicitly selected fixture workflow; no installed-agent enforcement, concurrent allocator race, real exit-test failure, or live hosting API tested."
+}

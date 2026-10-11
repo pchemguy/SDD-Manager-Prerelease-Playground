@@ -1,0 +1,2 @@
+Clarify foreign staged intent in continuation reference (caller fixture)
+

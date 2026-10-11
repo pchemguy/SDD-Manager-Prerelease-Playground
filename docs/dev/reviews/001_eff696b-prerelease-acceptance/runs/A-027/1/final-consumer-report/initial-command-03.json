@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "log",
+    "-8",
+    "--format=%H %s"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_code": 0,
+  "stdout": "ca24007134141265a1937c77e2fda504bb0d6129 [T-015] Complete stdin documentation and isolated source exits\ndbf50d7b6d83c7ddf53f287d82b199db3e83fd89 [T-014] Integrate binary stdin with text and range counting\n2d96774221165ac04096c8d57ddcefe85b2305e0 [T-013] Add borrowed binary UTF-8 acquisition\n77e7106e3134cc7053a2b1a045cf1a76cf0361ea Integrate accepted JSON withdrawal into paused Phase 2\n160c0a980286c68f62d0d13b3238dad0748885e9 Conclude verified JSON withdrawal and managed tracking reconciliation\n1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f Withdraw JSON output while retaining text and named-file ranges\n636b46d8daf1455c940c98f4d535c9936c0f1733 Prepare scoped JSON withdrawal at paused Phase 2 checkpoint\n795f3a3542c9981f8d43c8e182876f3efa5b5f16 Integrate completed named-file ranges into paused Phase 2\n",
+  "stderr": ""
+}

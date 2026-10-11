@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-001",
+      "status": "Passed",
+      "assessment_path": "../../A-001/1/ASSESSMENT.json",
+      "checkpoint_refs": {
+        "product_branch": "design-docs/main",
+        "product_commit": "1e3305c8659045945244c06861079fef879ca3c3",
+        "integration_branch": "main",
+        "integration_commit": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "remote": "origin",
+      "remote_ref": "refs/heads/design-docs/main",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "a573f2406d201dcd68e06dd2f32f4d32f9b59dab",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-001/1/ASSESSMENT.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product repository /workspace/scratch/46b31bb4dff6/037-textstats-product is clean on design-docs/main at published 1e3305c8659045945244c06861079fef879ca3c3. Main is eff696b38f0b8a94bd6f91ca1c64d54fd714df46; accepted preparation is intentionally not integrated. All current TASKS are unchecked; no phase objects have been projected. The requested repository is pchemguy/SDD-Manager-Prerelease-Playground and maintained GitHub tracking is explicitly authorized for this product workflow. Existing unrelated coordinator-owned fixture issue #1 and label campaign-037-preserve are outside TASKS; retain them and existing generic labels. Read product AGENTS.md and pinned textstats-run-resources/plugin/ skills (ea515f5624c8a34cc4572731a2590223a5eb27f4). Existing protected playground authentication is available at /workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground/gh.tkn for authorized API calls; never print/copy credentials into commands/reports/source. Git helper /workspace/scratch/46b31bb4dff6/playground-askpass.sh reads that protected credential. Every workflow-owned commit must immediately push and verify exact remote containment before further work. User delegates artifact assessment to coordinator. Present the first concrete projection checkpoint for coordinator assessment before proceeding to the already requested second reconciliation. Stop before implementation. Do not touch /pyenv or read other workspace contents beyond this named input/product and protected authentication paths."
+  }
+}

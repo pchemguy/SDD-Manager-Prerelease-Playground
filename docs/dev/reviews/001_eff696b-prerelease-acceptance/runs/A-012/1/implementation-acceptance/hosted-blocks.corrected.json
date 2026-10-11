@@ -1,0 +1,107 @@
+[
+  {
+    "task": "T-010",
+    "endpoint": "issues/11",
+    "title": "[T-010] Retired JSON CLI delivery; historically completed, capability withdrawn.",
+    "bounded_task_block": "Original result and publication evidence below remain historical. No replacement task, current JSON acceptance or new completion is claimed.",
+    "body_sha256": "b4800616bc0f3ff063161182d1789bd21292fab0d1c55905c169f30ded69cc2b"
+  },
+  {
+    "task": "T-011",
+    "endpoint": "issues/12",
+    "title": "[T-011] Retired JSON extraction delivery; historically completed, capability withdrawn.",
+    "bounded_task_block": "Original result and publication evidence below remain historical. Retained extraction acceptance belongs to T-007/T-022 and this amendment.",
+    "body_sha256": "f9d5dad9b3e37b0e1ad8fdecf8ffc3d705ad09612641aba108b6030e9490ed8c"
+  },
+  {
+    "task": "T-012",
+    "endpoint": "issues/13",
+    "title": "[T-012] Historical milestone 2.1 review; retained, no current executable work.",
+    "bounded_task_block": "Original review/publication remains historical; current retained contracts are reassessed by the steering report.",
+    "body_sha256": "ab288092d51483681104bdfadcb3f985e78fa35c25182f843e333f2599f097c7"
+  },
+  {
+    "task": "T-013",
+    "endpoint": "issues/14",
+    "title": "[T-013] Add borrowed binary stdin acquisition",
+    "bounded_task_block": "Outcome: R-010 internal byte reader reaching EOF, strict locale-independent UTF-8 and retained stream ownership; no new public API export.\n            Scope: `textstats/io.py`, `tests/unit/test_io.py` and input ownership/decode docstrings.\n            Depends on: T-009 and the verified text-only/range amendment checkpoint.\n            Evidence: borrowed byte-stream empty/Unicode/mixed-terminator/BOM inputs, EOF, invalid bytes and controlled read errors; never close borrowed stream on success/failure; no partial decoded result. Verify named-file acquisition/API regressions. CLI consumer follows in T-014 within the same milestone.",
+    "body_sha256": "0c278d2b786f4e350d90de4bfdc2eb4a2d0befca04c98b6cde942f21987619db"
+  },
+  {
+    "task": "T-014",
+    "endpoint": "issues/15",
+    "title": "[T-014] Integrate stdin across text CLI",
+    "bounded_task_block": "Outcome: R-010 input `-` through R-007 policy with R-008 error categories and unchanged named-file/public API behavior.\n            Scope: `textstats/cli.py`, `tests/unit/test_cli.py`, `tests/integration/test_cli.py`, help/README stdin usage and error documentation.\n            Depends on: T-013 and reviewed range feature T-024.\n            Evidence: real byte-fed subprocess stdin in text modes with both BOM policies, Unicode/mixed terminators/empty data; invalid bytes and controlled read errors identify stdin, return 1, leave stdout empty and avoid traceback. Check under differing locale, preserved borrowed-stream ownership at controlled seams, named-file `./-`, option/usage regressions and no input mutation. Retain named-file range validation and compose the shared normalized selection/counting pipeline with stdin, including complete decode after END, exposed interior BOMs, EOF subsets, both spellings and both BOM policies. Run nonempty suites and newly runnable stdin examples.",
+    "body_sha256": "2dfabb363dab335ae9f4f7ab6a8bceaeb56421febdd5d0d1fc95294ef67e406d"
+  },
+  {
+    "task": "T-015",
+    "endpoint": "issues/16",
+    "title": "[T-015] Complete final documentation and source-package exits",
+    "bounded_task_block": "Outcome: final R-011/R-012/R-013 usability/portability acceptance across delivered API/named-file/stdin behavior.\n            Scope: public API/module reference, README final instructions, `tools/check_distribution.py`, `tests/integration/test_distribution.py` and truthful root navigation.\n            Depends on: T-014.\n            Evidence: complete docs for final stdin ownership/strict decode/status/composition; execute all final documented examples. Rebuild/extract and actually invoke module entry for named-file and byte-fed stdin in text/BOM/empty/bad-byte/usage cases, maintaining import isolation. Run complete nonzero unit/integration suites and retain whole-input API/signatures. Retain delivered named-file range usage and extend final documented/extracted-source checks to stdin range composition; preserve whole-input public API.",
+    "body_sha256": "608f5bf4270bde5f0334faf6fdbacd682f0de29d14c6407915856b8fd8a707cd"
+  },
+  {
+    "task": "T-016",
+    "endpoint": "issues/17",
+    "title": "[T-016] Review, test and report milestone 2.2",
+    "bounded_task_block": "Scope: complete stdin/input-source composition, documentation/distribution and prior delivered regressions.\n            Depends on: T-013, T-014 and T-015.\n            Evidence: code review plus source/format/BOM/locale/failure/ownership/nonempty discovery/extracted-source exits; repair all blockers and record final usability evidence, actual checks/counts and TODO dispositions.\n            Report: `docs/dev/reports/phases/2/2.2.md`.",
+    "body_sha256": "21d75ccff4e118259302567acf0d09d9a5e55537b9ec927d0932587e006b01ec"
+  },
+  {
+    "task": "T-017",
+    "endpoint": "issues/18",
+    "title": "[T-017] Review, test and report phase 2 and final delivery",
+    "bounded_task_block": "Scope: cross-phase and cross-milestone code review, complete accepted initial SPEC/PLAN, final docs/source distribution and retained API/named-file behavior.\n            Depends on: T-016, T-020, T-023 and T-024, and completed/closed delivery milestones 2.2, 2.4 and 2.5 plus feature-extent review 2.6; excludes its own still-open review milestone.\n            Evidence: final code review plus all applicable product/docs/distribution checks, actual nonzero counts and blocker repairs. Publish phase report and final implementation report aggregating unresolved/deferred findings from every milestone/phase, with provenance, options/tradeoffs, owners and resolution references. Then reconcile required hosted closures and complete full-phase merge/verification/publication. Retain reviewed named-file range evidence and final stdin composition; do not publish a release.\n            Reports: `docs/dev/reports/phases/2/PHASE-REPORT.md` and `docs/dev/reports/IMPLEMENTATION-REPORT.md`.",
+    "body_sha256": "c13115bd0e54b4df46c5799eb516ddf493e8ea5522dbecc144812f9c7e363662"
+  },
+  {
+    "task": "T-018",
+    "endpoint": "issues/19",
+    "title": "[T-018] Implement pure normalized logical-line selection",
+    "bounded_task_block": "Outcome: internal C-010 selection using existing C-003 traversal; preserve selected contents/terminators, inclusive endpoints and available subsets without any BOM normalization or source dependency.\n            Scope: `textstats/core.py`, `tests/unit/test_core.py` and internal selection/counting docstrings; public exports/signatures unchanged.\n            Depends on: T-001 and completed Phase 1; accepted named-file range baseline/projection prerequisites.\n            Evidence: F-002/F-004 empty/final/blank/mixed CRLF/CR/LF, Unicode separators, EOF subset/empty, huge endpoints and exposed interior BOM. Verify normalized counting consumes selected content without a second normalization, plus whole-input core/API regression checks. This pure prerequisite leads directly to the real CLI path in T-019 within the same milestone.",
+    "body_sha256": "b2aab6b4b41047d5a1fac4bae83b2e42753f1cdd31f7135d135f362d053b7da6"
+  },
+  {
+    "task": "T-019",
+    "endpoint": "issues/20",
+    "title": "[T-019] Integrate range validation and named-file text CLI",
+    "bounded_task_block": "Outcome: complete F-001/F-002/F-003 named-file path, both range spellings, all option orders and existing output/error/API behavior; minimal runnable range help/README demonstration.\n            Scope: `textstats/cli.py`, cooperating `textstats/io.py` acquisition seam if needed, `tests/unit/test_cli.py`, `tests/unit/test_io.py`, `tests/integration/test_cli.py`, `tests/integration/test_api.py` and focused README/module documentation.\n            Depends on: T-018 and completed Phase 1 text/error checkpoint; no stdin implementation dependency.\n            Evidence: full invalid-range matrix including missing/repeated/mixed forms, ASCII positivity/order, >4,300-digit valid endpoints and many leading zeros without interpreter guard failure. Controlled seam and missing-file subprocess show usage rejection before acquisition. Decode complete bytes before selection, failing bad bytes after END; preserve owned-handle cleanup and unchanged file bytes. Run real text examples for every F-004 anchor, all range/BOM permutations, both spellings, INPUT placement and `--` dash-file support. Verify no-range API/CLI/signature/export/silence/error regressions; literal `-` remains a file. Run nonempty suites and execute the minimal README examples.",
+    "body_sha256": "ed5a5bb45b985059736c94a10a64fdc24e328ab1f8af36356ba1ae8b77075306"
+  },
+  {
+    "task": "T-020",
+    "endpoint": "issues/21",
+    "title": "[T-020] Review, test and report milestone 2.4",
+    "bounded_task_block": "Scope: integrated parser, complete acquisition, normalized shared selection/counting and named-file text path; retained core/API/CLI failures and resource ownership.\n            Depends on: T-018 and T-019.\n            Evidence: code review and actual focused/full relevant tests, actual nonzero discovery counts, all F matrices, complete-decode/BOM/huge-endpoint regression evidence, repairs for every blocker and 2.4 human demonstration evidence. Report findings/TODO dispositions and limits; tests alone cannot complete this review.\n            Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md`.",
+    "body_sha256": "a64ef40f0c4e235341f6970f5ddef0aaabe6d0e2c15a1c19853983eae7d256b5"
+  },
+  {
+    "task": "T-021",
+    "endpoint": "issues/22",
+    "title": "[T-021] Complete public and runnable named-file range documentation",
+    "bounded_task_block": "Outcome: accurate full range grammar/semantics/errors/composition/delivery boundary, with public API explicitly whole-input and stdin acquisition still deferred.\n            Scope: `README.md`, `docs/public-api.md`, relevant core/I/O/CLI module/function docstrings and truthful owned root `AGENTS.md` navigation; preserve manual instructions and protected resources.\n            Depends on: T-020 and reviewed/closed milestone 2.4.\n            Evidence: execute documented named-file text examples in both BOM policies, selected blank/mixed/EOF/interior-BOM and invalid/decode cases; compare docs/help to delivered F contracts and retained public signatures/exports/exception/handle/status contracts. Review future stdin wording for source independence without asserting delivered acquisition. Run relevant nonempty product regressions.",
+    "body_sha256": "0d9135566ea2d8ba18985067464173dac3c7eb1165987a0359fcafe6f0dbd75f"
+  },
+  {
+    "task": "T-022",
+    "endpoint": "issues/23",
+    "title": "[T-022] Verify range behavior from isolated extracted source",
+    "bounded_task_block": "Outcome: R-013 feature exits execute the real extracted module for named-file text range behavior and failures with truthful import provenance.\n            Scope: `tools/check_distribution.py`, cooperating `tools/package_source.py` allowlist only if needed, `tests/integration/test_distribution.py` and distribution usage documentation.\n            Depends on: T-021.\n            Evidence: rebuild/extract source, isolate subprocess cwd/import environment and verify imported package belongs to extraction. Invoke its actual `python -m textstats` entry for F-004 success anchors, option/BOM composition, huge decimal/leading-zero endpoints, invalid/missing/repeated ranges and bad bytes after END; statuses/stdout/stderr retain contracts. Confirm archive docs and unchanged API, named-file/no-range/usage/error regressions and no coordinator resources/secrets. Use the selected supported Python executable with bytecode disabled in all child processes. Run independently nonempty unit/integration suites and extraction checks; archive listing/import alone is insufficient.",
+    "body_sha256": "87f1e0084642e4b053370224d3ca677deefbc8e1a2736b82f8bfdbf9f0092b1a"
+  },
+  {
+    "task": "T-023",
+    "endpoint": "issues/24",
+    "title": "[T-023] Review, test and report milestone 2.5",
+    "bounded_task_block": "Scope: complete delivered range documentation, help/usability, isolated distribution and retained product behavior.\n            Depends on: T-021 and T-022.\n            Evidence: code review plus actual docs examples, nonempty discovery and extraction provenance/real module checks, all relevant regressions and repairs for every blocker. Record usability demonstration, actual evidence/limits and TODO dispositions before milestone closure.\n            Report: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md`.",
+    "body_sha256": "ff9a8d94557840b3f1131bcad701f4f224f3cb28f03fc8ea53af5e6a11a7accd"
+  },
+  {
+    "task": "T-024",
+    "endpoint": "issues/25",
+    "title": "[T-024] Review, test and report the Phase 2 range feature extent",
+    "bounded_task_block": "Scope: cross-milestone range feature and affected main contracts, source-independent normalized pipeline, unchanged public API, complete docs/extraction and retained named-file text. This is feature-extent review, not main Phase 2 or project completion.\n            Depends on: T-020 and T-023; feature delivery milestones 2.4 and 2.5 completed/closed, excluding its own still-open 2.6.\n            Evidence: code review and actual complete relevant product/docs/distribution exits, nonzero counts, final blocker repairs, feature usefulness/risk evidence, findings and TODO aggregation with provenance/options/owners/resolutions from both feature milestones. Reconcile feature parent claims only; do not complete main 2.2/2.3 or T-013\u2013T-017. Reports must state pending stdin/final work and later incorporation/integration prerequisites.\n            Reports: `docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md` and `docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md`.",
+    "body_sha256": "734a0bc81376d18a7003f4eecc5ee61f7e60632bff1449e0b6cfc53992adc916"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "actor": "independent assessor",
+    "attempt": 1,
+    "operation": "broader verifier invoked product check_tests directly",
+    "observed": "Assessor interrupted process with Ctrl-C; command exit130; no full result retained. Integration test invokes product distribution CLI, which can rebuild preexisting ignored dist ZIP.",
+    "correction": "Full checks and all later packaging/doc commands rerun in exact49-file committed source/docs/tests/tools export. Original successful assessor-output archive/captures retained.",
+    "product_scope": "Tracked files,index,refs and149 protected/foreign/source files verified unchanged against final seal/start as applicable. Ignored ZIP current hash retained, initial hash unavailable; regeneration by interrupted test cannot be ruled out. No broad no-write filesystem claim."
+  },
+  {
+    "actor": "independent assessor",
+    "attempt": 1,
+    "operation": "hosted comparison inline checker",
+    "observed": "TypeError: list indices must be integers or slices, not str; foreign_comment field is a list. No assessment output produced. Labels additionally require normalizing original description text to hash.",
+    "correction": "Retry accepts documented field shapes and compares literal descriptions by SHA256;76 checks passed. No expectation/product/provider alteration."
+  },
+  {
+    "actor": "independent assessor",
+    "attempt": 1,
+    "operation": "safe manifest creation",
+    "observed": "AttributeError: helper module has no attribute protected_path; actual exported function is protected. No manifest output created.",
+    "correction": "Use observed helper protected classifier, same screening/hash expectations. No product/provider change."
+  }
+]

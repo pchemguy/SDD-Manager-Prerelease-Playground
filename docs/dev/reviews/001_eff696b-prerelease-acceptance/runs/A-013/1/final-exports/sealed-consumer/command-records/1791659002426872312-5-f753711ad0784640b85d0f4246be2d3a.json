@@ -1,0 +1,30 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "--lines=0:1",
+      "-"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+    "status": 2,
+    "time": 1791659002.4268148,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "PYTHONUTF8": "0",
+      "PYTHONCOERCECLOCALE": "0"
+    },
+    "fixtures": {},
+    "input_hex": "ff",
+    "input_text": null,
+    "input_sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89"
+  }
+}

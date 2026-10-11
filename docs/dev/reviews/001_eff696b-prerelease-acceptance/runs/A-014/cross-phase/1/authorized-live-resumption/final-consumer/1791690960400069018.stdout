@@ -1,0 +1,14 @@
+ docs/dev/TASKS.md                         | 14 +++++---
+ docs/dev/reports/phases/1/PHASE-REPORT.md | 54 +++++++++++++++++++++++++++++++
+ tests/integration/test_api.py             |  2 +-
+ tests/integration/test_cli.py             |  2 +-
+ tests/integration/test_distribution.py    |  2 +-
+ tests/unit/test_cli.py                    |  2 +-
+ tools/check_distribution.py               |  2 +-
+ 7 files changed, 69 insertions(+), 9 deletions(-)
+93756800aafe8abb0d8719176a14eb81ba42b4e1
+44143b947ab368a95d3095cf5fe23bfed2e09733f6d8cccb6c584f351e1228a3  docs/dev/reports/phases/1/PHASE-REPORT.md
+fee72d464890772e19da9a42a246d01ebbd3f21aa16e2080d805d0446fc8c912  docs/dev/TASKS.md
+b1b1bda0a25d52d8982405ab937f551573630122
+db1642243798cd21ab89c40ba6b5dd49b5531b16
+88a5c4b4424f4bba76940e40b1d6523b1f6fe191

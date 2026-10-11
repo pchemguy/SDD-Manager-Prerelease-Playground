@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-005",
+      "status": "Passed",
+      "assessment_path": "../../A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+        "integration_branch": "main",
+        "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "remote": "origin",
+      "remote_ref": "refs/heads/phase/1-named-file-utility",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "fa73830e4973ce479c418ee3b36ec17e2282be33",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "Product checkout /workspace/scratch/46b31bb4dff6/037-textstats-product is clean and published on phase/1-named-file-utility at7d003c1cf31c994340d8644e95990ef2253754ed. Main is published accepted preparation merge88a5c4b4424f4bba76940e40b1d6523b1f6fe191. Milestone1.1 and T001\u2013004 are durably complete; issues2\u20135 and native milestone1 closed. Phase1 and later tasks/milestones remain incomplete. Maintained Phase1 tracking is enabled with its verified label, nine task issues2\u201310 and three native milestones1\u20133. Preserve pre-existing issue1, foreign issue2 text/label/comment and milestone1 paragraph. Use unchanged pinned package textstats-run-resources/plugin/ at ea515f5624c8a34cc4572731a2590223a5eb27f4 plus product AGENTS. This complete-phase request supersedes historical milestone1.1/preparation stops within Phase1 only. Concrete test-artifact review/decisions are delegated to coordinator. All scoped workflow GitHub effects, explicit complete-phase integration and every commit/push are authorized; push and remotely verify each commit before further work. Stop before Phase2 work; no release requested."
+  }
+}

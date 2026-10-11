@@ -1,0 +1,28 @@
+# Range feature TASKS review report
+
+## Current gate
+
+Technical state: Ready for scoped delegated review of the corrected proposal; current acceptance pending. Reviewed `FEATURE-TASKS.md` SHA-256 `3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3`, Git blob `95d31431ea3c751cbd769c5c7c2febf9f2d80b37`; no children. Revision 1 supersedes the stale current-state claim observed at entry. No confirmed document conformance blocker remains after the scoped correction/recheck. Implementation, projection and integration remain held; Ready does not authorize them.
+
+Accepted FEATURE-PLAN/QC and FEATURE-SPEC/QC are unchanged at the source identities in Revision 1. Their stated acceptance is the controlling input for this requested review; referenced decision objects are unavailable in this isolated checkout and were not independently verified. Current trial tracking was explicitly declined; this document-QC operation uses only the established local `trial-delivery` destination after exact-payload acceptance. Origin is read-only. Historical/future product tracking statements in the governing documents are preserved, not activated by this trial.
+
+## Initial owner conformance review
+
+On 2026-10-10 sdd-tasks compared the complete derived list against accepted feature strategy/specification and existing physical owners. Exact Phase 2 name and new 2.4/2.5/2.6 names/IDs match PLAN. T-018–T-024 are new monotonic project-wide IDs, singly owned and unchecked; no copies of completed or pending main tasks are created. Dependencies flow from pure selection to real named-file integration/review, then docs/extraction/review and final feature review. T-018's pure seam is immediately consumed in the same useful delivery milestone; T-019 is a bounded cooperating CLI/acquisition change using established counting and rendering, with its own relevant tests/minimal docs.
+
+| Delivery group | Delivery tasks | Excluded review | Scope/count assessment |
+| --- | --- | --- | --- |
+| 2.4 Named-file ranges | 2: T-018, T-019 | T-020 | Explicit 1–2 assessment: pure selection and its cohesive real CLI/acquisition consumer have distinct seams; splitting parser and controller into artificial unintegrated milestones would delay useful behavior. Tests/docs are included in their owners. |
+| 2.5 Range documentation and distribution | 2: T-021, T-022 | T-023 | Explicit 1–2 assessment: public usability and extracted deployment acceptance are independent bounded outcomes; more tasks would pad a small existing utility. |
+| 2.6 Range feature review | None, intentionally review-only | Single T-024 | Mandatory feature-extent final review; main full Phase 2 review remains pending and is not duplicated/closed. |
+
+| Acceptance route | Sufficient executable coverage |
+| --- | --- |
+| F-001 syntax/order/unbounded validation | T-019 controlled pre-acquisition and real-process invalid/composition matrix, then T-020/T-024 review. |
+| F-002 normalized selection/decode/BOM/EOF | T-018 pure shared semantics and T-019 complete acquisition/decode/handle/API integration; T-020/T-024 cross-boundary review. |
+| F-003 output/public compatibility/boundary | T-019 real text/JSON/no-range/API regression checks, T-021 truthful docs and T-022 extraction. |
+| F-004 and R-011–R-013 | Every success/invalid/huge/BOM/decode anchor in T-018/T-019/T-022; runnable docs T-021; nonempty suites and reviews at each exit. |
+
+Owner checked unique identity/parentage, four-space checklist nesting/details, all-unchecked status, feasible dependency order, exact review units/report prefix, actual existing source/test/tool placement and local link targets. No confirmed omission, scope drift, invented behavior, excessive/trivial split or conformance blocker remains. Conditional runtime baseline, tracked added-work projection and later accepted incorporation/archive/integration are explicit prerequisites, not performed facts. No task execution, production tests, archive build, hosted mutation or phase closure occurred. Ready is preparation QC; concrete acceptance and separate future authorization/prerequisites remain required before implementation.
+
+## Recovery entry findings

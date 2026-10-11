@@ -1,0 +1,1024 @@
+{
+  "before": {
+    "source": "complete paginated GitHub REST readback before A-010 writes",
+    "issues": [
+      {
+        "number": 18,
+        "title": "[T-017] Review, test and report phase 2 and final delivery",
+        "state": "open",
+        "milestone": 6,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "52edf6b5855a1957f36fa1555211bfe657688fdcdb4c211ac199a6ca61943587"
+      },
+      {
+        "number": 17,
+        "title": "[T-016] Review, test and report milestone 2.2",
+        "state": "open",
+        "milestone": 5,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "42226bd414149202a420400245b6a1bd87097997eb4d914b7769a260cde493c3"
+      },
+      {
+        "number": 16,
+        "title": "[T-015] Complete final documentation and source-package exits",
+        "state": "open",
+        "milestone": 5,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "0de859ee393c13219aa4f014f941fcdbbe385ba77f7f91c2123340714a7427d6"
+      },
+      {
+        "number": 15,
+        "title": "[T-014] Integrate stdin across text and JSON CLI",
+        "state": "open",
+        "milestone": 5,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "d8d1deeb871b9803bcbb4cdbc759bcccc3a9e243df412829959889fd6ccb85ef"
+      },
+      {
+        "number": 14,
+        "title": "[T-013] Add borrowed binary stdin acquisition",
+        "state": "open",
+        "milestone": 5,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "d8b2862a580ae238a7fe80f1642a18432b452ed1ab32a30e92c876d7383252b5"
+      },
+      {
+        "number": 13,
+        "title": "[T-012] Review, test and report milestone 2.1",
+        "state": "closed",
+        "milestone": 4,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "442042e55af9ac12d2b5cea772b63cb8d5df2678d793224452398e02ee9d4720"
+      },
+      {
+        "number": 12,
+        "title": "[T-011] Verify JSON from extracted source",
+        "state": "closed",
+        "milestone": 4,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "66ed1a39a861aa0431bdb12cc333a43a07e5c25818d1b53430cb7af2f729fefd"
+      },
+      {
+        "number": 11,
+        "title": "[T-010] Add JSON CLI output with retained text behavior",
+        "state": "closed",
+        "milestone": 4,
+        "labels": [
+          "sdd-phase-2-JSON-and-stdin"
+        ],
+        "body_sha256": "cf8527342cccc3106365f094376882bee21a6a6b9c74ca83295658215b6fc861"
+      },
+      {
+        "number": 10,
+        "title": "[T-009] Review, test and report phase 1",
+        "state": "closed",
+        "milestone": 3,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf"
+      },
+      {
+        "number": 9,
+        "title": "[T-008] Review, test and report milestone 1.2",
+        "state": "closed",
+        "milestone": 2,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361"
+      },
+      {
+        "number": 8,
+        "title": "[T-007] Build and verify isolated source distribution",
+        "state": "closed",
+        "milestone": 2,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6"
+      },
+      {
+        "number": 7,
+        "title": "[T-006] Document public API and runnable named-file usage",
+        "state": "closed",
+        "milestone": 2,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c"
+      },
+      {
+        "number": 6,
+        "title": "[T-005] Complete named-file CLI failure and usage handling",
+        "state": "closed",
+        "milestone": 2,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba"
+      },
+      {
+        "number": 5,
+        "title": "[T-004] Review, test and report milestone 1.1",
+        "state": "closed",
+        "milestone": 1,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+      },
+      {
+        "number": 4,
+        "title": "[T-003] Integrate named-file CLI and nonempty product checks",
+        "state": "closed",
+        "milestone": 1,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+      },
+      {
+        "number": 3,
+        "title": "[T-002] Implement strict file acquisition and complete public API",
+        "state": "closed",
+        "milestone": 1,
+        "labels": [
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+      },
+      {
+        "number": 2,
+        "title": "[T-001] Implement immutable statistics and whole-text counting",
+        "state": "closed",
+        "milestone": 1,
+        "labels": [
+          "campaign-037-preserve",
+          "sdd-phase-1-Named-file-utility"
+        ],
+        "body_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652"
+      },
+      {
+        "number": 1,
+        "title": "Campaign 037 unrelated preservation fixture",
+        "state": "open",
+        "milestone": null,
+        "labels": [
+          "campaign-037-preserve"
+        ],
+        "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce"
+      }
+    ],
+    "milestones": [
+      {
+        "number": 1,
+        "title": "sdd-1.1-Named-file-counting",
+        "state": "closed",
+        "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+      },
+      {
+        "number": 2,
+        "title": "sdd-1.2-Failure-handling-and-distribution",
+        "state": "closed",
+        "description_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be"
+      },
+      {
+        "number": 3,
+        "title": "sdd-1.3-Phase-1-review",
+        "state": "closed",
+        "description_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263"
+      },
+      {
+        "number": 4,
+        "title": "sdd-2.1-JSON-output",
+        "state": "closed",
+        "description_sha256": "b22c295e25349a4ead9cdd15151f00891fc7a3dc33b1f1b1503f3ace75073617"
+      },
+      {
+        "number": 5,
+        "title": "sdd-2.2-UTF-8-stdin-and-final-delivery",
+        "state": "open",
+        "description_sha256": "3280da843fc4d476975ced4d9b62ad7642ee90541c8d2ef2e879f42528571c12"
+      },
+      {
+        "number": 6,
+        "title": "sdd-2.3-Phase-2-and-final-review",
+        "state": "open",
+        "description_sha256": "4107d67fc9e7b76f82ac74932f277f18eee3642950ba6d6cda6a21de6be7ec1f"
+      }
+    ],
+    "labels": [
+      {
+        "name": "accessibility",
+        "description_sha256": "a0e29a556c55309dcf78098b04d2c5c8e6c082d4df0e108596880faec3273e4e"
+      },
+      {
+        "name": "bug",
+        "description_sha256": "ba26e412cc494b92f18f01c968c2b3241803b752eb09f1577844190076120a92"
+      },
+      {
+        "name": "campaign-037-preserve",
+        "description_sha256": "cf6fc320df3a5d3a51954bfd5f4cd9f440e2eca098c6f8471ea8f165b83d6f5c"
+      },
+      {
+        "name": "documentation",
+        "description_sha256": "d1aadc4e1b60c7b31dfbed5db1beb3a9f178166309def32db138e2e6546c2059"
+      },
+      {
+        "name": "duplicate",
+        "description_sha256": "092850c4484f11177dce84173d1a26030b145f573db994baa043648947130102"
+      },
+      {
+        "name": "enhancement",
+        "description_sha256": "528e05403b406e202bb0bd23d3917d0688aaa7bf834fac8273682631bb42bbca"
+      },
+      {
+        "name": "good first issue",
+        "description_sha256": "e7b33d49b02e3a67c41178ae81e03df423dd08d3cd6695030623de3910789d96"
+      },
+      {
+        "name": "help wanted",
+        "description_sha256": "2a68d328096f7ecf792863fc4701db1a85072417d4dac3d606847541e0423a65"
+      },
+      {
+        "name": "invalid",
+        "description_sha256": "b0b7cab1d96254957703fa96a85a0400491637e8c110b6e79dff077194dd7bed"
+      },
+      {
+        "name": "question",
+        "description_sha256": "c758420437639eac26ad21aad1ff43032947a061a29e688a7cc442d7d936d2b5"
+      },
+      {
+        "name": "sdd-phase-1-Named-file-utility",
+        "description_sha256": "5c71f446784eef2fbc16bcbf8fdbc03a1b622649f4299cb62386ec81a3bca168"
+      },
+      {
+        "name": "sdd-phase-2-JSON-and-stdin",
+        "description_sha256": "3e8d585a2ff83708d483c29dcd669b99d9e771c1c862a494a5fd4bb5ff9e3b2e"
+      },
+      {
+        "name": "wontfix",
+        "description_sha256": "7005a3da62f74e32c046e5df2439b2911db569848f9e40c38024b20617530777"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "operation": "POST /milestones",
+      "identity": "2.4",
+      "number": 7,
+      "state": "open",
+      "title": "sdd-2.4-Named-file-ranges",
+      "body_sha256": "d194af0b94fde2d197a26f229efd3d9693e0f7cd19bdf1ad2471e869f74cd27e"
+    },
+    {
+      "operation": "GET readback",
+      "identity": "2.4",
+      "number": 7,
+      "state": "open",
+      "title": "sdd-2.4-Named-file-ranges",
+      "body_sha256": "d194af0b94fde2d197a26f229efd3d9693e0f7cd19bdf1ad2471e869f74cd27e"
+    },
+    {
+      "operation": "POST /milestones",
+      "identity": "2.5",
+      "number": 8,
+      "state": "open",
+      "title": "sdd-2.5-Range-documentation-and-distribution",
+      "body_sha256": "e7117a3981ebcd7853a00cedf8408f83ec3eee4aafdff0f4bc2f3137398a3622"
+    },
+    {
+      "operation": "GET readback",
+      "identity": "2.5",
+      "number": 8,
+      "state": "open",
+      "title": "sdd-2.5-Range-documentation-and-distribution",
+      "body_sha256": "e7117a3981ebcd7853a00cedf8408f83ec3eee4aafdff0f4bc2f3137398a3622"
+    },
+    {
+      "operation": "POST /milestones",
+      "identity": "2.6",
+      "number": 9,
+      "state": "open",
+      "title": "sdd-2.6-Range-feature-review",
+      "body_sha256": "d409b0e8f5b5a7c178141375c31925261f527c4a88d741d5d324049e1c74e03f"
+    },
+    {
+      "operation": "GET readback",
+      "identity": "2.6",
+      "number": 9,
+      "state": "open",
+      "title": "sdd-2.6-Range-feature-review",
+      "body_sha256": "d409b0e8f5b5a7c178141375c31925261f527c4a88d741d5d324049e1c74e03f"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-018",
+      "number": 19,
+      "state": "open",
+      "title": "[T-018] Implement pure normalized logical-line selection",
+      "body_sha256": "3033b0b270605ccacb0d06f1200cdfc5befecd52ec018f06c23a3a748836ad33"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-018",
+      "number": 19,
+      "state": "open",
+      "title": "[T-018] Implement pure normalized logical-line selection",
+      "body_sha256": "3033b0b270605ccacb0d06f1200cdfc5befecd52ec018f06c23a3a748836ad33"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-019",
+      "number": 20,
+      "state": "open",
+      "title": "[T-019] Integrate range validation and named-file text or JSON CLI",
+      "body_sha256": "910c1836b4399e654ed5c200a5b8196d24c5b8635bd9309f8958e6f03439c034"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-019",
+      "number": 20,
+      "state": "open",
+      "title": "[T-019] Integrate range validation and named-file text or JSON CLI",
+      "body_sha256": "910c1836b4399e654ed5c200a5b8196d24c5b8635bd9309f8958e6f03439c034"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-020",
+      "number": 21,
+      "state": "open",
+      "title": "[T-020] Review, test and report milestone 2.4",
+      "body_sha256": "098ea861b5571829909dda29eac9c5dbfd966f6c2e287017883a43611e2eda8e"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-020",
+      "number": 21,
+      "state": "open",
+      "title": "[T-020] Review, test and report milestone 2.4",
+      "body_sha256": "098ea861b5571829909dda29eac9c5dbfd966f6c2e287017883a43611e2eda8e"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-021",
+      "number": 22,
+      "state": "open",
+      "title": "[T-021] Complete public and runnable named-file range documentation",
+      "body_sha256": "131e9928ab6e2ca3b26c04da8131d95f536e6da586528195a527758525aea8ad"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-021",
+      "number": 22,
+      "state": "open",
+      "title": "[T-021] Complete public and runnable named-file range documentation",
+      "body_sha256": "131e9928ab6e2ca3b26c04da8131d95f536e6da586528195a527758525aea8ad"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-022",
+      "number": 23,
+      "state": "open",
+      "title": "[T-022] Verify range behavior from isolated extracted source",
+      "body_sha256": "897ededd5bdfa619d0e148f3e50ba5d60a2b03aeecfc520b420765c41ec52e56"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-022",
+      "number": 23,
+      "state": "open",
+      "title": "[T-022] Verify range behavior from isolated extracted source",
+      "body_sha256": "897ededd5bdfa619d0e148f3e50ba5d60a2b03aeecfc520b420765c41ec52e56"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-023",
+      "number": 24,
+      "state": "open",
+      "title": "[T-023] Review, test and report milestone 2.5",
+      "body_sha256": "9f604f18e6e131f1977f4166d0872acd82ba7ad48893dca2f063ecb35f77d9e0"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-023",
+      "number": 24,
+      "state": "open",
+      "title": "[T-023] Review, test and report milestone 2.5",
+      "body_sha256": "9f604f18e6e131f1977f4166d0872acd82ba7ad48893dca2f063ecb35f77d9e0"
+    },
+    {
+      "operation": "POST /issues",
+      "identity": "T-024",
+      "number": 25,
+      "state": "open",
+      "title": "[T-024] Review, test and report the Phase 2 range feature extent",
+      "body_sha256": "801e9434e5f52853d9188c4afc19c5147ddb8c5b2475cff2417d8ca8fbaa45b9"
+    },
+    {
+      "operation": "GET initial association readback",
+      "identity": "T-024",
+      "number": 25,
+      "state": "open",
+      "title": "[T-024] Review, test and report the Phase 2 range feature extent",
+      "body_sha256": "801e9434e5f52853d9188c4afc19c5147ddb8c5b2475cff2417d8ca8fbaa45b9"
+    },
+    {
+      "operation": "PATCH /issues/15",
+      "identity": "T-014",
+      "number": 15,
+      "state": "open",
+      "title": "[T-014] Integrate stdin across text and JSON CLI",
+      "body_sha256": "c88ad26753aaec3b725829d755be89f785bea84c75a02bca89fc0f6df02b2d25"
+    },
+    {
+      "operation": "GET maintained main issue readback",
+      "identity": "T-014",
+      "number": 15,
+      "state": "open",
+      "title": "[T-014] Integrate stdin across text and JSON CLI",
+      "body_sha256": "c88ad26753aaec3b725829d755be89f785bea84c75a02bca89fc0f6df02b2d25"
+    },
+    {
+      "operation": "PATCH /issues/16",
+      "identity": "T-015",
+      "number": 16,
+      "state": "open",
+      "title": "[T-015] Complete final documentation and source-package exits",
+      "body_sha256": "d2a39cf51c4acd549d6c6525cb48a51181434e5d149181251df21296761fa1e8"
+    },
+    {
+      "operation": "GET maintained main issue readback",
+      "identity": "T-015",
+      "number": 16,
+      "state": "open",
+      "title": "[T-015] Complete final documentation and source-package exits",
+      "body_sha256": "d2a39cf51c4acd549d6c6525cb48a51181434e5d149181251df21296761fa1e8"
+    },
+    {
+      "operation": "PATCH /issues/18",
+      "identity": "T-017",
+      "number": 18,
+      "state": "open",
+      "title": "[T-017] Review, test and report phase 2 and final delivery",
+      "body_sha256": "bb3013a32a732e20ec6155f21998e04c0957bc6360a3d1eb30cc39129c4098be"
+    },
+    {
+      "operation": "GET maintained main issue readback",
+      "identity": "T-017",
+      "number": 18,
+      "state": "open",
+      "title": "[T-017] Review, test and report phase 2 and final delivery",
+      "body_sha256": "bb3013a32a732e20ec6155f21998e04c0957bc6360a3d1eb30cc39129c4098be"
+    },
+    {
+      "utc": "2026-10-10T15:46:52.785934+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-018",
+      "number": null,
+      "id": 6099285118,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "31cbc81cfe722f29b42dab35a9e034a31929b44d1c793d19ac3ada4b8a4f3410"
+    },
+    {
+      "utc": "2026-10-10T15:47:06.336241+00:00",
+      "operation": "PATCH close",
+      "identity": "T-018",
+      "number": 19,
+      "id": 5792723571,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "3033b0b270605ccacb0d06f1200cdfc5befecd52ec018f06c23a3a748836ad33"
+    },
+    {
+      "utc": "2026-10-10T15:47:17.851354+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-018",
+      "number": 19,
+      "id": 5792723571,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "3033b0b270605ccacb0d06f1200cdfc5befecd52ec018f06c23a3a748836ad33"
+    },
+    {
+      "utc": "2026-10-10T15:53:46.278245+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-019",
+      "number": null,
+      "id": 6099358830,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "a99aa382d35448d8046e42b5e9bf747edb34aa91f68d8ddc561aba3c89b4f398"
+    },
+    {
+      "utc": "2026-10-10T15:54:00.625036+00:00",
+      "operation": "PATCH close",
+      "identity": "T-019",
+      "number": 20,
+      "id": 5792725594,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "910c1836b4399e654ed5c200a5b8196d24c5b8635bd9309f8958e6f03439c034"
+    },
+    {
+      "utc": "2026-10-10T15:54:11.815947+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-019",
+      "number": 20,
+      "id": 5792725594,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "910c1836b4399e654ed5c200a5b8196d24c5b8635bd9309f8958e6f03439c034"
+    },
+    {
+      "utc": "2026-10-10T16:07:32.447787+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-020",
+      "number": null,
+      "id": 6099494806,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "f4d2b88cf3e3ce244dc65df811cca6f20b5ff7f46ecfaf7eacf5eef1928378bc"
+    },
+    {
+      "utc": "2026-10-10T16:07:40.478919+00:00",
+      "operation": "PATCH close",
+      "identity": "T-020",
+      "number": 21,
+      "id": 5792727535,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "098ea861b5571829909dda29eac9c5dbfd966f6c2e287017883a43611e2eda8e"
+    },
+    {
+      "utc": "2026-10-10T16:07:46.784549+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-020",
+      "number": 21,
+      "id": 5792727535,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "098ea861b5571829909dda29eac9c5dbfd966f6c2e287017883a43611e2eda8e"
+    },
+    {
+      "utc": "2026-10-10T16:08:13.675158+00:00",
+      "operation": "milestone closure / exact readback",
+      "identity": "2.4",
+      "number": 7,
+      "state": "closed",
+      "associated_issues": [
+        21,
+        20,
+        19
+      ],
+      "report": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md",
+      "published_review_commit": "33f0ba2ed7ae187cce9643433f8f1f09282ef079"
+    },
+    {
+      "utc": "2026-10-10T16:13:52.276569+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-021",
+      "number": null,
+      "id": 6099559507,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "73578d93cba4a72e4aa244722df24b6bdd65a10ef40a60a0db179c928717f32f"
+    },
+    {
+      "utc": "2026-10-10T16:14:00.632525+00:00",
+      "operation": "PATCH close",
+      "identity": "T-021",
+      "number": 22,
+      "id": 5792729680,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "131e9928ab6e2ca3b26c04da8131d95f536e6da586528195a527758525aea8ad"
+    },
+    {
+      "utc": "2026-10-10T16:14:06.875025+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-021",
+      "number": 22,
+      "id": 5792729680,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "131e9928ab6e2ca3b26c04da8131d95f536e6da586528195a527758525aea8ad"
+    },
+    {
+      "utc": "2026-10-10T16:21:45.534516+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-022",
+      "number": null,
+      "id": 6099630989,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "5612a563600c16f2a63bbdd6008ed3097ac97f4b03c34102a6604dd0f60edf1c"
+    },
+    {
+      "utc": "2026-10-10T16:21:54.032942+00:00",
+      "operation": "PATCH close",
+      "identity": "T-022",
+      "number": 23,
+      "id": 5792731538,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "897ededd5bdfa619d0e148f3e50ba5d60a2b03aeecfc520b420765c41ec52e56"
+    },
+    {
+      "utc": "2026-10-10T16:22:00.786078+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-022",
+      "number": 23,
+      "id": 5792731538,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "897ededd5bdfa619d0e148f3e50ba5d60a2b03aeecfc520b420765c41ec52e56"
+    },
+    {
+      "utc": "2026-10-10T16:28:17.449026+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-023",
+      "number": null,
+      "id": 6099688453,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "867d0d30b9b898713dcf7eb20d60a49c147d5cf1cbda6ee6b505e68307067bee"
+    },
+    {
+      "utc": "2026-10-10T16:28:36.546204+00:00",
+      "operation": "PATCH close",
+      "identity": "T-023",
+      "number": 24,
+      "id": 5792733559,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "9f604f18e6e131f1977f4166d0872acd82ba7ad48893dca2f063ecb35f77d9e0"
+    },
+    {
+      "utc": "2026-10-10T16:28:53.816897+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-023",
+      "number": 24,
+      "id": 5792733559,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "9f604f18e6e131f1977f4166d0872acd82ba7ad48893dca2f063ecb35f77d9e0"
+    },
+    {
+      "utc": "2026-10-10T16:30:09.742241+00:00",
+      "operation": "milestone closure / exact readback",
+      "identity": "2.5",
+      "number": 8,
+      "state": "closed",
+      "associated_issues": [
+        24,
+        23,
+        22
+      ],
+      "report": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md",
+      "published_review_commit": "4eeee9e9505b29b4a616292434561aab569dac7f"
+    },
+    {
+      "utc": "2026-10-10T16:36:45.508714+00:00",
+      "operation": "POST completion evidence",
+      "identity": "T-024",
+      "number": null,
+      "id": 6099769808,
+      "state": null,
+      "state_reason": null,
+      "body_sha256": "68e884e309752ab1e9d71373908f12763fc787f4126e8b11e0d4a42a4131efeb"
+    },
+    {
+      "utc": "2026-10-10T16:36:53.479416+00:00",
+      "operation": "PATCH close",
+      "identity": "T-024",
+      "number": 25,
+      "id": 5792735417,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "801e9434e5f52853d9188c4afc19c5147ddb8c5b2475cff2417d8ca8fbaa45b9"
+    },
+    {
+      "utc": "2026-10-10T16:37:00.454904+00:00",
+      "operation": "GET closure/evidence readback",
+      "identity": "T-024",
+      "number": 25,
+      "id": 5792735417,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "801e9434e5f52853d9188c4afc19c5147ddb8c5b2475cff2417d8ca8fbaa45b9"
+    },
+    {
+      "utc": "2026-10-10T16:37:32.010855+00:00",
+      "operation": "milestone closure / exact readback",
+      "identity": "2.6",
+      "number": 9,
+      "state": "closed",
+      "associated_issues": [
+        25
+      ],
+      "report": "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md",
+      "published_review_commit": "bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa"
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:52:30.226368+00:00",
+      "task": "T-014",
+      "issue": 15,
+      "id": 5791786390,
+      "before_body_sha256": "c88ad26753aaec3b725829d755be89f785bea84c75a02bca89fc0f6df02b2d25",
+      "after_body_sha256": "bc8066780f8b20d501c2f842040443e2d5af4af0749605931c94b2bae30b4e2c",
+      "outside_generated_section_sha256": "446974db31b4eb8c5508796f1ab09c456a303c180a938bc13e9cfe37c5c8f521",
+      "before_section_sha256": "c39978363885df3b95153785458264e4cd436cfdf02fce8f440320eccbf2048b",
+      "after_section_sha256": "203afc5d7229d58f04247e2742ea487d39886e709608746bf5c486115f7998c5",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "comments": [],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:52:48.615143+00:00",
+      "task": "T-015",
+      "issue": 16,
+      "id": 5791786938,
+      "before_body_sha256": "d2a39cf51c4acd549d6c6525cb48a51181434e5d149181251df21296761fa1e8",
+      "after_body_sha256": "bcfb4a2de676fec6c7ab12498102e0c9e167af9cdf1f8c034ff172b0967c17b2",
+      "outside_generated_section_sha256": "50dabea507c2575bdb56a6d82b7ff249228d34699f6d302c993814df54d70632",
+      "before_section_sha256": "45bee7b4558d1f155defb88374b36320701c699be3a03a379b588a6bbddc4906",
+      "after_section_sha256": "79d432a1949513eaa47dd653de77739389b8c0a8f64c80963d7c6461b6fd1acf",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "comments": [],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:53:03.502578+00:00",
+      "task": "T-017",
+      "issue": 18,
+      "id": 5791788182,
+      "before_body_sha256": "bb3013a32a732e20ec6155f21998e04c0957bc6360a3d1eb30cc39129c4098be",
+      "after_body_sha256": "f25afe68d9db8d48394fa35fc7d8fdb4a6b7f1a6180c000ef3725e18f11ce410",
+      "outside_generated_section_sha256": "024cea8b3e81911f1bf66ed3859343d5750d3f395644d7f049e2286a5247824f",
+      "before_section_sha256": "f56aeb458d3e3d72c6f62c8b8f250853703d31551932cb8eb1ba0c11ea258fa2",
+      "after_section_sha256": "789208efdefaf1d7db0ef3c754f9b24dd92cdffd7483cb1cbf0fd51ab69303d5",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 6,
+      "comments": [],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:53:20.119295+00:00",
+      "task": "T-018",
+      "issue": 19,
+      "id": 5792723571,
+      "before_body_sha256": "3033b0b270605ccacb0d06f1200cdfc5befecd52ec018f06c23a3a748836ad33",
+      "after_body_sha256": "3c0a6c766e59f787df79bc4b19ab5b60655bf7d6401d646233efde6b3ab72da3",
+      "outside_generated_section_sha256": "9457f90b4fb7810433db7401c9c86df60ffa017edaf2bc0da1255619463d012a",
+      "before_section_sha256": "4586dd656c3d2638db1d547374e17210becf2994779156da02d39de4481f2697",
+      "after_section_sha256": "056efc780a2a189a984a0d2cf9f67d33ec520d88e2ad3576d44198552b1f7de5",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "comments": [
+        [
+          6099285118,
+          "31cbc81cfe722f29b42dab35a9e034a31929b44d1c793d19ac3ada4b8a4f3410"
+        ]
+      ],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:53:36.519623+00:00",
+      "task": "T-019",
+      "issue": 20,
+      "id": 5792725594,
+      "before_body_sha256": "910c1836b4399e654ed5c200a5b8196d24c5b8635bd9309f8958e6f03439c034",
+      "after_body_sha256": "95fc997591441a2ff404ce8d6449c993e2afa44d5d02ba4bc6151ea929b358b5",
+      "outside_generated_section_sha256": "3f895d8aa5aea1bc36bb2969250450b0f5839373d6778371cb0c19d62f2f0dfb",
+      "before_section_sha256": "dbeac30cf9a602477cde94036b93916d40926e686e2b4e89650760e23f36c093",
+      "after_section_sha256": "fbc54ab54d90ba13d5d56619c63bdda80f2b62cd32345af909001de97f1895bc",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "comments": [
+        [
+          6099358830,
+          "a99aa382d35448d8046e42b5e9bf747edb34aa91f68d8ddc561aba3c89b4f398"
+        ]
+      ],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:54:00.469823+00:00",
+      "task": "T-020",
+      "issue": 21,
+      "id": 5792727535,
+      "before_body_sha256": "098ea861b5571829909dda29eac9c5dbfd966f6c2e287017883a43611e2eda8e",
+      "after_body_sha256": "8cfd48d4cc329ca1275efcf80becf5b368fe6efe6b87cc9487d5406ee5232575",
+      "outside_generated_section_sha256": "fa770dc6a9535b44626f228f8a5e65bbfe466c779f67a16a189b4b51da9e79c9",
+      "before_section_sha256": "8356c720ed1d8baf56c57d30954cb79106b16498600d77a37fd7df81aaf61b61",
+      "after_section_sha256": "d8e9d6a389b99fa536c108c8f1fb6b2aa05301adddf8d028aa53033870d5d19f",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "comments": [
+        [
+          6099494806,
+          "f4d2b88cf3e3ce244dc65df811cca6f20b5ff7f46ecfaf7eacf5eef1928378bc"
+        ]
+      ],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:54:15.685046+00:00",
+      "task": "T-021",
+      "issue": 22,
+      "id": 5792729680,
+      "before_body_sha256": "131e9928ab6e2ca3b26c04da8131d95f536e6da586528195a527758525aea8ad",
+      "after_body_sha256": "f260cfacba44d5aed65929516e52ad6052104acc35df4e80564116a0b24d6a45",
+      "outside_generated_section_sha256": "2a0d77aa6f48ab06e19fe5f4e635bbacb891fb11d8abcea6afb03aa917240e88",
+      "before_section_sha256": "92da465bc851da394857e67de5405d23bf708cbd5b0eef5e619357d0a5f2e86a",
+      "after_section_sha256": "d58c819d82cae0f8192248f5e139570a654fc645a308f30a2e9a74bd66076049",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "comments": [
+        [
+          6099559507,
+          "73578d93cba4a72e4aa244722df24b6bdd65a10ef40a60a0db179c928717f32f"
+        ]
+      ],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:54:31.718589+00:00",
+      "task": "T-022",
+      "issue": 23,
+      "id": 5792731538,
+      "before_body_sha256": "897ededd5bdfa619d0e148f3e50ba5d60a2b03aeecfc520b420765c41ec52e56",
+      "after_body_sha256": "95ddd8fd23d1b6549468a4ec06e5e1e9c459d1edc19f044f48b792b91a7d5460",
+      "outside_generated_section_sha256": "3e3fc00af9436b001905c8ae9cef479257189c2ea34576ec6806da8b0ffac40c",
+      "before_section_sha256": "b071f3f9eb84a685e77b9bde10e940b1d44b30678d64373a685c30c7f3c612c6",
+      "after_section_sha256": "7dee5d61a3a25989675a47461eea829cd9c9f95df08112d5564db9652bb46faa",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "comments": [
+        [
+          6099630989,
+          "5612a563600c16f2a63bbdd6008ed3097ac97f4b03c34102a6604dd0f60edf1c"
+        ]
+      ],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:54:46.979697+00:00",
+      "task": "T-023",
+      "issue": 24,
+      "id": 5792733559,
+      "before_body_sha256": "9f604f18e6e131f1977f4166d0872acd82ba7ad48893dca2f063ecb35f77d9e0",
+      "after_body_sha256": "91ae6bb8b976c4cf7917faf4bdfaebf6146202c3c7c1b15168a19505e521b9dd",
+      "outside_generated_section_sha256": "4e524b3989d9177636efcefc604ad953341e229397efc5542b133e6f2c1d995d",
+      "before_section_sha256": "5e50776374e19bf2bf2618ab7b77c8691aa6f0190337949a5c61d17a9c214e41",
+      "after_section_sha256": "c1eb94447d94c750438347491112a3fc92863dbfb31ea0b39667c03530aad65f",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "comments": [
+        [
+          6099688453,
+          "867d0d30b9b898713dcf7eb20d60a49c147d5cf1cbda6ee6b505e68307067bee"
+        ]
+      ],
+      "exact_readback": true
+    },
+    {
+      "operation": "managed-source-link-reconciliation",
+      "utc": "2026-10-10T16:55:07.106423+00:00",
+      "task": "T-024",
+      "issue": 25,
+      "id": 5792735417,
+      "before_body_sha256": "801e9434e5f52853d9188c4afc19c5147ddb8c5b2475cff2417d8ca8fbaa45b9",
+      "after_body_sha256": "c56e2ea88e5fee5d1745b79c66c791725bd7541f35b863cd6d85a05d8216107a",
+      "outside_generated_section_sha256": "4745d2024a072979ec722ffa30b72034700c0c8f7d5fe3aff56d603ef52a5b72",
+      "before_section_sha256": "786d702b0f30c77d393f46249fae89b77303bd7b17bbc1bd69155029f8ae469f",
+      "after_section_sha256": "3b2be738872f681713dca5aa6fce048ee07630a3fc64bede3531306d8025a927",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 9,
+      "comments": [
+        [
+          6099769808,
+          "68e884e309752ab1e9d71373908f12763fc787f4126e8b11e0d4a42a4131efeb"
+        ]
+      ],
+      "exact_readback": true
+    }
+  ],
+  "foreign_comments_before": {
+    "1": [],
+    "2": [
+      {
+        "id": 6097383663,
+        "body_sha256": "f7b64d43b11867705802a3c512b2c640d9946655ea7aa1aabe9b297da5e28945"
+      },
+      {
+        "id": 6097586619,
+        "body_sha256": "17b1955f9aa3a6cd255bc9a91fb98fc6520745f3674e359313b2c7a35a346c28"
+      }
+    ]
+  },
+  "projection_verified": {
+    "phase_label": "sdd-phase-2-JSON-and-stdin",
+    "milestones": {
+      "2.4": 7,
+      "2.5": 8,
+      "2.6": 9
+    },
+    "tasks": {
+      "T-018": 19,
+      "T-019": 20,
+      "T-020": 21,
+      "T-021": 22,
+      "T-022": 23,
+      "T-023": 24,
+      "T-024": 25
+    }
+  },
+  "post_archive_tracking_verified": {
+    "pending_tasks": [
+      "T-013",
+      "T-014",
+      "T-015",
+      "T-016",
+      "T-017"
+    ],
+    "completed_tasks": [
+      "T-018",
+      "T-019",
+      "T-020",
+      "T-021",
+      "T-022",
+      "T-023",
+      "T-024"
+    ],
+    "open_milestones": [
+      5,
+      6
+    ],
+    "closed_added_milestones": [
+      7,
+      8,
+      9
+    ],
+    "unique_markers": true
+  },
+  "final_preservation": {
+    "existing_issue_id_state_reason_labels_association_preserved": true,
+    "existing_bodies_preserved_except_accepted_generated_pending_sections": [
+      15,
+      16,
+      18
+    ],
+    "foreign_comments_1_2_preserved": true,
+    "existing_milestone_descriptions_states_preserved": true,
+    "existing_label_descriptions_colors_preserved": true,
+    "full_paginated_inventory": {
+      "issues": 25,
+      "milestones": 9,
+      "labels": 13
+    }
+  },
+  "raw_original_provenance": {
+    "sha256": "9a67746135913c9f7549076919a74e76f60b0eab9d6f988cb81649447ec63f50",
+    "mode": "0600",
+    "source": "Initial complete readback; screened derivative stores metadata hashes only"
+  }
+}

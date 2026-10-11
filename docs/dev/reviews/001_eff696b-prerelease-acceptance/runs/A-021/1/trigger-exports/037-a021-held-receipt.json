@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "identity": "8d2346b6247692427c68f89b9bfba0e449ee5c88f622fa3b78745e8cec8fd510",
+  "status": "Held",
+  "completed": 2,
+  "start_snapshot": {
+    "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+    "merge_heads": [],
+    "files": {
+      "docs/dev/SPEC.md": {
+        "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+        "mode": 420
+      },
+      "docs/dev/PLAN.md": {
+        "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+        "mode": 420
+      },
+      "docs/dev/TASKS.md": {
+        "sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+        "mode": 420
+      },
+      "docs/dev/FEATURE-TASKS.md": {
+        "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+        "mode": 420
+      },
+      "docs/dev/SPEC-REVIEW-REPORT.md": {
+        "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+        "mode": 420
+      },
+      "docs/dev/PLAN-REVIEW-REPORT.md": {
+        "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+        "mode": 420
+      },
+      "docs/dev/TASKS-REVIEW-REPORT.md": {
+        "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+        "mode": 420
+      },
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+        "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+        "mode": 420
+      },
+      "AGENTS.md": {
+        "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+        "mode": 420
+      },
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+        "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+        "mode": 420
+      }
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('SPEC.md'); f=r('FEATURE-SPEC.md')\ns=s.replace('No implementation exists.','Phase 1 is delivered; ranges and stdin delivery remain incomplete.')\ns=s.replace(\"F-001 through F-004 retain the later separately requested range feature's contract as a deferred compatibility constraint. That feature is outside the initial executable hierarchy.\",\"F-001 through F-004 govern accepted named-file ranges in Phase 2 milestones 2.4\u20132.6. Incorporation specifies intended behavior without asserting delivery.\")\ns=s.replace('## Deferred range feature','## Named-file range contracts')\na=f.index('## F-001'); b=f.index('## Ownership and readiness')\ndelta=f[a:b].replace('## F-','### F-')\na=s.index('### F-001'); b=s.index('## Whole-input acceptance matrix')\ns=s[:a]+delta+'\\n'+s[b:]\ns=s.replace('deferred C-010','C-010')\nw('SPEC.md',s)\ns=r('PLAN.md'); f=r('FEATURE-PLAN.md')\ns=s.replace('The separately requested range feature stays outside these phases and their initial executable hierarchy; its design seams and deferred SPEC contracts remain intact.','Accepted named-file ranges extend Phase 2 with milestones 2.4/2.5 and extent review 2.6. Existing 2.1/2.2/2.3 identities remain; whole Phase 2 requires both main and feature exits.')\ns=s.replace('No range option or public API extension is included.','Public API stays whole-input. Retain source-independent range composition when delivering stdin; acquisition remains main-owned.')\ns=s.replace('without authorizing the deferred range feature.','within the separately authorized execution scope.')\ns=s.replace('The final review does not execute separately requested future features or publish a product release.','Full final review includes incorporated range exits and feature report provenance after 2.4/2.5/2.6, while retaining pending stdin obligations. No release is authorized.')\ns=s.replace('Deferred separate feature; preserve shared terminators, once-only normalization, normalized counting and source-independent acquisition seam during every design/code review. No initial task or hosted projection for this feature.','2.4 named-file text/JSON selection and validation; 2.5 documented extracted delivery; 2.6 feature-extent review. Main stdin/final work remains pending.')\na=f.index('| Parent / new milestone'); b=f.index('## Tracking and preparation boundary')\ndelta=f[a:b].replace('Detailed tests and concrete edit scopes belong to FEATURE-TASKS','Detailed tests and concrete edit scopes belong to canonical TASKS after selected transfer')\na=s.index('## Coverage, dependencies and verification strategy')\ns=s[:a]+'## Named-file range delivery extent\\n\\n'+delta+'\\n'+s[a:]\nw('PLAN.md',s)\n"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('TASKS.md'); f=r('FEATURE-TASKS.md')\nassert '        - [ ] T-018 \u2014' not in s\na=f.index('    - [ ] Milestone 2.4'); b=f.index('## Execution, ownership and integration rules')\ndelta=f[a:b].rstrip().replace('FEATURE-PLAN compatible baseline/projection prerequisites','PLAN compatible baseline/projection prerequisites')\na=s.index('## Completion and persistence rules')\ns=s[:a]+delta+'\\n\\n'+s[a:]\ns=s.replace('This complete initial two-phase hierarchy derives','This complete two-phase hierarchy including accepted ranges derives')\ns=s.replace('There is no pre-existing product task list or verified implementation; all checkboxes are unchecked. Monotonic project-wide IDs T-001 through T-017 are allocated here once and have exactly one executable owner.','Phase 1 completion and evidence are retained. Main Phase 2 stays pending; separate JSON checkpoint evidence remains on the paused branch. IDs T-001\u2013T-024 are stable. T-018\u2013T-024 are pending; paired source retirement is required before unique ownership is established.')\ns=s.replace('Deferred SPEC F-001 through F-004/C-010 have no implementation task or hosted issue in this hierarchy; preserve their design seams while implementing accepted whole-input capabilities.','SPEC F-001\u2013F-004/C-010 are covered by T-018\u2013T-024 in milestones 2.4/2.5/2.6; main stdin/final work remains pending.')\ns=s.replace('            Depends on: T-013.','            Depends on: T-013 and T-020 for retained range composition.')\ns=s.replace('            Depends on: T-014.','            Depends on: T-014 and T-023 for range documentation/distribution provenance.')\ns=s.replace('Range remains documented as future scope only, without runnable delivery claims.','Include delivered named-file range behavior and source-independent stdin composition; claim runnable capability only after actual delivery.')\ns=s.replace('            Depends on: T-012 and T-016, and completed/closed delivery milestones 2.1 and 2.2; excludes its own still-open review milestone.','            Depends on: T-012, T-016 and T-024, and completed/closed delivery milestones 2.1, 2.2, 2.4 and 2.5; excludes its own still-open review milestone 2.3.')\ns=s.replace('Do not execute range feature or publish a release.','Retain feature-report provenance without claiming whole-phase completion from feature extent. No release is authorized.')\nw('TASKS.md',s)\n"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "evidence_class": "controlled",
+  "agent_behavior_assessed": false,
+  "held_snapshot": {
+    "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+    "merge_heads": [],
+    "files": {
+      "docs/dev/SPEC.md": {
+        "sha256": "b648f1de929e549007657fa21645760bc8422d3d71b13a4213ca05e83e56e2bb",
+        "mode": 420
+      },
+      "docs/dev/PLAN.md": {
+        "sha256": "bb4541bf648c751dfc4bcd03361761278f859af55c570b12d4974cbacfbc23f4",
+        "mode": 420
+      },
+      "docs/dev/TASKS.md": {
+        "sha256": "1b8feb596c61157eb38e0a51ffb2dd2974408b80bf644925d9ee37d9624f800a",
+        "mode": 420
+      },
+      "docs/dev/FEATURE-TASKS.md": {
+        "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+        "mode": 420
+      },
+      "docs/dev/SPEC-REVIEW-REPORT.md": {
+        "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+        "mode": 420
+      },
+      "docs/dev/PLAN-REVIEW-REPORT.md": {
+        "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+        "mode": 420
+      },
+      "docs/dev/TASKS-REVIEW-REPORT.md": {
+        "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+        "mode": 420
+      },
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+        "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+        "mode": 420
+      },
+      "AGENTS.md": {
+        "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+        "mode": 420
+      },
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+        "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+        "mode": 420
+      }
+    }
+  }
+}

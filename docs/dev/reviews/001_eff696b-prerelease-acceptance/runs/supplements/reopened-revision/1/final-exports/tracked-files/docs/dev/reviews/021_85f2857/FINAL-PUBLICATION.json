@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "report_commit": "39d63589cb721326338b89e14ec56cf636aa5dda",
+  "destination": "refs/heads/revision/001_8e2d3a5-live-acceptance",
+  "publication": [
+    {
+      "chunk_id": "c3c396",
+      "wall_time_seconds": 1.001933603,
+      "session_id": 42286,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "chunk_id": "ee40b9",
+      "wall_time_seconds": 5.001183028,
+      "session_id": 42286,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "chunk_id": "4dd225",
+      "wall_time_seconds": 5.000870353,
+      "exit_code": 0,
+      "original_token_count": 45,
+      "output": "To https://github.com/pchemguy/Skill-Test-SDD-Manager-TextStats-20261004.git\n   eb95a6c..39d6358  39d63589cb721326338b89e14ec56cf636aa5dda -> revision/001_8e2d3a5-live-acceptance\n"
+    }
+  ],
+  "verification": [
+    {
+      "chunk_id": "053b2e",
+      "wall_time_seconds": 1.001270034,
+      "session_id": 99969,
+      "original_token_count": 0,
+      "output": ""
+    },
+    {
+      "chunk_id": "cd0acc",
+      "wall_time_seconds": 5.000693837,
+      "exit_code": 0,
+      "original_token_count": 59,
+      "output": "d3f206a1970504c2fc2aff3e8965e630eeab8c81\trefs/heads/main\n39d63589cb721326338b89e14ec56cf636aa5dda\trefs/heads/revision/001_8e2d3a5-live-acceptance\nSeven independent payloads verified byte-for-byte in published commit; manifest unchanged\n"
+    }
+  ],
+  "independent_manifest_payloads_byte_equal": true,
+  "review_boundary": "Result/report commit completed review; subsequent ordinary push owned by primary execution",
+  "authority": "Actual full campaign instructions and Resume completion; scoped policy and observed repo/ref; no credential value or policy override claim"
+}

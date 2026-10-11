@@ -1,0 +1,17 @@
+{
+  "evidence_kind": "local source, metadata and package checks; not live agent execution",
+  "candidate_parent": "9c724b08aac322e43d7d4332b53662f0604f810d",
+  "prospective_staged_tree": "83888bd3d2392f0356ec78888b19fcc75a18bf36",
+  "current_changed_paths": 18,
+  "relative_links_and_anchors_checked": 200,
+  "subject_cases": 7,
+  "source_walkthrough_scenarios": 13,
+  "independent_hypothetical_applications": 7,
+  "affected_skill_frontmatter_UI": 4,
+  "manifest_equality": "pass",
+  "closed_and_parent_campaign_path_preservation": "pass",
+  "whitespace_heading_checks": "pass",
+  "release_shaped_package_members": 197,
+  "packaged_changed_source_matches": "pass",
+  "runtime": "Python 3.12.14"
+}

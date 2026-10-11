@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_id": "A-021",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Partial transfer/archive follows a real observed move/edit, not a prebuilt completed owner map.",
+    "Fresh continuation retains feature identity/actual paths, consults both lists, establishes sole selected ownership/links, preserves still-needed sources and history; no duplicate archive.",
+    "Feature transfer preserves review task IDs, report provenance and issue identities; scoped feature parent completion cannot close a whole-project milestone with unfinished work in another owner."
+  ]
+}

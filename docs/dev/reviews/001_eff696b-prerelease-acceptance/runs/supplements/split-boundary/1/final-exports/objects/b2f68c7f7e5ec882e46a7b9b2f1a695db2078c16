@@ -1,0 +1,6 @@
+tree 4389d731f0c83f1a6b9e6d0d176f1051d9c8f220
+parent 639e7e0cb54d5dd1f9c1a6e73de31e76301ae932
+author Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655086 -0400
+committer Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655086 -0400
+
+[T-002] Deliver named-file API result before task status (caller fixture)

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "case_id": "A-018",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Rejected publication retains exact commit/merge, pending state and sanitized failure. No force push or next phase.",
+    "After authorized restoration fresh continuation reconciles/publishes existing boundary commit; no duplicate merge."
+  ]
+}

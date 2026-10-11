@@ -1,0 +1,12 @@
+{
+  "args": [
+    "python",
+    "-B",
+    "tools/check_tests.py"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+  "returncode": 1,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

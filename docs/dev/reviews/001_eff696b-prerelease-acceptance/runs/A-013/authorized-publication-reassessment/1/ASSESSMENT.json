@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "case_id": "A-013",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assisted": true,
+  "first_attempt_status": "Blocked",
+  "additive": true,
+  "scope": "Eventual authorized publication reassessment of original independently accepted reached A013 merge; first blocked attempt and prior rejection/failure records remain immutable. No restarted consumer implementation or current checkout restoration is certified.",
+  "checkpoint_refs": {
+    "product_branch": "main",
+    "product_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "integration_branch": "main",
+    "integration_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "remote": "origin",
+    "remote_ref": "refs/heads/main",
+    "remote_commit": "549a25f4f1bc7702afa0b729fc0894918ec9d16d",
+    "phase_commit": "c05b65958e2a386cf2ae8782dca3e749ed9b60ff",
+    "merge_parents": [
+      "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+      "c05b65958e2a386cf2ae8782dca3e749ed9b60ff"
+    ],
+    "tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef"
+  },
+  "observed_at": "2026-10-11T03:55:25.530094+00:00",
+  "original_assessment": {
+    "path": "runs/A-013/1/ASSESSMENT.json",
+    "status": "Blocked",
+    "sha256": "ef96dabb49056c5be080a33a03d19abf0f1fc0f323cc955b424374a02c5b1dc8",
+    "unchanged": true
+  },
+  "deterministic_checks": [
+    {
+      "id": "active-ownership",
+      "status": "Passed",
+      "basis": "Pinned core.ownership independently executed on own screened exact export."
+    },
+    {
+      "id": "final-head",
+      "status": "Passed",
+      "basis": "Exact reached object metadata and fresh live remote equality; this is not restored consumer checkout HEAD."
+    },
+    {
+      "id": "published",
+      "status": "Passed",
+      "basis": "Exact reached object metadata and fresh live remote equality; this is not restored consumer checkout HEAD."
+    },
+    {
+      "id": "merge-parents",
+      "status": "Passed",
+      "basis": "Exact reached object metadata and fresh live remote equality; this is not restored consumer checkout HEAD."
+    },
+    {
+      "id": "product-api",
+      "status": "Passed",
+      "basis": "Original actual captured literal reused after exact 191-file reached-tree hash/mode equality; no product test rerun."
+    },
+    {
+      "id": "product-baseline",
+      "status": "Passed",
+      "basis": "Original actual captured literal reused after exact 191-file reached-tree hash/mode equality; no product test rerun."
+    },
+    {
+      "id": "product-ranges",
+      "status": "Passed",
+      "basis": "Original actual captured literal reused after exact 191-file reached-tree hash/mode equality; no product test rerun."
+    },
+    {
+      "id": "product-removal",
+      "status": "Passed",
+      "basis": "Original actual captured literal reused after exact 191-file reached-tree hash/mode equality; no product test rerun."
+    },
+    {
+      "id": "product-stdin",
+      "status": "Passed",
+      "basis": "Original actual captured literal reused after exact 191-file reached-tree hash/mode equality; no product test rerun."
+    },
+    {
+      "id": "product-distribution",
+      "status": "Passed",
+      "basis": "Original actual captured literal reused after exact 191-file reached-tree hash/mode equality; no product test rerun."
+    }
+  ],
+  "assessment": [
+    "Exact retained accepted merge object has ordered original two parents and original tree190b; exact tree equals phasec05. Fresh independent live origin readback establishes requested main549a publication and retained phasec05. Published aa2a resumption proof bytes independently match local evidence; original rejection and blocked grades are not rewritten.",
+    "All191 current reached tracked file hashes/modes and exact index entries match original recovery manifest. All133 pinned source package files/modes match original route-preservation proof. Pinned core.ownership passes own exact screened export. Six original independent literal suite values equal original strict DSL expectations; source/docs/tests/build bytes unchanged, so no runtime recapture was required. The10 original deterministic declarations are now independently satisfied for this reached checkpoint.",
+    "Original lifecycle evidence remains applicable: amended requirements/QC selection, JSON retirement, scoped atomic T013–T017 closure and applicable runtime/docs/distribution exits precede native review closure and accepted two-parent integration. Exact final report pair was freshly read; separate final review and resolved findings/TODO provenance are preserved. Original native issue18/milestone6 PATCH and subsequent GET closed channels were inspected; no new provider GET is claimed.",
+    "Only the previously blocked publication boundary changes: root resumed after platform-recognized user reply to exact requested main/trial destinations, restored actual published source785/evidence404/productphasec05 facilities, recovered original549a commit bytes against published manifest SHA using hash-object, and successfully published exact main object. Fresh live equality confirms current publication without an invented replacement commit."
+  ],
+  "interventions": [
+    "Original initial RED, facility/logger/argv/fixture-cleanup/format failures and scoped coordinator repairs remain in original assistance/sealed channels; later serialized success does not recover lost original channels.",
+    "Assessor-only first verification assertion incorrectly counted parent-prefixed commit-message prose as metadata; changed to parse commit header only. No product or original evidence changed; subsequent exact two-parent verification passed."
+  ],
+  "limits": [
+    "No hard filesystem/tool isolation exists; broad shared filesystem access is available. Fresh rendered context and surviving scoped reads do not certify inaccessible siblings or universal original read chronology. Frozen038–041 prose/code was not read by this assessor.",
+    "Provider records are independently inspected consumer GET/PATCH channels, not independently reexecuted provider GETs. Separate root four-resource late GET hash guard establishes only its stated premerge/blocked-stop boundary, not startup full snapshots or postpublication.",
+    "Current Python3.12.14/Unix tested; broader declared runtimes/platforms unverified. Complete full-input acquisition may use input-sized memory under accepted contract.",
+    "Pinned helper whole reachable-history recovery was rejected as sensitive_content_not_exportable; original failure retained. Separate recovery is complete for191 current tracked files/index/blobs plus207 reached objects, not complete reachable history or arbitrary ignored/protected machine state.",
+    "Tool-render truncation and original logging gaps remain explicit; captured exact artifact bytes, fresh reruns and scopes establish the stated evidence. Initial wallclock timestamp is not external clock-synchronization proof.",
+    "Current shared consumer checkout remains older HEAD 795f3a3542c9981f8d43c8e182876f3efa5b5f16. This assessment binds retained reached objects and own readonly export; it does not certify current consumer checkout HEAD549 or clean retained worktree549. No consumer source/index/main mutation or push was performed by this assessor.",
+    "Source, evidence and runtime facilities were root-restored after workspace snapshot rollback; user authorization and successful push event are reported in independently byte-checked published root proof, while this assessor independently reexecuted only live readback. Whole historical machine/ignored state and lost first channels are not reconstructed.",
+    "Independent evaluator replays original10 declarations with own exact export/object/live facts; it is not a new helper assessment against current older consumer checkout, whose final-head would differ.",
+    "No hard filesystem/tool isolation exists; source pin equality and new whole-file/JSON screening establish bounded artifact facts, not inaccessible-sibling certification. Python3.12.14/Unix original runtime scope remains; broader platforms are unverified."
+  ],
+  "evidence": [
+    "INDEPENDENT-OBSERVATIONS.json",
+    "ORIGINAL-EVIDENCE-HASHES.json",
+    "LIFECYCLE-CONTINUITY.json"
+  ],
+  "screening": {
+    "pinned_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "whole_file_clean_bytes": true,
+    "generic_JSON_sniff_no_secret_regardless_extension": true,
+    "contract_guard_relaxed": false
+  }
+}

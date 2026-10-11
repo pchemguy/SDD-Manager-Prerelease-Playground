@@ -1,0 +1,42 @@
+{
+  "scope": "Local actual accepted merge observed while publication held after original auto-review rejection",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "show",
+        "-s",
+        "--format=%H%n%P%n%T%n%B",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "status": 0,
+      "stdout": "549a25f4f1bc7702afa0b729fc0894918ec9d16d\nfbe8bedf4c6cba1ab29d53d2da05e614603d76d1 c05b65958e2a386cf2ae8782dca3e749ed9b60ff\n190b6865846d66933bcdcd112e1fcfa7ca2f04ef\nIntegrate completed Phase 2 ranges and UTF-8 stdin\n\nObjective: Complete the amended TextStats phase so named UTF-8 files and borrowed\nbinary stdin deliver exact text line/word counts, inclusive logical-line ranges\nand both BOM policies, with clean usage/input failures and unchanged silent\nwhole-input API. Complete final documentation, source-distribution and review exits.\n\nReview: Separate milestone and cross-phase source/contract reviews assessed the\nvalue/API/acquisition/parser/normalization/selection/count/output path, ownership,\nerrors, nonempty discovery, isolation and public instructions. No remaining bug,\ncritical issue, contract violation or deferred code finding was located. The\nmilestone report was accepted at coordinator 9338f067a575511b6d818a6898a458957f4670a8;\nthe distinct Phase 2/final report pair was accepted with independent review at\n791d494ac22f376a75d7edc7bc09b97045041b82. Reports retain resolved findings and\noriginal evidence failures/limits. TODO: None.\n\nDelivered: T-013 through T-017 complete strict locale-independent EOF acquisition\nfrom stdin without closing it, once-only whole-input BOM normalization and shared\nrange/count semantics. Complete decoding still rejects bad bytes after END;\nusage validates before acquisition; ./- addresses a dash-named file. README/API\nexamples and the isolated checker now exercise real byte-fed stdin. Named-file\nranges and archived feature 002_e7cae5b outcomes integrated at\n795f3a3542c9981f8d43c8e182876f3efa5b5f16 are retained. Revision 003_795f3a3 JSON\nwithdrawal integrated at 77e7106e3134cc7053a2b1a045cf1a76cf0361ea is retained:\nremoved options are usage errors, literal option filenames remain usable and\nhistorical JSON identities/evidence stay preserved. This enclosing phase result\nincludes those prior campaign outcomes once; no release or version change occurs.\nCanonical TASKS has all 21 active owners complete among 24 stable identities;\nthree retired identities gain no executable checkbox or replay. Bounded actual\nclosing-commit audits verify each of the five resumed owners separately persisted\nits complete result/current evidence/initial checkbox under one leading task ID\nand was immediately pushed/exactly read back before subsequent owned work.\n\nMerged verification: On the actual prospective main tree, PYTHONDONTWRITEBYTECODE=1\npython -B tools/check_tests.py (through the immutable external trace wrapper)\npassed 37 unit/34 integration tests, no skips/warnings. Fresh standalone\npython -B tools/check_distribution.py passed 478 real isolated module cases plus\nexact extracted import and silent API/signature probes. All 1,628 fresh recorded\nPython children use explicit -B and bytecode suppression. Eleven archive members\nmatch current source bytes; current rebuilt ZIP SHA256 is\nd3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed.\nThe earlier fresh 12 README/API fence campaign is reused only for unchanged exact\ndocument/product bytes. Its ZIP hash 4fcf4a60d08f4a8c2a69a0b2d567de70c5a554e2249eb0f101f18c5340b7349c\nidentifies that earlier archive checkpoint; this merge checkout records new ZIP\ntimestamps while member content remains exact. All 20 current QC identities match.\nPython 3.12.14/current Unix is verified; broader declared runtimes/platforms are\nunverified. Original logging races, lost first channels, earlier argv gaps and\nfixture-cleanup discrepancy remain explicit limits, not reconstructed history.\n\nHosted chronology: Published T-016 preceded issue #17 evidence/closure and full\nmilestone #5 association/closure/readback. Accepted label maintenance changed only\nthe existing phase description with every other field preserved. Published T-017\npreceded issue #18 evidence/closure and full milestone #6 association/closure/readback.\nDelivery/review milestones #5/#6/#7/#8/#9 are closed with no open issues. Native fields,\nmanual controls and protected resources are preserved; late manual hash guards\nestablish only their stated boundary and do not invent original startup snapshots.\n\nIntegration: phase/2-json-and-stdin published source\nc05b65958e2a386cf2ae8782dca3e749ed9b60ff merges into refreshed established main\nparent fbe8bedf4c6cba1ab29d53d2da05e614603d76d1. Current resume baseline is\n77e7106e3134cc7053a2b1a045cf1a76cf0361ea. Nested JSON-removal campaign opening\n636b46d8daf1455c940c98f4d535c9936c0f1733 and original checkpoint\n795f3a3542c9981f8d43c8e182876f3efa5b5f16 remain in retained history.\nThis explicit two-parent merge has no conflict; prospective tree\n190b6865846d66933bcdcd112e1fcfa7ca2f04ef equals the exact accepted/published phase\ntree. The full 41-path target difference is coherent accepted range/archive,\nwithdrawal, stdin and final review work; protected/historical paths have an empty\ndiff from the accepted resume baseline. Immediate target push/exact readback\nfollows this commit. Retain the phase branch and stop after completed Phase 2\npublication; no next task/phase, version bump or release is authorized.\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/phase/2-json-and-stdin"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "status": 0,
+      "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1\trefs/heads/main\nc05b65958e2a386cf2ae8782dca3e749ed9b60ff\trefs/heads/phase/2-json-and-stdin\n",
+      "stderr": ""
+    }
+  ]
+}

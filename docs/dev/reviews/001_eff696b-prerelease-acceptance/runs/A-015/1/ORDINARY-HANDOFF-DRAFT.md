@@ -1,0 +1,11 @@
+# Continue current task
+
+Continue the currently authorized unfinished task from the retained product state, through its normal durable completion boundary. Stop before the next task.
+
+## Actual product current state and authorization
+
+Use only `/workspace/scratch/46b31bb4dff6/037-a015-staged`. It is clean on `trial/037-a015-staged` at `88a5c4b4424f4bba76940e40b1d6523b1f6fe191`, with accepted preparation integrated in that retained commit and all implementation tasks unchecked. No local `main` branch exists in this isolated checkout. The same branch and exact baseline are published to the separate local bare destination `trial-delivery`, `/workspace/scratch/46b31bb4dff6/037-a015-remote.git`. Preserve that branch and use only this delivery destination; `origin` identifies the shared repository and is read-only for this request. No shared branch creation, update, default-branch merge, live API operation or credential access is authorized.
+
+The current selected unfinished task is T-001 in milestone 1.1. Implement that task only using the accepted governing documents and pinned package `textstats-run-resources/plugin/` at source `ea515f5624c8a34cc4572731a2590223a5eb27f4`. This request supersedes historical preparation-only stops and the ordinary phase-branch naming for this isolated namespace. Keep all later tasks, milestone and phase incomplete. Hosted tracking is explicitly declined for this selected isolated scope; do not inspect or modify the shared backlog. Concrete test-artifact assessment is delegated to the coordinator. Applicable product AGENTS and pinned skills apply. Preserve coordinator resources and unrelated work.
+
+Caller control may hold a selected operation. Stop immediately at the first failed, unavailable or held operation and report the exact command, status, pending operation and retained files/index/ref state. Do not retry, bypass controls, use `--no-verify`, change hook/config/control files, or choose another task. Use `PYTHONDONTWRITEBYTECODE=1 python -B` for Python invocations; do not use `/pyenv`. Record actual commands/results and checks. This draft is not authorization to start before the coordinator dispatches it.

@@ -1,0 +1,106 @@
+{
+  "request": "037-a009-consumer-input.md",
+  "scope": "Selected main SPEC incorporation only; ordinary adjacent QC/navigation/persistence. Stop before implementation/integration.",
+  "instruction_order": [
+    "product AGENTS.md",
+    "pinned sdd-manage/SKILL.md",
+    "pinned relevant sdd-integrate-feature, sdd-orient, manager refs and sdd-specify/SPEC QC refs",
+    "current ordinary product/request and active feature materials"
+  ],
+  "prohibited_materials_read": false,
+  "baseline": {
+    "branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "worktree": "clean",
+    "main": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "paused_phase": "e63b8946bbb99347b0f73f070f9c728945ee5925"
+  },
+  "current": {
+    "branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "head": "d9a27477042f4d1e25850673079f2f768171724e",
+    "worktree_porcelain": "",
+    "tracking_ref": "d9a27477042f4d1e25850673079f2f768171724e",
+    "remote_exact_readback": "d9a27477042f4d1e25850673079f2f768171724e",
+    "main_remote_readback": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "paused_phase_remote_readback": "e63b8946bbb99347b0f73f070f9c728945ee5925"
+  },
+  "owned_commits": [
+    {
+      "sha": "d9a27477042f4d1e25850673079f2f768171724e",
+      "subject": "Incorporate named-file ranges into main SPEC",
+      "parent": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "push_verified": true,
+      "destination": "origin refs/heads/design-docs/002_e7cae5b-named-file-ranges",
+      "sequence": "Commit; immediate push failed missing HTTPS username; readback unchanged; credential-cache recovery failed socket permission; askpass recovery same ref push succeeded; exact readback equals commit before further project work."
+    }
+  ],
+  "qc": {
+    "checks": "PASS: allowed paths, local links/anchors, heading separation, tabs, unique R/F IDs, all accepted range table rows, unchanged active FEATURE sources, unchecked T-018\u2013T-024",
+    "sha256": {
+      "AGENTS.md": "40d6c049debcebe9d160d19a72424edb57ad7fc172948c4709713352770102c2",
+      "docs/dev/SPEC.md": "356ccd63f9b3141377c4d87c656a16af0944d281bd384de59f3c31ff3890236a",
+      "docs/dev/SPEC-REVIEW-REPORT.md": "20704429d0e0aa70904a59e8be9adc1ea7ca2fc68b9b09923aa8978fe3b9ef48",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "c9cdca92844174fe4dc952241fec28f55e6c4d7501a9ceeb9390f310eaeab6a9"
+    },
+    "blobs": {
+      "AGENTS.md": "b276b3a374741cbae0e1a1720cfd114baeef4f19",
+      "docs/dev/SPEC.md": "6c2be8ab711b93cecbf7b083d5d7d6d357eb5215",
+      "docs/dev/SPEC-REVIEW-REPORT.md": "42fd72c96bc7e86c1cf02afb814e11dcb4fbe2cd",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "375b0608517f953a043962509539c4e695673911"
+    }
+  },
+  "substantive_qc": "Full selected SPEC/design comparison with accepted main PROJECT/ARCHITECTURE/DECOMPOSITION and accepted FEATURE-SPEC. Preserved API/whole-input/staged stdin guarantees; incorporated all accepted range tables and unbounded validation/decode/BOM/output/docs/extraction obligations. No unresolved SPEC conformance finding.",
+  "commands": [
+    "cat product AGENTS.md then pinned sdd-manage/SKILL.md and relevant local refs",
+    "git --no-optional-locks status --short; git branch --show-current; git rev-parse HEAD; git remote -v",
+    "git ls-remote origin exact design-docs/main/phase refs",
+    "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a009_edit.py",
+    "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a009_qc.py",
+    "git diff --check",
+    "git add four selected paths; git commit -m Incorporate named-file ranges into main SPEC",
+    "git push origin HEAD:refs/heads/design-docs/002_e7cae5b-named-file-ranges",
+    "git check-ignore gh.tkn and git ls-files --error-unmatch gh.tkn in explicitly authorized protected playground root",
+    "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a009_publish.py",
+    "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a009_publish_askpass.py",
+    "git status --porcelain=v1; git show HEAD; git ls-remote origin selected refs"
+  ],
+  "failures_interventions": [
+    {
+      "operation": "initial immediate push",
+      "observed": "fatal: could not read Username for https://github.com: No such device or address",
+      "result": "retained commit; remote remained baseline; no further project work"
+    },
+    {
+      "operation": "transient credential-cache recovery",
+      "observed": "unable to connect to cache daemon: Operation not permitted; then missing username",
+      "result": "no remote mutation; switched to supported protected askpass process channel within same authorized destination"
+    },
+    {
+      "operation": "bounded askpass recovery",
+      "observed": "push exited 0; exact ref readback equals owned commit",
+      "result": "publication resolved; credential material never copied/persisted/exposed"
+    }
+  ],
+  "delegated_review": {
+    "presented_to": "root coordinator",
+    "spec_blob": "6c2be8ab711b93cecbf7b083d5d7d6d357eb5215",
+    "qc_blob": "42fd72c96bc7e86c1cf02afb814e11dcb4fbe2cd",
+    "commit": "d9a27477042f4d1e25850673079f2f768171724e",
+    "state": "pending concrete delegated decision; no dependent use"
+  },
+  "remaining_active_owners": "FEATURE-SPEC/PLAN/TASKS and adjacent QC unchanged and active; T-018\u2013T-024 unchecked; canonical TASKS unchanged.",
+  "outside_scope_impacts": "Main PLAN/TASKS and affected reports/dependencies require authorized owner reassessment before dependent use. Future docs/tests/distribution and stdin composition remain owning task work; maintained hosted tracking stays enabled with projection pending. No archive/task transfer/hosted mutation.",
+  "not_performed": [
+    "product implementation",
+    "product test or extraction checks",
+    "task selection/completion",
+    "TASKS or FEATURE-TASKS edits",
+    "PLAN edits",
+    "source archive",
+    "hosted issue/milestone writes",
+    "Git merge/integration",
+    "phase closure",
+    "release"
+  ],
+  "stopping_boundary": "selected SPEC incorporation persisted/pushed; concrete acceptance pending"
+}

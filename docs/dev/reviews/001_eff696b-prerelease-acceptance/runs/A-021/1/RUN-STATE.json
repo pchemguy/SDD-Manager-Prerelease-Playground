@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-021",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "Independent actual partial-transfer fresh recovery Passed with exact local delivery",
+  "pending_operation": null,
+  "next_action": "No further isolated trial work; continue positive campaign separately",
+  "checkpoint_refs": {
+    "product_branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "product_commit": "bf24fab09b2fad638d09ef892232912be1d6d338",
+    "integration_branch": "main",
+    "integration_commit": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "trial-delivery"
+  },
+  "evidence_paths": []
+}

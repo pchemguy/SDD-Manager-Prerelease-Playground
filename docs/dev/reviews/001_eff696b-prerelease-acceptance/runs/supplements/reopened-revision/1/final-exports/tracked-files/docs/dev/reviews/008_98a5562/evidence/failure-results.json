@@ -1,0 +1,11 @@
+{
+  "directory": "/tmp/sdd008-crvwnvv6",
+  "passed": [
+    "temporary-index commit excludes unrelated staging and owned-entry reconciliation preserves it",
+    "conflict and failed check preserve merge state/target; scoped resolution creates two-parent merge",
+    "non-fast-forward push rejection retains verified local merge and remote history",
+    "negating ignore rule detected; effective ignore does not untrack an already staged synthetic credential",
+    "current unittest discovery rejects zero tests; actual counts and status expose absent evidence"
+  ],
+  "limits": "Controlled Git/file/runner primitives and explicit caller decisions; no installed agent enforcement, credential authentication, product tests, hosted APIs or automatic recovery exercised."
+}

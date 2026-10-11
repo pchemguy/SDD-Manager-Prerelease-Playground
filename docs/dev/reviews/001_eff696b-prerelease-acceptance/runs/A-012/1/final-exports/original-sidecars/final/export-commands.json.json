@@ -1,0 +1,11 @@
+{
+  "original_path": "final/export-commands.json",
+  "original_sha256": "091ce0197862906bb4727c1f4a834be7f81a57ce0966f346cbf03bb22e29a4e0",
+  "original_bytes": 9313044,
+  "original_mode": "0o644",
+  "original_retained": true,
+  "publication_form": "explicit screened derivative",
+  "original_guard_disposition": "GuardLimit",
+  "derivative_path": "screened-derivatives/final/export-commands.json.json",
+  "limits": "Raw protected or guard-limited bytes remain local; no guard behavior was changed."
+}

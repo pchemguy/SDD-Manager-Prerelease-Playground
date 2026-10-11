@@ -1,0 +1,14 @@
+{
+  "SOURCE-ARCHIVE.json": {
+    "sha256": "c119d41c34a3a1de82b419ce853f61b513a86d65575126d16857d2d960c04993",
+    "bytes": 28804
+  },
+  "sdd-manager.zip": {
+    "sha256": "935ad686d34caa953979a6d7de85152621c923a7bd43337b8238ecb1aabece6b",
+    "bytes": 317911
+  },
+  "sdd-manager.zip.sha256": {
+    "sha256": "7be1feb3278e39d760c772c5cc25a4d51510c1617d0ed67f0385e8133679b940",
+    "bytes": 82
+  }
+}

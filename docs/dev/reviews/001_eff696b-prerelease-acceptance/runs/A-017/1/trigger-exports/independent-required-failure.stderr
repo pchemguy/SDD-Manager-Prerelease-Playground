@@ -1,0 +1,1238 @@
+test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok
+test_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok
+test_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok
+test_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok
+test_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok
+test_input_failures_identify_input_and_cause_without_output (tests.unit.test_cli.CliTests.test_input_failures_identify_input_and_cause_without_output) ... ok
+test_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok
+test_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok
+test_usage_failures_validate_before_acquisition (tests.unit.test_cli.CliTests.test_usage_failures_validate_before_acquisition) ... ok
+test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... 
+  test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text='\ufeff\ufeff\n') ... FAIL
+  test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text='\ufeff\n\ufeff') ... FAIL
+  test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text=' \ufeff') ... FAIL
+  test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text='\ufeff\r\n') ... FAIL
+test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... 
+  test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='\r\n\r\n') ... FAIL
+  test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='\n\r') ... FAIL
+  test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='a\r\nb\rc\nd') ... FAIL
+  test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='\r\nlast') ... FAIL
+test_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... FAIL
+test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... 
+  test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\x85') ... FAIL
+  test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\u2028') ... FAIL
+  test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\u2029') ... FAIL
+  test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\x0b') ... FAIL
+  test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\x0c') ... FAIL
+test_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... FAIL
+test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... 
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha beta', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha beta', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\n', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\n', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\r\nbeta\rgamma\n', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\r\nbeta\rgamma\n', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n\n', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n\n', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text=' \t', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text=' \t', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\u2028beta', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\u2028beta', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff\ufeff', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff\ufeff', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeffalpha beta', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeffalpha beta', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='a\ufeffb', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='a\ufeffb', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r\n', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r\n', strip_bom=False) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r', strip_bom=True) ... FAIL
+  test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r', strip_bom=False) ... FAIL
+test_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok
+test_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok
+test_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok
+test_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok
+test_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok
+test_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok
+test_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok
+test_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... FAIL
+
+======================================================================
+FAIL: test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text='\ufeff\ufeff\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 84, in test_normalization_removes_exactly_one_leading_bom
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text='\ufeff\n\ufeff')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 84, in test_normalization_removes_exactly_one_leading_bom
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (3, 1) != (2, 1)
+
+First differing element 0:
+3
+2
+
+- (3, 1)
+?  ^
+
++ (2, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text=' \ufeff')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 84, in test_normalization_removes_exactly_one_leading_bom
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) (text='\ufeff\r\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 84, in test_normalization_removes_exactly_one_leading_bom
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='\r\n\r\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 67, in test_only_crlf_cr_and_lf_terminate_lines
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (3, 0) != (2, 0)
+
+First differing element 0:
+3
+2
+
+- (3, 0)
+?  ^
+
++ (2, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='\n\r')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 67, in test_only_crlf_cr_and_lf_terminate_lines
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (3, 0) != (2, 0)
+
+First differing element 0:
+3
+2
+
+- (3, 0)
+?  ^
+
++ (2, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='a\r\nb\rc\nd')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 67, in test_only_crlf_cr_and_lf_terminate_lines
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (5, 4) != (4, 4)
+
+First differing element 0:
+5
+4
+
+- (5, 4)
+?  ^
+
++ (4, 4)
+?  ^
+
+
+======================================================================
+FAIL: test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) (text='\r\nlast')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 67, in test_only_crlf_cr_and_lf_terminate_lines
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (3, 1) != (2, 1)
+
+First differing element 0:
+3
+2
+
+- (3, 1)
+?  ^
+
++ (2, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 88, in test_repeated_calls_have_no_shared_state
+    self.assertEqual(count_text(""), TextStats(0, 0))
+AssertionError: TextStats(lines=1, words=0) != TextStats(lines=0, words=0)
+
+======================================================================
+FAIL: test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\x85')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 72, in test_unicode_separators_are_whitespace_without_new_lines
+    self.assertEqual(count_text("a" + separator + "b"), TextStats(1, 2))
+AssertionError: TextStats(lines=2, words=2) != TextStats(lines=1, words=2)
+
+======================================================================
+FAIL: test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\u2028')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 72, in test_unicode_separators_are_whitespace_without_new_lines
+    self.assertEqual(count_text("a" + separator + "b"), TextStats(1, 2))
+AssertionError: TextStats(lines=2, words=2) != TextStats(lines=1, words=2)
+
+======================================================================
+FAIL: test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\u2029')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 72, in test_unicode_separators_are_whitespace_without_new_lines
+    self.assertEqual(count_text("a" + separator + "b"), TextStats(1, 2))
+AssertionError: TextStats(lines=2, words=2) != TextStats(lines=1, words=2)
+
+======================================================================
+FAIL: test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\x0b')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 72, in test_unicode_separators_are_whitespace_without_new_lines
+    self.assertEqual(count_text("a" + separator + "b"), TextStats(1, 2))
+AssertionError: TextStats(lines=2, words=2) != TextStats(lines=1, words=2)
+
+======================================================================
+FAIL: test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\x0c')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 72, in test_unicode_separators_are_whitespace_without_new_lines
+    self.assertEqual(count_text("a" + separator + "b"), TextStats(1, 2))
+AssertionError: TextStats(lines=2, words=2) != TextStats(lines=1, words=2)
+
+======================================================================
+FAIL: test_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 76, in test_unicode_whitespace_and_non_ascii_words
+    self.assertEqual(count_text("  café\u00a0猫\u2003κόσμος\t\n"), TextStats(1, 3))
+AssertionError: TextStats(lines=2, words=3) != TextStats(lines=1, words=3)
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (1, 0) != (0, 0)
+
+First differing element 0:
+1
+0
+
+- (1, 0)
+?  ^
+
++ (0, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (1, 0) != (0, 0)
+
+First differing element 0:
+1
+0
+
+- (1, 0)
+?  ^
+
++ (0, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha beta', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 2) != (1, 2)
+
+First differing element 0:
+2
+1
+
+- (2, 2)
+?  ^
+
++ (1, 2)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha beta', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 2) != (1, 2)
+
+First differing element 0:
+2
+1
+
+- (2, 2)
+?  ^
+
++ (1, 2)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\n', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\n', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\r\nbeta\rgamma\n', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (4, 3) != (3, 3)
+
+First differing element 0:
+4
+3
+
+- (4, 3)
+?  ^
+
++ (3, 3)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\r\nbeta\rgamma\n', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (4, 3) != (3, 3)
+
+First differing element 0:
+4
+3
+
+- (4, 3)
+?  ^
+
++ (3, 3)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n\n', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (3, 1) != (2, 1)
+
+First differing element 0:
+3
+2
+
+- (3, 1)
+?  ^
+
++ (2, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\n\n', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (3, 1) != (2, 1)
+
+First differing element 0:
+3
+2
+
+- (3, 1)
+?  ^
+
++ (2, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text=' \t', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text=' \t', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\u2028beta', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 2) != (1, 2)
+
+First differing element 0:
+2
+1
+
+- (2, 2)
+?  ^
+
++ (1, 2)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='alpha\u2028beta', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 2) != (1, 2)
+
+First differing element 0:
+2
+1
+
+- (2, 2)
+?  ^
+
++ (1, 2)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (1, 0) != (0, 0)
+
+First differing element 0:
+1
+0
+
+- (1, 0)
+?  ^
+
++ (0, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff\ufeff', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeff\ufeff', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeffalpha beta', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 2) != (1, 2)
+
+First differing element 0:
+2
+1
+
+- (2, 2)
+?  ^
+
++ (1, 2)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\ufeffalpha beta', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 2) != (1, 2)
+
+First differing element 0:
+2
+1
+
+- (2, 2)
+?  ^
+
++ (1, 2)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='a\ufeffb', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='a\ufeffb', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 1) != (1, 1)
+
+First differing element 0:
+2
+1
+
+- (2, 1)
+?  ^
+
++ (1, 1)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r\n', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r\n', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r', strip_bom=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) (text='\r', strip_bom=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_core.py", line 59, in test_whole_input_spec_matrix_under_both_policies
+    self.assertEqual((result.lines, result.words), expected)
+AssertionError: Tuples differ: (2, 0) != (1, 0)
+
+First differing element 0:
+2
+1
+
+- (2, 0)
+?  ^
+
++ (1, 0)
+?  ^
+
+
+======================================================================
+FAIL: test_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/unit/test_io.py", line 14, in test_success_closes_owned_binary_handle_and_preserves_terminators
+    self.assertEqual(count_file("named"), TextStats(3, 3))
+AssertionError: TextStats(lines=4, words=3) != TextStats(lines=3, words=3)
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.214s
+
+FAILED (failures=44)
+test_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok
+test_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok
+test_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok
+test_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok
+test_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok
+test_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok
+test_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... FAIL
+test_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... FAIL
+test_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... FAIL
+test_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok
+test_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok
+test_missing_and_invalid_utf8_inputs (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_inputs) ... ok
+test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... 
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt']) ... FAIL
+  test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom']) ... FAIL
+test_unknown_option_is_usage_failure (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_failure) ... ok
+
+======================================================================
+FAIL: test_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_api.py", line 38, in test_public_default_and_retaining_policy
+    self.assertEqual(count_text("\ufeff"), TextStats(0, 0))
+AssertionError: TextStats(lines=1, words=0) != TextStats(lines=0, words=0)
+
+======================================================================
+FAIL: test_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_api.py", line 29, in test_signatures_and_keyword_only_policy
+    self.assertEqual(list(signature.parameters), ["text", "strip_bom"])
+AssertionError: Lists differ: ['args', 'kwargs'] != ['text', 'strip_bom']
+
+First differing element 0:
+'args'
+'text'
+
+- ['args', 'kwargs']
++ ['text', 'strip_bom']
+
+======================================================================
+FAIL: test_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 70, in test_dash_filenames_and_double_dash_termination
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, 'lines=1 words=2\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=2\n', '') != (0, 'lines=1 words=2\n', '')
+
+First differing element 1:
+'lines=2 words=2\n'
+'lines=1 words=2\n'
+
+- (0, 'lines=2 words=2\n', '')
+?            ^
+
++ (0, 'lines=1 words=2\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=1 words=0\n', '') != (0, 'lines=0 words=0\n', '')
+
+First differing element 1:
+'lines=1 words=0\n'
+'lines=0 words=0\n'
+
+- (0, 'lines=1 words=0\n', '')
+?            ^
+
++ (0, 'lines=0 words=0\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=1 words=0\n', '') != (0, 'lines=0 words=0\n', '')
+
+First differing element 1:
+'lines=1 words=0\n'
+'lines=0 words=0\n'
+
+- (0, 'lines=1 words=0\n', '')
+?            ^
+
++ (0, 'lines=0 words=0\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=1 words=0\n', '') != (0, 'lines=0 words=0\n', '')
+
+First differing element 1:
+'lines=1 words=0\n'
+'lines=0 words=0\n'
+
+- (0, 'lines=1 words=0\n', '')
+?            ^
+
++ (0, 'lines=0 words=0\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=4 words=4\n', '') != (0, 'lines=3 words=4\n', '')
+
+First differing element 1:
+'lines=4 words=4\n'
+'lines=3 words=4\n'
+
+- (0, 'lines=4 words=4\n', '')
+?            ^
+
++ (0, 'lines=3 words=4\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=4 words=4\n', '') != (0, 'lines=3 words=4\n', '')
+
+First differing element 1:
+'lines=4 words=4\n'
+'lines=3 words=4\n'
+
+- (0, 'lines=4 words=4\n', '')
+?            ^
+
++ (0, 'lines=3 words=4\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=4 words=4\n', '') != (0, 'lines=3 words=4\n', '')
+
+First differing element 1:
+'lines=4 words=4\n'
+'lines=3 words=4\n'
+
+- (0, 'lines=4 words=4\n', '')
+?            ^
+
++ (0, 'lines=3 words=4\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=1 words=0\n', '') != (0, 'lines=0 words=0\n', '')
+
+First differing element 1:
+'lines=1 words=0\n'
+'lines=0 words=0\n'
+
+- (0, 'lines=1 words=0\n', '')
+?            ^
+
++ (0, 'lines=0 words=0\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=1\n', '') != (0, 'lines=1 words=1\n', '')
+
+First differing element 1:
+'lines=2 words=1\n'
+'lines=1 words=1\n'
+
+- (0, 'lines=2 words=1\n', '')
+?            ^
+
++ (0, 'lines=1 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=1\n', '') != (0, 'lines=1 words=1\n', '')
+
+First differing element 1:
+'lines=2 words=1\n'
+'lines=1 words=1\n'
+
+- (0, 'lines=2 words=1\n', '')
+?            ^
+
++ (0, 'lines=1 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=1\n', '') != (0, 'lines=1 words=1\n', '')
+
+First differing element 1:
+'lines=2 words=1\n'
+'lines=1 words=1\n'
+
+- (0, 'lines=2 words=1\n', '')
+?            ^
+
++ (0, 'lines=1 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=1\n', '') != (0, 'lines=1 words=1\n', '')
+
+First differing element 1:
+'lines=2 words=1\n'
+'lines=1 words=1\n'
+
+- (0, 'lines=2 words=1\n', '')
+?            ^
+
++ (0, 'lines=1 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='\ufeff\ufeff', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=1\n', '') != (0, 'lines=1 words=1\n', '')
+
+First differing element 1:
+'lines=2 words=1\n'
+'lines=1 words=1\n'
+
+- (0, 'lines=2 words=1\n', '')
+?            ^
+
++ (0, 'lines=1 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=2\n', '') != (0, 'lines=1 words=2\n', '')
+
+First differing element 1:
+'lines=2 words=2\n'
+'lines=1 words=2\n'
+
+- (0, 'lines=2 words=2\n', '')
+?            ^
+
++ (0, 'lines=1 words=2\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=2\n', '') != (0, 'lines=1 words=2\n', '')
+
+First differing element 1:
+'lines=2 words=2\n'
+'lines=1 words=2\n'
+
+- (0, 'lines=2 words=2\n', '')
+?            ^
+
++ (0, 'lines=1 words=2\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='alpha\u2028beta', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=2 words=2\n', '') != (0, 'lines=1 words=2\n', '')
+
+First differing element 1:
+'lines=2 words=2\n'
+'lines=1 words=2\n'
+
+- (0, 'lines=2 words=2\n', '')
+?            ^
+
++ (0, 'lines=1 words=2\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=3 words=1\n', '') != (0, 'lines=2 words=1\n', '')
+
+First differing element 1:
+'lines=3 words=1\n'
+'lines=2 words=1\n'
+
+- (0, 'lines=3 words=1\n', '')
+?            ^
+
++ (0, 'lines=2 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['--keep-bom', '/tmp/tmpoxhl3p9d/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=3 words=1\n', '') != (0, 'lines=2 words=1\n', '')
+
+First differing element 1:
+'lines=3 words=1\n'
+'lines=2 words=1\n'
+
+- (0, 'lines=3 words=1\n', '')
+?            ^
+
++ (0, 'lines=2 words=1\n', '')
+?            ^
+
+
+======================================================================
+FAIL: test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) (text='a\n\n', args=['/tmp/tmpoxhl3p9d/sample.txt', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a017-failed-check/tests/integration/test_cli.py", line 51, in test_named_file_matrix_and_bom_option_order
+    self.assertEqual((result.returncode, result.stdout, result.stderr), (0, f'lines={expected[0]} words={expected[1]}\n', ''))
+AssertionError: Tuples differ: (0, 'lines=3 words=1\n', '') != (0, 'lines=2 words=1\n', '')
+
+First differing element 1:
+'lines=3 words=1\n'
+'lines=2 words=1\n'
+
+- (0, 'lines=3 words=1\n', '')
+?            ^
+
++ (0, 'lines=2 words=1\n', '')
+?            ^
+
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.083s
+
+FAILED (failures=21)

@@ -1,0 +1,149 @@
+{
+  "captured_utc": "2026-10-10T19:02:55.916613+00:00",
+  "sources": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a027-consumer-setup/ordinary-input.md",
+      "snapshot": "initial-source-00-ordinary-input.md",
+      "sha256": "9c30a42e371064a5c858b2fc2e160a1c4ea8ba763d1e08de4690aea6a9e36c62",
+      "bytes": 1538
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/AGENTS.md",
+      "snapshot": "initial-source-01-AGENTS.md",
+      "sha256": "a20f9982bfcc82bc6220d7d3f5246a4d0849a03a71b2c0e22e172348ec258af3",
+      "bytes": 10846
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "snapshot": "initial-source-02-SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "bytes": 10142
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "snapshot": "initial-source-03-SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "bytes": 3910
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md",
+      "snapshot": "initial-source-04-completion-reports.md",
+      "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "bytes": 6388
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/TASKS.md",
+      "snapshot": "initial-source-05-TASKS.md",
+      "sha256": "bae83dd77578f0eee03fecfc7df2ff17fc19df25ba5949ea43056816853b985c",
+      "bytes": 74528
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PROJECT.md",
+      "snapshot": "initial-source-06-PROJECT.md",
+      "sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+      "bytes": 5876
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/SPEC.md",
+      "snapshot": "initial-source-07-SPEC.md",
+      "sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+      "bytes": 15353
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/docs/dev/PLAN.md",
+      "snapshot": "initial-source-08-PLAN.md",
+      "sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+      "bytes": 16371
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/DIAGNOSTIC-REPORT.md",
+      "snapshot": "initial-source-09-DIAGNOSTIC-REPORT.md",
+      "sha256": "1ecc0e6cdc5b411b95a9ae5179940c937f4b08f0c1c83d0ae54939e7aa37e486",
+      "bytes": 43662
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/VARIANT-RESULTS.json",
+      "snapshot": "initial-source-10-VARIANT-RESULTS.json",
+      "sha256": "c34075349406499249de10d9aa85f76be19eb6b3fe259df6d168c08ddcc50cfe",
+      "bytes": 12484
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/VARIANT-RESULTS.corrected-rechecks.json",
+      "snapshot": "initial-source-11-VARIANT-RESULTS.corrected-rechecks.json",
+      "sha256": "0bfc43f10837683b0b72181049d913fd50479d9f9acc61eefc1f40de539b5538",
+      "bytes": 12610
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain=v1"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "stdout": "phase/2-json-and-stdin\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "stdout": "ca24007134141265a1937c77e2fda504bb0d6129\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "log",
+        "-8",
+        "--format=%H %s"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "stdout": "ca24007134141265a1937c77e2fda504bb0d6129 [T-015] Complete stdin documentation and isolated source exits\ndbf50d7b6d83c7ddf53f287d82b199db3e83fd89 [T-014] Integrate binary stdin with text and range counting\n2d96774221165ac04096c8d57ddcefe85b2305e0 [T-013] Add borrowed binary UTF-8 acquisition\n77e7106e3134cc7053a2b1a045cf1a76cf0361ea Integrate accepted JSON withdrawal into paused Phase 2\n160c0a980286c68f62d0d13b3238dad0748885e9 Conclude verified JSON withdrawal and managed tracking reconciliation\n1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f Withdraw JSON output while retaining text and named-file ranges\n636b46d8daf1455c940c98f4d535c9936c0f1733 Prepare scoped JSON withdrawal at paused Phase 2 checkpoint\n795f3a3542c9981f8d43c8e182876f3efa5b5f16 Integrate completed named-file ranges into paused Phase 2\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref",
+        "--verify",
+        "refs/heads/main"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 refs/heads/main\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "show-ref",
+        "--verify",
+        "refs/remotes/origin/main"
+      ],
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "exit_code": 0,
+      "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 refs/remotes/origin/main\n",
+      "stderr": ""
+    }
+  ],
+  "limits": "Initial cat/rg reads preceded these snapshots; snapshots are actual subsequent reads, not reconstructed first command output. Read-only git; no remote provider request or product check executed."
+}

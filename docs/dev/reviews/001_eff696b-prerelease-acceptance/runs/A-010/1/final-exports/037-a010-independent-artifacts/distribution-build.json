@@ -1,0 +1,80 @@
+{
+  "method": "actual product builder build_archive(root, assessor output ZIP); zipfile extraction into assessor artifact dir",
+  "archive_sha256": "2522c3bd83ab0d6a696e3aea06a995c01cb701c8e0e90cb35df14335f2b75150",
+  "members": [
+    {
+      "member": "textstats-source/README.md",
+      "sha256": "2e5bc84b6bdd7f9e984924e0847776f976069701741428819ffebcee625244f3",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/docs/public-api.md",
+      "sha256": "0906a4966e3bb3a3a80b613210f68ea681c0f0fb9317a2ecc252472d90fa00c8",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/textstats/__init__.py",
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/textstats/__main__.py",
+      "sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/textstats/core.py",
+      "sha256": "ac0f15b618a57c3230f7a78baaad48c2d6af6be96668928f5979acde49de5cee",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/textstats/io.py",
+      "sha256": "9b428eebeba81169ca54e53b1449430f4e247b0285d54c50735a3da3864764f0",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/textstats/cli.py",
+      "sha256": "157fb57e45d3c1c6490adf063221a3b4ffa827f411a6ea7055fdaf8b8630bcef",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/tools/package_source.py",
+      "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91",
+      "matches_current": true
+    },
+    {
+      "member": "textstats-source/tools/check_distribution.py",
+      "sha256": "bf75ab9be6440da96af6c17308a4c671acc64c9e94713f4e623dcb27bfa21767",
+      "matches_current": true
+    }
+  ],
+  "capture_command": [
+    "python",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+    "--product-root",
+    "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/extracted/textstats-source",
+    "--suite",
+    "distribution",
+    "--output",
+    "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/distribution.json",
+    "--provenance",
+    "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/distribution-commands.json"
+  ],
+  "capture_returncode": 0,
+  "capture_stdout": "",
+  "capture_stderr": "",
+  "independent_extracted_probes_returncode": 0,
+  "independent_extracted_probes_stdout": "{\"total\": 107, \"passed\": 107, \"output\": \"/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/extracted-custom-literals.json\"}\n",
+  "independent_extracted_probes_stderr": ""
+}

@@ -1,0 +1,276 @@
+{
+  "original_sha256": "344129d88ee9a9827af7330dd9aa082c4979ab22f277457f0094a47c5e628ec7",
+  "original_path": "final/consumer/037-a012-consumer-observations.json",
+  "derivative_warning": "This is a screened derivative; compare its provenance, never treat its edited bytes as the original artifact. Original retained locally unchanged.",
+  "original_guard_disposition": "invalid_nonsecret_configuration",
+  "content": {
+    "status": "COMPLETE: accepted JSON withdrawal integrated into actual paused Phase2, immediately published/exactly read back; STOP. No stdin/main/fullphase/release execution.",
+    "baseline": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "working_branch": "revision/003_795f3a3-remove-json",
+    "target": "phase/2-json-and-stdin",
+    "main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "scope": "Remove JSON only; retain exact text/count/BOM/ranges/API and resource/error contracts; no stdin execution/default merge/full Phase2 completion/release.",
+    "pin": {
+      "commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+      "manifest_files_checked": 133,
+      "mismatches": []
+    },
+    "assessment": {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a011-fresh-consumer-observations.json",
+      "sha256": "3298d9711575169a314ba7e85532feedae117e67485ddcf4ab37269823dc021f",
+      "read_only": true
+    },
+    "preparation": {
+      "manifest": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.preparation-identities.json",
+      "first_candidate_preserved": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.first-preparation",
+      "first_review": "Acceptance withheld: stale Current gate hashes/unchanged claims, PLAN alternate output, SPEC vague agreement; corrected without production consumption.",
+      "corrected_checks": [
+        "20 current source/QC identities match",
+        "16 checked active/5 pending/3 retired stable IDs",
+        "local links/task indentation/diff whitespace"
+      ],
+      "accepted": true,
+      "acceptance_commit": "3b7e7abef970ca6132aa4fe34f075d550f0ab0ba",
+      "product_commit": "636b46d8daf1455c940c98f4d535c9936c0f1733",
+      "remote_exact_readback": "636b46d8daf1455c940c98f4d535c9936c0f1733"
+    },
+    "commands": {
+      "separate_stream_raw_log": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.commands.jsonl",
+      "initial_limits": "First orientation tool calls predated structured runner; initial tool captures merge stdout/stderr and some truncate. Those are not represented as complete separate-stream evidence. Initial broad rg listed paths under enclosing scratch, without loading assessor/sibling content; subsequent work stayed selected product/pinned package/authorized input/credential scope.",
+      "original_failures": [
+        "Initial ls confirmed observations prefix absent, exit2",
+        "Attempted pinned amendment-workflow.md does not exist; correct amendment-execution.md subsequently read",
+        "First pin verification wrong package_file_hashes key raised KeyError; actual package_hashes verified133 files",
+        "One shell quoting error exited2 before current-gate command; external literal script corrected",
+        "Initial two focused RED tests: two assertion failures and three mock-serialization errors; realistic doubles corrected without production change; rerun same two tests yielded five intended behavioral failures/no errors.",
+        "Root rejected original19 hosted plan before mutation: DOTALL title suffix capture/empty body content; exact original plan preserved, bounded corrected plan accepted.",
+        "Issue15 successful PATCH followed by proxy tunnel403 transport failure on GET; all writes stopped, original traceback/exit1 retained; authorized same-endpoint GET-only recovery independently verified exact payload before remaining14 writes, no PATCH replay.",
+        "Continuation auxiliary rg docs/dev/*QC* used nonexistent glob, exit2; actual adjacent *-REVIEW-REPORT.md paths then read. No product change resulted."
+      ],
+      "capture_limits": "Primary implementation/verification/publication/hosted commands are captured with actual argv/cwd/exit and separate stdout/stderr in commands.jsonl. First orientation and later auxiliary shell reads/script creation used direct tools, whose returned channels are merged; their tool records/script provenance are retained but are not falsely characterized as complete separate-channel captures. Original known limitations above remain."
+    },
+    "hosted": {
+      "scope": "All19 accepted bounded operations/read-before-write/exact GET readbacks complete. Foreign issue2/body/labels/comments and milestone1 exact original preservation verified. History states/reasons/associations and five pending open tasks preserved.",
+      "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+      "raw_original_ops_readbacks": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted.jsonl",
+      "original_objects": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-before.json",
+      "issue2_comments": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.issue2-comments-before.json",
+      "descriptive_credential": "Ignored/untracked protected API store checked before transient in-memory use; no value emitted or written to artifacts.",
+      "plan": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-plan.corrected.json",
+      "original_plan_failure": "Root review withheld: DOTALL title regex captured remaining task suffix and left empty task brief content. No provider write; original plan bytes preserved; corrected single-line/bounded extraction re-presented.",
+      "first_plan_preserved": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.first-hosted-plan.json",
+      "corrected_plan_sha256": "ad27d570ed50892b2e1d3926e3e64d58b8b8fce0d3edb5d50260b5756151dcdc",
+      "original_transport_failure": "Issue15 PATCH successful response followed by urllib URLError Tunnel connection failed: 403 Forbidden; stopped writes; authorized same-endpoint GET-only recovery succeeded.",
+      "results": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-results.json",
+      "recovery": "Same-endpoint protected-auth GET-only verified exact prior successful issue15 PATCH; no replay; remaining14 operations then verified.",
+      "original_failure_preserved": true,
+      "completed_operations": 19,
+      "exact_fields_and_history_verified": true,
+      "unmanaged_preserved": true
+    },
+    "boundaries": {
+      "pyenv_untouched": true,
+      "child_bytecode_disabled": true,
+      "closed_packages_unchanged": true,
+      "no_other_agents_or_assessor_contents": true,
+      "commits": [
+        {
+          "sha": "636b46d8daf1455c940c98f4d535c9936c0f1733",
+          "kind": "non-task accepted preparation/opening",
+          "push": "origin revision/003_795f3a3-remove-json",
+          "exact_remote_tip": "636b46d8daf1455c940c98f4d535c9936c0f1733",
+          "immediately_pushed_before_other_work": true
+        },
+        {
+          "sha": "1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f",
+          "kind": "non-task accepted implementation",
+          "push": "origin revision/003_795f3a3-remove-json",
+          "exact_remote_tip": "1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f",
+          "immediately_pushed_before_other_work": true
+        },
+        {
+          "sha": "160c0a980286c68f62d0d13b3238dad0748885e9",
+          "kind": "non-task accepted conclusion/QC/tracking checkpoint",
+          "push": "origin revision/003_795f3a3-remove-json",
+          "exact_remote_tip": "160c0a980286c68f62d0d13b3238dad0748885e9",
+          "immediately_pushed_before_other_work": true
+        },
+        {
+          "sha": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+          "kind": "explicit ordered two-parent paused-phase integration",
+          "push": "origin phase/2-json-and-stdin",
+          "exact_remote_tip": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+          "immediately_pushed_before_other_work": true
+        }
+      ]
+    },
+    "implementation": {
+      "manifest": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.implementation-identities.json",
+      "exact_first_candidate": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.first-implementation",
+      "accepted": true,
+      "RED": {
+        "initial": "two assertion failures plus three mock-serialization errors; realistic doubles repaired before claiming intended RED",
+        "corrected": "two selected tests; five intended behavioral failures/no errors; production unchanged"
+      },
+      "GREEN": {
+        "focused_tests": 28,
+        "full_unit": 31,
+        "full_integration": 28,
+        "post_cleanup_range_tests": 5,
+        "isolated_extracted_module_cases": 241,
+        "silent_extracted_API_probe": true,
+        "executed_document_fences": 10,
+        "exact_output_inspection_passed": true,
+        "runtime": "Python 3.12.14",
+        "skips": 0,
+        "warnings": 0
+      },
+      "retained_owners": "T-006/T-007/T-018\u2013T-024 retained text/count/BOM/range/API/resource/docs/extraction acceptance rechecked; three JSON IDs retired historically; 21 active/16checked/fivepending.",
+      "code_review": "Coherent CLI/core/I/O/API/parser/resource/errors/tests/docs/checker inspection separate from test execution; no unresolved code blocker.",
+      "protected_scope_check": "Full delta leaves pinned/coordinator/publisher/closed-feature/core/I/O/API/entry/builder/bootstrap paths unchanged. Original canonical TASKS completion evidence below T001 byte-identical; steering evidence only appended.",
+      "acceptance_commit": "0cea6338b3ca4e33374c05437e577a2664922522",
+      "product_commit": "1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f",
+      "remote_exact_readback": "1dc6851aef7fdcc9581b00aaffc8c4661ff67d3f"
+    },
+    "sidecars": {
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.checkpoint.py": "4ba92357d8a63904c0e7e7ee83bc21b804c4a492a32c22184e2e51f9e079ac74",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.commands.jsonl": "26b457b1fbbd8d611c5b07a7daa4d3663aa3915ec6cfc7f5f75e4cfad8670921",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.conclusion-check.py": "4c4db34f8a4e8c4d8ccd05fbece08c384766a6ae6831170ee96cf69843ae9bc1",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.conclusion-identities.json": "cd1c16fea535857b1ce5f3a7e505e2410ce15640e8411d4a593700ed8a695d47",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.docs.py": "5a9afaa9e139f18c39515dcbe78eb2932244ccb91e68828727efa2776586f450",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.evidence-check.py": "c95a2a23ceb68c9de82e108a350c2656f74b6d477ea483a24ae8e30913c88d08",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.examples.json": "94868472d243b0bc1bbc9c07f64b76e7965b0658d67b01b02fd6b28f3e872941",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.examples.py": "79d8ae5b835f649e6a6ad959447926e6195d70516e953998fc70ad1bfae10dc8",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.final-check.py": "789717ea1f46200713a08cee70e74d65ffb307847492bf0afd40e36bf0dc70cb",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.final-identities.json": "d689dc6a46f62419dd27c15bea400fe4e8773581291857b6906701096eee2772",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.final-report.py": "98203741271c736c4621d2ff365e5613dac80cf41f9381bfe1b52902941a44cc",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.first-hosted-plan.json": "a893a1ec8ce6dba29cae6113f3c124e2d6bd0da85195d0c6428699dccafc0cb3",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.foreign-preservation-after.json": "20d186196220a9b44a2aca66ecefc6f8a650b5d8ce8a95493f1d4e71d6cb969e",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.gate-check.py": "b1ddca6eba0d5d450c3f5be2570f2abbd61429b3a150fea5e3d12f11261facfc",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-after.json": "299fd32ab43733e81ed4c1da192546446da4971e22802d4c38b777ece76d23ef",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-apply.original.py": "8fa461b0892bebdb16a1557fa01c2fb8b3079f363949bddb7470ba00e64188aa",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-apply.py": "6e480f310f60a22aaccf9ce52e1ac799d5f995aaa7d00243097a7fd2bb42d398",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-before.json": "b68653d963b4820dd5c4b35b6e1b9ac4530c22a19976ed09b3394dfe38281d97",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-blocks.corrected.json": "39225ac32ed6ea664a6664c7295095fcb387e8b53d7594c328f525e2555e2766",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-plan-repair.py": "9c1837c8b284e4175628c88fcb83635e2ef09c6e69b25457bf48e12cd505b0b8",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-plan.corrected.json": "ad27d570ed50892b2e1d3926e3e64d58b8b8fce0d3edb5d50260b5756151dcdc",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-plan.json": "a893a1ec8ce6dba29cae6113f3c124e2d6bd0da85195d0c6428699dccafc0cb3",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-plan.py": "07584a50ae788fad0ec87c54624c7db7ff476b8ee86cd46b9a2748618e2de706",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-recovery.py": "a630ff2d4706edbdcdd7c98825ba128f2c0671d6142006fdd943b0a177ca889b",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted-results.json": "24710879168522c5fa82064658d7539ca3f4a911934d47d1b9e783e184f6a204",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted.jsonl": "861c9f796355d4bac441ea1882afcc15d9fc2e2d624e740467b4bcc5e8e4da08",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted.original.py": "a7cb4ef4e546b032d58badce1c04fe2bd476e011351514fdce932f166a2e636c",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.hosted.py": "369462c51e8354b3412e284cb565b172bc2bbb6617f0b6526442317b5c65e211",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.implementation-identities.json": "690425f132de9e8f047d453f2afd60d1f437ad7547fd0270261d8461fc86b4b5",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.integration-proof.json": "5c17f097e679100ff0d77381659e42cbfd85fae69b07ebd76799a5e31e150afb",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.issue15-recovery-readback.json": "ef4a9956b24ba2a66da4ce93133f10a71f562258282acc8f7a0d1f779d647971",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.issue2-comments-before.json": "b287cd96e2586b538c78be039a7c869c486a6ddc772b4665ab30058a0221af52",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.merge-message.txt": "6ee5a5fe9b93adea6d904fcddfd2ee580e75b739dfcde8e23bb3d0ecbf863582",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.prep-check.py": "b962a816740ee196bcb6f9f4de06d040515bdcb9d8bd5101fe7abd94f7dce566",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.prep-repair.py": "886cc02580c1f1c987dc68d2bfb2b59524fd1ce992cc7f1d1985e43b7e366020",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.preparation-identities.json": "c24329d6c445b6ca44a4ceb5e23e12417874a773c07260e881de453f60a69294",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.prepare.py": "15db78305336d23cd5a68fcee00f53521ebfcdc68203e57b332309de8080fe3e",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.production.py": "8434f6bd67c245e0b3ab734c433406be4d7a5722183b7cad28c749b8926e3015",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.red-repair.py": "d1115981710ae06f7df2ee9855fa013d356f1b0155cb3b815f42699756fe35e1",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.report.py": "4367e11294b0d1a490d0cf570af7872c70004eee9de9d39fe1c45e5f3ba49840",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.runner.original.py": "25c979f3b8299693f6f46309af07fb5bdc0e5e7a97fde222db714276efb22e7f",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.runner.py": "f8da4c3477199e4b8f4ff9984ff7f0cc40622008628388e07587a51a83c311c1",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.seal.py": "055ee42dc709301403ebe116d24a238f1bd17d64230b1ce1ff89d9a6b3a40d24",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.test-cleanup.py": "26ddc4b507055fce8170a7d4d5baf2dcf6829f81d6630a07d014273038be35ac",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.tests.py": "851276fb4e8cda5576197fb8bd91c6bc4075d060a67e8829e42e0698c99090d8",
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.update.py": "a1d51c6daf8ea052457aa94716c9b08d754044c58b78328a6f4ccfceaf5e8962"
+    },
+    "conclusion": {
+      "manifest": "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.conclusion-identities.json",
+      "manifest_sha256": "cd1c16fea535857b1ce5f3a7e505e2410ce15640e8411d4a593700ed8a695d47",
+      "accepted": true,
+      "checks": "All20 current source hashes match,21active16checked5pending,original historical QC sections and canonical TASKS completion evidence byte-identical,exact blobs,diffcheck pass.",
+      "acceptance_commit": "c908c19a5828a32d46f97a269820445d9f41faf9",
+      "product_commit": "160c0a980286c68f62d0d13b3238dad0748885e9",
+      "remote_exact_readback": "160c0a980286c68f62d0d13b3238dad0748885e9"
+    },
+    "integration": {
+      "merge": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+      "ordered_parents": [
+        "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+        "160c0a980286c68f62d0d13b3238dad0748885e9"
+      ],
+      "tree": "7323ff95312c01f9836d04cfa8729ca903105c2a",
+      "source_tree_equal": true,
+      "remote_exact_tip": "77e7106e3134cc7053a2b1a045cf1a76cf0361ea",
+      "revision_remote_exact_tip": "160c0a980286c68f62d0d13b3238dad0748885e9",
+      "main_unchanged": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+      "clean": true,
+      "branch": "phase/2-json-and-stdin",
+      "active_tasks": 21,
+      "checked_active_tasks": 16,
+      "pending_tasks": [
+        "T-013",
+        "T-014",
+        "T-015",
+        "T-016",
+        "T-017"
+      ],
+      "retired_historical_tasks": [
+        "T-010",
+        "T-011",
+        "T-012"
+      ],
+      "scoped_files": 19,
+      "fresh_merged_verification": {
+        "unit": 31,
+        "integration": 28,
+        "extracted_cases": 241,
+        "silent_api_probe": true,
+        "packaging": true
+      },
+      "distribution_sha256": "dbeb50148c0860d3a02b41898c7dcc23a99fa91efc6537792b685451af82b6b0",
+      "root_authorization": "Exact five conclusion acceptance and explicit two-parent paused integration authorization at coordinator c908c19a5828a32d46f97a269820445d9f41faf9; source publication precedes target consumption."
+    },
+    "independent_root_proofs": {
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-hosted-readback.json": "3f489a0ddaa2ca8c45789fc2f612457eafc67f04f0d119ee66ed692eff77ba50",
+      "/workspace/scratch/46b31bb4dff6/037-a012-root-hosted-checks.json": "bd125661bc0eeac4242adbfefe6d8032479ebff14be40855f288b4e794b8f710"
+    },
+    "stopped": true,
+    "remaining_work": "Only separately authorized future stdin/final T-013\u2013T-017.21 active checklist tasks16 checked5 pending;3 JSON identities retired historically. Main, whole-phase completion and release unchanged.",
+    "final_seal_time": 1791655740.3943346,
+    "frozen_candidate_trees": {
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.first-preparation": {
+        "docs/dev/ARCHITECTURE.md": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5",
+        "docs/dev/DECOMPOSITION.md": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+        "docs/dev/PLAN-REVIEW-REPORT.md": "4184feb1beb0b3bbef9850287bcea515793e3f9be7437fdeedd663fecd74fb77",
+        "docs/dev/PLAN.md": "b7f7beed7605db69e662a8b62ee15d65dfc70037cbe03b7213e47dba320dbb3d",
+        "docs/dev/PROJECT.md": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+        "docs/dev/SPEC-REVIEW-REPORT.md": "a8e78313fbc3274ba81d054eea672b55e418787ea24df2f4f7faba9c6c6a1a7a",
+        "docs/dev/SPEC.md": "a917fd2352f035e80bdadb21f8759890c21b3c2e46311df9761b7105c5e07cb1",
+        "docs/dev/TASKS-REVIEW-REPORT.md": "5090e93ffe43e074009027ba612b0cb6714ac4b88f9355f18b4cc334cba27df7",
+        "docs/dev/TASKS.md": "f0d360d57741a19f0c183ed024d6e183c206850fa2d0332cc5b46c3ea2335fca",
+        "docs/dev/layout.md": "144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502",
+        "docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md": "70043a8a1af71f465481af82d314e26b02d85e9df8cf0c09afa205ab6b736e5a",
+        "identities.json": "14a7592b4c6a1bb458b8b94543fb5834947bc7de0c0a9427e001b333d70e3470"
+      },
+      "/workspace/scratch/46b31bb4dff6/037-a012-consumer-observations.first-implementation": {
+        "AGENTS.md": "e8a3cd8ffb6aa3fbe73055cd34914a60f98ce7645bebf0323b8b3ff577d46400",
+        "README.md": "1619a5b6d21a761294e178fa891fbac9c87736f172689e7917dfcfc44c2c2f11",
+        "docs/dev/ARCHITECTURE.md": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5",
+        "docs/dev/DECOMPOSITION.md": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+        "docs/dev/PLAN-REVIEW-REPORT.md": "5228e3c190a77513b6247b4cce920243c3b2f8933262fdd0d2fdc1f2d13ccfea",
+        "docs/dev/PLAN.md": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+        "docs/dev/PROJECT.md": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+        "docs/dev/SPEC-REVIEW-REPORT.md": "212f31e181d24a19a9cdfa9923153cd2c7e5d0a7771dcc3dbcbf171ced75f0c4",
+        "docs/dev/SPEC.md": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+        "docs/dev/TASKS-REVIEW-REPORT.md": "60773a836cce2400334ad21c18ec421d1a84046712269b3314d9522d27e2f6ec",
+        "docs/dev/TASKS.md": "4f45d70f9c0b59a734dd2a11cc77100e0c084a8d7af3d3f43fb0c0650c398e08",
+        "docs/dev/layout.md": "144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502",
+        "docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md": "37efe4f3fec8a9cc15326abc1fb6404286901838480efa1eeb147de05fa6baeb",
+        "docs/public-api.md": "9b866f347dc1426ea5d5849ef13acb3623b84107d914735704132932404b7814",
+        "identities.json": "690425f132de9e8f047d453f2afd60d1f437ad7547fd0270261d8461fc86b4b5",
+        "tests/integration/test_cli.py": "d48fa53eda14825b6e76db752e82743ac6b8baeb840bb4c0c60d88242dee9d4b",
+        "tests/integration/test_distribution.py": "09fc45f6ca447684522a59792586467609c2596b505852b75ce199bd805399e1",
+        "tests/unit/test_cli.py": "d07e7d2911899290e25e337dab162e12a9de2e98b22e8028575809aa9ad85654",
+        "textstats/cli.py": "0ed08a560cb158fa99eb0842056ae9236d78389f07d54de6d8ba09b257ed164e",
+        "tools/check_distribution.py": "cfb0347b71adbadaee2adf0c447f008d3bf7be60b12b25ecb5826bbcdee98837"
+      }
+    }
+  }
+}

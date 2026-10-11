@@ -1,0 +1,7 @@
+{
+  "original_retained_locally": "/workspace/scratch/46b31bb4dff6/037-a021-setup-artifacts/setup-commands.json",
+  "original_sha256": "c1b8d62bbff8f4dc43f0490710d284c4a40acd20283fac318cfd9beb88fc6528",
+  "screening_rejection": "core.no_secret rejects NUL in Git binary-output JSON scalar",
+  "transformation": "Only /23/stdout replaced by exact screened binary sidecar reference/hash; all original command observations retained",
+  "retry": "Initial copy stopped before render/commit/product mutation; safe exact copies recopied after narrow transform"
+}

@@ -1,0 +1,25 @@
+{
+  "head": {
+    "equal": true
+  },
+  "branch": {
+    "equal": true
+  },
+  "refs": {
+    "equal": true
+  },
+  "status": {
+    "equal": true
+  },
+  "index_entries": {
+    "equal": true
+  },
+  "index_sha256": {
+    "equal": true
+  },
+  "tracked_files": {
+    "equal": true
+  },
+  "tracked_file_count": 187,
+  "changed_tracked": []
+}

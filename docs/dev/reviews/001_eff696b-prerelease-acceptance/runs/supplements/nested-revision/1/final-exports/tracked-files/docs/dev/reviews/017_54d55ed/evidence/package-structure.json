@@ -1,0 +1,12 @@
+{
+  "skill_validation_issues": [],
+  "skills": 15,
+  "markdown_files": 72,
+  "local_links": 147,
+  "missing_paths": [
+    [
+      "skills/sdd-report/references/campaign-artifacts.md",
+      "REVIEW-REPORT.md"
+    ]
+  ]
+}

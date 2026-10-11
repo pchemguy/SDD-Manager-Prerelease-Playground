@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "case_id": "A-005",
+  "eligibility": "Eligible",
+  "reassessment_only": true,
+  "fresh_execution": false,
+  "assessor_pin": "355e3d31e053d3a27078d1b75e753ea179ec1112",
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "published_source_ref": "355e3d31e053d3a27078d1b75e753ea179ec1112",
+  "checkpoint_refs": {
+    "product_branch": "phase/1-named-file-utility",
+    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "original_failed_record": {
+    "path": "037-a005-independent-assessment.json",
+    "sha256": "275089ea9c208f9dd23f2a8d6a105a62cf259851f2ec4c2fc9554088cff04c84",
+    "assessor_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "status": "Failed"
+  },
+  "source_scope": [
+    "acceptance/textstats/cases/assessor/A-005.json",
+    "acceptance/textstats/cases/assessor/A-005.md",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVIEW-REPORT.md",
+    "docs/dev/reviews/037_a6c42dd-prerelease-review/REVISION-REPORT.md"
+  ],
+  "shipped_plugin_unchanged": true,
+  "canonical_alignment": "Unchanged SCENARIO explicitly assigns CLI failures to milestone1.2; accepted current PLAN/TASKS defer R008 to1.2/T005. Corrected A005 verifies full API and useful four-vector success CLI, requires help/lifecycle, leaves failure/usage obligations in later milestone without relaxing phase requirements.",
+  "reuse_authority": "Original accepted REVISION-PLAN reuse provision is present before355e3d3, requires byte/identity and semantic applicability. No newly authored report statement is treated as authorization.",
+  "byte_identity": "Original failed assessment/evidence hashes exact, same unchanged consumer branch HEAD and main, original API/baseline captured bytes retained, same task/report tree and exact published remote refs.",
+  "semantic_applicability": "Same dispatched milestone1.1, exact start/reached checkpoint, task ownership/work/review/hosted closures and preserved foreign material; new criteria only remove premature milestone1.2 failure requirements. Original independent tests and bounded lifecycle judgment remain applicable.",
+  "provider_recheck": "Remote refs exact; issue bodies/labels/states, retained comments and milestone1 description/closure unchanged; later milestones open.",
+  "literal_comparison": "Corrected API and baseline-success exactly match actual captured rows; full original failing baseline/provenance remain retained.",
+  "limits": [
+    "Fresh separate assessor context; shared filesystem isolation uncertified.",
+    "Native full transcript unavailable; sealed consumer sequence summarizes historical RED/push/check chronology rather than providing complete raw transcript; no retained historical RED tree.",
+    "Only Python3.12.14 assessed; no Python3.11/full runtime or platform permission matrix claim.",
+    "Controlled open/read failure probes establish portable resource behavior; no operating-system enforcement matrix claim.",
+    "Complete CLI R008 failure handling, public API guide and extracted distribution are accepted later milestone tasks and remain unverified; JSON/stdin/range unselected.",
+    "A004 predecessor is published fc193b0 reassessment of retained original product under corrected assessor criteria, not a fresh consumer rerun; original failure retained and shipped plugin unchanged."
+  ],
+  "red_evidence_disposition": {
+    "native_raw_red_certification": "Not certified",
+    "corrected_grade_implication": "Does not itself establish an additional observed workflow failure: sealed command/result summaries and committed task evidence retain nonempty behavioral RED results consistent with actual meaningful tests. A corrected bounded lifecycle grade may rely on those records only with this explicit evidence limitation; any claim requiring independent historical RED execution or native full-transcript certification remains blocked. No raw output is reconstructed or waived."
+  },
+  "provenance_sha256": "fd7770cf98424e30adfb2d85198fc699a28f3ef3f88252c2c70c31315b4b2af7"
+}

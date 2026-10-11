@@ -1,0 +1,24 @@
+{
+  "fixture_commit": "86046022c97564a753b0f62a86e0bacaecf650b4",
+  "archive_command": [
+    "git",
+    "-C",
+    "/workspace/scratch/46b31bb4dff6/037-a026-failing-baseline",
+    "archive",
+    "86046022c97564a753b0f62a86e0bacaecf650b4"
+  ],
+  "archive_sha256": "a8f59bd240ea4b024cc6c67c8f960d99aedc50bbdce6b6fb42d94d4aa4fcde37",
+  "isolated_root": "/workspace/scratch/46b31bb4dff6/037-a026-independent-fixture-cx8kot8n",
+  "command": [
+    "python3",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-a026-probe/contract_probe.py",
+    "--root",
+    "/workspace/scratch/46b31bb4dff6/037-a026-independent-fixture-cx8kot8n"
+  ],
+  "returncode": 1,
+  "stdout": "{\n  \"status\": \"Failed\",\n  \"tests\": 2,\n  \"failures\": 2,\n  \"errors\": 0,\n  \"import_origin\": \"/workspace/scratch/46b31bb4dff6/037-a026-independent-fixture-cx8kot8n/textstats/__init__.py\",\n  \"diagnostic\": \"FF\\n======================================================================\\nFAIL: test_bom_empty_and_trailing_line (__main__.child.<locals>.Counts.test_bom_empty_and_trailing_line)\\n----------------------------------------------------------------------\\nTraceback (most recent call last):\\n  File \\\"/workspace/scratch/46b31bb4dff6/037-a026-probe/contract_probe.py\\\", line 32, in test_bom_empty_and_trailing_line\\n    value=product.count_text('\\\\ufeffa\\\\n');self.assertEqual((value.lines,value.words),(1,1))\\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: Tuples differ: (2, 1) != (1, 1)\\n\\nFirst differing element 0:\\n2\\n1\\n\\n- (2, 1)\\n?  ^\\n\\n+ (1, 1)\\n?  ^\\n\\n\\n======================================================================\\nFAIL: test_crlf_and_final_segment (__main__.child.<locals>.Counts.test_crlf_and_final_segment)\\n----------------------------------------------------------------------\\nTraceback (most recent call last):\\n  File \\\"/workspace/scratch/46b31bb4dff6/037-a026-probe/contract_probe.py\\\", line 30, in test_crlf_and_final_segment\\n    value=product.count_text('one two\\\\r\\\\nthree');self.assertEqual((value.lines,value.words),(2,3))\\n                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: Tuples differ: (3, 3) != (2, 3)\\n\\nFirst differing element 0:\\n3\\n2\\n\\n- (3, 3)\\n?  ^\\n\\n+ (2, 3)\\n?  ^\\n\\n\\n----------------------------------------------------------------------\\nRan 2 tests in 0.001s\\n\\nFAILED (failures=2)\\n\",\n  \"agent_behavior_assessed\": false,\n  \"child_returncode\": 0\n}\n",
+  "stderr": "",
+  "fixture_diff": "commit 86046022c97564a753b0f62a86e0bacaecf650b4\nAuthor:     Codex <codex@openai.com>\nAuthorDate: Sat Oct 10 09:22:59 2026 -0400\nCommit:     Codex <codex@openai.com>\nCommitDate: Sat Oct 10 09:22:59 2026 -0400\n\n    Prepare disclosed count regression fixture (037 A-026)\n---\n textstats/core.py | 8 +++++++-\n 1 file changed, 7 insertions(+), 1 deletion(-)\n\ndiff --git a/textstats/core.py b/textstats/core.py\nindex 5b17cfd..f131f90 100644\n--- a/textstats/core.py\n+++ b/textstats/core.py\n@@ -68,7 +68,7 @@ def _count_normalized(text: str) -> TextStats:\n     return TextStats(sum(1 for _ in _logical_lines(text)), len(text.split()))\n \n \n-def count_text(text: str, *, strip_bom: bool = True) -> TextStats:\n+def _fixture_original_count_text(text: str, *, strip_bom: bool = True) -> TextStats:\n     \"\"\"Return whole-input counts without writing to stdout or stderr.\n \n     Args:\n@@ -82,3 +82,9 @@ def count_text(text: str, *, strip_bom: bool = True) -> TextStats:\n         a final nonempty unterminated segment contributes one line.\n     \"\"\"\n     return _count_normalized(_normalize_text(text, strip_bom))\n+\n+\n+def count_text(*args, **kwargs):\n+    \"\"\"Disclosed isolated fixture: deliberate line-count regression.\"\"\"\n+    stats = _fixture_original_count_text(*args, **kwargs)\n+    return type(stats)(lines=stats.lines + 1, words=stats.words)\n",
+  "attribution": "Disclosed coordinator regression fixture only; unmodified public baseline Passed."
+}

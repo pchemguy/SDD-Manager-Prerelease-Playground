@@ -1,0 +1,14 @@
+{
+  "a006_published_bytes_equal_sealed_independent": true,
+  "original_a004_failed": true,
+  "corrected_a004_passed_separate": true,
+  "index_stage0_only": true,
+  "initial_clean": true,
+  "export_workfiles_exact": true,
+  "all_code_checks_zero": true,
+  "no_task_t009_report": true,
+  "python_version": "Python 3.12.14",
+  "actual_pre_t009_history": "7b9f570aa4452d2ca9d6105479640528cb113f0e [T-008] Review distribution milestone and reject option abbreviations\nf7e3309b672cb13b1d8158613e81d50e8d1ecc18 [T-007] Build and verify isolated TextStats source distribution\nfde1537b5c4ba1bcef4f538dfb47276d564e4aaa [T-006] Document public API and runnable named-file usage\n809f045e3cd32445e7dca29d0174ea25aa5da7ea [T-005] Handle named-file input failures without tracebacks\n7d003c1cf31c994340d8644e95990ef2253754ed [T-004] Review named-file counting and complete milestone 1.1\n373203d6f41bee2229eed900b761de8669678e0b [T-003] Integrate named-file CLI and nonempty product checks\nf28f6e415b3e0c13353a61e82354c47b0d2cabb2 [T-002] Implement strict file acquisition and complete public API\n9dc8075dd1b96d3a2744717a9d6d98a3024acbec [T-001] Implement immutable statistics and whole-text counting\n",
+  "guide_required_variant_status": "Blocked; local-only cannot certify cross-phase variant. Stop before dispatch pending destination/publication resolution.",
+  "source_and_evidence_mutation": false
+}

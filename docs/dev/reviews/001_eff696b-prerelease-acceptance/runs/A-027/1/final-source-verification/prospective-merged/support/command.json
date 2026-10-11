@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "acceptance/textstats/tests",
+    "-t",
+    "acceptance/textstats",
+    "-v"
+  ],
+  "cwd": "037-source-main-integration",
+  "started_at": "2026-10-10T20:00:38.341771+00:00",
+  "finished_at": "2026-10-10T20:01:03.799393+00:00",
+  "exit_status": 0,
+  "streams": {
+    "stdout": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stderr": {
+      "sha256": "ae1b5c2a0a2c11b040f91243f99b6887b0521427869d4923dd20ab201a94de54",
+      "bytes": 18153
+    }
+  },
+  "scope": "Actual prospective merged source support checks; distinct from live consumer/client acceptance"
+}

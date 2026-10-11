@@ -1,0 +1,170 @@
+[
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "merge-base",
+      "--is-ancestor",
+      "5e4d990e55817220661028f5e7ec643707bddd5a",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "merge-base",
+      "--is-ancestor",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+      "ecc652f9fca8b3da0c5658065e6f6e0123360f40"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "rev-list",
+      "--reverse",
+      "--topo-order",
+      "cedb509eb224ff4798349a924dd2e5d9235f18f7..HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "2e3b5ba69105e672682132c77e2f2f43dfb986a6\nea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0\n5e6f93c397db07df85de7ed1d45f881668982fcc\ndbd1376f1a65a93d3a4306f47414af4730a53bbe\n46f01d854524472713df5de0a4539785609ce144\nd62c35a805cf08c1d5f6d4649213b1b902e6ae7d\nf25d556eca14710e4596dcda0c7971479c399be1\n75702ad1bca1a5f982811c221fbdec5b55b39cc5\necc652f9fca8b3da0c5658065e6f6e0123360f40\n",
+    "stderr": "",
+    "stdout_sha256": "193fa6eb71ca89f040c960d20b1ca458638354b9cc58e771001c809d94a4c061",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "diff",
+      "46f01d8^",
+      "d62c35a"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "diff",
+      "5e6f93c^2",
+      "5e6f93c"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "show",
+      "--format=",
+      "--diff-merges=combined",
+      "ecc652f9",
+      "--",
+      "CONTINUATION-REFERENCE.md"
+    ],
+    "returncode": 0,
+    "stdout": "diff --combined CONTINUATION-REFERENCE.md\nindex 5e451c9,d6197f3..bbf1956\n--- a/CONTINUATION-REFERENCE.md\n+++ b/CONTINUATION-REFERENCE.md\n@@@ -2,4 -2,4 +2,4 @@@\n  \n  Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.\n  \n- Exclude foreign staged changes from task delivery while preserving their intent.\n -Preserve valid history while reconciling a pending publication.\n++Preserve valid history while reconciling a pending publication, and exclude foreign staged changes from task delivery while preserving their intent.\n",
+    "stderr": "",
+    "stdout_sha256": "8128be315c00302182a6ef3c5dd2988a3f2779575fafa6e2511ef2ade48d37be",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "diff",
+      "ecc652f9^1",
+      "ecc652f9",
+      "--",
+      "CONTINUATION-REFERENCE.md"
+    ],
+    "returncode": 0,
+    "stdout": "diff --git a/CONTINUATION-REFERENCE.md b/CONTINUATION-REFERENCE.md\nindex 5e451c9..bbf1956 100644\n--- a/CONTINUATION-REFERENCE.md\n+++ b/CONTINUATION-REFERENCE.md\n@@ -2,4 +2,4 @@\n \n Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.\n \n-Exclude foreign staged changes from task delivery while preserving their intent.\n+Preserve valid history while reconciling a pending publication, and exclude foreign staged changes from task delivery while preserving their intent.\n",
+    "stderr": "",
+    "stdout_sha256": "12b0a65b51c31151c2640bb5c3acccbe400b0d95542a2f7edee14fbba634ead4",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "diff",
+      "ecc652f9^2",
+      "ecc652f9",
+      "--",
+      "CONTINUATION-REFERENCE.md"
+    ],
+    "returncode": 0,
+    "stdout": "diff --git a/CONTINUATION-REFERENCE.md b/CONTINUATION-REFERENCE.md\nindex d6197f3..bbf1956 100644\n--- a/CONTINUATION-REFERENCE.md\n+++ b/CONTINUATION-REFERENCE.md\n@@ -2,4 +2,4 @@\n \n Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.\n \n-Preserve valid history while reconciling a pending publication.\n+Preserve valid history while reconciling a pending publication, and exclude foreign staged changes from task delivery while preserving their intent.\n",
+    "stderr": "",
+    "stdout_sha256": "646ed71b9058d8e6afea55af4f7a74cc2632e5fd7b3a11a5019080cc6475e2ed",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "identity": "independent_assessor",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "-C",
+      "037-sup-highlights-semantic",
+      "diff",
+      "--name-only",
+      "fixture-v0.15.0",
+      "HEAD",
+      "--",
+      "skills",
+      "assets",
+      ".codex-plugin/plugin.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

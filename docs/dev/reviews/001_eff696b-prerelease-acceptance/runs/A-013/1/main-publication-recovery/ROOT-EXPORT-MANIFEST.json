@@ -1,0 +1,14 @@
+{
+  "037-a013-consumer-input.md": {
+    "sha256": "b9b37f2e63e2bb4d29f4c8eacb4e0f6449e63f858259cf91d8f91b0d85ed0443",
+    "bytes": 1939
+  },
+  "037-a013-consumer-main-push-rejection.json": {
+    "sha256": "fdc397f4fdc27a8fdb0fe80dbe968a373f46e423ce903fe5536dced2be602696",
+    "bytes": 1337
+  },
+  "BOUNDED-RETRY-ASSESSMENT.json": {
+    "sha256": "c6457f6c99fac26e536eab6f72f45f688b9566fc38831ed773f9d72c0e0e6559",
+    "bytes": 2968
+  }
+}

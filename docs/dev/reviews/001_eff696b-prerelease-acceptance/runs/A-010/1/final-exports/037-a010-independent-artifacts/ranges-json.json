@@ -1,0 +1,29 @@
+{
+  "literals": {
+    "ranges-json": [
+      {
+        "json": {
+          "lines": 2,
+          "words": 3
+        },
+        "name": "json-range",
+        "returncode": 0,
+        "single_object_newline": true,
+        "stderr": "",
+        "unchanged": true
+      },
+      {
+        "json": {
+          "lines": 1,
+          "words": 2
+        },
+        "name": "range-json-order",
+        "returncode": 0,
+        "single_object_newline": true,
+        "stderr": "",
+        "unchanged": true
+      }
+    ]
+  },
+  "schema_version": 1
+}

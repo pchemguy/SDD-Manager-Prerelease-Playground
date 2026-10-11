@@ -1,0 +1,42 @@
+{
+  "CANDIDATE.json": {
+    "sha256": "737fb63e11a99f2878c199d578e6fe695d9dbb90ea31b4aba645de222ca6d63e",
+    "bytes": 4546
+  },
+  "FIRST-ROOT-AUDIT-FAILURE.json": {
+    "sha256": "684b388b46e8ea2149178f153f797ad61d0db32b9084507446feb19f409160b4",
+    "bytes": 309
+  },
+  "files/docs/dev/TASKS.md": {
+    "sha256": "fee72d464890772e19da9a42a246d01ebbd3f21aa16e2080d805d0446fc8c912",
+    "bytes": 37021
+  },
+  "files/docs/dev/reports/phases/1/PHASE-REPORT.md": {
+    "sha256": "44143b947ab368a95d3095cf5fe23bfed2e09733f6d8cccb6c584f351e1228a3",
+    "bytes": 8073
+  },
+  "files/tests/integration/test_api.py": {
+    "sha256": "e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6",
+    "bytes": 4945
+  },
+  "files/tests/integration/test_cli.py": {
+    "sha256": "8a929dacc07f6dfd33192b462f7189247e955dc9e2f81619dd74103829e14151",
+    "bytes": 4115
+  },
+  "files/tests/integration/test_distribution.py": {
+    "sha256": "9f3ee0e36772328aa23ad76eb6c7345ced97808df763bb2bfd65d951e4325d46",
+    "bytes": 3510
+  },
+  "files/tests/unit/test_cli.py": {
+    "sha256": "2c3ef6c9e6b02e4fb37c864a72c4781d013f22fa214b044492b3b7136b1e0df2",
+    "bytes": 6347
+  },
+  "files/tools/check_distribution.py": {
+    "sha256": "4132a9a688ee8ce0a385c39b471ea9a29b4c6f4ba03c18e9f095cb10e9691d5f",
+    "bytes": 5008
+  },
+  "textstats-source.zip": {
+    "sha256": "d4fa63db9a5a3e46dd6d1fac091c5922181ad9fd3a9fc845b9ae28e5b35833a3",
+    "bytes": 12047
+  }
+}

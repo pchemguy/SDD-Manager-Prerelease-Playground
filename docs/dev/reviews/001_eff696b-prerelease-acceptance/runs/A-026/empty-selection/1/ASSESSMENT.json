@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "case_id": "A-026",
+  "variant": "empty-selection",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "assessor": "/root/a026_assessor",
+  "checkpoint_refs": {
+    "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "product_branch": "trial/037-a026-empty-selection",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "integration_branch": "main"
+  },
+  "original_attempt": {
+    "status": "Passed",
+    "assistance": "No consumer repair or retry; coordinator separately supplied immutable milestone trial."
+  },
+  "preservation_checks": {
+    "head": true,
+    "branch": true,
+    "refs": true,
+    "index": true,
+    "status": true,
+    "diff": true,
+    "cached_diff": true,
+    "tracked_files": true,
+    "task_checkboxes": true
+  },
+  "tracked_file_count": 169,
+  "independent_check": {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/unit",
+      "-p",
+      "test_missing_037_*.py"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-a026-empty-selection",
+    "returncode": 5,
+    "stdout": "",
+    "stderr": "\n----------------------------------------------------------------------\nRan 0 tests in 0.000s\n\nNO TESTS RAN\n"
+  },
+  "consumer_evidence": {
+    "path": "037-a026-empty-selection-consumer-observations.json",
+    "sha256": "a38cd20e214f8f7d5a0bdabe2ec241c3907ed7c12c64bce19c774a799ad835bd",
+    "sealed": true
+  },
+  "before_evidence": "037-a026-empty-selection-start-snapshot.json",
+  "after_evidence": "037-a026-empty-selection-final-snapshot.json",
+  "publication_readback": {
+    "remote": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+    "command": [
+      "git",
+      "-C",
+      "/workspace/scratch/46b31bb4dff6/037-a026-empty-selection",
+      "ls-remote",
+      "origin",
+      "refs/heads/trial/037-a026-empty-selection"
+    ],
+    "returncode": 0,
+    "stdout": "7d003c1cf31c994340d8644e95990ef2253754ed\trefs/heads/trial/037-a026-empty-selection\n",
+    "stderr": "",
+    "exact_trial_tip_matches": true
+  },
+  "backend_lifecycle": {
+    "historical_milestone_report": "docs/dev/reports/phases/1/1.1.md",
+    "separate_review_testing_evidence": "Retained report contains explicit implementation code review, actual test command outcomes and exit limits. Consumer read preserved report/TASKS as historical evidence, not fresh execution.",
+    "todo": "Existing report TODO None; no report, TODO, review task, completion or hosted closure authored by verifier.",
+    "fresh_review_gap": "No fresh code review, useful demonstration, broader runtime/platform, distribution or phase exit verification; correctly retained as scope gap."
+  },
+  "behavior_judgment": "Actual command exits5 with Ran0tests/NO TESTS RAN. Verifier rejects empty selection as product acceptance, does not call it assertion failure or product defect, and reports unexercised suites/behavior.",
+  "coverage_limits": [
+    "Fresh consumer context with shared filesystem: assessor-asset isolation not certified.",
+    "Native full consumer transcript unavailable; sealed structured observations and final response are retained evidence; preliminary reads include disclosed reconstruction/truncation gaps.",
+    "Before/after exact tracked bytes/index/refs/tasks observed; continuous mutation audit unavailable, so transient writes later reverted cannot be excluded.",
+    "No provider readback or continuous hosted write audit. Consumer command evidence contains no hosted calls and exact local scope preservation is observed.",
+    "Trial publication checked explicitly by assessor; local preservation contracts do not rely on implicit hosted observations."
+  ],
+  "source_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "assessed_at": "2026-10-10T13:29:56.810345+00:00"
+}

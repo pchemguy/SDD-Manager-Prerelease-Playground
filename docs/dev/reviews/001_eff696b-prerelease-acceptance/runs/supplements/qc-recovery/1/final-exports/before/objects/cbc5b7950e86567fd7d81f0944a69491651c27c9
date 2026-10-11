@@ -1,0 +1,50 @@
+# Milestone 1.2 review — Failure handling and distribution
+
+## Identity and delivered result
+
+Owning task: T-008; Phase 1 milestone 1.2. Reviewed published delivery source `f7e3309b672cb13b1d8158613e81d50e8d1ecc18` on `phase/1-named-file-utility`, plus the scoped parser repair and its tests/checker documentation in this closing result. Accepted SPEC R-001 through R-008 and R-011 through R-013, PLAN milestone exits and layout govern the review. T-005 `809f045e3cd32445e7dca29d0174ea25aa5da7ea`, T-006 `fde1537b5c4ba1bcef4f538dfb47276d564e4aaa` and T-007 above are individually published task results; issues #6–#8 are closed/completed with evidence. T-008 maps uniquely to issue #9, milestone #2.
+
+Delivered robust named-file failures and usage, runnable public API/module documentation and an allowlisted source ZIP with actual isolated module-entry verification. Retained immutable/silent API, strict UTF-8 byte acquisition, once-only BOM policy, exact successful text output, help and dash-file behavior.
+
+## Implementation code review
+
+The review inspected the complete package, product runner, distribution builder/checker, CLI/API/acquisition tests and user guides, separately from running tests.
+
+| Reviewed boundary | Assessment |
+| --- | --- |
+| Core/facade | Immutable nonnegative integer/bool-excluding fields and direct three exports retained. CRLF/CR/LF traversal preserves segments, word whitespace is independent, exactly one complete-input leading BOM is removed. No I/O cycle or shared counting state. |
+| Acquisition/API | Binary complete read followed by strict decode; context-manager ownership closes on success/read/decode failure. Exceptions propagate silently without partial result or input mutation. |
+| Parser/controller/rendering | Parse precedes acquisition; exact text rendering follows completed result. Only expected OSError/UnicodeDecodeError translated to status 1 with input/cause. Usage status 2 and help status 0 retain prescribed streams. Abbreviation defect below repaired. |
+| Distribution | Eleven literal source paths exclude unmanaged material and credentials; required regular files validated before archive output. Exact archive membership checked before temporary extraction. Acceptance children use selected interpreter, extracted cwd, sanitized Python import environment and verified extracted `__init__.py`, then real module processes. Byte preservation and cleanup inspected. |
+| Verification sensitivity | Actual unit/integration discovery excludes workflow fixtures and rejects empty suites. Distribution tests compare independent allowlist/bytes, inject harmless unrelated files and inherited checkout path, and reject a deliberately wrong extracted CLI. Controlled acquisition failures test lifetime independently of host permissions. |
+| Documentation | Signatures, constructor invariants, semantics, encoding/lifetime/errors/silence and statuses agree with source. Setup and API/file/BOM/help/dash examples are runnable; archive contents and checkout-only test distinction are explicit. No JSON/stdin/range delivery claim. |
+
+## Findings and repairs
+
+| ID | Original evidence / impact | Repair and recheck | Disposition |
+| --- | --- | --- | --- |
+| M1.2-001 | `textstats/cli.py` used argparse's default long-option abbreviation. `--keep missing` acquired input and gave status 1 instead of rejecting an unknown option with status 2 before acquisition, violating R-008. | Added independent unit/subprocess subcases first: two tests failed (unexpected count_file call and status 1). Set `allow_abbrev=False`; expanded extracted usage acceptance. Complete checks below pass. | Resolved in T-008 closing result. No changed governing requirement. |
+
+No unresolved bug, critical issue, contract violation or required evidence gap remains for milestone 1.2 on the stated runtime.
+
+## Actual checks and usability evidence
+
+Repository-root Python 3.12.14:
+
+- `python -m unittest tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input -v`: meaningful RED, two tests/two failures before parser repair.
+- `python tools/check_tests.py`: GREEN, 23 unit and 18 integration tests, independently nonempty; no skips/warnings. Includes retained semantics/API silence/immutability, controlled read/open/decode/lifetime seams, real success/failure/usage/help/BOM/dash subprocesses and distribution sensitivity.
+- `python tools/check_distribution.py`: verified extracted import and 36 real module cases, with exact streams/statuses and unchanged input bytes. Covers fourteen semantic cases under both BOM policies, dash-file success, missing/decode failures, four usage cases including abbreviation and help.
+- T-006/T-007 documented fence executions remain applicable: sample `lines=3 words=5`, BOM-only zero/zero versus one/one, dash-file one/two, API assertions, help, runner/discovery and separate extracted README example all succeeded. The parser repair rejects an unsupported abbreviation and leaves these valid examples unchanged.
+- Changed diff whitespace passed. Local user-guide links resolved during documented execution; no external link refresh was claimed.
+
+The extracted README example demonstrates usable source delivery; clean missing-file/decode diagnostics demonstrate actionable failure behavior without tracebacks. Owned temporary README inputs were removed after matching exact consumer-created bytes and confirming no coordinator product mutation. Their unexpected reappearance after prior cleanup is retained in external observation evidence; no tracked source result changed.
+
+## Exit assessment and limits
+
+Milestone 1.2 exits are verified: complete R-008 categories/validation, R-011 truthful runnable docs, R-012 nonempty product checks and R-013 isolated source module execution, with retained 1.1 behavior and input preservation. This report/result/evidence and initial T-008 checkbox accompany the eligible milestone parent status in one task commit. Publication precedes issue #9 closure; native milestone #2 closes only after its four task issues, report and exits are verified. Phase review T-009 starts after that closure/readback.
+
+Coverage is local Python 3.12.14 on this environment. Full supported-runtime/platform matrix, permission behavior beyond controlled seams, external notice links, installed-package delivery, JSON/stdin/ranges and release publication are outside this assessment. Phase 1 is not yet integrated by this milestone result.
+
+## TODO
+
+None. M1.2-001 is resolved; no noncritical finding is deferred.

@@ -1,0 +1,13 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Authorize cooperative execution through selected operation2 only; not final artifact acceptance",
+  "selected_operation_source_sha256": "faf13c21132f0ce3d313033a4abeb0872f5de2e9b0a87b525b4cc8d879957e6b",
+  "hold_after": 2,
+  "actual_transfer": "Consumer-selected operation2 adds T018\u2013024 pending executable entries to canonical TASKS; selected FEATURE-TASKS owner retirement operation3 remains genuinely pending and source list unchanged at hold",
+  "pending_paths": [
+    "docs/dev/FEATURE-TASKS.md"
+  ],
+  "receipt": "/workspace/scratch/46b31bb4dff6/037-a021-held-receipt.json",
+  "receipt_lexical_symlink_checks": "All path/parents nonlinks and receipt absent before resolve",
+  "limitations": "Temporary duplicate ownership explicitly permitted only as held incomplete transfer; no Ready/commit/task completion/archive claim. Final governing/task/QC artifacts need concrete review before closure/publication. Commands/edit content selected by actual consumer; root supplies bounded execution control only."
+}

@@ -1,0 +1,8 @@
+tree ece242992c2aab3b1bc106490194d26a3e5d818f
+parent 806e989567aef425ddd933f33fbd8f9af5edae2a
+author Codex <codex@openai.com> 1791647106 -0400
+committer Codex <codex@openai.com> 1791647106 -0400
+
+[T-018] Implement pure normalized logical-line selection
+
+Preserve inclusive available segments through shared traversal, without renormalizing exposed BOMs or capping endpoint size. Observed RED2 tests/14 errors with minimal unimplemented declaration; GREEN12 core and8 API tests. Concrete delegated decision308ec919 accepted exact core/test blobs. Fixes pchemguy/SDD-Manager-Prerelease-Playground#19

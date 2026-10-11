@@ -1,0 +1,4 @@
+Revert "Propose a temporary benchmark gate (caller fixture)"
+
+This reverts commit 46f01d854524472713df5de0a4539785609ce144.
+

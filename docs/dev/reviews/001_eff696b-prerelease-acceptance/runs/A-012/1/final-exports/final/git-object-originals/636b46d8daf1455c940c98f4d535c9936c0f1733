@@ -1,0 +1,8 @@
+tree 7f4b97634c438dd0876617fe2f0767329242ade0
+parent 795f3a3542c9981f8d43c8e182876f3efa5b5f16
+author Codex <codex@openai.com> 1791653863 -0400
+committer Codex <codex@openai.com> 1791653863 -0400
+
+Prepare scoped JSON withdrawal at paused Phase 2 checkpoint
+
+Reconcile existing governing owners and adjacent affected QC under steering campaign 003_795f3a3-remove-json. Preserve stable retired JSON identities and historical evidence, retained text/count/BOM/ranges and five pending stdin/final tasks. Exact eleven-artifact delegated preparation acceptance is published at 3b7e7abef970ca6132aa4fe34f075d550f0ab0ba. This non-task checkpoint changes no production behavior or task completion.

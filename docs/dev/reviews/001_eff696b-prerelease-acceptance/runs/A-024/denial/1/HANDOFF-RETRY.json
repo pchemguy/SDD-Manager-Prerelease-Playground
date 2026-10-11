@@ -1,0 +1,7 @@
+{
+  "first_attempt": "Renderer rejected assessment evidence publication unverified; clone lacked current remote evidence-tip object. No consumer dispatched.",
+  "partial_setup_publication": "bfa52eaf128c8e70f8c9cda844bd705f1afe2b4f",
+  "intervention": "Fetched exact evidence branch into trial clone; renderer passed on same A003 assessment/ref identities; no product task/hosted writes",
+  "actor": "coordinator",
+  "status": "Resolved"
+}

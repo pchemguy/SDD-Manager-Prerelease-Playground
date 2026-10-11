@@ -1,0 +1,22 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "task_id": "T-005",
+  "baseline": "4a9c0625aad481bbe46db25a945f5c9fad135716",
+  "pending_artifact_blobs": {
+    "textstats/core.py": "5b17cfdcd3f4285ac3bf59e47365dfd818665c6d",
+    "textstats/cli.py": "6692ccdc64c66fa1955da1d4a669adbcf299fb88",
+    "tests/unit/test_core.py": "5672eb7e2b052120218cc06ad67e45013ef70f5c",
+    "tests/unit/test_cli.py": "a1a4fb6f23c76b30ad740c1bdd96ea43a229b2e3",
+    "tests/integration/test_api.py": "e08a52ad318dde76c221097d09c72869f1e478ab",
+    "tests/integration/test_cli.py": "5ef901f2b0c51d2357eb8035c6dc24771bc5e617"
+  },
+  "review": "Concrete six-file source/test diff inspected. Exact accepted whole-input count_text signature/normalization restored without phantom line wrapper; direct text and file boundary regressions include empty/BOM/CRLF/trailing blank and unchanged bytes. Retained CLI catches filesystem/decode failures with input/cause, empty stdout/status1/no traceback; private parser disallows option abbreviation and validates missing/excess/unknown-prefix inputs before acquisition, preserving public API exceptions. Actual full required runner24unit15integration Passed after separate count and prefix RED/GREEN. No JSON/stdin/futuretask/parent scope or unaffected fixture-resource mutation accepted.",
+  "assistance": "Fresh scoped regression repair and separate concrete review finding; original interruptedCLI preserved in earlier seal/exports. Prefix status0 probe before repair retained; original all-green intermediate runner did not establish unknown-prefix conformance.",
+  "check_logs": [
+    "037-a017-repair-red.log",
+    "037-a017-continuation-green.log",
+    "037-a017-prefix-red.log",
+    "037-a017-continuation-final-green.log"
+  ]
+}

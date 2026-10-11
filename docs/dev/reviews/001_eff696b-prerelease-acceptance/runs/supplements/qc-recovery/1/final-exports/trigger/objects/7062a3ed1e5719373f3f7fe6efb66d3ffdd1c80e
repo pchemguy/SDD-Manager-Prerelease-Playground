@@ -1,0 +1,17 @@
+tree 462408335b3558accfc881cf96a7a004bbc12aaf
+parent a16d44b7622d5ffd68b0f87603bbaa52a1f728fd
+author Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655770 -0400
+committer Campaign 037 caller fixture <campaign-037-fixture@example.invalid> 1791655770 -0400
+
+Correct range task proposal and append document QC recovery
+
+Remove the unaccepted benchmark dependency and throughput gate against
+unchanged accepted FEATURE-PLAN/SPEC/design. Preserve original QC history
+and append actual entry findings, source identities and Revision 1 recheck.
+
+Scoped document link/style/hierarchy/count/ownership/preservation checks
+and git diff --check passed; product tests and tasks were not executed.
+
+Exact owner and QC payloads were accepted by delegated root gate
+2f7a6b22f5430cde7647adf10b6a974796cf3cd2. This ordinary document checkpoint
+does not complete tasks, integrate preparation or assert publication.

@@ -1,0 +1,78 @@
+{
+  "AGENTS.md": {
+    "sha256": "e8a3cd8ffb6aa3fbe73055cd34914a60f98ce7645bebf0323b8b3ff577d46400",
+    "blob": "3b7ef08e5098afdad581f124a8107f3e9cc8f89f"
+  },
+  "README.md": {
+    "sha256": "1619a5b6d21a761294e178fa891fbac9c87736f172689e7917dfcfc44c2c2f11",
+    "blob": "9514a0b19875441d6e7f7be55c13ed42b17e7d9d"
+  },
+  "docs/dev/ARCHITECTURE.md": {
+    "sha256": "91c914ec7ead60b1d938ecf385842fdb18e9e3d469b29db8ce6a60796b597ce5",
+    "blob": "1065972aa9aa21d1f4e6405515af37c6d77c292a"
+  },
+  "docs/dev/DECOMPOSITION.md": {
+    "sha256": "cfacdf8bf822e7cfa4fb8f5d5f4424c202c70cdd3ef41795fa8d04186b8f6430",
+    "blob": "d5ea6b517d68d85afb00a932d4508d8127fb9c38"
+  },
+  "docs/dev/PLAN-REVIEW-REPORT.md": {
+    "sha256": "5228e3c190a77513b6247b4cce920243c3b2f8933262fdd0d2fdc1f2d13ccfea",
+    "blob": "752aad9f70ca4ee3b556843f467d5bce5e493815"
+  },
+  "docs/dev/PLAN.md": {
+    "sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+    "blob": "02f6384e4e5a726c694869bb056d2f8b345142a8"
+  },
+  "docs/dev/PROJECT.md": {
+    "sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+    "blob": "468e9e354918830b1ee77eafa6ff4f63c57ccb9d"
+  },
+  "docs/dev/SPEC-REVIEW-REPORT.md": {
+    "sha256": "212f31e181d24a19a9cdfa9923153cd2c7e5d0a7771dcc3dbcbf171ced75f0c4",
+    "blob": "d7c9c7a3166a2cd7471c357ed061b7f3e233047d"
+  },
+  "docs/dev/SPEC.md": {
+    "sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+    "blob": "e77afdd309b8c229b9591089131512e333e1a983"
+  },
+  "docs/dev/TASKS-REVIEW-REPORT.md": {
+    "sha256": "60773a836cce2400334ad21c18ec421d1a84046712269b3314d9522d27e2f6ec",
+    "blob": "7d4f2e242eb4e01e01ab9a4d2e86b8feb6fab782"
+  },
+  "docs/dev/TASKS.md": {
+    "sha256": "4f45d70f9c0b59a734dd2a11cc77100e0c084a8d7af3d3f43fb0c0650c398e08",
+    "blob": "85609c834076254bf16abba6a3ce2051619ebb35"
+  },
+  "docs/dev/layout.md": {
+    "sha256": "144bab0c8020d40f992161f32e4e811aa0c29829a3a103522cf1f15880de1502",
+    "blob": "b9f1c0140809100458f5f9317615de81c19480a5"
+  },
+  "docs/dev/reports/phases/2/revisions/003_795f3a3-remove-json/REVISION-REPORT.md": {
+    "sha256": "37efe4f3fec8a9cc15326abc1fb6404286901838480efa1eeb147de05fa6baeb",
+    "blob": "51847ec441b7d216ce1d11518ff5153e176dfaff"
+  },
+  "docs/public-api.md": {
+    "sha256": "9b866f347dc1426ea5d5849ef13acb3623b84107d914735704132932404b7814",
+    "blob": "fb9eca6fd4c7d1402afa6458a6188560bc84e9fb"
+  },
+  "tests/integration/test_cli.py": {
+    "sha256": "d48fa53eda14825b6e76db752e82743ac6b8baeb840bb4c0c60d88242dee9d4b",
+    "blob": "00f692fc5ed64b3886c5faf6526dd98120e95d37"
+  },
+  "tests/integration/test_distribution.py": {
+    "sha256": "09fc45f6ca447684522a59792586467609c2596b505852b75ce199bd805399e1",
+    "blob": "be185595233ec108c2b02cffe907e471f0e1b5cc"
+  },
+  "tests/unit/test_cli.py": {
+    "sha256": "d07e7d2911899290e25e337dab162e12a9de2e98b22e8028575809aa9ad85654",
+    "blob": "1a4df0274e3699be14735bfea7a30135f4fe2c49"
+  },
+  "textstats/cli.py": {
+    "sha256": "0ed08a560cb158fa99eb0842056ae9236d78389f07d54de6d8ba09b257ed164e",
+    "blob": "8a308bccae8d3350b4dad8ce9918487a834fc4a4"
+  },
+  "tools/check_distribution.py": {
+    "sha256": "cfb0347b71adbadaee2adf0c447f008d3bf7be60b12b25ecb5826bbcdee98837",
+    "blob": "c6d47b836c8c5fab07b7a7f7143f1a52d92fcc44"
+  }
+}

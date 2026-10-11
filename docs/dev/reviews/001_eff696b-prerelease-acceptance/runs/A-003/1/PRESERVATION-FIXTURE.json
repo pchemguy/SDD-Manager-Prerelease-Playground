@@ -1,0 +1,87 @@
+{
+  "actor": "coordinator fixture setup, not consumer action or human-authored content",
+  "scope": "Owned unrelated test issue/label; no completed product or task issue supplied",
+  "label": {
+    "id": 12625616051,
+    "name": "campaign-037-preserve",
+    "color": "5319e7",
+    "description": "Coordinator-owned unrelated preservation fixture"
+  },
+  "issue": {
+    "number": 1,
+    "id": 5790780797,
+    "title": "Campaign 037 unrelated preservation fixture",
+    "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce",
+    "state": "open",
+    "label_names": [
+      "campaign-037-preserve"
+    ],
+    "comments": 0,
+    "html_url": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground/issues/1"
+  },
+  "previous_labels": [
+    {
+      "id": 12624578628,
+      "name": "accessibility",
+      "color": "f143ab",
+      "description": "Barrier affecting people with disabilities"
+    },
+    {
+      "id": 12624578614,
+      "name": "bug",
+      "color": "d73a4a",
+      "description": "Something isn't working"
+    },
+    {
+      "id": 12624578638,
+      "name": "documentation",
+      "color": "0075ca",
+      "description": "Improvements or additions to documentation"
+    },
+    {
+      "id": 12624578649,
+      "name": "duplicate",
+      "color": "cfd3d7",
+      "description": "This issue or pull request already exists"
+    },
+    {
+      "id": 12624578660,
+      "name": "enhancement",
+      "color": "a2eeef",
+      "description": "New feature or request"
+    },
+    {
+      "id": 12624578682,
+      "name": "good first issue",
+      "color": "7057ff",
+      "description": "Good for newcomers"
+    },
+    {
+      "id": 12624578673,
+      "name": "help wanted",
+      "color": "008672",
+      "description": "Extra attention is needed"
+    },
+    {
+      "id": 12624578690,
+      "name": "invalid",
+      "color": "e4e669",
+      "description": "This doesn't seem right"
+    },
+    {
+      "id": 12624578698,
+      "name": "question",
+      "color": "d876e3",
+      "description": "Further information is requested"
+    },
+    {
+      "id": 12624578707,
+      "name": "wontfix",
+      "color": "ffffff",
+      "description": "This will not be worked on"
+    }
+  ],
+  "previous_issues": [],
+  "previous_milestones": [],
+  "observed_at": "2026-10-10T11:25:59.128507+00:00"
+}

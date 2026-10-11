@@ -1,0 +1,8 @@
+tree ad9772500649f6f02aa9a3a1aa2a50cec665cc83
+parent bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa
+author Codex <codex@openai.com> 1791650859 -0400
+committer Codex <codex@openai.com> 1791650859 -0400
+
+Reconcile sole main task ownership and archive accepted range sources
+
+Transfer T-018–T-024 once with exact result/status/evidence into main TASKS. Retire active source entries into three historical source/QC pairs (six files) under the recorded package; preserve original identities/history and repair selected links. Main SPEC ownership navigation only, behavioral sections/HTML anchor unchanged; PLAN/design/layout unchanged. Refresh complete main SPEC Revision4, PLAN Revision6 and TASKS Revision3 QC with actual full coverage/counts/DAG and19 checked/5 pending. Concrete corrected13-artifact decision1dab6faf3403e8176ede62262c93bfdbca2a8735 accepts exact current blobs; original six-pairs count candidate retained outside product and corrected before acceptance. Current document pending-review sentences describe the presented prepublication checkpoint; this commit records actual accepted decision. Managed hosted source links and explicit paused-phase integration follow separate verified gates. Preserve pending stdin/final/wholephase and protected foreign material; no release.

@@ -1,0 +1,13 @@
+{
+  "decision": "Accepted",
+  "artifact": "docs/dev/layout.md and combined PLAN/layout QC",
+  "commit": "b3ba0338d71c167aaec8ca85317d09002557ea2d",
+  "layout_blob": "4039da9d2e0422ad3b53fc82f18b63612e75ccac",
+  "plan_blob": "ab2d790ec1207a9c5e24cd95211cdc20c24399a9",
+  "review_blob": "b59fa054824a3a8768e59c2dc15f90c7b9b7d330",
+  "actor": "test coordinator under user delegation",
+  "basis": "Read complete layout and combined QC; verified exact reviewed hashes and remote commit. Cohesive pure core, owned byte acquisition, facade and CLI/entry allocation are acyclic and cover accepted components without premature range implementation. Independent nonempty unit/integration discovery, controlled failures, public docs and isolated extracted-root module acceptance cover required exits. Archive allowlist excludes protected coordinator resources and secrets. Commands and paths honestly remain proposals. Combined QC preserves strategy review and exact current input identities. No material placement or scope issue found.",
+  "next_step": "Prepare TASKS and owner QC; hold implementation and hosted tracking until concrete assessment and accepted prerequisites",
+  "evidence_class": "delegated coordinator acceptance, not direct-human artifact review",
+  "observed_at": "2026-10-10T11:04:06.921137+00:00"
+}

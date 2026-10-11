@@ -1,0 +1,10 @@
+tree 4bc0f02fb8a749adb5fa6aa77ff67ed2199bc05a
+parent 639e7e0cb54d5dd1f9c1a6e73de31e76301ae932
+author Codex <codex@openai.com> 1791654671 -0400
+committer Codex <codex@openai.com> 1791654671 -0400
+
+[T-002] Implement strict named-file acquisition and complete public API
+
+Read complete binary files with strict UTF-8, preserve input bytes/newlines, close owned handles on all paths and propagate original acquisition/decode exceptions. Export the complete silent whole-input API and include tests, accurate documentation, verification/accepted-artifact evidence and initial owning completion in this atomic checkpoint.
+
+Verification: Python 3.12.14; 15 unit and 7 integration tests passed without skips. Behavioral scaffold RED: 14 unit and 55 integration failures. Delegated exact-artifact acceptance published as c8edcc3094cc819386f093a52e62ae70669720f8. Hosted tracking declined; local trial-delivery publication only. Foreign staged/unstaged facade comments and untracked note excluded. Stop at this task; no parent closure or phase integration.

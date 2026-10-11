@@ -1,0 +1,24 @@
+{
+  "time": "2026-10-11T03:56:47.680208+00:00",
+  "candidate_tree": "93756800aafe8abb0d8719176a14eb81ba42b4e1",
+  "staged_paths": [
+    "docs/dev/TASKS.md",
+    "docs/dev/reports/phases/1/PHASE-REPORT.md",
+    "tests/integration/test_api.py",
+    "tests/integration/test_cli.py",
+    "tests/integration/test_distribution.py",
+    "tests/unit/test_cli.py",
+    "tools/check_distribution.py"
+  ],
+  "sha256": {
+    "docs/dev/TASKS.md": "fee72d464890772e19da9a42a246d01ebbd3f21aa16e2080d805d0446fc8c912",
+    "docs/dev/reports/phases/1/PHASE-REPORT.md": "44143b947ab368a95d3095cf5fe23bfed2e09733f6d8cccb6c584f351e1228a3",
+    "tests/integration/test_api.py": "e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6",
+    "tests/integration/test_cli.py": "8a929dacc07f6dfd33192b462f7189247e955dc9e2f81619dd74103829e14151",
+    "tests/integration/test_distribution.py": "9f3ee0e36772328aa23ad76eb6c7345ced97808df763bb2bfd65d951e4325d46",
+    "tests/unit/test_cli.py": "2c3ef6c9e6b02e4fb37c864a72c4781d013f22fa214b044492b3b7136b1e0df2",
+    "tools/check_distribution.py": "4132a9a688ee8ce0a385c39b471ea9a29b4c6f4ba03c18e9f095cb10e9691d5f"
+  },
+  "main_ancestor_of_current_phase_head": true,
+  "prospective_merge": "Main is ancestor of unchanged current phase; no target-only delta observed. Required two-parent merge and real merged-state checks/publication remain future gates."
+}

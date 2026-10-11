@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "operation": "copy captured actual API and select four captured baseline rows by names in original order; no count computation/substitution",
+  "sources": {
+    "037-a005-api-literals.json": "f104844ccb8159b3dcb0d51056aa88b96ceb16b457bf58b18e2ab72abe4108ef",
+    "037-a005-api-provenance.json": "653570eb5a8f37d0d8ca1f00ca4c11337ebb57ba5403b82a6facdba662a47fff",
+    "037-a005-baseline-literals.json": "630252acca97408fad04157ba673e17762a4ae3c2dc47c18ae46de699d89e811",
+    "037-a005-baseline-provenance.json": "5bf43d6139775c2ebc6d936a85314226bd3a3d2d1779f72a0f5b22156a195a8c"
+  },
+  "selected_baseline_names": [
+    "named",
+    "empty",
+    "keep-bom",
+    "dash-filename"
+  ],
+  "output_sha256": "b7cfc6ab862bf8d720d6aed3cdd78a1e2db05ca45a70c96fd344f81f745c7182",
+  "full_failure_usage_capture_retained": true,
+  "new_help_observation": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "--help"
+    ],
+    "cwd": "/tmp/a005-help-30pnf3f_",
+    "environment": {
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "returncode": 0,
+    "stdout": "usage: python -m textstats [-h] [--keep-bom] INPUT\n\nCount CRLF/CR/LF lines and Unicode whitespace words in a UTF-8 file.\n\npositional arguments:\n  INPUT       named UTF-8 file (use -- before dash-prefixed names)\n\noptions:\n  -h, --help  show this help message and exit\n  --keep-bom  retain a leading Unicode BOM as ordinary content\n",
+    "stderr": "",
+    "checks": "status0, empty stderr, meaningful input/BOM usage help; retained original unit test independently verifies no acquisition"
+  },
+  "provider_operations": [
+    {
+      "repository": "SDD-Manager",
+      "path": "/git/ref/heads/revision/037_a6c42dd-prerelease-review",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/git/ref/heads/main",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/git/ref/heads/phase/1-named-file-utility",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/issues?state=all&per_page=100",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/milestones?state=all&per_page=100",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/issues/2/comments?per_page=100",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/issues/3/comments?per_page=100",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/issues/4/comments?per_page=100",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "repository": "SDD-Manager-Prerelease-Playground",
+      "path": "/issues/5/comments?per_page=100",
+      "method": "GET",
+      "status": 200
+    }
+  ]
+}

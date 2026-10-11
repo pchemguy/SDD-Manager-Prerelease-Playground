@@ -1,0 +1,18 @@
+{
+  "files": {
+    "START.json": {
+      "sha256": "d4e4286740efb0f582e4755ee256960cd4b74c7d9af376783c6a6cca2ded2270",
+      "bytes": 182517
+    },
+    "SETUP-COMMANDS.json": {
+      "sha256": "817a0207aca543460adce3fe8129c148e29bd71327a67412bc247dd26a1b5158",
+      "bytes": 129102
+    },
+    "CONSUMER-INPUT.md": {
+      "sha256": "aad64812019d8af70c23aaa9c9b2946c5f2a173730b588d19484943bf03fa65a",
+      "bytes": 1938
+    }
+  },
+  "scope": "Actual new focused nested campaign in isolated source fork, LOCAL delivery and complete external evidence publication; no source original/history edits or liveGit publication",
+  "ready_to_dispatch": false
+}

@@ -1,0 +1,154 @@
+{
+  "sealed": true,
+  "consumer": "a015-staged",
+  "selected_task": "T-001",
+  "stopping_boundary": "first caller-held closing commit; before T-002",
+  "provenance": {
+    "input": "/workspace/scratch/46b31bb4dff6/037-a015-consumer-input.md",
+    "product": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+    "pinned_package": "textstats-run-resources/plugin/",
+    "pinned_source": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "baseline": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "branch": "trial/037-a015-staged",
+    "destination": "trial-delivery",
+    "remote_ref": "refs/heads/trial/037-a015-staged",
+    "setup_publication": "Parent supplied setup15aef82 exactpublished/readback beforedispatch; consumer did not inspect coordinator assets.",
+    "scope": "Isolated branch and local bare publication authorized; hosted tracking declined; no shared origin/provider/credential operation."
+  },
+  "startup_ambiguity": "Original stop-first-failure wording appeared to include expected test-first RED; reported to coordinator before task work. Coordinator clarified expected behavioral RED is permitted, while failed/held persistence/publication or unexpected final acceptance failure requires immediate stop. No test-first exception used.",
+  "read_commands": [
+    "cat /workspace/scratch/46b31bb4dff6/037-a015-consumer-input.md",
+    "rg --files -g AGENTS.md -g '*SKILL*' -g '*pinned*'",
+    "cat AGENTS.md textstats-run-resources/plugin/AGENTS.md textstats-run-resources/plugin/skills/sdd-implement/SKILL.md",
+    "cat textstats-run-resources/plugin/skills/sdd-manage/SKILL.md textstats-run-resources/plugin/skills/sdd-orient/SKILL.md textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+    "cat textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md docs/dev/TASKS.md",
+    "cat docs/dev/SPEC.md docs/dev/ARCHITECTURE.md docs/dev/DECOMPOSITION.md docs/dev/layout.md docs/dev/PROJECT.md",
+    "cat textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md textstats-run-resources/plugin/skills/sdd-docs/SKILL.md textstats-run-resources/plugin/skills/sdd-verify/SKILL.md textstats-run-resources/plugin/skills/sdd-report/SKILL.md docs/dev/SPEC-REVIEW-REPORT.md docs/dev/PLAN-REVIEW-REPORT.md docs/dev/TASKS-REVIEW-REPORT.md",
+    "cat textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md",
+    "cat textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md docs/dev/PLAN.md SDD-MANAGER.md AI_DISCLOSURE.md README.md",
+    "cat textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md",
+    "cat docs/dev/DECOMPOSITION.md"
+  ],
+  "read_results": "All read commands exit 0; some combined output truncated. No coordinator fixture/contracts/history/other-trial assets read.",
+  "commands": [
+    {
+      "command": "git --no-optional-locks status --short --branch",
+      "exit_code": 0,
+      "result": "clean trial/037-a015-staged tracking trial-delivery/trial/037-a015-staged"
+    },
+    {
+      "command": "git --no-optional-locks rev-parse HEAD",
+      "exit_code": 0,
+      "result": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+    },
+    {
+      "command": "git ls-remote trial-delivery refs/heads/trial/037-a015-staged",
+      "exit_code": 0,
+      "result": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191 refs/heads/trial/037-a015-staged"
+    },
+    {
+      "command": "sha256sum docs/dev/PROJECT.md docs/dev/ARCHITECTURE.md docs/dev/DECOMPOSITION.md docs/dev/SPEC.md docs/dev/SPEC-REVIEW-REPORT.md docs/dev/PLAN.md docs/dev/layout.md docs/dev/PLAN-REVIEW-REPORT.md docs/dev/TASKS.md",
+      "exit_code": 0,
+      "result": "All governing exact SHA-256 match current adjacent QC reports."
+    },
+    {
+      "command": "git --no-optional-locks log -3 --format='%H %s'",
+      "exit_code": 0,
+      "result": "HEAD baseline Merge accepted TextStats preparation into main; prior preparation commits only."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/unit -t . -v",
+      "stage": "RED after importable mutable/no-validation/zero-count scaffold and tests",
+      "exit_code": 1,
+      "result": "Ran 8 tests; FAILED (failures=60); assertion failures demonstrate intended missing behavior, no import/collection errors."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/unit -t . -v",
+      "stage": "GREEN",
+      "exit_code": 0,
+      "result": "Ran 8 tests; OK; no skips."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/integration -t . -v",
+      "stage": "GREEN",
+      "exit_code": 0,
+      "result": "Ran 2 tests; OK; no skips."
+    },
+    {
+      "command": "git --no-optional-locks diff --check",
+      "stage": "GREEN",
+      "exit_code": 0,
+      "result": "empty output"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/unit -t . -v",
+      "stage": "final acceptance",
+      "exit_code": 0,
+      "result": "Ran 8 tests; OK; no skips."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests/integration -t . -v",
+      "stage": "final acceptance",
+      "exit_code": 0,
+      "result": "Ran 2 tests; OK; no skips."
+    },
+    {
+      "command": "git --no-optional-locks diff --check",
+      "stage": "final acceptance",
+      "exit_code": 0,
+      "result": "empty output"
+    },
+    {
+      "command": "git add -- AGENTS.md README.md docs/dev/TASKS.md textstats/core.py textstats/__init__.py tests/__init__.py tests/unit/__init__.py tests/integration/__init__.py tests/unit/test_core.py tests/integration/test_api.py",
+      "exit_code": 0,
+      "result": "empty output; owned paths staged"
+    },
+    {
+      "command": "git --no-optional-locks diff --cached --stat\n git --no-optional-locks diff --cached --check\n git --no-optional-locks status --porcelain=v1 --untracked-files=all",
+      "exit_code": 0,
+      "result": "10 files changed, 205 insertions(+), 5 deletions(-); staged check empty; all ten owned files staged, no other pending paths."
+    },
+    {
+      "command": "git commit -m '[T-001] Implement immutable whole-text statistics'",
+      "exit_code": 1,
+      "result": "Caller control holds this operation. Stop and report retained state.\n",
+      "held": true
+    }
+  ],
+  "edits": "Shell here-docs created importable RED scaffold, package markers and contract tests; after observed RED replaced core with immutable validated value/shared logical traversal/normalized counting. Python -B Path read/write updated only AGENTS.md, README.md and T-001 checkbox/evidence. All edit commands exited 0. No Python caches generated; no /pyenv.",
+  "artifact_sha256": {
+    "textstats/core.py": "3281653b8de71ac9865a30a22011439f1bd6f3417ec0cc44bb84cfc73432abee",
+    "textstats/__init__.py": "c5db9c29a9d1ab63f2cb818ed7f7ce6284d51ff2913784a53ce0b0d7461d762f",
+    "tests/unit/test_core.py": "b8b916e0fb69de98869fce96b97feea2e45bcd008d1aafe400ecf36e5614d692",
+    "tests/integration/test_api.py": "f41688c9d7e008f2392e3164a67300463df2da60c01b017d809d0d18d8ecf7be",
+    "tests/__init__.py": "658da45d69731c8f43d35f5eb2576ddfa049bfdb4faa2a0e86159b7119afd91c",
+    "tests/unit/__init__.py": "02cba8dcdca61335a48784875b81cdbe69969965dd20385200b937f5e41b9a55",
+    "tests/integration/__init__.py": "390e99e4fd9a667e441eb546efc286617a2279b6bbd646ad1925dada6fb58086",
+    "AGENTS.md": "94a36756c74cde9ddbf849319fa78d87de022e5e43727ba493ee2a72cdffd98a",
+    "README.md": "91fac18f7cde29146e7d7bc8b56578fa0fe7571c7d2323a18b756b2a17934192",
+    "docs/dev/TASKS.md": "69a8bb22fdb3d780bf8fed3337b79e0b142b6155e6ab99ab7163299f8d38b8a5"
+  },
+  "delegated_decision": "Coordinator read supplied exact core/exports/unit8/integration2 artifacts and accepted R-001\u2013R-005/value/signature/silence semantics at supplied hashes before completion. Coordinator separately accepted exact README/AGENTS truthful text-only updates. No unseen task/document accepted.",
+  "retained_pending_work": {
+    "staged_files": [
+      "AGENTS.md",
+      "README.md",
+      "docs/dev/TASKS.md",
+      "tests/__init__.py",
+      "tests/integration/__init__.py",
+      "tests/integration/test_api.py",
+      "tests/unit/__init__.py",
+      "tests/unit/test_core.py",
+      "textstats/__init__.py",
+      "textstats/core.py"
+    ],
+    "unstaged_files": [],
+    "untracked_files": [],
+    "task_checkbox": "T-001 checked in index/worktree only, not durable completion; all later tasks and parents unchecked",
+    "head": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "remote_tip_last_observed": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "pending_operation": "closing commit, then immediate trial-delivery push/exact readback",
+    "ref_limits": "Commit was held; no successful closing commit or publication claimed. No post-hold product inspection, retry, hook/config/control edit or bypass."
+  },
+  "limits": "T-001 only; file API/CLI/package tools later and deliberately unrun. No milestone/phase completion or merge. Every Python invocation used PYTHONDONTWRITEBYTECODE=1 python -B. Observation seal is final operation; no later operations."
+}

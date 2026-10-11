@@ -1,0 +1,32 @@
+[
+  {
+    "argv": [
+      "git",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "ceeae63d8d9b2ef2250f6551db1a627841477d73",
+      "--",
+      "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/artifact-acceptance"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+    "exit_code": 0,
+    "stdout_b64": "ZG9jcy9kZXYvcmV2aWV3cy8wMDFfZWZmNjk2Yi1wcmVyZWxlYXNlLWFjY2VwdGFuY2UvcnVucy9zdXBwbGVtZW50cy9wYXJlbnQtZm9sbG93dXAvMS9hcnRpZmFjdC1hY2NlcHRhbmNlL0RFQ0lTSU9OLmpzb24KZG9jcy9kZXYvcmV2aWV3cy8wMDFfZWZmNjk2Yi1wcmVyZWxlYXNlLWFjY2VwdGFuY2UvcnVucy9zdXBwbGVtZW50cy9wYXJlbnQtZm9sbG93dXAvMS9hcnRpZmFjdC1hY2NlcHRhbmNlL1RBU0tTLmRpZmYKZG9jcy9kZXYvcmV2aWV3cy8wMDFfZWZmNjk2Yi1wcmVyZWxlYXNlLWFjY2VwdGFuY2UvcnVucy9zdXBwbGVtZW50cy9wYXJlbnQtZm9sbG93dXAvMS9hcnRpZmFjdC1hY2NlcHRhbmNlL1RBU0tTLm1kCg==",
+    "stderr_b64": ""
+  },
+  {
+    "argv": [
+      "git",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "e7dfab013b82d3929e0c4adc26e3718ae7fdb789",
+      "--",
+      "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/supplements/parent-followup/1/setup"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+    "exit_code": 0,
+    "stdout_b64": "ZG9jcy9kZXYvcmV2aWV3cy8wMDFfZWZmNjk2Yi1wcmVyZWxlYXNlLWFjY2VwdGFuY2UvcnVucy9zdXBwbGVtZW50cy9wYXJlbnQtZm9sbG93dXAvMS9zZXR1cC9DQUxMRVItQVVUSE9SLnB5CmRvY3MvZGV2L3Jldmlld3MvMDAxX2VmZjY5NmItcHJlcmVsZWFzZS1hY2NlcHRhbmNlL3J1bnMvc3VwcGxlbWVudHMvcGFyZW50LWZvbGxvd3VwLzEvc2V0dXAvQ0FMTEVSLUNPTU1BTkRTLmpzb24KZG9jcy9kZXYvcmV2aWV3cy8wMDFfZWZmNjk2Yi1wcmVyZWxlYXNlLWFjY2VwdGFuY2UvcnVucy9zdXBwbGVtZW50cy9wYXJlbnQtZm9sbG93dXAvMS9zZXR1cC9ST09ULUVYUE9SVC1NQU5JRkVTVC5qc29uCmRvY3MvZGV2L3Jldmlld3MvMDAxX2VmZjY5NmItcHJlcmVsZWFzZS1hY2NlcHRhbmNlL3J1bnMvc3VwcGxlbWVudHMvcGFyZW50LWZvbGxvd3VwLzEvc2V0dXAvU1RBUlQuanNvbgpkb2NzL2Rldi9yZXZpZXdzLzAwMV9lZmY2OTZiLXByZXJlbGVhc2UtYWNjZXB0YW5jZS9ydW5zL3N1cHBsZW1lbnRzL3BhcmVudC1mb2xsb3d1cC8xL3NldHVwL2luZGV4LmJpbgpkb2NzL2Rldi9yZXZpZXdzLzAwMV9lZmY2OTZiLXByZXJlbGVhc2UtYWNjZXB0YW5jZS9ydW5zL3N1cHBsZW1lbnRzL3BhcmVudC1mb2xsb3d1cC8xL3NldHVwL29yZGluYXJ5LWlucHV0Lm1kCmRvY3MvZGV2L3Jldmlld3MvMDAxX2VmZjY5NmItcHJlcmVsZWFzZS1hY2NlcHRhbmNlL3J1bnMvc3VwcGxlbWVudHMvcGFyZW50LWZvbGxvd3VwLzEvc2V0dXAvb3JpZ2luYWwtVEFTS1MuYmluCg==",
+    "stderr_b64": ""
+  }
+]

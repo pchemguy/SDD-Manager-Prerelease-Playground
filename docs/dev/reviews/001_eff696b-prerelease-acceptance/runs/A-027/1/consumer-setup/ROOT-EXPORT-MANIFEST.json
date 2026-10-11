@@ -1,0 +1,46 @@
+{
+  "bindings.json": {
+    "sha256": "eef64f46dfd40a5bf93af0d53f74e9127662176f0d51fed5572a7414741f8718",
+    "bytes": 1382
+  },
+  "command-0-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-0-stdout.bin": {
+    "sha256": "eb636cc989ae062a670833319b1597b580214c6091fd22783edf6f425e796bdc",
+    "bytes": 41
+  },
+  "command-1-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-1-stdout.bin": {
+    "sha256": "872742905d27555065d37a24dd4b1ba34fe5339a5cccf5add969f559f0edc9b2",
+    "bytes": 23
+  },
+  "command-2-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-2-stdout.bin": {
+    "sha256": "89d719e140dc572b58d831bb7e8a13efd07c063b9f0d89d59e255adc2ed25f2b",
+    "bytes": 261
+  },
+  "command-3-stderr.bin": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "command-3-stdout.bin": {
+    "sha256": "478dc6b7502b6aab06b49f8f61aad088a83b8f5d369e10049f5a9297e335657d",
+    "bytes": 132
+  },
+  "commands.json": {
+    "sha256": "c9078d6895bcae9d2ce5f8283d1da254a2f502ed57000953f2a7521c5dc1fa6b",
+    "bytes": 2433
+  },
+  "ordinary-input.md": {
+    "sha256": "9c30a42e371064a5c858b2fc2e160a1c4ea8ba763d1e08de4690aea6a9e36c62",
+    "bytes": 1538
+  }
+}

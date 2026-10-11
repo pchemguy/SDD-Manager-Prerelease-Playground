@@ -1,0 +1,109 @@
+TASK AUDIT 9dc8075dd1b96d3a2744717a9d6d98a3024acbec [T-001] Implement immutable statistics and whole-text counting initial closure ['T-001'] paths ['.gitignore', 'AGENTS.md', 'README.md', 'docs/dev/TASKS.md', 'tests/__init__.py', 'tests/integration/__init__.py', 'tests/integration/test_api.py', 'tests/unit/__init__.py', 'tests/unit/test_core.py', 'textstats/__init__.py', 'textstats/core.py']
+TASK AUDIT f28f6e415b3e0c13353a61e82354c47b0d2cabb2 [T-002] Implement strict file acquisition and complete public API initial closure ['T-002'] paths ['docs/dev/TASKS.md', 'tests/integration/test_api.py', 'tests/unit/test_io.py', 'textstats/__init__.py', 'textstats/io.py']
+TASK AUDIT 373203d6f41bee2229eed900b761de8669678e0b [T-003] Integrate named-file CLI and nonempty product checks initial closure ['T-003'] paths ['AGENTS.md', 'README.md', 'docs/dev/TASKS.md', 'tests/integration/test_cli.py', 'tests/unit/test_cli.py', 'textstats/__main__.py', 'textstats/cli.py', 'tools/check_tests.py']
+TASK AUDIT 7d003c1cf31c994340d8644e95990ef2253754ed [T-004] Review named-file counting and complete milestone 1.1 initial closure ['T-004'] paths ['docs/dev/TASKS.md', 'docs/dev/reports/phases/1/1.1.md']
+TASK AUDIT 809f045e3cd32445e7dca29d0174ea25aa5da7ea [T-005] Handle named-file input failures without tracebacks initial closure ['T-005'] paths ['docs/dev/TASKS.md', 'tests/integration/test_cli.py', 'tests/unit/test_cli.py', 'textstats/cli.py']
+TASK AUDIT fde1537b5c4ba1bcef4f538dfb47276d564e4aaa [T-006] Document public API and runnable named-file usage initial closure ['T-006'] paths ['AGENTS.md', 'README.md', 'docs/dev/TASKS.md', 'docs/public-api.md']
+TASK AUDIT f7e3309b672cb13b1d8158613e81d50e8d1ecc18 [T-007] Build and verify isolated TextStats source distribution initial closure ['T-007'] paths ['.gitignore', 'AGENTS.md', 'README.md', 'docs/dev/TASKS.md', 'tests/integration/test_distribution.py', 'tools/check_distribution.py', 'tools/package_source.py']
+TASK AUDIT 7b9f570aa4452d2ca9d6105479640528cb113f0e [T-008] Review distribution milestone and reject option abbreviations initial closure ['T-008'] paths ['README.md', 'docs/dev/TASKS.md', 'docs/dev/reports/phases/1/1.2.md', 'tests/integration/test_cli.py', 'tests/unit/test_cli.py', 'textstats/cli.py', 'tools/check_distribution.py']
+SHA256 43e7e042edb7693ea2ba828726b691e2372feecb7954d7d05734c82a7b6319c1 textstats/cli.py
+SHA256 b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0 textstats/__init__.py
+SHA256 b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590 textstats/__main__.py
+SHA256 98b3374375eb7e6d4a301cabff99eb5e09ccccecbd9a808954e9c5cae084609f textstats/core.py
+SHA256 a45b0a1f320109f43d92e1b01507c2c2da941af51af09ede378724038db32b9f textstats/io.py
+SHA256 4132a9a688ee8ce0a385c39b471ea9a29b4c6f4ba03c18e9f095cb10e9691d5f tools/check_distribution.py
+SHA256 e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91 tools/package_source.py
+SHA256 1c0bc3d2c5ef400806aa9de66ec4af40c632acf206d90105c6f8559b2413b619 tools/check_tests.py
+SHA256 986bc8697e637d909ca4bc3d2a3f97a027161b4f4ced0f57c77ae4152e62fbbe tests/__init__.py
+SHA256 e25d401f38b8eaeb7f78dc64197047acd1dbfeb0067ccb54366f599220d76bb6 tests/integration/test_api.py
+SHA256 6d74eb5943bc4a44d8e67cf5ad5a899df9bc968c1d63a908dc66d865c188b3e8 tests/integration/__init__.py
+SHA256 9f3ee0e36772328aa23ad76eb6c7345ced97808df763bb2bfd65d951e4325d46 tests/integration/test_distribution.py
+SHA256 8a929dacc07f6dfd33192b462f7189247e955dc9e2f81619dd74103829e14151 tests/integration/test_cli.py
+SHA256 7750eddb9d64e3a7af2eb61652b2602f4d8ec5d5fb40a6282ce965665f348423 tests/unit/test_core.py
+SHA256 9c7fd62fe7e489b7c5124c32df27746ef9419531e46f4263ea89f21f8a497978 tests/unit/__init__.py
+SHA256 22c6ec352b6757f7a5d4876972f22974774b3ec20c7bd4ca985bfb7169f46921 tests/unit/test_io.py
+SHA256 2c3ef6c9e6b02e4fb37c864a72c4781d013f22fa214b044492b3b7136b1e0df2 tests/unit/test_cli.py
+SHA256 5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a docs/dev/SPEC.md
+SHA256 834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f docs/dev/layout.md
+SHA256 f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e docs/dev/PLAN-REVIEW-REPORT.md
+SHA256 30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee docs/dev/DECOMPOSITION.md
+SHA256 71fe79fe1e1ca0c783d62700f19848cbac61d039d54c7d84e239c1b5319be6b9 docs/dev/TASKS.md
+SHA256 fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf docs/dev/TASKS-REVIEW-REPORT.md
+SHA256 44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899 docs/dev/SPEC-REVIEW-REPORT.md
+SHA256 b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8 docs/dev/PLAN.md
+SHA256 cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d docs/dev/PROJECT.md
+SHA256 51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302 docs/dev/ARCHITECTURE.md
+All T001–T008 task result/initial checklist boundaries audited; loaded instruction hashes saved
+diff --git a/tests/integration/test_api.py b/tests/integration/test_api.py
+index a801dbb..4db902d 100644
+--- a/tests/integration/test_api.py
++++ b/tests/integration/test_api.py
+@@ -51,7 +51,7 @@ class TextApiTests(unittest.TestCase):
+         self.assertEqual(stderr.getvalue(), "")
+ 
+     def test_initial_import_is_silent_in_fresh_process(self):
+-        result = subprocess.run([sys.executable, "-c", "import textstats"], capture_output=True, text=True)
++        result = subprocess.run([sys.executable, "-B", "-c", "import textstats"], capture_output=True, text=True)
+         self.assertEqual(result.returncode, 0, result.stderr)
+         self.assertEqual(result.stdout, "")
+         self.assertEqual(result.stderr, "")
+diff --git a/tests/integration/test_cli.py b/tests/integration/test_cli.py
+index 74d59cc..55939e6 100644
+--- a/tests/integration/test_cli.py
++++ b/tests/integration/test_cli.py
+@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
+ 
+ class ModuleCliTests(unittest.TestCase):
+     def invoke(self, *args, cwd=ROOT):
+-        return subprocess.run([sys.executable, '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
++        return subprocess.run([sys.executable, "-B", '-m', 'textstats', *args], cwd=cwd, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True)
+ 
+     def test_named_file_matrix_and_bom_option_order(self):
+         cases = [('', (0, 0), (0, 0)), ('α\r\n猫\rβ γ\n', (3, 4), (3, 4)), ('\ufeff', (0, 0), (1, 1)), ('\ufeff\ufeff', (1, 1), (1, 1)), ('alpha\u2028beta', (1, 2), (1, 2)), ('a\n\n', (2, 1), (2, 1))]
+diff --git a/tests/integration/test_distribution.py b/tests/integration/test_distribution.py
+index f85b203..52a7219 100644
+--- a/tests/integration/test_distribution.py
++++ b/tests/integration/test_distribution.py
+@@ -59,7 +59,7 @@ class DistributionTests(unittest.TestCase):
+                 verify_archive(faulty)
+ 
+     def test_documented_checker_script_builds_and_runs(self):
+-        result = subprocess.run([sys.executable, str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
++        result = subprocess.run([sys.executable, "-B", str(ROOT / 'tools/check_distribution.py')], cwd=ROOT,
+                                 capture_output=True, text=True)
+         self.assertEqual(result.returncode, 0, result.stderr)
+         self.assertIn('extracted import:', result.stdout)
+diff --git a/tests/unit/test_cli.py b/tests/unit/test_cli.py
+index 213d952..9fc5e23 100644
+--- a/tests/unit/test_cli.py
++++ b/tests/unit/test_cli.py
+@@ -96,7 +96,7 @@ class CheckRunnerTests(unittest.TestCase):
+             fixture.mkdir()
+             (fixture / '__init__.py').touch()
+             (fixture / 'test_foreign.py').write_text('raise RuntimeError("workflow fixture collected")\n')
+-            return subprocess.run([sys.executable, str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
++            return subprocess.run([sys.executable, "-B", str(root / 'tools' / 'check_tests.py')], cwd=root, capture_output=True, text=True)
+ 
+     GOOD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.assertEqual(2 + 2, 4)\n'
+     BAD = 'import unittest\nclass Contract(unittest.TestCase):\n    def test_contract(self):\n        self.fail("controlled product failure")\n'
+diff --git a/tools/check_distribution.py b/tools/check_distribution.py
+index 693ff81..760479e 100644
+--- a/tools/check_distribution.py
++++ b/tools/check_distribution.py
+@@ -38,7 +38,7 @@ def verify_archive(archive: Path) -> int:
+         environment['PYTHONNOUSERSITE'] = '1'
+ 
+         def invoke(arguments):
+-            return subprocess.run([sys.executable, '-s', *arguments], cwd=root,
++            return subprocess.run([sys.executable, "-B", '-s', *arguments], cwd=root,
+                                   env=environment, capture_output=True, text=True)
+ 
+         imported = invoke(['-c', 'import textstats; print(textstats.__file__)'])
+ M tests/integration/test_api.py
+ M tests/integration/test_cli.py
+ M tests/integration/test_distribution.py
+ M tests/unit/test_cli.py
+ M tools/check_distribution.py
+?? -sample
+?? bom.txt
+?? sample.txt

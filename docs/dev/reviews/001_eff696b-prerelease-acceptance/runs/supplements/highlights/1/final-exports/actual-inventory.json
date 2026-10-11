@@ -1,0 +1,88 @@
+{
+  "baseline": "5e4d990e55817220661028f5e7ec643707bddd5a",
+  "watermark": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+  "target": "ecc652f9fca8b3da0c5658065e6f6e0123360f40",
+  "commits": [
+    {
+      "commit": "5636481308427f9e9efd39576e562f057db7acda",
+      "parents": [
+        "5e4d990e55817220661028f5e7ec643707bddd5a"
+      ],
+      "subject": "Record focused nested task publication and continuation review"
+    },
+    {
+      "commit": "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+      "parents": [
+        "5e4d990e55817220661028f5e7ec643707bddd5a",
+        "5636481308427f9e9efd39576e562f057db7acda"
+      ],
+      "subject": "Merge revision 042_5e4d990 \u2014 Task publication and continuation review"
+    },
+    {
+      "commit": "2e3b5ba69105e672682132c77e2f2f43dfb986a6",
+      "parents": [
+        "cedb509eb224ff4798349a924dd2e5d9235f18f7"
+      ],
+      "subject": "Extend campaign 042 with bounded publication and continuation examples"
+    },
+    {
+      "commit": "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0",
+      "parents": [
+        "cedb509eb224ff4798349a924dd2e5d9235f18f7",
+        "2e3b5ba69105e672682132c77e2f2f43dfb986a6"
+      ],
+      "subject": "Merge revision 042_5e4d990 \u2014 Task publication review and worked examples"
+    },
+    {
+      "commit": "5e6f93c397db07df85de7ed1d45f881668982fcc",
+      "parents": [
+        "5e4d990e55817220661028f5e7ec643707bddd5a",
+        "ea5fe474a4d5e7ca30d48a60bcda9b29b8d454a0"
+      ],
+      "subject": "Caller fixture enclosing review integration"
+    },
+    {
+      "commit": "dbd1376f1a65a93d3a4306f47414af4730a53bbe",
+      "parents": [
+        "5e6f93c397db07df85de7ed1d45f881668982fcc"
+      ],
+      "subject": "Add a concise continuation reference (caller fixture)"
+    },
+    {
+      "commit": "46f01d854524472713df5de0a4539785609ce144",
+      "parents": [
+        "dbd1376f1a65a93d3a4306f47414af4730a53bbe"
+      ],
+      "subject": "Propose a temporary benchmark gate (caller fixture)"
+    },
+    {
+      "commit": "d62c35a805cf08c1d5f6d4649213b1b902e6ae7d",
+      "parents": [
+        "46f01d854524472713df5de0a4539785609ce144"
+      ],
+      "subject": "Revert \"Propose a temporary benchmark gate (caller fixture)\""
+    },
+    {
+      "commit": "f25d556eca14710e4596dcda0c7971479c399be1",
+      "parents": [
+        "d62c35a805cf08c1d5f6d4649213b1b902e6ae7d"
+      ],
+      "subject": "Clarify foreign staged intent in continuation reference (caller fixture)"
+    },
+    {
+      "commit": "75702ad1bca1a5f982811c221fbdec5b55b39cc5",
+      "parents": [
+        "d62c35a805cf08c1d5f6d4649213b1b902e6ae7d"
+      ],
+      "subject": "Clarify retained history in continuation reference (caller fixture)"
+    },
+    {
+      "commit": "ecc652f9fca8b3da0c5658065e6f6e0123360f40",
+      "parents": [
+        "f25d556eca14710e4596dcda0c7971479c399be1",
+        "75702ad1bca1a5f982811c221fbdec5b55b39cc5"
+      ],
+      "subject": "Merge continuation references with a combined safety explanation (caller fixture)"
+    }
+  ]
+}

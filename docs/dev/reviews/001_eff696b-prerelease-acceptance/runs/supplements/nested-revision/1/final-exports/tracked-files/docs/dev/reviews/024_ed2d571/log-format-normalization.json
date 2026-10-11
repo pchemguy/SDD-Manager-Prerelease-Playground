@@ -1,0 +1,7 @@
+{
+  "path": "receipt-red.txt",
+  "original_raw_sha256": "4874a8a4f8f80e7091a163da02bc68a86a1e3ba6ed88ac1693a02891c4de8e97",
+  "original_preserved_commit": "4e8162f66cd97f3ad8ce81da1aebf7fbf1bca028",
+  "change": "Trim unittest status-line trailing whitespace for staged whitespace check; observations and outcomes unchanged.",
+  "normalized_sha256": "8b9bc30d11e4efc46da644198c87a2b54e90dbca729dffade0cd180e32bc1705"
+}

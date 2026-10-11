@@ -1,0 +1,8 @@
+tree 371beeaeaac1dd6a4e2624adfb879db3b918a319
+parent 8036adbd71ffc1f04b98e689cc131781bc20cd1f
+author Codex <codex@openai.com> 1791645296 -0400
+committer Codex <codex@openai.com> 1791645296 -0400
+
+Incorporate named-file ranges into main SPEC
+
+Express accepted named-file range behavior and objective acceptance in main F-001–F-004; preserve whole-input APIs and separate stdin delivery. Append selected full SPEC conformance QC and report unselected PLAN/TASKS reassessment. Retain active feature owners and stop before implementation or integration.

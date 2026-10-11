@@ -1,0 +1,56 @@
+{
+  "scope": "Independent root actual GET-only late pre-T017/integration baseline preservation; not original-startup reconstruction",
+  "baseline_sha256": "d56256de5dc8ce43b1bb7bab45ab90f3c2977dfc88ec53a780f6446803cb6290",
+  "records": [
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/2",
+      "status": 200,
+      "semantic_sha256": "9e3b1705f4d724265fa7ce343649210f7e4099c65784a7520a36db1b8b21b06a",
+      "expected_semantic_sha256": "9e3b1705f4d724265fa7ce343649210f7e4099c65784a7520a36db1b8b21b06a",
+      "semantic_exact_equal": true,
+      "response_sha256": "3aa39335595becfeb61eb17bb400cf6900de200b24a70005dee4c725cacd6b2d",
+      "response_bytes": 9268,
+      "foreign_contents_retained": false,
+      "observed_at": "2026-10-10T19:37:50.956871+00:00"
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/2/comments?per_page=100",
+      "status": 200,
+      "semantic_sha256": "0f4589089fb5e0b7d2a4aa8370b6de1963bd380b8be41df31b00fbacdbfa4e87",
+      "expected_semantic_sha256": "0f4589089fb5e0b7d2a4aa8370b6de1963bd380b8be41df31b00fbacdbfa4e87",
+      "semantic_exact_equal": true,
+      "response_sha256": "dfee20ee3782a4ca62f6aa64c490a89d8ffd85600343af9ca8359b3093b5a094",
+      "response_bytes": 4002,
+      "foreign_contents_retained": false,
+      "observed_at": "2026-10-10T19:37:53.351760+00:00"
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/1",
+      "status": 200,
+      "semantic_sha256": "30f96a4213998ff21ff9c0f6353b89f9233167c59de4ef3af8d180c1efc4e78c",
+      "expected_semantic_sha256": "30f96a4213998ff21ff9c0f6353b89f9233167c59de4ef3af8d180c1efc4e78c",
+      "semantic_exact_equal": true,
+      "response_sha256": "caa0c2b9725964c311947e72589a1470ae72f2f19a979eac57f98bceede3f6d9",
+      "response_bytes": 3330,
+      "foreign_contents_retained": false,
+      "observed_at": "2026-10-10T19:37:55.899546+00:00"
+    },
+    {
+      "method": "GET",
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels?per_page=100",
+      "status": 200,
+      "semantic_sha256": "5daebc97ffc44bd7d4f292d241b8f6a6a6ea7f8854f0a3ae24a17dc3ec2f8bac",
+      "expected_semantic_sha256": "5daebc97ffc44bd7d4f292d241b8f6a6a6ea7f8854f0a3ae24a17dc3ec2f8bac",
+      "semantic_exact_equal": true,
+      "response_sha256": "83f3705b24ae9518ccaeacf25fe236c2d81a8f00c2ba3c16c81cbed9ca28650a",
+      "response_bytes": 3986,
+      "foreign_contents_retained": false,
+      "observed_at": "2026-10-10T19:37:58.344725+00:00"
+    }
+  ],
+  "all_four_exact": true,
+  "limits": "Exact complete object semantic hashes for issue2/commentlist/milestone1/label list, bodies transient and discarded; consumer late baseline provenance remains distinct from root actual readbacks"
+}

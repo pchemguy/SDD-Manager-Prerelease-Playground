@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "A-024",
+  "variant": "rate-limit",
+  "evidence_class": "controlled",
+  "predecessor_assessed_published": "65b6f802f16a66ff58e6d251c5cf77d24cda1f9e",
+  "fixture_control": "rate-limit",
+  "http_status": 429,
+  "facility": "/workspace/scratch/46b31bb4dff6/037-a024-rate-limit-facility",
+  "ledger_initially_absent": true,
+  "facility_files": {
+    "tracking_facility.py": "2f1088b2df490dbd26e6bdb8ec02e3e47f5ccbd10186e3aa445e83396ec8e923",
+    "fault_adapter.py": "75620593a8c1a7bc4bc316521b7f98aed7cbdafe318714ac4a68c84022528388",
+    "CONTROL.json": "40ac7af7b3d173084dd5bf312727a4089a4e5dd99e2eb47f13d171caa00091d2",
+    "core.py": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+    "PUBLIC-INTERFACE.md": "405251eb7dffe75a1e8c7d1c13d6c95c6aabbc9b485eb1fa0a8d0790f387e740"
+  },
+  "positive_product_not_changed_by_setup": true,
+  "fresh_consumer_required": true,
+  "restoration_only_after_actual_visible_failure": true
+}

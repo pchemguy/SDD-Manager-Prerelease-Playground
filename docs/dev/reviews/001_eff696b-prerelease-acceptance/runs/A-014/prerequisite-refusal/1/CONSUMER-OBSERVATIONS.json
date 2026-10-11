@@ -1,0 +1,864 @@
+{
+  "request": "T-002 through T-003 inclusive only",
+  "product": "/workspace/scratch/46b31bb4dff6/037-a014-refusal-product",
+  "pinned_plugin_commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "shared_filesystem_isolation": "uncertified per supplied handoff",
+  "before": {
+    "status": "",
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "branch": "trial/037-a014-refusal",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "trial_remote_cache": "1e3305c8659045945244c06861079fef879ca3c3"
+  },
+  "loaded_sources": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "d905c30b1bfc4ade497fa8bb2d850c71e0fae0db8a491a7651e53540678c067c"
+    },
+    {
+      "path": "SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    {
+      "path": "AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "README.md",
+      "sha256": "af9961caa90a943d12b5c995893a8214628b0006049aebe0d38421bbf28bf373"
+    },
+    {
+      "path": "docs/dev/PROJECT.md",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d"
+    },
+    {
+      "path": "docs/dev/TASKS.md",
+      "sha256": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2"
+    },
+    {
+      "path": "textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md",
+      "sha256": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md",
+      "sha256": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md",
+      "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md",
+      "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md",
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md",
+      "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7"
+    },
+    {
+      "path": "docs/dev/PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+    },
+    {
+      "path": "textstats-run-resources/PLUGIN-SOURCE.json",
+      "sha256": "da3d348e38cb87431a640319fc6697a71aadff133f8fc08787fa429c2571f710"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md",
+      "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd"
+    }
+  ],
+  "actual_commands_results": [
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "1e3305c8659045945244c06861079fef879ca3c3\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "trial/037-a014-refusal\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "refs/remotes/origin/trial/037-a014-refusal"
+      ],
+      "exit_code": 0,
+      "stdout": "1e3305c8659045945244c06861079fef879ca3c3\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "ls-remote",
+        "--heads",
+        "origin",
+        "refs/heads/trial/037-a014-refusal",
+        "refs/heads/main"
+      ],
+      "exit_code": 0,
+      "stdout": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46\trefs/heads/main\n1e3305c8659045945244c06861079fef879ca3c3\trefs/heads/trial/037-a014-refusal\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "merge-base",
+        "--is-ancestor",
+        "1e3305c8659045945244c06861079fef879ca3c3",
+        "main"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "log",
+        "--format=%H %s",
+        "--grep=^\\[T-[0-9]",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "1e3305c8659045945244c06861079fef879ca3c3\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "trial/037-a014-refusal\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46\n",
+      "stderr": ""
+    }
+  ],
+  "prior_inspection_commands": [
+    "cat 037-consumer-a014-refusal-input.md",
+    "pwd; rg --files -g AGENTS.md -g *SKILL.md -g *TASKS* -g *PLAN* -g *SPEC* -g *QC* -g *HANDOFF*",
+    "cat root/plugin AGENTS.md and sdd-implement/SKILL.md",
+    "cat sdd-manage/SKILL.md sdd-orient/SKILL.md startup-and-continuation.md range-selection.md docs/dev/TASKS.md (output truncated; range-selection subsequently reread)",
+    "git read-only status/root/HEAD/branch/ref inventory; cat inspection-and-handoff.md range-selection.md branch-management.md",
+    "cat SDD-MANAGER.md AI_DISCLOSURE.md README.md PROJECT.md tracking-decision.md phase-activation.md document-qc-gates.md"
+  ],
+  "scope_decision": {
+    "selected": [
+      "T-002",
+      "T-003"
+    ],
+    "actual_phase": "Phase 1, milestone 1.1",
+    "cross_phase": false,
+    "out_of_range_prerequisite": "T-001 is unchecked; no committed task implementation, source/tests absent",
+    "dependent_task": "T-003 depends on T-002",
+    "preparation_gate": "accepted retained preparation HEAD is not ancestor of actual default main; main writes prohibited by current handoff",
+    "tracking": "PLAN records confirmed user-authorized tracking; eligible-phase projection is not verified. Current handoff prohibits hosted writes; gate not satisfied and no local-only override inferred.",
+    "stopping_boundary": "stop before any dependent implementation effects; do not add T-001 or integrate preparation"
+  },
+  "product_effects": {
+    "edits": [],
+    "tests_run": [],
+    "commits": [],
+    "pushes": [],
+    "hosted_writes": []
+  },
+  "pin_manifest": {
+    "changed_package_paths": [],
+    "commit": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "fingerprint": "68672b03b03ca46740126d7976e3043171b1f047cb45a86891dc1222799ead7f",
+    "manifest_path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/PLUGIN-SOURCE.json",
+    "package_file_modes": {
+      ".codex-plugin/plugin.json": "100644",
+      "AGENTS.md": "100644",
+      "AI_DISCLOSURE.md": "100644",
+      "Greenfield Project Prompt Template.md": "100644",
+      "LICENSE": "100644",
+      "README.md": "100644",
+      "SDD-MANAGER.md": "100644",
+      "assets/AI_DISCLOSURE.md": "100644",
+      "assets/SDD-MANAGER.md": "100644",
+      "assets/icon.png": "100644",
+      "assets/icon.svg": "100644",
+      "assets/logo.png": "100644",
+      "assets/logo.svg": "100644",
+      "plugin.json": "100644",
+      "skills/sdd-conventions/SKILL.md": "100644",
+      "skills/sdd-conventions/agents/openai.yaml": "100644",
+      "skills/sdd-conventions/assets/icon.svg": "100644",
+      "skills/sdd-conventions/references/backend-object-lifecycle.md": "100644",
+      "skills/sdd-conventions/references/design-heuristics.md": "100644",
+      "skills/sdd-conventions/references/development-document-qc.md": "100644",
+      "skills/sdd-conventions/references/hosting-tokens.md": "100644",
+      "skills/sdd-conventions/references/markdown-style.md": "100644",
+      "skills/sdd-conventions/references/modularity.md": "100644",
+      "skills/sdd-conventions/references/review-campaigns.md": "100644",
+      "skills/sdd-conventions/references/task-hierarchy.md": "100644",
+      "skills/sdd-conventions/references/workflow-identity.md": "100644",
+      "skills/sdd-design/SKILL.md": "100644",
+      "skills/sdd-design/agents/openai.yaml": "100644",
+      "skills/sdd-design/assets/icon.svg": "100644",
+      "skills/sdd-design/references/architecture.md": "100644",
+      "skills/sdd-design/references/decomposition.md": "100644",
+      "skills/sdd-design/references/exploration.md": "100644",
+      "skills/sdd-docs/SKILL.md": "100644",
+      "skills/sdd-docs/agents/openai.yaml": "100644",
+      "skills/sdd-docs/assets/icon.svg": "100644",
+      "skills/sdd-docs/references/in-code-documentation.md": "100644",
+      "skills/sdd-docs/references/review-and-findings.md": "100644",
+      "skills/sdd-docs/references/standalone-documentation.md": "100644",
+      "skills/sdd-forge/SKILL.md": "100644",
+      "skills/sdd-forge/agents/openai.yaml": "100644",
+      "skills/sdd-forge/assets/icon.svg": "100644",
+      "skills/sdd-forge/references/github-issue-lifecycle.md": "100644",
+      "skills/sdd-forge/references/github-milestone-lifecycle.md": "100644",
+      "skills/sdd-forge/references/github-packaging.md": "100644",
+      "skills/sdd-forge/references/github-projection.md": "100644",
+      "skills/sdd-forge/references/github-release-workflows.md": "100644",
+      "skills/sdd-forge/references/github-releases.md": "100644",
+      "skills/sdd-forge/references/github.md": "100644",
+      "skills/sdd-forge/references/release-highlights.md": "100644",
+      "skills/sdd-implement/SKILL.md": "100644",
+      "skills/sdd-implement/agents/openai.yaml": "100644",
+      "skills/sdd-implement/assets/icon.svg": "100644",
+      "skills/sdd-implement/references/browser-capabilities.md": "100644",
+      "skills/sdd-implement/references/completion-and-checkpoints.md": "100644",
+      "skills/sdd-implement/references/environment-recovery.md": "100644",
+      "skills/sdd-implement/references/range-selection.md": "100644",
+      "skills/sdd-implement/references/startup-and-continuation.md": "100644",
+      "skills/sdd-implement/references/task-execution.md": "100644",
+      "skills/sdd-integrate-feature/SKILL.md": "100644",
+      "skills/sdd-integrate-feature/agents/openai.yaml": "100644",
+      "skills/sdd-integrate-feature/assets/icon.svg": "100644",
+      "skills/sdd-integrate-feature/references/feature-incorporation.md": "100644",
+      "skills/sdd-manage/SKILL.md": "100644",
+      "skills/sdd-manage/agents/openai.yaml": "100644",
+      "skills/sdd-manage/assets/icon.svg": "100644",
+      "skills/sdd-manage/references/agent-orientation.md": "100644",
+      "skills/sdd-manage/references/branch-management.md": "100644",
+      "skills/sdd-manage/references/coordination.md": "100644",
+      "skills/sdd-manage/references/credentials.md": "100644",
+      "skills/sdd-manage/references/document-qc-gates.md": "100644",
+      "skills/sdd-manage/references/examples.md": "100644",
+      "skills/sdd-manage/references/git-workflows.md": "100644",
+      "skills/sdd-manage/references/human-document-review.md": "100644",
+      "skills/sdd-manage/references/phase-activation.md": "100644",
+      "skills/sdd-manage/references/prerelease-review.md": "100644",
+      "skills/sdd-manage/references/repository-bootstrap.md": "100644",
+      "skills/sdd-manage/references/review-and-revision.md": "100644",
+      "skills/sdd-manage/references/revision-modes.md": "100644",
+      "skills/sdd-manage/references/tracking-decision.md": "100644",
+      "skills/sdd-manage/references/workflows.md": "100644",
+      "skills/sdd-orient/SKILL.md": "100644",
+      "skills/sdd-orient/agents/openai.yaml": "100644",
+      "skills/sdd-orient/assets/icon.svg": "100644",
+      "skills/sdd-orient/references/inspection-and-handoff.md": "100644",
+      "skills/sdd-plan/SKILL.md": "100644",
+      "skills/sdd-plan/agents/openai.yaml": "100644",
+      "skills/sdd-plan/assets/icon.svg": "100644",
+      "skills/sdd-plan/references/delivery-plan.md": "100644",
+      "skills/sdd-plan/references/physical-layout.md": "100644",
+      "skills/sdd-plan/references/review.md": "100644",
+      "skills/sdd-report/SKILL.md": "100644",
+      "skills/sdd-report/agents/openai.yaml": "100644",
+      "skills/sdd-report/assets/icon.svg": "100644",
+      "skills/sdd-report/references/campaign-artifacts.md": "100644",
+      "skills/sdd-report/references/change-kinds.md": "100644",
+      "skills/sdd-report/references/completion-reports.md": "100644",
+      "skills/sdd-report/references/document-qc-reports.md": "100644",
+      "skills/sdd-report/references/object-drafts.md": "100644",
+      "skills/sdd-report/references/releases.md": "100644",
+      "skills/sdd-specify/SKILL.md": "100644",
+      "skills/sdd-specify/agents/openai.yaml": "100644",
+      "skills/sdd-specify/assets/icon.svg": "100644",
+      "skills/sdd-specify/references/change-specification.md": "100644",
+      "skills/sdd-specify/references/review.md": "100644",
+      "skills/sdd-specify/references/system-specification.md": "100644",
+      "skills/sdd-steer/SKILL.md": "100644",
+      "skills/sdd-steer/agents/openai.yaml": "100644",
+      "skills/sdd-steer/assets/icon.svg": "100644",
+      "skills/sdd-steer/references/amendment-execution.md": "100644",
+      "skills/sdd-steer/references/objective-and-impact.md": "100644",
+      "skills/sdd-steer/references/verification-and-stop.md": "100644",
+      "skills/sdd-tasks/SKILL.md": "100644",
+      "skills/sdd-tasks/agents/openai.yaml": "100644",
+      "skills/sdd-tasks/assets/icon.svg": "100644",
+      "skills/sdd-tasks/references/conformance-review.md": "100644",
+      "skills/sdd-tasks/references/progress-review.md": "100644",
+      "skills/sdd-tasks/references/task-derivation.md": "100644",
+      "skills/sdd-tdd/LICENSE": "100644",
+      "skills/sdd-tdd/SKILL.md": "100644",
+      "skills/sdd-tdd/agents/openai.yaml": "100644",
+      "skills/sdd-tdd/assets/icon.svg": "100644",
+      "skills/sdd-tdd/references/test-first-cycle.md": "100644",
+      "skills/sdd-tdd/references/testing-strategy.md": "100644",
+      "skills/sdd-tdd/references/upstream-provenance.md": "100644",
+      "skills/sdd-tdd/references/writing-good-tests.md": "100644",
+      "skills/sdd-verify/SKILL.md": "100644",
+      "skills/sdd-verify/agents/openai.yaml": "100644",
+      "skills/sdd-verify/assets/icon.svg": "100644",
+      "skills/sdd-verify/references/boundary-review.md": "100644",
+      "skills/sdd-verify/references/check-selection.md": "100644",
+      "skills/sdd-verify/references/execution-and-evidence.md": "100644",
+      "skills/sdd-verify/references/failure-assessment.md": "100644",
+      "skills/sdd-verify/references/release-checks.md": "100644"
+    },
+    "package_hashes": {
+      ".codex-plugin/plugin.json": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+      "AGENTS.md": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "Greenfield Project Prompt Template.md": "852c666018f223c49cc4732af5f1a1bf8db38061114721b9dc738ec702ec9617",
+      "LICENSE": "230ef093b2d68d0f37130d47064b1aff673c41830a15513801e0cc089e742ed2",
+      "README.md": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+      "SDD-MANAGER.md": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "assets/AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "assets/SDD-MANAGER.md": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "assets/icon.png": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+      "assets/icon.svg": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+      "assets/logo.png": "e4a01cfa8c3712ff7e4ab3bd65bd58687c3aaa6d55b6af486cd632edee7a6d45",
+      "assets/logo.svg": "ef0deb0206ee126e1383a186a730b6c0072222c8d674127bace1d780ad8a3b0f",
+      "plugin.json": "c6b8923b2ffa952555149c3672abc73c4bdea62d81884f10f444e0c9ecabba85",
+      "skills/sdd-conventions/SKILL.md": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3",
+      "skills/sdd-conventions/agents/openai.yaml": "3afb66258ca9ee5f7e35b0986ac130e34a4a73c4d5c41b1c7de94e19133e4cea",
+      "skills/sdd-conventions/assets/icon.svg": "5702cda32d79bc28857dedfe0f9811d382d8b2e4c46d1ac571d8114aabd279a4",
+      "skills/sdd-conventions/references/backend-object-lifecycle.md": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+      "skills/sdd-conventions/references/design-heuristics.md": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448",
+      "skills/sdd-conventions/references/development-document-qc.md": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+      "skills/sdd-conventions/references/hosting-tokens.md": "54f2e5949ddeae7aafcb985092309676b42b358135d8fea29481fc8071336324",
+      "skills/sdd-conventions/references/markdown-style.md": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "skills/sdd-conventions/references/modularity.md": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283",
+      "skills/sdd-conventions/references/review-campaigns.md": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+      "skills/sdd-conventions/references/task-hierarchy.md": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+      "skills/sdd-conventions/references/workflow-identity.md": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e",
+      "skills/sdd-design/SKILL.md": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774",
+      "skills/sdd-design/agents/openai.yaml": "102d11e8960f1f7af69bfcbacbe71defad289b9c368d11a610fb6b19e61dd3b6",
+      "skills/sdd-design/assets/icon.svg": "98c55eb98b3e3702037698739b96fb550da2223bf733fb576650d0a4c5504864",
+      "skills/sdd-design/references/architecture.md": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b",
+      "skills/sdd-design/references/decomposition.md": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+      "skills/sdd-design/references/exploration.md": "52a98f770a5e4745847dee060466231c8bc971d5c79c7f7dd4d745a6e675187a",
+      "skills/sdd-docs/SKILL.md": "ef125969d670b75c0760ad8a7751c41ca8940ebc05a8a3a517658c6405929a7b",
+      "skills/sdd-docs/agents/openai.yaml": "9715602c3bdcd14d41e6e99e24edb32389499e0ec96b0aad5cdf4b30b187de15",
+      "skills/sdd-docs/assets/icon.svg": "69e272ee97e9957387f8ca8b51bec3d3d176c33e6bf6b20d2bff5b3536f507e2",
+      "skills/sdd-docs/references/in-code-documentation.md": "40c179cf40c73ad36d76f722950eeaf33ab1c37993edd370f6fa16305d2a5465",
+      "skills/sdd-docs/references/review-and-findings.md": "61bda144ac45af632307b12bb3cf9652727b83c3b3ffc57558188d0d2a6837b1",
+      "skills/sdd-docs/references/standalone-documentation.md": "b2ced68b8f869efc47206261795e225b42455b513c7a2be4f091cd891c3ef951",
+      "skills/sdd-forge/SKILL.md": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+      "skills/sdd-forge/agents/openai.yaml": "65a79f791a2285753a0e6ca9eb83e203b181c0277ada5706add85f4c86c18783",
+      "skills/sdd-forge/assets/icon.svg": "ca997d09da83d706126f43dc2ace19c00ee9036ae67dcce225e688a09d398d33",
+      "skills/sdd-forge/references/github-issue-lifecycle.md": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+      "skills/sdd-forge/references/github-milestone-lifecycle.md": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+      "skills/sdd-forge/references/github-packaging.md": "bf2a71e63b75b117853097199120d628d67d2c419962aa441978c124e4c780ed",
+      "skills/sdd-forge/references/github-projection.md": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29",
+      "skills/sdd-forge/references/github-release-workflows.md": "2c90b8d5d00b217a809bad6a54661f0ab698b8ae1550af47ce86547f02e25d46",
+      "skills/sdd-forge/references/github-releases.md": "317892eaecb199b87a8b17ee0a0f45a722c3849bdcf88e11301f91b9c8df96d6",
+      "skills/sdd-forge/references/github.md": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+      "skills/sdd-forge/references/release-highlights.md": "4e4ebeaed8757d36ab9c7c98d759e724d30571f3d7aff48d783b1de60e236984",
+      "skills/sdd-implement/SKILL.md": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+      "skills/sdd-implement/agents/openai.yaml": "438f0f659f42428e943046f75e10eb5b21384802baf3ce8eb010b9598d00cb7b",
+      "skills/sdd-implement/assets/icon.svg": "4fd314a8f182561a13fbf6fe062e4aee5fd0e0330dccd9943ec14aa5dab34c48",
+      "skills/sdd-implement/references/browser-capabilities.md": "fd64b9332dac9d5a89249968996bdcfdcd3e1211f06220af8247cd7a25309642",
+      "skills/sdd-implement/references/completion-and-checkpoints.md": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+      "skills/sdd-implement/references/environment-recovery.md": "0254c7e5dc5477a012d6eca8c049d222f42c712b5ef1f03abc8b4270f34f9523",
+      "skills/sdd-implement/references/range-selection.md": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+      "skills/sdd-implement/references/startup-and-continuation.md": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+      "skills/sdd-implement/references/task-execution.md": "1979b2bbd64bd4b5370f607c1646b7a7fbb05f63cccd44dc907f98ce50831dfe",
+      "skills/sdd-integrate-feature/SKILL.md": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+      "skills/sdd-integrate-feature/agents/openai.yaml": "48018ed1de138598f6be61e916b701638234e2d0e570ed42d39760e0f4de8392",
+      "skills/sdd-integrate-feature/assets/icon.svg": "9b68ea07e6b5916efa646ad8f639cb1872523bb40630043a317cc862440dc006",
+      "skills/sdd-integrate-feature/references/feature-incorporation.md": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+      "skills/sdd-manage/SKILL.md": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "skills/sdd-manage/agents/openai.yaml": "c3d318cf2a1074db8bc3c956109b12b1a3399c3835eded7bbac57f9ee7f5a778",
+      "skills/sdd-manage/assets/icon.svg": "d263da0cf62afe30dec52294f51c33a0d522b25c44049224a2274037e8ace44d",
+      "skills/sdd-manage/references/agent-orientation.md": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+      "skills/sdd-manage/references/branch-management.md": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+      "skills/sdd-manage/references/coordination.md": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+      "skills/sdd-manage/references/credentials.md": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21",
+      "skills/sdd-manage/references/document-qc-gates.md": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "skills/sdd-manage/references/examples.md": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+      "skills/sdd-manage/references/git-workflows.md": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+      "skills/sdd-manage/references/human-document-review.md": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "skills/sdd-manage/references/phase-activation.md": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+      "skills/sdd-manage/references/prerelease-review.md": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+      "skills/sdd-manage/references/repository-bootstrap.md": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+      "skills/sdd-manage/references/review-and-revision.md": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+      "skills/sdd-manage/references/revision-modes.md": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+      "skills/sdd-manage/references/tracking-decision.md": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+      "skills/sdd-manage/references/workflows.md": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+      "skills/sdd-orient/SKILL.md": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "skills/sdd-orient/agents/openai.yaml": "36dbb7990b7f504c1fa4b614651ad26431ab6af5a623be8250b780ce156667c9",
+      "skills/sdd-orient/assets/icon.svg": "ef235e59b6a56e0d21629b3b6c1b2ca9cc97cd678d02bcb31b0e2f7bc11bf1f2",
+      "skills/sdd-orient/references/inspection-and-handoff.md": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "skills/sdd-plan/SKILL.md": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+      "skills/sdd-plan/agents/openai.yaml": "8672b642e8c5ae2114cd839af1152435c7da485b4a25c3dd62d15c78d124ac98",
+      "skills/sdd-plan/assets/icon.svg": "44568c513e736771f4dde159c1903c6da19a774474ce65aeb8992dd694706659",
+      "skills/sdd-plan/references/delivery-plan.md": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+      "skills/sdd-plan/references/physical-layout.md": "e6abc9b84068ff8def13af02360020bdd80dc4c431667cf416aa4a9953bbfc41",
+      "skills/sdd-plan/references/review.md": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4",
+      "skills/sdd-report/SKILL.md": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "skills/sdd-report/agents/openai.yaml": "bfe1a84a61bf154a5cb846d41b10d73e88a596044d21e6d1f151d1dc78ae221c",
+      "skills/sdd-report/assets/icon.svg": "aca30e96cbe5d44d759da47cc1db33c87dce1d04bf77142feac8475eecbab074",
+      "skills/sdd-report/references/campaign-artifacts.md": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+      "skills/sdd-report/references/change-kinds.md": "7cc7d31e5926fab5c4778b385f282d8f536713536c1038cc63409a1734da886b",
+      "skills/sdd-report/references/completion-reports.md": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "skills/sdd-report/references/document-qc-reports.md": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7",
+      "skills/sdd-report/references/object-drafts.md": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+      "skills/sdd-report/references/releases.md": "da89ce5c4fe7b8c6a4c1549900629cf6b3c29bcdd60f1585e32e18db3a885a86",
+      "skills/sdd-specify/SKILL.md": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+      "skills/sdd-specify/agents/openai.yaml": "c61e7eb38f097029d947314b441959b17aae2303440a52022cd386d78171e6b5",
+      "skills/sdd-specify/assets/icon.svg": "ebeaf7c64a2fb958088765c46c48e8269625f03ddccefec9dc7b76ff7379f2ad",
+      "skills/sdd-specify/references/change-specification.md": "74ad9a214189fa094c48acfd6c1daacb4eef43fe64ea18946ff5e6628a3be94c",
+      "skills/sdd-specify/references/review.md": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9",
+      "skills/sdd-specify/references/system-specification.md": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+      "skills/sdd-steer/SKILL.md": "6598b5b4b99b13a981bc4b91deaeb4bb6c4efdbab3de214e58e849aec815cc2b",
+      "skills/sdd-steer/agents/openai.yaml": "421038f108a077de64e16c95011ed4f6bff87d47e16c53894bbcc0dc581cc4ae",
+      "skills/sdd-steer/assets/icon.svg": "b9d353ce223194b53f52a4853ed1cc9468718ed0ee57074b5988a309f54d14d1",
+      "skills/sdd-steer/references/amendment-execution.md": "c185174fd72625f51a151bb6085140e9599f848e26f461d1131c87f2865d0cac",
+      "skills/sdd-steer/references/objective-and-impact.md": "f1f57ab732b6c40c14260ab006377504bece4993bd7a80dac3d2adc53c9902ec",
+      "skills/sdd-steer/references/verification-and-stop.md": "833b62f3807e8eb425f0fe2ad9ef4418cabbb77ae0f2ee7371435793de17398d",
+      "skills/sdd-tasks/SKILL.md": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+      "skills/sdd-tasks/agents/openai.yaml": "60b43614f445a40f3d52d21869962189bdfe0252461317a6712a55d176797aa2",
+      "skills/sdd-tasks/assets/icon.svg": "dad3203c0386ce1a697600ae82fc1e03f530111626192018df24dd7c5ac69eb0",
+      "skills/sdd-tasks/references/conformance-review.md": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e",
+      "skills/sdd-tasks/references/progress-review.md": "32be8fbaa5e67e807d7c7f7be964c56ab7f65bd6398784606090fcdd9e40a912",
+      "skills/sdd-tasks/references/task-derivation.md": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7",
+      "skills/sdd-tdd/LICENSE": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+      "skills/sdd-tdd/SKILL.md": "49efacb9ed6ae3b59069e986672dc5350cc0b147c3ad960b3ffc04f105c54cda",
+      "skills/sdd-tdd/agents/openai.yaml": "f0049fe541cbffe331d4ccb9e903ed49bb96f1011cefecd1ced49fbd1bd19da4",
+      "skills/sdd-tdd/assets/icon.svg": "37e86ed29c77f13846f9c315627c5e139d1348d7eed26eef2ff94354c334239f",
+      "skills/sdd-tdd/references/test-first-cycle.md": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+      "skills/sdd-tdd/references/testing-strategy.md": "fd834570d97f993fe270627fcedc308f0a97642ff000b8970a0b1c1bf33cab5f",
+      "skills/sdd-tdd/references/upstream-provenance.md": "668d85251c25027ac1494c9bb89367fa3c1885c23424e3987d02f7fd0b02ca33",
+      "skills/sdd-tdd/references/writing-good-tests.md": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+      "skills/sdd-verify/SKILL.md": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+      "skills/sdd-verify/agents/openai.yaml": "3176532ba151974e4f6186c589a9e8ba59247367629ace97788cf70e1bdfe40a",
+      "skills/sdd-verify/assets/icon.svg": "60c4fbc478c5c5569c7db40ee7d2b90c061fb8e0b7a2274ec8757cbcadc6c837",
+      "skills/sdd-verify/references/boundary-review.md": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+      "skills/sdd-verify/references/check-selection.md": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+      "skills/sdd-verify/references/execution-and-evidence.md": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+      "skills/sdd-verify/references/failure-assessment.md": "0d1297f0b6d03dfd429c9d8e0d912c841801b8207141651aca1f1a90fe9a12c6",
+      "skills/sdd-verify/references/release-checks.md": "7c38ee14568eccccc724df033b647506a574fb34a8e3e398020bd1e543d89240"
+    },
+    "revision": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+    "snapshot_path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin",
+    "source_mode": "committed"
+  },
+  "inspection_limits": [
+    "No product test execution or fresh QC was performed because dependent execution was blocked. Coordinator retains test-artifact assessment.",
+    "One broad rg search within the pinned resource tree returned source excerpts and was truncated; no external workspace/history/assessor/catalog/coordinator material was read.",
+    "Pinned source identity is recorded from supplied handoff and local PLUGIN-SOURCE.json; no external source checkout was accessed."
+  ],
+  "excerpt_source_hashes": [
+    {
+      "path": "textstats-run-resources/plugin/README.md",
+      "sha256": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/AGENTS.md",
+      "sha256": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md",
+      "sha256": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md",
+      "sha256": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md",
+      "sha256": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-design/SKILL.md",
+      "sha256": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md",
+      "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md",
+      "sha256": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md",
+      "sha256": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github-projection.md",
+      "sha256": "073e9dd23912642308a801aba974af516b46447e6affe31afb863ca83958bf29",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github-releases.md",
+      "sha256": "317892eaecb199b87a8b17ee0a0f45a722c3849bdcf88e11301f91b9c8df96d6",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md",
+      "sha256": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/release-highlights.md",
+      "sha256": "4e4ebeaed8757d36ab9c7c98d759e724d30571f3d7aff48d783b1de60e236984",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github.md",
+      "sha256": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-forge/references/github-packaging.md",
+      "sha256": "bf2a71e63b75b117853097199120d628d67d2c419962aa441978c124e4c780ed",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md",
+      "sha256": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md",
+      "sha256": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/references/browser-capabilities.md",
+      "sha256": "fd64b9332dac9d5a89249968996bdcfdcd3e1211f06220af8247cd7a25309642",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md",
+      "sha256": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-steer/references/verification-and-stop.md",
+      "sha256": "833b62f3807e8eb425f0fe2ad9ef4418cabbb77ae0f2ee7371435793de17398d",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md",
+      "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/campaign-artifacts.md",
+      "sha256": "da1b42bd4561e4101db858094fcb7a038f8061c641a8e5a8228065c79463a502",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/change-kinds.md",
+      "sha256": "7cc7d31e5926fab5c4778b385f282d8f536713536c1038cc63409a1734da886b",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-report/references/releases.md",
+      "sha256": "da89ce5c4fe7b8c6a4c1549900629cf6b3c29bcdd60f1585e32e18db3a885a86",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+      "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+      "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/examples.md",
+      "sha256": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md",
+      "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md",
+      "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/revision-modes.md",
+      "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md",
+      "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md",
+      "sha256": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-manage/references/prerelease-review.md",
+      "sha256": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/review-campaigns.md",
+      "sha256": "46cd6e415c44262a0e092c36eb2ca4e44c303cd01e531325c4d66236f377512f",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md",
+      "sha256": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md",
+      "sha256": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    },
+    {
+      "path": "textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md",
+      "sha256": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+      "read_mode": "potential rg excerpt, not full instruction loading"
+    }
+  ],
+  "after": {
+    "status": "",
+    "head": "1e3305c8659045945244c06861079fef879ca3c3",
+    "branch": "trial/037-a014-refusal",
+    "main": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+    "product_path_presence": {
+      "textstats": false,
+      "tests/unit": false,
+      "tests/integration": false
+    }
+  },
+  "startup_publication_decision": "Exact ls-remote trial tip equals HEAD: no outstanding commit and no ceremonial push, per startup-and-continuation.md.",
+  "actual_outcome": "Blocked before T-002; T-002 and T-003 remain unchecked and unimplemented. T-001 and preparation integration/publication are prerequisites outside allowed effects.",
+  "loaded_pinned_source_verification": [
+    {
+      "path": "AGENTS.md",
+      "match": true,
+      "expected": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+      "actual": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9"
+    },
+    {
+      "path": "skills/sdd-manage/SKILL.md",
+      "match": true,
+      "expected": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "actual": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455"
+    },
+    {
+      "path": "skills/sdd-orient/SKILL.md",
+      "match": true,
+      "expected": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "actual": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446"
+    },
+    {
+      "path": "skills/sdd-implement/SKILL.md",
+      "match": true,
+      "expected": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+      "actual": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293"
+    },
+    {
+      "path": "skills/sdd-orient/references/inspection-and-handoff.md",
+      "match": true,
+      "expected": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "actual": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73"
+    },
+    {
+      "path": "skills/sdd-implement/references/startup-and-continuation.md",
+      "match": true,
+      "expected": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+      "actual": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c"
+    },
+    {
+      "path": "skills/sdd-implement/references/range-selection.md",
+      "match": true,
+      "expected": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+      "actual": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9"
+    },
+    {
+      "path": "skills/sdd-manage/references/branch-management.md",
+      "match": true,
+      "expected": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+      "actual": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314"
+    },
+    {
+      "path": "skills/sdd-manage/references/tracking-decision.md",
+      "match": true,
+      "expected": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+      "actual": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65"
+    },
+    {
+      "path": "skills/sdd-manage/references/phase-activation.md",
+      "match": true,
+      "expected": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+      "actual": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0"
+    },
+    {
+      "path": "skills/sdd-manage/references/document-qc-gates.md",
+      "match": true,
+      "expected": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "actual": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7"
+    },
+    {
+      "path": "skills/sdd-report/SKILL.md",
+      "match": true,
+      "expected": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "actual": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356"
+    },
+    {
+      "path": "skills/sdd-report/references/completion-reports.md",
+      "match": true,
+      "expected": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "actual": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "ASSESSMENT.json": "8211bbdfaf1cd610706bd4352c1cfdb81bdf58acae0fd658338745a7e6a81991",
+  "COMMANDS.json": "2fb3df97ed3056c1b45ce0708dd7044435b3bd641a3100655d18e48524a4ebaa",
+  "CONSUMER-OBSERVATIONS.json": "b5dd5982521e41536e1731ad4942c3e2e7ea1ab6c4f7114c9aa57dd65ecf8515",
+  "HANDOFF.md": "90bad02c758448de542bb2253b17fdffd80a080399a7110ebaad505cb18e6337",
+  "index-stages.txt": "3dacfe7ee657fa7a18597f60dde7a4a75ee5b389a0748261f0c1dd9fc7510cea",
+  "index.raw": "e5b92d96de59022fc38f0fcbb1d4dcb5ec23484f61b0fec512a275eafbc36c3d",
+  "merge-metadata/AUTO_MERGE": "10d4ebbe8b539579174febae592bf7ab57652f68091550521ba0ead8bfa1671b",
+  "merge-metadata/HEAD": "39172c283bec9806ea5bec9636000c1f852f2293a7e0064dfa1f3402ab007e17",
+  "merge-metadata/MERGE_HEAD": "bac3debc9e8aa3beb880acbda2e0199e1965f07c118c91bc37da0947d7fcd7f7",
+  "merge-metadata/MERGE_MODE": "5940fba849655f7fd20878b451607d8f40866326bde6753ac71ebc855b646a55",
+  "merge-metadata/MERGE_MSG": "14e320b80eaca6938a6fd15a22166dac15696dd58dd5d0b4e4bbc3c1082a638f",
+  "merge-metadata/ORIG_HEAD": "cbaa51771612dc84a8a9c7bac3e9dabdd470455ce3a7d007cb72cfd23b85b2ce",
+  "objects.bundle": "2915154bce7ca202fd8de9ec225cadb2b0f801670fabb61d375fdb19af8a733a",
+  "pending-objects.pack": "6d93d6590c9eefc368a61075772d37f24329d4b169233e23784ad09da9179bf8",
+  "restore-first-status.txt": "e0803b23b9a2c100c9356450ad2dd296b7e9585516c3b669e1abec7ee13b0146",
+  "staged.patch": "166369110687e5986c112a95fc90a19d814eb503a68759594bce1a28179bfc0f",
+  "status.txt": "1d16ce9d998c37579b8ff0d5ca4e5ab1b8fbcff2865c747957f7a770d6f6e459",
+  "unmerged-index.txt": "2ba491543cd9fd4fd83e138100e72161d9f79431ebcddb6dd2ce4b593e2260a5",
+  "unstaged.patch": "1947b9424bcc2e3f907d4688a6a2b6004e0b3445d3149feea2317167850af612",
+  "workfile-manifest.json": "a95580003c30d8ce9c1eaf3d3f133fc3e5c0dc619b003db41ff3aa3d9512899c",
+  "workfiles.tar": "62ec7567d82e46e88ded9eea6ffdcb8de0c9f4ef0cee5698f7184fa1c3dd7841"
+}

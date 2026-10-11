@@ -1,0 +1,75 @@
+{
+  "facility": "cooperative native Git pre-commit hold",
+  "trigger_observed": false,
+  "consumer_dispatched": false,
+  "probe_command": "037-a015-setup/hooks/pre-commit",
+  "probe_exit_status": 73,
+  "main_local_exists": false,
+  "product_baseline": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+  "product_baseline_parents": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46 1e3305c8659045945244c06861079fef879ca3c3",
+  "local_config": [
+    "core.repositoryformatversion=0",
+    "core.filemode=true",
+    "core.bare=false",
+    "core.logallrefupdates=true",
+    "core.hookspath=/workspace/scratch/46b31bb4dff6/037-a015-setup/hooks",
+    "remote.origin.url=https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+    "remote.origin.fetch=+refs/heads/trial/037-a015-staged:refs/remotes/origin/trial/037-a015-staged",
+    "branch.trial/037-a023-before-send.remote=origin",
+    "branch.trial/037-a023-before-send.merge=refs/heads/trial/037-a023-before-send",
+    "remote.trial-delivery.url=/workspace/scratch/46b31bb4dff6/037-a015-remote.git",
+    "remote.trial-delivery.fetch=+refs/heads/*:refs/remotes/trial-delivery/*",
+    "branch.trial/037-a015-staged.remote=trial-delivery",
+    "branch.trial/037-a015-staged.merge=refs/heads/trial/037-a015-staged"
+  ],
+  "delivery_readback": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191\trefs/heads/trial/037-a015-staged",
+  "evidence_readback_tip": "5f16f79e4bd608a321a329dc365ee4627e4fa0fc",
+  "evidence_ref": "refs/heads/revision/001_eff696b-prerelease-acceptance",
+  "a003_evidence_commit": "65b6f802f16a66ff58e6d251c5cf77d24cda1f9e",
+  "rejected_action": "GIT_ASKPASS=/workspace/scratch/46b31bb4dff6/playground-askpass.sh GIT_TERMINAL_PROMPT=0 git -C 037-a015-staged push --set-upstream origin refs/heads/trial/037-a015-staged:refs/heads/trial/037-a015-staged",
+  "rejection_reason": "User authorization covered different checkpoints and a different branch; payload and destination are not covered.",
+  "safe_alternative_authority": "Root message selected strictly local disposable bare remote 037-a015-remote.git; keep GitHub origin read-only; root publishes setup evidence before dispatch.",
+  "native_os_termination": "unestablished",
+  "filesystem_isolation": "not certified",
+  "probe_class": "fixture plumbing only, not consumer acceptance",
+  "python_version": "Python 3.12.14",
+  "git_version": "git version 2.51.1",
+  "external_asset_hashes": {
+    "ORDINARY-HANDOFF-DRAFT.md": {
+      "sha256": "3d172c3e19636741dac1e9b83a8b80a32e389a405666e55c1dafd5b787edbd1c",
+      "mode": "0o644"
+    },
+    "capture_hold.py": {
+      "sha256": "4edae554940741b91b8a1757c747ef10c6a5e1d8bd0bc7e4cb2cf363d5a70713",
+      "mode": "0o644"
+    },
+    "CONTROL.json": {
+      "sha256": "994a4b65929c8fb021f921c3c1b7b5ba2ce2fe2e221ccdbfb8eb5f601c7cbf2c",
+      "mode": "0o644"
+    },
+    "BINDINGS-DRAFT.json": {
+      "sha256": "c3dfe81fc96c6f5db64bcce848542c3731cef96b28323699801aeaa5179e7e44",
+      "mode": "0o644"
+    },
+    "START.json": {
+      "sha256": "bc1b734c3dd6bd0289df70b9a610b7bae013cd8518b0596b0048f1ae266738c8",
+      "mode": "0o644"
+    },
+    "A003-ASSESSMENT.json": {
+      "sha256": "fe166b23525586e8e1baa14e708506827fd29e24a284c6a4cae865d61410b042",
+      "mode": "0o644"
+    },
+    "SETUP-NOTES.md": {
+      "sha256": "5a1f95fd528347e231c2e9e05d25ce3ba1df0e1f1a49d1ce78a1d3c7e8cc4546",
+      "mode": "0o644"
+    },
+    "FACILITY-PROBE.json": {
+      "sha256": "d7ffe94f6b11ad5badb89336de6eca8115f67a5f5a46123e30e69bd8a47387c1",
+      "mode": "0o644"
+    },
+    "hooks/pre-commit": {
+      "sha256": "55bfa5d9ea4da1a6b2af126a345480e355b29ae90c6409510c27d5de35761e94",
+      "mode": "0o755"
+    }
+  }
+}

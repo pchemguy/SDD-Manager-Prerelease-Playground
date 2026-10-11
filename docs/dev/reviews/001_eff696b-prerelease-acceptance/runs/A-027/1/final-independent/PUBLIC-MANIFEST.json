@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "files": {
+    "A013-FINAL-INDEPENDENT-ASSESSMENT.json": {
+      "sha256": "ef96dabb49056c5be080a33a03d19abf0f1fc0f323cc955b424374a02c5b1dc8",
+      "byte_length": 7314,
+      "clean_bytes": "Passed",
+      "generic_JSON_sniff_no_secret": "Passed"
+    },
+    "FINAL-CURRENT-RECONCILIATION.json": {
+      "sha256": "722cafebfcefc77d558e7ca2f35a72534cd15c2075f053d42b2d94193cc849fa",
+      "byte_length": 313024,
+      "clean_bytes": "Passed",
+      "generic_JSON_sniff_no_secret": "Passed"
+    },
+    "FINAL-INDEPENDENT-ASSESSMENT.json": {
+      "sha256": "b74b390626cc85879c635f65f34a8d50b6cfd158435dac60ff8bf019363d0317",
+      "byte_length": 6667,
+      "clean_bytes": "Passed",
+      "generic_JSON_sniff_no_secret": "Passed"
+    },
+    "FINAL-ORDINARY-REPORT.md": {
+      "sha256": "00ecbc765ab57d1357f17ee9fef947dc9c2a60734a80752376e1505a6dea9961",
+      "byte_length": 22023,
+      "clean_bytes": "Passed",
+      "generic_JSON_sniff_no_secret": "Not JSON"
+    },
+    "FINAL-PUBLISHED-RECORD-PROOFS.json": {
+      "sha256": "0bd7028b971883d0ff429a970ec93eb3df0688c9b0eea5e2b7b3206735c61fd2",
+      "byte_length": 21125,
+      "clean_bytes": "Passed",
+      "generic_JSON_sniff_no_secret": "Passed"
+    },
+    "FINAL-READONLY-PROOFS.json": {
+      "sha256": "84d9c30811efed29df2a3a6c417ff45596fc964945fbd4a19889c53613a87f11",
+      "byte_length": 13518,
+      "clean_bytes": "Passed",
+      "generic_JSON_sniff_no_secret": "Passed"
+    }
+  },
+  "actual_pinned_core_sha256": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "all_new_files_wholefile_genericJSON_screened": true,
+  "inherited_historicalNULexception_retained": true,
+  "wholeworkflow": "Blocked",
+  "scopedreporting_reconciliation": "Passed"
+}

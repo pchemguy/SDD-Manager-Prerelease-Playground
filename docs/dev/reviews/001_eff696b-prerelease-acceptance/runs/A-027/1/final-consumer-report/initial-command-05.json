@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "show-ref",
+    "--verify",
+    "refs/remotes/origin/main"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_code": 0,
+  "stdout": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 refs/remotes/origin/main\n",
+  "stderr": ""
+}

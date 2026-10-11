@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "Independent final T015 docs execution on own exact committed export; runtime/docs unchanged at T016",
+  "product_commit": "ca24007134141265a1937c77e2fda504bb0d6129",
+  "fences_executed": 12,
+  "all_expected_exit_statuses": true,
+  "intentional_failure_fences": [
+    5,
+    7
+  ],
+  "check_fence_stdout": "unit: 37 tests\nintegration: 34 tests\nextracted import: /tmp/tmp2hv5ioaa/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpafrsz__m/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp_kj7u4vw/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpbt2t0w7b/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpddic_0tc/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpjwro6t8t/textstats-source/textstats/__init__.py\n478 extracted module cases passed\nextracted import: /tmp/tmp7hefplfv/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpravgbdrn/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp74ez6yfr/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpkrl9gtic/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmpluacia1s/textstats-source/textstats/__init__.py\nextracted import: /tmp/tmp3xaoruqt/textstats-source/textstats/__init__.py\n478 extracted module cases passed\n",
+  "fresh_source_archive_checker_stdout": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/reached-T015/docs-export/dist/textstats-source.zip\nextracted import: /tmp/tmpudarng2f/textstats-source/textstats/__init__.py\n478 extracted module cases passed\n",
+  "no_check_failures": true,
+  "evidence": "docs-commands.json",
+  "limits": [
+    "Full Bash-fence raw stdout/stderr and final status retained. Individual component statuses in multicommand fences are not separately reconstructed; error categories separately established by exact original suite command provenance and product subprocess tests."
+  ]
+}

@@ -1,0 +1,1051 @@
+{
+  "schema_version": 1,
+  "scope": "Retained selected document-only incorporation",
+  "original_receipt": {
+    "schema_version": 1,
+    "identity": "8d2346b6247692427c68f89b9bfba0e449ee5c88f622fa3b78745e8cec8fd510",
+    "status": "Held",
+    "completed": 2,
+    "start_snapshot": {
+      "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "branch": "design-docs/002_e7cae5b-named-file-ranges",
+      "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+      "merge_heads": [],
+      "files": {
+        "docs/dev/SPEC.md": {
+          "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+          "mode": 420
+        },
+        "docs/dev/PLAN.md": {
+          "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+          "mode": 420
+        },
+        "docs/dev/TASKS.md": {
+          "sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS.md": {
+          "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+          "mode": 420
+        },
+        "docs/dev/SPEC-REVIEW-REPORT.md": {
+          "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+          "mode": 420
+        },
+        "docs/dev/PLAN-REVIEW-REPORT.md": {
+          "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+          "mode": 420
+        },
+        "docs/dev/TASKS-REVIEW-REPORT.md": {
+          "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+          "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+          "mode": 420
+        },
+        "AGENTS.md": {
+          "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+          "mode": 420
+        },
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+          "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+          "mode": 420
+        }
+      }
+    },
+    "commands": [
+      {
+        "argv": [
+          "python",
+          "-B",
+          "-c",
+          "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('SPEC.md'); f=r('FEATURE-SPEC.md')\ns=s.replace('No implementation exists.','Phase 1 is delivered; ranges and stdin delivery remain incomplete.')\ns=s.replace(\"F-001 through F-004 retain the later separately requested range feature's contract as a deferred compatibility constraint. That feature is outside the initial executable hierarchy.\",\"F-001 through F-004 govern accepted named-file ranges in Phase 2 milestones 2.4\u20132.6. Incorporation specifies intended behavior without asserting delivery.\")\ns=s.replace('## Deferred range feature','## Named-file range contracts')\na=f.index('## F-001'); b=f.index('## Ownership and readiness')\ndelta=f[a:b].replace('## F-','### F-')\na=s.index('### F-001'); b=s.index('## Whole-input acceptance matrix')\ns=s[:a]+delta+'\\n'+s[b:]\ns=s.replace('deferred C-010','C-010')\nw('SPEC.md',s)\ns=r('PLAN.md'); f=r('FEATURE-PLAN.md')\ns=s.replace('The separately requested range feature stays outside these phases and their initial executable hierarchy; its design seams and deferred SPEC contracts remain intact.','Accepted named-file ranges extend Phase 2 with milestones 2.4/2.5 and extent review 2.6. Existing 2.1/2.2/2.3 identities remain; whole Phase 2 requires both main and feature exits.')\ns=s.replace('No range option or public API extension is included.','Public API stays whole-input. Retain source-independent range composition when delivering stdin; acquisition remains main-owned.')\ns=s.replace('without authorizing the deferred range feature.','within the separately authorized execution scope.')\ns=s.replace('The final review does not execute separately requested future features or publish a product release.','Full final review includes incorporated range exits and feature report provenance after 2.4/2.5/2.6, while retaining pending stdin obligations. No release is authorized.')\ns=s.replace('Deferred separate feature; preserve shared terminators, once-only normalization, normalized counting and source-independent acquisition seam during every design/code review. No initial task or hosted projection for this feature.','2.4 named-file text/JSON selection and validation; 2.5 documented extracted delivery; 2.6 feature-extent review. Main stdin/final work remains pending.')\na=f.index('| Parent / new milestone'); b=f.index('## Tracking and preparation boundary')\ndelta=f[a:b].replace('Detailed tests and concrete edit scopes belong to FEATURE-TASKS','Detailed tests and concrete edit scopes belong to canonical TASKS after selected transfer')\na=s.index('## Coverage, dependencies and verification strategy')\ns=s[:a]+'## Named-file range delivery extent\\n\\n'+delta+'\\n'+s[a:]\nw('PLAN.md',s)\n"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "python",
+          "-B",
+          "-c",
+          "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('TASKS.md'); f=r('FEATURE-TASKS.md')\nassert '        - [ ] T-018 \u2014' not in s\na=f.index('    - [ ] Milestone 2.4'); b=f.index('## Execution, ownership and integration rules')\ndelta=f[a:b].rstrip().replace('FEATURE-PLAN compatible baseline/projection prerequisites','PLAN compatible baseline/projection prerequisites')\na=s.index('## Completion and persistence rules')\ns=s[:a]+delta+'\\n\\n'+s[a:]\ns=s.replace('This complete initial two-phase hierarchy derives','This complete two-phase hierarchy including accepted ranges derives')\ns=s.replace('There is no pre-existing product task list or verified implementation; all checkboxes are unchecked. Monotonic project-wide IDs T-001 through T-017 are allocated here once and have exactly one executable owner.','Phase 1 completion and evidence are retained. Main Phase 2 stays pending; separate JSON checkpoint evidence remains on the paused branch. IDs T-001\u2013T-024 are stable. T-018\u2013T-024 are pending; paired source retirement is required before unique ownership is established.')\ns=s.replace('Deferred SPEC F-001 through F-004/C-010 have no implementation task or hosted issue in this hierarchy; preserve their design seams while implementing accepted whole-input capabilities.','SPEC F-001\u2013F-004/C-010 are covered by T-018\u2013T-024 in milestones 2.4/2.5/2.6; main stdin/final work remains pending.')\ns=s.replace('            Depends on: T-013.','            Depends on: T-013 and T-020 for retained range composition.')\ns=s.replace('            Depends on: T-014.','            Depends on: T-014 and T-023 for range documentation/distribution provenance.')\ns=s.replace('Range remains documented as future scope only, without runnable delivery claims.','Include delivered named-file range behavior and source-independent stdin composition; claim runnable capability only after actual delivery.')\ns=s.replace('            Depends on: T-012 and T-016, and completed/closed delivery milestones 2.1 and 2.2; excludes its own still-open review milestone.','            Depends on: T-012, T-016 and T-024, and completed/closed delivery milestones 2.1, 2.2, 2.4 and 2.5; excludes its own still-open review milestone 2.3.')\ns=s.replace('Do not execute range feature or publish a release.','Retain feature-report provenance without claiming whole-phase completion from feature extent. No release is authorized.')\nw('TASKS.md',s)\n"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "evidence_class": "controlled",
+    "agent_behavior_assessed": false,
+    "held_snapshot": {
+      "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "branch": "design-docs/002_e7cae5b-named-file-ranges",
+      "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+      "merge_heads": [],
+      "files": {
+        "docs/dev/SPEC.md": {
+          "sha256": "b648f1de929e549007657fa21645760bc8422d3d71b13a4213ca05e83e56e2bb",
+          "mode": 420
+        },
+        "docs/dev/PLAN.md": {
+          "sha256": "bb4541bf648c751dfc4bcd03361761278f859af55c570b12d4974cbacfbc23f4",
+          "mode": 420
+        },
+        "docs/dev/TASKS.md": {
+          "sha256": "1b8feb596c61157eb38e0a51ffb2dd2974408b80bf644925d9ee37d9624f800a",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS.md": {
+          "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+          "mode": 420
+        },
+        "docs/dev/SPEC-REVIEW-REPORT.md": {
+          "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+          "mode": 420
+        },
+        "docs/dev/PLAN-REVIEW-REPORT.md": {
+          "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+          "mode": 420
+        },
+        "docs/dev/TASKS-REVIEW-REPORT.md": {
+          "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+          "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+          "mode": 420
+        },
+        "AGENTS.md": {
+          "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+          "mode": 420
+        },
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+          "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+          "mode": 420
+        }
+      }
+    }
+  },
+  "original_receipt_sha256": "babbf753092680f36d26ddbd143cc1b58442d426c8e9f80dea646d122b348b75",
+  "selected_manifest_sha256": "dd7880b24cc418b6aff07a0a9fe800d544f03ddfdd4cafae18d03d631b3e0bb4",
+  "inspection_snapshot": {
+    "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+    "branch": "design-docs/002_e7cae5b-named-file-ranges",
+    "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+    "merge_heads": [],
+    "files": {
+      "docs/dev/SPEC.md": {
+        "sha256": "b648f1de929e549007657fa21645760bc8422d3d71b13a4213ca05e83e56e2bb",
+        "mode": 420
+      },
+      "docs/dev/PLAN.md": {
+        "sha256": "bb4541bf648c751dfc4bcd03361761278f859af55c570b12d4974cbacfbc23f4",
+        "mode": 420
+      },
+      "docs/dev/TASKS.md": {
+        "sha256": "1b8feb596c61157eb38e0a51ffb2dd2974408b80bf644925d9ee37d9624f800a",
+        "mode": 420
+      },
+      "docs/dev/FEATURE-TASKS.md": {
+        "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+        "mode": 420
+      },
+      "docs/dev/SPEC-REVIEW-REPORT.md": {
+        "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+        "mode": 420
+      },
+      "docs/dev/PLAN-REVIEW-REPORT.md": {
+        "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+        "mode": 420
+      },
+      "docs/dev/TASKS-REVIEW-REPORT.md": {
+        "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+        "mode": 420
+      },
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+        "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+        "mode": 420
+      },
+      "AGENTS.md": {
+        "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+        "mode": 420
+      },
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+        "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+        "mode": 420
+      }
+    }
+  },
+  "commands": [
+    {
+      "command": "cat /workspace/scratch/46b31bb4dff6/037-a021-recovery-input.md",
+      "result": "Read continuation scope first"
+    },
+    {
+      "command": "pwd; rg --files -g AGENTS.md -g *SKILL* -g *OWN* -g *CURRENT*",
+      "result": "Product root and pinned instruction discovery"
+    },
+    {
+      "command": "cat AGENTS.md; git status --short; git rev-parse HEAD; git branch --show-current; rg --files docs/dev",
+      "result": "Actual dirty SPEC/PLAN/TASKS; unchanged HEAD/branch"
+    },
+    {
+      "command": "git diff --stat; git remote -v; git show-ref; git ls-files --stage docs/dev/SPEC.md docs/dev/PLAN.md docs/dev/TASKS.md docs/dev/FEATURE-TASKS.md",
+      "result": "Inspected index objects/refs/local publication identity; origin push disabled"
+    },
+    {
+      "command": "cat [explicit loaded_sources with content_read=true, grouped as recorded in tool transcript]",
+      "result": "Pinned skills/references, current owners, accepted active feature sources/QC/navigation loaded; long tool outputs sometimes truncated; relevant source/recheck sections reread"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (snapshot/original receipt retention inline program)",
+      "result": "Actual HEAD, branch, ls-files --stage -z digest, merge_heads and ten file SHA-256/modes equal retained held_snapshot. Original receipt persisted before resume"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B /workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/trial_control.py --root /workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer --manifest /workspace/scratch/46b31bb4dff6/037-a021-selected-operations.json --receipt /workspace/scratch/46b31bb4dff6/037-a021-held-receipt.json --resume",
+      "returncode": 0,
+      "result": {
+        "status": "Completed",
+        "completed": 4,
+        "agent_behavior_assessed": false
+      }
+    },
+    {
+      "command": "git --no-optional-locks diff --check; git --no-optional-locks diff --stat; git --no-optional-locks diff -- docs/dev/FEATURE-TASKS.md AGENTS.md docs/dev/features/002_e7cae5b-named-file-ranges/README.md",
+      "result": "Four trailing blank-line warnings found; concrete transfer and navigation reviewed"
+    },
+    {
+      "command": "tail -12 [four changed adjacent QC reports]; cat docs/dev/layout.md docs/dev/FEATURE-SPEC.md",
+      "result": "Generated review/source assessment inspected; broken deferred-range-feature anchor found"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (selected incorporation corrections inline program)",
+      "returncode": 0,
+      "result": "REC-001/002/003 corrections and dependent QC revisions written; no commit"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (selected preservation/conformance/link/hash inline verification program)",
+      "returncode": 0,
+      "result": {
+        "unique_ids": 24,
+        "completed_preserved": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "pending": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "source_checkboxes": 0,
+        "accepted_feature_task_entries_preserved": true,
+        "phase1_and_completion_evidence_byte_preserved": true,
+        "selected_links_checked": 78,
+        "current_qc_hashes_verified": true,
+        "diff_check": "Pass",
+        "scope": [
+          "AGENTS.md",
+          "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+          "docs/dev/FEATURE-TASKS.md",
+          "docs/dev/PLAN-REVIEW-REPORT.md",
+          "docs/dev/PLAN.md",
+          "docs/dev/SPEC-REVIEW-REPORT.md",
+          "docs/dev/SPEC.md",
+          "docs/dev/TASKS-REVIEW-REPORT.md",
+          "docs/dev/TASKS.md",
+          "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+        ]
+      }
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (first dependency/count verification inline program)",
+      "returncode": 1,
+      "result": "Verifier start-offset bug read successor blocks; assertion cycle was a script false positive, no product mutation."
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B - (corrected line-anchored task-block dependency/count/index verification)",
+      "returncode": 0,
+      "result": {
+        "dependency_graph": "Acyclic",
+        "milestone_counts": {
+          "1.1": {
+            "delivery": 3,
+            "excluded_review": "T-004"
+          },
+          "1.2": {
+            "delivery": 3,
+            "excluded_review": "T-008"
+          },
+          "1.3": {
+            "delivery": 0,
+            "excluded_review": "T-009"
+          },
+          "2.1": {
+            "delivery": 2,
+            "excluded_review": "T-012"
+          },
+          "2.2": {
+            "delivery": 3,
+            "excluded_review": "T-016"
+          },
+          "2.3": {
+            "delivery": 0,
+            "excluded_review": "T-017"
+          },
+          "2.4": {
+            "delivery": 2,
+            "excluded_review": "T-020"
+          },
+          "2.5": {
+            "delivery": 2,
+            "excluded_review": "T-023"
+          },
+          "2.6": {
+            "delivery": 0,
+            "excluded_review": "T-024"
+          }
+        },
+        "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7"
+      }
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "8036adbd71ffc1f04b98e689cc131781bc20cd1f\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "design-docs/002_e7cae5b-named-file-ranges\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "remote",
+        "get-url",
+        "--push",
+        "trial-delivery"
+      ],
+      "returncode": 0,
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a021-remote.git\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "add",
+        "--",
+        "docs/dev/SPEC.md",
+        "docs/dev/PLAN.md",
+        "docs/dev/TASKS.md",
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/SPEC-REVIEW-REPORT.md",
+        "docs/dev/PLAN-REVIEW-REPORT.md",
+        "docs/dev/TASKS-REVIEW-REPORT.md",
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+        "AGENTS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--name-only"
+      ],
+      "returncode": 0,
+      "stdout": "AGENTS.md\ndocs/dev/FEATURE-TASKS-REVIEW-REPORT.md\ndocs/dev/FEATURE-TASKS.md\ndocs/dev/PLAN-REVIEW-REPORT.md\ndocs/dev/PLAN.md\ndocs/dev/SPEC-REVIEW-REPORT.md\ndocs/dev/SPEC.md\ndocs/dev/TASKS-REVIEW-REPORT.md\ndocs/dev/TASKS.md\ndocs/dev/features/002_e7cae5b-named-file-ranges/README.md\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "commit",
+        "-F",
+        "/workspace/scratch/46b31bb4dff6/037-a021-incorporation-commit-message.txt"
+      ],
+      "returncode": 0,
+      "stdout": "[design-docs/002_e7cae5b-named-file-ranges bf24fab] Incorporate accepted named-file range documents and task ownership\n 10 files changed, 211 insertions(+), 99 deletions(-)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "bf24fab09b2fad638d09ef892232912be1d6d338\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "push",
+        "trial-delivery",
+        "HEAD:refs/heads/design-docs/002_e7cae5b-named-file-ranges"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "To /workspace/scratch/46b31bb4dff6/037-a021-remote.git\n   8036adb..bf24fab  HEAD -> design-docs/002_e7cae5b-named-file-ranges\n"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "--heads",
+        "trial-delivery",
+        "refs/heads/design-docs/002_e7cae5b-named-file-ranges"
+      ],
+      "returncode": 0,
+      "stdout": "bf24fab09b2fad638d09ef892232912be1d6d338\trefs/heads/design-docs/002_e7cae5b-named-file-ranges\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--git-dir=/workspace/scratch/46b31bb4dff6/037-a021-remote.git",
+        "rev-parse",
+        "refs/heads/design-docs/002_e7cae5b-named-file-ranges"
+      ],
+      "returncode": 0,
+      "stdout": "bf24fab09b2fad638d09ef892232912be1d6d338\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "--no-optional-locks",
+        "status",
+        "--porcelain"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "loaded_sources": {
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/AGENTS.md": {
+      "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/SDD-MANAGER.md": {
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/AI_DISCLOSURE.md": {
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/FEATURE-PLAN-REVIEW-REPORT.md": {
+      "sha256": "cda31dafa706654b75413d764dd44d89e9c75e082130fa85cdc3ffd699e0dae8",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+      "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/PLAN.md": {
+      "sha256": "bb4541bf648c751dfc4bcd03361761278f859af55c570b12d4974cbacfbc23f4",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/PROJECT.md": {
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/TASKS.md": {
+      "sha256": "1b8feb596c61157eb38e0a51ffb2dd2974408b80bf644925d9ee37d9624f800a",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/layout.md": {
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/DECOMPOSITION.md": {
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/SPEC.md": {
+      "sha256": "b648f1de929e549007657fa21645760bc8422d3d71b13a4213ca05e83e56e2bb",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/FEATURE-PLAN.md": {
+      "sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/ARCHITECTURE.md": {
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/FEATURE-SPEC-REVIEW-REPORT.md": {
+      "sha256": "0c68983e02c26514ab5a22c4df4832a25f846d0b24b9927f77db0bc55f87973c",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/FEATURE-SPEC.md": {
+      "sha256": "6fd6858102640a78fcef2e822efd3b787cd78a861b70b20e821c973810701fd7",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/FEATURE-TASKS.md": {
+      "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+      "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": {
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-integrate-feature/SKILL.md": {
+      "sha256": "3836aff7e77d749a52493f55abc878a18af0ac0ffcc6f4d6595339c471e8b30e",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": {
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": {
+      "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md": {
+      "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/examples.md": {
+      "sha256": "a53aec9cffbb163914284180388044b7a0ae74175a9051bdd1ca9906865068dd",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md": {
+      "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md": {
+      "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": {
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md": {
+      "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/revision-modes.md": {
+      "sha256": "d8e2044ce53c8ac255772499992cc13acd077faf8e1a78b96c265143d03e9395",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md": {
+      "sha256": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md": {
+      "sha256": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/review-and-revision.md": {
+      "sha256": "2e827a54cd244ad120bd9d2eb2d15640bed5f4297b6f4a99d98d9fee06f139c8",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md": {
+      "sha256": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": {
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": {
+      "sha256": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-manage/references/prerelease-review.md": {
+      "sha256": "0fc0a9e77dcec7d96116cebc641b823dbb0544980190f5c9a608704c991c2338",
+      "content_read": false,
+      "identity_only": true
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md": {
+      "sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md": {
+      "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md": {
+      "sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": {
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-integrate-feature/references/feature-incorporation.md": {
+      "sha256": "28505601cb9a434d8cfc9a8b071e99e64ee0750f8666ed0649c6891e2aa71baf",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": {
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": {
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md": {
+      "sha256": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-report/SKILL.md": {
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "content_read": true,
+      "identity_only": false
+    },
+    "/workspace/scratch/46b31bb4dff6/037-a021-dirty-transfer/textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md": {
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+      "content_read": true,
+      "identity_only": false
+    }
+  },
+  "assistance": [
+    "One fresh consumer agent; no subagents; delegated coordinator review pending",
+    "Delegated parent coordinator accepted exact ten artifacts before sole commit; decision ee49eb727938ab671daf6f9944c9cf4c086373f0"
+  ],
+  "limitations": [
+    "No implementation/runtime/distribution tests, archive, hosted operations, merges or release authorized"
+  ],
+  "status": "Published/exact-verified; stopped at document-only incorporation boundary",
+  "resume_result": {
+    "schema_version": 1,
+    "identity": "8d2346b6247692427c68f89b9bfba0e449ee5c88f622fa3b78745e8cec8fd510",
+    "status": "Completed",
+    "completed": 4,
+    "start_snapshot": {
+      "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "branch": "design-docs/002_e7cae5b-named-file-ranges",
+      "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+      "merge_heads": [],
+      "files": {
+        "docs/dev/SPEC.md": {
+          "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+          "mode": 420
+        },
+        "docs/dev/PLAN.md": {
+          "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+          "mode": 420
+        },
+        "docs/dev/TASKS.md": {
+          "sha256": "aa82dc68454366a72f9d59d82b4c9f6067ad130c948ba2f6dd16b5d77b243675",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS.md": {
+          "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+          "mode": 420
+        },
+        "docs/dev/SPEC-REVIEW-REPORT.md": {
+          "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+          "mode": 420
+        },
+        "docs/dev/PLAN-REVIEW-REPORT.md": {
+          "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+          "mode": 420
+        },
+        "docs/dev/TASKS-REVIEW-REPORT.md": {
+          "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+          "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+          "mode": 420
+        },
+        "AGENTS.md": {
+          "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+          "mode": 420
+        },
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+          "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+          "mode": 420
+        }
+      }
+    },
+    "commands": [
+      {
+        "argv": [
+          "python",
+          "-B",
+          "-c",
+          "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('SPEC.md'); f=r('FEATURE-SPEC.md')\ns=s.replace('No implementation exists.','Phase 1 is delivered; ranges and stdin delivery remain incomplete.')\ns=s.replace(\"F-001 through F-004 retain the later separately requested range feature's contract as a deferred compatibility constraint. That feature is outside the initial executable hierarchy.\",\"F-001 through F-004 govern accepted named-file ranges in Phase 2 milestones 2.4\u20132.6. Incorporation specifies intended behavior without asserting delivery.\")\ns=s.replace('## Deferred range feature','## Named-file range contracts')\na=f.index('## F-001'); b=f.index('## Ownership and readiness')\ndelta=f[a:b].replace('## F-','### F-')\na=s.index('### F-001'); b=s.index('## Whole-input acceptance matrix')\ns=s[:a]+delta+'\\n'+s[b:]\ns=s.replace('deferred C-010','C-010')\nw('SPEC.md',s)\ns=r('PLAN.md'); f=r('FEATURE-PLAN.md')\ns=s.replace('The separately requested range feature stays outside these phases and their initial executable hierarchy; its design seams and deferred SPEC contracts remain intact.','Accepted named-file ranges extend Phase 2 with milestones 2.4/2.5 and extent review 2.6. Existing 2.1/2.2/2.3 identities remain; whole Phase 2 requires both main and feature exits.')\ns=s.replace('No range option or public API extension is included.','Public API stays whole-input. Retain source-independent range composition when delivering stdin; acquisition remains main-owned.')\ns=s.replace('without authorizing the deferred range feature.','within the separately authorized execution scope.')\ns=s.replace('The final review does not execute separately requested future features or publish a product release.','Full final review includes incorporated range exits and feature report provenance after 2.4/2.5/2.6, while retaining pending stdin obligations. No release is authorized.')\ns=s.replace('Deferred separate feature; preserve shared terminators, once-only normalization, normalized counting and source-independent acquisition seam during every design/code review. No initial task or hosted projection for this feature.','2.4 named-file text/JSON selection and validation; 2.5 documented extracted delivery; 2.6 feature-extent review. Main stdin/final work remains pending.')\na=f.index('| Parent / new milestone'); b=f.index('## Tracking and preparation boundary')\ndelta=f[a:b].replace('Detailed tests and concrete edit scopes belong to FEATURE-TASKS','Detailed tests and concrete edit scopes belong to canonical TASKS after selected transfer')\na=s.index('## Coverage, dependencies and verification strategy')\ns=s[:a]+'## Named-file range delivery extent\\n\\n'+delta+'\\n'+s[a:]\nw('PLAN.md',s)\n"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "python",
+          "-B",
+          "-c",
+          "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\ns=r('TASKS.md'); f=r('FEATURE-TASKS.md')\nassert '        - [ ] T-018 \u2014' not in s\na=f.index('    - [ ] Milestone 2.4'); b=f.index('## Execution, ownership and integration rules')\ndelta=f[a:b].rstrip().replace('FEATURE-PLAN compatible baseline/projection prerequisites','PLAN compatible baseline/projection prerequisites')\na=s.index('## Completion and persistence rules')\ns=s[:a]+delta+'\\n\\n'+s[a:]\ns=s.replace('This complete initial two-phase hierarchy derives','This complete two-phase hierarchy including accepted ranges derives')\ns=s.replace('There is no pre-existing product task list or verified implementation; all checkboxes are unchecked. Monotonic project-wide IDs T-001 through T-017 are allocated here once and have exactly one executable owner.','Phase 1 completion and evidence are retained. Main Phase 2 stays pending; separate JSON checkpoint evidence remains on the paused branch. IDs T-001\u2013T-024 are stable. T-018\u2013T-024 are pending; paired source retirement is required before unique ownership is established.')\ns=s.replace('Deferred SPEC F-001 through F-004/C-010 have no implementation task or hosted issue in this hierarchy; preserve their design seams while implementing accepted whole-input capabilities.','SPEC F-001\u2013F-004/C-010 are covered by T-018\u2013T-024 in milestones 2.4/2.5/2.6; main stdin/final work remains pending.')\ns=s.replace('            Depends on: T-013.','            Depends on: T-013 and T-020 for retained range composition.')\ns=s.replace('            Depends on: T-014.','            Depends on: T-014 and T-023 for range documentation/distribution provenance.')\ns=s.replace('Range remains documented as future scope only, without runnable delivery claims.','Include delivered named-file range behavior and source-independent stdin composition; claim runnable capability only after actual delivery.')\ns=s.replace('            Depends on: T-012 and T-016, and completed/closed delivery milestones 2.1 and 2.2; excludes its own still-open review milestone.','            Depends on: T-012, T-016 and T-024, and completed/closed delivery milestones 2.1, 2.2, 2.4 and 2.5; excludes its own still-open review milestone 2.3.')\ns=s.replace('Do not execute range feature or publish a release.','Retain feature-report provenance without claiming whole-phase completion from feature extent. No release is authorized.')\nw('TASKS.md',s)\n"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "python",
+          "-B",
+          "-c",
+          "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef r(n): return (p/n).read_text()\ndef w(n,s): (p/n).write_text(s)\n\nf=r('FEATURE-TASKS.md'); s=r('TASKS.md')\nfor i in range(18,25): assert s.count('        - [ ] T-'+str(i).zfill(3)+' \u2014')==1\na=f.index('## Phase 2 \u2014'); b=f.index('## Execution, ownership and integration rules')\nf=f[:a]+'## Current task ownership\\n\\nT-018\u2013T-024 now have their sole executable entries in [canonical TASKS](TASKS.md), under unchanged milestones 2.4/2.5/2.6. All remain pending. This retained accepted preparation source has no executable checkboxes. Main T-013\u2013T-017 and whole Phase 2 remain incomplete. Feature reports keep the recorded package prefix.\\n\\n'+f[b:]\nf=f.replace('This active feature list owns only the F-001\u2013F-004 delta.','This retained preparation source records the accepted F-001\u2013F-004 delta; canonical TASKS owns its executable entries.')\nf=f.replace('New T-018\u2013T-024 are singly owned here, all unchecked.','T-018\u2013T-024 are singly owned in canonical TASKS, all unchecked.')\nf=f.replace(\"Every feature checkbox measures this list's extent only.\",\"Every canonical feature-extent checkbox measures its own extent only.\")\nf=f.replace('After a later authorized complete feature boundary, sdd-integrate-feature coordinates accepted incorporation and explicit TASKS/FEATURE-TASKS ownership reconciliation, preserving stable task IDs/issues and updating affected pending main composition/docs/final review dependencies.','Selected SPEC/PLAN incorporation and task transfer precede implementation under the current document-only instruction. A later complete implemented boundary must preserve stable identities and verify all delivery/integration exits.')\nw('FEATURE-TASKS.md',f)\ns=s.replace('T-018\u2013T-024 are pending; paired source retirement is required before unique ownership is established.','T-018\u2013T-024 remain pending and singly owned here; FEATURE-TASKS retains provenance without executable entries.')\nw('TASKS.md',s)\n"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "python",
+          "-B",
+          "-c",
+          "from pathlib import Path\nimport re,hashlib\np=Path('docs/dev')\ndef h(n): return hashlib.sha256((p/n).read_bytes()).hexdigest()\nt=(p/'TASKS.md').read_text(); f=(p/'FEATURE-TASKS.md').read_text()\nids=re.findall(r'^        - \\[([ x])\\] (T-\\d+) \u2014',t,re.M)\nassert [x[1] for x in ids]==['T-'+str(i).zfill(3) for i in list(range(1,18))+list(range(18,25))]\nassert all(x[0]==' ' for x in ids[9:])\nassert not re.search(r'^\\s*- \\[[ x]\\] T-\\d+',f,re.M)\nbodies={\n'SPEC-REVIEW-REPORT.md':('SPEC/design conformance',['SPEC.md','PROJECT.md','ARCHITECTURE.md','DECOMPOSITION.md'],'Full current SPEC and accepted feature contracts were compared with design: R-001\u2013R-013 remain intact, F-001\u2013F-004 now specify named-file selection, complete strict decode, once-only BOM, preserved shared logical lines, unbounded ASCII grammar, before-access rejection, text/JSON/error/API compatibility and all success/invalid/extraction anchors. Existing C-010 seam suffices; no material design conflict or new export is introduced. Stdin acquisition remains pending. No implementation is verified.'),\n'PLAN-REVIEW-REPORT.md':('combined PLAN/layout conformance',['PLAN.md','layout.md','SPEC.md','SPEC-REVIEW-REPORT.md'],'Current main strategy provides delivery routes for all R/F contracts with existing layout. Phase 1 retains two delivery milestones plus excluded 1.3, justified by useful API/CLI and independent robustness/distribution. Phase 2 now has four delivery milestones 2.1/2.2/2.4/2.5 plus excluded full review 2.3 and extent review 2.6. The range extent retains two narrow useful increments rather than padded fragmentation: direct CLI and documented extracted delivery. Whole Phase 2 requires main stdin/final and range exits. Published preparation, compatible JSON baseline and future eligible projection remain prerequisites, not performed facts.'),\n'TASKS-REVIEW-REPORT.md':('TASKS/PLAN and unique ownership conformance',['TASKS.md','FEATURE-TASKS.md','PLAN.md','SPEC.md','layout.md'],'Reviewed current complete main hierarchy and source retirement. T-001\u2013T-024 occur once as executable owners in TASKS; feature list has no executable entries. T-001\u2013T-009 and their completion evidence remain intact. T-010\u2013T-024 and Phase 2 remain pending; separate JSON evidence does not mark main copies complete. Delivery task counts are 1.1 three, 1.2 three, 2.1 two, 2.2 three, 2.4 two, 2.5 two; the two-task groups retain bounded format/extraction and pure-selection/CLI or documentation/extraction outcomes rather than padded splits. Dedicated excluded reviews are T-004/T-008/T-012/T-016/T-020/T-023 and single-task 1.3 T-009, full 2.3 T-017, extent 2.6 T-024. Dependencies retain all main work, add range composition/documentation to T-014/T-015, and require T-024 before full phase review. Feature review cannot close whole Phase 2. Existing feature report prefixes and stable IDs survive transfer.'),\n'FEATURE-TASKS-REVIEW-REPORT.md':('retained preparation provenance and canonical ownership transfer',['FEATURE-TASKS.md','TASKS.md','PLAN.md','SPEC.md'],'Accepted seven-task source hierarchy transferred to TASKS without task completion or identity changes. Source entries retired, retaining accepted preparation provenance, current canonical links, future baseline/projection gates and feature report prefix. The retained source is not an executable checklist or proof of implemented capability. All seven tasks and main stdin/final work remain pending. Original accepted assessment is retained below.')\n}\nfor n,(scope,names,body) in bodies.items():\n s=(p/n).read_text()\n nums=[int(x) for x in re.findall(r'^## Revision (\\d+)$',s,re.M)]\n k=max(nums,default=0)+1\n gate='State: **Ready** for '+scope+'. Current SHA-256 identities: '+', '.join(x+' '+h(x) for x in names)+'. No confirmed conformance blocker remains. Human acceptance of existing feature inputs is retained; this document-only review does not authorize execution or establish implementation/delivery.\\n\\n'\n a=s.index('## Current gate\\n'); b=s.index('\\n## ',a+3)\n s=s[:a]+'## Current gate\\n\\n'+gate+s[b:]\n s+='\\n## Revision '+str(k)+'\\n\\n'+body+'\\n\\n'+gate\n (p/n).write_text(s)\nq=p/'features/002_e7cae5b-named-file-ranges/README.md'\ns=q.read_text(); s+='\\n## Selected document incorporation\\n\\nCurrent SPEC and PLAN incorporate accepted range contracts/strategy. [Canonical TASKS](../../TASKS.md) singly owns pending T-018\u2013T-024 in 2.4/2.5/2.6; retained FEATURE-TASKS records provenance without executable entries. Accepted FEATURE-SPEC/FEATURE-PLAN and their adjacent QC remain active because implementation and delivery are incomplete. No archive or campaign closure is eligible. Current main and feature task QC reports assess the changed ownership; historical Ready does not establish main conformance. This document checkpoint remains on design-docs; origin is read-only and trial-delivery is the authorized local publication destination. No default or paused-phase merge, hosted write, task execution or release occurs.\\n'\ns=s.replace('Root TASKS and governing main documents retain their existing scope; no feature source is incorporated or archived.','Main SPEC/PLAN and TASKS now incorporate the selected range delta; all needed feature sources remain retained and no source is archived.')\ns=s.replace('are active executable sources accepted','are retained preparation provenance accepted')\nq.write_text(s)\nq=Path('AGENTS.md'); s=q.read_text(); s+='\\n## Selected incorporation checkpoint\\n\\nThe current document-only request incorporates accepted named-file range SPEC/PLAN into main governing owners and transfers pending T-018\u2013T-024 to canonical TASKS. FEATURE-TASKS retains provenance without executable checkboxes. Preserve the accepted active source/QC pairs and feature report prefix until implementation/delivery and eligible archive gates are actually met. Main stdin/final work and Phase 2 remain pending. Work stays on design-docs; origin is read-only, trial-delivery is the authorized local publication destination. No task execution, hosted mutation, main/paused-phase merge or release is authorized.\\n'\ns=s.replace('FEATURE-TASKS owns the unchecked T-018\u2013T-024 delta; canonical TASKS retains the original obligations.','Canonical TASKS owns unchecked T-018\u2013T-024 and retains original main obligations; FEATURE-TASKS records accepted preparation provenance without executable entries.')\nq.write_text(s)\n"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "evidence_class": "controlled",
+    "agent_behavior_assessed": false,
+    "held_snapshot": {
+      "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "branch": "design-docs/002_e7cae5b-named-file-ranges",
+      "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+      "merge_heads": [],
+      "files": {
+        "docs/dev/SPEC.md": {
+          "sha256": "b648f1de929e549007657fa21645760bc8422d3d71b13a4213ca05e83e56e2bb",
+          "mode": 420
+        },
+        "docs/dev/PLAN.md": {
+          "sha256": "bb4541bf648c751dfc4bcd03361761278f859af55c570b12d4974cbacfbc23f4",
+          "mode": 420
+        },
+        "docs/dev/TASKS.md": {
+          "sha256": "1b8feb596c61157eb38e0a51ffb2dd2974408b80bf644925d9ee37d9624f800a",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS.md": {
+          "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+          "mode": 420
+        },
+        "docs/dev/SPEC-REVIEW-REPORT.md": {
+          "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+          "mode": 420
+        },
+        "docs/dev/PLAN-REVIEW-REPORT.md": {
+          "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+          "mode": 420
+        },
+        "docs/dev/TASKS-REVIEW-REPORT.md": {
+          "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+          "sha256": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+          "mode": 420
+        },
+        "AGENTS.md": {
+          "sha256": "1126c3f377755b80d40b87ae12d8ffe3b8b7cae8e65ad354a152a364b96ab60a",
+          "mode": 420
+        },
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+          "sha256": "f15c116b1dd2494d798672dc87f44393eae7c9ea48b3b6644fcf136d0894795e",
+          "mode": 420
+        }
+      }
+    },
+    "final_snapshot": {
+      "head": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+      "branch": "design-docs/002_e7cae5b-named-file-ranges",
+      "index_sha256": "8db127747e0103ab9ca1d4f7213507b338d172db08837b5336494334180b0df7",
+      "merge_heads": [],
+      "files": {
+        "docs/dev/SPEC.md": {
+          "sha256": "b648f1de929e549007657fa21645760bc8422d3d71b13a4213ca05e83e56e2bb",
+          "mode": 420
+        },
+        "docs/dev/PLAN.md": {
+          "sha256": "bb4541bf648c751dfc4bcd03361761278f859af55c570b12d4974cbacfbc23f4",
+          "mode": 420
+        },
+        "docs/dev/TASKS.md": {
+          "sha256": "9acb01587275cc0af07c9c3f3d8d5a0c4ce703cf128dbb557d65ef298f1c8a3f",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS.md": {
+          "sha256": "4d3e641ce9722204ac63c0bbc410b192aa5d32fa1725c58a5f89f4a26d6ad1a8",
+          "mode": 420
+        },
+        "docs/dev/SPEC-REVIEW-REPORT.md": {
+          "sha256": "6f71514dcbbd61be627ed91affddd4649376e99b0269163cdd4c887f8bb88fd4",
+          "mode": 420
+        },
+        "docs/dev/PLAN-REVIEW-REPORT.md": {
+          "sha256": "89b3683b5554eca64ebf7675a4c1e5ad9cb3529a4fbe5d24c90138d8817b88da",
+          "mode": 420
+        },
+        "docs/dev/TASKS-REVIEW-REPORT.md": {
+          "sha256": "78bcc207acf5f273bd1d00bf9b0374ba962c6360c3f56747827697c1acf298f3",
+          "mode": 420
+        },
+        "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": {
+          "sha256": "134ec134c59c9643f5f6bf05be40a87286f3ba29a076dae6d84604c0ce8241b5",
+          "mode": 420
+        },
+        "AGENTS.md": {
+          "sha256": "75eb3d1cac9581577a833e46bd71f6b14d67a3d87b084cc6f442c3dea0f1dab1",
+          "mode": 420
+        },
+        "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+          "sha256": "d40ff12c83c7d113bb138d62565f30acf37ec05aaac7705dc0ba0e03a62cb499",
+          "mode": 420
+        }
+      }
+    }
+  },
+  "reconciliation": [
+    "REC-001 retained feature SPEC anchor restored in canonical SPEC",
+    "REC-002 stale strategy and final-review wording removed; explicit stdin/range evidence and stable feature report prefixes retained",
+    "REC-003 QC trailing blanks corrected and source/navigation current scope clarified"
+  ],
+  "verification": {
+    "unique_ids": 24,
+    "completed_preserved": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "pending": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "source_checkboxes": 0,
+    "accepted_feature_task_entries_preserved": true,
+    "phase1_and_completion_evidence_byte_preserved": true,
+    "selected_links_checked": 78,
+    "current_qc_hashes_verified": true,
+    "diff_check": "Pass",
+    "scope": [
+      "AGENTS.md",
+      "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md",
+      "docs/dev/FEATURE-TASKS.md",
+      "docs/dev/PLAN-REVIEW-REPORT.md",
+      "docs/dev/PLAN.md",
+      "docs/dev/SPEC-REVIEW-REPORT.md",
+      "docs/dev/SPEC.md",
+      "docs/dev/TASKS-REVIEW-REPORT.md",
+      "docs/dev/TASKS.md",
+      "docs/dev/features/002_e7cae5b-named-file-ranges/README.md"
+    ],
+    "dependency_graph": "Acyclic; all references resolve; no self dependency",
+    "milestone_counts": {
+      "1.1": {
+        "delivery": 3,
+        "excluded_review": "T-004"
+      },
+      "1.2": {
+        "delivery": 3,
+        "excluded_review": "T-008"
+      },
+      "1.3": {
+        "delivery": 0,
+        "excluded_review": "T-009"
+      },
+      "2.1": {
+        "delivery": 2,
+        "excluded_review": "T-012"
+      },
+      "2.2": {
+        "delivery": 3,
+        "excluded_review": "T-016"
+      },
+      "2.3": {
+        "delivery": 0,
+        "excluded_review": "T-017"
+      },
+      "2.4": {
+        "delivery": 2,
+        "excluded_review": "T-020"
+      },
+      "2.5": {
+        "delivery": 2,
+        "excluded_review": "T-023"
+      },
+      "2.6": {
+        "delivery": 0,
+        "excluded_review": "T-024"
+      }
+    },
+    "index_unchanged_before_commit": true
+  },
+  "reviewable_sha256": {
+    "docs/dev/SPEC.md": "6c0c1d277e3c4a02b7404d03146a75869b96e1b39b4bb79f08572df24f325adc",
+    "docs/dev/PLAN.md": "70dda02c6e367afeccd2519c07fd0f2fe01f3387ba58747cbecacf0fa2c76b6a",
+    "docs/dev/TASKS.md": "8332c90fa658f5e031d1e1abe9dfe3f8fffef471db4d7fa8fd1d8964f993db51",
+    "docs/dev/FEATURE-TASKS.md": "d2ec6db757fd63c212ac2dff74c61b1de31c0e68e6797c9de141a28f5f5bc96e",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "80773ab21cf4b5cd8cbf04a55bc0190362375ebf9457a65c8c247d3aa9cb74d4",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "9ea73d53d6aab7fd570548489585b558b63f8ac279c84bd0f3c38fa654b4a646",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "b559d2cc78c85943e6fd26942da876741a9a3d10ef06d9bfd65ca31007e09e62",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": "20c3fc4f828658ea448a7518e9209759d31e06d52935e950288498a0ab10d6ca",
+    "AGENTS.md": "d880767d9ed47167a5dbcb3f72a31bbcf2d1f9e779faff5e5384e29aa720f94a",
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "a693812f1b483128b624ccb7809601341570d7c4af9ff757d66b89c4e5a3f8e4"
+  },
+  "input_sources": {
+    "/workspace/scratch/46b31bb4dff6/037-a021-recovery-input.md": "9178b02d08482877c84f8489b3711483809bc2124783a26457b7e009a33e603f",
+    "/workspace/scratch/46b31bb4dff6/037-a021-selected-operations.json": "dd7880b24cc418b6aff07a0a9fe800d544f03ddfdd4cafae18d03d631b3e0bb4",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/scripts/trial_control.py": "46e8b9c0a54d7781c268e43ebe3a4f35d47d0b5e8b52eb0df7e5fbd3acb985ca"
+  },
+  "command_record_limit": "Inline Python programs are described by actual operation and result here; exact program bodies remain in session tool transcript. Wrapper executed operation bodies and outputs are preserved verbatim in original_receipt/resume_result.",
+  "excluded_access": "Did not read coordinator case/assessor/catalog/history/sibling task artifacts; supplied wrapper/manifest/receipt and selected product inputs only. Git refs were identity inspection, not sibling content loading.",
+  "coordinator_acceptance": {
+    "decision": "ee49eb727938ab671daf6f9944c9cf4c086373f0",
+    "path": "runs/A-021/1/ARTIFACT-DECISION.json",
+    "evidence": "Parent confirmed published/exact-verified explicit acceptance of ten reviewable_sha256 artifacts after full governing/tasks/QC/navigation diff inspection",
+    "scope": "Exactly presented ten paths; one checkpoint plus immediate local push/readback"
+  },
+  "checkpoint_commit": "bf24fab09b2fad638d09ef892232912be1d6d338",
+  "publication": {
+    "remote": "trial-delivery",
+    "destination": "/workspace/scratch/46b31bb4dff6/037-a021-remote.git",
+    "ref": "refs/heads/design-docs/002_e7cae5b-named-file-ranges",
+    "commit": "bf24fab09b2fad638d09ef892232912be1d6d338",
+    "exact_readback": "bf24fab09b2fad638d09ef892232912be1d6d338\trefs/heads/design-docs/002_e7cae5b-named-file-ranges",
+    "verified": true
+  }
+}

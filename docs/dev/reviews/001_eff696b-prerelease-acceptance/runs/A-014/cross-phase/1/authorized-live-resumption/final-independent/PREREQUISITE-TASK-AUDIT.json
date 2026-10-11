@@ -1,0 +1,77 @@
+{
+  "audit": [
+    {
+      "task": "T-001",
+      "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+      "subject": "[T-001] Implement immutable statistics and whole-text counting",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "57a05a2753896ed060e9a3b55dfc8a2ee9a9e806dfb8bbdd27a88fa0acefa017"
+    },
+    {
+      "task": "T-002",
+      "commit": "f28f6e415b3e0c13353a61e82354c47b0d2cabb2",
+      "subject": "[T-002] Implement strict file acquisition and complete public API",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "3d4c5fad931d51af6912f09ac7c2d70867ddaaa1fd080aec43e638e0dea73ce9"
+    },
+    {
+      "task": "T-003",
+      "commit": "373203d6f41bee2229eed900b761de8669678e0b",
+      "subject": "[T-003] Integrate named-file CLI and nonempty product checks",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "1287959b14aa4342f0aaf8fb3b45585d722df26fa5c4dff9d3dd26f0fb16ce3e"
+    },
+    {
+      "task": "T-004",
+      "commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+      "subject": "[T-004] Review named-file counting and complete milestone 1.1",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "40e072bd1ad1d385581f5c1ef645a8ab8867b0c60c7376aec8cc023db404ce5c"
+    },
+    {
+      "task": "T-005",
+      "commit": "809f045e3cd32445e7dca29d0174ea25aa5da7ea",
+      "subject": "[T-005] Handle named-file input failures without tracebacks",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "62b245ed3fc527993109be7aaf18c6901aa112b343b0552a7881cc5396064a35"
+    },
+    {
+      "task": "T-006",
+      "commit": "fde1537b5c4ba1bcef4f538dfb47276d564e4aaa",
+      "subject": "[T-006] Document public API and runnable named-file usage",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "661c9b04a5ea92448e1512160d169109f1b972bcedb8e6d6efd33e5a50ddeff5"
+    },
+    {
+      "task": "T-007",
+      "commit": "f7e3309b672cb13b1d8158613e81d50e8d1ecc18",
+      "subject": "[T-007] Build and verify isolated TextStats source distribution",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "7d2cbd8ba407b90b952eb6956708cf52f8d822d6788d94a753efd8bc615fde03"
+    },
+    {
+      "task": "T-008",
+      "commit": "7b9f570aa4452d2ca9d6105479640528cb113f0e",
+      "subject": "[T-008] Review distribution milestone and reject option abbreviations",
+      "single_subject_id": true,
+      "initial_checkbox_transition": true,
+      "own_evidence_present": true,
+      "parent_diff_sha256": "2a22bb2de31fc79efbd4d98697a606f5808ebff10ccf020588456b816689c052"
+    }
+  ],
+  "all_observed_checks": true
+}

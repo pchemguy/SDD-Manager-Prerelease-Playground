@@ -1,0 +1,88 @@
+{
+  "artifacts": [
+    {
+      "path": "037-a016-continuation-input.md",
+      "sha256": "1be6a9084da42c64f5f7c9c697f23af26b01521ef046c78d9c1da595b532436c",
+      "bytes": 1677,
+      "mode": "0o644"
+    },
+    {
+      "path": "037-a016-continuation-observations.json",
+      "sha256": "c3cbf44f894a85708fa0ed60282d228a88d50feb70dc8790c92edf1e4c622a6a",
+      "bytes": 65809,
+      "mode": "0o644"
+    },
+    {
+      "path": "COMMIT-DELTA.patch",
+      "sha256": "abcee5993eeba15431cb70e495aa6a984d72476cbdcab5ee0919cac9625f0c60",
+      "bytes": 19540,
+      "mode": "0o644"
+    },
+    {
+      "path": "HEAD-COMMIT.txt",
+      "sha256": "2ac4a1098339d97d7ba3e9f4d022de1ceccb0d6a83c1ee572fd5647ecf544356",
+      "bytes": 691,
+      "mode": "0o644"
+    },
+    {
+      "path": "INDEPENDENT-ASSESSMENT.json",
+      "sha256": "e0d3abeb0aa099179c7dbc31badd7bb47dd318a666474c22c3581a4dcf0f9e75",
+      "bytes": 16142,
+      "mode": "0o644"
+    },
+    {
+      "path": "INDEX.bin",
+      "sha256": "d93a6906aaa06e1db2de5fba689ecf7818333a374c7532012b1d06fa0242ed47",
+      "bytes": 23369,
+      "mode": "0o644"
+    },
+    {
+      "path": "MANIFEST-CORRECTION.json",
+      "sha256": "96bcb226f0044fb50b77a985113538de1cd9a1f54dcb974e6ab6c7e4cc186a19",
+      "bytes": 370,
+      "mode": "0o644"
+    },
+    {
+      "path": "OBJECTS.bundle",
+      "sha256": "89e8663c0683802cdc48e5f519d6fd2d5f5d05eaf7495d697e90ca3c68e2b94b",
+      "bytes": 529744,
+      "mode": "0o644"
+    },
+    {
+      "path": "PUBLISHED-CONTINUATION-HANDOFF.md",
+      "sha256": "1be6a9084da42c64f5f7c9c697f23af26b01521ef046c78d9c1da595b532436c",
+      "bytes": 1677,
+      "mode": "0o644"
+    },
+    {
+      "path": "RESTORATION.json",
+      "sha256": "3b6438e2b35648a0aeff720d01348ffbdea80613f86a3e0a13558605a463f5fb",
+      "bytes": 139682,
+      "mode": "0o644"
+    },
+    {
+      "path": "SNAPSHOT.json",
+      "sha256": "9aebca413756b3622d2198e572b399ec87f79a1b9f9b13efd76db58e2762a40c",
+      "bytes": 70197,
+      "mode": "0o644"
+    },
+    {
+      "path": "STAGED.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    },
+    {
+      "path": "TRACKED-WORKFILES.tar",
+      "sha256": "cc1816193ae59759adbc9c0f26828e5e6dfa0e132610b8de9773a5a0c74ebb9e",
+      "bytes": 1136640,
+      "mode": "0o644"
+    },
+    {
+      "path": "UNSTAGED.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "0o644"
+    }
+  ]
+}

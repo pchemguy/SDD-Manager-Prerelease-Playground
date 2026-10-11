@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "actor": "coordinator",
+  "reason": "Actual selected controlled denial and independently preserved trigger published664c7dd before bounded facility restoration",
+  "evidence_class": "controlled",
+  "changed_path": "/workspace/scratch/46b31bb4dff6/037-a024-denial-facility/CONTROL.json",
+  "before_sha256": "f1268f9cd43bda85f09bbe84aa89c54c76e147f4eaf4a04b8ad8506abbbbea5e",
+  "after_sha256": "625836cd4bad68ca19674b1b263f0546c9e4afe95ac7f7c2c50fcb83853f0b51",
+  "before": {
+    "mode": "denial"
+  },
+  "after": {
+    "mode": "normal"
+  },
+  "observed_at": "2026-10-10T13:50:58.789567+00:00",
+  "unchanged_destination": "campaign037_phase1_tracking",
+  "ledger_absent": true,
+  "no_product_git_credential_provider_change": true
+}

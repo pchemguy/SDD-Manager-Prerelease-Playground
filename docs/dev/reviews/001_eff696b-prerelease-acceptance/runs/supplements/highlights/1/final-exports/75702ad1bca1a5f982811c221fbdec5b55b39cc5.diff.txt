@@ -1,0 +1,21 @@
+commit 75702ad1bca1a5f982811c221fbdec5b55b39cc5
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:47 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:47 2026 -0400
+
+    Clarify retained history in continuation reference (caller fixture)
+---
+ CONTINUATION-REFERENCE.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/CONTINUATION-REFERENCE.md b/CONTINUATION-REFERENCE.md
+index f0fa761..d6197f3 100644
+--- a/CONTINUATION-REFERENCE.md
++++ b/CONTINUATION-REFERENCE.md
+@@ -1,3 +1,5 @@
+ # Continuation reference
+ 
+ Check the existing checkpoint and exact remote ref before resuming dependent work. Retain a result whose publication is unverified, rather than replaying its task. These are documentation examples, not new automation.
++
++Preserve valid history while reconciling a pending publication.

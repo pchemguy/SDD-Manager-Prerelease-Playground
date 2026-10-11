@@ -1,0 +1,17 @@
+{
+  "A006-published-assessment.json": "b406c63f84a749ce71fda6270420c98f5ef40afc1cd038c4e0259d09686d47e6",
+  "EXPORT-VERIFICATION.json": "bcfc37423f5ac200ac065825127bd0d089b13efd252d7553fa32580c339dee62",
+  "ORDINARY-HANDOFF-DRAFT.md": "d99097fae9400ba8b4f20022caa6c4a45f39742896a5806ae8aca504747b3cd8",
+  "READINESS.md": "7506d8dd62f2608de2a75bc2358b4627a7d2f61795364d1f7ecb20cd90c89784",
+  "UNTRACKED-INTERVENTION.json": "8aa2278186b3c16c0397819a8106dd260c539f0cef79271446107e5b63b427fc",
+  "incoming-workfiles.tar": "d003000542f5553a5c1f78586826a9d21321a4fbc107b50a350fbbc2658fb379",
+  "index-stages.txt": "6130d73668b70ea63fe3b2fc457a144d62267601a844d0d8bda63f2bf6bc130a",
+  "index.raw": "b7ebb52b54b76f7f09a30952b127d724f85d6573e1c0e0a331179f1fc9a74177",
+  "prospective-regression.patch": "f97edcc0ac9d56cf9dcb077ca9077edbc46ed70fa3d08a6a5a3ff8fa89e5dcc2",
+  "prospective-test.py": "e69c1444d1e920a94ea3c244f563cd093316e319899594668fc379b9e8164cdd",
+  "provenance.json": "f80c703793cde6f536255f11db82501e6aa80f55ed187a8dbff67617099d9312",
+  "setup-commands.jsonl": "90671e28ab270fb53b2fc895bf336c857bd10bfd0d98c94f6dd9a9f2b5c544c8",
+  "setup-objects.bundle": "2915154bce7ca202fd8de9ec225cadb2b0f801670fabb61d375fdb19af8a733a",
+  "target-workfiles.tar": "3e979a68cde224b7272963b206e3270093401af44526c50d99cb6be7bfb554c8",
+  "unexpected-untracked-workfiles.tar": "5ac4be6362496222b841bccdcf819e4a42b26e70d9a26f6da518ca351c96fb63"
+}

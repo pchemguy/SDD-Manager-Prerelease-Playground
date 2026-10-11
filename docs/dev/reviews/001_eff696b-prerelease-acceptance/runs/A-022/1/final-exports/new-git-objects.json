@@ -1,0 +1,86 @@
+[
+  {
+    "oid": "e454fda1fc851c9c224f37541f242a3d8d746709",
+    "type": "commit",
+    "size": 263,
+    "sha256": "76ded5c24eb7ff283f312bf1de6de702845a3fdd8589146e4380323d69aa96f4",
+    "hint": ""
+  },
+  {
+    "oid": "f8c3a4f9de188a19a959ba6199685ac280c65b00",
+    "type": "commit",
+    "size": 257,
+    "sha256": "19f4475ca6988b3bcfa21f6a5a5d6303af74de28f2dce584dacd296f94b54777",
+    "hint": ""
+  },
+  {
+    "oid": "5e05b9ab3b45b0241d834a3b40cfc3db91ff0ee7",
+    "type": "tree",
+    "size": 413,
+    "sha256": "b72d2eef834d10090d73200c3da9a4dd44b526fa374998184ca8f47e2543182c",
+    "hint": ""
+  },
+  {
+    "oid": "e694b513c95878ab48b8dbc95d641bb745f74bc3",
+    "type": "tree",
+    "size": 105,
+    "sha256": "438c196b97a6e8beb7041e6987e69d7cf2f021e17ed9008c63041f34eb7d6926",
+    "hint": "docs"
+  },
+  {
+    "oid": "576d61b56d9d17e1a73fe2d67d24341bd6618ad1",
+    "type": "tree",
+    "size": 485,
+    "sha256": "f4b86338771d9a68c2c3bf285ca0b77ab7a1fa72cc153127df4cc85df4e87b42",
+    "hint": "docs/dev"
+  },
+  {
+    "oid": "d87e51c809f7ad157a0a092bd674718b26cb58a3",
+    "type": "blob",
+    "size": 21589,
+    "sha256": "b27b929893f994d452f85f0f7293e0e4e8955468909cda3e7ee33abbed4a8167",
+    "hint": "docs/dev/TASKS-REVIEW-REPORT.md"
+  },
+  {
+    "oid": "65cff77a98e4aca728c1f64cef93561e17a1d4cf",
+    "type": "blob",
+    "size": 67591,
+    "sha256": "d59d441b778dba18075aefc7ccf5f8987b3eb8d9ef46f7d834f29f8ceb4864db",
+    "hint": "docs/dev/TASKS.md"
+  },
+  {
+    "oid": "b5ff3d71d2b0b3c26a14c4a6fb14811c72e834a6",
+    "type": "tree",
+    "size": 413,
+    "sha256": "861f7540a7e344172f48ec8c49e0ab37542a02fc17a3b099152fa072041df0a7",
+    "hint": ""
+  },
+  {
+    "oid": "98f45682a63aea6a0838fba1457f2cdc0292dbe2",
+    "type": "tree",
+    "size": 105,
+    "sha256": "ad173b9456075a7ccaca63ec372d50acc764f1d242cfda1bb34063aa4151e806",
+    "hint": "docs"
+  },
+  {
+    "oid": "baeead06344b843e48c3d27bcf9515bab42b8c73",
+    "type": "tree",
+    "size": 485,
+    "sha256": "4257d64e9b4d5b38039bd19560b031d8c6e0707e641487fb0c74408d51fe66cc",
+    "hint": "docs/dev"
+  },
+  {
+    "oid": "84d8e039557ed109730de64b465f832475d00efa",
+    "type": "blob",
+    "size": 19032,
+    "sha256": "1b3e0fd77ed33a328c7e6d7c0a991d3108f7fdd51826654b3b9e52d73372afd9",
+    "hint": "docs/dev/TASKS-REVIEW-REPORT.md"
+  },
+  {
+    "oid": "a25d1e5544c843582e022d050207f06def2d1916",
+    "type": "blob",
+    "size": 67311,
+    "sha256": "e983281ea5090d5930aafe374c0b6b3de8cd4e5fd49fa968d605a997d449bb4a",
+    "hint": "docs/dev/TASKS.md"
+  }
+]

@@ -1,0 +1,3 @@
+# Delivery plan
+
+Phase 1 — File line counter: one narrowly bounded delivery milestone is sufficient for this tiny single-path CLI. Splitting three coherent integration steps into extra milestones would add handoff overhead. Milestone 1.1 delivers the meaningful usable full file path, including S1–S3/error/resource checks, packaging and usage. Counter precedes CLI integration, which precedes packaging/full exit verification. Its exit is usable CLI with all SPEC outcomes and unit/integration checks passing, followed by milestone review/testing/report. Milestone 1.2 is the final dedicated phase review milestone, with one review/testing/report outcome after 1.1 completion; phase exit verifies all contracts and reports. No intended obligations are deferred.

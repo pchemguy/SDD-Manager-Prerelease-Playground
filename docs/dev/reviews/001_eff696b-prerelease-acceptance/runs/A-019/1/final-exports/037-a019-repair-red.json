@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines",
+      "tests.integration.test_prospective_contract",
+      "-v"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... \n  test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\\x1c') ... FAIL\ntest_file_separator_is_a_word_separator_in_public_api (tests.integration.test_prospective_contract.ProspectiveWordContractTests.test_file_separator_is_a_word_separator_in_public_api) ... FAIL\ntest_file_separator_is_a_word_separator_in_real_module (tests.integration.test_prospective_contract.ProspectiveWordContractTests.test_file_separator_is_a_word_separator_in_real_module) ... FAIL\n\n======================================================================\nFAIL: test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) (separator='\\x1c')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a019-integration/tests/unit/test_core.py\", line 72, in test_unicode_separators_are_whitespace_without_new_lines\n    self.assertEqual(count_text(\"a\" + separator + \"b\"), TextStats(1, 2))\nAssertionError: TextStats(lines=1, words=1) != TextStats(lines=1, words=2)\n\n======================================================================\nFAIL: test_file_separator_is_a_word_separator_in_public_api (tests.integration.test_prospective_contract.ProspectiveWordContractTests.test_file_separator_is_a_word_separator_in_public_api)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a019-integration/tests/integration/test_prospective_contract.py\", line 14, in test_file_separator_is_a_word_separator_in_public_api\n    self.assertEqual(count_text(sample), TextStats(1, 2))\nAssertionError: TextStats(lines=1, words=1) != TextStats(lines=1, words=2)\n\n======================================================================\nFAIL: test_file_separator_is_a_word_separator_in_real_module (tests.integration.test_prospective_contract.ProspectiveWordContractTests.test_file_separator_is_a_word_separator_in_real_module)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a019-integration/tests/integration/test_prospective_contract.py\", line 27, in test_file_separator_is_a_word_separator_in_real_module\n    self.assertEqual(result.stdout, b\"lines=1 words=2\\n\")\nAssertionError: b'lines=1 words=1\\n' != b'lines=1 words=2\\n'\n\n----------------------------------------------------------------------\nRan 3 tests in 0.072s\n\nFAILED (failures=3)\n"
+  },
+  {
+    "command": [
+      "python",
+      "-B",
+      "tools/check_distribution.py"
+    ],
+    "exit": 1,
+    "stdout": "extracted import: /tmp/tmpn1duip15/textstats-source/textstats/__init__.py\n",
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a019-integration/tools/check_distribution.py\", line 98, in <module>\n    verify_archive(build_archive(root, root / 'dist' / 'textstats-source.zip'))\n  File \"/workspace/scratch/46b31bb4dff6/037-a019-integration/tools/check_distribution.py\", line 65, in verify_archive\n    assert (result.returncode, result.stdout, result.stderr) == (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: CompletedProcess(args=['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', '-s', '-m', 'textstats', 'sample.txt'], returncode=0, stdout='lines=1 words=1\\n', stderr='')\n"
+  }
+]

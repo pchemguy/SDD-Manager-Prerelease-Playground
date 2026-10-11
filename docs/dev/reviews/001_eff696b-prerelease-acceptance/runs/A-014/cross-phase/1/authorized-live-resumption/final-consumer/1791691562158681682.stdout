@@ -1,0 +1,28 @@
+ARCHIVE /workspace/scratch/46b31bb4dff6/037-a014-authorized-consumer-artifacts/t010-current-source.zip SHA256 89f50d70070624e7a2e9584475141a5333add647eff42f45c88f952a8640abe0
+MEMBER SHA256 3fee1459e1064988923d7c546e376d3bb434a662c22b5dc78d232c8a19e145c4 textstats-source/README.md
+MEMBER SHA256 01bb196cc9695df7cd74c207f47599e3bcc62fb00b881098530d758ff2316fd9 textstats-source/docs/public-api.md
+MEMBER SHA256 09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea textstats-source/AI_DISCLOSURE.md
+MEMBER SHA256 ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf textstats-source/SDD-MANAGER.md
+MEMBER SHA256 b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0 textstats-source/textstats/__init__.py
+MEMBER SHA256 b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590 textstats-source/textstats/__main__.py
+MEMBER SHA256 98b3374375eb7e6d4a301cabff99eb5e09ccccecbd9a808954e9c5cae084609f textstats-source/textstats/core.py
+MEMBER SHA256 a45b0a1f320109f43d92e1b01507c2c2da941af51af09ede378724038db32b9f textstats-source/textstats/io.py
+MEMBER SHA256 5052a8f58950effeb4f546f672b06c9776b3c8bea6c67f4ccdce8347561f7ed5 textstats-source/textstats/cli.py
+MEMBER SHA256 e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91 textstats-source/tools/package_source.py
+MEMBER SHA256 4132a9a688ee8ce0a385c39b471ea9a29b4c6f4ba03c18e9f095cb10e9691d5f textstats-source/tools/check_distribution.py
+extracted import: /tmp/tmprbalj6x4/textstats-source/textstats/__init__.py
+36 extracted module cases passed
+RETAINED TEXT CHECKS 36
+PRODUCT IGNORED ARCHIVE /workspace/scratch/46b31bb4dff6/037-a014-cross-phase/dist/textstats-source.zip SHA256 89f50d70070624e7a2e9584475141a5333add647eff42f45c88f952a8640abe0
+PRODUCT ARCHIVE MEMBERS CURRENT True
+6fa480a4a168292ec49061e099c05ec02d200fa5
+M  AGENTS.md
+M  README.md
+M  docs/dev/TASKS.md
+M  docs/public-api.md
+M  tests/integration/test_cli.py
+M  tests/unit/test_cli.py
+M  textstats/cli.py
+?? -sample
+?? bom.txt
+?? sample.txt

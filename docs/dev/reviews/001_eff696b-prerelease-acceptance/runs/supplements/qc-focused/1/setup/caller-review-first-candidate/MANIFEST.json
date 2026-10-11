@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "actual_baseline": "8036adbd71ffc1f04b98e689cc131781bc20cd1f",
+  "plugin_pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "author": "caller assessor; no consumer run",
+  "artifacts": [
+    {
+      "path": "ASSESSOR-PROTOCOL.md",
+      "sha256": "b726f17c2d9249535c887e7b066b841df66d6308b4de390263bef11e3b022dd6",
+      "bytes": 2667
+    },
+    {
+      "path": "AUTHOR-SCRIPT.py",
+      "sha256": "f359159907397a3c3de09a88c565124158862684dcba3e96a34cf13007910e63",
+      "bytes": 19605
+    },
+    {
+      "path": "GUIDE-PROVENANCE.json",
+      "sha256": "a7b095d42d83c3d80de4338f2dfc754dff0db3cce20678a5119083704980886a",
+      "bytes": 234
+    },
+    {
+      "path": "INTERVENTIONS.json",
+      "sha256": "8d9c9fc5f46de60bbc5b70305c703663001e471ad409eef35253cb7e377b0639",
+      "bytes": 870
+    },
+    {
+      "path": "SETUP-COMMANDS-BASE64.json",
+      "sha256": "9a3c9177031e7db85f0f09cf2ec8d05fd3077a9a7b2dc9c9e9c720407a6d5b88",
+      "bytes": 214798
+    },
+    {
+      "path": "missing-plan-contract/AUTHOR-CHECKS.json",
+      "sha256": "6ca30f8b7b535cd0b94944c4cd59f4f81b118724c16411cdb5e77e13597574df",
+      "bytes": 178
+    },
+    {
+      "path": "missing-plan-contract/BASELINE.json",
+      "sha256": "2b37728798036c18c30dcda2976367000ed174fccdabba53ca764468fce89c71",
+      "bytes": 52886
+    },
+    {
+      "path": "missing-plan-contract/CONSUMER-INPUT.md",
+      "sha256": "e1e6b7e7c87bb56b328c7679a9271de4cea94701960510aea11962b60a5e2582",
+      "bytes": 1360
+    },
+    {
+      "path": "missing-plan-contract/FIXTURE-PLAN.md",
+      "sha256": "eb01036b1d1e45d5b1fbc2ef4161cd5560b9a7769f3c6a350058df269e208483",
+      "bytes": 13315
+    },
+    {
+      "path": "missing-plan-contract/FIXTURE.diff",
+      "sha256": "73099bd4b1cf43ce1d10f56efe2110988accb05bd07c08cf3be58986298ca3a7",
+      "bytes": 5137
+    },
+    {
+      "path": "missing-plan-contract/ORIGINAL-FEATURE-PLAN.md",
+      "sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+      "bytes": 8647
+    },
+    {
+      "path": "missing-plan-contract/ORIGINAL-FEATURE-TASKS.md",
+      "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+      "bytes": 10718
+    },
+    {
+      "path": "missing-plan-contract/ORIGINAL-PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "bytes": 13093
+    },
+    {
+      "path": "missing-plan-contract/START.json",
+      "sha256": "5e50a34592652ca2096f1bb5b28dd49c64a014dfda34010ab1b68cb1bc5a2108",
+      "bytes": 53586
+    },
+    {
+      "path": "narrow-feature/AUTHOR-CHECKS.json",
+      "sha256": "8d8585bc9b79e233850a8be7269ea9069a6dfea087fcfb8c3afdd922b1816e5e",
+      "bytes": 219
+    },
+    {
+      "path": "narrow-feature/BASELINE.json",
+      "sha256": "98d24bd1e07d53af6a6fbdd0e86078ec064247842d39012efe1d873689f2830b",
+      "bytes": 52886
+    },
+    {
+      "path": "narrow-feature/CONSUMER-INPUT.md",
+      "sha256": "4cbcf49d4dfd705f75826f26f91bd592968e6cab6e77fd765121ce60e9dbfac6",
+      "bytes": 1376
+    },
+    {
+      "path": "narrow-feature/FIXTURE-FEATURE-PLAN.md",
+      "sha256": "02a98fd49ce085ff07e30602209a15c7c1752460e20dd6b5fc4afdcd2e1b0754",
+      "bytes": 9135
+    },
+    {
+      "path": "narrow-feature/FIXTURE-FEATURE-TASKS.md",
+      "sha256": "c79c8e535e13021cf0a87851a70ee8ca12e1c3439f08e7d05a3da89bc5213cfe",
+      "bytes": 11101
+    },
+    {
+      "path": "narrow-feature/FIXTURE.diff",
+      "sha256": "00e8b5b3cecf3ac12870ac320988fd223f50c8c77e19779cfec8939771b9fffd",
+      "bytes": 20700
+    },
+    {
+      "path": "narrow-feature/ORIGINAL-FEATURE-PLAN.md",
+      "sha256": "a00e00ac7adecf7e209bf856252e175b268524bcef63c0101af9b08b78fb6d44",
+      "bytes": 8647
+    },
+    {
+      "path": "narrow-feature/ORIGINAL-FEATURE-TASKS.md",
+      "sha256": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+      "bytes": 10718
+    },
+    {
+      "path": "narrow-feature/ORIGINAL-PLAN.md",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+      "bytes": 13093
+    },
+    {
+      "path": "narrow-feature/START.json",
+      "sha256": "8d0d1ca3c9d817cc19a14e22970b9b1561096e57ff914ab42d448874e0ce1d3f",
+      "bytes": 53656
+    }
+  ]
+}

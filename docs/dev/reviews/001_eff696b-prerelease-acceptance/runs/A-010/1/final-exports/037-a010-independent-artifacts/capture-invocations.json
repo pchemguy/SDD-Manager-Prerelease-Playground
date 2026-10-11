@@ -1,0 +1,97 @@
+[
+  {
+    "suite": "api",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/api.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/api-commands.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "suite": "baseline",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/baseline.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/baseline-commands.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "suite": "json",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "--suite",
+      "json",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/json.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/json-commands.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "suite": "ranges",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/ranges.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/ranges-commands.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "suite": "ranges-json",
+    "command": [
+      "python",
+      "-B",
+      "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/resources/acceptance/textstats/cases/assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "--suite",
+      "ranges-json",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/ranges-json.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/ranges-json-commands.json"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

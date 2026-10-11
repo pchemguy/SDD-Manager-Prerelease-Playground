@@ -1,0 +1,10 @@
+{
+  "exact_actual_baseline": true,
+  "index_unchanged": true,
+  "only_owned_bytes_changed": true,
+  "changed_paths": [
+    "docs/dev/FEATURE-PLAN.md",
+    "docs/dev/FEATURE-TASKS.md"
+  ],
+  "upstream_unchanged": true
+}

@@ -1,0 +1,4 @@
+remote: Controlled local publication refusal; retained checkpoint must be reconciled.        
+To /workspace/scratch/46b31bb4dff6/037-sup-qc-recovery-delivery.git
+ ! [remote rejected] HEAD -> trial/qc-recovery (pre-receive hook declined)
+error: failed to push some refs to '/workspace/scratch/46b31bb4dff6/037-sup-qc-recovery-delivery.git'

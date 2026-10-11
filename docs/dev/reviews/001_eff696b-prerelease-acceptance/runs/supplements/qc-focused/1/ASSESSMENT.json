@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "assessor": "independent CP020 focused document-QC assessor",
+  "assessed_at_utc": "2026-10-10T17:09:45.825436+00:00",
+  "setup_manifest_sha256": "93d4c42fc0ec3ffff0203d398afb23bce6b40815d30cf47db6182d786c8def24",
+  "setup_publication_readback": "fa77d7b45fd078c8205d59a5922103742209e27a",
+  "scope": "Two synthetic caller-authored read-only sensitivity fixtures, outside 32 required variants; no live acceptance claim",
+  "observations": {
+    "narrow-feature": {
+      "path": "037-sup-qc-narrow-feature-consumer-observations.json",
+      "sha256": "60aedf258dd33cb7f5142abb8036f811c771c6165286948bc4a3de57039c8da8",
+      "bytes": 28520,
+      "completion_basis": "collaboration.list_agents reported this consumer completed; state sealed after that observation"
+    },
+    "missing-plan-contract": {
+      "path": "037-sup-qc-missing-plan-contract-consumer-observations.json",
+      "sha256": "e0c55c58683e0c36b1feae4a56620fcfaaffa64e9643c31c0237b9a079db2909",
+      "bytes": 288733,
+      "completion_basis": "collaboration.list_agents reported this consumer completed; state sealed after that observation"
+    }
+  },
+  "consumer_loaded_hash_checks": {
+    "narrow-feature": {
+      "matching_tracked_inventory_entries": 38,
+      "mismatches": []
+    },
+    "missing-plan-contract": {
+      "matching_tracked_inventory_entries": 25,
+      "mismatches": []
+    }
+  },
+  "results": {
+    "narrow-feature": {
+      "grade": "Pass \u2014 focused local semantic sensitivity",
+      "reason": "Consumer explicitly counts one delivery milestone 2.4 and four useful delivery tasks T-018/T-019/T-021/T-022, excludes T-020/T-024 reviews, and justifies narrow cohesion and early CLI usefulness without padding. It scrutinizes T-019 cooperating-module breadth, retains every F/affected R route, reviews nonempty suites/docs/extraction/API/failure exits and preserves 2.5/T-023 historical reservations. It blocks dependent use on stale adjacent reports and pending exact-draft acceptance, without changing governing documents.",
+      "independent_scope_assessment": "No confirmed structural defect: pure selection, real CLI composition, public documentation and extracted verification form a bounded capability over existing seams. Once-only BOM, complete strict decode including bytes after END, unbounded decimals, validation-before-acquisition and JSON baseline are retained. Historical IDs remain reserved; later hosted ownership reconciliation is prerequisite, not a current closure."
+    },
+    "missing-plan-contract": {
+      "grade": "Pass \u2014 focused local omission/owner-gate sensitivity",
+      "reason": "Consumer identifies PLAN-QC-001 exact R-013 isolation/provenance weakening; generic source-package invocation can falsely import checkout or installed package. It correctly notes unchanged layout/TASKS still retain isolation, assigns repair/recheck to sdd-plan, preserves SPEC/design/TASKS, blocks affected dependent work and treats stale Ready/history as insufficient for changed bytes. PLAN-QC-002 records exact mismatch and owner/acceptance follow-up.",
+      "independent_scope_assessment": "Concrete main PLAN omission/inconsistency, not a globally missing requirement or observed runtime defect. Restore explicit extraction cwd/import isolation/import-origin evidence or clear binding to retained mechanism; append current PLAN review preserving original history and recheck affected downstream coverage before progression."
+    }
+  },
+  "state_seal": {
+    "narrow-feature": {
+      "tracked_count": 182,
+      "matches_start": {
+        "head": true,
+        "status": true,
+        "refs": true,
+        "index_entries": true,
+        "index_sha256": true,
+        "tracked_files": true
+      },
+      "diff_matches_setup": true,
+      "untracked": []
+    },
+    "missing-plan-contract": {
+      "tracked_count": 182,
+      "matches_start": {
+        "head": true,
+        "status": true,
+        "refs": true,
+        "index_entries": true,
+        "index_sha256": true,
+        "tracked_files": true
+      },
+      "diff_matches_setup": true,
+      "untracked": []
+    }
+  },
+  "correction_provenance": {
+    "schema_version": 1,
+    "actor": "root review / caller author correction",
+    "stage": "before root setup publication and before any consumer dispatch",
+    "finding": "Residual inherited execution phrase required both delivery closures despite proposed single delivery milestone.",
+    "correction": "Only follows both delivery closures -> follows the delivery closure in caller FEATURE-TASKS; no ordinary input changed. Historical original source copies retain original phrasing.",
+    "original_task_candidate_sha256": "c79c8e535e13021cf0a87851a70ee8ca12e1c3439f08e7d05a3da89bc5213cfe",
+    "corrected_task_candidate_sha256": "a69409a41b647b1a79db13b7dc0eb15bed6d541a530cfc157039a1e4b81f477e",
+    "original_manifest_sha256": "7615119835424abcfcd27c5197081a379d13b3259d0c5dcd1fd0fc71eebb3458",
+    "first_candidate_preserved_under": "/workspace/scratch/46b31bb4dff6/037-sup-qc-focused-setups/caller-review-first-candidate",
+    "consumer_failure": false,
+    "other_equivalent_authored_count_residuals": "Focused rg found none beyond exact corrected phrase;2.5 references explicitly reserved historical identities.",
+    "source_evidence_live_repo_changes": false
+  },
+  "evidence_limits": [
+    "Read-only request authorizes external observations, not product corrections or durable adjacent QC persistence. Missing durable current review remains a real dependent gate.",
+    "Consumer command chronology preserves truncation and later acquisition limits; later rereads are not native original-channel proof. Narrow record contains exact commands/receipts but not separately captured complete original stdout/stderr.",
+    "Narrow consumer read plugin AGENTS after initial package loads; its limitation is disclosed. No semantic result relies on inventing compliant chronology.",
+    "Shared-filesystem isolation, hidden native transcript access and provider audit are not certified. No live/client acceptance or TODO closure claimed.",
+    "No runtime tests, archive execution, provider operations or product/Git writes performed by this assessor. git --no-optional-locks preserves actual index."
+  ],
+  "assessor_original_attempts": [
+    {
+      "receipt": "511cb7",
+      "exit_code": 1,
+      "failure": "Exploratory schema lookup assumed files; KeyError: files. Actual tracked_files schema subsequently inspected and used; no writes occurred."
+    },
+    {
+      "receipt": "88e8d3",
+      "exit_code": 1,
+      "failure": "After successful final state-check script, exploratory hash inventory loop assumed dict; AttributeError: list object has no attribute items. Narrow inventory is list; normalized independently below. No product writes occurred."
+    }
+  ],
+  "assessor_state_check_receipts": [
+    {
+      "receipt": "b2fa0e",
+      "stage": "pre-seal",
+      "result": "all state checks true"
+    },
+    {
+      "receipt": "88e8d3",
+      "stage": "post-consumer-completion",
+      "result": "all state checks true; following inventory script failed separately"
+    }
+  ],
+  "original_setup_failures_preserved": "See original setup INTERVENTIONS.json, SETUP-COMMANDS-BASE64.json and caller-review-first-candidate; original failures not reclassified as consumer failures."
+}

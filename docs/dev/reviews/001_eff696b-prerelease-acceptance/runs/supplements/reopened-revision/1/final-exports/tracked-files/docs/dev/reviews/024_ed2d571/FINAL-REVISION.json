@@ -1,0 +1,29 @@
+{
+  "merge_commit": "1b3ec542f16e266c13a00da34938a9a2896ee7e8",
+  "merge_parents": [
+    "ed2d571d20aa8ad6ee77f25ad89602e82e6a653b",
+    "85a2d3f39728af2445f37de831fc6f3ce526a092"
+  ],
+  "target": "feature/architecture-revision",
+  "merge_publication": "Normal target push; exact remote ref verified by coordinator",
+  "verified_source": "e33949aded51c55013d2de6318e0564127a13d3d",
+  "source_tree_preserved": true,
+  "package_fingerprint": "9415dc5e374ac5eacb79acc662ab43beb72efe7a5ecd239107912924820d6c82",
+  "package_files": 116,
+  "version": "0.14.7",
+  "support_tests": 112,
+  "merged_focus_tests": 34,
+  "independent_review": "No scoped findings;16 focused tests Passed",
+  "verified_findings": [
+    "R-001",
+    "R-002",
+    "R-003",
+    "R-004"
+  ],
+  "excluded": [
+    "R-005 live/installed-client evidence follow-up"
+  ],
+  "live_test_executed": false,
+  "revision_branch_retained": "revision/024_ed2d571-pre-release-review",
+  "main_changed": false
+}

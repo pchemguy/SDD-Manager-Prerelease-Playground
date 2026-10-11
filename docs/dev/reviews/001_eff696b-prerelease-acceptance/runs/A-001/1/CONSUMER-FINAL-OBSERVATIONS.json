@@ -1,0 +1,489 @@
+{
+  "consumer": "a001",
+  "project": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "baseline": "eff696b38f0b8a94bd6f91ca1c64d54fd714df46",
+  "loaded_pinned_sources": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-orient/SKILL.md",
+      "sha256": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-design/SKILL.md",
+      "sha256": "92213cde34fa410629044bbdb2fc186f1fece9e80c6cec3cf490de99ca01a774"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/SKILL.md",
+      "sha256": "fbd4b671e75b26630ee9e780e33c78b722171292949b6fa52c6b5ec998eb9bd3"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-report/SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/repository-bootstrap.md",
+      "sha256": "ce391e9aea851dfc37828eb222405e926081fb373e1bc7e2dd7731694f2cc7e2"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md",
+      "sha256": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/workflows.md",
+      "sha256": "75bf044e456901f27ea4f32650b70d4eb53c8c353d876b56c1576b942d81011e"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/branch-management.md",
+      "sha256": "c79b84fe239a6267368f2e8e122526e49ca638fedaf496fda3ae28a8770ba314"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md",
+      "sha256": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/coordination.md",
+      "sha256": "f02deb1435426337f584fdc7223d3d65770dd28f13bef2f7a8e596a79986c18c"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md",
+      "sha256": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/credentials.md",
+      "sha256": "0e148e039779c635ac148237fcf113cdbc1dce3a4ed062ac43875ed64a0bec21"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-manage/references/agent-orientation.md",
+      "sha256": "00610bd7b917d51b72d1c3c99340f70fb6a8153554d278066c5419432bf698ff"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md",
+      "sha256": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-design/references/exploration.md",
+      "sha256": "52a98f770a5e4745847dee060466231c8bc971d5c79c7f7dd4d745a6e675187a"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md",
+      "sha256": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/workflow-identity.md",
+      "sha256": "f515c2e66c3287ff93f76ca2604b1f9b56367f1e19a9e6f41aa63ffe30bd0b8e"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md",
+      "sha256": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-design/references/architecture.md",
+      "sha256": "329327e9cadf2637289dcad8808faa0a31c7e386223accb91366b897ef64339b"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/modularity.md",
+      "sha256": "98d41ef9fb16f373ca2fddfe2c048775a40165823dd503d4df58c18654b11283"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/design-heuristics.md",
+      "sha256": "b4ded8adbaa45a74858cff4dbed277936d52d31a91534ab303b6af018262a448"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-design/references/decomposition.md",
+      "sha256": "eac648372c44883068569a13a2715cb7d7b4d84e26f7c4de20478f93bb124abf"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-specify/SKILL.md",
+      "sha256": "3af5712cb3e841187f0b70302dca83849014dd7e2b78478e7fbf29d8bc748bc0"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-specify/references/system-specification.md",
+      "sha256": "4af4ac610c2e6b020c57182e486d55124142394f9ba341db0b81339404723afd"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-specify/references/review.md",
+      "sha256": "60ef1b66449b4f40adf88f475fa4767cfd663d17ba4cd304236e8dfcb79500c9"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md",
+      "sha256": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-report/references/document-qc-reports.md",
+      "sha256": "7dcbf8e39c79b9c5032261b8976054f15e12a302e748d22456fcfdb8f2dcc8f7"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-plan/SKILL.md",
+      "sha256": "516709147edd8d36cc74a7416bea2d33808a6c39db7045025e9794f56588dfd4"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-plan/references/delivery-plan.md",
+      "sha256": "b757fd076dc35d419a85c64fe7ea1e38c2fa78c493b5c2b19b094cf7f5b8416a"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-plan/references/review.md",
+      "sha256": "cf8db9dc1d9b3256cf200f5957aed93ec53aaf0e57d9d0519fd34e1430ec5aa4"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md",
+      "sha256": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-conventions/references/task-hierarchy.md",
+      "sha256": "675d67a8a7487c7876e084276638a966072d177f56376d3c156eec29c9b90a75"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-plan/references/physical-layout.md",
+      "sha256": "e6abc9b84068ff8def13af02360020bdd80dc4c431667cf416aa4a9953bbfc41"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-tasks/SKILL.md",
+      "sha256": "27f02d1937dbca38b03e0fc9d74a8b876710705ea8492f8ec1519ed6982d91c9"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-tasks/references/task-derivation.md",
+      "sha256": "abe64f6415b946ef638d076dab1650afd5d6e154bcd94305932cd9f7ec9436c7"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/skills/sdd-tasks/references/conformance-review.md",
+      "sha256": "79e186c004f57193bf7a9ca8aaf7b6075d85fac240ae05a1ececa11ec7eea92e"
+    }
+  ],
+  "chronology": [
+    {
+      "step": "orientation",
+      "result": "Clean main at baseline; no product artifacts; root AGENTS read; coordinator fixtures excluded from product ownership."
+    },
+    {
+      "step": "skill loading",
+      "result": "Pinned manage/orient/design/conventions/report and relevant references loaded. Combined output was partially truncated; initial workflow section reread. Nonexistent optional project.md and commits.md paths attempted; canonical exploration and object-drafts references used."
+    },
+    {
+      "step": "refresh and identity",
+      "result": "Fetch succeeded; ls-remote confirms default main at baseline and no design-docs/main; worktree listing shows only product worktree. Python 3.12.14 available."
+    },
+    {
+      "step": "branch setup",
+      "result": "Validated and created design-docs/main from origin/main."
+    },
+    {
+      "step": "authoring",
+      "result": "Prepared PROJECT and bootstrap/orientation artifacts; architecture held for human acceptance. No production implementation or hosted projection performed."
+    },
+    {
+      "step": "owner QC",
+      "result": "Inspected all five owned staged files, verified relative links and heading spacing; bootstrap copies byte-identical. diff --check reported only two inherited packaged disclosure trailing-space lines; other four paths pass. Coordinator paths unchanged."
+    },
+    {
+      "step": "checkpoint commit",
+      "result": "b7b017cf7480bded8ad7f7de4a4eed690083b39c",
+      "paths": [
+        "AGENTS.md",
+        "AI_DISCLOSURE.md",
+        "README.md",
+        "SDD-MANAGER.md",
+        "docs/dev/PROJECT.md"
+      ]
+    },
+    {
+      "step": "publication readback",
+      "result": "Push -u succeeded to refs/heads/design-docs/main. ls-remote exact tip equals checkpoint; remote-tracking containment succeeds; clean worktree."
+    },
+    {
+      "step": "actual delegated acceptance",
+      "result": "Coordinator accepted PROJECT commit b7b017cf7480bded8ad7f7de4a4eed690083b39c blob 861ab8534bf96f22c8293922e34dbc292073bc1c under actual user delegation for intermediate test artifacts. Scope is PROJECT only."
+    },
+    {
+      "step": "architecture authoring",
+      "result": "Prepared acyclic logical blocks, strict decode/ownership/output boundaries, once-only normalization and source-independent range seam. No implementation."
+    },
+    {
+      "step": "architecture QC",
+      "result": "Read staged three-file diff; links/headings and diff --check pass. Logical owners and dependency/BOM/decode/stream/range invariants reviewed; no focused children needed. No code tests claimed."
+    },
+    {
+      "step": "architecture publication",
+      "result": "334a4dd3f257ffefeb18ab88dfedc425b44838fc",
+      "blob": "1e46cf6139b9998f902b16300afed0f63b53e257",
+      "remote_readback": "Exact remote SHA matches and remote-tracking ancestry succeeds; worktree clean."
+    },
+    {
+      "step": "architecture accepted",
+      "result": "Actual coordinator scoped acceptance at 334a4dd3f257ffefeb18ab88dfedc425b44838fc / 1e46cf6139b9998f902b16300afed0f63b53e257, evidence deeffb6; recorded in ARCHITECTURE."
+    },
+    {
+      "step": "decomposition authoring",
+      "result": "Ten logical components with public and provisional internal interfaces; whole-input pipeline and deferred range/stdin seams; no physical layout or task execution."
+    },
+    {
+      "step": "decomposition QC and publication",
+      "commit": "566a1af2ddd44d79a898c2e67607360395044ba6",
+      "blob": "0afa55c7082455d7e102f9c3d056d474e686da57",
+      "result": "All three staged paths inspected; links/headings, unique C-001 through C-010 and diff --check pass. Owner checked acyclic collaboration, precise newline preservation, once-only normalization, clean stream/error seams. Push and exact remote tip readback succeed; ancestry verified, tree clean."
+    },
+    {
+      "step": "decomposition acceptance",
+      "result": "Scoped coordinator acceptance at 566a1af2ddd44d79a898c2e67607360395044ba6 / 0afa55c7082455d7e102f9c3d056d474e686da57, decision 309d984 recorded."
+    },
+    {
+      "step": "SPEC authoring and QC",
+      "result": "13 initial-system and 4 deferred range requirements; constructor domain and staged dash grammar explicit. Owner comparison finds one ambiguous composition phrase; corrected and rechecked with retained SPEC-QC-001/Revision 1. Ready for conformance, pending coordinator acceptance. Links/headings and 17 unique IDs pass."
+    },
+    {
+      "step": "SPEC/report checkpoint publication",
+      "commit": "bf3eb5e9a8d30a9e8a457f7708afa3b400100417",
+      "blobs": {
+        "SPEC": "86cfd0c0cc6241bad1329a4873dbbc7517cc1160",
+        "SPEC-REVIEW-REPORT": "6b7b1637fc0095387b2c32846725f64c4cc2e715"
+      },
+      "result": "Commit inspected by owned paths; push and exact remote SHA readback succeed; remote-tracking ancestry verified and tree clean. Technical Ready, coordinator acceptance pending."
+    },
+    {
+      "step": "SPEC/report acceptance",
+      "result": "Coordinator accepted bf3eb5e9a8d30a9e8a457f7708afa3b400100417 / exact SPEC/report blobs, decision 37115e0. Acceptance-only annotation recorded with current QC hash and Revision 2 equivalence."
+    },
+    {
+      "step": "PLAN strategy owner QC",
+      "result": "Two delivery milestones per phase plus exactly-one-task final review milestones 1.3/2.3; explicit 1\u20132 fragmentation assessment retains user narrow boundaries. Complete R coverage/deferred F constraints, exits and lifecycle gates. Ready(strategy), combined TASKS readiness blocked pending separate layout. Links/headings/unique milestone IDs pass; layout not authored."
+    },
+    {
+      "step": "PLAN strategy checkpoint publication",
+      "commit": "928c319ed84a919c6424adfa4522918e054a1d43",
+      "blobs": {
+        "PLAN": "8fe5bccad16fcfda6bf554f1b82dc324a4c8f048",
+        "PLAN-REVIEW-REPORT": "70408868785610c4521266b839777a96db734126"
+      },
+      "result": "Push/exact remote readback/ancestry verified, clean tree. Strategy Ready; combined placement and TASKS readiness explicitly blocked. No layout/implementation/hosted objects."
+    },
+    {
+      "step": "PLAN strategy acceptance",
+      "result": "Coordinator accepted 928c319ed84a919c6424adfa4522918e054a1d43 / exact PLAN/report blobs, decision af5a37a. Scoped evidence/status annotations recorded; no strategy change."
+    },
+    {
+      "step": "layout proposal and combined QC",
+      "result": "Flat package core/io/facade/cli/entry; nonempty independent unit/integration discovery and proposed count runner; API docs and allowlisted source archive/extracted module check. Combined owner Ready with Revision 1 scope/identities retained; separate coordinator layout assessment pending. No proposed source/test/tool files created. Links/headings pass."
+    },
+    {
+      "step": "layout and combined QC publication",
+      "commit": "b3ba0338d71c167aaec8ca85317d09002557ea2d",
+      "blobs": {
+        "layout": "4039da9d2e0422ad3b53fc82f18b63612e75ccac",
+        "PLAN-REVIEW-REPORT": "b59fa054824a3a8768e59c2dc15f90c7b9b7d330",
+        "PLAN": "ab2d790ec1207a9c5e24cd95211cdc20c24399a9"
+      },
+      "result": "Full four-path staged diff inspected, whitespace pass. Initial strategy identities preserved and combined exact hashes refreshed. Push/exact remote readback/ancestry verified; clean tree. No proposed source/test/tool dirs created."
+    },
+    {
+      "step": "layout and combined QC accepted",
+      "result": "Coordinator accepted b3ba0338d71c167aaec8ca85317d09002557ea2d / exact layout/report blobs, decision 0e5c6d9. Annotation recorded with PLAN QC Revision 2 exact hash/equivalence."
+    },
+    {
+      "step": "TASKS derivation and QC",
+      "result": "17 unchecked T-001..T-017 (11 delivery +4 milestone +2 phase reviews); counts 3/3/2/3 with explicit 2-task boundary assessment. Full semantic/exit coverage and placement/dependency review; checklist parent/name/indent/unique-ID/backward-dependency/review-task checks pass. Technical Ready pending coordinator task-list assessment. No code/test/tool files, implementation or hosted projection."
+    },
+    {
+      "step": "TASKS and owner QC publication",
+      "commit": "1510709f6e10d82d1b525b8c7cb221c5e1c5e20f",
+      "blobs": {
+        "TASKS": "a4a5a4c645fd87c6d00cc057b662b1234b4adc26",
+        "TASKS-REVIEW-REPORT": "d6e9306e34157632bcf4cdea638427770edb4ad9"
+      },
+      "sha256": {
+        "TASKS": "b67dfc17dfd452cc4a42c2a265d4ce190d0b71b3d09d99f6f59220ebef0e98cc",
+        "TASKS-REVIEW-REPORT": "4b75393be94d3a556246201b3985ea5454b1742361d1446d52661b3bcd0f60ec"
+      },
+      "result": "Five owned preparation files staged/inspected; diff --check pass. Push/exact remote readback/ancestry verified; tree clean. Full hierarchy ready for delegated assessment, no implementation/projection."
+    },
+    {
+      "step": "TASKS/report accepted and seal",
+      "result": "Coordinator full substantive scoped acceptance at 1510709f6e10d82d1b525b8c7cb221c5e1c5e20f / exact TASKS/report blobs, decision df4dfd5. TASKS acceptance annotation, stale PLAN layout-status correction and upstream/current QC identities refreshed with retained histories. No semantic strategy/task change."
+    },
+    {
+      "step": "seal checks",
+      "result": "Current root/upstream QC hashes match all actual documents. Exact task hierarchy and PLAN strategy blocks unchanged versus accepted checkpoint. Links/headings and all loaded pinned-source hashes pass. Proposed implementation directories absent."
+    },
+    {
+      "step": "final acceptance seal published and final boundary verified",
+      "commit": "1e3305c8659045945244c06861079fef879ca3c3",
+      "result": "Immediate push and exact remote tip readback succeed. Ancestry verified, clean tree, coordinator resources/.github/publisher fixture/.gitignore unchanged from baseline. Remote main remains eff696b38f0b8a94bd6f91ca1c64d54fd714df46. No default integration or phase/task implementation/projection."
+    }
+  ],
+  "pending_human_decision": null,
+  "publication": {
+    "remote": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+    "ref": "refs/heads/design-docs/main",
+    "commit": "1e3305c8659045945244c06861079fef879ca3c3",
+    "project_blob": "861ab8534bf96f22c8293922e34dbc292073bc1c",
+    "containment": "exact remote SHA readback and remote-tracking ancestry verified",
+    "architecture_blob": "1e46cf6139b9998f902b16300afed0f63b53e257",
+    "decomposition_blob": "0afa55c7082455d7e102f9c3d056d474e686da57",
+    "SPEC": "86cfd0c0cc6241bad1329a4873dbbc7517cc1160",
+    "SPEC-REVIEW-REPORT": "6b7b1637fc0095387b2c32846725f64c4cc2e715",
+    "PLAN": "ab2d790ec1207a9c5e24cd95211cdc20c24399a9",
+    "PLAN-REVIEW-REPORT": "b59fa054824a3a8768e59c2dc15f90c7b9b7d330",
+    "layout": "4039da9d2e0422ad3b53fc82f18b63612e75ccac",
+    "TASKS": "839c4ffbed873ace1f4b66b808285bba4657f66a",
+    "TASKS-REVIEW-REPORT": "44c062eeae26ac155121940968910394e0554a4b"
+  },
+  "next_action": "Stop: requested preparation complete. A future separately authorized implementation range requires accepted preparation default integration/publication, then verified eligible-phase tracking before task execution.",
+  "bootstrap_source_assets": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/assets/AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-textstats-product/textstats-run-resources/plugin/assets/SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    }
+  ],
+  "publication_history": [
+    {
+      "commit": "b7b017cf7480bded8ad7f7de4a4eed690083b39c",
+      "subject": "Prepare TextStats project brief for human review",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "334a4dd3f257ffefeb18ab88dfedc425b44838fc",
+      "subject": "Prepare TextStats architecture for delegated review",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "566a1af2ddd44d79a898c2e67607360395044ba6",
+      "subject": "Prepare TextStats component decomposition for review",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "bf3eb5e9a8d30a9e8a457f7708afa3b400100417",
+      "subject": "Specify TextStats behavior and publish owner QC",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "928c319ed84a919c6424adfa4522918e054a1d43",
+      "subject": "Plan staged TextStats delivery and strategy QC",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "b3ba0338d71c167aaec8ca85317d09002557ea2d",
+      "subject": "Propose TextStats layout and assess combined readiness",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "1510709f6e10d82d1b525b8c7cb221c5e1c5e20f",
+      "subject": "Derive TextStats executable tasks and conformance QC",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    },
+    {
+      "commit": "1e3305c8659045945244c06861079fef879ca3c3",
+      "subject": "Seal delegated TextStats preparation acceptance",
+      "remote_ref": "refs/heads/design-docs/main",
+      "immediate_push_and_exact_readback": "verified before next work unit"
+    }
+  ],
+  "final_artifact_identities": {
+    "AGENTS.md": {
+      "blob": "ac47830387394cf003278bad8af8f1ae89138e8e",
+      "sha256": "d905c30b1bfc4ade497fa8bb2d850c71e0fae0db8a491a7651e53540678c067c"
+    },
+    "README.md": {
+      "blob": "01b2d1633d313d18d307382e311f2e7f730ee13c",
+      "sha256": "af9961caa90a943d12b5c995893a8214628b0006049aebe0d38421bbf28bf373"
+    },
+    "AI_DISCLOSURE.md": {
+      "blob": "7bb22d266be8343e620d007d703facc143173db6",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    "SDD-MANAGER.md": {
+      "blob": "ac5af223a895521cf4e9e4d5d5f4e14fe5e8aec1",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    "docs/dev/PROJECT.md": {
+      "blob": "396d252178e097bde725121d1b89abc6e78d629f",
+      "sha256": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d"
+    },
+    "docs/dev/ARCHITECTURE.md": {
+      "blob": "7787992d419a44870722f4c3c6c677ef6b04a0e3",
+      "sha256": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302"
+    },
+    "docs/dev/DECOMPOSITION.md": {
+      "blob": "4a559eed6e875435537a0d7befea7dc4c67430f2",
+      "sha256": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee"
+    },
+    "docs/dev/SPEC.md": {
+      "blob": "6e406906e53b643695e2c455151e46a0dafd743c",
+      "sha256": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a"
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "blob": "8a40dabb3537e953f517d4e6f76be58cc55f01fc",
+      "sha256": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899"
+    },
+    "docs/dev/PLAN.md": {
+      "blob": "2489ae62baa0159775f721355808fb56af8697cf",
+      "sha256": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "blob": "1c2fe42dba149449987db10c0a0346878221f839",
+      "sha256": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e"
+    },
+    "docs/dev/layout.md": {
+      "blob": "32d3194ce111a0feac516e7628bb0fe5ce78a314",
+      "sha256": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f"
+    },
+    "docs/dev/TASKS.md": {
+      "blob": "839c4ffbed873ace1f4b66b808285bba4657f66a",
+      "sha256": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2"
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "blob": "44c062eeae26ac155121940968910394e0554a4b",
+      "sha256": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf"
+    }
+  },
+  "final_loaded_source_integrity": {
+    "rechecked": true,
+    "all_recorded_hashes_match": true,
+    "skill_and_reference_count": 37
+  },
+  "command_observations": [
+    {
+      "commands": "pwd; scoped file discovery; cat root AGENTS and exact user input; pinned skill/reference reads",
+      "result": "Initial filename discovery was broader than project; no other workspace contents were read. Reads subsequently constrained to product and supplied input. Two optional guessed reference paths absent, canonical refs loaded; workflow truncation supplemented by initial-section reread."
+    },
+    {
+      "commands": "git --no-optional-locks status/branch/remote/symbolic-ref/worktree/rev-parse; scoped product file inventory; cat .gitignore; python --version",
+      "result": "Clean eligible main baseline, actual remote default main, no product implementation/preparation, Python 3.12.14, protected ignored credentials policy retained."
+    },
+    {
+      "commands": "GIT_ASKPASS=<authorized helper> GIT_TERMINAL_PROMPT=0 git fetch origin; git ls-remote --symref origin HEAD refs/heads/design-docs/main; git check-ref-format --branch design-docs/main; git switch -c design-docs/main origin/main",
+      "result": "Default refreshed at baseline, no branch collision, dedicated preparation branch established."
+    },
+    {
+      "commands": "Python bounded document authoring, asset byte-copy/hash checks, Markdown link/heading checks, exact QC state and hierarchy/dependency checks; explicit git add owned paths; git diff --cached --check/stat/diff",
+      "result": "Eight scoped preparation checkpoints only; initial whitespace check finds two verbatim packaged disclosure spaces retained by byte-copy policy, remaining paths pass; all later staged whitespace checks pass."
+    },
+    {
+      "commands": "For each publication_history entry: git commit; git show or inspected staged result; scoped git push origin design-docs/main; git ls-remote origin refs/heads/design-docs/main; git merge-base --is-ancestor HEAD origin/design-docs/main; git status --porcelain",
+      "result": "Every commit pushed immediately and exact remote containment verified before successor work; running subprocesses were polled through write_stdin without advancing project work."
+    },
+    {
+      "commands": "Final root/upstream hash comparison; TASKS phase-through-end block equality against accepted checkpoint; PLAN pre-checkpoint strategy equality; loaded pinned-source hash validation; git diff --quiet baseline HEAD -- coordinator paths and .gitignore; git log baseline..HEAD; git ls-remote main/design-docs/main",
+      "result": "Current review hashes accurate, task hierarchy/strategy unchanged by seal, all loaded pinned hashes stable, preserved resources unchanged, clean preparation tip and default main baseline read back."
+    }
+  ],
+  "observation_limits": {
+    "shared_filesystem_isolation": "not certified",
+    "other_workspace_content_access": "none; initial broader filename-only discovery acknowledged",
+    "production_tests": "not run; no product code exists",
+    "hosted_tracking": "confirmed authorization retained; no projection or object creation during preparation",
+    "acceptance": "actual scoped coordinator decisions under user delegation; no direct-human-review claim",
+    "fixture_preservation": "Git tracked-tree diff against baseline verifies protected paths unchanged; no assessor materials read"
+  }
+}

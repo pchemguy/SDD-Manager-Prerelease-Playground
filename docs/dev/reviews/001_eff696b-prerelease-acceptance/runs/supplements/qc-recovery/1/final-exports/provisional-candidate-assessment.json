@@ -1,0 +1,20 @@
+{
+  "assessment": "Provisional candidate accepted technically for exact two-path payload; no persistence or complete lifecycle pass asserted",
+  "checks": {
+    "owner_exact_requested_sha256": true,
+    "qc_exact_requested_sha256": true,
+    "initial_owner_review_verbatim": true,
+    "one_revision_section": true,
+    "original_gate_preserved": true,
+    "all_unselected_tracked_bytes_preserved": true,
+    "corrected_owner_equals_accepted_predecessor": true,
+    "seven_unique_unchecked_owned_ids": true,
+    "no_consumer_owned_commit_yet": true
+  },
+  "semantic_assessment": "Removal restores unchanged accepted PLAN strategy and standard-library/no-benchmark SPEC scope. Same milestone promptly integrates pure selection with CLI, then docs/extraction; two delivery tasks per delivery group justified and administrative reviews excluded. All F contracts remain covered; upstream design/spec/plan unchanged. Both original drift and stale readiness findings retained and resolved with actual owner/governing identities. Current acceptance pending is truthful; unavailable historical decision objects explicitly limited. No task/product/provider acceptance supplied.",
+  "pending": "Root exact-payload gate then ordinary checkpoint/push/readback. Actual final native failure trigger and continuation not yet observed.",
+  "limits": [
+    "LOCAL controlled native bare pre-receive hook, not live provider/native client",
+    "Shared filesystem prevents strong consumer isolation certification"
+  ]
+}

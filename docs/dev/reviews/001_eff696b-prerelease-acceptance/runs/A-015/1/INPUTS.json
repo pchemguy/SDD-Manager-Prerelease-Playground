@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "test_repository": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+  "local_checkout": "/workspace/scratch/46b31bb4dff6/037-a015-staged",
+  "plugin_revision": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "source_mode": "committed",
+  "scope": {},
+  "stop_after": null,
+  "profile": "full-github",
+  "variants": {
+    "A-023": [
+      "controlled-reconciliation",
+      "live-response-loss"
+    ],
+    "A-024": [
+      "denial",
+      "rate-limit",
+      "unavailable-access",
+      "native-recovery"
+    ]
+  },
+  "run_id": "001_eff696b-prerelease-acceptance"
+}

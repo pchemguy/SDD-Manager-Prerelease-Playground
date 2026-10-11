@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "case_id": "A-003",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Each eligible-phase task has one maintained issue; exact markers, phase labels/native milestones and initial parent assignments match actual hierarchy.",
+    "Second projection reuses identities; foreign labels, user text/comments and unrelated hosted objects are preserved. Live provider readback is required.",
+    "Only the eligible first phase is projected: its label, every milestone including phase review, and every task issue including review tasks exist with verified initial associations before its first task; later-phase objects remain absent.",
+    "A repeated eligible-phase projection reuses exact identities and preserves foreign material; partial creation and unknown writes require live readback before retry.",
+    "Hosted phase/task projection consumes current reviewed owning TASKS and accepted upstream inputs; missing or stale preparation readiness blocks creation without silently correcting governing documents."
+  ]
+}

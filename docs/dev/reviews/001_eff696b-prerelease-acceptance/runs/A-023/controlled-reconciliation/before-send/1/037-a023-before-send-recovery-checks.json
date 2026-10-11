@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "subtrial": "before-send",
+  "status": "Passed",
+  "evidence_class": "controlled",
+  "agent_behavior_assessed": true,
+  "checks": {
+    "head": true,
+    "index": true,
+    "refs": true,
+    "status": true,
+    "tracked_preserved": true,
+    "read_before_write": true,
+    "initial_absent_read": true,
+    "one_write": true,
+    "exact_readback": true,
+    "one_ledger_object": true
+  },
+  "actual_chronology": [
+    {
+      "index": 10,
+      "command": "python -B tracking_facility.py --action read --identity campaign037_t001_completion",
+      "exit_code": 0,
+      "result": {
+        "schema_version": 1,
+        "identity": "campaign037_t001_completion",
+        "evidence_class": "controlled",
+        "agent_behavior_assessed": false,
+        "status": "Observed",
+        "http_status": 200,
+        "object": null
+      }
+    },
+    {
+      "index": 11,
+      "command": "python -B tracking_facility.py --action write --identity campaign037_t001_completion --payload /workspace/scratch/46b31bb4dff6/037-a023-before-send-completion-payload.json",
+      "exit_code": 0,
+      "result": {
+        "schema_version": 1,
+        "identity": "campaign037_t001_completion",
+        "evidence_class": "controlled",
+        "agent_behavior_assessed": false,
+        "status": "Applied",
+        "http_status": 201,
+        "object": {
+          "schema_version": 1,
+          "identity": "campaign037_t001_completion",
+          "task_id": "T-001",
+          "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+          "product_checkout": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+          "branch": "trial/037-a023-before-send",
+          "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+          "state": "completed",
+          "reason": "completed",
+          "evidence": {
+            "owning_list": "docs/dev/TASKS.md",
+            "completion_evidence": "docs/dev/TASKS.md#t-001-completion-evidence",
+            "commit_subject": "[T-001] Implement immutable statistics and whole-text counting",
+            "retained_tests": {
+              "runtime": "Python 3.12.14",
+              "unit_passed": 10,
+              "integration_passed": 5
+            },
+            "published": "Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed",
+            "composition": "Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit"
+          },
+          "issue_association": {
+            "issue": 2,
+            "milestone": 1,
+            "phase": 1
+          },
+          "parents_complete": false,
+          "remaining_tasks_complete": false,
+          "limits": "Controlled facility only; no live GitHub changes; no task repetition or phase integration."
+        }
+      }
+    },
+    {
+      "index": 12,
+      "command": "python -B tracking_facility.py --action read --identity campaign037_t001_completion",
+      "exit_code": 0,
+      "result": {
+        "schema_version": 1,
+        "identity": "campaign037_t001_completion",
+        "evidence_class": "controlled",
+        "agent_behavior_assessed": false,
+        "status": "Observed",
+        "http_status": 200,
+        "object": {
+          "branch": "trial/037-a023-before-send",
+          "commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+          "evidence": {
+            "commit_subject": "[T-001] Implement immutable statistics and whole-text counting",
+            "completion_evidence": "docs/dev/TASKS.md#t-001-completion-evidence",
+            "composition": "Initial T-001 checkbox and completion evidence accompany product result and tests in the same task commit",
+            "owning_list": "docs/dev/TASKS.md",
+            "published": "Established by authorized input and exact origin trial reference at retained task commit; no network revalidation performed",
+            "retained_tests": {
+              "integration_passed": 5,
+              "runtime": "Python 3.12.14",
+              "unit_passed": 10
+            }
+          },
+          "identity": "campaign037_t001_completion",
+          "issue_association": {
+            "issue": 2,
+            "milestone": 1,
+            "phase": 1
+          },
+          "limits": "Controlled facility only; no live GitHub changes; no task repetition or phase integration.",
+          "parents_complete": false,
+          "product_checkout": "/workspace/scratch/46b31bb4dff6/037-a023-before-send",
+          "reason": "completed",
+          "remaining_tasks_complete": false,
+          "repository": "pchemguy/SDD-Manager-Prerelease-Playground",
+          "schema_version": 1,
+          "state": "completed",
+          "task_id": "T-001"
+        }
+      }
+    }
+  ],
+  "snapshot": "037-a023-before-send-reached-snapshot.json",
+  "original_seal_sha256": "ba754a331208c5507fc7bada286705e563ed1c0c8235979f455316bf6e7bc876",
+  "retained_incidentals": [
+    {
+      "stage": "prior ordinary consumer selected write",
+      "status": 2,
+      "cause": "Unavailable/nullHTTP; recorded prior observations; no retry until this separately authorized continuation"
+    },
+    {
+      "stage": "first read-only baseline output parse",
+      "cause": "SyntaxError Unexpected token W because tool output truncated; shell exit 0",
+      "intervention": "Repeated read-only checks with compact aggregate hash"
+    },
+    {
+      "stage": "first seal tool request",
+      "cause": "Argument list too long os error7; process not created and no seal/file write occurred",
+      "intervention": "Trimmed copied command outputs in evidence record; full available tool outputs remain in transcript"
+    }
+  ],
+  "limits": [
+    "Assessment uses exact recorded commands and independent durable observations; native full transcript unavailable.",
+    "Broad shared filesystem prevents inaccessible-assessor-assets isolation certification."
+  ]
+}

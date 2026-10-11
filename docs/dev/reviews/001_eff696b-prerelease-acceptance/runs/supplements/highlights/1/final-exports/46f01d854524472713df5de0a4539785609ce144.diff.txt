@@ -1,0 +1,18 @@
+commit 46f01d854524472713df5de0a4539785609ce144
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:47 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:47 2026 -0400
+
+    Propose a temporary benchmark gate (caller fixture)
+---
+ BENCHMARK-PROPOSAL.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/BENCHMARK-PROPOSAL.md b/BENCHMARK-PROPOSAL.md
+new file mode 100644
+index 0000000..94d1a7c
+--- /dev/null
++++ b/BENCHMARK-PROPOSAL.md
+@@ -0,0 +1 @@
++A temporary proposed throughput gate; this is an unaccepted fixture proposal.

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "assessor": "independent /root/a020_assessor",
+  "producer_seal": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a020-consumer-observations.json",
+    "sha256": "b1491206d9368be12cf63d09c2956b5d8b6efed3312659f545b794cb7a953ce9"
+  },
+  "source_sha": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "input_hashes": {
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/START.json": "24d416d5a201a6b3bddf4995535f835e35dafb70dbf3184b5dcef1cb0fdb1fa9",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/HANDOFF.md": "e94015677deb99fb6d3926493367f6fda0f9f937d54112f5a992abc55fb9e6c8",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/INPUTS.json": "10f28f80b9a9514937591cc58deb30436b45ec1657e7432c8f7727b4fae29ec3",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/RUN-STATE.json": "05fd4201605ef8c766f1656c3fe0abc4d71b3306edda7772a2f7f0136655bb05",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/BINDINGS.json": "b1daa8f049044cf1fe2c19215f5380f2799d8518c90c9a72050d35306d41e26f",
+    "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/SETUP.json": "65110d6fc3b9a1f839c3370b448efd5d1fd3b3dd4852028c3b0b56e2ac712fd6"
+  },
+  "contract_hash": "0c8304e58752a77775fd6682d4f2237d8af4de13fb65f92a1f8efc1dc02a3196",
+  "screening_core_hash": "f3a25204cd110d934f42261dda28a30708f22baae03bbaf921fa098e6c883ee0",
+  "assessor_script_hash": "a23ce148463c1f7f4a2e875a604eede2cca618e74296798b93487c2a2faafb10",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "tests_identity": "bb1ee88ef05e30d25d41fc92db948308a7bb4af2",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "children": "inherited; test subprocess explicitly -B"
+  },
+  "read_only_product": true,
+  "provider_or_credential_access": false,
+  "remote_publication_evidence": "Retained actual consumer push exit0 and exact ls-remote readback; no independent provider query under read-only no-credential-access restriction."
+}

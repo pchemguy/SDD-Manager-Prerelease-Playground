@@ -1,0 +1,75 @@
+{
+  "literals": {
+    "stdin": [
+      {
+        "name": "stdin",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-empty",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=0 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-bom",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=0 words=0\n",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-keep-bom",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=1\n",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-mixed-range",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=2 words=3\n",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-interior",
+        "returncode": 0,
+        "stderr": "",
+        "stdout": "lines=1 words=2\n",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-decode",
+        "no_traceback": true,
+        "returncode": 1,
+        "source_identified": true,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-decode-after-end",
+        "no_traceback": true,
+        "returncode": 1,
+        "source_identified": true,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      },
+      {
+        "name": "stdin-json-removed",
+        "no_traceback": true,
+        "returncode": 2,
+        "stderr_nonempty": true,
+        "stdout": "",
+        "unchanged": true
+      }
+    ]
+  },
+  "schema_version": 1
+}

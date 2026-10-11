@@ -1,0 +1,19 @@
+{
+  "actor": "coordinator",
+  "reason": "Actual pre-send WRITEUnavailable/noeffect and independent preservation published501dbc2 before bounded restoration",
+  "evidence_class": "controlled",
+  "changed_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-facility/CONTROL.json",
+  "before": {
+    "read": "normal",
+    "write": "before-send-unavailable"
+  },
+  "after": {
+    "read": "normal",
+    "write": "normal"
+  },
+  "before_sha256": "97ed2165c42ba958993040b892c43f4ea3e525fde99c2d654831145d852613ba",
+  "after_sha256": "173089f5d1e8283daefd41d569662c88b9e310b6912764896ba86b5d67e04cb7",
+  "ledger_object_still_absent": true,
+  "observed_at": "2026-10-10T14:12:23.108944+00:00",
+  "no_product_git_credential_provider_effect": true
+}

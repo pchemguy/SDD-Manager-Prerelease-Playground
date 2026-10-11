@@ -1,0 +1,32 @@
+{
+  "bundle_clone": 0,
+  "target": "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+  "incoming": "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+  "complete_task_set": [
+    "T-001",
+    "T-002",
+    "T-003",
+    "T-004",
+    "T-005",
+    "T-006",
+    "T-007",
+    "T-008",
+    "T-009"
+  ],
+  "pending_phase2": [
+    "T-010",
+    "T-011",
+    "T-012",
+    "T-013",
+    "T-014",
+    "T-015",
+    "T-016",
+    "T-017"
+  ],
+  "docs/dev/reports/phases/1/1.1.md": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+  "docs/dev/reports/phases/1/1.2.md": "2510c23ac2c1f9637e85f6bfb7ff009e0c5d7724f286284d67d7a81139f68d53",
+  "docs/dev/reports/phases/1/PHASE-REPORT.md": "b7dec5c450fc39c6d5c2e0bf33ec2bfe0ff54fab6cc628f776b0c2adc44c2b03",
+  "final_status": "",
+  "merge_head_exists": false,
+  "actual_index_unmerged": ""
+}

@@ -1,0 +1,35 @@
+Merge revision 042_5e4d990 — Task publication review and worked examples
+
+Objective: Retain the focused task-publication/continuation assessment and
+illustrate the reviewed ordering in two expressly authorized related examples.
+Review: Original focused semantic review of completion-and-checkpoints.md and
+git-workflows.md at 5e4d990e55817220661028f5e7ec643707bddd5a covered eight source
+scenarios/assertions, with zero confirmed inconsistencies and no source repairs.
+Those historical checks are retained; no separate preceding amendment review
+was performed. Delegated coordinator accepted the two concrete amendment
+artifacts in published gate 6eca5ef55b0d8c6068a611ad1bbdd1763df3f8b0.
+Delivered: Retained original report/navigation and parent suspension outcome.
+New V-001 illustrates task result/current evidence/initial checkbox in one
+closing commit, immediate publication/readback and subsequent hosted closure.
+New V-002 illustrates auditing/resuming existing unresolved publication before
+new work, preserving history and avoiding task replay or duplicate merges.
+Only the selected campaign README and report receive appended amendment text.
+Verification: Working and prospective merged states passed exact two-file
+scope, historical byte-prefix retention, headings, added local link targets,
+diff checks and no unmerged entries. All 585 other baseline tracked files remain
+byte-identical. Prospective index matches the accepted amendment tip exactly;
+accepted SHA-256s match. No conflicts. Governing source/package and unrelated
+closed history unchanged. No support suite, task execution, hosted operation,
+actual interruption/recovery fixture or live product/client acceptance claim.
+Integration: Reopened amendment of 042_5e4d990; original opening remains
+5636481308427f9e9efd39576e562f057db7acda; original branch-off/reviewed baseline
+5e4d990e55817220661028f5e7ec643707bddd5a. Prior explicit integration and current
+reopening checkpoint cedb509eb224ff4798349a924dd2e5d9235f18f7; published amendment
+parent 2e3b5ba69105e672682132c77e2f2f43dfb986a6. Working branch
+revision/042_5e4d990-task-publication-continuation-review; refreshed return target
+revision/037_a6c42dd-prerelease-review at cedb509eb224ff4798349a924dd2e5d9235f18f7.
+Current delta/actions V-001–002 are record-only; cumulative outcome remains
+focused review with zero source repairs plus these two illustrations.
+Target publication/readback and confirmed parent return remain required after
+this commit; it does not itself establish closure. Parent 037 remains suspended
+and incomplete; stop on that parent without continuation or release work.

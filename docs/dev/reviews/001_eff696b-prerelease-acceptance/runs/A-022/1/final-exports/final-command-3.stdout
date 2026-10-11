@@ -1,0 +1,6 @@
+e454fda1fc851c9c224f37541f242a3d8d746709 refs/heads/phase/2-json-and-stdin
+795f3a3542c9981f8d43c8e182876f3efa5b5f16 refs/remotes/origin/phase/2-json-and-stdin
+e454fda1fc851c9c224f37541f242a3d8d746709 refs/remotes/trial-delivery/phase/2-json-and-stdin
+7085eb5443cc773e05d7307c9228adaafd42e41e refs/tags/v0.15.0
+8970f42e3d83327edf49d45c4d01784ab57f7307 refs/tags/v0.15.0-cp014
+032a78df6a5bca5a1b979fe71cef403f13713132 refs/tags/v0.15.0-cp014-repair

@@ -1,0 +1,20 @@
+commit d62c35a805cf08c1d5f6d4649213b1b902e6ae7d
+Author:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+AuthorDate: Sat Oct 10 14:12:47 2026 -0400
+Commit:     Campaign 037 caller fixture <campaign-037-fixture@example.invalid>
+CommitDate: Sat Oct 10 14:12:47 2026 -0400
+
+    Revert "Propose a temporary benchmark gate (caller fixture)"
+    
+    This reverts commit 46f01d854524472713df5de0a4539785609ce144.
+---
+ BENCHMARK-PROPOSAL.md | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/BENCHMARK-PROPOSAL.md b/BENCHMARK-PROPOSAL.md
+deleted file mode 100644
+index 94d1a7c..0000000
+--- a/BENCHMARK-PROPOSAL.md
++++ /dev/null
+@@ -1 +0,0 @@
+-A temporary proposed throughput gate; this is an unaccepted fixture proposal.

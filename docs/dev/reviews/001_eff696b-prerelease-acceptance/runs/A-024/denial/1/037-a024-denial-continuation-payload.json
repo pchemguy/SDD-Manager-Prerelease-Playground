@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "identity": "campaign037_phase1_tracking",
+  "project": "TextStats",
+  "evidence_class": "controlled",
+  "source_head": "1e3305c8659045945244c06861079fef879ca3c3",
+  "sources": {
+    "docs/dev/TASKS.md": "64bc6978b53cac8b0e2c1d4e43507b2fe47c72911ab89ee03e30a599775f78b2",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8"
+  },
+  "phase": {
+    "id": "1",
+    "name": "Named-file utility",
+    "complete": false,
+    "milestones": [
+      {
+        "id": "1.1",
+        "name": "Named-file counting",
+        "complete": false,
+        "tasks": [
+          {
+            "id": "T-001",
+            "name": "Implement immutable statistics and whole-text counting",
+            "complete": false
+          },
+          {
+            "id": "T-002",
+            "name": "Implement strict file acquisition and complete public API",
+            "complete": false
+          },
+          {
+            "id": "T-003",
+            "name": "Integrate named-file CLI and nonempty product checks",
+            "complete": false
+          },
+          {
+            "id": "T-004",
+            "name": "Review, test and report milestone 1.1",
+            "complete": false
+          }
+        ]
+      },
+      {
+        "id": "1.2",
+        "name": "Failure handling and distribution",
+        "complete": false,
+        "tasks": [
+          {
+            "id": "T-005",
+            "name": "Complete named-file CLI failure and usage handling",
+            "complete": false
+          },
+          {
+            "id": "T-006",
+            "name": "Document public API and runnable named-file usage",
+            "complete": false
+          },
+          {
+            "id": "T-007",
+            "name": "Build and verify isolated source distribution",
+            "complete": false
+          },
+          {
+            "id": "T-008",
+            "name": "Review, test and report milestone 1.2",
+            "complete": false
+          }
+        ]
+      },
+      {
+        "id": "1.3",
+        "name": "Phase 1 review",
+        "complete": false,
+        "tasks": [
+          {
+            "id": "T-009",
+            "name": "Review, test and report phase 1",
+            "complete": false
+          }
+        ]
+      }
+    ]
+  },
+  "summary": "Planned named-file API/CLI counting, failure handling, public documentation, source distribution and dedicated milestone/phase reviews. Three milestones and nine tasks remain incomplete; no implementation or verification performed.",
+  "limits": [
+    "Controlled summary publication only; no live hosted activation or closure",
+    "No Phase 2 or range-feature projection",
+    "No source, index, ref, credential or control edits"
+  ]
+}

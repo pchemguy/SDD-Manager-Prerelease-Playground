@@ -1,0 +1,928 @@
+{
+  "scope": "Milestone 1.1 T-002,T-003,T-004; stop before phase completion",
+  "baseline": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+  "branch": "phase/1-named-file-utility",
+  "orientation": "Clean; local and remote HEAD exact match; main 88a5c4b4424f4bba76940e40b1d6523b1f6fe191; T-001 closing diff compliant; credential independently ignored and untracked verified before any reading",
+  "events": [
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/labels?per_page=100",
+      "status": 200,
+      "objects": [
+        {
+          "name": "accessibility",
+          "id": 12624578628
+        },
+        {
+          "name": "bug",
+          "id": 12624578614
+        },
+        {
+          "name": "campaign-037-preserve",
+          "id": 12625616051
+        },
+        {
+          "name": "documentation",
+          "id": 12624578638
+        },
+        {
+          "name": "duplicate",
+          "id": 12624578649
+        },
+        {
+          "name": "enhancement",
+          "id": 12624578660
+        },
+        {
+          "name": "good first issue",
+          "id": 12624578682
+        },
+        {
+          "name": "help wanted",
+          "id": 12624578673
+        },
+        {
+          "name": "invalid",
+          "id": 12624578690
+        },
+        {
+          "name": "question",
+          "id": 12624578698
+        },
+        {
+          "name": "sdd-phase-1-Named-file-utility",
+          "id": 12625690902
+        },
+        {
+          "name": "wontfix",
+          "id": 12624578707
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "status": 200,
+      "objects": [
+        {
+          "number": 1,
+          "id": 18467474,
+          "title": "sdd-1.1-Named-file-counting",
+          "state": "open",
+          "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+        },
+        {
+          "number": 2,
+          "id": 18467475,
+          "title": "sdd-1.2-Failure-handling-and-distribution",
+          "state": "open",
+          "description_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be"
+        },
+        {
+          "number": 3,
+          "id": 18467477,
+          "title": "sdd-1.3-Phase-1-review",
+          "state": "open",
+          "description_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "status": 200,
+      "objects": [
+        {
+          "number": 10,
+          "id": 5790855234,
+          "title": "[T-009] Review, test and report phase 1",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 3,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-009 -->",
+            "<!-- /sdd-forge:task-id=T-009 -->"
+          ],
+          "body_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf"
+        },
+        {
+          "number": 9,
+          "id": 5790854318,
+          "title": "[T-008] Review, test and report milestone 1.2",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 2,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-008 -->",
+            "<!-- /sdd-forge:task-id=T-008 -->"
+          ],
+          "body_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361"
+        },
+        {
+          "number": 8,
+          "id": 5790853387,
+          "title": "[T-007] Build and verify isolated source distribution",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 2,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-007 -->",
+            "<!-- /sdd-forge:task-id=T-007 -->"
+          ],
+          "body_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6"
+        },
+        {
+          "number": 7,
+          "id": 5790852415,
+          "title": "[T-006] Document public API and runnable named-file usage",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 2,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-006 -->",
+            "<!-- /sdd-forge:task-id=T-006 -->"
+          ],
+          "body_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c"
+        },
+        {
+          "number": 6,
+          "id": 5790851199,
+          "title": "[T-005] Complete named-file CLI failure and usage handling",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 2,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-005 -->",
+            "<!-- /sdd-forge:task-id=T-005 -->"
+          ],
+          "body_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba"
+        },
+        {
+          "number": 5,
+          "id": 5790850206,
+          "title": "[T-004] Review, test and report milestone 1.1",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 1,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-004 -->",
+            "<!-- /sdd-forge:task-id=T-004 -->"
+          ],
+          "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+        },
+        {
+          "number": 4,
+          "id": 5790849215,
+          "title": "[T-003] Integrate named-file CLI and nonempty product checks",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 1,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-003 -->",
+            "<!-- /sdd-forge:task-id=T-003 -->"
+          ],
+          "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+        },
+        {
+          "number": 3,
+          "id": 5790848274,
+          "title": "[T-002] Implement strict file acquisition and complete public API",
+          "state": "open",
+          "labels": [
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 1,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-002 -->",
+            "<!-- /sdd-forge:task-id=T-002 -->"
+          ],
+          "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+        },
+        {
+          "number": 2,
+          "id": 5790847351,
+          "title": "[T-001] Implement immutable statistics and whole-text counting",
+          "state": "closed",
+          "labels": [
+            "campaign-037-preserve",
+            "sdd-phase-1-Named-file-utility"
+          ],
+          "milestone": 1,
+          "markers": [
+            "## Task brief <!-- sdd-forge:task-id=T-001 -->",
+            "<!-- /sdd-forge:task-id=T-001 -->"
+          ],
+          "body_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652"
+        },
+        {
+          "number": 1,
+          "id": 5790780797,
+          "title": "Campaign 037 unrelated preservation fixture",
+          "state": "open",
+          "labels": [
+            "campaign-037-preserve"
+          ],
+          "milestone": null,
+          "markers": [],
+          "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 5790855234,
+          "number": 10,
+          "state": "open"
+        },
+        {
+          "id": 5790854318,
+          "number": 9,
+          "state": "open"
+        },
+        {
+          "id": 5790853387,
+          "number": 8,
+          "state": "open"
+        },
+        {
+          "id": 5790852415,
+          "number": 7,
+          "state": "open"
+        },
+        {
+          "id": 5790851199,
+          "number": 6,
+          "state": "open"
+        },
+        {
+          "id": 5790850206,
+          "number": 5,
+          "state": "open"
+        },
+        {
+          "id": 5790849215,
+          "number": 4,
+          "state": "open"
+        },
+        {
+          "id": 5790848274,
+          "number": 3,
+          "state": "open"
+        },
+        {
+          "id": 5790847351,
+          "number": 2,
+          "state": "closed"
+        },
+        {
+          "id": 5790780797,
+          "number": 1,
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/3",
+      "method": "GET",
+      "status": 200,
+      "id": 5790848274,
+      "number": 3,
+      "state": "open",
+      "state_reason": null,
+      "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/3/comments?per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": []
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/3/comments",
+      "method": "POST",
+      "status": 201,
+      "id": 6097732974,
+      "body_sha256": "80d007d55a59e829aa3cff774fba7bc1d7c7042865fe8d845079df1c4e619af0"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 5790855234,
+          "number": 10,
+          "state": "open"
+        },
+        {
+          "id": 5790854318,
+          "number": 9,
+          "state": "open"
+        },
+        {
+          "id": 5790853387,
+          "number": 8,
+          "state": "open"
+        },
+        {
+          "id": 5790852415,
+          "number": 7,
+          "state": "open"
+        },
+        {
+          "id": 5790851199,
+          "number": 6,
+          "state": "open"
+        },
+        {
+          "id": 5790850206,
+          "number": 5,
+          "state": "open"
+        },
+        {
+          "id": 5790849215,
+          "number": 4,
+          "state": "open"
+        },
+        {
+          "id": 5790848274,
+          "number": 3,
+          "state": "closed"
+        },
+        {
+          "id": 5790847351,
+          "number": 2,
+          "state": "closed"
+        },
+        {
+          "id": 5790780797,
+          "number": 1,
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/3",
+      "method": "GET",
+      "status": 200,
+      "id": 5790848274,
+      "number": 3,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/3/comments?per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 6097732974,
+          "number": null,
+          "state": null
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/3",
+      "method": "GET",
+      "status": 200,
+      "id": 5790848274,
+      "number": 3,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 5790855234,
+          "number": 10,
+          "state": "open"
+        },
+        {
+          "id": 5790854318,
+          "number": 9,
+          "state": "open"
+        },
+        {
+          "id": 5790853387,
+          "number": 8,
+          "state": "open"
+        },
+        {
+          "id": 5790852415,
+          "number": 7,
+          "state": "open"
+        },
+        {
+          "id": 5790851199,
+          "number": 6,
+          "state": "open"
+        },
+        {
+          "id": 5790850206,
+          "number": 5,
+          "state": "open"
+        },
+        {
+          "id": 5790849215,
+          "number": 4,
+          "state": "open"
+        },
+        {
+          "id": 5790848274,
+          "number": 3,
+          "state": "closed"
+        },
+        {
+          "id": 5790847351,
+          "number": 2,
+          "state": "closed"
+        },
+        {
+          "id": 5790780797,
+          "number": 1,
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/4",
+      "method": "GET",
+      "status": 200,
+      "id": 5790849215,
+      "number": 4,
+      "state": "open",
+      "state_reason": null,
+      "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/4/comments?per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": []
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/4/comments",
+      "method": "POST",
+      "status": 201,
+      "id": 6097760406,
+      "body_sha256": "1c55543734e883f7c24f8bc7239686a7f9993523e8db1cbefac9660f1fd5acad"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/4",
+      "method": "PATCH",
+      "status": 200,
+      "id": 5790849215,
+      "number": 4,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/4",
+      "method": "GET",
+      "status": 200,
+      "id": 5790849215,
+      "number": 4,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 5790855234,
+          "number": 10,
+          "state": "open"
+        },
+        {
+          "id": 5790854318,
+          "number": 9,
+          "state": "open"
+        },
+        {
+          "id": 5790853387,
+          "number": 8,
+          "state": "open"
+        },
+        {
+          "id": 5790852415,
+          "number": 7,
+          "state": "open"
+        },
+        {
+          "id": 5790851199,
+          "number": 6,
+          "state": "open"
+        },
+        {
+          "id": 5790850206,
+          "number": 5,
+          "state": "open"
+        },
+        {
+          "id": 5790849215,
+          "number": 4,
+          "state": "closed"
+        },
+        {
+          "id": 5790848274,
+          "number": 3,
+          "state": "closed"
+        },
+        {
+          "id": 5790847351,
+          "number": 2,
+          "state": "closed"
+        },
+        {
+          "id": 5790780797,
+          "number": 1,
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/5",
+      "method": "GET",
+      "status": 200,
+      "id": 5790850206,
+      "number": 5,
+      "state": "open",
+      "state_reason": null,
+      "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/5/comments?per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": []
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/5/comments",
+      "method": "POST",
+      "status": 201,
+      "id": 6097781947,
+      "body_sha256": "f62a8ba561d061d8261948dcd94ed2f798487c47ba6affc3f04c2fd1e33cc559"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/5",
+      "method": "PATCH",
+      "status": 200,
+      "id": 5790850206,
+      "number": 5,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues/5",
+      "method": "GET",
+      "status": 200,
+      "id": 5790850206,
+      "number": 5,
+      "state": "closed",
+      "state_reason": "completed",
+      "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones?state=all&per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 18467474,
+          "number": 1,
+          "state": "open"
+        },
+        {
+          "id": 18467475,
+          "number": 2,
+          "state": "open"
+        },
+        {
+          "id": 18467477,
+          "number": 3,
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/issues?state=all&milestone=1&per_page=100",
+      "method": "GET",
+      "status": 200,
+      "ids": [
+        {
+          "id": 5790850206,
+          "number": 5,
+          "state": "closed"
+        },
+        {
+          "id": 5790849215,
+          "number": 4,
+          "state": "closed"
+        },
+        {
+          "id": 5790848274,
+          "number": 3,
+          "state": "closed"
+        },
+        {
+          "id": 5790847351,
+          "number": 2,
+          "state": "closed"
+        }
+      ]
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/1",
+      "method": "PATCH",
+      "status": 200,
+      "id": 18467474,
+      "number": 1,
+      "state": "closed",
+      "body_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+    },
+    {
+      "endpoint": "https://api.github.com/repos/pchemguy/SDD-Manager-Prerelease-Playground/milestones/1",
+      "method": "GET",
+      "status": 200,
+      "id": 18467474,
+      "number": 1,
+      "state": "closed",
+      "body_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+    }
+  ],
+  "loaded_source_hashes": {
+    "AGENTS.md": "3418ae7a19d0cd68f3964cafb358dd8abeca608140d2ac6a621676b8f2df65be",
+    "textstats-run-resources/plugin/AGENTS.md": "fffaeaa285ad539606f68186fc963267b737b2b0d9f1a93fad421550e3213ec9",
+    "textstats-run-resources/plugin/skills/sdd-docs/SKILL.md": "ef125969d670b75c0760ad8a7751c41ca8940ebc05a8a3a517658c6405929a7b",
+    "textstats-run-resources/plugin/skills/sdd-tdd/SKILL.md": "49efacb9ed6ae3b59069e986672dc5350cc0b147c3ad960b3ffc04f105c54cda",
+    "textstats-run-resources/plugin/skills/sdd-orient/SKILL.md": "712b883516f570cf296dfa3562add326a8a725dc002a2b3cf484c4c6fffe7446",
+    "textstats-run-resources/plugin/skills/sdd-forge/SKILL.md": "14855df348f694a1e2a688dd92ad09c1f16e680ccfa9e295e4e40e880f3d42a5",
+    "textstats-run-resources/plugin/skills/sdd-implement/SKILL.md": "5f8f4c756a4892d64a99e3c168c2fcbe5781b9e9490aae0f8abb664bfeab6293",
+    "textstats-run-resources/plugin/skills/sdd-report/SKILL.md": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+    "textstats-run-resources/plugin/skills/sdd-manage/SKILL.md": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+    "textstats-run-resources/plugin/skills/sdd-verify/SKILL.md": "7b37a6253f4a925777e27a705d0429766ab8845376477c31b37b47eca3bc4b48",
+    "docs/dev/SPEC.md": "5b173c87289e0962eb46bd5ce50ee106cadf77b795e05e6fc1f7d9183ca8b54a",
+    "docs/dev/PLAN.md": "b7376c36a8db1d60d9a7cf00d742d5d5d27ebea4f06d224007d92992b6ec23e8",
+    "docs/dev/ARCHITECTURE.md": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "docs/dev/layout.md": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "docs/dev/TASKS.md": "a8785a59aedef5f3fa2a8fbf0eec69bca69dd574f49919ee21a4f3db9cfb91d9",
+    "docs/dev/SPEC-REVIEW-REPORT.md": "44cf1f2928500f734f9452d6b75bb7206ed12e4d662c461da6445b1196a38899",
+    "docs/dev/PLAN-REVIEW-REPORT.md": "f794e32730a6b50e921fac51993744bb0d94988f2098e79ef46031357c8cc14e",
+    "docs/dev/TASKS-REVIEW-REPORT.md": "fe6ecd70489726b5fcc54d1a082bf387ec3fbcd192864a9ebe6536d6af541caf",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/startup-and-continuation.md": "2641bba0e1c9872784eeeb0e7134007bdb68f13056fe2af0682bfec4a3dde74c",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/range-selection.md": "092f930702c80eccaee732c252c1c68bbfaeaa8be78386b5f688d1509274a5e9",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/task-execution.md": "1979b2bbd64bd4b5370f607c1646b7a7fbb05f63cccd44dc907f98ce50831dfe",
+    "textstats-run-resources/plugin/skills/sdd-implement/references/completion-and-checkpoints.md": "d6abebf194a10b4fa5f293e473685adf0460a6f31ed6210314f6c34c49ffa258",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/tracking-decision.md": "c3c129f58be20fad30a8b2286389ceb8c5b014dd8f9df77f0b008421f2839b65",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/phase-activation.md": "48edb9f14a072382d699822f48d6cfac82d2f116b602ff1a4bae105fbb8f27d0",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/document-qc-gates.md": "11269e9e4a2854f0c1e4c10d6eed537c49076651951fb4d5ab7e888acd759fe7",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/git-workflows.md": "9d28b3a670c62c6e1b17628579a263b3f96797856b7257461ebee3a32984f37a",
+    "textstats-run-resources/plugin/skills/sdd-manage/references/human-document-review.md": "42ae551a42ed32f59e63fda23b233769aec7ba9d9563ba4a99a83b80a5d12cf6",
+    "textstats-run-resources/plugin/skills/sdd-orient/references/inspection-and-handoff.md": "6c273d45445426e853e6ee4eeee8c98685abe53b0db4eb71199547a3f94a1c73",
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/test-first-cycle.md": "e8d797ba50e555d53500516e85f8b624f7ed11f5a7534e39220f2a74141e3d96",
+    "textstats-run-resources/plugin/skills/sdd-tdd/references/writing-good-tests.md": "c5a555443dc5cf3b78312f9939bfbe53be7b04978f4f14f3350820ed5bc5b0d8",
+    "textstats-run-resources/plugin/skills/sdd-docs/references/in-code-documentation.md": "40c179cf40c73ad36d76f722950eeaf33ab1c37993edd370f6fa16305d2a5465",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/boundary-review.md": "53babcce80c31cefb2396f490332cdb3e0ca4e4472fdf3ba4eec189aa2f9ffc0",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/check-selection.md": "87f9024dccf127c10b89944d83bb90d9cd9373e42ffd5c3967f47ff676cda10c",
+    "textstats-run-resources/plugin/skills/sdd-verify/references/execution-and-evidence.md": "bff21a3c02f8935c07b2e2f7fd16f72260659d68485f1a15164c91a53ce5a08d",
+    "textstats-run-resources/plugin/skills/sdd-report/references/completion-reports.md": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+    "textstats-run-resources/plugin/skills/sdd-report/references/object-drafts.md": "993509f90ab9acf24f0ec352497d3fef2332334ef86289171aa80a90c85c320f",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github.md": "d22b8d71a74ee620b7320cdab9a81b4accdbd2cd7359d5f309fea8bd15210b63",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-issue-lifecycle.md": "73288c6f708bc36734fae4dff77c6a3dc44b4d804083b30d832441cf494ab896",
+    "textstats-run-resources/plugin/skills/sdd-forge/references/github-milestone-lifecycle.md": "879e7a70f56e50c9178cf0d8142d2bbbfb4710c686e3c25cae4e67e85f867fe0",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/markdown-style.md": "2ebba7c09f7e2c7217fa367d7fb0781ff2ca45c961f634280b29e22a41b9b1cd",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/development-document-qc.md": "daf020bf85f9db0ddbf0c0474b5fc71477fd68557f5120957ba8438851bbee1b",
+    "textstats-run-resources/plugin/skills/sdd-conventions/references/backend-object-lifecycle.md": "e5bd2dea8aa40a45e38734155264192eb3b51b8ab5b1f79d9201dbf807981b22",
+    "docs/dev/PROJECT.md": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "docs/dev/DECOMPOSITION.md": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "SDD-MANAGER.md": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf",
+    "AI_DISCLOSURE.md": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea",
+    "README.md": "72f1d3a75abcf0eebb8f339fbb74fe76817beb09e2676dff831daa791e7d614e",
+    "textstats-run-resources/plugin/README.md": "72e05f7bc81b83587b27b8e3c59a80fb45ce258132d8c81e801850723f25a7fa"
+  },
+  "task_persistence_audit": [
+    {
+      "task": "T-002",
+      "commit": "f28f6e415b3e0c13353a61e82354c47b0d2cabb2",
+      "subject": "[T-002] Implement strict file acquisition and complete public API",
+      "initial_task_checkbox_transition": [
+        "T-002"
+      ],
+      "paths": [
+        "docs/dev/TASKS.md",
+        "tests/integration/test_api.py",
+        "tests/unit/test_io.py",
+        "textstats/__init__.py",
+        "textstats/io.py"
+      ],
+      "publication": "push succeeded; exact phase tip read back before subsequent project work"
+    },
+    {
+      "task": "T-003",
+      "commit": "373203d6f41bee2229eed900b761de8669678e0b",
+      "subject": "[T-003] Integrate named-file CLI and nonempty product checks",
+      "initial_task_checkbox_transition": [
+        "T-003"
+      ],
+      "paths": [
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/TASKS.md",
+        "tests/integration/test_cli.py",
+        "tests/unit/test_cli.py",
+        "textstats/__main__.py",
+        "textstats/cli.py",
+        "tools/check_tests.py"
+      ],
+      "publication": "push succeeded; exact phase tip read back before subsequent project work"
+    },
+    {
+      "task": "T-004",
+      "commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+      "subject": "[T-004] Review named-file counting and complete milestone 1.1",
+      "initial_task_checkbox_transition": [
+        "T-004"
+      ],
+      "paths": [
+        "docs/dev/TASKS.md",
+        "docs/dev/reports/phases/1/1.1.md"
+      ],
+      "publication": "push succeeded; exact phase tip read back before subsequent project work"
+    }
+  ],
+  "workflow_sequence": [
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Read supplied handoff, product AGENTS and pinned selected skills/references",
+      "result": "Milestone1.1 only; no coordinator/evidence/consumer material inspected"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git status --short; git branch -vv; git log -3 --oneline; git remote -v; git ls-remote origin phase/main",
+      "result": "clean; exact local+remote phase 9dc8075; main88a5c4b; no outstanding commits requiring push"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git show --stat 9dc8075; git show 9dc8075 -- docs/dev/TASKS.md",
+      "result": "T-001 single task result/evidence/initial checkbox compliance inspected"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/SDD-Manager-Prerelease-Playground",
+      "command": "git check-ignore gh.tkn; git ls-files --error-unmatch gh.tkn",
+      "result": "ignored (exit0), untracked (exit1) independently before transient token read"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "GET labels, milestones(all), issues(all), each per_page100",
+      "result": "API200; complete no Link pagination; full Phase1 readiness; all IDs/associations retained in provider events"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Write T-002 tests and unimplemented acquisition declaration; python -m unittest discover -s tests/unit -t . -v",
+      "result": "exit1;14 tests,6 behavioral NotImplementedError errors; existing core10 pass"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Implement strict binary acquisition; python -m unittest discover -s tests/unit -t . -v; python -m unittest discover -s tests/integration -t . -v",
+      "result": "exit0 both;14 unit/8 integration;no skips/warnings"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git diff --check; stage five T-002 paths; git diff --cached --check/stat/TASKS; git commit [T-002]; git show --stat/format; git status --short",
+      "result": "exit0;f28f6e4 contains only T002 initial closure/result/evidence"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git push origin phase/1-named-file-utility; git ls-remote origin refs/heads/phase/1-named-file-utility",
+      "result": "exit0;exact f28f6e415b3e0c13353a61e82354c47b0d2cabb2"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "037-a005-host.py issue T-002 3 f28f6e4",
+      "result": "comment POST201 id6097732974; PATCH returned successful response but local overbroad Link assertion raised before recording response; closure temporarily unknown"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Narrow pagination guard to list responses; rerun same T-002 reconciliation with GET issue/comments before replay",
+      "result": "GET200 confirms closed/completed and exact existing comment; no repeated POST/PATCH"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Write T-003 CLI/runner tests and unimplemented declarations; python -m unittest tests.unit.test_cli -v",
+      "result": "exit1;7 focused tests;4 assertion failures,5 behavioral NotImplementedError errors"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Implement CLI/runner; python tools/check_tests.py",
+      "result": "exit0;21unit/12integration;portable runner fixtures prove either empty suite rejection and failure propagation;real dash-name subprocesses"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Maintain task evidence/current navigation; git diff --check; stage 8 T003 paths; git diff --cached --check/stat/TASKS; git commit [T-003]; git show --stat/format; git status --short",
+      "result": "exit0;373203d contains T003 initial checkbox/result/evidence"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git push origin phase/1-named-file-utility; git ls-remote origin refs/heads/phase/1-named-file-utility",
+      "result": "exit0;exact373203d6f41bee2229eed900b761de8669678e0b"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "037-a005-host.py issue T-003 4 373203d",
+      "result": "GET exact identity/comments;POST201 comment6097760406;PATCH200;GET200 closed/completed"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Read coherent source/runner/tests for separate sdd-verify code review; python --version; python tools/check_tests.py",
+      "result": "Python3.12.14;exit0;21unit/12integration;no milestone contract blocker"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Temporary real-file UTF-8/BOM mixed-terminator API/module demonstration via Python subprocess",
+      "result": "both policies3lines/4words,status0,exact stdout,empty stderr,bytes unchanged;BOM-only default0/0 vs keep1/1"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "Write milestone report/T004 evidence and task+parent checkboxes; git diff --check; verify current links/headings/protected path delta",
+      "result": "exit0;no findings,TODONone;root confirms ordinary authorized closure proceeds"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "stage TASKS/report; git diff --cached --check/stat/TASKS; git commit [T-004]; git show --stat/format; git status --short",
+      "result": "exit0;7d003c1 only T004 initial executable closure;milestone parent allowed"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git push origin phase/1-named-file-utility; git ls-remote origin refs/heads/phase/1-named-file-utility",
+      "result": "exit0;exact7d003c1cf31c994340d8644e95990ef2253754ed"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "git ls-remote origin phase/main; bounded task commit audit; git status --porcelain; protected path diff and checklist verification",
+      "result": "exact phase7d003c1/main88a5c4b;clean;T002,T003,T004 separate compliant closing commits;milestone1.1 checked,phase1 and T005+ unchecked;protected trees unchanged"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "037-a005-host.py issue T-004 5 7d003c1",
+      "result": "Exact marker/title identity GET verified; comment POST201 id6097781947; PATCH200 and GET200 closed/completed; body hash preserved"
+    },
+    {
+      "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+      "command": "037-a005-host.py milestone 1",
+      "result": "Full native milestone list read; unique sdd-1.1 identity; complete associated issues2,3,4,5 closed and no foreign issue/PR; PATCH200/GET200 closed native18467474; original description hash preserved"
+    }
+  ],
+  "limits": [
+    "Only Python3.12.14 checked",
+    "Portable controlled file-open/read failure streams; no platform-specific permission matrix",
+    "Complete CLI failure handling/public guide/distribution remain milestone1.2",
+    "JSON/stdin/range unselected",
+    "No merge/full phase/release",
+    "Protected resources preserved"
+  ],
+  "final_snapshot": {
+    "head": "7d003c1cf31c994340d8644e95990ef2253754ed",
+    "branch": "phase/1-named-file-utility",
+    "worktree": "clean",
+    "main": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "milestone_1_1_local": "complete",
+    "phase_1_local": "incomplete",
+    "protected_resource_diffs": "none",
+    "report_sha256": "9746448fc6eb299f65eae940a0b7e25daa393d26b3b0b10cbeab3a0b10fceade",
+    "milestone_1_hosted": {
+      "number": 1,
+      "id": 18467474,
+      "state": "closed",
+      "description_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+    },
+    "issues_2_to_5": "closed/completed with task commit evidence",
+    "remaining_hosted": "issues6\u201310 and milestones2\u20133 remain open; later phases not projected"
+  },
+  "sealed": true
+}

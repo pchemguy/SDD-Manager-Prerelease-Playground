@@ -1,0 +1,31 @@
+test_annotated_tag_is_peeled (test_release.AdapterTests.test_annotated_tag_is_peeled) ... ok
+test_body_and_upload_are_structured_data (test_release.AdapterTests.test_body_and_upload_are_structured_data) ... ok
+test_complete_assets_are_paginated (test_release.AdapterTests.test_complete_assets_are_paginated) ... ok
+test_direct_release_read_uses_acknowledged_id_and_complete_assets (test_release.AdapterTests.test_direct_release_read_uses_acknowledged_id_and_complete_assets) ... ok
+test_event_handoff_is_read_as_data (test_release.AdapterTests.test_event_handoff_is_read_as_data) ... ok
+test_missing_lookup_and_transport_failure_are_distinct (test_release.AdapterTests.test_missing_lookup_and_transport_failure_are_distinct) ... ok
+test_curated_multiline_bytes_survive (test_release.HandoffTests.test_curated_multiline_bytes_survive) ... ok
+test_invalid_inputs_stop (test_release.HandoffTests.test_invalid_inputs_stop) ... ok
+test_missing_field_stops (test_release.HandoffTests.test_missing_field_stops) ... ok
+test_build_only_has_no_provider_calls (test_release.LifecycleTests.test_build_only_has_no_provider_calls) ... ok
+test_complete_rerun_has_no_mutation (test_release.LifecycleTests.test_complete_rerun_has_no_mutation) ... ok
+test_conflicting_body_foreign_duplicate_starter_and_bytes_stop (test_release.LifecycleTests.test_conflicting_body_foreign_duplicate_starter_and_bytes_stop) ... ok
+test_direct_read_cannot_substitute_another_release_identity (test_release.LifecycleTests.test_direct_read_cannot_substitute_another_release_identity) ... ok
+test_first_publish_uploads_before_publish_and_reads_back (test_release.LifecycleTests.test_first_publish_uploads_before_publish_and_reads_back) ... ok
+test_fresh_publish_survives_lagging_release_inventory (test_release.LifecycleTests.test_fresh_publish_survives_lagging_release_inventory) ... ok
+test_latest_readback_detects_unexpected_change (test_release.LifecycleTests.test_latest_readback_detects_unexpected_change) ... ok
+test_missing_acknowledged_release_stops_without_recreating (test_release.LifecycleTests.test_missing_acknowledged_release_stops_without_recreating) ... ok
+test_opt_in_latest_is_verified (test_release.LifecycleTests.test_opt_in_latest_is_verified) ... ok
+test_partial_draft_uploads_only_missing (test_release.LifecycleTests.test_partial_draft_uploads_only_missing) ... ok
+test_uncertain_upload_is_not_blindly_replayed (test_release.LifecycleTests.test_uncertain_upload_is_not_blindly_replayed) ... ok
+test_upload_failure_retains_draft (test_release.LifecycleTests.test_upload_failure_retains_draft) ... ok
+test_wrong_tag_stops_before_mutation (test_release.LifecycleTests.test_wrong_tag_stops_before_mutation) ... ok
+test_actual_archive_tampering_stops (test_release.PackageTests.test_actual_archive_tampering_stops) ... ok
+test_archive_matches_exact_tree_and_exclusions (test_release.PackageTests.test_archive_matches_exact_tree_and_exclusions) ... ok
+test_mismatched_manifest_stops (test_release.PackageTests.test_mismatched_manifest_stops) ... ok
+test_wrong_checkout_or_version_stops (test_release.PackageTests.test_wrong_checkout_or_version_stops) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.263s
+
+OK

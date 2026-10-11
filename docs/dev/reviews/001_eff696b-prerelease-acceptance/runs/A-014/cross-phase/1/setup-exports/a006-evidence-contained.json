@@ -1,0 +1,15 @@
+{
+  "name": "a006-evidence-contained",
+  "args": [
+    "git",
+    "merge-base",
+    "--is-ancestor",
+    "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+    "334f39c28e43528e6cbae20c435cddf6791b9c04"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-test-evidence",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

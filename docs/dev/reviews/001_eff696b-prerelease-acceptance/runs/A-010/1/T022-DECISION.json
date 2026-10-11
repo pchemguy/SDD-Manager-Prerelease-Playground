@@ -1,0 +1,21 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "task_id": "T-022",
+  "baseline": "96a562b6b3ca51f4aea6bb8e4f0b3a1a5f7c10b8",
+  "pending_artifact_blobs": {
+    "tools/check_distribution.py": "6c4eb3baeb61e583caba86f3e9cbc48d0fb038db",
+    "tests/integration/test_distribution.py": "0d972097b798e6d35970d13767f10a957818048f",
+    "README.md": "6e4fca7d8fcaa73b9e228f186aedc74cf9ea01a9",
+    "AGENTS.md": "b9c19857fb95f290b92dc8c0cf09533345602b68"
+  },
+  "review": "Concrete four-file diff inspected. Extraction checks exact import provenance/current allowlist, literal F004 text/JSON/BOM anchors and huge/leading-zero/option spelling-permutation/file placement/invalid repeat/missingfile/decodeafterEND/dash paths with unchanged input bytes. Silent whole-input public API/signature checks occur in exact extraction; bytecode environment and -B inherited explicitly. Two genuine range-only archive mutants preserve healthy no-range behavior but old99case checker failed to reject both in actualRED; new315casechecker rejects both inGREEN. Current archive eleven entries rebuilt/exactcompared. Full independently nonempty runner31unit28integration complete exit0; original and finaltest-source RED retained distinct. Docs/navigation state actual315 results whilecompletionpending. Accept single T022 closingcommit/immediatepush/readback/issueclosure beforeT023; no milestone/finalextent acceptance inferred.",
+  "logs": {
+    "037-a010-T022-red.log": "eb226dfecee0da6f761c98ccb26e5308695fc6b026150378da633ec9f112cf3e",
+    "037-a010-T022-red-final-tests.log": "d3cbef428c2112c643cf6e31199ca473a1d4a2f3614dc0010ec6a363379a2f29",
+    "037-a010-T022-green.log": "07a2751b75efe44f9fafd008cd56425def52950a2f30b39cdc2eccd4390dae98",
+    "037-a010-T022-full.log": "c252b201e19534d757d1e417c2f999c83ce11b4157d04b37a8711e5be61af375",
+    "037-a010-T022-extraction.log": "f036f1f5a6c1e5dc0adeda3e6d9057dbd0c1402d4e7b3b9079c232a8b5ffdd4f",
+    "037-a010-T022-current-extraction.log": "d95bf766b898e355fcb74130c802678007abe648e49c0ffce9f7ba0fb3053bad"
+  }
+}

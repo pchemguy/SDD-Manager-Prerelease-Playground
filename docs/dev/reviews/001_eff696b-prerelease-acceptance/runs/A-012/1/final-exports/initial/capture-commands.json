@@ -1,0 +1,53 @@
+[
+  {
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/pinned-assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/product-export",
+      "--suite",
+      "api",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/api.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/api-provenance.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/pinned-assessor/capture.py\", line 15, in <module>\n    import core\nModuleNotFoundError: No module named 'core'\n"
+  },
+  {
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/pinned-assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/product-export",
+      "--suite",
+      "baseline",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/baseline.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/baseline-provenance.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/pinned-assessor/capture.py\", line 15, in <module>\n    import core\nModuleNotFoundError: No module named 'core'\n"
+  },
+  {
+    "cmd": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/pinned-assessor/capture.py",
+      "--product-root",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/product-export",
+      "--suite",
+      "ranges",
+      "--output",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/ranges.json",
+      "--provenance",
+      "/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/ranges-provenance.json"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/46b31bb4dff6/037-a012-final-artifacts/initial/pinned-assessor/capture.py\", line 15, in <module>\n    import core\nModuleNotFoundError: No module named 'core'\n"
+  }
+]

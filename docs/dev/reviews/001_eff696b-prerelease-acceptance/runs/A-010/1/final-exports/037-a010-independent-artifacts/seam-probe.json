@@ -1,0 +1,381 @@
+{
+  "actual_import": "/workspace/scratch/46b31bb4dff6/037-a010-independent-artifacts/extracted/textstats-source/textstats/__init__.py",
+  "rows": [
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=0:1",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:0",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=3:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: endpoints must be positive with START <= END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=+1:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=-1:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:+2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:-2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines= 1:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:2 ",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1 :2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:\t2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=\u0661:\u0662",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=\uff11:\uff12",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=:",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1:2:3",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=1",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines=",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected positive ASCII decimal START:END\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected one argument\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines",
+        "--json",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: expected one argument\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lines",
+        "1:2",
+        "--lines=1:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: argument --lines: --lines may be specified only once\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "absent.txt",
+        "extra.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: unrecognized arguments: extra.txt\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--unknown",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: unrecognized arguments: --unknown\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "usage-before-acquisition",
+      "args": [
+        "--lin=1:2",
+        "absent.txt"
+      ],
+      "returncode": 2,
+      "stdout": "",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--json] [--lines START:END]\n                           INPUT\npython -m textstats: error: unrecognized arguments: --lin=1:2\n",
+      "acquisition_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "owned-handle-close",
+      "payload_hex": "616c7068610a",
+      "exception": null,
+      "result": [
+        1,
+        1
+      ],
+      "closed": true,
+      "stdout": "",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "name": "owned-handle-close",
+      "payload_hex": "616c7068610aff",
+      "exception": "UnicodeDecodeError",
+      "result": null,
+      "closed": true,
+      "stdout": "",
+      "stderr": "",
+      "passed": "UnicodeDecodeError"
+    },
+    {
+      "name": "read-error-cleanup",
+      "returncode": 1,
+      "closed": true,
+      "stdout": "",
+      "stderr": "textstats: 'owned.txt': controlled owned read failure\n",
+      "passed": true
+    },
+    {
+      "name": "API-export-signature",
+      "exports": [
+        "TextStats",
+        "count_text",
+        "count_file"
+      ],
+      "text_signature": "(text: str, *, strip_bom: bool = True) -> textstats.core.TextStats",
+      "file_signature": "(path: str | os.PathLike[str], *, strip_bom: bool = True) -> textstats.core.TextStats",
+      "passed": true
+    },
+    {
+      "name": "literal-minus-named-file",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=2:2",
+        "-"
+      ],
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "name": "literal-minus-named-file",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "textstats",
+        "--lines=2:2",
+        "./-"
+      ],
+      "returncode": 0,
+      "stdout": "lines=1 words=1\n",
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "total": 31,
+  "passed": 31
+}

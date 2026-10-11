@@ -1,0 +1,38 @@
+{
+  "scope": "T-002 only; current trial tracking explicitly declined; LOCAL bare delivery",
+  "decision": "Accepted for one atomic owning T-002 result/evidence/initial-checkbox closure and immediate push/readback",
+  "artifacts": {
+    "AGENTS.md": {
+      "blob": "cfdec4bf0d2abb66b6dddd77345c63e8e3c3cf32",
+      "sha256": "71f242a794d13685e649c43dc097757c884caea02918689e4ffb34af7944195a"
+    },
+    "README.md": {
+      "blob": "a58403c4a8b149234517183a1c87b4469f82eae1",
+      "sha256": "3f9c58bebb5f42bbda130a609e40e1730a7602abec24b7d050b3f6b4aa7f924c"
+    },
+    "docs/dev/TASKS.md": {
+      "blob": "13c2a033e0687e1dd46e19d3930415ae076feb1d",
+      "sha256": "913fd02e2e7bb722d94d19e7f958cce5001636b05a7b337f56aa7b980f9ab234"
+    },
+    "textstats/__init__.py": {
+      "blob": "8549078b0832f9661db47cdd5d6386db1624550f",
+      "sha256": "2bdb93afdb29c89df336c28dc32ada4e6e201fddf72fb22cb63ca421ba4754dd"
+    },
+    "textstats/io.py": {
+      "blob": "f35e3d8d85e3ef3ac20119aec7d58784aa440c2f",
+      "sha256": "59ae92fc9f4c9f30249e3c2bdaf0b593f881a1443534b2bfd92fc7d934de5352"
+    },
+    "tests/unit/test_io.py": {
+      "blob": "a744727afbf062bce5527106bc1b00c8b72c2397",
+      "sha256": "9fcd41872e38a2c4b8d436f00775728cf67a296301124720625daa7650ed7add"
+    },
+    "tests/integration/test_api.py": {
+      "blob": "bc0ea8544cde55c20e89294116787d40fdb81e7f",
+      "sha256": "88e3d1c8116186dfb0ff62cc7f07e90fdf5317488cafd2c4a8511a8663c7b758"
+    }
+  },
+  "review": "Root inspected all seven exact artifact bytes and task delta. Independent assessor provisional owned export passed 15 unit, 7 integration and four API probes. Complete binary strict UTF-8 acquisition, ownership, unchanged exceptions and silent whole-input API are coherent.",
+  "preservation": "Exclude exact foreign staged and unstaged facade suffixes and untracked note from commit; preserve staged and unstaged intent during real-index reconciliation.",
+  "boundary": "Only acceptance/initial-checkbox evidence may be appended to reviewed TASKS before closure. Stop after exact LOCAL ref readback; no T-003, parent closure, integration or provider work.",
+  "limits": "Provisional behavior review is not final persistence grade. Shared filesystem and local fixture limits remain."
+}

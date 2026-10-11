@@ -1,0 +1,14 @@
+{
+  "EARLIEST-SNAPSHOT-CLARIFICATION.json": {
+    "sha256": "f3154601db9f72e91e30b8cf7adb8c2c419baa101fdcaf79caf9f9c1e4e59f06",
+    "bytes": 714
+  },
+  "provisional-report.md": {
+    "sha256": "179fd969e351035e0e79ecb8bbdb02c4b742d41134507aa41eac2b1027623d74",
+    "bytes": 10332
+  },
+  "provisional-report.provenance.json": {
+    "sha256": "44227e15f13cebf41116f00f4db2f637bcf4f9dc5534825d17804fc8309f076c",
+    "bytes": 402
+  }
+}

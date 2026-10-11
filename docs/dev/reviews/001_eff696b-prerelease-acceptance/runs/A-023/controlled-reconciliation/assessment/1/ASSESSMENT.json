@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "case_id": "A-023",
+  "status": "Passed",
+  "variant": "controlled-reconciliation",
+  "agent_behavior_assessed": true,
+  "evidence_class": "controlled",
+  "assessed_at": "2026-10-10T14:22:18.894451+00:00",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a023-after-send",
+    "product_commit": "9dc8075dd1b96d3a2744717a9d6d98a3024acbec",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "prerequisites": "037-a023-prerequisite-readback.json",
+  "deterministic_checks": {
+    "agent_behavior_assessed": false,
+    "checks": [
+      {
+        "id": "active-ownership",
+        "reason": "Literal invariant satisfied.",
+        "status": "Passed"
+      },
+      {
+        "id": "final-head",
+        "reason": "Literal invariant satisfied.",
+        "status": "Passed"
+      }
+    ],
+    "required_agent_checks": [
+      "Exact observed identity, retained valid work and readback before any uncertain-effect retry; no duplicate effect. Evidence class is explicit.",
+      "Independently observe fixture send-then-lost-response, applied effect readback and pre-send unapplied effect. Fresh consumer chooses bounded reconciliation; fixture responses are not GitHub acceptance."
+    ],
+    "schema_version": 1,
+    "selected_variant": "controlled-reconciliation",
+    "status": "Checks passed",
+    "variant_selection_required": false
+  },
+  "independent_conclusion": "Required controlled subtrials passed from actual consumer-selected operations and independent durable snapshots. Applied lost-response effect survived exact-identity unavailable read with uncertainty/no replay; another fresh continuation read existing exact payload without duplicate. Distinct pre-send WRITE applied nothing, and fresh continuation read absence before one write and exact readback. No live provider acceptance claimed.",
+  "subtrials": [
+    {
+      "id": "after-send-trigger",
+      "status": "Passed",
+      "checks": "037-a023-after-send-trigger-checks.json"
+    },
+    {
+      "id": "unknown-read",
+      "status": "Passed",
+      "checks": "037-a023-unknown-read-checks.json"
+    },
+    {
+      "id": "after-send-recovery",
+      "status": "Passed",
+      "checks": "037-a023-final-read-checks.json"
+    },
+    {
+      "id": "before-send",
+      "status": "Passed",
+      "checks": "037-a023-before-send-trigger-checks.json",
+      "recovery": "037-a023-before-send-recovery-checks.json"
+    }
+  ],
+  "interventions": [
+    {
+      "actor": "coordinator",
+      "action": "Bounded after-send read normal to unavailable-access then read/write normal; ledger not recreated"
+    },
+    {
+      "actor": "coordinator",
+      "action": "Distinct before-send write before-send-unavailable to normal; retained payload and product unchanged"
+    },
+    {
+      "actor": "consumers",
+      "action": "Output compaction/read-only recapture, structural comparison and seal-argument-size repairs; exact originals retained in seals"
+    },
+    {
+      "actor": "assessor",
+      "action": "First external snapshot screening rejected own NUL provenance before artifact publication; corrected external provenance to path array; no product/facility mutation"
+    }
+  ],
+  "optional_variants": {
+    "live-response-loss": {
+      "status": "Not run",
+      "blocking": false,
+      "reason": "Safe live post-send response-suppression and isolated provider trials not established"
+    },
+    "native-termination": {
+      "status": "Not run",
+      "blocking": false,
+      "reason": "Native runtime/full transcript control not established"
+    }
+  },
+  "limits": [
+    "Fresh contexts exist, but broad shared filesystem prevents certifying inaccessible assessor assets.",
+    "Native full tool transcript unavailable independently; recorded literal selected commands/results combined with independent durable snapshots are retained.",
+    "Some original shell output truncated and later seals use excerpts; original failures and safe metadata retained, no fabricated commands/completion.",
+    "Source package preservation is independently checked through exact tracked hashes at every subtrial boundary; external payload/ledger/seals are generated evidence, separately hashed.",
+    "Ignored/untracked content beyond recorded observations is not comprehensively certified.",
+    "Retained product test evidence was used; this case does not recertify whole product functionality.",
+    "Controlled fixture response/readback is not live GitHub provider recovery."
+  ],
+  "artifacts": {
+    "037-a023-after-send-completion-payload.json": {
+      "sha256": "46c33823e64381cf2f0c7247bdb0bd191b83eb17a9683f51577bdd7b4870c63d",
+      "bytes": 714,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-completion-payload.json",
+      "publication_safe": true
+    },
+    "037-a023-after-send-consumer-input.md": {
+      "sha256": "484e5fb8fdd0d1e298e75525e0362c7cb9c903c6c5f763da40ae2ca5d968b9dc",
+      "bytes": 1609,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-consumer-input.md",
+      "publication_safe": true
+    },
+    "037-a023-after-send-consumer-observations.json": {
+      "sha256": "8daef9c6ebde12c41045ba71de62f2396c489c3e4822b4dc6c3293861726f334",
+      "bytes": 211413,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-consumer-observations.json",
+      "publication_safe": true
+    },
+    "037-a023-after-send-trigger-checks.json": {
+      "sha256": "b84f400936cf9c0edb3cd3fc686417bbe3dfbf42b46edcf98dccf8067b9de61c",
+      "bytes": 2742,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-trigger-checks.json",
+      "publication_safe": true
+    },
+    "037-a023-after-send-trigger-snapshot.json": {
+      "sha256": "64b0df4eb3cab1ba263f97f09affb0b0e744ec9c6538b453f20de1f6c26e85cf",
+      "bytes": 65058,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-after-send-trigger-snapshot.json",
+      "publication_safe": true
+    },
+    "037-a023-assessor-finalize.py": {
+      "sha256": "7919098357f5ee285e51fbf0b9f7119b738d4cfb949ab56a50e0f008b37caef6",
+      "bytes": 6077,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-assessor-finalize.py",
+      "publication_safe": true
+    },
+    "037-a023-assessor-snapshot.py": {
+      "sha256": "22ba473c9846b4fdfcc6f20608322e9e6b445ed916c45c9dade8ba5ef336b43f",
+      "bytes": 2491,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-assessor-snapshot.py",
+      "publication_safe": true
+    },
+    "037-a023-before-send-completion-payload.json": {
+      "sha256": "0ae0e61aead0dd25675e0bbb940e7cf6045345a0b9335bbc852fceca5b14dcc8",
+      "bytes": 1248,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-completion-payload.json",
+      "publication_safe": true
+    },
+    "037-a023-before-send-consumer-input.md": {
+      "sha256": "500a078d82292bec565e5d876df02aa6100c30f6e3bda42ddaf7266815fb4439",
+      "bytes": 1612,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-consumer-input.md",
+      "publication_safe": true
+    },
+    "037-a023-before-send-consumer-observations.json": {
+      "sha256": "f8e2696445e1aa4b820ea531260e8aff5691c7beee5e41947f333d777633dd61",
+      "bytes": 276041,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-consumer-observations.json",
+      "publication_safe": true
+    },
+    "037-a023-before-send-continuation-input.md": {
+      "sha256": "4d57391e98cdc2accbbf2280bcdcf2856da85991424e94d93bf601699da37d3e",
+      "bytes": 1523,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-continuation-input.md",
+      "publication_safe": true
+    },
+    "037-a023-before-send-continuation-observations.json": {
+      "sha256": "ba754a331208c5507fc7bada286705e563ed1c0c8235979f455316bf6e7bc876",
+      "bytes": 99320,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-continuation-observations.json",
+      "publication_safe": true
+    },
+    "037-a023-before-send-reached-snapshot.json": {
+      "sha256": "c9490ef742df550d639a78ec4b28b234d6c3f03dcc1c70d669914522d92decc4",
+      "bytes": 65536,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-reached-snapshot.json",
+      "publication_safe": true
+    },
+    "037-a023-before-send-recovery-checks.json": {
+      "sha256": "0d0af9ac6de880e43cb5e07771203cfdf93bffb4eaac309d76d816aa2ac5f9f3",
+      "bytes": 5955,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-recovery-checks.json",
+      "publication_safe": true
+    },
+    "037-a023-before-send-trigger-checks.json": {
+      "sha256": "dabb88bd9e2d3571adbae2ea11973f4c5737b144a87fbf4814a41b6c3b18fde0",
+      "bytes": 766,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-trigger-checks.json",
+      "publication_safe": true
+    },
+    "037-a023-before-send-trigger-snapshot.json": {
+      "sha256": "bffd9af209c175f4f3c736534573d16bb2dc05f3378acaf030702390c70c4232",
+      "bytes": 63947,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-before-send-trigger-snapshot.json",
+      "publication_safe": true
+    },
+    "037-a023-deterministic-checks.json": {
+      "sha256": "2b7b433f68fcc19b63c0f3adedaae0cad3c80a2962c81c1757d2e1d2ee63c2d1",
+      "bytes": 820,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-deterministic-checks.json",
+      "publication_safe": true
+    },
+    "037-a023-final-read-checks.json": {
+      "sha256": "441f46dd7393563557d425466728cf621a8c3d3c046d307046ec32837e4bb475",
+      "bytes": 3269,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-final-read-checks.json",
+      "publication_safe": true
+    },
+    "037-a023-final-read-consumer-input.md": {
+      "sha256": "31dfc2c9e986c98ae6283afc706b9bb5b5ae145ee818620aebcfcf278f843705",
+      "bytes": 1667,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-final-read-consumer-input.md",
+      "publication_safe": true
+    },
+    "037-a023-final-read-consumer-observations.json": {
+      "sha256": "d024a722d5ec05be18eb206dc4448fa41bb8fd0f0622fc53b1aaeceffdbdb952",
+      "bytes": 77069,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-final-read-consumer-observations.json",
+      "publication_safe": true
+    },
+    "037-a023-final-read-snapshot.json": {
+      "sha256": "d353a73af0a54a4bde6f2931ffe6ad406d5f0ae0630eeb1aea9b9a25cc61ed07",
+      "bytes": 65049,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-final-read-snapshot.json",
+      "publication_safe": true
+    },
+    "037-a023-prerequisite-readback.json": {
+      "sha256": "fb97966f9daab6f4db6869eac4fb4a7296359b12e6d77a748e39d7f6714f7f63",
+      "bytes": 1466,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-prerequisite-readback.json",
+      "publication_safe": true
+    },
+    "037-a023-unknown-read-checks.json": {
+      "sha256": "6be9c0392d1976cfbd179b6e0dbcba69556b0394de5d0e70cac4ba9474a33c93",
+      "bytes": 565,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-unknown-read-checks.json",
+      "publication_safe": true
+    },
+    "037-a023-unknown-read-consumer-input.md": {
+      "sha256": "2015d7c1ec012ee0f2fb75df2803e7d4e2dece85b021d4a4ca16ae13bb04d7cb",
+      "bytes": 1641,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-unknown-read-consumer-input.md",
+      "publication_safe": true
+    },
+    "037-a023-unknown-read-consumer-observations.json": {
+      "sha256": "b8a28b5b3b91f0fc3b71afb3d05769a2a98feafb01e86425d84820f660383cdd",
+      "bytes": 12962,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-unknown-read-consumer-observations.json",
+      "publication_safe": true
+    },
+    "037-a023-unknown-read-snapshot.json": {
+      "sha256": "2e70004d4ee55a0f493323ddd4a2535bdddc95f579e22f94e8659150ab4ed75e",
+      "bytes": 65072,
+      "original_path": "/workspace/scratch/46b31bb4dff6/037-a023-unknown-read-snapshot.json",
+      "publication_safe": true
+    }
+  }
+}

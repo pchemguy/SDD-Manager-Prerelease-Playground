@@ -1,0 +1,28 @@
+{
+  "checkpoints": [
+    {
+      "case_id": "A-005",
+      "status": "Passed",
+      "assessment_path": "../../A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "7d003c1cf31c994340d8644e95990ef2253754ed",
+        "integration_branch": "main",
+        "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+      },
+      "local_checkout": "/workspace/scratch/46b31bb4dff6/037-a017-failed-check",
+      "remote": "trial-delivery",
+      "remote_ref": "refs/heads/trial/a017-failed-check",
+      "evidence_publication": {
+        "status": "published",
+        "commit": "fa73830e4973ce479c418ee3b36ec17e2282be33",
+        "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-005/reassess-355e3d3/1/037-a005-reassessed.json",
+        "remote": "origin",
+        "ref": "refs/heads/revision/001_eff696b-prerelease-acceptance"
+      }
+    }
+  ],
+  "current": {
+    "summary": "# Complete current task\n\nWork in `/workspace/scratch/46b31bb4dff6/037-a017-failed-check` on `trial/a017-failed-check`, current HEAD `4a9c0625aad481bbe46db25a945f5c9fad135716`. Use the pinned SDD Manager package under `textstats-run-resources/plugin/` and applicable product instructions. The accepted governing product documents and completed T-001 through T-004 remain in place.\n\nImplement exactly T-005, the next executable task in `docs/dev/TASKS.md`, milestone 1.2. This request supersedes the historical preparation and milestone 1.1 stop only for T-005. Relevant repair of existing counting/API regressions in `textstats/core.py` and corresponding tests is explicitly authorized alongside T-005's CLI robustness scope; preserve the accepted contracts. No other task or parent closure, phase integration, release, or later-phase work is authorized.\n\nRequired verification includes `PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py`, with nonempty unit and integration suites and all selected T-005 acceptance checks. Preserve actual command output and status. A failed required check leaves the task incomplete.\n\nPublish scoped task work only to the disposable LOCAL `trial-delivery` remote, target `refs/heads/trial/a017-failed-check`, and verify exact readback before advancing. GitHub `origin` is read-only. Hosted writes are excluded in this local trial; retain existing hosted identifiers as historical records and report the local limitation. Preserve `textstats-run-resources/`, publisher fixture, ignore rules, disclosures, other work and accepted preparation. Stop after the T-005 task boundary.\n\nThis is a disclosed isolated regression trial; relevant counting repair is in scope, not a diagnosed unmodified product failure. During this task stop at the first failed required full-suite acceptance after an actual implementation edit, before repair or completion/publication. Expected focused RED of newly authored task tests is allowed. Concrete implementation/test acceptance is delegated to coordinator before closing commit. Every owned commit must immediately push/exact readback before further work. Stop before T006/integration. Use Python-B/PYTHONDONTWRITEBYTECODE=1 including children.\n"
+  }
+}

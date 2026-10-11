@@ -1,0 +1,9 @@
+{
+  "case": "A-016",
+  "owner": "root coordinator",
+  "active": true,
+  "checkout": "/workspace/scratch/46b31bb4dff6/037-a016-unpublished",
+  "destination": "/workspace/scratch/46b31bb4dff6/037-a016-remote.git",
+  "selected_ref": "refs/heads/trial/037-a016-unpublished",
+  "baseline": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+}

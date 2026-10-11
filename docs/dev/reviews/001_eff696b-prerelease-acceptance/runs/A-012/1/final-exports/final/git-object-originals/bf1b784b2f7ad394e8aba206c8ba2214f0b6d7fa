@@ -1,0 +1,8 @@
+tree 9c9034ed78a155c2e6d0e1cc6d1852321d6d1738
+parent 4eeee9e9505b29b4a616292434561aab569dac7f
+author Codex <codex@openai.com> 1791650157 -0400
+committer Codex <codex@openai.com> 1791650157 -0400
+
+[T-024] Review and complete the named-file range feature extent
+
+Review complete range interactions and aggregate both milestone findings/TODOs without claiming whole Phase 2 completion. Fresh 31-unit/28-integration runner, 315 extracted cases/API checks, 27 usability/API/docs commands and exact archive bytes pass; no blocker/repair, TODO None. Concrete report-pair decision 44d271f41db658563585cc6a75aae17e81d71935. Reports/result/evidence/initial task check and eligible feature-only parents close together. Main stdin/final remains pending; ownership/current QC/archive and explicit paused-phase integration require separate gates.

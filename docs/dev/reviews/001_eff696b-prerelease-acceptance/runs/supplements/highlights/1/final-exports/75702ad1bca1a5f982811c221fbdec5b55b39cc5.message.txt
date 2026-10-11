@@ -1,0 +1,2 @@
+Clarify retained history in continuation reference (caller fixture)
+

@@ -1,0 +1,8 @@
+tree 561424c1bade8ca071401008ddb12c601b767b20
+parent 46e1455a5aca1f86d385a6bed649c4331c5f7296
+author Codex <codex@openai.com> 1791648234 -0400
+committer Codex <codex@openai.com> 1791648234 -0400
+
+[T-020] Review and complete named-file range milestone 2.4
+
+Review the coherent parser/acquisition/normalized counting path separately from tests. Fresh 31 unit and 26 integration tests plus ten real text/JSON demonstrations pass; TODO None. Exact report accepted by delegated decision beac0a62. Pending detailed docs/extraction and stdin/final work remain. Fixes pchemguy/SDD-Manager-Prerelease-Playground#21

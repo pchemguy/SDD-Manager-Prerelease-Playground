@@ -1,0 +1,9 @@
+test_binary_acquisition_closure_and_exceptions (__main__.FileAPI.test_binary_acquisition_closure_and_exceptions) ... ok
+test_exports_signatures (__main__.FileAPI.test_exports_signatures) ... ok
+test_real_errors_no_partial (__main__.FileAPI.test_real_errors_no_partial) ... ok
+test_real_file_matrix_and_preservation (__main__.FileAPI.test_real_file_matrix_and_preservation) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.005s
+
+OK

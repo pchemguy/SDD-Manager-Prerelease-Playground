@@ -1,0 +1,7 @@
+from pathlib import Path
+from textstats import TextStats, count_text, count_file
+
+assert TextStats(lines=2, words=3) == TextStats(2, 3)
+assert count_text("a b\nc") == TextStats(2, 3)
+assert count_text("\ufeff", strip_bom=False) == TextStats(1, 1)
+assert count_file(Path("sample.txt"), strip_bom=True) == TextStats(3, 5)

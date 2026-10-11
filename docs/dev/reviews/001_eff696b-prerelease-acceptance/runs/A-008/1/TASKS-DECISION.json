@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "case_id": "A-008",
+  "decision": "Accepted",
+  "authority": "Delegated concrete product document review",
+  "observed_at": "2026-10-10T14:44:55.449099+00:00",
+  "product_commit": "493d5e2d2251922041c235b1c8377f3fdf827bce",
+  "reviewed_files": {
+    "docs/dev/FEATURE-TASKS.md": "3fcfa7779b1bc3025ce7eb42b67fb7a68c4ca30936ba96a5d0ebbdb10f51f3a3",
+    "docs/dev/FEATURE-TASKS-REVIEW-REPORT.md": "7c35e0ab4031f9a55df33059f2fee478279f440aa5e37a98216625c372b51a80",
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": "196b9f12a8e55a6002fecd93ef8ca75c0cfa06b61c90987a121dcccaf01c80b0"
+  },
+  "scope": "Exact FEATURE-TASKS and adjacent currentQC/package; preparation acceptance only, no taskexecution/projection/integration",
+  "assessment": "Unique unchecked monotonic T018\u2013024 singlyowned, existingT001\u2013017 untouched. Pureselection leads directly to CLItext/JSON within first usefulmilestone; docs/extractedrealmodule delivery follows, each with explicitcode-review/testing/report task and onefinalfeatureextent review. FullactivatedF/affectedR evidence includes uncappedASCIIvalidation, completeDecode/BOM/EOF, realCLI/acquisition/lifetime/APIregressions, nonemptytests, docs and isolatedextraction. Reportpaths featureprefixed, exactclosingresult/evidence/initialcheckbox and publication/issue/milestone ordering explicit. Count/rationale currentQC adequate. AlreadycompletedT012/compatibleJSON prerequisite excludes futurestdin delivery; mainphase/finalreview obligations preserved. Laterselectedincorporation/taskownership/archive/targetpausedphase gates explicit.",
+  "next_authorized_action": "Finish truthful scopednavigation/exactacceptance record, publish/verify immediately, seal preparation before implementation",
+  "limits": [
+    "Documentacceptance only, independentA008 casegrade pending",
+    "Cloudorientation deviation and originalread/truncation errors retained",
+    "Any new substantive artifactrequires concrete review"
+  ]
+}

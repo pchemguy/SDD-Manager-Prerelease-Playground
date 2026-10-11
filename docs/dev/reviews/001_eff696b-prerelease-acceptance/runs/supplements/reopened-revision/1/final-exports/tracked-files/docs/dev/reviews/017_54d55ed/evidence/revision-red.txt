@@ -1,0 +1,150 @@
+test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) ... 
+  test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) (fence='```markdown') ... FAIL
+  test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) (fence='~~~~markdown') ... FAIL
+  test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) (fence='        ```markdown') ... FAIL
+test_boolean_is_not_integer_and_validated_runtime_ref_binding (tests.test_checkers.CheckerTests.test_boolean_is_not_integer_and_validated_runtime_ref_binding) ... ok
+test_custom_ids_are_recognized_and_duplicates_fail (tests.test_checkers.CheckerTests.test_custom_ids_are_recognized_and_duplicates_fail) ... FAIL
+test_empty_or_invalid_evidence_cannot_pass (tests.test_checkers.CheckerTests.test_empty_or_invalid_evidence_cannot_pass) ... ok
+test_empty_task_collection_and_path_escape_fail (tests.test_checkers.CheckerTests.test_empty_task_collection_and_path_escape_fail) ... ok
+test_explicit_child_documents_are_additive_and_unique (tests.test_checkers.CheckerTests.test_explicit_child_documents_are_additive_and_unique) ... FAIL
+test_git_evidence_reads_actual_state (tests.test_checkers.CheckerTests.test_git_evidence_reads_actual_state) ... ok
+test_hierarchy_parents_and_custom_table_ids (tests.test_checkers.CheckerTests.test_hierarchy_parents_and_custom_table_ids) ... FAIL
+test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) ... 
+  test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) (content='- [ ] T-001 actual\n```markdown\n- [ ] F-001 hidden\n') ... FAIL
+  test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) (content='- [ ] T-001 actual\n- [ ] F- invalid identifier\n') ... FAIL
+  test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) (content='- [ ] T-001 actual\n- [ ] prose without an ID\n') ... FAIL
+test_invalid_explicit_documents_cannot_pass (tests.test_checkers.CheckerTests.test_invalid_explicit_documents_cannot_pass) ... ok
+test_linked_reports_and_specs_are_not_task_owners (tests.test_checkers.CheckerTests.test_linked_reports_and_specs_are_not_task_owners) ... FAIL
+test_literal_output_channel_and_status_sensitivity (tests.test_checkers.CheckerTests.test_literal_output_channel_and_status_sensitivity) ... ok
+test_malformed_table_rows_do_not_hide_behind_valid_tasks (tests.test_checkers.CheckerTests.test_malformed_table_rows_do_not_hide_behind_valid_tasks) ... 
+  test_malformed_table_rows_do_not_hide_behind_valid_tasks (tests.test_checkers.CheckerTests.test_malformed_table_rows_do_not_hide_behind_valid_tasks) (table='| ID | Status |\n| --- | --- |\n| F- | Pending |\n') ... FAIL
+  test_malformed_table_rows_do_not_hide_behind_valid_tasks (tests.test_checkers.CheckerTests.test_malformed_table_rows_do_not_hide_behind_valid_tasks) (table='| ID | Status |\n| --- | --- |\n| F-001 | |\n') ... FAIL
+test_task_ownership_excludes_historical_evidence_and_rejects_duplicates (tests.test_checkers.CheckerTests.test_task_ownership_excludes_historical_evidence_and_rejects_duplicates) ... ok
+test_without_contract_is_not_run (tests.test_checkers.CheckerTests.test_without_contract_is_not_run) ... ok
+test_optional_ownership_documents_contract_validation (tests.test_catalog.CatalogIntegrity.test_optional_ownership_documents_contract_validation) ... ERROR
+
+======================================================================
+ERROR: test_optional_ownership_documents_contract_validation (tests.test_catalog.CatalogIntegrity.test_optional_ownership_documents_contract_validation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_catalog.py", line 64, in test_optional_ownership_documents_contract_validation
+    catalog.validate_contract(contract(['docs/dev/tasks/slice.md']), 'A-002')
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/cases/assessor/catalog_tools.py", line 51, in validate_contract
+    require(kind in allowed and set(check) <= allowed[kind], 'invalid DSL fields')
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/cases/assessor/catalog_tools.py", line 24, in require
+    raise ValueError(message)
+ValueError: invalid DSL fields
+
+======================================================================
+FAIL: test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) (fence='```markdown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 99, in test_backtick_and_tilde_examples_are_not_owners
+    self.ok(self.assess([{'id': 'owners', 'kind': 'task_ownership'}]))
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/support.py", line 52, in ok
+    self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+AssertionError: 1 != 0 : 
+
+======================================================================
+FAIL: test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) (fence='~~~~markdown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 99, in test_backtick_and_tilde_examples_are_not_owners
+    self.ok(self.assess([{'id': 'owners', 'kind': 'task_ownership'}]))
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/support.py", line 52, in ok
+    self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+AssertionError: 1 != 0 : 
+
+======================================================================
+FAIL: test_backtick_and_tilde_examples_are_not_owners (tests.test_checkers.CheckerTests.test_backtick_and_tilde_examples_are_not_owners) (fence='        ```markdown')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 99, in test_backtick_and_tilde_examples_are_not_owners
+    self.ok(self.assess([{'id': 'owners', 'kind': 'task_ownership'}]))
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/support.py", line 52, in ok
+    self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+AssertionError: 1 != 0 : 
+
+======================================================================
+FAIL: test_custom_ids_are_recognized_and_duplicates_fail (tests.test_checkers.CheckerTests.test_custom_ids_are_recognized_and_duplicates_fail)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 80, in test_custom_ids_are_recognized_and_duplicates_fail
+    self.ok(self.assess([{'id': 'owners', 'kind': 'task_ownership'}]))
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/support.py", line 52, in ok
+    self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+AssertionError: 1 != 0 : 
+
+======================================================================
+FAIL: test_explicit_child_documents_are_additive_and_unique (tests.test_checkers.CheckerTests.test_explicit_child_documents_are_additive_and_unique)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 114, in test_explicit_child_documents_are_additive_and_unique
+    self.ok(self.assess([check]))
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/support.py", line 52, in ok
+    self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+AssertionError: 2 != 0 : {"schema_version": 1, "status": "Blocked", "cause": "invalid_contract", "next_action": "Resolve the reported prerequisite before retrying."}
+
+
+======================================================================
+FAIL: test_hierarchy_parents_and_custom_table_ids (tests.test_checkers.CheckerTests.test_hierarchy_parents_and_custom_table_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 140, in test_hierarchy_parents_and_custom_table_ids
+    self.assertEqual(proc.returncode, 1)
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) (content='- [ ] T-001 actual\n```markdown\n- [ ] F-001 hidden\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 108, in test_incomplete_fences_and_unsupported_tasks_fail_closed
+    self.assertNotEqual(proc.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) (content='- [ ] T-001 actual\n- [ ] F- invalid identifier\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 108, in test_incomplete_fences_and_unsupported_tasks_fail_closed
+    self.assertNotEqual(proc.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_incomplete_fences_and_unsupported_tasks_fail_closed (tests.test_checkers.CheckerTests.test_incomplete_fences_and_unsupported_tasks_fail_closed) (content='- [ ] T-001 actual\n- [ ] prose without an ID\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 108, in test_incomplete_fences_and_unsupported_tasks_fail_closed
+    self.assertNotEqual(proc.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_linked_reports_and_specs_are_not_task_owners (tests.test_checkers.CheckerTests.test_linked_reports_and_specs_are_not_task_owners)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 91, in test_linked_reports_and_specs_are_not_task_owners
+    self.ok(self.assess([{'id': 'owners', 'kind': 'task_ownership'}]))
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/support.py", line 52, in ok
+    self.assertEqual(proc.returncode, 0, proc.stderr + proc.stdout)
+AssertionError: 1 != 0 : 
+
+======================================================================
+FAIL: test_malformed_table_rows_do_not_hide_behind_valid_tasks (tests.test_checkers.CheckerTests.test_malformed_table_rows_do_not_hide_behind_valid_tasks) (table='| ID | Status |\n| --- | --- |\n| F- | Pending |\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 150, in test_malformed_table_rows_do_not_hide_behind_valid_tasks
+    self.assertNotEqual(proc.returncode, 0)
+AssertionError: 0 == 0
+
+======================================================================
+FAIL: test_malformed_table_rows_do_not_hide_behind_valid_tasks (tests.test_checkers.CheckerTests.test_malformed_table_rows_do_not_hide_behind_valid_tasks) (table='| ID | Status |\n| --- | --- |\n| F-001 | |\n')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_checkers.py", line 150, in test_malformed_table_rows_do_not_hide_behind_valid_tasks
+    self.assertNotEqual(proc.returncode, 0)
+AssertionError: 0 == 0
+
+----------------------------------------------------------------------
+Ran 16 tests in 6.752s
+
+FAILED (failures=12, errors=1)

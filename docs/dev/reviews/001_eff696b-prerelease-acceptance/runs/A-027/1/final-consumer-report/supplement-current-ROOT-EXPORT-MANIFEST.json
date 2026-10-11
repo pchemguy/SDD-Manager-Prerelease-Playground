@@ -1,0 +1,10 @@
+{
+  "037-a027-current-case-variant-register-supplement-current.json": {
+    "sha256": "48e6735ce2667264d58fbafa17757ad55e10279494cb0d6d473e442adb57805f",
+    "bytes": 317432
+  },
+  "037-a027-independent-pre-reconciliation-supplement-current.json": {
+    "sha256": "8211a2d27d106f0b1d4ba966cf5e45a0cdd969a819e94715e864d549044824b6",
+    "bytes": 317334
+  }
+}

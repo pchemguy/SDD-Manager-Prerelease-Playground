@@ -1,0 +1,581 @@
+{
+  "schema": "consumer-observations-v1",
+  "sealed_at_utc": "2026-10-10T16:58:43.348487+00:00",
+  "request": "/workspace/scratch/46b31bb4dff6/037-a010-consumer-input.md",
+  "product": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "scope": "Authorized complete T-018\u2013T-024 named-file range delivery, sole main task reconciliation, three source/QC pairs archive and explicit integration into paused Phase 2",
+  "final_boundary": {
+    "branch": "phase/2-json-and-stdin",
+    "merge": "795f3a3542c9981f8d43c8e182876f3efa5b5f16",
+    "parents": [
+      "e63b8946bbb99347b0f73f070f9c728945ee5925",
+      "6f1614480687f5978023df1122ec8b2567ff19d9"
+    ],
+    "tree": "ad9772500649f6f02aa9a3a1aa2a50cec665cc83",
+    "feature_tip": "6f1614480687f5978023df1122ec8b2567ff19d9",
+    "main": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+    "remote_readback": {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-final-remote-readback.log",
+      "sha256": "06148f6ea9d4f52e2cb552ec425bb73023a052f9b8715c64d807602b8f2c7adc",
+      "bytes": 222
+    },
+    "clean": true,
+    "pending_tasks": [
+      "T-013",
+      "T-014",
+      "T-015",
+      "T-016",
+      "T-017"
+    ],
+    "whole_phase_2_closed": false,
+    "default_received_only_accepted_preparation": true,
+    "release_performed": false,
+    "retained_branches": [
+      "refs/heads/design-docs/002_e7cae5b-named-file-ranges 503dc510aef79bb7f8befc87e8072dd344182dd3",
+      "refs/heads/design-docs/main 1e3305c8659045945244c06861079fef879ca3c3",
+      "refs/heads/feature/002_e7cae5b-named-file-ranges 6f1614480687f5978023df1122ec8b2567ff19d9",
+      "refs/heads/main fbe8bedf4c6cba1ab29d53d2da05e614603d76d1",
+      "refs/heads/phase/1-named-file-utility 5b17e4650c64c7c735991931b591bdabb8069215",
+      "refs/heads/phase/2-json-and-stdin 795f3a3542c9981f8d43c8e182876f3efa5b5f16"
+    ]
+  },
+  "accepted_decisions_from_root_messages": {
+    "PLAN": "c9d0ca7c08ded18788c3e17d7d43077d324d307b",
+    "TASKS": "dd252be368726422dc50be6604331b77128941a5",
+    "T-018": "308ec9195abc6b8ecd04b708331e91f480354422",
+    "T-019": "68f2bbbd56caa5210474fbc5fa4aef499b6d476f",
+    "T-020": "beac0a623d27056d6deb9854674a9307dba3f89d",
+    "T-021": "ff5c536e1f76cd79bbc4bb155a35963498953240",
+    "T-022": "ce2df08c4a716b0a830077e23fc383b424299523",
+    "T-023": "ee49eb727938ab671daf6f9944c9cf4c086373f0",
+    "T-024": "44d271f41db658563585cc6a75aae17e81d71935",
+    "reconciliation": "1dab6faf3403e8176ede62262c93bfdbca2a8735"
+  },
+  "acceptance_limit": "Exact changed documents, implementation/test artifacts and reports concretely accepted as communicated by root. Final independent assessor acceptance has not been observed or claimed. No coordinator contracts, catalogs, decisions files or sibling seals were read.",
+  "current_governing_artifacts": {
+    "docs/dev/SPEC.md": {
+      "sha256": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+      "blob": "fc4b62d4eff740d9ef8611f0bf9e30e3eb62581b"
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+      "blob": "e93d70e659bd25fb1fe5fffde90742949ffa0377"
+    },
+    "docs/dev/SPEC-REVIEW-REPORT.md": {
+      "sha256": "66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372",
+      "blob": "2d9e7caa632ba6f20dde5d67a4b58958258c50e9"
+    },
+    "docs/dev/PLAN-REVIEW-REPORT.md": {
+      "sha256": "1e4b8505f11c76f366fc56c04a7af612667ca365f88f5c71e4dc0a04b794f267",
+      "blob": "6ccf8320fd2fc2f5ea04e6bce57818c8f95d823a"
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f",
+      "blob": "e540a24acaeefac901f3bdf04430dac156ad5831"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/README.md": {
+      "sha256": "04d081f24c8c80b61910896381e2cc482915bd9349e9d016f275113cd73a9277",
+      "blob": "5df04de4cf157582c3f35408c413530408c5e7ba"
+    },
+    "AGENTS.md": {
+      "sha256": "ffaeb37b8b2f403844b4db50951176bfb2e9d3b3ea809554073af3119d287fe1",
+      "blob": "201b5377c1204366cf36b50b23e64e3ca02f9c31"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC.md": {
+      "sha256": "6f4c3c803d306e44438670cf607effc7fddd6878fe19bb354cd2b80d6cc14341",
+      "blob": "36cc60050778a11140214d4f094697451f08e2c1"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-SPEC-REVIEW-REPORT.md": {
+      "sha256": "4399e14de65ce907e53f7f3427e02349f597cea39493e8fd334b2bb84eccc592",
+      "blob": "c024165dd359ea14b4ff8b709d18ff1ed5a07e91"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN.md": {
+      "sha256": "cbdd7319326f4a7505db74f90f4b9a129d8de71906f1fc812bcb4658bf8c93aa",
+      "blob": "9a1a7ff9500e19784675a915939a4dba0606c5cb"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-PLAN-REVIEW-REPORT.md": {
+      "sha256": "da8e3a456cb8348ad37722da0ea73029068928646f287ff06025403d6cfe94e8",
+      "blob": "5bc5bb656c20a4b5a49161b878aa2930f2e34c01"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS.md": {
+      "sha256": "5620df436d5057958c89546b60a1483110ccf8f6d0ce77fb105bfaa2839b5133",
+      "blob": "0f6745c44039714502727beefc5f6561f323b443"
+    },
+    "docs/dev/features/002_e7cae5b-named-file-ranges/FEATURE-TASKS-REVIEW-REPORT.md": {
+      "sha256": "477d59388a842ba10c1679cc211cb1c47abdd279a99f9a4ac59f31c0389a787e",
+      "blob": "a7b4ba1c1be28a9a63a3d62d0a88221697de3afd"
+    }
+  },
+  "current_governing_identities": {
+    "PROJECT": "cc23286bc81d8dc9aba1c46a57328febcdcfd1988da1ca0d55118d0c5877972d",
+    "ARCHITECTURE": "51a4e1b8484b798a706d5a4374f8a52353ff619d89e861af668d4bd690530302",
+    "DECOMPOSITION": "30e75547d27c8f2381040d853e7386bbbeb532b7d592eb674da4ef3dd1af75ee",
+    "SPEC": "a181c8257d37f63c0a0077861c24ae628432f74d9cde3b76e60205428c9d6980",
+    "PLAN": "e902e69865b5415b5aefe863fdcdeb0c7b29290b93e4220c9ac61a3eb24ff199",
+    "layout": "834cfc5273d25b7d75b6470c6e1754f9cc122c92de7364333c67c389ec7e0d0f",
+    "TASKS": "3b001727afa9870bfe72698760406bd98698774e2733946ebc26cc93c5363841",
+    "SPEC-QC": "66a31130688425860cb06971a1f27da11e9a46757226497ad9e2b6fee6d6d372",
+    "PLAN-QC": "1e4b8505f11c76f366fc56c04a7af612667ca365f88f5c71e4dc0a04b794f267",
+    "TASKS-QC": "ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f"
+  },
+  "task_persistence_audit": [
+    {
+      "task": "T-018",
+      "commit": "3bcd141b24bf0f655fa8c2f777c7c9eb0a24ba93",
+      "subject": "[T-018] Implement pure normalized logical-line selection",
+      "initial_task_checkbox": [
+        "T-018"
+      ],
+      "paths": [
+        "docs/dev/FEATURE-TASKS.md",
+        "tests/unit/test_core.py",
+        "textstats/core.py"
+      ],
+      "own_evidence_added": true
+    },
+    {
+      "task": "T-019",
+      "commit": "46e1455a5aca1f86d385a6bed649c4331c5f7296",
+      "subject": "[T-019] Integrate validated named-file text and JSON ranges",
+      "initial_task_checkbox": [
+        "T-019"
+      ],
+      "paths": [
+        "README.md",
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/public-api.md",
+        "tests/integration/test_cli.py",
+        "tests/unit/test_cli.py",
+        "textstats/cli.py",
+        "textstats/io.py"
+      ],
+      "own_evidence_added": true
+    },
+    {
+      "task": "T-020",
+      "commit": "33f0ba2ed7ae187cce9643433f8f1f09282ef079",
+      "subject": "[T-020] Review and complete named-file range milestone 2.4",
+      "initial_task_checkbox": [
+        "T-020"
+      ],
+      "paths": [
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.4.md"
+      ],
+      "own_evidence_added": true
+    },
+    {
+      "task": "T-021",
+      "commit": "96a562b6b3ca51f4aea6bb8e4f0b3a1a5f7c10b8",
+      "subject": "[T-021] Complete runnable named-file range documentation",
+      "initial_task_checkbox": [
+        "T-021"
+      ],
+      "paths": [
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/public-api.md",
+        "textstats/cli.py"
+      ],
+      "own_evidence_added": true
+    },
+    {
+      "task": "T-022",
+      "commit": "f2dc46627c04b92e4d2990843927e52be63f2660",
+      "subject": "[T-022] Verify ranges through isolated extracted module execution",
+      "initial_task_checkbox": [
+        "T-022"
+      ],
+      "paths": [
+        "AGENTS.md",
+        "README.md",
+        "docs/dev/FEATURE-TASKS.md",
+        "tests/integration/test_distribution.py",
+        "tools/check_distribution.py"
+      ],
+      "own_evidence_added": true
+    },
+    {
+      "task": "T-023",
+      "commit": "4eeee9e9505b29b4a616292434561aab569dac7f",
+      "subject": "[T-023] Review and complete range documentation distribution milestone",
+      "initial_task_checkbox": [
+        "T-023"
+      ],
+      "paths": [
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/2.5.md"
+      ],
+      "own_evidence_added": true
+    },
+    {
+      "task": "T-024",
+      "commit": "bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa",
+      "subject": "[T-024] Review and complete the named-file range feature extent",
+      "initial_task_checkbox": [
+        "T-024"
+      ],
+      "paths": [
+        "docs/dev/FEATURE-TASKS.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/IMPLEMENTATION-REPORT.md",
+        "docs/dev/features/002_e7cae5b-named-file-ranges/phases/2/PHASE-REPORT.md"
+      ],
+      "own_evidence_added": true
+    }
+  ],
+  "merged_checks": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_tests.py",
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-merged-tests.log",
+      "exit_code": 0,
+      "unit": 31,
+      "integration": 28,
+      "nonempty_independent_discovery": true
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B tools/check_distribution.py",
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-merged-distribution.log",
+      "exit_code": 0,
+      "actual_extracted_module_cases": 315,
+      "silent_public_api_probe": true,
+      "isolated_import_provenance": true,
+      "unchanged_archive_allowlist_files": 11
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a010_docs_extent_check.py",
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-merged-examples.log",
+      "exit_code": 0,
+      "selected_runnable_commands": 27,
+      "fresh_temporary_source_build_and_bash_extraction": true,
+      "check_fences_supported_by_fresh_root_checks_and_previous_same_byte_full_examples": true
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a010_final_reconcile_check.py",
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-merged-reconciliation-confirmed.log",
+      "exit_code": 0,
+      "sole_main_entries": 24,
+      "checked": 19,
+      "pending": 5,
+      "links": 119,
+      "archived_source_qc_pairs": 3,
+      "archived_files": 6,
+      "dag_and_exact_original_entries_evidence_archived_bodies_preserved": true
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B /tmp/a010_preservation.py",
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-final-provider-preservation.log",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --cached --check / git write-tree / git ls-files -u",
+      "exit_code": 0,
+      "unresolved_merge_entries": 0,
+      "prospective_tree_exactly_matches_accepted_feature": true
+    }
+  ],
+  "provider_evidence": {
+    "path": "/workspace/scratch/46b31bb4dff6/037-a010-provider-evidence.json",
+    "sha256": "832e2021ceffd95a6c7a23c2e7940d9248920e8a27d2d62fc56662d83e6ecf13",
+    "bytes": 35530
+  },
+  "provider_summary": {
+    "all_completed_range_issues": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "closed_added_native_milestones": [
+      7,
+      8,
+      9
+    ],
+    "pending_original_native_milestones": [
+      5,
+      6
+    ],
+    "source_link_maintenance_issues": [
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "preserved_ids_comments_states_reasons_labels_foreign": true,
+    "raw_original_protected_and_separate_from_screened_derivative": true
+  },
+  "failures_and_interventions": [
+    {
+      "event": "Initial PLAN strategy count stale",
+      "original_commit": "9e8afe0778d9a58f83af7d69ce78db4c2b3bc1b2",
+      "correction_commit": "aeef000c7782b33ddf61d0fe8817d1014e5dc1c8",
+      "resolution": "Current Phase 2 has four delivery milestones; historical checkpoints retained. Initial agent Revision3 label corrected to actual Revision4."
+    },
+    {
+      "event": "Mistaken removed SPEC anchor observation",
+      "resolution": "Root corrected observation; actual explicit deferred-range-feature HTML anchor preserved throughout."
+    },
+    {
+      "event": "Compatible JSON merge conflict",
+      "exit_code": 1,
+      "resolution": "Owned AGENTS navigation conflict resolved preserving historical JSON prerequisite and current controls; merge806e989 published."
+    },
+    {
+      "event": "Genuine test-first RED",
+      "tasks": [
+        "T-018",
+        "T-019",
+        "T-022"
+      ],
+      "resolution": "Retained original RED logs and exact minimal declaration/missing CLI/mutant rejection provenance; subsequent GREEN logs and accepted concrete diffs."
+    },
+    {
+      "event": "T021 first redirected full check incomplete log despite command exit0",
+      "resolution": "Treated as ambiguous, retained original log; fresh complete 31/26 capture proved success."
+    },
+    {
+      "event": "Incidental ps process lookup",
+      "exit_code": 1,
+      "message": "fatal library error, lookup self",
+      "resolution": "No product repair; independent complete test capture used."
+    },
+    {
+      "event": "T023 examples count label",
+      "resolution": "Corrected intermediate33 commands to32 runnable commands plus one marker line before presentation."
+    },
+    {
+      "event": "Native milestone8 closure helper overly strict literal TODO heading",
+      "exit_code": 1,
+      "resolution": "Failed before mutation; accepted report already TODO: None. Helper corrected to actual value, readback closure succeeded."
+    },
+    {
+      "event": "Two guessed local reference path lookups",
+      "exit_code": 2,
+      "resolution": "Used rg --files to locate actual milestone/reference and completion-and-checkpoints.md; no product mutation."
+    },
+    {
+      "event": "Reconciliation candidate incorrect six source/QC pairs count",
+      "original": {
+        "path": "/workspace/scratch/46b31bb4dff6/037-a010-reconciliation-TASKS-QC-before-count-correction.md",
+        "sha256": "58aa1b2479eb14b17c212d7583391ed4113e1a5efa4968cb1881dafc385c0161",
+        "bytes": 17129
+      },
+      "original_blob": "3c45a0a88862dc2bd65305e33e0739468e1729eb",
+      "resolution": "Corrected phrase to three source/QC pairs (six files); refreshed TASKS QC identity e540a24acaeefac901f3bdf04430dac156ad5831 / ef4fe088a6a7eb7e26b341345e76fd7fcc03f2dc1d6105924bb3cd7d8949b03f before exact acceptance. Original candidate retained unchanged."
+    },
+    {
+      "event": "First merged reconciliation harness used paused HEAD as unrelated-product baseline",
+      "exit_code": 1,
+      "log": "/workspace/scratch/46b31bb4dff6/037-a010-merged-reconciliation.log",
+      "resolution": "Paused parent legitimately lacks range implementation; corrected harness comparison to exact accepted feature tip, retained original failure, all reconciliation checks then passed."
+    }
+  ],
+  "evidence_logs": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T018-api.log",
+      "sha256": "b322d47c7d8fa679b296200fdf2e8288d6d5c9735fecd434eb70e1e9a716263b",
+      "bytes": 1126
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T018-green.log",
+      "sha256": "640443ed7c935a92beda45ff94d61eb9bf1b150da13abd215f3a166f69dda19e",
+      "bytes": 1781
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T018-red.log",
+      "sha256": "c4ebd477e2f2e87bf0f019aaceb6b2db1fb2e3579b6afa784a5e2f1c0482801c",
+      "bytes": 14171
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T019-examples.log",
+      "sha256": "61a5d295d07020602fdeaada3aa6ffcb01e279a777f8ecae364b435405715660",
+      "bytes": 918
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T019-full.log",
+      "sha256": "74553f89570b7f826016b68a944fab7152e48c6b2071997e291d25f0074b285d",
+      "bytes": 8701
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T019-green.log",
+      "sha256": "8b556f4be4f598fe2b8951b84952be798c62304ee4d51ecb0bb8625ec7ddf5da",
+      "bytes": 1527
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T019-red.log",
+      "sha256": "2a6ddcaf2c19a8f1f44bf9ed5b63cd52261d070ef721566e7e175cfba325100c",
+      "bytes": 72924
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T020-demo.log",
+      "sha256": "c932421ea665e18b8e275176532caa60109c31e72948f6369721c1523fd64c99",
+      "bytes": 689
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T020-full.log",
+      "sha256": "1730da4688948236e583077c8207d93bc3fbfd169cc6f97caaea5a502bc285e7",
+      "bytes": 8701
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T021-examples.log",
+      "sha256": "8d56cb962863e0e8ba4b63fff566adabda39b684ad2c2f58a1d53c83e58126a9",
+      "bytes": 23439
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T021-full-confirmed.log",
+      "sha256": "7fbc38ec4e1127d517d095e06dcad13d23e6ed3ecb408a1cafafa48bce59478d",
+      "bytes": 8717
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T021-full.log",
+      "sha256": "6cc058bd8a5893293e9bd88c50e27af2953f574698b188cf1eac1e61d943ece5",
+      "bytes": 7764
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T022-current-extraction.log",
+      "sha256": "d95bf766b898e355fcb74130c802678007abe648e49c0ffce9f7ba0fb3053bad",
+      "bytes": 108
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T022-extraction.log",
+      "sha256": "f036f1f5a6c1e5dc0adeda3e6d9057dbd0c1402d4e7b3b9079c232a8b5ffdd4f",
+      "bytes": 108
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T022-full.log",
+      "sha256": "c252b201e19534d757d1e417c2f999c83ce11b4157d04b37a8711e5be61af375",
+      "bytes": 9236
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T022-green.log",
+      "sha256": "07a2751b75efe44f9fafd008cd56425def52950a2f30b39cdc2eccd4390dae98",
+      "bytes": 617
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T022-red-final-tests.log",
+      "sha256": "d3cbef428c2112c643cf6e31199ca473a1d4a2f3614dc0010ec6a363379a2f29",
+      "bytes": 2551
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T022-red.log",
+      "sha256": "eb226dfecee0da6f761c98ccb26e5308695fc6b026150378da633ec9f112cf3e",
+      "bytes": 2551
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T023-examples.log",
+      "sha256": "4c8c06920f66e6f4fcdad1f021a53d56f2f58c47d293837f0ff4f3e103c64373",
+      "bytes": 24486
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T024-examples.log",
+      "sha256": "9b051b4d770553618da690fc7dd6153f7ec6974c5ce52036cc99953866719381",
+      "bytes": 5576
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T024-extraction.log",
+      "sha256": "5fb910bef34877eabd2ea4740bc1eb3262da54e436b42a4dbff19d4938fc276c",
+      "bytes": 108
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-T024-full.log",
+      "sha256": "cf61c75e13ecb365282754c74147de327c9f96588e90afae98c926d4527c3201",
+      "bytes": 9236
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-final-provider-preservation.log",
+      "sha256": "944de961d8a624d4acb961ac5e6ae3235e883dfdb746d51e6ac14a5dd64f86f1",
+      "bytes": 164
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-final-remote-readback.log",
+      "sha256": "06148f6ea9d4f52e2cb552ec425bb73023a052f9b8715c64d807602b8f2c7adc",
+      "bytes": 222
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-final-task-audit.log",
+      "sha256": "689e1c4bfcfa129002cd195621f3db6524a25ea60d71affc4bc2e98aed68cfcf",
+      "bytes": 111
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-hosted-links.log",
+      "sha256": "f3443182142eff29c81d73382f16d2ea5b82720e1f22c4d9133a2d97edeb1ea6",
+      "bytes": 962
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-json-baseline-distribution.log",
+      "sha256": "948df56d5fb9a901d781cf85e0f97dcfbc298ca5456b679445737bad01ecaf9a",
+      "bytes": 107
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-json-baseline-tests.log",
+      "sha256": "a957b8e7a7d824de0a4a90a7e04a690acd3ba84050b3648ba67591a46d727b98",
+      "bytes": 6952
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-merged-distribution.log",
+      "sha256": "dfd52cf4bf9d12eb553f6193297511937679e8194a549bf409d34f0c1d565125",
+      "bytes": 108
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-merged-examples.log",
+      "sha256": "9b051b4d770553618da690fc7dd6153f7ec6974c5ce52036cc99953866719381",
+      "bytes": 5576
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-merged-reconciliation-confirmed.log",
+      "sha256": "3fb2216139d209e31d016391056b7b19f500405e63f884d729ac3754df4883a1",
+      "bytes": 2804
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-merged-reconciliation.log",
+      "sha256": "9aecfd928760dcd234bc801de38dd172ee325b6d8f6b23846d3634abe7f4430b",
+      "bytes": 365
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-merged-tests.log",
+      "sha256": "acbf34cc40f7a065718d44ea5cf2abb5c625c65938aaa03fab20312265944131",
+      "bytes": 9220
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-a010-reconciliation-check.log",
+      "sha256": "3fb2216139d209e31d016391056b7b19f500405e63f884d729ac3754df4883a1",
+      "bytes": 2804
+    }
+  ],
+  "selected_history_including_imported_compatible_JSON_commits": [
+    "b292b58429553d18f32c37dd6374a3e5fc7e12fa [T-010] Add named-file JSON output and preserve text contracts",
+    "c4a16e76813ca336681dbe9b71f1c979cbc767fa [T-011] Verify JSON contracts from isolated source extraction",
+    "e63b8946bbb99347b0f73f070f9c728945ee5925 [T-012] Review and complete milestone 2.1 JSON exits",
+    "9e8afe0778d9a58f83af7d69ce78db4c2b3bc1b2 Incorporate accepted named-file range delivery into main PLAN",
+    "aeef000c7782b33ddf61d0fe8817d1014e5dc1c8 Correct current PLAN milestone-count navigation after review",
+    "7cf177a2401240abe8e04303217d82de63b23ba6 Reconcile pending main range composition and task owner QC",
+    "503dc510aef79bb7f8befc87e8072dd344182dd3 Orient authorized range delivery and accepted governing checkpoints",
+    "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1 Merge accepted named-file range preparation into default main",
+    "806e989567aef425ddd933f33fbd8f9af5edae2a Merge published JSON prerequisite into named-file range feature",
+    "3bcd141b24bf0f655fa8c2f777c7c9eb0a24ba93 [T-018] Implement pure normalized logical-line selection",
+    "46e1455a5aca1f86d385a6bed649c4331c5f7296 [T-019] Integrate validated named-file text and JSON ranges",
+    "33f0ba2ed7ae187cce9643433f8f1f09282ef079 [T-020] Review and complete named-file range milestone 2.4",
+    "96a562b6b3ca51f4aea6bb8e4f0b3a1a5f7c10b8 [T-021] Complete runnable named-file range documentation",
+    "f2dc46627c04b92e4d2990843927e52be63f2660 [T-022] Verify ranges through isolated extracted module execution",
+    "4eeee9e9505b29b4a616292434561aab569dac7f [T-023] Review and complete range documentation distribution milestone",
+    "bf1b784b2f7ad394e8aba206c8ba2214f0b6d7fa [T-024] Review and complete the named-file range feature extent",
+    "6f1614480687f5978023df1122ec8b2567ff19d9 Reconcile sole main task ownership and archive accepted range sources",
+    "795f3a3542c9981f8d43c8e182876f3efa5b5f16 Integrate completed named-file ranges into paused Phase 2"
+  ],
+  "limits": [
+    "Only observed Python runtime and platform verified; broader platform/runtime coverage unverified.",
+    "Stdin composition/final main verification remain pending and unchecked.",
+    "Pinned resources, foreign material and existing hosted descriptions/comments preserved.",
+    "No release or whole-phase/default implementation integration performed."
+  ],
+  "publication_contract": "Every owned commit pushed immediately and exact remote ref readback verified before dependent work; exact final target readback retained. Git-backed artifacts remain in repository; ordinary evidence saved at requested scratch paths."
+}

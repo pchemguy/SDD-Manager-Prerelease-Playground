@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "001_eff696b-prerelease-acceptance",
+  "phase": "P4",
+  "case_id": "A-020",
+  "attempt": 1,
+  "role": "assessor",
+  "last_completed_action": "T001 independently Passed and exact publishedbb1ee88; foreign staged/unstaged/untracked intent retained",
+  "pending_operation": null,
+  "next_action": "Publish assessment; retain scoped completed trial and foreign coordinator sentinels",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a020-scoped",
+    "product_commit": "bb1ee88ef05e30d25d41fc92db948308a7bb4af2",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "evidence_branch": "revision/001_eff696b-prerelease-acceptance",
+    "remote": "origin"
+  },
+  "evidence_paths": [
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-assessor-commands.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-assessor-provenance.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-assessor-snapshot.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-assessor-supplemental.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-assessor.py",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-consumer-observations.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/037-a020-independent-assessment.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/ASSESSMENT.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/BINDINGS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/HANDOFF.md",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/INPUTS.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/SETUP.json",
+    "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-020/1/START.json"
+  ]
+}

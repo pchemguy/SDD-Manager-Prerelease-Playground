@@ -1,0 +1,20 @@
+test_mixed_terminators_and_final_segments (tests.unit.test_core.CountingTests.test_mixed_terminators_and_final_segments) ... ok
+test_normalization_removes_one_bom_only (tests.unit.test_core.CountingTests.test_normalization_removes_one_bom_only) ... ok
+test_spec_whole_input_matrix (tests.unit.test_core.CountingTests.test_spec_whole_input_matrix) ... ok
+test_unicode_whitespace_does_not_broaden_line_terminators (tests.unit.test_core.CountingTests.test_unicode_whitespace_does_not_broaden_line_terminators) ... ok
+test_unicode_words_and_whitespace_runs (tests.unit.test_core.CountingTests.test_unicode_words_and_whitespace_runs) ... ok
+test_fields_cannot_be_changed_or_deleted (tests.unit.test_core.TextStatsTests.test_fields_cannot_be_changed_or_deleted) ... ok
+test_negative_count_in_either_field (tests.unit.test_core.TextStatsTests.test_negative_count_in_either_field) ... ok
+test_noninteger_count_in_either_field (tests.unit.test_core.TextStatsTests.test_noninteger_count_in_either_field) ... ok
+test_value_equality_and_integer_fields (tests.unit.test_core.TextStatsTests.test_value_equality_and_integer_fields) ... ok
+test_zero_and_large_counts (tests.unit.test_core.TextStatsTests.test_zero_and_large_counts) ... ok
+test_bom_policy_preserves_repeated_and_interior_boms (tests.unit.test_io.FileAcquisitionTests.test_bom_policy_preserves_repeated_and_interior_boms) ... ok
+test_open_oserror_subclasses_propagate_unchanged_and_silently (tests.unit.test_io.FileAcquisitionTests.test_open_oserror_subclasses_propagate_unchanged_and_silently) ... ok
+test_read_failure_closes_and_propagates_without_counting_partial_input (tests.unit.test_io.FileAcquisitionTests.test_read_failure_closes_and_propagates_without_counting_partial_input) ... ok
+test_strict_decode_failure_closes_without_counting_partial_input (tests.unit.test_io.FileAcquisitionTests.test_strict_decode_failure_closes_without_counting_partial_input) ... ok
+test_success_closes_owned_handle_without_newline_translation (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_handle_without_newline_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.004s
+
+OK

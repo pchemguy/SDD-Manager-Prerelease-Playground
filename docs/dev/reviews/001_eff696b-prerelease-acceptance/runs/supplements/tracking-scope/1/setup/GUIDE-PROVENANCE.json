@@ -1,0 +1,6 @@
+{
+  "pin": "ea515f5624c8a34cc4572731a2590223a5eb27f4",
+  "path": "acceptance/textstats/cases/assessor/TRACKING-FIDELITY.md",
+  "sha256": "c8636c3697c41541b49a0d441a5c0d0a659f7607b432a6369ddbc3acc97429fb",
+  "scope": "caller/assessor-only read; never supplied to consumer"
+}

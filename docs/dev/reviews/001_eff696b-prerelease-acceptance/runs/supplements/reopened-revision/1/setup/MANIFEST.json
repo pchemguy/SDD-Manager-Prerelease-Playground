@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "scope": "actual selected closed042 LOCAL trial preparation, no completed amendment supplied",
+  "files": {
+    "CONSUMER-INPUT.md": {
+      "sha256": "32a235ab675e4617f245ca40315df29ca7f6e3b3a9b031a4b4ea5cc96318bd96",
+      "bytes": 2235
+    },
+    "START.json": {
+      "sha256": "5bf6027ead79bf7a163972c69c0ee5157bb9b57e20f226ba6b92c90e2f0a1901",
+      "bytes": 167037
+    }
+  }
+}

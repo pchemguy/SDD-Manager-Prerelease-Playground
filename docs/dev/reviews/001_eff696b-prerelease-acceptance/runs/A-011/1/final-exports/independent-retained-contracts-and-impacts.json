@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "case_id": "A-011",
+  "method": "Independent static source/contracts/task/distribution inspection; no product runtime, test, build or publication operation executed.",
+  "retained_contracts": {
+    "text": "CLI success exactly lines=<N> words=<N>\\n; status0, empty stderr; help no acquisition; one named input, -- and dash names; literal - still filename.",
+    "counting": "CRLF/CR/LF only logical terminators; trailing terminator no phantom line; final nonempty segment one line; Unicode str.split words independent of logical separators.",
+    "bom": "Normalize once on complete decoded input, strip exactly one leading U+FEFF by default; --keep-bom retains; second/interior/exposed-selection BOM remains content.",
+    "range": "Both --lines START:END and --lines=START:END; positive inclusive ASCII decimal endpoints, leading zeros/unbounded size; reject malformed/repeated before acquisition; preserved selected segments; beyond EOF available subset/empty; decode complete bytes before select.",
+    "errors": "Invocation2, acquisition/decode1, empty stdout, identifying useful stderr/no traceback; no input byte changes or partial result.",
+    "api": "Exactly TextStats/count_text/count_file, whole-input signatures/keyword BOM, immutable validated statistics, silence, strict UTF8 and owned handle closure; JSON is not a public API export.",
+    "stdin": "Still pending T013-T017; this proposal changes future output composition only, not borrowed byte-stream/EOF/strict locale-independent UTF8 requirements."
+  },
+  "impacts": {
+    "implementation": "Remove CLI import json, --json parser entry/help and args.json serializer branch while retaining shared acquisition/normalization/selection/counting and exact text path; removal means formerly valid --json becomes unknown status2 rather than success, so external JSON users face breaking interface.",
+    "governing_docs": "PROJECT/SPEC R009, R011/R013 and F003/F004 JSON composition/acceptance, ARCHITECTURE presentation/testing notes, DECOMPOSITION CLI presentation responsibility, PLAN milestone2.1 and downstream2.2/2.3/2.4/2.5 exit matrices require scoped coherent amendment/QC before any future execution.",
+    "public_docs": "README JSON examples/options/range composition and distribution315case claims, docs/public-api.md CLI module contracts need coordinated revision; API signatures stay.",
+    "tests": "Unit CLI JSON/BOM/range/help matrices and integration real JSON/channel/semantic equality/error tests need removal/replacement of positive JSON with explicit unsupported-option checks; core,IO,API and text/BOM/range regressions remain mandatory.",
+    "distribution": "Explicit11-file allowlist/package layout unaffected, but tools/check_distribution.py imports JSON and runs many JSON whole/range/composition/error/API checks; tools and integration distribution expectations and docs315case total would change. No new ZIP built.",
+    "tasks_history": "Canonical TASKS owns24 IDs with19 completed/five pending; completed JSON T010-T012 and range T019/T021/T022/history stay historical; pending T014/T015/T016/T017 dependencies/exit descriptions need amendment. Do not reopen completed history or invent child owner; main phase and milestones2.2/2.3 remain pending.",
+    "hosted": "Potential future tracked revision requires issue/milestone/PR/docs/branch identity reconciliation with correct accepted scope. Assessment does not create revision branch or change hosted task states/release/default integration."
+  },
+  "task_owner_rows": [
+    {
+      "line": 31,
+      "status": "completed",
+      "id": "T-001",
+      "source": "        - [x] T-001 \u2014 Implement immutable statistics and whole-text counting"
+    },
+    {
+      "line": 36,
+      "status": "completed",
+      "id": "T-002",
+      "source": "        - [x] T-002 \u2014 Implement strict file acquisition and complete public API"
+    },
+    {
+      "line": 41,
+      "status": "completed",
+      "id": "T-003",
+      "source": "        - [x] T-003 \u2014 Integrate named-file CLI and nonempty product checks"
+    },
+    {
+      "line": 46,
+      "status": "completed",
+      "id": "T-004",
+      "source": "        - [x] T-004 \u2014 Review, test and report milestone 1.1"
+    },
+    {
+      "line": 52,
+      "status": "completed",
+      "id": "T-005",
+      "source": "        - [x] T-005 \u2014 Complete named-file CLI failure and usage handling"
+    },
+    {
+      "line": 57,
+      "status": "completed",
+      "id": "T-006",
+      "source": "        - [x] T-006 \u2014 Document public API and runnable named-file usage"
+    },
+    {
+      "line": 62,
+      "status": "completed",
+      "id": "T-007",
+      "source": "        - [x] T-007 \u2014 Build and verify isolated source distribution"
+    },
+    {
+      "line": 67,
+      "status": "completed",
+      "id": "T-008",
+      "source": "        - [x] T-008 \u2014 Review, test and report milestone 1.2"
+    },
+    {
+      "line": 73,
+      "status": "completed",
+      "id": "T-009",
+      "source": "        - [x] T-009 \u2014 Review, test and report phase 1"
+    },
+    {
+      "line": 83,
+      "status": "completed",
+      "id": "T-010",
+      "source": "        - [x] T-010 \u2014 Add JSON CLI output with retained text behavior"
+    },
+    {
+      "line": 88,
+      "status": "completed",
+      "id": "T-011",
+      "source": "        - [x] T-011 \u2014 Verify JSON from extracted source"
+    },
+    {
+      "line": 93,
+      "status": "completed",
+      "id": "T-012",
+      "source": "        - [x] T-012 \u2014 Review, test and report milestone 2.1"
+    },
+    {
+      "line": 99,
+      "status": "pending",
+      "id": "T-013",
+      "source": "        - [ ] T-013 \u2014 Add borrowed binary stdin acquisition"
+    },
+    {
+      "line": 104,
+      "status": "pending",
+      "id": "T-014",
+      "source": "        - [ ] T-014 \u2014 Integrate stdin across text and JSON CLI"
+    },
+    {
+      "line": 109,
+      "status": "pending",
+      "id": "T-015",
+      "source": "        - [ ] T-015 \u2014 Complete final documentation and source-package exits"
+    },
+    {
+      "line": 114,
+      "status": "pending",
+      "id": "T-016",
+      "source": "        - [ ] T-016 \u2014 Review, test and report milestone 2.2"
+    },
+    {
+      "line": 120,
+      "status": "pending",
+      "id": "T-017",
+      "source": "        - [ ] T-017 \u2014 Review, test and report phase 2 and final delivery"
+    },
+    {
+      "line": 127,
+      "status": "completed",
+      "id": "T-018",
+      "source": "        - [x] T-018 \u2014 Implement pure normalized logical-line selection"
+    },
+    {
+      "line": 132,
+      "status": "completed",
+      "id": "T-019",
+      "source": "        - [x] T-019 \u2014 Integrate range validation and named-file text or JSON CLI"
+    },
+    {
+      "line": 137,
+      "status": "completed",
+      "id": "T-020",
+      "source": "        - [x] T-020 \u2014 Review, test and report milestone 2.4"
+    },
+    {
+      "line": 143,
+      "status": "completed",
+      "id": "T-021",
+      "source": "        - [x] T-021 \u2014 Complete public and runnable named-file range documentation"
+    },
+    {
+      "line": 148,
+      "status": "completed",
+      "id": "T-022",
+      "source": "        - [x] T-022 \u2014 Verify range behavior from isolated extracted source"
+    },
+    {
+      "line": 153,
+      "status": "completed",
+      "id": "T-023",
+      "source": "        - [x] T-023 \u2014 Review, test and report milestone 2.5"
+    },
+    {
+      "line": 159,
+      "status": "completed",
+      "id": "T-024",
+      "source": "        - [x] T-024 \u2014 Review, test and report the Phase 2 range feature extent"
+    }
+  ],
+  "counts": {
+    "active_tasks": 24,
+    "completed": 19,
+    "pending": 5
+  },
+  "history_policy": "Archived feature sources provide retained provenance, not duplicate active execution ownership."
+}

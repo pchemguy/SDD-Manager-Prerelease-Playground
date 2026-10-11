@@ -1,0 +1,8 @@
+example_dir=$(mktemp -d)
+python -m zipfile -e dist/textstats-source.zip "$example_dir"
+(
+    cd "$example_dir/textstats-source"
+    python -c "from pathlib import Path; Path('sample.txt').write_bytes(b'alpha beta\\r\\nbeta\\rlast two\\n')"
+    env -u PYTHONPATH -u PYTHONHOME python -s -m textstats sample.txt
+)
+rm -r "$example_dir"

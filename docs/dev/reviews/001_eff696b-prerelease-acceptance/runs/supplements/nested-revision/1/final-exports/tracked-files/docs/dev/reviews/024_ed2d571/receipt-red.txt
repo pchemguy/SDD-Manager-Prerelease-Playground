@@ -1,0 +1,107 @@
+test_incomplete_phase_and_outside_prerequisite_are_not_eligible (tests.test_trial_control.TrialControls.test_incomplete_phase_and_outside_prerequisite_are_not_eligible) ... ok
+test_missing_change_and_completed_transfer_cannot_be_triggers (tests.test_trial_control.TrialControls.test_missing_change_and_completed_transfer_cannot_be_triggers) ... ok
+test_optional_facilities_are_not_run_and_required_are_blocked (tests.test_trial_control.TrialControls.test_optional_facilities_are_not_run_and_required_are_blocked) ... ok
+test_partial_action_is_held_then_resumed_once (tests.test_trial_control.TrialControls.test_partial_action_is_held_then_resumed_once) ... ok
+test_pending_selected_transfer_cannot_already_be_completed (tests.test_trial_control.TrialControls.test_pending_selected_transfer_cannot_already_be_completed) ... ok
+test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) ...
+  test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=False, resume=False) ... FAIL
+  test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=False, resume=True) ... ERROR
+  test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=True, resume=False) ... FAIL
+  test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=True, resume=True) ... ERROR
+test_resume_rejects_drift_and_different_commands (tests.test_trial_control.TrialControls.test_resume_rejects_drift_and_different_commands) ... ok
+test_symlinked_receipt_parent_rejected_without_creation (tests.test_trial_control.TrialControls.test_symlinked_receipt_parent_rejected_without_creation) ... FAIL
+test_timeout_retains_safe_partial_channels_without_replay (tests.test_trial_control.TrialControls.test_timeout_retains_safe_partial_channels_without_replay) ... ok
+
+======================================================================
+ERROR: test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=False, resume=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/scripts/core.py", line 156, in load
+    data = json.loads(Path(path).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpt_jw8hnw/target-False-True.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_trial_control.py", line 54, in test_receipt_symlinks_rejected_before_fresh_or_resume_operations
+    m.execute(self.repo,actions,['pending.md'],receipt,resume=resume)
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/scripts/trial_control.py", line 86, in execute
+    record=core.load(receipt)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/scripts/core.py", line 157, in load
+    except (OSError, ValueError): raise Stop('invalid_json')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+core.Stop: invalid_json
+
+======================================================================
+ERROR: test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=True, resume=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/scripts/core.py", line 156, in load
+    data = json.loads(Path(path).read_text())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_trial_control.py", line 54, in test_receipt_symlinks_rejected_before_fresh_or_resume_operations
+    m.execute(self.repo,actions,['pending.md'],receipt,resume=resume)
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/scripts/trial_control.py", line 86, in execute
+    record=core.load(receipt)
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/scripts/core.py", line 157, in load
+    except (OSError, ValueError): raise Stop('invalid_json')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+core.Stop: invalid_json
+
+======================================================================
+FAIL: test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=False, resume=False)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_trial_control.py", line 53, in test_receipt_symlinks_rejected_before_fresh_or_resume_operations
+    with self.assertRaisesRegex(ValueError,'symlink'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_receipt_symlinks_rejected_before_fresh_or_resume_operations (tests.test_trial_control.TrialControls.test_receipt_symlinks_rejected_before_fresh_or_resume_operations) (occupied=True, resume=False)
+----------------------------------------------------------------------
+ValueError: receipt occupied
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_trial_control.py", line 53, in test_receipt_symlinks_rejected_before_fresh_or_resume_operations
+    with self.assertRaisesRegex(ValueError,'symlink'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "symlink" does not match "receipt occupied"
+
+======================================================================
+FAIL: test_symlinked_receipt_parent_rejected_without_creation (tests.test_trial_control.TrialControls.test_symlinked_receipt_parent_rejected_without_creation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/6420baa7afea/acceptance/textstats/tests/test_trial_control.py", line 62, in test_symlinked_receipt_parent_rejected_without_creation
+    with self.assertRaisesRegex(ValueError,'symlink'):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.054s
+
+FAILED (failures=3, errors=2)

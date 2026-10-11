@@ -1,0 +1,51 @@
+test_either_empty_suite_is_rejected (tests.unit.test_cli.CheckRunnerTests.test_either_empty_suite_is_rejected) ... ok
+test_nonempty_success_reports_independent_counts (tests.unit.test_cli.CheckRunnerTests.test_nonempty_success_reports_independent_counts) ... ok
+test_product_failure_is_propagated (tests.unit.test_cli.CheckRunnerTests.test_product_failure_is_propagated) ... ok
+test_double_dash_retains_option_like_filename (tests.unit.test_cli.CliTests.test_double_dash_retains_option_like_filename) ... ok
+test_expected_input_failures_have_status_and_diagnostic (tests.unit.test_cli.CliTests.test_expected_input_failures_have_status_and_diagnostic) ... ok
+test_help_never_acquires_input (tests.unit.test_cli.CliTests.test_help_never_acquires_input) ... ok
+test_keep_bom_before_and_after_input (tests.unit.test_cli.CliTests.test_keep_bom_before_and_after_input) ... ok
+test_success_renders_completed_counts (tests.unit.test_cli.CliTests.test_success_renders_completed_counts) ... ok
+test_usage_validates_before_acquisition (tests.unit.test_cli.CliTests.test_usage_validates_before_acquisition) ... ok
+test_normalization_removes_exactly_one_leading_bom (tests.unit.test_core.CountingTests.test_normalization_removes_exactly_one_leading_bom) ... ok
+test_only_crlf_cr_and_lf_terminate_lines (tests.unit.test_core.CountingTests.test_only_crlf_cr_and_lf_terminate_lines) ... ok
+test_repeated_calls_have_no_shared_state (tests.unit.test_core.CountingTests.test_repeated_calls_have_no_shared_state) ... ok
+test_unicode_separators_are_whitespace_without_new_lines (tests.unit.test_core.CountingTests.test_unicode_separators_are_whitespace_without_new_lines) ... ok
+test_unicode_whitespace_and_non_ascii_words (tests.unit.test_core.CountingTests.test_unicode_whitespace_and_non_ascii_words) ... ok
+test_whole_input_spec_matrix_under_both_policies (tests.unit.test_core.CountingTests.test_whole_input_spec_matrix_under_both_policies) ... ok
+test_each_field_rejects_negative_counts (tests.unit.test_core.StatisticsTests.test_each_field_rejects_negative_counts) ... ok
+test_each_field_rejects_nonintegers_including_booleans (tests.unit.test_core.StatisticsTests.test_each_field_rejects_nonintegers_including_booleans) ... ok
+test_fields_cannot_be_assigned_or_deleted (tests.unit.test_core.StatisticsTests.test_fields_cannot_be_assigned_or_deleted) ... ok
+test_nonnegative_values_and_equality (tests.unit.test_core.StatisticsTests.test_nonnegative_values_and_equality) ... ok
+test_decode_failure_closes_and_returns_no_partial_count (tests.unit.test_io.FileAcquisitionTests.test_decode_failure_closes_and_returns_no_partial_count) ... ok
+test_open_failure_preserves_oserror_subclasses (tests.unit.test_io.FileAcquisitionTests.test_open_failure_preserves_oserror_subclasses) ... ok
+test_read_failure_preserves_exception_and_closes (tests.unit.test_io.FileAcquisitionTests.test_read_failure_preserves_exception_and_closes) ... ok
+test_success_closes_owned_binary_handle_and_preserves_terminators (tests.unit.test_io.FileAcquisitionTests.test_success_closes_owned_binary_handle_and_preserves_terminators) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.164s
+
+OK
+test_decode_failure_and_missing_path_propagate_silently (tests.integration.test_api.FileApiTests.test_decode_failure_and_missing_path_propagate_silently) ... ok
+test_file_signature (tests.integration.test_api.FileApiTests.test_file_signature) ... ok
+test_file_text_matrix_and_preservation (tests.integration.test_api.FileApiTests.test_file_text_matrix_and_preservation) ... ok
+test_calls_and_reload_are_silent (tests.integration.test_api.TextApiTests.test_calls_and_reload_are_silent) ... ok
+test_direct_imports_and_delivered_exports (tests.integration.test_api.TextApiTests.test_direct_imports_and_delivered_exports) ... ok
+test_initial_import_is_silent_in_fresh_process (tests.integration.test_api.TextApiTests.test_initial_import_is_silent_in_fresh_process) ... ok
+test_public_default_and_retaining_policy (tests.integration.test_api.TextApiTests.test_public_default_and_retaining_policy) ... ok
+test_signatures_and_keyword_only_policy (tests.integration.test_api.TextApiTests.test_signatures_and_keyword_only_policy) ... ok
+test_dash_filenames_and_double_dash_termination (tests.integration.test_cli.ModuleCliTests.test_dash_filenames_and_double_dash_termination) ... ok
+test_exactly_one_input_is_required (tests.integration.test_cli.ModuleCliTests.test_exactly_one_input_is_required) ... ok
+test_help_without_input (tests.integration.test_cli.ModuleCliTests.test_help_without_input) ... ok
+test_missing_and_invalid_utf8_are_clean_input_failures (tests.integration.test_cli.ModuleCliTests.test_missing_and_invalid_utf8_are_clean_input_failures) ... ok
+test_named_file_matrix_and_bom_option_order (tests.integration.test_cli.ModuleCliTests.test_named_file_matrix_and_bom_option_order) ... ok
+test_unknown_option_is_usage_even_with_missing_input (tests.integration.test_cli.ModuleCliTests.test_unknown_option_is_usage_even_with_missing_input) ... ok
+test_archive_exact_allowlist_excludes_unrelated_material (tests.integration.test_distribution.DistributionTests.test_archive_exact_allowlist_excludes_unrelated_material) ... ok
+test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy (tests.integration.test_distribution.DistributionTests.test_checker_rejects_wrong_extracted_cli_even_when_checkout_is_healthy) ... ok
+test_checker_verifies_real_extracted_module_with_polluted_import_environment (tests.integration.test_distribution.DistributionTests.test_checker_verifies_real_extracted_module_with_polluted_import_environment) ... ok
+test_documented_checker_script_builds_and_runs (tests.integration.test_distribution.DistributionTests.test_documented_checker_script_builds_and_runs) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.605s
+
+OK

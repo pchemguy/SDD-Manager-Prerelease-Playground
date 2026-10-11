@@ -1,0 +1,10 @@
+{
+  "PUBLISHED-BODY.md": {
+    "sha256": "5abb87b0d74e040839cbe4dd2196a2d5126cbec205a8c976782868cc02e20d3c",
+    "bytes": 196
+  },
+  "PUBLISHED-STATE.json": {
+    "sha256": "e98471055ff5280acba781578dfbecaa4e1cd44706a472624febff0ded110959",
+    "bytes": 812
+  }
+}

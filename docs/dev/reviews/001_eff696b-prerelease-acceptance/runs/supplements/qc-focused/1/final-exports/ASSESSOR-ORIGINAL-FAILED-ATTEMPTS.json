@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "cwd": "/workspace/scratch/46b31bb4dff6",
+  "channel": "functions.exec/tools.exec_command",
+  "original_failed_attempts": [
+    {
+      "chunk_id": "511cb7",
+      "exit_code": 1,
+      "command": "python - <<'PY'\nimport json,hashlib,pathlib\np=pathlib.Path('037-sup-qc-focused-setups')\nm=json.loads((p/'MANIFEST.json').read_text()); print('manifest',hashlib.sha256((p/'MANIFEST.json').read_bytes()).hexdigest()); print('artifact validation',all(hashlib.sha256((p/e['path']).read_bytes()).hexdigest()==e['sha256'] and len((p/e['path']).read_bytes())==e['bytes'] for e in m['artifacts']))\nfor case in ['narrow-feature','missing-plan-contract']:\n s=json.loads((p/case/'START.json').read_text()); b=json.loads((p/case/'BASELINE.json').read_text());print(case,'keys',list(s),'startcount',len(s['files']),'basecount',len(b['files']),'worktree',s['worktree']); print('diff files',[k for k in s['files'] if s['files'][k]!=b['files'][k]]); print('git equality',[(k,s[k]==b[k]) for k in ['head','refs','index_entries','index_sha256'] if k in s])\nPY",
+      "combined_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 5, in <module>\nKeyError: 'files'\nmanifest 93d4c42fc0ec3ffff0203d398afb23bce6b40815d30cf47db6182d786c8def24\nartifact validation True\n"
+    },
+    {
+      "chunk_id": "88e8d3",
+      "exit_code": 1,
+      "command": "python -B 037-sup-qc-focused-final-artifacts/ASSESSOR-SCRIPT.py && python -B - <<'PY'\nfrom pathlib import Path\nimport json,hashlib\nb=Path('/workspace/scratch/46b31bb4dff6')\nfor c in ['narrow-feature','missing-plan-contract']:\n p=b/f'037-sup-qc-{c}-consumer-observations.json';d=json.loads(p.read_text());start=json.loads((b/'037-sup-qc-focused-setups'/c/'START.json').read_text()); inv=d.get('loaded_hashes',d.get('loaded_sha256',{})); print(c,hashlib.sha256(p.read_bytes()).hexdigest(),type(inv).__name__); print('hash inventory mismatches',[(k,v) for k,v in inv.items() if k in start['tracked_files'] and (v if isinstance(v,str) else v.get('sha256'))!=start['tracked_files'][k]['sha256']])\nPY",
+      "successful_state_check_prefix": "Exact STATE-CHECKS.json was printed before following inventory loop failed. Native tool transcript preserves entire combined output.",
+      "failure_suffix": "Traceback (most recent call last):\n  File \"<stdin>\", line 5, in <module>\nAttributeError: 'list' object has no attribute 'items'\nnarrow-feature 60aedf258dd33cb7f5142abb8036f811c771c6165286948bc4a3de57039c8da8 list\n"
+    }
+  ],
+  "limits": "Tool combined output is preserved as exposed; separate original stderr channels unavailable for these exploratory failures. No later replay replaces original chronology."
+}

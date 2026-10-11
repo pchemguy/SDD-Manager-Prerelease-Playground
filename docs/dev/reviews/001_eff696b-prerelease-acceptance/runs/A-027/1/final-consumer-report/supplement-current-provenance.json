@@ -1,0 +1,21 @@
+{
+  "captured_utc": "2026-10-10T19:05:03.539209+00:00",
+  "published_ref_supplied": "d80a28c",
+  "sources": [
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/pre-reconciliation/supplement-current/037-a027-current-case-variant-register-supplement-current.json",
+      "snapshot": "supplement-current-037-a027-current-case-variant-register-supplement-current.json",
+      "sha256": "48e6735ce2667264d58fbafa17757ad55e10279494cb0d6d473e442adb57805f"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/pre-reconciliation/supplement-current/037-a027-independent-pre-reconciliation-supplement-current.json",
+      "snapshot": "supplement-current-037-a027-independent-pre-reconciliation-supplement-current.json",
+      "sha256": "8211a2d27d106f0b1d4ba966cf5e45a0cdd969a819e94715e864d549044824b6"
+    },
+    {
+      "path": "/workspace/scratch/46b31bb4dff6/037-test-evidence/docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/pre-reconciliation/supplement-current/ROOT-EXPORT-MANIFEST.json",
+      "snapshot": "supplement-current-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "0226427ab607179e0085fb47496c2072cbaa5a8045969ce9d4fa0208c2548b51"
+    }
+  ]
+}

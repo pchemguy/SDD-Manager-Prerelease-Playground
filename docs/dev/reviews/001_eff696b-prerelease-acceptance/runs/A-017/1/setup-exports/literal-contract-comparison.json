@@ -1,0 +1,59 @@
+{
+  "api_exact_full_contract": "Passed",
+  "baseline_rows_passed": [
+    {
+      "name": "named",
+      "differences": {}
+    },
+    {
+      "name": "empty",
+      "differences": {}
+    },
+    {
+      "name": "keep-bom",
+      "differences": {}
+    },
+    {
+      "name": "dash-filename",
+      "differences": {}
+    },
+    {
+      "name": "usage-missing",
+      "differences": {}
+    },
+    {
+      "name": "usage-extra",
+      "differences": {}
+    },
+    {
+      "name": "usage-unknown",
+      "differences": {}
+    }
+  ],
+  "original_full_R008_failures_retained": [
+    {
+      "name": "missing",
+      "differences": {
+        "no_traceback": {
+          "actual": false,
+          "expected": true
+        }
+      }
+    },
+    {
+      "name": "decode",
+      "differences": {
+        "no_traceback": {
+          "actual": false,
+          "expected": true
+        },
+        "source_identified": {
+          "actual": false,
+          "expected": true
+        }
+      }
+    }
+  ],
+  "counting_milestone_scoped_success": "Passed",
+  "expected_sha256": "5c7646105a1c28f061ee1cf84bc41ac399d0bc90e2963c00e5754a89ac1534f7"
+}

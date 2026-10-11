@@ -1,0 +1,320 @@
+commit 7cf8d5e287c317ee7cdc458eff466550d2a3114c
+Author:     Codex <codex@openai.com>
+AuthorDate: Sat Oct 10 13:51:11 2026 -0400
+Commit:     Codex <codex@openai.com>
+CommitDate: Sat Oct 10 13:51:11 2026 -0400
+
+    [T-002] Implement strict named-file acquisition and complete public API
+    
+    Read complete binary files with strict UTF-8, preserve input bytes/newlines, close owned handles on all paths and propagate original acquisition/decode exceptions. Export the complete silent whole-input API and include tests, accurate documentation, verification/accepted-artifact evidence and initial owning completion in this atomic checkpoint.
+    
+    Verification: Python 3.12.14; 15 unit and 7 integration tests passed without skips. Behavioral scaffold RED: 14 unit and 55 integration failures. Delegated exact-artifact acceptance published as c8edcc3094cc819386f093a52e62ae70669720f8. Hosted tracking declined; local trial-delivery publication only. Foreign staged/unstaged facade comments and untracked note excluded. Stop at this task; no parent closure or phase integration.
+
+diff --git a/AGENTS.md b/AGENTS.md
+index d4d8e68..cfdec4b 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -2,21 +2,26 @@
+ 
+ ## Current independent trial checkpoint
+ 
+-The current trial authorizes only T-001 on `phase/1-named-file-utility`, starting
+-from accepted preparation `1e3305c8659045945244c06861079fef879ca3c3` on `main`.
+-The trial explicitly declines hosted issue/milestone tracking. Publish each
+-checkpoint to local remote `delivery` and verify its exact ref before further
+-work. `origin` is read-only; no hosted writes are authorized. Stop after T-001
+-without T-002, parent completion, phase integration or later-phase activation.
+-
+-T-001 supplies `textstats/core.py` and text exports in `textstats/__init__.py`.
+-Product tests live in `tests/unit/test_core.py` and
++The current independent trial authorizes only T-002 on
++`phase/1-named-file-utility`, starting from verified T-001 delivery
++`639e7e0cb54d5dd1f9c1a6e73de31e76301ae932`. Current trial hosted tracking is
++explicitly declined. Publish the owning checkpoint to local remote
++`trial-delivery` and verify the exact branch ref immediately. `origin` is
++read-only. Stop after T-002 without T-003, parent completion, phase integration,
++provider objects or release operations.
++
++T-001 supplies `textstats/core.py`; T-002 supplies `textstats/io.py` and complete
++`TextStats`, `count_text` and `count_file` exports in `textstats/__init__.py`.
++Product tests live in `tests/unit/test_core.py`, `tests/unit/test_io.py` and
+ `tests/integration/test_api.py`. From the repository root, run
+ `python -B -m unittest discover -s tests/unit -t . -v` and
+ `python -B -m unittest discover -s tests/integration -t . -v`; both suites must
+ collect nonzero tests. `tools/check_tests.py` belongs to T-003 and distribution
+-tools to T-007, so those full-delivery commands below are unavailable at this
+-partial checkpoint. File exports and the module CLI remain undelivered.
++tools to T-007, so those full-delivery commands below remain unavailable at
++this partial checkpoint. The module CLI remains undelivered.
++
++Preserve the foreign staged and unstaged comments in the shared API facade and
++the unrelated untracked note. Publish only task-owned hunks and files.
+ 
+ The original preparation orientation below is retained as acceptance history;
+ its earlier preparation-only stopping instruction is superseded for this trial
+diff --git a/README.md b/README.md
+index d245e31..a58403c 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,5 @@
+ # TextStats
+ 
+-TextStats targets Python 3.11+ for a text statistics API and command-line utility. The current T-001 checkpoint supplies immutable `TextStats` values and silent whole-text `count_text` counting. File acquisition and the module CLI are later tasks. The [project brief](docs/dev/PROJECT.md) captures the full delivery boundaries; complete runnable usage instructions will be added with the documentation milestone.
++TextStats targets Python 3.11+ for a text statistics API and command-line utility. The current T-002 checkpoint supplies immutable `TextStats` values and silent whole-input `count_text` and `count_file` APIs. Named files are read without byte changes and decoded as strict UTF-8; owned handles close on success and failure. The module CLI remains a later task. The [project brief](docs/dev/PROJECT.md) captures the full delivery boundaries; complete runnable usage instructions will be added with the documentation milestone.
+ 
+ Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
+diff --git a/docs/dev/TASKS.md b/docs/dev/TASKS.md
+index 95116c9..a9ced24 100644
+--- a/docs/dev/TASKS.md
++++ b/docs/dev/TASKS.md
+@@ -19,11 +19,13 @@ The user requested preparation through TASKS and stop before implementation. The
+             Evidence: all whole-input SPEC examples, Unicode separators/whitespace, repeated/interior BOMs, both policies, immutable value/equality and invalid constructor cases; direct imports/signatures and captured API silence. Discover focused unit and integration suites and record nonzero counts. Public file counting/module CLI remain later tasks within this same useful milestone.
+             Trial verification: Python 3.12.14 on `phase/1-named-file-utility`, based on accepted preparation `1e3305c8659045945244c06861079fef879ca3c3`; current trial explicitly declines hosted tracking. `python -B -m unittest discover -s tests/unit -t . -v` collected/passed 10 tests; `python -B -m unittest discover -s tests/integration -t . -v` collected/passed 4 tests, with no skips. Before implementation, importable placeholder scaffolding yielded 68 unit and 4 integration assertion failures demonstrating missing semantics/validation/immutability; this was behavioral RED, not an import failure. Tests cover the complete whole-text SPEC matrix under both policies, Unicode whitespace/separators, mixed terminators/final segments, once-only BOM normalization, equality, immutable fields, bool/noninteger/negative construction, direct exports/signature and API silence. Module/API docstrings and current README/root orientation are aligned to this bounded checkpoint. The declared full-delivery commands `python -B tools/check_tests.py` and `python -B tools/check_distribution.py` were attempted and failed because those T-003/T-007 files do not yet exist; no CLI/file/distribution acceptance is claimed. T-002 and all parents remain incomplete; local delivery publication follows the single atomic T-001 result/evidence/checkbox commit, with no partial-phase merge.
+             Trial acceptance: the coordinator accepted the ten presented code/test/owning-document artifacts under delegated exact-artifact review authority, in externally published decision commit `0f3caf1696cbf955e48a7451076e762573249ba5`, record `runs/supplements/tracking-scope/1/DECLINE-T001-DECISION.json`. Presented core blob was `ecc898a4146de6586216782ef574d31437a23b56`, unit test blob `d5d02c2e5da2987e81720740caa777eafc35175c`, integration test blob `ca07141b5d2d0ee56cae5bf27819d077ccc3ac7c` and unchecked owning TASKS blob `29187b4bc9d70b7fb0459d0f379f5b5249bd58fa`. This completion annotation records that actual decision and initial T-001 closure only; all product code/tests and the remaining presented docs retain their accepted identities.
+-        - [ ] T-002 — Implement strict file acquisition and complete public API
++        - [x] T-002 — Implement strict file acquisition and complete public API
+             Outcome: R-006 byte-preserving strict UTF-8 file input and R-002 whole-file API, with required exceptions and owned-handle cleanup.
+             Scope: `textstats/io.py`, complete exports in `textstats/__init__.py`, module/API docstrings, `tests/unit/test_io.py` and real-file public API cases in `tests/integration/test_api.py`.
+             Depends on: T-001.
+             Evidence: import all three required public names; string/file equality for the sample matrix using str and Path inputs; missing/unreadable/read-failure OSError subclasses, invalid-byte UnicodeDecodeError, no partial result, closure on every path, API silence and unchanged file bytes. Use controlled failure streams for portable cleanup/read/unreadability checks and real temporary files for decode/equivalence. Rerun core/API regressions.
++            Trial verification: Python 3.12.14 on `phase/1-named-file-utility`, based on verified T-001 `639e7e0cb54d5dd1f9c1a6e73de31e76301ae932`; current trial tracking explicitly declined. Importable acquisition scaffolding collected 15 unit and 7 integration tests, with 14 unit and 55 integration behavioral assertion failures (no collection/import errors). Final `python -B -m unittest discover -s tests/unit -t . -v` and `python -B -m unittest discover -s tests/integration -t . -v` collected/passed 15 and 7 tests with no skips. Coverage includes all three direct exports/signatures, real str/Path UTF-8 files across the whole-input matrix and both BOM policies, Unicode/mixed terminators, unchanged bytes, silent success/failure, missing/permission/directory OSError subclasses, read/decode failures without counting partial input and owned-handle closure. Module/API docstrings, README and current root orientation describe this bounded capability. File failures retain exceptions; no CLI/stdin/distribution, milestone/phase closure or integration is claimed. Foreign staged/unstaged facade comments and the untracked note remain outside task delivery. All T-002 result, tests, documentation, current evidence and initial owning completion close in one authorized task checkpoint, followed immediately by local `trial-delivery` push and exact ref readback.
++            Trial acceptance: the coordinator accepted the exact seven presented T-002 artifacts under delegated exact-artifact review authority, in published and exact-readback-verified evidence commit `c8edcc3094cc819386f093a52e62ae70669720f8`. Presented file acquisition blob was `f35e3d8d85e3ef3ac20119aec7d58784aa440c2f`, clean facade blob `8549078b0832f9661db47cdd5d6386db1624550f`, unit file-test blob `a744727afbf062bce5527106bc1b00c8b72c2397`, integration API-test blob `bc0ea8544cde55c20e89294116787d40fdb81e7f`, root orientation blob `cfdec4bf0d2abb66b6dddd77345c63e8e3c3cf32`, README blob `a58403c4a8b149234517183a1c87b4469f82eae1` and unchecked owning TASKS blob `13c2a033e0687e1dd46e19d3930415ae076feb1d`. This annotation records that actual decision and initial T-002 closure only; the other six accepted artifacts retain their identities. T-003 and all parents remain incomplete; no partial-phase integration is authorized.
+         - [ ] T-003 — Integrate named-file CLI and nonempty product checks
+             Outcome: R-007 real module entry, exactly one input, `--keep-bom`, `--` dash-filename handling, exact text success and help; first useful end-to-end slice with R-012 collection evidence.
+             Scope: `textstats/cli.py`, `textstats/__main__.py`, CLI docstrings, `tests/unit/test_cli.py`, `tests/integration/test_cli.py` and `tools/check_tests.py`.
+diff --git a/tests/integration/test_api.py b/tests/integration/test_api.py
+index ca07141..bc0ea85 100644
+--- a/tests/integration/test_api.py
++++ b/tests/integration/test_api.py
+@@ -1,12 +1,15 @@
+-"""Public text API imports, signature and silence at the T-001 boundary."""
++"""Public text/file API imports, signatures, silence and real-file preservation."""
+ 
+ import contextlib
+ import inspect
+ import io
+ import unittest
++import tempfile
++from os import PathLike
++from pathlib import Path
+ 
+ import textstats
+-from textstats import TextStats, count_text
++from textstats import TextStats, count_text, count_file
+ 
+ 
+ class PublicTextApiTests(unittest.TestCase):
+@@ -14,8 +17,9 @@ class PublicTextApiTests(unittest.TestCase):
+         from textstats import core
+         self.assertIs(TextStats, core.TextStats)
+         self.assertIs(count_text, core.count_text)
+-        self.assertEqual(set(textstats.__all__), {'TextStats', 'count_text'})
+-        self.assertFalse(hasattr(textstats, 'count_file'))
++        self.assertEqual(set(textstats.__all__), {'TextStats', 'count_text', 'count_file'})
++        from textstats import io as file_io
++        self.assertIs(count_file, file_io.count_file)
+ 
+     def test_signature_is_whole_text_with_keyword_only_policy(self):
+         signature = inspect.signature(count_text)
+@@ -54,5 +58,60 @@ class PublicTextApiTests(unittest.TestCase):
+                 self.assertEqual(count_text(text, strip_bom=False), TextStats(*retained))
+ 
+ 
++class PublicFileApiTests(unittest.TestCase):
++    def test_file_signature_and_keyword_only_policy(self):
++        signature = inspect.signature(count_file)
++        self.assertEqual(list(signature.parameters), ['path', 'strip_bom'])
++        self.assertEqual(signature.parameters['path'].kind,
++                         inspect.Parameter.POSITIONAL_OR_KEYWORD)
++        self.assertEqual(signature.parameters['strip_bom'].kind,
++                         inspect.Parameter.KEYWORD_ONLY)
++        self.assertIs(signature.parameters['strip_bom'].default, True)
++        self.assertEqual(signature.parameters['path'].annotation, str | PathLike[str])
++        self.assertIs(signature.parameters['strip_bom'].annotation, bool)
++        self.assertIs(signature.return_annotation, TextStats)
++        with self.assertRaises(TypeError):
++            count_file('sample', False)
++
++    def test_real_file_spec_matrix_matches_text_and_preserves_bytes_silently(self):
++        cases = (('', (0, 0)), ('alpha beta', (1, 2)), ('alpha\n', (1, 1)),
++                 ('\n', (1, 0)), ('alpha\r\nbeta\rgamma\n', (3, 3)),
++                 ('alpha\n\n', (2, 1)), (' \t', (1, 0)),
++                 ('alpha\u2028beta', (1, 2)), ('\ufeff', (0, 0)),
++                 ('\ufeff\ufeff', (1, 1)), ('\ufeffalpha beta', (1, 2)),
++                 ('a\ufeffb', (1, 1)), ('\r\n', (1, 0)), ('\r', (1, 0)),
++                 ('你好\t café\nnaïve', (2, 3)))
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / 'sample.txt'
++            for text, expected in cases:
++                original = text.encode('utf-8')
++                path.write_bytes(original)
++                for value in (str(path), path):
++                    for policy in (True, False):
++                        result = (1, 1) if text == '\ufeff' and not policy else expected
++                        with self.subTest(text=text, path_type=type(value), policy=policy):
++                            stdout, stderr = io.StringIO(), io.StringIO()
++                            with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++                                actual = count_file(value, strip_bom=policy)
++                            self.assertEqual(actual, TextStats(*result))
++                            self.assertEqual(actual, count_text(text, strip_bom=policy))
++                            self.assertEqual(path.read_bytes(), original)
++                            self.assertEqual((stdout.getvalue(), stderr.getvalue()), ('', ''))
++
++    def test_real_missing_file_and_invalid_bytes_preserve_exception_and_input(self):
++        with tempfile.TemporaryDirectory() as directory:
++            path = Path(directory) / 'sample.txt'
++            stdout, stderr = io.StringIO(), io.StringIO()
++            with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++                with self.assertRaises(FileNotFoundError):
++                    count_file(path)
++                original = b'valid prefix\xff'
++                path.write_bytes(original)
++                with self.assertRaises(UnicodeDecodeError):
++                    count_file(path)
++            self.assertEqual(path.read_bytes(), original)
++            self.assertEqual((stdout.getvalue(), stderr.getvalue()), ('', ''))
++
++
+ if __name__ == '__main__':
+     unittest.main()
+diff --git a/tests/unit/test_io.py b/tests/unit/test_io.py
+new file mode 100644
+index 0000000..a744727
+--- /dev/null
++++ b/tests/unit/test_io.py
+@@ -0,0 +1,82 @@
++"""Strict UTF-8 acquisition and owned-handle lifetime under SPEC R-006."""
++
++import contextlib
++import io
++import unittest
++from unittest.mock import patch
++
++from textstats import TextStats, count_file
++
++
++class FailingRead(io.BytesIO):
++    """Expose valid partial bytes, then fail instead of delivering a result."""
++
++    error = BlockingIOError('controlled read failure')
++
++    def read(self, *args):
++        super().read(1)
++        raise self.error
++
++
++class FileAcquisitionTests(unittest.TestCase):
++    def test_success_closes_owned_handle_without_newline_translation(self):
++        stream = io.BytesIO('α\r\nβ\rγ\n'.encode('utf-8'))
++        with patch('textstats.io.open', return_value=stream, create=True) as opener:
++            self.assertEqual(count_file('sample'), TextStats(3, 3))
++        self.assertTrue(stream.closed)
++        opener.assert_called_once_with('sample', 'rb')
++
++    def test_bom_policy_preserves_repeated_and_interior_boms(self):
++        for data, default, retained in ((b'\xef\xbb\xbf', (0, 0), (1, 1)),
++                                       ('\ufeff\ufeff'.encode(), (1, 1), (1, 1)),
++                                       ('a\n\ufeff'.encode(), (2, 2), (2, 2))):
++            for policy, expected in ((True, default), (False, retained)):
++                with self.subTest(data=data, policy=policy):
++                    stream = io.BytesIO(data)
++                    with patch('textstats.io.open', return_value=stream, create=True):
++                        self.assertEqual(count_file('sample', strip_bom=policy),
++                                         TextStats(*expected))
++                    self.assertTrue(stream.closed)
++
++    def test_open_oserror_subclasses_propagate_unchanged_and_silently(self):
++        for error in (FileNotFoundError('missing'), PermissionError('denied'),
++                      IsADirectoryError('directory')):
++            with self.subTest(error=error):
++                stdout, stderr = io.StringIO(), io.StringIO()
++                with patch('textstats.io.open', side_effect=error, create=True), \
++                        contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++                    with self.assertRaises(type(error)) as caught:
++                        count_file('sample')
++                self.assertIs(caught.exception, error)
++                self.assertEqual((stdout.getvalue(), stderr.getvalue()), ('', ''))
++
++    def test_read_failure_closes_and_propagates_without_counting_partial_input(self):
++        stream = FailingRead(b'valid partial input')
++        stdout, stderr = io.StringIO(), io.StringIO()
++        with patch('textstats.io.open', return_value=stream, create=True), \
++                patch('textstats.io.count_text', create=True) as counter, \
++                contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++            with self.assertRaises(BlockingIOError) as caught:
++                count_file('sample')
++            self.assertIs(caught.exception, stream.error)
++            counter.assert_not_called()
++        self.assertTrue(stream.closed)
++        self.assertEqual((stdout.getvalue(), stderr.getvalue()), ('', ''))
++
++    def test_strict_decode_failure_closes_without_counting_partial_input(self):
++        for invalid in (b'valid text\xff', b'\xef\xbb\xbfvalid\xc3', b'\xc0\xaf'):
++            with self.subTest(invalid=invalid):
++                stream = io.BytesIO(invalid)
++                stdout, stderr = io.StringIO(), io.StringIO()
++                with patch('textstats.io.open', return_value=stream, create=True), \
++                        patch('textstats.io.count_text', create=True) as counter, \
++                        contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
++                    with self.assertRaises(UnicodeDecodeError):
++                        count_file('sample')
++                    counter.assert_not_called()
++                self.assertTrue(stream.closed)
++                self.assertEqual((stdout.getvalue(), stderr.getvalue()), ('', ''))
++
++
++if __name__ == '__main__':
++    unittest.main()
+diff --git a/textstats/__init__.py b/textstats/__init__.py
+index 69a4a69..8549078 100644
+--- a/textstats/__init__.py
++++ b/textstats/__init__.py
+@@ -1,5 +1,6 @@
+-"""TextStats text API; file acquisition is not delivered in T-001."""
++"""Silent whole-input statistics API for strings and strict UTF-8 named files."""
+ 
+ from .core import TextStats, count_text
++from .io import count_file
+ 
+-__all__ = ['TextStats', 'count_text']
++__all__ = ['TextStats', 'count_text', 'count_file']
+diff --git a/textstats/io.py b/textstats/io.py
+new file mode 100644
+index 0000000..f35e3d8
+--- /dev/null
++++ b/textstats/io.py
+@@ -0,0 +1,34 @@
++"""Complete named-file acquisition with strict UTF-8 and owned-handle cleanup.
++
++Files are read as bytes so CRLF, CR, LF and BOMs reach the pure counting core
++unchanged. This module never writes inputs or process streams. Borrowed stdin
++acquisition remains a later capability.
++"""
++
++from os import PathLike
++
++from .core import TextStats, count_text
++
++
++def count_file(path: str | PathLike[str], *, strip_bom: bool = True) -> TextStats:
++    """Return silent whole-file counts after complete strict UTF-8 decoding.
++
++    Args:
++        path: Named file, supplied as a string or string-valued path-like object.
++        strip_bom: Remove exactly one leading U+FEFF by default; False retains it.
++            All other count semantics are identical to ``count_text``.
++
++    Returns:
++        Immutable statistics for the complete decoded file, without changing
++        its bytes. No partial result is returned after acquisition failure.
++
++    Raises:
++        OSError: Opening or reading fails; the original subclass propagates.
++        UnicodeDecodeError: Complete file bytes are not valid strict UTF-8.
++
++    The handle opened here is closed on success, read failure or decode failure.
++    No caller-owned stream is accepted or closed by this API.
++    """
++    with open(path, 'rb') as source:
++        text = source.read().decode('utf-8', errors='strict')
++    return count_text(text, strip_bom=strip_bom)

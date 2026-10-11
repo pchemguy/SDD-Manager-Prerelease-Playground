@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "/workspace/scratch/46b31bb4dff6/037-a026-probe/contract_probe.py",
+    "--root",
+    "/workspace/scratch/46b31bb4dff6/037-a026-failing-baseline"
+  ],
+  "returncode": 0,
+  "stdout": "{\n  \"status\": \"Passed\",\n  \"tests\": 2,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"import_origin\": \"/workspace/scratch/46b31bb4dff6/037-a026-failing-baseline/textstats/__init__.py\",\n  \"diagnostic\": \"..\\n----------------------------------------------------------------------\\nRan 2 tests in 0.000s\\n\\nOK\\n\",\n  \"agent_behavior_assessed\": false,\n  \"child_returncode\": 0\n}\n",
+  "stderr": "",
+  "probe_sha256": "37125e5e497a3043da916c0f29c1786d82a946c241d58fe2e4a8a5a2071f7724",
+  "pinned_probe_sha256": "37125e5e497a3043da916c0f29c1786d82a946c241d58fe2e4a8a5a2071f7724",
+  "head": "7d003c1cf31c994340d8644e95990ef2253754ed"
+}

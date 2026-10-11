@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "case_id": "A-015",
+  "status": "Passed",
+  "qualification": "Passed with recorded assistance; controlled local staged-work variant only",
+  "agent_behavior_assessed": true,
+  "assessor": "independent a015_staged_assessor context",
+  "observed_at": "2026-10-10T14:47:37.909574+00:00",
+  "checkpoint_refs": {
+    "product_commit": "9d4ccf33853fe9de41fc1c9910a2b1fe85177e95",
+    "product_branch": "trial/037-a015-staged",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "integration_branch": "main"
+  },
+  "publication": {
+    "status": "published",
+    "remote": "trial-delivery",
+    "ref": "refs/heads/trial/037-a015-staged",
+    "commit": "9d4ccf33853fe9de41fc1c9910a2b1fe85177e95",
+    "class": "local bare controlled delivery, not live GitHub"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Expected controlled stop after verified consumer-owned staging; no task commit",
+      "head": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+      "trigger_verified": true,
+      "independent_unit_count": 8,
+      "independent_integration_count": 2,
+      "index_and_workfiles_match_actual_hold": true,
+      "only_initial_checkbox": "T-001",
+      "original_task_results": "structured observation records RED8/60 assertions and final GREEN8+2; independent assessor verified final GREEN, not original RED transcript"
+    },
+    {
+      "attempt": 2,
+      "outcome": "Passed retained-work continuation",
+      "head": "9d4ccf33853fe9de41fc1c9910a2b1fe85177e95",
+      "parent": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+      "same_staged_blobs_modes_and_all_workfile_hashes": true,
+      "same_test_identity": true,
+      "no_reimplementation": "Entire held index equals final index and held tracked payload hashes equal final tracked hashes; supplied command record includes no editing/restaging/reset/select-next sequence. This establishes exact byte preservation within structured observation limits.",
+      "consumer_reused_checks": "Retained check evidence remained current because all held source/test bytes unchanged; independent assessor separately reran suites after commit (8 unit, 2 integration, exit0).",
+      "commit_subject": "[T-001] Implement immutable statistics and whole-text counting",
+      "single_task_commit": true,
+      "immediate_push_then_readback": true,
+      "next_task_unselected": true,
+      "clean_tree_and_index": true
+    }
+  ],
+  "deterministic_checks": {
+    "active_ownership": "Sole T-001 initial closure with result/evidence; all other task/parent checkboxes remain unchecked",
+    "final_head": "Exact reached SHA independently read",
+    "publication": "Exact local destination SHA independently read"
+  },
+  "interventions": [
+    "Original stop ambiguity clarified before task edits, published 514211b; expected test-first RED permitted.",
+    "Scoped coordinator concrete core/test and README/AGENTS acceptance retained.",
+    "Native Git cooperative pre-commit hold injected by caller; release limited to external CONTROL.json after published trigger exports, root reports 6844398.",
+    "Auto-review rejected initial live GitHub trial-branch creation. Original action/reason retained in setup provenance; safer local bare destination substituted, no GitHub retry.",
+    "First assessor export screening rejected ephemeral NUL-bearing command record. Exact rejected JSON/hash was not persisted; gap retained. New command captures are independent reruns, binary recovery exports unchanged."
+  ],
+  "limits": [
+    "Fresh contexts were supplied separately, but shared filesystem accessibility prevents physical isolation certification.",
+    "Native OS termination and complete original native transcript unavailable; original attempts preserved as structured command observations plus actual Git hook capture/durable state.",
+    "Local bare publication verifies controlled recovery, not live GitHub branch/publication or full GitHub acceptance.",
+    "Pinned package tree unchanged at 7925fbdb555bc0ec248a321f11b1cfda6ea38be7, source SHA ea515f5624c8a34cc4572731a2590223a5eb27f4; this is explicit-source execution, not installed-client discovery.",
+    "T-001 text API only: no file API/CLI/distribution/phase integration scope.",
+    "Original rejected assessor in-memory command JSON not recoverable; no invented exact original hash."
+  ],
+  "artifacts": {
+    "trigger_checks": "/workspace/scratch/46b31bb4dff6/037-a015-trigger-checks.json",
+    "trigger_exports": "/workspace/scratch/46b31bb4dff6/037-a015-trigger-artifacts",
+    "complete_exports": "/workspace/scratch/46b31bb4dff6/037-a015-complete-artifacts"
+  },
+  "product_or_control_mutations_by_assessor": false,
+  "plugin_defect": "No confirmed defect established by this bounded assisted local case.",
+  "complete_manifest": [
+    {
+      "path": "COMMANDS.json",
+      "sha256": "a42e357628e50a6e0c413bf4fd2f2f13b6f8bded255c9aff45bb3ebfd06aab5d",
+      "bytes": 25811,
+      "mode": "0o644"
+    },
+    {
+      "path": "COMMIT.patch",
+      "sha256": "98cd6f80b82d445026fce8710e7a78ec87a1a2e1ab62503465ac446cdcd7036c",
+      "bytes": 19194,
+      "mode": "0o644"
+    },
+    {
+      "path": "COMPLETE.bundle",
+      "sha256": "2901505e420cca6297c1663392e3b948918ae5d3a7297c4f515a590841981fe2",
+      "bytes": 529434,
+      "mode": "0o644"
+    },
+    {
+      "path": "CONTINUATION-OBSERVATIONS.json",
+      "sha256": "ce97f980818f35d2533212186ed9e5182cd7a7e338762fd52f87ca9418834809",
+      "bytes": 214373,
+      "mode": "0o644"
+    },
+    {
+      "path": "SNAPSHOT.json",
+      "sha256": "92fbe933679becc3763a60cb8cdf0d9a794640bd08e255f7d8c8de2f1a11b678",
+      "bytes": 64375,
+      "mode": "0o644"
+    }
+  ],
+  "secret_screening": "All complete and trigger artifact payloads screened with clean_bytes; JSON no_secret passes; exact exports unchanged."
+}

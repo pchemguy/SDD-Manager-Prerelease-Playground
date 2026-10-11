@@ -1,0 +1,5 @@
+# TextStats
+
+TextStats is a Python 3.11+ text statistics utility in development. The silent `TextStats` and `count_text` API is implemented; file counting and module-entry CLI remain later tasks. The [project brief](docs/dev/PROJECT.md) captures the requested capabilities and delivery boundaries; runnable usage instructions will be added with the documentation milestone.
+
+Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).

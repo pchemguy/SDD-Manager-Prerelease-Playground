@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "published_report_assessment_and_registries": [
+    {
+      "publication_commit": "957610922c8f16c72e3804bc59051d05200e1330",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/CONSUMER-FINAL-REPORT.md",
+      "sha256": "00ecbc765ab57d1357f17ee9fef947dc9c2a60734a80752376e1505a6dea9961",
+      "exact_external_bytes_match": true
+    },
+    {
+      "publication_commit": "858f4533ae960e1ef98b6492e5d67cb0542ca00a",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-013/1/ASSESSMENT.json",
+      "sha256": "ef96dabb49056c5be080a33a03d19abf0f1fc0f323cc955b424374a02c5b1dc8",
+      "exact_external_bytes_match": true
+    },
+    {
+      "publication_commit": "957610922c8f16c72e3804bc59051d05200e1330",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/VARIANT-RESULTS.json",
+      "sha256": "c73c6c1681a25c06733773ea2b49bc456c52538ffe6c82f4e29a08f76ac6c37d",
+      "required_counts": {
+        "Passed": 27,
+        "Failed": 2,
+        "Blocked": 3
+      },
+      "optional_Not_run": 2,
+      "actual_all34_current_registry_verified": true
+    },
+    {
+      "publication_commit": "957610922c8f16c72e3804bc59051d05200e1330",
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/VARIANT-RESULTS.corrected-rechecks.json",
+      "sha256": "483264e9266e2997fae156f94f406626aa13644deed943569a258efe1a6b5ded",
+      "required_counts": {
+        "Passed": 29,
+        "Blocked": 3
+      },
+      "optional_Not_run": 2,
+      "actual_all34_current_registry_verified": true
+    }
+  ],
+  "published_ordinary_consumer_artifacts": [
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-A013-independent-assessment-provenance.json",
+      "sha256": "c8a80057c93e6b5390ee94be989b9ac49ee656851da3c8b549f28a1aae8c97c8",
+      "byte_length": 314,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-A013-independent-assessment.json",
+      "sha256": "ef96dabb49056c5be080a33a03d19abf0f1fc0f323cc955b424374a02c5b1dc8",
+      "byte_length": 7314,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-command-00.json",
+      "sha256": "4b5488a36aee665f514b1651da98d7161ead4b97001bf1e32a0cf4998afd7c43",
+      "byte_length": 184,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-command-01.json",
+      "sha256": "c0ec2c890fedffc104e3eec15f1f64b40ff64aca47ed516b0fcd4dec4e534717",
+      "byte_length": 190,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-command-02.json",
+      "sha256": "99621a291bcf18efb30037110f9a887df0d6d9b271800b81e729ff1258499bed",
+      "byte_length": 219,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-command-03.json",
+      "sha256": "e087955363d03ca605726433770ba9519874b7022d0afb6d9e4ebe287c83cc56",
+      "byte_length": 376,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-command-04.json",
+      "sha256": "450b323296f9844e6ca49310303fbe0d9f8df4e8156a6073eee858824e3b618a",
+      "byte_length": 297,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-command-05.json",
+      "sha256": "6a8884d4b0b027b388dcd2535d58a64da6e0770c93d45f50a20789f59376ea77",
+      "byte_length": 279,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-provenance.json",
+      "sha256": "d2e6c40ab74840308377d6521152521333df660eb4b56825f64542c71e3d4776",
+      "byte_length": 5908,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-report.md",
+      "sha256": "00ecbc765ab57d1357f17ee9fef947dc9c2a60734a80752376e1505a6dea9961",
+      "byte_length": 22023,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-report.provenance.json",
+      "sha256": "6e854bb94b3d389623f2c9a127cc21c43a43ccad2a44fe0ea82dc15514597f47",
+      "byte_length": 447,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-00-037-a013-consumer-blocked-seal.json",
+      "sha256": "b412f23d320d90ab77ab1c2368e9bd20f1ed7efa03222c91948e365e49e9bf0a",
+      "byte_length": 8555,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-01-037-a013-consumer-blocked-seal-command.json",
+      "sha256": "ec8a06fce4e2cf689cfa99a40e40b1ae2fd0230e8e54b7e0c3f7b77ff1e1a69e",
+      "byte_length": 1015,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-02-037-a013-consumer-main-push-rejection.json",
+      "sha256": "fdc397f4fdc27a8fdb0fe80dbe968a373f46e423ce903fe5536dced2be602696",
+      "byte_length": 1337,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-03-037-a013-consumer-main-push-narrowed-rejection.json",
+      "sha256": "13bee1bed5a89976b9d2374409cb221bc1800b51ce7e86c954e5836fd8fb5888",
+      "byte_length": 1156,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-04-037-a013-consumer-integration-candidate.json",
+      "sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+      "byte_length": 3858,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-05-037-a013-consumer-observations.json",
+      "sha256": "528a19e045f34d281087ac3243536308d05e79eaf313a77eb087352b6c9d9c96",
+      "byte_length": 10181699,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-06-AGENTS.md",
+      "sha256": "37fb35f329f1bcd51c95f293f9d3668a8d55866dad224cc5c05c543c3e12719f",
+      "byte_length": 13016,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-07-TASKS.md",
+      "sha256": "c0f9718171d069e34de57b24c94a0d2daa7f001ceb8b2552fab5fa4566191616",
+      "byte_length": 80648,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-08-2.2.md",
+      "sha256": "7007d42d54e3444ca0f0b9fb5300097c204c5e283c2868b97e457a2c48b9c3b2",
+      "byte_length": 11107,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-09-PHASE-REPORT.md",
+      "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+      "byte_length": 10224,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-10-IMPLEMENTATION-REPORT.md",
+      "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+      "byte_length": 10235,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-11-lifecycle-provider-observations.json",
+      "sha256": "1b7a34de4c58bbb638b2bf1c2be6369f1f25fdc88df8af31a48112843c0f1b67",
+      "byte_length": 80018,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-reached-source-12-lifecycle-provider-observations.json",
+      "sha256": "a862b7984c6b7c0c0e077cd2b88223be6be3f0e9e56c80778cae23937adad2fe",
+      "byte_length": 28536,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-observed-provenance.json",
+      "sha256": "73fcca7a2a2f1c8c2163a82d11f15b873dc195e1528fc3ce860723ce13578d84",
+      "byte_length": 2566,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-package-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "65aede5bc08d1ab8bb2357294a879d5c30ee67987ed05c33a862c14f446fda49",
+      "byte_length": 399,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-package-SOURCE-ARCHIVE.json",
+      "sha256": "c119d41c34a3a1de82b419ce853f61b513a86d65575126d16857d2d960c04993",
+      "byte_length": 28804,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-package-sdd-manager.zip.sha256",
+      "sha256": "7be1feb3278e39d760c772c5cc25a4d51510c1617d0ed67f0385e8133679b940",
+      "byte_length": 82,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-publisher-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "bd4fd94b5e0fe49df81e1bedd02c3579b9fd22f98c04bd976a76981c6b5cefa7",
+      "byte_length": 370,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-publisher-command.json",
+      "sha256": "05e1bcfdff64e6af009630ee5788411a671631a1bbec4832bc51e9dbcc5f5b7f",
+      "byte_length": 807,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-publisher-stderr.bin",
+      "sha256": "677c4481ddd3525b63c9a11ca6b12d3817bf23ae2cdf586c120cd274a22d710b",
+      "byte_length": 3237,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/final-source-publisher-stdout.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_length": 0,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-a013-observations-provenance.json",
+      "sha256": "c1c0c2b0b0f7c71c1e312600fc2f13ab55dded3bb190f90ed0ff0de261d6ff15",
+      "byte_length": 186,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-a013-observations.json",
+      "sha256": "2c0f62bf0bc51f561ea657bec4c4c5f1da81811be61a081eef4b2abb15db70ce",
+      "byte_length": 9425124,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-command-00.json",
+      "sha256": "26f51fd718bbe56e885de3f09e8768a61e1f0627e64efc04b719c3e612e0ad95",
+      "byte_length": 182,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-command-01.json",
+      "sha256": "91c7d5250988047ad3dd1d671b09c782dd1ae7bc93fd9628fe3bcf8361c4f847",
+      "byte_length": 206,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-command-02.json",
+      "sha256": "f96851064fe24ecb7cc422e6ef56dd18dc335ae7bbddcd0530d3db658166fb09",
+      "byte_length": 217,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-command-03.json",
+      "sha256": "b50131fdbd8dcad1e4170e328aa8669c6b8852c80ce762ef2fd55df230848632",
+      "byte_length": 1001,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-command-04.json",
+      "sha256": "5b4577ec57fa3e1f2f7c0dc177fc751cf294de9c92e68187c46e03e2637d0632",
+      "byte_length": 259,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-command-05.json",
+      "sha256": "30212a3113916d933cb5a0bcf19796c918bae51cfbf2842d62f2a4d16f5e0750",
+      "byte_length": 277,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-provenance.json",
+      "sha256": "d494dbf121c21e633590d1867155c846e728bcab2c7ec83d4e1863808c6ed35b",
+      "byte_length": 6171,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-00-ordinary-input.md",
+      "sha256": "9c30a42e371064a5c858b2fc2e160a1c4ea8ba763d1e08de4690aea6a9e36c62",
+      "byte_length": 1538,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-01-AGENTS.md",
+      "sha256": "a20f9982bfcc82bc6220d7d3f5246a4d0849a03a71b2c0e22e172348ec258af3",
+      "byte_length": 10846,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-02-SKILL.md",
+      "sha256": "ef2ee81419843824f5246e636ffcda85d9e59f3bb7c818e5f2163f4caad7a455",
+      "byte_length": 10142,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-03-SKILL.md",
+      "sha256": "207b59c705621ad5b0b9fb7666f78afd28a6b48c1bcff92484b4cc7064363356",
+      "byte_length": 3910,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-04-completion-reports.md",
+      "sha256": "c8202d5a7c23a79c90779ed14b6ab3a097a2b15fa246f5c81bee43ab6f6e8fcd",
+      "byte_length": 6388,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-05-TASKS.md",
+      "sha256": "bae83dd77578f0eee03fecfc7df2ff17fc19df25ba5949ea43056816853b985c",
+      "byte_length": 74528,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-06-PROJECT.md",
+      "sha256": "27e4a92df19635899efd77f941ff57c60948d94455487be324036a705257f0de",
+      "byte_length": 5876,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-07-SPEC.md",
+      "sha256": "475a3839d3ca2e93d8b1241b46ab984521ca2ba89f60222806b4d0324cca8bb7",
+      "byte_length": 15353,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-08-PLAN.md",
+      "sha256": "4245a832c149ba5827aa73e8a2f6de438a14134786b851332a19ec7ae9a8e90d",
+      "byte_length": 16371,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-09-DIAGNOSTIC-REPORT.md",
+      "sha256": "1ecc0e6cdc5b411b95a9ae5179940c937f4b08f0c1c83d0ae54939e7aa37e486",
+      "byte_length": 43662,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-10-VARIANT-RESULTS.json",
+      "sha256": "c34075349406499249de10d9aa85f76be19eb6b3fe259df6d168c08ddcc50cfe",
+      "byte_length": 12484,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/initial-source-11-VARIANT-RESULTS.corrected-rechecks.json",
+      "sha256": "0bfc43f10837683b0b72181049d913fd50479d9f9acc61eefc1f40de539b5538",
+      "byte_length": 12610,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/pre-final-refresh-report.md",
+      "sha256": "a0da309be62131f8d25cfa6d3e4b9166906dd67a6edfd34def6d93e20840890b",
+      "byte_length": 13384,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/provisional-report.md",
+      "sha256": "179fd969e351035e0e79ecb8bbdb02c4b742d41134507aa41eac2b1027623d74",
+      "byte_length": 10332,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/provisional-report.provenance.json",
+      "sha256": "44227e15f13cebf41116f00f4db2f637bcf4f9dc5534825d17804fc8309f076c",
+      "byte_length": 402,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/reached-intermediate-supplied-status-01.json",
+      "sha256": "94622e67be68f31fa86e1ff0922dae95a5ba145dc52e7f9e4cc8e6bd8083ba1b",
+      "byte_length": 478,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/supplement-current-037-a027-current-case-variant-register-supplement-current.json",
+      "sha256": "48e6735ce2667264d58fbafa17757ad55e10279494cb0d6d473e442adb57805f",
+      "byte_length": 317432,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/supplement-current-037-a027-independent-pre-reconciliation-supplement-current.json",
+      "sha256": "8211a2d27d106f0b1d4ba966cf5e45a0cdd969a819e94715e864d549044824b6",
+      "byte_length": 317334,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/supplement-current-ROOT-EXPORT-MANIFEST.json",
+      "sha256": "0226427ab607179e0085fb47496c2072cbaa5a8045969ce9d4fa0208c2548b51",
+      "byte_length": 358,
+      "exact_published_bytes_match": true
+    },
+    {
+      "path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-027/1/final-consumer-report/supplement-current-provenance.json",
+      "sha256": "fda92be0e6df61aec32fcf1d441fd0232248d1a26c0466fd6da5236521b1833c",
+      "byte_length": 1336,
+      "exact_published_bytes_match": true
+    }
+  ],
+  "ordinary_consumer_artifact_count": 61,
+  "independent_remote_readback": {
+    "method": "git ls-remote authenticated read-only",
+    "evidence_ref": "refs/heads/revision/001_eff696b-prerelease-acceptance",
+    "evidence_tip": "957610922c8f16c72e3804bc59051d05200e1330",
+    "main_tip": "fbe8bedf4c6cba1ab29d53d2da05e614603d76d1"
+  },
+  "prior_unpublished_independent_export_preserved": {
+    "directory": "/workspace/scratch/46b31bb4dff6/037-a027-final-artifacts/final-actual-blocked",
+    "manifest_sha256": "d25a8eb56a30307e0e0a44f99c88e364114bdcfb0e7949c95b8ad167cc3f57d0"
+  },
+  "full_workflow_completed": false,
+  "conditional_preview_exists_or_assessed": false
+}

@@ -1,0 +1,18 @@
+{
+  "actor": "delegated coordinator",
+  "decision": "Accepted",
+  "task_id": "T-021",
+  "baseline": "33f0ba2ed7ae187cce9643433f8f1f09282ef079",
+  "pending_artifact_blobs": {
+    "README.md": "f358db5de7854cd8bfcc95048c9360c7da4f684b",
+    "docs/public-api.md": "0c165b39da9ef9f0f853ce7fd975c84c2de77609",
+    "AGENTS.md": "9d2e63b058f189910194c5968f52269c1abe5465",
+    "textstats/cli.py": "dc65bdca67c75f8b4a4a6501b01cf80c38f89d88"
+  },
+  "review": "Concrete four-file documentation delta inspected. Full strict grammar/ASCII/unlimited/leading-zero/inclusive semantics, whole strict decode before once-only BOM and preserved segments, blank/EOF/interior-BOM behavior, real error/decode examples, unchanged public API/resource lifetime and future stdin boundary are accurate. Navigation records actual published prerequisite and completed2.4 identities with pending range extraction/final work. CLI only docstring formatting changed. All runnable fences actual isolated-executed with exact output/status assertions; fresh complete31unit26integration runner and retained99 no-range extracted cases passed. Ambiguous earlier log and failed incidental ps diagnostic remain distinct; not substituted for complete check. Accept single T021 closure/immediate push/exactreadback before dependent T022; no range extraction acceptance inferred.",
+  "logs": {
+    "037-a010-T021-examples.log": "8d56cb962863e0e8ba4b63fff566adabda39b684ad2c2f58a1d53c83e58126a9",
+    "037-a010-T021-full-confirmed.log": "7fbc38ec4e1127d517d095e06dcad13d23e6ed3ecb408a1cafafa48bce59478d",
+    "037-a010-T021-full.log": "6cc058bd8a5893293e9bd88c50e27af2953f574698b188cf1eac1e61d943ece5"
+  }
+}

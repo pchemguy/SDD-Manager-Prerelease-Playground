@@ -1,0 +1,10 @@
+tree d2ef66b9d82c2a04a27874c372a9384607f5de5a
+parent b7b017cf7480bded8ad7f7de4a4eed690083b39c
+author Codex <codex@openai.com> 1791628993 -0400
+committer Codex <codex@openai.com> 1791628993 -0400
+
+Prepare TextStats architecture for delegated review
+
+Separate pure counting and BOM normalization from strict UTF-8 acquisition, public API, CLI orchestration and formatting. Retain a source-independent future range seam without new public exports or implementation.
+
+Record coordinator acceptance of the exact published PROJECT under user-delegated test review. Check Markdown links and spacing, responsibility ownership, acyclic dependencies and staged scope. Decomposition awaits architecture assessment.

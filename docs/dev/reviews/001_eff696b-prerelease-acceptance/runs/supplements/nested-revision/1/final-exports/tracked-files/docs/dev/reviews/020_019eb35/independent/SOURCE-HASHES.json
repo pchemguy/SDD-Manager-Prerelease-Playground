@@ -1,0 +1,13 @@
+{
+  "source_state": "dirty revision working tree",
+  "base_commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+  "algorithm": "SHA256",
+  "files": {
+    "skills/sdd-manage/SKILL.md": "691796e58ba0853d8c350b08fe257ec5358da12df5e7351a32aa38b507e06b05",
+    "skills/sdd-manage/references/revision-authorization.md": "e8f70560a2c75b29a92e5441533a65d0f110eb2f259f32731ddf73eea2b1b240",
+    "skills/sdd-manage/references/review-and-revision.md": "773adb8d778d8960e85740ce65fee62b6be10615bf3e2f4a90cf856b8feda8d4",
+    "skills/sdd-manage/references/git-workflows.md": "f58988228a06ed0c20433dad07ff14df0d21c9add2e5322ce4b6aced74502ee6",
+    "skills/sdd-implement/references/completion-and-checkpoints.md": "e380aad371c2b318037f1f16432764c90bddca13b69849134feb3b4ce070fb04",
+    "skills/sdd-report/references/campaign-artifacts.md": "f164b7a975046cd38fb5ba99bf231fb2003d819842adc3d240bb64846b363477"
+  }
+}

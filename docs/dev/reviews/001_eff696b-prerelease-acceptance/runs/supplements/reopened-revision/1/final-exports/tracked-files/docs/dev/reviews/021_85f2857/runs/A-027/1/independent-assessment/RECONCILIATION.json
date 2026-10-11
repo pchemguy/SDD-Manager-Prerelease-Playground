@@ -1,0 +1,731 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-06T08:58:29.413825+00:00",
+  "evidence_baseline": "eb95a6cc769ddf077b645179d8c1c04989a489da",
+  "selected_assessments": [
+    {
+      "case_id": "A-001",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-001/1/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "cd8d3c0420bb7db1231db7243eb9db004197fc203d973f12acf11c422d3c4c28",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "merge_parents": [
+          "d0087ff75e485cab832a28d6b501150eaf2ed249"
+        ]
+      },
+      "initial_status": "Passed",
+      "assisted": false
+    },
+    {
+      "case_id": "A-002",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-002/1/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "03ba7a3fdcff866eaa6c1fec595aae03cbe66b79cc34132c3e332ef638a154c3",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "merge_parents": [
+          "d0087ff75e485cab832a28d6b501150eaf2ed249"
+        ]
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-003",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-003/1/ASSESSMENT-REVISION-1.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "813a05f07339da9e387a38b3b52a631de878c4d09964a96755213886ac51b7ec",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "merge_parents": [
+          "d0087ff75e485cab832a28d6b501150eaf2ed249"
+        ]
+      },
+      "initial_status": "Blocked",
+      "assisted": false
+    },
+    {
+      "case_id": "A-003",
+      "attempt": 2,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-003/2/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "9a52bdfd4c2829d8850d85da1b218adcbf1d87be1b93bc2550a488de42d83082",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c",
+        "merge_parents": [
+          "4c275cc46fc0163c9e1e50871d3cc33c4c38567e"
+        ]
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-004",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-004/1/rechecks/2/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "1a15ec5886520dec956b03ff9245d9f6bdb58be16af3c1036f30e497b58a3dee",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "9b24dbd8bacbfcfa8e09c38e131baaecc3ba8f76",
+        "merge_parents": [
+          "d009899e39790c39be32ae77e7fe8294bf60d04c"
+        ]
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-005",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-005/1/rechecks/1/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "c07da6aff6c185a9eae75b34d8ba838f4d35f6394260f12f3671f91431337739",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "merge_parents": [
+          "fc3a0ec10728310988a7c29258b582096a53fe28"
+        ]
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-006",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-006/1/independent-assessment/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "4d1a2ebd607aa551f05ba126ac6aa5b76806e71707b8cacdc7b4b3c9e804dbb4",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/1-named-file-utility",
+        "product_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/1-named-file-utility",
+        "remote_commit": "dec4ca107a8f0e2f878f580c88fd33303f570c01",
+        "merge_parents": [
+          "3256b953383f9c8218e62a4c051d73e3ccd081bf"
+        ]
+      },
+      "initial_status": null,
+      "assisted": true
+    },
+    {
+      "case_id": "A-006",
+      "attempt": 2,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-006/2/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "21e4ff31d12e2d305bf5c26648749a10aa713fa89b2574a31a2809153c10ec7b",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "59debb649545125dd3aa00377ea115451b594271",
+        "integration_branch": "main",
+        "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "59debb649545125dd3aa00377ea115451b594271",
+        "merge_parents": [
+          "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+          "b398e258cefc03dbc47630b83967db961a376eae"
+        ]
+      },
+      "initial_status": null,
+      "assisted": true
+    },
+    {
+      "case_id": "A-007",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-007/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "ad7234d5329b51eb6c06e0599364df05716a63ceef1f9fe554f76bac31510e24",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+        "integration_branch": "main",
+        "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "ea97182d2d6a3984599238312a13e78d54d3221a"
+      },
+      "initial_status": null,
+      "assisted": true
+    },
+    {
+      "case_id": "A-008",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-008/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "8036c23dc2ba47f20e8fc5f518acad9319a06a78c9b714d1cbe0114b58c1e837",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "feature/002_ea97182-line-ranges",
+        "product_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+        "remote": "origin",
+        "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+        "remote_commit": "5b61f65bdbc1418a289633eb15b53ac190d68b2c"
+      },
+      "initial_status": "Passed",
+      "assisted": true
+    },
+    {
+      "case_id": "A-009",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-009/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "db63e1a06be5527d2897a0f47bb4829f29a3700bd7acffc251d38404d15ce27e",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "feature/002_ea97182-line-ranges",
+        "product_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+        "remote": "origin",
+        "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+        "remote_commit": "53da8a9dbbe9fccdc1fcc24fffec29079912a247"
+      },
+      "initial_status": "Passed",
+      "assisted": true
+    },
+    {
+      "case_id": "A-010",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-010/1/independent-assessment/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "29eaf5add7158a6dad6cf61ef2ced08baf726e5e44734772d31695e387182c80",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "feature/002_ea97182-line-ranges",
+        "product_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "ea97182d2d6a3984599238312a13e78d54d3221a",
+        "remote": "origin",
+        "remote_ref": "refs/heads/feature/002_ea97182-line-ranges",
+        "remote_commit": "89664adb46b70e66d99445e28a04e8f53760fa02",
+        "merge_parents": [
+          "152fb8f6ab316e4bd893aeea8d2dc03b96fbb3a9"
+        ]
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-010",
+      "attempt": 2,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-010/2/continuation/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "ad96553fb447511d58a8d17c5ee188d9887682d5efae8dbd6c14c1529307523a",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "merge_parents": [
+          "ea97182d2d6a3984599238312a13e78d54d3221a",
+          "d518cc23650018542e43d8fb5a63f44a4d283518"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-011",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-011/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "4323551e2840b8add675c0f76b391b4720789925b3628ef7bbc7788bf9aebcaa",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+        "merge_parents": [
+          "ea97182d2d6a3984599238312a13e78d54d3221a",
+          "d518cc23650018542e43d8fb5a63f44a4d283518"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-012",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-012/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "06b0a229c76110ef760047bab8f9e7be90b643ef23fb1f805b827e6d693ed6cc",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "phase/2-output-and-source-extensions",
+        "product_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+        "integration_branch": "phase/2-output-and-source-extensions",
+        "integration_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12",
+        "merge_parents": [
+          "0e4741465c3e086d2ab95c5af73ca89371c16fac",
+          "70e78a4136bc040bcab0a6db50ced03b9736ae33"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/phase/2-output-and-source-extensions",
+        "remote_commit": "2c8f9ec3c888075be64149ac3d4751939802ee12"
+      },
+      "initial_status": "Failed ordering observation and blocked delegated publication; eventual assisted acceptance",
+      "assisted": true
+    },
+    {
+      "case_id": "A-013",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-013/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "03f84679751e135276fa8b16e974a6250b7ab29f2e3c3e2629ca3c7b289f5700",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+        "integration_branch": "main",
+        "integration_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81",
+        "merge_parents": [
+          "59debb649545125dd3aa00377ea115451b594271",
+          "6006fee487829299353525fa85afb035c155d865"
+        ],
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "d3f206a1970504c2fc2aff3e8965e630eeab8c81"
+      },
+      "initial_status": null,
+      "assisted": true
+    },
+    {
+      "case_id": "A-014",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-014/1/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "3f4dd6a4396342baafd149f6a2c7799f1fd50a0ce13cc7791a0678cdde377483",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "merge_parents": [
+          "d0087ff75e485cab832a28d6b501150eaf2ed249"
+        ]
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-015",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-015/1/independent-assessment/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "af00acddcbb8c2daa86395db6bd8126087b3f087d7c8e2c8e53ac78ff651d9ba",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a015-staged-recovery",
+        "product_commit": "d009899e39790c39be32ae77e7fe8294bf60d04c"
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-015",
+      "attempt": 2,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-015/2/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "a58e5251eaae79a2ca8afaeff40a11f3b2a77703e5805f859bf634076f2df1eb",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a015-staged-recovery",
+        "product_commit": "2dae60081452d72482bd431475d8f0b88d2d9d8c",
+        "remote": "/workspace/scratch/textstats-staged-remote-20261005.git",
+        "remote_ref": "refs/heads/trial/a015-staged-recovery",
+        "remote_commit": "2dae60081452d72482bd431475d8f0b88d2d9d8c"
+      },
+      "initial_status": null,
+      "assisted": true
+    },
+    {
+      "case_id": "A-016",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-016/1/continuation/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "334a4629b56e7bc32995cc4c1d3d8c5755d7f97b8c72dd3cbc8468036d03022d",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a016-publication-recovery",
+        "product_commit": "a3e6ab199e06892bf53944ca96ccd26063e87bd8",
+        "remote": "/workspace/scratch/textstats-unpublished-remote-20261005.git",
+        "remote_ref": "refs/heads/trial/a016-publication-recovery",
+        "remote_commit": "a3e6ab199e06892bf53944ca96ccd26063e87bd8"
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-017",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-017/1/independent-assessment/FINAL-ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "3de0958d69c4212b71fd5fef446e709e470b20a2babaff182ee6caacff3f574d",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a017-required-check",
+        "product_commit": "81399c76355c2a9e3320bf77ddc3f297a8b6ba9a",
+        "remote": "/workspace/scratch/textstats-required-check-remote-20261005.git",
+        "remote_ref": "refs/heads/trial/a017-required-check",
+        "remote_commit": "81399c76355c2a9e3320bf77ddc3f297a8b6ba9a"
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-018",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-018/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "2ac5057f0b43710a185bc4acb3eceaf2b230fce568839272019241a02034c5cf",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a018-rejected-publication",
+        "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "remote": "/workspace/scratch/textstats-rejected-remote-20261005.git",
+        "remote_ref": "refs/heads/trial/a018-rejected-publication",
+        "remote_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be"
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-019",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-019/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": false,
+      "sha256": "3ec39341f5b45719e78aa83f821af51f11efd1edb08b07bd494fd4a969f78e21",
+      "published_bytes_equal": true,
+      "checkpoint_refs": null,
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-020",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-020/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "969369c3f1e859444ddc43a06520d7b06d358373e90f6d5d2bc7be58e7ff5498",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a020-preservation",
+        "product_commit": "5719983f2d11266dba58bc8b149505c2519df4cb",
+        "integration_branch": "main",
+        "integration_commit": "59debb649545125dd3aa00377ea115451b594271",
+        "merge_parents": [
+          "d009899e39790c39be32ae77e7fe8294bf60d04c"
+        ]
+      },
+      "initial_status": "Passed within local-only scope",
+      "assisted": false
+    },
+    {
+      "case_id": "A-021",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-021/1/independent-assessment/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "570bce650268f332ffc4eb74d237e0d07e4e9f614c4e0c10efb865505c44ce5e",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a021-dirty-transfer",
+        "product_commit": "ddc3b875921b57557b714c20fcadb2a45707f1d3",
+        "remote": "/workspace/scratch/textstats-transfer-remote-20261005.git",
+        "remote_ref": "refs/heads/trial/a021-dirty-transfer",
+        "remote_commit": "ddc3b875921b57557b714c20fcadb2a45707f1d3"
+      },
+      "initial_status": "Blocked",
+      "assisted": true
+    },
+    {
+      "case_id": "A-022",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-022/1/independent-assessment/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "cff0c41d58e0e53a49276cc3875b0a416afb09d6821da488bd0a700b591ea102",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a022-acceptance-change",
+        "product_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+        "integration_branch": "trial/a022-acceptance-change",
+        "integration_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6",
+        "merge_parents": [
+          "0e4741465c3e086d2ab95c5af73ca89371c16fac"
+        ],
+        "remote": "/workspace/scratch/textstats-acceptance-change-remote-20261005.git",
+        "remote_ref": "refs/heads/trial/a022-acceptance-change",
+        "remote_commit": "a25a954fcba1978a62be0f7aa14fe103388e41b6"
+      },
+      "initial_status": null,
+      "assisted": true
+    },
+    {
+      "case_id": "A-023",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-023/1/independent-assessment/PREREQUISITE-ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": false,
+      "sha256": "ba50a9c3cb1228a2bfdab7a02b2389fbf990537b9a738e4cb030a1d458d34cbb",
+      "published_bytes_equal": true,
+      "checkpoint_refs": null,
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-024",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-024/3/independent-assessment/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "0056946000678f3e3042b44089b2edbb6198859152e5c068683338d2de35baa7",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "working_branch": "trial/a024-tracking-access"
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-025",
+      "attempt": 1,
+      "coverage_status": "Passed",
+      "selected_assessment": "runs/A-025/1/ASSESSMENT.json",
+      "status": "Passed",
+      "agent_behavior_assessed": true,
+      "sha256": "ee9becd086dc458a010b1d7f54e24912f10c685cfde0c1e294a2d110b0ae9966",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "main",
+        "product_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "integration_branch": "main",
+        "integration_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "remote": "origin",
+        "remote_ref": "refs/heads/main",
+        "remote_commit": "4c275cc46fc0163c9e1e50871d3cc33c4c38567e",
+        "merge_parents": [
+          "d0087ff75e485cab832a28d6b501150eaf2ed249"
+        ]
+      },
+      "initial_status": null,
+      "assisted": false
+    },
+    {
+      "case_id": "A-026",
+      "attempt": 1,
+      "coverage_status": "Blocked",
+      "selected_assessment": "runs/A-026/1/independent-assessment/ASSESSMENT.json",
+      "status": "Blocked",
+      "agent_behavior_assessed": true,
+      "sha256": "bbfbbff28f05132338e1ffc29cfae4a1c306b76719fba4256d949bd28f85faf2",
+      "published_bytes_equal": true,
+      "checkpoint_refs": {
+        "product_branch": "trial/a026-verification",
+        "product_commit": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "fork_origin": "159c662e06405b1fbf696e8e9d9d5d47024187be",
+        "merge_parents": [
+          "fc3a0ec10728310988a7c29258b582096a53fe28"
+        ],
+        "publication": "local-only trial; no trial publication authorized"
+      },
+      "initial_status": "Blocked",
+      "assisted": false
+    },
+    {
+      "case_id": "A-027",
+      "attempt": 1,
+      "coverage_status": "Running",
+      "selected_assessment": null
+    }
+  ],
+  "pin": {
+    "commit": "019eb354cf0921ebd6056e6579763ac33d0baec2",
+    "fingerprint": "33d65ea05b3299f1c2348802f95d1767dbccd5f72f4537a8ced52eaa1608fafd",
+    "file_count": 111,
+    "mismatches": [],
+    "source_manifest_sha256": "dc9a100b8eda35f908b0cbbb4b6dc4d4b449d07723bf9ae8d52868c773bacea2",
+    "plugin_manifest_sha256": "eeb08ba49f7c8d58c0af38057411475a89a6d4a1536b850230a716232b7083df"
+  },
+  "commands": [
+    {
+      "args": [
+        "show",
+        "-s",
+        "--format=%H%n%P%n%D",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "d3f206a1970504c2fc2aff3e8965e630eeab8c81\n59debb649545125dd3aa00377ea115451b594271 6006fee487829299353525fa85afb035c155d865\nHEAD -> main, origin/main, origin/HEAD\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "status",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "?? -json-9l969okj/\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/phase/2-output-and-source-extensions",
+        "refs/heads/revision/003_0e47414-remove-json"
+      ],
+      "exit_code": 0,
+      "stdout": "d3f206a1970504c2fc2aff3e8965e630eeab8c81\trefs/heads/main\n6006fee487829299353525fa85afb035c155d865\trefs/heads/phase/2-output-and-source-extensions\n70e78a4136bc040bcab0a6db50ced03b9736ae33\trefs/heads/revision/003_0e47414-remove-json\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "ls-remote",
+        "origin",
+        "refs/heads/revision/001_8e2d3a5-live-acceptance"
+      ],
+      "exit_code": 0,
+      "stdout": "eb95a6cc769ddf077b645179d8c1c04989a489da\trefs/heads/revision/001_8e2d3a5-live-acceptance\n",
+      "stderr": ""
+    }
+  ]
+}

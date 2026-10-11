@@ -1,0 +1,51 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-s",
+      "-m",
+      "textstats",
+      "--keep-bom",
+      "-",
+      "--lines=1:1"
+    ],
+    "cwd": "/tmp/tmpd5pm_mca/textstats-source",
+    "stdout": "lines=1 words=1\n",
+    "stderr": "",
+    "status": 0,
+    "time": 1791658775.098449,
+    "environment": {
+      "LANG": "C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONNOUSERSITE": "1"
+    },
+    "fixtures": {
+      "/tmp/tmpd5pm_mca/textstats-source/sample.txt": {
+        "sha256": "99687252bfbf1197243fdb25be4705ecd83f47f512f9bbc8be16aac346926a28",
+        "bytes": 24
+      },
+      "/tmp/tmpd5pm_mca/textstats-source/--json": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      },
+      "/tmp/tmpd5pm_mca/textstats-source/bad.txt": {
+        "sha256": "f3aed4332d915e609308980dc15bf0a502e131229bd899d5e8ee52bef8bd8703",
+        "bytes": 14
+      },
+      "/tmp/tmpd5pm_mca/textstats-source/-": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      },
+      "/tmp/tmpd5pm_mca/textstats-source/-sample": {
+        "sha256": "2ea6c64141bd00d91337a2620e6396bf249ad38d8a0f61379ef0eabcfb4d2004",
+        "bytes": 15
+      }
+    },
+    "input_hex": "efbbbfefbbbf",
+    "input_text": null,
+    "input_sha256": "637b2c8da853bb1832c130f7e3bf70d07d3801190af1b8c77a8346faee3bfbb9"
+  }
+}

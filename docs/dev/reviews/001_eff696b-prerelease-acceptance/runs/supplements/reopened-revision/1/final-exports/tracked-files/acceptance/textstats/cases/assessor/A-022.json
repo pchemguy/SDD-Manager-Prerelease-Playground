@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "case_id": "A-022",
+  "checks": [
+    {
+      "id": "active-ownership",
+      "kind": "task_ownership"
+    },
+    {
+      "id": "final-head",
+      "kind": "git",
+      "field": "head",
+      "expected_ref": "checkpoint_refs.product_commit"
+    },
+    {
+      "id": "published",
+      "kind": "git",
+      "field": "publication",
+      "expected": "published"
+    }
+  ],
+  "required_agent_checks": [
+    "Actual changed acceptance affects already checked runtime task; historical check evidence remains with durable pending-reassessment note.",
+    "Orientation/selection exposes reassessment; owner rechecks in scope before completion; parent status not inferred from feature subset."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "case_id": "A-020",
+  "variant": "core",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "first_attempt_status": "Passed",
+  "assistance": "Coordinator reviewed concrete T001 artifacts and corrected inaccurate local-main handoff; no preservation repair or product reset/recreation.",
+  "checkpoint_refs": {
+    "product_branch": "trial/037-a020-scoped",
+    "product_commit": "bb1ee88ef05e30d25d41fc92db948308a7bb4af2",
+    "integration_branch": "main",
+    "integration_commit": "88a5c4b4424f4bba76940e40b1d6523b1f6fe191"
+  },
+  "integration_branch_fact": "refs/heads/main absent in actual START and final refs; original HANDOFF claim retained and corrected, no ref synthesized",
+  "criteria": {
+    "correct_parent": true,
+    "foreign_paths_excluded": true,
+    "foreign_bytes_modes_index_intent_preserved": true,
+    "foreign_refs_preserved": true,
+    "unrelated_tracked_bytes_preserved": true,
+    "only_T001_completed": true,
+    "nonzero_unit_tests": true,
+    "nonzero_integration_tests": true,
+    "independent_literals": true,
+    "read_only_assessment": true,
+    "no_blanket_staging_reset_stash_in_retained_sequence": true,
+    "selected_path_add_and_commit_only_observed": true,
+    "single_task_commit_subject": true,
+    "branch_scope": true
+  },
+  "evidence_class": "consumer execution plus independent Git/files/index/ownership and 8 unit/3 integration/independent literal checks",
+  "findings": [
+    {
+      "id": "A020-input-local-main",
+      "attribution": "input/coordinator",
+      "confidence": "confirmed",
+      "observation": "Handoff claimed localmain same preparation; actual START refs omit local main. Consumer original final assertion failed exit1, then read-only discovery/corrected preservation check passed. Original failure is retained in producer sealed observations.",
+      "case_effect": "No A020 preservation violation; baseline actual refs preserved."
+    }
+  ],
+  "limits": [
+    "Broad shared filesystem prevents hard consumer/assessor isolation certification.",
+    "Structured actual command observations retained; complete native runtime transcript unavailable.",
+    "Python 3.12.14 observed; Python 3.11 not executed.",
+    "No independent live provider/credential read under assigned restrictions; actual retained push/readback evidence identifies publication.",
+    "Only T001 executed; T002/CLI/file API/distribution/phase integration not claimed."
+  ],
+  "sealed": true,
+  "artifacts": {
+    "/workspace/scratch/46b31bb4dff6/037-a020-assessor-snapshot.json": "ed3d0cc4ab86692854dea41c11c431525758ebbdde7f123a50691ba45780545a",
+    "/workspace/scratch/46b31bb4dff6/037-a020-assessor-commands.json": "0a4a35c0bff8172987d1a4bd681d1fdbfc8770dfa1fad4016b1345ba5fea3bb8",
+    "/workspace/scratch/46b31bb4dff6/037-a020-assessor-provenance.json": "9647c54df362f998eab9edb8708ea54df70ba12082dae03a82028781ae11444b",
+    "/workspace/scratch/46b31bb4dff6/037-a020-assessor.py": "a23ce148463c1f7f4a2e875a604eede2cca618e74296798b93487c2a2faafb10"
+  }
+}

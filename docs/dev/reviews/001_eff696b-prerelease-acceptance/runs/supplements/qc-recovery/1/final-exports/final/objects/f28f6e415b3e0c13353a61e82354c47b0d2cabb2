@@ -1,0 +1,8 @@
+tree aa3a78d735c0a73e716551b18ccaa2aa1e36c7a1
+parent 9dc8075dd1b96d3a2744717a9d6d98a3024acbec
+author Codex <codex@openai.com> 1791636960 -0400
+committer Codex <codex@openai.com> 1791636960 -0400
+
+[T-002] Implement strict file acquisition and complete public API
+
+Read complete bytes with strict UTF-8 decoding and owned-handle cleanup; export the silent count_file facade. Include file lifetime/exception and real-file equivalence tests, docstrings, completion evidence and initial T-002 checkbox together. Verification: behavioral RED then 14 unit and 8 integration tests passed on Python 3.12.14. Refs #3.

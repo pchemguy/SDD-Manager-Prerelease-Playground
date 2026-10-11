@@ -1,0 +1,599 @@
+{
+  "evidence_class": "Fresh authenticated paginated GET-only hosted snapshot",
+  "issues": [
+    {
+      "number": 25,
+      "id": 5792735417,
+      "title": "[T-024] Review, test and report the Phase 2 range feature extent",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 9,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "c56e2ea88e5fee5d1745b79c66c791725bd7541f35b863cd6d85a05d8216107a"
+    },
+    {
+      "number": 24,
+      "id": 5792733559,
+      "title": "[T-023] Review, test and report milestone 2.5",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "91ae6bb8b976c4cf7917faf4bdfaebf6146202c3c7c1b15168a19505e521b9dd"
+    },
+    {
+      "number": 23,
+      "id": 5792731538,
+      "title": "[T-022] Verify range behavior from isolated extracted source",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "95ddd8fd23d1b6549468a4ec06e5e1e9c459d1edc19f044f48b792b91a7d5460"
+    },
+    {
+      "number": 22,
+      "id": 5792729680,
+      "title": "[T-021] Complete public and runnable named-file range documentation",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 8,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "f260cfacba44d5aed65929516e52ad6052104acc35df4e80564116a0b24d6a45"
+    },
+    {
+      "number": 21,
+      "id": 5792727535,
+      "title": "[T-020] Review, test and report milestone 2.4",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "8cfd48d4cc329ca1275efcf80becf5b368fe6efe6b87cc9487d5406ee5232575"
+    },
+    {
+      "number": 20,
+      "id": 5792725594,
+      "title": "[T-019] Integrate range validation and named-file text or JSON CLI",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "95fc997591441a2ff404ce8d6449c993e2afa44d5d02ba4bc6151ea929b358b5"
+    },
+    {
+      "number": 19,
+      "id": 5792723571,
+      "title": "[T-018] Implement pure normalized logical-line selection",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 7,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "3c0a6c766e59f787df79bc4b19ab5b60655bf7d6401d646233efde6b3ab72da3"
+    },
+    {
+      "number": 18,
+      "id": 5791788182,
+      "title": "[T-017] Review, test and report phase 2 and final delivery",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 6,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "f25afe68d9db8d48394fa35fc7d8fdb4a6b7f1a6180c000ef3725e18f11ce410"
+    },
+    {
+      "number": 17,
+      "id": 5791787598,
+      "title": "[T-016] Review, test and report milestone 2.2",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "42226bd414149202a420400245b6a1bd87097997eb4d914b7769a260cde493c3"
+    },
+    {
+      "number": 16,
+      "id": 5791786938,
+      "title": "[T-015] Complete final documentation and source-package exits",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "bcfb4a2de676fec6c7ab12498102e0c9e167af9cdf1f8c034ff172b0967c17b2"
+    },
+    {
+      "number": 15,
+      "id": 5791786390,
+      "title": "[T-014] Integrate stdin across text and JSON CLI",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "bc8066780f8b20d501c2f842040443e2d5af4af0749605931c94b2bae30b4e2c"
+    },
+    {
+      "number": 14,
+      "id": 5791785817,
+      "title": "[T-013] Add borrowed binary stdin acquisition",
+      "state": "open",
+      "state_reason": null,
+      "milestone": 5,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "d8b2862a580ae238a7fe80f1642a18432b452ed1ab32a30e92c876d7383252b5"
+    },
+    {
+      "number": 13,
+      "id": 5791785181,
+      "title": "[T-012] Review, test and report milestone 2.1",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 4,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "442042e55af9ac12d2b5cea772b63cb8d5df2678d793224452398e02ee9d4720"
+    },
+    {
+      "number": 12,
+      "id": 5791784605,
+      "title": "[T-011] Verify JSON from extracted source",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 4,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "66ed1a39a861aa0431bdb12cc333a43a07e5c25818d1b53430cb7af2f729fefd"
+    },
+    {
+      "number": 11,
+      "id": 5791784064,
+      "title": "[T-010] Add JSON CLI output with retained text behavior",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 4,
+      "labels": [
+        "sdd-phase-2-JSON-and-stdin"
+      ],
+      "body_sha256": "cf8527342cccc3106365f094376882bee21a6a6b9c74ca83295658215b6fc861"
+    },
+    {
+      "number": 10,
+      "id": 5790855234,
+      "title": "[T-009] Review, test and report phase 1",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 3,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "ebba332df6466f6101ebfabb4c36b766e7c724f962eda1597d5efe8e065dcddf"
+    },
+    {
+      "number": 9,
+      "id": 5790854318,
+      "title": "[T-008] Review, test and report milestone 1.2",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 2,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "b8e937307cd2c2b190fc18af7404151d598af1ba8dd8b719856130a557ad6361"
+    },
+    {
+      "number": 8,
+      "id": 5790853387,
+      "title": "[T-007] Build and verify isolated source distribution",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 2,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "3e90174b2a9b4f31a8b4dc75afdc691d4e54ed6b19d2cc16f46898f1c31bbae6"
+    },
+    {
+      "number": 7,
+      "id": 5790852415,
+      "title": "[T-006] Document public API and runnable named-file usage",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 2,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "134558e9b12ae87e87e2b634863406015bf3ff5020bb2688a01dfe1b400d2d3c"
+    },
+    {
+      "number": 6,
+      "id": 5790851199,
+      "title": "[T-005] Complete named-file CLI failure and usage handling",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 2,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "ebb128c5a80bee37ea7ce255b2cf9aea86e8a9b0fef9a1b820cf401a3f9ec8ba"
+    },
+    {
+      "number": 5,
+      "id": 5790850206,
+      "title": "[T-004] Review, test and report milestone 1.1",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 1,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "dc632ec4540e25c47ee8b935649eff61926721607706a0933b31b9ab8a1bb795"
+    },
+    {
+      "number": 4,
+      "id": 5790849215,
+      "title": "[T-003] Integrate named-file CLI and nonempty product checks",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 1,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "17b1fc14b17c4a6f57ee412a30c4bec0670756555f6e6ed1e845210b9665ca75"
+    },
+    {
+      "number": 3,
+      "id": 5790848274,
+      "title": "[T-002] Implement strict file acquisition and complete public API",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 1,
+      "labels": [
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "1884423d553854be2c680cf706fd7cf1088f2f375ad13e8e92a309a1fa9628e0"
+    },
+    {
+      "number": 2,
+      "id": 5790847351,
+      "title": "[T-001] Implement immutable statistics and whole-text counting",
+      "state": "closed",
+      "state_reason": "completed",
+      "milestone": 1,
+      "labels": [
+        "campaign-037-preserve",
+        "sdd-phase-1-Named-file-utility"
+      ],
+      "body_sha256": "78c777707aed2b66deee4819ba20621516f80f4c44bd237f75e5c7e45afd5652"
+    },
+    {
+      "number": 1,
+      "id": 5790780797,
+      "title": "Campaign 037 unrelated preservation fixture",
+      "state": "open",
+      "state_reason": null,
+      "milestone": null,
+      "labels": [
+        "campaign-037-preserve"
+      ],
+      "body_sha256": "c2e262e75704d17d21a57ee1159f8d47f94b4e503ef26382e80851534b52c9ce"
+    }
+  ],
+  "milestones": [
+    {
+      "number": 1,
+      "id": 18467474,
+      "title": "sdd-1.1-Named-file-counting",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 4,
+      "body_sha256": "ee6aa0f4d7bf7bd9ae65c7893b8fa4dac35808cc04b5a65c908457ac066d79a0"
+    },
+    {
+      "number": 2,
+      "id": 18467475,
+      "title": "sdd-1.2-Failure-handling-and-distribution",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 4,
+      "body_sha256": "d6df4dd410c26601a293581b48f20ca13b55bd9676f00c6fd50aea8b226300be"
+    },
+    {
+      "number": 3,
+      "id": 18467477,
+      "title": "sdd-1.3-Phase-1-review",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 1,
+      "body_sha256": "38a2df8cbb4b687f384a61ddedfcb3d51156cde657d8edd4aa760b143a508263"
+    },
+    {
+      "number": 4,
+      "id": 18469337,
+      "title": "sdd-2.1-JSON-output",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 3,
+      "body_sha256": "b22c295e25349a4ead9cdd15151f00891fc7a3dc33b1f1b1503f3ace75073617"
+    },
+    {
+      "number": 5,
+      "id": 18469338,
+      "title": "sdd-2.2-UTF-8-stdin-and-final-delivery",
+      "state": "open",
+      "open_issues": 4,
+      "closed_issues": 0,
+      "body_sha256": "3280da843fc4d476975ced4d9b62ad7642ee90541c8d2ef2e879f42528571c12"
+    },
+    {
+      "number": 6,
+      "id": 18469339,
+      "title": "sdd-2.3-Phase-2-and-final-review",
+      "state": "open",
+      "open_issues": 1,
+      "closed_issues": 0,
+      "body_sha256": "4107d67fc9e7b76f82ac74932f277f18eee3642950ba6d6cda6a21de6be7ec1f"
+    },
+    {
+      "number": 7,
+      "id": 18471444,
+      "title": "sdd-2.4-Named-file-ranges",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 3,
+      "body_sha256": "d194af0b94fde2d197a26f229efd3d9693e0f7cd19bdf1ad2471e869f74cd27e"
+    },
+    {
+      "number": 8,
+      "id": 18471447,
+      "title": "sdd-2.5-Range-documentation-and-distribution",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 3,
+      "body_sha256": "e7117a3981ebcd7853a00cedf8408f83ec3eee4aafdff0f4bc2f3137398a3622"
+    },
+    {
+      "number": 9,
+      "id": 18471455,
+      "title": "sdd-2.6-Range-feature-review",
+      "state": "closed",
+      "open_issues": 0,
+      "closed_issues": 1,
+      "body_sha256": "d409b0e8f5b5a7c178141375c31925261f527c4a88d741d5d324049e1c74e03f"
+    }
+  ],
+  "labels": [
+    {
+      "id": 12624578628,
+      "name": "accessibility",
+      "color": "f143ab",
+      "description_sha256": "a0e29a556c55309dcf78098b04d2c5c8e6c082d4df0e108596880faec3273e4e"
+    },
+    {
+      "id": 12624578614,
+      "name": "bug",
+      "color": "d73a4a",
+      "description_sha256": "ba26e412cc494b92f18f01c968c2b3241803b752eb09f1577844190076120a92"
+    },
+    {
+      "id": 12625616051,
+      "name": "campaign-037-preserve",
+      "color": "5319e7",
+      "description_sha256": "cf6fc320df3a5d3a51954bfd5f4cd9f440e2eca098c6f8471ea8f165b83d6f5c"
+    },
+    {
+      "id": 12624578638,
+      "name": "documentation",
+      "color": "0075ca",
+      "description_sha256": "d1aadc4e1b60c7b31dfbed5db1beb3a9f178166309def32db138e2e6546c2059"
+    },
+    {
+      "id": 12624578649,
+      "name": "duplicate",
+      "color": "cfd3d7",
+      "description_sha256": "092850c4484f11177dce84173d1a26030b145f573db994baa043648947130102"
+    },
+    {
+      "id": 12624578660,
+      "name": "enhancement",
+      "color": "a2eeef",
+      "description_sha256": "528e05403b406e202bb0bd23d3917d0688aaa7bf834fac8273682631bb42bbca"
+    },
+    {
+      "id": 12624578682,
+      "name": "good first issue",
+      "color": "7057ff",
+      "description_sha256": "e7b33d49b02e3a67c41178ae81e03df423dd08d3cd6695030623de3910789d96"
+    },
+    {
+      "id": 12624578673,
+      "name": "help wanted",
+      "color": "008672",
+      "description_sha256": "2a68d328096f7ecf792863fc4701db1a85072417d4dac3d606847541e0423a65"
+    },
+    {
+      "id": 12624578690,
+      "name": "invalid",
+      "color": "e4e669",
+      "description_sha256": "b0b7cab1d96254957703fa96a85a0400491637e8c110b6e79dff077194dd7bed"
+    },
+    {
+      "id": 12624578698,
+      "name": "question",
+      "color": "d876e3",
+      "description_sha256": "c758420437639eac26ad21aad1ff43032947a061a29e688a7cc442d7d936d2b5"
+    },
+    {
+      "id": 12625690902,
+      "name": "sdd-phase-1-Named-file-utility",
+      "color": "1d76db",
+      "description_sha256": "5c71f446784eef2fbc16bcbf8fdbc03a1b622649f4299cb62386ec81a3bca168"
+    },
+    {
+      "id": 12626943170,
+      "name": "sdd-phase-2-JSON-and-stdin",
+      "color": "5319e7",
+      "description_sha256": "3e8d585a2ff83708d483c29dcd669b99d9e771c1c862a494a5fd4bb5ff9e3b2e"
+    },
+    {
+      "id": 12624578707,
+      "name": "wontfix",
+      "color": "ffffff",
+      "description_sha256": "7005a3da62f74e32c046e5df2439b2911db569848f9e40c38024b20617530777"
+    }
+  ],
+  "comments": {
+    "1": [],
+    "2": [
+      {
+        "id": 6097383663,
+        "body_sha256": "f7b64d43b11867705802a3c512b2c640d9946655ea7aa1aabe9b297da5e28945"
+      },
+      {
+        "id": 6097586619,
+        "body_sha256": "17b1955f9aa3a6cd255bc9a91fb98fc6520745f3674e359313b2c7a35a346c28"
+      }
+    ],
+    "19": [
+      {
+        "id": 6099285118,
+        "body_sha256": "31cbc81cfe722f29b42dab35a9e034a31929b44d1c793d19ac3ada4b8a4f3410"
+      }
+    ],
+    "20": [
+      {
+        "id": 6099358830,
+        "body_sha256": "a99aa382d35448d8046e42b5e9bf747edb34aa91f68d8ddc561aba3c89b4f398"
+      }
+    ],
+    "21": [
+      {
+        "id": 6099494806,
+        "body_sha256": "f4d2b88cf3e3ce244dc65df811cca6f20b5ff7f46ecfaf7eacf5eef1928378bc"
+      }
+    ],
+    "22": [
+      {
+        "id": 6099559507,
+        "body_sha256": "73578d93cba4a72e4aa244722df24b6bdd65a10ef40a60a0db179c928717f32f"
+      }
+    ],
+    "23": [
+      {
+        "id": 6099630989,
+        "body_sha256": "5612a563600c16f2a63bbdd6008ed3097ac97f4b03c34102a6604dd0f60edf1c"
+      }
+    ],
+    "24": [
+      {
+        "id": 6099688453,
+        "body_sha256": "867d0d30b9b898713dcf7eb20d60a49c147d5cf1cbda6ee6b505e68307067bee"
+      }
+    ],
+    "25": [
+      {
+        "id": 6099769808,
+        "body_sha256": "68e884e309752ab1e9d71373908f12763fc787f4126e8b11e0d4a42a4131efeb"
+      }
+    ]
+  },
+  "operations": [
+    {
+      "route": "issues?state=all&per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:28.819722+00:00"
+    },
+    {
+      "route": "milestones?state=all&per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:33.248357+00:00"
+    },
+    {
+      "route": "labels?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:38.014154+00:00"
+    },
+    {
+      "route": "issues/1/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:42.654021+00:00"
+    },
+    {
+      "route": "issues/2/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:47.141541+00:00"
+    },
+    {
+      "route": "issues/19/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:52.669298+00:00"
+    },
+    {
+      "route": "issues/20/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T16:59:57.991442+00:00"
+    },
+    {
+      "route": "issues/21/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T17:00:02.511121+00:00"
+    },
+    {
+      "route": "issues/22/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T17:00:07.263278+00:00"
+    },
+    {
+      "route": "issues/23/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T17:00:11.701007+00:00"
+    },
+    {
+      "route": "issues/24/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T17:00:16.270904+00:00"
+    },
+    {
+      "route": "issues/25/comments?per_page=100&page=1",
+      "method": "GET",
+      "status": 200,
+      "utc": "2026-10-10T17:00:21.375659+00:00"
+    }
+  ],
+  "coverage_limit": "No write or full historical chronology asserted; bodies excluded, hashes retained."
+}

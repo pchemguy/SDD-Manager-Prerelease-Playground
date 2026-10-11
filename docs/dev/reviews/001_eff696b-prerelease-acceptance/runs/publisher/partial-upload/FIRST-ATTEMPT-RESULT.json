@@ -1,0 +1,9 @@
+{
+  "run_id": 38046045373,
+  "publish_job": 114195760654,
+  "conclusion": "failure",
+  "error": "Draft creation readback is missing",
+  "upload_trigger_reached": false,
+  "observed_effect": "Draft 408880857 exists with zero assets",
+  "classification": "Repeated first-creation publisher readback failure; controlled upload injection not reached; retain failed first attempt"
+}

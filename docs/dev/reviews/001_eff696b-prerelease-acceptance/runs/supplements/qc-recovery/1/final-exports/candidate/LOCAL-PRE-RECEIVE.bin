@@ -1,0 +1,4 @@
+#!/bin/sh
+cat > /dev/null
+printf "%s\n" "Controlled local publication refusal; retained checkpoint must be reconciled." >&2
+exit 1

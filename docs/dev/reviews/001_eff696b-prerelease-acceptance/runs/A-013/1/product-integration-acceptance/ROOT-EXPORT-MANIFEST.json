@@ -1,0 +1,70 @@
+{
+  "037-a013-consumer-late-foreign-baseline.json": {
+    "sha256": "d56256de5dc8ce43b1bb7bab45ab90f3c2977dfc88ec53a780f6446803cb6290",
+    "bytes": 3143
+  },
+  "037-a013-root-final-foreign-check.json": {
+    "sha256": "952bfc90870118cb5807719d891d0ed8a094a5aa336bbd3992c37a517d8cdec4",
+    "bytes": 2959
+  },
+  "CONSUMER-MERGED-CHECKS.json": {
+    "sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+    "bytes": 3858
+  },
+  "CONSUMER-OBSERVATIONS-PRECOMMIT-SNAPSHOT.json": {
+    "sha256": "3ed82fb97552b8b67ec4f19ebd498a0bdbe4aef4a716ac4d4bd4cbc58ee744ea",
+    "bytes": 10140869
+  },
+  "DECISION.json": {
+    "sha256": "78f9c9e0202df8581579c3720f1d8e228a602c6d18903eb07b0ad8848803be47",
+    "bytes": 1779
+  },
+  "MERGE-BODY.txt": {
+    "sha256": "eb51fa5b0e635b530fe212cc2adfcc2029adb6fe2db10244a973ad3d367e1157",
+    "bytes": 4975
+  },
+  "ROOT-CANDIDATE.json": {
+    "sha256": "77782b364c0ee4ecb499a4b8ff0e9321c2107761c26655a83756b32e29455aea",
+    "bytes": 2702
+  },
+  "ROOT-FOREIGN-OBSERVATION-SCOPE.json": {
+    "sha256": "89346a4db8bd010403b1999a4a4b561f83425475d5af5aef85a4a577a0c74676",
+    "bytes": 333
+  },
+  "ROOT-RUNTIME-ARTIFACT-AUDIT.json": {
+    "sha256": "46d41453064573d595cf4438b05b86579297e6dadeffa4f802779a46610f345a",
+    "bytes": 389625
+  },
+  "independent/ASSESSMENT.json": {
+    "sha256": "c7fc2f035aa246e1060a9d74db5a82246f9fd60b4212122cc4dad3e71ca0b97b",
+    "bytes": 2505
+  },
+  "independent/SCREENING.json": {
+    "sha256": "18f575fb11c7676e2b40c1a3ff5c844ac18b061c555757d481eda5be2891d6b1",
+    "bytes": 1104
+  },
+  "independent/actual-prospective-source.zip": {
+    "sha256": "d3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed",
+    "bytes": 17539
+  },
+  "independent/before-commit-observations.json": {
+    "sha256": "7d6174ad64f076f4bbffaf2cd5288bb89e2cebeb6e61875e2a7a6ca32a0d73c8",
+    "bytes": 184867
+  },
+  "independent/candidate.json": {
+    "sha256": "e218a8a0cd3ec37fbd97457d32abef3a3c1893e00cdeb1a9da81d569f943f587",
+    "bytes": 3858
+  },
+  "independent/independent-audit.json": {
+    "sha256": "bbec3c1fd4291a5a23af4484229ff689584a9a54ce125e12e363bc6e852d3ff6",
+    "bytes": 351889
+  },
+  "independent/merge-message.txt": {
+    "sha256": "eb51fa5b0e635b530fe212cc2adfcc2029adb6fe2db10244a973ad3d367e1157",
+    "bytes": 4975
+  },
+  "textstats-source.zip": {
+    "sha256": "d3f2d3f11698405eefc317a8ca048de5f3fe1964b3c390fc11e7def6c20242ed",
+    "bytes": 17539
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "actual-main-first-parent",
+  "args": [
+    "git",
+    "rev-parse",
+    "e7cae5b^1"
+  ],
+  "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "exit_code": 0,
+  "env": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

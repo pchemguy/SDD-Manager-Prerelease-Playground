@@ -1,0 +1,15 @@
+{
+  "release_id": 408880857,
+  "draft": true,
+  "asset": {
+    "id": 627714735,
+    "name": "sdd-manager.zip",
+    "size": 317921,
+    "state": "uploaded",
+    "created_at": "2026-10-10T10:50:03Z",
+    "updated_at": "2026-10-10T10:50:03Z"
+  },
+  "downloaded_zip_sha256": "1ebd303abe58c45451ae67bd34ea2ac47c838db48df9b9d715257a1a939ce248",
+  "all_member_bytes_match_fixture_source": true,
+  "observed_at": "2026-10-10T10:52:19.975987+00:00"
+}

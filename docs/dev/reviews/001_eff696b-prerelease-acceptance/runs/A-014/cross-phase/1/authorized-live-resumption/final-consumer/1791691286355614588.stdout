@@ -1,0 +1,17 @@
+[main a7285d7] Integrate verified TextStats named-file phase
+a7285d78a7fb1ee3966850656de6594317d5125f
+88a5c4b4424f4bba76940e40b1d6523b1f6fe191 dfcd658828d8e326c713683f3cdb9be05e044849
+93756800aafe8abb0d8719176a14eb81ba42b4e1
+Integrate verified TextStats named-file phase
+
+Integrate complete Phase 1 T-001 through T-009: immutable silent API, strict UTF-8 named-file acquisition, exact text CLI and clean failure handling, runnable public documentation, nonempty product verification and isolated allowlisted source distribution. Full milestone and phase code reviews retain resolved findings and TODO None; T-009 concrete report/tree accepted by coordinator decision c837cd750ad7bcb932add989644e8c851ce15f34.
+
+Ordered integration parents: local main preparation 88a5c4b4424f4bba76940e40b1d6523b1f6fe191 and published Phase 1 task tip dfcd658828d8e326c713683f3cdb9be05e044849. Explicit no-ff/no-commit merge is conflict-free with tree 93756800aafe8abb0d8719176a14eb81ba42b4e1. Fresh merged-state python -B tools/check_tests.py passes 23 unit and 18 integration tests; python -B tools/check_distribution.py passes extracted-import provenance and 36 module cases. PYTHONDONTWRITEBYTECODE=1 and child -B flags are retained. Staged whitespace passes; protected pinned/publisher paths unchanged.
+
+Local Python 3.12.14 evidence does not establish other-runtime/platform or later JSON/stdin/range/release completion. Uncertain untracked README examples remain excluded and preserved; shared filesystem isolation cannot be certified. Publication is authorized only to refs/heads/trial/037-a014-cross-main with explicit SHA refspec and immediate readback; no hosted tracking writes. Phase 2 selected T-010 starts only after verified publication and activation. No Phase 2 main integration or later task is authorized.
+
+?? -sample
+?? bom.txt
+?? sample.txt
+a7285d78a7fb1ee3966850656de6594317d5125f	refs/heads/trial/037-a014-cross-main
+dfcd658828d8e326c713683f3cdb9be05e044849	refs/heads/trial/037-a014-cross-phase

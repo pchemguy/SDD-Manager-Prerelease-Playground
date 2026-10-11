@@ -1,0 +1,151 @@
+# TextStats system specification
+
+## Scope and authority
+
+TextStats provides predictable line and word counts through a silent Python API and module-entry CLI. The accepted [PROJECT](PROJECT.md), [ARCHITECTURE](ARCHITECTURE.md) and [DECOMPOSITION](DECOMPOSITION.md) govern product purpose and structural boundaries. Python 3.11+, standard-library runtime and unittest are required. This document specifies intended behavior; delivered capability and verification evidence belong to the owning task and implementation records.
+
+R-001 through R-013 specify the intended initial two-phase system; milestone labels identify delivery obligations without authorizing implementation. F-001 through F-004 specify named-file range behavior, including text composition and its delivery acceptance. Range selection remains a separate feature extent outside the original two-phase executable hierarchy; stdin acquisition retains its own milestone. Delivery strategy and sole executable ownership belong to main PLAN/TASKS. Incorporated feature sources are retained as historical snapshots in the [named-file range package](features/002_e7cae5b-named-file-ranges/README.md). No focused specification children are needed.
+
+## Public API and values
+
+### R-001 Direct exports and statistics
+
+Importable `textstats` directly exports `TextStats`, `count_text` and `count_file`. `TextStats(lines: int, words: int)` is immutable, with integer, nonnegative fields and value equality. Construction with a negative count raises ValueError; a non-integer count raises TypeError. Boolean values are excluded from the count domain despite Python's bool/int subtype relationship. Invalid construction cannot create a value with an invalid field. Exception wording is not prescribed. These construction details settle the design's previously delegated integer-domain boundary.
+
+### R-002 Whole-input counting API
+
+The signatures are `count_text(text: str, *, strip_bom: bool = True) -> TextStats` and `count_file(path: str | os.PathLike[str], *, strip_bom: bool = True) -> TextStats`. The keyword-only policy has the same meaning for both. Both return whole-input counts, are silent on stdout/stderr, and expose no range parameter. Valid text/file calls with identical decoded contents and policy return equal values. Behavior for arguments outside the annotated input domains is not otherwise prescribed.
+
+### R-003 Line semantics
+
+CRLF is one terminator; lone CR and lone LF are terminators. Each terminator contributes one line. A nonempty final unterminated segment contributes one line. Empty text contributes zero lines, and a trailing terminator creates no additional phantom line. Other Unicode separators, including U+0085, U+2028 and U+2029, do not terminate lines. Apply R-005 before deciding whether a final segment is nonempty.
+
+### R-004 Word semantics
+
+The word count equals the number of elements produced by Python `str.split()` with no separator argument on the counted text. Unicode whitespace separates words and runs of whitespace add no empty words. Word semantics do not broaden line-terminator semantics.
+
+### R-005 BOM policy
+
+With `strip_bom=True`, remove exactly one leading U+FEFF from the complete text. Preserve a second leading BOM and every interior BOM. With `strip_bom=False`, preserve all BOMs. Retained BOM is ordinary non-whitespace, including in otherwise empty content. CLI `--keep-bom` selects the retaining policy. No other text normalization or rewriting is permitted.
+
+### R-006 Named-file decode, failure and ownership
+
+Read complete input as bytes and decode strict UTF-8, retaining newline characters exactly. A named-file API call raises the applicable OSError subclass for missing/unreadable files or read failures and UnicodeDecodeError for invalid UTF-8. Do not return a partial result. Close every handle opened by the utility on success and failure. Inputs remain byte-for-byte unchanged. No fallback encoding, replacement character or locale-dependent decode is permitted.
+
+## CLI contracts
+
+### R-007 Baseline named-file invocation
+
+Phase 1 milestone 1.1 supplies `python -m textstats [--keep-bom] INPUT` with exactly one named-file input. Support `--` to terminate option processing so dash-prefixed filenames are usable. A literal filename `-` is a named-file input before milestone 2.2; after stdin delivery it denotes stdin, and an actual file with that name can be addressed as `./-`. Recognized options can precede or follow the input, subject to `--` termination. Do not interpret options appearing after `--` as options.
+
+Success returns status 0, stdout exactly `lines=<N> words=<N>\n` using nonnegative decimal integers, and empty stderr. This remains the default format in phase 2. Help through `-h` or `--help` returns 0 with useful usage/options on stdout and empty stderr; it requires no input acquisition. Help output's exact prose is unrestricted.
+
+### R-008 CLI failures and usage
+
+Phase 1 milestone 1.2 supplies complete failure handling. Missing/unreadable named files, input read failures and decode failures return status 1 with nonempty stderr identifying the input and cause, empty stdout and no traceback. Missing input, extra inputs and unknown options return status 2 with useful usage/error stderr, empty stdout and no traceback. Parse and validate invocation before acquiring input. Status categories are stable across the phase 2 options. No input is changed and no partial result appears on stdout.
+
+### R-009 Withdrawn JSON output
+
+JSON output is withdrawn by the commanded checkpoint amendment; this stable ID is retained and never reused. `--json`, `--json=value` and abbreviated forms such as `--j` are unknown options: status 2, empty stdout, useful usage/error stderr and no traceback before input acquisition. After `--`, a literal `--json` filename remains valid for whole-input and range counting. R-007 exact text is the sole success format.
+
+### R-010 Stdin input
+
+Phase 2 milestone 2.2 supplies input token `-` as stdin. Read bytes until EOF and decode complete content as strict UTF-8 independently of locale, without closing stdin. Apply the same counting/BOM/output policies as named files. Empty stdin returns (0, 0). Read or decode failure returns 1, identifies stdin and the cause on stderr, and produces empty stdout with no traceback. Stdin acquisition does not alter `count_file` semantics or add an API export. Output succeeds only after complete input acquisition and decoding.
+
+## Documentation, testing and distribution
+
+### R-011 Public documentation and runnable README
+
+Phase 1 milestone 1.2 supplies public API/module documentation describing exports/signatures, counts, BOM policy, silent APIs, strict decoding, exceptions and handle ownership. The README supplies runnable named-file/module-entry examples, setup and test instructions, output/status/help behavior and distribution usage. Phase 2 final exits update documentation for stdin and retained behavior. Documentation must describe delivered capabilities accurately; the preparation README's present lack of runnable code is explicit until delivery.
+
+### R-012 Product verification organization
+
+Use unittest with discoverable, nonempty product suites under `tests/unit/` and `tests/integration/`. Discovery must collect actual product tests rather than succeed with zero tests. Keep workflow fixture checks separately under `tests/workflows/`; they do not count as product verification. Verify API semantics and silence, immutability, acquisition/decode exceptions and resource lifetime, CLI process outputs/statuses, input preservation and retained behavior at the relevant delivery exits.
+
+### R-013 Extracted-source distribution
+
+Provide a source distribution containing the importable package, module entry and required user/API documentation. Verify its extracted contents by invoking `python -m textstats` in the extracted source context, without relying on imports from the original checkout or an unrelated installed package. Named-file success and failure and the delivered phase's stdin behavior must retain their specified contracts in that context. Packaging uses the standard library; no extra runtime dependency is required. Physical archive layout and check commands belong in planning/layout.
+
+<a id="deferred-range-feature"></a>
+
+## Named-file range feature
+
+### F-001 Range grammar and validation
+
+Named-file CLI invocation accepts at most one `--lines START:END` or `--lines=START:END`. START and END consist solely of ASCII decimal digits and represent positive inclusive one-based endpoints with START <= END. Leading zeros are decimal. No arbitrary endpoint or digit-count limit is permitted. Reject signs, surrounding or interior whitespace, Unicode digits, zero, reversal, open endpoints, extra colons, missing values and repeated range options. Repetition across the two spelling forms is also invalid. Reject with usage status 2, useful stderr, empty stdout and no traceback before acquiring input. Valid very large decimal endpoints must remain valid despite any interpreter conversion safeguard. Without a range option, count the whole input. Options may precede or follow INPUT before `--`; options after `--` are filenames, preserving R-007 parsing and help behavior.
+
+### F-002 Selection semantics and decode ordering
+
+Decode the complete input before selecting lines; invalid bytes after END still fail under R-008. Apply R-005 exactly once to complete decoded input before numbering. Select inclusive one-based logical lines under R-003, preserving each selected segment's contents and terminators. If END exceeds EOF, select the available subset; if START exceeds EOF, select empty content. Count the selected content under R-003/R-004 without further BOM stripping. An interior BOM exposed at the beginning of selected text must remain ordinary non-whitespace.
+
+### F-003 Composition and delivery boundary
+
+Range selection composes with `--keep-bom` in either option order, using either accepted range spelling. Preserve default text output and R-008 error categories. Named-file text range behavior is the feature's delivery boundary. The public API remains whole-input with no range parameter or new export. Source-independent selection must be compatible with stdin under R-010; stdin acquisition/delivery remains its own milestone and is outside the named-file range feature extent. Literal `-` remains a named file until stdin delivery, and `./-` addresses a named file afterward. Success returns 0 and empty stderr; text counts follow R-007. Help and runnable named-file range documentation, nonempty unit/integration verification and isolated extracted-source module-entry verification are feature delivery obligations. No streaming, benchmark target, third-party dependency or release publication is required.
+
+### F-004 Objective range acceptance
+
+Escapes below denote actual characters. Run every success example in text, with status 0 and empty stderr.
+
+| Complete input | Range / policy | Expected (lines, words) |
+| --- | --- | --- |
+| `alpha beta\nbeta\nlast two` | 2:3 and 2:99 | (2, 3) |
+| `alpha beta\nbeta\nlast two` | 1:1 and 0001:0001 | (1, 2) |
+| `alpha beta\nbeta\nlast two` | 4:99 | (0, 0) |
+| `a\n\n` | 2:9 | (1, 0) |
+| `a\r\nb c\rd\n` | 2:3 | (2, 3) |
+| `a\n\ufeff` | 2:2, both BOM policies | (1, 1) |
+| Empty | 1:99 | (0, 0) |
+| `\ufeff` | 1:1, default / keep | (0, 0) / (1, 1) |
+| `\ufeff\ufeff` | 1:1, both policies | (1, 1) |
+| `alpha\u2028beta` | 1:1 | (1, 2) |
+| `\n` | 1:1 | (1, 0) |
+
+Use valid endpoints with more than 4,300 digits as both END (available subset) and START (empty), as well as many leading zeros that represent small valid endpoints. Never overflow, truncate or impose a cap. Cover every permutation of range/BOM flags, both range spellings, options before/after INPUT, and dash-prefixed files after `--`.
+
+| Invalid class | Representative values / invocations |
+| --- | --- |
+| Zero or reversed | `0:1`, `1:0`, `3:2` |
+| Signs | `-1:2`, `+1:2`, `1:-2`, `1:+2` |
+| Whitespace | ` 1:2`, `1:2 `, `1 :2`, `1:\t2` |
+| Non-ASCII digits | `١:٢`, `１:２` |
+| Open or extra separators | `:2`, `1:`, `:`, `1:2:3`, `1` |
+| Missing | `--lines`, `--lines=`, `--lines --keep-bom INPUT` |
+| Repeated | two spaced, two equals, or mixed forms, including identical valid values |
+
+Verify each rejection before acquisition using a controlled acquisition seam and a missing named file. Include bad bytes strictly after the selected END to prove full decode; controlled read failures and handle cleanup remain testable at the acquisition seam. Recheck whole-input acceptance from the whole-input acceptance matrix below, silent unchanged API, file byte preservation, text equivalence and failure stdout. Distribution checks must run the extracted package's real module entry with isolated imports and cover range successes, invalid ranges, BOM exposure and bad bytes after END. Documentation must describe named-file range delivery accurately and retain deferred stdin status.
+
+## Whole-input acceptance matrix
+
+Escaped sequences in this table denote actual input characters; U+2028 is a Unicode line separator.
+
+| Input | Default (lines, words) | Retaining BOM (lines, words) where relevant |
+| --- | --- | --- |
+| Empty string | (0, 0) | (0, 0) |
+| `alpha beta` | (1, 2) | Same |
+| `alpha\n` | (1, 1) | Same |
+| `\n` | (1, 0) | Same |
+| `alpha\r\nbeta\rgamma\n` | (3, 3) | Same |
+| `alpha\n\n` | (2, 1) | Same |
+| Space followed by tab | (1, 0) | Same |
+| `alpha\u2028beta` | (1, 2) | Same |
+| `\ufeff` | (0, 0) | (1, 1) |
+| `\ufeff\ufeff` | (1, 1) | (1, 1) |
+| `\ufeffalpha beta` | (1, 2) | (1, 2) |
+| `a\ufeffb` | (1, 1) | (1, 1) |
+| `\r\n` | (1, 0) | Same |
+| `\r` | (1, 0) | Same |
+
+Named-file and text API results agree for these inputs. CLI text agrees with the whole-input API for whole input. Verify non-ASCII UTF-8, CRLF boundaries, owned-handle closure after decode/read failures, immutable results and unchanged input bytes. CLI integration covers named-file paths (including dash-prefixed), help, missing/extra inputs, unknown options, missing/unreadable/read-failing files, bad bytes, empty stdout on failures and useful diagnostics. Phase 2 adds text stdin, empty stdin, invalid bytes/read errors, locale independence and retained stream ownership. Distribution acceptance repeats the appropriate delivered module-entry behaviors after extraction.
+
+## Behavioral ownership and review boundary
+
+| Contract group | Responsible design components |
+| --- | --- |
+| R-001/R-002 | C-001 statistics and C-006 API adapters |
+| R-003/R-004/R-005 | C-002 normalization, C-003 logical lines and C-004 counting |
+| R-006/R-010 | C-005 acquisition, C-006 API and C-008 CLI |
+| R-007/R-008 | C-007 parser, C-008 controller and C-009 rendering |
+| R-011/R-012/R-013 | Public boundaries C-001 through C-009, supported by documentation and product/distribution verification |
+| F-001 through F-004 | C-007/C-008 and C-010 over C-002/C-003/C-004; no additional API export |
+
+The adjacent [SPEC review report](SPEC-REVIEW-REPORT.md) owns current technical conformance and preserves earlier review/acceptance evidence. Concrete delegated coordinator assessment remains separate from current technical QC before dependent use. Document conformance does not establish implementation, task completion, whole Phase 2 readiness or Git integration.

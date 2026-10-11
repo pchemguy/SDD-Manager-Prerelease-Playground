@@ -1,0 +1,30 @@
+{
+  "section": "children",
+  "record": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "-m",
+      "textstats",
+      "--keep-bom",
+      "--lines=1:1",
+      "/tmp/tmposquhrg1/missing.txt",
+      "--j"
+    ],
+    "cwd": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+    "stdout": "",
+    "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: unrecognized arguments: --j\n",
+    "status": 2,
+    "time": 1791660746.6368916,
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-textstats-product"
+    },
+    "fixtures": {},
+    "input_hex": null,
+    "input_text": null,
+    "input_sha256": null
+  }
+}

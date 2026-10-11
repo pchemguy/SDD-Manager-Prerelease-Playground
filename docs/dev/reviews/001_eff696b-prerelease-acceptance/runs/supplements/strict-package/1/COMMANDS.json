@@ -1,0 +1,189 @@
+[
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_plugin.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/plugin.json: manifest-schema: $schema must equal https://agent-plugins.org/schemas/1.0.0/plugin.schema.json\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/plugin.json: manifest-unknown: unknown field 'hooks'; clients report and ignore it, but strict authoring fails\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/plugin.json: manifest-unknown: unknown field 'interface'; clients report and ignore it, but strict authoring fails\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/plugin.json: manifest-unknown: unknown field 'skills'; clients report and ignore it, but strict authoring fails\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-docs/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/coordination.md#coordinate-execution\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/prerelease-review.md#advisory-release-reminder\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/git-workflows.md#publish-each-commit\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/phase-activation.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/tracking-decision.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-integrate-feature/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/review-campaigns.md#closed-campaign-records\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-forge/references/github.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-forge/references/release-highlights.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-implement/references/completion-and-checkpoints.md#task-commit-contract\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-implement/references/completion-and-checkpoints.md#task-persistence-audit-and-recovery\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/review-campaigns.md#closed-campaign-records\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/agent-orientation.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-report/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-steer/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tdd/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-verify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/inspect_package.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager"
+    ],
+    "returncode": 1,
+    "stdout": "PACKAGE: plugin\nSTANDARD: Agent Plugins 1.0.0\n  skill: sdd-conventions\n  skill: sdd-design\n  skill: sdd-docs\n  skill: sdd-forge\n  skill: sdd-implement\n  skill: sdd-integrate-feature\n  skill: sdd-manage\n  skill: sdd-orient\n  skill: sdd-plan\n  skill: sdd-report\n  skill: sdd-specify\n  skill: sdd-steer\n  skill: sdd-tasks\n  skill: sdd-tdd\n  skill: sdd-verify\nVALIDATION: errors: 39, warnings: 0\nRUNTIME: not verified by inventory\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-conventions"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-design/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-docs"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-docs/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/coordination.md#coordinate-execution\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-forge/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/prerelease-review.md#advisory-release-reminder\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/git-workflows.md#publish-each-commit\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/phase-activation.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-implement/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/tracking-decision.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-integrate-feature"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-integrate-feature/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/review-campaigns.md#closed-campaign-records\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-forge/references/github.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-forge/references/release-highlights.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-implement/references/completion-and-checkpoints.md#task-commit-contract\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-manage/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-implement/references/completion-and-checkpoints.md#task-persistence-audit-and-recovery\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/review-campaigns.md#closed-campaign-records\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/agent-orientation.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-orient/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-plan/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-report"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-report/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-specify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-steer"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-steer/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/branch-management.md#preparation-integration-gate\nERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tasks/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-manage/references/human-document-review.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tdd"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-tdd/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/root/.codex/skills/remote-skills/skill-6ab91e941cbc8191a00ce5e8e34d83fd/scripts/validate_skill.py",
+      "/workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-verify"
+    ],
+    "returncode": 1,
+    "stdout": "ERROR: /workspace/scratch/46b31bb4dff6/SDD-Manager/skills/sdd-verify/SKILL.md: resource-escape: local resource escapes skill root: ../sdd-conventions/references/markdown-style.md\n",
+    "stderr": ""
+  }
+]

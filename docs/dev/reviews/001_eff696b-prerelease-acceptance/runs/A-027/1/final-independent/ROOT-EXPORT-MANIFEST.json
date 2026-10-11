@@ -1,0 +1,30 @@
+{
+  "A013-FINAL-INDEPENDENT-ASSESSMENT.json": {
+    "sha256": "ef96dabb49056c5be080a33a03d19abf0f1fc0f323cc955b424374a02c5b1dc8",
+    "bytes": 7314
+  },
+  "FINAL-CURRENT-RECONCILIATION.json": {
+    "sha256": "722cafebfcefc77d558e7ca2f35a72534cd15c2075f053d42b2d94193cc849fa",
+    "bytes": 313024
+  },
+  "FINAL-INDEPENDENT-ASSESSMENT.json": {
+    "sha256": "b74b390626cc85879c635f65f34a8d50b6cfd158435dac60ff8bf019363d0317",
+    "bytes": 6667
+  },
+  "FINAL-ORDINARY-REPORT.md": {
+    "sha256": "00ecbc765ab57d1357f17ee9fef947dc9c2a60734a80752376e1505a6dea9961",
+    "bytes": 22023
+  },
+  "FINAL-PUBLISHED-RECORD-PROOFS.json": {
+    "sha256": "0bd7028b971883d0ff429a970ec93eb3df0688c9b0eea5e2b7b3206735c61fd2",
+    "bytes": 21125
+  },
+  "FINAL-READONLY-PROOFS.json": {
+    "sha256": "84d9c30811efed29df2a3a6c417ff45596fc964945fbd4a19889c53613a87f11",
+    "bytes": 13518
+  },
+  "PUBLIC-MANIFEST.json": {
+    "sha256": "b0dc3165e9b168207c2549346bbf09869a1b98e298e65e539d6c26561a8b9005",
+    "bytes": 1758
+  }
+}

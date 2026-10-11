@@ -1,0 +1,20 @@
+{
+  "assessor_pre_durable_capture_limit": "Initial tools were visible but not retained as separate exact stdout/stderr channels; command text and chunk identity are retained below; no missing bytes reconstructed.",
+  "original_tool_attempts": [
+    {
+      "chunk": "bbb3d4",
+      "exit": 1,
+      "command": "Observation summary exploration expected commands/loaded_resources keys after showing actual raw_command_results schema.",
+      "error": "KeyError: commands",
+      "effect": "read only; corrected by inspecting raw_command_results"
+    },
+    {
+      "chunk": "26364b",
+      "exit": 1,
+      "command": "git --no-optional-locks show --format=fuller --stat HEAD; cat selected042/REVISION-PLAN.md selected042/REVISION-REPORT.md",
+      "error": "Both separate revision filenames absent; actual accepted action plan and amendment evidence are appended to existing REVIEW-REPORT.md.",
+      "effect": "read only; inspected existing artifacts"
+    }
+  ],
+  "consumer_failures_retained": "See sealed failures_limits and complete original raw_command_results. Combined shell command final success does not erase git cat-file failure."
+}

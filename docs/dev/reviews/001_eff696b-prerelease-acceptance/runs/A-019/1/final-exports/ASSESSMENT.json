@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "case_id": "A-019",
+  "status": "Passed",
+  "agent_behavior_assessed": true,
+  "variant": "integration-recovery",
+  "grade_scope": "Required controlled local conflict plus prospective-verification-failure recovery, with separate fresh contexts; no strict/native isolation or live GitHub trial publication certification",
+  "checkpoint_refs": {
+    "product_branch": "a019/target",
+    "product_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "integration_branch": "a019/target",
+    "integration_commit": "2bcbf7d3f4b64321e3ca014a8ea9f4f9fa442749",
+    "merge_parents": [
+      "3ebf358ae5851a797f7390c1e75889b2cb18673d",
+      "bbd5b80e588337f14d8ec3221fea2aded33f0239"
+    ],
+    "incoming_branch": "a019/incoming",
+    "incoming_commit": "bbd5b80e588337f14d8ec3221fea2aded33f0239",
+    "tree": "b57a3f4c8e1b90dc19e96546fb1f5317c6760ba2"
+  },
+  "publication": {
+    "product": "Published/readback exact on local trial-delivery",
+    "final_assessor_evidence": "Pending root publication",
+    "historical_evidence_remote_tip_observed": "2a9d8c00724ed1bb7bb8aef9a0a571191a9de1a4"
+  },
+  "prerequisite": {
+    "case": "A-006",
+    "status": "Passed",
+    "published_assessment": "39f4c3c6a97c00864398e82907a0ceed0f4f80dc",
+    "original_merge": "e7cae5b2216ff7dd311b6f7296d829d1927a6a8a",
+    "original_ordered_parents": [
+      "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+      "5b17e4650c64c7c735991931b591bdabb8069215"
+    ],
+    "eligibility": "Original complete T001-009 task set, dedicated milestone/phase reports and hosted closures/exit evidence retained; exact incoming baseline passed actual23/18/36 before setup edits. Trial diverged actual target/incoming parents rather than already-integrated positive main."
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "consumer": "a019_conflict_consumer",
+      "observed_result": "Actual --no-ff --no-commit exit1 README conflict, stage1/2/3 match exact base/target/incoming; HEAD/ORIG3eb and MERGE_HEADbbd; stop acknowledged before resolution/testing/commit/push.",
+      "assessment": "Required conflict trigger satisfied, no completion claim."
+    },
+    {
+      "attempt": 2,
+      "consumer": "separate fresh resolution consumer",
+      "observed_result": "Retained conflict resolved/staged in place, both legitimate README edits preserved; first required full check exit1,23unit pass,20integration2literal public API/module U001C assertions fail/18pass,36embedded extracted cases pass. Original parents retained; no repair, commit, push after failure.",
+      "assessment": "Separate actual prospective failure trigger satisfied and exact resolved state exported before third context."
+    },
+    {
+      "attempt": 3,
+      "consumer": "a019_fresh_repair",
+      "observed_result": "Diagnosed core removal of U001C, expanded unit/extracted checks before implementation, actual3assertionRED and actual extractedRED, restored direct str.split and relevant docs/checker; all actual checksGREEN. Submitted7 concrete artifact blobs/tree for delegated review; accepted published88fd0ea before existing merge completion. Created one verified two-parent merge and immediately pushed/read back exact local target; incoming retained.",
+      "assessment": "Fresh continuation preserved original work/merge identity, scoped repair/tests/docs, reran failed check and completed/published required integration."
+    }
+  ],
+  "independent_checks": {
+    "final_git": "Ordered actual parents3eb/bbd and exact accepted treeb57a; target clean, no unresolved stages/pending metadata; unchanged incoming retained and target exact local readback.",
+    "behavior": "Independent exact restored snapshot passed23unit,20integration,2prospective tests,38extracted module cases; actual API/baseline/extracted capture literals exactly equal independent immutable expectations.",
+    "documentation": "All7 current runnable README/public-guide fences executed verbatim and local links resolve; U001C docs/counts match public behavior.",
+    "scope": "Only7 reviewed repair artifact differences plus original retained target prospective test versus incoming; core bytes exactly restored to real complete phase, original prospective test bytes unchanged; TASKS/IDs/pinned resources/notices/publisher/foreign paths unchanged from incoming, Phase2 pending.",
+    "exports": "Verified full final bundle, raw index,stage0entries,modes/symlinks/workfiles and source archive. Final bundle independently restored, all required objects and exact index/workfile hashes agree. Both earlier pending exports with AUTO_MERGE and stage objects remain immutable/published and compared byte-for-byte."
+  },
+  "attribution": {
+    "injected_contract_failure": "Intentional assessor/coordinator isolated product regression, not an observed SDD Manager defect.",
+    "recovery_behavior": "Observed consumers retained genuine failed/incomplete state and honored checks/review/publication gates; no reset/abort/recreation observed in retained command/state evidence.",
+    "setup_reappearance": "Unresolved environment observation, no cause assigned.",
+    "screening_rejection": "Coordinator artifact serialization/checker boundary: original NUL-delimited git stdout rejected by core.no_secret; exact original retained locally, only command12 stdout replaced in screened derivative by exact published binary sidecar with original+publication manifests. No product effect or hidden repair.",
+    "confirmed_plugin_defect": false,
+    "proposal": "No A019-derived plugin repair proposed."
+  },
+  "assistance_and_interventions": [
+    "Coordinator scoped legitimate competing orientation edits and separate regression/assertion fixtures in isolated actual-parent fork; every setup commit immediately local-published/read back.",
+    "Three separately dispatched contexts with explicit cooperative stops at actual conflict and actual prospective failure; native termination not claimed.",
+    "Setup21reappearing untracked files exported then removed only after actual baseline/incoming exact-byte matching; failed clean/exact-incoming assertions retained.",
+    "First conflict restoration verifier exact-status assertion failed due clone-created upstream metadata; only verifier config removed and reverified. Second/final restoration verifier proactively harmonized clone upstream metadata; actual trial untouched.",
+    "Root original conflict COMMANDS.json NUL screening rejection, narrow scalar-only derivative/raw binary sidecar and exact original/publication provenance retained and independently reconciled.",
+    "Explicit concrete delegated coordinator acceptance of repaired implementation/tests/docs before merge completion; passing tests alone did not authorize integration."
+  ],
+  "limitations": [
+    "Separate fresh consumer contexts observed with shared broad filesystem; strict/native isolation not certified. Initial second consumer filename-only sibling discovery retained; no sibling content read claimed.",
+    "Retained consumer raw command/result seals and independent actual state checks are not a native full-transcript guarantee. Retrospective clean refs do not alone prove every historical operation; original triggers and intermediate exports establish the observed progression.",
+    "Native termination was not performed; core required controlled stop/recovery trial only.",
+    "Product publication is exact LOCAL trial-delivery, not a live GitHub trial branch. Earlier GitHub trial write automatic rejection remains a policy/facility limitation; root evidence publication is a separate authorized operation.",
+    "Python3.12.14 locally verified; broader supported runtime/platform matrix, installed-client routing and installed packaging unverified.",
+    "Original A006 inherited native/RED/environment limitations retained; actual complete-phase eligibility under its independent published assessment was verified, not fabricated.",
+    "Unexplained source-file reappearance during setup and exact-source scoped preservation/removal retained; causal mechanism unknown.",
+    "This final assessor evidence awaits root publication; historical setup, both trigger exports/handoffs and accepted repair decision were independently verified as contained in observed GitHub evidence ref."
+  ],
+  "mutations_by_final_assessor": {
+    "actual_trial": false,
+    "positive_product_source_evidence_repositories": false,
+    "checks": "Only separate exact restored snapshot/extraction and assessor output; no hosted writes."
+  },
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "evidence": {
+    "independent_checks": "INDEPENDENT-CHECKS.json",
+    "commands": "COMMANDS.json",
+    "final_refs": "FINAL-REFS.json",
+    "bundle": "objects.bundle",
+    "raw_index": "index.raw",
+    "index_stages": "index-stages.txt",
+    "workfiles": "workfiles.tar",
+    "manifest": "workfile-manifest.json",
+    "original_screening_provenance": "ORIGINAL-SCREENING-PROVENANCE.json"
+  }
+}

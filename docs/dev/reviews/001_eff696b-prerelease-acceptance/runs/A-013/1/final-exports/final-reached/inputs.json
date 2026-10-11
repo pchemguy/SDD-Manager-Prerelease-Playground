@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "test_repository": "https://github.com/pchemguy/SDD-Manager-Prerelease-Playground.git",
+  "local_checkout": "/workspace/scratch/46b31bb4dff6/037-textstats-product",
+  "scope": {
+    "cases": [
+      "A-013"
+    ]
+  },
+  "run_id": "a013-independent-reached-final"
+}

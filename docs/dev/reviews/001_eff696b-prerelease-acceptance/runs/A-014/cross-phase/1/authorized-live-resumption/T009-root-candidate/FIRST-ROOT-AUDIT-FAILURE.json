@@ -1,0 +1,5 @@
+{
+  "status": "Failed",
+  "exit_status": 1,
+  "cause": "Root audit initially treated ZIP top-level textstats-source prefix as product path; FileNotFoundError for textstats-source/README.md. Partial7exactstagedfiles and ZIP retained. No consumer/archive defect inferred; additive corrected mapping follows."
+}

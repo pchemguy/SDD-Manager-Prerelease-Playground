@@ -1,0 +1,114 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-c",
+        "import pathlib,textstats; print(pathlib.Path(textstats.__file__).resolve())"
+      ],
+      "cwd": "/tmp/textstats-observation-e6lvdfur",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "origin_accepted": true,
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export/textstats/__init__.py\n",
+      "stdout_base64": "L3dvcmtzcGFjZS9zY3JhdGNoLzQ2YjMxYmI0ZGZmNi8wMzctYTAxMy1maW5hbC1hcnRpZmFjdHMvZmluYWwtcmVhY2hlZC9wcm9kdWN0LWV4cG9ydC90ZXh0c3RhdHMvX19pbml0X18ucHkK"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--json",
+        "removed-json.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-e6lvdfur",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": null,
+        "before_sha256": null,
+        "input_sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "name": "removed-json.txt",
+        "stdin": false
+      },
+      "returncode": 2,
+      "status": "Completed",
+      "stderr": "usage: python -m textstats [-h] [--keep-bom] [--lines START:END] INPUT\npython -m textstats: error: unrecognized arguments: --json\n",
+      "stderr_base64": "dXNhZ2U6IHB5dGhvbiAtbSB0ZXh0c3RhdHMgWy1oXSBbLS1rZWVwLWJvbV0gWy0tbGluZXMgU1RBUlQ6RU5EXSBJTlBVVApweXRob24gLW0gdGV4dHN0YXRzOiBlcnJvcjogdW5yZWNvZ25pemVkIGFyZ3VtZW50czogLS1qc29uCg==",
+      "stdout": "",
+      "stdout_base64": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--",
+        "--json"
+      ],
+      "cwd": "/tmp/textstats-observation-e6lvdfur",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "1a989ea86150171c687b0727f218eedbb94c4665a7da9b0add1bf5de607f2bf1",
+        "before_sha256": "1a989ea86150171c687b0727f218eedbb94c4665a7da9b0add1bf5de607f2bf1",
+        "input_sha256": "1a989ea86150171c687b0727f218eedbb94c4665a7da9b0add1bf5de607f2bf1",
+        "name": "--json",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "textstats",
+        "--lines",
+        "2:2",
+        "retained-range.txt"
+      ],
+      "cwd": "/tmp/textstats-observation-e6lvdfur",
+      "environment": {
+        "LC_ALL": "C",
+        "PYTHONPATH": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+        "PYTHONUTF8": "0"
+      },
+      "fixture": {
+        "after_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "before_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "input_sha256": "c5f89cb93b42c46a485c44cc6f42a41a28624ef577a94affbc3fa8eafc5c1265",
+        "name": "retained-range.txt",
+        "stdin": false
+      },
+      "returncode": 0,
+      "status": "Completed",
+      "stderr": "",
+      "stderr_base64": "",
+      "stdout": "lines=1 words=2\n",
+      "stdout_base64": "bGluZXM9MSB3b3Jkcz0yCg=="
+    }
+  ],
+  "kind": "actual output capture; not agent lifecycle assessment",
+  "product_import_root": "/workspace/scratch/46b31bb4dff6/037-a013-final-artifacts/final-reached/product-export",
+  "schema_version": 1,
+  "status": "Captured",
+  "suite": "removal"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "inherited_original": {
+    "repository_path": "docs/dev/reviews/001_eff696b-prerelease-acceptance/runs/A-014/prerequisite-refusal/1/ASSESSMENT.json",
+    "sha256": "5a5db81aba45de7e4da5034623bf503e4f05062513a9958313f4576e23ea099f",
+    "byte_length": 68840,
+    "first_retained_commit": "0dab5222c21af0dccd129fe12328c126aa33e71d",
+    "independently_readback_published_evidence_commit": "62f30639822f8f7281477b474ef66a560f7d84d8",
+    "current_evidence_head": "fb98e7b984134755845fc46390381d9933aa397e",
+    "original_bytes_preserved_in_place": true,
+    "clean_bytes": "Passed",
+    "generic_json_no_secret": "Failed: NUL-containing raw stdout"
+  },
+  "original_is_immutable_inherited_artifact": true,
+  "exception_scope": "Only inherited original JSON fails generic JSON NUL rule. New derivative is additive and does not overwrite, delete or retroactively certify inherited JSON."
+}

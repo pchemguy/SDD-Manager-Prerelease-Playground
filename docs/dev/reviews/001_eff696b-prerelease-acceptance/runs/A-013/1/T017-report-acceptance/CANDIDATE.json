@@ -1,0 +1,39 @@
+{
+  "candidate_tree": "190b6865846d66933bcdcd112e1fcfa7ca2f04ef",
+  "parent": "b49a26b36d68dc9bab8cf83633f5b7a2aae81eea",
+  "files": {
+    "AGENTS.md": {
+      "sha256": "37fb35f329f1bcd51c95f293f9d3668a8d55866dad224cc5c05c543c3e12719f",
+      "bytes": 13016,
+      "git_blob": "8f85712cf1238c7b8b8e3ea78963d66efce5b020"
+    },
+    "docs/dev/TASKS.md": {
+      "sha256": "c0f9718171d069e34de57b24c94a0d2daa7f001ceb8b2552fab5fa4566191616",
+      "bytes": 80648,
+      "git_blob": "2b730b4d796a34a37f387aa3bad0205176ddedc1"
+    },
+    "docs/dev/TASKS-REVIEW-REPORT.md": {
+      "sha256": "c794461b50f111677b25eb1c292d4a6734fa46a230c2f7790975fcf57dd58ecd",
+      "bytes": 25324,
+      "git_blob": "e8ec557562716f927e38811650e8a4a4f8ab1a4d"
+    },
+    "docs/dev/reports/phases/2/PHASE-REPORT.md": {
+      "sha256": "4c31aeb00f1841ce8f885ab9f8e380d3933082c0fad1316ccd994cf3ce194e96",
+      "bytes": 10224,
+      "git_blob": "a5c067d593d2c6270360f362ace08e6ae88967b4"
+    },
+    "docs/dev/reports/IMPLEMENTATION-REPORT.md": {
+      "sha256": "c0d0fb8cc30c6db6fc4d4e45730f95fb733bf8461f6270064055ba054b30e1fc",
+      "bytes": 10235,
+      "git_blob": "7224a82c3acb514c62c5c59fa0c2243eba487079"
+    }
+  },
+  "observed_at": "2026-10-10T19:28:53.629822+00:00",
+  "root_review": [
+    "Exactly five owning paths, substantive final Phase and implementation report pair",
+    "Separate cross-phase code review and fresh serialized checks, explicit runtime and original channel/cleanup limits",
+    "Five resolved findings deduplicated with provenance; no unresolved/deferred code finding and TODO None",
+    "Only initial T017 and eligible Phase2/review2.3 parent closure; retired identities and prior history preserved",
+    "Native final review closure and two-parent integration remain subsequent concrete gates"
+  ]
+}

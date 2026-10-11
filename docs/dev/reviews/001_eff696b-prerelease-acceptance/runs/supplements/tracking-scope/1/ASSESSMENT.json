@@ -1,0 +1,104 @@
+{
+  "schema": "independent-focused-supplement-assessment-v1",
+  "setup": {
+    "publication_commit": "8f625d22dae5f887df62bd34f8cdee240eb8b38f",
+    "publication_manifest_all_match": true,
+    "original_command_sha256": "877fb30e54f388a8c24d02f7b835b784bde4956b57d10a5a988c89c9d4046d3c",
+    "derivative_only_two_stdout_changes": true,
+    "sidecars_exact": {
+      "11": true,
+      "30": true
+    },
+    "first_screening_rejected_before_writes": "retained publication provenance; not independently observed live"
+  },
+  "token_only": {
+    "grade": "PASS limited read-only tracking offer/readiness subset and exact final preservation",
+    "observed": [
+      "Actual recommendation enabled with eligible phase1 label, milestones1.1/1.2/1.3, T001..T009 and associations/lifecycle before choice; root confirmed trial decline and no implementation authorization, retained in seal.",
+      "Independent START/final comparisons all true: HEAD branch refs index entries raw index hash local bare refs status 154 file bytes/modes."
+    ],
+    "chronology_limit": "37 command results are mostly explicitly evidence replay; no root-accessible native full transcript. Actual offer/root response retained by session/seal, but replay cannot establish original exhaustive command order.",
+    "final_preservation": {
+      "head": true,
+      "branch": true,
+      "refs": true,
+      "status": true,
+      "index_entries": true,
+      "raw_index_sha256": true,
+      "delivery_refs": true,
+      "tracked_bytes_modes": true
+    },
+    "root_choice_exact_from_seal": "For this isolated trial, I explicitly decline managed GitHub tracking. No T001 implementation continuation is authorized in this token-only trial."
+  },
+  "explicit_decline": {
+    "grade": "PASS limited scoped declined-tracking T001 local Git delivery and atomic closure",
+    "head": "639e7e0cb54d5dd1f9c1a6e73de31e76301ae932",
+    "branch": "phase/1-named-file-utility",
+    "observed": [
+      "Retained actual initial decline; no repeated offer in available seal/messages; initial main local push/readback precedes branch/task work in retained command record.",
+      "Fresh parent-to-commit audit: one single-leading-ID T001 commit with core/public-text result, tests/docstrings, owning evidence and only initial T001 checkbox together. Exactly10 changed/new paths; no deletions.",
+      "All other imported tracked files retain exact bytes/modes, including pinned package, governing contracts/QC, fixture, ignores and disclosure. main unchanged, no merge or checked parents/T002.",
+      "Local bare delivery has exact phase ref at task SHA plus unchanged main; clean working/index tree.",
+      "Fresh independent execution passed10 unit4 integration tests and3110 public text oracle cases with signature/constructor/silence checks."
+    ],
+    "retained_failures": [
+      "Startup remote symbolic-ref lookup exit128 after successful local push/readback; bare HEAD fallback retained.",
+      "Behavioral RED68 unit assertion failures and4 integration failures against mutable/zero-count scaffold.",
+      "Failed README/AGENTS patch documented with no change, corrected bounded edits.",
+      "Absent later tools check_tests.py/check_distribution.py exit2 before and after task commit; deferred task tooling not brought forward."
+    ],
+    "publication_order": "Consumer retained command13 records commit inspection immediately followed by local push/readback, then final audit; fresh bare readback confirms result. No independently accessible native full transcript.",
+    "acceptance_intervention": "Root delegated exact10artifact acceptance before checkbox/closure, externally recorded in0f3caf1696cbf955e48a7451076e762573249ba5; consumer wrote code/tests independently.",
+    "accepted_artifact_audit": {
+      "all_ten_exact_match": true,
+      "matches": {
+        "textstats/core.py": true,
+        "textstats/__init__.py": true,
+        "tests/__init__.py": true,
+        "tests/unit/__init__.py": true,
+        "tests/integration/__init__.py": true,
+        "tests/unit/test_core.py": true,
+        "tests/integration/test_api.py": true,
+        "AGENTS.md": true,
+        "README.md": true,
+        "docs/dev/TASKS.md": true
+      },
+      "TASKS_reconstruction": "Only reset initial T001 checkbox and remove actual Trial acceptance annotation to reconstruct reviewed unchecked artifact; no other edit."
+    }
+  },
+  "shared_limits": [
+    "No certification of absence of invisible hosted effects; no provider namespace/readback or operation-specific write facilities established. Available command records show local Git destinations only and no hosted tracking operations.",
+    "No native full transcript/fresh process-context or filesystem isolation certification.",
+    "Python3.12.14/Linux; no Windows/native install or separate supported3.11 run.",
+    "No full live guide certification, current/revised comparative run, numerical reliability inference or task outcome for token-only trial.",
+    "Both follow-ups outside default required/optional totals; full live follow-up remains Not run/Blocked facilities."
+  ],
+  "assessor_failures": [
+    {
+      "diagnostic": "UnicodeDecodeError: utf-8 codec cannot decode byte0x9b in position14: invalid start byte",
+      "context": "First independent token export decoded raw tree as UTF8; export rerun with stdout base64 preserving exact binary tree payload."
+    },
+    {
+      "diagnostic": "KeyError: argv",
+      "context": "Diagnostic summary assumed token command had argv; actual protected read-only GET uses command string."
+    },
+    {
+      "diagnostic": "KeyError: slice(None, 2, None)",
+      "context": "Diagnostic START inspection assumed tracked_files list; corrected dict inspection."
+    },
+    {
+      "diagnostic": "KeyError: command_results",
+      "context": "Diagnostic decline seal summary assumed token schema; corrected commands schema."
+    }
+  ],
+  "seals": {
+    "token-only": {
+      "sha256": "58609d81170c0d1882275dfbede300e6720ba9a39c0767ea19f811c03516282f",
+      "bytes": 229669
+    },
+    "explicit-decline": {
+      "sha256": "b4ea4331f45bdfd776a0d379ae473ee7f8d8623a4c83bf23ce61bc4e79156432",
+      "bytes": 356488
+    }
+  }
+}

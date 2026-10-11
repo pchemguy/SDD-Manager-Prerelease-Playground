@@ -1,0 +1,34 @@
+diff --git a/docs/dev/FEATURE-PLAN.md b/docs/dev/FEATURE-PLAN.md
+index 1477856..fc1ac43 100644
+--- a/docs/dev/FEATURE-PLAN.md
++++ b/docs/dev/FEATURE-PLAN.md
+@@ -8,15 +8,21 @@ The [feature specification](FEATURE-SPEC.md) and [SPEC QC](FEATURE-SPEC-REVIEW-R
+ 
+ Reuse the exact existing parent identity **Phase 2 — JSON and stdin**, with a feature-only extent and new noncolliding milestone IDs. Existing 2.1/2.2/2.3 retain their meanings, tasks and ownership in main TASKS. Feature completion/checks cover only added milestones; whole Phase 2 remains incomplete until its independent stdin/final obligations are met. A feature extent's final review does not replace the main phase review.
+ 
+-| Parent / new milestone | Useful outcome, prerequisites and objective exits |
++| Parent / new milestone | Proposed outcome and dependencies |
+ | --- | --- |
+-| Phase 2 / 2.4 — Named-file ranges | Earliest usable changed path: both range spellings, ASCII/unbounded validation before access, pure selection, complete file decoding, once-only BOM, default text and JSON. Prerequisite: completed published JSON milestone 2.1 and compatible execution baseline. Keep internal normalization/selection/counting independently checkable while integrating promptly with real named-file CLI. Exit: complete F-001–F-004 core/CLI matrices, controlled acquisition and real module checks, nonempty suites, runnable minimal help/usage and retained API/whole-input/JSON regressions; dedicated milestone code review/testing/report. |
+-| Phase 2 / 2.5 — Range documentation and distribution | Complete public/module and runnable README explanation plus isolated extracted-source text/JSON range exits. Prerequisite: reviewed/closed feature milestone 2.4. Exit: accurate named-file/deferred-stdin docs, executed documented examples, real extracted module with provenance isolation across valid/invalid/huge/BOM/decode cases, nonempty regressions and dedicated milestone code review/testing/report. |
+-| Phase 2 / 2.6 — Range feature review | Dedicated final single-task review of this feature extent after 2.4 and 2.5 complete/close. Review cross-milestone interactions, all F contracts and affected R contracts; run full relevant product/docs/distribution checks, repair blockers and aggregate TODOs in feature reports. This closes the feature's extent only; main 2.2/2.3 and T-013–T-017 remain pending. |
+-
+-There are two delivery milestones plus one excluded feature-extent review milestone. A larger phase split would pad this narrow capability or force unrelated stdin. Milestone 2.4's semantic parser/selection/acquisition integration is one user-visible outcome; 2.5 independently proves usable source-package delivery. Each delivery milestone includes its own final review outcome. No mock-only infrastructure milestone delays useful behavior.
+-
+-At 2.4 demonstrate selecting middle/beyond-EOF/blank/mixed-terminator lines and exposed BOMs in real text/JSON invocations. The evidence informs a human continue/amend/simplify/stop decision about semantics and CLI usability. At 2.5 demonstrate documented usage from the extracted package and compare API compatibility. These are consequential feedback checkpoints for a later authorized implementation, without automatically authorizing steering or extra tasks.
++| Phase 2 / 2.7 — Logical segment infrastructure | Depends on completed JSON checkpoint; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.8 — EOF clamping | Depends on 2.7; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.9 — BOM exposure handling | Depends on 2.8; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.10 — Spaced range parsing | Depends on 2.9; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.11 — Equals range parsing | Depends on 2.10; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.12 — Repeated-range validation | Depends on 2.11; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.13 — Complete-byte acquisition wiring | Depends on 2.12; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.4 — First usable named-file ranges CLI | Depends on 2.13; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.5 — Range public documentation | Depends on reviewed 2.4; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.14 — Extracted source verification | Depends on 2.5; deliver this individual seam, then its dedicated code review/testing/report. Retain all F/R contracts. |
++| Phase 2 / 2.6 — Range feature review | Dedicated final review after all ten delivery milestones; main stdin/final work remains pending. |
++
++The proposed ten delivery milestones expose the first real user-visible range invocation only at 2.4, after seven preceding seam-specific milestones. No intermediate seam provides a runnable changed CLI capability. The existing coverage table below remains required; dedicated review units are excluded from delivery count.
+ 
+ ## Baseline and integration dependencies
+ 

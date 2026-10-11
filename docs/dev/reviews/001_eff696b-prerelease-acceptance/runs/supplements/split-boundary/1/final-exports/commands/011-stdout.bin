@@ -1,0 +1,23 @@
+commit 639e7e0cb54d5dd1f9c1a6e73de31e76301ae932
+Author:     Codex <codex@openai.com>
+AuthorDate: Sat Oct 10 12:48:57 2026 -0400
+Commit:     Codex <codex@openai.com>
+CommitDate: Sat Oct 10 12:48:57 2026 -0400
+
+    [T-001] Implement immutable statistics and whole-text counting
+    
+    Deliver pure CRLF/CR/LF line traversal, Unicode word counting and exactly-once BOM normalization through the silent text API. Validate nonnegative integer counts and preserve immutable value equality. Include product tests, docstrings, current orientation, owning verification/acceptance evidence and initial T-001 checkbox together.
+    
+    Verification: Python 3.12.14, 10 unit and 4 integration tests passed with nonzero discovery and no skips; staged whitespace check passed. Delegated exact-artifact acceptance: 0f3caf1696cbf955e48a7451076e762573249ba5. Full-delivery scripts remain absent as T-003/T-007 work; no file, CLI or distribution claim. Hosted tracking explicitly declined. Stop after this task without completing parents or merging the incomplete phase.
+
+ AGENTS.md                     | 25 ++++++++++++
+ README.md                     |  2 +-
+ docs/dev/TASKS.md             |  4 +-
+ tests/__init__.py             |  1 +
+ tests/integration/__init__.py |  1 +
+ tests/integration/test_api.py | 58 ++++++++++++++++++++++++++
+ tests/unit/__init__.py        |  1 +
+ tests/unit/test_core.py       | 94 +++++++++++++++++++++++++++++++++++++++++++
+ textstats/__init__.py         |  5 +++
+ textstats/core.py             | 86 +++++++++++++++++++++++++++++++++++++++
+ 10 files changed, 275 insertions(+), 2 deletions(-)
