@@ -1,0 +1,1517 @@
+test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) ... 
+  test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['--json', 'named']) ... FAIL
+  test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['named', '--json']) ... FAIL
+  test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['--json', '--keep-bom', 'named']) ... FAIL
+  test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['--keep-bom', 'named', '--json']) ... FAIL
+  test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['named', '--json', '--keep-bom']) ... FAIL
+test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) ... 
+  test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) (failure='PermissionError') ... FAIL
+  test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) (failure='OSError') ... FAIL
+  test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) (failure='UnicodeDecodeError') ... FAIL
+test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) ... 
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['--json', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json']) ... FAIL
+  test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom']) ... FAIL
+test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) ... 
+  test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/bad.txt'), options=['--json']) ... FAIL
+  test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/bad.txt'), options=['--keep-bom', '--json']) ... FAIL
+  test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/absent.txt'), options=['--json']) ... FAIL
+  test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/absent.txt'), options=['--keep-bom', '--json']) ... FAIL
+test_json_option_like_filename_after_double_dash (tests.integration.test_cli.ModuleCliTests.test_json_option_like_filename_after_double_dash) ... FAIL
+
+======================================================================
+FAIL: test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['--json', 'named'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 30, in test_json_success_composes_with_bom_and_option_order
+    self.assertEqual((status, err.getvalue()), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['named', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 30, in test_json_success_composes_with_bom_and_option_order
+    self.assertEqual((status, err.getvalue()), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['--json', '--keep-bom', 'named'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 30, in test_json_success_composes_with_bom_and_option_order
+    self.assertEqual((status, err.getvalue()), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['--keep-bom', 'named', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 30, in test_json_success_composes_with_bom_and_option_order
+    self.assertEqual((status, err.getvalue()), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_success_composes_with_bom_and_option_order (tests.unit.test_cli.CliTests.test_json_success_composes_with_bom_and_option_order) (args=['named', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 30, in test_json_success_composes_with_bom_and_option_order
+    self.assertEqual((status, err.getvalue()), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) (failure='PermissionError')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 46, in test_json_input_failures_retain_empty_stdout_and_status
+    self.assertEqual((status, out.getvalue()), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) (failure='OSError')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 46, in test_json_input_failures_retain_empty_stdout_and_status
+    self.assertEqual((status, out.getvalue()), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_input_failures_retain_empty_stdout_and_status (tests.unit.test_cli.CliTests.test_json_input_failures_retain_empty_stdout_and_status) (failure='UnicodeDecodeError')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/unit/test_cli.py", line 46, in test_json_input_failures_retain_empty_stdout_and_status
+    self.assertEqual((status, out.getvalue()), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='α\r\n猫\rβ γ\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\n\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text=' \t', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='alpha\u2028beta', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeff\ufeff', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\ufeffalpha beta', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='a\ufeffb', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r\n', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['--json', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['--json', '--keep-bom', '/tmp/tmpstncq894/sample.txt'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['--keep-bom', '/tmp/tmpstncq894/sample.txt', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_semantic_matrix_and_option_composition (tests.integration.test_cli.ModuleCliTests.test_json_semantic_matrix_and_option_composition) (text='\r', args=['/tmp/tmpstncq894/sample.txt', '--json', '--keep-bom'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 38, in test_json_semantic_matrix_and_option_composition
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+======================================================================
+FAIL: test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/bad.txt'), options=['--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 59, in test_json_errors_retain_status_streams_and_diagnostics
+    self.assertEqual((result.returncode, result.stdout), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/bad.txt'), options=['--keep-bom', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 59, in test_json_errors_retain_status_streams_and_diagnostics
+    self.assertEqual((result.returncode, result.stdout), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/absent.txt'), options=['--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 59, in test_json_errors_retain_status_streams_and_diagnostics
+    self.assertEqual((result.returncode, result.stdout), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_errors_retain_status_streams_and_diagnostics (tests.integration.test_cli.ModuleCliTests.test_json_errors_retain_status_streams_and_diagnostics) (path=PosixPath('/tmp/tmpu7gv4m5g/absent.txt'), options=['--keep-bom', '--json'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 59, in test_json_errors_retain_status_streams_and_diagnostics
+    self.assertEqual((result.returncode, result.stdout), (1, ""))
+AssertionError: Tuples differ: (2, '') != (1, '')
+
+First differing element 0:
+2
+1
+
+- (2, '')
+?  ^
+
++ (1, '')
+?  ^
+
+
+======================================================================
+FAIL: test_json_option_like_filename_after_double_dash (tests.integration.test_cli.ModuleCliTests.test_json_option_like_filename_after_double_dash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/46b31bb4dff6/037-a014-cross-phase/tests/integration/test_cli.py", line 76, in test_json_option_like_filename_after_double_dash
+    self.assertEqual((result.returncode, result.stderr), (0, ""))
+AssertionError: Tuples differ: (2, 'usage: python -m textstats [-h] [--ke[72 chars]n\n') != (0, '')
+
+First differing element 0:
+2
+0
+
++ (0, '')
+- (2,
+-  'usage: python -m textstats [-h] [--keep-bom] INPUT\n'
+-  'python -m textstats: error: unrecognized arguments: --json\n')
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.952s
+
+FAILED (failures=83)

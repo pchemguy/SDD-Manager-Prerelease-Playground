@@ -1,0 +1,16 @@
+{
+  "decision": "Accepted exact T010 candidate for atomic closing and publication",
+  "head": "a7285d78a7fb1ee3966850656de6594317d5125f",
+  "staged_tree": "6fa480a4a168292ec49061e099c05ec02d200fa5",
+  "independent_candidate": "T010-independent-candidate/ASSESSMENT.json",
+  "root_candidate": "T010-root-candidate/CANDIDATE.json",
+  "checks": {
+    "unit": 26,
+    "integration": 21,
+    "documentation_examples": 8,
+    "existing_extracted_text_cases": 36,
+    "archive_source_members": 11
+  },
+  "boundary": "Commit exactly accepted seven paths; immediately publish exact closing SHA to trial/037-a014-cross-json and read back. Stop before T011 or Phase2 integration. Preserve unknown root examples.",
+  "limitations": "Dedicated extracted JSON testing belongs to unselected T011. This is a candidate acceptance, not reached publication or whole-run Passed."
+}

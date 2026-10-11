@@ -1,0 +1,25 @@
+{
+  "time": "2026-10-11T04:06:04.098607+00:00",
+  "staged_tree": "6fa480a4a168292ec49061e099c05ec02d200fa5",
+  "source_head": "a7285d78a7fb1ee3966850656de6594317d5125f",
+  "paths": [
+    "AGENTS.md",
+    "README.md",
+    "docs/dev/TASKS.md",
+    "docs/public-api.md",
+    "tests/integration/test_cli.py",
+    "tests/unit/test_cli.py",
+    "textstats/cli.py"
+  ],
+  "sha256": {
+    "AGENTS.md": "a6d1a1626ac3b093131d2bdc3d24f3ef90dbc039d5c72e0a978b7bdb28b555f6",
+    "README.md": "3fee1459e1064988923d7c546e376d3bb434a662c22b5dc78d232c8a19e145c4",
+    "docs/dev/TASKS.md": "b81a72d93988cd44d4ed11e9798cde7a8b013621be3cf7fb18c80de83dadd0aa",
+    "docs/public-api.md": "01bb196cc9695df7cd74c207f47599e3bcc62fb00b881098530d758ff2316fd9",
+    "tests/integration/test_cli.py": "db04407c6177b013b3ae2bb4997430a69d36ea2e44f514f4df7cc526e0c6b4a4",
+    "tests/unit/test_cli.py": "c31e16682147d87c300e7de8f2fd6529e4cdb8de2bf28bc7c06f0157c09d668b",
+    "textstats/cli.py": "5052a8f58950effeb4f546f672b06c9776b3c8bea6c67f4ccdce8347561f7ed5"
+  },
+  "independent_private_test_status": 0,
+  "pending": "Actual commit and trial-json publication; no phase2 integration."
+}
