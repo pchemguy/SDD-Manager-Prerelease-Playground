@@ -1,0 +1,10 @@
+{
+  "CANDIDATE.json": {
+    "sha256": "28595a877922096cc40e349feb4806ea351ac03d6f0177ade1c6fd50d07ee19c",
+    "bytes": 2921
+  },
+  "textstats-source.zip": {
+    "sha256": "ad77c0f746820cdd51f4d98500cc360aa9f5bfc9a69a45f2dba3421e2423c8cb",
+    "bytes": 12047
+  }
+}

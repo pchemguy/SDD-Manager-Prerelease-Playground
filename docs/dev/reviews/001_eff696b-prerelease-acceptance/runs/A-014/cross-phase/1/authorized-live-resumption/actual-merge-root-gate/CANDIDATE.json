@@ -1,0 +1,85 @@
+{
+  "ordered_actual_prospective_parents": [
+    "88a5c4b4424f4bba76940e40b1d6523b1f6fe191",
+    "dfcd658828d8e326c713683f3cdb9be05e044849"
+  ],
+  "actual_index_tree": "93756800aafe8abb0d8719176a14eb81ba42b4e1",
+  "exact_tree_equal_accepted_T009": true,
+  "actual_staged_paths": [
+    ".gitignore",
+    "AGENTS.md",
+    "README.md",
+    "docs/dev/TASKS.md",
+    "docs/dev/reports/phases/1/1.1.md",
+    "docs/dev/reports/phases/1/1.2.md",
+    "docs/dev/reports/phases/1/PHASE-REPORT.md",
+    "docs/public-api.md",
+    "tests/__init__.py",
+    "tests/integration/__init__.py",
+    "tests/integration/test_api.py",
+    "tests/integration/test_cli.py",
+    "tests/integration/test_distribution.py",
+    "tests/unit/__init__.py",
+    "tests/unit/test_cli.py",
+    "tests/unit/test_core.py",
+    "tests/unit/test_io.py",
+    "textstats/__init__.py",
+    "textstats/__main__.py",
+    "textstats/cli.py",
+    "textstats/core.py",
+    "textstats/io.py",
+    "tools/check_distribution.py",
+    "tools/check_tests.py",
+    "tools/package_source.py"
+  ],
+  "protected_diff_empty": true,
+  "fresh_actual_archive_sha256": "ad77c0f746820cdd51f4d98500cc360aa9f5bfc9a69a45f2dba3421e2423c8cb",
+  "actual11_members_current_source_equal": [
+    {
+      "source_path": "README.md",
+      "sha256": "150967f90086ec52b90b9533026188cd2ef430e49c4f2a345eb21f807c303e5b"
+    },
+    {
+      "source_path": "docs/public-api.md",
+      "sha256": "6ad1a66c58e285ac085d2f6c8dac7f1c804294352a873e2b24e80f89241d2944"
+    },
+    {
+      "source_path": "AI_DISCLOSURE.md",
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "source_path": "SDD-MANAGER.md",
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    {
+      "source_path": "textstats/__init__.py",
+      "sha256": "b9b70e346fbf1cf4fe76e3b86d4ff626a5421c790e9d110c4508682357c00dc0"
+    },
+    {
+      "source_path": "textstats/__main__.py",
+      "sha256": "b1829c14838dd795f5b054249a95ff42bc3550ac7e0446c91e0ea222b7cfa590"
+    },
+    {
+      "source_path": "textstats/core.py",
+      "sha256": "98b3374375eb7e6d4a301cabff99eb5e09ccccecbd9a808954e9c5cae084609f"
+    },
+    {
+      "source_path": "textstats/io.py",
+      "sha256": "a45b0a1f320109f43d92e1b01507c2c2da941af51af09ede378724038db32b9f"
+    },
+    {
+      "source_path": "textstats/cli.py",
+      "sha256": "43e7e042edb7693ea2ba828726b691e2372feecb7954d7d05734c82a7b6319c1"
+    },
+    {
+      "source_path": "tools/package_source.py",
+      "sha256": "e4faf268ff619c581e769766b104afbff577caabf02380f8bfce4183b9ceae91"
+    },
+    {
+      "source_path": "tools/check_distribution.py",
+      "sha256": "4132a9a688ee8ce0a385c39b471ea9a29b4c6f4ba03c18e9f095cb10e9691d5f"
+    }
+  ],
+  "no_merge_commit_yet": true,
+  "scope": "Concrete actual prospective merge precommit gate; independent mergedchecks review pending, no futurepublication/T010claim."
+}
